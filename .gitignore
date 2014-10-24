@@ -1,0 +1,5 @@
+_images
+_static
+_site
+.DS_Store
+Gemfile.lock

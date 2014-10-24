@@ -1,0 +1,8 @@
+title: Oliver Pattison
+email: oliverpattison@gmail.com
+description: Hello world.
+url: http://olivermak.es
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:title/
