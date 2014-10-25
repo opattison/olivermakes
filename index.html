@@ -1,0 +1,14 @@
+---
+layout: fundamental
+
+---
+
+Hello world.
+
+<ul>
+{% for post in site.posts limit:8 %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </li>
+{% endfor %}
+</ul>

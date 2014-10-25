@@ -1,0 +1,190 @@
+/*** Normalization ***/
+/* following adapted from HTML5 Reset */
+* {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+
+/* following adapted from CSS Normalize */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+html,
+body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+img,
+object,
+embed {
+  max-width: 100%;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/* Box-sizing borrowed from Paul Irish */
+* { 
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Custom resets */
+
+body {
+  margin: 0 auto;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+dfn,
+em,
+i {
+  font-style: italic;
+}
+
+/***! END Normalization ***/
+
+
+/*** Axiomatic styles via Heydon Pickering
+source: http://alistapart.com/article/axiomatic-css-and-lobotomized-owls ***/
+
+* + * {
+  margin-top: 1.375em;
+}
+
+li + li {
+  margin-top: .6875em; /* Half of axiomatic top margins */
+}
+
+/***! END Axiomatic styles ***/
+
+/*** Basic structure and typography ***/
+
+html {
+  font: 300 16px/1.375 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 300 1rem/1.375 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  height: 100%;
+}
+
+body {
+  
+}
+
+code,
+kbd,
+pre,
+samp {
+  background-color: gainsboro;
+  font: 400 .8125em/1.38461541 Menlo, monospace;
+  white-space: pre-wrap;
+}
+
+.highlight {
+  background-color: gainsboro;
+}
+
+pre > code {
+  font-size: 1em;
+}
+
+p > code {
+  padding: .125em .25em;
+}
+
+a,
+a:visited {
+  color: royalblue;
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  color: darkorange;
+}
+
+a:focus {
+  outline: solid .0625em crimson;
+}
+
+h1 {
+  font: 500 1.625em/1.375 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h2 {
+  font: 300 1.5em/1.375 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h3 {
+  font: 300 1.375em/1.375 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h4 {
+  font: 300 1.25em/1.375 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h5 {
+  font: 300 1.125em/1.375 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+strong,
+b {
+  font: 500 1em 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+ul {
+  list-style-position: inside;
+  list-style-type: square;
+}
+
+blockquote,
+.highlight {
+  margin: 1em -1em;
+  padding: 1em;
+}
+
+blockquote {
+  background-color: gainsboro;
+}
+
+hr {
+  border: 1px solid darkgray;
+}
+
+p img {
+  margin: 0 -1em;
+  max-width: none;
+  width: 100%; /* fallback in case no calc() support */
+  width: calc(100% + 2em);
+}
+
+article {
+  padding: 1em;
+}
+
+/***! END Basic styles ***/
