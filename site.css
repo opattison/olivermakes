@@ -188,7 +188,8 @@ kbd {
 }
 
 mark {
-  background-color: gainsboro;
+  background-color: palegoldenrod;
+  padding: .0625em;
 }
 
 p img {
