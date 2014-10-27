@@ -82,6 +82,10 @@ li + li {
   margin-top: .6875em; /* Half of axiomatic top margins */
 }
 
+article {
+  padding: 1em;
+}
+
 /***! END Axiomatic styles ***/
 
 /*** Basic structure and typography ***/
@@ -94,34 +98,6 @@ html {
 
 body {
   
-}
-
-code,
-pre,
-samp {
-  background-color: gainsboro;
-  font: 400 .8125em/1.38461541 Menlo, monospace;
-  white-space: pre-wrap;
-}
-
-.highlight {
-  background-color: gainsboro;
-}
-
-pre > code {
-  font-size: 1em;
-}
-
-p > code {
-  padding: .153846154em .307692308em; /* 2px 4px */
-}
-
-kbd {
-  background-color: black;
-  border-radius: .266666667em; /* 4px */
-  color: white;
-  font: 300 .9375em/1.375 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  padding: .266666667em .6em; /* 4px 9px */
 }
 
 a,
@@ -183,6 +159,34 @@ hr {
   border: 1px solid darkgray;
 }
 
+code,
+pre,
+samp {
+  background-color: gainsboro;
+  font: 400 .8125em/1.38461541 Menlo, monospace;
+  white-space: pre-wrap;
+}
+
+.highlight {
+  background-color: gainsboro;
+}
+
+pre > code {
+  font-size: 1em;
+}
+
+p > code {
+  padding: .153846154em .307692308em; /* 2px 4px */
+}
+
+kbd {
+  background-color: black;
+  border-radius: .266666667em; /* 4px */
+  color: white;
+  font: 300 .9375em/1.375 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: .266666667em .6em; /* 4px 9px */
+}
+
 mark {
   background-color: gainsboro;
 }
@@ -192,10 +196,6 @@ p img {
   max-width: none;
   width: 100%; /* fallback in case no calc() support */
   width: calc(100% + 2em);
-}
-
-article {
-  padding: 1em;
 }
 
 /***! END Basic styles ***/
