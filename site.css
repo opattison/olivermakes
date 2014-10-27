@@ -97,7 +97,6 @@ body {
 }
 
 code,
-kbd,
 pre,
 samp {
   background-color: gainsboro;
@@ -114,7 +113,15 @@ pre > code {
 }
 
 p > code {
-  padding: .125em .25em;
+  padding: .153846154em .307692308em; /* 2px 4px */
+}
+
+kbd {
+  background-color: black;
+  border-radius: .266666667em; /* 4px */
+  color: white;
+  font: 300 .9375em/1.375 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: .266666667em .6em; /* 4px 9px */
 }
 
 a,
@@ -133,23 +140,23 @@ a:focus {
 }
 
 h1 {
-  font: 500 1.625em/1.375 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 500 1.625em/1.5 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h2 {
-  font: 300 1.5em/1.375 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 300 1.5em/1.5 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h3 {
-  font: 300 1.375em/1.375 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 300 1.375em/1.5 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h4 {
-  font: 300 1.25em/1.375 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 300 1.25em/1.4 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h5 {
-  font: 300 1.125em/1.375 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 300 1.125em/1.5 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 strong,
@@ -174,6 +181,10 @@ blockquote {
 
 hr {
   border: 1px solid darkgray;
+}
+
+mark {
+  background-color: gainsboro;
 }
 
 p img {
