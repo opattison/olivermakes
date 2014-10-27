@@ -116,17 +116,17 @@ a:focus {
 }
 
 h1 {
-  font: 500 2em/1.5 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 500 2em/1.25 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   letter-spacing: -.0625em; /* -2px */
 }
 
 h2 {
-  font: 300 1.75em/1.5 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 300 1.75em/1.25 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   letter-spacing: -.035714286em; /* -2px */
 }
 
 h3 {
-  font: 300 1.375em/1.5 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 300 1.375em/1.272727273 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h4 {
