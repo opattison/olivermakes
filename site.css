@@ -129,7 +129,7 @@ a:focus {
 }
 
 a:focus {
-  outline: solid .0625em crimson;
+  outline: solid .125em darkorange;
 }
 
 h1 {
