@@ -116,11 +116,13 @@ a:focus {
 }
 
 h1 {
-  font: 500 1.625em/1.5 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 500 2em/1.5 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: -.0625em; /* -2px */
 }
 
 h2 {
-  font: 300 1.5em/1.5 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 300 1.75em/1.5 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: -.035714286em; /* -2px */
 }
 
 h3 {
@@ -175,8 +177,13 @@ pre > code {
   font-size: 1em;
 }
 
-p > code {
+p > code,
+p > * > code {
   padding: .153846154em .307692308em; /* 2px 4px */
+}
+
+blockquote p > code {
+  background-color: white;
 }
 
 kbd {
