@@ -194,6 +194,11 @@ kbd {
   padding: .266666667em .6em; /* 4px 9px */
 }
 
+kbd + span {
+  font-weight: 500;
+  padding: .125em;
+} /* <kbd>cmd</kbd><span>+</span> */
+
 mark {
   background-color: palegoldenrod;
   padding: .0625em;
