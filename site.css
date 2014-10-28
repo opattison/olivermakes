@@ -226,8 +226,9 @@ mark > code {
   padding: .384615385em .307692308em .153846154em; /* 5px 4px 2px */
 }
 
-p img {
-  margin: 0 -1em;
+article img {
+  margin: 0; /* fallback in case no calc() support */
+  margin: 0 calc(-1em);
   max-width: none;
   width: 100%; /* fallback in case no calc() support */
   width: calc(100% + 2em);
