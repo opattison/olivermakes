@@ -179,22 +179,25 @@ hr {
 code,
 pre,
 samp {
-  background-color: gainsboro;
   font: 400 .8125em/1.38461541 Menlo, monospace;
   white-space: pre-wrap;
 }
 
-.highlight {
+.highlight,
+code,
+pre,
+samp {
   background-color: gainsboro;
+}
+
+code,
+samp {
+  padding: .153846154em .307692308em; /* 2px 4px */
 }
 
 pre > code {
   font-size: 1em;
-}
-
-p > code,
-p > * > code {
-  padding: .153846154em .307692308em; /* 2px 4px */
+  padding: 0;
 }
 
 blockquote p > code {
