@@ -209,10 +209,10 @@ kbd > kbd {
   padding: .142857143em .5em; /* 2px 7px */
 }
 
-kbd + span {
-  font-weight: 500;
-  margin: 0 -.125em;
-} /* <kbd><kbd>cmd</kbd><span>+</span><kbd>C</kbd></kbd> */
+kbd > kbd + b {
+  font-family: 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0 -.375em;
+} /* <kbd><kbd>cmd</kbd> <b class="kbd-plus">+</b> <kbd>C</kbd></kbd> */
 
 mark {
   background-color: palegoldenrod;
