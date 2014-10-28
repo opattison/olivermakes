@@ -186,18 +186,18 @@ blockquote p > code {
   background-color: white;
 }
 
-kbd {
+kbd > kbd {
   background-color: black;
-  border-radius: .266666667em; /* 4px */
+  border-radius: .285714286em; /* 4px */
   color: white;
-  font: 300 .9375em/1.375 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  padding: .266666667em .6em; /* 4px 9px */
+  font: 300 .875em/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: .142857143em .5em; /* 2px 7px */
 }
 
 kbd + span {
   font-weight: 500;
-  padding: .125em;
-} /* <kbd>cmd</kbd><span>+</span> */
+  margin: 0 -.125em;
+} /* <kbd><kbd>cmd</kbd><span>+</span><kbd>C</kbd></kbd> */
 
 mark {
   background-color: palegoldenrod;
