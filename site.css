@@ -219,6 +219,10 @@ mark {
   padding: .0625em;
 }
 
+mark > code {
+  padding: .384615385em .307692308em .153846154em; /* 5px 4px 2px */
+}
+
 p img {
   margin: 0 -1em;
   max-width: none;
