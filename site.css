@@ -91,28 +91,14 @@ article {
 /*** Basic structure and typography ***/
 
 html {
-  font: 300 16px/1.375 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font: 300 1rem/1.375 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 400 16px/1.375 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 400 1rem/1.375 'Helvetica Neue', Helvetica, Arial, sans-serif;
   height: 100%;
 }
 
-body {
-  
-}
-
-a,
-a:visited {
-  color: royalblue;
-  text-decoration: underline;
-}
-
-a:hover,
-a:focus {
-  color: darkorange;
-}
-
-a:focus {
-  outline: solid .125em darkorange;
+strong,
+b {
+  font-weight: 600;
 }
 
 h1 {
@@ -137,9 +123,38 @@ h5 {
   font: 300 1.125em/1.5 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-strong,
-b {
-  font: 500 1em 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@media screen and (-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 108dpi),
+(min-resolution: 1.5dppx) {
+
+  html {
+    font: 300 1rem/1.375 'ratio', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  strong,
+  b {
+    font-weight: 500;
+  }
+
+}
+
+body {
+  
+}
+
+a,
+a:visited {
+  color: royalblue;
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  color: darkorange;
+}
+
+a:focus {
+  outline: solid .125em darkorange;
 }
 
 ul {
