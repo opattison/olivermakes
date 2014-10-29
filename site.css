@@ -112,7 +112,7 @@ h2 {
 }
 
 h3 {
-  font: 300 1.375em/1.272727273 'ratio', 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
+  font: 300 1.375em/1.25 'ratio', 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
 }
 
 h4 {
@@ -173,7 +173,7 @@ blockquote {
 }
 
 hr {
-  border: 1px solid darkgray;
+  border: .0625em solid darkgray;
 }
 
 code,
@@ -192,7 +192,7 @@ samp {
 
 code,
 samp {
-  padding: .153846154em .307692308em; /* 2px 4px */
+  padding: .1875em .375em;
 }
 
 pre > code {
@@ -206,10 +206,10 @@ blockquote p > code {
 
 kbd > kbd {
   background-color: black;
-  border-radius: .285714286em; /* 4px */
+  border-radius: .25em;
   color: white;
-  font: 300 .875em/1.5 'Open Sans', 'ratio', sans-serif;
-  padding: .142857143em .5em; /* 2px 7px */
+  font: 300 .875em/1 'Open Sans', 'ratio', sans-serif;
+  padding: .125em .5em;
 }
 
 kbd > kbd + b {
@@ -223,7 +223,7 @@ mark {
 }
 
 mark > code {
-  padding: .384615385em .307692308em .153846154em; /* 5px 4px 2px */
+  padding: .375em .3125em .1875em;
 }
 
 article img {
