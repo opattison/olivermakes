@@ -236,3 +236,52 @@ article img {
 }
 
 /***! END Basic styles ***/
+
+/*** Media queries ***/
+
+@media screen and (min-width: 31em) {
+
+  article {
+    padding: 2em;
+  }
+
+  article img {
+    margin: 0 calc(-2em);
+    width: calc(100% + 4em);
+  }
+
+
+  blockquote,
+  .highlight {
+    margin: 1em -2em;
+    padding: 2em;
+  }
+
+}
+
+@media screen and (min-width: 40em) {
+
+  article {
+    margin: 0 auto;
+    width: 40em;
+  }
+
+}
+
+@media screen and (min-width: 48em) {
+
+  article {
+    font-size: 1.125em;
+  }
+
+}
+
+@media screen and (min-width: 60em) {
+
+  article {
+    font-size: 1.25em;
+  }
+
+}
+
+/***! END Media queries ***/
