@@ -387,4 +387,20 @@ article img {
 
 }
 
+@media screen and (min-width: 30em) and (max-height: 18em),
+screen and (min-width: 34em) and (max-height: 19em),
+screen and (min-width: 39em) and (max-height: 22em)
+screen and (min-width: 40em) and (max-height: 24em),
+screen and (min-width: 48em) and (max-height: 25em),
+screen and (min-width: 54em) and (max-height: 27em),
+screen and (min-width: 60em) and (max-height: 30em) {
+
+  .page img,
+  .photo img {
+    margin: 0;
+    width: 100%;
+  }
+
+}
+
 /***! END Media queries ***/
