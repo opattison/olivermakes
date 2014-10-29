@@ -103,12 +103,12 @@ b {
 
 h1 {
   font: 500 2em/1.25 'ratio', 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
-  letter-spacing: -.0625em; /* -2px */
+  letter-spacing: -.0625em;
 }
 
 h2 {
   font: 300 1.75em/1.25 'ratio', 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
-  letter-spacing: -.035714286em; /* -2px */
+  letter-spacing: -.0625em;
 }
 
 h3 {
@@ -116,7 +116,7 @@ h3 {
 }
 
 h4 {
-  font: 300 1.25em/1.4 'ratio', 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
+  font: 300 1.25em/1.375 'ratio', 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
 }
 
 h5 {
@@ -179,7 +179,7 @@ hr {
 code,
 pre,
 samp {
-  font: 400 .8125em/1.38461541 Menlo, monospace;
+  font: 400 .8125em/1.5 Menlo, monospace;
   white-space: pre-wrap;
 }
 
@@ -192,7 +192,8 @@ samp {
 
 code,
 samp {
-  padding: .1875em .375em;
+  margin: 0 -.0625em;
+  padding: .25em .375em;
 }
 
 pre > code {
@@ -208,8 +209,8 @@ kbd > kbd {
   background-color: black;
   border-radius: .25em;
   color: white;
-  font: 300 .875em/1 'Open Sans', 'ratio', sans-serif;
-  padding: .125em .5em;
+  font: 300 .8125em/1 'Open Sans', sans-serif;
+  padding: .0625em .5em;
 }
 
 kbd > kbd + b {
@@ -223,7 +224,7 @@ mark {
 }
 
 mark > code {
-  padding: .375em .3125em .1875em;
+  vertical-align: text-bottom; /* fix for alignment issue */
 }
 
 article img {
