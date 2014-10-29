@@ -91,8 +91,8 @@ article {
 /*** Basic structure and typography ***/
 
 html {
-  font: 400 16px/1.375 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
-  font: 400 1rem/1.375 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
+  font: 400 16px/1.4375 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
+  font: 400 1rem/1.4375 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
   height: 100%;
 }
 
@@ -311,10 +311,25 @@ article img {
 
 @media screen and (min-width: 40em) {
 
+  html {
+    font: 400 16px/1.5 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
+    font: 400 1rem/1.5 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
+  }
+
   .page,
   .photo {
     margin: 0 auto;
     width: 40em;
+  }
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 40em),
+(min-resolution: 108dpi) and (min-width: 40em),
+(min-resolution: 1.5dppx) and (min-width: 40em) {
+
+  html {
+    font: 300 1rem/1.5 'ratio', 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
   }
 
 }
