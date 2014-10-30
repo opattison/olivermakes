@@ -91,8 +91,8 @@ article {
 /*** Basic structure and typography ***/
 
 html {
-  font: 400 16px/1.4375 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
-  font: 400 1rem/1.4375 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
+  font: 400 16px/1.375 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
+  font: 300 1rem/1.375 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
   height: 100%;
 }
 
@@ -102,40 +102,25 @@ b {
 }
 
 h1 {
-  font: 500 2em/1.25 'ratio', 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
+  font: 500 2em/1.25 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
   letter-spacing: -.0625em;
 }
 
 h2 {
-  font: 300 1.75em/1.25 'ratio', 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
+  font: 300 1.75em/1.25 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
   letter-spacing: -.0625em;
 }
 
 h3 {
-  font: 300 1.375em/1.25 'ratio', 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
+  font: 300 1.375em/1.25 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
 }
 
 h4 {
-  font: 300 1.25em/1.375 'ratio', 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
+  font: 300 1.25em/1.375 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
 }
 
 h5 {
-  font: 300 1.125em/1.5 'ratio', 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio: 1.5),
-(min-resolution: 108dpi),
-(min-resolution: 1.5dppx) {
-
-  html {
-    font: 300 1rem/1.375 'ratio', 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
-  }
-
-  strong,
-  b {
-    font-weight: 500;
-  }
-
+  font: 300 1.125em/1.5 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
 }
 
 article {
@@ -179,7 +164,7 @@ hr {
 code,
 pre,
 samp {
-  font: 400 .8125em/1.5 Menlo, monospace;
+  font: 400 .875em/1.5 Menlo, Consolas, monospace;
   white-space: pre-wrap;
 }
 
@@ -214,7 +199,7 @@ kbd > kbd {
 }
 
 kbd > kbd + b {
-  font-family: 'ratio', 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
+  font-family: 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
   margin: 0 -.375em;
 } /* <kbd><kbd>cmd</kbd> <b class="kbd-plus">+</b> <kbd>C</kbd></kbd> */
 
@@ -312,24 +297,13 @@ article img {
 @media screen and (min-width: 40em) {
 
   html {
-    font: 400 16px/1.5 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
-    font: 400 1rem/1.5 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
+    line-height: 1.5;
   }
 
   .page,
   .photo {
     margin: 0 auto;
     width: 40em;
-  }
-
-}
-
-@media screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 40em),
-(min-resolution: 108dpi) and (min-width: 40em),
-(min-resolution: 1.5dppx) and (min-width: 40em) {
-
-  html {
-    font: 300 1rem/1.5 'ratio', 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
   }
 
 }
@@ -345,16 +319,28 @@ article img {
 
 @media screen and (min-width: 60em) {
 
+  html {
+    line-height: 1.5;
+  }
+
   .page,
   .photo {
     font-size: 1.25em;
   }
 
+  .page,
   .photo {
     padding: 2em 4em;
     width: 45em;
   }
 
+  blockquote,
+  .highlight {
+    margin: 1em -4em;
+    padding: 2em 4em;
+  }
+
+  .page img,
   .photo img {
     margin: 0 calc(-4em);
     width: calc(100% + 8em);
@@ -364,8 +350,15 @@ article img {
 
 @media screen and (min-width: 80em) {
 
-  .page,
   .photo {
+    font-size: 1.5em;
+  }
+
+}
+
+@media screen and (min-width: 95em) {
+
+  .page {
     font-size: 1.5em;
   }
 
@@ -373,7 +366,7 @@ article img {
 
 @media screen and (min-width: 100em) {
 
-  .photo {
+  .page {
     font-size: 1.75em;
   }
 
