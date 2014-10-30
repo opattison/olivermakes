@@ -91,14 +91,14 @@ article {
 /*** Basic structure and typography ***/
 
 html {
-  font: 400 16px/1.375 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
-  font: 300 1rem/1.375 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
+  font: 400 16px/1.4375 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
+  font: 400 1rem/1.4375 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
   height: 100%;
 }
 
 strong,
 b {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h1 {
@@ -107,7 +107,7 @@ h1 {
 }
 
 h2 {
-  font: 300 1.75em/1.25 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
+  font: 400 1.75em/1.25 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
   letter-spacing: -.0625em;
 }
 
@@ -233,6 +233,21 @@ article img {
 
 /*** Media queries ***/
 
+@media screen and (-webkit-min-device-pixel-ratio: 1.5),
+screen and (min-resolution: 108dpi),
+screen and (min-resolution: 1.5dppx) {
+
+  html {
+    font: 300 1rem/1.4375 'ratio', 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
+  }
+
+  strong,
+  b {
+    font-weight: 400;
+  }
+
+}
+
 @media screen and (min-width: 30em) {
 
   article {
@@ -295,10 +310,6 @@ article img {
 }
 
 @media screen and (min-width: 40em) {
-
-  html {
-    line-height: 1.5;
-  }
 
   .page,
   .photo {
@@ -365,6 +376,14 @@ article img {
 }
 
 @media screen and (min-width: 100em) {
+
+  .photo {
+    font-size: 1.75em;
+  }
+
+}
+
+@media screen and (min-width: 115em) {
 
   .page {
     font-size: 1.75em;
