@@ -10,3 +10,5 @@ scripts_url: http://static.olivermak.es/scripts
 
 markdown: kramdown
 permalink: /:year/:month/:title/
+
+exclude: [s3_website.yml, Rakefile, _images]
