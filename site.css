@@ -91,51 +91,36 @@ article {
 /*** Basic structure and typography ***/
 
 html {
-  font: 400 16px/1.4375 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
-  font: 400 1rem/1.4375 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
+  font: 400 16px/1.4375 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
+  font: 400 1rem/1.4375 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
   height: 100%;
 }
 
 strong,
 b {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h1 {
-  font: 500 2em/1.25 'ratio', 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
+  font: 500 2em/1.25 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
   letter-spacing: -.0625em;
 }
 
 h2 {
-  font: 300 1.75em/1.25 'ratio', 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
+  font: 400 1.75em/1.25 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
   letter-spacing: -.0625em;
 }
 
 h3 {
-  font: 300 1.375em/1.25 'ratio', 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
+  font: 300 1.375em/1.25 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
 }
 
 h4 {
-  font: 300 1.25em/1.375 'ratio', 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
+  font: 300 1.25em/1.375 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
 }
 
 h5 {
-  font: 300 1.125em/1.5 'ratio', 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio: 1.5),
-(min-resolution: 108dpi),
-(min-resolution: 1.5dppx) {
-
-  html {
-    font: 300 1rem/1.375 'ratio', 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
-  }
-
-  strong,
-  b {
-    font-weight: 500;
-  }
-
+  font: 300 1.125em/1.5 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
 }
 
 article {
@@ -179,7 +164,7 @@ hr {
 code,
 pre,
 samp {
-  font: 400 .8125em/1.5 Menlo, monospace;
+  font: 400 .875em/1.5 Menlo, Consolas, monospace;
   white-space: pre-wrap;
 }
 
@@ -214,7 +199,7 @@ kbd > kbd {
 }
 
 kbd > kbd + b {
-  font-family: 'ratio', 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
+  font-family: 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
   margin: 0 -.375em;
 } /* <kbd><kbd>cmd</kbd> <b class="kbd-plus">+</b> <kbd>C</kbd></kbd> */
 
@@ -247,6 +232,39 @@ article img {
 /***! END Image styles ***/
 
 /*** Media queries ***/
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.5),
+screen and (min-resolution: 108dpi),
+screen and (min-resolution: 1.5dppx) {
+
+  html {
+    font: 300 1rem/1.4375 'ratio', 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
+  }
+
+  strong,
+  b {
+    font-weight: 400;
+  }
+
+}
+
+@media screen and (min-width: 22.5em) {
+
+  .page,
+  .photo {
+    font-size: 1.0625em;
+  }
+
+}
+
+@media screen and (min-width: 28em) {
+
+  .page,
+  .photo {
+    font-size: 1.125em;
+  }
+
+}
 
 @media screen and (min-width: 30em) {
 
@@ -288,73 +306,45 @@ article img {
 
 }
 
-@media screen and (min-width: 36em) {
-
-  .page,
-  .photo {
-    padding: 2em 3em;
-  }
-
-  blockquote,
-  .highlight {
-    margin: 1em -3em;
-    padding: 1.5em 3em;
-  }
-
-  .page img,
-  .photo img {
-    margin: 0 calc(-3em);
-    width: calc(100% + 6em);
-  }
-
-}
-
 @media screen and (min-width: 40em) {
-
-  html {
-    font: 400 16px/1.5 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
-    font: 400 1rem/1.5 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
-  }
-
-  .page,
-  .photo {
-    margin: 0 auto;
-    width: 40em;
-  }
-
-}
-
-@media screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 40em),
-(min-resolution: 108dpi) and (min-width: 40em),
-(min-resolution: 1.5dppx) and (min-width: 40em) {
-
-  html {
-    font: 300 1rem/1.5 'ratio', 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
-  }
-
-}
-
-@media screen and (min-width: 48em) {
-
-  .page,
-  .photo {
-    font-size: 1.125em;
-  }
-
-}
-
-@media screen and (min-width: 60em) {
 
   .page,
   .photo {
     font-size: 1.25em;
   }
 
+
+}
+
+@media screen and (min-width: 45em) {
+
+  .page,
+  .photo {
+    margin: 0 auto;
+    width: 36em;
+  }
+
+}
+
+@media screen and (min-width: 60em) {
+
+  html {
+    line-height: 1.5;
+  }
+
+  .page,
   .photo {
     padding: 2em 4em;
     width: 45em;
   }
 
+  blockquote,
+  .highlight {
+    margin: 1em -4em;
+    padding: 2em 4em;
+  }
+
+  .page img,
   .photo img {
     margin: 0 calc(-4em);
     width: calc(100% + 8em);
@@ -364,8 +354,31 @@ article img {
 
 @media screen and (min-width: 80em) {
 
-  .page,
   .photo {
+    font-size: 1.5em;
+  }
+
+  .page {
+    padding: 4em 8em;
+    width: 56.5em;
+  }
+
+  blockquote,
+  .highlight {
+    margin: 1em -8em;
+    padding: 2em 8em;
+  }
+
+  .page img {
+    margin: 0 calc(-8em);
+    width: calc(100% + 16em);
+  }
+
+}
+
+@media screen and (min-width: 95em) {
+
+  .page {
     font-size: 1.5em;
   }
 
@@ -374,6 +387,14 @@ article img {
 @media screen and (min-width: 100em) {
 
   .photo {
+    font-size: 1.75em;
+  }
+
+}
+
+@media screen and (min-width: 115em) {
+
+  .page {
     font-size: 1.75em;
   }
 
