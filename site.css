@@ -248,7 +248,16 @@ screen and (min-resolution: 1.5dppx) {
 
 }
 
-@media screen and (min-width: 22em) {
+@media screen and (min-width: 22.5em) {
+
+  .page,
+  .photo {
+    font-size: 1.0625em;
+  }
+
+}
+
+@media screen and (min-width: 28em) {
 
   .page,
   .photo {
@@ -351,7 +360,7 @@ screen and (min-resolution: 1.5dppx) {
 
   .page {
     padding: 4em 8em;
-    width: 54em;
+    width: 56.5em;
   }
 
   blockquote,
