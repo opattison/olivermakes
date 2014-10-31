@@ -366,19 +366,19 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .page {
-    padding: 4em 7.5em;
-    width: 52.5em;
+    padding: 4em 8em;
+    width: 54em;
   }
 
   blockquote,
   .highlight {
-    margin: 1em -7.5em;
-    padding: 2em 7.5em;
+    margin: 1em -8em;
+    padding: 2em 8em;
   }
 
   .page img {
-    margin: 0 calc(-7.5em);
-    width: calc(100% + 15em);
+    margin: 0 calc(-8em);
+    width: calc(100% + 16em);
   }
 
 }
