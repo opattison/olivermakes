@@ -202,7 +202,7 @@ hr {
 code,
 pre,
 samp {
-  font: 400 .875em/1.5 Menlo, Consolas, monospace;
+  font: 400 .8125em/1.4375 Menlo, Consolas, monospace;
   white-space: pre-wrap;
 }
 
@@ -213,7 +213,7 @@ samp {
   background-color: gainsboro;
 }
 
-code,
+p > code,
 samp {
   border-radius: .125em;
   margin: 0 -.0625em;
