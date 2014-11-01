@@ -15,7 +15,7 @@ date: 2014-10-31 18:25
 
 <h5>Level five heading</h5>
 
-<p>This is a paragraph of text. Some of the text may require <em>stress</em> emphasis and some it may be important enough to require something <strong>stronger</strong>. Occasionally <q>quoted text</q> may be found within a paragraph – and of course <a href="#">a link</a> may appear at any point in the text. Just as the plume of smoke rose and died so too will the glow of gold. Elevated status moves us now through the darkened halls of the quick. This is <mark>highlighted text</mark> that uses the <code>&lt;mark&gt;</code> element.</p>
+<p>Some paragraph text may require <em>stress</em> emphasis and some it may be important enough to require something <strong>stronger</strong>. <q>Just as the plume of smoke rose and died so too will the glow of gold. Elevated status moves us now through the darkened halls of the quick.</q> This is <mark>highlighted text</mark> that uses the <code>&lt;mark&gt;</code> element. <dfn>H<sub>2</sub>O</dfn> is the chemical formula for a water molecule, indicating that it contains one oxygen and two hydrogen atoms. Oxygen is the 8<sup>th</sup> element on the <a href="https://en.wikipedia.org/wiki/Periodic_table">periodic table of elements</a>.</p>
 
 <blockquote><p>This text is quoted. A block of quoted text like this is particularly useful when presented as a pull-quote within an article of text.</p></blockquote>
 
@@ -31,3 +31,6 @@ date: 2014-10-31 18:25
 <li>Yet another item in this list of items</li>
 </ul>
 
+{% highlight html %}
+<p>Some paragraph text may require <em>stress</em> emphasis and some it may be important enough to require something <strong>stronger</strong>. <q>Just as the plume of smoke rose and died so too will the glow of gold. Elevated status moves us now through the darkened halls of the quick.</q> This is <mark>highlighted text</mark> that uses the <code>&lt;mark&gt;</code> element. <dfn>H<sub>2</sub>O</dfn> is the chemical formula for a water molecule, indicating that it contains one oxygen and two hydrogen atoms. Oxygen is the 8<sup>th</sup> element on the <a href="https://en.wikipedia.org/wiki/Periodic_table">periodic table of elements</a>.</p>
+{% endhighlight %}
