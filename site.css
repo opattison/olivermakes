@@ -62,10 +62,41 @@ body {
   overflow-wrap: break-word;
 }
 
-dfn,
 em,
 i {
   font-style: italic;
+}
+
+dfn {
+  font-style: normal;
+  font-weight: bolder;
+}
+
+ul,
+ol {
+  list-style-position: inside;
+}
+
+q::before {
+  content: '“'
+}
+
+q::after {
+  content: '”'
+}
+
+sub,
+sup {
+  font-size: .875em;
+  line-height: 1;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+sup {
+  vertical-align: text-top;
 }
 
 /***! END Normalization ***/
@@ -127,6 +158,14 @@ article {
   background-color: whitesmoke;
 }
 
+article:last-child > *:last-child::after {
+  content: '⊙';
+  color: silver;
+  display: block;
+  margin: 1.375em auto;
+  text-align: center;
+}
+
 a,
 a:visited {
   color: royalblue;
@@ -143,7 +182,6 @@ a:focus {
 }
 
 ul {
-  list-style-position: inside;
   list-style-type: square;
 }
 
@@ -164,7 +202,7 @@ hr {
 code,
 pre,
 samp {
-  font: 400 .875em/1.5 Menlo, Consolas, monospace;
+  font: 400 .8125em/1.4375 Menlo, Consolas, monospace;
   white-space: pre-wrap;
 }
 
@@ -175,10 +213,11 @@ samp {
   background-color: gainsboro;
 }
 
-code,
+p > code,
 samp {
+  border-radius: .125em;
   margin: 0 -.0625em;
-  padding: .25em .375em;
+  padding: .1875em .375em;
 }
 
 pre > code {
@@ -330,6 +369,11 @@ screen and (min-resolution: 1.5dppx) {
 
   html {
     line-height: 1.5;
+  }
+
+  ul,
+  ol {
+    list-style-position: outside;
   }
 
   .page,
