@@ -158,6 +158,10 @@ article {
   background-color: whitesmoke;
 }
 
+article:last-child > *:last-child::after {
+  content: '⊙'
+}
+
 a,
 a:visited {
   color: royalblue;
@@ -361,6 +365,11 @@ screen and (min-resolution: 1.5dppx) {
 
   html {
     line-height: 1.5;
+  }
+
+  ul,
+  ol {
+    list-style-position: outside;
   }
 
   .page,
