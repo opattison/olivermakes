@@ -159,7 +159,11 @@ article {
 }
 
 article:last-child > *:last-child::after {
-  content: '⊙'
+  content: '⊙';
+  color: silver;
+  display: block;
+  margin: 1.375em auto;
+  text-align: center;
 }
 
 a,
