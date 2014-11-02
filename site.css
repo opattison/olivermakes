@@ -245,12 +245,21 @@ mark > code {
 
 /*** Page layouts ***/
 
-.singel,
+.single,
 .dubbel {
+  background-color: white;
+}
+
+.singel article,
+.dubbel article {
   background-color: whitesmoke;
 }
 
 .photo {
+  background-color: #444;
+}
+
+.photo article {
   background-color: dimgray;
   color: white;
 }
