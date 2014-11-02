@@ -450,13 +450,13 @@ screen and (min-resolution: 1.5dppx) {
     margin: 0 auto;
     overflow: hidden;
     padding: 0;
-    width: 64em;
+    width: 67.5em;
   }
 
   .dubbel .flow,
   .dubbel .feature {
     clear: both;
-    padding: 0 9.5rem;
+    padding: 0 11.25rem;
   }
 
   .dubbel .flow,
@@ -465,7 +465,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .dubbel .flow-side {
-    padding: 0 4.25em 1em 9.5em;
+    padding: 0 4.25em 1em 10em;
     float: left;
     margin-top: 1.375rem;
     width: 62.5%;
@@ -476,9 +476,9 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .dubbel .flow-side img {
-    margin: 0 -9.5em;
+    margin: 0 -10em;
     max-width: none;
-    width: 31.25em;
+    width: calc(100em / 3);
   }
 
   .dubbel .ancillary + .flow-side img {
