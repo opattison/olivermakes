@@ -524,6 +524,10 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 1.5em;
   }
 
+  .dubbel {
+    font-size: 1.2em;
+  }
+
 }
 
 @media screen and (min-width: 100em) {
