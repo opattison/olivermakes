@@ -333,7 +333,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   blockquote,
-  .highlight.
+  .highlight,
   .ancillary {
     margin: 1em -2em;
     padding: 1em 2em;
@@ -357,6 +357,11 @@ screen and (min-resolution: 1.5dppx) {
   article img {
     margin: 0 calc(-2.5em);
     width: calc(100% + 5em);
+  }  
+
+  .ancillary img {
+    margin: 0 auto;
+    max-width: 100%;
   }
 
 }
@@ -366,7 +371,6 @@ screen and (min-resolution: 1.5dppx) {
   article {
     font-size: 1.25em;
   }
-
 
 }
 
@@ -445,11 +449,6 @@ screen and (min-resolution: 1.5dppx) {
     margin: 0;
     padding: 2.5rem 2.5rem;
     width: 25rem;
-  }
-
-  .ancillary img {
-    margin: 0 auto;
-    max-width: 100%
   }
 
 }
