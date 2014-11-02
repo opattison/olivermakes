@@ -453,39 +453,39 @@ screen and (min-resolution: 1.5dppx) {
     width: 64em;
   }
 
-  .flow,
-  .feature {
+  .dubbel .flow,
+  .dubbel .feature {
     clear: both;
     padding: 0 9.5rem;
   }
 
-  .flow,
-  .flow-side {
+  .dubbel .flow,
+  .dubbel .flow-side {
     font-size: 1.125em;
   }
 
-  .flow-side {
+  .dubbel .flow-side {
     padding: 0 4.25em 1em 9.5em;
     float: left;
     margin-top: 1.375rem;
     width: 62.5%;
   }
 
-  .ancillary + .flow-side {
+  .dubbel .ancillary + .flow-side {
     padding: 0 9.5em 1em 4em;
   }
 
-  .flow-side img {
+  .dubbel .flow-side img {
     margin: 0 -9.5em;
     max-width: none;
     width: 31.25em;
   }
 
-  .ancillary + .flow-side img {
+  .dubbel .ancillary + .flow-side img {
     margin: 0;
   }
 
-  .ancillary {
+  .dubbel .ancillary {
     float: left;
     margin: 1.375rem 0;
     padding: 2em 2em;
