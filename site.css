@@ -154,6 +154,11 @@ h5 {
   font: 300 1.125em/1.5 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
 }
 
+.feature {
+  color: steelblue;
+  font-size: 1.25em;
+}
+
 article:last-child > *:last-child::after {
   content: '⊙';
   color: silver;
@@ -339,6 +344,11 @@ screen and (min-resolution: 1.5dppx) {
     padding: 1em 2em;
   }
 
+  .ancillary img {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
 }
 
 @media screen and (min-width: 34em) {
@@ -357,11 +367,6 @@ screen and (min-resolution: 1.5dppx) {
   article img {
     margin: 0 calc(-2.5em);
     width: calc(100% + 5em);
-  }  
-
-  .ancillary img {
-    margin: 0 auto;
-    max-width: 100%;
   }
 
 }
@@ -372,6 +377,11 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 1.25em;
   }
 
+  .ancillary {
+    margin: 1em -2.5em;
+    padding: 1.25em 5em;
+  }
+
 }
 
 @media screen and (min-width: 45em) {
@@ -379,6 +389,10 @@ screen and (min-resolution: 1.5dppx) {
   article {
     margin: 0 auto;
     width: 36em;
+  }
+
+  .ancillary {
+    padding: 1.25em 6em;
   }
 
 }
@@ -398,7 +412,7 @@ screen and (min-resolution: 1.5dppx) {
     list-style-position: outside;
   }
 
-  .singel article {
+  article {
     padding: 2em 4em;
     width: 45em;
   }
@@ -409,8 +423,21 @@ screen and (min-resolution: 1.5dppx) {
     padding: 2em 4em;
   }
 
-  .singel img {
+  .ancillary {
+    margin: 1em -4em;
+    padding: 2em 10.5em;
+  }
+
+  article img {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .photo img,
+  .singel img[srcset] {
     margin: 0 calc(-4em);
+    max-width: none;
     width: calc(100% + 8em);
   }
 
@@ -421,32 +448,47 @@ screen and (min-resolution: 1.5dppx) {
   .dubbel article {
     font-size: 1rem;
     margin: 0 auto;
-    overflow: auto;
+    overflow: hidden;
     padding: 0;
     width: 64rem;
   }
 
-  .flow {
+  .flow,
+  .feature {
+    clear: both;
+    padding: 0 8rem;
+  }
+
+  .flow,
+  .flow-side {
     font-size: 1.125rem;
-    padding: 1rem 4rem 1rem 8rem;
+  }
+
+  .flow-side {
+    padding: 0 4rem 1rem 8rem;
     float: left;
+    margin-top: 1.375rem;
     width: 39rem;
   }
 
-  .flow img {
-    margin: 0 calc(-8em);
-    width: calc(100% + 8em);
+  .ancillary + .flow-side {
+    padding: 0 8rem 1rem 4rem;
   }
 
-  .feature {
-    clear: both;
-    font-size: 1.25rem;
-    padding: 1.5rem 8rem;
+  .flow-side img {
+    font-size: 1rem;
+    margin: 0 -8em;
+    max-width: none;
+    width: 35em;
+  }
+
+  .ancillary + .flow-side img {
+    margin: 0;
   }
 
   .ancillary {
     float: left;
-    margin: 0;
+    margin: 1.375rem 0;
     padding: 2.5rem 2.5rem;
     width: 25rem;
   }
@@ -470,7 +512,7 @@ screen and (min-resolution: 1.5dppx) {
     padding: 2em 8em;
   }
 
-  .singel img {
+  .singel img[srcset] {
     margin: 0 calc(-8em);
     width: calc(100% + 16em);
   }
@@ -524,8 +566,7 @@ screen and (min-width: 63em) and (max-height: 28em),
 screen and (min-width: 69em) and (max-height: 29em),
 screen and (min-width: 75em) and (max-height: 30em) {
 
-  .singel img,
-  .photo img {
+  article img {
     margin: 0 auto;
     max-width: 100%;
     width: 100%;
