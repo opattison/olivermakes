@@ -446,40 +446,39 @@ screen and (min-resolution: 1.5dppx) {
 @media screen and (min-width: 70em) {
 
   .dubbel article {
-    font-size: 1rem;
+    font-size: 1em;
     margin: 0 auto;
     overflow: hidden;
     padding: 0;
-    width: 64rem;
+    width: 64em;
   }
 
   .flow,
   .feature {
     clear: both;
-    padding: 0 8rem;
+    padding: 0 9.5rem;
   }
 
   .flow,
   .flow-side {
-    font-size: 1.125rem;
+    font-size: 1.125em;
   }
 
   .flow-side {
-    padding: 0 4rem 1rem 8rem;
+    padding: 0 4.25em 1em 9.5em;
     float: left;
     margin-top: 1.375rem;
-    width: 39rem;
+    width: 62.5%;
   }
 
   .ancillary + .flow-side {
-    padding: 0 8rem 1rem 4rem;
+    padding: 0 9.5em 1em 4em;
   }
 
   .flow-side img {
-    font-size: 1rem;
-    margin: 0 -8em;
+    margin: 0 -9.5em;
     max-width: none;
-    width: 35em;
+    width: 31.25em;
   }
 
   .ancillary + .flow-side img {
@@ -489,8 +488,8 @@ screen and (min-resolution: 1.5dppx) {
   .ancillary {
     float: left;
     margin: 1.375rem 0;
-    padding: 2.5rem 2.5rem;
-    width: 25rem;
+    padding: 2em 2em;
+    width: 37.5%;
   }
 
 }
