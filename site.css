@@ -154,10 +154,6 @@ h5 {
   font: 300 1.125em/1.5 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
 }
 
-article {
-  background-color: whitesmoke;
-}
-
 article:last-child > *:last-child::after {
   content: '⊙';
   color: silver;
@@ -248,6 +244,11 @@ mark > code {
 /***! END Basic styles ***/
 
 /*** Page layouts ***/
+
+.singel,
+.dubbel {
+  background-color: whitesmoke;
+}
 
 .photo {
   background-color: dimgray;
@@ -384,7 +385,7 @@ screen and (min-resolution: 1.5dppx) {
     list-style-position: outside;
   }
 
-  .singel {
+  .singel article {
     padding: 2em 4em;
     width: 45em;
   }
@@ -404,7 +405,7 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 64em) {
 
-  .dubbel {
+  .dubbel article {
     font-size: 1rem;
     margin: 0 auto;
     overflow: auto;
@@ -446,11 +447,11 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 80em) {
 
-  .photo {
+  .photo article {
     font-size: 1.5em;
   }
 
-  .singel {
+  .singel article {
     padding: 4em 8em;
     width: 56.5em;
   }
@@ -470,7 +471,7 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 95em) {
 
-  .singel {
+  .singel article {
     font-size: 1.5em;
   }
 
@@ -478,7 +479,7 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 100em) {
 
-  .photo {
+  .photo article {
     font-size: 1.75em;
   }
 
@@ -486,7 +487,7 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 115em) {
 
-  .singel {
+  .singel article {
     font-size: 1.75em;
   }
 
@@ -494,7 +495,7 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 120em) {
 
-  .photo {
+  .photo article {
     font-size: 2em;
   }
 
