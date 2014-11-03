@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: singel
 title: 'patterns'
 date: 2014-10-31 18:25
 

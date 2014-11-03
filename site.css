@@ -154,8 +154,9 @@ h5 {
   font: 300 1.125em/1.5 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
 }
 
-article {
-  background-color: whitesmoke;
+.feature {
+  color: steelblue;
+  font-size: 1.25em;
 }
 
 article:last-child > *:last-child::after {
@@ -183,12 +184,6 @@ a:focus {
 
 ul {
   list-style-type: square;
-}
-
-blockquote,
-.highlight {
-  margin: 1em -1em;
-  padding: 1em;
 }
 
 blockquote {
@@ -253,19 +248,47 @@ mark > code {
 
 /***! END Basic styles ***/
 
-/*** Image styles ***/
+/*** Page layouts ***/
 
-article img {
-  margin: 0; /* fallback in case no calc() support */
-  margin: 0 calc(-1em);
-  max-width: none;
-  width: 100%; /* fallback in case no calc() support */
-  width: calc(100% + 2em);
+.single,
+.dubbel {
+  background-color: white;
+}
+
+.singel article,
+.dubbel article {
+  background-color: whitesmoke;
 }
 
 .photo {
+  background-color: #444;
+}
+
+.photo article {
   background-color: dimgray;
   color: white;
+}
+
+blockquote,
+.highlight,
+.ancillary {
+  margin: 1em -1em;
+  padding: 1em;
+}
+
+.ancillary {
+  background-color: dimgray;
+  color: white;
+}
+
+/***! END Page layouts ***/
+
+/*** Image styles ***/
+
+article img {
+  margin: 0 calc(-1em);
+  max-width: none;
+  width: calc(100% + 2em);
 }
 
 /***! END Image styles ***/
@@ -289,8 +312,7 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 22.5em) {
 
-  .page,
-  .photo {
+  article {
     font-size: 1.0625em;
   }
 
@@ -298,8 +320,7 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 28em) {
 
-  .page,
-  .photo {
+  article {
     font-size: 1.125em;
   }
 
@@ -317,28 +338,33 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   blockquote,
-  .highlight {
+  .highlight,
+  .ancillary {
     margin: 1em -2em;
     padding: 1em 2em;
+  }
+
+  .ancillary img {
+    margin: 0 auto;
+    max-width: 100%;
   }
 
 }
 
 @media screen and (min-width: 34em) {
 
-  .page,
-  .photo {
+  article {
     padding: 2em 2.5em;
   }
 
   blockquote,
-  .highlight {
+  .highlight,
+  .ancillary {
     margin: 1em -2.5em;
     padding: 1.25em 2.5em;
   }
 
-  .page img,
-  .photo img {
+  article img {
     margin: 0 calc(-2.5em);
     width: calc(100% + 5em);
   }
@@ -347,37 +373,46 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 40em) {
 
-  .page,
-  .photo {
+  article {
     font-size: 1.25em;
   }
 
+  .ancillary {
+    margin: 1em -2.5em;
+    padding: 1.25em 5em;
+  }
 
 }
 
 @media screen and (min-width: 45em) {
 
-  .page,
-  .photo {
+  article {
     margin: 0 auto;
     width: 36em;
+  }
+
+  .ancillary {
+    padding: 1.25em 6em;
+  }
+
+}
+
+@media screen and (min-width: 50em) {
+
+  html {
+    line-height: 1.5;
   }
 
 }
 
 @media screen and (min-width: 60em) {
 
-  html {
-    line-height: 1.5;
-  }
-
   ul,
   ol {
     list-style-position: outside;
   }
 
-  .page,
-  .photo {
+  article {
     padding: 2em 4em;
     width: 45em;
   }
@@ -388,21 +423,84 @@ screen and (min-resolution: 1.5dppx) {
     padding: 2em 4em;
   }
 
-  .page img,
-  .photo img {
+  .ancillary {
+    margin: 1em -4em;
+    padding: 2em 10.5em;
+  }
+
+  article img {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .photo img,
+  .singel img[srcset] {
     margin: 0 calc(-4em);
+    max-width: none;
     width: calc(100% + 8em);
+  }
+
+}
+
+@media screen and (min-width: 70em) {
+
+  .dubbel article {
+    font-size: 1em;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    width: 67.5em;
+  }
+
+  .dubbel .flow,
+  .dubbel .feature {
+    clear: both;
+    padding: 0 11.25rem;
+  }
+
+  .dubbel .flow,
+  .dubbel .flow-side {
+    font-size: 1.125em;
+  }
+
+  .dubbel .flow-side {
+    padding: 0 4.25em 1em 10em;
+    float: left;
+    margin-top: 1.375rem;
+    width: 62.5%;
+  }
+
+  .dubbel .ancillary + .flow-side {
+    padding: 0 9.5em 1em 4em;
+  }
+
+  .dubbel .flow-side img {
+    margin: 0 -10em;
+    max-width: none;
+    width: calc(100em / 3);
+  }
+
+  .dubbel .ancillary + .flow-side img {
+    margin: 0;
+  }
+
+  .dubbel .ancillary {
+    float: left;
+    margin: 1.375rem 0;
+    padding: 2em 2em;
+    width: 37.5%;
   }
 
 }
 
 @media screen and (min-width: 80em) {
 
-  .photo {
+  .photo article {
     font-size: 1.5em;
   }
 
-  .page {
+  .singel article {
     padding: 4em 8em;
     width: 56.5em;
   }
@@ -413,7 +511,7 @@ screen and (min-resolution: 1.5dppx) {
     padding: 2em 8em;
   }
 
-  .page img {
+  .singel img[srcset] {
     margin: 0 calc(-8em);
     width: calc(100% + 16em);
   }
@@ -422,15 +520,19 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 95em) {
 
-  .page {
+  .singel article {
     font-size: 1.5em;
+  }
+
+  .dubbel {
+    font-size: 1.2em;
   }
 
 }
 
 @media screen and (min-width: 100em) {
 
-  .photo {
+  .photo article {
     font-size: 1.75em;
   }
 
@@ -438,7 +540,7 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 115em) {
 
-  .page {
+  .singel article {
     font-size: 1.75em;
   }
 
@@ -446,7 +548,7 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 120em) {
 
-  .photo {
+  .photo article {
     font-size: 2em;
   }
 
@@ -467,9 +569,9 @@ screen and (min-width: 63em) and (max-height: 28em),
 screen and (min-width: 69em) and (max-height: 29em),
 screen and (min-width: 75em) and (max-height: 30em) {
 
-  .page img,
-  .photo img {
-    margin: 0;
+  article img {
+    margin: 0 auto;
+    max-width: 100%;
     width: 100%;
   }
 
