@@ -8,6 +8,16 @@ url: http://olivermak.es
 image_url: http://static.olivermak.es/images
 scripts_url: http://static.olivermak.es/scripts
 
+photo_sizes: '(min-width: 120em) 75vw, (min-width: 100em) 78.75vw, (min-width: 80em) 84.375vw, (min-width: 60em) 93.75vw, 100vw'
+srcset:
+  - 480
+  - 640
+  - 720
+  - 900
+  - 1080
+  - 1260
+  - 1440
+
 markdown: kramdown
 permalink: /:year/:month/:title/
 
