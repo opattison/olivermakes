@@ -492,6 +492,12 @@ screen and (min-resolution: 1.5dppx) {
     width: 37.5%;
   }
 
+  .dubbel blockquote,
+  .dubbel .highlight {
+    margin: 1.5em -10em;
+    padding: 1.5em 10em;
+  }
+
 }
 
 @media screen and (min-width: 80em) {
