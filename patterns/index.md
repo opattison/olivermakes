@@ -3,7 +3,7 @@ title: 'patterns'
 layout: singel
 date: 2014-10-31 18:25
 image:
-  - src: 'image.png'
+  - src: 'image.gif'
     caption: 'This is a caption pulled from the yaml front matter. It describes the image in the same `figure` element.'
     alt: 'A placeholder image'
 
@@ -55,3 +55,5 @@ image:
   src="{{ site.image_url }}/{{ page.image[0].src }}" 
   alt="{{ page.image[0].alt }}"
 >
+
+<object type="image/svg+xml" data="{{ site.image_url }}/logo.svg"><img src="{{ site.image_url }}/logo-fallback.png"></object>
