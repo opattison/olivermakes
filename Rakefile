@@ -56,7 +56,7 @@ end
 ## "rake load" to load images in the local image directory to the server
 desc "deploy Jekyll images to remote server via s3_website"
 task :load do
-    system "s3_website push --site #{local_images} --config_dir #{local_images}"
+    system "s3_website push --site #{local_images} --config-dir #{local_images}"
     puts "## Deployed images to S3 ##"
 end
 
