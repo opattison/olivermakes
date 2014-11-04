@@ -1,7 +1,11 @@
 ---
-layout: singel
 title: 'patterns'
+layout: singel
 date: 2014-10-31 18:25
+image:
+  - src: 'image.png'
+    caption: 'This is a caption pulled from the yaml front matter. It describes the image in the same `figure` element.'
+    alt: 'A placeholder image'
 
 ---
 
@@ -36,3 +40,18 @@ date: 2014-10-31 18:25
 {% endhighlight %}
 
 <div class="feature"><p>This is “feature” text, used for emphasis and attention in storytelling.</p></div>
+
+<figure class="full"> 
+  <img
+    src="{{ site.image_url }}/{{ page.image[0].src }}" 
+    sizes="{{ site.photo_sizes }}"  
+    srcset="{% for srcset in site.srcset %}{{ site.image_url }}/{{ site.srcset[forloop.index0] }}/{{ page.image[0].src }} {{ site.srcset[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+    alt="{{ page.image[0].alt }}"
+  >
+  <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
+</figure>
+
+<img
+  src="{{ site.image_url }}/{{ page.image[0].src }}" 
+  alt="{{ page.image[0].alt }}"
+>

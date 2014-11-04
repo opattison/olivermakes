@@ -1,4 +1,4 @@
-/*** Normalization ***/
+/*** Normalization *****************************/
 /* following adapted from HTML5 Reset */
 * {
   background: transparent;
@@ -102,8 +102,9 @@ sup {
 /***! END Normalization ***/
 
 
-/*** Axiomatic styles via Heydon Pickering
-source: http://alistapart.com/article/axiomatic-css-and-lobotomized-owls ***/
+/*** Axiomatic styles **************************/
+/* via Heydon Pickering
+source: http://alistapart.com/article/axiomatic-css-and-lobotomized-owls */
 
 * + * {
   margin-top: 1.375em;
@@ -119,7 +120,7 @@ article {
 
 /***! END Axiomatic styles ***/
 
-/*** Basic structure and typography ***/
+/*** Basic structure and typography ************/
 
 html {
   font: 400 16px/1.4375 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
@@ -248,7 +249,7 @@ mark > code {
 
 /***! END Basic styles ***/
 
-/*** Page layouts ***/
+/*** Page layouts ******************************/
 
 .single,
 .dubbel {
@@ -271,8 +272,10 @@ mark > code {
 
 blockquote,
 .highlight,
-.ancillary {
-  margin: 1em -1em;
+.ancillary,
+.full figcaption {
+  margin-left: -1em;
+  margin-right: -1em;
   padding: 1em;
 }
 
@@ -283,7 +286,7 @@ blockquote,
 
 /***! END Page layouts ***/
 
-/*** Image styles ***/
+/*** Image styles ******************************/
 
 article img {
   margin: 0 calc(-1em);
@@ -291,9 +294,19 @@ article img {
   width: calc(100% + 2em);
 }
 
+.full figcaption {
+  background-color: lightgray;
+  display: block;
+  margin-top: -.5rem;
+}
+
+.full figcaption p {
+  margin: 0;
+}
+
 /***! END Image styles ***/
 
-/*** Media queries ***/
+/*** Media queries *****************************/
 
 @media screen and (-webkit-min-device-pixel-ratio: 1.5),
 screen and (min-resolution: 108dpi),
@@ -339,8 +352,10 @@ screen and (min-resolution: 1.5dppx) {
 
   blockquote,
   .highlight,
-  .ancillary {
-    margin: 1em -2em;
+  .ancillary,
+  .full figcaption {
+    margin-left: -2em;
+    margin-right: -2em;
     padding: 1em 2em;
   }
 
@@ -359,8 +374,10 @@ screen and (min-resolution: 1.5dppx) {
 
   blockquote,
   .highlight,
-  .ancillary {
-    margin: 1em -2.5em;
+  .ancillary,
+  .full figcaption {
+    margin-left: -2.5em;
+    margin-right: -2.5em;
     padding: 1.25em 2.5em;
   }
 
@@ -378,7 +395,8 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .ancillary {
-    margin: 1em -2.5em;
+    margin-left: -2.5em;
+    margin-right: -2.5em;
     padding: 1.25em 5em;
   }
 
@@ -413,18 +431,21 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   article {
-    padding: 2em 4em;
+    padding: 2em 4.5em;
     width: 45em;
   }
 
   blockquote,
-  .highlight {
-    margin: 1em -4em;
-    padding: 2em 4em;
+  .highlight,
+  .full figcaption {
+    margin-left: -4.5em;
+    margin-right: -4.5em;
+    padding: 2em 4.5em;
   }
 
   .ancillary {
-    margin: 1em -4em;
+    margin-left: -4em;
+    margin-right: -4em;
     padding: 2em 10.5em;
   }
 
@@ -436,9 +457,9 @@ screen and (min-resolution: 1.5dppx) {
 
   .photo img,
   .singel img[srcset] {
-    margin: 0 calc(-4em);
+    margin: 0 calc(-4.5em);
     max-width: none;
-    width: calc(100% + 8em);
+    width: calc(100% + 9em);
   }
 
 }
@@ -512,8 +533,10 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   blockquote,
-  .highlight {
-    margin: 1em -8em;
+  .highlight,
+  .full figcaption {
+    margin-left: -8em;
+    margin-right: -8em;
     padding: 2em 8em;
   }
 
