@@ -683,6 +683,11 @@ screen and (min-width: 60em) and (max-height: 36em) {
     max-width: 100%;
   }
 
+  .essay {
+    margin: 1.375em auto;
+    padding: 2em;
+  }
+
 }
 
 /***! END Media queries ***/
