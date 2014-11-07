@@ -266,8 +266,12 @@ mark > code {
 }
 
 .photo article {
-  background-color: dimgray;
   color: white;
+}
+
+.photo article a:link,
+.photo article a:visited {
+  color: lightblue;
 }
 
 blockquote,
