@@ -1,5 +1,6 @@
 /*** Normalization *****************************/
-/* following adapted from HTML5 Reset */
+/* following adapted from HTML5 Reset
+source: http://html5reset.org */
 * {
   background: transparent;
   border: 0;
@@ -10,7 +11,8 @@
   vertical-align: baseline;
 }
 
-/* following adapted from CSS Normalize */
+/* following adapted from CSS Normalize
+source: http://necolas.github.io/normalize.css */
 article,
 aside,
 details,
@@ -46,7 +48,8 @@ textarea {
   font-family: sans-serif;
 }
 
-/* Box-sizing borrowed from Paul Irish */
+/* Box-sizing borrowed from Paul Irish
+source: http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 * { 
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
