@@ -1,4 +1,4 @@
-# Personal website - olivermak.es
+# olivermak.es a website
 
 ## Goals
 
