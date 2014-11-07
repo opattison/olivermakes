@@ -414,6 +414,16 @@ screen and (min-resolution: 1.5dppx) {
     width: calc(100% + 5em);
   }
 
+  .singel .narrow {
+    margin: 5% auto;
+    max-width: 100%;
+  }
+
+  .singel .narrow figcaption {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
 }
 
 @media screen and (min-width: 40em) {
