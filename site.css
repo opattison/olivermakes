@@ -62,6 +62,10 @@ body {
   overflow-wrap: break-word;
 }
 
+figure img {
+  display: block;
+}
+
 em,
 i {
   font-style: italic;
@@ -191,6 +195,16 @@ blockquote {
   background-color: gainsboro;
 }
 
+figcaption {
+  margin: 0;
+}
+
+figcaption p {
+  font-size: .875em;
+  margin: 0;
+  padding: .5em 1em 0;
+}
+
 hr {
   border: .0625em solid darkgray;
 }
@@ -269,15 +283,20 @@ mark > code {
   color: white;
 }
 
-.photo article a:link,
+.photo article a,
 .photo article a:visited {
   color: lightblue;
+}
+
+.photo .essay {
+  background-color: dimgray;
+  margin-top: 2.75em;
 }
 
 blockquote,
 .highlight,
 .ancillary,
-.full figcaption {
+.essay {
   margin-left: -1em;
   margin-right: -1em;
   padding: 1em;
@@ -292,20 +311,14 @@ blockquote,
 
 /*** Image styles ******************************/
 
-article img {
-  margin: 0 calc(-1em);
+figure img {
+  width: 100%;
+}
+
+article figure {
+  margin: 5% calc(-1em) 0;
   max-width: none;
   width: calc(100% + 2em);
-}
-
-.full figcaption {
-  background-color: lightgray;
-  display: block;
-  margin-top: -.5rem;
-}
-
-.full figcaption p {
-  margin: 0;
 }
 
 /***! END Image styles ***/
@@ -349,21 +362,21 @@ screen and (min-resolution: 1.5dppx) {
     padding: 2em;
   }
 
-  article img {
-    margin: 0 calc(-2em);
+  article figure {
+    margin: 5% calc(-2em) 0;
     width: calc(100% + 4em);
   }
 
   blockquote,
   .highlight,
   .ancillary,
-  .full figcaption {
+  .essay {
     margin-left: -2em;
     margin-right: -2em;
     padding: 1em 2em;
   }
 
-  .ancillary img {
+  .ancillary figure {
     margin: 0 auto;
     max-width: 100%;
   }
@@ -379,14 +392,14 @@ screen and (min-resolution: 1.5dppx) {
   blockquote,
   .highlight,
   .ancillary,
-  .full figcaption {
+  .essay {
     margin-left: -2.5em;
     margin-right: -2.5em;
     padding: 1.25em 2.5em;
   }
 
-  article img {
-    margin: 0 calc(-2.5em);
+  article figure {
+    margin: 5% calc(-2.5em) 0;
     width: calc(100% + 5em);
   }
 
@@ -425,6 +438,10 @@ screen and (min-resolution: 1.5dppx) {
     line-height: 1.5;
   }
 
+  figcaption p {
+    padding: .5em 0 0;
+  }
+
 }
 
 @media screen and (min-width: 60em) {
@@ -440,11 +457,16 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   blockquote,
-  .highlight,
-  .full figcaption {
+  .highlight {
     margin-left: -4.5em;
     margin-right: -4.5em;
     padding: 2em 4.5em;
+  }
+
+  .essay {
+    margin-left: -1.5em;
+    margin-right: -1.5em;
+    padding: 2em 3em;
   }
 
   .ancillary {
@@ -453,17 +475,34 @@ screen and (min-resolution: 1.5dppx) {
     padding: 2em 10.5em;
   }
 
-  article img {
-    margin: 0;
+  article figure {
+    margin: 5% auto 0;
     max-width: 100%;
     width: 100%;
   }
 
-  .photo img,
-  .singel img[srcset] {
-    margin: 0 calc(-4.5em);
+  .photo figure,
+  .singel figure,
+  .grid-2 {
+    margin: 5% calc(-4.5em) 0;
     max-width: none;
     width: calc(100% + 9em);
+  }
+
+  .grid-2 figure {
+    float: left;
+    margin: 0;
+    max-width: 100%;
+    width: 48%;
+  }
+
+  .grid-2 figure:first-child {
+    margin-right: 4%;
+  }
+
+  .grid-2 + * {
+    clear: both;
+    padding-top: 5%;
   }
 
 }
@@ -500,13 +539,13 @@ screen and (min-resolution: 1.5dppx) {
     padding: 0 9.5em 1em 4em;
   }
 
-  .dubbel .flow-side img {
+  .dubbel .flow-side figure {
     margin: 0 -10em;
     max-width: none;
     width: calc(100em / 3);
   }
 
-  .dubbel .ancillary + .flow-side img {
+  .dubbel .ancillary + .flow-side figure {
     margin: 0;
   }
 
@@ -537,15 +576,14 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   blockquote,
-  .highlight,
-  .full figcaption {
+  .highlight {
     margin-left: -8em;
     margin-right: -8em;
     padding: 2em 8em;
   }
 
-  .singel img[srcset] {
-    margin: 0 calc(-8em);
+  .singel figure {
+    margin: 5% calc(-8em) 0;
     width: calc(100% + 16em);
   }
 
@@ -602,8 +640,8 @@ screen and (min-width: 63em) and (max-height: 28em),
 screen and (min-width: 69em) and (max-height: 29em),
 screen and (min-width: 75em) and (max-height: 30em) {
 
-  article img {
-    margin: 0 auto;
+  article figure {
+    margin: 5% auto 0;
     max-width: 100%;
     width: 100%;
   }
