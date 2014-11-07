@@ -200,12 +200,12 @@ blockquote {
 
 figcaption {
   margin: 0;
+  padding: .5em 1em 0;
 }
 
 figcaption p {
   font-size: .875em;
   margin: 0;
-  padding: .5em 1em 0;
 }
 
 hr {
@@ -379,6 +379,10 @@ screen and (min-resolution: 1.5dppx) {
     padding: 1em 2em;
   }
 
+  .singel figcaption {
+    padding: .5em 2em 0;
+  }
+
   .ancillary figure {
     margin: 0 auto;
     max-width: 100%;
@@ -399,6 +403,10 @@ screen and (min-resolution: 1.5dppx) {
     margin-left: -2.5em;
     margin-right: -2.5em;
     padding: 1.25em 2.5em;
+  }
+
+  .singel figcaption {
+    padding: .5em 2.5em 0;
   }
 
   article figure {
@@ -441,7 +449,7 @@ screen and (min-resolution: 1.5dppx) {
     line-height: 1.5;
   }
 
-  figcaption p {
+  .photo figcaption {
     padding: .5em 0 0;
   }
 
@@ -464,6 +472,10 @@ screen and (min-resolution: 1.5dppx) {
     margin-left: -4.5em;
     margin-right: -4.5em;
     padding: 2em 4.5em;
+  }
+
+  .singel figcaption {
+    padding: .5em 4.5em 0;
   }
 
   .essay {
@@ -584,6 +596,10 @@ screen and (min-resolution: 1.5dppx) {
   .singel figure {
     margin: 5% calc(-8em) 0;
     width: calc(100% + 16em);
+  }
+
+  .singel figcaption {
+    padding: 1em 8em 0;
   }
 
 }
