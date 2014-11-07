@@ -8,8 +8,8 @@ url: http://olivermak.es
 image-url: http://static.olivermak.es/images
 scripts-url: http://static.olivermak.es/scripts
 
-photo-sizes: '(min-width: 120em) 75vw, (min-width: 100em) 78.75vw, (min-width: 80em) 84.375vw, (min-width: 60em) 93.75vw, 100vw'
-photo-sizes_half: '(min-width: 120em) 36vw, (min-width: 100em) 37.68vw, (min-width: 80em) 40.32vw, (min-width: 60em) 45vw, 100vw'
+photo-sizes: '(min-width: 140em) 1440px, (min-width: 115em) 1260px, (min-width: 95em) 1080px, (min-width: 60em) 900px, (min-width: 45em) 720px, 100vw'
+photo-sizes_half: '(min-width: 140em) 691px, (min-width: 115) 605px, (min-width: 95em) 518px, (min-width: 60em) 432px, (min-width: 45em) 720px, 100vw'
 srcset:
   - 480
   - 640
@@ -18,6 +18,12 @@ srcset:
   - 1080
   - 1260
   - 1440
+srcset_half:
+  - 480
+  - 640
+  - 720
+  - 900
+  - 1080
 
 markdown: kramdown
 permalink: /:year/:month/:title/
