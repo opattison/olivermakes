@@ -569,10 +569,6 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 80em) {
 
-  .photo article {
-    font-size: 1.5em;
-  }
-
   .singel article {
     padding: 4em 8em;
     width: 56.5em;
@@ -594,7 +590,8 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 95em) {
 
-  .singel article {
+  .singel article,
+  .photo article {
     font-size: 1.5em;
   }
 
@@ -604,23 +601,16 @@ screen and (min-resolution: 1.5dppx) {
 
 }
 
-@media screen and (min-width: 100em) {
+@media screen and (min-width: 115em) {
 
+  .singel article,
   .photo article {
     font-size: 1.75em;
   }
 
 }
 
-@media screen and (min-width: 115em) {
-
-  .singel article {
-    font-size: 1.75em;
-  }
-
-}
-
-@media screen and (min-width: 120em) {
+@media screen and (min-width: 140em) {
 
   .photo article {
     font-size: 2em;
@@ -628,22 +618,30 @@ screen and (min-resolution: 1.5dppx) {
 
 }
 
-@media screen and (min-width: 29em) and (max-height: 17em),
-screen and (min-width: 31em) and (max-height: 18em),
-screen and (min-width: 33em) and (max-height: 19em),
-screen and (min-width: 35em) and (max-height: 20em),
-screen and (min-width: 37em) and (max-height: 21em),
-screen and (min-width: 39em) and (max-height: 22em),
-screen and (min-width: 40em) and (max-height: 22.5em),
-screen and (min-width: 45em) and (max-height: 23em),
-screen and (min-width: 48em) and (max-height: 24em),
-screen and (min-width: 55em) and (max-height: 25em),
-screen and (min-width: 61em) and (max-height: 27em),
-screen and (min-width: 63em) and (max-height: 28em),
-screen and (min-width: 69em) and (max-height: 29em),
-screen and (min-width: 75em) and (max-height: 30em) {
+/* 1.666666667 ratio height limiter  */
 
-  article figure {
+@media screen and (min-width: 28.25em) and (max-height: 17em),
+screen and (min-width: 30em) and (max-height: 18em),
+screen and (min-width: 31.5em) and (max-height: 19em),
+screen and (min-width: 33.25em) and (max-height: 20em),
+screen and (min-width: 35em) and (max-height: 21em),
+screen and (min-width: 36.75em) and (max-height: 22em),
+screen and (min-width: 38.25em) and (max-height: 23em),
+screen and (min-width: 40em) and (max-height: 24em),
+screen and (min-width: 41.5em) and (max-height: 25em),
+screen and (min-width: 43.5em) and (max-height: 26em),
+screen and (min-width: 45em) and (max-height: 27em),
+screen and (min-width: 46.75em) and (max-height: 28em),
+screen and (min-width: 48.25em) and (max-height: 29em),
+screen and (min-width: 50em) and (max-height: 30em),
+screen and (min-width: 53.25em) and (max-height: 32em),
+screen and (min-width: 55em) and (max-height: 33em),
+screen and (min-width: 57em) and (max-height: 34em),
+screen and (min-width: 58.5em) and (max-height: 35em),
+screen and (min-width: 60em) and (max-height: 36em) {
+
+  .singel figure,
+  .photo figure {
     margin: 5% auto 0;
     max-width: 100%;
     width: 100%;
