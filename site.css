@@ -577,6 +577,11 @@ screen and (min-resolution: 1.5dppx) {
     padding: 1.5em 10em;
   }
 
+  .dubbel .grid-2 + * {
+    clear: both;
+    padding-top: 5%;
+  }
+
 }
 
 @media screen and (min-width: 80em) {
