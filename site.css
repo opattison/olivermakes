@@ -544,7 +544,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .dubbel .flow-side {
-    padding: 0 4.25em 1em 10em;
+    padding: 0 4.25em 0 10em;
     float: left;
     margin-top: 1.375rem;
     width: 62.5%;
@@ -577,9 +577,14 @@ screen and (min-resolution: 1.5dppx) {
     padding: 1.5em 10em;
   }
 
+  .dubbel .grid-2 {
+    display: inline-block;
+    margin: 4% 0;
+    width: 100%;
+  }
+
   .dubbel .grid-2 + * {
-    clear: both;
-    padding-top: 5%;
+    padding-top: 0;
   }
 
 }
