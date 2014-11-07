@@ -667,10 +667,10 @@ screen and (min-width: 58.5em) and (max-height: 35em),
 screen and (min-width: 60em) and (max-height: 36em) {
 
   .singel figure,
+  .dubbel figure,
   .photo figure {
     margin: 5% auto 0;
     max-width: 100%;
-    width: 100%;
   }
 
 }
