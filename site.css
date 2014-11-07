@@ -555,13 +555,13 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .dubbel .flow-side figure {
-    margin: 0 -10em;
+    margin: 1.375em -10em;
     max-width: none;
     width: calc(100em / 3);
   }
 
   .dubbel .ancillary + .flow-side figure {
-    margin: 0;
+    margin: 1.375em 0 0;
   }
 
   .dubbel .ancillary {
