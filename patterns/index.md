@@ -41,7 +41,7 @@ image:
 
 <div class="feature"><p>This is “feature” text, used for emphasis and attention in storytelling.</p></div>
 
-<figure class="full"> 
+<figure> 
   <img
     src="{{ site.image-url }}/{{ page.image[0].src }}" 
     sizes="{{ site.photo-sizes }}"  
@@ -51,9 +51,11 @@ image:
   <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
 </figure>
 
-<img
-  src="{{ site.image-url }}/{{ page.image[0].src }}" 
-  alt="{{ page.image[0].alt }}"
->
+<figure>
+  <img
+    src="{{ site.image-url }}/{{ page.image[0].src }}" 
+    alt="{{ page.image[0].alt }}"
+  >
+</figure>
 
 <object type="image/svg+xml" data="{{ site.image-url }}/logo.svg"><img src="{{ site.image-url }}/logo-fallback.png"></object>
