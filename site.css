@@ -291,7 +291,7 @@ mark > code {
   color: lightblue;
 }
 
-.photo .essay {
+.essay {
   background-color: dimgray;
   margin-top: 2.75em;
 }
@@ -508,6 +508,10 @@ screen and (min-resolution: 1.5dppx) {
     width: calc(100% + 9em);
   }
 
+  .grid-2 {
+    display: inline-block;
+  }
+
   .grid-2 figure {
     float: left;
     margin: 0;
@@ -519,9 +523,8 @@ screen and (min-resolution: 1.5dppx) {
     margin-right: 4%;
   }
 
-  .grid-2 + * {
+  .grid-2 + figure {
     clear: both;
-    padding-top: 5%;
   }
 
 }
@@ -582,13 +585,8 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .dubbel .grid-2 {
-    display: inline-block;
-    margin: 4% 0;
+    margin: 5% 0 0;
     width: 100%;
-  }
-
-  .dubbel .grid-2 + * {
-    padding-top: 0;
   }
 
 }
