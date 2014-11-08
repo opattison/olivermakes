@@ -432,12 +432,6 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 1.25em;
   }
 
-  .ancillary {
-    margin-left: -2.5em;
-    margin-right: -2.5em;
-    padding: 1.25em 5em;
-  }
-
 }
 
 @media screen and (min-width: 45em) {
@@ -607,7 +601,8 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   blockquote,
-  .highlight {
+  .highlight,
+  .ancillary {
     margin-left: -8em;
     margin-right: -8em;
     padding: 2em 8em;
