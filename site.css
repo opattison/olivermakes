@@ -268,6 +268,10 @@ mark > code {
 
 /*** Page layouts ******************************/
 
+section {
+  margin-top: 0;
+}
+
 .single,
 .dubbel {
   background-color: white;
