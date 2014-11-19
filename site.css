@@ -82,6 +82,7 @@ dfn {
 ul,
 ol {
   list-style-position: inside;
+  padding: 0;
 }
 
 q::before {
@@ -269,6 +270,7 @@ mark > code {
 /*** Site header *******************************/
 
 .site-header {
+  background-color: hsla(0, 0%, 0%, 0.1);
   height: 3.5em;
   padding: .5em 0;
 }
@@ -299,6 +301,7 @@ mark > code {
   background-color: crimson;
   color: white;
   display: block;
+  font-weight: 400;
   height: 3.5em;
   margin: 0;
   padding: 1em;
@@ -329,7 +332,6 @@ mark > code {
 
 .site-nav ul {
   margin: 0 auto;
-  padding: 0;
 }
 
 .site-nav li {
@@ -358,6 +360,11 @@ mark > code {
   background-color: crimson;
 }
 
+.site-info .logo {
+  margin: 1.375em auto 0;
+  width: 1.5em;
+}
+
 /***! END Site footer and navigation ***/
 
 /*** Page layouts ******************************/
@@ -380,12 +387,14 @@ section {
   color: white;
 }
 
-.photo .logo circle {
+.photo .site-header .logo circle {
   stroke: white;
 }
 
 .photo article a,
-.photo article a:visited {
+.photo article a:visited,
+.ancillary a,
+.ancillary a:visited {
   color: lightblue;
 }
 
