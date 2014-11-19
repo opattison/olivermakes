@@ -1,5 +1,8 @@
-  <header class="banner" id="top" role="banner">
-    <h1><a href="/">{{ site.title }}</a></h1>
+  <header class="site-header" id="top" role="banner">
+    <a href="/">
+      {% include site-logo.html %}
+      <h1>{{ site.title }}</h1>
+    </a>
     <nav class="top-menu">
       <a href="#navigation">Menu&nbsp; &darr;</a>
     </nav>
