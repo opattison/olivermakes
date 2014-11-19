@@ -343,6 +343,10 @@ mark > code {
   background-color: darkgray;
 }
 
+.site-nav li.back-top {
+  background-color: crimson;
+}
+
 .site-nav li a {
   display: block;
   color: white;
@@ -355,9 +359,6 @@ mark > code {
   display: none;
 }
 
-.site-nav .back-top {
-  background-color: crimson;
-}
 
 .site-info .logo {
   margin: 1.375em auto 0;
