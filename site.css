@@ -202,7 +202,9 @@ figcaption p {
 }
 
 hr {
-  border: .0625em solid darkgray;
+  background-color: darkgray;
+  border: 0;
+  height: .25em;
 }
 
 code,
