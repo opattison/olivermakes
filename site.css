@@ -375,10 +375,13 @@ mark > code {
   display: none;
 }
 
-
 .site-info .logo {
   margin: 1.375em auto 0;
   width: 1.5em;
+}
+
+.site-info .logo svg {
+  padding-right: 1px; /* prevents margin:auto rounding bug */
 }
 
 .site-nav:target {
