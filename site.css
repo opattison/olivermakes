@@ -123,7 +123,7 @@ li + li {
 }
 
 article {
-  padding: 1.375em 1em 0;
+  padding: 1.375em 1em;
 }
 
 /***! END Axiomatic styles ***/
@@ -314,7 +314,6 @@ mark > code {
 .site-nav,
 .site-info {
   margin: 0 auto;
-  max-width: 45rem;
   overflow: auto;
 }
 
@@ -323,12 +322,14 @@ mark > code {
   color: black;
   padding-top: 1.375em;
   padding-bottom: 2.75em;
+  width: 100%;
 }
 
 .site-nav {
   display: block;
   font-weight: 400;
   margin-top: 2.75em;
+  max-width: 45rem;
 }
 
 .site-nav ul {
@@ -467,6 +468,11 @@ section {
   background-color: whitesmoke;
 }
 
+.singel article,
+.dubbel article {
+  background-color: white;
+}
+
 .photo {
   background-color: #444;
 }
@@ -563,7 +569,7 @@ screen and (min-resolution: 1.5dppx) {
 @media screen and (min-width: 30em) {
 
   article {
-    padding: 1.375em 2em 0;
+    padding: 1.375em 2em;
   }
 
   article figure {
@@ -633,6 +639,11 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 1.25em;
   }
 
+  .singel article,
+  .dubbel article {
+    margin-top: 1.375em;
+  }
+
   .site-header {
     height: 4.5em;
   }
@@ -665,6 +676,11 @@ screen and (min-resolution: 1.5dppx) {
     width: 36em;
   }
 
+  .singel article,
+  .dubbel article {
+    margin-top: 2.75em;
+  }
+
   .ancillary {
     padding: 1.25em 6em;
   }
@@ -693,14 +709,18 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 60em) {
 
+  article {
+    padding: 2em 4.5em;
+    width: 45em;
+  }
+
+  .site-nav {
+    max-width: 49rem;
+  }
+
   ul,
   ol {
     list-style-position: outside;
-  }
-
-  article {
-    padding: 2em 4.5em 0;
-    width: 45em;
   }
 
   blockquote,
@@ -764,23 +784,21 @@ screen and (min-resolution: 1.5dppx) {
 @media screen and (min-width: 70em) {
 
   .site-footer {
-    margin-top: 2.75em;
+    margin: 2.75em auto 0;
+    max-width: 70.625em;
   }
 
-  .site-info,
+  .site-footer .site-info,
   .site-nav {
     float: right;
     margin: 0;
     width: 50%;
   }
 
-  .site-info {
-    min-height: 16.5em;
+  .site-footer .site-info {
+    font-size: 1.25em;
+    min-height: 20.625rem;
     padding: 1em 1em 2em;
-  }
-
-  .site-nav {
-
   }
 
   .dubbel article {
@@ -846,7 +864,7 @@ screen and (min-resolution: 1.5dppx) {
 @media screen and (min-width: 80em) {
 
   .singel article {
-    padding: 2em 8em 0;
+    padding: 2em 8em;
     width: 56.5em;
   }
 
@@ -880,6 +898,20 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 1.2em;
   }
 
+  .site-footer {
+    max-width: 84.75em;
+  }
+
+  .site-nav {
+    width: 33.3333333%;
+  }
+
+  .site-footer .site-info {
+    padding: 1.375em 4em 2em;
+    font-size: 1.5em;
+    width: 66.66666667%
+  }
+
 }
 
 @media screen and (min-width: 115em) {
@@ -887,6 +919,15 @@ screen and (min-resolution: 1.5dppx) {
   .singel article,
   .photo article {
     font-size: 1.75em;
+  }
+
+  .site-footer {
+    max-width: 98.875em;
+  }
+
+  .site-footer .site-info {
+    padding-left: 5em;
+    padding-right: 5em;
   }
 
 }
