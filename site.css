@@ -718,11 +718,6 @@ screen and (min-resolution: 1.5dppx) {
     max-width: 49rem;
   }
 
-  ul,
-  ol {
-    list-style-position: outside;
-  }
-
   blockquote,
   .highlight {
     margin-left: -4.5em;
