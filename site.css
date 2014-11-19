@@ -262,7 +262,6 @@ mark > code {
 /*** Site header *******************************/
 
 .site-header {
-  background-color: hsla(0, 0%, 0%, 0.1);
   height: 7em;
   padding: 1em 0;
 }
@@ -272,7 +271,7 @@ mark > code {
   display: block;
   text-decoration: none;
   margin: 0 auto;
-  max-width: 14em;
+  max-width: 13em;
 }
 
 .site-header .title h1 {
@@ -676,6 +675,14 @@ screen and (min-resolution: 1.5dppx) {
 
   .photo figcaption {
     padding: .5em 0 0;
+  }
+
+  .site-header {
+    padding-bottom: 0;
+  }
+
+  .site-header .title {
+    font-size: 1.25em;
   }
 
 }
