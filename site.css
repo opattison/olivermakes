@@ -313,9 +313,9 @@ mark > code {
   overflow: auto;
 }
 
-.site-info {
+.site-footer .site-info {
   background-color: white;
-  padding: 1em;
+  color: black;
 }
 
 .site-nav {
@@ -464,6 +464,13 @@ section {
   background-color: #444;
 }
 
+.photo article a,
+.photo article a:visited,
+.ancillary a,
+.ancillary a:visited {
+  color: lightblue;
+}
+
 .photo article,
 .photo .site-header a {
   color: white;
@@ -473,11 +480,9 @@ section {
   stroke: white;
 }
 
-.photo article a,
-.photo article a:visited,
-.ancillary a,
-.ancillary a:visited {
-  color: lightblue;
+.photo .site-info a,
+.photo .site-info a:visited {
+  color: royalblue;
 }
 
 .essay {
