@@ -143,12 +143,12 @@ b {
 
 h1 {
   font: 500 2em/1.25 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
-  letter-spacing: -.0625em;
+  letter-spacing: -.03125em;
 }
 
 h2 {
   font: 400 1.75em/1.25 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
-  letter-spacing: -.0625em;
+  letter-spacing: -.03125em;
 }
 
 h3 {
@@ -263,22 +263,26 @@ mark > code {
 
 .site-header {
   background-color: hsla(0, 0%, 0%, 0.1);
-  height: 3.5em;
-  padding: .5em 0;
+  height: 7em;
+  padding: 1em 0;
 }
 
-.site-header a {
+.site-header .title {
   color: black;
+  display: block;
   text-decoration: none;
+  margin: 0 auto;
+  max-width: 14em;
 }
 
-.site-header h1 {
+.site-header .title h1 {
+  font-weight: 300;
   margin: 0;
+  text-align: center;
 }
 
 .site-header .logo {
   float: left;
-  margin: 0 .5em;
   width: 2.5em;
 }
 
@@ -286,8 +290,9 @@ mark > code {
 .site-nav:target .close-menu {
   margin: 0;
   position: absolute;
-  right: 0;
-  top: 0;
+  text-align: center;
+  top: 4.5em;
+  width: 100%;
 }
 
 .top-menu a,
@@ -296,9 +301,8 @@ mark > code {
   color: white;
   display: block;
   font-weight: 400;
-  height: 3.5em;
   margin: 0;
-  padding: 1em;
+  padding: .5em;
   text-decoration: none;
 }
 
@@ -387,7 +391,7 @@ mark > code {
 .site-nav:target {
   display: block;
   margin: 0 auto;
-  padding-top: 3.5em;
+  padding-top: 7em;
   position: absolute;
   right: 0;
   top: 0;
@@ -624,6 +628,29 @@ screen and (min-resolution: 1.5dppx) {
 
   article {
     font-size: 1.25em;
+  }
+
+  .site-header {
+    height: 4.5em;
+  }
+
+  .top-menu,
+  .site-nav:target .close-menu {
+    right: 0;
+    top: 0;
+    width: auto;
+  }
+
+  .top-menu a,
+  .site-nav:target .close-menu a {
+    font-size: 1.125em;
+    height: 4em;
+    line-height: 2em;
+    padding: 1em;
+  }
+
+  .site-nav:target {
+    padding-top: 4.5em;
   }
 
 }
