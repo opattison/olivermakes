@@ -339,8 +339,24 @@ mark > code {
   width: 50%;
 }
 
-.site-nav li:nth-child(2n) {
-  background-color: darkgray;
+.site-nav li:nth-child(1) {
+  background-color: hsla(0, 0%, 5%, 1);
+}
+
+.site-nav li:nth-child(2) {
+  background-color: hsla(0, 0%, 15%, 1);
+}
+
+.site-nav li:nth-child(3) {
+  background-color: hsla(0, 0%, 30%, 1);
+}
+
+.site-nav li:nth-child(4) {
+  background-color: hsla(0, 0%, 60%, 1);
+}
+
+.site-nav li:nth-child(5) {
+  background-color: hsla(0, 0%, 70%, 1);
 }
 
 .site-nav li.back-top {
@@ -378,6 +394,26 @@ mark > code {
 .site-nav:target ul {
   position: relative;
   z-index: 2;
+}
+
+.site-nav:target li:nth-child(1) {
+  background-color: hsla(0, 0%, 5%, .9);
+}
+
+.site-nav:target li:nth-child(2) {
+  background-color: hsla(0, 0%, 15%, .9);
+}
+
+.site-nav:target li:nth-child(3) {
+  background-color: hsla(0, 0%, 30%, .9);
+}
+
+.site-nav:target li:nth-child(4) {
+  background-color: hsla(0, 0%, 60%, .9);
+}
+
+.site-nav:target li:nth-child(5) {
+  background-color: hsla(0, 0%, 70%, .9);
 }
 
 .site-nav:target .back-top {
