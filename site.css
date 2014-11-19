@@ -314,10 +314,16 @@ mark > code {
   padding: 1em;
 }
 
+.site-nav {
+  font-size: 1.25em;
+  font-weight: 400;
+  min-height: 25vh;
+}
+
 .site-nav,
 .site-info {
   margin: 0 auto;
-  max-width: 45em;
+  max-width: 45rem;
   overflow: auto;
 }
 
@@ -333,14 +339,18 @@ mark > code {
   list-style-type: none;
   margin: 0;
   text-align: center;
-  width: 100%;
+  width: 50%;
+}
+
+.site-nav li:nth-child(2n) {
+  background-color: darkgray;
 }
 
 .site-nav li a {
   display: block;
-  text-align: center;
   color: white;
-  padding: 1em 0;
+  padding: 2em 0;
+  text-align: center;
   text-decoration: none;
 }
 
@@ -443,10 +453,6 @@ screen and (min-resolution: 1.5dppx) {
 
   article {
     font-size: 1.125em;
-  }
-
-  .site-nav li {
-    width: 50%;
   }
 
 }
