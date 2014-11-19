@@ -306,22 +306,22 @@ mark > code {
 
 /*** Site footer and navigation ****************/
 
+.site-nav,
+.site-info {
+  margin: 0 auto;
+  max-width: 45em;
+  overflow: auto;
+}
+
 .site-info {
   background-color: white;
-  margin: 0 auto;
   padding: 1em;
 }
 
 .site-nav {
   display: block;
   font-weight: 400;
-  margin: 2.75em auto 0;
-}
-
-.site-nav,
-.site-info {
-  max-width: 45em;
-  overflow: auto;
+  margin-top: 2.75em;
 }
 
 .site-nav ul {
