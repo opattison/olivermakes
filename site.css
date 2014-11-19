@@ -168,14 +168,6 @@ h5 {
   font-size: 1.25em;
 }
 
-article:last-child > *:last-child::after {
-  content: '⊙';
-  color: silver;
-  display: block;
-  margin: 1.375em auto;
-  text-align: center;
-}
-
 a,
 a:visited {
   color: royalblue;
@@ -290,14 +282,16 @@ mark > code {
   width: 2.5em;
 }
 
-.top-menu {
+.top-menu,
+.site-nav:target .close-menu {
   margin: 0;
   position: absolute;
   right: 0;
   top: 0;
 }
 
-.top-menu a {
+.top-menu a,
+.site-nav:target .close-menu a {
   background-color: crimson;
   color: white;
   display: block;
@@ -314,23 +308,24 @@ mark > code {
 
 .site-info {
   background-color: white;
+  margin: 0 auto;
   padding: 1em;
 }
 
 .site-nav {
-  font-size: 1.25em;
+  display: block;
   font-weight: 400;
-  min-height: 25vh;
+  margin: 2.75em auto 0;
 }
 
 .site-nav,
 .site-info {
-  margin: 0 auto;
-  max-width: 45rem;
+  max-width: 45em;
   overflow: auto;
 }
 
 .site-nav ul {
+  font-size: 1.25em;
   margin: 0 auto;
 }
 
@@ -356,6 +351,10 @@ mark > code {
   text-decoration: none;
 }
 
+.site-nav .close-menu {
+  display: none;
+}
+
 .site-nav .back-top {
   background-color: crimson;
 }
@@ -363,6 +362,49 @@ mark > code {
 .site-info .logo {
   margin: 1.375em auto 0;
   width: 1.5em;
+}
+
+.site-nav:target {
+  display: block;
+  margin: 0 auto;
+  padding-top: 3.5em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.site-nav:target ul {
+  position: relative;
+  z-index: 2;
+}
+
+.site-nav:target .back-top {
+  display: none;
+}
+
+.site-nav:target .close-menu {
+  display: block;
+}
+
+.site-nav:target .close-menu a {
+  position: relative;
+  z-index: 1;
+}
+
+.site-nav:target::after,
+.site-nav:target .close-menu a::after {
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.site-nav:target::after {
+  background-color: hsla(0, 0%, 0%, 0.75);
 }
 
 /***! END Site footer and navigation ***/
