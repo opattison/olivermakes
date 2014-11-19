@@ -1,4 +1,4 @@
-** Normalization *****************************/
+/** Normalization *****************************/
 /* following adapted from HTML5 Reset
 source: http://html5reset.org */
 * {
@@ -123,7 +123,7 @@ li + li {
 }
 
 article {
-  padding: 0 1em;
+  padding: 1.375em 1em 0;
 }
 
 /***! END Axiomatic styles ***/
@@ -314,13 +314,15 @@ mark > code {
 .site-nav,
 .site-info {
   margin: 0 auto;
-  max-width: 45em;
+  max-width: 45rem;
   overflow: auto;
 }
 
 .site-footer .site-info {
   background-color: white;
   color: black;
+  padding-top: 1.375em;
+  padding-bottom: 2.75em;
 }
 
 .site-nav {
@@ -561,7 +563,7 @@ screen and (min-resolution: 1.5dppx) {
 @media screen and (min-width: 30em) {
 
   article {
-    padding: 0 2em;
+    padding: 1.375em 2em 0;
   }
 
   article figure {
@@ -592,7 +594,7 @@ screen and (min-resolution: 1.5dppx) {
 @media screen and (min-width: 34em) {
 
   article {
-    padding: 0 2.5em;
+    padding: 2em 2.5em;
   }
 
   blockquote,
@@ -697,7 +699,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   article {
-    padding: 0 4.5em;
+    padding: 2em 4.5em 0;
     width: 45em;
   }
 
@@ -760,6 +762,26 @@ screen and (min-resolution: 1.5dppx) {
 }
 
 @media screen and (min-width: 70em) {
+
+  .site-footer {
+    margin-top: 2.75em;
+  }
+
+  .site-info,
+  .site-nav {
+    float: right;
+    margin: 0;
+    width: 50%;
+  }
+
+  .site-info {
+    min-height: 16.5em;
+    padding: 1em 1em 2em;
+  }
+
+  .site-nav {
+
+  }
 
   .dubbel article {
     font-size: 1em;
@@ -824,7 +846,7 @@ screen and (min-resolution: 1.5dppx) {
 @media screen and (min-width: 80em) {
 
   .singel article {
-    padding: 0 8em;
+    padding: 2em 8em 0;
     width: 56.5em;
   }
 
