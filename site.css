@@ -808,7 +808,6 @@ screen and (min-resolution: 1.5dppx) {
 
   .site-footer {
     margin: 2.75em auto 0;
-    max-width: 70.625em;
   }
 
   .site-footer .site-info,
@@ -820,7 +819,7 @@ screen and (min-resolution: 1.5dppx) {
 
   .site-footer .site-info {
     font-size: 1.25em;
-    min-height: 13.75rem;
+    min-height: 17.125rem;
     padding: 1em;
   }
 
@@ -940,10 +939,6 @@ screen and (min-resolution: 1.5dppx) {
 
   .dubbel article {
     font-size: 1.2em;
-  }
-
-  .site-footer {
-    max-width: 84.75em;
   }
 
   .site-nav {
