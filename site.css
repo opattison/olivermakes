@@ -388,9 +388,10 @@ mark > code {
 .alt-nav li a {
   background-color: dimgray;
   color: white;
+  padding: 1em;
 }
 
-.alt-nav .back-top a {
+.alt-nav .back-home a {
   background-color: royalblue;
 }
 
