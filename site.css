@@ -613,7 +613,6 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .top-menu a,
-  .back-top a,
   .site-nav:target .close-menu a {
     font-size: 1.125em;
     height: 4em;
@@ -807,8 +806,21 @@ screen and (min-resolution: 1.5dppx) {
 
   .site-footer .site-info {
     font-size: 1.25em;
-    min-height: 20.625rem;
-    padding: 1em 1em 2em;
+    min-height: 13.75rem;
+    padding: 1em;
+  }
+
+  .back-top {
+    bottom: 0;
+    clear: both;
+    position: relative;
+    right: -75%;
+    width: 25%;
+  }
+
+  .back-top a {
+    font-size: 1.25em;
+    padding: 2em 0;
   }
 
   .dubbel article {
@@ -926,7 +938,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .site-footer .site-info {
-    padding: 1.375em 4em 2em;
+    padding: 1.375em 4em;
     font-size: 1.5em;
     width: 66.66666667%
   }
@@ -945,8 +957,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .site-footer .site-info {
-    padding-left: 5em;
-    padding-right: 5em;
+    padding: 1.375em 5em;
   }
 
 }
