@@ -288,16 +288,22 @@ mark > code {
 }
 
 .top-menu,
-.site-nav:target .close-menu {
+.site-nav:target .close-menu,
+.back-top {
   margin: 0;
-  position: absolute;
   text-align: center;
-  top: 4.5em;
   width: 100%;
 }
 
+.top-menu,
+.site-nav:target .close-menu {
+  position: absolute;
+  top: 4.5em;
+}
+
 .top-menu a,
-.site-nav:target .close-menu a {
+.site-nav:target .close-menu a,
+.back-top a {
   background-color: crimson;
   color: white;
   display: block;
@@ -367,10 +373,6 @@ mark > code {
   background-color: hsla(0, 0%, 70%, 1);
 }
 
-.site-nav li.back-top {
-  background-color: crimson;
-}
-
 .site-nav li a {
   display: block;
   color: white;
@@ -425,10 +427,6 @@ mark > code {
 
 .site-nav:target li:nth-child(5) {
   background-color: hsla(0, 0%, 70%, .9);
-}
-
-.site-nav:target .back-top {
-  display: none;
 }
 
 .site-nav:target .close-menu {
@@ -984,4 +982,4 @@ screen and (min-width: 60em) and (max-height: 36em) {
 
 }
 
-/***! END Media queries **
+/***! END Media queries ***/
