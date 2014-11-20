@@ -676,6 +676,15 @@ screen and (min-resolution: 1.5dppx) {
     margin: 0 auto;
   }
 
+  .back-top {
+    font-size: 1.25em;
+  }
+
+  .site-nav li a,
+  .back-top a {
+    font-size: 1.125em;
+  }
+
   .singel article,
   .dubbel article {
     margin-top: 1.375em;
@@ -730,6 +739,11 @@ screen and (min-resolution: 1.5dppx) {
 
   .site-nav {
     max-width: 49rem;
+  }
+
+  .site-nav li a,
+  .back-top a {
+    font-size: 1.25em;
   }
 
   blockquote,
@@ -819,7 +833,6 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .back-top a {
-    font-size: 1.25em;
     padding: 2em 0;
   }
 
@@ -941,6 +954,11 @@ screen and (min-resolution: 1.5dppx) {
     padding: 1.375em 4em;
     font-size: 1.5em;
     width: 66.66666667%
+  }
+
+  .back-top {
+    right: -83.33333333%;
+    width: 16.66666667%;
   }
 
 }
