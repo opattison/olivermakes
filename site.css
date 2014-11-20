@@ -862,6 +862,15 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 80em) {
 
+  .site-header {
+    margin-bottom: 1em;
+    padding-top: 2.5em;
+  }
+
+  .site-header .title {
+    font-size: 1.5em;
+  }
+
   .singel article {
     padding: 4em 8em 6em;
     width: 56.5em;
