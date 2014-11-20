@@ -283,6 +283,7 @@ mark > code {
 }
 
 .site-header .logo {
+  height: 2.5em;
   float: left;
   width: 2.5em;
 }
@@ -395,22 +396,24 @@ mark > code {
 
 .back-home .inner {
   margin: 0 auto;
-  width: 4.75em;
+  width: 4.5em;
 }
 
 .back-home .logo {
   float: right;
+  height: 1.25em;
   line-height: 2em;
-  margin: 0 .25em;
+  margin: .0625em 0 0 .125em;
   width: 1.25em;
 }
 
 .back-home .logo svg {
-  padding-right: 1px; /* prevents margin:auto rounding bug */
+  padding: 3px;
 }
 
 .back-home .logo circle {
   stroke: white;
+  stroke-width: 32px;
 }
 
 
