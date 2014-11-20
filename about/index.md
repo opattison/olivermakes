@@ -5,9 +5,6 @@ date: 2014-10-31 18:25
 
 ---
 
-# About
-
-
 ## Subscribe to this site
 
 ## About this site
