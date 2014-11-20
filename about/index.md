@@ -37,9 +37,9 @@ The fonts on the site (300, 400 and 500 weights of [the Ratio typeface](http://c
 
 ## Copyright
 
-All writing and photography on the site is original and licensed under [Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC)](http://creativecommons.org/licenses/by-nc/4.0/). All code is under copyright, but is available to use and borrow from [on GitHub](https://github.com/opattison/olivermakes). If you are looking at the repository, everything in the `_static` and `_posts` folders is CC BY-NC and the rest is under copyright, where applicable. 
+All writing and photography on the site is my original work and is licensed under [Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC)](http://creativecommons.org/licenses/by-nc/4.0/). All code is under copyright, but is available to use and borrow from [on GitHub](https://github.com/opattison/olivermakes). If you are looking at the repository, almost everything in the `_static` and `_posts` folders is CC BY-NC and the most of the rest of it is under copyright, where applicable. 
 
-I designed the site myself, so most of the code was written by me by hand – exceptions where code is derived from another source are noted inline. An example of copyright violation would be copying the source code outright and using it to make a public website that could be confused for this one.
+I designed the site myself, so most of the code was written by me by hand – exceptions where code is derived from another source are noted inline. An example of copyright violation would be copying all of the source code outright and using it to make a public website that could be confused for this one.
 
 - - -
 
@@ -50,7 +50,7 @@ Proper CC BY-NC attribution with a link and credit would look like this:
 Or in HTML:
 
 {% highlight html %}
-“The title” <a href="http://olivermak.es”>Oliver Pattison</a> CC BY-NC
+“The title” <a href="http://olivermak.es">Oliver Pattison</a> CC BY-NC
 {% endhighlight %}
 
 Please [get in touch with me by email](mailto:oliverpattison@gmail.com) if you have any questions about licensing or use of content from the site. **Permission is not required for CC BY-NC content as long as it is properly attributed.** However, if you plan on using any photography for non-commercial purposes, it would be nice to let me know!
