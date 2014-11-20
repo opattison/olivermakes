@@ -874,8 +874,8 @@ screen and (min-resolution: 1.5dppx) {
 @media screen and (min-width: 80em) {
 
   .site-header {
-    margin-bottom: 1em;
-    padding-top: 2.5em;
+    height: initial;
+    padding-top: 3em;
   }
 
   .site-header .title {
