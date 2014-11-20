@@ -1,4 +1,4 @@
-** Normalization *****************************/
+/** Normalization *****************************/
 /* following adapted from HTML5 Reset
 source: http://html5reset.org */
 * {
@@ -123,7 +123,7 @@ li + li {
 }
 
 article {
-  padding: 0 1em;
+  padding: 1.375em 1em;
 }
 
 /***! END Axiomatic styles ***/
@@ -202,7 +202,9 @@ figcaption p {
 }
 
 hr {
-  border: .0625em solid darkgray;
+  background-color: darkgray;
+  border: 0;
+  height: .25em;
 }
 
 code,
@@ -259,7 +261,7 @@ mark > code {
 
 /***! END Basic styles ***/
 
-/*** Site header *******************************/
+/*** Site headers and footers ******************/
 
 .site-header {
   height: 7em;
@@ -269,9 +271,9 @@ mark > code {
 .site-header .title {
   color: black;
   display: block;
-  text-decoration: none;
   margin: 0 auto;
   max-width: 13em;
+  text-decoration: none;
 }
 
 .site-header .title h1 {
@@ -281,50 +283,52 @@ mark > code {
 }
 
 .site-header .logo {
+  height: 2.5em;
   float: left;
   width: 2.5em;
 }
 
 .top-menu,
 .site-nav:target .close-menu {
+  background-color: firebrick;
+  color: white;
   margin: 0;
   position: absolute;
   text-align: center;
   top: 4.5em;
   width: 100%;
+  z-index: 2;
 }
 
 .top-menu a,
-.site-nav:target .close-menu a {
-  background-color: crimson;
+.site-nav:target .close-menu a,
+.alt-nav a {
   color: white;
   display: block;
   font-weight: 400;
-  margin: 0;
   padding: .5em;
   text-decoration: none;
 }
 
-/***! END Site header ***/
-
-/*** Site footer and navigation ****************/
-
 .site-nav,
 .site-info {
   margin: 0 auto;
-  max-width: 45em;
   overflow: auto;
 }
 
 .site-footer .site-info {
   background-color: white;
   color: black;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 100%;
 }
 
 .site-nav {
   display: block;
   font-weight: 400;
   margin-top: 2.75em;
+  max-width: 45rem;
 }
 
 .site-nav ul {
@@ -332,8 +336,8 @@ mark > code {
   margin: 0 auto;
 }
 
-.site-nav li {
-  background-color: gray;
+.site-nav li,
+.alt-nav li {
   display: block;
   float: left;
   list-style-type: none;
@@ -342,50 +346,75 @@ mark > code {
   width: 50%;
 }
 
+.site-nav li {
+  background-color: hsla(0, 0%, 10%, 1);
+}
+
 .site-nav li:nth-child(1) {
-  background-color: hsla(0, 0%, 5%, 1);
+  background-color: hsla(0, 0%, 10%, 1);
 }
 
 .site-nav li:nth-child(2) {
-  background-color: hsla(0, 0%, 15%, 1);
-}
-
-.site-nav li:nth-child(3) {
   background-color: hsla(0, 0%, 30%, 1);
 }
 
+.site-nav li:nth-child(3) {
+  background-color: hsla(0, 0%, 40%, 1);
+}
+
 .site-nav li:nth-child(4) {
-  background-color: hsla(0, 0%, 60%, 1);
-}
-
-.site-nav li:nth-child(5) {
-  background-color: hsla(0, 0%, 70%, 1);
-}
-
-.site-nav li.back-top {
-  background-color: crimson;
+  background-color: hsla(0, 0%, 20%, 1);
 }
 
 .site-nav li a {
   display: block;
   color: white;
   padding: 2em 0;
-  text-align: center;
   text-decoration: none;
 }
 
 .site-nav .close-menu {
-  display: none;
+  display: none; /* only displays with :target */
 }
 
-.site-info .logo {
-  margin: 1.375em auto 0;
-  width: 1.5em;
+.alt-nav {
+  margin: 0;
 }
 
-.site-info .logo svg {
-  padding-right: 1px; /* prevents margin:auto rounding bug */
+.alt-nav li a {
+  background-color: dimgray;
+  color: white;
+  padding: 1em;
 }
+
+.alt-nav .back-home a {
+  background-color: royalblue;
+}
+
+.alt-nav .back-top a {
+  background-color: firebrick;
+}
+
+.back-home .inner {
+  margin: 0 auto;
+  width: 4.5em;
+}
+
+.back-home .logo {
+  float: right;
+  height: 1.25em;
+  width: 1.25em;
+}
+
+.back-home .logo svg {
+  padding: 2px;
+}
+
+.back-home .logo circle {
+  stroke: white;
+  stroke-width: 32px;
+}
+
 
 .site-nav:target {
   display: block;
@@ -403,27 +432,19 @@ mark > code {
 }
 
 .site-nav:target li:nth-child(1) {
-  background-color: hsla(0, 0%, 5%, .9);
+  background-color: hsla(0, 0%, 10%, .85);
 }
 
 .site-nav:target li:nth-child(2) {
-  background-color: hsla(0, 0%, 15%, .9);
+  background-color: hsla(0, 0%, 30%, .85);
 }
 
 .site-nav:target li:nth-child(3) {
-  background-color: hsla(0, 0%, 30%, .9);
+  background-color: hsla(0, 0%, 40%, .85);
 }
 
 .site-nav:target li:nth-child(4) {
-  background-color: hsla(0, 0%, 60%, .9);
-}
-
-.site-nav:target li:nth-child(5) {
-  background-color: hsla(0, 0%, 70%, .9);
-}
-
-.site-nav:target .back-top {
-  display: none;
+  background-color: hsla(0, 0%, 20%, .85);
 }
 
 .site-nav:target .close-menu {
@@ -447,10 +468,10 @@ mark > code {
 }
 
 .site-nav:target::after {
-  background-color: hsla(0, 0%, 0%, 0.75);
+  background-color: hsla(0, 0%, 0%, 0.85);
 }
 
-/***! END Site footer and navigation ***/
+/***! END Site headers and footers ***/
 
 /*** Page layouts ******************************/
 
@@ -463,8 +484,17 @@ section {
   background-color: whitesmoke;
 }
 
+.singel article,
+.dubbel article {
+  background-color: white;
+}
+
 .photo {
   background-color: #444;
+}
+
+.photo article {
+  padding-bottom: .5em;
 }
 
 .photo article a,
@@ -559,7 +589,7 @@ screen and (min-resolution: 1.5dppx) {
 @media screen and (min-width: 30em) {
 
   article {
-    padding: 0 2em;
+    padding: 1.375em 2em;
   }
 
   article figure {
@@ -585,12 +615,43 @@ screen and (min-resolution: 1.5dppx) {
     max-width: 100%;
   }
 
+  .site-header {
+    height: 4.5em;
+  }
+
+  .site-header .title {
+    margin: 0 2em;
+  }
+
+  .top-menu,
+  .site-nav:target .close-menu {
+    right: 0;
+    top: 0;
+    width: auto;
+  }
+
+  .top-menu a,
+  .site-nav:target .close-menu a {
+    font-size: 1.125em;
+    height: 4em;
+    line-height: 2em;
+    padding: 1em;
+  }
+
+  .site-nav:target {
+    padding-top: 4.5em;
+  }
+
 }
 
 @media screen and (min-width: 34em) {
 
   article {
-    padding: 0 2.5em;
+    padding: 2em 2.5em 2.5em;
+  }
+
+  .site-header .title {
+    margin: 0 3em;
   }
 
   blockquote,
@@ -629,27 +690,17 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 1.25em;
   }
 
-  .site-header {
-    height: 4.5em;
+  .site-header .title {
+    margin: 0 auto;
   }
 
-  .top-menu,
-  .site-nav:target .close-menu {
-    right: 0;
-    top: 0;
-    width: auto;
+  .alt-nav {
+    font-size: 1.25em;
   }
 
-  .top-menu a,
-  .site-nav:target .close-menu a {
+  .site-nav li a,
+  .alt-nav li a {
     font-size: 1.125em;
-    height: 4em;
-    line-height: 2em;
-    padding: 1em;
-  }
-
-  .site-nav:target {
-    padding-top: 4.5em;
   }
 
 }
@@ -659,6 +710,11 @@ screen and (min-resolution: 1.5dppx) {
   article {
     margin: 0 auto;
     width: 36em;
+  }
+
+  .singel article,
+  .dubbel article {
+    margin-top: 2.75em;
   }
 
   .ancillary {
@@ -689,14 +745,18 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 60em) {
 
-  ul,
-  ol {
-    list-style-position: outside;
+  article {
+    padding: 2.25em 4.5em 4.5em;
+    width: 45em;
   }
 
-  article {
-    padding: 0 4.5em;
-    width: 45em;
+  .site-nav {
+    max-width: 49rem;
+  }
+
+  .site-nav li a,
+  .alt-nav li a {
+    font-size: 1.25em;
   }
 
   blockquote,
@@ -758,6 +818,23 @@ screen and (min-resolution: 1.5dppx) {
 }
 
 @media screen and (min-width: 70em) {
+
+  .site-footer {
+    margin: 2.75em auto 0;
+  }
+
+  .site-footer .site-info,
+  .site-nav {
+    float: right;
+    margin: 0;
+    width: 50%;
+  }
+
+  .site-footer .site-info {
+    font-size: 1.25em;
+    min-height: 17.125rem;
+    padding: 1em;
+  }
 
   .dubbel article {
     font-size: 1em;
@@ -821,8 +898,17 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 80em) {
 
+  .site-header {
+    height: initial;
+    padding-top: 3em;
+  }
+
+  .site-header .title {
+    font-size: 1.5em;
+  }
+
   .singel article {
-    padding: 0 8em;
+    padding: 4em 8em 6em;
     width: 56.5em;
   }
 
@@ -856,6 +942,16 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 1.2em;
   }
 
+  .site-nav {
+    width: 33.3333333%;
+  }
+
+  .site-footer .site-info {
+    padding: 1.375em 4em;
+    font-size: 1.5em;
+    width: 66.66666667%
+  }
+
 }
 
 @media screen and (min-width: 115em) {
@@ -863,6 +959,14 @@ screen and (min-resolution: 1.5dppx) {
   .singel article,
   .photo article {
     font-size: 1.75em;
+  }
+
+  .site-footer {
+    max-width: 98.875em;
+  }
+
+  .site-footer .site-info {
+    padding: 1.375em 5em;
   }
 
 }
@@ -911,4 +1015,4 @@ screen and (min-width: 60em) and (max-height: 36em) {
 
 }
 
-/***! END Media queries **
+/***! END Media queries ***/
