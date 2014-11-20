@@ -15,7 +15,7 @@ date: 2014-10-31 18:25
 
 [Amazon S3](http://aws.amazon.com/s3/) for hosting.
 
-[S3_website](https://github.com/laurilehmijoki/s3_website) for deploying.
+[s3_website](https://github.com/laurilehmijoki/s3_website) for deploying.
 
 [GitHub](https://github.com/opattison/olivermakes) for version control.
 
@@ -23,7 +23,9 @@ date: 2014-10-31 18:25
 
 I worked alone on this site for a few weeks in October and November 2014. I would like to thank [Jean](http://jeancflanagan.com) for input.
 
-My process for designing the site mostly involves starting out with a handful of sketches, writing a few notes and then diving into a text editor and browser to get it working.
+My process for designing the site mostly involves starting out with a handful of sketches, writing some notes and then diving into a text editor and browser to get it working. I have skipped mockups and high-fidelity compositions in favor of sketching, and then iterative HTML/CSS prototyping that can be worked into finished code as the project progresses. 
+
+I target small-screens first (commonly known as “mobile-first”), so I make sure to check with a variety of devices as I go along. Working with fewer assumptions about device types informs the design process – it is easier to design with empathy and flexibilty with a responsive and iterative process.
 
 ### Typography
 
