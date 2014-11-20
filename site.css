@@ -261,7 +261,7 @@ mark > code {
 
 /***! END Basic styles ***/
 
-/*** Site header *******************************/
+/*** Site headers and footers ******************/
 
 .site-header {
   height: 7em;
@@ -271,9 +271,9 @@ mark > code {
 .site-header .title {
   color: black;
   display: block;
-  text-decoration: none;
   margin: 0 auto;
   max-width: 13em;
+  text-decoration: none;
 }
 
 .site-header .title h1 {
@@ -292,13 +292,13 @@ mark > code {
 .back-top {
   margin: 0;
   text-align: center;
-  width: 100%;
 }
 
 .top-menu,
 .site-nav:target .close-menu {
   position: absolute;
   top: 4.5em;
+  width: 100%;
 }
 
 .top-menu a,
@@ -312,10 +312,6 @@ mark > code {
   padding: .5em;
   text-decoration: none;
 }
-
-/***! END Site header ***/
-
-/*** Site footer and navigation ****************/
 
 .site-nav,
 .site-info {
@@ -453,7 +449,7 @@ mark > code {
   background-color: hsla(0, 0%, 0%, 0.75);
 }
 
-/***! END Site footer and navigation ***/
+/***! END Site headers and footers ***/
 
 /*** Page layouts ******************************/
 
