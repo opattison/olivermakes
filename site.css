@@ -288,27 +288,23 @@ mark > code {
 }
 
 .top-menu,
-.site-nav:target .close-menu,
-.back-top {
-  margin: 0;
-  text-align: center;
-}
-
-.top-menu,
 .site-nav:target .close-menu {
+  background-color: crimson;
+  color: white;
+  margin: 0;
   position: absolute;
+  text-align: center;
   top: 4.5em;
   width: 100%;
+  z-index: 2;
 }
 
 .top-menu a,
 .site-nav:target .close-menu a,
-.back-top a {
-  background-color: crimson;
+.alt-nav a {
   color: white;
   display: block;
   font-weight: 400;
-  margin: 0;
   padding: .5em;
   text-decoration: none;
 }
@@ -339,14 +335,18 @@ mark > code {
   margin: 0 auto;
 }
 
-.site-nav li {
-  background-color: gray;
+.site-nav li,
+.alt-nav li {
   display: block;
   float: left;
   list-style-type: none;
   margin: 0;
   text-align: center;
   width: 50%;
+}
+
+.site-nav li {
+  background-color: gray;
 }
 
 .site-nav li:nth-child(1) {
@@ -373,22 +373,46 @@ mark > code {
   display: block;
   color: white;
   padding: 2em 0;
-  text-align: center;
   text-decoration: none;
 }
 
 .site-nav .close-menu {
-  display: none;
+  display: none; /* only displays with :target */
 }
 
-.site-info .logo {
-  margin: 1.375em auto 0;
-  width: 1.5em;
+.alt-nav {
+  margin: 0;
 }
 
-.site-info .logo svg {
+.alt-nav li a {
+  background-color: dimgray;
+  color: white;
+}
+
+.alt-nav .back-top a {
+  background-color: royalblue;
+}
+
+.back-home .inner {
+  margin: 0 auto;
+  width: 4.75em;
+}
+
+.back-home .logo {
+  float: right;
+  line-height: 2em;
+  margin: 0 .25em;
+  width: 1.25em;
+}
+
+.back-home .logo svg {
   padding-right: 1px; /* prevents margin:auto rounding bug */
 }
+
+.back-home .logo circle {
+  stroke: white;
+}
+
 
 .site-nav:target {
   display: block;
@@ -672,18 +696,13 @@ screen and (min-resolution: 1.5dppx) {
     margin: 0 auto;
   }
 
-  .back-top {
+  .alt-nav {
     font-size: 1.25em;
   }
 
   .site-nav li a,
-  .back-top a {
+  .alt-nav li a {
     font-size: 1.125em;
-  }
-
-  .singel article,
-  .dubbel article {
-    margin-top: 1.375em;
   }
 
 }
@@ -738,7 +757,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .site-nav li a,
-  .back-top a {
+  .alt-nav li a {
     font-size: 1.25em;
   }
 
@@ -817,18 +836,6 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 1.25em;
     min-height: 17.125rem;
     padding: 1em;
-  }
-
-  .back-top {
-    bottom: 0;
-    clear: both;
-    position: relative;
-    right: -75%;
-    width: 25%;
-  }
-
-  .back-top a {
-    padding: 2em 0;
   }
 
   .dubbel article {
@@ -945,11 +952,6 @@ screen and (min-resolution: 1.5dppx) {
     padding: 1.375em 4em;
     font-size: 1.5em;
     width: 66.66666667%
-  }
-
-  .back-top {
-    right: -83.33333333%;
-    width: 16.66666667%;
   }
 
 }
