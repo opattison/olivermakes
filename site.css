@@ -327,7 +327,7 @@ mark > code {
   background-color: white;
   color: black;
   padding-top: 1.375em;
-  padding-bottom: 2.75em;
+  padding-bottom: 1.375em;
   width: 100%;
 }
 
@@ -597,12 +597,44 @@ screen and (min-resolution: 1.5dppx) {
     max-width: 100%;
   }
 
+  .site-header {
+    height: 4.5em;
+  }
+
+  .site-header .title {
+    margin: 0 2em;
+  }
+
+  .top-menu,
+  .site-nav:target .close-menu {
+    right: 0;
+    top: 0;
+    width: auto;
+  }
+
+  .top-menu a,
+  .back-top a,
+  .site-nav:target .close-menu a {
+    font-size: 1.125em;
+    height: 4em;
+    line-height: 2em;
+    padding: 1em;
+  }
+
+  .site-nav:target {
+    padding-top: 4.5em;
+  }
+
 }
 
 @media screen and (min-width: 34em) {
 
   article {
     padding: 2em 2.5em 2.5em;
+  }
+
+  .site-header .title {
+    margin: 0 3em;
   }
 
   blockquote,
@@ -641,32 +673,13 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 1.25em;
   }
 
+  .site-header .title {
+    margin: 0 auto;
+  }
+
   .singel article,
   .dubbel article {
     margin-top: 1.375em;
-  }
-
-  .site-header {
-    height: 4.5em;
-  }
-
-  .top-menu,
-  .site-nav:target .close-menu {
-    right: 0;
-    top: 0;
-    width: auto;
-  }
-
-  .top-menu a,
-  .site-nav:target .close-menu a {
-    font-size: 1.125em;
-    height: 4em;
-    line-height: 2em;
-    padding: 1em;
-  }
-
-  .site-nav:target {
-    padding-top: 4.5em;
   }
 
 }
