@@ -25,13 +25,13 @@ image:
 
 ### Under the hood
 
-[Jekyll](http://jekyllrb.com) for building.
+**[Jekyll](http://jekyllrb.com)** for building.
 
-[Amazon S3](http://aws.amazon.com/s3) for hosting.
+**[Amazon S3](http://aws.amazon.com/s3)** for hosting.
 
-[s3_website](https://github.com/laurilehmijoki/s3_website) for deploying.
+**[s3_website](https://github.com/laurilehmijoki/s3_website)** for deploying.
 
-[GitHub](https://github.com/opattison/olivermakes) for version control.
+**[GitHub](https://github.com/opattison/olivermakes)** for version control.
 
 {% capture a1 %}
 # Influences
@@ -106,7 +106,7 @@ If you have any questions about licensing or use of content from the site, pleas
 
 I post nearly every significant thing I read or look at on the web on **[Pinboard](https://pinboard.in/u:opattison)**. It is my external brain and my favorite thing on the web. It is as complete an archive as I can keep of my reading online.
 
-I post short stuff on **[Twitter at olivermakes](http://twitter.com/olivermakes)**.
+I am **[@olivermakes on Twitter](http://twitter.com/olivermakes)**.
 
 My open source code (including this site) is on **[GitHub](https://github.com/opattison)**.
 
