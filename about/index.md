@@ -25,38 +25,40 @@ image:
 
 ### Under the hood
 
-[Jekyll](http://jekyllrb.com) for building.
+**[Jekyll](http://jekyllrb.com)** for building.
 
-[Amazon S3](http://aws.amazon.com/s3/) for hosting.
+**[Amazon S3](http://aws.amazon.com/s3)** for hosting.
 
-[s3_website](https://github.com/laurilehmijoki/s3_website) for deploying.
+**[s3_website](https://github.com/laurilehmijoki/s3_website)** for deploying.
 
-[GitHub](https://github.com/opattison/olivermakes) for version control.
+**[GitHub](https://github.com/opattison/olivermakes)** for version control.
 
 {% capture a1 %}
 # Influences
 
+These people and their creative works inspired elements of the site, particularly typography and proportion. Some of these also informed my philosphy and design process.
+
 ## People
 
 - [Jeremy Keith](https://adactio.com)
-- [Mandy Brown](http://aworkinglibrary.com/)
-- [Paul Robert Lloyd](http://paulrobertlloyd.com/)
-- [Anna Debenham](http://maban.co.uk/)
+- [Mandy Brown](http://aworkinglibrary.com)
+- [Paul Robert Lloyd](http://paulrobertlloyd.com)
+- [Anna Debenham](http://maban.co.uk)
 - [Heydon Pickering](http://www.heydonworks.com)
-- [Simon Foster](http://simonfosterdesign.com/)
-- [David Bushell](http://dbushell.com/)
+- [Simon Foster](http://simonfosterdesign.com)
+- [David Bushell](http://dbushell.com)
 - [Trent Walton](http://trentwalton.com)
 
 ## Websites and apps
 
 - [Art=Work](http://artequalswork.com) by Nathan Ford
 - [Works That Work](https://worksthatwork.com)
-- [Code for America Style Guide](http://style.codeforamerica.org/)
+- [Code for America Style Guide](http://style.codeforamerica.org)
 - [CSS Zen Garden #221](http://www.csszengarden.com/221/) by Andrew Lohman
-- [Jim Ramsden](http://jimramsden.com/)
-- [Ableton](https://www.ableton.com/en/)
-- [STET by Editorially](http://stet.editorially.com/)
-- [MapBox](https://www.mapbox.com/)
+- [Jim Ramsden](http://jimramsden.com)
+- [Ableton](https://www.ableton.com/en)
+- [STET by Editorially](http://stet.editorially.com)
+- [MapBox](https://www.mapbox.com)
 - [VSCO](http://vsco.co)
 - [Instapaper](https://www.instapaper.com)
 - [Reeder](http://reederapp.com)
@@ -68,7 +70,7 @@ image:
 
 ### Design and development
 
-I worked alone on this site for a few weeks in October and November 2014. I would like to thank [Jean](http://jeancflanagan.com) for input.
+After spending too many months planning and talking about it, I worked alone on designing this site for a few weeks in October and November 2014. I would like to thank [Jean](http://jeancflanagan.com) for editing and design input.
 
 My process for designing the site mostly involves starting out with a handful of sketches, writing some notes and then diving into a text editor and browser to get it working. I have skipped mockups and high-fidelity compositions in favor of sketching, and then iterative HTML/CSS prototyping that can be worked into finished code as the project progresses. 
 
@@ -102,9 +104,9 @@ If you have any questions about licensing or use of content from the site, pleas
 
 ## Elsewhere on the web
 
-I post nearly every significant thing I read or look at on the web [on Pinboard](https://pinboard.in/u:opattison). Pinboard is my favorite web service and is as complete an archive as I can keep of my reading online. Pinboard is my external brain.
+I post nearly every significant thing I read or look at on the web on **[Pinboard](https://pinboard.in/u:opattison)**. It is my external brain and my favorite thing on the web. It is as complete an archive as I can keep of my reading online.
 
-I post short stuff on **[Twitter at olivermakes](http://twitter.com/olivermakes)**.
+I am **[@olivermakes on Twitter](http://twitter.com/olivermakes)**.
 
 My open source code (including this site) is on **[GitHub](https://github.com/opattison)**.
 
