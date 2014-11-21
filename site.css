@@ -496,9 +496,7 @@ section {
 }
 
 .photo article a,
-.photo article a:visited,
-.ancillary a,
-.ancillary a:visited {
+.photo article a:visited {
   color: lightblue;
 }
 
@@ -523,7 +521,6 @@ section {
 
 blockquote,
 .highlight,
-.ancillary,
 .essay {
   margin-left: -1em;
   margin-right: -1em;
@@ -531,8 +528,14 @@ blockquote,
 }
 
 .ancillary {
-  background-color: dimgray;
-  color: white;
+  background-color: whitesmoke;
+  color: dimgray;
+  padding: 1em;
+}
+
+.ancillary figure {
+  margin: 1.375em auto 0;
+  max-width: 100%;
 }
 
 .hero {
@@ -601,7 +604,6 @@ screen and (min-resolution: 1.5dppx) {
 
   blockquote,
   .highlight,
-  .ancillary,
   .essay {
     margin-left: -2em;
     margin-right: -2em;
@@ -612,9 +614,8 @@ screen and (min-resolution: 1.5dppx) {
     padding: .5em 2em 0;
   }
 
-  .ancillary figure {
-    margin: 0 auto;
-    max-width: 100%;
+  .ancillary {
+    padding: 2em;
   }
 
   .site-header {
@@ -658,7 +659,6 @@ screen and (min-resolution: 1.5dppx) {
 
   blockquote,
   .highlight,
-  .ancillary,
   .essay {
     margin-left: -2.5em;
     margin-right: -2.5em;
@@ -723,10 +723,6 @@ screen and (min-resolution: 1.5dppx) {
     margin-top: 2.75em;
   }
 
-  .ancillary {
-    padding: 1.25em 6em;
-  }
-
 }
 
 @media screen and (min-width: 50em) {
@@ -783,9 +779,11 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .ancillary {
-    margin-left: -4.5em;
-    margin-right: -4.5em;
-    padding: 2em 10.5em;
+    float: right;
+    font-size: .75em;
+    margin: 2em -6em 2em 2em;
+    padding: 2em;
+    width: 40%;
   }
 
   .singel .hero,
@@ -843,55 +841,48 @@ screen and (min-resolution: 1.5dppx) {
 
   .site-footer .site-info {
     font-size: 1.25em;
-    min-height: 17.125rem;
+    min-height: 17.125rem; /* keeps .back-home link down */
     padding: 1em;
   }
 
   .dubbel article {
-    font-size: 1em;
+    font-size: 1.25em;
     margin: 2.75em auto 0;
     overflow: hidden;
-    padding: 2.75em 0 5.5em;
-    width: 67.5em;
-  }
-
-  .dubbel .flow,
-  .dubbel .feature {
-    clear: both;
-    padding: 0 11.25rem;
-  }
-
-  .dubbel .flow,
-  .dubbel .flow-side {
-    font-size: 1.125em;
+    padding: 2.75em 9em 5.5em;
+    width: 54em;
   }
 
   .dubbel .flow-side {
-    padding: 0 4.25em 0 10em;
-    float: left;
-    margin-top: 1.375rem;
+    padding: 0 4.25em 0 0;
+    position: relative;
+    margin-top: 1.375em;
     width: 62.5%;
   }
 
-  .dubbel .ancillary + .flow-side {
-    padding: 0 9.5em 1em 4em;
-  }
-
-  .dubbel .flow-side figure {
-    margin: 1.375em -10em;
+  .dubbel .flow-side > figure {
+    margin: 1.375em 0 0 -9em;
     max-width: none;
-    width: calc(100em / 3);
-  }
-
-  .dubbel .ancillary + .flow-side figure {
-    margin: 1.375em 0 0;
+    width: calc(100% + 9em);
   }
 
   .dubbel .ancillary {
-    float: left;
-    margin: 1.375rem 0;
+    font-size: 1em;
+    margin: 1.375em -25% 1.375em 2em;
     padding: 2em 2em;
-    width: 37.5%;
+    width: 62.5%;
+  }
+
+  .dubbel .flow-side > .ancillary {
+    margin-top: 0;
+    position: absolute;
+    right: -75%;
+    top: 0;
+    width: 100%;
+  }
+
+  .dubbel .flow-side > figure + .ancillary {
+    top: 25%;
   }
 
   .dubbel .hero {
@@ -900,8 +891,8 @@ screen and (min-resolution: 1.5dppx) {
 
   .dubbel blockquote,
   .dubbel .highlight {
-    margin: 1.5em -10em;
-    padding: 1.5em 10em;
+    margin: 1.5em -9em;
+    padding: 1.5em 9em;
   }
 
   .dubbel .grid-2 {
@@ -923,16 +914,15 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .singel article {
-    padding: 4em 8em 6em;
-    width: 56.5em;
+    padding: 4em 9em 6em;
+    width: 54em;
   }
 
   blockquote,
-  .highlight,
-  .ancillary {
-    margin-left: -8em;
-    margin-right: -8em;
-    padding: 2em 8em;
+  .highlight {
+    margin-left: -9em;
+    margin-right: -9em;
+    padding: 2em 9em;
   }
 
   .singel .hero {
@@ -940,12 +930,12 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .singel figure {
-    margin: 5% calc(-8em) 0;
-    width: calc(100% + 16em);
+    margin: 5% calc(-9em) 0;
+    width: calc(100% + 18em);
   }
 
   .singel figcaption {
-    padding: 1em 8em 0;
+    padding: 1em 9em 0;
   }
 
 }
@@ -953,12 +943,9 @@ screen and (min-resolution: 1.5dppx) {
 @media screen and (min-width: 95em) {
 
   .singel article,
+  .dubbel article,
   .photo article {
     font-size: 1.5em;
-  }
-
-  .dubbel article {
-    font-size: 1.2em;
   }
 
   .site-nav {
