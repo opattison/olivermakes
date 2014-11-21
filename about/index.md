@@ -2,10 +2,31 @@
 title: 'About'
 layout: singel
 date: 2014-10-31 18:25
+image:
+  - src: 2011-11-10-oliver-bench-jeancflanagan-ccbync.jpg
+    alt: 'Oliver Pattison sitting on a bench'
+    caption: 'Photo credit: [Jean Flanagan](http://jeancflanagan.com) – CC BY-NC'
+    date: 2011-11-10
+    camera: 'Nikon D3000'
+    lens: 'Nikon DX 55-200 mm f/4.0-5.6'
+    focal: '55mm'
+    aperture: 'f/4.0'
+    shutter: '1/40'
+    iso: 200
 
 ---
 
-## Subscribe to this site
+<figure> 
+  <img
+    src="{{ site.image-url }}/{{ page.image[0].src }}" 
+    sizes="{{ site.photo-sizes }}"  
+    srcset="{% for srcset in site.srcset %}{{ site.image-url }}/{{ site.srcset[forloop.index0] }}/{{ page.image[0].src }} {{ site.srcset[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+    alt="{{ page.image[0].alt }}"
+  >
+  <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
+</figure>
+
+## About me
 
 ## About this site
 
@@ -33,7 +54,30 @@ The fonts on the site (300, 400 and 500 weights of [the Ratio typeface](http://c
 
 ### Influences
 
+#### People
 
+- [Jeremy Keith](https://adactio.com)
+- [Mandy Brown](http://aworkinglibrary.com/)
+- [Paul Robert Lloyd](http://paulrobertlloyd.com/)
+- [Anna Debenham](http://maban.co.uk/)
+- [Heydon Pickering](http://www.heydonworks.com)
+- [Simon Foster](http://simonfosterdesign.com/)
+- [David Bushell](http://dbushell.com/)
+- [Trent Walton](http://trentwalton.com)
+
+#### Websites and apps
+
+- [Art=Work](http://artequalswork.com) by Nathan Ford
+- [Works That Work](https://worksthatwork.com)
+- [Code for America Style Guide](http://style.codeforamerica.org/)
+- [CSS Zen Garden #221](http://www.csszengarden.com/221/) by Andrew Lohman
+- [Jim Ramsden](http://jimramsden.com/)
+- [Ableton](https://www.ableton.com/en/)
+- [STET by Editorially](http://stet.editorially.com/)
+- [MapBox](https://www.mapbox.com/)
+- [VSCO](http://vsco.co)
+- [Instapaper](https://www.instapaper.com)
+- [Reeder](http://reederapp.com)
 
 ## Copyright
 
