@@ -61,7 +61,7 @@ Additionally, I have an RSS feed and I plan to integrate with other APIs and ser
 
 ### A browser, a text editor, a command line
 
-I really only need a browser (Chrome primarily, but also Safari, Firefox and some mobile browsers), a text editor (Sublime Text 3) and Terminal to maintain the website. I can write HTML and CSS, design and test in multiple browsers, control the version history with Git, and deploy to the website on the command line.
+I really only need a browser, a text editor and Terminal to maintain the website. I can write HTML and CSS, design and test in a browser (Chrome primarily, but also Safari, Firefox and some mobile browsers), control the version history with Git, and deploy to the website with Terminal.
 
 ### Leasing the domain/URI
 
