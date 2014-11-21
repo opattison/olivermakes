@@ -104,7 +104,7 @@ If you have any questions about licensing or use of content from the site, pleas
 
 ## Elsewhere on the web
 
-I post nearly every significant thing I read or look at on the web on **[Pinboard](https://pinboard.in/u:opattison)**. Pinboard is my external brain and my favorite web service. It is as complete an archive as I can keep of my reading online.
+I post nearly every significant thing I read or look at on the web on **[Pinboard](https://pinboard.in/u:opattison)**. It is my external brain and my favorite thing on the web. It is as complete an archive as I can keep of my reading online.
 
 I post short stuff on **[Twitter at olivermakes](http://twitter.com/olivermakes)**.
 
