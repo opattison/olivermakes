@@ -58,6 +58,10 @@ source: http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 
 /* Custom resets */
 
+html {
+  height: 100%;
+}
+
 body {
   margin: 0 auto;
   max-width: 100%;
@@ -109,21 +113,20 @@ sup {
 
 /***! END Normalization ***/
 
-
 /*** Axiomatic styles **************************/
 /* via Heydon Pickering
 source: http://alistapart.com/article/axiomatic-css-and-lobotomized-owls */
 
 * + * {
-  margin-top: 1.375em;
+  margin-top: 1.25em;
 }
 
 li + li {
-  margin-top: .6875em; /* Half of axiomatic top margins */
+  margin-top: .625em; /* Half of axiomatic top margins */
 }
 
 article {
-  padding: 1.375em 1em;
+  padding: 1.25em 1em;
 }
 
 /***! END Axiomatic styles ***/
@@ -133,7 +136,11 @@ article {
 html {
   font: 400 16px/1.4375 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
   font: 400 1rem/1.4375 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
-  height: 100%;
+  -moz-font-feature-settings: "liga", "dlig"; 
+  -ms-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  -webkit-font-feature-settings: "liga", "dlig";
+   font-feature-settings: "liga", "dlig";
 }
 
 strong,
@@ -141,52 +148,76 @@ b {
   font-weight: 500;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5, {
+  font-family: 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
+}
+
+h1,
+h2 {
+  color: hsla(205, 10%, 32%, 1);
+}
+
 h1 {
-  font: 500 2em/1.25 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
-  letter-spacing: -.03125em;
+  font-size: 2em;
+  font-weight: 500;
+  line-height: 1.25;
 }
 
 h2 {
-  font: 400 1.75em/1.25 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
-  letter-spacing: -.03125em;
+  font-size: 1.75em;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+h3,
+h4,
+h5 {
+  font-weight: 300;
 }
 
 h3 {
-  font: 300 1.375em/1.25 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
+  font-size: 1.375em;
+  line-height: 1.25;
 }
 
 h4 {
-  font: 300 1.25em/1.375 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
+  font-size: 1.25em;
+  line-height: 1.375;
 }
 
 h5 {
-  font: 300 1.125em/1.5 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
+  font-size: 1.125em;
+  line-height: 1.5;
 }
 
 .feature {
-  color: steelblue;
+  color: hsla(205, 85%, 40%, 1);
   font-size: 1.25em;
 }
 
 a,
 a:visited {
-  color: royalblue;
+  color: hsla(5, 85%, 40%, 1);
   text-decoration: underline;
 }
 
 a:hover,
 a:focus {
-  color: darkorange;
+  color: hsla(205, 85%, 40%, 1);
 }
 
 a:focus {
-  outline: solid .125em darkorange;
+  outline: solid .25em hsla(205, 85%, 40%, 1);
 }
 
 article strong a,
 article strong a:visited {
-  color: white;
-  background-color: royalblue;
+  color: hsla(205, 5%, 98%, 1);
+  background-color: hsla(5, 85%, 40%, 1);
   padding: .125em .25em;
   text-decoration: none;
   border-radius: .125em;
@@ -194,12 +225,13 @@ article strong a:visited {
 
 article strong a:hover,
 article strong a:focus {
-  color: white;
-  background-color: darkorange;
+  color: hsla(205, 5%, 98%, 1);
+  background-color: hsla(205, 85%, 40%, 1);
 }
 
 article strong a:focus {
-  outline: thin;
+  border-radius: 0;
+  outline: solid .1875em hsla(5, 85%, 40%, 1);
 }
 
 ul {
@@ -207,7 +239,7 @@ ul {
 }
 
 blockquote {
-  background-color: gainsboro;
+  background-color: hsla(205, 5%, 85%, 1);
 }
 
 figcaption {
@@ -221,9 +253,10 @@ figcaption p {
 }
 
 hr {
-  background-color: darkgray;
+  background-color: hsla(205, 10%, 32%, 1);
   border: 0;
   height: .25em;
+  margin: 2.5em 0;
 }
 
 code,
@@ -237,7 +270,7 @@ samp {
 code,
 pre,
 samp {
-  background-color: gainsboro;
+  background-color: hsla(205, 25%, 80%, 1);
 }
 
 p > code,
@@ -253,13 +286,13 @@ pre > code {
 }
 
 blockquote p > code {
-  background-color: white;
+  background-color: hsla(205, 5%, 98%, 1);
 }
 
 kbd > kbd {
-  background-color: black;
+  background-color: hsla(205, 10%, 12%, 1);
   border-radius: .25em;
-  color: white;
+  color: hsla(205, 5%, 98%, 1);
   font: 300 .8125em/1 'Open Sans', sans-serif;
   padding: .0625em .5em;
 }
@@ -270,7 +303,7 @@ kbd > kbd + b {
 } /* <kbd><kbd>cmd</kbd> <b class="kbd-plus">+</b> <kbd>C</kbd></kbd> */
 
 mark {
-  background-color: palegoldenrod;
+  background-color: hsla(62, 30%, 80%, 1);
   padding: .0625em;
 }
 
@@ -287,7 +320,7 @@ mark > code {
 }
 
 .site-header .title {
-  color: black;
+  color: hsla(205, 10%, 18%, 1);
   display: block;
   margin: 0 auto;
   max-width: 13em;
@@ -296,6 +329,7 @@ mark > code {
 
 .site-header .title h1 {
   font-weight: 300;
+  letter-spacing: -.03125em;
   margin: 0;
   text-align: center;
 }
@@ -306,10 +340,14 @@ mark > code {
   width: 2.5em;
 }
 
+.site-header .logo circle {
+  stroke: hsla(205, 10%, 18%, 1);
+}
+
 .top-menu,
 .site-nav:target .close-menu {
-  background-color: firebrick;
-  color: white;
+  background-color: hsla(5, 85%, 40%, 1);
+  color: hsla(205, 5%, 98%, 1);
   margin: 0;
   position: absolute;
   text-align: center;
@@ -321,7 +359,7 @@ mark > code {
 .top-menu a,
 .site-nav:target .close-menu a,
 .alt-nav a {
-  color: white;
+  color: hsla(205, 5%, 98%, 1);
   display: block;
   font-weight: 400;
   padding: .5em;
@@ -335,8 +373,8 @@ mark > code {
 }
 
 .site-footer .site-info {
-  background-color: white;
-  color: black;
+  background-color: hsla(205, 5%, 98%, 1);
+  color: hsla(205, 10%, 12%, 1);
   padding-top: 2em;
   padding-bottom: 2em;
   width: 100%;
@@ -364,31 +402,34 @@ mark > code {
   width: 50%;
 }
 
-.site-nav li {
-  background-color: hsla(0, 0%, 10%, 1);
-}
-
-.site-nav li:nth-child(1) {
-  background-color: hsla(0, 0%, 10%, 1);
-}
-
-.site-nav li:nth-child(2) {
-  background-color: hsla(0, 0%, 30%, 1);
-}
-
-.site-nav li:nth-child(3) {
-  background-color: hsla(0, 0%, 40%, 1);
-}
-
-.site-nav li:nth-child(4) {
-  background-color: hsla(0, 0%, 20%, 1);
-}
-
 .site-nav li a {
+  background-color: hsla(205, 10%, 12%, 1);
   display: block;
-  color: white;
+  color: hsla(205, 5%, 98%, 1);
   padding: 2em 0;
   text-decoration: none;
+}
+
+.site-nav li:nth-child(2) a {
+  background-color: hsla(205, 10%, 24%, 1);
+}
+
+.site-nav li:nth-child(3) a {
+  background-color: hsla(205, 10%, 32%, 1);
+}
+
+.site-nav li:nth-child(4) a {
+  background-color: hsla(205, 10%, 18%, 1);
+}
+
+.site-nav li a:hover,
+.site-nav li a:focus {
+  background-color: hsla(205, 85%, 40%, 1);
+}
+
+.site-nav li a:focus {
+  box-shadow: inset 0 .25em 0 hsla(5, 85%, 40%, 1);
+  outline: none;
 }
 
 .site-nav .close-menu {
@@ -400,17 +441,48 @@ mark > code {
 }
 
 .alt-nav li a {
-  background-color: dimgray;
-  color: white;
+  background-color: hsla(205, 10%, 18%, 1);
+  color: hsla(205, 5%, 98%, 1);
   padding: 1em;
 }
 
 .alt-nav .back-home a {
-  background-color: royalblue;
+  background-color: hsla(205, 85%, 40%, 1);
 }
 
 .alt-nav .back-top a {
-  background-color: firebrick;
+  background-color: hsla(5, 85%, 40%, 1);
+}
+
+.alt-nav a:hover,
+.alt-nav a:focus,
+.alt-nav a:hover,
+.alt-nav a:focus {
+  background-color: hsla(205, 5%, 95%, 1);
+  outline: none;
+}
+
+.alt-nav .back-home a:hover,
+.alt-nav .back-home a:focus {
+  color: hsla(205, 85%, 40%, 1);
+}
+
+.alt-nav .back-home a:hover circle,
+.alt-nav .back-home a:focus circle {
+  stroke: hsla(205, 85%, 40%, 1);
+}
+
+.alt-nav .back-home a:focus {
+  box-shadow: inset 0 .25em 0 hsla(205, 85%, 40%, 1);
+}
+
+.alt-nav .back-top a:hover,
+.alt-nav .back-top a:focus {
+  color: hsla(5, 85%, 40%, 1);
+}
+
+.alt-nav .back-home a:focus {
+  box-shadow: inset 0 .25em 0 hsla(5, 85%, 40%, 1);
 }
 
 .back-home .inner {
@@ -429,7 +501,7 @@ mark > code {
 }
 
 .back-home .logo circle {
-  stroke: white;
+  stroke: hsla(205, 5%, 98%, 1);
   stroke-width: 32px;
 }
 
@@ -448,20 +520,20 @@ mark > code {
   z-index: 2;
 }
 
-.site-nav:target li:nth-child(1) {
-  background-color: hsla(0, 0%, 10%, .85);
+.site-nav:target li {
+  background-color: hsla(205, 10%, 12%, .75);
 }
 
 .site-nav:target li:nth-child(2) {
-  background-color: hsla(0, 0%, 30%, .85);
+  background-color: hsla(205, 10%, 24%, .75);
 }
 
 .site-nav:target li:nth-child(3) {
-  background-color: hsla(0, 0%, 40%, .85);
+  background-color: hsla(205, 10%, 32%, .75);
 }
 
 .site-nav:target li:nth-child(4) {
-  background-color: hsla(0, 0%, 20%, .85);
+  background-color: hsla(205, 10%, 18%, .75);
 }
 
 .site-nav:target .close-menu {
@@ -498,43 +570,49 @@ section {
 
 .singel,
 .dubbel {
-  background-color: whitesmoke;
+  background-color: hsla(205, 5%, 95%, 1);
 }
 
 .singel article,
 .dubbel article {
-  background-color: white;
+  background-color: hsla(205, 5%, 98%, 1);
 }
 
 .photo {
-  background-color: #444;
+  background-color: hsla(205, 10%, 18%, 1);
+  color: hsla(205, 5%, 95%, 1);
 }
 
 .photo article {
   padding-bottom: .5em;
 }
 
-.photo article a,
-.photo article a:visited {
-  color: lightblue;
+.photo h1,
+.photo h2 {
+  color: hsla(205, 5%, 95%, 1);
+}
+
+.photo [role="main"] a,
+.photo [role="main"] a:visited {
+  color: hsla(5, 25%, 80%, 1);
+}
+
+.photo [role="main"] a:hover,
+.photo [role="main"] a:focus {
+  color: hsla(205, 25%, 80%, 1);
 }
 
 .photo article,
 .photo .site-header a {
-  color: white;
+  color: hsla(205, 5%, 98%, 1);
 }
 
 .photo .site-header .logo circle {
-  stroke: white;
-}
-
-.photo .site-info a,
-.photo .site-info a:visited {
-  color: royalblue;
+  stroke: hsla(205, 5%, 98%, 1);
 }
 
 .essay {
-  background-color: dimgray;
+  background-color: hsla(205, 10%, 24%, 1);
   margin-top: 2.75em;
 }
 
@@ -547,8 +625,8 @@ blockquote,
 }
 
 .ancillary {
-  background-color: whitesmoke;
-  color: dimgray;
+  background-color: hsla(205, 5%, 95%, 1);
+  color: hsla(205, 10%, 18%, 1);
   padding: 1em;
 }
 
