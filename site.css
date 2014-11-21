@@ -963,6 +963,13 @@ screen and (min-resolution: 1.5dppx) {
     padding: 1em 9em 0;
   }
 
+  .singel .ancillary {
+    font-size: .875em;
+    margin-right: -10.28571429em;
+    margin-right: calc(-9em / .875);
+    width: 50%;
+  }
+
 }
 
 @media screen and (min-width: 95em) {
