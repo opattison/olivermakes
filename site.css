@@ -367,6 +367,13 @@ mark > code {
   text-decoration: none;
 }
 
+.top-menu a:hover,
+.top-menu a:focus,
+.site-nav:target .close-menu a:hover,
+.site-nav:target .close-menu a:focus {
+  background-color: hsla(205, 85%, 40%, 1)
+}
+
 .site-nav,
 .site-info {
   margin: 0 auto;
@@ -521,19 +528,19 @@ mark > code {
   z-index: 2;
 }
 
-.site-nav:target li {
+.site-nav:target li a {
   background-color: hsla(205, 10%, 12%, .75);
 }
 
-.site-nav:target li:nth-child(2) {
+.site-nav:target li:nth-child(2) a {
   background-color: hsla(205, 10%, 24%, .75);
 }
 
-.site-nav:target li:nth-child(3) {
+.site-nav:target li:nth-child(3) a {
   background-color: hsla(205, 10%, 32%, .75);
 }
 
-.site-nav:target li:nth-child(4) {
+.site-nav:target li:nth-child(4) a {
   background-color: hsla(205, 10%, 18%, .75);
 }
 
@@ -558,7 +565,7 @@ mark > code {
 }
 
 .site-nav:target::after {
-  background-color: hsla(0, 0%, 0%, 0.85);
+  background-color: hsla(205, 10%, 12%, .75);
 }
 
 /***! END Site headers and footers ***/
