@@ -1,6 +1,9 @@
 ---
 title: 'About'
 layout: singel
+layout-option:
+  - no-title
+  - hero
 date: 2014-10-31 18:25
 image:
   - src: 2011-11-10-oliver-bench-jeancflanagan-ccbync.jpg
@@ -15,16 +18,6 @@ image:
     iso: 200
 
 ---
-
-<figure> 
-  <img
-    src="{{ site.image-url }}/{{ page.image[0].src }}" 
-    sizes="{{ site.photo-sizes }}"  
-    srcset="{% for srcset in site.srcset %}{{ site.image-url }}/{{ site.srcset[forloop.index0] }}/{{ page.image[0].src }} {{ site.srcset[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-    alt="{{ page.image[0].alt }}"
-  >
-  <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
-</figure>
 
 ## About me
 

@@ -264,8 +264,7 @@ mark > code {
 /*** Site headers and footers ******************/
 
 .site-header {
-  height: 7em;
-  padding: 1em 0;
+  padding: 1em 0 3.4375em;
 }
 
 .site-header .title {
@@ -415,7 +414,6 @@ mark > code {
   stroke-width: 32px;
 }
 
-
 .site-nav:target {
   display: block;
   margin: 0 auto;
@@ -535,6 +533,10 @@ blockquote,
 .ancillary {
   background-color: dimgray;
   color: white;
+}
+
+.hero {
+  margin-top: -1.375em;
 }
 
 /***! END Page layouts ***/
@@ -682,6 +684,10 @@ screen and (min-resolution: 1.5dppx) {
     padding-right: 0;
   }
 
+  .hero {
+    margin-top: -2em;
+  }
+
 }
 
 @media screen and (min-width: 40em) {
@@ -782,6 +788,11 @@ screen and (min-resolution: 1.5dppx) {
     padding: 2em 10.5em;
   }
 
+  .singel .hero,
+  .dubbel .hero {
+    margin-top: -2.25em;
+  }
+
   article figure {
     margin: 5% auto 0;
     max-width: 100%;
@@ -838,9 +849,9 @@ screen and (min-resolution: 1.5dppx) {
 
   .dubbel article {
     font-size: 1em;
-    margin: 0 auto;
+    margin: 2.75em auto 0;
     overflow: hidden;
-    padding: 0;
+    padding: 2.75em 0 5.5em;
     width: 67.5em;
   }
 
@@ -883,6 +894,10 @@ screen and (min-resolution: 1.5dppx) {
     width: 37.5%;
   }
 
+  .dubbel .hero {
+    margin-top: -2.75em;
+  }
+
   .dubbel blockquote,
   .dubbel .highlight {
     margin: 1.5em -10em;
@@ -918,6 +933,10 @@ screen and (min-resolution: 1.5dppx) {
     margin-left: -8em;
     margin-right: -8em;
     padding: 2em 8em;
+  }
+
+  .singel .hero {
+    margin-top: -4em;
   }
 
   .singel figure {

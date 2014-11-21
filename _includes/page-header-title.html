@@ -1,0 +1,19 @@
+    {% if layout-option == hero %}
+    <figure class="hero"> 
+      <img
+        src="{{ site.image-url }}/{{ page.image[0].src }}" 
+        sizes="{{ site.photo-sizes }}"  
+        srcset="{% for srcset in site.srcset %}{{ site.image-url }}/{{ site.srcset[forloop.index0] }}/{{ page.image[0].src }} {{ site.srcset[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+        alt="{{ page.image[0].alt }}"
+      >
+      {% if page.image[0].caption %}
+      <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
+      {% endif %}
+    </figure>
+    {% endif %}
+
+    {% if layout-option != no-title %}
+    <header>
+      <h1>{{ page.title }}</h1>
+    </header>
+    {% endif %}
