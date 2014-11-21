@@ -533,6 +533,16 @@ blockquote,
   padding: 1em;
 }
 
+.ancillary h1 {
+  font: 500 1.25em/1.5 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
+  letter-spacing: 0;
+}
+
+.ancillary h2 {
+  font: 400 1.125em/1.5 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
+  letter-spacing: 0;
+}
+
 .ancillary figure {
   margin: 1.375em auto 0;
   max-width: 100%;
@@ -674,12 +684,14 @@ screen and (min-resolution: 1.5dppx) {
     width: calc(100% + 5em);
   }
 
-  .singel .narrow {
+  .singel .narrow,
+  .dubbel .narrow {
     margin: 5% auto;
     max-width: 100%;
   }
 
-  .singel .narrow figcaption {
+  .singel .narrow figcaption,
+  .dubbel .narrow figcaption {
     padding-left: 0;
     padding-right: 0;
   }
@@ -799,6 +811,7 @@ screen and (min-resolution: 1.5dppx) {
 
   .photo figure,
   .singel figure,
+  .dubbel figure,
   .grid-2 {
     margin: 5% calc(-4.5em) 0;
     max-width: none;
@@ -853,6 +866,12 @@ screen and (min-resolution: 1.5dppx) {
     width: 54em;
   }
 
+  .dubbel figure {
+    margin: 5% calc(-9em) 0;
+    max-width: none;
+    width: calc(100% + 18em);
+  }
+
   .dubbel .flow-side {
     padding: 0 4.25em 0 0;
     position: relative;
@@ -871,6 +890,12 @@ screen and (min-resolution: 1.5dppx) {
     margin: 1.375em -25% 1.375em 2em;
     padding: 2em 2em;
     width: 62.5%;
+  }
+
+  .dubbel .ancillary figure {
+    margin: 1.375em auto 0;
+    max-width: 100%;
+    width: 100%;
   }
 
   .dubbel .flow-side > .ancillary {
@@ -963,12 +988,17 @@ screen and (min-resolution: 1.5dppx) {
 @media screen and (min-width: 115em) {
 
   .singel article,
+  .dubbel article,
   .photo article {
     font-size: 1.75em;
   }
 
   .site-footer {
-    max-width: 98.875em;
+    max-width: 94.5em;
+  }
+
+  .photo .site-footer {
+    max-width: 78.75em;
   }
 
   .site-footer .site-info {
@@ -981,6 +1011,10 @@ screen and (min-resolution: 1.5dppx) {
 
   .photo article {
     font-size: 2em;
+  }
+
+  .photo .site-footer {
+    max-width: 90em;
   }
 
 }
