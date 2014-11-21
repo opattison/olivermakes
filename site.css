@@ -183,6 +183,25 @@ a:focus {
   outline: solid .125em darkorange;
 }
 
+article strong a,
+article strong a:visited {
+  color: white;
+  background-color: royalblue;
+  padding: .125em .25em;
+  text-decoration: none;
+  border-radius: .125em;
+}
+
+article strong a:hover,
+article strong a:focus {
+  color: white;
+  background-color: darkorange;
+}
+
+article strong a:focus {
+  outline: thin;
+}
+
 ul {
   list-style-type: square;
 }
