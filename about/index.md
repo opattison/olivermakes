@@ -1,6 +1,9 @@
 ---
 title: 'About'
 layout: singel
+layout-option:
+  - no-title
+  - hero
 date: 2014-10-31 18:25
 image:
   - src: 2011-11-10-oliver-bench-jeancflanagan-ccbync.jpg
@@ -16,16 +19,6 @@ image:
 
 ---
 
-<figure> 
-  <img
-    src="{{ site.image-url }}/{{ page.image[0].src }}" 
-    sizes="{{ site.photo-sizes }}"  
-    srcset="{% for srcset in site.srcset %}{{ site.image-url }}/{{ site.srcset[forloop.index0] }}/{{ page.image[0].src }} {{ site.srcset[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-    alt="{{ page.image[0].alt }}"
-  >
-  <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
-</figure>
-
 ## About me
 
 ## About this site
@@ -40,21 +33,10 @@ image:
 
 [GitHub](https://github.com/opattison/olivermakes) for version control.
 
-### Design and development
+{% capture a1 %}
+# Influences
 
-I worked alone on this site for a few weeks in October and November 2014. I would like to thank [Jean](http://jeancflanagan.com) for input.
-
-My process for designing the site mostly involves starting out with a handful of sketches, writing some notes and then diving into a text editor and browser to get it working. I have skipped mockups and high-fidelity compositions in favor of sketching, and then iterative HTML/CSS prototyping that can be worked into finished code as the project progresses. 
-
-I target small-screens first (commonly known as “mobile-first”), so I make sure to test on a variety of devices as I go along. Working with fewer assumptions about device types informs the design process – it is easier to design with empathy and flexibilty with a responsive and iterative process.
-
-### Typography
-
-The fonts on the site (300, 400 and 500 weights of [the Ratio typeface](http://cargocollective.com/pstype/Ratio)) are [hosted by Typekit](https://typekit.com/colophons/hro5wuc).
-
-### Influences
-
-#### People
+## People
 
 - [Jeremy Keith](https://adactio.com)
 - [Mandy Brown](http://aworkinglibrary.com/)
@@ -65,7 +47,7 @@ The fonts on the site (300, 400 and 500 weights of [the Ratio typeface](http://c
 - [David Bushell](http://dbushell.com/)
 - [Trent Walton](http://trentwalton.com)
 
-#### Websites and apps
+## Websites and apps
 
 - [Art=Work](http://artequalswork.com) by Nathan Ford
 - [Works That Work](https://worksthatwork.com)
@@ -78,6 +60,23 @@ The fonts on the site (300, 400 and 500 weights of [the Ratio typeface](http://c
 - [VSCO](http://vsco.co)
 - [Instapaper](https://www.instapaper.com)
 - [Reeder](http://reederapp.com)
+{% endcapture %}
+
+<aside class="ancillary">
+{{ a1 | markdownify }}
+</aside>
+
+### Design and development
+
+I worked alone on this site for a few weeks in October and November 2014. I would like to thank [Jean](http://jeancflanagan.com) for input.
+
+My process for designing the site mostly involves starting out with a handful of sketches, writing some notes and then diving into a text editor and browser to get it working. I have skipped mockups and high-fidelity compositions in favor of sketching, and then iterative HTML/CSS prototyping that can be worked into finished code as the project progresses. 
+
+I target small-screens first (commonly known as “mobile-first”), so I make sure to test on a variety of devices as I go along. Working with fewer assumptions about device types informs the design process – it is easier to design with empathy and flexibilty with a responsive and iterative process.
+
+### Typography
+
+The fonts on the site (300, 400 and 500 weights of [the Ratio typeface](http://cargocollective.com/pstype/Ratio)) are [hosted by Typekit](https://typekit.com/colophons/hro5wuc). This site uses responsive typography based on pixel density, so if you have a higher resolution display, you will see different variants of Ratio.
 
 ## Copyright
 
@@ -97,7 +96,7 @@ Or in HTML:
 “The title” <a href="http://olivermak.es">Oliver Pattison</a> CC BY-NC
 {% endhighlight %}
 
-Please [get in touch with me by email](mailto:oliverpattison@gmail.com) if you have any questions about licensing or use of content from the site.
+If you have any questions about licensing or use of content from the site, please [contact me by email](mailto:oliverpattison@gmail.com).
 
 - - -
 
@@ -105,11 +104,11 @@ Please [get in touch with me by email](mailto:oliverpattison@gmail.com) if you h
 
 I post nearly every significant thing I read or look at on the web [on Pinboard](https://pinboard.in/u:opattison). Pinboard is my favorite web service and is as complete an archive as I can keep of my reading online. Pinboard is my external brain.
 
-I post short stuff [on Twitter at olivermakes](http://twitter.com/olivermakes).
+I post short stuff on **[Twitter at olivermakes](http://twitter.com/olivermakes)**.
 
-My open source code (including this site) is [on GitHub](https://github.com/opattison).
+My open source code (including this site) is on **[GitHub](https://github.com/opattison)**.
 
-I share some of my mobile photography to [VSCO Grid](http://olivermakes.vsco.co).
+I share some of my mobile photography to **[VSCO Grid](http://olivermakes.vsco.co)**.
 
 I post less frequently to:
 

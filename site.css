@@ -264,8 +264,7 @@ mark > code {
 /*** Site headers and footers ******************/
 
 .site-header {
-  height: 7em;
-  padding: 1em 0;
+  padding: 1em 0 3.4375em;
 }
 
 .site-header .title {
@@ -415,7 +414,6 @@ mark > code {
   stroke-width: 32px;
 }
 
-
 .site-nav:target {
   display: block;
   margin: 0 auto;
@@ -498,9 +496,7 @@ section {
 }
 
 .photo article a,
-.photo article a:visited,
-.ancillary a,
-.ancillary a:visited {
+.photo article a:visited {
   color: lightblue;
 }
 
@@ -525,7 +521,6 @@ section {
 
 blockquote,
 .highlight,
-.ancillary,
 .essay {
   margin-left: -1em;
   margin-right: -1em;
@@ -533,8 +528,28 @@ blockquote,
 }
 
 .ancillary {
-  background-color: dimgray;
-  color: white;
+  background-color: whitesmoke;
+  color: dimgray;
+  padding: 1em;
+}
+
+.ancillary h1 {
+  font: 500 1.25em/1.5 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
+  letter-spacing: 0;
+}
+
+.ancillary h2 {
+  font: 400 1.125em/1.5 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
+  letter-spacing: 0;
+}
+
+.ancillary figure {
+  margin: 1.375em auto 0;
+  max-width: 100%;
+}
+
+.hero {
+  margin-top: -1.375em;
 }
 
 /***! END Page layouts ***/
@@ -599,7 +614,6 @@ screen and (min-resolution: 1.5dppx) {
 
   blockquote,
   .highlight,
-  .ancillary,
   .essay {
     margin-left: -2em;
     margin-right: -2em;
@@ -610,9 +624,8 @@ screen and (min-resolution: 1.5dppx) {
     padding: .5em 2em 0;
   }
 
-  .ancillary figure {
-    margin: 0 auto;
-    max-width: 100%;
+  .ancillary {
+    padding: 2em;
   }
 
   .site-header {
@@ -656,7 +669,6 @@ screen and (min-resolution: 1.5dppx) {
 
   blockquote,
   .highlight,
-  .ancillary,
   .essay {
     margin-left: -2.5em;
     margin-right: -2.5em;
@@ -672,14 +684,20 @@ screen and (min-resolution: 1.5dppx) {
     width: calc(100% + 5em);
   }
 
-  .singel .narrow {
+  .singel .narrow,
+  .dubbel .narrow {
     margin: 5% auto;
     max-width: 100%;
   }
 
-  .singel .narrow figcaption {
+  .singel .narrow figcaption,
+  .dubbel .narrow figcaption {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .hero {
+    margin-top: -2em;
   }
 
 }
@@ -715,10 +733,6 @@ screen and (min-resolution: 1.5dppx) {
   .singel article,
   .dubbel article {
     margin-top: 2.75em;
-  }
-
-  .ancillary {
-    padding: 1.25em 6em;
   }
 
 }
@@ -777,9 +791,16 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .ancillary {
-    margin-left: -4.5em;
-    margin-right: -4.5em;
-    padding: 2em 10.5em;
+    float: right;
+    font-size: .75em;
+    margin: 2em -6em 2em 2em;
+    padding: 2em;
+    width: 40%;
+  }
+
+  .singel .hero,
+  .dubbel .hero {
+    margin-top: -2.25em;
   }
 
   article figure {
@@ -790,6 +811,7 @@ screen and (min-resolution: 1.5dppx) {
 
   .photo figure,
   .singel figure,
+  .dubbel figure,
   .grid-2 {
     margin: 5% calc(-4.5em) 0;
     max-width: none;
@@ -832,61 +854,70 @@ screen and (min-resolution: 1.5dppx) {
 
   .site-footer .site-info {
     font-size: 1.25em;
-    min-height: 17.125rem;
+    min-height: 17.125rem; /* keeps .back-home link down */
     padding: 1em;
   }
 
   .dubbel article {
-    font-size: 1em;
-    margin: 0 auto;
+    font-size: 1.25em;
+    margin: 2.75em auto 0;
     overflow: hidden;
-    padding: 0;
-    width: 67.5em;
+    padding: 2.75em 9em 5.5em;
+    width: 54em;
   }
 
-  .dubbel .flow,
-  .dubbel .feature {
-    clear: both;
-    padding: 0 11.25rem;
-  }
-
-  .dubbel .flow,
-  .dubbel .flow-side {
-    font-size: 1.125em;
+  .dubbel figure {
+    margin: 5% calc(-9em) 0;
+    max-width: none;
+    width: calc(100% + 18em);
   }
 
   .dubbel .flow-side {
-    padding: 0 4.25em 0 10em;
-    float: left;
-    margin-top: 1.375rem;
+    padding: 0 4.25em 0 0;
+    position: relative;
+    margin-top: 1.375em;
     width: 62.5%;
   }
 
-  .dubbel .ancillary + .flow-side {
-    padding: 0 9.5em 1em 4em;
-  }
-
-  .dubbel .flow-side figure {
-    margin: 1.375em -10em;
+  .dubbel .flow-side > figure {
+    margin: 1.375em 0 0 -9em;
     max-width: none;
-    width: calc(100em / 3);
-  }
-
-  .dubbel .ancillary + .flow-side figure {
-    margin: 1.375em 0 0;
+    width: calc(100% + 9em);
   }
 
   .dubbel .ancillary {
-    float: left;
-    margin: 1.375rem 0;
+    font-size: 1em;
+    margin: 1.375em -25% 1.375em 2em;
     padding: 2em 2em;
-    width: 37.5%;
+    width: 62.5%;
+  }
+
+  .dubbel .ancillary figure {
+    margin: 1.375em auto 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .dubbel .flow-side > .ancillary {
+    margin-top: 0;
+    position: absolute;
+    right: -75%;
+    top: 0;
+    width: 100%;
+  }
+
+  .dubbel .flow-side > figure + .ancillary {
+    top: 25%;
+  }
+
+  .dubbel .hero {
+    margin-top: -2.75em;
   }
 
   .dubbel blockquote,
   .dubbel .highlight {
-    margin: 1.5em -10em;
-    padding: 1.5em 10em;
+    margin: 1.5em -9em;
+    padding: 1.5em 9em;
   }
 
   .dubbel .grid-2 {
@@ -908,25 +939,35 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .singel article {
-    padding: 4em 8em 6em;
-    width: 56.5em;
+    padding: 4em 9em 6em;
+    width: 54em;
   }
 
   blockquote,
-  .highlight,
-  .ancillary {
-    margin-left: -8em;
-    margin-right: -8em;
-    padding: 2em 8em;
+  .highlight {
+    margin-left: -9em;
+    margin-right: -9em;
+    padding: 2em 9em;
+  }
+
+  .singel .hero {
+    margin-top: -4em;
   }
 
   .singel figure {
-    margin: 5% calc(-8em) 0;
-    width: calc(100% + 16em);
+    margin: 5% calc(-9em) 0;
+    width: calc(100% + 18em);
   }
 
   .singel figcaption {
-    padding: 1em 8em 0;
+    padding: 1em 9em 0;
+  }
+
+  .singel .ancillary {
+    font-size: .875em;
+    margin-right: -10.28571429em;
+    margin-right: calc(-9em / .875);
+    width: 50%;
   }
 
 }
@@ -934,12 +975,9 @@ screen and (min-resolution: 1.5dppx) {
 @media screen and (min-width: 95em) {
 
   .singel article,
+  .dubbel article,
   .photo article {
     font-size: 1.5em;
-  }
-
-  .dubbel article {
-    font-size: 1.2em;
   }
 
   .site-nav {
@@ -957,12 +995,17 @@ screen and (min-resolution: 1.5dppx) {
 @media screen and (min-width: 115em) {
 
   .singel article,
+  .dubbel article,
   .photo article {
     font-size: 1.75em;
   }
 
   .site-footer {
-    max-width: 98.875em;
+    max-width: 94.5em;
+  }
+
+  .photo .site-footer {
+    max-width: 78.75em;
   }
 
   .site-footer .site-info {
@@ -975,6 +1018,10 @@ screen and (min-resolution: 1.5dppx) {
 
   .photo article {
     font-size: 2em;
+  }
+
+  .photo .site-footer {
+    max-width: 90em;
   }
 
 }
