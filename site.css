@@ -56,7 +56,7 @@ source: http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
   box-sizing: border-box;
 }
 
-/* Custom resets */
+/* Custom normalization */
 
 html {
   height: 100%;
@@ -241,6 +241,15 @@ ul {
 
 blockquote {
   background-color: hsla(205, 5%, 85%, 1);
+}
+
+blockquote footer {
+  margin-top: 1em;
+  text-align: right;
+}
+
+cite {
+  font-style: normal;
 }
 
 figcaption {
