@@ -412,7 +412,7 @@ mark > code {
 }
 
 .site-nav,
-.site-info {
+.site-footer .site-info {
   margin: 0 auto;
   overflow: auto;
 }
@@ -905,8 +905,13 @@ screen and (min-resolution: 1.5dppx) {
     width: 45em;
   }
 
-  .site-nav {
+  .site-nav,
+  .singel .site-nav:target {
     max-width: 49rem;
+  }
+
+  .singel .site-nav {
+    max-width: 56rem;
   }
 
   .site-nav li a,
