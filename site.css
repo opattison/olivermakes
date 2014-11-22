@@ -370,6 +370,17 @@ mark > code {
   stroke: hsla(205, 10%, 18%, 1);
 }
 
+.site-header .title:hover h1,
+a.site-header .title:focus h1 {
+  color: hsla(205, 85%, 40%, 1);
+}
+
+.site-header .title:hover .logo circle,
+.site-header .title:focus .logo circle {
+  stroke: hsla(205, 85%, 40%, 1);
+}
+
+
 .top-menu,
 .site-nav:target .close-menu {
   background-color: hsla(5, 85%, 40%, 1);
@@ -395,6 +406,10 @@ mark > code {
 .top-menu a:focus,
 .site-nav:target .close-menu {
   background-color: hsla(205, 85%, 40%, 1)
+}
+
+.top-menu a:focus {
+  outline: solid .25em hsla(5, 85%, 40%, 1);
 }
 
 .site-nav,
