@@ -7,14 +7,20 @@ layout: fundamental
 
 {% include site-header.html %}
 
-<section class="content">
-  <article role="main">
+  <section class="content">
+    <article role="main">
 
 {{ content }}
 
-  </article>
-</section>
+    </article>
+  </section>
 
-{% include site-footer.html %}
+  <footer class="site-footer">
+
+{% include site-nav.html %}
+
+{% include site-info.html %}
+    
+  </footer>
 
 </body>
