@@ -471,7 +471,8 @@ mark > code {
   background-color: hsla(205, 85%, 40%, 1);
 }
 
-.site-nav li a:focus {
+.site-nav li a:focus,
+.site-nav:target li a:focus {
   box-shadow: inset 0 .25em 0 hsla(5, 85%, 40%, 1);
   outline: none;
 }
@@ -578,6 +579,11 @@ mark > code {
 
 .site-nav:target li:nth-child(4) a {
   background-color: hsla(205, 10%, 18%, .8);
+}
+
+.site-nav:target li a:hover,
+.site-nav:target li a:focus {
+  background-color: hsla(205, 85%, 40%, .8)
 }
 
 .site-nav:target .close-menu {
