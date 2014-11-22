@@ -21,7 +21,7 @@ image:
 
 ## About me
 
-I am a designer focused on the future of the web. I am originally from New York City and I live in Washington, DC.
+I am a designer focused on the future of the web. I am originally from New York City. I currently live in Washington, DC.
 
 ## About this site
 
@@ -40,7 +40,7 @@ This website is an archive for my work, featuring **[writing](/writing)**, **[ph
 {% capture a1 %}
 # Influences
 
-These people and their creative works inspired elements of the site, particularly typography and proportion. Some of these also informed my philosphy and design process.
+These people and their creative works inspired elements of the site, particularly typography, proportion and design process.
 
 ## People
 
