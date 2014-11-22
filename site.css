@@ -203,7 +203,6 @@ h5 {
 a,
 a:visited {
   color: hsla(5, 85%, 40%, 1);
-  text-decoration: underline;
 }
 
 a:hover,
@@ -215,13 +214,27 @@ a:focus {
   outline: solid .25em hsla(205, 85%, 40%, 1);
 }
 
+article a,
+article a:visited,
+aside a,
+aside a:visited {
+  border-bottom: solid 1px hsla(5, 25%, 80%, 1);
+}
+
+article a:hover,
+article a:focus,
+aside a:hover,
+aside a:focus {
+  border-bottom: solid 1px hsla(205, 25%, 80%, 1);
+}
+
 article strong a,
 article strong a:visited {
   color: hsla(205, 5%, 98%, 1);
   background-color: hsla(5, 85%, 40%, 1);
   padding: .125em .25em;
-  text-decoration: none;
   border-radius: .125em;
+  border-bottom: none;
 }
 
 article strong a:hover,
@@ -335,7 +348,6 @@ mark > code {
   height: 2.5em;
   margin: 0 auto;
   position: relative;
-  text-decoration: none;
   width: 12.5em;
 }
 
@@ -377,7 +389,6 @@ mark > code {
   display: block;
   font-weight: 400;
   padding: .5em;
-  text-decoration: none;
 }
 
 .top-menu a:hover,
@@ -427,7 +438,6 @@ mark > code {
   display: block;
   color: hsla(205, 5%, 98%, 1);
   padding: 2em 0;
-  text-decoration: none;
 }
 
 .site-nav li:nth-child(2) a {
