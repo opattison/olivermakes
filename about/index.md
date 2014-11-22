@@ -21,7 +21,11 @@ image:
 
 ## About me
 
+I am a designer focused on the future of the web. I am originally from New York City and I live in Washington, DC.
+
 ## About this site
+
+This website is an archive for my work, featuring **[writing](/writing)**, **[photography](/photos)** and **[other work](/projects)**.
 
 ### Under the hood
 
@@ -104,7 +108,7 @@ If you have any questions about licensing or use of content from the site, pleas
 
 ## Elsewhere on the web
 
-I post nearly every significant thing I read or look at on the web on **[Pinboard](https://pinboard.in/u:opattison)**. It is my external brain and my favorite thing on the web. It is as complete an archive as I can keep of my reading online.
+I post nearly every significant thing I read or look at on **[Pinboard](https://pinboard.in/u:opattison)**. It is my external brain and my favorite thing on the web. It is as complete an archive as I can keep of my reading online.
 
 I am **[@olivermakes on Twitter](http://twitter.com/olivermakes)**.
 
