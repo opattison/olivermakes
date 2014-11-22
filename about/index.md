@@ -33,8 +33,7 @@ image:
 
 **[GitHub](https://github.com/opattison/olivermakes)** for version control.
 
-<aside class="ancillary">
-
+{% capture a1 %}
 # Influences
 
 These people and their creative works inspired elements of the site, particularly typography and proportion. Some of these also informed my philosphy and design process.
@@ -63,15 +62,17 @@ These people and their creative works inspired elements of the site, particularl
 - [VSCO](http://vsco.co)
 - [Instapaper](https://www.instapaper.com)
 - [Reeder](http://reederapp.com)
+{% endcapture %}
 
-
+<aside class="ancillary">
+{{ a1 | markdownify }}
 </aside>
 
 ### Design and development
 
 It is difficult to design for yourself. After spending too many months planning and delaying, I worked alone on designing this site for a few weeks in October and November 2014. I would like to thank [Jean](http://jeancflanagan.com) for editing and design input.
 
-My process for designing the site beings with a handful of sketches and notes. As soon as I can, I start work in a text editor and browser and come up with a typographic measure and some fundamental ratios. I have skipped mockups and high-fidelity compositions in favor of sketching, and then iterative HTML/CSS prototyping that can be worked into finished code as the project progresses. 
+My process for designing the site begins with a handful of sketches and notes. As soon as I can, I start work in a text editor and browser and come up with a typographic measure and fundamental ratios. I avoid mockups and high-fidelity compositions in favor of sketching, followed by iterative HTML/CSS prototyping that can be worked into finished code as the project progresses.
 
 I target small-screens first (commonly known as “mobile-first”), so I make sure to test on a variety of devices as I go along. The first browser width I look at is under `20em` (less than ~320 pixels). Working with fewer assumptions about device types informs the design process – it is easier to design with empathy and flexibilty with a responsive and iterative process.
 
