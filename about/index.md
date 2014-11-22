@@ -33,7 +33,8 @@ image:
 
 **[GitHub](https://github.com/opattison/olivermakes)** for version control.
 
-{% capture a1 %}
+<aside class="ancillary">
+
 # Influences
 
 These people and their creative works inspired elements of the site, particularly typography and proportion. Some of these also informed my philosphy and design process.
@@ -62,10 +63,8 @@ These people and their creative works inspired elements of the site, particularl
 - [VSCO](http://vsco.co)
 - [Instapaper](https://www.instapaper.com)
 - [Reeder](http://reederapp.com)
-{% endcapture %}
 
-<aside class="ancillary">
-{{ a1 | markdownify }}
+
 </aside>
 
 ### Design and development
