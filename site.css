@@ -1001,7 +1001,7 @@ screen and (min-resolution: 1.5dppx) {
   .site-footer .site-info {
     font-size: 1.25em;
     min-height: 17.125rem; /* keeps .back-home link down */
-    padding: 1em;
+    padding: 2em;
   }
 
   .dubbel article {
@@ -1131,7 +1131,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .site-footer .site-info {
-    padding: 1.25em 4em;
+    padding: 2em 4em;
     font-size: 1.5em;
     width: 66.66666667%
   }
@@ -1155,7 +1155,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .site-footer .site-info {
-    padding: 1.25em 5em;
+    padding: 2em 5em;
   }
 
 }
