@@ -481,6 +481,65 @@ mark > code {
   display: none; /* only displays with :target */
 }
 
+.site-nav:target {
+  margin: 0 auto;
+  padding-top: 7em;
+  position: absolute; /* now visible when target:ed */
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.site-nav:target ul {
+  position: relative;
+  z-index: 2;
+}
+
+.site-nav:target li a {
+  background-color: hsla(205, 10%, 12%, .8);
+}
+
+.site-nav:target li:nth-child(2) a {
+  background-color: hsla(205, 10%, 24%, .8);
+}
+
+.site-nav:target li:nth-child(3) a {
+  background-color: hsla(205, 10%, 32%, .8);
+}
+
+.site-nav:target li:nth-child(4) a {
+  background-color: hsla(205, 10%, 18%, .8);
+}
+
+.site-nav:target li a:hover,
+.site-nav:target li a:focus {
+  background-color: hsla(205, 85%, 40%, .8)
+}
+
+.site-nav:target .close-menu {
+  display: block; /* now visible when target:ed */
+}
+
+.site-nav:target .close-menu a {
+  position: relative;
+  z-index: 1;
+}
+
+.site-nav:target::after,
+.site-nav:target .close-menu a::after {
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.site-nav:target::after {
+  background-color: hsla(205, 10%, 12%, .8);
+}
+
 .alt-nav {
   margin: 0;
 }
@@ -548,66 +607,6 @@ mark > code {
 .back-home .logo circle {
   stroke: hsla(205, 10%, 98%, 1);
   stroke-width: 32px;
-}
-
-.site-nav:target {
-  display: block;
-  margin: 0 auto;
-  padding-top: 7em;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
-}
-
-.site-nav:target ul {
-  position: relative;
-  z-index: 2;
-}
-
-.site-nav:target li a {
-  background-color: hsla(205, 10%, 12%, .8);
-}
-
-.site-nav:target li:nth-child(2) a {
-  background-color: hsla(205, 10%, 24%, .8);
-}
-
-.site-nav:target li:nth-child(3) a {
-  background-color: hsla(205, 10%, 32%, .8);
-}
-
-.site-nav:target li:nth-child(4) a {
-  background-color: hsla(205, 10%, 18%, .8);
-}
-
-.site-nav:target li a:hover,
-.site-nav:target li a:focus {
-  background-color: hsla(205, 85%, 40%, .8)
-}
-
-.site-nav:target .close-menu {
-  display: block;
-}
-
-.site-nav:target .close-menu a {
-  position: relative;
-  z-index: 1;
-}
-
-.site-nav:target::after,
-.site-nav:target .close-menu a::after {
-  content: "";
-  display: block;
-  height: 100%;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.site-nav:target::after {
-  background-color: hsla(205, 10%, 12%, .8);
 }
 
 /***! END Site headers and footers ***/
