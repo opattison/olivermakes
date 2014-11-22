@@ -70,11 +70,11 @@ These people and their creative works inspired elements of the site, particularl
 
 ### Design and development
 
-After spending too many months planning and talking about it, I worked alone on designing this site for a few weeks in October and November 2014. I would like to thank [Jean](http://jeancflanagan.com) for editing and design input.
+It is difficult to design for yourself. After spending too many months planning and delaying, I worked alone on designing this site for a few weeks in October and November 2014. I would like to thank [Jean](http://jeancflanagan.com) for editing and design input.
 
-My process for designing the site mostly involves starting out with a handful of sketches, writing some notes and then diving into a text editor and browser to get it working. I have skipped mockups and high-fidelity compositions in favor of sketching, and then iterative HTML/CSS prototyping that can be worked into finished code as the project progresses. 
+My process for designing the site beings with a handful of sketches and notes. As soon as I can, I start work in a text editor and browser and come up with a typographic measure and some fundamental ratios. I have skipped mockups and high-fidelity compositions in favor of sketching, and then iterative HTML/CSS prototyping that can be worked into finished code as the project progresses. 
 
-I target small-screens first (commonly known as “mobile-first”), so I make sure to test on a variety of devices as I go along. Working with fewer assumptions about device types informs the design process – it is easier to design with empathy and flexibilty with a responsive and iterative process.
+I target small-screens first (commonly known as “mobile-first”), so I make sure to test on a variety of devices as I go along. The first browser width I look at is under `20em` (less than ~320 pixels). Working with fewer assumptions about device types informs the design process – it is easier to design with empathy and flexibilty with a responsive and iterative process.
 
 ### Typography
 
