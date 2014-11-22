@@ -230,7 +230,7 @@ aside a:focus {
 
 article strong a,
 article strong a:visited {
-  color: hsla(205, 5%, 98%, 1);
+  color: hsla(205, 10%, 98%, 1);
   background-color: hsla(5, 85%, 40%, 1);
   padding: .125em .25em;
   border-bottom: none;
@@ -239,7 +239,7 @@ article strong a:visited {
 
 article strong a:hover,
 article strong a:focus {
-  color: hsla(205, 5%, 98%, 1);
+  color: hsla(205, 10%, 98%, 1);
   background-color: hsla(205, 85%, 40%, 1);
 }
 
@@ -253,7 +253,7 @@ ul {
 }
 
 blockquote {
-  background-color: hsla(205, 5%, 85%, 1);
+  background-color: hsla(205, 10%, 85%, 1);
 }
 
 blockquote footer {
@@ -309,13 +309,13 @@ pre > code {
 }
 
 blockquote p > code {
-  background-color: hsla(205, 5%, 98%, 1);
+  background-color: hsla(205, 10%, 98%, 1);
 }
 
 kbd > kbd {
   background-color: hsla(205, 10%, 12%, 1);
   border-radius: .25em;
-  color: hsla(205, 5%, 98%, 1);
+  color: hsla(205, 10%, 98%, 1);
   font: 300 .8125em/1 'Open Sans', sans-serif;
   padding: .0625em .5em;
 }
@@ -383,7 +383,7 @@ mark > code {
 .top-menu,
 .site-nav:target .close-menu {
   background-color: hsla(5, 85%, 40%, 1);
-  color: hsla(205, 5%, 98%, 1);
+  color: hsla(205, 10%, 98%, 1);
   margin: 0;
   position: absolute;
   text-align: center;
@@ -395,7 +395,7 @@ mark > code {
 .top-menu a,
 .site-nav:target .close-menu a,
 .alt-nav a {
-  color: hsla(205, 5%, 98%, 1);
+  color: hsla(205, 10%, 98%, 1);
   display: block;
   font-weight: 400;
   padding: .5em;
@@ -418,7 +418,7 @@ mark > code {
 }
 
 .site-footer .site-info {
-  background-color: hsla(205, 5%, 98%, 1);
+  background-color: hsla(205, 10%, 98%, 1);
   color: hsla(205, 10%, 12%, 1);
   padding-top: 2em;
   padding-bottom: 2em;
@@ -450,7 +450,7 @@ mark > code {
 .site-nav li a {
   background-color: hsla(205, 10%, 12%, 1);
   display: block;
-  color: hsla(205, 5%, 98%, 1);
+  color: hsla(205, 10%, 98%, 1);
   padding: 2em 0;
 }
 
@@ -486,7 +486,7 @@ mark > code {
 
 .alt-nav li a {
   background-color: hsla(205, 10%, 18%, 1);
-  color: hsla(205, 5%, 98%, 1);
+  color: hsla(205, 10%, 98%, 1);
   padding: 1em;
 }
 
@@ -502,7 +502,7 @@ mark > code {
 .alt-nav a:focus,
 .alt-nav a:hover,
 .alt-nav a:focus {
-  background-color: hsla(205, 5%, 95%, 1);
+  background-color: hsla(205, 10%, 95%, 1);
   outline: none;
 }
 
@@ -545,7 +545,7 @@ mark > code {
 }
 
 .back-home .logo circle {
-  stroke: hsla(205, 5%, 98%, 1);
+  stroke: hsla(205, 10%, 98%, 1);
   stroke-width: 32px;
 }
 
@@ -614,17 +614,17 @@ section {
 
 .singel,
 .dubbel {
-  background-color: hsla(205, 5%, 95%, 1);
+  background-color: hsla(205, 10%, 95%, 1);
 }
 
 .singel article,
 .dubbel article {
-  background-color: hsla(205, 5%, 98%, 1);
+  background-color: hsla(205, 10%, 98%, 1);
 }
 
 .photo {
   background-color: hsla(205, 10%, 18%, 1);
-  color: hsla(205, 5%, 95%, 1);
+  color: hsla(205, 10%, 95%, 1);
 }
 
 .photo article {
@@ -633,7 +633,7 @@ section {
 
 .photo h1,
 .photo h2 {
-  color: hsla(205, 5%, 95%, 1);
+  color: hsla(205, 10%, 95%, 1);
 }
 
 .photo [role="main"] a,
@@ -648,11 +648,11 @@ section {
 
 .photo article,
 .photo .site-header a {
-  color: hsla(205, 5%, 98%, 1);
+  color: hsla(205, 10%, 98%, 1);
 }
 
 .photo .site-header .logo circle {
-  stroke: hsla(205, 5%, 98%, 1);
+  stroke: hsla(205, 10%, 98%, 1);
 }
 
 .essay {
@@ -669,7 +669,7 @@ blockquote,
 }
 
 .ancillary {
-  background-color: hsla(205, 5%, 95%, 1);
+  background-color: hsla(205, 10%, 95%, 1);
   color: hsla(205, 10%, 18%, 1);
   padding: 1em;
 }
