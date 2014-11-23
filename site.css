@@ -232,7 +232,7 @@ article strong a,
 article strong a:visited {
   color: hsla(205, 10%, 98%, 1);
   background-color: hsla(5, 85%, 40%, 1);
-  padding: .125em .25em;
+  padding: .0625em .1875em;
   border-bottom: none;
   border-radius: .125em;
 }
@@ -241,6 +241,7 @@ article strong a:hover,
 article strong a:focus {
   color: hsla(205, 10%, 98%, 1);
   background-color: hsla(205, 85%, 40%, 1);
+  border-bottom: none;
 }
 
 article strong a:focus {
@@ -357,6 +358,7 @@ mark > code {
   margin: 0;
   position: absolute;
   right: 0;
+  transition: color 300ms ease 0;
 }
 
 .site-header .logo {
@@ -366,18 +368,39 @@ mark > code {
   width: 2.5em;
 }
 
-.site-header .logo circle {
-  stroke: hsla(205, 10%, 18%, 1);
-}
-
 .site-header .title:hover h1,
 .site-header .title:focus h1 {
   color: hsla(205, 85%, 40%, 1);
 }
 
-.site-header .title:hover .logo circle,
-.site-header .title:focus .logo circle {
+.title .logo circle {
+  stroke: hsla(205, 10%, 18%, 1);
+  fill: hsla(205, 0%, 100%, .01);
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+  transition-property: fill, stroke;
+}
+
+.title:hover .logo circle,
+.title:focus .logo circle {
   stroke: hsla(205, 85%, 40%, 1);
+  transition-delay: 1500ms, 0;
+}
+
+.title:hover .logo circle {
+  fill: hsla(205, 85%, 40%, 1);
+}
+
+.title:hover .logo .core {
+  transition-delay: 1500ms, 0;
+}
+
+.title:hover .logo .mantle {
+  transition-delay: 1800ms, 0;
+}
+
+.title:hover .logo .earth {
+  transition-delay: 2100ms, 0;
 }
 
 .top-menu,
@@ -471,13 +494,73 @@ mark > code {
   background-color: hsla(205, 85%, 40%, 1);
 }
 
-.site-nav li a:focus {
+.site-nav li a:focus,
+.site-nav:target li a:focus {
   box-shadow: inset 0 .25em 0 hsla(5, 85%, 40%, 1);
   outline: none;
 }
 
 .site-nav .close-menu {
   display: none; /* only displays with :target */
+}
+
+.site-nav:target {
+  margin: 0 auto;
+  padding-top: 7em;
+  position: absolute; /* now visible when target:ed */
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.site-nav:target ul {
+  position: relative;
+  z-index: 2;
+}
+
+.site-nav:target li a {
+  background-color: hsla(205, 10%, 12%, .8);
+}
+
+.site-nav:target li:nth-child(2) a {
+  background-color: hsla(205, 10%, 24%, .8);
+}
+
+.site-nav:target li:nth-child(3) a {
+  background-color: hsla(205, 10%, 32%, .8);
+}
+
+.site-nav:target li:nth-child(4) a {
+  background-color: hsla(205, 10%, 18%, .8);
+}
+
+.site-nav:target li a:hover,
+.site-nav:target li a:focus {
+  background-color: hsla(205, 85%, 40%, .8)
+}
+
+.site-nav:target .close-menu {
+  display: block; /* now visible when target:ed */
+}
+
+.site-nav:target .close-menu a {
+  position: relative;
+  z-index: 1;
+}
+
+.site-nav:target::after,
+.site-nav:target .close-menu a::after {
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.site-nav:target::after {
+  background-color: hsla(205, 10%, 12%, .8);
 }
 
 .alt-nav {
@@ -525,7 +608,7 @@ mark > code {
   color: hsla(5, 85%, 40%, 1);
 }
 
-.alt-nav .back-home a:focus {
+.alt-nav .back-top a:focus {
   box-shadow: inset 0 .25em 0 hsla(5, 85%, 40%, 1);
 }
 
@@ -547,61 +630,6 @@ mark > code {
 .back-home .logo circle {
   stroke: hsla(205, 10%, 98%, 1);
   stroke-width: 32px;
-}
-
-.site-nav:target {
-  display: block;
-  margin: 0 auto;
-  padding-top: 7em;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
-}
-
-.site-nav:target ul {
-  position: relative;
-  z-index: 2;
-}
-
-.site-nav:target li a {
-  background-color: hsla(205, 10%, 12%, .8);
-}
-
-.site-nav:target li:nth-child(2) a {
-  background-color: hsla(205, 10%, 24%, .8);
-}
-
-.site-nav:target li:nth-child(3) a {
-  background-color: hsla(205, 10%, 32%, .8);
-}
-
-.site-nav:target li:nth-child(4) a {
-  background-color: hsla(205, 10%, 18%, .8);
-}
-
-.site-nav:target .close-menu {
-  display: block;
-}
-
-.site-nav:target .close-menu a {
-  position: relative;
-  z-index: 1;
-}
-
-.site-nav:target::after,
-.site-nav:target .close-menu a::after {
-  content: "";
-  display: block;
-  height: 100%;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.site-nav:target::after {
-  background-color: hsla(205, 10%, 12%, .8);
 }
 
 /***! END Site headers and footers ***/
@@ -647,12 +675,21 @@ section {
 }
 
 .photo article,
-.photo .site-header a {
+.photo .title h1 {
   color: hsla(205, 10%, 98%, 1);
 }
 
-.photo .site-header .logo circle {
+.photo .title:hover h1 {
+  color: hsla(205, 35%, 80%, 1);
+}
+
+.photo .logo circle {
   stroke: hsla(205, 10%, 98%, 1);
+}
+
+.photo .title:hover .logo circle {
+  fill: hsla(205, 35%, 80%, 1);
+  stroke: hsla(205, 35%, 80%, 1);
 }
 
 .essay {
