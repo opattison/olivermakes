@@ -357,6 +357,7 @@ mark > code {
   margin: 0;
   position: absolute;
   right: 0;
+  transition: color 150ms ease 2400ms;
 }
 
 .site-header .logo {
@@ -366,18 +367,53 @@ mark > code {
   width: 2.5em;
 }
 
-.site-header .logo circle {
-  stroke: hsla(205, 10%, 18%, 1);
-}
-
 .site-header .title:hover h1,
 .site-header .title:focus h1 {
   color: hsla(205, 85%, 40%, 1);
+  transition-delay: 0;
 }
 
-.site-header .title:hover .logo circle,
-.site-header .title:focus .logo circle {
+.title .logo circle {
+  stroke: hsla(205, 10%, 18%, 1);
+  fill: hsla(205, 0%, 100%, .1);
+  transition-duration: 150ms;
+  transition-timing-function: ease;
+  transition-property: fill, stroke;
+  transition-delay: 0, 0;
+}
+
+.title:hover .logo circle {
   stroke: hsla(205, 85%, 40%, 1);
+}
+
+.title:hover .logo .core,
+.title:hover .logo .mantle,
+.title:hover .logo .earth {
+  fill: hsla(205, 85%, 40%, 1);
+}
+
+.title .logo .core {
+  transition-delay: 2100ms, 2400ms;
+}
+
+.title .logo .mantle {
+  transition-delay: 1800ms, 2400ms;
+}
+
+.title .logo .earth {
+  transition-delay: 1500ms, 2400ms;
+}
+
+.title:hover .logo .core {
+  transition-delay: 1500ms, 0;
+}
+
+.title:hover .logo .mantle {
+  transition-delay: 1800ms, 0;
+}
+
+.title:hover .logo .earth {
+  transition-delay: 2100ms, 0;
 }
 
 .top-menu,
