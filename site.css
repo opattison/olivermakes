@@ -608,7 +608,7 @@ mark > code {
   color: hsla(5, 85%, 40%, 1);
 }
 
-.alt-nav .back-home a:focus {
+.alt-nav .back-top a:focus {
   box-shadow: inset 0 .25em 0 hsla(5, 85%, 40%, 1);
 }
 
