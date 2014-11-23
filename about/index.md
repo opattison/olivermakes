@@ -21,11 +21,11 @@ image:
 
 ## About me
 
-I am a designer focused on the future of the web. I am originally from New York City. I currently live in Washington, DC.
+I am a designer focused on the future of the web. I currently live in Washington, DC. I am originally from New York City.
 
 ## About this site
 
-This website is an archive for my work, featuring **[writing](/writing)**, **[photography](/photos)** and **[other work](/projects)**.
+This website is an archive for my work, featuring **[writing](/writing)**, **[photography](/photos)** and other **[projects](/projects)**.
 
 ### Under the hood
 

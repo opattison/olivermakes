@@ -232,7 +232,7 @@ article strong a,
 article strong a:visited {
   color: hsla(205, 10%, 98%, 1);
   background-color: hsla(5, 85%, 40%, 1);
-  padding: .125em .25em;
+  padding: .0625em .1875em;
   border-bottom: none;
   border-radius: .125em;
 }
@@ -241,6 +241,7 @@ article strong a:hover,
 article strong a:focus {
   color: hsla(205, 10%, 98%, 1);
   background-color: hsla(205, 85%, 40%, 1);
+  border-bottom: none;
 }
 
 article strong a:focus {
