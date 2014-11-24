@@ -1,6 +1,7 @@
 ---
 title: 'Design notes: future-friendliness and robustness'
 layout: singel
+code: true
 date: 2014-11-06 09:17
 updated: 2014-11-19 22:48
 
