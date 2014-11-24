@@ -1,3 +1,5 @@
+---
+---
 /*** Normalization *****************************/
 /* following adapted from HTML5 Reset
 source: http://html5reset.org */
@@ -1349,3 +1351,9 @@ screen and (min-width: 60em) and (max-height: 36em) {
 }
 
 /***! END Animations ***/
+
+/*** Pygments syntax highlighting **************/
+
+{% include pygments.css %}
+
+/***! END Pygments syntax highlighting ***/
