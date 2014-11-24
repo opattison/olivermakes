@@ -73,9 +73,6 @@ blue:
 boldblue:
   hsl: hsla(204, 80%, 40%, 1)
   hex: #1476b8
-lightblue:
-  hsl: hsla(204, 35%, 80%, 1)
-  hex: #bad0de
 grayblue:
   hsl: hsla(204, 30%, 80%, 1)
   hex: #bdcfdb

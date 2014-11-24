@@ -1354,8 +1354,4 @@ screen and (min-width: 60em) and (max-height: 36em) {
 
 /***! END Animations ***/
 
-/*** Pygments syntax highlighting **************/
-
 {% include pygments.css %}
-
-/***! END Pygments syntax highlighting ***/
