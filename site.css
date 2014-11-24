@@ -418,6 +418,8 @@ mark > code {
           animation-delay: 3100ms;
 }
 
+/* Menu navigation - top right */
+
 .top-menu,
 .site-nav:target .close-menu {
   background-color: hsla(5, 85%, 40%, 1);
@@ -449,6 +451,8 @@ mark > code {
   outline: solid .25em hsla(5, 85%, 40%, 1);
 }
 
+/* Site meta information */
+
 .site-nav,
 .site-footer .site-info {
   margin: 0 auto;
@@ -462,6 +466,8 @@ mark > code {
   padding-bottom: 2em;
   width: 100%;
 }
+
+/* Footer navigation */
 
 .site-nav {
   display: block;
@@ -514,6 +520,8 @@ mark > code {
   box-shadow: inset 0 .25em 0 hsla(5, 85%, 40%, 1);
   outline: none;
 }
+
+/* Target navigation - JS-free modal navigation */
 
 .site-nav .close-menu {
   display: none; /* only displays with :target */
@@ -577,6 +585,8 @@ mark > code {
 .site-nav:target::after {
   background-color: hsla(205, 10%, 12%, .8);
 }
+
+/* Alternative nav – home and back-to-top */
 
 .alt-nav {
   margin: 0;
@@ -655,6 +665,8 @@ section {
   margin-top: 0;
 }
 
+/* Singel and dubbel common */
+
 .singel,
 .dubbel {
   background-color: hsla(205, 10%, 95%, 1);
@@ -664,6 +676,8 @@ section {
 .dubbel article {
   background-color: hsla(205, 10%, 98%, 1);
 }
+
+/* Photo */
 
 .photo {
   background-color: hsla(205, 10%, 18%, 1);
@@ -721,6 +735,8 @@ blockquote,
   padding: 1em;
 }
 
+/* Aside for supporting content */
+
 .ancillary {
   background-color: hsla(205, 10%, 95%, 1);
   color: hsla(205, 10%, 18%, 1);
@@ -742,10 +758,6 @@ blockquote,
   max-width: 100%;
 }
 
-.hero {
-  margin-top: -1.25em;
-}
-
 /***! END Page layouts ***/
 
 /*** Image styles ******************************/
@@ -758,6 +770,12 @@ article figure {
   margin: 5% calc(-1em) 0;
   max-width: none;
   width: calc(100% + 2em);
+}
+
+/* Hero figure-image */
+
+.hero {
+  margin-top: -1.25em;
 }
 
 /***! END Image styles ***/
@@ -1225,7 +1243,7 @@ screen and (min-resolution: 1.5dppx) {
 
 }
 
-/* 1.666666667 ratio height limiter  */
+/* Height queries – 1.666666667 ratio height limiter  */
 
 @media screen and (min-width: 28.25em) and (max-height: 17em),
 screen and (min-width: 30em) and (max-height: 18em),
@@ -1285,6 +1303,8 @@ screen and (min-width: 60em) and (max-height: 36em) {
     fill: hsla(205, 85%, 40%, 1);
   }
 }
+
+/* For photo layout */
 
 @-webkit-keyframes step-fill--contrast {
   0% {
