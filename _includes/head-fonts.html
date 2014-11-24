@@ -1,2 +1,8 @@
-  <script src="//use.typekit.net/hro5wuc.js"></script>
+{% if page.code == true %}
+  <script src="//use.typekit.net/ojm0eig.js"></script> 
+  {% comment %} 'olivermakes code' – includes Source Code Pro and Ratio {% endcomment %}
+{% else %}
+  <script src="//use.typekit.net/hro5wuc.js"></script> 
+  {% comment %} 'olivermakes' – only includes Ratio {% endcomment %}
+{% endif %}
   <script>try{Typekit.load();}catch(e){}</script>

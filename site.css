@@ -292,16 +292,8 @@ hr {
 code,
 pre,
 samp {
-  font: 400 .8125em/1.4375 Menlo, Consolas, monospace;
+  font: 400 .8125em/1.4375 'source-code-pro', Menlo, Consolas, monospace;
   white-space: pre-wrap;
-}
-
-code {
-  border: solid .0625em hsla(205, 10%, 80%, 1);
-}
-
-.highlight code {
-  border: none;
 }
 
 .highlight {
@@ -311,18 +303,20 @@ code {
 
 p > code,
 samp {
-  border-radius: .125em;
-  margin: 0 -.0625em;
-  padding: .1875em .375em;
+  border: solid 1px hsla(205, 10%, 80%, 1);
+  border-radius: .25em;
+  margin: 0 -.03125em;
+  padding: .0625em .25em 0;
 }
 
 pre > code {
   font-size: 1em;
+  margin: 0;
   padding: 0;
 }
 
 blockquote p > code {
-  background-color: hsla(205, 10%, 98%, 1);
+  background-color: hsla(204, 10%, 96%, 1);
 }
 
 kbd > kbd {
