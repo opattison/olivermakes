@@ -1,6 +1,7 @@
 ---
 title: 'patterns'
 layout: singel
+code: true
 date: 2014-10-31 18:25
 image:
   - src: 'image.gif'
@@ -35,8 +36,51 @@ image:
 <li>Yet another item in this list of items</li>
 </ul>
 
+### HTML
+
 {% highlight html %}
+<header class="site-header" id="top" role="banner">
+  <a class="title" href="/">
+    <h1>Page title</h1>
+  </a>
+  <nav class="top-menu">
+    <a href="#navigation">Menu ⇂</a>
+  </nav>
+</header>
+
 <p>Some paragraph text may require <em>stress</em> emphasis and some it may be important enough to require something <strong>stronger</strong>. <q>Just as the plume of smoke rose and died so too will the glow of gold. Elevated status moves us now through the darkened halls of the quick.</q> This is <mark>highlighted text</mark> that uses the <code>&lt;mark&gt;</code> element. <dfn>H<sub>2</sub>O</dfn> is the chemical formula for a water molecule, indicating that it contains one oxygen and two hydrogen atoms. Oxygen is the 8<sup>th</sup> element on the <a href="https://en.wikipedia.org/wiki/Periodic_table">periodic table of elements</a>.</p>
+
+<!-- comment -->
+{% endhighlight %}
+
+### CSS
+
+{% highlight css %}
+article strong a,
+article strong a:visited {
+  color: hsla(205, 10%, 98%, 1);
+  background-color: hsla(5, 85%, 40%, 1);
+  padding: .0625em .1875em;
+  border-bottom: none;
+  border-radius: .125em;
+}
+
+a svg circle {
+  transition: all 160ms cubic-bezier(0,1,1,1);
+}
+
+.title:hover .logo .core,
+.title:active .logo .core {
+  -webkit-animation-delay: 1600ms;
+          animation-delay: 1600ms;
+}
+
+kbd > kbd + b {
+  font-family: 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
+  margin: 0 -.375em;
+}
+
+/* comment */
 {% endhighlight %}
 
 <div class="feature"><p>This is “feature” text, used for emphasis and attention in storytelling.</p></div>
