@@ -1146,7 +1146,7 @@ screen and (min-resolution: 1.5dppx) {
 
   .site-header {
     height: initial;
-    padding-top: 3em;
+    padding-top: 2.25em;
   }
 
   .site-header .title {
@@ -1212,6 +1212,14 @@ screen and (min-resolution: 1.5dppx) {
   .singel article,
   .dubbel article,
   .photo article {
+    font-size: 1.75em;
+  }
+
+  .site-header {
+    padding-top: 4.5em;
+  }
+
+  .site-header .title {
     font-size: 1.75em;
   }
 
