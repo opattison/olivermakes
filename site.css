@@ -339,6 +339,12 @@ mark > code {
   vertical-align: text-bottom; /* fix for alignment issue */
 }
 
+/* Transition helpers */
+
+svg circle {
+  transition: all 320ms cubic-bezier(0,1,1,1);
+}
+
 /***! END Basic styles ***/
 
 /*** Site headers and footers ******************/
@@ -419,7 +425,7 @@ mark > code {
 /* Menu navigation - top right */
 
 .top-menu,
-.site-nav:target .close-menu {
+.site-nav .close-menu {
   background-color: hsla(5, 85%, 40%, 1);
   color: hsla(205, 10%, 98%, 1);
   margin: 0;
@@ -431,7 +437,7 @@ mark > code {
 }
 
 .top-menu a,
-.site-nav:target .close-menu a,
+.site-nav .close-menu a,
 .alt-nav a {
   color: hsla(205, 10%, 98%, 1);
   display: block;
@@ -441,12 +447,14 @@ mark > code {
 
 .top-menu a:hover,
 .top-menu a:focus,
-.site-nav:target .close-menu {
-  background-color: hsla(205, 85%, 40%, 1)
+.site-nav .close-menu a {
+  background-color: hsla(205, 85%, 40%, 1);
 }
 
-.top-menu a:focus {
-  outline: solid .25em hsla(5, 85%, 40%, 1);
+.top-menu a:focus,
+.site-nav .close-menu a:focus {
+  box-shadow: inset 0 .5em 0 hsla(205, 10%, 98%, 1);
+  outline: none;
 }
 
 /* Site meta information */
@@ -515,7 +523,7 @@ mark > code {
 
 .site-nav li a:focus,
 .site-nav:target li a:focus {
-  box-shadow: inset 0 .25em 0 hsla(5, 85%, 40%, 1);
+  box-shadow: inset 0 .5em 0 hsla(205, 10%, 98%, 1);
   outline: none;
 }
 
@@ -597,11 +605,11 @@ mark > code {
 }
 
 .alt-nav .back-home a {
-  background-color: hsla(205, 85%, 40%, 1);
+  background-color: hsla(5, 85%, 40%, 1);
 }
 
 .alt-nav .back-top a {
-  background-color: hsla(5, 85%, 40%, 1);
+  background-color: hsla(205, 85%, 40%, 1);
 }
 
 .alt-nav a:hover,
@@ -614,25 +622,26 @@ mark > code {
 
 .alt-nav .back-home a:hover,
 .alt-nav .back-home a:focus {
-  color: hsla(205, 85%, 40%, 1);
+  color: hsla(5, 85%, 40%, 1);
 }
 
 .alt-nav .back-home a:hover circle,
 .alt-nav .back-home a:focus circle {
-  stroke: hsla(205, 85%, 40%, 1);
+  stroke: hsla(5, 85%, 40%, 1);
+  transition: stroke 160ms cubic-bezier(0,1,1,1);
 }
 
 .alt-nav .back-home a:focus {
-  box-shadow: inset 0 .25em 0 hsla(205, 85%, 40%, 1);
+  box-shadow: inset 0 .5em 0 hsla(5, 85%, 40%, 1);
 }
 
 .alt-nav .back-top a:hover,
 .alt-nav .back-top a:focus {
-  color: hsla(5, 85%, 40%, 1);
+  color: hsla(205, 85%, 40%, 1);
 }
 
 .alt-nav .back-top a:focus {
-  box-shadow: inset 0 .25em 0 hsla(5, 85%, 40%, 1);
+  box-shadow: inset 0 .5em 0 hsla(205, 85%, 40%, 1);
 }
 
 .back-home .inner {
