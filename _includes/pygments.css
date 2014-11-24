@@ -17,12 +17,12 @@ Light pygments template modified by Oliver Pattison */
 .highlight .c1 { color: #84919a } /* Comment.Single */
 .highlight .cs { color: #84919a } /* Comment.Special */
 .highlight .gd { color: #cc3d33 } /* Generic.Deleted */
-.highlight .ge { font-style: italic } /* Generic.Emph */
-.highlight .gh { color: #292f32; font-weight: bold } /* Generic.Heading */
+.highlight .ge { color: #0f77bd } /* Generic.Emph */
+.highlight .gh { color: #292f32 } /* Generic.Heading */
 .highlight .gi { color: #2d8650 } /* Generic.Inserted */
-.highlight .gp { color: #84919a; font-weight: bold } /* Generic.Prompt */
-.highlight .gs { font-weight: bolder } /* Generic.Strong */
-.highlight .gu { color: #427c80; font-weight: bold } /* Generic.Subheading */
+.highlight .gp { color: #84919a } /* Generic.Prompt */
+.highlight .gs { color: #5a6faf } /* Generic.Strong */
+.highlight .gu { color: #427c80 } /* Generic.Subheading */
 .highlight .kc { color: #0f77bd } /* Keyword.Constant */
 .highlight .kd { color: #0f77bd } /* Keyword.Declaration */
 .highlight .kn { color: #427c80 } /* Keyword.Namespace */
@@ -69,7 +69,6 @@ Light pygments template modified by Oliver Pattison */
 .highlight .vi { color: #cc3d33 } /* Name.Variable.Instance */
 .highlight .il { color: #a86138 } /* Literal.Number.Integer.Long */
 
-.highlight .language-html .s { color: #5c6870 }
 .highlight .language-html .na { color: #cc3d33 }
 .highlight .language-html .ni { color: #292f32 }
 .highlight .language-html .nt { color: #397eac }
