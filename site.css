@@ -222,7 +222,7 @@ article a,
 article a:visited,
 aside a,
 aside a:visited {
-  border-bottom: solid 1px hsla(5, 25%, 80%, 1);
+  border-bottom: solid 1px hsla(5, 30%, 80%, 1);
 }
 
 article a:hover,
@@ -294,11 +294,17 @@ samp {
   white-space: pre-wrap;
 }
 
-.highlight,
-code,
-pre,
-samp {
-  background-color: hsla(205, 25%, 80%, 1);
+code {
+  border: solid .0625em hsla(205, 10%, 80%, 1);
+}
+
+.highlight code {
+  border: none;
+}
+
+.highlight {
+  border-bottom: solid .0625em hsla(205, 10%, 88%, 1);
+  border-top: solid .0625em hsla(205, 10%, 88%, 1);
 }
 
 p > code,
@@ -703,7 +709,7 @@ section {
 
 .photo [role="main"] a,
 .photo [role="main"] a:visited {
-  color: hsla(5, 25%, 80%, 1);
+  color: hsla(5, 30%, 80%, 1);
 }
 
 .photo [role="main"] a:hover,
@@ -1342,4 +1348,4 @@ screen and (min-width: 60em) and (max-height: 36em) {
   }
 }
 
-/***! END Animations ****/
+/***! END Animations ***/
