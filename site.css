@@ -1,4 +1,4 @@
-/** Normalization *****************************/
+/*** Normalization *****************************/
 /* following adapted from HTML5 Reset
 source: http://html5reset.org */
 * {
@@ -153,7 +153,7 @@ h1,
 h2,
 h3,
 h4,
-h5, {
+h5 {
   font-family: 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
 }
 
@@ -203,11 +203,15 @@ h5 {
 a,
 a:visited {
   color: hsla(5, 85%, 40%, 1);
+  transition-duration: 250ms;
+  transition-property: color, background-color;
+  transition-timing-function: ease;
 }
 
 a:hover,
 a:focus {
   color: hsla(205, 85%, 40%, 1);
+  transition-duration: 125ms;
 }
 
 a:focus {
@@ -358,8 +362,15 @@ mark > code {
   margin: 0;
   position: absolute;
   right: 0;
-  transition: color 300ms ease 0;
+  transition: color 250ms ease;
 }
+
+.site-header .title:hover h1,
+.site-header .title:focus h1 {
+  color: hsla(205, 85%, 40%, 1);
+}
+
+/** Logo **/
 
 .site-header .logo {
   height: 2.5em;
@@ -368,39 +379,55 @@ mark > code {
   width: 2.5em;
 }
 
-.site-header .title:hover h1,
-.site-header .title:focus h1 {
-  color: hsla(205, 85%, 40%, 1);
-}
-
 .title .logo circle {
   stroke: hsla(205, 10%, 18%, 1);
   fill: hsla(205, 0%, 100%, .01);
-  transition-duration: 300ms;
-  transition-timing-function: ease;
-  transition-property: fill, stroke;
+  transition: stroke 250ms ease;
 }
 
 .title:hover .logo circle,
 .title:focus .logo circle {
   stroke: hsla(205, 85%, 40%, 1);
-  transition-delay: 1500ms, 0;
 }
 
-.title:hover .logo circle {
-  fill: hsla(205, 85%, 40%, 1);
+/* Logo animation */
+
+.title:hover .logo .core,
+.title:active .logo .core {
+  -webkit-animation: fill 250ms ease 1600ms forwards;
+  animation: fill 250ms ease 1600ms forwards;
 }
 
-.title:hover .logo .core {
-  transition-delay: 1500ms, 0;
+.title:hover .logo .mantle,
+.title:active .logo .mantle {
+  -webkit-animation: fill 250ms ease 1850ms forwards;
+  animation: fill 250ms ease 1850ms forwards;
 }
 
-.title:hover .logo .mantle {
-  transition-delay: 1800ms, 0;
+.title:hover .logo .earth,
+.title:active .logo .earth {
+  -webkit-animation: fill 250ms ease 2100ms forwards;
+  animation: fill 250ms ease 2100ms forwards;
 }
 
-.title:hover .logo .earth {
-  transition-delay: 2100ms, 0;
+@-webkit-keyframes fill {
+  0% {
+    fill: hsla(205, 0%, 100%, .01);
+  }
+
+  100% {
+    fill: hsla(205, 85%, 40%, 1)
+  }
+}
+
+@keyframes fill {
+  0% {
+    fill: hsla(205, 0%, 100%, .01);
+  }
+
+  100% {
+    fill: hsla(205, 85%, 40%, 1)
+  }
 }
 
 .top-menu,
