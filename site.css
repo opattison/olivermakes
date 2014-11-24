@@ -345,6 +345,10 @@ svg circle {
   transition: all 320ms cubic-bezier(0,1,1,1);
 }
 
+a svg circle {
+  transition: all 160ms cubic-bezier(0,1,1,1);
+}
+
 /***! END Basic styles ***/
 
 /*** Site headers and footers ******************/
@@ -366,7 +370,6 @@ svg circle {
   font-weight: 300;
   letter-spacing: -.03125em;
   margin: 0;
-  transition: color 200ms cubic-bezier(0,1,1,1);
 }
 
 .site-header .title:hover h1,
@@ -386,7 +389,6 @@ svg circle {
 .title .logo circle {
   stroke: hsla(205, 10%, 18%, 1);
   fill: hsla(205, 0%, 100%, .01);
-  transition: stroke 200ms cubic-bezier(0,1,1,1);
 }
 
 /* Logo animation */
@@ -400,8 +402,8 @@ svg circle {
           animation-timing-function: cubic-bezier(0,1,1,1);
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-duration: 400ms;
-          animation-duration: 400ms;
+  -webkit-animation-duration: 320ms;
+          animation-duration: 320ms;
 }
 
 .title:hover .logo .core,
@@ -628,7 +630,6 @@ svg circle {
 .alt-nav .back-home a:hover circle,
 .alt-nav .back-home a:focus circle {
   stroke: hsla(5, 85%, 40%, 1);
-  transition: stroke 160ms cubic-bezier(0,1,1,1);
 }
 
 .alt-nav .back-home a:focus {
