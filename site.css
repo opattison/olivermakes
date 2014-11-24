@@ -344,7 +344,7 @@ mark > code {
 /*** Site headers and footers ******************/
 
 .site-header {
-  padding: 1em 0 3.4375em;
+  padding: 1em 0;
 }
 
 .site-header .title {
@@ -353,15 +353,13 @@ mark > code {
   height: 2.5em;
   margin: 0 auto;
   position: relative;
-  width: 12.5em;
+  width: 13em;
 }
 
 .site-header .title h1 {
   font-weight: 300;
   letter-spacing: -.03125em;
   margin: 0;
-  position: absolute;
-  right: 0;
   transition: color 200ms cubic-bezier(0,1,1,1);
 }
 
@@ -373,9 +371,9 @@ mark > code {
 /** Logo **/
 
 .site-header .logo {
+  float: left;
   height: 2.5em;
-  left: 0;
-  position: absolute;
+  margin: 0 .5em 0 0;
   width: 2.5em;
 }
 
