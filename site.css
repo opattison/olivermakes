@@ -205,7 +205,7 @@ a:visited {
   color: hsla(5, 85%, 40%, 1);
   transition-duration: 250ms;
   transition-property: color, background-color;
-  transition-timing-function: ease;
+  transition-timing-function: cubic-bezier(0,1,1,1);
 }
 
 a:hover,
@@ -362,7 +362,7 @@ mark > code {
   margin: 0;
   position: absolute;
   right: 0;
-  transition: color 250ms ease;
+  transition: color 250ms cubic-bezier(0,1,1,1);
 }
 
 .site-header .title:hover h1,
@@ -382,7 +382,7 @@ mark > code {
 .title .logo circle {
   stroke: hsla(205, 10%, 18%, 1);
   fill: hsla(205, 0%, 100%, .01);
-  transition: stroke 250ms ease;
+  transition: stroke 250ms cubic-bezier(0,1,1,1);
 }
 
 .title:hover .logo circle,
@@ -394,20 +394,20 @@ mark > code {
 
 .title:hover .logo .core,
 .title:active .logo .core {
-  -webkit-animation: fill 250ms ease 1600ms forwards;
-  animation: fill 250ms ease 1600ms forwards;
+  -webkit-animation: fill 250ms cubic-bezier(0,1,1,1) 1600ms forwards;
+  animation: fill 500ms cubic-bezier(0,1,1,1) 1800ms forwards;
 }
 
 .title:hover .logo .mantle,
 .title:active .logo .mantle {
-  -webkit-animation: fill 250ms ease 1850ms forwards;
-  animation: fill 250ms ease 1850ms forwards;
+  -webkit-animation: fill 250ms cubic-bezier(0,1,1,1) 1850ms forwards;
+  animation: fill 500ms cubic-bezier(0,1,1,1) 2300ms forwards;
 }
 
 .title:hover .logo .earth,
 .title:active .logo .earth {
-  -webkit-animation: fill 250ms ease 2100ms forwards;
-  animation: fill 250ms ease 2100ms forwards;
+  -webkit-animation: fill 250ms cubic-bezier(0,1,1,1) 2100ms forwards;
+  animation: fill 500ms cubic-bezier(0,1,1,1) 2800ms forwards;
 }
 
 @-webkit-keyframes fill {
