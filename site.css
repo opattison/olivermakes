@@ -1,3 +1,5 @@
+---
+---
 /*** Normalization *****************************/
 /* following adapted from HTML5 Reset
 source: http://html5reset.org */
@@ -134,6 +136,7 @@ article {
 /*** Basic structure and typography ************/
 
 html {
+  color: hsla(204, 10%, 10%, 1);
   font: 400 16px/1.4375 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
   font: 400 1rem/1.4375 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
   -moz-font-feature-settings: "liga", "dlig"; 
@@ -159,7 +162,7 @@ h5 {
 
 h1,
 h2 {
-  color: hsla(205, 10%, 32%, 1);
+  color: hsla(204, 10%, 32%, 1);
 }
 
 h1 {
@@ -177,6 +180,7 @@ h2 {
 h3,
 h4,
 h5 {
+  color: hsla(204, 10%, 18%, 1);
   font-weight: 300;
 }
 
@@ -192,17 +196,18 @@ h4 {
 
 h5 {
   font-size: 1.125em;
+  font-style: italic;
   line-height: 1.5;
 }
 
 .feature {
-  color: hsla(205, 85%, 40%, 1);
+  color: hsla(204, 85%, 40%, 1);
   font-size: 1.25em;
 }
 
 a,
 a:visited {
-  color: hsla(5, 85%, 40%, 1);
+  color: hsla(4, 80%, 40%, 1);
   transition-duration: 320ms;
   transition-property: color, background-color;
   transition-timing-function: cubic-bezier(0,1,1,1);
@@ -210,32 +215,32 @@ a:visited {
 
 a:hover,
 a:focus {
-  color: hsla(205, 85%, 40%, 1);
+  color: hsla(204, 80%, 40%, 1);
   transition-duration: 160ms;
 }
 
 a:focus {
-  outline: solid .25em hsla(205, 85%, 40%, 1);
+  outline: solid .25em hsla(204, 50%, 45%, 1);
 }
 
 article a,
 article a:visited,
 aside a,
 aside a:visited {
-  border-bottom: solid 1px hsla(5, 25%, 80%, 1);
+  border-bottom: solid 1px hsla(5, 30%, 80%, 1);
 }
 
 article a:hover,
 article a:focus,
 aside a:hover,
 aside a:focus {
-  border-bottom: solid 1px hsla(205, 25%, 80%, 1);
+  border-bottom: solid 1px hsla(204, 30%, 80%, 1);
 }
 
 article strong a,
 article strong a:visited {
-  color: hsla(205, 10%, 98%, 1);
-  background-color: hsla(5, 85%, 40%, 1);
+  color: hsla(204, 10%, 96%, 1);
+  background-color: hsla(4, 80%, 40%, 1);
   padding: .0625em .1875em;
   border-bottom: none;
   border-radius: .125em;
@@ -243,14 +248,14 @@ article strong a:visited {
 
 article strong a:hover,
 article strong a:focus {
-  color: hsla(205, 10%, 98%, 1);
-  background-color: hsla(205, 85%, 40%, 1);
+  color: hsla(204, 10%, 96%, 1);
+  background-color: hsla(204, 80%, 40%, 1);
   border-bottom: none;
 }
 
 article strong a:focus {
   border-radius: 0;
-  outline: solid .1875em hsla(5, 85%, 40%, 1);
+  outline: solid .1875em hsla(4, 60%, 50%, 1);
 }
 
 ul {
@@ -258,7 +263,7 @@ ul {
 }
 
 blockquote {
-  background-color: hsla(205, 10%, 85%, 1);
+  background-color: hsla(204, 10%, 88%, 1);
 }
 
 blockquote footer {
@@ -281,7 +286,7 @@ figcaption p {
 }
 
 hr {
-  background-color: hsla(205, 10%, 32%, 1);
+  background-color: hsla(204, 10%, 32%, 1);
   border: 0;
   height: .25em;
   margin: 2.5em 0;
@@ -290,37 +295,37 @@ hr {
 code,
 pre,
 samp {
-  font: 400 .8125em/1.4375 Menlo, Consolas, monospace;
+  font: 400 .8125em/1.4375 'source-code-pro', Menlo, Consolas, monospace;
   white-space: pre-wrap;
 }
 
-.highlight,
-code,
-pre,
-samp {
-  background-color: hsla(205, 25%, 80%, 1);
+.highlight {
+  border-bottom: solid .0625em hsla(204, 10%, 88%, 1);
+  border-top: solid .0625em hsla(204, 10%, 88%, 1);
 }
 
 p > code,
 samp {
-  border-radius: .125em;
-  margin: 0 -.0625em;
-  padding: .1875em .375em;
+  border: solid 1px hsla(204, 10%, 80%, 1);
+  border-radius: .25em;
+  margin: 0 -.03125em;
+  padding: .0625em .25em 0;
 }
 
 pre > code {
   font-size: 1em;
+  margin: 0;
   padding: 0;
 }
 
 blockquote p > code {
-  background-color: hsla(205, 10%, 98%, 1);
+  background-color: hsla(204, 10%, 96%, 1);
 }
 
 kbd > kbd {
-  background-color: hsla(205, 10%, 12%, 1);
+  background-color: hsla(204, 10%, 10%, 1);
   border-radius: .25em;
-  color: hsla(205, 10%, 98%, 1);
+  color: hsla(204, 10%, 96%, 1);
   font: 300 .8125em/1 'Open Sans', sans-serif;
   padding: .0625em .5em;
 }
@@ -331,7 +336,7 @@ kbd > kbd + b {
 } /* <kbd><kbd>cmd</kbd> <b class="kbd-plus">+</b> <kbd>C</kbd></kbd> */
 
 mark {
-  background-color: hsla(62, 30%, 80%, 1);
+  background-color: hsla(44, 30%, 88%, 1);
   padding: .0625em;
 }
 
@@ -339,65 +344,72 @@ mark > code {
   vertical-align: text-bottom; /* fix for alignment issue */
 }
 
+/* Transition helpers */
+
+svg circle {
+  transition: all 320ms cubic-bezier(0,1,1,1);
+}
+
+a svg circle {
+  transition: all 160ms cubic-bezier(0,1,1,1);
+}
+
 /***! END Basic styles ***/
 
 /*** Site headers and footers ******************/
 
 .site-header {
-  padding: 1em 0 3.4375em;
+  margin-bottom: 2.5em;
+  padding: 1em 0;
 }
 
 .site-header .title {
-  color: hsla(205, 10%, 18%, 1);
+  color: hsla(204, 10%, 18%, 1);
   display: block;
   height: 2.5em;
   margin: 0 auto;
   position: relative;
-  width: 12.5em;
+  width: 13em;
 }
 
 .site-header .title h1 {
   font-weight: 300;
   letter-spacing: -.03125em;
   margin: 0;
-  position: absolute;
-  right: 0;
-  transition: color 200ms cubic-bezier(0,1,1,1);
 }
 
 .site-header .title:hover h1,
 .site-header .title:focus h1 {
-  color: hsla(205, 85%, 40%, 1);
+  color: hsla(204, 80%, 40%, 1);
 }
 
 /** Logo **/
 
 .site-header .logo {
+  float: left;
   height: 2.5em;
-  left: 0;
-  position: absolute;
+  margin: 0 .5em 0 0;
   width: 2.5em;
 }
 
 .title .logo circle {
-  stroke: hsla(205, 10%, 18%, 1);
-  fill: hsla(205, 0%, 100%, .01);
-  transition: stroke 200ms cubic-bezier(0,1,1,1);
+  stroke: hsla(204, 10%, 18%, 1);
+  fill: hsla(0, 0%, 100%, .01);
 }
 
 /* Logo animation */
 
 .title:hover .logo circle,
 .title:focus .logo circle {
-  stroke: hsla(205, 85%, 40%, 1);
+  stroke: hsla(204, 80%, 40%, 1);
   -webkit-animation-name: step-fill;
           animation-name: step-fill;
   -webkit-animation-timing-function: cubic-bezier(0,1,1,1);
           animation-timing-function: cubic-bezier(0,1,1,1);
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-duration: 400ms;
-          animation-duration: 400ms;
+  -webkit-animation-duration: 320ms;
+          animation-duration: 320ms;
 }
 
 .title:hover .logo .core,
@@ -421,9 +433,10 @@ mark > code {
 /* Menu navigation - top right */
 
 .top-menu,
-.site-nav:target .close-menu {
-  background-color: hsla(5, 85%, 40%, 1);
-  color: hsla(205, 10%, 98%, 1);
+.site-nav .close-menu {
+  background-color: hsla(4, 80%, 40%, 1);
+  color: hsla(204, 10%, 98%, 1);
+  height: 2.5em;
   margin: 0;
   position: absolute;
   text-align: center;
@@ -433,9 +446,9 @@ mark > code {
 }
 
 .top-menu a,
-.site-nav:target .close-menu a,
+.site-nav .close-menu a,
 .alt-nav a {
-  color: hsla(205, 10%, 98%, 1);
+  color: hsla(204, 10%, 98%, 1);
   display: block;
   font-weight: 400;
   padding: .5em;
@@ -443,12 +456,14 @@ mark > code {
 
 .top-menu a:hover,
 .top-menu a:focus,
-.site-nav:target .close-menu {
-  background-color: hsla(205, 85%, 40%, 1)
+.site-nav .close-menu a {
+  background-color: hsla(204, 50%, 45%, 1);
 }
 
-.top-menu a:focus {
-  outline: solid .25em hsla(5, 85%, 40%, 1);
+.top-menu a:focus,
+.site-nav .close-menu a:focus {
+  box-shadow: inset 0 .5em 0 hsla(204, 10%, 98%, 1);
+  outline: none;
 }
 
 /* Site meta information */
@@ -460,8 +475,8 @@ mark > code {
 }
 
 .site-footer .site-info {
-  background-color: hsla(205, 10%, 98%, 1);
-  color: hsla(205, 10%, 12%, 1);
+  background-color: hsla(204, 10%, 98%, 1);
+  color: hsla(204, 10%, 18%, 1);
   padding-top: 2em;
   padding-bottom: 2em;
   width: 100%;
@@ -492,32 +507,32 @@ mark > code {
 }
 
 .site-nav li a {
-  background-color: hsla(205, 10%, 12%, 1);
+  background-color: hsla(204, 10%, 10%, 1);
   display: block;
-  color: hsla(205, 10%, 98%, 1);
+  color: hsla(204, 10%, 98%, 1);
   padding: 2em 0;
 }
 
 .site-nav li:nth-child(2) a {
-  background-color: hsla(205, 10%, 24%, 1);
+  background-color: hsla(204, 10%, 24%, 1);
 }
 
 .site-nav li:nth-child(3) a {
-  background-color: hsla(205, 10%, 32%, 1);
+  background-color: hsla(204, 10%, 32%, 1);
 }
 
 .site-nav li:nth-child(4) a {
-  background-color: hsla(205, 10%, 18%, 1);
+  background-color: hsla(204, 10%, 18%, 1);
 }
 
 .site-nav li a:hover,
 .site-nav li a:focus {
-  background-color: hsla(205, 85%, 40%, 1);
+  background-color: hsla(204, 50%, 45%, 1);
 }
 
 .site-nav li a:focus,
 .site-nav:target li a:focus {
-  box-shadow: inset 0 .25em 0 hsla(5, 85%, 40%, 1);
+  box-shadow: inset 0 .5em 0 hsla(204, 10%, 98%, 1);
   outline: none;
 }
 
@@ -542,24 +557,24 @@ mark > code {
 }
 
 .site-nav:target li a {
-  background-color: hsla(205, 10%, 12%, .8);
+  background-color: hsla(204, 10%, 10%, .8);
 }
 
 .site-nav:target li:nth-child(2) a {
-  background-color: hsla(205, 10%, 24%, .8);
+  background-color: hsla(204, 10%, 24%, .8);
 }
 
 .site-nav:target li:nth-child(3) a {
-  background-color: hsla(205, 10%, 32%, .8);
+  background-color: hsla(204, 10%, 32%, .8);
 }
 
 .site-nav:target li:nth-child(4) a {
-  background-color: hsla(205, 10%, 18%, .8);
+  background-color: hsla(204, 10%, 18%, .8);
 }
 
 .site-nav:target li a:hover,
 .site-nav:target li a:focus {
-  background-color: hsla(205, 85%, 40%, .8)
+  background-color: hsla(204, 50%, 45%, .8)
 }
 
 .site-nav:target .close-menu {
@@ -583,7 +598,7 @@ mark > code {
 }
 
 .site-nav:target::after {
-  background-color: hsla(205, 10%, 12%, .8);
+  background-color: hsla(204, 10%, 10%, .8);
 }
 
 /* Alternative nav – home and back-to-top */
@@ -593,48 +608,48 @@ mark > code {
 }
 
 .alt-nav li a {
-  background-color: hsla(205, 10%, 18%, 1);
-  color: hsla(205, 10%, 98%, 1);
+  background-color: hsla(204, 10%, 18%, 1);
+  color: hsla(204, 10%, 98%, 1);
   padding: 1em;
 }
 
 .alt-nav .back-home a {
-  background-color: hsla(205, 85%, 40%, 1);
+  background-color: hsla(4, 80%, 40%, 1);
 }
 
 .alt-nav .back-top a {
-  background-color: hsla(5, 85%, 40%, 1);
+  background-color: hsla(204, 80%, 40%, 1);
 }
 
 .alt-nav a:hover,
 .alt-nav a:focus,
 .alt-nav a:hover,
 .alt-nav a:focus {
-  background-color: hsla(205, 10%, 95%, 1);
+  background-color: hsla(204, 10%, 95%, 1);
   outline: none;
 }
 
 .alt-nav .back-home a:hover,
 .alt-nav .back-home a:focus {
-  color: hsla(205, 85%, 40%, 1);
+  color: hsla(4, 80%, 40%, 1);
 }
 
 .alt-nav .back-home a:hover circle,
 .alt-nav .back-home a:focus circle {
-  stroke: hsla(205, 85%, 40%, 1);
+  stroke: hsla(4, 80%, 40%, 1);
 }
 
 .alt-nav .back-home a:focus {
-  box-shadow: inset 0 .25em 0 hsla(205, 85%, 40%, 1);
+  box-shadow: inset 0 .5em 0 hsla(4, 80%, 40%, 1);
 }
 
 .alt-nav .back-top a:hover,
 .alt-nav .back-top a:focus {
-  color: hsla(5, 85%, 40%, 1);
+  color: hsla(204, 80%, 40%, 1);
 }
 
 .alt-nav .back-top a:focus {
-  box-shadow: inset 0 .25em 0 hsla(5, 85%, 40%, 1);
+  box-shadow: inset 0 .5em 0 hsla(204, 80%, 40%, 1);
 }
 
 .back-home .inner {
@@ -653,7 +668,7 @@ mark > code {
 }
 
 .back-home .logo circle {
-  stroke: hsla(205, 10%, 98%, 1);
+  stroke: hsla(204, 10%, 98%, 1);
   stroke-width: 32px;
 }
 
@@ -669,19 +684,19 @@ section {
 
 .singel,
 .dubbel {
-  background-color: hsla(205, 10%, 95%, 1);
+  background-color: hsla(204, 10%, 96%, 1);
 }
 
 .singel article,
 .dubbel article {
-  background-color: hsla(205, 10%, 98%, 1);
+  background-color: hsla(204, 10%, 98%, 1);
 }
 
 /* Photo */
 
 .photo {
-  background-color: hsla(205, 10%, 18%, 1);
-  color: hsla(205, 10%, 95%, 1);
+  background-color: hsla(204, 10%, 18%, 1);
+  color: hsla(204, 10%, 96%, 1);
 }
 
 .photo article {
@@ -690,40 +705,42 @@ section {
 
 .photo h1,
 .photo h2 {
-  color: hsla(205, 10%, 95%, 1);
+  color: hsla(204, 10%, 96%, 1);
 }
 
 .photo [role="main"] a,
 .photo [role="main"] a:visited {
-  color: hsla(5, 25%, 80%, 1);
+  color: hsla(5, 30%, 80%, 1);
+  border-color: hsla(5, 30%, 80%, .5);
 }
 
 .photo [role="main"] a:hover,
 .photo [role="main"] a:focus {
-  color: hsla(205, 25%, 80%, 1);
+  color: hsla(204, 30%, 80%, 1);
+  border-color: hsla(204, 30%, 80%, .5);
 }
 
 .photo article,
 .photo .title h1 {
-  color: hsla(205, 10%, 98%, 1);
+  color: hsla(204, 10%, 96%, 1);
 }
 
 .photo .title:hover h1 {
-  color: hsla(205, 35%, 80%, 1);
+  color: hsla(204, 30%, 80%, 1);
 }
 
 .photo .logo circle {
-  stroke: hsla(205, 10%, 98%, 1);
+  stroke: hsla(204, 10%, 96%, 1);
 }
 
 .photo .title:hover .logo circle {
-  stroke: hsla(205, 35%, 80%, 1);
+  stroke: hsla(204, 30%, 80%, 1);
   -webkit-animation-name: step-fill--contrast;
           animation-name: step-fill--contrast;
 }
 
 .essay {
-  background-color: hsla(205, 10%, 24%, 1);
+  background-color: hsla(204, 10%, 24%, 1);
   margin-top: 2.75em;
 }
 
@@ -738,8 +755,8 @@ blockquote,
 /* Aside for supporting content */
 
 .ancillary {
-  background-color: hsla(205, 10%, 95%, 1);
-  color: hsla(205, 10%, 18%, 1);
+  background-color: hsla(204, 10%, 96%, 1);
+  color: hsla(204, 10%, 24%, 1);
   padding: 1em;
 }
 
@@ -849,14 +866,15 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .top-menu,
-  .site-nav:target .close-menu {
+  .site-nav .close-menu {
+    height: auto;
     right: 0;
     top: 0;
     width: auto;
   }
 
   .top-menu a,
-  .site-nav:target .close-menu a {
+  .site-nav .close-menu a {
     font-size: 1.125em;
     height: 4em;
     line-height: 2em;
@@ -1148,7 +1166,7 @@ screen and (min-resolution: 1.5dppx) {
 
   .site-header {
     height: initial;
-    padding-top: 3em;
+    padding-top: 2.25em;
   }
 
   .site-header .title {
@@ -1214,6 +1232,14 @@ screen and (min-resolution: 1.5dppx) {
   .singel article,
   .dubbel article,
   .photo article {
+    font-size: 1.75em;
+  }
+
+  .site-header {
+    padding-top: 4.5em;
+  }
+
+  .site-header .title {
     font-size: 1.75em;
   }
 
@@ -1286,21 +1312,21 @@ screen and (min-width: 60em) and (max-height: 36em) {
 
 @-webkit-keyframes step-fill {
   0% {
-    fill: hsla(205, 0%, 100%, .01);
+    fill: hsla(0, 0%, 100%, .01);
   }
 
   100% {
-    fill: hsla(205, 85%, 40%, 1);
+    fill: hsla(204, 80%, 40%, 1);
   }
 }
 
 @keyframes step-fill {
   0% {
-    fill: hsla(205, 0%, 100%, .01);
+    fill: hsla(0, 0%, 100%, .01);
   }
 
   100% {
-    fill: hsla(205, 85%, 40%, 1);
+    fill: hsla(204, 80%, 40%, 1);
   }
 }
 
@@ -1308,22 +1334,24 @@ screen and (min-width: 60em) and (max-height: 36em) {
 
 @-webkit-keyframes step-fill--contrast {
   0% {
-    fill: hsla(205, 0%, 100%, .01);
+    fill: hsla(0, 0%, 100%, .01);
   }
 
   100% {
-    fill: hsla(205, 35%, 80%, 1);
+    fill: hsla(204, 35%, 80%, 1);
   }
 }
 
 @keyframes step-fill--contrast {
   0% {
-    fill: hsla(205, 0%, 100%, .01);
+    fill: hsla(0, 0%, 100%, .01);
   }
 
   100% {
-    fill: hsla(205, 35%, 80%, 1);
+    fill: hsla(204, 35%, 80%, 1);
   }
 }
 
-/***! END Animations ****/
+/***! END Animations ***/
+
+{% include pygments.css %}
