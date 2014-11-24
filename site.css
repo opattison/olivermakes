@@ -1,4 +1,4 @@
-/** Normalization *****************************/
+/*** Normalization *****************************/
 /* following adapted from HTML5 Reset
 source: http://html5reset.org */
 * {
@@ -153,7 +153,7 @@ h1,
 h2,
 h3,
 h4,
-h5, {
+h5 {
   font-family: 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
 }
 
@@ -203,11 +203,15 @@ h5 {
 a,
 a:visited {
   color: hsla(5, 85%, 40%, 1);
+  transition-duration: 320ms;
+  transition-property: color, background-color;
+  transition-timing-function: cubic-bezier(0,1,1,1);
 }
 
 a:hover,
 a:focus {
   color: hsla(205, 85%, 40%, 1);
+  transition-duration: 160ms;
 }
 
 a:focus {
@@ -358,8 +362,15 @@ mark > code {
   margin: 0;
   position: absolute;
   right: 0;
-  transition: color 300ms ease 0;
+  transition: color 200ms cubic-bezier(0,1,1,1);
 }
+
+.site-header .title:hover h1,
+.site-header .title:focus h1 {
+  color: hsla(205, 85%, 40%, 1);
+}
+
+/** Logo **/
 
 .site-header .logo {
   height: 2.5em;
@@ -368,40 +379,46 @@ mark > code {
   width: 2.5em;
 }
 
-.site-header .title:hover h1,
-.site-header .title:focus h1 {
-  color: hsla(205, 85%, 40%, 1);
-}
-
 .title .logo circle {
   stroke: hsla(205, 10%, 18%, 1);
   fill: hsla(205, 0%, 100%, .01);
-  transition-duration: 300ms;
-  transition-timing-function: ease;
-  transition-property: fill, stroke;
+  transition: stroke 200ms cubic-bezier(0,1,1,1);
 }
+
+/* Logo animation */
 
 .title:hover .logo circle,
 .title:focus .logo circle {
   stroke: hsla(205, 85%, 40%, 1);
-  transition-delay: 1500ms, 0;
+  -webkit-animation-name: step-fill;
+          animation-name: step-fill;
+  -webkit-animation-timing-function: cubic-bezier(0,1,1,1);
+          animation-timing-function: cubic-bezier(0,1,1,1);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 400ms;
+          animation-duration: 400ms;
 }
 
-.title:hover .logo circle {
-  fill: hsla(205, 85%, 40%, 1);
+.title:hover .logo .core,
+.title:active .logo .core {
+  -webkit-animation-delay: 1600ms;
+          animation-delay: 1600ms;
 }
 
-.title:hover .logo .core {
-  transition-delay: 1500ms, 0;
+.title:hover .logo .mantle,
+.title:active .logo .mantle {
+  -webkit-animation-delay: 2400ms;
+          animation-delay: 2400ms;
 }
 
-.title:hover .logo .mantle {
-  transition-delay: 1800ms, 0;
+.title:hover .logo .earth,
+.title:active .logo .earth {
+  -webkit-animation-delay: 3200ms;
+          animation-delay: 3200ms;
 }
 
-.title:hover .logo .earth {
-  transition-delay: 2100ms, 0;
-}
+/* Menu navigation - top right */
 
 .top-menu,
 .site-nav:target .close-menu {
@@ -434,6 +451,8 @@ mark > code {
   outline: solid .25em hsla(5, 85%, 40%, 1);
 }
 
+/* Site meta information */
+
 .site-nav,
 .site-footer .site-info {
   margin: 0 auto;
@@ -447,6 +466,8 @@ mark > code {
   padding-bottom: 2em;
   width: 100%;
 }
+
+/* Footer navigation */
 
 .site-nav {
   display: block;
@@ -499,6 +520,8 @@ mark > code {
   box-shadow: inset 0 .25em 0 hsla(5, 85%, 40%, 1);
   outline: none;
 }
+
+/* Target navigation - JS-free modal navigation */
 
 .site-nav .close-menu {
   display: none; /* only displays with :target */
@@ -562,6 +585,8 @@ mark > code {
 .site-nav:target::after {
   background-color: hsla(205, 10%, 12%, .8);
 }
+
+/* Alternative nav – home and back-to-top */
 
 .alt-nav {
   margin: 0;
@@ -640,6 +665,8 @@ section {
   margin-top: 0;
 }
 
+/* Singel and dubbel common */
+
 .singel,
 .dubbel {
   background-color: hsla(205, 10%, 95%, 1);
@@ -649,6 +676,8 @@ section {
 .dubbel article {
   background-color: hsla(205, 10%, 98%, 1);
 }
+
+/* Photo */
 
 .photo {
   background-color: hsla(205, 10%, 18%, 1);
@@ -688,8 +717,9 @@ section {
 }
 
 .photo .title:hover .logo circle {
-  fill: hsla(205, 35%, 80%, 1);
   stroke: hsla(205, 35%, 80%, 1);
+  -webkit-animation-name: step-fill--contrast;
+          animation-name: step-fill--contrast;
 }
 
 .essay {
@@ -704,6 +734,8 @@ blockquote,
   margin-right: -1em;
   padding: 1em;
 }
+
+/* Aside for supporting content */
 
 .ancillary {
   background-color: hsla(205, 10%, 95%, 1);
@@ -726,10 +758,6 @@ blockquote,
   max-width: 100%;
 }
 
-.hero {
-  margin-top: -1.25em;
-}
-
 /***! END Page layouts ***/
 
 /*** Image styles ******************************/
@@ -742,6 +770,12 @@ article figure {
   margin: 5% calc(-1em) 0;
   max-width: none;
   width: calc(100% + 2em);
+}
+
+/* Hero figure-image */
+
+.hero {
+  margin-top: -1.25em;
 }
 
 /***! END Image styles ***/
@@ -1209,7 +1243,7 @@ screen and (min-resolution: 1.5dppx) {
 
 }
 
-/* 1.666666667 ratio height limiter  */
+/* Height queries – 1.666666667 ratio height limiter  */
 
 @media screen and (min-width: 28.25em) and (max-height: 17em),
 screen and (min-width: 30em) and (max-height: 18em),
@@ -1246,3 +1280,50 @@ screen and (min-width: 60em) and (max-height: 36em) {
 }
 
 /***! END Media queries ***/
+
+
+/*** Animations ********************************/
+
+@-webkit-keyframes step-fill {
+  0% {
+    fill: hsla(205, 0%, 100%, .01);
+  }
+
+  100% {
+    fill: hsla(205, 85%, 40%, 1);
+  }
+}
+
+@keyframes step-fill {
+  0% {
+    fill: hsla(205, 0%, 100%, .01);
+  }
+
+  100% {
+    fill: hsla(205, 85%, 40%, 1);
+  }
+}
+
+/* For photo layout */
+
+@-webkit-keyframes step-fill--contrast {
+  0% {
+    fill: hsla(205, 0%, 100%, .01);
+  }
+
+  100% {
+    fill: hsla(205, 35%, 80%, 1);
+  }
+}
+
+@keyframes step-fill--contrast {
+  0% {
+    fill: hsla(205, 0%, 100%, .01);
+  }
+
+  100% {
+    fill: hsla(205, 35%, 80%, 1);
+  }
+}
+
+/***! END Animations ****/
