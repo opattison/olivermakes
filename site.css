@@ -356,6 +356,7 @@ a svg circle {
 /*** Site headers and footers ******************/
 
 .site-header {
+  margin-bottom: 2.5em;
   padding: 1em 0;
 }
 
@@ -432,6 +433,7 @@ a svg circle {
 .site-nav .close-menu {
   background-color: hsla(5, 85%, 40%, 1);
   color: hsla(205, 10%, 98%, 1);
+  height: 2.5em;
   margin: 0;
   position: absolute;
   text-align: center;
@@ -859,14 +861,15 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .top-menu,
-  .site-nav:target .close-menu {
+  .site-nav .close-menu {
+    height: auto;
     right: 0;
     top: 0;
     width: auto;
   }
 
   .top-menu a,
-  .site-nav:target .close-menu a {
+  .site-nav .close-menu a {
     font-size: 1.125em;
     height: 4em;
     line-height: 2em;
