@@ -196,6 +196,7 @@ h4 {
 
 h5 {
   font-size: 1.125em;
+  font-style: italic;
   line-height: 1.5;
 }
 
@@ -474,7 +475,7 @@ a svg circle {
 }
 
 .site-footer .site-info {
-  background-color: hsla(204, 10%, 96%, 1);
+  background-color: hsla(204, 10%, 98%, 1);
   color: hsla(204, 10%, 18%, 1);
   padding-top: 2em;
   padding-bottom: 2em;
