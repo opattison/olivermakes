@@ -4,6 +4,7 @@ layout: singel
 layout-option:
   - no-title
   - hero
+code: true
 date: 2014-10-31 18:25
 image:
   - src: 2011-11-10-oliver-bench-jeancflanagan-ccbync.jpg
@@ -21,7 +22,9 @@ image:
 
 ## About me
 
-I am a designer focused on the future of the web. I currently live in Washington, DC. I am originally from New York City.
+I am a designer focused on the future of the web. My main interests are archiving, the web, small screens and photography.
+
+I currently live in Washington, DC. I am originally from New York City.
 
 ## About this site
 
@@ -37,10 +40,10 @@ This website is an archive for my work, featuring **[writing](/writing)**, **[ph
 
 **[GitHub](https://github.com/opattison/olivermakes)** for version control.
 
-{% capture a1 %}
+{% capture influences %}
 # Influences
 
-These people and their creative works inspired elements of the site, particularly typography, proportion and design process.
+These people and their creative works inspired elements of the site – in particular: typography, proportion and design process.
 
 ## People
 
@@ -69,7 +72,7 @@ These people and their creative works inspired elements of the site, particularl
 {% endcapture %}
 
 <aside class="ancillary">
-{{ a1 | markdownify }}
+{{ influences | markdownify }}
 </aside>
 
 ### Design and development
@@ -80,9 +83,11 @@ My process for designing the site begins with a handful of sketches and notes. A
 
 I target small-screens first (commonly known as “mobile-first”), so I make sure to test on a variety of devices as I go along. The first browser width I look at is under `20em` (less than ~320 pixels). Working with fewer assumptions about device types informs the design process – it is easier to design with empathy and flexibilty with a responsive and iterative process.
 
+A significant part of my process this time was working with a [pattern page](/patterns) with reference examples of general HTML and specific use cases for my own designs. I plan to expand it and turn it into a pattern library and style guide for the site.
+
 ### Typography
 
-The fonts on the site (300, 400 and 500 weights of [the Ratio typeface](http://cargocollective.com/pstype/Ratio)) are [hosted by Typekit](https://typekit.com/colophons/hro5wuc). This site uses responsive typography based on pixel density, so if you have a higher resolution display, you will see different variants of Ratio.
+The fonts on the site (300, 400 and 500 weights of [the Ratio typeface](http://cargocollective.com/pstype/Ratio) and 400 weight of [Source Code Pro](http://adobe-fonts.github.io/source-code-pro/)) are [hosted by Typekit](https://typekit.com/colophons/ojm0eig). This site uses responsive typography based on pixel density, so if you have a higher resolution display, you will see different variants of Ratio. Only pages that include monospaced fonts will actually incur a request for Source Code Pro.
 
 ## Copyright
 
