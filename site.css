@@ -266,6 +266,24 @@ ul {
   list-style-type: square;
 }
 
+article > ol,
+aside > ol {
+  counter-reset: listNumbering;
+  list-style-type: none;
+}
+
+article > ol li,
+aside > ol li {
+  counter-increment: listNumbering;
+}
+
+article > ol li::before,
+aside > ol li::before {
+  content: counter(listNumbering) '.';
+  font-weight: bolder;
+  margin-right: .25em;
+}
+
 blockquote {
   background-color: hsla(204, 10%, 88%, 1);
 }
@@ -278,7 +296,6 @@ blockquote footer {
 /* Footnotes */
 
 sup[id] {
-  border-radius: .125em;
   margin-left: .125em;
   vertical-align: baseline;
 }
@@ -286,8 +303,10 @@ sup[id] {
 sup[id] a {
   background-color: hsla(204, 30%, 80%, .5);
   border-bottom: 0;
+  border-radius: .125em;
   color: hsla(204, 10%, 24%, 1);
   font-weight: bolder;
+  margin-right: .25em;
   padding: 0 .25em;
 }
 
@@ -295,10 +314,9 @@ sup[id] a:hover {
   background-color: hsla(4, 30%, 80%, .5);
 }
 
-sup[id] a::after {
-  content: "\200A⇂";
-  font-size: .75em;
-  font-weight: bolder;
+sup[id] a::before {
+  content: "note: ";
+  font-size: .875em;
 }
 
 figcaption {
