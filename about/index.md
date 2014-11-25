@@ -77,7 +77,7 @@ These people and their creative works inspired elements of the site – in parti
 
 ### Design and development
 
-It is difficult to design for yourself. After spending too many months planning and delaying, I worked alone on designing this site for a few weeks in October and November 2014. I would like to thank [Jean](http://jeancflanagan.com) for editing and design input.
+It is difficult to design for yourself. After spending too many months planning and delaying, I worked alone on designing this site for a few weeks in October and November 2014. I would like to thank [Jean]({{ site.link.jean }}) for editing and design input.
 
 My process for designing the site begins with a handful of sketches and notes. As soon as I can, I start work in a text editor and browser and come up with a typographic measure and fundamental ratios. I avoid mockups and high-fidelity compositions in favor of sketching, followed by iterative HTML/CSS prototyping that can be worked into finished code as the project progresses.
 
@@ -91,7 +91,7 @@ The fonts on the site (300, 400 and 500 weights of [the Ratio typeface](http://c
 
 ## Copyright
 
-All writing and photography on the site is my original work and is licensed under [Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC)](http://creativecommons.org/licenses/by-nc/4.0/). All design and code is under conventional copyright (as opposed to CC-style “copyleft” copyright), but is available for fair use [on GitHub](https://github.com/opattison/olivermakes). If you are looking at the repository, almost everything in the `_static` and `_posts` folders is CC BY-NC and the most of the rest of it is under copyright, where applicable.
+All writing and photography on the site is my original work and is licensed under [Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC)]({{ site.link.attribution }}). All design and code is under conventional copyright (as opposed to CC-style “copyleft” copyright), but is available for fair use [on GitHub]({{ site.link.source }}). If you are looking at the repository, almost everything in the `_static` and `_posts` folders is CC BY-NC and the most of the rest of it is under copyright, where applicable.
 
 I designed the site myself, so most of the source was written by me by hand – exceptions where I derived inspiration or approach from another source are noted inline. An example of copyright violation would be copying all of the source code outright and using it to make a public website that could be confused for this one.
 
@@ -99,31 +99,31 @@ I designed the site myself, so most of the source was written by me by hand – 
 
 Proper CC BY-NC attribution with a link and credit would look like this:
 
-> “The title” [Oliver Pattison](http://olivermak.es) CC BY-NC
+> “The title” [Oliver Pattison]({{ site.url }}) [CC BY-NC]({{ site.link.attribution }})
 
 Or in HTML:
 
 {% highlight html %}
-“The title” <a href="http://olivermak.es">Oliver Pattison</a> CC BY-NC
+“The title” <a href="{{ site.url }}">Oliver Pattison</a> <a href="{{ site.link.attribution }}">CC BY-NC</a>
 {% endhighlight %}
 
-If you have any questions about licensing or use of content from the site, please [contact me by email](mailto:oliverpattison@gmail.com).
+If you have any questions about licensing or use of content from the site, please [contact me by email](mailto:{{ site.author.email }}).
 
 - - -
 
 ## Elsewhere on the web
 
-I post nearly every significant thing I read or look at on **[Pinboard](https://pinboard.in/u:opattison)**. It is my external brain and my favorite thing on the web. It is as complete an archive as I can keep of my reading online.
+I post nearly every significant thing I read or look at on **[Pinboard]({{ site.link.pinboard }})**. It is my external brain and my favorite thing on the web. It is as complete an archive as I can keep of my reading online.
 
-I am **[@olivermakes on Twitter](http://twitter.com/olivermakes)**.
+I am **[@olivermakes on Twitter]({{ site.link.twitter }})**.
 
-My open source code (including this site) is on **[GitHub](https://github.com/opattison)**.
+My open source code (including this site) is on **[GitHub]({{ site.link.github }})**.
 
-I share some of my mobile photography to **[VSCO Grid](http://olivermakes.vsco.co)**.
+I share some of my mobile photography to **[VSCO Grid]({{ site.link.vsco }})**.
 
 I post less frequently to:
 
-- [Tumblr](http://olivermakes.tumblr.com)
-- [Google Plus](http://plus.google.com/+OliverPattison)
-- [Panoramio](http://www.panoramio.com/user/oliverpattison)
-- [Flickr](https://www.flickr.com/photos/ok-oyot)
+- [Tumblr]({{ site.link.tumblr }})
+- [Google+]({{ site.link.googleplus }})
+- [Panoramio]({{ site.link.panoramio }})
+- [Flickr]({{ site.link.flickr }})
