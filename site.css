@@ -287,6 +287,7 @@ sup[id] a {
   background-color: hsla(204, 30%, 80%, .5);
   border-bottom: 0;
   color: hsla(204, 10%, 24%, 1);
+  font-weight: bolder;
   padding: 0 .25em;
 }
 
@@ -296,7 +297,8 @@ sup[id] a:hover {
 
 sup[id] a::after {
   content: "\200A⇂";
-  font-size: .625em;
+  font-size: .75em;
+  font-weight: bolder;
 }
 
 figcaption {
