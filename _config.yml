@@ -6,7 +6,7 @@ description: 'I am a designer focused on the future of the web.'
 
 url: http://olivermak.es
 image-url: http://static.olivermak.es/images
-scripts-url: http://static.olivermak.es/scripts
+script-url: http://static.olivermak.es/scripts
 
 photo-sizes: '(min-width: 140em) 1440px, (min-width: 115em) 1260px, (min-width: 95em) 1080px, (min-width: 60em) 900px, (min-width: 45em) 720px, 100vw'
 photo-sizes_half: '(min-width: 140em) 691px, (min-width: 115) 605px, (min-width: 95em) 518px, (min-width: 60em) 432px, (min-width: 45em) 720px, 100vw'
