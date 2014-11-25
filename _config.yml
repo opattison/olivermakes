@@ -32,78 +32,80 @@ exclude: [s3_website.yml, Rakefile, _images]
 
 # shades
 
-black:
-  hsl: hsla(204, 10%, 10%, 1)
-  hex: #1c1f22
-gray1:
-  hsl: hsla(204, 10%, 18%, 1)
-  hex: #292f32
-gray2:
-  hsl: hsla(204, 10%, 24%, 1)
-  hex: #373e43
-gray3:
-  hsl: hsla(204, 10%, 32%, 1)
-  hex: #49535a
-gray4:
-  hsl: hsla(204, 10%, 40%, 1)
-  hex: #5c6870
-gray6:
-  hsl: hsla(204, 10%, 56%, 1)
-  hex: #84919a
-gray8:
-  hsl: hsla(204, 10%, 80%, 1)
-  hex: #c7cdd1
-gray9:
-  hsl: hsla(204, 10%, 88%, 1)
-  hex: #dde1e3
-offwhite:
-  hsl: hsla(204, 10%, 96%, 1)
-  hex: #f4f5f6
-white:
-  hsl: hsla(204, 10%, 98%, 1)
-  hex: #f9fafa
-transparent:
-  hsl: hsla(0, 0%, 100%, .01);
+shade:
+  - name: black
+    hsl: 'hsla(204, 10%, 10%, 1)'
+    hex: '#1c1f22'
+  - name: gray1
+    hsl: 'hsla(204, 10%, 18%, 1)'
+    hex: '#292f32'
+  - name: gray2
+    hsl: 'hsla(204, 10%, 24%, 1)'
+    hex: '#373e43'
+  - name: gray3
+    hsl: 'hsla(204, 10%, 32%, 1)'
+    hex: '#49535a'
+  - name: gray4
+    hsl: 'hsla(204, 10%, 40%, 1)'
+    hex: '#5c6870'
+  - name: gray6
+    hsl: 'hsla(204, 10%, 56%, 1)'
+    hex: '#84919a'
+  - name: gray8
+    hsl: 'hsla(204, 10%, 80%, 1)'
+    hex: '#c7cdd1'
+  - name: gray9
+    hsl: 'hsla(204, 10%, 88%, 1)'
+    hex: '#dde1e3'
+  - name: offwhite
+    hsl: 'hsla(204, 10%, 96%, 1)'
+    hex: '#f4f5f6'
+  - name: white
+    hsl: 'hsla(204, 10%, 98%, 1)'
+    hex: '#f9fafa'
+  - name: transparent
+    hsl: 'hsla(0, 0%, 100%, .01)'
 
 #colors
 
-blue:
-  hsl: hsla(204, 50%, 45%, 1)
-  hex: #397eac
-boldblue:
-  hsl: hsla(204, 80%, 40%, 1)
-  hex: #1476b8
-grayblue:
-  hsl: hsla(204, 30%, 80%, 1)
-  hex: #bdcfdb
-grayblue-transparent:
-  hsl: hsla(204, 30%, 80%, .5)
-red:
-  hsl: hsla(4, 60%, 50%, 1)
-  hex: #cc3d33
-boldred:
-  hsl: hsla(4, 80%, 40%, 1)
-  hex: #bd1b0f
-pink:
-  hsl: hsla(4, 30%, 80%, 1)
-  hex: #dbbfbd
-pink-transparent:
-  hsl: hsla(4, 30%, 80%, .5)
-orange:
-  hsl: hsla(22, 50%, 44%, 1)
-  hex: #a86138
-gold: 
-  hsl: hsla(44, 50%, 44%, 1)
-  hex: #a88a38
-lightgold:
-  hsl: hsla(44, 30%, 88%, 1)
-  hex: #eae5d7
-green:
-  hsl: hsla(144, 50%, 35%, 1)
-  hex: #2d8650
-bluegreen:
-  hsl: hsla(184, 32%, 38%, 1)
-  hex: #427c80
-violet:
-  hsl: hsla(225, 35%, 52%, 1)
-  hex: #5a6faf
+color:
+  - name: blue
+    hsl: 'hsla(204, 50%, 45%, 1)'
+    hex: '#397eac'
+  - name: boldblue
+    hsl: 'hsla(204, 80%, 40%, 1)'
+    hex: '#1476b8'
+  - name: grayblue
+    hsl: 'hsla(204, 30%, 80%, 1)'
+    hex: '#bdcfdb'
+  - name: graybluetransparent
+    hsl: 'hsla(204, 30%, 80%, .5)'
+  - name: red
+    hsl: 'hsla(4, 60%, 50%, 1)'
+    hex: '#cc3d33'
+  - name: boldred
+    hsl: 'hsla(4, 80%, 40%, 1)'
+    hex: '#bd1b0f'
+  - name: pink
+    hsl: 'hsla(4, 30%, 80%, 1)'
+    hex: '#dbbfbd'
+  - name: pinktransparent
+    hsl: 'hsla(4, 30%, 80%, .5)'
+  - name: orange
+    hsl: 'hsla(22, 50%, 44%, 1)'
+    hex: '#a86138'
+  - name: gold
+    hsl: 'hsla(44, 50%, 44%, 1)'
+    hex: '#a88a38'
+  - name: lightgold
+    hsl: 'hsla(44, 30%, 88%, 1)'
+    hex: '#eae5d7'
+  - name: green
+    hsl: 'hsla(144, 50%, 35%, 1)'
+    hex: '#2d8650'
+  - name: bluegreen
+    hsl: 'hsla(184, 32%, 38%, 1)'
+    hex: '#427c80'
+  - name: violet
+    hsl: 'hsla(225, 35%, 52%, 1)'
+    hex: '#5a6faf'
