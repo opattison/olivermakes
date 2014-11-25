@@ -831,7 +831,7 @@ blockquote,
   border-radius: .125em;
   float: right;
   margin: 0 -1.5em;
-  padding: 0 .125em;
+  padding: 0 .25em;
 }
 
 a.reversefootnote {
