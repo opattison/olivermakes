@@ -3,6 +3,7 @@ title: 'patterns'
 layout: singel
 code: true
 date: 2014-10-31 18:25
+description: A collection of self-documenting patterns and styles for my website.
 image:
   - src: 'image.gif'
     caption: 'This is a caption pulled from the yaml front matter. It describes the image in the same `figure` element.'
