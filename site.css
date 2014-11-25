@@ -105,12 +105,16 @@ sup {
   line-height: 1;
 }
 
+sup {
+  vertical-align: text-top;
+}
+
 sub {
   vertical-align: text-bottom;
 }
 
-sup {
-  vertical-align: text-top;
+cite {
+  font-style: normal;
 }
 
 /***! END Normalization ***/
@@ -271,8 +275,28 @@ blockquote footer {
   text-align: right;
 }
 
-cite {
-  font-style: normal;
+/* Footnotes */
+
+sup[id] {
+  border-radius: .125em;
+  margin-left: .125em;
+  vertical-align: baseline;
+}
+
+sup[id] a {
+  background-color: hsla(204, 30%, 80%, .5);
+  border-bottom: 0;
+  color: hsla(204, 10%, 24%, 1);
+  padding: 0 .25em;
+}
+
+sup[id] a:hover {
+  background-color: hsla(4, 30%, 80%, .5);
+}
+
+sup[id] a::after {
+  content: "\200A⇂";
+  font-size: .625em;
 }
 
 figcaption {
@@ -757,27 +781,61 @@ blockquote,
   padding: 1em;
 }
 
-/* Aside for supporting content */
+/* Asides and footnotes for supporting content */
 
-.ancillary {
-  background-color: hsla(204, 10%, 96%, 1);
+.ancillary,
+.footnotes {
   color: hsla(204, 10%, 24%, 1);
   padding: 1em;
 }
 
+.ancillary {
+  background-color: hsla(204, 10%, 96%, 1);
+}
+
 .ancillary h1 {
   font: 500 1.25em/1.5 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
-  letter-spacing: 0;
 }
 
 .ancillary h2 {
   font: 400 1.125em/1.5 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
-  letter-spacing: 0;
 }
 
 .ancillary figure {
   margin: 1.25em auto 0;
   max-width: 100%;
+}
+
+/* Footnotes */
+
+.footnotes {
+  background-color: hsla(204, 30%, 80%, .5);
+  margin-bottom: 1em;
+  margin-right: -1em;
+  padding-bottom: 2em;
+}
+
+.footnotes ol {
+  list-style-position: outside;
+  padding: 0 1.25em;
+}
+
+.footnotes .reversefootnote {
+  border: solid 1px hsla(204, 10%, 80%, 1);
+  border-radius: .125em;
+  float: right;
+  margin: 0 -1.5em;
+  padding: 0 .125em;
+}
+
+a.reversefootnote {
+  color: hsla(204, 10%, 24%, 1);
+}
+
+a.reversefootnote:hover,
+a.reversefootnote:focus {
+  background-color: hsla(4, 30%, 80%, .5);
+  border-color: hsla(4, 30%, 80%, .5);
 }
 
 /***! END Page layouts ***/
@@ -862,6 +920,10 @@ screen and (min-resolution: 1.5dppx) {
     padding: 2em;
   }
 
+  .footnotes {
+    margin-right: -2em;
+  }
+
   .site-header {
     height: 4.5em;
   }
@@ -917,6 +979,12 @@ screen and (min-resolution: 1.5dppx) {
   article figure {
     margin: 5% calc(-2.5em) 0;
     width: calc(100% + 5em);
+  }
+
+  .footnotes {
+    margin-bottom: 0;
+    margin-right: -2.5em;
+    margin-top: 2.5em;
   }
 
   .singel .narrow,
@@ -1036,6 +1104,11 @@ screen and (min-resolution: 1.5dppx) {
     margin: 2em -6em 2em 2em;
     padding: 2em;
     width: 40%;
+  }
+
+  .footnotes {
+    margin-right: -4.5em;
+    padding: 2.5em;
   }
 
   .singel .hero,
@@ -1188,6 +1261,10 @@ screen and (min-resolution: 1.5dppx) {
     margin-left: -9em;
     margin-right: -9em;
     padding: 2em 9em;
+  }
+
+  .footnotes {
+    margin: 2.5em -9em -3em 4.5em;
   }
 
   .singel .hero {
