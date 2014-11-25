@@ -844,6 +844,20 @@ blockquote,
   padding: 0 1.25em;
 }
 
+.footnotes li {
+  border-bottom: solid 1px hsla(204, 10%, 80%, 1);
+  padding-bottom: 1.25em;
+}
+
+.footnotes li + li {
+  margin-top: 1.25em;
+}
+
+.footnotes li:last-child {
+  border: none;
+  padding: 0;
+}
+
 .footnotes .reversefootnote {
   border: solid 1px hsla(204, 10%, 80%, 1);
   border-radius: .125em;
