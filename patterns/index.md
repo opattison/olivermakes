@@ -104,4 +104,21 @@ kbd > kbd + b {
   >
 </figure>
 
-<object type="image/svg+xml" data="{{ site.image-url }}/logo.svg"><img src="{{ site.image-url }}/logo-fallback.png"></object>
+### Shades
+
+<ul class="swatches">
+{% for name in site.shade %}
+<li><figure style="background-color: {{ site.shade[forloop.index0].hsl }}"><figcaption>{{ site.shade[forloop.index0].name }}<br>{{ site.shade[forloop.index0].hsl }}</figcaption></figure></li>
+{% endfor %}
+</ul>
+
+### Colors
+
+<ul class="swatches">
+{% for name in site.color %}
+<li><figure style="background-color: {{ site.color[forloop.index0].hsl }}"><figcaption>{{ site.color[forloop.index0].name }}<br>{{ site.color[forloop.index0].hsl }}</figcaption></figure></li>
+{% endfor %}
+</ul>
+
+
+- - -
