@@ -1,7 +1,7 @@
 ---
 title: 'How to design a better responsive code block'
 layout: singel
-layout-option:
+option:
   - hero
 code: true
 category: writing
@@ -17,7 +17,7 @@ image:
 
 ---
 
-Typography can be difficult to get right in a responsive design. Formatting code for readability with multiple types of content in uncertain contexts is not easy, and the defaults are not on our side. Default user agent styles in browsers are nearly useless for code blocks, so it is important to optimize these styles when code blocks are needed for a project, such as a documentation project or technical blog. When we design responsive sites for a technical audience, we have to allow that some readers want to read code even on a small screen.
+Typography can be difficult to get right in a responsive design. Formatting code for readability with multiple types of content in uncertain contexts is not easy, and the defaults are not on our side. Default user agent styles in browsers are nearly useless for code blocks, so it is important to optimize these styles when code blocks are needed for a project, such as a documentation project, style guide or technical blog. When we design responsive sites for a technical audience, we have to allow that some readers want to read code even on a small screen.
 
 Even if a CMS or site builder has code highlighting built in (like [Jekyll](http://jekyllrb.com) with [Pygments](http://pygments.org/)), much more beyond that needs to be explicitly designed. Images are a big deal in responsive design implementation. The `max-width: 100%` declaration does a lot of heavy lifting in a fluid layout. But many site layouts break when resized down to reasonable viewport widths, because of text. *Text*, and especially code, can easily break an otherwise adaptive layout. In some cases, text flows outside of the viewport and is rendered inaccessible, or the page is forced to have overflow on the right, adding a scrollbar and breaking the 100% width layout. And it is not only code blocks – even a long URL can break the layout of a website without proper care.
 
@@ -146,21 +146,20 @@ A few notes about this method:
 3. On really small screens, the method can lead to a lot of scrolling and discontinuity from one line to another.
 4. It does not prevent problems for large screens, given long enough lines.
 
-Here it is in action, with the HTML sample from earlier:
+The following shows the scroll method using the HTML sample from earlier.
 
-<div class="highlight">
-  <pre style="overflow: scroll;">
-    <code class="language-html" data-lang="html" style="word-wrap: normal; overflow-wrap: normal; white-space: pre">
-      <span class="lineno">1</span> <span class="nt">&lt;p&gt;</span>My monospace font is <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://adobe-fonts.github.io/source-code-pro"</span><span class="nt">&gt;</span>Adobe Source Code Pro<span class="nt">&lt;/a&gt;</span>. It is beautiful, and <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.google.com/fonts/specimen/Source+Code+Pro"</span><span class="nt">&gt;</span>it is free to use<span class="nt">&lt;/a&gt;</span>. To make sure that code blocks look their best, I set the monospace typeface to be proportional to the rest of the typography on my site – around .8125em for a site based on a 1em scale. This proportion works slightly differently depending on the typeface and weight chosen.<span class="nt">&lt;/p&gt;</span>
-      <span class="lineno">2</span> 
-      <span class="lineno">3</span> <span class="nt">&lt;hr&gt;</span>
-      <span class="lineno">4</span> 
-      <span class="lineno">5</span> <span class="nt">&lt;p&gt;</span>An example of <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://example.com/areallylongurlthatwouldotherwisebreakwithoutbreakword"</span><span class="nt">&gt;</span>a really long string<span class="nt">&lt;/a&gt;</span>.<span class="nt">&lt;/p&gt;</span>
-    </code>
-  </pre>
-</div>
+### It’s not too beautiful
 
-I believe this method is particularly poorly suited for HTML or any other code with comments in it. It is responsive, but not as adaptive to different screens as the `break-word` method.
+<div class="highlight" style="background-color: hsla(4, 30%, 80%, .2); padding-left: 0; padding-right: 2.5em; padding-bottom: 2.5em; position: relative;"><pre style="overflow: scroll; padding-left: 2.5em;"><code class="language-html" data-lang="html" style="word-wrap: normal; overflow-wrap: normal; white-space: pre"><span class="lineno">1</span> <span class="nt">&lt;p&gt;</span>My monospace font is <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://adobe-fonts.github.io/source-code-pro&quot;</span><span class="nt">&gt;</span>Adobe Source Code Pro<span class="nt">&lt;/a&gt;</span>. It is beautiful, and <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://www.google.com/fonts/specimen/Source+Code+Pro&quot;</span><span class="nt">&gt;</span>it is free to use<span class="nt">&lt;/a&gt;</span>. To make sure that code blocks look their best, I set the monospace typeface to be proportional to the rest of the typography on my site – around .8125em for a site based on a 1em scale. This proportion works slightly differently depending on the typeface and weight chosen.<span class="nt">&lt;/p&gt;</span>
+<span class="lineno">2</span> 
+<span class="lineno">3</span> <span class="nt">&lt;hr&gt;</span>
+<span class="lineno">4</span> 
+<span class="lineno">5</span> <span class="nt">&lt;p&gt;</span>An example of <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://example.com/areallylongurlthatwouldotherwisebreakwithoutbreakword&quot;</span><span class="nt">&gt;</span>a really long string<span class="nt">&lt;/a&gt;</span>.<span class="nt">&lt;/p&gt;</span></code></pre><div style="color: hsla(204, 10%, 56%, 1); font-size: .75em; padding: .5em; position: absolute; bottom: 0; right: 0;">Scroll ⇁</div></div>
+
+I believe this method is particularly poorly suited for HTML or any other code with comments in it. It is responsive, but not as adaptive to different screens as the `break-word` method.[^3]
+
+But fortunately we do not have to rely on the `scroll` method. For HTML and CSS blocks, `break-word` and `pre-wrap` solve a lot of inherit problems with responsive code block design.
 
 [^1]: I am focusing here on web front-end markup, since that is what I care most about. I have not covered exceptions and use cases from other programming languages. The same principles should apply to some other contexts, but I have not tested them out thoroughly. I know that some programming languages have peculiarities with white space and line numbers, so this might have limited use for those cases. I know that editing HTML in a text editor requires word wrapping; Python does not. This technique prioritizes readability on small screens *for the web* ahead of any other concerns so that readers do not have to suffer scrolling or tiny font sizes.
 [^2]: To get code highlighting to match my site’s design, I designed a [custom base16 color pattern]({{ site.fragments-url }}/base16-olivermakes.html), which is generated into a [Pygments](http://pygments.org/) theme with [base16-builder](https://github.com/chriskempson/base16-builder). Take a look at [this site’s source](https://github.com/opattison/olivermakes/blob/cc471fa92a270e4bc44423fd796ead2609005a40/site.css#L346) for more examples of code formatting.
+[^3]: In this example, I even gave the code block less padding at greater widths to fit more on the screen, and it was still unreadable. There is also the usability issue in OS X and iOS of `overflow` scrollbars being hidden by default until scrolling begins, which makes the problem even worse.
