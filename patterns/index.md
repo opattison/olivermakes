@@ -3,9 +3,10 @@ title: 'patterns'
 layout: singel
 code: true
 date: 2014-10-31 18:25
+description: A collection of self-documenting patterns and styles for my website.
 image:
   - src: 'image.gif'
-    caption: 'This is a caption pulled from the yaml front matter. It describes the image in the same `figure` element.'
+    caption: 'This is a caption pulled from the yaml front matter. It describes the image in the same `figure` element. By <cite>Oliver Pattison</cite>.'
     alt: 'A placeholder image'
 
 ---
@@ -57,6 +58,7 @@ image:
 
 ### CSS
 
+<figure class="code">
 {% highlight css %}
 article strong a,
 article strong a:visited {
@@ -84,10 +86,12 @@ kbd > kbd + b {
 
 /* comment */
 {% endhighlight %}
+<figcaption><p>This is a figcaption for a figure of code block.</p></figcaption>
+</figure>
 
 <div class="feature"><p>This is “feature” text, used for emphasis and attention in storytelling.</p></div>
 
-<figure> 
+<figure class="wide">
   <img
     src="{{ site.image-url }}/{{ page.image[0].src }}" 
     sizes="{{ site.photo-sizes }}"  
@@ -97,7 +101,7 @@ kbd > kbd + b {
   <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
 </figure>
 
-<figure>
+<figure class="narrow">
   <img
     src="{{ site.image-url }}/{{ page.image[0].src }}" 
     alt="{{ page.image[0].alt }}"

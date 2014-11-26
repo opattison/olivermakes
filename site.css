@@ -105,12 +105,16 @@ sup {
   line-height: 1;
 }
 
+sup {
+  vertical-align: text-top;
+}
+
 sub {
   vertical-align: text-bottom;
 }
 
-sup {
-  vertical-align: text-top;
+cite {
+  font-style: normal;
 }
 
 /***! END Normalization ***/
@@ -128,7 +132,7 @@ li + li {
 }
 
 article {
-  padding: 1.25em 1em;
+  padding: 1.25em 1em 2.5em;
 }
 
 /***! END Axiomatic styles ***/
@@ -262,6 +266,24 @@ ul {
   list-style-type: square;
 }
 
+article > ol,
+aside > ol {
+  counter-reset: listNumbering;
+  list-style-type: none;
+}
+
+article > ol li,
+aside > ol li {
+  counter-increment: listNumbering;
+}
+
+article > ol li::before,
+aside > ol li::before {
+  content: counter(listNumbering) '.';
+  font-weight: bolder;
+  margin-right: .25em;
+}
+
 blockquote {
   background-color: hsla(204, 10%, 88%, 1);
 }
@@ -271,13 +293,42 @@ blockquote footer {
   text-align: right;
 }
 
-cite {
-  font-style: normal;
+/* Footnotes */
+
+sup[id] {
+  margin-left: .125em;
+  vertical-align: baseline;
+}
+
+sup[id] a {
+  background-color: hsla(204, 30%, 80%, .5);
+  border-bottom: 0;
+  border-radius: .125em;
+  color: hsla(204, 10%, 24%, 1);
+  font-size: .875em;
+  font-weight: bolder;
+  margin-right: .25em;
+  padding: 0 .25em;
+}
+
+sup[id] a:hover {
+  background-color: hsla(4, 30%, 80%, .5);
+}
+
+sup[id] a::before {
+  content: "note ";
 }
 
 figcaption {
+  border-bottom: solid 1px hsla(204, 10%, 88%, 1);
+  color: hsla(204, 10%, 24%, 1);
+  margin: 0 -1em;
+  padding: .5em 1em;
+}
+
+.wide figcaption,
+.hero figcaption {
   margin: 0;
-  padding: .5em 1em 0;
 }
 
 figcaption p {
@@ -299,12 +350,8 @@ samp {
   white-space: pre-wrap;
 }
 
-.highlight {
-  border-bottom: solid .0625em hsla(204, 10%, 88%, 1);
-  border-top: solid .0625em hsla(204, 10%, 88%, 1);
-}
-
 p > code,
+li > code,
 samp {
   border: solid 1px hsla(204, 10%, 80%, 1);
   border-radius: .25em;
@@ -320,6 +367,15 @@ pre > code {
 
 blockquote p > code {
   background-color: hsla(204, 10%, 96%, 1);
+}
+
+.highlight {
+  border-bottom: solid .0625em hsla(204, 10%, 88%, 1);
+  border-top: solid .0625em hsla(204, 10%, 88%, 1);
+}
+
+.lineno {
+  margin: 0 .5em 0 -1em;
 }
 
 kbd > kbd {
@@ -473,6 +529,10 @@ a svg circle {
 
 /* Site meta information */
 
+.site-footer {
+  margin: 0;
+}
+
 .site-nav,
 .site-footer .site-info {
   margin: 0 auto;
@@ -492,7 +552,6 @@ a svg circle {
 .site-nav {
   display: block;
   font-weight: 400;
-  margin-top: 2.75em;
   max-width: 45rem;
 }
 
@@ -757,27 +816,75 @@ blockquote,
   padding: 1em;
 }
 
-/* Aside for supporting content */
+/* Asides and footnotes for supporting content */
 
-.ancillary {
-  background-color: hsla(204, 10%, 96%, 1);
+.ancillary,
+.footnotes {
   color: hsla(204, 10%, 24%, 1);
   padding: 1em;
 }
 
+.ancillary {
+  background-color: hsla(204, 10%, 96%, 1);
+}
+
 .ancillary h1 {
   font: 500 1.25em/1.5 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
-  letter-spacing: 0;
 }
 
 .ancillary h2 {
   font: 400 1.125em/1.5 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
-  letter-spacing: 0;
 }
 
 .ancillary figure {
   margin: 1.25em auto 0;
   max-width: 100%;
+}
+
+/* Footnotes */
+
+.footnotes {
+  background-color: hsla(204, 30%, 80%, .5);
+  margin-bottom: 1em;
+  margin-right: -1em;
+  padding-bottom: 2em;
+}
+
+.footnotes ol {
+  list-style-position: outside;
+  padding: 0 1.25em;
+}
+
+.footnotes li {
+  border-bottom: solid 1px hsla(204, 10%, 80%, 1);
+  padding-bottom: 1.25em;
+}
+
+.footnotes li + li {
+  margin-top: 1.25em;
+}
+
+.footnotes li:last-child {
+  border: none;
+  padding: 0;
+}
+
+.footnotes .reversefootnote {
+  border: solid 1px hsla(204, 10%, 80%, 1);
+  border-radius: .125em;
+  float: right;
+  margin: 0 -1.5em;
+  padding: 0 .25em;
+}
+
+a.reversefootnote {
+  color: hsla(204, 10%, 24%, 1);
+}
+
+a.reversefootnote:hover,
+a.reversefootnote:focus {
+  background-color: hsla(4, 30%, 80%, .5);
+  border-color: hsla(4, 30%, 80%, .5);
 }
 
 /***! END Page layouts ***/
@@ -788,7 +895,10 @@ figure img {
   width: 100%;
 }
 
-article figure {
+.wide,
+.narrow,
+.grid-2,
+.hero {
   margin: 5% calc(-1em) 0;
   max-width: none;
   width: calc(100% + 2em);
@@ -838,28 +948,45 @@ screen and (min-resolution: 1.5dppx) {
 @media screen and (min-width: 30em) {
 
   article {
-    padding: 1.25em 2em;
+    padding: 1.25em 2em 2.5em;
   }
 
-  article figure {
+  .wide,
+  .narrow,
+  .grid-2,
+  .hero {
     margin: 5% calc(-2em) 0;
     width: calc(100% + 4em);
   }
 
   blockquote,
   .highlight,
-  .essay {
-    margin-left: -2em;
-    margin-right: -2em;
-    padding: 1em 2em;
+  .essay,
+  .wide figcaption,
+  .hero figcaption,
+  .code figcaption {
+    padding-left: 2em;
+    padding-right: 2em;
   }
 
-  .singel figcaption {
-    padding: .5em 2em 0;
+  blockquote,
+  .highlight,
+  .essay,
+  .code figcaption {
+    margin-left: -2em;
+    margin-right: -2em;
+  }
+
+  .lineno {
+    margin: 0 .5em 0 -2em;
   }
 
   .ancillary {
     padding: 2em;
+  }
+
+  .footnotes {
+    margin-right: -2em;
   }
 
   .site-header {
@@ -902,37 +1029,51 @@ screen and (min-resolution: 1.5dppx) {
     margin: 0 3em;
   }
 
-  blockquote,
-  .highlight,
-  .essay {
-    margin-left: -2.5em;
-    margin-right: -2.5em;
-    padding: 1.25em 2.5em;
-  }
-
-  .singel figcaption {
-    padding: .5em 2.5em 0;
-  }
-
-  article figure {
+  .wide,
+  .hero {
     margin: 5% calc(-2.5em) 0;
     width: calc(100% + 5em);
   }
 
-  .singel .narrow,
-  .dubbel .narrow {
-    margin: 5% auto;
+  .narrow,
+  .grid-2 {
+    margin: 5% auto 0;
     max-width: 100%;
-  }
-
-  .singel .narrow figcaption,
-  .dubbel .narrow figcaption {
-    padding-left: 0;
-    padding-right: 0;
   }
 
   .hero {
     margin-top: -2em;
+  }
+
+  blockquote,
+  .highlight,
+  .essay,
+  .wide figcaption,
+  .hero figcaption,
+  .code figcaption {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
+
+  blockquote,
+  .highlight,
+  .essay,
+  .code figcaption {
+    margin-left: -2.5em;
+    margin-right: -2.5em;
+  }
+
+  blockquote,
+  .highlight,
+  .essay {
+    padding-bottom: 1.25em;
+    padding-top: 1.25em;
+  }
+
+  .footnotes {
+    margin-bottom: 0;
+    margin-right: -2.5em;
+    margin-top: 2.5em;
   }
 
 }
@@ -970,16 +1111,16 @@ screen and (min-resolution: 1.5dppx) {
     margin-top: 2.75em;
   }
 
+  .site-nav {
+    margin-top: 2.75em;
+  }
+
 }
 
 @media screen and (min-width: 50em) {
 
   html {
     line-height: 1.5;
-  }
-
-  .photo figcaption {
-    padding: .5em 0 0;
   }
 
   .site-header {
@@ -1013,15 +1154,37 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 1.25em;
   }
 
-  blockquote,
-  .highlight {
-    margin-left: -4.5em;
-    margin-right: -4.5em;
-    padding: 2em 4.5em;
+  .wide figcaption,
+  .hero figcaption,
+  .code figcaption {
+    padding: .5em 0;
   }
 
-  .singel figcaption {
-    padding: .5em 4.5em 0;
+  figcaption p {
+    font-size: .75em;
+    margin-left: 50%;
+    text-align: right;
+    width: 45%;
+    width: calc(50% - 3em)
+  }
+
+  blockquote,
+  .highlight {
+    padding-left: 4.5em;
+    padding-right: 4.5em;
+  }
+
+  blockquote,
+  .highlight,
+  .code figcaption {
+    margin-left: -4.5em;
+    margin-right: -4.5em;
+  }
+
+  blockquote,
+  .highlight {
+    padding-bottom: 2em;
+    padding-top: 2em;
   }
 
   .essay {
@@ -1038,20 +1201,25 @@ screen and (min-resolution: 1.5dppx) {
     width: 40%;
   }
 
+  .footnotes {
+    margin-right: -4.5em;
+    padding: 2.5em;
+  }
+
   .singel .hero,
   .dubbel .hero {
     margin-top: -2.25em;
   }
 
-  article figure {
+  .wide,
+  .narrow {
     margin: 5% auto 0;
     max-width: 100%;
     width: 100%;
   }
 
-  .photo figure,
-  .singel figure,
-  .dubbel figure,
+  .wide,
+  .hero,
   .grid-2 {
     margin: 5% calc(-4.5em) 0;
     max-width: none;
@@ -1069,8 +1237,8 @@ screen and (min-resolution: 1.5dppx) {
     width: 48%;
   }
 
-  .grid-2 figure:first-child {
-    margin-right: 4%;
+  .grid-2 figure + figure {
+    margin-left: 4%;
   }
 
   .grid-2 + figure {
@@ -1106,7 +1274,7 @@ screen and (min-resolution: 1.5dppx) {
     width: 54em;
   }
 
-  .dubbel figure {
+  .dubbel .wide {
     margin: 5% calc(-9em) 0;
     max-width: none;
     width: calc(100% + 18em);
@@ -1126,9 +1294,8 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .dubbel .ancillary {
-    font-size: 1em;
+    font-size: .875em;
     margin: 1.25em -25% 1.25em 2em;
-    padding: 2em 2em;
     width: 62.5%;
   }
 
@@ -1160,11 +1327,6 @@ screen and (min-resolution: 1.5dppx) {
     padding: 1.5em 9em;
   }
 
-  .dubbel .grid-2 {
-    margin: 5% 0 0;
-    width: 100%;
-  }
-
 }
 
 @media screen and (min-width: 80em) {
@@ -1183,24 +1345,49 @@ screen and (min-resolution: 1.5dppx) {
     width: 54em;
   }
 
-  blockquote,
-  .highlight {
-    margin-left: -9em;
-    margin-right: -9em;
-    padding: 2em 9em;
+  .singel .wide,
+  .singel .hero {
+    margin: 5% calc(-9em) 0;
+    width: calc(100% + 18em);
   }
 
   .singel .hero {
     margin-top: -4em;
   }
 
-  .singel figure {
-    margin: 5% calc(-9em) 0;
-    width: calc(100% + 18em);
+  .wide figcaption,
+  .code figcaption {
+    padding: 1em 0;
   }
 
-  .singel figcaption {
-    padding: 1em 9em 0;
+  figcaption p {
+    margin-left: 50%;
+    text-align: right;
+    width: 42%;
+    width: calc(50% - 6em)
+  }
+
+  blockquote,
+  .highlight {
+    padding-left: 9em;
+    padding-right: 9em;
+  }
+
+  blockquote,
+  .highlight,
+  .code figcaption {
+    margin-left: -9em;
+    margin-right: -9em;
+  }
+
+  blockquote,
+  .highlight {
+    padding-bottom: 2em;
+    padding-top: 2em;
+  }
+
+  .footnotes {
+    margin: 2.5em -9em -3em 4.5em;
   }
 
   .singel .ancillary {
@@ -1227,7 +1414,7 @@ screen and (min-resolution: 1.5dppx) {
   .site-footer .site-info {
     padding: 2em 4em;
     font-size: 1.5em;
-    width: 66.66666667%
+    width: 66.66666667%;
   }
 
 }
@@ -1296,9 +1483,8 @@ screen and (min-width: 57em) and (max-height: 34em),
 screen and (min-width: 58.5em) and (max-height: 35em),
 screen and (min-width: 60em) and (max-height: 36em) {
 
-  .singel figure,
-  .dubbel figure,
-  .photo figure {
+  .wide,
+  .narrow {
     margin: 5% auto 0;
     max-width: 100%;
   }

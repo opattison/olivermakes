@@ -2,11 +2,25 @@ title: olivermak.es
 author:
   name: Oliver Pattison
   email: oliverpattison@gmail.com
-description: 'I am a designer focused on the future of the web.'
+description: 'I am Oliver Pattison, a designer focused on the future of the web.'
+
+link:
+  attribution: http://creativecommons.org/licenses/by-nc/4.0/
+  flickr: https://www.flickr.com/photos/ok-oyot
+  jean: http://jeancflanagan.com
+  github: https://github.com/opattison
+  googleplus: http://plus.google.com/+OliverPattison
+  panoramio: http://www.panoramio.com/user/oliverpattison
+  pinboard: https://pinboard.in/u:opattison
+  source: http://github.com/opattison/olivermakes
+  tumblr: http://olivermakes.tumblr.com
+  twitter: http://twitter.com/olivermakes
+  vsco: http://olivermakes.vsco.co
 
 url: http://olivermak.es
 image-url: http://static.olivermak.es/images
 script-url: http://static.olivermak.es/scripts
+fragments-url: http://static.olivermak.es/fragments
 
 photo-sizes: '(min-width: 140em) 1440px, (min-width: 115em) 1260px, (min-width: 95em) 1080px, (min-width: 60em) 900px, (min-width: 45em) 720px, 100vw'
 photo-sizes_half: '(min-width: 140em) 691px, (min-width: 115) 605px, (min-width: 95em) 518px, (min-width: 60em) 432px, (min-width: 45em) 720px, 100vw'

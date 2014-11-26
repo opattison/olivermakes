@@ -1,0 +1,7 @@
+{% include page-header-hero.html %}
+
+    {% unless page.layout-option contains 'no-title' %}
+    <header>
+      <h1>{{ page.title }}</h1>
+    </header>
+    {% endunless %}
