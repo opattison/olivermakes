@@ -82,7 +82,7 @@ i {
 
 dfn {
   font-style: normal;
-  font-weight: bolder;
+  font-weight: 500;
 }
 
 ul,
@@ -320,7 +320,7 @@ sup[id] a {
   border-radius: .125em;
   color: hsla(204, 10%, 24%, 1);
   font-size: .875em;
-  font-weight: bolder;
+  font-weight: 400;
   margin-right: .25em;
   padding: 0 .25em;
 }
