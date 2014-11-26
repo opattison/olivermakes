@@ -1157,7 +1157,7 @@ screen and (min-resolution: 1.5dppx) {
     font-size: .75em;
     margin-left: 50%;
     text-align: right;
-    width: 50%;
+    width: 45%;
     width: calc(50% - 3em)
   }
 
@@ -1356,7 +1356,7 @@ screen and (min-resolution: 1.5dppx) {
   figcaption p {
     margin-left: 50%;
     text-align: right;
-    width: 50%;
+    width: 42%;
     width: calc(50% - 6em)
   }
 
