@@ -959,6 +959,10 @@ screen and (min-resolution: 1.5dppx) {
     width: calc(100% + 4em);
   }
 
+  .hero {
+    margin-top: -1.25em;
+  }
+
   blockquote,
   .highlight,
   .essay,
