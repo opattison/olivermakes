@@ -58,6 +58,7 @@ image:
 
 ### CSS
 
+<figure class="code">
 {% highlight css %}
 article strong a,
 article strong a:visited {
@@ -85,10 +86,12 @@ kbd > kbd + b {
 
 /* comment */
 {% endhighlight %}
+<figcaption>This is a figcaption for a figure of code block.</figcaption>
+</figure>
 
 <div class="feature"><p>This is “feature” text, used for emphasis and attention in storytelling.</p></div>
 
-<figure> 
+<figure class="wide">
   <img
     src="{{ site.image-url }}/{{ page.image[0].src }}" 
     sizes="{{ site.photo-sizes }}"  
@@ -98,7 +101,7 @@ kbd > kbd + b {
   <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
 </figure>
 
-<figure>
+<figure class="narrow">
   <img
     src="{{ site.image-url }}/{{ page.image[0].src }}" 
     alt="{{ page.image[0].alt }}"
