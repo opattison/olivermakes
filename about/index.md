@@ -3,7 +3,7 @@ title: 'About'
 layout: singel
 layout-option:
   - no-title
-  - hero
+  - hero-srcset
 code: true
 date: 2014-10-31 18:25
 image:
