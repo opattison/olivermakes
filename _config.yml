@@ -77,8 +77,6 @@ shade:
   - name: white
     hsl: 'hsla(204, 10%, 98%, 1)'
     hex: '#f9fafa'
-  - name: transparent
-    hsl: 'hsla(0, 0%, 100%, .01)'
 
 #colors
 
@@ -92,8 +90,9 @@ color:
   - name: grayblue
     hsl: 'hsla(204, 30%, 80%, 1)'
     hex: '#bdcfdb'
-  - name: graybluetransparent
-    hsl: 'hsla(204, 30%, 80%, .5)'
+  - name: violet
+    hsl: 'hsla(225, 35%, 52%, 1)'
+    hex: '#5a6faf'
   - name: red
     hsl: 'hsla(4, 60%, 50%, 1)'
     hex: '#cc3d33'
@@ -103,8 +102,6 @@ color:
   - name: pink
     hsl: 'hsla(4, 30%, 80%, 1)'
     hex: '#dbbfbd'
-  - name: pinktransparent
-    hsl: 'hsla(4, 30%, 80%, .5)'
   - name: orange
     hsl: 'hsla(22, 50%, 44%, 1)'
     hex: '#a86138'
@@ -120,6 +117,25 @@ color:
   - name: bluegreen
     hsl: 'hsla(184, 32%, 38%, 1)'
     hex: '#427c80'
-  - name: violet
-    hsl: 'hsla(225, 35%, 52%, 1)'
-    hex: '#5a6faf'
+
+# semi-transparent shades and colors
+
+transparent:
+  - name: black-80
+    hsl: 'hsla(204, 10%, 10%, .8)'
+  - name: gray1-80
+    hsl: 'hsla(204, 10%, 18%, .8)'
+  - name: gray2-80
+    hsl: 'hsla(204, 10%, 24%, .8)'
+  - name: gray3-80
+    hsl: 'hsla(204, 10%, 32%, .8)'
+  - name: gray8-80
+    hsl: 'hsla(204, 10%, 80%, .8)'
+  - name: boldblue-80
+    hsl: 'hsla(204, 50%, 45%, .8)'
+  - name: grayblue-50
+    hsl: 'hsla(204, 30%, 80%, .5)'
+  - name: pink-50
+    hsl: 'hsla(4, 30%, 80%, .5)'
+  - name: pure-1
+    hsl: 'hsla(0, 0%, 100%, .01)'

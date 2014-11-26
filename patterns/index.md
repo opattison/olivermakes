@@ -42,6 +42,10 @@ image:
 <li>Yet another item in this list of items</li>
 </ul>
 
+<p>Below is an <code>&lt;hr&gt;</code> – that is, a horizontal rule.</p>
+
+- - -
+
 ### HTML
 
 {% highlight html %}
@@ -125,5 +129,10 @@ kbd > kbd + b {
 {% endfor %}
 </ul>
 
+### Semi-transparent shades and colors
 
-- - -
+<ul class="swatches">
+{% for name in site.transparent %}
+<li><figure style="background-color: {{ site.transparent[forloop.index0].hsl }}"><figcaption>{{ site.transparent[forloop.index0].name }}<br>{{ site.transparent[forloop.index0].hsl }}</figcaption></figure></li>
+{% endfor %}
+</ul>
