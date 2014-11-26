@@ -352,7 +352,7 @@ figcaption p {
 }
 
 hr {
-  background-color: hsla(204, 10%, 32%, 1);
+  background-color: hsla(204, 10%, 80%, .8);
   border: 0;
   height: .25em;
   margin: 2.5em 0;
@@ -407,7 +407,7 @@ kbd > kbd + b {
 } /* <kbd><kbd>cmd</kbd> <b class="kbd-plus">+</b> <kbd>C</kbd></kbd> */
 
 mark {
-  background-color: hsla(44, 30%, 88%, 1);
+  background-color: hsla(44, 30%, 88%, .5);
   padding: .0625em;
 }
 
