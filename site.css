@@ -82,7 +82,7 @@ i {
 
 dfn {
   font-style: normal;
-  font-weight: bolder;
+  font-weight: 500;
 }
 
 ul,
@@ -204,11 +204,6 @@ h5 {
   line-height: 1.5;
 }
 
-.feature {
-  color: hsla(204, 85%, 40%, 1);
-  font-size: 1.25em;
-}
-
 a,
 a:visited {
   color: hsla(4, 80%, 40%, 1);
@@ -293,6 +288,26 @@ blockquote footer {
   text-align: right;
 }
 
+/* Feature emphasis text blocks – <div class="feature"> */
+
+.feature {
+  color: hsla(204, 50%, 45%, 1);
+  font-size: 1.25em;
+  font-style: italic;
+  font-weight: 500;
+  margin-top: 1em;
+}
+
+.feature a {
+  color: hsla(4, 60%, 50%, 1);
+}
+
+.feature a:focus,
+.feature a:hover {
+  color: hsla(44, 50%, 44%, 1);
+  border-color: hsla(44, 30%, 88%, 1);
+}
+
 /* Footnotes */
 
 sup[id] {
@@ -306,7 +321,7 @@ sup[id] a {
   border-radius: .125em;
   color: hsla(204, 10%, 24%, 1);
   font-size: .875em;
-  font-weight: bolder;
+  font-weight: 400;
   margin-right: .25em;
   padding: 0 .25em;
 }
@@ -803,6 +818,12 @@ section {
           animation-name: step-fill--contrast;
 }
 
+.photo [role="main"] figcaption {
+  border-bottom: none;
+  color: hsla(204, 10%, 88%, 1);
+  padding-bottom: 0;
+}
+
 .essay {
   background-color: hsla(204, 10%, 24%, 1);
   margin-top: 2.75em;
@@ -959,6 +980,10 @@ screen and (min-resolution: 1.5dppx) {
     width: calc(100% + 4em);
   }
 
+  .hero {
+    margin-top: -1.25em;
+  }
+
   blockquote,
   .highlight,
   .essay,
@@ -991,6 +1016,7 @@ screen and (min-resolution: 1.5dppx) {
 
   .site-header {
     height: 4.5em;
+    margin-bottom: 0;
   }
 
   .site-header .title {
@@ -1204,6 +1230,10 @@ screen and (min-resolution: 1.5dppx) {
   .footnotes {
     margin-right: -4.5em;
     padding: 2.5em;
+  }
+
+  .feature {
+    padding: 0 2em;
   }
 
   .singel .hero,
