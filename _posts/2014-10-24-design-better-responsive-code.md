@@ -65,11 +65,11 @@ Here is what a sample from this page looks like without `overflow-wrap: break-wo
 
 I think these samples speak for themselves to explain why these declarations are needed for a responsive code block. With both of them not implemented, nearly every code block on this page runs off the page, breaking the layout on small and large screens alike.
 
-## Nicer typography and spacing
+## Nicer typography and proportions
 
 There is more to a well-designed responsive code block than line wrapping. One should also consider typography, color and proportion.
 
-My monospace font is [Adobe Source Code Pro](http://adobe-fonts.github.io/source-code-pro). It is beautiful, and [it is free to use](http://www.google.com/fonts/specimen/Source+Code+Pro). To make sure that code blocks look their best, I set the monospace typeface to be proportional to the rest of the typography on my site – around .8125em for a site based on a 1em scale. This proportion works slightly differently depending on the typeface and weight chosen.
+My current favorite monospace font for the web is [Adobe Source Code Pro](http://adobe-fonts.github.io/source-code-pro). It is beautiful, and [it is free to use](http://www.google.com/fonts/specimen/Source+Code+Pro). To make sure that code blocks look their best, I set the monospace typeface to be proportional to the rest of the typography on my site – around .8125em for a site based on a 1em scale. This proportion works slightly differently depending on the typeface and weight chosen.
 
 I have many more styles used to make the code blocks work on this site [^2] but the following example highlights some fundamentals.
 
