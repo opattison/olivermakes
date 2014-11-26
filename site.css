@@ -305,6 +305,7 @@ sup[id] a {
   border-bottom: 0;
   border-radius: .125em;
   color: hsla(204, 10%, 24%, 1);
+  font-size: .875em;
   font-weight: bolder;
   margin-right: .25em;
   padding: 0 .25em;
@@ -315,8 +316,7 @@ sup[id] a:hover {
 }
 
 sup[id] a::before {
-  content: "note: ";
-  font-size: .875em;
+  content: "note ";
 }
 
 figcaption {
