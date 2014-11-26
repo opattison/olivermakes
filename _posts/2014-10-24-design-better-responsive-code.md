@@ -6,28 +6,30 @@ layout-option:
 code: true
 category: writing
 date: 2014-10-24 16:15
-updated: 2014-11-25 09:25
+updated: 2014-11-26 09:23
 image:
   - src: 2014-11-26-hero-design-better-css-desat.png
-    alt: 
+    alt: ''
   - src: 2014-11-25-word-wrap-code-breaking.png 
-    alt: A sample of layout-breaking code without word-wrap
+    alt: 'A sample of layout-breaking code without word-wrap'
   - src: 2014-11-25-break-word-code-breaking.png
-    alt: A sample of layout-breaking code without break-word
+    alt: 'A sample of layout-breaking code without break-word'
 
 ---
 
-Typography can be difficult to get right in a responsive design. Formatting code for readability with multiple types of content in various contexts is not easy, and the defaults are not on our side. Default user agent styles in browsers are useless for code, so it is important to optimize these styles when starting a project, such as a documentation project or technical blog. When we design responsive sites, we have to assume that readers want to look at code even on a small screen, so let us consider how code blocks or inline code are displayed.
+Typography can be difficult to get right in a responsive design. Formatting code for readability with multiple types of content in uncertain contexts is not easy, and the defaults are not on our side. Default user agent styles in browsers are nearly useless for code blocks, so it is important to optimize these styles when code blocks are needed for a project, such as a documentation project or technical blog. When we design responsive sites for a technical audience, we have to allow that some readers want to read code even on a small screen.
 
-Even if your CMS or site builder has code highlighting built in (like [Jekyll](http://jekyllrb.com) and [Pygments](http://pygments.org/), much more needs to be explicity designed. Responsive images are a big deal in responsive design implementation – a `max-width: 100%` delcaration solves quite a few problems with layouts. But many site layouts break when resized down to reasonable viewport widths, thanks to text flow styles. *Text*, and especially code, can easily break an otherwise adaptive layout. In some cases, text flows outside of the viewport and is rendered inacessible, or the page is forced to have overflow on the right, adding a scrollbar and breaking the 100% width layout. And it is not just code blocks – even a long URL can break in the comments section of a website without proper care.
+Even if a CMS or site builder has code highlighting built in (like [Jekyll](http://jekyllrb.com) with [Pygments](http://pygments.org/)), much more beyond that needs to be explicity designed. Images are a big deal in responsive design implementation. The `max-width: 100%` delcaration does a lot of heavy lifting in a fluid layout. But many site layouts break when resized down to reasonable viewport widths, because of text. *Text*, and especially code, can easily break an otherwise adaptive layout. In some cases, text flows outside of the viewport and is rendered inacessible, or the page is forced to have overflow on the right, adding a scrollbar and breaking the 100% width layout. And it is not only code blocks – even a long URL can break the layout of a website without proper care.
 
 So how do we fix this?
 
 ## Prevent breaking words and lines
 
-In this example for “front-end” web code blocks, I am including styles that are hopefully “bullet-proof” as far as breaking layout is concerned.[^1] `overflow-wrap: break-word` is applied to not just code samples, but to the entire `body`. `white-space: pre-wrap` is applied to all `code` and `pre` elements.
+In this example for “front-end” web code blocks, I am including styles that are hopefully “bullet-proof” as far as breaking layout is concerned.[^1] 
 
-For `white-space`, the default value `normal` definitely will not work. `pre-wrap` is far preferable to `line-wrap` since [the latter does not maintain sequences of white space](https://developer.mozilla.org/en-US/docs/Web/CSS/white-space), which is crucial for most code.
+`overflow-wrap: break-word` is applied universally, rather than solely to code samples. It is useful to make sure that very long words (or URLs – a common case) break to the next line instead of flowing beyond the 100% bounds of the page.
+
+`white-space: pre-wrap` is applied to all `<code>` and `<pre>` elements. The default value `white-space: normal` definitely will not work. `pre-wrap` is far preferable to `line-wrap` since [the latter does not maintain sequences of white space](https://developer.mozilla.org/en-US/docs/Web/CSS/white-space), which is crucial for most code.
 
 ### The defaults
 
@@ -61,15 +63,15 @@ Here is what a sample from this page looks like without `overflow-wrap: break-wo
   alt="{{ page.image[2].alt }}"
 >
 
-I think these samples speak for themselves to explain why this code is needed for a responsive code block. With both of them not implemented, nearly every code block on this page runs off the page, breaking the layout.
+I think these samples speak for themselves to explain why these declarations are needed for a responsive code block. With both of them not implemented, nearly every code block on this page runs off the page, breaking the layout on small and large screens alike.
 
 ## Nicer typography and spacing
 
 There is more to a well-designed responsive code block than line wrapping. One should also consider typography, color and proportion.
 
-My monospace font is [Adobe Source Code Pro](http://adobe-fonts.github.io/source-code-pro). It looks nice, and [it is free to use](http://www.google.com/fonts/specimen/Source+Code+Pro). To make sure that code blocks looks their best, I make sure that the monospace typeface for code is proportional to the rest of the typography on my site, so that is around .8125em on a site based on a 1em scale, depending somewhat on the monospace typeface.
+My monospace font is [Adobe Source Code Pro](http://adobe-fonts.github.io/source-code-pro). It is beautiful, and [it is free to use](http://www.google.com/fonts/specimen/Source+Code+Pro). To make sure that code blocks look their best, I set the monospace typeface to be proportional to the rest of the typography on my site – around .8125em for a site based on a 1em scale. This proportion works slightly differently depending on the typeface and weight chosen.
 
-I have plenty more styles used to make the code blocks work on this site [^2] but the following example highlights some fundamentals.
+I have many more styles used to make the code blocks work on this site [^2] but the following example highlights some fundamentals.
 
 ### Expanding on the defaults
 
@@ -102,26 +104,26 @@ samp {
 }
 
 pre > code {
-  font-size: 1em; /* prevents recursive .8125em from applying in common `<pre><code>` markup pattern */
+  font-size: 1em; /* prevents recursive .8125em from applying in common <pre><code> markup pattern */
   padding: 0;
 }
 {% endhighlight %}
-<figcaption><p><a href="https://github.com/opattison/olivermakes/blob/master/site.css#L295">View the latest version</a> of this CSS in full at the source.</p></figcaption>
+<figcaption><p><a href="https://github.com/opattison/olivermakes/blob/cc471fa92a270e4bc44423fd796ead2609005a40/site.css#L346">View the source CSS (as of {{ page.updated | date: '%B %d, %Y' }})</a> for a more detailed view of how code formatting is handled on this page.</p></figcaption>
 </figure>
 
 Notice how the long comments above wrap around the page. I have intentionally included long comments with no line breaks to show how they look in a code block. (The `.highlight` selector targets a class that Jekyll applies to `<div>` surrounding a `<pre>` block.)
 
 ### Why does HTML especially need this?
 
+The following HTML block sample has a long paragraph that illustrates the line-length issue. HTML commonly has long line-lengths where wrapping is essential for readability.
+
 {% highlight html linenos %}
-<p>This website uses a version of this CSS, so the code block above follows the same principle. Notice how the long comments above wrap around the page. I have intentionally included long comments with no line breaks to show how they look in a code block. The <code>.highlight</code> selector targets a class that Jekyll applies to <code>&lt;div&gt;</code> surrounding a <code>&lt;pre&gt;</code> block.</p>
+<p>My monospace font is <a href="http://adobe-fonts.github.io/source-code-pro">Adobe Source Code Pro</a>. It is beautiful, and <a href="http://www.google.com/fonts/specimen/Source+Code+Pro">it is free to use</a>. To make sure that code blocks look their best, I set the monospace typeface to be proportional to the rest of the typography on my site – around .8125em for a site based on a 1em scale. This proportion works slightly differently depending on the typeface and weight chosen.</p>
 
 <hr>
 
 <p>An example of <a href="http://example.com/areallylongurlthatwouldotherwisebreakwithoutbreakword">a really long string</a>.</p>
 {% endhighlight %}
-
-This HTML block sample has a long paragraph that illustrates the line-length issue. HTML commonly has long line-lengths where wrapping is essential for readability.
 
 ## Is there any other way to handle code blocks responsively?
 
@@ -137,7 +139,7 @@ samp {
 
 {% endhighlight %}
 
-A few of notes about this method:
+A few notes about this method:
 
 1. Line numbers are respected. The line will not break unless a break is added in code.
 2. It is not compatible with `overflow-wrap: break-word` methods, as the name might suggest.
@@ -149,7 +151,7 @@ Here it is in action, with the HTML sample from earlier:
 <div class="highlight">
   <pre style="overflow: scroll;">
     <code class="language-html" data-lang="html" style="word-wrap: normal; overflow-wrap: normal; white-space: pre">
-      <span class="lineno">1</span> <span class="nt">&lt;p&gt;</span>This website uses a version of this CSS, so the code block above follows the same principle. Notice how the long comments above wrap around the page. I have intentionally included long comments with no line breaks to show how they look in a code block. The <span class="nt">&lt;code&gt;</span>.highlight<span class="nt">&lt;/code&gt;</span> selector targets a class that Jekyll applies to <span class="nt">&lt;code&gt;</span><span class="ni">&amp;lt;</span>div<span class="ni">&amp;gt;</span><span class="nt">&lt;/code&gt;</span> surrounding a <span class="nt">&lt;code&gt;</span><span class="ni">&amp;lt;</span>pre<span class="ni">&amp;gt;</span><span class="nt">&lt;/code&gt;</span> block.<span class="nt">&lt;/p&gt;</span>
+      <span class="lineno">1</span> <span class="nt">&lt;p&gt;</span>My monospace font is <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://adobe-fonts.github.io/source-code-pro"</span><span class="nt">&gt;</span>Adobe Source Code Pro<span class="nt">&lt;/a&gt;</span>. It is beautiful, and <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.google.com/fonts/specimen/Source+Code+Pro"</span><span class="nt">&gt;</span>it is free to use<span class="nt">&lt;/a&gt;</span>. To make sure that code blocks look their best, I set the monospace typeface to be proportional to the rest of the typography on my site – around .8125em for a site based on a 1em scale. This proportion works slightly differently depending on the typeface and weight chosen.<span class="nt">&lt;/p&gt;</span>
       <span class="lineno">2</span> 
       <span class="lineno">3</span> <span class="nt">&lt;hr&gt;</span>
       <span class="lineno">4</span> 
@@ -160,5 +162,5 @@ Here it is in action, with the HTML sample from earlier:
 
 I believe this method is particularly poorly suited for HTML or any other code with comments in it. It is responsive, but not as adaptive to different screens as the `break-word` method.
 
-[^1]: I am focusing here on web front-end markup, since that is what I care most about, but I have not covered exceptions and use cases from other programming languages. The same principles should apply to some other contexts, but I have not tested them out thoroughly. I know that some programming languages have peculiarities with white space and line numbers, so this might have limited use for those cases. This technique prioritizes readability on small screens ahead of any other concerns so that readers do not have to suffer scrolling or tiny font sizes.
-[^2]: I created a [custom base16 color pattern]({{ site.fragments-url }}/base16-olivermakes.html) for the site, which I processed into a [Pygments](http://pygments.org/) theme using [base16-builder](https://github.com/chriskempson/base16-builder). Also, take a look at [this site’s source](https://github.com/opattison/olivermakes/blob/master/site.css) for more examples.
+[^1]: I am focusing here on web front-end markup, since that is what I care most about. I have not covered exceptions and use cases from other programming languages. The same principles should apply to some other contexts, but I have not tested them out thoroughly. I know that some programming languages have peculiarities with white space and line numbers, so this might have limited use for those cases. I know that editing HTML in a text editor requires word wrapping; Python does not. This technique prioritizes readability on small screens *for the web* ahead of any other concerns so that readers do not have to suffer scrolling or tiny font sizes.
+[^2]: To get code highlighting to match my site’s design, I designed a [custom base16 color pattern]({{ site.fragments-url }}/base16-olivermakes.html), which is generated into a [Pygments](http://pygments.org/) theme with [base16-builder](https://github.com/chriskempson/base16-builder). Take a look at [this site’s source](https://github.com/opattison/olivermakes/blob/cc471fa92a270e4bc44423fd796ead2609005a40/site.css#L346) for more examples of code formatting.
