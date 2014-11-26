@@ -132,7 +132,7 @@ li + li {
 }
 
 article {
-  padding: 1.25em 1em;
+  padding: 1.25em 1em 2.5em;
 }
 
 /***! END Axiomatic styles ***/
@@ -529,6 +529,10 @@ a svg circle {
 
 /* Site meta information */
 
+.site-footer {
+  margin: 0;
+}
+
 .site-nav,
 .site-footer .site-info {
   margin: 0 auto;
@@ -548,7 +552,6 @@ a svg circle {
 .site-nav {
   display: block;
   font-weight: 400;
-  margin-top: 2.75em;
   max-width: 45rem;
 }
 
@@ -945,7 +948,7 @@ screen and (min-resolution: 1.5dppx) {
 @media screen and (min-width: 30em) {
 
   article {
-    padding: 1.25em 2em;
+    padding: 1.25em 2em 2.5em;
   }
 
   .wide,
@@ -1105,6 +1108,10 @@ screen and (min-resolution: 1.5dppx) {
 
   .singel article,
   .dubbel article {
+    margin-top: 2.75em;
+  }
+
+  .site-nav {
     margin-top: 2.75em;
   }
 
