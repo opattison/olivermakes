@@ -26,7 +26,7 @@ I am a designer focused on the future of the web. My main interests are archivin
 
 I currently live in Washington, DC. I am originally from New York City.
 
-<div class="feature">I am available for hire for small projects. <a href="mailto:{{ site.author.email }}">Get in touch with me</a> by email if you have a project in mind.</div>
+<div class="feature">I am available for hire for small projects. <a href="mailto:{{ site.author.email }}">Get in touch</a> by email if you have a project in mind.</div>
 
 ## About this site
 

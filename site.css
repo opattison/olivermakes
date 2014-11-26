@@ -294,6 +294,7 @@ blockquote footer {
   color: hsla(204, 50%, 45%, 1);
   font-size: 1.25em;
   font-style: italic;
+  font-weight: 500;
   margin-top: 1em;
 }
 
@@ -1229,6 +1230,10 @@ screen and (min-resolution: 1.5dppx) {
   .footnotes {
     margin-right: -4.5em;
     padding: 2.5em;
+  }
+
+  .feature {
+    padding: 0 2em;
   }
 
   .singel .hero,
