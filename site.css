@@ -446,6 +446,11 @@ a svg circle {
 }
 
 .top-menu a,
+.site-nav .close-menu a {
+  height: 2.5em;
+}
+
+.top-menu a,
 .site-nav .close-menu a,
 .alt-nav a {
   color: hsla(204, 10%, 98%, 1);
