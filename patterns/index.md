@@ -6,7 +6,7 @@ date: 2014-10-31 18:25
 description: A collection of self-documenting patterns and styles for my website.
 image:
   - src: 'image.gif'
-    caption: 'This is a caption pulled from the yaml front matter. It describes the image in the same `figure` element.'
+    caption: 'This is a caption pulled from the yaml front matter. It describes the image in the same `figure` element. By <cite>Oliver Pattison</cite>.'
     alt: 'A placeholder image'
 
 ---
@@ -86,7 +86,7 @@ kbd > kbd + b {
 
 /* comment */
 {% endhighlight %}
-<figcaption>This is a figcaption for a figure of code block.</figcaption>
+<figcaption><p>This is a figcaption for a figure of code block.</p></figcaption>
 </figure>
 
 <div class="feature"><p>This is “feature” text, used for emphasis and attention in storytelling.</p></div>

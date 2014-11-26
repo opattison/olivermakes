@@ -320,8 +320,13 @@ sup[id] a::before {
 }
 
 figcaption {
+  background-color: hsla(204, 30%, 80%, .5);
+  margin: 0 -1em;
+  padding: .5em 1em;
+}
+
+.wide figcaption {
   margin: 0;
-  padding: .5em 1em 0;
 }
 
 figcaption p {
@@ -362,10 +367,12 @@ blockquote p > code {
   background-color: hsla(204, 10%, 96%, 1);
 }
 
-.singel .code,
-.dubbel .code {
-  margin: 0;
-  width: 100%;
+.code {
+  
+}
+
+.code figcaption {
+
 }
 
 .highlight {
@@ -955,18 +962,23 @@ screen and (min-resolution: 1.5dppx) {
 
   blockquote,
   .highlight,
-  .essay {
+  .essay,
+  .wide figcaption,
+  .code figcaption {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  blockquote,
+  .highlight,
+  .essay,
+  .code figcaption {
     margin-left: -2em;
     margin-right: -2em;
-    padding: 1em 2em;
   }
 
   .lineno {
     margin: 0 .5em 0 -2em;
-  }
-
-  .singel figcaption {
-    padding: .5em 2em 0;
   }
 
   .ancillary {
@@ -1017,21 +1029,33 @@ screen and (min-resolution: 1.5dppx) {
     margin: 0 3em;
   }
 
-  blockquote,
-  .highlight,
-  .essay {
-    margin-left: -2.5em;
-    margin-right: -2.5em;
-    padding: 1.25em 2.5em;
-  }
-
   .wide {
     margin: 5% calc(-2.5em) 0;
     width: calc(100% + 5em);
   }
 
-  .wide figcaption {
-    padding: .5em 2.5em 0;
+  blockquote,
+  .highlight,
+  .essay,
+  .wide figcaption,
+  .code figcaption {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
+
+  blockquote,
+  .highlight,
+  .essay,
+  .code figcaption {
+    margin-left: -2.5em;
+    margin-right: -2.5em;
+  }
+
+  blockquote,
+  .highlight,
+  .essay {
+    padding-bottom: 1.25em;
+    padding-top: 1.25em;
   }
 
   .footnotes {
@@ -1044,11 +1068,6 @@ screen and (min-resolution: 1.5dppx) {
   .grid-2 {
     margin: 5% auto 0;
     max-width: 100%;
-  }
-
-  .narrow figcaption {
-    padding-left: 0;
-    padding-right: 0;
   }
 
   .hero {
@@ -1098,10 +1117,6 @@ screen and (min-resolution: 1.5dppx) {
     line-height: 1.5;
   }
 
-  .photo figcaption {
-    padding: .5em 0 0;
-  }
-
   .site-header {
     padding-bottom: 0;
   }
@@ -1134,14 +1149,24 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   blockquote,
-  .highlight {
-    margin-left: -4.5em;
-    margin-right: -4.5em;
-    padding: 2em 4.5em;
+  .highlight,
+  .wide figcaption,
+  .code figcaption {
+    padding-left: 4.5em;
+    padding-right: 4.5em;
   }
 
-  .wide figcaption {
-    padding: .5em 4.5em 0;
+  blockquote,
+  .highlight,
+  .code figcaption {
+    margin-left: -4.5em;
+    margin-right: -4.5em;
+  }
+
+  blockquote,
+  .highlight {
+    padding-bottom: 2em;
+    padding-top: 2em;
   }
 
   .essay {
@@ -1301,17 +1326,6 @@ screen and (min-resolution: 1.5dppx) {
     width: 54em;
   }
 
-  blockquote,
-  .highlight {
-    margin-left: -9em;
-    margin-right: -9em;
-    padding: 2em 9em;
-  }
-
-  .footnotes {
-    margin: 2.5em -9em -3em 4.5em;
-  }
-
   .singel .hero {
     margin-top: -4em;
   }
@@ -1321,8 +1335,35 @@ screen and (min-resolution: 1.5dppx) {
     width: calc(100% + 18em);
   }
 
-  .wide figcaption {
-    padding: 1em 9em 0;
+  .wide figcaption,
+  .code figcaption {
+    padding-bottom: 1em;
+    padding-top: 1em;
+  }
+
+  blockquote,
+  .highlight,
+  .wide figcaption,
+  .code figcaption {
+    padding-left: 9em;
+    padding-right: 9em;
+  }
+
+  blockquote,
+  .highlight,
+  .code figcaption {
+    margin-left: -9em;
+    margin-right: -9em;
+  }
+
+  blockquote,
+  .highlight {
+    padding-bottom: 2em;
+    padding-top: 2em;
+  }
+
+  .footnotes {
+    margin: 2.5em -9em -3em 4.5em;
   }
 
   .singel .ancillary {
