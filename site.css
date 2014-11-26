@@ -344,6 +344,7 @@ samp {
 }
 
 p > code,
+li > code,
 samp {
   border: solid 1px hsla(204, 10%, 80%, 1);
   border-radius: .25em;
