@@ -26,6 +26,8 @@ I am a designer focused on the future of the web. My main interests are archivin
 
 I currently live in Washington, DC. I am originally from New York City.
 
+<div class="feature">I am currently available for hire for small projects. <a href="mailto:{{ site.author.email }}">Get in touch with me</a> by email if you have a project in mind.</div>
+
 ## About this site
 
 This website is an archive for my work, featuring **[writing](/writing)**, **[photography](/photos)** and other **[projects](/projects)**.
@@ -81,13 +83,13 @@ It is difficult to design for yourself. After spending too many months planning 
 
 My process for designing the site begins with a handful of sketches and notes. As soon as I can, I start work in a text editor and browser and come up with a typographic measure and fundamental ratios. I avoid mockups and high-fidelity compositions in favor of sketching, followed by iterative HTML/CSS prototyping that can be worked into finished code as the project progresses.
 
-I target small-screens first (commonly known as “mobile-first”), so I make sure to test on a variety of devices as I go along. The first browser width I look at is under `20em` (less than ~320 pixels). Working with fewer assumptions about device types informs the design process – it is easier to design with empathy and flexibilty with a responsive and iterative process.
+I target small-screens first (commonly known as “mobile-first”), so I make sure to test on a variety of devices as I go along. The first browser width I look at is under `20em` (less than ~320 pixels). Working with fewer assumptions about device types informs the design process – it is easier to design with empathy and flexibility with a responsive and iterative process.
 
 A significant part of my process this time was working with a [pattern page](/patterns) with reference examples of general HTML and specific use cases for my own designs. I plan to expand it and turn it into a pattern library and style guide for the site.
 
 ### Typography
 
-The fonts on the site (300, 400 and 500 weights of [the Ratio typeface](http://cargocollective.com/pstype/Ratio) and 400 weight of [Source Code Pro](http://adobe-fonts.github.io/source-code-pro/)) are [hosted by Typekit](https://typekit.com/colophons/ojm0eig). This site uses responsive typography based on pixel density, so if you have a higher resolution display, you will see different variants of Ratio. Only pages that include monospaced fonts will actually incur a request for Source Code Pro.
+The fonts on the site (300, 400 and 500 weights of [the Ratio typeface](http://cargocollective.com/pstype/Ratio) and 400 weight of [Source Code Pro](http://adobe-fonts.github.io/source-code-pro/)) are [hosted by Typekit](https://typekit.com/colophons/ojm0eig). This site uses responsive typography based on pixel density, so if you have a higher resolution display, you will see different variants of Ratio. Only pages that include monospaced fonts conditionally incur a request for Source Code Pro.
 
 ## Copyright
 
@@ -113,11 +115,13 @@ If you have any questions about licensing or use of content from the site, pleas
 
 ## Elsewhere on the web
 
-I post nearly every significant thing I read or look at on **[Pinboard]({{ site.link.pinboard }})**. It is my external brain and my favorite thing on the web. It is as complete an archive as I can keep of my reading online.
+Nearly every significant thing I read or look at is archived on **[Pinboard]({{ site.link.pinboard }})**. It is my external brain and my favorite thing on the web. It is as complete an archive as I can keep of my reading online.
 
 I am **[@olivermakes on Twitter]({{ site.link.twitter }})**.
 
 My open source code (including this site) is on **[GitHub]({{ site.link.github }})**.
+
+Some of my design experiments are posted on **[CodePen](http://codepen.io/opattison/)**.
 
 I share some of my mobile photography to **[VSCO Grid]({{ site.link.vsco }})**.
 
