@@ -1015,6 +1015,7 @@ screen and (min-resolution: 1.5dppx) {
 
   .site-header {
     height: 4.5em;
+    margin-bottom: 0;
   }
 
   .site-header .title {
