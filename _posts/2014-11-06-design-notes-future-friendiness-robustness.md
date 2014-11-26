@@ -3,7 +3,7 @@ title: 'Design notes: future-friendliness and robustness'
 layout: singel
 code: true
 date: 2014-11-06 09:17
-updated: 2014-11-19 22:48
+updated: 2014-11-26 10:50
 
 ---
 
@@ -41,7 +41,7 @@ I do not much like Amazon, but S3 is cheap and easy enough for me to configure. 
 
 One example is Flickr, the photo sharing site. I posted *hundreds* of photos to from 2010 to 2012, and I was a paying customer. Although Flickr is not likely going away tomorrow, their focus switched to providing a “free” service (that is, ad supported) that could compete with more innovative services like Instagram. Flickr is not going away tomorrow, but it has outlived its usefulness for me, with poor interface choices, a diminished community, and a parent company that clearly does not care for its future. If I had relied on Flickr as my main photo library, I would probably be sorely disappointed now.
 
-If I want to escape a service like Tumblr or Flickr, I have to hope that I can export the content I have uploaded and then figure out if I can repurpose it. With an independent website and content owned directly by me, I can take my content elsewhere without having to do any sort of “exporting” or reconfiguration – it is already portable by its nature, and I have planned for it to be ported.
+If I want to escape a service like Tumblr or Flickr, I have to hope that I can export the content I have uploaded and then figure out if I can re-purpose it. With an independent website and content owned directly by me, I can take my content elsewhere without having to do any sort of “exporting” or reconfiguration – it is already portable by its nature, and I have planned for it to be ported.
 
 By choosing a hosting-agnostic approach paired with a static site, I am free to set up S3 quickly and flexibly. I would be able to work similarly with any other basic hosting plan, should I ever need to migrate. My method allows me to pack my things and set up elsewhere in very little time at all, since my bare dependencies are: a domain, HTTP, HTML, and CSS (and [*maybe* some other stuff that I will get to](#an-accounting-of-dependencies)). The web and all its parts are decentralized by design, and I want my content to be as decentralized from infrastructure or publishing constraints as possible.
 
@@ -57,37 +57,3 @@ Serving only static files is future-friendly and robust, which means my content 
 Most importantly, no cruft or opinionated design from a framework or CMS can change my approach to structure and presentation. Anything I put into my site, whether an enhancement or method of working, is my choice alone.
 
 Additionally, I have an RSS feed and I plan to integrate with other APIs and services in the future. However, this site remains the hub and the canonical location for the data it contains. I do not particularly mind if people read it in a read-later app or an RSS reader, or even with some translator service of the unknown future. Robots and humans alike can do what they like with my work, as long as it is hyperlinked and attributed to the original source.
-
-- - -
-
-## An accounting of dependencies
-
-### A browser, a text editor, a command line
-
-I really only need a browser, a text editor and Terminal to maintain the website. I can write HTML and CSS, design and test in a browser (Chrome primarily, but also Safari, Firefox and some mobile browsers), control the version history with Git, and deploy to the website with Terminal.
-
-### Leasing the domain/URI
-
-It is unfortunate that the domain system has built-in impermanence that even the best planning cannot work around. Since domain names are leased and not purchased, all other future-proofing schemes could be let down by something as common as an expired credit card or a lost email. I have the date reminder set for 2017 when that next rolls around for me, but it is striking how fragile this is compared to all of the other parts of this system that can more easily be mitigated or replaced. I wonder how long into the future we will have to wait for a more permanent addressing for the web, if it will ever come.
-
-### Adobe Lightroom, Photoshop and image manipulation tools
-
-Lightroom is essential for editing photos and managing a large photo library, which is part of the website. Photoshop is not necessary for editing them, but I do optimize images and export images at multiple sizes for responsive images. For vector graphics, I use Adobe Illustrator. I also use the open source software [ImageOptim](https://imageoptim.com) to save bytes on photos, which is invaluable. While I integrate these tightly into my process for making the website, there *are* alternatives to them, and not having access to them would not prevent me from maintaining the site as it exists now.
-
-### TypeKit for fonts
-
-Besides the domain, this is one of the few parts of the site that I have to continue paying for on a subscription basis to keep the site running as designed. TypeKit has a beautiful library of fonts, and I am quite happy with the one that I selected. While my site would not break without these fonts, hosted web fonts that I do not own are an integral part of the current version of the site. My current solution for typography functions as a “rental”. However, if I had to break free from Adobe CC or TypeKit as dependencies, I could [buy Ratio](http://cargocollective.com/pstype/Ratio) and host it myself.
-
-- - -
-
-## I am building an archive
-
-Looking back at my files and memories from my life so far, I find there are few things that are constant or well-maintained. I do not own a physical album of photos from when I was young – I wish I did. I do not even have many scans of old photos. I am missing most of my creative output from when I was younger, as well. I think my life would be richer for having a better understanding of where I came from. I think this is where my obsession with chronology comes from.
-
-It takes a lot of effort to keep a comprehensive and long-lasting archive of one’s own history and output. While I strive to get better at backing things up and creating systems for maintaining old files, it is possible to build a website with the intention to serve the future instead of just the present moment. 
-
-Git will help me keep track of versions, while ensuring that I lose as little data as possible while working on projects. Because the data for the site will be kept off-site (in a GitHub repo) that can also be backed up in multiple other ways, this should prove more robust and long-lasting than any software I have ever used.
-
-I hope that the best way to maintain an archive that I will be happy to browse years later is to take extra effort now to design it as one. Once I have more written and archived, I look forward to the design challenge of organizing that information. Too much of the web right now is structured as “news”, or otherwise oriented toward ephemerality. I want to see more sites that treat themselves as long-lasting things, with information design and content that is built to last – not to be buried and forgotten about.
-
-I plan to share more about archiving-friendly design practices as they take form.
