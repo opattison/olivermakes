@@ -320,13 +320,14 @@ sup[id] a::before {
 }
 
 figcaption {
-  background-color: hsla(204, 30%, 80%, .5);
+  border-bottom: solid 1px hsla(204, 10%, 88%, 1);
   color: hsla(204, 10%, 24%, 1);
   margin: 0 -1em;
   padding: .5em 1em;
 }
 
-.wide figcaption {
+.wide figcaption,
+.hero figcaption {
   margin: 0;
 }
 
@@ -366,14 +367,6 @@ pre > code {
 
 blockquote p > code {
   background-color: hsla(204, 10%, 96%, 1);
-}
-
-.code {
-  
-}
-
-.code figcaption {
-
 }
 
 .highlight {
@@ -901,7 +894,8 @@ figure img {
 
 .wide,
 .narrow,
-.grid-2 {
+.grid-2,
+.hero {
   margin: 5% calc(-1em) 0;
   max-width: none;
   width: calc(100% + 2em);
@@ -956,7 +950,8 @@ screen and (min-resolution: 1.5dppx) {
 
   .wide,
   .narrow,
-  .grid-2 {
+  .grid-2,
+  .hero {
     margin: 5% calc(-2em) 0;
     width: calc(100% + 4em);
   }
@@ -965,6 +960,7 @@ screen and (min-resolution: 1.5dppx) {
   .highlight,
   .essay,
   .wide figcaption,
+  .hero figcaption,
   .code figcaption {
     padding-left: 2em;
     padding-right: 2em;
@@ -1030,15 +1026,27 @@ screen and (min-resolution: 1.5dppx) {
     margin: 0 3em;
   }
 
-  .wide {
+  .wide,
+  .hero {
     margin: 5% calc(-2.5em) 0;
     width: calc(100% + 5em);
+  }
+
+  .narrow,
+  .grid-2 {
+    margin: 5% auto 0;
+    max-width: 100%;
+  }
+
+  .hero {
+    margin-top: -2em;
   }
 
   blockquote,
   .highlight,
   .essay,
   .wide figcaption,
+  .hero figcaption,
   .code figcaption {
     padding-left: 2.5em;
     padding-right: 2.5em;
@@ -1063,16 +1071,6 @@ screen and (min-resolution: 1.5dppx) {
     margin-bottom: 0;
     margin-right: -2.5em;
     margin-top: 2.5em;
-  }
-
-  .narrow,
-  .grid-2 {
-    margin: 5% auto 0;
-    max-width: 100%;
-  }
-
-  .hero {
-    margin-top: -2em;
   }
 
 }
@@ -1149,10 +1147,22 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 1.25em;
   }
 
-  blockquote,
-  .highlight,
   .wide figcaption,
+  .hero figcaption,
   .code figcaption {
+    padding: .5em 0;
+  }
+
+  figcaption p {
+    font-size: .75em;
+    margin-left: 50%;
+    text-align: right;
+    width: 50%;
+    width: calc(50% - 3em)
+  }
+
+  blockquote,
+  .highlight {
     padding-left: 4.5em;
     padding-right: 4.5em;
   }
@@ -1202,6 +1212,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .wide,
+  .hero,
   .grid-2 {
     margin: 5% calc(-4.5em) 0;
     max-width: none;
@@ -1327,25 +1338,30 @@ screen and (min-resolution: 1.5dppx) {
     width: 54em;
   }
 
+  .singel .wide,
   .singel .hero {
-    margin-top: -4em;
-  }
-
-  .singel .wide {
     margin: 5% calc(-9em) 0;
     width: calc(100% + 18em);
   }
 
+  .singel .hero {
+    margin-top: -4em;
+  }
+
   .wide figcaption,
   .code figcaption {
-    padding-bottom: 1em;
-    padding-top: 1em;
+    padding: 1em 0;
+  }
+
+  figcaption p {
+    margin-left: 50%;
+    text-align: right;
+    width: 50%;
+    width: calc(50% - 6em)
   }
 
   blockquote,
-  .highlight,
-  .wide figcaption,
-  .code figcaption {
+  .highlight {
     padding-left: 9em;
     padding-right: 9em;
   }
