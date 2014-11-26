@@ -137,7 +137,7 @@ samp {
 
 {% endhighlight %}
 
-A few of notes about this method:
+A few notes about this method:
 
 1. Line numbers are respected. The line will not break unless a break is added in code.
 2. It is not compatible with `overflow-wrap: break-word` methods, as the name might suggest.
@@ -161,4 +161,4 @@ Here it is in action, with the HTML sample from earlier:
 I believe this method is particularly poorly suited for HTML or any other code with comments in it. It is responsive, but not as adaptive to different screens as the `break-word` method.
 
 [^1]: I am focusing here on web front-end markup, since that is what I care most about, but I have not covered exceptions and use cases from other programming languages. The same principles should apply to some other contexts, but I have not tested them out thoroughly. I know that some programming languages have peculiarities with white space and line numbers, so this might have limited use for those cases. This technique prioritizes readability on small screens ahead of any other concerns so that readers do not have to suffer scrolling or tiny font sizes.
-[^2]: I created a [custom base16 color pattern]({{ site.fragments-url }}/base16-olivermakes.html) for the site, which I processed into a [Pygments](http://pygments.org/) theme using [base16-builder](https://github.com/chriskempson/base16-builder). Also, take a look at [this site’s source](https://github.com/opattison/olivermakes/blob/master/site.css) for more examples.
+[^2]: To get code highlighting to match my website, I designed a [custom base16 color pattern]({{ site.fragments-url }}/base16-olivermakes.html) for the site, which is generated into a [Pygments](http://pygments.org/) theme with [base16-builder](https://github.com/chriskempson/base16-builder). Also, take a look at [this site’s source](https://github.com/opattison/olivermakes/blob/master/site.css) for more examples.
