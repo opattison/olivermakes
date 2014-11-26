@@ -204,11 +204,6 @@ h5 {
   line-height: 1.5;
 }
 
-.feature {
-  color: hsla(204, 85%, 40%, 1);
-  font-size: 1.25em;
-}
-
 a,
 a:visited {
   color: hsla(4, 80%, 40%, 1);
@@ -291,6 +286,25 @@ blockquote {
 blockquote footer {
   margin-top: 1em;
   text-align: right;
+}
+
+/* Feature emphasis text blocks – <div class="feature"> */
+
+.feature {
+  color: hsla(204, 50%, 45%, 1);
+  font-size: 1.25em;
+  font-style: italic;
+  margin-top: 1em;
+}
+
+.feature a {
+  color: hsla(4, 60%, 50%, 1);
+}
+
+.feature a:focus,
+.feature a:hover {
+  color: hsla(44, 50%, 44%, 1);
+  border-color: hsla(44, 30%, 88%, 1);
 }
 
 /* Footnotes */
