@@ -1,10 +1,10 @@
 ---
 title: 'About'
 layout: singel
-layout-option:
+option:
   - no-title
   - hero-srcset
-code: true
+  - code
 date: 2014-10-31 18:25
 image:
   - src: 2011-11-10-oliver-bench-jeancflanagan-ccbync.jpg

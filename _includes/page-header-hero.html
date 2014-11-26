@@ -1,4 +1,4 @@
-{% if page.layout-option contains 'hero-srcset' %}
+{% if page.option contains 'hero-srcset' %}
     <figure class="hero"> 
       <img
         src="{{ site.image-url }}/{{ page.image[0].src }}" 
@@ -11,7 +11,7 @@
       {% endif %}
     </figure>
 {% endif %}
-{% if page.layout-option contains 'hero' %}
+{% if page.option contains 'hero' %}
     <figure class="hero"> 
       <img
         src="{{ site.image-url }}/{{ page.image[0].src }}"

@@ -1,7 +1,8 @@
 ---
 title: 'patterns'
 layout: singel
-code: true
+option:
+  - code
 date: 2014-10-31 18:25
 description: A collection of self-documenting patterns and styles for my website.
 image:

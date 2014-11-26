@@ -1,7 +1,7 @@
 ---
 title: 'How to design a better responsive code block'
 layout: singel
-layout-option:
+option:
   - hero
 code: true
 category: writing
