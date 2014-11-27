@@ -1,12 +1,12 @@
 ---
 title: 'How to design a better responsive code block'
+date: 2014-10-24 16:15
+updated: 2014-11-26 09:23
 layout: singel
+category: writing
 option:
   - hero
   - code
-category: writing
-date: 2014-10-24 16:15
-updated: 2014-11-26 09:23
 image:
   - src: 2014-11-26-hero-design-better-css-desat.png
     alt: ''
