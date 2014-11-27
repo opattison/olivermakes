@@ -24,6 +24,7 @@
 
 .swatches li figcaption {
   background-color: hsla(0, 0%, 100%, .8);
+  border-bottom: none;
   bottom: 0;
   padding: .25em;
   position: absolute;
