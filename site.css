@@ -204,8 +204,7 @@ h5 {
   line-height: 1.5;
 }
 
-a,
-a:visited {
+a {
   color: hsla(4, 80%, 40%, 1);
   transition-duration: 320ms;
   transition-property: color, background-color;
@@ -223,21 +222,21 @@ a:focus {
 }
 
 article a,
-article a:visited,
 aside a,
-aside a:visited {
+section a {
   border-bottom: solid 1px hsla(5, 30%, 80%, 1);
 }
 
 article a:hover,
 article a:focus,
 aside a:hover,
-aside a:focus {
+aside a:focus,
+section a:hover,
+section a:focus {
   border-bottom: solid 1px hsla(204, 30%, 80%, 1);
 }
 
-article strong a,
-article strong a:visited {
+article strong a, {
   color: hsla(204, 10%, 96%, 1);
   background-color: hsla(4, 80%, 40%, 1);
   padding: .0625em .1875em;
@@ -785,6 +784,52 @@ a svg circle {
   font-weight: 400;
 }
 
+/* Page metadata */
+
+.page-meta {
+  background-color: hsla(204, 10%, 93%, 1);
+  height: 4em;
+  margin: 0 auto;
+  position: relative;
+}
+
+.page-meta .chronology,
+.page-meta .time {
+  margin-top: 0;
+  width: 100%;
+}
+
+.page-meta .chronology ul {
+  height: 100%;
+}
+
+.page-meta .chronology li:only-child {
+  width: 100%;
+}
+
+.page-meta .chronology a {
+  color: hsla(204, 10%, 93%, 1);
+  display: block;
+  font-weight: 400;
+  height: 100%;
+  min-height: 2.5em;
+  padding: .5em 0;
+}
+
+.page-meta .time {
+  padding: .5em 1em;
+}
+
+.page-meta .time p {
+  font-size: .875em;
+  margin-top: 0;
+  font-style: italic;
+}
+
+.page-meta .time time {
+  font-style: normal;
+}
+
 /* Singel and dubbel common */
 
 .singel,
@@ -805,7 +850,9 @@ a svg circle {
 }
 
 .photo article {
-  padding-bottom: .5em;
+  padding-bottom: 0;
+  padding-top: 0;
+  margin: 1.25em auto 0;
 }
 
 .photo h1,
@@ -814,13 +861,15 @@ a svg circle {
 }
 
 .photo [role="main"] a,
-.photo [role="main"] a:visited {
+.photo section a {
   color: hsla(5, 30%, 80%, 1);
   border-color: hsla(5, 30%, 80%, .5);
 }
 
 .photo [role="main"] a:hover,
-.photo [role="main"] a:focus {
+.photo [role="main"] a:focus,
+.photo section a:hover,
+.photo section a:focus {
   color: hsla(204, 30%, 80%, 1);
   border-color: hsla(204, 30%, 80%, .5);
 }
@@ -848,6 +897,11 @@ a svg circle {
   border-bottom: none;
   color: hsla(204, 10%, 88%, 1);
   padding-bottom: 0;
+}
+
+.photo .page-meta {
+  background-color: hsla(204, 10%, 24%, 1);
+  margin: 2.75em auto;
 }
 
 /* Featured content – essays, blockquotes, code blocks */
@@ -936,52 +990,7 @@ a.reversefootnote:focus {
   border-color: hsla(4, 30%, 80%, .5);
 }
 
-/* Page metadata */
 
-.page-meta {
-  background-color: hsla(204, 10%, 93%, 1);
-  height: 4em;
-  margin: 0 auto;
-  position: relative;
-}
-
-.page-meta .chronology,
-.page-meta .time {
-  margin-top: 0;
-  width: 100%;
-}
-
-.page-meta .chronology ul {
-  height: 100%;
-}
-
-.page-meta .chronology li:only-child {
-  width: 100%;
-}
-
-.page-meta .chronology a,
-.page-meta .chronology .blank {
-  color: hsla(204, 10%, 93%, 1);
-  display: block;
-  font-weight: 400;
-  height: 100%;
-  min-height: 2.5em;
-  padding: .5em 0;
-}
-
-.page-meta .time {
-  padding: .5em 1em;
-}
-
-.page-meta .time p {
-  font-size: .875em;
-  margin-top: 0;
-  font-style: italic;
-}
-
-.page-meta .time time {
-  font-style: normal;
-}
 
 /***! END Page layouts ***/
 
@@ -1237,16 +1246,15 @@ screen and (min-resolution: 1.5dppx) {
     float: right;
   }
 
-  .page-meta .chronology .blank {
-    background-color: hsla(204, 10%, 93%, 1);
-  }
-
   .page-meta .chronology a {
     padding: 1.25em 0;
   }
 
   .page-meta .time {
     text-align: center;
+    margin: 0 5em;
+    width: 26em;
+    z-index: 2;
   }
 
 }
@@ -1278,18 +1286,16 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   article,
-  .page-header h1,
   .page-meta {
     width: 45em;
   }
 
-  .site-nav,
-  .singel .site-nav:target {
-    max-width: 49rem;
+  .site-nav {
+    max-width: 56rem;
   }
 
-  .singel .site-nav {
-    max-width: 56rem;
+  .singel .site-nav:target {
+    max-width: 49rem;
   }
 
   .site-nav li a,
@@ -1322,13 +1328,15 @@ screen and (min-resolution: 1.5dppx) {
 
   .page-header,
   blockquote,
-  .highlight {
+  .highlight,
+  .essay {
     padding-left: 4.5em;
     padding-right: 4.5em;
   }
 
   blockquote,
   .highlight,
+  .essay,
   .code figcaption {
     margin-left: -4.5em;
     margin-right: -4.5em;
@@ -1338,12 +1346,6 @@ screen and (min-resolution: 1.5dppx) {
   .highlight {
     padding-bottom: 2em;
     padding-top: 2em;
-  }
-
-  .essay {
-    margin-left: -1.5em;
-    margin-right: -1.5em;
-    padding: 2em 3em;
   }
 
   .ancillary {
@@ -1399,6 +1401,19 @@ screen and (min-resolution: 1.5dppx) {
   .page-meta .chronology li,
   .page-meta .chronology li:only-child {
     width: 9em;
+  }
+
+  .page-meta .time {
+    margin: 0 9em;
+    width: 27em;
+  }
+
+  .photo .page-meta {
+    max-width: 45em;
+  }
+
+  .photo .page-meta .time {
+    max-width: 27em;
   }
 
 }
@@ -1494,7 +1509,6 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .singel article,
-  .singel .page-header h1,
   .page-meta {
     width: 54em;
   }
@@ -1548,6 +1562,10 @@ screen and (min-resolution: 1.5dppx) {
     margin-right: -10.28571429em;
     margin-right: calc(-9em / .875);
     width: 50%;
+  }
+
+  .page-meta .time {
+    width: 36em;
   }
 
 }
@@ -1604,6 +1622,10 @@ screen and (min-resolution: 1.5dppx) {
     padding: 2em 5em;
   }
 
+  .photo .site-footer .site-info {
+    padding: 2em 2.5em;
+  }
+
 }
 
 @media screen and (min-width: 140em) {
@@ -1612,8 +1634,9 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 2em;
   }
 
+  .photo .page-meta,
   .photo .site-footer {
-    max-width: 90em;
+    max-width: 90rem;
   }
 
 }
