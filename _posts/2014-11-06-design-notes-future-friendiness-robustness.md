@@ -1,6 +1,7 @@
 ---
 title: 'Design notes: future-friendliness and robustness'
 layout: singel
+category: writing
 option:
   - code
 date: 2014-11-06 09:17
@@ -44,7 +45,7 @@ One example is Flickr, the photo sharing site. I posted *hundreds* of photos to 
 
 If I want to escape a service like Tumblr or Flickr, I have to hope that I can export the content I have uploaded and then figure out if I can re-purpose it. With an independent website and content owned directly by me, I can take my content elsewhere without having to do any sort of “exporting” or reconfiguration – it is already portable by its nature, and I have planned for it to be ported.
 
-By choosing a hosting-agnostic approach paired with a static site, I am free to set up S3 quickly and flexibly. I would be able to work similarly with any other basic hosting plan, should I ever need to migrate. My method allows me to pack my things and set up elsewhere in very little time at all, since my bare dependencies are: a domain, HTTP, HTML, and CSS (and [*maybe* some other stuff that I will get to](#an-accounting-of-dependencies)). The web and all its parts are decentralized by design, and I want my content to be as decentralized from infrastructure or publishing constraints as possible.
+By choosing a hosting-agnostic approach paired with a static site, I am free to set up S3 quickly and flexibly. I would be able to work similarly with any other basic hosting plan, should I ever need to migrate. My method allows me to pack my things and set up elsewhere in very little time at all, since my bare dependencies are: a domain, HTTP, HTML, and CSS (and [*maybe* some other stuff that I will get to](/2014/11/design-notes-dependencies/)). The web and all its parts are decentralized by design, and I want my content to be as decentralized from infrastructure or publishing constraints as possible.
 
 - - -
 

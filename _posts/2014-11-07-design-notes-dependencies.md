@@ -1,8 +1,9 @@
 ---
 title: 'Design notes: an accounting of dependencies'
 layout: singel
+category: writing
 date: 2014-11-08 12:34
-updated: 2014-11-26 10:59
+updated: 2014-11-27 02:30
 
 ---
 
@@ -24,4 +25,4 @@ Lightroom is essential for editing photos and managing a large photo library, wh
 
 Besides the domain, this is one of the few parts of the site that I have to continue paying for on a subscription basis to keep the site running as designed. TypeKit has a beautiful library of fonts, and I am quite happy with the one that I selected. While my site would not break without these fonts, hosted web fonts that I do not own are an integral part of the current version of the site. My current solution for typography functions as a “rental”.
 
-However, if I had to break free from Adobe CC or TypeKit as dependencies, I could [buy Ratio](http://cargocollective.com/pstype/Ratio) and host it myself. I use [Source Code Pro](http://adobe-fonts.github.io/source-code-pro/) for monospace typography, also hosted by Typekit, but that font is available for free, and therefore does not pose any sort of issue.
+However, if I had to break free from Adobe CC or TypeKit as dependencies, I could [buy Ratio](http://cargocollective.com/pstype/Ratio) and host it myself. I use [Source Code Pro](http://adobe-fonts.github.io/source-code-pro/) for monospace typography, also hosted by Typekit, but that font is available for free, and therefore does not present any challenges.
