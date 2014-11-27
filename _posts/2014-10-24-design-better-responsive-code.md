@@ -3,7 +3,7 @@ title: 'How to design a better responsive code block'
 layout: singel
 option:
   - hero
-code: true
+  - code
 category: writing
 date: 2014-10-24 16:15
 updated: 2014-11-26 09:23
