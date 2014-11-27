@@ -784,6 +784,7 @@ a svg circle {
 }
 
 .page-header .inner {
+  background-color: hsla(204, 10%, 98%, 1);
   margin: 0 auto;
   padding: 1em;
 }
@@ -857,7 +858,8 @@ a svg circle {
 
 /* Photo */
 
-.photo {
+.photo,
+.photo .page-header .inner {
   background-color: hsla(204, 10%, 18%, 1);
   color: hsla(204, 10%, 96%, 1);
 }
