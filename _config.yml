@@ -65,11 +65,14 @@ shade:
   - name: gray6
     hsl: 'hsla(204, 10%, 56%, 1)'
     hex: '#84919a'
-  - name: gray8
+  - name: gray7
     hsl: 'hsla(204, 10%, 80%, 1)'
     hex: '#c7cdd1'
-  - name: gray9
+  - name: gray8
     hsl: 'hsla(204, 10%, 88%, 1)'
+    hex: '#dde1e3'
+  - name: gray9
+    hsl: 'hsla(204, 10%, 93%, 1)'
     hex: '#dde1e3'
   - name: offwhite
     hsl: 'hsla(204, 10%, 96%, 1)'
