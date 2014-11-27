@@ -1,3 +1,5 @@
+{% if page.next.url or page.previous.url %}
+      
       <nav class="chronology">
         <ul>
           {% if page.next.url %}
@@ -8,3 +10,5 @@
           {% endif %}
         </ul>
       </nav>
+
+{% endif %}
