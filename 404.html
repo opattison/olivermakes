@@ -18,12 +18,13 @@
 
   <style type="text/css">
 
-    #error article .logo {
-      margin: 0 auto;
-      width: 50%;
+    #error [role="main"] .logo {
+      margin: 1.25em auto;
+      max-width: 35em;
+      width: 75%;
     }
 
-    #error article .logo circle {
+    #error [role="main"] .logo circle {
         stroke: hsla(204, 80%, 40%, 1);
   -webkit-animation-name: step-fill;
           animation-name: step-fill;
@@ -37,6 +38,14 @@
           animation-iteration-count: infinite;
   -webkit-animation-direction: alternate-reverse;
           animation-direction: alternate-reverse;
+    }
+
+    #error .page-header h1 {
+      text-align: center;
+    }
+
+    #error [role="main"] p {
+      text-align: center;
     }
 
   </style>
@@ -77,16 +86,20 @@
     
     <header class="page-header">
       <div class="inner">
-        <h1>404 error: Page not found</h1>
+        <h1>404 error: Page&nbsp;not&nbsp;found</h1>
       </div>
     </header>
     
 
   <article role="main">
 
-<div class="logo">
-  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><circle class="earth" fill="none" stroke="#000" stroke-width="20" stroke-miterlimit="10" cx="250" cy="250" r="240"/><circle class="mantle" fill="none" stroke="#000" stroke-width="20" stroke-miterlimit="10" cx="250" cy="170" r="160"/><circle class="core" fill="none" stroke="#000" stroke-width="20" stroke-miterlimit="10" cx="250" cy="90" r="80"/></svg>
-</div>
+    <a href="/">
+      <div class="logo">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><circle class="earth" fill="none" stroke="#000" stroke-width="20" stroke-miterlimit="10" cx="250" cy="250" r="240"/><circle class="mantle" fill="none" stroke="#000" stroke-width="20" stroke-miterlimit="10" cx="250" cy="170" r="160"/><circle class="core" fill="none" stroke="#000" stroke-width="20" stroke-miterlimit="10" cx="250" cy="90" r="80"/></svg>
+      </div>
+    </a>
+
+    <p><strong><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">What’s a 404</a></strong> though?</p>
 
   </article>
 
