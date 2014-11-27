@@ -20,9 +20,7 @@ image:
 
 ---
 
-## About me
-
-I am a designer focused on the future of the web. My main interests are archiving, the web, small screens and photography.
+I am Oliver Pattison, a designer focused on the future of the web. My main interests are archiving, the web, small screens and photography.
 
 I currently live in Washington, DC. I am originally from New York City.
 
