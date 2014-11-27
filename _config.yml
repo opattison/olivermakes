@@ -21,6 +21,7 @@ url: http://olivermak.es
 image-url: http://static.olivermak.es/images
 script-url: http://static.olivermak.es/scripts
 fragments-url: http://static.olivermak.es/fragments
+source-url: https://github.com/opattison/olivermakes/blob/master
 
 photo-sizes: '(min-width: 140em) 1440px, (min-width: 115em) 1260px, (min-width: 95em) 1080px, (min-width: 60em) 900px, (min-width: 45em) 720px, 100vw'
 photo-sizes_half: '(min-width: 140em) 691px, (min-width: 115) 605px, (min-width: 95em) 518px, (min-width: 60em) 432px, (min-width: 45em) 720px, 100vw'
@@ -65,11 +66,14 @@ shade:
   - name: gray6
     hsl: 'hsla(204, 10%, 56%, 1)'
     hex: '#84919a'
-  - name: gray8
+  - name: gray7
     hsl: 'hsla(204, 10%, 80%, 1)'
     hex: '#c7cdd1'
-  - name: gray9
+  - name: gray8
     hsl: 'hsla(204, 10%, 88%, 1)'
+    hex: '#dde1e3'
+  - name: gray9
+    hsl: 'hsla(204, 10%, 93%, 1)'
     hex: '#dde1e3'
   - name: offwhite
     hsl: 'hsla(204, 10%, 96%, 1)'
@@ -77,8 +81,6 @@ shade:
   - name: white
     hsl: 'hsla(204, 10%, 98%, 1)'
     hex: '#f9fafa'
-  - name: transparent
-    hsl: 'hsla(0, 0%, 100%, .01)'
 
 #colors
 
@@ -92,8 +94,9 @@ color:
   - name: grayblue
     hsl: 'hsla(204, 30%, 80%, 1)'
     hex: '#bdcfdb'
-  - name: graybluetransparent
-    hsl: 'hsla(204, 30%, 80%, .5)'
+  - name: violet
+    hsl: 'hsla(225, 35%, 52%, 1)'
+    hex: '#5a6faf'
   - name: red
     hsl: 'hsla(4, 60%, 50%, 1)'
     hex: '#cc3d33'
@@ -103,8 +106,6 @@ color:
   - name: pink
     hsl: 'hsla(4, 30%, 80%, 1)'
     hex: '#dbbfbd'
-  - name: pinktransparent
-    hsl: 'hsla(4, 30%, 80%, .5)'
   - name: orange
     hsl: 'hsla(22, 50%, 44%, 1)'
     hex: '#a86138'
@@ -120,6 +121,25 @@ color:
   - name: bluegreen
     hsl: 'hsla(184, 32%, 38%, 1)'
     hex: '#427c80'
-  - name: violet
-    hsl: 'hsla(225, 35%, 52%, 1)'
-    hex: '#5a6faf'
+
+# semi-transparent shades and colors
+
+transparent:
+  - name: black-80
+    hsl: 'hsla(204, 10%, 10%, .8)'
+  - name: gray1-80
+    hsl: 'hsla(204, 10%, 18%, .8)'
+  - name: gray2-80
+    hsl: 'hsla(204, 10%, 24%, .8)'
+  - name: gray3-80
+    hsl: 'hsla(204, 10%, 32%, .8)'
+  - name: gray8-80
+    hsl: 'hsla(204, 10%, 80%, .8)'
+  - name: boldblue-80
+    hsl: 'hsla(204, 50%, 45%, .8)'
+  - name: grayblue-50
+    hsl: 'hsla(204, 30%, 80%, .5)'
+  - name: pink-50
+    hsl: 'hsla(4, 30%, 80%, .5)'
+  - name: pure-1
+    hsl: 'hsla(0, 0%, 100%, .01)'

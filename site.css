@@ -131,10 +131,6 @@ li + li {
   margin-top: .625em; /* Half of axiomatic top margins */
 }
 
-article {
-  padding: 1.25em 1em 2.5em;
-}
-
 /***! END Axiomatic styles ***/
 
 /*** Basic structure and typography ************/
@@ -149,6 +145,11 @@ html {
   -webkit-font-feature-settings: "liga", "dlig";
    font-feature-settings: "liga", "dlig";
    font-variant-ligatures: common-ligatures;
+}
+
+article {
+  margin: 0 auto;
+  padding: 1.25em 1em 2.5em;
 }
 
 strong,
@@ -204,8 +205,7 @@ h5 {
   line-height: 1.5;
 }
 
-a,
-a:visited {
+a {
   color: hsla(4, 80%, 40%, 1);
   transition-duration: 320ms;
   transition-property: color, background-color;
@@ -223,21 +223,21 @@ a:focus {
 }
 
 article a,
-article a:visited,
 aside a,
-aside a:visited {
+section a {
   border-bottom: solid 1px hsla(5, 30%, 80%, 1);
 }
 
 article a:hover,
 article a:focus,
 aside a:hover,
-aside a:focus {
+aside a:focus,
+section a:hover,
+section a:focus {
   border-bottom: solid 1px hsla(204, 30%, 80%, 1);
 }
 
-article strong a,
-article strong a:visited {
+article strong a, {
   color: hsla(204, 10%, 96%, 1);
   background-color: hsla(4, 80%, 40%, 1);
   padding: .0625em .1875em;
@@ -308,6 +308,10 @@ blockquote footer {
   border-color: hsla(44, 30%, 88%, 1);
 }
 
+.center {
+  text-align: center;
+}
+
 /* Footnotes */
 
 sup[id] {
@@ -341,8 +345,7 @@ figcaption {
   padding: .5em 1em;
 }
 
-.wide figcaption,
-.hero figcaption {
+.wide figcaption {
   margin: 0;
 }
 
@@ -352,7 +355,7 @@ figcaption p {
 }
 
 hr {
-  background-color: hsla(204, 10%, 32%, 1);
+  background-color: hsla(204, 10%, 80%, .8);
   border: 0;
   height: .25em;
   margin: 2.5em 0;
@@ -407,12 +410,34 @@ kbd > kbd + b {
 } /* <kbd><kbd>cmd</kbd> <b class="kbd-plus">+</b> <kbd>C</kbd></kbd> */
 
 mark {
-  background-color: hsla(44, 30%, 88%, 1);
+  background-color: hsla(44, 30%, 88%, .5);
   padding: .0625em;
 }
 
 mark > code {
   vertical-align: text-bottom; /* fix for alignment issue */
+}
+
+dt,
+dd {
+  margin-top: 0;
+}
+
+dt {
+  float: left;
+  margin-right: .25em;
+  min-width: 4.75em;
+  width: 12.5%;
+}
+
+nav li {
+  display: inline-block;
+  float: left;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+  width: 50%;
 }
 
 /* Transition helpers */
@@ -545,6 +570,7 @@ a svg circle {
 /* Site meta information */
 
 .site-footer {
+  clear: both;
   margin: 0;
 }
 
@@ -555,7 +581,7 @@ a svg circle {
 }
 
 .site-footer .site-info {
-  background-color: hsla(204, 10%, 98%, 1);
+  background-color: hsla(204, 10%, 93%, 1);
   color: hsla(204, 10%, 18%, 1);
   padding-top: 2em;
   padding-bottom: 2em;
@@ -573,16 +599,6 @@ a svg circle {
 .site-nav ul {
   font-size: 1.25em;
   margin: 0 auto;
-}
-
-.site-nav li,
-.alt-nav li {
-  display: block;
-  float: left;
-  list-style-type: none;
-  margin: 0;
-  text-align: center;
-  width: 50%;
 }
 
 .site-nav li a {
@@ -692,24 +708,28 @@ a svg circle {
   padding: 1em;
 }
 
-.alt-nav .back-home a {
+.alt-nav .back-home a,
+.page-meta .later a {
   background-color: hsla(4, 80%, 40%, 1);
 }
 
-.alt-nav .back-top a {
+.alt-nav .back-top a,
+.page-meta .earlier a {
   background-color: hsla(204, 80%, 40%, 1);
 }
 
 .alt-nav a:hover,
 .alt-nav a:focus,
-.alt-nav a:hover,
-.alt-nav a:focus {
-  background-color: hsla(204, 10%, 95%, 1);
+.page-meta .chronology a:hover,
+.page-meta .chronology a:focus {
+  background-color: hsla(204, 10%, 98%, 1);
   outline: none;
 }
 
 .alt-nav .back-home a:hover,
-.alt-nav .back-home a:focus {
+.alt-nav .back-home a:focus,
+.page-meta .later a:hover,
+.page-meta .later a:focus {
   color: hsla(4, 80%, 40%, 1);
 }
 
@@ -718,16 +738,20 @@ a svg circle {
   stroke: hsla(4, 80%, 40%, 1);
 }
 
-.alt-nav .back-home a:focus {
+.alt-nav .back-home a:focus,
+.page-meta .later a:focus {
   box-shadow: inset 0 .5em 0 hsla(4, 80%, 40%, 1);
 }
 
 .alt-nav .back-top a:hover,
-.alt-nav .back-top a:focus {
+.alt-nav .back-top a:focus,
+.page-meta .earlier a:hover,
+.page-meta .earlier a:focus {
   color: hsla(204, 80%, 40%, 1);
 }
 
-.alt-nav .back-top a:focus {
+.alt-nav .back-top a:focus,
+.page-meta .earlier a:focus {
   box-shadow: inset 0 .5em 0 hsla(204, 80%, 40%, 1);
 }
 
@@ -755,8 +779,69 @@ a svg circle {
 
 /*** Page layouts ******************************/
 
-section {
+.page-header {
+  margin: 0 auto;
+}
+
+.page-header .inner {
+  background-color: hsla(204, 10%, 98%, 1);
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.page-info {
+  color: hsla(204, 10%, 56%, 1);
+  font-size: .75em;
+  font-weight: 400;
+}
+
+/* Page metadata */
+
+.page-meta {
+  background-color: hsla(204, 10%, 93%, 1);
+  margin: 0 auto;
+  position: relative;
+}
+
+.page-meta .chronology,
+.page-meta .time {
   margin-top: 0;
+  width: 100%;
+}
+
+.page-meta .chronology {
+  overflow: auto;
+}
+
+.page-meta .chronology ul {
+  height: 100%;
+}
+
+.page-meta .chronology li:only-child {
+  width: 100%;
+}
+
+.page-meta .chronology a {
+  color: hsla(204, 10%, 93%, 1);
+  display: block;
+  font-weight: 400;
+  height: 100%;
+  min-height: 2.5em;
+  padding: .5em 0;
+}
+
+.page-meta .time {
+  padding: .5em 1em;
+}
+
+.page-meta .time p {
+  font-size: .875em;
+  margin-top: 0;
+  font-style: italic;
+}
+
+.page-meta .time time {
+  font-style: normal;
 }
 
 /* Singel and dubbel common */
@@ -773,13 +858,19 @@ section {
 
 /* Photo */
 
-.photo {
+.photo,
+.photo .page-header .inner {
   background-color: hsla(204, 10%, 18%, 1);
   color: hsla(204, 10%, 96%, 1);
 }
 
 .photo article {
-  padding-bottom: .5em;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.photo article figure:nth-child(1) {
+  margin-top: 0;
 }
 
 .photo h1,
@@ -788,13 +879,15 @@ section {
 }
 
 .photo [role="main"] a,
-.photo [role="main"] a:visited {
+.photo section a {
   color: hsla(5, 30%, 80%, 1);
   border-color: hsla(5, 30%, 80%, .5);
 }
 
 .photo [role="main"] a:hover,
-.photo [role="main"] a:focus {
+.photo [role="main"] a:focus,
+.photo section a:hover,
+.photo section a:focus {
   color: hsla(204, 30%, 80%, 1);
   border-color: hsla(204, 30%, 80%, .5);
 }
@@ -823,6 +916,13 @@ section {
   color: hsla(204, 10%, 88%, 1);
   padding-bottom: 0;
 }
+
+.photo .page-meta {
+  background-color: hsla(204, 10%, 24%, 1);
+  margin: 2.75em auto 0;
+}
+
+/* Featured content – essays, blockquotes, code blocks */
 
 .essay {
   background-color: hsla(204, 10%, 24%, 1);
@@ -908,6 +1008,8 @@ a.reversefootnote:focus {
   border-color: hsla(4, 30%, 80%, .5);
 }
 
+
+
 /***! END Page layouts ***/
 
 /*** Image styles ******************************/
@@ -918,8 +1020,7 @@ figure img {
 
 .wide,
 .narrow,
-.grid-2,
-.hero {
+.grid-2 {
   margin: 5% calc(-1em) 0;
   max-width: none;
   width: calc(100% + 2em);
@@ -928,7 +1029,14 @@ figure img {
 /* Hero figure-image */
 
 .hero {
-  margin-top: -1.25em;
+  margin: 0 auto;
+}
+
+.hero figcaption {
+  background-color: hsla(204, 10%, 98%, 1);
+  border: none;
+  margin: 0;
+  padding: .5em 1em;
 }
 
 /***! END Image styles ***/
@@ -952,7 +1060,9 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 22.5em) {
 
-  article {
+  article,
+  .page-header,
+  .page-meta {
     font-size: 1.0625em;
   }
 
@@ -960,7 +1070,9 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 28em) {
 
-  article {
+  article,
+  .page-header,
+  .page-meta {
     font-size: 1.125em;
   }
 
@@ -974,21 +1086,16 @@ screen and (min-resolution: 1.5dppx) {
 
   .wide,
   .narrow,
-  .grid-2,
-  .hero {
+  .grid-2 {
     margin: 5% calc(-2em) 0;
     width: calc(100% + 4em);
   }
 
-  .hero {
-    margin-top: -1.25em;
-  }
-
+  .page-header .inner,
   blockquote,
   .highlight,
   .essay,
   .wide figcaption,
-  .hero figcaption,
   .code figcaption {
     padding-left: 2em;
     padding-right: 2em;
@@ -1048,15 +1155,14 @@ screen and (min-resolution: 1.5dppx) {
 @media screen and (min-width: 34em) {
 
   article {
-    padding: 2em 2.5em 2.5em;
+    padding: 1.25em 2.5em 2.5em;
   }
 
   .site-header .title {
     margin: 0 3em;
   }
 
-  .wide,
-  .hero {
+  .wide {
     margin: 5% calc(-2.5em) 0;
     width: calc(100% + 5em);
   }
@@ -1067,15 +1173,11 @@ screen and (min-resolution: 1.5dppx) {
     max-width: 100%;
   }
 
-  .hero {
-    margin-top: -2em;
-  }
-
+  .page-header .inner,
   blockquote,
   .highlight,
   .essay,
   .wide figcaption,
-  .hero figcaption,
   .code figcaption {
     padding-left: 2.5em;
     padding-right: 2.5em;
@@ -1106,7 +1208,9 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 40em) {
 
-  article {
+  article,
+  .page-header,
+  .page-meta {
     font-size: 1.25em;
   }
 
@@ -1127,18 +1231,64 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 45em) {
 
-  article {
-    margin: 0 auto;
+  article,
+  .page-header .inner,
+  .page-meta {
     width: 36em;
   }
 
-  .singel article,
-  .dubbel article {
-    margin-top: 2.75em;
+  .page-header {
+    margin: 0 auto;
+  }
+
+  .hero {
+    max-width: 45em;
   }
 
   .site-nav {
     margin-top: 2.75em;
+  }
+
+  .page-meta {
+    height: 4em;
+  }
+
+  .page-meta .chronology,
+  .page-meta .time {
+    position: absolute;
+  }
+
+  .page-meta .chronology {
+    height: 4em;
+    bottom: 0;
+  }
+
+  .page-meta .chronology li, 
+  .page-meta .chronology li:only-child {
+    width: 5em;
+  }
+
+  .page-meta .chronology .later {
+    float: left;
+  }
+
+  .page-meta .chronology .earlier {
+    float: right;
+  }
+
+  .page-meta .chronology a {
+    padding: 1.25em 0;
+  }
+
+  .page-meta .time {
+    text-align: center;
+    margin: 0 5em;
+    width: 26em;
+    z-index: 2;
+  }
+
+  .photo .page-meta {
+    margin: 2.75em auto;
   }
 
 }
@@ -1150,7 +1300,8 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .site-header {
-    padding-bottom: 0;
+    height: auto;
+    padding: 1.5em 0;
   }
 
   .site-header .title {
@@ -1162,17 +1313,27 @@ screen and (min-resolution: 1.5dppx) {
 @media screen and (min-width: 60em) {
 
   article {
-    padding: 2.25em 4.5em 4.5em;
+    padding: 1.25em 4.5em 4.5em;
+  }
+
+  article,
+  .page-header .inner,
+  .page-meta {
     width: 45em;
   }
 
-  .site-nav,
-  .singel .site-nav:target {
-    max-width: 49rem;
+  .photo .page-header .inner {
+    padding-bottom: 1.25em;
+    padding-top: 1.25em;
   }
 
-  .singel .site-nav {
-    max-width: 56rem;
+  .hero,
+  .site-nav {
+    max-width: 56.25em;
+  }
+
+  .site-nav:target {
+    max-width: 45rem;
   }
 
   .site-nav li a,
@@ -1181,9 +1342,13 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .wide figcaption,
-  .hero figcaption,
   .code figcaption {
     padding: .5em 0;
+  }
+
+  .hero figcaption {
+    padding-left: 2.75em;
+    padding-right: 2.75em;
   }
 
   figcaption p {
@@ -1194,14 +1359,22 @@ screen and (min-resolution: 1.5dppx) {
     width: calc(50% - 3em)
   }
 
+  .hero figcaption p {
+    font-size: .875em;
+    width: 50%;
+  }
+
+  .page-header .inner,
   blockquote,
-  .highlight {
+  .highlight,
+  .essay {
     padding-left: 4.5em;
     padding-right: 4.5em;
   }
 
   blockquote,
   .highlight,
+  .essay,
   .code figcaption {
     margin-left: -4.5em;
     margin-right: -4.5em;
@@ -1211,12 +1384,6 @@ screen and (min-resolution: 1.5dppx) {
   .highlight {
     padding-bottom: 2em;
     padding-top: 2em;
-  }
-
-  .essay {
-    margin-left: -1.5em;
-    margin-right: -1.5em;
-    padding: 2em 3em;
   }
 
   .ancillary {
@@ -1232,13 +1399,8 @@ screen and (min-resolution: 1.5dppx) {
     padding: 2.5em;
   }
 
-  .feature {
+  .singel .feature {
     padding: 0 2em;
-  }
-
-  .singel .hero,
-  .dubbel .hero {
-    margin-top: -2.25em;
   }
 
   .wide,
@@ -1249,7 +1411,6 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .wide,
-  .hero,
   .grid-2 {
     margin: 5% calc(-4.5em) 0;
     max-width: none;
@@ -1275,6 +1436,24 @@ screen and (min-resolution: 1.5dppx) {
     clear: both;
   }
 
+  .page-meta .chronology li,
+  .page-meta .chronology li:only-child {
+    width: 9em;
+  }
+
+  .page-meta .time {
+    margin: 0 9em;
+    width: 27em;
+  }
+
+  .photo .page-meta {
+    max-width: 45em;
+  }
+
+  .photo .page-meta .time {
+    max-width: 27em;
+  }
+
 }
 
 @media screen and (min-width: 70em) {
@@ -1296,11 +1475,21 @@ screen and (min-resolution: 1.5dppx) {
     padding: 2em;
   }
 
+  .dubbel article,
+  .dubbel .page-header,
+  .dubbel .page-meta {
+    width: 54em;  
+  }
+
+  .dubbel .page-header {
+    padding-left: 4.5em;
+    padding-right: 4.5em;
+  }
+
   .dubbel article {
-    font-size: 1.25em;
-    margin: 2.75em auto 0;
+    margin: 0 auto;
     overflow: hidden;
-    padding: 2.75em 9em 5.5em;
+    padding: 2em 9em 4.5em;
     width: 54em;
   }
 
@@ -1347,10 +1536,6 @@ screen and (min-resolution: 1.5dppx) {
     top: 25%;
   }
 
-  .dubbel .hero {
-    margin-top: -2.75em;
-  }
-
   .dubbel blockquote,
   .dubbel .highlight {
     margin: 1.5em -9em;
@@ -1361,28 +1546,37 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 80em) {
 
+  .hero {
+    max-width: 67.5em;
+  }
+
   .site-header {
-    height: initial;
     padding-top: 2.25em;
+    padding-bottom: 2em;
   }
 
   .site-header .title {
     font-size: 1.5em;
   }
 
-  .singel article {
-    padding: 4em 9em 6em;
+  .singel article,
+  .singel .page-header .inner,
+  .page-meta {
     width: 54em;
   }
 
-  .singel .wide,
-  .singel .hero {
-    margin: 5% calc(-9em) 0;
-    width: calc(100% + 18em);
+  .page-header .inner {
+    padding: 1.25em 0;
+    text-align: center;
   }
 
-  .singel .hero {
-    margin-top: -4em;
+  .singel article {
+    padding: 1.25em 9em 6em;
+  }
+
+  .singel .wide {
+    margin: 5% calc(-9em) 0;
+    width: calc(100% + 18em);
   }
 
   .wide figcaption,
@@ -1427,14 +1621,24 @@ screen and (min-resolution: 1.5dppx) {
     width: 50%;
   }
 
+  .page-meta .time {
+    width: 36em;
+  }
+
 }
 
 @media screen and (min-width: 95em) {
 
   .singel article,
   .dubbel article,
-  .photo article {
+  .photo article,
+  .page-header,
+  .page-meta {
     font-size: 1.5em;
+  }
+
+  .hero {
+    max-width: 81rem;
   }
 
   .site-nav {
@@ -1453,7 +1657,9 @@ screen and (min-resolution: 1.5dppx) {
 
   .singel article,
   .dubbel article,
-  .photo article {
+  .photo article,
+  .page-header,
+  .page-meta {
     font-size: 1.75em;
   }
 
@@ -1465,6 +1671,7 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 1.75em;
   }
 
+  .hero,
   .site-footer {
     max-width: 94.5em;
   }
@@ -1477,6 +1684,10 @@ screen and (min-resolution: 1.5dppx) {
     padding: 2em 5em;
   }
 
+  .photo .site-footer .site-info {
+    padding: 2em 2.5em;
+  }
+
 }
 
 @media screen and (min-width: 140em) {
@@ -1485,8 +1696,9 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 2em;
   }
 
+  .photo .page-meta,
   .photo .site-footer {
-    max-width: 90em;
+    max-width: 90rem;
   }
 
 }

@@ -1,12 +1,10 @@
 {% include page-header-hero.html %}
 
     {% if page.option contains 'no-title' %}
-    <header>
-      <section class="page-info"></section>
-    </header>
     {% else %}
-    <header>
-      <h1>{{ page.title }}</h1>
-      <section class="page-info"></section>
+    <header class="page-header">
+      <div class="inner">
+        <h1>{{ page.title }}</h1>
+      </div>
     </header>
     {% endif %}
