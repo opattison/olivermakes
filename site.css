@@ -131,10 +131,6 @@ li + li {
   margin-top: .625em; /* Half of axiomatic top margins */
 }
 
-article {
-  padding: 1.25em 1em 2.5em;
-}
-
 /***! END Axiomatic styles ***/
 
 /*** Basic structure and typography ************/
@@ -149,6 +145,11 @@ html {
   -webkit-font-feature-settings: "liga", "dlig";
    font-feature-settings: "liga", "dlig";
    font-variant-ligatures: common-ligatures;
+}
+
+article {
+  margin: 0 auto;
+  padding: 1.25em 1em 2.5em;
 }
 
 strong,
@@ -305,6 +306,10 @@ blockquote footer {
 .feature a:hover {
   color: hsla(44, 50%, 44%, 1);
   border-color: hsla(44, 30%, 88%, 1);
+}
+
+.center {
+  text-align: center;
 }
 
 /* Footnotes */
@@ -775,7 +780,12 @@ a svg circle {
 /*** Page layouts ******************************/
 
 .page-header {
-  padding: 1em 1em 0;
+  margin: 0 auto;
+}
+
+.page-header .inner {
+  margin: 0 auto;
+  padding: 1em;
 }
 
 .page-info {
@@ -1074,6 +1084,7 @@ screen and (min-resolution: 1.5dppx) {
     width: calc(100% + 4em);
   }
 
+  .page-header .inner,
   blockquote,
   .highlight,
   .essay,
@@ -1137,7 +1148,7 @@ screen and (min-resolution: 1.5dppx) {
 @media screen and (min-width: 34em) {
 
   article {
-    padding: 2em 2.5em 2.5em;
+    padding: 1.25em 2.5em 2.5em;
   }
 
   .site-header .title {
@@ -1155,6 +1166,7 @@ screen and (min-resolution: 1.5dppx) {
     max-width: 100%;
   }
 
+  .page-header .inner,
   blockquote,
   .highlight,
   .essay,
@@ -1213,13 +1225,13 @@ screen and (min-resolution: 1.5dppx) {
 @media screen and (min-width: 45em) {
 
   article,
+  .page-header .inner,
   .page-meta {
     width: 36em;
   }
 
-  article,
   .page-header {
-    margin: 1.25em auto initial;
+    margin: 0 auto;
   }
 
   .site-nav {
@@ -1277,7 +1289,8 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .site-header {
-    padding-bottom: 0;
+    height: auto;
+    padding: 1.5em 0;
   }
 
   .site-header .title {
@@ -1293,10 +1306,11 @@ screen and (min-resolution: 1.5dppx) {
 @media screen and (min-width: 60em) {
 
   article {
-    padding: 2.25em 4.5em 4.5em;
+    padding: 1.25em 4.5em 4.5em;
   }
 
   article,
+  .page-header .inner,
   .page-meta {
     width: 45em;
   }
@@ -1337,7 +1351,7 @@ screen and (min-resolution: 1.5dppx) {
     width: 50%;
   }
 
-  .page-header,
+  .page-header .inner,
   blockquote,
   .highlight,
   .essay {
@@ -1372,7 +1386,7 @@ screen and (min-resolution: 1.5dppx) {
     padding: 2.5em;
   }
 
-  .feature {
+  .singel .feature {
     padding: 0 2em;
   }
 
@@ -1449,18 +1463,22 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .dubbel article,
+  .dubbel .page-header,
   .dubbel .page-meta {
     width: 54em;  
   }
 
-  .dubbel article {
-    margin: 2.75em auto 0;
-    overflow: hidden;
-    padding: 2.75em 9em 5.5em;
-    width: 54em;
+  .dubbel .page-header {
+    padding-left: 4.5em;
+    padding-right: 4.5em;
   }
 
-
+  .dubbel article {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 2em 9em 4.5em;
+    width: 54em;
+  }
 
   .dubbel .wide {
     margin: 5% calc(-9em) 0;
@@ -1516,8 +1534,8 @@ screen and (min-resolution: 1.5dppx) {
 @media screen and (min-width: 80em) {
 
   .site-header {
-    height: initial;
     padding-top: 2.25em;
+    padding-bottom: 2em;
   }
 
   .site-header .title {
@@ -1525,12 +1543,18 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .singel article,
+  .singel .page-header .inner,
   .page-meta {
     width: 54em;
   }
 
+  .page-header .inner {
+    padding: 1.25em 0;
+    text-align: center;
+  }
+
   .singel article {
-    padding: 4em 9em 6em;
+    padding: 1.25em 9em 6em;
   }
 
   .singel .wide {
