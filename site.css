@@ -955,7 +955,12 @@ a.reversefootnote:focus {
   height: 100%;
 }
 
-.page-meta .chronology a {
+.page-meta .chronology li:only-child {
+  width: 100%;
+}
+
+.page-meta .chronology a,
+.page-meta .chronology .blank {
   color: hsla(204, 10%, 93%, 1);
   display: block;
   font-weight: 400;
@@ -966,13 +971,16 @@ a.reversefootnote:focus {
 
 .page-meta .time {
   padding: .5em 1em;
-  right: 0;
-  text-align: right;
 }
 
 .page-meta .time p {
   font-size: .875em;
   margin-top: 0;
+  font-style: italic;
+}
+
+.page-meta .time time {
+  font-style: normal;
 }
 
 /***! END Page layouts ***/
@@ -1208,15 +1216,29 @@ screen and (min-resolution: 1.5dppx) {
 
   .page-meta .chronology,
   .page-meta .time {
-    margin-top: 0;
     position: absolute;
-    width: 50%;
   }
 
   .page-meta .chronology {
     height: 4em;
-    right: 0;
     bottom: 0;
+  }
+
+  .page-meta .chronology li, 
+  .page-meta .chronology li:only-child {
+    width: 5em;
+  }
+
+  .page-meta .chronology .later {
+    float: left;
+  }
+
+  .page-meta .chronology .earlier {
+    float: right;
+  }
+
+  .page-meta .chronology .blank {
+    background-color: hsla(204, 10%, 93%, 1);
   }
 
   .page-meta .chronology a {
@@ -1224,7 +1246,6 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .page-meta .time {
-    left: 0;
     text-align: center;
   }
 
@@ -1373,6 +1394,11 @@ screen and (min-resolution: 1.5dppx) {
 
   .grid-2 + figure {
     clear: both;
+  }
+
+  .page-meta .chronology li,
+  .page-meta .chronology li:only-child {
+    width: 9em;
   }
 
 }

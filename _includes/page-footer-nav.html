@@ -1,6 +1,10 @@
       <nav class="chronology">
         <ul>
-          <li class="later"><a href="#">↼ later</a></li>
-          <li class="earlier"><a href="#">earlier ⇀</a></li>
+          {% if page.next.url %}
+          <li class="later"><a href="{{ page.next.url }}" title="{{ page.next.title }}">↼ later</a></li>
+          {% endif %}
+          {% if page.previous.url %}
+          <li class="earlier"><a href="{{ page.previous.url }}" title="{{ page.previous.title }}">earlier ⇀</a></li>
+          {% endif %}
         </ul>
       </nav>

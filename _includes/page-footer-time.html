@@ -1,4 +1,4 @@
       <section class="time">
-        <p>Published: <a href="{{ site.source-url }}/{{ page.path }}"<time datetime="{{ page.date }}">{{ page.date | date: '%Y-%m-%d' }}</time></a></p> 
+        <p>Published: <time datetime="{{ page.date }}">{{ page.date | date: '%Y-%m-%d' }}</time> – <a href="{{ site.source-url }}/{{ page.path }}">view source</a></p> 
         {% if page.updated %}<p>Updated: <time datetime="{{ page.updated }}">{{ page.updated | date: '%Y-%m-%d' }}</time></p>{% endif %}
       </section>
