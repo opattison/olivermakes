@@ -788,7 +788,6 @@ a svg circle {
 
 .page-meta {
   background-color: hsla(204, 10%, 93%, 1);
-  height: 4em;
   margin: 0 auto;
   position: relative;
 }
@@ -797,6 +796,10 @@ a svg circle {
 .page-meta .time {
   margin-top: 0;
   width: 100%;
+}
+
+.page-meta .chronology {
+  overflow: auto;
 }
 
 .page-meta .chronology ul {
@@ -901,7 +904,7 @@ a svg circle {
 
 .photo .page-meta {
   background-color: hsla(204, 10%, 24%, 1);
-  margin: 2.75em auto;
+  margin: 2.75em auto 0;
 }
 
 /* Featured content – essays, blockquotes, code blocks */
@@ -1223,6 +1226,10 @@ screen and (min-resolution: 1.5dppx) {
     margin-top: 2.75em;
   }
 
+  .page-meta {
+    height: 4em;
+  }
+
   .page-meta .chronology,
   .page-meta .time {
     position: absolute;
@@ -1255,6 +1262,10 @@ screen and (min-resolution: 1.5dppx) {
     margin: 0 5em;
     width: 26em;
     z-index: 2;
+  }
+
+  .photo .page-meta {
+    margin: 2.75em auto;
   }
 
 }
@@ -1439,12 +1450,17 @@ screen and (min-resolution: 1.5dppx) {
 
   .dubbel article,
   .dubbel .page-meta {
-    font-size: 1.25em;
+    width: 54em;  
+  }
+
+  .dubbel article {
     margin: 2.75em auto 0;
     overflow: hidden;
     padding: 2.75em 9em 5.5em;
     width: 54em;
   }
+
+
 
   .dubbel .wide {
     margin: 5% calc(-9em) 0;
