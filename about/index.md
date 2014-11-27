@@ -20,7 +20,7 @@ image:
 
 ---
 
-I am Oliver Pattison, a designer focused on the future of the web. My main interests are archiving, the web, small screens and photography.
+I am Oliver Pattison, a designer focused on the future of the web. My main interests are archiving, the web, usable and universal design, mobile technology and photography.
 
 I currently live in Washington, DC. I am originally from New York City.
 
@@ -81,7 +81,7 @@ It is difficult to design for yourself. After spending too many months planning 
 
 My process for designing the site begins with a handful of sketches and notes. As soon as I can, I start work in a text editor and browser and come up with a typographic measure and fundamental ratios. I avoid mockups and high-fidelity compositions in favor of sketching, followed by iterative HTML/CSS prototyping that can be worked into finished code as the project progresses.
 
-I target small-screens first (commonly known as “mobile-first”), so I make sure to test on a variety of devices as I go along. The first browser width I look at is under `20em` (less than ~320 pixels). Working with fewer assumptions about device types informs the design process – it is easier to design with empathy and flexibility with a responsive and iterative process.
+I target small-screens first (commonly known as “mobile-first”), so I make sure to test on a variety of devices as I go along. The first browser width I look at is under `20em` (less than ~320 pixels). Working with fewer assumptions about device types informs the design process; it is easier to design with empathy and flexibility with a responsive and iterative process.
 
 A significant part of my process this time was working with a [pattern page](/patterns) with reference examples of general HTML and specific use cases for my own designs. I plan to expand it and turn it into a pattern library and style guide for the site.
 
@@ -93,7 +93,7 @@ The fonts on the site (300, 400 and 500 weights of [the Ratio typeface](http://c
 
 All writing and photography on the site is my original work and is licensed under [Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC)]({{ site.link.attribution }}). All design and code is under conventional copyright (as opposed to CC-style “copyleft” copyright), but is available for fair use [on GitHub]({{ site.link.source }}). If you are looking at the repository, almost everything in the `_static` and `_posts` folders is CC BY-NC and the most of the rest of it is under copyright, where applicable.
 
-I designed the site myself, so most of the source was written by me by hand – exceptions where I derived inspiration or approach from another source are noted inline. An example of copyright violation would be copying all of the source code outright and using it to make a public website that could be confused for this one.
+I designed the site myself, so most of the source was written by me by hand. Exceptions where I derived inspiration or an approach from another source are noted inline. An example of copyright violation would be copying all of the source code outright and using it to make a public website that could be confused for this one.
 
 ### Attribution
 
