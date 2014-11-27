@@ -237,26 +237,6 @@ section a:focus {
   border-bottom: solid 1px hsla(204, 30%, 80%, 1);
 }
 
-article strong a, {
-  color: hsla(204, 10%, 96%, 1);
-  background-color: hsla(4, 80%, 40%, 1);
-  padding: .0625em .1875em;
-  border-bottom: none;
-  border-radius: .125em;
-}
-
-article strong a:hover,
-article strong a:focus {
-  color: hsla(204, 10%, 96%, 1);
-  background-color: hsla(204, 80%, 40%, 1);
-  border-bottom: none;
-}
-
-article strong a:focus {
-  border-radius: 0;
-  outline: solid .1875em hsla(4, 60%, 50%, 1);
-}
-
 ul {
   list-style-type: square;
 }
