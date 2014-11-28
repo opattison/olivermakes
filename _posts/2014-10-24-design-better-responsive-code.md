@@ -1,7 +1,7 @@
 ---
 title: 'How to design a better responsive code block'
-date: 2014-10-24 16:15
-updated: 2014-11-26 09:23
+date: 2014-11-24 16:15
+updated: 2014-11-28 00:05
 layout: singel
 category: writing
 option:
@@ -10,9 +10,9 @@ option:
 image:
   - src: 2014-11-26-hero-design-better-css-desat.png
     alt: ''
-  - src: 2014-11-25-word-wrap-code-breaking.png 
+  - src: 2014-11-27-without-word-wrap.png
     alt: 'A sample of layout-breaking code without word-wrap'
-  - src: 2014-11-25-break-word-code-breaking.png
+  - src: 2014-11-27-without-break-word.png
     alt: 'A sample of layout-breaking code without break-word'
 
 ---
