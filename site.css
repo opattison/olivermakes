@@ -820,7 +820,7 @@ a svg circle {
 }
 
 .page-meta .time {
-  padding: .5em 1em;
+  padding: 1em;
 }
 
 .page-meta .time p {
@@ -1275,8 +1275,9 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .page-meta .time {
-    text-align: center;
     margin: 0 5em;
+    padding: .5em 1em;
+    text-align: center;
     width: 26em;
     z-index: 2;
   }
