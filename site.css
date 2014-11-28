@@ -1019,7 +1019,6 @@ figure img {
 }
 
 .wide,
-.narrow,
 .grid-2 {
   margin: 5% calc(-1em) 0;
   max-width: none;
@@ -1085,7 +1084,6 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .wide,
-  .narrow,
   .grid-2 {
     margin: 5% calc(-2em) 0;
     width: calc(100% + 4em);
@@ -1167,7 +1165,6 @@ screen and (min-resolution: 1.5dppx) {
     width: calc(100% + 5em);
   }
 
-  .narrow,
   .grid-2 {
     margin: 5% auto 0;
     max-width: 100%;
@@ -1403,8 +1400,7 @@ screen and (min-resolution: 1.5dppx) {
     padding: 0 2em;
   }
 
-  .wide,
-  .narrow {
+  .wide {
     margin: 5% auto 0;
     max-width: 100%;
     width: 100%;
@@ -1725,8 +1721,7 @@ screen and (min-width: 57em) and (max-height: 34em),
 screen and (min-width: 58.5em) and (max-height: 35em),
 screen and (min-width: 60em) and (max-height: 36em) {
 
-  .wide,
-  .narrow {
+  .wide {
     margin: 5% auto 0;
     max-width: 100%;
   }
