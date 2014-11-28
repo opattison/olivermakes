@@ -22,7 +22,7 @@ image:
 <figure class="wide"> 
   <img
     src="{{ site.image-url }}/{{ page.image[0].src }}" 
-    sizes="{{ site.photo-sizes }}"  
+    sizes="{{ site.wide-sizes }}"  
     srcset="{% for srcset in site.srcset %}{{ site.image-url }}/{{ site.srcset[forloop.index0] }}/{{ page.image[0].src }} {{ site.srcset[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
     alt="{{ page.image[0].alt }}"
   >
