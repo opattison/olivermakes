@@ -4,6 +4,7 @@ layout: photo
 category: photo
 date: 2014-11-27 19:02
 updated: 2014-11-27 19:12
+unique-id: 2014-11-27:turntable
 image:
   - src: 2014-06-15-turntable-kodak-portra-400-olivermakes-ccbync.jpg
     alt: 'The tone arm of a record player'

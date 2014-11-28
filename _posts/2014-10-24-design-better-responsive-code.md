@@ -7,6 +7,7 @@ option:
 category: writing
 date: 2014-10-24 16:15
 updated: 2014-11-28 00:05
+unique-id: 2014-10-24:better-responsive-code
 image:
   - src: 2014-11-26-hero-design-better-css-desat.png
     alt: ''
