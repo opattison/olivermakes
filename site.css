@@ -124,11 +124,11 @@ cite {
 source: http://alistapart.com/article/axiomatic-css-and-lobotomized-owls */
 
 * + * {
-  margin-top: 1.25em;
+  margin-top: 1em;
 }
 
 li + li {
-  margin-top: .625em; /* Half of axiomatic top margins */
+  margin-top: .5em; /* Half of axiomatic top margins */
 }
 
 /***! END Axiomatic styles ***/
@@ -173,13 +173,13 @@ h2 {
 h1 {
   font-size: 2em;
   font-weight: 500;
-  line-height: 1.25;
+  line-height: 1.125;
 }
 
 h2 {
   font-size: 1.75em;
   font-weight: 400;
-  line-height: 1.25;
+  line-height: 1.125;
 }
 
 h3,
@@ -202,7 +202,7 @@ h4 {
 h5 {
   font-size: 1.125em;
   font-style: italic;
-  line-height: 1.5;
+  line-height: 1.375;
 }
 
 a {
@@ -451,6 +451,7 @@ a svg circle {
 .site-header .title h1 {
   font-weight: 300;
   letter-spacing: -.03125em;
+  line-height: 1.25em;
   margin: 0;
 }
 
@@ -1276,7 +1277,7 @@ screen and (min-resolution: 1.5dppx) {
 
   .page-meta .time {
     margin: 0 5em;
-    padding: .5em 1em;
+    padding: .65em 1em;
     text-align: center;
     width: 26em;
     z-index: 2;
@@ -1392,7 +1393,7 @@ screen and (min-resolution: 1.5dppx) {
   .ancillary {
     float: right;
     font-size: .75em;
-    margin: 2em -6em 2em 2em;
+    margin: 1em -6em 1em 2em;
     width: 40%;
   }
 
