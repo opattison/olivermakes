@@ -28,17 +28,18 @@ I currently live in Washington, DC. I am originally from New York City.
 
 ## About this site
 
-This website is an archive for my work, featuring **[writing](/writing)**, **[photography](/photos)** and other **[projects](/projects)**.
+This website is an archive for my work, featuring:
+
+- **[Writing](/writing)**, a collection of my serious writing and less-serious notes
+- **[Photography](/photos)**, a selection of some of my best work
+- **[Projects](/projects)**, which includes portfolio work as well as open source one-offs
 
 ### Under the hood
 
-**[Jekyll](http://jekyllrb.com)** for building.
-
-**[Amazon S3](http://aws.amazon.com/s3)** for hosting.
-
-**[s3_website](https://github.com/laurilehmijoki/s3_website)** for deploying.
-
-**[GitHub](https://github.com/opattison/olivermakes)** for version control.
+- **[Jekyll](http://jekyllrb.com)** for building.
+- **[Amazon S3](http://aws.amazon.com/s3)** for hosting.
+- **[s3_website](https://github.com/laurilehmijoki/s3_website)** for deploying.
+- **[GitHub](https://github.com/opattison/olivermakes)** for version control.
 
 {% capture influences %}
 # Influences
