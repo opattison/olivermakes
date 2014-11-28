@@ -858,6 +858,10 @@ a svg circle {
   color: hsla(204, 10%, 96%, 1);
 }
 
+.photo h1 {
+  text-align: center;
+}
+
 .photo [role="main"] a,
 .photo section a {
   color: hsla(5, 30%, 80%, 1);
@@ -1305,9 +1309,12 @@ screen and (min-resolution: 1.5dppx) {
     width: 45em;
   }
 
-  .photo .page-header .inner {
-    padding-bottom: 1.25em;
-    padding-top: 1.25em;
+  .site-header {
+    padding-bottom: 2.5em;
+  }
+
+  .page-header .inner {
+    padding: 2em 1.25em;
   }
 
   .hero,
@@ -1533,7 +1540,6 @@ screen and (min-resolution: 1.5dppx) {
 
   .site-header {
     padding-top: 2.25em;
-    padding-bottom: 2em;
   }
 
   .site-header .title {
@@ -1547,7 +1553,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .page-header .inner {
-    padding: 1.25em 0;
+    padding: 2.5em 0;
     text-align: center;
   }
 
