@@ -470,7 +470,6 @@ a svg circle {
 
 .title .logo circle {
   stroke: hsla(204, 10%, 18%, 1);
-  fill: hsla(0, 0%, 100%, .01);
 }
 
 /* Logo animation */
