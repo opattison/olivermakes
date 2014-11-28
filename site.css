@@ -849,7 +849,7 @@ a svg circle {
   padding-top: 0;
 }
 
-.photo article figure:nth-child(1) {
+.photo article > figure:first-child {
   margin-top: 0;
 }
 
