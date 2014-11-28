@@ -106,7 +106,7 @@ kbd > kbd + b {
   <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
 </figure>
 
-<figure class="narrow">
+<figure>
   <img
     src="{{ site.image-url }}/{{ page.image[0].src }}" 
     alt="{{ page.image[0].alt }}"
