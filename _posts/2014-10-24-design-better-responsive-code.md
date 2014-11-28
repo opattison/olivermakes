@@ -1,6 +1,6 @@
 ---
 title: 'How to design a better responsive code block'
-date: 2014-11-24 16:15
+date: 2014-10-24 16:15
 updated: 2014-11-28 00:05
 layout: singel
 category: writing
