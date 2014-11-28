@@ -55,7 +55,7 @@ image:
   >
 </figure>
 
-<section class="grid-2">
+<section class="grid2">
   <figure> 
     <img
       src="{{ site.image-url }}/{{ page.image[1].src }}" 
