@@ -3,7 +3,7 @@ title: 'Design notes: an archive'
 layout: singel
 category: writing
 date: 2014-11-08 12:34
-updated: 2014-11-26 10:50
+updated: 2014-11-26 10:52
 
 ---
 
