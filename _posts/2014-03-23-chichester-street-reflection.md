@@ -27,4 +27,5 @@ image:
     srcset="{% for srcset in site.srcset %}{{ site.image-url }}/{{ site.srcset[forloop.index0] }}/{{ page.image[0].src }} {{ site.srcset[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
     alt="{{ page.image[0].alt }}"
   >
+  <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
 </figure>
