@@ -23,8 +23,8 @@ script-url: http://static.olivermak.es/scripts
 fragments-url: http://static.olivermak.es/fragments
 source-url: https://github.com/opattison/olivermakes/blob/master
 
-photo-sizes: '(min-width: 140em) 1440px, (min-width: 115em) 1260px, (min-width: 95em) 1080px, (min-width: 60em) 900px, (min-width: 45em) 720px, 100vw'
-photo-sizes_half: '(min-width: 140em) 691px, (min-width: 115) 605px, (min-width: 95em) 518px, (min-width: 60em) 432px, (min-width: 45em) 720px, 100vw'
+wide-sizes: '(min-width: 140em) 1440px, (min-width: 115em) 1260px, (min-width: 95em) 1080px, (min-width: 60em) 900px, (min-width: 45em) 720px, 100vw'
+grid2-sizes: '(min-width: 140em) 691px, (min-width: 115) 605px, (min-width: 95em) 518px, (min-width: 60em) 432px, (min-width: 45em) 720px, 100vw'
 srcset:
   - 480
   - 640
