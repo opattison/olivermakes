@@ -567,6 +567,10 @@ a svg circle {
   width: 100%;
 }
 
+.site-info p {
+  font-size: .875em;
+}
+
 /* Footer navigation */
 
 .site-nav {
