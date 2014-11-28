@@ -631,24 +631,30 @@ a svg circle {
   z-index: 2;
 }
 
-.site-nav:target li a {
+.site-nav:target li a,
+.photo .site-nav li a {
   background-color: hsla(204, 10%, 10%, .8);
 }
 
-.site-nav:target li:nth-child(2) a {
+.site-nav:target li:nth-child(2) a,
+.photo .site-nav li:nth-child(2) a {
   background-color: hsla(204, 10%, 24%, .8);
 }
 
-.site-nav:target li:nth-child(3) a {
+.site-nav:target li:nth-child(3) a,
+.photo .site-nav li:nth-child(3) a {
   background-color: hsla(204, 10%, 32%, .8);
 }
 
-.site-nav:target li:nth-child(4) a {
+.site-nav:target li:nth-child(4) a,
+.photo .site-nav li:nth-child(4) a {
   background-color: hsla(204, 10%, 18%, .8);
 }
 
 .site-nav:target li a:hover,
-.site-nav:target li a:focus {
+.site-nav:target li a:focus,
+.photo .site-nav li a:hover,
+.photo .site-nav li a:focus {
   background-color: hsla(204, 50%, 45%, .8)
 }
 
@@ -846,7 +852,6 @@ a svg circle {
 
 .photo article {
   padding-bottom: 0;
-  padding-top: 0;
 }
 
 .photo article > figure:first-child {
@@ -898,7 +903,7 @@ a svg circle {
 .photo [role="main"] figcaption {
   border-bottom: none;
   color: hsla(204, 10%, 88%, 1);
-  padding-bottom: 0;
+  padding: .5em 1em 0;
 }
 
 .photo .page-meta {
@@ -1336,11 +1341,6 @@ screen and (min-resolution: 1.5dppx) {
     padding: .5em 0;
   }
 
-  .hero figcaption {
-    padding-left: 2.75em;
-    padding-right: 2.75em;
-  }
-
   figcaption p {
     font-size: .75em;
     margin-left: 50%;
@@ -1349,7 +1349,17 @@ screen and (min-resolution: 1.5dppx) {
     width: calc(50% - 3em)
   }
 
-  .hero figcaption p {
+  .hero figcaption {
+    padding-left: 2.75em;
+    padding-right: 2.75em;
+  }
+
+  .photo [role="main"] figcaption {
+    padding: .5em 0 0;
+  }
+
+  .hero figcaption p,
+  .photo [role="main"] figcaption p {
     font-size: .875em;
     width: 50%;
   }
