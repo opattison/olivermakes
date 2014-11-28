@@ -922,6 +922,7 @@ blockquote,
 .ancillary,
 .footnotes {
   color: hsla(204, 10%, 24%, 1);
+  margin-right: -1em;
   padding: 1em;
 }
 
@@ -937,17 +938,16 @@ blockquote,
   font: 400 1.125em/1.5 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
 }
 
-.ancillary figure {
-  margin: 1.25em auto 0;
-  max-width: 100%;
+.ancillary img {
+  max-width: none;
+  width: calc(100% + 1em)
 }
+
 
 /* Footnotes */
 
 .footnotes {
   background-color: hsla(204, 30%, 80%, .5);
-  margin-bottom: 1em;
-  margin-right: -1em;
   padding-bottom: 2em;
 }
 
@@ -1089,18 +1089,6 @@ screen and (min-resolution: 1.5dppx) {
     margin-right: -2em;
   }
 
-  .lineno {
-    margin: 0 .5em 0 -2em;
-  }
-
-  .ancillary {
-    padding: 2em;
-  }
-
-  .footnotes {
-    margin-right: -2em;
-  }
-
   .site-header {
     height: 4.5em;
     margin-bottom: 0;
@@ -1128,6 +1116,23 @@ screen and (min-resolution: 1.5dppx) {
 
   .site-nav:target {
     padding-top: 4.5em;
+  }
+
+  .lineno {
+    margin: 0 .5em 0 -2em;
+  }
+
+  .ancillary {
+    padding: 2em;
+    margin-right: -2em;
+  }
+
+  .ancillary img {;
+    width: calc(100% + 2em)
+  }
+
+  .footnotes {
+    margin-right: -2em;
   }
 
 }
@@ -1173,9 +1178,12 @@ screen and (min-resolution: 1.5dppx) {
     padding-top: 1.25em;
   }
 
+  .ancillary,
   .footnotes {
-    margin-bottom: 0;
     margin-right: -2.5em;
+  }
+
+  .footnotes {
     margin-top: 2.5em;
   }
 
@@ -1365,7 +1373,6 @@ screen and (min-resolution: 1.5dppx) {
     float: right;
     font-size: .75em;
     margin: 2em -6em 2em 2em;
-    padding: 2em;
     width: 40%;
   }
 
