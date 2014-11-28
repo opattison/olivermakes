@@ -75,7 +75,3 @@ image:
     >
   </figure>
 </section>
-
-{{ page.id }}
-
-{{ page.unique-id }}
