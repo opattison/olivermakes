@@ -6,6 +6,7 @@ option:
   - code
 date: 2014-11-06 09:17
 updated: 2014-11-26 10:50
+unique-id: 2014-11-06:design-notes-future-friendliness
 
 ---
 

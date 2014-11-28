@@ -4,6 +4,7 @@ layout: singel
 category: writing
 date: 2014-11-08 12:34
 updated: 2014-11-27 02:30
+unique-id: 2014-11-08:design-notes-dependencies
 
 ---
 

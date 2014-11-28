@@ -24,7 +24,7 @@ I am Oliver Pattison, a designer focused on the future of the web. My main inter
 
 I currently live in Washington, DC. I am originally from New York City.
 
-<div class="feature">I am available for hire for small projects. <a href="mailto:{{ site.author.email }}">Get in touch</a> by email if you have a project in mind.</div>
+<div class="feature">I am available for hire for small projects. <a href="mailto:{{ site.author.email }}" rel="me">Get in touch</a> by email if you have a project in mind.</div>
 
 ## About this site
 
@@ -92,7 +92,7 @@ The fonts on the site (300, 400 and 500 weights of [the Ratio typeface](http://c
 
 ## Copyright
 
-All writing and photography on the site is my original work and is licensed under [Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC)]({{ site.link.attribution }}). All design and code is under conventional copyright (as opposed to CC-style “copyleft” copyright), but is available for fair use [on GitHub]({{ site.link.source }}). If you are looking at the repository, almost everything in the `_static` and `_posts` folders is CC BY-NC and the most of the rest of it is under copyright, where applicable.
+All writing and photography on the site is my original work and is licensed under [Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC)]({{ site.link.attribution }}){:rel="license"}. All design and code is under conventional copyright (as opposed to CC-style “copyleft” copyright), but is available for fair use [on GitHub]({{ site.link.source }}){:rel="source"}. If you are looking at the repository, almost everything in the `_static` and `_posts` folders is CC BY-NC and the most of the rest of it is under copyright, where applicable.
 
 I designed the site myself, so most of the source was written by me by hand. Exceptions where I derived inspiration or an approach from another source are noted inline. An example of copyright violation would be copying all of the source code outright and using it to make a public website that could be confused for this one.
 
@@ -116,17 +116,17 @@ If you have any questions about licensing or use of content from the site, pleas
 
 Nearly every significant thing I read or look at is archived on **[Pinboard]({{ site.link.pinboard }})**. It is my external brain and my favorite thing on the web. It is as complete an archive as I can keep of my reading online.
 
-I am **[@olivermakes on Twitter]({{ site.link.twitter }})**.
+I am **[@olivermakes on Twitter]({{ site.link.twitter }}){:rel="me"}**.
 
-My open source code (including this site) is on **[GitHub]({{ site.link.github }})**.
+My open source code (including this site) is on **[GitHub]({{ site.link.github }}){:rel="me"}**.
 
-Some of my design experiments are posted on **[CodePen](http://codepen.io/opattison/)**.
+Some of my design experiments are posted on **[CodePen](http://codepen.io/opattison/){:rel="me"}**.
 
-I share some of my mobile photography to **[VSCO Grid]({{ site.link.vsco }})**.
+I share some of my mobile photography to **[VSCO Grid]({{ site.link.vsco }}){:rel="me"}**.
 
 I post less frequently to:
 
-- [Tumblr]({{ site.link.tumblr }})
-- [Google+]({{ site.link.googleplus }})
-- [Panoramio]({{ site.link.panoramio }})
-- [Flickr]({{ site.link.flickr }})
+- [Tumblr]({{ site.link.tumblr }}){:rel="me"}
+- [Google+]({{ site.link.googleplus }}){:rel="me"}
+- [Panoramio]({{ site.link.panoramio }}){:rel="me"}
+- [Flickr]({{ site.link.flickr }}){:rel="me"}

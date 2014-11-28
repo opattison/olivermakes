@@ -1,8 +1,5 @@
-{% if page.option contains 'code' %}
-  <script src="//use.typekit.net/ojm0eig.js"></script> 
+  <!-- fonts via Typekit https://typekit.com/colophons/ojm0eig -->
+  {% if page.option contains 'code' %}<script src="//use.typekit.net/ojm0eig.js"></script> 
   {% comment %} 'olivermakes code' – includes Source Code Pro and Ratio {% endcomment %}
-{% else %}
-  <script src="//use.typekit.net/hro5wuc.js"></script> 
-  {% comment %} 'olivermakes' – only includes Ratio {% endcomment %}
-{% endif %}
+  {% else %}<script src="//use.typekit.net/hro5wuc.js"></script>{% comment %} 'olivermakes' – only includes Ratio {% endcomment %}{% endif %}
   <script>try{Typekit.load();}catch(e){}</script>

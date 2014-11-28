@@ -4,6 +4,7 @@ layout: photo
 category: photo
 date: 2014-03-23 12:34
 updated: 2014-11-28 03:07
+unique-id: 2014-03-23:chichester-street-reflection
 image:
   - src: 2014-03-23-chichester-street-reflection-olivermakes-ccbync.jpg
     alt: 'Reflections from a puddle where a street meets a sidewalk'
