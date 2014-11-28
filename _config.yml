@@ -1,4 +1,5 @@
 title: olivermak.es
+domain: olivermak.es
 author:
   name: Oliver Pattison
   email: oliverpattison@gmail.com
@@ -13,6 +14,8 @@ link:
   panoramio: http://www.panoramio.com/user/oliverpattison
   pinboard: https://pinboard.in/u:opattison
   source: http://github.com/opattison/olivermakes
+  subscribe:
+    full: http://olivermak.es/feed/full.xml
   tumblr: http://olivermakes.tumblr.com
   twitter: http://twitter.com/olivermakes
   vsco: http://olivermakes.vsco.co

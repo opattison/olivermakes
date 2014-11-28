@@ -3,6 +3,7 @@ title: 'Chichester by the shore'
 layout: photo
 category: photo
 date: 2014-03-23 12:35
+updated: 2014-11-28 03:06
 image:
   - src: 2014-03-23-chichester-sky-olivermakes-ccbync.jpg
     alt: 'An aging brick boathouse and a cloudy sky near sunset'
