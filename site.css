@@ -988,8 +988,6 @@ a.reversefootnote:focus {
   border-color: hsla(4, 30%, 80%, .5);
 }
 
-
-
 /***! END Page layouts ***/
 
 /*** Image styles ******************************/
@@ -999,11 +997,14 @@ figure img {
 }
 
 .wide,
-.narrow,
-.grid-2 {
+.grid2 {
   margin: 5% calc(-1em) 0;
   max-width: none;
   width: calc(100% + 2em);
+}
+
+.grid2 figure {
+  margin-top: 5%;
 }
 
 /* Hero figure-image */
@@ -1065,8 +1066,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .wide,
-  .narrow,
-  .grid-2 {
+  .grid2 {
     margin: 5% calc(-2em) 0;
     width: calc(100% + 4em);
   }
@@ -1142,15 +1142,10 @@ screen and (min-resolution: 1.5dppx) {
     margin: 0 3em;
   }
 
-  .wide {
+  .wide,
+  .grid2 {
     margin: 5% calc(-2.5em) 0;
     width: calc(100% + 5em);
-  }
-
-  .narrow,
-  .grid-2 {
-    margin: 5% auto 0;
-    max-width: 100%;
   }
 
   .page-header .inner,
@@ -1383,36 +1378,35 @@ screen and (min-resolution: 1.5dppx) {
     padding: 0 2em;
   }
 
-  .wide,
-  .narrow {
+  .wide {
     margin: 5% auto 0;
     max-width: 100%;
     width: 100%;
   }
 
   .wide,
-  .grid-2 {
+  .grid2 {
     margin: 5% calc(-4.5em) 0;
     max-width: none;
     width: calc(100% + 9em);
   }
 
-  .grid-2 {
+  .grid2 {
     display: inline-block;
   }
 
-  .grid-2 figure {
+  .grid2 figure {
     float: left;
     margin: 0;
     max-width: 100%;
     width: 48%;
   }
 
-  .grid-2 figure + figure {
+  .grid2 figure + figure {
     margin-left: 4%;
   }
 
-  .grid-2 + figure {
+  .grid2 + figure {
     clear: both;
   }
 
@@ -1705,8 +1699,7 @@ screen and (min-width: 57em) and (max-height: 34em),
 screen and (min-width: 58.5em) and (max-height: 35em),
 screen and (min-width: 60em) and (max-height: 36em) {
 
-  .wide,
-  .narrow {
+  .wide {
     margin: 5% auto 0;
     max-width: 100%;
   }

@@ -49,17 +49,17 @@ image:
 <figure class="wide"> 
   <img
     src="{{ site.image-url }}/{{ page.image[0].src }}" 
-    sizes="{{ site.photo-sizes }}"  
+    sizes="{{ site.wide-sizes }}"  
     srcset="{% for srcset in site.srcset %}{{ site.image-url }}/{{ site.srcset[forloop.index0] }}/{{ page.image[0].src }} {{ site.srcset[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
     alt="{{ page.image[0].alt }}"
   >
 </figure>
 
-<section class="grid-2">
+<section class="grid2">
   <figure> 
     <img
       src="{{ site.image-url }}/{{ page.image[1].src }}" 
-      sizes="{{ site.photo-sizes_half }}"  
+      sizes="{{ site.grid2-sizes }}"  
       srcset="{% for srcset_half in site.srcset_half %}{{ site.image-url }}/{{ site.srcset_half[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset_half[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
       alt="{{ page.image[1].alt }}"
     >
@@ -67,7 +67,7 @@ image:
   <figure> 
     <img
       src="{{ site.image-url }}/{{ page.image[2].src }}" 
-      sizes="{{ site.photo-sizes_half }}"  
+      sizes="{{ site.grid2-sizes }}"  
       srcset="{% for srcset_half in site.srcset_half %}{{ site.image-url }}/{{ site.srcset_half[forloop.index0] }}/{{ page.image[2].src }} {{ site.srcset_half[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
       alt="{{ page.image[2].alt }}"
     >
