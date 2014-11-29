@@ -8,11 +8,11 @@ unique-id: 2014-11-08:design-notes-dependencies
 
 ---
 
-What is involved in making this site work, at minimum? How do these dependencies affect the long-term survivability of the site and its implementation?
+What is involved in making this site work, at minimum? What additional dependencies are worth introducing, and how do these dependencies affect the long-term survivability of the site and its implementation?
 
 ## A browser, a text editor, a command line
 
-I really only need a browser, a text editor and Terminal to maintain the website. I can write HTML and CSS, design and test in a browser (Chrome primarily, but also Safari, Firefox and some mobile browsers), control the version history with Git, and deploy to the website with Terminal.
+I really only need a browser, a text editor, and a command line to maintain the website. I can write HTML and CSS, design and test in a browser (Chrome primarily, but also Safari, Firefox, and some mobile browsers), control the version history with Git, and deploy to the website with Terminal.
 
 ## Leasing the domain/URI
 
