@@ -91,14 +91,6 @@ ol {
   padding: 0;
 }
 
-q::before {
-  content: '“'
-}
-
-q::after {
-  content: '”'
-}
-
 sub,
 sup {
   font-size: .875em;
@@ -319,14 +311,9 @@ sup[id] a::before {
 }
 
 figcaption {
-  border-bottom: solid 1px hsla(204, 10%, 88%, 1);
   color: hsla(204, 10%, 24%, 1);
-  margin: 0 -1em;
-  padding: .5em 1em;
-}
-
-.wide figcaption {
-  margin: 0;
+  margin: 0 0 .5em;
+  padding: .25em 1em;
 }
 
 figcaption p {
@@ -904,9 +891,7 @@ a svg circle {
 }
 
 .photo [role="main"] figcaption {
-  border-bottom: none;
   color: hsla(204, 10%, 88%, 1);
-  padding: .5em 1em 0;
 }
 
 .photo .page-meta {
@@ -954,7 +939,6 @@ blockquote,
   max-width: none;
   width: calc(100% + 1em)
 }
-
 
 /* Footnotes */
 
@@ -1004,10 +988,12 @@ a.reversefootnote:focus {
 
 /*** Image styles ******************************/
 
+article img,
 figure img {
   width: 100%;
 }
 
+.image,
 .wide,
 .grid2 {
   margin: 5% calc(-1em) 0;
@@ -1027,9 +1013,7 @@ figure img {
 
 .hero figcaption {
   background-color: hsla(204, 10%, 98%, 1);
-  border: none;
   margin: 0;
-  padding: .5em 1em;
 }
 
 /***! END Image styles ***/
@@ -1077,6 +1061,7 @@ screen and (min-resolution: 1.5dppx) {
     padding: 1.25em 2em 2.5em;
   }
 
+  .image,
   .wide,
   .grid2 {
     margin: 5% calc(-2em) 0;
@@ -1086,9 +1071,7 @@ screen and (min-resolution: 1.5dppx) {
   .page-header .inner,
   blockquote,
   .highlight,
-  .essay,
-  .wide figcaption,
-  .code figcaption {
+  .essay {
     padding-left: 2em;
     padding-right: 2em;
   }
@@ -1159,6 +1142,7 @@ screen and (min-resolution: 1.5dppx) {
     margin: 0 3em;
   }
 
+  .image,
   .wide,
   .grid2 {
     margin: 5% calc(-2.5em) 0;
@@ -1168,9 +1152,7 @@ screen and (min-resolution: 1.5dppx) {
   .page-header .inner,
   blockquote,
   .highlight,
-  .essay,
-  .wide figcaption,
-  .code figcaption {
+  .essay {
     padding-left: 2.5em;
     padding-right: 2.5em;
   }
@@ -1220,6 +1202,10 @@ screen and (min-resolution: 1.5dppx) {
   .site-nav li a,
   .alt-nav li a {
     font-size: 1.125em;
+  }
+
+  figcaption p {
+    font-size: .75em;
   }
 
 }
@@ -1340,22 +1326,19 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 1.25em;
   }
 
-  .wide figcaption,
-  .code figcaption {
-    padding: .5em 0;
-  }
-
   figcaption p {
     font-size: .75em;
-    margin-left: 50%;
     text-align: right;
-    width: 45%;
-    width: calc(50% - 3em)
   }
 
-  .hero figcaption {
-    padding-left: 2.75em;
-    padding-right: 2.75em;
+  .grid2 :first-child figcaption p {
+    text-align: left;
+  }
+
+  .wide figcaption p,
+  .code figcaption p {
+    margin-left: 50%;
+    width: 50%;
   }
 
   .photo [role="main"] figcaption {
@@ -1365,6 +1348,7 @@ screen and (min-resolution: 1.5dppx) {
   .hero figcaption p,
   .photo [role="main"] figcaption p {
     font-size: .875em;
+    margin-left: 50%;
     width: 50%;
   }
 
@@ -1404,6 +1388,16 @@ screen and (min-resolution: 1.5dppx) {
 
   .singel .feature {
     padding: 0 2em;
+  }
+
+  .image {
+    margin: 5% auto;
+    width: 100%;
+  }
+
+  .image figcaption {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .wide {
@@ -1575,21 +1569,10 @@ screen and (min-resolution: 1.5dppx) {
     padding: 1.25em 9em 6em;
   }
 
-  .singel .wide {
+  .singel .wide,
+  .singel .grid2 {
     margin: 5% calc(-9em) 0;
     width: calc(100% + 18em);
-  }
-
-  .wide figcaption,
-  .code figcaption {
-    padding: 1em 0;
-  }
-
-  figcaption p {
-    margin-left: 50%;
-    text-align: right;
-    width: 42%;
-    width: calc(50% - 6em)
   }
 
   blockquote,
