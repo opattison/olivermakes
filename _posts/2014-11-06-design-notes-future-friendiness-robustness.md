@@ -5,7 +5,7 @@ category: writing
 option:
   - code
 date: 2014-11-06 09:17
-updated: 2014-11-26 10:50
+updated: 2014-11-29 18:22
 unique-id: 2014-11-06:design-notes-future-friendliness
 
 ---
@@ -36,10 +36,9 @@ I never would have been convinced about Markdown if not for such forward and bac
 
 Fundamentally, Markdown is plain text enhanced with semantic properties and a straightforward and readable syntax, and it should be sticking around for a while.
 
-
 ## Plan for portable hosting
 
-By using Jekyll, my site is inherently easy to transfer to another host. The server only needs to be able to serve plain HTML and linked resources. There is no significant server-side dependency, such as PHP or JavaScript. Although Jekyll can be set up many ways, my initial setup is one that has a proven balance between reliability and cost at this scale: Amazon S3. It costs a few dollars a month for me, at most, currently, and performance is solid. Deploying takes a matter of seconds using [s3_website](https://github.com/laurilehmijoki/s3_website), a service that uses Amazon’s API to upload files.
+By using Jekyll, my site is inherently easy to transfer to another host. The server only needs to be able to serve plain HTML and linked resources. There is no significant dependency on the server, such as PHP or server-side JavaScript. Although Jekyll can be set up many ways, my initial setup is one that has a proven balance between reliability and cost at this scale: Amazon S3. It costs a few dollars a month for me, at most, currently, and performance is solid. Deploying takes a matter of seconds using [s3_website](https://github.com/laurilehmijoki/s3_website), a service that uses Amazon’s API to upload files.
 
 I don’t much care for Amazon (I can’t trust that any large company will continue to share my ethical standards over the coming years), but for right now, S3 is cheap and easy enough for me to configure. I also have no need to like Amazon, since it is not my content’s “home”. Rather it is merely a conduit for distribution. If I hosted (and *crucially*, published) with other services such as GitHub Pages, Tumblr, SquareSpace, WordPress, I would tie the fate of my site (and maybe even aspects of my content, presentation and process) to the fortunes of larger businesses. Even if a company survives and thrives, there is always the possibility that I may outgrow its capabilities our sour on its services.
 
@@ -47,7 +46,7 @@ I don’t much care for Amazon (I can’t trust that any large company will cont
 <p>Having just mentioned GitHub Pages, I should note that I love GitHub. <a href="http://github.com/opattison/olivermakes/">The repository for this site</a> lives there. I have reasons for avoiding GitHub Pages despite its advantages. GitHub Pages is a remarkably convenient and affordable way to host a Jekyll site. Unfortunately, the service rests on the shoulders of a fast-moving venture capital-funded startup, and there is more limited flexibility with implementing Jekyll (no plugins allowed). Even if GitHub dies or becomes untenable for me, I know how to use Git and a web server to keep my repository backed up elsewhere.</p>
 </aside>
 
-One example is Flickr, the photo sharing site. I posted *hundreds* of photos to from 2010 to 2012, and I was a paying customer. Although Flickr is not likely going away tomorrow, their focus switched to providing a “free” service (that is, ad supported) that could compete with newer services like Instagram. Flickr is not going away tomorrow, but it has mostly outlived its usefulness for me, with poor interface choices, a diminished community, and a parent company that clearly does not care for its future. If I had relied on Flickr as my main photo library, I would probably be sorely disappointed now.
+One example is Flickr, the photo sharing site. I posted *hundreds* of photos to from 2010 to 2012, and I was a paying customer. Although Flickr is not likely going away tomorrow, their focus shifted to providing a “free” service (that is, ad supported) that could compete with newer services like Instagram. Flickr is not going away tomorrow, but it has mostly outlived its usefulness for me, with poor interface choices, a diminished community, and a parent company that clearly does not care for its future. If I had relied on Flickr as my main photo library, I would probably be sorely disappointed now.
 
 If I want to escape a service like Tumblr or Flickr, I have to hope that I can export the content I’ve uploaded and then figure out if I can re-purpose it. With an independent website and content owned directly by me, I can take my content elsewhere without having to do any sort of “exporting” or reconfiguration – it is already portable by its nature, and I have planned for it to be ported.
 
@@ -60,7 +59,7 @@ By choosing a hosting-agnostic approach paired with a static site, I am free to 
 Serving only static files is future-friendly and robust, which means my content and distribution remain independent in two important ways:
 
 - Content and distribution are independent *from each other* – that is, **a separation of concerns**. This key principle of programming and good design also happens to be serve the needs of independent publishing.
-- Content and presentation are independent from each other as well. No content management system dependency means that all I have is a single CSS file and a measured amount of Jekyll-specific markup ([Liquid templating](http://jekyllrb.com/docs/templates/)). These bits of markup only have a superficial effect on the mode of presentation, since they can and will change as my website and Jekyll evolve, but the HTML that they represent does not need to. 
+- Content and presentation are independent from each other as well. No content management system dependency means that all I have is a single CSS file and a measured amount of Jekyll-specific markup ([Liquid templating](http://jekyllrb.com/docs/templates/)). These bits of markup only have a superficial effect on the mode of presentation, since they can and will change as my website and Jekyll evolve, but the HTML that they represent does not need to.
 
 Most importantly, no cruft or opinionated design from a framework or CMS can change my approach to structure and presentation. Anything I put into my site, whether an enhancement or method of working, is my choice alone.
 
