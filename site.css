@@ -841,6 +841,7 @@ a svg circle {
 }
 
 .photo article {
+  padding-top: 0;
   padding-bottom: 0;
 }
 
@@ -1312,6 +1313,10 @@ screen and (min-resolution: 1.5dppx) {
     padding: 2em 1.25em;
   }
 
+  .photo .page-header .inner {
+    padding: .75em 1.25em;
+  }
+
   .hero,
   .site-nav {
     max-width: 56.25em;
@@ -1326,30 +1331,8 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 1.25em;
   }
 
-  figcaption p {
-    font-size: .75em;
-    text-align: right;
-  }
-
-  .grid2 :first-child figcaption p {
-    text-align: left;
-  }
-
-  .wide figcaption p,
-  .code figcaption p {
-    margin-left: 50%;
-    width: 50%;
-  }
-
-  .photo [role="main"] figcaption {
-    padding: .5em 0 0;
-  }
-
-  .hero figcaption p,
-  .photo [role="main"] figcaption p {
-    font-size: .875em;
-    margin-left: 50%;
-    width: 50%;
+  .photo article {
+    padding-top: 1em;
   }
 
   .page-header .inner,
@@ -1390,6 +1373,11 @@ screen and (min-resolution: 1.5dppx) {
     padding: 0 2em;
   }
 
+  figcaption p {
+    font-size: .75em;
+    text-align: right;
+  }
+
   .image {
     margin: 5% auto;
     width: 100%;
@@ -1404,6 +1392,12 @@ screen and (min-resolution: 1.5dppx) {
     margin: 5% auto 0;
     max-width: 100%;
     width: 100%;
+  }
+
+  .wide figcaption p,
+  .code figcaption p {
+    margin-left: 50%;
+    width: 50%;
   }
 
   .wide,
@@ -1430,6 +1424,21 @@ screen and (min-resolution: 1.5dppx) {
 
   .grid2 + figure {
     clear: both;
+  }
+
+  .grid2 :first-child figcaption p {
+    text-align: left;
+  }
+
+  .photo [role="main"] figcaption {
+    padding: .5em 0 0;
+  }
+
+  .hero figcaption p,
+  .photo [role="main"] figcaption p {
+    font-size: .875em;
+    margin-left: 50%;
+    width: 50%;
   }
 
   .page-meta .chronology li,
