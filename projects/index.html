@@ -1,0 +1,14 @@
+---
+title: Projects
+layout: archive
+category: index
+
+---
+
+<ul>
+{% for post in site.categories.project %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </li>
+{% endfor %}
+</ul>
