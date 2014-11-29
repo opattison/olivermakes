@@ -20,26 +20,19 @@ image:
 
 ---
 
-I am Oliver Pattison, a designer focused on the future of the web. My main interests are archiving, the web, usable and universal design, mobile technology and photography.
+I am Oliver Pattison, a designer focused on the future of the web. My main interests are archiving, usable and universal design, mobile technology, and photography.
 
 I currently live in Washington, DC. I am originally from New York City.
 
-<div class="feature">I am available for hire for small projects. <a href="mailto:{{ site.author.email }}" rel="me">Get in touch</a> by email if you have a project in mind.</div>
+<div class="feature">I am available for hire. <a href="mailto:{{ site.author.email }}" rel="me">Get in touch</a> by email if you have a project in mind.</div>
 
 ## About this site
 
 This website is an archive for my work, featuring:
 
-- **[Writing](/writing)**, a collection of my serious writing and less-serious notes
-- **[Photography](/photos)**, a selection of some of my best work
-- **[Projects](/projects)**, which includes portfolio work as well as open source one-offs
-
-### Under the hood
-
-- **[Jekyll](http://jekyllrb.com)** for building.
-- **[Amazon S3](http://aws.amazon.com/s3)** for hosting.
-- **[s3_website](https://github.com/laurilehmijoki/s3_website)** for deploying.
-- **[GitHub](https://github.com/opattison/olivermakes)** for version control.
+- **[Writing](/writing)**, a collection of quick notes as well as longer essays
+- **[Photography](/photos)**, a collection of images documenting details of my environment
+- **[Projects](/projects)**, documentation and reflections on professional and open source work
 
 {% capture influences %}
 # Influences
@@ -76,19 +69,36 @@ These people and their creative works inspired elements of the site – in parti
 {{ influences | markdownify }}
 </aside>
 
+### Principles
+
+- Future-friendly
+- Content-first
+- Pattern-second
+- Responsive
+- High performance
+- Minimalist aesthetics
+- Progressive enhancement
+- Respect for users and their devices
+- Empathy in content, design and tone
+
 ### Design and development
 
-It is difficult to design for yourself. After spending too many months planning and delaying, I worked alone on designing this site for a few weeks in October and November 2014. I would like to thank [Jean]({{ site.link.jean }}) for editing and design input.
+I designed this site solo in the space of a few weeks in October and November 2014.
 
-My process for designing the site begins with a handful of sketches and notes. As soon as I can, I start work in a text editor and browser and come up with a typographic measure and fundamental ratios. I avoid mockups and high-fidelity compositions in favor of sketching, followed by iterative HTML/CSS prototyping that can be worked into finished code as the project progresses.
+Early in the process, I established a **[pattern page](/patterns)** with reference examples of general HTML and specific use cases for my own designs. I plan to expand it and turn it into a pattern library and style guide for the site.
 
-I target small-screens first (commonly known as “mobile-first”), so I make sure to test on a variety of devices as I go along. The first browser width I look at is under `20em` (less than ~320 pixels). Working with fewer assumptions about device types informs the design process; it is easier to design with empathy and flexibility with a responsive and iterative process.
-
-A significant part of my process this time was working with a [pattern page](/patterns) with reference examples of general HTML and specific use cases for my own designs. I plan to expand it and turn it into a pattern library and style guide for the site.
+I would like to thank [Jean]({{ site.link.jean }}) for editing and design input.
 
 ### Typography
 
 The fonts on the site (300, 400 and 500 weights of [the Ratio typeface](http://cargocollective.com/pstype/Ratio) and 400 weight of [Source Code Pro](http://adobe-fonts.github.io/source-code-pro/)) are [hosted by Typekit](https://typekit.com/colophons/ojm0eig). This site uses responsive typography based on pixel density, so if you have a higher resolution display, you will see different variants of Ratio. Only pages that include monospaced fonts conditionally incur a request for Source Code Pro.
+
+### Under the hood
+
+- **[Jekyll](http://jekyllrb.com)** for building.
+- **[Amazon S3](http://aws.amazon.com/s3)** for hosting.
+- **[s3_website](https://github.com/laurilehmijoki/s3_website)** for deploying.
+- **[GitHub](https://github.com/opattison/olivermakes)** for version control.
 
 ## Copyright
 
@@ -100,13 +110,13 @@ I designed the site myself, so most of the source was written by me by hand. Exc
 
 Proper CC BY-NC attribution with a link and credit would look like this:
 
-> “The title” [Oliver Pattison]({{ site.url }}) [CC BY-NC]({{ site.link.attribution }})
-
-Or in HTML:
-
 {% highlight html %}
 “The title” <a href="{{ site.url }}">Oliver Pattison</a> <a href="{{ site.link.attribution }}">CC BY-NC</a>
 {% endhighlight %}
+
+Or:
+
+> “The title” [Oliver Pattison]({{ site.url }}) [CC BY-NC]({{ site.link.attribution }})
 
 If you have any questions about licensing or use of content from the site, please [contact me by email](mailto:{{ site.author.email }}).
 

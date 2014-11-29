@@ -11,11 +11,11 @@
 ## Principles
 
 - Future-friendly
+- Content-first
+- Pattern-second
 - Responsive
-- Content first
-- Pattern second
 - High performance
-- Minimalism
+- Minimalist aesthetics
 - Progressive enhancement
 - Respect for users and their devices
 - Empathy in content, design and tone
