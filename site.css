@@ -284,8 +284,8 @@ blockquote footer {
 
 .feature a:focus,
 .feature a:hover {
-  color: hsla(44, 50%, 44%, 1);
-  border-color: hsla(44, 30%, 88%, 1);
+  color: hsla(204, 10%, 24%, 1);
+  border-color: hsla(204, 10%, 88%, 1);
 }
 
 .center {
