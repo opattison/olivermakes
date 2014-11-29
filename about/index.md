@@ -114,7 +114,7 @@ If you have any questions about licensing or use of content from the site, pleas
 
 ## Elsewhere on the web
 
-Nearly every significant thing I read or look at is archived on **[Pinboard]({{ site.link.pinboard }})**. It is my external brain and my favorite thing on the web. It is as complete an archive as I can keep of my reading online.
+Nearly every significant thing I read or look at is archived on **[Pinboard]({{ site.link.pinboard }}){:rel="me"}**. It is my external brain and my favorite thing on the web. It is as complete an archive as I can keep of my reading online.
 
 I am **[@olivermakes on Twitter]({{ site.link.twitter }}){:rel="me"}**.
 
