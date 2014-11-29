@@ -12,7 +12,6 @@
 
 - Future-friendly
 - Content-first
-- Pattern-second
 - Responsive
 - High performance
 - Minimalist aesthetics

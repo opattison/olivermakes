@@ -6,10 +6,11 @@ option:
   - hero-srcset
   - code
 date: 2014-10-31 18:25
+updated: 2014-11-29 09:54
 image:
   - src: 2011-11-10-oliver-bench-jeancflanagan-ccbync.jpg
     alt: 'Oliver Pattison sitting on a bench'
-    caption: 'Photo credit: [Jean Flanagan](http://jeancflanagan.com) – CC BY-NC'
+    caption: 'Photo of me by [Jean Flanagan](http://jeancflanagan.com), [CC BY-NC](http://creativecommons.org/licenses/by-nc/4.0/)'
     date: 2011-11-10
     camera: 'Nikon D3000'
     lens: 'Nikon DX 55-200 mm f/4.0-5.6'
@@ -33,6 +34,8 @@ This website is an archive for my work, featuring:
 - **[Writing](/writing)**, a collection of quick notes as well as longer essays
 - **[Photography](/photos)**, a collection of images documenting details of my environment
 - **[Projects](/projects)**, documentation and reflections on professional and open source work
+
+**[Subscribe]({{ site.link.subscribe.full }})** or do whatever else you want to this site’s Atom feed.
 
 {% capture influences %}
 # Influences
@@ -73,7 +76,6 @@ These people and their creative works inspired elements of the site – in parti
 
 - Future-friendly
 - Content-first
-- Pattern-second
 - Responsive
 - High performance
 - Minimalist aesthetics
@@ -114,7 +116,7 @@ Proper CC BY-NC attribution with a link and credit would look like this:
 “The title” <a href="{{ site.url }}">Oliver Pattison</a> <a href="{{ site.link.attribution }}">CC BY-NC</a>
 {% endhighlight %}
 
-Or:
+or:
 
 > “The title” [Oliver Pattison]({{ site.url }}) [CC BY-NC]({{ site.link.attribution }})
 
@@ -132,7 +134,7 @@ My open source code (including this site) is on **[GitHub]({{ site.link.github }
 
 Some of my design experiments are posted on **[CodePen](http://codepen.io/opattison/){:rel="me"}**.
 
-I share some of my mobile photography to **[VSCO Grid]({{ site.link.vsco }}){:rel="me"}**.
+A selection of my mobile photography is on **[VSCO Grid]({{ site.link.vsco }}){:rel="me"}**.
 
 I post less frequently to:
 
