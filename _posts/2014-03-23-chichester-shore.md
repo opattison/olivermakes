@@ -17,7 +17,7 @@ image:
     iso: 32
     latitude: 50.828
     longitude: 0.8599
-    description: VSCOcam a2
+    description: 'VSCOcam a2'
     aspect: '4:3'
   - src: 2014-03-23-chichester-shore-close-olivermakes-ccbync.jpg
     alt: 'Close view of moss, concrete and water on a shoreline'
@@ -30,7 +30,7 @@ image:
     iso: 32
     latitude: 50.8286
     longitude: 0.8574
-    description: VSCOcam n1
+    description: 'VSCOcam n1'
     aspect: '3:2'
   - src: 2014-03-23-moss-on-bricks-olivermakes-ccbync.jpg
     alt: 'Wisps of moss on a brick, highlighted by sun, with trees and sky far in the background'
@@ -43,16 +43,16 @@ image:
     iso: 32
     latitude: 50.8286
     longitude: 0.8593
-    description: VSCOcam k1
+    description: 'VSCOcam k1'
     aspect: '3:2'
 
 ---
 
 <figure class="wide"> 
   <img
-    src="{{ site.image-url }}/{{ page.image[0].src }}" 
-    sizes="{{ site.wide-sizes }}"  
-    srcset="{% for srcset in site.srcset %}{{ site.image-url }}/{{ site.srcset[forloop.index0] }}/{{ page.image[0].src }} {{ site.srcset[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+    src="{{ site.image-url }}/{{ page.image[0].src }}"
+    sizes="{{ site.wide-sizes }}"
+    srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image-url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[0].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
     alt="{{ page.image[0].alt }}"
   >
 </figure>
@@ -60,17 +60,17 @@ image:
 <section class="grid2">
   <figure> 
     <img
-      src="{{ site.image-url }}/{{ page.image[1].src }}" 
-      sizes="{{ site.grid2-sizes }}"  
-      srcset="{% for srcset_half in site.srcset_half %}{{ site.image-url }}/{{ site.srcset_half[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset_half[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+      src="{{ site.image-url }}/{{ page.image[1].src }}"
+      sizes="{{ site.grid2-sizes }}"
+      srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
       alt="{{ page.image[1].alt }}"
     >
   </figure>
   <figure> 
     <img
-      src="{{ site.image-url }}/{{ page.image[2].src }}" 
-      sizes="{{ site.grid2-sizes }}"  
-      srcset="{% for srcset_half in site.srcset_half %}{{ site.image-url }}/{{ site.srcset_half[forloop.index0] }}/{{ page.image[2].src }} {{ site.srcset_half[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+      src="{{ site.image-url }}/{{ page.image[2].src }}"
+      sizes="{{ site.grid2-sizes }}"
+      srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[2].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
       alt="{{ page.image[2].alt }}"
     >
   </figure>
