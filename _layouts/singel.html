@@ -11,7 +11,8 @@ layout: fundamental
 
 {% include page-header.html %}
 
-    <div class="e-content page">
+    {% if page.title == 'About' %}<div class="e-content h-card page">
+    {% else %}<div class="e-content page">{% endif %}
 
 {{ content }}
 

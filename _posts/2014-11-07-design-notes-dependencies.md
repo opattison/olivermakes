@@ -24,6 +24,6 @@ Adobe Lightroom is essential for editing photos and managing a large photo libra
 
 ## Fonts
 
-Besides the domain, this is one of the few parts of the site that I have to continue paying for on a subscription basis to keep the site running as designed. TypeKit has a [beautiful library of fonts](https://typekit.com/fonts), and I am quite happy with the fonts that I selected. While my site would not break without these fonts, I've still chosen to make hosted web fonts — that I don’t own — an integral part of the current version of the site. My current solution for typography functions as a “rental”.
+Besides the domain, this is one of the few parts of the site that I have to continue paying for on a subscription basis to keep the site running as designed. TypeKit has a [beautiful library of fonts](https://typekit.com/fonts), and I am quite happy with the fonts that I selected. While my site would not break without these fonts, I've still chosen to make hosted web fonts – that I don’t own – an integral part of the current version of the site. My current solution for typography functions as a “rental”.
 
 However, if I had to break free from Adobe Creative Cloud or TypeKit as dependencies, I could [buy Ratio](http://cargocollective.com/pstype/Ratio) and host it myself. The cost is not prohibitive since TypeKit already costs me a comparable amount. I use [Source Code Pro](http://adobe-fonts.github.io/source-code-pro/) for monospace typography, also hosted by Typekit, but that font is available for free, and therefore does not present any challenges.
