@@ -110,11 +110,7 @@ I designed the site myself, so most of the source was written by me by hand. Exc
 
 ### Attribution
 
-Proper CC BY-NC attribution with a link and credit would look like this:
-
-> “The title” [Oliver Pattison]({{ site.url }}) [CC BY-NC]({{ site.link.attribution }})
-
-… or:
+Proper CC BY-NC attribution with a link and credit would look like: *“The title” [Oliver Pattison]({{ site.url }}) [CC BY-NC]({{ site.link.attribution }})* or:
 
 {% highlight html %}
 “The title” <a href="{{ site.url }}">Oliver Pattison</a> <a href="{{ site.link.attribution }}">CC BY-NC</a>
