@@ -6,7 +6,7 @@ option:
   - hero-srcset
   - code
 date: 2014-10-31 18:25
-updated: 2014-11-29 09:54
+updated: 2014-11-30 17:54
 image:
   - src: 2011-11-10-oliver-bench-jeancflanagan-ccbync.jpg
     alt: 'Oliver Pattison sitting on a bench'
@@ -21,11 +21,11 @@ image:
 
 ---
 
-I am Oliver Pattison, a designer focused on the future of the web. My main interests are archiving, usable and universal design, mobile technology, and photography.
+I am <span class="p-name">Oliver Pattison</span>, a designer focused on the future of the web. My main interests are archiving, usable and universal design, mobile technology, and photography.
 
 I currently live in Washington, DC. I am originally from New York City.
 
-<div class="feature">I am available for hire. <a href="mailto:{{ site.author.email }}" rel="me">Get in touch</a> by email if you have a project in mind.</div>
+<div class="feature">I am available for hire. <a href="mailto:{{ site.author.email }}" rel="me" class="u-email">Get in touch</a> by email if you have a project in mind.</div>
 
 ## About this site
 
