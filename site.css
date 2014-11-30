@@ -1384,7 +1384,6 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   figcaption p {
-    font-size: .75em;
     text-align: right;
   }
 
