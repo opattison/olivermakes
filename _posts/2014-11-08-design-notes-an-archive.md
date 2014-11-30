@@ -3,7 +3,7 @@ title: 'Design notes: an archive'
 layout: singel
 category: writing
 date: 2014-11-08 12:34
-updated: 2014-11-26 10:52
+updated: 2014-11-29 18:21
 unique-id: 2014-11-08:design-notes-an-archive
 
 ---
@@ -13,6 +13,17 @@ Looking back at my files and memories from my life so far, I find there are few 
 If you never have, you should dig into the [Internet Archive’s Wayback Machine](https://archive.org/web/). You can find the history of sites no longer online, or no longer in their previous form. All of those attempts, stages and missteps are encoded in HTML and publicly hosted until they are discarded in a matter of months or years. The Archive team saves this history. It is cared for by preservationists who realized that if they did not make the effort, this creative output and cultural memory would certainly be lost history in the space of far less than a lifetime (since, by default, not much lasts long on the web).
 
 It takes a lot of effort to keep a comprehensive and long-lasting archive of one’s own history and output. While I strive to get better at backing things up and creating systems for maintaining old files, it is possible to build a website with the intention to serve the future instead of just the present moment.
+
+<aside class="ancillary">
+  <h1>How to back up an archive</h1>
+  <p>Right now my personal backup system works like this:</p>
+  <ul>
+    <li>Back up my MacBook to a Time Capsule running <a href="http://en.wikipedia.org/wiki/Time_Machine_(OS_X)">Time Machine</a>.</li>
+    <li>Store a complete archive of all of my photography on a local external drive. I use a <a href="https://www.lacie.com/US/products/product.htm?id=10600">LaCie D2 Thunderbolt</a>.</li>
+    <li>Keep <a href="https://www.backblaze.com">Backblaze</a> running, backing up both the MacBook and the external drive.</li>
+  </ul>
+  <p>This means I have a local repository,a working remote copy on GitHub, and then a local backup of everything (Time Machine), and a remote backup of everything (Backblaze). It’s robust enough for now, and literally fire-proof.</p>
+</aside>
 
 <div class="feature">I am building an archive.</div>
 
