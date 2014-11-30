@@ -217,15 +217,21 @@ a:active {
 }
 
 .page a,
-.site-info a {
+footer a {
   border-bottom: solid 1px hsla(5, 30%, 80%, 1);
 }
 
 .page a:hover,
 .page a:focus,
-.site-info a:hover,
-.site-info a:focus {
+footer a:hover,
+footer a:focus {
   border-bottom: solid 1px hsla(204, 30%, 80%, 1);
+}
+
+nav a,
+nav a:hover,
+nav a:focus {
+  border-bottom: none;
 }
 
 ul {
