@@ -850,8 +850,8 @@ a.reversefootnote:focus {
   z-index: 2;
 }
 
-.site-nav:target a,
-.photo .site-nav a {
+.site-nav:target li a,
+.photo .site-nav li a {
   background-color: hsla(204, 10%, 10%, .8);
 }
 
