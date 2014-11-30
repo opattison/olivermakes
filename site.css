@@ -232,6 +232,11 @@ ul {
   list-style-type: square;
 }
 
+.page ul,
+.page ol {
+  margin-top: 1.5em;
+}
+
 .page ol {
   counter-reset: listNumbering;
   list-style-type: none;
@@ -248,10 +253,14 @@ ul {
 }
 
 blockquote {
-  background-color: hsla(204, 10%, 88%, 1);
+  border-left: solid .25em hsla(204, 50%, 45%, 1);
+  color: hsla(204, 10%, 56%, 1);
+  margin: 2em 0 2em -1em;
+  padding-left: .75em;
 }
 
 blockquote footer {
+  color: hsla(204, 10%, 40%, 1);
   margin-top: 1em;
   text-align: right;
 }
@@ -540,14 +549,13 @@ a svg circle {
   margin: 2.75em auto 0;
 }
 
-/* Featured content – essays, blockquotes, code blocks */
+/* Block content – essays, code blocks */
 
 .essay {
   background-color: hsla(204, 10%, 24%, 1);
   margin-top: 2.75em;
 }
 
-blockquote,
 .highlight,
 .essay {
   margin-left: -1em;
@@ -1081,14 +1089,12 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .page-header .inner,
-  blockquote,
   .highlight,
   .essay {
     padding-left: 2em;
     padding-right: 2em;
   }
 
-  blockquote,
   .highlight,
   .essay,
   .code figcaption {
@@ -1162,14 +1168,12 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .page-header .inner,
-  blockquote,
   .highlight,
   .essay {
     padding-left: 2.5em;
     padding-right: 2.5em;
   }
 
-  blockquote,
   .highlight,
   .essay,
   .code figcaption {
@@ -1177,7 +1181,6 @@ screen and (min-resolution: 1.5dppx) {
     margin-right: -2.5em;
   }
 
-  blockquote,
   .highlight,
   .essay {
     padding-bottom: 1.25em;
@@ -1348,14 +1351,12 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .page-header .inner,
-  blockquote,
   .highlight,
   .essay {
     padding-left: 4.5em;
     padding-right: 4.5em;
   }
 
-  blockquote,
   .highlight,
   .essay,
   .code figcaption {
@@ -1363,7 +1364,6 @@ screen and (min-resolution: 1.5dppx) {
     margin-right: -4.5em;
   }
 
-  blockquote,
   .highlight {
     padding-bottom: 2em;
     padding-top: 2em;
@@ -1555,7 +1555,6 @@ screen and (min-resolution: 1.5dppx) {
     top: 25%;
   }
 
-  .dubbel blockquote,
   .dubbel .highlight {
     margin: 1.5em -9em;
     padding: 1.5em 9em;
@@ -1598,20 +1597,17 @@ screen and (min-resolution: 1.5dppx) {
     width: calc(100% + 18em);
   }
 
-  blockquote,
   .highlight {
     padding-left: 9em;
     padding-right: 9em;
   }
 
-  blockquote,
   .highlight,
   .code figcaption {
     margin-left: -9em;
     margin-right: -9em;
   }
 
-  blockquote,
   .highlight {
     padding-bottom: 2em;
     padding-top: 2em;
