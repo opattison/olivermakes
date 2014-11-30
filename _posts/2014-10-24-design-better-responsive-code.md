@@ -1,5 +1,5 @@
 ---
-title: 'How to design a better responsive code block'
+title: 'How to design a better responsive code&nbsp;block'
 layout: singel
 option:
   - hero
