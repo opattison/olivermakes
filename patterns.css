@@ -10,6 +10,7 @@
 .swatches {
   font: 400 .75em/1.5 'source-sans-pro', Menlo, Consolas, monospace;
   list-style-type: none;
+  margin-top: 1em;
   overflow: hidden;
 }
 
