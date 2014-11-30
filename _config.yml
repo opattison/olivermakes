@@ -72,6 +72,9 @@ shade:
   - name: gray4
     hsl: 'hsla(204, 10%, 40%, 1)'
     hex: '#5c6870'
+  - name: gray5
+    hsl: 'hsla(204, 10%, 48%, 1)'
+    hex: '#6e7d87'
   - name: gray6
     hsl: 'hsla(204, 10%, 56%, 1)'
     hex: '#84919a'
