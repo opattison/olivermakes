@@ -194,7 +194,7 @@ h4 {
 }
 
 h5 {
-  color: hsla(204, 10%, 56%, 1);
+  color: hsla(204, 10%, 48%, 1);
   font-size: 1.125em;
   line-height: 1.375;
 }
@@ -254,13 +254,13 @@ ul {
 
 blockquote {
   border-left: solid .25em hsla(204, 50%, 45%, 1);
-  color: hsla(204, 10%, 56%, 1);
+  color: hsla(204, 10%, 48%, 1);
   margin: 2em 0 2em -1em;
   padding-left: .75em;
 }
 
 blockquote footer {
-  color: hsla(204, 10%, 40%, 1);
+  color: hsla(204, 10%, 32%, 1);
   margin-top: 1em;
   text-align: right;
 }
@@ -329,10 +329,6 @@ pre > code {
   font-size: 1em;
   margin: 0;
   padding: 0;
-}
-
-blockquote p > code {
-  background-color: hsla(204, 10%, 96%, 1);
 }
 
 .highlight {
@@ -1102,6 +1098,12 @@ screen and (min-resolution: 1.5dppx) {
     margin-right: -2em;
   }
 
+  blockquote {
+    border-width: .5em;
+    margin-left: -2em;
+    padding-left: 1.5em;
+  }
+
   .site-header {
     height: 4.5em;
     margin-bottom: 0;
@@ -1179,6 +1181,12 @@ screen and (min-resolution: 1.5dppx) {
   .code figcaption {
     margin-left: -2.5em;
     margin-right: -2.5em;
+  }
+
+  blockquote {
+    border-width: .75em;
+    margin-left: -2.5em;
+    padding-left: 1.75em;
   }
 
   .highlight,
@@ -1362,6 +1370,10 @@ screen and (min-resolution: 1.5dppx) {
   .code figcaption {
     margin-left: -4.5em;
     margin-right: -4.5em;
+  }
+
+  blockquote {
+    margin-left: 0;
   }
 
   .highlight {
