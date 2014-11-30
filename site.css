@@ -232,19 +232,16 @@ ul {
   list-style-type: square;
 }
 
-article > ol,
-aside > ol {
+.page ol {
   counter-reset: listNumbering;
   list-style-type: none;
 }
 
-article > ol li,
-aside > ol li {
+.page ol li {
   counter-increment: listNumbering;
 }
 
-article > ol li::before,
-aside > ol li::before {
+.page ol li::before {
   content: counter(listNumbering) '.';
   font-weight: bolder;
   margin-right: .25em;
