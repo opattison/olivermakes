@@ -116,11 +116,11 @@ cite {
 source: http://alistapart.com/article/axiomatic-css-and-lobotomized-owls */
 
 * + * {
-  margin-top: 1.25em;
+  margin-top: 1em;
 }
 
 li + li {
-  margin-top: .625em; /* Half of axiomatic top margins */
+  margin-top: .5em; /* Half of axiomatic top margins */
 }
 
 /***! END Axiomatic styles ***/
@@ -139,11 +139,6 @@ html {
    font-variant-ligatures: common-ligatures;
 }
 
-article {
-  margin: 0 auto;
-  padding: 1.25em 1em 2.5em;
-}
-
 strong,
 b {
   font-weight: 500;
@@ -160,41 +155,48 @@ h5 {
 h1,
 h2 {
   color: hsla(204, 10%, 32%, 1);
+  line-height: 1.125;
 }
 
 h1 {
   font-size: 2em;
   font-weight: 500;
-  line-height: 1.25;
 }
 
 h2 {
   font-size: 1.75em;
   font-weight: 400;
+}
+
+h3,
+h4 {
+  color: hsla(204, 10%, 18%, 1);
   line-height: 1.25;
 }
 
 h3,
 h4,
 h5 {
-  color: hsla(204, 10%, 18%, 1);
   font-weight: 300;
+}
+
+h4,
+h5 {
+  font-style: italic;
 }
 
 h3 {
   font-size: 1.375em;
-  line-height: 1.25;
 }
 
 h4 {
   font-size: 1.25em;
-  line-height: 1.375;
 }
 
 h5 {
+  color: hsla(204, 10%, 56%, 1);
   font-size: 1.125em;
-  font-style: italic;
-  line-height: 1.5;
+  line-height: 1.375;
 }
 
 a {
@@ -214,18 +216,15 @@ a:focus {
   outline: solid .25em hsla(204, 50%, 45%, 1);
 }
 
-article a,
-aside a,
-section a {
+.page a,
+.site-info a {
   border-bottom: solid 1px hsla(5, 30%, 80%, 1);
 }
 
-article a:hover,
-article a:focus,
-aside a:hover,
-aside a:focus,
-section a:hover,
-section a:focus {
+.page a:hover,
+.page a:focus,
+.site-info a:hover,
+.site-info a:focus {
   border-bottom: solid 1px hsla(204, 30%, 80%, 1);
 }
 
@@ -233,19 +232,16 @@ ul {
   list-style-type: square;
 }
 
-article > ol,
-aside > ol {
+.page ol {
   counter-reset: listNumbering;
   list-style-type: none;
 }
 
-article > ol li,
-aside > ol li {
+.page ol li {
   counter-increment: listNumbering;
 }
 
-article > ol li::before,
-aside > ol li::before {
+.page ol li::before {
   content: counter(listNumbering) '.';
   font-weight: bolder;
   margin-right: .25em;
@@ -258,30 +254,6 @@ blockquote {
 blockquote footer {
   margin-top: 1em;
   text-align: right;
-}
-
-/* Feature emphasis text blocks – <div class="feature"> */
-
-.feature {
-  color: hsla(204, 50%, 45%, 1);
-  font-size: 1.25em;
-  font-style: italic;
-  font-weight: 500;
-  margin-top: 1em;
-}
-
-.feature a {
-  color: hsla(4, 60%, 50%, 1);
-}
-
-.feature a:focus,
-.feature a:hover {
-  color: hsla(44, 50%, 44%, 1);
-  border-color: hsla(44, 30%, 88%, 1);
-}
-
-.center {
-  text-align: center;
 }
 
 /* Footnotes */
@@ -419,6 +391,267 @@ a svg circle {
 
 /***! END Basic styles ***/
 
+/*** Page layouts ******************************/
+
+[role="main"] {
+  margin-top: 0;
+}
+
+.page {
+  margin: 0 auto;
+  padding: 1.25em 1em 2.5em;
+}
+
+.page-header {
+  margin: 0 auto;
+}
+
+.page-header .inner {
+  background-color: hsla(204, 10%, 98%, 1);
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.page-info {
+  color: hsla(204, 10%, 56%, 1);
+  font-size: .75em;
+  font-weight: 400;
+}
+
+/* Page metadata */
+
+.page-meta {
+  background-color: hsla(204, 10%, 93%, 1);
+  margin: 0 auto;
+  position: relative;
+}
+
+.page-meta .chronology,
+.page-meta .time {
+  margin-top: 0;
+  width: 100%;
+}
+
+.page-meta .chronology {
+  overflow: auto;
+}
+
+.page-meta .chronology ul {
+  height: 100%;
+}
+
+.page-meta .chronology li:only-child {
+  width: 100%;
+}
+
+.page-meta .chronology a {
+  color: hsla(204, 10%, 93%, 1);
+  display: block;
+  font-weight: 400;
+  height: 100%;
+  min-height: 2.5em;
+  padding: .5em 0;
+}
+
+.page-meta .time {
+  padding: 1em;
+}
+
+.page-meta .time p {
+  font-size: .875em;
+  margin-top: 0;
+}
+
+.page-meta .time time {
+  font-style: normal;
+}
+
+/* Singel and dubbel common */
+
+.singel,
+.dubbel {
+  background-color: hsla(204, 10%, 96%, 1);
+}
+
+.singel .page,
+.dubbel .page {
+  background-color: hsla(204, 10%, 98%, 1);
+}
+
+/* Photo */
+
+.photo,
+.photo .page-header .inner {
+  background-color: hsla(204, 10%, 18%, 1);
+  color: hsla(204, 10%, 96%, 1);
+}
+
+.photo .page {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.photo h1,
+.photo h2 {
+  color: hsla(204, 10%, 96%, 1);
+}
+
+.photo h1 {
+  text-align: center;
+}
+
+.photo .page a,
+.photo .time a {
+  color: hsla(5, 30%, 80%, 1);
+  border-color: hsla(5, 30%, 80%, .5);
+}
+
+.photo .page a:hover,
+.photo .page a:focus,
+.photo .time a:hover,
+.photo .time a:focus {
+  color: hsla(204, 30%, 80%, 1);
+  border-color: hsla(204, 30%, 80%, .5);
+}
+
+.photo .title:hover h1 {
+  color: hsla(204, 30%, 80%, 1);
+}
+
+.photo .title .logo circle {
+  stroke: hsla(204, 10%, 96%, 1);
+}
+
+.photo .title:hover .logo circle {
+  stroke: hsla(204, 30%, 80%, 1);
+  -webkit-animation-name: step-fill--contrast;
+          animation-name: step-fill--contrast;
+}
+
+.photo .page > figure:first-child {
+  margin-top: 0;
+}
+
+.photo .page figcaption {
+  color: hsla(204, 10%, 88%, 1);
+}
+
+.photo .page-meta {
+  background-color: hsla(204, 10%, 24%, 1);
+  margin: 2.75em auto 0;
+}
+
+/* Featured content – essays, blockquotes, code blocks */
+
+.essay {
+  background-color: hsla(204, 10%, 24%, 1);
+  margin-top: 2.75em;
+}
+
+blockquote,
+.highlight,
+.essay {
+  margin-left: -1em;
+  margin-right: -1em;
+  padding: 1em;
+}
+
+/* Feature emphasis text blocks – <div class="feature"> */
+
+.feature {
+  color: hsla(204, 50%, 45%, 1);
+  font-size: 1.25em;
+  font-style: italic;
+  font-weight: 500;
+  margin-top: 1em;
+}
+
+.feature a {
+  color: hsla(4, 60%, 50%, 1);
+}
+
+.feature a:focus,
+.feature a:hover {
+  color: hsla(44, 50%, 44%, 1);
+  border-color: hsla(44, 30%, 88%, 1);
+}
+
+.center {
+  text-align: center;
+}
+
+/* Asides and footnotes for supporting content */
+
+.ancillary,
+.footnotes {
+  color: hsla(204, 10%, 24%, 1);
+  margin-right: -1em;
+  padding: 1em;
+}
+
+.ancillary {
+  background-color: hsla(204, 10%, 96%, 1);
+}
+
+.ancillary h1 {
+  font: 500 1.25em/1.5 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
+}
+
+.ancillary h2 {
+  font: 400 1.125em/1.5 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
+}
+
+.ancillary img {
+  max-width: none;
+  width: calc(100% + 1em)
+}
+
+/* Footnotes */
+
+.footnotes {
+  background-color: hsla(204, 30%, 80%, .5);
+  padding-bottom: 2em;
+}
+
+.footnotes ol {
+  list-style-position: outside;
+  padding: 0 1.25em;
+}
+
+.footnotes li {
+  border-bottom: solid 1px hsla(204, 10%, 80%, 1);
+  padding-bottom: 1.25em;
+}
+
+.footnotes li + li {
+  margin-top: 1.25em;
+}
+
+.footnotes li:last-child {
+  border: none;
+  padding: 0;
+}
+
+.footnotes .reversefootnote {
+  border: solid 1px hsla(204, 10%, 80%, 1);
+  border-radius: .125em;
+  float: right;
+  margin: 0 -1.5em;
+  padding: 0 .25em;
+}
+
+a.reversefootnote {
+  color: hsla(204, 10%, 24%, 1);
+}
+
+a.reversefootnote:hover,
+a.reversefootnote:focus {
+  background-color: hsla(4, 30%, 80%, .5);
+  border-color: hsla(4, 30%, 80%, .5);
+}
+
+/***! END Page layouts ***/
+
 /*** Site headers and footers ******************/
 
 .site-header {
@@ -426,7 +659,7 @@ a svg circle {
   padding: 1em 0;
 }
 
-.site-header .title {
+.title {
   color: hsla(204, 10%, 18%, 1);
   display: block;
   height: 2.5em;
@@ -435,14 +668,15 @@ a svg circle {
   width: 13em;
 }
 
-.site-header .title h1 {
+.title h1 {
   font-weight: 300;
   letter-spacing: -.03125em;
+  line-height: 1.25em;
   margin: 0;
 }
 
-.site-header .title:hover h1,
-.site-header .title:focus h1 {
+.title:hover h1,
+.title:focus h1 {
   color: hsla(204, 80%, 40%, 1);
 }
 
@@ -541,17 +775,21 @@ a svg circle {
 }
 
 .site-nav,
-.site-footer .site-info {
+.site-info {
   margin: 0 auto;
   overflow: auto;
 }
 
-.site-footer .site-info {
+.site-info {
   background-color: hsla(204, 10%, 93%, 1);
   color: hsla(204, 10%, 18%, 1);
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding: 2em 1em;
   width: 100%;
+}
+
+.site-info .inner {
+  margin: 0 auto;
+  max-width: 36em;
 }
 
 .site-info p {
@@ -563,7 +801,7 @@ a svg circle {
 .site-nav {
   display: block;
   font-weight: 400;
-  max-width: 45rem;
+  max-width: 45em;
 }
 
 .site-nav ul {
@@ -753,242 +991,9 @@ a svg circle {
 
 /***! END Site headers and footers ***/
 
-/*** Page layouts ******************************/
-
-.page-header {
-  margin: 0 auto;
-}
-
-.page-header .inner {
-  background-color: hsla(204, 10%, 98%, 1);
-  margin: 0 auto;
-  padding: 1em;
-}
-
-.page-info {
-  color: hsla(204, 10%, 56%, 1);
-  font-size: .75em;
-  font-weight: 400;
-}
-
-/* Page metadata */
-
-.page-meta {
-  background-color: hsla(204, 10%, 93%, 1);
-  margin: 0 auto;
-  position: relative;
-}
-
-.page-meta .chronology,
-.page-meta .time {
-  margin-top: 0;
-  width: 100%;
-}
-
-.page-meta .chronology {
-  overflow: auto;
-}
-
-.page-meta .chronology ul {
-  height: 100%;
-}
-
-.page-meta .chronology li:only-child {
-  width: 100%;
-}
-
-.page-meta .chronology a {
-  color: hsla(204, 10%, 93%, 1);
-  display: block;
-  font-weight: 400;
-  height: 100%;
-  min-height: 2.5em;
-  padding: .5em 0;
-}
-
-.page-meta .time {
-  padding: 1em;
-}
-
-.page-meta .time p {
-  font-size: .875em;
-  margin-top: 0;
-}
-
-.page-meta .time time {
-  font-style: normal;
-}
-
-/* Singel and dubbel common */
-
-.singel,
-.dubbel {
-  background-color: hsla(204, 10%, 96%, 1);
-}
-
-.singel article,
-.dubbel article {
-  background-color: hsla(204, 10%, 98%, 1);
-}
-
-/* Photo */
-
-.photo,
-.photo .page-header .inner {
-  background-color: hsla(204, 10%, 18%, 1);
-  color: hsla(204, 10%, 96%, 1);
-}
-
-.photo article {
-  padding-bottom: 0;
-}
-
-.photo article > figure:first-child {
-  margin-top: 0;
-}
-
-.photo h1,
-.photo h2 {
-  color: hsla(204, 10%, 96%, 1);
-}
-
-.photo h1 {
-  text-align: center;
-}
-
-.photo [role="main"] a,
-.photo section a {
-  color: hsla(5, 30%, 80%, 1);
-  border-color: hsla(5, 30%, 80%, .5);
-}
-
-.photo [role="main"] a:hover,
-.photo [role="main"] a:focus,
-.photo section a:hover,
-.photo section a:focus {
-  color: hsla(204, 30%, 80%, 1);
-  border-color: hsla(204, 30%, 80%, .5);
-}
-
-.photo article,
-.photo .title h1 {
-  color: hsla(204, 10%, 96%, 1);
-}
-
-.photo .title:hover h1 {
-  color: hsla(204, 30%, 80%, 1);
-}
-
-.photo .logo circle {
-  stroke: hsla(204, 10%, 96%, 1);
-}
-
-.photo .title:hover .logo circle {
-  stroke: hsla(204, 30%, 80%, 1);
-  -webkit-animation-name: step-fill--contrast;
-          animation-name: step-fill--contrast;
-}
-
-.photo [role="main"] figcaption {
-  color: hsla(204, 10%, 88%, 1);
-}
-
-.photo .page-meta {
-  background-color: hsla(204, 10%, 24%, 1);
-  margin: 2.75em auto 0;
-}
-
-/* Featured content – essays, blockquotes, code blocks */
-
-.essay {
-  background-color: hsla(204, 10%, 24%, 1);
-  margin-top: 2.75em;
-}
-
-blockquote,
-.highlight,
-.essay {
-  margin-left: -1em;
-  margin-right: -1em;
-  padding: 1em;
-}
-
-/* Asides and footnotes for supporting content */
-
-.ancillary,
-.footnotes {
-  color: hsla(204, 10%, 24%, 1);
-  margin-right: -1em;
-  padding: 1em;
-}
-
-.ancillary {
-  background-color: hsla(204, 10%, 96%, 1);
-}
-
-.ancillary h1 {
-  font: 500 1.25em/1.5 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
-}
-
-.ancillary h2 {
-  font: 400 1.125em/1.5 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
-}
-
-.ancillary img {
-  max-width: none;
-  width: calc(100% + 1em)
-}
-
-/* Footnotes */
-
-.footnotes {
-  background-color: hsla(204, 30%, 80%, .5);
-  padding-bottom: 2em;
-}
-
-.footnotes ol {
-  list-style-position: outside;
-  padding: 0 1.25em;
-}
-
-.footnotes li {
-  border-bottom: solid 1px hsla(204, 10%, 80%, 1);
-  padding-bottom: 1.25em;
-}
-
-.footnotes li + li {
-  margin-top: 1.25em;
-}
-
-.footnotes li:last-child {
-  border: none;
-  padding: 0;
-}
-
-.footnotes .reversefootnote {
-  border: solid 1px hsla(204, 10%, 80%, 1);
-  border-radius: .125em;
-  float: right;
-  margin: 0 -1.5em;
-  padding: 0 .25em;
-}
-
-a.reversefootnote {
-  color: hsla(204, 10%, 24%, 1);
-}
-
-a.reversefootnote:hover,
-a.reversefootnote:focus {
-  background-color: hsla(4, 30%, 80%, .5);
-  border-color: hsla(4, 30%, 80%, .5);
-}
-
-/***! END Page layouts ***/
-
 /*** Image styles ******************************/
 
-article img,
-figure img {
+article img {
   width: 100%;
 }
 
@@ -1015,6 +1020,10 @@ figure img {
   margin: 0;
 }
 
+.hero figcaption p {
+  font-size: .875em;
+}
+
 /***! END Image styles ***/
 
 /*** Media queries *****************************/
@@ -1036,9 +1045,10 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 22.5em) {
 
-  article,
+  .page,
   .page-header,
-  .page-meta {
+  .page-meta,
+  .site-info {
     font-size: 1.0625em;
   }
 
@@ -1046,9 +1056,10 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 28em) {
 
-  article,
+  .page,
   .page-header,
-  .page-meta {
+  .page-meta,
+  .site-info {
     font-size: 1.125em;
   }
 
@@ -1056,7 +1067,7 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 30em) {
 
-  article {
+  .page {
     padding: 1.25em 2em 2.5em;
   }
 
@@ -1088,7 +1099,7 @@ screen and (min-resolution: 1.5dppx) {
     margin-bottom: 0;
   }
 
-  .site-header .title {
+  .title {
     margin: 0 2em;
   }
 
@@ -1133,11 +1144,11 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 34em) {
 
-  article {
+  .page {
     padding: 1.25em 2.5em 2.5em;
   }
 
-  .site-header .title {
+  .title {
     margin: 0 3em;
   }
 
@@ -1184,13 +1195,14 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 40em) {
 
-  article,
+  .page,
   .page-header,
-  .page-meta {
+  .page-meta,
+  .site-info {
     font-size: 1.25em;
   }
 
-  .site-header .title {
+  .title {
     margin: 0 auto;
   }
 
@@ -1211,7 +1223,7 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 45em) {
 
-  article,
+  .page,
   .page-header .inner,
   .page-meta {
     width: 36em;
@@ -1285,7 +1297,7 @@ screen and (min-resolution: 1.5dppx) {
     padding: 1.5em 0;
   }
 
-  .site-header .title {
+  .title {
     font-size: 1.25em;
   }
 
@@ -1293,11 +1305,11 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 60em) {
 
-  article {
+  .page {
     padding: 1.25em 4.5em 4.5em;
   }
 
-  article,
+  .page,
   .page-header .inner,
   .page-meta {
     width: 45em;
@@ -1309,6 +1321,14 @@ screen and (min-resolution: 1.5dppx) {
 
   .page-header .inner {
     padding: 2em 1.25em;
+  }
+
+  .photo .page-header .inner {
+    padding: .75em 1.25em;
+  }
+
+  .photo .page {
+    padding-top: 1em;
   }
 
   .hero,
@@ -1323,32 +1343,6 @@ screen and (min-resolution: 1.5dppx) {
   .site-nav li a,
   .alt-nav li a {
     font-size: 1.25em;
-  }
-
-  figcaption p {
-    font-size: .75em;
-    text-align: right;
-  }
-
-  .grid2 :first-child figcaption p {
-    text-align: left;
-  }
-
-  .wide figcaption p,
-  .code figcaption p {
-    margin-left: 50%;
-    width: 50%;
-  }
-
-  .photo [role="main"] figcaption {
-    padding: .5em 0 0;
-  }
-
-  .hero figcaption p,
-  .photo [role="main"] figcaption p {
-    font-size: .875em;
-    margin-left: 50%;
-    width: 50%;
   }
 
   .page-header .inner,
@@ -1389,6 +1383,10 @@ screen and (min-resolution: 1.5dppx) {
     padding: 0 2em;
   }
 
+  figcaption p {
+    text-align: right;
+  }
+
   .image {
     margin: 5% auto;
     width: 100%;
@@ -1399,10 +1397,14 @@ screen and (min-resolution: 1.5dppx) {
     padding-right: 0;
   }
 
-  .wide {
-    margin: 5% auto 0;
-    max-width: 100%;
+  .image {
+    margin: 5% auto;
     width: 100%;
+  }
+
+  .image figcaption {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .wide,
@@ -1410,6 +1412,12 @@ screen and (min-resolution: 1.5dppx) {
     margin: 5% calc(-4.5em) 0;
     max-width: none;
     width: calc(100% + 9em);
+  }
+
+  .wide figcaption p,
+  .code figcaption p {
+    margin-left: 50%;
+    width: 50%;
   }
 
   .grid2 {
@@ -1429,6 +1437,21 @@ screen and (min-resolution: 1.5dppx) {
 
   .grid2 + figure {
     clear: both;
+  }
+
+  .grid2 :first-child figcaption p {
+    text-align: left;
+  }
+
+  .photo [role="main"] figcaption {
+    padding: .5em 0 0;
+  }
+
+  .hero figcaption p,
+  .photo [role="main"] figcaption p {
+    font-size: .875em;
+    margin-left: 50%;
+    width: 50%;
   }
 
   .page-meta .chronology li,
@@ -1457,20 +1480,19 @@ screen and (min-resolution: 1.5dppx) {
     margin: 2.75em auto 0;
   }
 
-  .site-footer .site-info,
+  .site-info,
   .site-nav {
     float: right;
     margin: 0;
     width: 50%;
   }
 
-  .site-footer .site-info {
-    font-size: 1.25em;
+  .site-info {
     min-height: 17.125rem; /* keeps .back-home link down */
-    padding: 2em;
+    padding: 1.5em 2em;
   }
 
-  .dubbel article,
+  .dubbel .page,
   .dubbel .page-header,
   .dubbel .page-meta {
     width: 54em;  
@@ -1481,7 +1503,7 @@ screen and (min-resolution: 1.5dppx) {
     padding-right: 4.5em;
   }
 
-  .dubbel article {
+  .dubbel .page {
     margin: 0 auto;
     overflow: hidden;
     padding: 2em 9em 4.5em;
@@ -1549,11 +1571,11 @@ screen and (min-resolution: 1.5dppx) {
     padding-top: 2.25em;
   }
 
-  .site-header .title {
+  .title {
     font-size: 1.5em;
   }
 
-  .singel article,
+  .singel .page,
   .singel .page-header .inner,
   .page-meta {
     width: 54em;
@@ -1564,7 +1586,7 @@ screen and (min-resolution: 1.5dppx) {
     text-align: center;
   }
 
-  .singel article {
+  .singel .page {
     padding: 1.25em 9em 6em;
   }
 
@@ -1608,15 +1630,20 @@ screen and (min-resolution: 1.5dppx) {
     width: 36em;
   }
 
+  .site-info {
+    padding: 2em;
+  }
+
 }
 
 @media screen and (min-width: 95em) {
 
-  .singel article,
-  .dubbel article,
-  .photo article,
+  .singel .page,
+  .dubbel .page,
+  .photo .page,
   .page-header,
-  .page-meta {
+  .page-meta,
+  .site-info {
     font-size: 1.5em;
   }
 
@@ -1628,19 +1655,24 @@ screen and (min-resolution: 1.5dppx) {
     width: 33.3333333%;
   }
 
-  .site-footer .site-info {
+  .site-info {
     padding: 2em 4em;
     font-size: 1.5em;
     width: 66.66666667%;
+  }
+
+  .site-info .inner {
+    max-width: none;
   }
 
 }
 
 @media screen and (min-width: 115em) {
 
-  .singel article,
-  .dubbel article,
-  .photo article,
+  .singel .page,
+  .dubbel .page,
+  .photo .page,
+  .title,
   .page-header,
   .page-meta {
     font-size: 1.75em;
@@ -1648,10 +1680,6 @@ screen and (min-resolution: 1.5dppx) {
 
   .site-header {
     padding-top: 4.5em;
-  }
-
-  .site-header .title {
-    font-size: 1.75em;
   }
 
   .hero,
@@ -1663,11 +1691,11 @@ screen and (min-resolution: 1.5dppx) {
     max-width: 78.75em;
   }
 
-  .site-footer .site-info {
+  .site-info {
     padding: 2em 5em;
   }
 
-  .photo .site-footer .site-info {
+  .photo .site-info {
     padding: 2em 2.5em;
   }
 
@@ -1675,7 +1703,7 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 140em) {
 
-  .photo article {
+  .photo .page {
     font-size: 2em;
   }
 
