@@ -14,6 +14,7 @@ gzip:
   - .html
   - .md
   - .svg
+  - .js
 
 exclude_from_upload:
   - .DS_Store
