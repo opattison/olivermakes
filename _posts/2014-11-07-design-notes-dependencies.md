@@ -3,27 +3,27 @@ title: 'Design notes: an accounting of dependencies'
 layout: singel
 category: writing
 date: 2014-11-08 12:34
-updated: 2014-11-27 02:30
+updated: 2014-11-29 18:21
 unique-id: 2014-11-08:design-notes-dependencies
 
 ---
 
-What is involved in making this site work, at minimum? How do these dependencies affect the long-term survivability of the site and its implementation?
+What is involved in making this site work, at minimum? What additional dependencies are worth introducing, and how do these dependencies affect the long-term survivability of the site and its implementation?
 
 ## A browser, a text editor, a command line
 
-I really only need a browser, a text editor and Terminal to maintain the website. I can write HTML and CSS, design and test in a browser (Chrome primarily, but also Safari, Firefox and some mobile browsers), control the version history with Git, and deploy to the website with Terminal.
+I really only need a browser, a text editor, and a command line to maintain the website. I can write HTML and CSS, design and test in a browser (Chrome primarily, but also Safari, Firefox, Internet Explorer, and some mobile browsers), control [the version history]({{ site.source-url.repo }}) with Git, and deploy to the website with Terminal.
 
 ## Leasing the domain/URI
 
 It is unfortunate that the domain system has built-in impermanence that even the best planning cannot work around. Since domain names are leased and not purchased, all other future-proofing schemes could be let down by something as common as an expired credit card or a lost email. I have the date reminder set for 2017 when that next rolls around for me, but it is striking how fragile this is compared to all of the other parts of this system that can more easily be mitigated or replaced. I wonder how long into the future we will have to wait for a more permanent addressing for the web, if it will ever come.
 
-## Adobe Lightroom, Photoshop and image manipulation tools
+## Photo editing and processing
 
-Lightroom is essential for editing photos and managing a large photo library, which is part of the website. Photoshop is not necessary for editing them, but I do optimize images and export images at multiple sizes for responsive images. For vector graphics, I use Adobe Illustrator. I also use the open source software [ImageOptim](https://imageoptim.com) to save bytes on photos, which is invaluable. While I integrate these tightly into my process for making the website, there *are* alternatives to them, and not having access to them would not prevent me from maintaining the site as it exists now.
+Adobe Lightroom is essential for editing photos and managing a large photo library, which is part of the website. Adobe Photoshop is not necessary for editing them, but I do optimize images and export images at multiple sizes for responsive images. For vector graphics, I use Adobe Illustrator. I also use the open source software [ImageOptim](https://imageoptim.com) to save bytes on photos, which is invaluable. While I integrate these tightly into my process for making the website, there *are* alternatives to them, and not having access to them would not prevent me from maintaining the site as it exists now.
 
-## TypeKit for fonts
+## Fonts
 
-Besides the domain, this is one of the few parts of the site that I have to continue paying for on a subscription basis to keep the site running as designed. TypeKit has a beautiful library of fonts, and I am quite happy with the one that I selected. While my site would not break without these fonts, hosted web fonts that I do not own are an integral part of the current version of the site. My current solution for typography functions as a “rental”.
+Besides the domain, this is one of the few parts of the site that I have to continue paying for on a subscription basis to keep the site running as designed. TypeKit has a [beautiful library of fonts](https://typekit.com/fonts), and I am quite happy with the fonts that I selected. While my site would not break without these fonts, I've still chosen to make hosted web fonts — that I don’t own — an integral part of the current version of the site. My current solution for typography functions as a “rental”.
 
-However, if I had to break free from Adobe CC or TypeKit as dependencies, I could [buy Ratio](http://cargocollective.com/pstype/Ratio) and host it myself. I use [Source Code Pro](http://adobe-fonts.github.io/source-code-pro/) for monospace typography, also hosted by Typekit, but that font is available for free, and therefore does not present any challenges.
+However, if I had to break free from Adobe Creative Cloud or TypeKit as dependencies, I could [buy Ratio](http://cargocollective.com/pstype/Ratio) and host it myself. The cost is not prohibitive since TypeKit already costs me a comparable amount. I use [Source Code Pro](http://adobe-fonts.github.io/source-code-pro/) for monospace typography, also hosted by Typekit, but that font is available for free, and therefore does not present any challenges.
