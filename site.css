@@ -212,8 +212,8 @@ a:focus {
   transition-duration: 160ms;
 }
 
-a:focus {
-  outline: solid .25em hsla(204, 50%, 45%, 1);
+a:active {
+  color: hsla(204, 10%, 56%, 1);
 }
 
 .page a,
@@ -511,7 +511,6 @@ a svg circle {
 .photo .time a:hover,
 .photo .time a:focus {
   color: hsla(204, 30%, 80%, 1);
-  border-color: hsla(204, 30%, 80%, .5);
 }
 
 .photo .title:hover h1 {
@@ -570,10 +569,9 @@ blockquote,
   color: hsla(4, 60%, 50%, 1);
 }
 
-.feature a:focus,
-.feature a:hover {
+.feature a:hover,
+.feature a:focus {
   color: hsla(44, 50%, 44%, 1);
-  border-color: hsla(44, 30%, 88%, 1);
 }
 
 .center {
@@ -647,7 +645,6 @@ a.reversefootnote {
 a.reversefootnote:hover,
 a.reversefootnote:focus {
   background-color: hsla(4, 30%, 80%, .5);
-  border-color: hsla(4, 30%, 80%, .5);
 }
 
 /***! END Page layouts ***/
@@ -763,7 +760,8 @@ a.reversefootnote:focus {
 
 .top-menu a:focus,
 .site-nav .close-menu a:focus {
-  box-shadow: inset 0 .5em 0 hsla(204, 10%, 98%, 1);
+  background-color: hsla(204, 10%, 88%, 1);
+  color: hsla(204, 10%, 18%, 1);
   outline: none;
 }
 
@@ -809,7 +807,7 @@ a.reversefootnote:focus {
   margin: 0 auto;
 }
 
-.site-nav li a {
+.site-nav a {
   background-color: hsla(204, 10%, 10%, 1);
   display: block;
   color: hsla(204, 10%, 98%, 1);
@@ -828,15 +826,8 @@ a.reversefootnote:focus {
   background-color: hsla(204, 10%, 18%, 1);
 }
 
-.site-nav li a:hover,
-.site-nav li a:focus {
+.site-nav li a:hover {
   background-color: hsla(204, 50%, 45%, 1);
-}
-
-.site-nav li a:focus,
-.site-nav:target li a:focus {
-  box-shadow: inset 0 .5em 0 hsla(204, 10%, 98%, 1);
-  outline: none;
 }
 
 /* Target navigation - JS-free modal navigation */
@@ -859,8 +850,8 @@ a.reversefootnote:focus {
   z-index: 2;
 }
 
-.site-nav:target li a,
-.photo .site-nav li a {
+.site-nav:target a,
+.photo .site-nav a {
   background-color: hsla(204, 10%, 10%, .8);
 }
 
@@ -880,10 +871,8 @@ a.reversefootnote:focus {
 }
 
 .site-nav:target li a:hover,
-.site-nav:target li a:focus,
-.photo .site-nav li a:hover,
-.photo .site-nav li a:focus {
-  background-color: hsla(204, 50%, 45%, .8)
+.photo .site-nav li a:hover {
+  background-color: hsla(204, 50%, 45%, .8);
 }
 
 .site-nav:target .close-menu {
@@ -908,6 +897,14 @@ a.reversefootnote:focus {
 
 .site-nav:target::after {
   background-color: hsla(204, 10%, 10%, .8);
+}
+
+.site-nav li a:focus,
+.site-nav:target li a:focus,
+.photo .site-nav li a:focus {
+  background-color: hsla(204, 10%, 88%, 1);
+  color: hsla(204, 10%, 18%, 1);
+  outline: none;
 }
 
 /* Alternative nav – home and back-to-top */
@@ -947,14 +944,18 @@ a.reversefootnote:focus {
   color: hsla(4, 80%, 40%, 1);
 }
 
-.alt-nav .back-home a:hover circle,
-.alt-nav .back-home a:focus circle {
+.alt-nav .back-home a:hover circle {
   stroke: hsla(4, 80%, 40%, 1);
+}
+
+.alt-nav .back-home a:focus circle {
+  stroke: hsla(204, 10%, 18%, 1);
 }
 
 .alt-nav .back-home a:focus,
 .page-meta .later a:focus {
-  box-shadow: inset 0 .5em 0 hsla(4, 80%, 40%, 1);
+  background-color: hsla(204, 10%, 88%, 1);
+  color: hsla(204, 10%, 18%, 1);
 }
 
 .alt-nav .back-top a:hover,
@@ -966,7 +967,8 @@ a.reversefootnote:focus {
 
 .alt-nav .back-top a:focus,
 .page-meta .earlier a:focus {
-  box-shadow: inset 0 .5em 0 hsla(204, 80%, 40%, 1);
+  background-color: hsla(204, 10%, 88%, 1);
+  color: hsla(204, 10%, 18%, 1);
 }
 
 .back-home .inner {
