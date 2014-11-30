@@ -15,14 +15,14 @@ If you never have, you should dig into the [Internet Archive’s Wayback Machine
 It takes a lot of effort to keep a comprehensive and long-lasting archive of one’s own history and output. While I strive to get better at backing things up and creating systems for maintaining old files, it is possible to build a website with the intention to serve the future instead of just the present moment.
 
 <aside class="ancillary">
-  <h1>How to back up an archive</h1>
-  <p>Right now my personal backup system works like this:</p>
+  <h1>How to back up a personal&nbsp;archive</h1>
+  <p>Right now my home backup system works like this:</p>
   <ul>
     <li>Back up my MacBook to a Time Capsule running <a href="http://en.wikipedia.org/wiki/Time_Machine_(OS_X)">Time Machine</a>.</li>
     <li>Store a complete archive of all of my photography on a local external drive. I use a <a href="https://www.lacie.com/US/products/product.htm?id=10600">LaCie D2 Thunderbolt</a>.</li>
     <li>Keep <a href="https://www.backblaze.com">Backblaze</a> running, backing up both the MacBook and the external drive.</li>
   </ul>
-  <p>This means I have a local repository,a working remote copy on GitHub, and then a local backup of everything (Time Machine), and a remote backup of everything (Backblaze). It’s robust enough for now, and literally fire-proof.</p>
+  <p>This means I have a local repository, a working remote copy on GitHub, and then a local backup of everything (Time Machine), and a remote backup of everything (Backblaze). It is robust enough for now, and it is literally fire-proof.</p>
 </aside>
 
 <div class="feature">I am building an archive.</div>
