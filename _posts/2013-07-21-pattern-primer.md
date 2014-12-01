@@ -5,12 +5,12 @@ category: project
 date: 2013-07-21 12:34
 updated: 2014-12-01 07:46
 unique-id: 2014-11-30:pattern-primer
-description: 'A Jekyll fork of Adactio’s Pattern Primer, a pattern documentation tool for designing websites.'
+description: 'A pattern documentation tool for designing websites, based on Jeremy Keith’s Pattern Primer.'
 project-url: http://patternprimer.olivermak.es
 project-source: https://github.com/opattison/Pattern-Primer-Jekyll
 period: 2013-07 to present
 image:
-  - src: image.gif
+  - src: 2014-12-01-pattern-primer-project-feature-screen.png
     alt: 'A screenshot of Jekyll Pattern Primer'
     date: 2014-12-01
 

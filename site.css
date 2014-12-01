@@ -559,10 +559,53 @@ a svg circle {
 }
 
 .highlight,
-.essay {
+.essay,
+.project {
   margin-left: -1em;
   margin-right: -1em;
   padding: 1em;
+}
+
+.project {
+  background-color: hsla(204, 10%, 88%, 1);
+  margin-top: -1em;
+}
+
+.project .project-meta {
+  overflow: auto;
+}
+
+.project-meta li {
+  display: inline-block;
+  float: left;
+  list-style: none;
+  margin: 0;
+  text-align: center;
+  width: 50%;
+}
+
+.project-meta li a {
+  background-color: hsla(4, 60%, 50%, 1);
+  border-bottom: none;
+  color: hsla(204, 10%, 96%, 1);
+  display: block;
+  font-size: .875em;
+  font-weight: 400;
+  padding: 1em 0;
+}
+
+.project-meta li:nth-child(2) a {
+  background-color: hsla(225, 35%, 52%, 1);
+}
+
+.project-meta li a:hover {
+  background-color: hsla(204, 10%, 96%, 1);
+  color: hsla(4, 60%, 50%, 1);
+  border-bottom: none;
+}
+
+.project-meta li:nth-child(2) a:hover {
+  color: hsla(225, 35%, 52%, 1);
 }
 
 /* Feature emphasis text blocks – <div class="feature"> */
@@ -1099,9 +1142,14 @@ screen and (min-resolution: 1.5dppx) {
 
   .highlight,
   .essay,
+  .project,
   .code figcaption {
     margin-left: -2em;
     margin-right: -2em;
+  }
+
+  .project {
+    padding: 2em;
   }
 
   blockquote {
@@ -1184,9 +1232,14 @@ screen and (min-resolution: 1.5dppx) {
 
   .highlight,
   .essay,
+  .project,
   .code figcaption {
     margin-left: -2.5em;
     margin-right: -2.5em;
+  }
+
+  .project {
+    padding: 2.5em;
   }
 
   blockquote {
@@ -1387,6 +1440,10 @@ screen and (min-resolution: 1.5dppx) {
     padding-top: 2em;
   }
 
+  .project {
+    padding: 2em;
+  }
+
   .ancillary {
     float: right;
     font-size: .75em;
@@ -1573,9 +1630,38 @@ screen and (min-resolution: 1.5dppx) {
     top: 25%;
   }
 
+  .dubbel .project {
+    margin: -2em -9em 2em;
+    overflow: auto;
+    position: relative;
+  }
+
+  .dubbel .sample {
+    border-top: 1px solid hsla(204, 10%, 88%, 1);
+    border-bottom: 1px solid hsla(204, 10%, 88%, 1);
+    margin: -2em 2em -2em -2em;
+    float: left;
+    width: calc(50% + 2em);
+  }
+
+  .dubbel .project .description {
+    margin: 0;
+  }
+
+  .dubbel .project-meta {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+  }
+
   .dubbel .highlight {
     margin: 1.5em -9em;
     padding: 1.5em 9em;
+  }
+
+  .dubbel .page-meta .time {
+    width: 36em;
   }
 
 }

@@ -1,9 +1,14 @@
 <article class="project">
-  <img class="project-image" src="{{ site.image-url }}/{{ page.image[0].src }}">
-  <p class="p-summary">{{ page.description }}</p>
+  <img 
+    class="sample"
+    sizes="{{ site.project-sizes }}"
+    src="{{ site.image-url }}/{{ page.image[0].src }}"
+    srcset="{% for srcset_project in site.srcset_project %}{{ site.image-url }}/{{ site.srcset_project[forloop.index0] }}/{{ page.image[0].src }} {{ site.srcset_project[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+  >
+  <p class="p-summary description">{{ page.description }}</p>
   <p>This project was originally published <time class="dt-published" datetime="{{ page.date }}">{{ page.date | date: '%Y-%m-%d' }}</time>{% if page.period %} and worked on from {{ page.period }}{% endif %}.</p>
   <ul class="project-meta">
-    <li><a href="{{ page.project-url }}">View this project</a></li>
-    <li><a href="{{ page.project-source }}">View this project’s source</a></li>
+    <li><a href="{{ page.project-url }}">View it live</a></li>
+    <li><a href="{{ page.project-source }}">View project source</a></li>
   </ul>
 </article>
