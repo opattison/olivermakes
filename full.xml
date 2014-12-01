@@ -3,7 +3,7 @@ title: olivermak.es
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>{{ page.title }}</title>
+  <title>{{ page.title | xml_escape }}</title>
   <link href="{{ site.link.subscribe.full }}" rel="self"/>
   <link href="{{ site.url }}/"/>
   <icon>{{ site.image-url }}/favicon-64.png</icon>
@@ -16,7 +16,7 @@ title: olivermak.es
   
   {% for post in site.posts %}
   <entry>
-    <title>{{ post.title }}</title>
+    <title>{{ post.title | xml_escape }}</title>
     <link href="{{ site.url }}{{ post.url }}"/>
     <published>{{ post.date | date_to_xmlschema }}</published>
     <updated>{{ post.updated | date_to_xmlschema }}</updated>
