@@ -14,6 +14,10 @@ layout: fundamental
     {% if page.title == 'About' %}<div class="e-content h-card page">
     {% else %}<div class="e-content page">{% endif %}
 
+{% if page.category == 'project' %}
+{% include page-project.html %}
+{% endif %}
+
 {{ content }}
 
     </div>

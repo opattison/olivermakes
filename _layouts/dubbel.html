@@ -13,6 +13,10 @@ layout: fundamental
 
     <div class="e-content page">
 
+{% if page.category == 'project' %}
+{% include page-project.html %}
+{% endif %}
+
 {{ content }}
 
     </div>
