@@ -627,6 +627,12 @@ a svg circle {
   color: hsla(225, 35%, 52%, 1);
 }
 
+.project .link li a:focus {
+  background-color: hsla(204, 10%, 96%, 1);
+  color: hsla(204, 80%, 40%, 1);
+  outline: none;
+}
+
 /* Feature emphasis text blocks – <div class="feature"> */
 
 .feature {
@@ -643,7 +649,7 @@ a svg circle {
 
 .feature a:hover,
 .feature a:focus {
-  color: hsla(44, 50%, 44%, 1);
+  color: hsla(204, 10%, 32%, 1);
 }
 
 .center {
@@ -807,7 +813,7 @@ a.reversefootnote:focus {
 
 .top-menu,
 .site-nav .close-menu {
-  background-color: hsla(4, 80%, 40%, 1);
+  background-color: hsla(4, 60%, 50%, 1);
   color: hsla(204, 10%, 98%, 1);
   height: 2.5em;
   margin: 0;
@@ -833,7 +839,6 @@ a.reversefootnote:focus {
 }
 
 .top-menu a:hover,
-.top-menu a:focus,
 .site-nav .close-menu a {
   background-color: hsla(204, 50%, 45%, 1);
 }
@@ -841,7 +846,7 @@ a.reversefootnote:focus {
 .top-menu a:focus,
 .site-nav .close-menu a:focus {
   background-color: hsla(204, 10%, 88%, 1);
-  color: hsla(204, 10%, 18%, 1);
+  color: hsla(204, 80%, 40%, 1);
   outline: none;
 }
 
@@ -983,7 +988,7 @@ a.reversefootnote:focus {
 .site-nav:target li a:focus,
 .photo .site-nav li a:focus {
   background-color: hsla(204, 10%, 88%, 1);
-  color: hsla(204, 10%, 18%, 1);
+  color: hsla(204, 80%, 40%, 1);
   outline: none;
 }
 
@@ -1001,7 +1006,7 @@ a.reversefootnote:focus {
 
 .alt-nav .back-home a,
 .page-meta .later a {
-  background-color: hsla(4, 80%, 40%, 1);
+  background-color: hsla(4, 60%, 50%, 1);
 }
 
 .alt-nav .back-top a,
@@ -1021,34 +1026,32 @@ a.reversefootnote:focus {
 .alt-nav .back-home a:focus,
 .page-meta .later a:hover,
 .page-meta .later a:focus {
-  color: hsla(4, 80%, 40%, 1);
+  color: hsla(4, 60%, 50%, 1);
 }
 
 .alt-nav .back-home a:hover circle {
-  stroke: hsla(4, 80%, 40%, 1);
+  stroke: hsla(4, 60%, 50%, 1);
 }
 
 .alt-nav .back-home a:focus circle {
-  stroke: hsla(204, 10%, 18%, 1);
+  stroke: hsla(204, 80%, 40%, 1);
 }
 
 .alt-nav .back-home a:focus,
 .page-meta .later a:focus {
   background-color: hsla(204, 10%, 88%, 1);
-  color: hsla(204, 10%, 18%, 1);
+  color: hsla(204, 80%, 40%, 1);
 }
 
 .alt-nav .back-top a:hover,
-.alt-nav .back-top a:focus,
-.page-meta .earlier a:hover,
-.page-meta .earlier a:focus {
+.page-meta .earlier a:hover {
   color: hsla(204, 80%, 40%, 1);
 }
 
 .alt-nav .back-top a:focus,
 .page-meta .earlier a:focus {
   background-color: hsla(204, 10%, 88%, 1);
-  color: hsla(204, 10%, 18%, 1);
+  color: hsla(204, 80%, 40%, 1);
 }
 
 .back-home .inner {
