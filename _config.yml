@@ -150,8 +150,10 @@ transparent:
     hsl: 'hsla(204, 10%, 24%, .8)'
   - name: gray3-80
     hsl: 'hsla(204, 10%, 32%, .8)'
-  - name: gray8-80
+  - name: gray7-80
     hsl: 'hsla(204, 10%, 80%, .8)'
+  - name: gray8-80
+    hsl: 'hsla(204, 10%, 88%, .8)'
   - name: boldblue-80
     hsl: 'hsla(204, 50%, 45%, .8)'
   - name: grayblue-50
