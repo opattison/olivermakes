@@ -5,10 +5,21 @@ category: index
 
 ---
 
-<ul>
-{% for post in site.posts %}
-  <li>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-  </li>
+<div class="features">
+{% for post in site.posts limit:2 %}
+{% if post.option contains 'feature' %}
+{% include index-article-feature.html %}
+{% endif %}
 {% endfor %}
-</ul>
+</div>
+<div class="items">
+{% for post in site.posts %}
+{% unless post.option contains 'feature' %}
+{% if post.category == 'photo' %}
+{% include index-article-item_photo.html %}
+{% else %}
+{% include index-article-item.html %}
+{% endif %}
+{% endunless %}
+{% endfor %}
+</div>

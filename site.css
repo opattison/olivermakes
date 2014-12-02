@@ -602,6 +602,7 @@ a svg circle {
   display: block;
   font-size: .875em;
   font-weight: 400;
+  line-height: 1em;
   padding: 1em 0;
   text-align: center;
 }
@@ -1113,16 +1114,20 @@ article img {
 
 /*** Archives **********************************/
 
-.archive {
+.category {
   background-color: hsla(204, 10%, 96%, 1);
 }
 
 .index {
   margin: 1em;
-  overflow: auto;
+  overflow: hidden;
 }
 
-.archive article {
+.category header h1 {
+  text-align: center;
+}
+
+.index article {
   background-color: hsla(204, 10%, 88%, 1);
   display: inline-block;
   position: relative;
@@ -1135,27 +1140,24 @@ article img {
   position: relative;
 }
 
-.archive article h1 {
+.index article h1 {
   display: inline;
   line-height: 1;
 }
 
-.archive .item h1 {
+.index .item h1 {
   font-size: 1.5em;
 }
 
 .item {
-  height: 15em;
   width: 100%;
 }
 
 .item .meta {
   background-color: hsla(204, 10%, 88%, .8);
-  height: 12em;
 }
 
 .item .link {
-  height: 3em;
   margin: 0;
 }
 
@@ -1169,10 +1171,6 @@ article img {
 
 .items .item .link a:hover {
   background-color: hsla(204, 50%, 45%, 1);
-}
-
-.archive .site-nav {
-  margin-top: 1em;
 }
 
 /***! END Archives ***/
@@ -1203,6 +1201,19 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 1.0625em;
   }
 
+  .item {
+    height: 16em;
+  }
+
+  .item .meta {
+    height: 13.5em;
+  }
+
+  .item .link {
+    height: 2.5em;
+  }
+
+
 }
 
 @media screen and (min-width: 28em) {
@@ -1215,11 +1226,11 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .item {
-    height: 13em;
+    height: 14em;
   }
 
   .item .meta {
-    height: 10em;
+    height: 11.5em;
   }
 
 }
@@ -1377,13 +1388,13 @@ screen and (min-resolution: 1.5dppx) {
 
   .item {
     float: left;
-    height: 16em;
+    height: 18em;
     margin: 1em 0 0;
     width: 50%;
   }
 
   .item .meta {
-    height: 13em;
+    height: 15.5em;
   }
 
 }
@@ -1487,14 +1498,6 @@ screen and (min-resolution: 1.5dppx) {
 
   .photo .page-meta {
     margin: 2.75em auto;
-  }
-
-  .item {
-    height: 15em;
-  }
-
-  .item .meta {
-    height: 12em;
   }
 
 }

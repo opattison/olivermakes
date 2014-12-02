@@ -1,8 +1,21 @@
 ---
 title: Photography
-layout: archive
+layout: category
 category: index
 
 ---
 
-{% include index-loop.html %}
+<div class="features">
+{% for post in site.categories.photo %}
+{% if post.option contains 'feature' %}
+{% include index-article-feature.html %}
+{% endif %}
+{% endfor %}
+</div>
+<div class="items">
+{% for post in site.categories.photo %}
+{% unless post.option contains 'feature' %}
+{% include index-article-item_photo.html %}
+{% endunless %}
+{% endfor %}
+</div>

@@ -1,5 +1,5 @@
 ---
-title: 'Design notes: an accounting of dependencies'
+title: 'Designing this site: an accounting of dependencies'
 layout: singel
 category: writing
 date: 2014-11-08 12:34

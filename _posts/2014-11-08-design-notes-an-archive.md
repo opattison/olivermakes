@@ -1,5 +1,5 @@
 ---
-title: 'Design notes: an archive'
+title: 'Designing this site: an archive'
 layout: singel
 category: writing
 date: 2014-11-08 12:34

@@ -1,0 +1,11 @@
+  <article class="item"
+    {% if post.image[0] %} style="background-image: url({{ site.image-url }}/640/{{ post.image[0].src }}); background-size: cover; background-position: 50%;"{% endif %}>
+    <div class="meta">
+      <a href="{{ post.url }}"><h1>{{ post.title }}</h1></a>
+      <p class="p-summary description">{{ post.description }}</p>
+      <p>Published <time class="dt-published" pubdate datetime="{{ post.date }}">{{ post.date | date: '%Y-%m-%d' }}</time>.</p>
+    </div>
+    <div class="link">
+      <a href="{{ post.url }}">View this post</a>
+    </div>
+  </article>

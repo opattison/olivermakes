@@ -1,0 +1,15 @@
+  <article class="feature">
+    <img 
+      sizes="{{ site.project-sizes }}"
+      src="{{ site.image-url }}/{{ post.image[0].src }}"
+      srcset="{% for srcset_project in site.srcset_project %}{{ site.image-url }}/{{ site.srcset_project[forloop.index0] }}/{{ post.image[0].src }} {{ site.srcset_project[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+    >
+    <div class="meta">
+      <a href="{{ post.url }}"><h1>{{ post.title }}</h1></a>
+      <p class="p-summary description">{{ post.description }}</p>
+      <p>Published <time class="dt-published" pubdate datetime="{{ post.date }}">{{ post.date | date: '%Y-%m-%d' }}</time>.</p>
+    </div>
+    <div class="link">
+      <a href="{{ post.url }}">View this post</a>
+    </div>
+  </article>

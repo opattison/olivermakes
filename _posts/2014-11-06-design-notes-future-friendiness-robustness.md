@@ -1,5 +1,5 @@
 ---
-title: 'Design notes: future-friendliness and&nbsp;robustness'
+title: 'Designing this site: future-friendliness and&nbsp;robustness'
 layout: singel
 category: writing
 option:
