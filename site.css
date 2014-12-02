@@ -633,9 +633,9 @@ a svg circle {
   outline: none;
 }
 
-/* Feature emphasis text blocks – <div class="feature"> */
+/* Bold emphasis text blocks – <div class="lucidity"> */
 
-.feature {
+.lucidity {
   color: hsla(204, 50%, 45%, 1);
   font-size: 1.25em;
   font-style: italic;
@@ -643,12 +643,12 @@ a svg circle {
   margin-top: 1em;
 }
 
-.feature a {
+.lucidity a {
   color: hsla(4, 60%, 50%, 1);
 }
 
-.feature a:hover,
-.feature a:focus {
+.lucidity a:hover,
+.lucidity a:focus {
   color: hsla(204, 10%, 32%, 1);
 }
 
@@ -1490,7 +1490,7 @@ screen and (min-resolution: 1.5dppx) {
     padding: 2.5em;
   }
 
-  .singel .feature {
+  .singel .lucidity {
     padding: 0 2em;
   }
 

@@ -25,7 +25,7 @@ It takes a lot of effort to keep a comprehensive and long-lasting archive of one
   <p>This means I have a local repository, a working remote copy on GitHub, and then a local backup of everything (Time Machine), and a remote backup of everything (Backblaze). It is robust enough for now, and it is literally fire-proof.</p>
 </aside>
 
-<div class="feature">I am building an archive.</div>
+<p class="lucidity">I am building an archive.</p>
 
 Git will help me keep track of versions, while ensuring that I lose as little data as possible while working on projects. Because the data for the site will be kept off-site (in a GitHub repo) that can also be backed up in multiple other ways, this should prove more robust and long-lasting than any software I have ever used.
 
