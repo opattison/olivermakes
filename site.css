@@ -559,10 +559,78 @@ a svg circle {
 }
 
 .highlight,
-.essay {
+.essay,
+.project {
   margin-left: -1em;
   margin-right: -1em;
   padding: 1em;
+}
+
+.project {
+  background-color: hsla(204, 10%, 88%, 1);
+  margin-top: -1em;
+}
+
+.project .description {
+  color: hsla(204, 10%, 32%, 1);
+  font-size: 1.125em;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.33333333;
+}
+
+.project .link {
+  overflow: auto;
+}
+
+.project .link li {
+  display: inline-block;
+  float: left;
+  list-style: none;
+  margin: 0;
+  text-align: center;
+  width: 50%;
+}
+
+.project .link li:only-child {
+  width: 100%;
+}
+
+.project .link li a {
+  background-color: hsla(204, 10%, 10%, 1);
+  border-bottom: none;
+  color: hsla(204, 10%, 96%, 1);
+  display: block;
+  font-size: .875em;
+  font-weight: 400;
+  padding: 1em 0;
+}
+
+.project .link li a.project-url {
+  background-color: hsla(4, 60%, 50%, 1);
+}
+
+.project .link li a.project-source {
+  background-color: hsla(225, 35%, 52%, 1);
+}
+
+.project .link li a:hover {
+  background-color: hsla(204, 10%, 96%, 1);
+  border-bottom: none;
+}
+
+.project .link li a.project-url:hover {
+  color: hsla(4, 60%, 50%, 1);
+}
+
+.project .link li a.project-source:hover {
+  color: hsla(225, 35%, 52%, 1);
+}
+
+.project .link li a:focus {
+  background-color: hsla(204, 10%, 96%, 1);
+  color: hsla(204, 80%, 40%, 1);
+  outline: none;
 }
 
 /* Feature emphasis text blocks – <div class="feature"> */
@@ -581,7 +649,7 @@ a svg circle {
 
 .feature a:hover,
 .feature a:focus {
-  color: hsla(44, 50%, 44%, 1);
+  color: hsla(204, 10%, 32%, 1);
 }
 
 .center {
@@ -638,6 +706,14 @@ a svg circle {
 .footnotes li:last-child {
   border: none;
   padding: 0;
+}
+
+.footnotes li p {
+  display: inline; /* overwrites default block style */
+}
+
+.footnotes ol li::before {
+  margin-right: 0;
 }
 
 .footnotes .reversefootnote {
@@ -737,7 +813,7 @@ a.reversefootnote:focus {
 
 .top-menu,
 .site-nav .close-menu {
-  background-color: hsla(4, 80%, 40%, 1);
+  background-color: hsla(4, 60%, 50%, 1);
   color: hsla(204, 10%, 98%, 1);
   height: 2.5em;
   margin: 0;
@@ -763,7 +839,6 @@ a.reversefootnote:focus {
 }
 
 .top-menu a:hover,
-.top-menu a:focus,
 .site-nav .close-menu a {
   background-color: hsla(204, 50%, 45%, 1);
 }
@@ -771,7 +846,7 @@ a.reversefootnote:focus {
 .top-menu a:focus,
 .site-nav .close-menu a:focus {
   background-color: hsla(204, 10%, 88%, 1);
-  color: hsla(204, 10%, 18%, 1);
+  color: hsla(204, 80%, 40%, 1);
   outline: none;
 }
 
@@ -913,7 +988,7 @@ a.reversefootnote:focus {
 .site-nav:target li a:focus,
 .photo .site-nav li a:focus {
   background-color: hsla(204, 10%, 88%, 1);
-  color: hsla(204, 10%, 18%, 1);
+  color: hsla(204, 80%, 40%, 1);
   outline: none;
 }
 
@@ -931,7 +1006,7 @@ a.reversefootnote:focus {
 
 .alt-nav .back-home a,
 .page-meta .later a {
-  background-color: hsla(4, 80%, 40%, 1);
+  background-color: hsla(4, 60%, 50%, 1);
 }
 
 .alt-nav .back-top a,
@@ -951,34 +1026,32 @@ a.reversefootnote:focus {
 .alt-nav .back-home a:focus,
 .page-meta .later a:hover,
 .page-meta .later a:focus {
-  color: hsla(4, 80%, 40%, 1);
+  color: hsla(4, 60%, 50%, 1);
 }
 
 .alt-nav .back-home a:hover circle {
-  stroke: hsla(4, 80%, 40%, 1);
+  stroke: hsla(4, 60%, 50%, 1);
 }
 
 .alt-nav .back-home a:focus circle {
-  stroke: hsla(204, 10%, 18%, 1);
+  stroke: hsla(204, 80%, 40%, 1);
 }
 
 .alt-nav .back-home a:focus,
 .page-meta .later a:focus {
   background-color: hsla(204, 10%, 88%, 1);
-  color: hsla(204, 10%, 18%, 1);
+  color: hsla(204, 80%, 40%, 1);
 }
 
 .alt-nav .back-top a:hover,
-.alt-nav .back-top a:focus,
-.page-meta .earlier a:hover,
-.page-meta .earlier a:focus {
+.page-meta .earlier a:hover {
   color: hsla(204, 80%, 40%, 1);
 }
 
 .alt-nav .back-top a:focus,
 .page-meta .earlier a:focus {
   background-color: hsla(204, 10%, 88%, 1);
-  color: hsla(204, 10%, 18%, 1);
+  color: hsla(204, 80%, 40%, 1);
 }
 
 .back-home .inner {
@@ -1099,9 +1172,18 @@ screen and (min-resolution: 1.5dppx) {
 
   .highlight,
   .essay,
+  .project,
   .code figcaption {
     margin-left: -2em;
     margin-right: -2em;
+  }
+
+  .project {
+    padding: 2em;
+  }
+
+  .project .link li a {
+    font-size: 1em;
   }
 
   blockquote {
@@ -1184,9 +1266,14 @@ screen and (min-resolution: 1.5dppx) {
 
   .highlight,
   .essay,
+  .project,
   .code figcaption {
     margin-left: -2.5em;
     margin-right: -2.5em;
+  }
+
+  .project {
+    padding: 2.5em;
   }
 
   blockquote {
@@ -1387,6 +1474,10 @@ screen and (min-resolution: 1.5dppx) {
     padding-top: 2em;
   }
 
+  .project {
+    padding: 2em;
+  }
+
   .ancillary {
     float: right;
     font-size: .75em;
@@ -1513,14 +1604,14 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .dubbel .page,
-  .dubbel .page-header,
+  .dubbel .page-header .inner,
   .dubbel .page-meta {
     width: 54em;  
   }
 
-  .dubbel .page-header {
-    padding-left: 4.5em;
-    padding-right: 4.5em;
+  .dubbel .page-header .inner {
+    padding-left: 9em;
+    padding-right: 9em;
   }
 
   .dubbel .page {
@@ -1573,9 +1664,38 @@ screen and (min-resolution: 1.5dppx) {
     top: 25%;
   }
 
+  .dubbel .project {
+    margin: -2em -9em 2em;
+    overflow: auto;
+    position: relative;
+  }
+
+  .dubbel .sample {
+    border-top: 1px solid hsla(204, 10%, 88%, 1);
+    border-bottom: 1px solid hsla(204, 10%, 88%, 1);
+    margin: -2em 2em -2em -2em;
+    float: left;
+    width: calc(50% + 2em);
+  }
+
+  .dubbel .project .description {
+    margin: 0;
+  }
+
+  .dubbel .project .link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+  }
+
   .dubbel .highlight {
     margin: 1.5em -9em;
     padding: 1.5em 9em;
+  }
+
+  .dubbel .page-meta .time {
+    width: 36em;
   }
 
 }
