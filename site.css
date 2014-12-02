@@ -702,6 +702,14 @@ a svg circle {
   padding: 0;
 }
 
+.footnotes li p {
+  display: inline; /* overwrites default block style */
+}
+
+.footnotes ol li::before {
+  margin-right: 0;
+}
+
 .footnotes .reversefootnote {
   border: solid 1px hsla(204, 10%, 80%, 1);
   border-radius: .125em;
