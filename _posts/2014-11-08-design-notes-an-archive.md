@@ -5,6 +5,7 @@ category: writing
 date: 2014-11-08 12:34
 updated: 2014-11-29 18:21
 unique-id: 2014-11-08:design-notes-an-archive
+description: 'On my approach to self-archiving.'
 
 ---
 
