@@ -11,7 +11,11 @@ project-source: https://github.com/opattison/Pattern-Primer-Jekyll
 period: 2013-07 to present
 image:
   - src: 2014-12-01-pattern-primer-project-feature-screen.png
-    alt: 'A screenshot of Jekyll Pattern Primer'
+    alt: 'A screenshot of Pattern Primer Jekyll'
+    date: 2014-12-01
+  - src: 2014-12-01-pattern-primer-headings.png
+    alt: 'Heading styles in Pattern Primer Jekyll'
+    caption: 'Find out how your headings look and what markup is needed for them with a primer.'
     date: 2014-12-01
 
 ---
@@ -29,7 +33,15 @@ While working on a project, it can be helpful to both designers/developers and o
 <footer><p>from Jeremy Keith’s <a href="https://adactio.com/journal/5028">Pattern Primer explanation</a></p></footer>
 </blockquote>
 
-Pattern Primer [or similar tools](http://styleguides.io/tools.html) can be used as design clarification and communication tools at any stage in a design process. They are quite useful near the beginning of a project, to make sure that design patterns can stand on their own as atomic units.
+Pattern Primer ([as well as many other similar tools](http://styleguides.io/tools.html)) can be used as design clarification and communication tools at any stage in a design process. They are quite useful near the beginning of a project, to make sure that design patterns can stand on their own as atomic units.
+
+<figure class="image">
+  <img
+    src="{{ site.image-url }}/{{ page.image[1].src }}" 
+    alt="{{ page.image[1].alt }}"
+  >
+  <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
+</figure>
 
 ## Implementation
 
@@ -40,3 +52,7 @@ I forked [Jeremy’s source](https://github.com/adactio/Pattern-Primer) from Git
 - How Jekyll could be used for a project other than a blog or personal site.
 - How to make an open source Jekyll project that would be reusable for other people with the same goals.
 - How to set up Amazon Web Services (S3 and Cloudfront) for hosting a Jekyll site.
+
+- - -
+
+**[View Pattern Primer Jekyll live]({{ page.project-url }})** or **[check it out on GitHub]({{ page.project-source }})**.
