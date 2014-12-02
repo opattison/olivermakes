@@ -1114,6 +1114,10 @@ article img {
 
 /*** Archives **********************************/
 
+.home {
+  background-color: hsla(204, 10%, 96%, 1);
+}
+
 .category {
   background-color: hsla(204, 10%, 96%, 1);
 }
@@ -1123,7 +1127,7 @@ article img {
   overflow: hidden;
 }
 
-.category header h1 {
+.category .index h1 {
   text-align: center;
 }
 
