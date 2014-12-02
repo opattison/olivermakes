@@ -670,11 +670,11 @@ a svg circle {
 }
 
 .ancillary h1 {
-  font: 500 1.25em/1.5 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
+  font: 500 1.25em/1.25 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
 }
 
 .ancillary h2 {
-  font: 400 1.125em/1.5 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
+  font: 400 1.125em/1.125 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
 }
 
 .ancillary img {
@@ -1671,8 +1671,8 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .dubbel .sample {
-    border-top: 1px solid hsla(204, 10%, 88%, 1);
-    border-bottom: 1px solid hsla(204, 10%, 88%, 1);
+    border-top: solid 1px hsla(204, 10%, 88%, 1);
+    border-bottom: solid 1px hsla(204, 10%, 88%, 1);
     margin: -2em 2em -2em -2em;
     float: left;
     width: calc(50% + 2em);
