@@ -7,8 +7,8 @@
   >
   <p class="p-summary description">{{ page.description }}</p>
   <p>This project was originally published <time class="dt-published" datetime="{{ page.date }}">{{ page.date | date: '%Y-%m-%d' }}</time>{% if page.period %} and worked on from {{ page.period }}{% endif %}.</p>
-  <ul class="project-meta">
-    <li><a href="{{ page.project-url }}">View it live</a></li>
-    <li><a href="{{ page.project-source }}">View project source</a></li>
+  <ul class="link">
+    {% if page.project-url %}<li><a class="project-url" href="{{ page.project-url }}">View it live</a></li>{% endif %}
+    {% if page.project-source %}<li><a class="project-source" href="{{ page.project-source }}">View project source</a></li>{% endif %}
   </ul>
 </article>

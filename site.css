@@ -571,11 +571,19 @@ a svg circle {
   margin-top: -1em;
 }
 
-.project .project-meta {
+.project .description {
+  color: hsla(204, 10%, 32%, 1);
+  font-size: 1.125em;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.33333333;
+}
+
+.project .link {
   overflow: auto;
 }
 
-.project-meta li {
+.project .link li {
   display: inline-block;
   float: left;
   list-style: none;
@@ -584,8 +592,12 @@ a svg circle {
   width: 50%;
 }
 
-.project-meta li a {
-  background-color: hsla(4, 60%, 50%, 1);
+.project .link li:only-child {
+  width: 100%;
+}
+
+.project .link li a {
+  background-color: hsla(204, 10%, 10%, 1);
   border-bottom: none;
   color: hsla(204, 10%, 96%, 1);
   display: block;
@@ -594,17 +606,24 @@ a svg circle {
   padding: 1em 0;
 }
 
-.project-meta li:nth-child(2) a {
+.project .link li a.project-url {
+  background-color: hsla(4, 60%, 50%, 1);
+}
+
+.project .link li a.project-source {
   background-color: hsla(225, 35%, 52%, 1);
 }
 
-.project-meta li a:hover {
+.project .link li a:hover {
   background-color: hsla(204, 10%, 96%, 1);
-  color: hsla(4, 60%, 50%, 1);
   border-bottom: none;
 }
 
-.project-meta li:nth-child(2) a:hover {
+.project .link li a.project-url:hover {
+  color: hsla(4, 60%, 50%, 1);
+}
+
+.project .link li a.project-source:hover {
   color: hsla(225, 35%, 52%, 1);
 }
 
@@ -1152,6 +1171,10 @@ screen and (min-resolution: 1.5dppx) {
     padding: 2em;
   }
 
+  .project .link li a {
+    font-size: 1em;
+  }
+
   blockquote {
     border-width: .5em;
     margin-left: -2em;
@@ -1648,7 +1671,7 @@ screen and (min-resolution: 1.5dppx) {
     margin: 0;
   }
 
-  .dubbel .project-meta {
+  .dubbel .project .link {
     position: absolute;
     bottom: 0;
     right: 0;
