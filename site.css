@@ -1139,7 +1139,7 @@ article img {
   text-align: center;
 }
 
-.index article h1 {
+.index article {
   background-color: hsla(204, 10%, 88%, 1);
   display: inline-block;
   position: relative;
