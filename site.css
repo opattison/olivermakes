@@ -583,59 +583,64 @@ a svg circle {
   overflow: auto;
 }
 
-.project .link li {
+.link li {
   display: inline-block;
   float: left;
   list-style: none;
   margin: 0;
-  text-align: center;
   width: 50%;
 }
 
-.project .link li:only-child {
+.link li:only-child {
   width: 100%;
 }
 
-.project .link li a {
-  background-color: hsla(204, 10%, 10%, 1);
+.link a {
+  background-color: hsla(204, 10%, 18%, 1);
   border-bottom: none;
   color: hsla(204, 10%, 96%, 1);
   display: block;
   font-size: .875em;
   font-weight: 400;
+  line-height: 1em;
   padding: 1em 0;
+  text-align: center;
 }
 
-.project .link li a.project-url {
+.link a.project-url {
   background-color: hsla(4, 60%, 50%, 1);
 }
 
-.project .link li a.project-source {
+.link a.project-source {
   background-color: hsla(225, 35%, 52%, 1);
 }
 
-.project .link li a:hover {
-  background-color: hsla(204, 10%, 96%, 1);
+.link a:hover {
+  background-color: hsla(204, 80%, 40%, 1);
   border-bottom: none;
+  outline: none;
 }
 
-.project .link li a.project-url:hover {
+.link a.project-url:hover {
+  background-color: hsla(204, 10%, 96%, 1);
   color: hsla(4, 60%, 50%, 1);
 }
 
-.project .link li a.project-source:hover {
+.link a.project-source:hover {
+  background-color: hsla(204, 10%, 96%, 1);
   color: hsla(225, 35%, 52%, 1);
 }
 
-.project .link li a:focus {
-  background-color: hsla(204, 10%, 96%, 1);
+.link a:focus {
+  background-color: hsla(204, 10%, 93%, 1);
+  border-bottom: none;
   color: hsla(204, 80%, 40%, 1);
   outline: none;
 }
 
-/* Feature emphasis text blocks – <div class="feature"> */
+/* Bold emphasis text blocks – <div class="lucidity"> */
 
-.feature {
+.lucidity {
   color: hsla(204, 50%, 45%, 1);
   font-size: 1.25em;
   font-style: italic;
@@ -643,12 +648,12 @@ a svg circle {
   margin-top: 1em;
 }
 
-.feature a {
+.lucidity a {
   color: hsla(4, 60%, 50%, 1);
 }
 
-.feature a:hover,
-.feature a:focus {
+.lucidity a:hover,
+.lucidity a:focus {
   color: hsla(204, 10%, 32%, 1);
 }
 
@@ -670,11 +675,11 @@ a svg circle {
 }
 
 .ancillary h1 {
-  font: 500 1.25em/1.5 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
+  font: 500 1.25em/1.25 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
 }
 
 .ancillary h2 {
-  font: 400 1.125em/1.5 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
+  font: 400 1.125em/1.125 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
 }
 
 .ancillary img {
@@ -738,17 +743,18 @@ a.reversefootnote:focus {
 /*** Site headers and footers ******************/
 
 .site-header {
-  margin-bottom: 2.5em;
-  padding: 1em 0;
+  height: 7em;
+  padding-top: .5em;
 }
 
 .title {
   color: hsla(204, 10%, 18%, 1);
   display: block;
-  height: 2.5em;
+  height: 3.5em;
   margin: 0 auto;
+  padding: .5em;
   position: relative;
-  width: 13em;
+  width: 14em;
 }
 
 .title h1 {
@@ -840,7 +846,7 @@ a.reversefootnote:focus {
 
 .top-menu a:hover,
 .site-nav .close-menu a {
-  background-color: hsla(204, 50%, 45%, 1);
+  background-color: hsla(204, 80%, 40%, 1);
 }
 
 .top-menu a:focus,
@@ -912,7 +918,7 @@ a.reversefootnote:focus {
 }
 
 .site-nav li a:hover {
-  background-color: hsla(204, 50%, 45%, 1);
+  background-color: hsla(204, 80%, 40%, 1);
 }
 
 /* Target navigation - JS-free modal navigation */
@@ -957,7 +963,7 @@ a.reversefootnote:focus {
 
 .site-nav:target li a:hover,
 .photo .site-nav li a:hover {
-  background-color: hsla(204, 50%, 45%, .8);
+  background-color: hsla(204, 80%, 40%, .8);
 }
 
 .site-nav:target .close-menu {
@@ -1011,7 +1017,7 @@ a.reversefootnote:focus {
 
 .alt-nav .back-top a,
 .page-meta .earlier a {
-  background-color: hsla(204, 80%, 40%, 1);
+  background-color: hsla(204, 50%, 45%, 1);
 }
 
 .alt-nav a:hover,
@@ -1034,18 +1040,18 @@ a.reversefootnote:focus {
 }
 
 .alt-nav .back-home a:focus circle {
-  stroke: hsla(204, 80%, 40%, 1);
+  stroke: hsla(4, 80%, 40%, 1);
 }
 
 .alt-nav .back-home a:focus,
 .page-meta .later a:focus {
   background-color: hsla(204, 10%, 88%, 1);
-  color: hsla(204, 80%, 40%, 1);
+  color: hsla(4, 80%, 40%, 1);
 }
 
 .alt-nav .back-top a:hover,
 .page-meta .earlier a:hover {
-  color: hsla(204, 80%, 40%, 1);
+  color: hsla(204, 50%, 45%, 1);
 }
 
 .alt-nav .back-top a:focus,
@@ -1076,7 +1082,7 @@ a.reversefootnote:focus {
 
 /***! END Site headers and footers ***/
 
-/*** Image styles ******************************/
+/*** Images ************************************/
 
 article img {
   width: 100%;
@@ -1109,7 +1115,85 @@ article img {
   font-size: .875em;
 }
 
-/***! END Image styles ***/
+/***! END Images ***/
+
+/*** Archives **********************************/
+
+.home {
+  background-color: hsla(204, 10%, 96%, 1);
+}
+
+.category {
+  background-color: hsla(204, 10%, 96%, 1);
+}
+
+.index {
+  margin: 1em;
+  overflow: hidden;
+}
+
+.index header h1 {
+  font-size: 1.25em;
+  font-weight: 300;
+  letter-spacing: -.03125em;
+  text-align: center;
+}
+
+.index article {
+  background-color: hsla(204, 10%, 88%, 1);
+  display: inline-block;
+  position: relative;
+}
+
+.index article h1 {
+  display: inline;
+  line-height: 1;
+}
+
+.meta {
+  margin: 0;
+  padding: 1em;
+  position: relative;
+}
+
+.item {
+  width: 100%;
+}
+
+.item .meta {
+  background-color: hsla(204, 10%, 88%, .8);
+}
+
+.item .meta h1 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.item .description {
+  font-weight: 400;
+}
+
+.item .time {
+  font-weight: 300;
+}
+
+.item .link {
+  margin: 0;
+}
+
+.item .link a {
+  background-color: hsla(204, 10%, 18%, 1);
+}
+
+.item:nth-child(2n + 2) .link a {
+  background-color: hsla(204, 10%, 24%, 1);
+}
+
+.items .item .link a:hover {
+  background-color: hsla(204, 80%, 40%, 1);
+}
+
+/***! END Archives ***/
 
 /*** Media queries *****************************/
 
@@ -1137,6 +1221,19 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 1.0625em;
   }
 
+  .item {
+    height: 16em;
+  }
+
+  .item .meta {
+    height: 13.5em;
+  }
+
+  .item .link {
+    height: 2.5em;
+  }
+
+
 }
 
 @media screen and (min-width: 28em) {
@@ -1146,6 +1243,14 @@ screen and (min-resolution: 1.5dppx) {
   .page-meta,
   .site-info {
     font-size: 1.125em;
+  }
+
+  .item {
+    height: 14em;
+  }
+
+  .item .meta {
+    height: 11.5em;
   }
 
 }
@@ -1182,7 +1287,7 @@ screen and (min-resolution: 1.5dppx) {
     padding: 2em;
   }
 
-  .project .link li a {
+  .project .link a {
     font-size: 1em;
   }
 
@@ -1194,11 +1299,18 @@ screen and (min-resolution: 1.5dppx) {
 
   .site-header {
     height: 4.5em;
-    margin-bottom: 0;
   }
 
   .title {
-    margin: 0 2em;
+    margin: 0 1.5em;
+  }
+
+  .index-title {
+    margin: 0 .5em;
+  }
+
+  .index header h1 {
+    text-align: left;
   }
 
   .top-menu,
@@ -1247,7 +1359,11 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .title {
-    margin: 0 3em;
+    margin: 0 2.5em;
+  }
+
+  .index-title {
+    margin: 0 .5em;
   }
 
   .image,
@@ -1297,6 +1413,26 @@ screen and (min-resolution: 1.5dppx) {
     margin-top: 2.5em;
   }
 
+  .index {
+    margin: 1em auto;
+    max-width: 45em;
+  }
+
+  .index header h1 {
+    margin-left: .8em;
+  }
+
+  .item {
+    float: left;
+    height: 18em;
+    margin: 1em 0 0;
+    width: 50%;
+  }
+
+  .item .meta {
+    height: 15.5em;
+  }
+
 }
 
 @media screen and (min-width: 40em) {
@@ -1325,6 +1461,11 @@ screen and (min-resolution: 1.5dppx) {
     font-size: .75em;
   }
 
+  .index header h1 {
+    margin: 0;
+    text-align: center;
+  }
+
 }
 
 @media screen and (min-width: 45em) {
@@ -1333,6 +1474,17 @@ screen and (min-resolution: 1.5dppx) {
   .page-header .inner,
   .page-meta {
     width: 36em;
+  }
+
+  .site-header {
+    height: auto;
+    padding: 0;
+  }
+
+  .title,
+  .index-title {
+    font-size: 1.25em;
+    margin: .5em auto 1em;
   }
 
   .page-header {
@@ -1398,15 +1550,6 @@ screen and (min-resolution: 1.5dppx) {
     line-height: 1.5;
   }
 
-  .site-header {
-    height: auto;
-    padding: 1.5em 0;
-  }
-
-  .title {
-    font-size: 1.25em;
-  }
-
 }
 
 @media screen and (min-width: 60em) {
@@ -1421,8 +1564,8 @@ screen and (min-resolution: 1.5dppx) {
     width: 45em;
   }
 
-  .site-header {
-    padding-bottom: 2.5em;
+  .title {
+    margin-bottom: 1.5em;
   }
 
   .page-header .inner {
@@ -1447,7 +1590,8 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .site-nav li a,
-  .alt-nav li a {
+  .alt-nav li a,
+  .index {
     font-size: 1.25em;
   }
 
@@ -1490,7 +1634,7 @@ screen and (min-resolution: 1.5dppx) {
     padding: 2.5em;
   }
 
-  .singel .feature {
+  .singel .lucidity {
     padding: 0 2em;
   }
 
@@ -1671,8 +1815,8 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .dubbel .sample {
-    border-top: 1px solid hsla(204, 10%, 88%, 1);
-    border-bottom: 1px solid hsla(204, 10%, 88%, 1);
+    border-top: solid 1px hsla(204, 10%, 88%, 1);
+    border-bottom: solid 1px hsla(204, 10%, 88%, 1);
     margin: -2em 2em -2em -2em;
     float: left;
     width: calc(50% + 2em);
@@ -1706,12 +1850,18 @@ screen and (min-resolution: 1.5dppx) {
     max-width: 67.5em;
   }
 
-  .site-header {
-    padding-top: 2.25em;
-  }
-
   .title {
     font-size: 1.5em;
+    margin: 1.5em auto;
+  }
+
+  .top-menu,
+  .site-nav .close-menu {
+    font-size: 1.125em;
+  }
+
+  .site-nav:target {
+    padding-top: 5em;
   }
 
   .singel .page,
@@ -1812,10 +1962,6 @@ screen and (min-resolution: 1.5dppx) {
   .page-header,
   .page-meta {
     font-size: 1.75em;
-  }
-
-  .site-header {
-    padding-top: 4.5em;
   }
 
   .hero,

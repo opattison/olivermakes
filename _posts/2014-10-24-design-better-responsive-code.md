@@ -4,10 +4,12 @@ layout: singel
 option:
   - hero
   - code
+  - index-image
 category: writing
 date: 2014-10-24 16:15
 updated: 2014-11-28 00:05
 unique-id: 2014-10-24:better-responsive-code
+description: 'A CSS walkthrough of an approach to code blocks for responsive websites and technical documentation.'
 image:
   - src: 2014-11-26-hero-design-better-css-desat.png
     alt: ''

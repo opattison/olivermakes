@@ -5,6 +5,7 @@ category: photo
 date: 2014-03-23 12:34
 updated: 2014-11-28 03:07
 unique-id: 2014-03-23:chichester-street-reflection
+description: 'After the rain in Chichester, on a brief trip to England.'
 image:
   - src: 2014-03-23-chichester-street-reflection-olivermakes-ccbync.jpg
     alt: 'Reflections from a puddle where a street meets a sidewalk'
@@ -19,6 +20,7 @@ image:
     latitude: 50.8387
     longitude: -0.7782
     description: 'VSCOcam m5 preset'
+    aspect: '3:2'
 
 ---
 

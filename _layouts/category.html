@@ -3,11 +3,15 @@ layout: fundamental
 
 ---
 
-<body class="home">
+<body class="category category-{{ page.title | downcase }}">
 
 {% include site-header.html %}
 
   <section class="index">
+
+    <header>
+      <h1>/{{ page.title | downcase }}</h1>
+    </header>
 
 {{ content }}
 

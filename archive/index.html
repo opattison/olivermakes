@@ -1,0 +1,14 @@
+---
+title: Archive
+layout: archive
+category: index
+
+---
+
+<div class="items">
+{% for post in site.posts %}
+{% unless post.option contains 'feature' %}
+{% include index-article-item.html %}
+{% endunless %}
+{% endfor %}
+</div>
