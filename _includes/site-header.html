@@ -1,5 +1,5 @@
   <header class="site-header" id="top" role="banner">
-    <a class="title" href="/" rel="home" tabindex="1">
+    <a class="title{% if page.category contains 'index' %}{% unless page.title == 'Home' %} index-title{% endunless %}{% endif %}" href="/" rel="home" tabindex="1">
       {% include site-logo.html %}
       <h1>{{ site.title }}</h1>
     </a>
