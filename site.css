@@ -1137,20 +1137,15 @@ article img {
   position: relative;
 }
 
-.meta {
-  font-weight: 400;
-  margin: 0;
-  padding: 1em;
-  position: relative;
-}
-
 .index article h1 {
   display: inline;
   line-height: 1;
 }
 
-.index .item h1 {
-  font-size: 1.5em;
+.meta {
+  margin: 0;
+  padding: 1em;
+  position: relative;
 }
 
 .item {
@@ -1159,6 +1154,15 @@ article img {
 
 .item .meta {
   background-color: hsla(204, 10%, 88%, .8);
+}
+
+.item .meta h1 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.item .description {
+  font-weight: 400;
 }
 
 .item .link {
@@ -1386,7 +1390,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .index {
-    margin: 0 auto;
+    margin: 1em auto;
     max-width: 45em;
   }
 
