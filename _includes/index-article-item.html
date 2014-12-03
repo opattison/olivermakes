@@ -5,6 +5,6 @@
       <p>Published <time class="dt-published" pubdate datetime="{{ post.date }}">{{ post.date | date: '%Y-%m-%d' }}</time></p>
     </div>
     <div class="link">
-      <a href="{{ post.url }}">View this post</a>
+      <a href="{{ post.url }}">{% if post.category == 'project' %}View this project{% elsif post.category == 'writing' %}Read this post{% else %}View this post{% endif %}</a>
     </div>
   </article>
