@@ -616,7 +616,7 @@ a svg circle {
 }
 
 .link a:hover {
-  background-color: hsla(204, 50%, 45%, 1);
+  background-color: hsla(204, 80%, 40%, 1);
   border-bottom: none;
 }
 
@@ -841,7 +841,7 @@ a.reversefootnote:focus {
 
 .top-menu a:hover,
 .site-nav .close-menu a {
-  background-color: hsla(204, 50%, 45%, 1);
+  background-color: hsla(204, 80%, 40%, 1);
 }
 
 .top-menu a:focus,
@@ -913,7 +913,7 @@ a.reversefootnote:focus {
 }
 
 .site-nav li a:hover {
-  background-color: hsla(204, 50%, 45%, 1);
+  background-color: hsla(204, 80%, 40%, 1);
 }
 
 /* Target navigation - JS-free modal navigation */
@@ -958,7 +958,7 @@ a.reversefootnote:focus {
 
 .site-nav:target li a:hover,
 .photo .site-nav li a:hover {
-  background-color: hsla(204, 50%, 45%, .8);
+  background-color: hsla(204, 80%, 40%, .8);
 }
 
 .site-nav:target .close-menu {
@@ -1185,7 +1185,7 @@ article img {
 }
 
 .items .item .link a:hover {
-  background-color: hsla(204, 50%, 45%, 1);
+  background-color: hsla(204, 80%, 40%, 1);
 }
 
 /***! END Archives ***/
