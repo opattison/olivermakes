@@ -1,4 +1,4 @@
-  <article class="item"{% if post.option contains 'index-image' %} style="background-image: url({{ site.image-url }}/index/{{ post.image[0].src }}); background-size: cover; background-position: 50%;"{% endif %}>
+  <article class="item"{% if post.option contains 'index-image' or post.category == 'photo' %} style="background-image: url({{ site.image-url }}/index/{{ post.image[0].src }}); background-size: cover; background-position: 50%;"{% endif %}>
     <div class="meta">
       <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
       <p class="p-summary description">{{ post.description }}</p>

@@ -15,7 +15,7 @@ category: index
 <div class="items">
 {% for post in site.categories.photo %}
 {% unless post.option contains 'feature' %}
-{% include index-article-item_photo.html %}
+{% include index-article-item.html %}
 {% endunless %}
 {% endfor %}
 </div>
