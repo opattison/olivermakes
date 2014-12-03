@@ -15,11 +15,7 @@ category: index
 <div class="items">
 {% for post in site.posts %}
 {% unless post.option contains 'feature' %}
-{% if post.category == 'photo' %}
-{% include index-article-item_photo.html %}
-{% else %}
 {% include index-article-item.html %}
-{% endif %}
 {% endunless %}
 {% endfor %}
 </div>
