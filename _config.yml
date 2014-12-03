@@ -108,6 +108,9 @@ color:
   - name: boldblue
     hsl: 'hsla(204, 80%, 40%, 1)'
     hex: '#1476b8'
+  - name: darkblue
+    hsl: 'hsla(204, 80%, 32%, 1)'
+    hex: '#105f93'
   - name: grayblue
     hsl: 'hsla(204, 30%, 80%, 1)'
     hex: '#bdcfdb'

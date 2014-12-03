@@ -208,7 +208,7 @@ a {
 
 a:hover,
 a:focus {
-  color: hsla(204, 80%, 40%, 1);
+  color: hsla(204, 80%, 32%, 1);
   transition-duration: 160ms;
 }
 
@@ -1189,8 +1189,12 @@ article img {
   background-color: hsla(204, 10%, 24%, 1);
 }
 
-.items .item .link a:hover {
+.item .link a:hover {
   background-color: hsla(204, 80%, 40%, 1);
+}
+
+.item .link a:focus {
+  background-color: hsla(204, 10%, 93%, 1);
 }
 
 /***! END Archives ***/
