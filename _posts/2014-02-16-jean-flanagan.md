@@ -20,6 +20,8 @@ Both of us realized that WordPress was no longer a good fit. We both wanted more
 
 We decided to go with Jekyll because it would allow for a high performance site with a lot of flexibility in design and configuration. We realized that there would be a learning curve for both of us, since I had only just gotten started with Jekyll and it would be new for Jean.
 
+## Getting it right is difficult
+
 ## Features of the site
 
 ### Content first
@@ -33,6 +35,6 @@ We decided to go with Jekyll because it would allow for a high performance site 
 - I learned how to set up a Jekyll site for personal publishing, with processes that would inspire me to create my own site.
 - I learned how to use [GitHub Issues](https://github.com/opattison/jeancflanagan/issues) to communicate in real time about the process, as well as document the history of the project.
 - Working with development environments and version control is essential for a collaborative project, even if only two people are involved and their roles are well-defined.
-- Designing for yourself or someone close to you is difficult. This process took months longer than we thought it might initially, but it ended up being worth additional effort to get certain design elements done *right*.
+- Designing for yourself or someone close to you is difficult. This process took months longer than we thought it might initially, but it ended up being worth additional effort to get certain design and content elements done *right*. Publishing something on the web is easy, but creating something lasting that you won’t want to scrap and rework later can take a signifincant amount of time and effort.
 
 [^1]: I wrote more about my preference of tools like Jekyll against tools like WordPress in [an essay on future-friendliness and robustness]({% post_url 2014-11-06-design-notes-future-friendiness-robustness.md %}).
