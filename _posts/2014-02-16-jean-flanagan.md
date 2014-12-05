@@ -55,7 +55,7 @@ The site was designed from small screens up, using flexible images, fluid layout
 
 ### Content first
 
-The first thing we started out with were full-length articles about science, already written and edited. Having content ahead of time meant that the site could be designed around *actual words and images* rather than lorem ipsum filler text. It was essential to the process to test typography and proportion with real content.
+The first thing we started out with were full-length articles about science, already written and edited. Having content ahead of time meant that the site could be designed around *actual words and images* rather than lorem ipsum filler text. (I really don’t like using lorem ipsum if I can help it. [^1]) It was essential to the process to test typography and proportion with real content.
 
 Designing in a browser meant that HTML prototypes were an early part of the process, right after sketching and rough notes. In the first week of active development, prototype code was being written that would evolve into the finished product.
 
@@ -140,7 +140,7 @@ Jean already had a personal WordPress site, which I had helped her transition fr
 
 Both of us realized that WordPress was no longer a good fit. We both wanted more control over the design. Jean wanted more control over content and flexible layouts, as well as an interface that wouldn’t involve fighting with a WYSIWYG editor or administering a content management system and database. The trade-off of ease-of-use and getting started quickly with WordPress was outweighed by a desire to publish independently and to develop a process that would be able to withstand servers misbehaving, databases being corrupted, or any of the pitfalls of locking in to a “platform”.
 
-We chose [Jekyll](http://jekyllrb.com) because it would allow for a high performance site with plenty of flexibility in design and configuration. We realized that there would be a learning curve for both of us, since I had only just gotten started with Jekyll and it would be new for Jean. A site built of flat files and no <abbr title="content management system">CMS</abbr> nor server-side processing is limiting for some applications, but has great advantages in performance and maintainability. [^1]
+We chose [Jekyll](http://jekyllrb.com) because it would allow for a high performance site with plenty of flexibility in design and configuration. We realized that there would be a learning curve for both of us, since I had only just gotten started with Jekyll and it would be new for Jean. A site built of flat files and no <abbr title="content management system">CMS</abbr> nor server-side processing is limiting for some applications, but has great advantages in performance and maintainability. [^2]
 
 ## Getting it right is difficult
 
@@ -152,9 +152,10 @@ Publishing something on the web is relatively easy, but creating something lasti
 - I learned how to set up a Jekyll site for personal publishing, with processes that would inspire me to create my own site.
 - We figured out how to use [GitHub Issues](https://github.com/opattison/jeancflanagan/issues) to communicate in real time about the process, organize our work, and document the history of the project.
 - Working with development environments and version control is essential for a collaborative project, even if only two people are involved and their roles are well-defined.
-- Designing for yourself or someone close to you is difficult. This process took months longer than we thought it might initially, but it ended up being worth additional effort to get certain design and content elements done *right*.
+- Designing for yourself or someone close to you takes time. This process took months longer than we thought it might initially, but it ended up being worth additional effort to get certain design and content elements done *right*.
 
-[^1]: I wrote more about my preference of minimal tools like Jekyll instead of tools like WordPress in [an essay on future-friendliness and robustness]({% post_url 2014-11-06-design-notes-future-friendiness-robustness %}).
+[^1]: Using lorem ipsum filler text encourages people reviewing the design *not* to read the text, which makes it difficult to judge legibility of body text until too late in the design process. [Nathan Ford wrote some good words](http://artequalswork.com/posts/tweeking.php) on this topic. Nathan Ford suggests reading tweets instead of ipsum, but I prefer a different approach. If I am constrained in my ability to design content-first, my current practice is to use unread content from my Instapaper queue, so my eyes will focus on trying to read in the working design or prototype.
+[^2]: I wrote more about my preference of minimal tools like Jekyll instead of tools like WordPress in [an essay on future-friendliness and robustness]({% post_url 2014-11-06-design-notes-future-friendiness-robustness %}).
 
 - - -
 
