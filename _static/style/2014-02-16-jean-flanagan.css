@@ -2,6 +2,7 @@
 
 #error-404 figure {
   background-color: hsla(190, 40%, 75%, 1);
+  overflow: hidden;
   -webkit-animation: blueshift 10s ease-in-out infinite forwards;
   animation: blueshift 10s ease-in-out infinite forwards;
 }
@@ -27,7 +28,7 @@
 @media screen and (min-width: 60em) {
 
   #error-404 img {
-    padding: 2em 10em;
+    padding: 2em 12em;
   }
 
 }
@@ -35,7 +36,7 @@
 @media screen and (min-width: 70em) {
 
   #error-404 img {
-    padding: 2em 12em;
+    padding: 2em 16em;
   }
 
 }
