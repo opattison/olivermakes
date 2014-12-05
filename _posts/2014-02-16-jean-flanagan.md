@@ -12,13 +12,7 @@ description: ''
 
 My partner Jean Flanagan and I have a shared interest in self-archiving. Often we write and edit collaboratively. We have worked together on shared photography repositories. So it made sense for us to pool our resources to make Jean a website to feature her writing and photography. Jean would collect and edit her output and I would help her design and develop it.
 
-## Choosing Jekyll
 
-Jean already had a personal WordPress site, which I had helped her transition from the limited WordPress.com service to her own personal domain and host. The problems were limitations in configuration and design. I could certainly help redesign a WordPress site, but it would be an uphill battle since I have not ever made a theme from scratch, and I don’t know much PHP. Building on existing themes was a sure way to end up with a design with compromises and inflexibility.
-
-Both of us realized that WordPress was no longer a good fit. We both wanted more control over the design. Jean wanted more control over content and flexible layouts, as well as an interface that wouldn’t involve fighting with a WYSIWYG editor or administering a CMS and database. The trade-off of ease-of-use and getting started quickly with WordPress was outweighed by a desire to publish independently and to develop a process that would be able to withstand servers misbehaving, databases being corrupted, or any of the pitfalls of locking in to a “platform”. [^1]
-
-We decided to go with Jekyll because it would allow for a high performance site with a lot of flexibility in design and configuration. We realized that there would be a learning curve for both of us, since I had only just gotten started with Jekyll and it would be new for Jean.
 
 ## Features of the site
 
@@ -32,11 +26,19 @@ The first thing we started out with were full-length articles about science, alr
 
 ### Personality
 
+## Choosing Jekyll
 
+Jean already had a personal WordPress site, which I had helped her transition from the limited WordPress.com service to her own personal domain and host. The problems were limitations in configuration and design. I could certainly help redesign a WordPress site, but it would be an uphill battle since I have not ever made a theme from scratch, and I don’t know much PHP. Building on existing themes was a sure way to end up with a design with compromises and inflexibility.
+
+Both of us realized that WordPress was no longer a good fit. We both wanted more control over the design. Jean wanted more control over content and flexible layouts, as well as an interface that wouldn’t involve fighting with a WYSIWYG editor or administering a content management system and database. The trade-off of ease-of-use and getting started quickly with WordPress was outweighed by a desire to publish independently and to develop a process that would be able to withstand servers misbehaving, databases being corrupted, or any of the pitfalls of locking in to a “platform”. [^1]
+
+We chose Jekyll because it would allow for a high performance site with plenty of flexibility in design and configuration. We realized that there would be a learning curve for both of us, since I had only just gotten started with Jekyll and it would be new for Jean. A site built of flat files and no <abbr title="content management system">CMS</abbr> nor server-side processing is limiting for some applications, but has great advantages in performance and maintainability.
 
 ## Getting it right is difficult
 
 Publishing something on the web is relatively easy, but creating something lasting that you won’t want to scrap and rework later can take a significant amount of time and effort. For this project, both design and content were weighed deliberately.
+
+
 
 ## What I learned from this project
 
