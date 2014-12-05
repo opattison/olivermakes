@@ -1104,6 +1104,12 @@ article img {
   width: 66.66666667%;
 }
 
+/* Screenshot border/outline helper */
+
+.screenshot img {
+  outline: solid 1px hsla(204, 10%, 88%, 1);
+}
+
 /* Hero figure-image */
 
 .hero {
