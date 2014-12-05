@@ -30,7 +30,14 @@
       stroke: hsla(204, 10%, 98%, 1);
     }
 
+    #error .title:hover .logo circle {
+      -webkit-animation-name: step-fill--404;
+              animation-name: step-fill--404;
+    }
 
+    #error .title:focus .logo circle {
+      fill: hsla(204, 10%, 98%, 1);
+    }
 
     #error .top-menu, 
     #error .site-nav .close-menu {
@@ -63,14 +70,20 @@
 
     #error [role="main"] {
       color: hsla(204, 10%, 98%, 1);
+      text-align: center;
     }
 
     #error [role="main"] a {
       color: hsla(204, 10%, 96%, 1);
     }
 
+    #error [role="main"] a:hover,
+    #error [role="main"] a:focus {
+      color: hsla(204, 30%, 80%, 1);
+    }
+
     #error [role="main"] .logo {
-      margin: 1.25em auto;
+      margin: 0 auto;
       max-width: 35em;
       width: 50%;
     }
@@ -169,7 +182,7 @@
         </div>
       </a>
 
-      <p>If you want to help me out with this error, copy the URL at the top of the page and create a GitHub Issue or <a href="mailto:oliverpattison@gmail.com">email me</a> with the title <strong>404</strong> letting me know how you got to this error page. Thanks!</p>
+      <p>If you want to help me out with this error, copy the URL from your browser and <strong><a href="https://github.com/opattison/olivermakes/issues">create a GitHub Issue</a></strong> or <strong><a href="mailto:oliverpattison@gmail.com">email me</a></strong> with the title <strong>404</strong> letting me know how you got to this error page. Thanks!</p>
 
       <p><strong><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">What’s a 404</a></strong> though?</p>
 
