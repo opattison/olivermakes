@@ -17,7 +17,7 @@ image:
     shutter: '1/80'
     iso: 2000
     latitude: 38.9172
-    longitude: -77.0460
+    longitude: 77.0460
     description: 'VSCO Film Kodak Portra 400'
 
 ---
