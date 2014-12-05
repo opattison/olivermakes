@@ -1346,7 +1346,7 @@ screen and (min-resolution: 1.5dppx) {
     margin-right: -2em;
   }
 
-  .ancillary img {;
+  .ancillary img {
     width: calc(100% + 2em)
   }
 
@@ -2022,8 +2022,10 @@ screen and (min-width: 57em) and (max-height: 34em),
 screen and (min-width: 58.5em) and (max-height: 35em),
 screen and (min-width: 60em) and (max-height: 36em) {
 
-  .wide {
-    margin: 5% auto 0;
+  .wide,
+  .image,
+  .grid2 {
+    margin: 5% auto 0!important;
     max-width: 100%;
   }
 
