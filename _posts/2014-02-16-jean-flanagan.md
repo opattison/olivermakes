@@ -7,7 +7,7 @@ option:
   - custom-css
 category: 'project'
 date: 2014-02-16 12:34
-updated: 2014-12-03 08:55
+updated: 2014-12-05 14:49
 unique-id: 2014-02-16:jean-flanagan
 period: 2013-06 to present
 description: 'A story about my work on a collaboratively designed website for a science writer and editor.'
@@ -30,11 +30,13 @@ image:
     alt: 'The grid of posts on the home page on a large desktop screen'
     caption: 'What the grid of posts [on the homepage](http://jeancflanagan.com/) looks like on a large screen. This four-column grid is different from the single-column grid on small-sized screens and the double-column grid on medium-sized screens.'
     date: 2014-12-05
+  - src: 2014-12-05-jean-flanagan-photo-page.jpg
+    alt: 'A screenshot of the photo layout on a medium-sized browser'
   - src: 2014-12-05-jean-flanagan-article-mobile.jpg
-    alt: 'A screenshot of the website on a phone-sized browser'
+    alt: 'A screenshot of the writing layout on a phone-sized browser'
     date: 2014-12-05
   - src: 2014-12-05-jean-flanagan-article-desktop.jpg
-    alt: 'A screenshot of the website on a large desktop browser'
+    alt: 'A screenshot of the writing layout on a large desktop browser'
     date: 2014-12-05
   - src: 2014-12-05-jean-flanagan-article-float-image.png
     alt: 'A screenshot of an image floated right alongside some text in a flexible layout'
@@ -85,17 +87,28 @@ Designing in a browser meant that HTML prototypes were an early part of the proc
 
 Jean takes [beautiful photos](http://jeancflanagan.com/photos/), which I wanted to feature in a “full-bleed” format with photos taking up as much of the screen width as possible without requiring vertical scrolling. The photo pages have a different layout from the writing pages to ensure that images are featured differently.
 
+#### Sample from photo layout
+
+<figure class="image">
+  <img
+    src="{{ site.image-url }}/{{ page.image[4].src }}" 
+    alt="{{ page.image[4].alt }}"
+  >
+</figure>
+
+#### Samples from writing layout
+
 <div class="grid2">
   <figure class="w33 screenshot">
     <img
-      src="{{ site.image-url }}/{{ page.image[4].src }}" 
-      alt="{{ page.image[4].alt }}"
+      src="{{ site.image-url }}/{{ page.image[5].src }}" 
+      alt="{{ page.image[5].alt }}"
     >
   </figure>
   <figure class="w66 screenshot">
     <img
-      src="{{ site.image-url }}/{{ page.image[5].src }}" 
-      alt="{{ page.image[5].alt }}"
+      src="{{ site.image-url }}/{{ page.image[6].src }}" 
+      alt="{{ page.image[6].alt }}"
     >
   </figure>
 </div>
@@ -104,10 +117,10 @@ However, not every image is meant to be showcased, nor should every image oversh
 
 <figure class="image screenshot">
   <img
-    src="{{ site.image-url }}/{{ page.image[6].src }}" 
+    src="{{ site.image-url }}/{{ page.image[7].src }}" 
     alt="{{ page.image[6].alt }}"
   >
-  <figcaption>{{ page.image[6].caption | markdownify }}</figcaption>
+  <figcaption>{{ page.image[7].caption | markdownify }}</figcaption>
 </figure>
 
 ### Personality
@@ -117,7 +130,7 @@ We wanted to make sure that some of Jean’s interests and personality were part
 <div id="error-404">
   <figure class="wide">
     <img src="{{ site.image-url }}/2014-02-16-PhyloPic.ef63437d.Michelle-Site.Scyphozoa.svg" alt="Floating jellyfish vector graphic">
-    <figcaption><p>A snippet from <a href="http://jeancflanagan.com/404.html">the 404 page</a>, using CSS <code>keyframes</code> animations to <code>translate</code> and shift color, with a vector jellyfish illustration (<a href="http://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a> <a href="http://phylopic.org/image/ef63437d-d6f4-4583-9d75-a8c9b19a203d/">Michelle Site via Phylopic</a>)</p></figcaption>
+    <figcaption><p>A snippet from <a href="http://jeancflanagan.com/404.html">the 404 page</a>, using CSS <code>keyframes</code> animations to <code>translate</code> an SVG image and shift the background color. The vector jellyfish illustration is by <a href="http://phylopic.org/image/ef63437d-d6f4-4583-9d75-a8c9b19a203d/">Michelle Site via Phylopic</a>, licensed <a href="http://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.</p></figcaption>
   </figure>
 </div>
 
@@ -125,19 +138,26 @@ We wanted to make sure that some of Jean’s interests and personality were part
 
 Jean already had a personal WordPress site, which I had helped her transition from the limited WordPress.com service to her own personal domain and host. The problems were limitations in configuration and design. I could certainly help redesign a WordPress site, but it would be an uphill battle since I have not ever made a theme from scratch, and developing a site with PHP is not my strength. Building on existing themes was a sure way to end up with a design with compromises and inflexibility. Hacking around in WordPress would only distract me from what I *am* strong in: responsive HTML and CSS.
 
-Both of us realized that WordPress was no longer a good fit. We both wanted more control over the design. Jean wanted more control over content and flexible layouts, as well as an interface that wouldn’t involve fighting with a WYSIWYG editor or administering a content management system and database. The trade-off of ease-of-use and getting started quickly with WordPress was outweighed by a desire to publish independently and to develop a process that would be able to withstand servers misbehaving, databases being corrupted, or any of the pitfalls of locking in to a “platform”. [^1]
+Both of us realized that WordPress was no longer a good fit. We both wanted more control over the design. Jean wanted more control over content and flexible layouts, as well as an interface that wouldn’t involve fighting with a WYSIWYG editor or administering a content management system and database. The trade-off of ease-of-use and getting started quickly with WordPress was outweighed by a desire to publish independently and to develop a process that would be able to withstand servers misbehaving, databases being corrupted, or any of the pitfalls of locking in to a “platform”.
 
-We chose Jekyll because it would allow for a high performance site with plenty of flexibility in design and configuration. We realized that there would be a learning curve for both of us, since I had only just gotten started with Jekyll and it would be new for Jean. A site built of flat files and no <abbr title="content management system">CMS</abbr> nor server-side processing is limiting for some applications, but has great advantages in performance and maintainability.
+We chose [Jekyll](http://jekyllrb.com) because it would allow for a high performance site with plenty of flexibility in design and configuration. We realized that there would be a learning curve for both of us, since I had only just gotten started with Jekyll and it would be new for Jean. A site built of flat files and no <abbr title="content management system">CMS</abbr> nor server-side processing is limiting for some applications, but has great advantages in performance and maintainability. [^1]
 
 ## Getting it right is difficult
 
-Publishing something on the web is relatively easy, but creating something lasting that you won’t want to scrap and rework later can take a significant amount of time and effort. For this project, both design and content were weighed deliberately. Working **content first** was key for this, since it meant that the layout, typography and other design elements would suit the content well.
+Publishing something on the web is relatively easy, but creating something lasting that you won’t want to scrap and rework later can take a significant amount of time and effort. For this project, both design and content were weighed deliberately. Working **content first** was key for the design, since it meant that the layout, typography and other design elements would suit the content well.
 
 ## What I learned from this project
 
+- Jekyll is fast and I love using it to design and build a website.
 - I learned how to set up a Jekyll site for personal publishing, with processes that would inspire me to create my own site.
 - We figured out how to use [GitHub Issues](https://github.com/opattison/jeancflanagan/issues) to communicate in real time about the process, organize our work, and document the history of the project.
 - Working with development environments and version control is essential for a collaborative project, even if only two people are involved and their roles are well-defined.
 - Designing for yourself or someone close to you is difficult. This process took months longer than we thought it might initially, but it ended up being worth additional effort to get certain design and content elements done *right*.
 
 [^1]: I wrote more about my preference of minimal tools like Jekyll instead of tools like WordPress in [an essay on future-friendliness and robustness]({% post_url 2014-11-06-design-notes-future-friendiness-robustness %}).
+
+- - -
+
+**[View Jean’s website live]({{ page.project-url }})** or **[check it out on GitHub]({{ page.project-source }})**.
+
+**Note:** this website is in active development, so the information on this page is only a snapshot of it as it existed on {{ page.updated | date: '%Y-%m-%d' }}.
