@@ -1100,6 +1100,10 @@ article img {
   margin-top: 5%;
 }
 
+.w33 {
+  width: 66.66666667%;
+}
+
 /* Hero figure-image */
 
 .hero {
@@ -1690,6 +1694,14 @@ screen and (min-resolution: 1.5dppx) {
     width: 48%;
   }
 
+  .grid2 .w33 {
+    width: 31.33333333%;
+  }
+
+  .grid2 .w66 {
+    width: 64.66666667%;
+  }
+
   .grid2 figure + figure {
     margin-left: 4%;
   }
@@ -2026,7 +2038,7 @@ screen and (min-width: 60em) and (max-height: 36em) {
   .image,
   .grid2 {
     margin: 5% auto 0!important;
-    max-width: 100%;
+    max-width: 100%!important;
   }
 
   .essay {
