@@ -85,11 +85,11 @@ Designing in a browser meant that HTML prototypes were an early part of the proc
 
 ### Flexible layout for long writing and large format photography
 
-Jean takes [beautiful photos](http://jeancflanagan.com/photos/), which I wanted to feature in a “full-bleed” format with photos taking up as much of the screen width as possible without requiring vertical scrolling. The photo pages have a different layout from the writing pages to ensure that images are featured differently.
+Jean takes [beautiful photos](http://jeancflanagan.com/photos/), which I wanted to feature in a “full-bleed” format with photos taking up as much of the screen width as possible (without being so tall that they require vertical scrolling). The photo pages have a distinct layout from the writing pages to ensure that images are featured prominently without affecting the typographic measure of writing pages. Both layouts are able to feature edge-to-edge (margin-breaking) images, but the page proportions are different for each.
 
 #### Sample from photo layout
 
-<figure class="image">
+<figure class="image screenshot">
   <img
     src="{{ site.image-url }}/{{ page.image[4].src }}" 
     alt="{{ page.image[4].alt }}"

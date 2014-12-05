@@ -12,6 +12,7 @@
 }
 
 #error-404 img {
+  margin-bottom: -2em;
   padding: 2em;
   -webkit-animation: floating 18s ease infinite forwards;
   animation: floating 18s ease infinite forwards;
