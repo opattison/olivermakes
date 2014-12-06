@@ -1,11 +1,15 @@
 ---
 title: 'Mount Pleasant'
 layout: 'photo'
+option:
+  - feature
 category: 'photo'
-date: 2014-11-14 22:01
+date: 2014-12-05 22:01
 updated: 2014-12-05 01:28
+drafted: 2014-11-14 22:01
 unique-id: 2014-11-14:mount-pleasant
 description: 'Photos from a neighborhood in Washington, DC; processed with VSCO Film 04.'
+feature-description: 'These are some of my favorite photos from a walk around the Mount Pleasant neighborhood in January 2014, shot with a Fujifilm X-E2 and Fujinon XF35mmF1.4 R lens, re-processed with VSCO Film 04.'
 image:
   - src: 2014-01-20-orange-leaves-olivermakes-ccbync.jpg
     alt: 'Backlit orange leaves'

@@ -4,6 +4,7 @@ layout: singel
 category: writing
 date: 2014-11-27 21:55
 updated: 2014-11-28 00:21
+drafted: 2014-11-27 21:55
 unique-id: 2014-11-28:design-notes-process
 image:
   - src: 2014-11-27-pattern-library-sample.png

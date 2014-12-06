@@ -3,7 +3,8 @@ title: 'Jekyll Version of Pattern Primer'
 layout: dubbel
 category: project
 date: 2013-07-21 12:34
-updated: 2014-12-01 07:46
+updated: 2014-12-01 20:30
+drafted: 2014-12-01 12:40
 unique-id: 2014-11-30:pattern-primer
 description: 'A pattern documentation tool for designing websites, based on Jeremy Keith’s Pattern Primer.'
 project-url: http://patternprimer.olivermak.es

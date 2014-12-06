@@ -8,6 +8,7 @@ option:
 category: 'project'
 date: 2014-02-16 12:34
 updated: 2014-12-05 14:49
+drafted: 2014-12-03 17:10
 unique-id: 2014-02-16:jean-flanagan
 period: 2013-06 to present
 description: 'A story about my work on a collaboratively designed website for a science writer and editor.'

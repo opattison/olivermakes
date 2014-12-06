@@ -4,6 +4,7 @@ layout: photo
 category: photo
 date: 2014-11-27 19:02
 updated: 2014-12-05 01:29
+drafted: 2014-11-27 19:02
 unique-id: 2014-11-27:turntable
 description: 'A close-up view of my record player.'
 image:
