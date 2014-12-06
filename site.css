@@ -473,10 +473,6 @@ a svg circle {
   margin-top: 0;
 }
 
-.page-meta .time time {
-  font-style: normal;
-}
-
 /* Singel and dubbel common */
 
 .singel,
@@ -1100,6 +1096,16 @@ article img {
   margin-top: 5%;
 }
 
+.w33 {
+  width: 66.66666667%;
+}
+
+/* Screenshot border/outline helper */
+
+.screenshot img {
+  outline: solid 1px hsla(204, 10%, 88%, 1);
+}
+
 /* Hero figure-image */
 
 .hero {
@@ -1129,6 +1135,14 @@ article img {
 
 .index {
   margin: 1em;
+}
+
+.features {
+  margin: 1em -1em 0;
+  width: calc(100% + 2em);
+}
+
+.items {
   overflow: hidden;
 }
 
@@ -1150,35 +1164,51 @@ article img {
   line-height: 1;
 }
 
+.index article h1 a {
+  color: hsla(4, 60%, 50%, 1);
+}
+
+.index article h1 a:hover,
+.index article h1 a:focus {
+  color: hsla(204, 50%, 45%, 1);
+}
+
 .meta {
   margin: 0;
   padding: 1em;
   position: relative;
 }
 
+.feature,
 .item {
   width: 100%;
 }
 
-.item .meta {
-  background-color: hsla(204, 10%, 88%, .8);
+.meta {
+  background-color: hsla(204, 10%, 93%, .8);
 }
 
-.item .meta h1 {
+.feature .meta {
+  font-size: 1.125em;
+  min-height: 12.5em;
+  padding: .888888889em;
+}
+
+.meta h1 {
   font-size: 1.5em;
   font-weight: 500;
 }
 
-.item .description {
-  font-weight: 400;
+.index article .time {
+  font-size: .875em;
 }
 
-.item .time {
-  font-weight: 300;
-}
-
-.item .link {
+.index article .link {
   margin: 0;
+}
+
+.feature .link a {
+  background-color: hsla(4, 60%, 50%, 1);
 }
 
 .item .link a {
@@ -1189,11 +1219,11 @@ article img {
   background-color: hsla(204, 10%, 24%, 1);
 }
 
-.item .link a:hover {
+.index article .link a:hover {
   background-color: hsla(204, 80%, 40%, 1);
 }
 
-.item .link a:focus {
+.index article a:focus {
   background-color: hsla(204, 10%, 93%, 1);
 }
 
@@ -1225,19 +1255,6 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 1.0625em;
   }
 
-  .item {
-    height: 16em;
-  }
-
-  .item .meta {
-    height: 13.5em;
-  }
-
-  .item .link {
-    height: 2.5em;
-  }
-
-
 }
 
 @media screen and (min-width: 28em) {
@@ -1247,14 +1264,6 @@ screen and (min-resolution: 1.5dppx) {
   .page-meta,
   .site-info {
     font-size: 1.125em;
-  }
-
-  .item {
-    height: 14em;
-  }
-
-  .item .meta {
-    height: 11.5em;
   }
 
 }
@@ -1354,6 +1363,10 @@ screen and (min-resolution: 1.5dppx) {
     margin-right: -2em;
   }
 
+  .features {
+    margin-top: -1em;
+  }
+
 }
 
 @media screen and (min-width: 34em) {
@@ -1422,6 +1435,15 @@ screen and (min-resolution: 1.5dppx) {
     max-width: 45em;
   }
 
+  .features + .items {
+    margin-top: 0;
+  }
+
+  .features {
+    margin: -1em auto 0;
+    width: 100%;
+  }
+
   .index header h1 {
     margin-left: .8em;
   }
@@ -1433,8 +1455,18 @@ screen and (min-resolution: 1.5dppx) {
     width: 50%;
   }
 
+  .feature .meta {
+    font-size: 1.25em;
+    min-height: 15em;
+    padding: .8em;
+  }
+
   .item .meta {
     height: 15.5em;
+  }
+
+  .feature .link a {
+    font-size: 1.125em;
   }
 
 }
@@ -1546,6 +1578,10 @@ screen and (min-resolution: 1.5dppx) {
     margin: 2.75em auto;
   }
 
+  .features {
+    margin-top: 1em;
+  }
+
 }
 
 @media screen and (min-width: 50em) {
@@ -1623,7 +1659,8 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .project {
-    padding: 2em;
+    margin: 0 -2.25em;
+    padding: 2.25em;
   }
 
   .ancillary {
@@ -1688,6 +1725,14 @@ screen and (min-resolution: 1.5dppx) {
     margin: 0;
     max-width: 100%;
     width: 48%;
+  }
+
+  .grid2 .w33 {
+    width: 31.33333333%;
+  }
+
+  .grid2 .w66 {
+    width: 64.66666667%;
   }
 
   .grid2 figure + figure {
@@ -1779,7 +1824,7 @@ screen and (min-resolution: 1.5dppx) {
     padding: 0 4.25em 0 0;
     position: relative;
     margin-top: 1.25em;
-    width: 62.5%;
+    width: 75%;
   }
 
   .dubbel .flow-side > figure {
@@ -1791,7 +1836,7 @@ screen and (min-resolution: 1.5dppx) {
   .dubbel .ancillary {
     font-size: .875em;
     margin: 1.25em -25% 1.25em 2em;
-    width: 62.5%;
+    width: 50%;
   }
 
   .dubbel .ancillary figure {
@@ -1815,6 +1860,7 @@ screen and (min-resolution: 1.5dppx) {
   .dubbel .project {
     margin: -2em -9em 2em;
     overflow: auto;
+    padding: 2em;
     position: relative;
   }
 
@@ -2026,7 +2072,7 @@ screen and (min-width: 60em) and (max-height: 36em) {
   .image,
   .grid2 {
     margin: 5% auto 0!important;
-    max-width: 100%;
+    max-width: 100%!important;
   }
 
   .essay {

@@ -2,8 +2,9 @@
 title: 'The shore at Bosham in Chichester Harbor'
 layout: photo
 category: photo
-date: 2014-03-23 12:35
+date: 2014-11-27 21:30
 updated: 2014-11-28 03:06
+drafted: 2014-03-23 12:34
 unique-id: 2014-03-23:chichester-shore
 description: 'On a visit to Chichester in southern England, I visited the waterside at Bosham.'
 image:

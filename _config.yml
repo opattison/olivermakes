@@ -24,6 +24,7 @@ url: http://olivermak.es
 
 patterns-url: http://olivermak.es/patterns
 image-url: http://static.olivermak.es/images
+style-url: http://static.olivermak.es/style
 script-url: http://static.olivermak.es/scripts
 fragments-url: http://static.olivermak.es/fragments
 
@@ -155,8 +156,8 @@ transparent:
     hsl: 'hsla(204, 10%, 32%, .8)'
   - name: gray7-80
     hsl: 'hsla(204, 10%, 80%, .8)'
-  - name: gray8-80
-    hsl: 'hsla(204, 10%, 88%, .8)'
+  - name: gray9-80
+    hsl: 'hsla(204, 10%, 93%, .8)'
   - name: boldblue-80
     hsl: 'hsla(204, 80%, 40%, .8)'
   - name: grayblue-50

@@ -6,6 +6,7 @@ option:
   - code
 date: 2014-11-06 09:17
 updated: 2014-11-29 18:22
+drafted: 2014-11-06 09:17
 unique-id: 2014-11-06:design-notes-future-friendliness
 description: 'A discussion about designing for the long term, covering HTML, independent publishing, and web hosting.'
 

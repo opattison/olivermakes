@@ -1,0 +1,57 @@
+/*** Animations used on http://jeancflanagan.com/404.html ***/
+
+#error-404 figure {
+  background-color: hsla(190, 40%, 75%, 1);
+  overflow: hidden;
+  -webkit-animation: blueshift 10s ease-in-out infinite forwards;
+  animation: blueshift 10s ease-in-out infinite forwards;
+}
+
+#error-404 figcaption {
+  background-color: hsla(204, 30%, 80%, .5);
+  color: hsla(204, 10%, 10%, 1);
+  margin: 0;
+}
+
+#error-404 img {
+  padding: 1em 2em;
+  -webkit-animation: floating 18s ease infinite forwards;
+  animation: floating 18s ease infinite forwards;
+}
+
+@media screen and (min-width: 35em) {
+
+  #error-404 img {
+    padding: 1em 6em;
+  }
+
+}
+
+@media screen and (min-width: 45em) {
+
+  #error-404 img {
+    padding: 2em 8em;
+  }
+
+}
+
+@media screen and (min-width: 60em) {
+
+  #error-404 img {
+    padding: 2em 12em;
+  }
+
+}
+
+@media screen and (min-width: 70em) {
+
+  #error-404 img {
+    padding: 2em 16em;
+  }
+
+}
+
+@-webkit-keyframes blueshift {0% {background-color: hsla(190, 40%, 50%, 1); } 50% {background-color: hsla(190, 40%, 75%, 1); } 100% {background-color: hsla(190, 40%, 50%, 1); } }
+@keyframes blueshift {0% {background-color: hsla(190, 40%, 50%, 1); } 50% {background-color: hsla(190, 40%, 75%, 1); } 100% {background-color: hsla(190, 40%, 50%, 1); } }
+@-webkit-keyframes floating {0% {-webkit-transform: translate(0); transform: translate(0); } 10% {-webkit-transform: translate(-.75em, 0); transform: translate(-.75em, 0); } 25% {-webkit-transform: translate(.5em, .5em); transform: translate(.5em, .5em); } 50% {-webkit-transform: translate(0, -.5em); transform: translate(0, -.5em); } 75% {-webkit-transform: translate(-1em, 0); transform: translate(-1em, 0); } 90% {-webkit-transform: translate(-.5em, -.5em); transform: translate(-.5em, -.5em); } 100% {-webkit-transform: translate(0); transform: translate(0); } }
+@keyframes floating {0% {transform: translate(0); } 10% {transform: translate(-.75em, 0); } 25% {transform: translate(.5em, .5em); } 50% {transform: translate(0, -.5em); } 75% {transform: translate(-1em, 0); } 90% {transform: translate(-.5em, -.5em); } 100% {transform: translate(0); } }

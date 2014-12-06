@@ -1,3 +1,4 @@
   <!-- styles -->
   <link rel="stylesheet" href="/site.css">
+  {% if page.option contains 'custom-css' %}<link rel="stylesheet" href="{{ site.style-url }}/{{ page.custom-css }}">{% endif %}
   {% if page.title == 'patterns' %}<style>{% include patterns.css %}</style>{% endif %}

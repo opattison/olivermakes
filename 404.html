@@ -6,9 +6,9 @@
   <meta charset="utf-8">
 
   
-  <title>404 error &ndash; olivermak.es</title>
+  <title>404 error :olivermak.es</title>
 
-  <meta name="description" content="I am Oliver Pattison, a designer focused on the future of the web.">
+  <meta name="description" content="Error page for olivermak.es">
   
 
   <!-- via Cloud Four -->
@@ -18,16 +18,80 @@
 
   <style type="text/css">
 
+    #error {
+      background-color: hsla(4, 60%, 50%, 1);
+    }
+
+    #error .title h1 {
+      color: hsla(204, 10%, 98%, 1);
+    }
+
+    #error .title circle {
+      stroke: hsla(204, 10%, 98%, 1);
+    }
+
+    #error .title:hover .logo circle {
+      -webkit-animation-name: step-fill--404;
+              animation-name: step-fill--404;
+    }
+
+    #error .title:focus .logo circle {
+      fill: hsla(204, 10%, 98%, 1);
+    }
+
+    #error .top-menu, 
+    #error .site-nav .close-menu {
+      background-color: hsla(204, 10%, 98%, 1);
+      color: hsla(4, 60%, 50%, 1);
+    }
+
+    #error .top-menu a:hover,
+    #error .top-menu a:focus,
+    #error .site-nav .close-menu a:hover
+    #error .site-nav .close-menu a:focus {
+      background-color: hsla(204, 30%, 80%, 1);
+      color: hsla(204, 10%, 18%, 1);
+    }
+
+    #error .page-header .inner,
+    #error .page {
+      background-color: hsla(4, 60%, 50%, 1);
+    }
+
+    #error .page-header h1 {
+      color: hsla(204, 10%, 98%, 1);
+      text-align: center;
+    }
+
+    #error .top-menu a, 
+    #error .site-nav .close-menu a {
+      color: hsla(4, 60%, 50%, 1);
+    }
+
+    #error [role="main"] {
+      color: hsla(204, 10%, 98%, 1);
+      text-align: center;
+    }
+
+    #error [role="main"] a {
+      color: hsla(204, 10%, 96%, 1);
+    }
+
+    #error [role="main"] a:hover,
+    #error [role="main"] a:focus {
+      color: hsla(204, 30%, 80%, 1);
+    }
+
     #error [role="main"] .logo {
-      margin: 1.25em auto;
+      margin: 0 auto;
       max-width: 35em;
-      width: 75%;
+      width: 50%;
     }
 
     #error [role="main"] .logo circle {
-        stroke: hsla(204, 80%, 40%, 1);
-  -webkit-animation-name: step-fill;
-          animation-name: step-fill;
+        stroke: hsla(204, 10%, 98%, 1);
+  -webkit-animation-name: step-fill--404;
+          animation-name: step-fill--404;
   -webkit-animation-timing-function: cubic-bezier(0,1,1,1);
           animation-timing-function: cubic-bezier(0,1,1,1);
   -webkit-animation-fill-mode: both;
@@ -40,46 +104,65 @@
           animation-direction: alternate-reverse;
     }
 
-    #error .page-header h1 {
-      text-align: center;
+    @-webkit-keyframes step-fill--404 {
+      0% {
+        fill: hsla(0, 0%, 100%, .01);
+      }
+
+      100% {
+        fill: hsla(204, 10%, 98%, 1);
+      }
     }
 
-    #error [role="main"] p {
-      text-align: center;
+    @keyframes step-fill--404 {
+      0% {
+        fill: hsla(0, 0%, 100%, .01);
+      }
+
+      100% {
+        fill: hsla(204, 10%, 98%, 1);
+      }
     }
 
   </style>
 
-
-  <!-- Icon stack – optimized for iOS/Android/modern browsers (IE10+) -->
+  <!-- icon stack – optimized for iOS/Android/modern browsers (IE10+) -->
   <link rel="apple-touch-icon-precomposed" href="http://static.olivermak.es/images/apple-touch-icon-152.png" sizes="152x152">
   <meta name="apple-mobile-web-app-title" content="olivermak.es">
   <meta name="msapplication-TileImage" content="http://static.olivermak.es/images/favicon-144.png"/>
   <meta name="msapplication-TileColor" content="#ffffff"/>
   <link rel="icon" type="image/png" href="http://static.olivermak.es/images/favicon-32.png" sizes="32x32">
 
+  <link rel="alternate" type="application/atom+xml" title="Full Atom feed for olivermak.es" href="http://olivermak.es/full.xml">
 
-  <script src="//use.typekit.net/hro5wuc.js"></script> 
-  
+  <script src="http://static.olivermak.es/scripts/respimage.min.js" async=""></script>
 
+  <!-- fonts via Typekit https://typekit.com/colophons/ojm0eig -->
+  <script src="//use.typekit.net/hro5wuc.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
 
+  <link rel="source" href="http://github.com/opattison/olivermakes" />
+  <link rel="me" href="mailto:oliverpattison@gmail.com">
+
+  <meta name="google-site-verification" content="v50CkzaVPDL_gBaZnlGdxJmfnZDYCP74l1JTMgLsyp4" />
+  <!-- but no Analytics! -->
 </head>
 
 <body id="error" class="singel">
 
   <header class="site-header" id="top" role="banner">
-    <a class="title" href="/">
+    <a class="title" href="/" rel="home" tabindex="1">
       <div class="logo">
-  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><circle class="earth" fill="none" stroke="#000" stroke-width="20" stroke-miterlimit="10" cx="250" cy="250" r="240"/><circle class="mantle" fill="none" stroke="#000" stroke-width="20" stroke-miterlimit="10" cx="250" cy="170" r="160"/><circle class="core" fill="none" stroke="#000" stroke-width="20" stroke-miterlimit="10" cx="250" cy="90" r="80"/></svg>
-</div>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><circle class="earth" fill="none" stroke="#000" stroke-width="20" stroke-miterlimit="10" cx="250" cy="250" r="240"/><circle class="mantle" fill="none" stroke="#000" stroke-width="20" stroke-miterlimit="10" cx="250" cy="170" r="160"/><circle class="core" fill="none" stroke="#000" stroke-width="20" stroke-miterlimit="10" cx="250" cy="90" r="80"/></svg>
+      </div>
       <h1>olivermak.es</h1>
     </a>
     <nav class="top-menu">
-      <a href="#navigation">Menu ⇂</a>
+      <a href="#navigation" tabindex="-1">Menu ⇂</a>
     </nav>
   </header>
 
+  <article class="h-entry" role="main">
 
 
 
@@ -91,15 +174,20 @@
     </header>
     
 
-  <article role="main">
+    <div class="e-content page">
 
-    <a href="/">
-      <div class="logo">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><circle class="earth" fill="none" stroke="#000" stroke-width="20" stroke-miterlimit="10" cx="250" cy="250" r="240"/><circle class="mantle" fill="none" stroke="#000" stroke-width="20" stroke-miterlimit="10" cx="250" cy="170" r="160"/><circle class="core" fill="none" stroke="#000" stroke-width="20" stroke-miterlimit="10" cx="250" cy="90" r="80"/></svg>
-      </div>
-    </a>
+      <a href="/">
+        <div class="logo">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><circle class="earth" fill="none" stroke="#000" stroke-width="20" stroke-miterlimit="10" cx="250" cy="250" r="240"/><circle class="mantle" fill="none" stroke="#000" stroke-width="20" stroke-miterlimit="10" cx="250" cy="170" r="160"/><circle class="core" fill="none" stroke="#000" stroke-width="20" stroke-miterlimit="10" cx="250" cy="90" r="80"/></svg>
+        </div>
+      </a>
 
-    <p><strong><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">What’s a 404</a></strong> though?</p>
+      <p>If you want to help me out with this error, copy the URL from your browser and <strong><a href="https://github.com/opattison/olivermakes/issues">create a GitHub Issue</a></strong> or <strong><a href="mailto:oliverpattison@gmail.com">email me</a></strong> with the title <strong>404</strong> letting me know how you got to this error page. Thanks!</p>
+
+      <p><strong><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">What’s a 404</a></strong> though?</p>
+
+
+    </div>
 
   </article>
 
@@ -110,23 +198,25 @@
         <a href="#">Menu ↾</a>
       </nav>
       <ul>
-        <li><a href="/about">About</a></li>
-        <li><a href="#">Writing</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Photography</a></li>
+        <li><a href="/about" tabindex="2">About</a></li>
+        <li><a href="/writing" tabindex="3">Writing</a></li>
+        <li><a href="/projects" tabindex="4">Projects</a></li>
+        <li><a href="/photography" tabindex="5">Photography</a></li>
       </ul>
     </nav>
 
-    <article class="site-info" role="contentinfo">
-      
-      <p>The writing and photography here is licensed <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC</a>. Everything else is <a href="/about#copyright">under copyright</a> unless stated otherwise. View <a href="http://github.com/opattison/olivermakes">the source code</a> for this site.</p>
-      <p><a href="/feeds/all.xml">Subscribe</a> via Atom/RSS or follow me on <a href="http://twitter.com/olivermakes">Twitter</a> for updates.</p>
+    <div class="site-info" role="contentinfo">
+      <div class="inner">
+        <p>The writing and photography here is licensed <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC</a> <a rel="author" href="/">Oliver Pattison</a>. Everything else is <a href="/about#copyright">under copyright</a> unless stated otherwise.</p>
+        <p><strong><a rel="source" href="http://github.com/opattison/olivermakes">View the source code</a></strong> for this site. See anything wrong here? <a href="https://github.com/opattison/olivermakes/issues">Make an issue</a> of it.</p>
+        <p><strong><a rel="alternate" href="http://olivermak.es/full.xml">Subscribe</a></strong> via Atom/RSS or follow me on <strong><a rel="me" href="http://twitter.com/olivermakes">Twitter</a></strong> for updates.</p>
+      </div>
+    </div>
 
-    </article>
 
-    <nav class="alt-nav">
+    <nav class="alt-nav" role="navigation">
       <ul>
-        <li class="back-home"><a href="/"><div class="inner">Home <div class="logo">
+        <li class="back-home"><a rel="home" href="/"><div class="inner">Home <div class="logo">
   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><circle class="earth" fill="none" stroke="#000" stroke-width="20" stroke-miterlimit="10" cx="250" cy="250" r="240"/><circle class="mantle" fill="none" stroke="#000" stroke-width="20" stroke-miterlimit="10" cx="250" cy="170" r="160"/><circle class="core" fill="none" stroke="#000" stroke-width="20" stroke-miterlimit="10" cx="250" cy="90" r="80"/></svg>
 </div></div></a></li>
         <li class="back-top"><a href="#top">Back to top ↾</a></li>
