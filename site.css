@@ -1633,7 +1633,8 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .project {
-    padding: 2em;
+    margin: 0 -2.25em;
+    padding: 2.25em;
   }
 
   .ancillary {
@@ -1833,6 +1834,7 @@ screen and (min-resolution: 1.5dppx) {
   .dubbel .project {
     margin: -2em -9em 2em;
     overflow: auto;
+    padding: 2em;
     position: relative;
   }
 
