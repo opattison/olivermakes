@@ -468,6 +468,10 @@ a svg circle {
   font-style: italic;
 }
 
+.time .location {
+  font-style: normal;
+}
+
 .page-meta .time {
   padding: 1em;
 }
