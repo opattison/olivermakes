@@ -5,17 +5,8 @@ category: index
 
 ---
 
-<div class="features">
-{% for post in site.categories.writing %}
-{% if post.option contains 'feature' %}
-{% include index-article-feature.html %}
-{% endif %}
-{% endfor %}
-</div>
 <div class="items">
 {% for post in site.categories.writing %}
-{% unless post.option contains 'feature' %}
 {% include index-article-item.html %}
-{% endunless %}
 {% endfor %}
 </div>

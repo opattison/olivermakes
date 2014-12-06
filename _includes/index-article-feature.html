@@ -1,13 +1,8 @@
-  <article class="feature">
-    <img 
-      sizes="{{ site.project-sizes }}"
-      src="{{ site.image-url }}/{{ post.image[0].src }}"
-      srcset="{% for srcset_project in site.srcset_project %}{{ site.image-url }}/{{ site.srcset_project[forloop.index0] }}/{{ post.image[0].src }} {{ site.srcset_project[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-    >
+  <article class="feature" style="background-image: url({{ site.image-url }}/feature/{{ post.image[0].src }}); background-size: cover; background-position: 50%;">
     <div class="meta">
-      <a href="{{ post.url }}"><h1>{{ post.title }}</h1></a>
-      <p class="p-summary description">{{ post.description }}</p>
-      <p>Published <time class="dt-published" pubdate datetime="{{ post.date }}">{{ post.date | date: '%Y-%m-%d' }}</time>.</p>
+      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+      <p class="p-summary description">{% if post.feature-description %}{{ post.feature-description }}{% else %}{{ post.description }}{% endif %}</p>
+      <p class="time">Published <time class="dt-published" pubdate datetime="{{ post.date }}">{{ post.date | date: '%Y-%m-%d' }}</time></p>
     </div>
     <div class="link">
       <a href="{{ post.url }}">View this post</a>

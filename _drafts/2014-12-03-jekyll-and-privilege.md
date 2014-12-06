@@ -4,6 +4,7 @@ layout: 'singel'
 category: 'writing'
 date: 2014-12-03 09:45
 updated: 2014-12-03 09:45
+drafted: 2014-12-03 09:45
 unique-id: 2014-12-03:jekyll-and-privilege
 description: ''
 
