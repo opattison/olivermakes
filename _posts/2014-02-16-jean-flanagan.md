@@ -7,11 +7,11 @@ option:
   - custom-css
 category: 'project'
 date: 2014-02-16 12:34
-updated: 2014-12-06 15:33
+updated: 2014-12-06 16:01
 drafted: 2014-12-03 17:10
 unique-id: 2014-02-16:jean-flanagan
 period: 2013-06 to present
-description: 'A personal website for a science and education communication specialist.' 
+description: 'A personal website for a science education and communication specialist.' 
 project-url: 'http://jeancflanagan.com'
 project-source: 'https://github.com/opattison/jeancflanagan'
 custom-css: 2014-02-16-jean-flanagan.css
