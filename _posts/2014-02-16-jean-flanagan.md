@@ -7,7 +7,7 @@ option:
   - custom-css
 category: 'project'
 date: 2014-02-16 12:34
-updated: 2014-12-05 14:49
+updated: 2014-12-06 15:33
 drafted: 2014-12-03 17:10
 unique-id: 2014-02-16:jean-flanagan
 period: 2013-06 to present
@@ -137,7 +137,7 @@ We wanted to make sure that some of Jean’s interests and personality were part
 
 ## Choosing Jekyll
 
-Jean already had a personal WordPress site, which I had helped her transition from the limited WordPress.com service to her own personal domain and host. However, Jean was still feeling constrained by limitations in configuration and design. I could certainly help redesign a WordPress site, but it would be an uphill battle since I have not ever made a theme from scratch, and developing a site with PHP is not my strength. Building on existing themes was a sure way to end up with a design with compromises and inflexibility. Hacking around in WordPress would only take time away from my developing my existing strengths in responsive HTML and CSS.
+Jean already had a personal WordPress site, which I had helped her transition from the limited WordPress.com service to her own personal domain and host. However, Jean was still feeling constrained by limitations in configuration and design. I could certainly help redesign a WordPress site, but it would be an uphill battle since I have not ever made a theme from scratch, and developing a site with PHP is not my strength. Building on existing themes was a sure way to end up with a compromised design with inflexibile configuration. Hacking around in WordPress would only take time away from my developing my existing strengths in responsive HTML and CSS.
 
 Both of us realized that WordPress was no longer a good fit. Jean wanted more control over content and flexible layouts, as well as an interface that wouldn’t involve fighting with a WYSIWYG editor or administering a content management system and database. The trade-off for ease-of-use and getting started quickly with WordPress was outweighed by a desire to publish independently and to develop a process that would be able to withstand servers misbehaving, databases being corrupted, or any of the pitfalls of locking in to a “platform”.
 
