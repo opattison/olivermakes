@@ -464,6 +464,10 @@ a svg circle {
   padding: .5em 0;
 }
 
+.time {
+  font-style: italic;
+}
+
 .page-meta .time {
   padding: 1em;
 }
@@ -471,10 +475,6 @@ a svg circle {
 .page-meta .time p {
   font-size: .875em;
   margin-top: 0;
-}
-
-.page-meta .time time {
-  font-style: normal;
 }
 
 /* Singel and dubbel common */
@@ -1139,6 +1139,14 @@ article img {
 
 .index {
   margin: 1em;
+}
+
+.features {
+  margin: 1em -1em 0;
+  width: calc(100% + 2em);
+}
+
+.items {
   overflow: hidden;
 }
 
@@ -1160,35 +1168,52 @@ article img {
   line-height: 1;
 }
 
+.index article h1 a {
+  color: hsla(4, 60%, 50%, 1);
+}
+
+.index article h1 a:hover,
+.index article h1 a:focus {
+  color: hsla(204, 50%, 45%, 1);
+}
+
 .meta {
   margin: 0;
   padding: 1em;
   position: relative;
 }
 
+.feature,
 .item {
   width: 100%;
 }
 
-.item .meta {
-  background-color: hsla(204, 10%, 88%, .8);
+.meta {
+  background-color: hsla(204, 10%, 93%, .8);
 }
 
-.item .meta h1 {
+.feature .meta {
+  font-size: 1.125em;
+  min-height: 12.5em;
+  padding: .888888889em;
+}
+
+.meta h1 {
   font-size: 1.5em;
   font-weight: 500;
 }
 
-.item .description {
-  font-weight: 400;
+.index article .time {
+  font-size: .9375em;
+  font-style: italic;
 }
 
-.item .time {
-  font-weight: 300;
-}
-
-.item .link {
+.index article .link {
   margin: 0;
+}
+
+.feature .link a {
+  background-color: hsla(4, 60%, 50%, 1);
 }
 
 .item .link a {
@@ -1199,11 +1224,11 @@ article img {
   background-color: hsla(204, 10%, 24%, 1);
 }
 
-.item .link a:hover {
+.index article .link a:hover {
   background-color: hsla(204, 80%, 40%, 1);
 }
 
-.item .link a:focus {
+.index article a:focus {
   background-color: hsla(204, 10%, 93%, 1);
 }
 
@@ -1432,6 +1457,15 @@ screen and (min-resolution: 1.5dppx) {
     max-width: 45em;
   }
 
+  .features + .items {
+    margin-top: 0;
+  }
+
+  .features {
+    margin: 1em auto 0;
+    width: 100%;
+  }
+
   .index header h1 {
     margin-left: .8em;
   }
@@ -1443,8 +1477,17 @@ screen and (min-resolution: 1.5dppx) {
     width: 50%;
   }
 
+  .feature .meta {
+    font-size: 1.25em;
+    padding: .8em;
+  }
+
   .item .meta {
     height: 15.5em;
+  }
+
+  .feature .link a {
+    font-size: 1.125em;
   }
 
 }
