@@ -8,7 +8,7 @@
 }
 
 #error-404 figcaption {
-  background-color: hsla(204, 10%, 80%, .8);
+  background-color: hsla(204, 30%, 80%, .5);
   color: hsla(204, 10%, 10%, 1);
   margin: 0;
 }

@@ -83,7 +83,7 @@ Designing in a browser meant that HTML prototypes were an early part of the proc
   <figcaption>{{ page.image[3].caption | markdownify }}</figcaption>
 </figure>
 
-### Flexible layout for long writing and large format photography
+### Flexible layout for long writing and featured photography
 
 Jean takes [beautiful photos](http://jeancflanagan.com/photos/), which I wanted to feature in a “full-bleed” format with photos taking up as much of the screen width as possible (without being so tall that they require vertical scrolling). The photo pages have a distinct layout from the writing pages to ensure that images are featured prominently without affecting the typographic measure of writing pages. Both layouts are able to feature edge-to-edge (margin-breaking) images, but the page proportions are different for each.
 
@@ -154,11 +154,11 @@ Publishing something on the web is relatively easy, but creating something lasti
 - Working with development environments and version control is essential for a collaborative project, even if only two people are involved and their roles are well-defined.
 - Designing for yourself or someone close to you takes time. This process took months longer than we thought it might initially, but it ended up being worth additional effort to get certain design and content elements done *right*.
 
-[^1]: Using lorem ipsum filler text encourages people reviewing the design *not* to read the text, which makes it difficult to judge legibility of body text until too late in the design process. [Nathan Ford wrote some good words](http://artequalswork.com/posts/tweeking.php) on this topic. Nathan Ford suggests reading tweets instead of ipsum, but I prefer a different approach. If I am constrained in my ability to design content-first, my current practice is to use unread content from my Instapaper queue, so my eyes will focus on trying to read in the working design or prototype.
-[^2]: I wrote more about my preference of minimal tools like Jekyll instead of tools like WordPress in [an essay on future-friendliness and robustness]({% post_url 2014-11-06-design-notes-future-friendiness-robustness %}).
-
 - - -
 
 **[View Jean’s website live]({{ page.project-url }})** or **[check it out on GitHub]({{ page.project-source }})**.
 
-**Note:** this website is in active development, so the information on this page is only a snapshot of it as it existed on {{ page.updated | date: '%Y-%m-%d' }}.
+**Note:** this website is continually being updated and developed, so the information on this page is only a snapshot of it as it existed on {{ page.updated | date: '%Y-%m-%d' }}.
+
+[^1]: Using lorem ipsum filler text encourages people reviewing the design *not* to read the text, which makes it difficult to judge legibility of body text until too late in the design process. [Nathan Ford wrote some good words](http://artequalswork.com/posts/tweeking.php) on this topic. Nathan Ford suggests reading tweets instead of ipsum, but I prefer a different approach. If I am constrained in my ability to design content-first, my current practice is to use unread content from my Instapaper queue, so my eyes will focus on trying to read in the working design or prototype.
+[^2]: I wrote more about my preference of minimal tools like Jekyll instead of tools like WordPress in [an essay on future-friendliness and robustness]({% post_url 2014-11-06-design-notes-future-friendiness-robustness %}).
