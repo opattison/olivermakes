@@ -1824,7 +1824,7 @@ screen and (min-resolution: 1.5dppx) {
     padding: 0 4.25em 0 0;
     position: relative;
     margin-top: 1.25em;
-    width: 62.5%;
+    width: 75%;
   }
 
   .dubbel .flow-side > figure {
@@ -1836,7 +1836,7 @@ screen and (min-resolution: 1.5dppx) {
   .dubbel .ancillary {
     font-size: .875em;
     margin: 1.25em -25% 1.25em 2em;
-    width: 62.5%;
+    width: 50%;
   }
 
   .dubbel .ancillary figure {
