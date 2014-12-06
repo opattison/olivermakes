@@ -1479,6 +1479,7 @@ screen and (min-resolution: 1.5dppx) {
 
   .feature .meta {
     font-size: 1.25em;
+    min-height: 15em;
     padding: .8em;
   }
 
