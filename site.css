@@ -1183,19 +1183,20 @@ article img {
 }
 
 .meta {
+  background-color: hsla(204, 10%, 93%, .8);
   margin: 0;
   padding: 1em;
   position: relative;
-}
-
-.meta {
-  background-color: hsla(204, 10%, 93%, .8);
 }
 
 .feature .meta {
   font-size: 1.125em;
   min-height: 12.5em;
   padding: .888888889em;
+}
+
+.archive-item .meta {
+  background-color: hsla(204, 10%, 93%, 1);
 }
 
 .meta h1 {
@@ -1466,6 +1467,10 @@ screen and (min-resolution: 1.5dppx) {
     height: 18em;
     margin: 1em 0 0;
     width: 50%;
+  }
+
+  .archive-item {
+    font-size: 1.25em;
   }
 
   .feature .meta {
