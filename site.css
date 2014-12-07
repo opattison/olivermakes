@@ -744,7 +744,6 @@ a.reversefootnote:focus {
 }
 
 .title {
-  color: hsla(204, 10%, 18%, 1);
   display: block;
   height: 3.5em;
   margin: 0 auto;
@@ -775,7 +774,7 @@ a.reversefootnote:focus {
 }
 
 .title .logo circle {
-  stroke: hsla(204, 10%, 18%, 1);
+  stroke: hsla(204, 10%, 32%, 1);
 }
 
 /* Logo animation */
@@ -855,7 +854,7 @@ a.reversefootnote:focus {
 
 .site-footer {
   clear: both;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .site-nav,
@@ -1124,12 +1123,13 @@ article img {
 
 /*** Archives **********************************/
 
-.home {
+.home,
+.category {
   background-color: hsla(204, 10%, 96%, 1);
 }
 
-.category {
-  background-color: hsla(204, 10%, 96%, 1);
+.archive {
+  background-color: hsla(204, 10%, 80%, 1)
 }
 
 .index {
@@ -1142,7 +1142,12 @@ article img {
 }
 
 .items {
+  margin: 1em auto;
   overflow: hidden;
+}
+
+.archive-items {
+  margin: 1em auto .5em;
 }
 
 .index header h1 {
@@ -1156,6 +1161,16 @@ article img {
   background-color: hsla(204, 10%, 88%, 1);
   display: inline-block;
   position: relative;
+}
+
+.feature,
+.item,
+.archive-item {
+  width: 100%;
+}
+
+.archive-item {
+  list-style: none;
 }
 
 .index article h1 {
@@ -1173,18 +1188,10 @@ article img {
 }
 
 .meta {
+  background-color: hsla(204, 10%, 93%, .8);
   margin: 0;
   padding: 1em;
   position: relative;
-}
-
-.feature,
-.item {
-  width: 100%;
-}
-
-.meta {
-  background-color: hsla(204, 10%, 93%, .8);
 }
 
 .feature .meta {
@@ -1193,9 +1200,16 @@ article img {
   padding: .888888889em;
 }
 
+.archive-item .meta {
+  background-color: hsla(204, 10%, 93%, 1);
+}
+
 .meta h1 {
   font-size: 1.5em;
-  font-weight: 500;
+}
+
+.archive-item .meta h1 {
+  font-size: 1em;
 }
 
 .index article .time {
@@ -1211,11 +1225,11 @@ article img {
 }
 
 .item .link a {
-  background-color: hsla(204, 10%, 18%, 1);
+  background-color: hsla(204, 10%, 32%, 1);
 }
 
 .item:nth-child(2n + 2) .link a {
-  background-color: hsla(204, 10%, 32%, 1);
+  background-color: hsla(204, 10%, 18%, 1);
 }
 
 .index article .link a:hover {
@@ -1225,6 +1239,17 @@ article img {
 
 .index article .link a:focus {
   background-color: hsla(204, 10%, 93%, 1);
+}
+
+.archive-link a {
+  background-color: hsla(4, 60%, 50%, 1);
+  padding: 1.5em;
+}
+
+.archive-link a:hover,
+.archive-link a:focus {
+  background-color: hsla(204, 10%, 88%, 1);
+  color: hsla(4, 60%, 50%, 1);
 }
 
 /***! END Archives ***/
@@ -1436,7 +1461,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .index {
-    margin: 1em auto;
+    margin: 1em auto 0;
     max-width: 45em;
   }
 
@@ -1445,7 +1470,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .features {
-    margin: -1em auto 0;
+    margin: -1em auto 1em;
     width: 100%;
   }
 
@@ -1460,6 +1485,10 @@ screen and (min-resolution: 1.5dppx) {
     width: 50%;
   }
 
+  .archive-item {
+    font-size: 1.25em;
+  }
+
   .feature .meta {
     font-size: 1.25em;
     min-height: 15em;
@@ -1467,11 +1496,16 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .item .meta {
-    height: 15.5em;
+    height: 15.375em;
   }
 
   .feature .link a {
     font-size: 1.125em;
+  }
+
+  .archive-link {
+    float: left;
+    width: 50%;
   }
 
 }
@@ -1536,7 +1570,7 @@ screen and (min-resolution: 1.5dppx) {
     max-width: 45em;
   }
 
-  .site-nav {
+  article[role="main"] + .site-footer {
     margin-top: 2.75em;
   }
 
@@ -1789,10 +1823,6 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 70em) {
 
-  .site-footer {
-    margin: 2.75em auto 0;
-  }
-
   .site-info,
   .site-nav {
     float: right;
@@ -1992,8 +2022,18 @@ screen and (min-resolution: 1.5dppx) {
   .photo .page,
   .page-header,
   .page-meta,
-  .site-info {
+  .site-info,
+  .index {
     font-size: 1.5em;
+  }
+
+  .title {
+    font-size: 1.75em;
+  }
+
+  .top-menu,
+  .site-nav .close-menu {
+    font-size: 1.25em;
   }
 
   .hero {
@@ -2014,6 +2054,10 @@ screen and (min-resolution: 1.5dppx) {
     max-width: none;
   }
 
+  .archive-link {
+    margin: 1em auto;
+  }
+
 }
 
 @media screen and (min-width: 115em) {
@@ -2021,10 +2065,13 @@ screen and (min-resolution: 1.5dppx) {
   .singel .page,
   .dubbel .page,
   .photo .page,
-  .title,
   .page-header,
   .page-meta {
     font-size: 1.75em;
+  }
+
+  .title {
+    font-size: 2em;
   }
 
   .hero,
@@ -2041,7 +2088,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .photo .site-info {
-    padding: 2em 2.5em;
+    padding: 2em;
   }
 
 }
