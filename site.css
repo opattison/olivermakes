@@ -1220,11 +1220,11 @@ article img {
 }
 
 .item .link a {
-  background-color: hsla(204, 10%, 18%, 1);
+  background-color: hsla(204, 10%, 32%, 1);
 }
 
 .item:nth-child(2n + 2) .link a {
-  background-color: hsla(204, 10%, 32%, 1);
+  background-color: hsla(204, 10%, 18%, 1);
 }
 
 .index article .link a:hover {
