@@ -1474,6 +1474,10 @@ screen and (min-resolution: 1.5dppx) {
     width: 100%;
   }
 
+  .archive-items {
+    font-size: 1.25em;
+  }
+
   .index header h1 {
     margin-left: .8em;
   }
@@ -1483,10 +1487,6 @@ screen and (min-resolution: 1.5dppx) {
     height: 18em;
     margin: 1em 0 0;
     width: 50%;
-  }
-
-  .archive-item {
-    font-size: 1.25em;
   }
 
   .feature .meta {
