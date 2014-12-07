@@ -744,7 +744,6 @@ a.reversefootnote:focus {
 }
 
 .title {
-  color: hsla(204, 10%, 18%, 1);
   display: block;
   height: 3.5em;
   margin: 0 auto;
@@ -775,7 +774,7 @@ a.reversefootnote:focus {
 }
 
 .title .logo circle {
-  stroke: hsla(204, 10%, 18%, 1);
+  stroke: hsla(204, 10%, 32%, 1);
 }
 
 /* Logo animation */
