@@ -1124,12 +1124,13 @@ article img {
 
 /*** Archives **********************************/
 
-.home {
+.home,
+.category {
   background-color: hsla(204, 10%, 96%, 1);
 }
 
-.category {
-  background-color: hsla(204, 10%, 96%, 1);
+.archive {
+  background-color: hsla(204, 10%, 80%, 1)
 }
 
 .index {
