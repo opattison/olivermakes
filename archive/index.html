@@ -5,10 +5,10 @@ category: index
 
 ---
 
-<div class="items">
+<div class="archive-items">
+  <ul>
 {% for post in site.posts %}
-{% unless post.option contains 'feature' %}
-{% include index-article-item.html %}
-{% endunless %}
+{% include index-archive-item.html %}
 {% endfor %}
+  </ul>
 </div>

@@ -1158,6 +1158,16 @@ article img {
   position: relative;
 }
 
+.feature,
+.item,
+.archive-item {
+  width: 100%;
+}
+
+.archive-item {
+  list-style: none;
+}
+
 .index article h1 {
   display: inline;
   line-height: 1;
@@ -1178,11 +1188,6 @@ article img {
   position: relative;
 }
 
-.feature,
-.item {
-  width: 100%;
-}
-
 .meta {
   background-color: hsla(204, 10%, 93%, .8);
 }
@@ -1195,7 +1200,10 @@ article img {
 
 .meta h1 {
   font-size: 1.5em;
-  font-weight: 500;
+}
+
+.archive-item .meta h1 {
+  font-size: 1em;
 }
 
 .index article .time {
