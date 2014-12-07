@@ -815,9 +815,6 @@ a.reversefootnote:focus {
 
 .top-menu,
 .site-nav .close-menu {
-  background-color: hsla(4, 60%, 50%, 1);
-  color: hsla(204, 10%, 98%, 1);
-  height: 2.5em;
   margin: 0;
   position: absolute;
   text-align: center;
@@ -828,6 +825,8 @@ a.reversefootnote:focus {
 
 .top-menu a,
 .site-nav .close-menu a {
+  background-color: hsla(4, 60%, 50%, 1);
+  color: hsla(204, 10%, 98%, 1);
   height: 2.5em;
 }
 
@@ -1208,7 +1207,7 @@ article img {
 }
 
 .feature .link a {
-  background-color: hsla(4, 60%, 50%, 1);
+  background-color: hsla(204, 10%, 10%, 1);
 }
 
 .item .link a {
@@ -1216,14 +1215,15 @@ article img {
 }
 
 .item:nth-child(2n + 2) .link a {
-  background-color: hsla(204, 10%, 24%, 1);
+  background-color: hsla(204, 10%, 32%, 1);
 }
 
 .index article .link a:hover {
   background-color: hsla(204, 80%, 40%, 1);
+  color: hsla(204, 10%, 96%, 1);
 }
 
-.index article a:focus {
+.index article .link a:focus {
   background-color: hsla(204, 10%, 93%, 1);
 }
 
@@ -1328,7 +1328,6 @@ screen and (min-resolution: 1.5dppx) {
 
   .top-menu,
   .site-nav .close-menu {
-    height: auto;
     right: 0;
     top: 0;
     width: auto;
