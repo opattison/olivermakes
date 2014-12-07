@@ -6,7 +6,8 @@ category: index
 ---
 
 <div class="items">
-{% for post in site.categories.project %}
+{% for post in site.categories.project limit: 10 %}
 {% include index-article-item.html %}
 {% endfor %}
+{% include index-archive-link.html %}
 </div>
