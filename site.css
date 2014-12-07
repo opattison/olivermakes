@@ -1992,8 +1992,18 @@ screen and (min-resolution: 1.5dppx) {
   .photo .page,
   .page-header,
   .page-meta,
-  .site-info {
+  .site-info,
+  .index {
     font-size: 1.5em;
+  }
+
+  .title {
+    font-size: 1.75em;
+  }
+
+  .top-menu,
+  .site-nav .close-menu {
+    font-size: 1.25em;
   }
 
   .hero {
@@ -2021,10 +2031,13 @@ screen and (min-resolution: 1.5dppx) {
   .singel .page,
   .dubbel .page,
   .photo .page,
-  .title,
   .page-header,
   .page-meta {
     font-size: 1.75em;
+  }
+
+  .title {
+    font-size: 2em;
   }
 
   .hero,
