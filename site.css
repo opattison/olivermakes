@@ -1504,6 +1504,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .archive-link {
+    clear: both;
     float: left;
     width: 50%;
   }
