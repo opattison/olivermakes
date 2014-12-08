@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1200 800" enable-background="new 0 0 1200 800" xml:space="preserve">
+<circle fill="none" stroke="#000000" stroke-width="20" stroke-miterlimit="10" cx="600" cy="250" r="80"/>
+<path fill="none" stroke="#000000" stroke-width="20" stroke-miterlimit="10" d="M760,330c0-88.4-71.6-160-160-160
+	s-160,71.6-160,160c0,29.9,8.2,57.9,22.5,81.8L530.7,530L600,650l69.3-120l68.2-118.2C751.8,387.9,760,359.9,760,330z"/>
+</svg>
