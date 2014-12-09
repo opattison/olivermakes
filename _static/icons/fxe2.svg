@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" id="fxe2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 620 368.7" enable-background="new 0 0 620 368.7" xml:space="preserve">
-  <g id="camera">
-    <circle id="outer_lens" fill="none" stroke="#000000" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="349.8" cy="202.9" r="125.6"/>
-    <path id="body" fill="none" stroke="#000000" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-    M248.3,10C248.3,10,248.3,10,248.3,10c0,0,0.4,0,1,0c13.7,0,160.8,0,160.8,0h165.8c0,0,16.7,0,19.1,0c2,0.3,5.2,1.2,7,2
-    c1.5,0.9,4,3,4,3s1.4,2.9,1.5,4s0.7,5,0.7,5h0l1.8,54.3v3v261.3c0,0-0.4,8.1-0.9,10.1c-0.3,1.1-1.3,3.3-2.1,4c-1.2,1.1-11,2-11,2
-    H35.2l-3-0.3c0,0-2.3-0.6-3-0.8c-1.3-0.4-4-1.2-5-2c-0.7-0.6-2.9-11.4-3-12.1c-0.1-0.7-1.3-3.2-2-4c-0.8-0.9-3.1-2.1-4-3
-    c-1-1-2.4-3.7-3-5c-0.7-1.7-1.7-5.2-1.9-7c-0.1-0.5-0.1-2-0.1-2v-201c0,0-0.1-1.5,0-2c0.2-1.1,1.5-3.1,2-4c1-1.7,3.4-4.9,5-6
-    c0.7-0.4,2.1-1.2,2.8-1.7c0.7-0.4,1.9-1.5,2.2-2.3c0.4-1,1-4,1-4V87.4c0,0-0.5-15.9,0-21.1c0.6-5.8,4.2-20.7,5.5-26.1
-    c0.3-1.3,0.3-1.5,0.5-2c0.3-0.8,1.3-2.4,2-3c1.1-0.9,3.7-1.8,5-2c2-0.3,8,0,8,0h177.9h3c0,0,1.4,0,1.9-0.2c0.4-0.2,1.2-1.1,1.2-1.1
-    c0.6-0.7,3-3.8,3-3.8s12.5-15.4,13.1-16.1C244.9,11.4,247.2,10.2,248.3,10z"/>
-    <polyline id="top_line" fill="none" stroke="#000000" stroke-width="20" stroke-linejoin="round" stroke-miterlimit="10" points="
-    23.5,65.3 446.5,65.3 517.5,77.9 610.1,77.9  "/>
-    <polyline id="grip" fill="none" stroke="#000000" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-    12,328.6 128.7,328.6 171.9,305.8 176.9,287 178.9,268.1 178.9,215.6 156.8,170 141.7,122.4 124.7,112.5 22.1,112.5 12.1,115.5  
-    "/>
-    <circle id="inner_lens" fill="none" stroke="#000000" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="349.8" cy="202.9" r="77.9"/>
-    <line id="dial" fill="none" stroke="#000000" stroke-width="20" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="10" x1="207" y1="20.1" x2="118.6" y2="20.1"/>
-    <circle id="switch" stroke="#000000" stroke-width="20" stroke-linejoin="round" stroke-miterlimit="10" cx="515.6" cy="300.5" r="10"/>
+<svg version="1.1" class="svg-fxe2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 640 640" enable-background="new 0 0 640 640" xml:space="preserve">
+  <g class="camera">
+    <circle class="outer_lens" fill="none" stroke="#000000" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="359.2" cy="338" r="125.6"/>
+    <path class="body" fill="none" stroke="#000000" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+    M257.7,145.1C257.7,145.1,257.7,145.1,257.7,145.1c0,0,0.4,0,1,0c13.7,0,160.8,0,160.8,0h165.8c0,0,16.7,0,19.1,0
+    c2,0.3,5.2,1.2,7,2c1.5,0.9,4,3,4,3s1.4,2.9,1.5,4c0.2,1.1,0.7,5,0.7,5h0l1.8,54.3v3v261.3c0,0-0.4,8.1-0.9,10.1
+    c-0.3,1.1-1.3,3.3-2.1,4c-1.2,1.1-11,2-11,2H44.7l-3-0.3c0,0-2.3-0.6-3-0.8c-1.3-0.4-4-1.2-5-2c-0.7-0.6-2.9-11.4-3-12.1
+    c-0.1-0.7-1.3-3.2-2-4c-0.8-0.9-3.1-2.1-4-3c-1-1-2.4-3.7-3-5c-0.7-1.7-1.7-5.2-1.9-7c-0.1-0.5-0.1-2-0.1-2v-201c0,0-0.1-1.5,0-2
+    c0.2-1.1,1.5-3.1,2-4c1-1.7,3.4-4.9,5-6c0.7-0.4,2.1-1.2,2.8-1.7c0.7-0.4,1.9-1.5,2.2-2.3c0.4-1,1-4,1-4v-14.1c0,0-0.5-15.9,0-21.1
+    c0.6-5.8,4.2-20.7,5.5-26.1c0.3-1.3,0.3-1.5,0.5-2c0.3-0.8,1.3-2.4,2-3c1.1-0.9,3.7-1.8,5-2c2-0.3,8,0,8,0h177.9h3
+    c0,0,1.4,0,1.9-0.2c0.4-0.2,1.2-1.1,1.2-1.1c0.6-0.7,3-3.8,3-3.8s12.5-15.4,13.1-16.1C254.3,146.5,256.6,145.3,257.7,145.1z"/>
+    <polyline class="top_line" fill="none" stroke="#000000" stroke-width="20" stroke-linejoin="round" stroke-miterlimit="10" points="
+    33,200.4 456,200.4 527,213 619.5,213  "/>
+    <polyline class="grip" fill="none" stroke="#000000" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+    21.5,463.7 138.1,463.7 181.4,440.9 186.4,422.1 188.3,403.3 188.3,350.7 166.3,305.1 151.2,257.6 134.1,247.6 31.6,247.6 
+    21.5,250.6  "/>
+    <circle class="inner_lens" fill="none" stroke="#000000" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="359.2" cy="338" r="77.9"/>
+    <line class="dial" fill="none" stroke="#000000" stroke-width="20" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="10" x1="216.5" y1="155.2" x2="128" y2="155.2"/>
+    <circle class="switch" stroke="#000000" stroke-width="20" stroke-linejoin="round" stroke-miterlimit="10" cx="525" cy="435.6" r="10"/>
   </g>
 </svg>
