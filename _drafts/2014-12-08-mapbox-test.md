@@ -1,60 +1,59 @@
 ---
-title: 'The shore at Bosham in Chichester Harbor'
-layout: photo
+title: 'Mapbox test'
+layout: 'photo'
 option:
+  - feature
   - map-meta
-category: photo
-date: 2014-11-27 21:30
-updated: 2014-11-28 03:06
-drafted: 2014-03-23 12:34
-unique-id: 2014-03-23:chichester-shore
-description: 'On a visit to Chichester in southern England, I visited the waterside at Bosham.'
+category: 'photo'
+date: 2014-12-05 22:01
+updated: 2014-12-05 01:28
+drafted: 2014-11-14 22:01
+unique-id: 2014-11-14:mount-pleasant
+description: 'Photos from a neighborhood in Washington, DC; processed with VSCO Film 04.'
+feature-description: 'These are some of my favorite photos from a walk around the Mount Pleasant neighborhood in January 2014, shot with a Fujifilm X-E2 and Fujinon XF35mmF1.4 R lens, re-processed with VSCO Film 04.'
 image:
-  - src: 2014-03-23-chichester-sky-olivermakes-ccbync.jpg
-    alt: 'An aging brick boathouse and a cloudy sky near sunset'
-    date: 2014-03-23
-    camera: 'Apple iPhone 5S'
-    lens: 'iPhone f/2.2'
-    focal: '4.12mm'
-    aperture: 'f/2.2'
-    shutter: '1/1300'
-    iso: 32
-    location: 'Bosham, near Chichester'
-    latitude: 50.828
-    longitude: -0.8599
-    zoom: 14
-    description: 'VSCOcam a2'
-    aspect: '4:3'
-  - src: 2014-03-23-chichester-shore-close-olivermakes-ccbync.jpg
-    alt: 'Close view of moss, concrete and water on a shoreline'
-    date: 2014-03-23
-    camera: 'Apple iPhone 5S'
-    lens: 'iPhone f/2.2'
-    focal: '4.12mm'
-    aperture: 'f/2.2'
-    shutter: '1/1,050'
-    iso: 32
-    location: 'Bosham, near Chichester'
-    latitude: 50.8286
-    longitude: -0.8574
-    zoom: 14
-    description: 'VSCOcam n1'
-    aspect: '3:2'
-  - src: 2014-03-23-moss-on-bricks-olivermakes-ccbync.jpg
-    alt: 'Wisps of moss on a brick, highlighted by sun, with trees and sky far in the background'
-    date: 2014-03-23
-    camera: 'Apple iPhone 5S'
-    lens: 'iPhone f/2.2'
-    focal: '4.12mm'
-    aperture: 'f/2.2'
-    shutter: '1/340'
-    iso: 32
-    location: 'Bosham, near Chichester'
-    latitude: 50.8286
-    longitude: -0.8593
-    zoom: 14
-    description: 'VSCOcam k1'
-    aspect: '3:2'
+  - src: 2014-01-20-orange-leaves-olivermakes-ccbync.jpg
+    alt: 'Backlit orange leaves'
+    date: 2014-01-20
+    camera: 'Fujifilm X-E2'
+    lens: 'Fujinon XF35mmF1.4 R'
+    focal: '35mm'
+    aperture: 'f/5'
+    shutter: '1/800'
+    iso: 500
+    location: Mount Pleasant, Washington DC
+    latitude: 38.9298
+    longitude: -77.0438
+    zoom: 16
+    description: 'VSCO Film Kodak E200'
+  - src: 2014-01-20-bark-close-olivermakes-ccbync.jpg
+    alt: 'Close view of tree bark in a residential neighborhood'
+    date: 2014-01-20
+    camera: 'Fujifilm X-E2'
+    lens: 'Fujinon XF35mmF1.4 R'
+    focal: '35mm'
+    aperture: 'f/5'
+    shutter: '1/210'
+    iso: 200
+    location: Mount Pleasant, Washington DC
+    latitude: 38.9329
+    longitude: -77.0413
+    zoom: 16
+    description: 'VSCO Film Kodak E200'
+  - src: 2014-01-20-sidewalk-olivermakes-ccbync.jpg
+    alt: 'Small green leaves growing from a rocky wall next to a sidewalk'
+    date: 2014-01-20
+    camera: 'Fujifilm X-E2'
+    lens: 'Fujinon XF35mmF1.4 R'
+    focal: '35mm'
+    aperture: 'f/2.5'
+    shutter: '1/640'
+    iso: 200
+    location: Mount Pleasant, Washington DC
+    latitude: 38.9298
+    longitude: -77.0438
+    zoom: 16
+    description: 'VSCO Film Kodak E200'
 
 ---
 
@@ -89,16 +88,15 @@ image:
   </div>
 </figure>
 
-<section class="grid2">
-<figure>
+<figure class="wide">
   <input type="radio" role="radio" name="shift1" class="shift-back" id="shift-back1">
   <input type="radio" role="radio" name="shift1" class="shift-overlay" id="shift-overlay1">
   <input type="radio" role="radio" name="shift1" class="shift-map" id="shift-map1">
   <div class="container" id="i1">
     <img
       src="{{ site.image-url }}/{{ page.image[1].src }}" 
-      sizes="{{ site.grid2-sizes }}"
-      srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+      sizes="{{ site.wide-sizes }}"
+      srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image-url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
       alt="{{ page.image[1].alt }}"
     >
     <label for="shift-back1" class="shift-back-label"><span class="inner">↼ back to photo</span></label>
@@ -114,22 +112,24 @@ image:
         <li>Lens: {{ page.image[1].lens }} at {{ page.image[1].focal }}</li>
         <li>Exposure: {{ page.image[1].aperture }} | {{ page.image[1].shutter }} s | ISO {{ page.image[1].iso }}</li>
         <li>Date: {{ page.image[1].date }}</li>
-        <li>Location: {{ page.image[0].location }}</li>
+        <li>Location: {{ page.image[1].location }}</li>
       </ul>
       <label for="shift-map1" class="shift-map-label">View map{% include icon-location.html %}</label>
     </div>
   </div>
 </figure>
-<figure>
+
+
+<figure class="wide">
   <input type="radio" role="radio" name="shift2" class="shift-back" id="shift-back2">
   <input type="radio" role="radio" name="shift2" class="shift-overlay" id="shift-overlay2">
   <input type="radio" role="radio" name="shift2" class="shift-map" id="shift-map2">
   <div class="container" id="i2">
     <img
       src="{{ site.image-url }}/{{ page.image[2].src }}" 
-      sizes="{{ site.grid2-sizes }}"
-      srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[2].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-      alt="{{ page.image[2].alt }}"
+      sizes="{{ site.wide-sizes }}"
+      srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image-url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[2].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+       alt="{{ page.image[2].alt }}"
     >
     <label for="shift-back2" class="shift-back-label"><span class="inner">↼ back to photo</span></label>
     <label for="shift-overlay2" class="shift-overlay-label"></label>
@@ -144,10 +144,16 @@ image:
         <li>Lens: {{ page.image[2].lens }} at {{ page.image[2].focal }}</li>
         <li>Exposure: {{ page.image[2].aperture }} | {{ page.image[2].shutter }} s | ISO {{ page.image[2].iso }}</li>
         <li>Date: {{ page.image[2].date }}</li>
-        <li>Location: {{ page.image[0].location }}</li>
+        <li>Location: {{ page.image[2].location }}</li>
       </ul>
       <label for="shift-map2" class="shift-map-label">View map{% include icon-location.html %}</label>
     </div>
   </div>
 </figure>
+
+<section class="essay">
+<h2>Photos from a neighborhood in Washington, DC</h2>
+<p>These are some of my favorite photos from a walk around the Mount Pleasant neighborhood in January 2014, shot with a Fujifilm X-E2 and Fujinon XF35mmF1.4 R lens. I revisited the set in <time datetime="2014-11-14 21:00">November 2014</time>, and processed them with Kodak E200 settings from the <a href="http://vsco.co/film/04/lightroom">VSCO Film 04 pack</a> for Lightroom. Editing raw images in Lightroom and VSCO Film is now a core part of how I process my photos. I have found myself becoming more creative and loose with processing over time, with the realization that what comes out of a digital camera is not mechanically “true” to a scene.</p>
+<p>An image from a digital camera should not be mistaken for an unfiltered nor an especially accurate take on a scene. Rather, the end result is heavily influenced by the camera’s software processing. In the moment of shooting, I can take care with light, composition, aperture, shutter, and those other physical aspects of photography. Beyond this input, the camera has its own “opinion” about how the shot may turn out, expressed in its software and color output, partially or sometimes even completely outside a photographer’s control.</p>
+<p>I choose to shoot raw images so that my camera’s opinion is not hard-coded to a lossy and less flexible JPEG image. A raw image is quite malleable in post-processing software like Lightroom, without losing data. With only the constraints of my composition and exposure when the image was captured, post-processing in this way gives me virtual, creative headroom to take back control and reimagine the scene.</p>
 </section>
