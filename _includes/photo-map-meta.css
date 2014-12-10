@@ -263,6 +263,18 @@ input {
     height: 6em;
   }
 
+  .grid2 .photo-meta {
+    padding: 1em;
+  }
+
+  .photo-meta ul {
+    font-size: .875em;
+  }
+
+  .grid2 .icon-camera svg {
+    height: 3em;
+  }
+
 }
 
 @media screen and (min-width: 95em) {
