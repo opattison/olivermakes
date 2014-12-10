@@ -40,9 +40,23 @@ input {
 }
 
 .container {
+  background-size: cover;
   margin: 0;
 }
-
+{% for image in page.image %}
+#i{{ forloop.index0 }} {
+  background-image: url("http://api.tiles.mapbox.com/v4/{{ site.photo-mapid }}/{{ page.image[forloop.index0].longitude }},{{ page.image[forloop.index0].latitude }}{% if page.image[forloop.index0].zoom %},{{ page.image[forloop.index0].zoom }}{% else %},15{% endif %}/900x675.png64?access_token={{ site.mapbox-key }}");
+}
+{% endfor %}
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 40em),
+screen and (min-resolution: 144dpi) and (min-width: 40em),
+(min-resolution: 2dppx) and (min-width: 40em) {
+  {% for image in page.image %}
+  #i{{ forloop.index0 }} {
+    background-image: url("http://api.tiles.mapbox.com/v4/{{ site.photo-mapid }}/{{ page.image[forloop.index0].longitude }},{{ page.image[forloop.index0].latitude }}{% if page.image[forloop.index0].zoom %},{{ page.image[forloop.index0].zoom }}{% else %},15{% endif %}/900x675@2x.png64?access_token={{ site.mapbox-key }}");
+  }
+  {% endfor %}
+}
 .photo-meta {
   background-color: hsla(204, 10%, 10%, .8);
   bottom: 0;
@@ -117,28 +131,6 @@ input {
 .shift-overlay:checked ~ .container .photo-meta {
   opacity: 1;
   z-index: 3;
-}
-
-.shift-overlay:checked ~ .container .shift-back-label {
-  z-index: 3;
-}
-
-.shift-map:checked ~ .container {
-  background-size: cover;
-}
-{% for image in page.image %}
-#i{{ forloop.index0 }} {
-  background-image: url("http://api.tiles.mapbox.com/v4/{{ site.photo-mapid }}/{{ page.image[forloop.index0].longitude }},{{ page.image[forloop.index0].latitude }}{% if page.image[forloop.index0].zoom %},{{ page.image[forloop.index0].zoom }}{% else %},15{% endif %}/900x675.png64?access_token={{ site.mapbox-key }}");
-}
-{% endfor %}
-@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 40em),
-screen and (min-resolution: 144dpi) and (min-width: 40em),
-(min-resolution: 2dppx) and (min-width: 40em) {
-  {% for image in page.image %}
-  #i{{ forloop.index0 }} {
-    background-image: url("http://api.tiles.mapbox.com/v4/{{ site.photo-mapid }}/{{ page.image[forloop.index0].longitude }},{{ page.image[forloop.index0].latitude }}{% if page.image[forloop.index0].zoom %},{{ page.image[forloop.index0].zoom }}{% else %},15{% endif %}/900x675@2x.png64?access_token={{ site.mapbox-key }}");
-  }
-  {% endfor %}
 }
 
 .shift-map:checked ~ .container img {
