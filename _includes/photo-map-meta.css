@@ -165,8 +165,7 @@ screen and (min-resolution: 144dpi) and (min-width: 40em),
 }
 
 .shift-map:checked ~ .container .shift-back-label:hover {
-  background-color: hsla(204, 30%, 80%, .5);
-  color: hsla(204, 10%, 10%, 1);
+  background-color: hsla(204, 80%, 40%, .8);
 }
 
 .shift-map:checked ~ .container .shift-back-label .inner {
