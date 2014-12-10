@@ -147,7 +147,9 @@ input {
   background-image: url("http://api.tiles.mapbox.com/v4/{{ site.photo-mapid }}/{{ page.image[5].longitude }},{{ page.image[5].latitude }}{% if page.image[5].zoom %},{{ page.image[5].zoom }}{% else %},15{% endif %}/900x675.png64?access_token={{ site.mapbox-key }}");
 }
 
-@media screen and (min-resolution: 2dppx) and (min-width: 40em) {
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 40em),
+screen and (min-resolution: 144dpi) and (min-width: 40em),
+(min-resolution: 2dppx) and (min-width: 40em) {
 
   #i0 {
     background-image: url("http://api.tiles.mapbox.com/v4/{{ site.photo-mapid }}/{{ page.image[0].longitude }},{{ page.image[0].latitude }}{% if page.image[0].zoom %},{{ page.image[0].zoom }}{% else %},15{% endif %}/900x675@2x.png64?access_token={{ site.mapbox-key }}");
