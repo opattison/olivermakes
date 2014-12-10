@@ -246,6 +246,22 @@ screen and (min-resolution: 144dpi) and (min-width: 40em),
     width: 50%;
   }
 
+  {% for image in page.image %}
+  .grid2 #i{{ forloop.index0 }} {
+    background-image: url("http://api.tiles.mapbox.com/v4/{{ site.photo-mapid }}/{{ page.image[forloop.index0].longitude }},{{ page.image[forloop.index0].latitude }}{% if page.image[forloop.index0].zoom %},{{ page.image[forloop.index0].zoom }}{% else %},15{% endif %}/450x338.png64?access_token={{ site.mapbox-key }}");
+  }
+  {% endfor %}
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 60em),
+screen and (min-resolution: 144dpi) and (min-width: 60em),
+(min-resolution: 2dppx) and (min-width: 60em) {
+  {% for image in page.image %}
+  .grid2 #i{{ forloop.index0 }} {
+    background-image: url("http://api.tiles.mapbox.com/v4/{{ site.photo-mapid }}/{{ page.image[forloop.index0].longitude }},{{ page.image[forloop.index0].latitude }}{% if page.image[forloop.index0].zoom %},{{ page.image[forloop.index0].zoom }}{% else %},15{% endif %}/450x338@2x.png64?access_token={{ site.mapbox-key }}");
+  }
+  {% endfor %}
 }
 
 @media screen and (min-width: 95em) {
