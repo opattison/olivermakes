@@ -1,5 +1,5 @@
 ---
-title: 'Mount Pleasant Photowalk'
+title: 'Mount Pleasant photowalk'
 layout: 'photo'
 option:
   - feature
