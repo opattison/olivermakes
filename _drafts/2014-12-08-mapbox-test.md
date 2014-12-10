@@ -21,9 +21,10 @@ image:
     aperture: 'f/5'
     shutter: '1/800'
     iso: 500
+    location: Mount Pleasant, Washington DC
     latitude: 38.9298
     longitude: -77.0438
-    zoom: 15
+    zoom: 16
     description: 'VSCO Film Kodak E200'
   - src: 2014-01-20-bark-close-olivermakes-ccbync.jpg
     alt: 'Close view of tree bark in a residential neighborhood'
@@ -34,8 +35,10 @@ image:
     aperture: 'f/5'
     shutter: '1/210'
     iso: 200
+    location: Mount Pleasant, Washington DC
     latitude: 38.9329
     longitude: -77.0413
+    zoom: 16
     description: 'VSCO Film Kodak E200'
   - src: 2014-01-20-sidewalk-olivermakes-ccbync.jpg
     alt: 'Small green leaves growing from a rocky wall next to a sidewalk'
@@ -46,15 +49,13 @@ image:
     aperture: 'f/2.5'
     shutter: '1/640'
     iso: 200
+    location: Mount Pleasant, Washington DC
     latitude: 38.9298
     longitude: -77.0438
+    zoom: 16
     description: 'VSCO Film Kodak E200'
 
 ---
-
-<img src="http://api.tiles.mapbox.com/v4/{{ site.photo-mapid }}/pin-l-circle+000({{ page.image[0].longitude }},{{ page.image[0].latitude }})/{{ page.image[0].longitude }},{{ page.image[0].latitude }},{% if page.image[0].zoom %}{{ page.image[0].zoom }}{% endif %}/720x480.png64?access_token={{ site.mapbox-key }}">
-
-<img src="http://api.tiles.mapbox.com/v4/{{ site.photo-mapid }}/url-{{ site.icon-url | cgi_escape }}%2Flocation-48.png({{ page.image[0].longitude }},{{ page.image[0].latitude }})/{{ page.image[0].longitude }},{{ page.image[0].latitude }},{% if page.image[0].zoom %}{{ page.image[0].zoom }}{% endif %}/720x480@2x.png32?access_token={{ site.mapbox-key }}">
 
 <figure class="wide">
   <input type="radio" role="radio" name="shift0" class="shift-back" id="shift-back0">
@@ -80,6 +81,7 @@ image:
         <li>Lens: {{ page.image[0].lens }} at {{ page.image[0].focal }}</li>
         <li>Exposure: {{ page.image[0].aperture }} | {{ page.image[0].shutter }} s | ISO {{ page.image[0].iso }}</li>
         <li>Date: {{ page.image[0].date }}</li>
+        <li>Location: {{ page.image[0].location }}</li>
       </ul>
       <label for="shift-map0" class="shift-map-label">View map{% include icon-location.html %}</label>
     </div>
@@ -90,7 +92,7 @@ image:
   <input type="radio" role="radio" name="shift1" class="shift-back" id="shift-back1">
   <input type="radio" role="radio" name="shift1" class="shift-overlay" id="shift-overlay1">
   <input type="radio" role="radio" name="shift1" class="shift-map" id="shift-map1">
-  <div class="container">
+  <div class="container" id="i1">
     <img
       src="{{ site.image-url }}/{{ page.image[1].src }}" 
       sizes="{{ site.wide-sizes }}"
@@ -110,6 +112,7 @@ image:
         <li>Lens: {{ page.image[1].lens }} at {{ page.image[1].focal }}</li>
         <li>Exposure: {{ page.image[1].aperture }} | {{ page.image[1].shutter }} s | ISO {{ page.image[1].iso }}</li>
         <li>Date: {{ page.image[1].date }}</li>
+        <li>Location: {{ page.image[1].location }}</li>
       </ul>
       <label for="shift-map1" class="shift-map-label">View map{% include icon-location.html %}</label>
     </div>
@@ -141,6 +144,7 @@ image:
         <li>Lens: {{ page.image[2].lens }} at {{ page.image[2].focal }}</li>
         <li>Exposure: {{ page.image[2].aperture }} | {{ page.image[2].shutter }} s | ISO {{ page.image[2].iso }}</li>
         <li>Date: {{ page.image[2].date }}</li>
+        <li>Location: {{ page.image[2].location }}</li>
       </ul>
       <label for="shift-map2" class="shift-map-label">View map{% include icon-location.html %}</label>
     </div>

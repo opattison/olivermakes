@@ -56,6 +56,7 @@ input {
   font-size: .875em;
   list-style: none;
   margin: 0;
+  padding-right: 7em;
 }
 
 .shift-map-label {
@@ -120,7 +121,58 @@ input {
 
 .shift-map:checked ~ .container {
   background-size: cover;
-  background-image: url("{{ site.image-url }}/image.gif");
+}
+
+#i0 {
+  background-image: url("http://api.tiles.mapbox.com/v4/{{ site.photo-mapid }}/{{ page.image[0].longitude }},{{ page.image[0].latitude }}{% if page.image[0].zoom %},{{ page.image[0].zoom }}{% else %},15{% endif %}/900x675.png32?access_token={{ site.mapbox-key }}");
+}
+
+#i1 {
+  background-image: url("http://api.tiles.mapbox.com/v4/{{ site.photo-mapid }}/{{ page.image[1].longitude }},{{ page.image[1].latitude }}{% if page.image[1].zoom %},{{ page.image[1].zoom }}{% else %},15{% endif %}/900x675.png32?access_token={{ site.mapbox-key }}");
+}
+
+#i2 {
+  background-image: url("http://api.tiles.mapbox.com/v4/{{ site.photo-mapid }}/{{ page.image[2].longitude }},{{ page.image[2].latitude }}{% if page.image[2].zoom %},{{ page.image[2].zoom }}{% else %},15{% endif %}/900x675.png32?access_token={{ site.mapbox-key }}");
+}
+
+#i3 {
+  background-image: url("http://api.tiles.mapbox.com/v4/{{ site.photo-mapid }}/{{ page.image[3].longitude }},{{ page.image[3].latitude }}{% if page.image[3].zoom %},{{ page.image[3].zoom }}{% else %},15{% endif %}/900x675.png32?access_token={{ site.mapbox-key }}");
+}
+
+#i4 {
+  background-image: url("http://api.tiles.mapbox.com/v4/{{ site.photo-mapid }}/{{ page.image[4].longitude }},{{ page.image[4].latitude }}{% if page.image[4].zoom %},{{ page.image[4].zoom }}{% else %},15{% endif %}/900x675.png32?access_token={{ site.mapbox-key }}");
+}
+
+#i5 {
+  background-image: url("http://api.tiles.mapbox.com/v4/{{ site.photo-mapid }}/{{ page.image[5].longitude }},{{ page.image[5].latitude }}{% if page.image[5].zoom %},{{ page.image[5].zoom }}{% else %},15{% endif %}/900x675.png32?access_token={{ site.mapbox-key }}");
+}
+
+@media screen and (min-resolution: 2dppx) and (min-width: 40em) {
+
+  #i0 {
+    background-image: url("http://api.tiles.mapbox.com/v4/{{ site.photo-mapid }}/{{ page.image[0].longitude }},{{ page.image[0].latitude }}{% if page.image[0].zoom %},{{ page.image[0].zoom }}{% else %},15{% endif %}/900x675.png64?access_token={{ site.mapbox-key }}");
+  }
+
+  #i1 {
+    background-image: url("http://api.tiles.mapbox.com/v4/{{ site.photo-mapid }}/{{ page.image[1].longitude }},{{ page.image[1].latitude }}{% if page.image[1].zoom %},{{ page.image[1].zoom }}{% else %},15{% endif %}/900x675.png64?access_token={{ site.mapbox-key }}");
+  }
+
+  #i2 {
+    background-image: url("http://api.tiles.mapbox.com/v4/{{ site.photo-mapid }}/{{ page.image[2].longitude }},{{ page.image[2].latitude }}{% if page.image[2].zoom %},{{ page.image[2].zoom }}{% else %},15{% endif %}/900x675.png64?access_token={{ site.mapbox-key }}");
+  }
+
+  #i3 {
+    background-image: url("http://api.tiles.mapbox.com/v4/{{ site.photo-mapid }}/{{ page.image[3].longitude }},{{ page.image[3].latitude }}{% if page.image[3].zoom %},{{ page.image[3].zoom }}{% else %},15{% endif %}/900x675.png64?access_token={{ site.mapbox-key }}");
+  }
+
+  #i4 {
+    background-image: url("http://api.tiles.mapbox.com/v4/{{ site.photo-mapid }}/{{ page.image[4].longitude }},{{ page.image[4].latitude }}{% if page.image[4].zoom %},{{ page.image[4].zoom }}{% else %},15{% endif %}/900x675.png64?access_token={{ site.mapbox-key }}");
+  }
+
+  #i5 {
+    background-image: url("http://api.tiles.mapbox.com/v4/{{ site.photo-mapid }}/{{ page.image[5].longitude }},{{ page.image[5].latitude }}{% if page.image[5].zoom %},{{ page.image[5].zoom }}{% else %},15{% endif %}/900x675.png64?access_token={{ site.mapbox-key }}");
+  }
+
 }
 
 .shift-map:checked ~ .container img {
