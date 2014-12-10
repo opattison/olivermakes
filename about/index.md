@@ -5,8 +5,10 @@ option:
   - no-title
   - hero-srcset
   - code
+category: meta
 date: 2014-10-31 18:25
 updated: 2014-11-30 17:54
+description: 'A short biography of Oliver Pattison, as well as details about how this website was made.'
 image:
   - src: 2011-11-10-oliver-bench-jeancflanagan-ccbync.jpg
     alt: 'Oliver Pattison sitting on a bench'

@@ -3,9 +3,10 @@ title: 'patterns'
 layout: singel
 option:
   - code
+category: meta
 date: 2014-10-31 18:25
 updated: 2014-11-29 11:20
-description: A collection of self-documenting patterns and styles for my website.
+description: 'A collection of self-documenting patterns and styles for my website.'
 image:
   - src: 'image.gif'
     caption: 'This is a caption pulled from the yaml front matter. It describes the image in the same `figure` element. By&nbsp;<cite>Oliver&nbsp;Pattison</cite>.'
