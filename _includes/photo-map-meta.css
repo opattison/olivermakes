@@ -282,6 +282,7 @@ screen and (min-resolution: 144dpi) and (min-width: 40em),
   }
 
   .grid2 .shift-map:checked ~ .container .shift-back-label {
+    padding: .5em 0;
     width: 50%;
   }
 
