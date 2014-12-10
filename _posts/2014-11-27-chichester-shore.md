@@ -1,6 +1,8 @@
 ---
 title: 'The shore at Bosham in Chichester Harbor'
 layout: photo
+option:
+  - map-meta
 category: photo
 date: 2014-11-27 21:30
 updated: 2014-11-28 03:06
@@ -17,8 +19,10 @@ image:
     aperture: 'f/2.2'
     shutter: '1/1300'
     iso: 32
+    location: 'Bosham, near Chichester'
     latitude: 50.828
-    longitude: 0.8599
+    longitude: -0.8599
+    zoom: 14
     description: 'VSCOcam a2'
     aspect: '4:3'
   - src: 2014-03-23-chichester-shore-close-olivermakes-ccbync.jpg
@@ -30,8 +34,10 @@ image:
     aperture: 'f/2.2'
     shutter: '1/1,050'
     iso: 32
+    location: 'Bosham, near Chichester'
     latitude: 50.8286
-    longitude: 0.8574
+    longitude: -0.8574
+    zoom: 14
     description: 'VSCOcam n1'
     aspect: '3:2'
   - src: 2014-03-23-moss-on-bricks-olivermakes-ccbync.jpg
@@ -43,37 +49,105 @@ image:
     aperture: 'f/2.2'
     shutter: '1/340'
     iso: 32
+    location: 'Bosham, near Chichester'
     latitude: 50.8286
-    longitude: 0.8593
+    longitude: -0.8593
+    zoom: 14
     description: 'VSCOcam k1'
     aspect: '3:2'
 
 ---
 
-<figure class="wide"> 
-  <img
-    src="{{ site.image-url }}/{{ page.image[0].src }}"
-    sizes="{{ site.wide-sizes }}"
-    srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image-url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[0].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-    alt="{{ page.image[0].alt }}"
-  >
+<figure class="wide">
+  <input type="radio" role="radio" name="shift0" class="shift-back" id="shift-back0">
+  <input type="radio" role="radio" name="shift0" class="shift-overlay" id="shift-overlay0">
+  <input type="radio" role="radio" name="shift0" class="shift-map" id="shift-map0">
+  <div class="container" id="i0">
+    <img
+      src="{{ site.image-url }}/{{ page.image[0].src }}" 
+      sizes="{{ site.wide-sizes }}"
+      srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image-url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[0].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+       alt="{{ page.image[0].alt }}"
+    >
+    <label for="shift-back0" class="shift-back-label"><span class="inner">↼ back to photo</span></label>
+    <label for="shift-overlay0" class="shift-overlay-label"></label>
+    <div class="photo-meta overlay">
+      {% if page.image[0].camera contains "iPhone 5S" %}
+      {% include icon-iphone5s.html %}
+      {% elsif page.image[0].camera contains "X-E2" %}
+      {% include icon-fxe2.html %}
+      {% endif %}
+      <ul class="camera-details">
+        <li>Camera: {{ page.image[0].camera }}</li>
+        <li>Lens: {{ page.image[0].lens }} at {{ page.image[0].focal }}</li>
+        <li>Exposure: {{ page.image[0].aperture }} | {{ page.image[0].shutter }} s | ISO {{ page.image[0].iso }}</li>
+        <li>Date: {{ page.image[0].date }}</li>
+        <li>Location: {{ page.image[0].location }}</li>
+      </ul>
+      <label for="shift-map0" class="shift-map-label">View map{% include icon-location.html %}</label>
+    </div>
+  </div>
 </figure>
 
 <section class="grid2">
-  <figure> 
+<figure>
+  <input type="radio" role="radio" name="shift1" class="shift-back" id="shift-back1">
+  <input type="radio" role="radio" name="shift1" class="shift-overlay" id="shift-overlay1">
+  <input type="radio" role="radio" name="shift1" class="shift-map" id="shift-map1">
+  <div class="container" id="i1">
     <img
-      src="{{ site.image-url }}/{{ page.image[1].src }}"
+      src="{{ site.image-url }}/{{ page.image[1].src }}" 
       sizes="{{ site.grid2-sizes }}"
       srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
       alt="{{ page.image[1].alt }}"
     >
-  </figure>
-  <figure> 
+    <label for="shift-back1" class="shift-back-label"><span class="inner">↼ back to photo</span></label>
+    <label for="shift-overlay1" class="shift-overlay-label"></label>
+    <div class="photo-meta overlay">
+      {% if page.image[1].camera contains "iPhone 5S" %}
+      {% include icon-iphone5s.html %}
+      {% elsif page.image[1].camera contains "X-E2" %}
+      {% include icon-fxe2.html %}
+      {% endif %}
+      <ul class="camera-details">
+        <li>Camera: {{ page.image[1].camera }}</li>
+        <li>Lens: {{ page.image[1].lens }} at {{ page.image[1].focal }}</li>
+        <li>Exposure: {{ page.image[1].aperture }} | {{ page.image[1].shutter }} s | ISO {{ page.image[1].iso }}</li>
+        <li>Date: {{ page.image[1].date }}</li>
+        <li>Location: {{ page.image[0].location }}</li>
+      </ul>
+      <label for="shift-map1" class="shift-map-label">View map{% include icon-location.html %}</label>
+    </div>
+  </div>
+</figure>
+<figure>
+  <input type="radio" role="radio" name="shift2" class="shift-back" id="shift-back2">
+  <input type="radio" role="radio" name="shift2" class="shift-overlay" id="shift-overlay2">
+  <input type="radio" role="radio" name="shift2" class="shift-map" id="shift-map2">
+  <div class="container" id="i2">
     <img
-      src="{{ site.image-url }}/{{ page.image[2].src }}"
+      src="{{ site.image-url }}/{{ page.image[2].src }}" 
       sizes="{{ site.grid2-sizes }}"
       srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[2].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
       alt="{{ page.image[2].alt }}"
     >
-  </figure>
+    <label for="shift-back2" class="shift-back-label"><span class="inner">↼ back to photo</span></label>
+    <label for="shift-overlay2" class="shift-overlay-label"></label>
+    <div class="photo-meta overlay">
+      {% if page.image[2].camera contains "iPhone 5S" %}
+      {% include icon-iphone5s.html %}
+      {% elsif page.image[2].camera contains "X-E2" %}
+      {% include icon-fxe2.html %}
+      {% endif %}
+      <ul class="camera-details">
+        <li>Camera: {{ page.image[2].camera }}</li>
+        <li>Lens: {{ page.image[2].lens }} at {{ page.image[2].focal }}</li>
+        <li>Exposure: {{ page.image[2].aperture }} | {{ page.image[2].shutter }} s | ISO {{ page.image[2].iso }}</li>
+        <li>Date: {{ page.image[2].date }}</li>
+        <li>Location: {{ page.image[0].location }}</li>
+      </ul>
+      <label for="shift-map2" class="shift-map-label">View map{% include icon-location.html %}</label>
+    </div>
+  </div>
+</figure>
 </section>

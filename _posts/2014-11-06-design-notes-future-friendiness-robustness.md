@@ -1,9 +1,9 @@
 ---
 title: 'Designing this site: future-friendliness and&nbsp;robustness'
 layout: singel
-category: writing
 option:
   - code
+category: writing
 date: 2014-11-06 09:17
 updated: 2014-11-29 18:22
 drafted: 2014-11-06 09:17

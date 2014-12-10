@@ -21,7 +21,7 @@ image:
     aperture: 'f/5'
     shutter: '1/800'
     iso: 500
-    location: Mount Pleasant, Washington DC
+    location: 'Mount Pleasant, Washington DC'
     latitude: 38.9298
     longitude: -77.0438
     zoom: 16
@@ -35,7 +35,7 @@ image:
     aperture: 'f/5'
     shutter: '1/210'
     iso: 200
-    location: Mount Pleasant, Washington DC
+    location: 'Mount Pleasant, Washington DC'
     latitude: 38.9329
     longitude: -77.0413
     zoom: 16
@@ -49,7 +49,7 @@ image:
     aperture: 'f/2.5'
     shutter: '1/640'
     iso: 200
-    location: Mount Pleasant, Washington DC
+    location: 'Mount Pleasant, Washington DC'
     latitude: 38.9298
     longitude: -77.0438
     zoom: 16
