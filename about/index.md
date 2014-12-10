@@ -33,9 +33,9 @@ I currently live in Washington, DC. I am originally from New York City.
 
 This website is an archive for my work, featuring:
 
-- **[Writing](/writing)**, a collection of quick notes as well as longer essays
-- **[Photography](/photos)**, a collection of images documenting details of my environment
-- **[Projects](/projects)**, documentation and reflections on professional and open source work
+- **[Writing](/writing/)**, a collection of quick notes as well as longer essays
+- **[Photography](/photos/)**, a collection of images documenting details of my environment
+- **[Projects](/projects/)**, documentation and reflections on professional and open source work
 
 **[Subscribe]({{ site.link.subscribe.full }})** or do whatever else you want to this site’s Atom feed.
 
