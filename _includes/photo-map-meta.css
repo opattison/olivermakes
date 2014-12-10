@@ -22,7 +22,7 @@ label:hover {
 }
 
 input {
-  bottom: 2em;
+  bottom: 50%;
   left: -10000px;
 }
 
