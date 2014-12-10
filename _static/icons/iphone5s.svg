@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" class="svg-iphone5s" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-   viewBox="0 0 640 640" enable-background="new 0 0 640 640" xml:space="preserve">
-  <path class="body" fill="none" stroke="#000000" stroke-width="20" stroke-miterlimit="10" d="M53,408.1V230.8C53,210,70,193,90.7,193
-    h448h11.6c20.7,0,37.7,17,37.7,37.8v177.3c0,20.8-17,37.9-37.7,37.9H90.7C70,446,53,428.9,53,408.1z"/>
-  <line class="top" fill="none" stroke="#000000" stroke-width="20" stroke-miterlimit="10" x1="526" y1="194" x2="526" y2="446"/>
-  <circle class="camera" stroke="#000000" stroke-width="20" stroke-miterlimit="10" cx="556" cy="235.4" r="4"/>
-  <line class="bottom" fill="none" stroke="#000000" stroke-width="20" stroke-miterlimit="10" x1="109" y1="193" x2="109" y2="446"/>
+<svg version="1.1" class="svg-iphone5s" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 560 280" enable-background="new 0 0 560 280" xml:space="preserve">
+  <g class="camera">
+    <path fill="#49535A" d="M511,37c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S516.5,37,511,37L511,37z"/>
+  </g>
+  <line class="bottom" fill="none" stroke="#49535A" stroke-width="20" stroke-miterlimit="10" x1="80" y1="9" x2="80" y2="270"/>
+  <line class="top" fill="none" stroke="#49535A" stroke-width="20" stroke-miterlimit="10" x1="480" y1="10" x2="480" y2="270"/>
+  <path class="body" fill="none" stroke="#49535A" stroke-width="20" stroke-miterlimit="10" d="M550,232.5c0,20.7-16.8,37.5-37.5,37.5
+    h-465C26.8,270,10,253.2,10,232.5v-185C10,26.8,26.8,10,47.5,10h465c20.7,0,37.5,16.8,37.5,37.5V232.5z"/>
 </svg>
