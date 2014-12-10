@@ -503,7 +503,7 @@ a svg circle {
   color: hsla(204, 10%, 96%, 1);
 }
 
-.photo h1 {
+.photo .page-header h1 {
   text-align: center;
 }
 
