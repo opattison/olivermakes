@@ -520,7 +520,8 @@ a svg circle {
   color: hsla(204, 30%, 80%, 1);
 }
 
-.photo .title:hover h1 {
+.photo .title:hover h1,
+.photo .title:focus h1 {
   color: hsla(204, 30%, 80%, 1);
 }
 
@@ -528,7 +529,8 @@ a svg circle {
   stroke: hsla(204, 10%, 96%, 1);
 }
 
-.photo .title:hover .logo circle {
+.photo .title:hover .logo circle,
+.photo .title:focus .logo circle {
   stroke: hsla(204, 30%, 80%, 1);
   -webkit-animation-name: step-fill--contrast;
           animation-name: step-fill--contrast;
