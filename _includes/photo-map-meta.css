@@ -35,11 +35,11 @@ input {
   z-index: 2;
 }
 
-.shift-back-label .inner {
+.shift-back-label .inside {
   visibility: hidden;
 }
 
-.container {
+.map-background {
   background-size: cover;
   margin: 0;
 }
@@ -160,8 +160,12 @@ screen and (min-resolution: 144dpi) and (min-width: 40em),
   background-color: hsla(204, 80%, 40%, .8);
 }
 
-.shift-map:checked ~ .container .shift-back-label .inner {
+.shift-map:checked ~ .container .shift-back-label .inside {
   visibility: visible;
+}
+
+.shift-overlay:checked ~ .container .shift-back-label {
+  z-index: 3;
 }
 
 @media screen and (min-width: 30em) {
