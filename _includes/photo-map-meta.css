@@ -39,6 +39,10 @@ input {
   visibility: hidden;
 }
 
+.container {
+  margin: 0;
+}
+
 .photo-meta {
   background-color: hsla(204, 10%, 10%, .8);
   bottom: 0;
@@ -275,6 +279,10 @@ screen and (min-resolution: 144dpi) and (min-width: 40em),
 
   .grid2 .icon-camera svg {
     height: 3em;
+  }
+
+  .grid2 .shift-map:checked ~ .container .shift-back-label {
+    width: 50%;
   }
 
 }
