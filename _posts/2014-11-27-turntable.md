@@ -39,7 +39,7 @@ image:
       srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image-url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[0].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
        alt="{{ page.image[0].alt }}"
     >
-    <label for="shift-back0" class="shift-back-label"><span class="inside">↼ back to photo</span></label>
+    <label for="shift-back0" class="shift-back-label"></label>
     <label for="shift-overlay0" class="shift-overlay-label"></label>
     <div class="photo-meta overlay">
       <div class="camera-icon {% if page.image[0].camera contains 'iPhone 5S' %}icon-iphone5s{% elsif page.image[0].camera contains 'X-E2' %}icon-fxe2{% endif %}"></div>
