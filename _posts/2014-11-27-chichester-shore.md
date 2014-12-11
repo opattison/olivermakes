@@ -72,11 +72,7 @@ image:
     <label for="shift-back0" class="shift-back-label"><span class="inside">↼ back to photo</span></label>
     <label for="shift-overlay0" class="shift-overlay-label"></label>
     <div class="photo-meta overlay">
-      {% if page.image[0].camera contains "iPhone 5S" %}
-      {% include icon-iphone5s.html %}
-      {% elsif page.image[0].camera contains "X-E2" %}
-      {% include icon-fxe2.html %}
-      {% endif %}
+      <div class="camera-icon {% if page.image[0].camera contains 'iPhone 5S' %}icon-iphone5s{% elsif page.image[0].camera contains 'X-E2' %}icon-fxe2{% endif %}"></div>
       <ul class="camera-details">
         <li>Camera: {{ page.image[0].camera }}</li>
         <li>Lens: {{ page.image[0].lens }} at {{ page.image[0].focal }}</li>
@@ -104,11 +100,7 @@ image:
     <label for="shift-back1" class="shift-back-label"><span class="inside">↼ back to photo</span></label>
     <label for="shift-overlay1" class="shift-overlay-label"></label>
     <div class="photo-meta overlay">
-      {% if page.image[1].camera contains "iPhone 5S" %}
-      {% include icon-iphone5s.html %}
-      {% elsif page.image[1].camera contains "X-E2" %}
-      {% include icon-fxe2.html %}
-      {% endif %}
+      <div class="camera-icon {% if page.image[1].camera contains 'iPhone 5S' %}icon-iphone5s{% elsif page.image[1].camera contains 'X-E2' %}icon-fxe2{% endif %}"></div>
       <ul class="camera-details">
         <li>Camera: {{ page.image[1].camera }}</li>
         <li>Lens: {{ page.image[1].lens }} at {{ page.image[1].focal }}</li>
@@ -134,11 +126,7 @@ image:
     <label for="shift-back2" class="shift-back-label"><span class="inside">↼ back to photo</span></label>
     <label for="shift-overlay2" class="shift-overlay-label"></label>
     <div class="photo-meta overlay">
-      {% if page.image[2].camera contains "iPhone 5S" %}
-      {% include icon-iphone5s.html %}
-      {% elsif page.image[2].camera contains "X-E2" %}
-      {% include icon-fxe2.html %}
-      {% endif %}
+      <div class="camera-icon {% if page.image[2].camera contains 'iPhone 5S' %}icon-iphone5s{% elsif page.image[2].camera contains 'X-E2' %}icon-fxe2{% endif %}"></div>
       <ul class="camera-details">
         <li>Camera: {{ page.image[2].camera }}</li>
         <li>Lens: {{ page.image[2].lens }} at {{ page.image[2].focal }}</li>
