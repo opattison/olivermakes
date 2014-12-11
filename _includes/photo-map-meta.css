@@ -40,15 +40,15 @@ input {
   z-index: 2;
 }
 
-.shift-back-label .inside,
-.shift-overlay-label::after {
-  opacity: 0;
+.shift-overlay-label::after,
+.shift-back-label::after {
+  font-weight: 400;
 }
 
 .shift-overlay-label::after {
   bottom: .125em;
   content: '…';
-  font-size: 3em;
+  font-size: 2.5em;
   opacity: 0;
   position: absolute;
   right: .5em;
@@ -168,25 +168,34 @@ screen and (min-resolution: 144dpi) and (min-width: 40em),
 
 .shift-map:checked ~ .container .shift-back-label {
   background-color: hsla(204, 10%, 24%, .8);
+  padding: .5em 0;
+  width: 50%;
+}
+
+.shift-map:checked ~ .container .shift-back-label,
+.shift-map:checked ~ .container .shift-back-label::after {
   bottom: 0;
-  font-size: .875em;
-  font-weight: 400;
   height: initial;
   opacity: 1;
-  padding: .5em 0;
   right: 0;
-  text-align: center;
   top: initial;
-  width: 50%;
   z-index: 2;
+}
+
+.shift-map:checked ~ .container .shift-back-label::after {
+  content: '↼ back to photo';
+  display: block;
+  font-size: .875em;
+  text-align: center;
+  width: 100%;
 }
 
 .shift-map:checked ~ .container .shift-back-label:hover {
   background-color: hsla(204, 80%, 40%, .8);
 }
 
-.shift-map:checked ~ .container .shift-back-label .inside {
-  opacity: 1;
+.shift-overlay:checked ~ .container .shift-overlay-label::after {
+  opacity: 0;
 }
 
 .shift-overlay:checked ~ .container .shift-back-label {
