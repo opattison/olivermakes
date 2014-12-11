@@ -6,7 +6,7 @@ title: olivermak.es
   <title>{{ page.title | xml_escape }}</title>
   <link href="{{ site.link.subscribe.full }}" rel="self"/>
   <link href="{{ site.url }}/"/>
-  <icon>{{ site.image-url }}/favicon-64.png</icon>
+  <icon>{{ site.icons-url }}/favicon64.png</icon>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>{{ site.url }}/</id>
   <author>
