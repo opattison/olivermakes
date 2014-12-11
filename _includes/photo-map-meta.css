@@ -41,22 +41,23 @@ input {
 }
 
 .shift-back-label .inside,
-.shift-overlay-label .inside {
+.shift-overlay-label::after {
   opacity: 0;
 }
 
-.shift-overlay-label .inside {
+.shift-overlay-label::after {
   bottom: .125em;
+  content: '…';
   font-size: 3em;
-  margin: 0 auto;
+  opacity: 0;
   position: absolute;
   right: .5em;
   text-align: center;
   transition-duration: 640ms;
 }
 
-figure:hover .shift-overlay-label .inside,
-figure:focus .shift-overlay-label .inside {
+figure:hover .shift-overlay-label::after,
+figure:focus .shift-overlay-label::after {
   opacity: 1;
 }
 
@@ -158,10 +159,6 @@ screen and (min-resolution: 144dpi) and (min-width: 40em),
 }
 
 .shift-map:checked ~ .container img {
-  opacity: 0;
-}
-
-.shift-overlay:checked ~ .container .shift-overlay-label .inside {
   opacity: 0;
 }
 

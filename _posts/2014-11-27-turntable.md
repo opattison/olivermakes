@@ -40,7 +40,7 @@ image:
        alt="{{ page.image[0].alt }}"
     >
     <label for="shift-back0" class="shift-back-label"><span class="inside">↼ back to photo</span></label>
-    <label for="shift-overlay0" class="shift-overlay-label"><span class="inside">…</span></label>
+    <label for="shift-overlay0" class="shift-overlay-label"></label>
     <div class="photo-meta overlay">
       <div class="camera-icon {% if page.image[0].camera contains 'iPhone 5S' %}icon-iphone5s{% elsif page.image[0].camera contains 'X-E2' %}icon-fxe2{% endif %}"></div>
       <ul class="camera-details">
