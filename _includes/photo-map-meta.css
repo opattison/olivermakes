@@ -110,18 +110,21 @@ screen and (min-resolution: 144dpi) and (min-width: 40em),
   stroke-width: 35px;
 }
 
-.icon-camera {
+.camera-icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 100%;
   float: right;
-  margin: 0 0 2em 1em;
+  height: 6em;
+  width: 5.5em;
 }
 
-.icon-camera svg {
-  height: 3em;
+.icon-fxe2 {
+  background-image: url("{{ site.icon-url }}/fxe2-offwhite.svg");
 }
 
-.icon-camera svg * {
-  stroke: hsla(204, 10%, 98%, 1);
-  stroke-width: 8px;
+.icon-iphone5s {
+  background-image: url("{{ site.icon-url }}/iphone5s-offwhite.svg");
 }
 
 .shift-back:checked ~ .container .photo-meta {
@@ -174,10 +177,9 @@ screen and (min-resolution: 144dpi) and (min-width: 40em),
     padding: 1em;
   }
 
-  .icon-camera svg {
-    height: 3.5em;
+  .camera-icon {
+    width: 7em;
   }
-
 
   .shift-map-label {
     bottom: 1em;
@@ -192,14 +194,6 @@ screen and (min-resolution: 144dpi) and (min-width: 40em),
     font-size: 1em;
     padding: 1em 0;
     width: 25%;
-  }
-
-}
-
-@media screen and (min-width: 45em) {
-
-  .icon-camera svg {
-    height: 5em;
   }
 
 }
@@ -220,8 +214,8 @@ screen and (min-resolution: 144dpi) and (min-width: 40em),
     right: .888888889em;
   }
 
-  .icon-camera svg {
-    height: 6em;
+  .camera-icon {
+    width: 8em;
   }
 
   .grid2 .photo-meta {
@@ -232,8 +226,12 @@ screen and (min-resolution: 144dpi) and (min-width: 40em),
     font-size: .875em;
   }
 
-  .grid2 .icon-camera svg {
-    height: 3em;
+  .grid2 .camera-icon {
+    width: 6em;
+  }
+
+  .grid2 .shift-map-label {
+    font-size: 1em;
   }
 
   .grid2 .shift-map:checked ~ .container .shift-back-label {
@@ -265,8 +263,8 @@ screen and (min-resolution: 144dpi) and (min-width: 60em),
     font-size: 1.25em;
   }
 
-  .icon-camera svg {
-    height: 7em;
+  .camera-icon {
+    width: 10em;
   }
 
 }
