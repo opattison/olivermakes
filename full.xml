@@ -16,13 +16,13 @@ title: olivermak.es
   
   {% for post in site.posts %}
   <entry>
-    <title>{{ post.title | xml_escape }}</title>
+    <title>{{ post.title | nbsp_escape | xml_escape }}</title>
     <link href="{{ site.url }}{{ post.url }}"/>
     <published>{{ post.date | date_to_xmlschema }}</published>
     <updated>{{ post.updated | date_to_xmlschema }}</updated>
     <id>tag:{{ site.domain }},{{ post.unique-id }}</id>
     <content type="html">
-      {{ post.content | xml_escape }}
+      {{ post.content | syndication_escape | xml_escape }}
     </content>
   </entry>
   {% endfor %}
