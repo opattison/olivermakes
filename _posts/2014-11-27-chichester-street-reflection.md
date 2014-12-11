@@ -33,7 +33,7 @@ image:
   <input type="radio" role="radio" name="shift0" class="shift-back" id="shift-back0">
   <input type="radio" role="radio" name="shift0" class="shift-overlay" id="shift-overlay0">
   <input type="radio" role="radio" name="shift0" class="shift-map" id="shift-map0">
-  <div class="container map" id="i0">
+  <div class="container map-background" id="i0">
     <img
       src="{{ site.image-url }}/{{ page.image[0].src }}" 
       sizes="{{ site.wide-sizes }}"
@@ -41,7 +41,7 @@ image:
       alt="{{ page.image[0].alt }}"
     >
     <label for="shift-back0" class="shift-back-label"><span class="inner">↼ back to photo</span></label>
-    <label for="shift-overlay0" class="shift-overlay-label"></label>
+    <label for="shift-overlay0" class="shift-overlay-label"><span class="inside">…</span></label>
     <div class="photo-meta overlay">
       <div class="camera-icon {% if page.image[0].camera contains 'iPhone 5S' %}icon-iphone5s{% elsif page.image[0].camera contains 'X-E2' %}icon-fxe2{% endif %}"></div>
       <ul class="camera-details">

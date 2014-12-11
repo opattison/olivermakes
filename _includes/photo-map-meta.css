@@ -12,12 +12,17 @@ input,
 label {
   position: absolute;
   cursor: pointer;
+}
+
+label,
+label * {
   transition-duration: 320ms;
   transition-property: color, background-color;
   transition-timing-function: cubic-bezier(0,1,1,1);
 }
 
-label:hover {
+label:hover,
+label *:hover {
   transition-duration: 160ms;
 }
 
@@ -35,8 +40,24 @@ input {
   z-index: 2;
 }
 
-.shift-back-label .inside {
-  visibility: hidden;
+.shift-back-label .inside,
+.shift-overlay-label .inside {
+  opacity: 0;
+}
+
+.shift-overlay-label .inside {
+  bottom: .125em;
+  font-size: 3em;
+  margin: 0 auto;
+  position: absolute;
+  right: .5em;
+  text-align: center;
+  transition-duration: 640ms;
+}
+
+figure:hover .shift-overlay-label .inside,
+figure:focus .shift-overlay-label .inside {
+  opacity: 1;
 }
 
 .map-background {
@@ -140,6 +161,10 @@ screen and (min-resolution: 144dpi) and (min-width: 40em),
   opacity: 0;
 }
 
+.shift-overlay:checked ~ .container .shift-overlay-label .inside {
+  opacity: 0;
+}
+
 .shift-map:checked ~ .container .shift-overlay-label {
   display: none;
 }
@@ -164,7 +189,7 @@ screen and (min-resolution: 144dpi) and (min-width: 40em),
 }
 
 .shift-map:checked ~ .container .shift-back-label .inside {
-  visibility: visible;
+  opacity: 1;
 }
 
 .shift-overlay:checked ~ .container .shift-back-label {
