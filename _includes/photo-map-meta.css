@@ -53,6 +53,7 @@ input {
   position: absolute;
   right: .5em;
   text-align: center;
+  text-shadow: hsla(204, 10%, 32%, 0.8) 0 0 .125em;
   transition-duration: 640ms;
 }
 
