@@ -53,7 +53,7 @@
       color: hsla(204, 10%, 96%, 1);
     }
 
-    #error .page-header .inner,
+    #error .page-header .inside,
     #error .page {
       background-color: hsla(4, 60%, 50%, 1);
     }
@@ -119,6 +119,14 @@
       }
     }
 
+    @media screen and (min-width: 60em) {
+
+      #error .page {
+        padding-bottom: 2em;
+      }
+
+    }
+
   </style>
 
   <!-- icon stack – optimized for iOS/Android/modern browsers (IE10+) -->
@@ -158,7 +166,11 @@
   <header class="site-header" id="top" role="banner">
     <a class="title" href="/" rel="home" tabindex="1">
       <div class="logo">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><circle class="earth" fill="none" stroke="#000" stroke-width="20" stroke-miterlimit="10" cx="250" cy="250" r="240"/><circle class="mantle" fill="none" stroke="#000" stroke-width="20" stroke-miterlimit="10" cx="250" cy="170" r="160"/><circle class="core" fill="none" stroke="#000" stroke-width="20" stroke-miterlimit="10" cx="250" cy="90" r="80"/></svg>
+        <svg version="1.1" class="icon-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 560 560" enable-background="new 0 0 560 560" xml:space="preserve">
+          <circle class="outer" fill="none" stroke="#49535A" stroke-width="20" stroke-miterlimit="10" cx="280" cy="280" r="270"/>
+          <circle class="inner" fill="none" stroke="#49535A" stroke-width="20" stroke-miterlimit="10" cx="280" cy="190" r="180"/>
+          <circle class="secret" fill="none" stroke="#49535A" stroke-width="20" stroke-miterlimit="10" cx="280" cy="100" r="90"/>
+        </svg>
       </div>
       <h1>olivermak.es</h1>
     </a>
@@ -173,7 +185,7 @@
 
     
     <header class="page-header">
-      <div class="inner">
+      <div class="inside">
         <h1>404 error: Page&nbsp;not&nbsp;found</h1>
       </div>
     </header>
@@ -183,7 +195,11 @@
 
       <a href="/">
         <div class="logo">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><circle class="earth" fill="none" stroke="#000" stroke-width="20" stroke-miterlimit="10" cx="250" cy="250" r="240"/><circle class="mantle" fill="none" stroke="#000" stroke-width="20" stroke-miterlimit="10" cx="250" cy="170" r="160"/><circle class="core" fill="none" stroke="#000" stroke-width="20" stroke-miterlimit="10" cx="250" cy="90" r="80"/></svg>
+          <svg version="1.1" class="icon-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 560 560" enable-background="new 0 0 560 560" xml:space="preserve">
+            <circle class="outer" fill="none" stroke="#49535A" stroke-width="20" stroke-miterlimit="10" cx="280" cy="280" r="270"/>
+            <circle class="inner" fill="none" stroke="#49535A" stroke-width="20" stroke-miterlimit="10" cx="280" cy="190" r="180"/>
+            <circle class="secret" fill="none" stroke="#49535A" stroke-width="20" stroke-miterlimit="10" cx="280" cy="100" r="90"/>
+          </svg>
         </div>
       </a>
 
@@ -203,15 +219,15 @@
         <a href="#">Menu ↾</a>
       </nav>
       <ul>
-        <li><a href="/about/" tabindex="2">About</a></li>
-        <li><a href="/writing/" tabindex="3">Writing</a></li>
-        <li><a href="/projects/" tabindex="4">Projects</a></li>
-        <li><a href="/photography/" tabindex="5">Photography</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/writing/">Writing</a></li>
+        <li><a href="/projects/">Projects</a></li>
+        <li><a href="/photography/">Photography</a></li>
       </ul>
     </nav>
 
     <div class="site-info" role="contentinfo">
-      <div class="inner">
+      <div class="inside">
         <p>The writing and photography here is licensed <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC</a> <a rel="author" href="/">Oliver Pattison</a>. Everything else is <a href="/about#copyright">under copyright</a> unless stated otherwise.</p>
         <p><strong><a rel="source" href="http://github.com/opattison/olivermakes">View the source code</a></strong> for this site. See anything wrong here? <a href="https://github.com/opattison/olivermakes/issues">Make an issue</a> of it.</p>
         <p><strong><a rel="alternate" href="http://olivermak.es/full.xml">Subscribe</a></strong> via Atom/RSS or follow me on <strong><a rel="me" href="http://twitter.com/olivermakes">Twitter</a></strong> for updates.</p>
@@ -221,7 +237,7 @@
 
     <nav class="alt-nav" role="navigation">
       <ul>
-        <li class="back-home"><a rel="home" href="/"><div class="inner">Home <div class="logo">
+        <li class="back-home"><a rel="home" href="/"><div class="inside">Home <div class="logo">
   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><circle class="earth" fill="none" stroke="#000" stroke-width="20" stroke-miterlimit="10" cx="250" cy="250" r="240"/><circle class="mantle" fill="none" stroke="#000" stroke-width="20" stroke-miterlimit="10" cx="250" cy="170" r="160"/><circle class="core" fill="none" stroke="#000" stroke-width="20" stroke-miterlimit="10" cx="250" cy="90" r="80"/></svg>
 </div></div></a></li>
         <li class="back-top"><a href="#top">Back to top ↾</a></li>
