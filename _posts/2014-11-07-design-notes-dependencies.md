@@ -1,12 +1,17 @@
 ---
 title: 'Designing this site: an accounting of dependencies'
 layout: singel
+option:
+  - index-image
 category: writing
 date: 2014-11-07 12:34
 updated: 2014-11-29 18:21
 drafted: 2014-11-07 12:34
 unique-id: 2014-11-08:design-notes-dependencies
 description: 'What runs this site? What is most essential and what could affect its long-term survivability?'
+image:
+  - src: 2014-12-12-logo.svg
+    description: 'index-image color is gray6 #84919a and grayblue #bdcfdb'
 
 ---
 
