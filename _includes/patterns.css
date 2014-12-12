@@ -13,7 +13,7 @@
   overflow: hidden;
 }
 
-.swatches li + li {
+.swatches li {
   margin-top: 1em;
 }
 
