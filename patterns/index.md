@@ -29,7 +29,7 @@ These are stored in the site’s [`_config.yml` file](https://github.com/opattis
 
 <ul class="swatches">
 {% for name in site.shade %}
-<li><figure style="background-color: {{ site.shade[forloop.index0].hsl }}"><figcaption>{{ site.shade[forloop.index0].name }}<br>{{ site.shade[forloop.index0].hsl }}</figcaption></figure></li>
+<li><figure style="background-color: {{ site.shade[forloop.index0].hsl }}"><figcaption>{{ site.shade[forloop.index0].name }}<br>{{ site.shade[forloop.index0].hsl }}<br>{{ site.shade[forloop.index0].hex }}</figcaption></figure></li>
 {% endfor %}
 </ul>
 
@@ -37,7 +37,7 @@ These are stored in the site’s [`_config.yml` file](https://github.com/opattis
 
 <ul class="swatches">
 {% for name in site.color %}
-<li><figure style="background-color: {{ site.color[forloop.index0].hsl }}"><figcaption>{{ site.color[forloop.index0].name }}<br>{{ site.color[forloop.index0].hsl }}</figcaption></figure></li>
+<li><figure style="background-color: {{ site.color[forloop.index0].hsl }}"><figcaption>{{ site.color[forloop.index0].name }}<br>{{ site.color[forloop.index0].hsl }}<br>{{ site.color[forloop.index0].hex }}</figcaption></figure></li>
 {% endfor %}
 </ul>
 

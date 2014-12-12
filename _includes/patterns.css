@@ -19,7 +19,7 @@
 }
 
 .swatches li figure {
-  height: 20em;
+  height: 16em;
   position: relative;
 }
 
@@ -38,10 +38,6 @@
   .swatches li {
     margin: 2em 0 0;
     width: 50%;
-  }
-
-  .swatches li figure {
-    height: 16em;
   }
 
 }
