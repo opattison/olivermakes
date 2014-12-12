@@ -1,4 +1,4 @@
-.swatches,
+.page .swatches,
 .swatches li,
 .swatches li figure,
 .swatches li figcaption {
@@ -10,12 +10,11 @@
 .swatches {
   font: 400 .75em/1.5 'source-sans-pro', Menlo, Consolas, monospace;
   list-style-type: none;
-  margin-top: 1em;
   overflow: hidden;
 }
 
-.swatches li {
-  float: left;
+.swatches li + li {
+  margin-top: 1em;
 }
 
 .swatches li figure {
@@ -33,10 +32,15 @@
   width: 100%;
 }
 
+.logo-demo {
+  background-color: hsla(204, 10%, 96%, 1);
+  padding: 2em;
+}
+
 @media screen and (min-width: 36em) {
 
   .swatches li {
-    margin: 2em 0 0;
+    float: left;
     width: 50%;
   }
 

@@ -1,5 +1,5 @@
 ---
-title: 'patterns'
+title: 'Patterns'
 layout: singel
 option:
   - code
@@ -51,8 +51,8 @@ These are stored in the site’s [`_config.yml` file](https://github.com/opattis
 
 - - -
 
-<figure class="image right">
-  <img
+<figure class="right">
+  <img class="logo-demo"
     src="{{ site.icon-url }}/{{ page.image[0].src }}" 
     alt="{{ page.image[0].alt }}"
   >
@@ -102,7 +102,7 @@ These are stored in the site’s [`_config.yml` file](https://github.com/opattis
 
 ### Figure+image
 
-<figure class="image">
+<figure class="narrow">
   <img
     src="{{ site.image-url }}/{{ page.image[1].src }}" 
     sizes="{{ site.wide-sizes }}"  
