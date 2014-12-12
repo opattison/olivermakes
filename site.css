@@ -549,6 +549,19 @@ a svg circle {
   margin: 2.75em auto 0;
 }
 
+.photo .project {
+  background-color: hsla(204, 10%, 24%, 1);
+  margin-top: 1em;
+}
+
+.photo .project .description {
+  color: hsla(204, 10%, 96%, 1);
+}
+
+.photo .project .link a {
+  color: hsla(204, 10%, 96%, 1);
+}
+
 /* Block content – essays, code blocks */
 
 .essay {
@@ -1104,6 +1117,28 @@ article img {
 
 .svg img {
   padding: 0 2em 1em;
+}
+
+.noedges img {
+  padding: 1em;
+}
+
+/* SVG figure background helper */
+
+.extradark img {
+  background-color: hsla(204, 10%, 10%, 1);
+}
+
+.dark img {
+  background-color: hsla(204, 10%, 18%, 1)
+}
+
+.light img {
+  background-color: hsla(204, 10%, 93%, 1);
+}
+
+.extralight img {
+  background-color: hsla(204, 10%, 98%, 1);
 }
 
 /* Screenshot border/outline helper */
@@ -1715,8 +1750,14 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .project {
+    margin: 0 auto;
+    width: 36em;
+  }
+
+  .dubbel .project {
     margin: -1.25em -2.25em 0;
     padding: 2.25em;
+    width: auto;
   }
 
   .ancillary {
@@ -1768,8 +1809,8 @@ screen and (min-resolution: 1.5dppx) {
 
   .wide figcaption p,
   .code figcaption p {
-    margin-left: 50%;
-    width: 50%;
+    margin-left: 52%;
+    width: 48%;
   }
 
   .grid2 {
@@ -1810,6 +1851,9 @@ screen and (min-resolution: 1.5dppx) {
   .hero figcaption p,
   .photo [role="main"] figcaption p {
     font-size: .875em;
+  }
+
+  .hero figcaption p {
     margin-left: 50%;
     width: 50%;
   }
