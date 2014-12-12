@@ -3,12 +3,20 @@ title: 'Designing this site: future-friendliness and&nbsp;robustness'
 layout: singel
 option:
   - code
+  - index-image
 category: writing
 date: 2014-11-06 09:17
-updated: 2014-11-29 18:22
+updated: 2014-12-12 02:44
 drafted: 2014-11-06 09:17
 unique-id: 2014-11-06:design-notes-future-friendliness
 description: 'A discussion about designing for the long term, covering HTML, independent publishing, and web hosting.'
+image:
+  - src: 2014-12-12-futurefriendly.svg
+    alt: 'future friendly logo'
+    caption: 'The [future friendly](http://futurefriendlyweb.com/) movement is a significant inspiration for my approach, in both philosophy and implementation. [#ffly](https://twitter.com/search?q=%23ffly) astronaut logo is licensed [CC BY](http://creativecommons.org/licenses/by/3.0/), modified slightly by me.'
+    description: 'hero color is gray3 #49535a; index-image color is gray6 #84919a'
+    license: CC BY
+    license-url: http://creativecommons.org/licenses/by/3.0/
 
 ---
 
@@ -66,6 +74,14 @@ Serving only static files is future-friendly and robust, which means my content 
 Another aspect of working with a static site that appeals to me is that I am able to handle the scope and output much more easily that I would with a dynamic site. I have had experience maintaining and designing for a WordPress site and the complexity and fragility of a WordPress site is off-putting and beyond my current set of technical skills.
 
 The trade-off is supposedly an easier user interface for editing and administration, and more flexibility with dynamic content. However, I find a CMS in the WordPress model more intimidating after a couple of years getting comfortable with tools like Jekyll and Git. I like working in a text editor. I have grown to appreciate the power of the command line. The data that I input into my site is under my control because I manage the input and the output from my own computer, rather than relying on someone else’s server.
+
+<figure class="right svg">
+  <img
+    src="{{ site.image-url }}/{{ page.image[0].src }}" 
+    alt="{{ page.image[0].alt }}"
+  >
+  <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
+</figure>
 
 I am willing to admit that I don’t have a handle on working alone with a complex dynamic site suited to my design goals. Fortunately, static sites make up for their deficiencies in dynamism with high performance and robustness. Dealing with opaque and breakable databases, worrying about security holes, and spending time figuring out limitations of a dynamically programmed site takes my time away from writing, photography, and improving the user interface of the site.
 
