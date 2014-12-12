@@ -1,6 +1,8 @@
 ---
 title: 'Jekyll Version of Pattern Primer'
 layout: dubbel
+option:
+  - sample-srcset
 category: project
 date: 2013-07-21 12:34
 updated: 2014-12-01 20:30

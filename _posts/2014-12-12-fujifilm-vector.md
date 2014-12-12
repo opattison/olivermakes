@@ -3,6 +3,7 @@ title: 'Fujifilm X-E2 Vector'
 layout: 'photo'
 option:
   - code
+  - sample-svg
   - index-image
   - feature
 category: 'project'
@@ -13,7 +14,7 @@ updated: 2014-12-12 12:42
 drafted: 2014-12-12 02:00
 unique-id: 2014-12-12:fujifilm-vector
 description: 'Hand-designed graphics for my Fujifilm camera, used for photo metadata on this site.'
-feature-description: 'To complement the metadata on the photo collections on this site, I created hand-designed minimal vector graphics for my camera.'
+feature-description: 'To complement the metadata for photo collections on this site, I created hand-designed minimal vector graphics to represent my camera. I needed a custom design, so I had to do it myself!'
 project:
   download: http://static.olivermak.es/fragments/2014-12-12-xe2-1.1.ai
   filetype: '.ai'
