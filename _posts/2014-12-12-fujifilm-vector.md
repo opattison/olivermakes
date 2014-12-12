@@ -4,14 +4,16 @@ layout: 'photo'
 option:
   - code
   - index-image
+  - feature
 category: 'project'
 tags:
   - minor
 date: 2014-12-08 9:00
-updated: 2014-12-12 03:59
-drafted: 2014-12-08 02:00
+updated: 2014-12-12 12:42
+drafted: 2014-12-12 02:00
 unique-id: 2014-12-12:fujifilm-vector
 description: 'Hand-designed graphics for my Fujifilm camera, used for photo metadata on this site.'
+feature-description: 'To complement the metadata on the photo collections on this site, I created hand-designed minimal vector graphics for my camera.'
 project:
   download: http://static.olivermak.es/fragments/2014-12-12-xe2-1.1.ai
   filetype: '.ai'
@@ -36,7 +38,7 @@ image:
 ---
 
 {% capture p1 %}
-For the metadata on my [photo pages](/photography/), I wanted accurate but minimal vector representations of my cameras (currently a Fujifilm X-E2 and an iPhone 5S), so I realized I had to design my own. I didn’t want a generic representation of a camera or mobile device – this is fine for many circumstances. Since it was part of communicating “how was this photo created”, I wanted something recognizable as a unique object. After completing the initial work, I realized I would need something even more minimal for smaller sizes (20% of a screen width or much smaller), so I abstracted the icon even further.
+To complement the metadata on my [photo pages](/photography/), I wanted accurate but minimal vector representations of my cameras (currently a Fujifilm X-E2 and an iPhone 5S), so I had to design my own. Although generic representations of cameras are appropriate for many circumstances (such as indicating a photo gallery on a navigation menu), something more defined was needed for this circumstance. Part of what I am communicating here is “how this photo was created”, so I designed something recognizable as a unique object. After completing the initial work, I realized I would need something even more minimal for smaller sizes (20% of a screen width or much smaller), so I abstracted the icon even further.
 {% endcapture %}
 
 <div class="essay">
@@ -88,7 +90,7 @@ As a format, <abbr title="Scalable Vector Graphics">SVG</abbr> has plenty of adv
 - **It is robust:** it works even without specialized software – its source can be edited in a text editor. It is implemented in XML, so the source can be viewed and edited very easily. Browser support for it is pretty good as well.
 - **It is flexible:** it can be served as a background image with CSS, in an HTML `<img>` tag, or even inline as an `<svg>` element (which can be styled and animated with CSS and JavaScript).
 
-I use SVG for all of the graphics on this site, with all three of these methods depending on the context.
+I use SVG for all of the graphics on this site, with all three of these methods depending on performance and semantic context.
 
 {% endcapture %}
 
