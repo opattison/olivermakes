@@ -1100,6 +1100,12 @@ article img {
   width: 66.66666667%;
 }
 
+/* SVG figure padding helper */
+
+.svg img {
+  padding: 0 2em 1em;
+}
+
 /* Screenshot border/outline helper */
 
 .screenshot img {
