@@ -1,15 +1,18 @@
 ---
 title: 'Jekyll Version of Pattern Primer'
 layout: dubbel
+option:
+  - sample-srcset
 category: project
 date: 2013-07-21 12:34
 updated: 2014-12-01 20:30
 drafted: 2014-12-01 12:40
 unique-id: 2014-11-30:pattern-primer
 description: 'A pattern documentation tool for designing websites, based on Jeremy Keith’s Pattern Primer.'
-project-url: http://patternprimer.olivermak.es
-project-source: https://github.com/opattison/Pattern-Primer-Jekyll
-period: 2013-07 to present
+project:
+  url: http://patternprimer.olivermak.es
+  source: https://github.com/opattison/Pattern-Primer-Jekyll
+  period: '2013-07 to present'
 image:
   - src: 2014-12-01-pattern-primer-project-feature-screen.png
     alt: 'A screenshot of Pattern Primer Jekyll'
@@ -56,4 +59,4 @@ I forked [Jeremy’s source](https://github.com/adactio/Pattern-Primer) from Git
 
 - - -
 
-**[View Pattern Primer Jekyll live]({{ page.project-url }})** or **[check it out on GitHub]({{ page.project-source }})**.
+**[View Pattern Primer Jekyll live]({{ page.project.url }})** or **[check it out on GitHub]({{ page.project.source }})**.

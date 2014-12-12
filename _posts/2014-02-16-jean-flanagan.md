@@ -4,6 +4,7 @@ layout: 'dubbel'
 option:
   - code
   - index-image
+  - sample-srcset
   - custom-css
 category: 'project'
 date: 2014-02-16 12:34
@@ -11,9 +12,10 @@ updated: 2014-12-06 16:01
 drafted: 2014-12-03 17:10
 unique-id: 2014-02-16:jean-flanagan
 period: 2013-06 to present
-description: 'A personal website for a science education and communication specialist.' 
-project-url: 'http://jeancflanagan.com'
-project-source: 'https://github.com/opattison/jeancflanagan'
+description: 'A personal website for a science education and communication specialist.'
+project: 
+  url: http://jeancflanagan.com
+  source: https://github.com/opattison/jeancflanagan
 custom-css: 2014-02-16-jean-flanagan.css
 image:
   - src: 2014-12-05-jean-flanagan-feature.jpg
@@ -50,6 +52,8 @@ image:
     license-url: http://creativecommons.org/licenses/by-nc/3.0/
 
 ---
+
+{{ page.layout }}
 
 My partner Jean Flanagan and I have a shared interest in writing, photography, and self-archiving. Over the years we've experimented with shared blogs and photo repositories on a number of different web services. We enjoyed working together but limitations in those services often made our projects feel ephemeral. So it made sense for us to pool our resources to make Jean a website to serve as a professional portfolio featuring her writing and photography. Jean would collect and edit her output and I would help her design and develop it.
 
@@ -186,7 +190,7 @@ Publishing *something* on the web is relatively easy, but designing a lasting ho
 
 - - -
 
-**[View Jean’s website live]({{ page.project-url }})** or **[check it out on GitHub]({{ page.project-source }})**.
+**[View Jean’s website live]({{ page.project.url }})** or **[check it out on GitHub]({{ page.project.source }})**.
 
 **Note:** this website is continually being updated and developed, so the information on this page is only a snapshot of it as it existed on {{ page.updated | date: '%Y-%m-%d' }}.
 

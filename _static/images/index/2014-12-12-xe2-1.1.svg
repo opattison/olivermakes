@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="camera" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-20 30 450 300" enable-background="new 0 0 599 349.2" xml:space="preserve">
+<path id="body" fill="none" stroke="#84919A" stroke-width="4" stroke-miterlimit="10" d="M238.1,1L238.1,1c0,0,0.4,0,1,0
+	c13.6,0,160,0,160,0h165c0,0,16.6,0,19,0c2,0.3,5.1,1.2,7,2c1.5,0.9,4,3,4,3s1.4,2.9,1.5,4s0.7,5,0.7,5l0,0l1.8,54v3v260
+	c0,0,0,0.9-0.1,2s-0.3,6-0.8,8c-0.3,1.1-1.3,3.2-2.1,4c-1.2,1.1-4.4,1.8-6,2c-1.2,0.2-5,0-5,0h-558l-3-0.3c0,0-2.3-0.6-3-0.8
+	c-1.3-0.4-4-1.2-5-2c-0.7-0.6-1.7-2.1-2-3c-0.3-1.2-0.9-8.3-1-9c-0.1-0.7-1.3-3.2-2-4c-0.8-0.9-3.1-2.1-4-3c-1-1-2.4-3.7-3-5
+	c-0.7-1.7-1.7-5.2-1.9-7c-0.1-0.5-0.1-2-0.1-2V112c0,0-0.1-1.5,0-2c0.2-1.1,1.4-3,2-4c1-1.7,3.4-4.9,5-6c0.7-0.4,2.1-1.2,2.8-1.7
+	c0.7-0.4,1.9-1.5,2.2-2.3c0.4-1,1-4,1-4V78c0,0-0.5-15.8,0-21c0.6-5.8,4.2-20.6,5.5-26c0.3-1.3,0.3-1.5,0.5-2c0.3-0.8,1.3-2.4,2-3
+	c1-0.8,3.7-1.8,5-2c2-0.3,8,0,8,0h177h3c0,0,1.4-0.1,1.9-0.2c0.4-0.2,1.2-1.1,1.2-1.1c0.6-0.7,3-3.8,3-3.8s12.4-15.4,13-16
+	S237,1.2,238.1,1z"/>
+<path id="top_middle_line" fill="none" stroke="#84919A" stroke-width="4" stroke-miterlimit="10" d="M598,72.1h-100h-109
+	c0,0-22.7-9.1-50-9c-27.6-0.2-49,9-49,9H14"/>
+<path id="top_line" fill="none" stroke="#84919A" stroke-width="4" stroke-miterlimit="10" d="M31,56.1h378c0,0,14.3,2.1,19,3
+	c5.8,1.1,17.2,4.1,23,5c2.7,0.4,8.2,0.9,11,1c20.2,0.8,81,1,81,1s24.3-0.1,35,0c5.1,0,20,3,20,3"/>
+<g id="name">
+	<g id="x">
+		<polyline id="left" fill="none" stroke="#84919A" stroke-width="4" stroke-linejoin="bevel" stroke-miterlimit="10" points="
+			481,38.1 486.1,38.1 504.1,51.1 509,51.1 		"/>
+		<polyline id="right" fill="none" stroke="#84919A" stroke-width="4" stroke-linejoin="bevel" stroke-miterlimit="10" points="
+			481,51.1 486.1,51.1 504.1,38.1 509,38.1 		"/>
+	</g>
+	<line id="_x2D_" fill="none" stroke="#84919A" stroke-width="4" stroke-miterlimit="10" x1="510" y1="45.1" x2="518" y2="45.1"/>
+	<g id="E">
+		<polyline fill="none" stroke="#84919A" stroke-width="4" stroke-linejoin="bevel" stroke-miterlimit="10" points="537,38.1 
+			524,38.1 524,51.1 537,51.1 		"/>
+		
+			<line fill="none" stroke="#84919A" stroke-width="4" stroke-linejoin="bevel" stroke-miterlimit="10" x1="534" y1="44.1" x2="524" y2="44.1"/>
+	</g>
+	<path id="_x32_" fill="none" stroke="#84919A" stroke-width="4" stroke-miterlimit="10" d="M543.1,41.1c0,0,0.1-2.2,0.5-2.7
+		s2.5-1.2,2.5-1.2h5l2,1l1,2v4l-2,1.1h-7l-2,1.2l-0.8,1.8l0.5,3h2.2h11"/>
+</g>
+<polyline id="dial1" fill="none" stroke="#84919A" stroke-width="4" stroke-miterlimit="10" points="142.1,24 141,20 141,5 
+	144.1,1.1 225.1,1.1 230.1,6.6 "/>
+<polyline id="dial2" fill="none" stroke="#84919A" stroke-width="4" stroke-miterlimit="10" points="79.1,24 76,21 76,13 78.1,11.1 
+	90,11.1 90,7.1 124,7.1 124,11.1 136.1,11.1 138,13 138,21 135,24 "/>
+<g id="switch">
+	<circle id="switch_outer" fill="none" stroke="#84919A" stroke-width="4" stroke-miterlimit="10" cx="499.1" cy="279.5" r="32.5"/>
+	<g id="switch_inner">
+		<path fill="none" d="M491,291.1v6c2,1.2,5.5,1.9,8.5,1.9s5.5-0.7,8.5-1.9v-6H491z"/>
+		<path fill="none" stroke="#84919A" stroke-width="4" stroke-linejoin="round" stroke-miterlimit="10" d="M499.1,259
+			c-11,0-19.8,9-19.8,20c0,8,4.7,14.9,11.7,18.1v4.9v5.1h5h12V302v-4.9c6-3.2,11.3-10.1,11.3-18.1C519.3,268,510.1,259,499.1,259z"
+			/>
+	</g>
+</g>
+<path id="bottom_line" fill="none" stroke="#84919A" stroke-width="4" stroke-linejoin="round" stroke-miterlimit="10" d="M11,333.1
+	h295c0,0,0.8-0.1,1,0c4.3,0.3,17,2,17,2s10.5,1,14,1c3.8,0,15-1,15-1s12-1.7,16-2c0.2,0,1,0,1,0h227"/>
+<polyline id="grip" fill="none" stroke="#84919A" stroke-width="4" stroke-miterlimit="10" points="3,321.1 119.1,321.1 
+	146.1,319.1 155.1,312 162.1,298 167.1,279 169,260 169,207 166.1,194 158.1,177 147.1,161 138.1,140 136.1,124 132.1,113 
+	127.1,106.1 123.1,103.1 115.1,103.1 13.1,103.1 3.1,106.1 "/>
+<g id="lens">
+	<circle id="lens_outer" fill="none" stroke="#84919A" stroke-width="4" stroke-miterlimit="10" cx="339.1" cy="198" r="128.5"/>
+	<circle id="lens_inner" fill="none" stroke="#84919A" stroke-width="4" stroke-miterlimit="10" cx="339.1" cy="198" r="100"/>
+</g>
+</svg>
