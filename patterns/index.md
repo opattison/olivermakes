@@ -8,11 +8,56 @@ date: 2014-10-31 18:25
 updated: 2014-11-29 11:20
 description: 'A collection of self-documenting patterns and styles for my website.'
 image:
+  - src: 'logo.svg'
+    caption: 'Shown here in the standard color scheme of the site, this logo appears in different contexts on different pages.'
+    alt: 'the logo for this website'
   - src: 'image.gif'
     caption: 'This is a caption pulled from the yaml front matter. It describes the image in the same `figure` element. By&nbsp;<cite>Oliver&nbsp;Pattison</cite>.'
     alt: 'A placeholder image'
 
 ---
+
+This is a working pattern library and style guide for this site. It is a work in progress.
+
+- - -
+
+## The shades and colors used on the site
+
+These are stored in the site’s [`_config.yml` file](https://github.com/opattison/olivermakes/blob/master/_config.yml#L57) and then generated here when this page is built.
+
+### Shades
+
+<ul class="swatches">
+{% for name in site.shade %}
+<li><figure style="background-color: {{ site.shade[forloop.index0].hsl }}"><figcaption>{{ site.shade[forloop.index0].name }}<br>{{ site.shade[forloop.index0].hsl }}</figcaption></figure></li>
+{% endfor %}
+</ul>
+
+### Colors
+
+<ul class="swatches">
+{% for name in site.color %}
+<li><figure style="background-color: {{ site.color[forloop.index0].hsl }}"><figcaption>{{ site.color[forloop.index0].name }}<br>{{ site.color[forloop.index0].hsl }}</figcaption></figure></li>
+{% endfor %}
+</ul>
+
+### Semi-transparent shades and colors
+
+<ul class="swatches">
+{% for name in site.transparent %}
+<li><figure style="background-color: {{ site.transparent[forloop.index0].hsl }}"><figcaption>{{ site.transparent[forloop.index0].name }}<br>{{ site.transparent[forloop.index0].hsl }}</figcaption></figure></li>
+{% endfor %}
+</ul>
+
+- - -
+
+<figure class="image right">
+  <img
+    src="{{ site.icon-url }}/{{ page.image[0].src }}" 
+    alt="{{ page.image[0].alt }}"
+  >
+  <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
+</figure>
 
 <h1>Level one heading</h1>
 
@@ -59,24 +104,24 @@ image:
 
 <figure class="image">
   <img
-    src="{{ site.image-url }}/{{ page.image[0].src }}" 
+    src="{{ site.image-url }}/{{ page.image[1].src }}" 
     sizes="{{ site.wide-sizes }}"  
-    srcset="{% for srcset1440 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[0].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-    alt="{{ page.image[0].alt }}"
+    srcset="{% for srcset1440 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+    alt="{{ page.image[1].alt }}"
   >
-  <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
+  <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
 </figure>
 
 ### Figure+image `.wide`
 
 <figure class="wide">
   <img
-    src="{{ site.image-url }}/{{ page.image[0].src }}" 
+    src="{{ site.image-url }}/{{ page.image[1].src }}" 
     sizes="{{ site.wide-sizes }}"  
-    srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image-url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[0].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-    alt="{{ page.image[0].alt }}"
+    srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image-url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+    alt="{{ page.image[1].alt }}"
   >
-  <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
+  <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
 </figure>
 
 ### Figure+image `grid2` block
@@ -84,21 +129,21 @@ image:
 <div class="grid2">
   <figure>
     <img
-      src="{{ site.image-url }}/{{ page.image[0].src }}" 
+      src="{{ site.image-url }}/{{ page.image[1].src }}" 
       sizes="{{ site.wide-sizes }}"  
-      srcset="{% for srcset1440 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[0].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-      alt="{{ page.image[0].alt }}"
+      srcset="{% for srcset1440 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+      alt="{{ page.image[1].alt }}"
     >
-    <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
+    <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
   </figure>
   <figure>
     <img
-      src="{{ site.image-url }}/{{ page.image[0].src }}" 
+      src="{{ site.image-url }}/{{ page.image[1].src }}" 
       sizes="{{ site.wide-sizes }}"  
-      srcset="{% for srcset1440 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[0].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-      alt="{{ page.image[0].alt }}"
+      srcset="{% for srcset1440 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+      alt="{{ page.image[1].alt }}"
     >
-    <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
+    <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
   </figure>
 </div>
 
@@ -107,8 +152,8 @@ Text below a grid.
 ### Image (no `srcset`; no `<figure>`)
 
 <img
-  src="{{ site.image-url }}/{{ page.image[0].src }}" 
-  alt="{{ page.image[0].alt }}"
+  src="{{ site.image-url }}/{{ page.image[1].src }}" 
+  alt="{{ page.image[1].alt }}"
 >
 
 - - -
@@ -165,30 +210,4 @@ kbd > kbd + b {
 <figcaption><p>This is a figcaption for a figure that encloses a code block.</p></figcaption>
 </figure>
 
-## The shades and colors used on the site
 
-These are stored in the site’s [`_config.yml` file](https://github.com/opattison/olivermakes/blob/master/_config.yml#L57) and then generated here when this page is built.
-
-### Shades
-
-<ul class="swatches">
-{% for name in site.shade %}
-<li><figure style="background-color: {{ site.shade[forloop.index0].hsl }}"><figcaption>{{ site.shade[forloop.index0].name }}<br>{{ site.shade[forloop.index0].hsl }}</figcaption></figure></li>
-{% endfor %}
-</ul>
-
-### Colors
-
-<ul class="swatches">
-{% for name in site.color %}
-<li><figure style="background-color: {{ site.color[forloop.index0].hsl }}"><figcaption>{{ site.color[forloop.index0].name }}<br>{{ site.color[forloop.index0].hsl }}</figcaption></figure></li>
-{% endfor %}
-</ul>
-
-### Semi-transparent shades and colors
-
-<ul class="swatches">
-{% for name in site.transparent %}
-<li><figure style="background-color: {{ site.transparent[forloop.index0].hsl }}"><figcaption>{{ site.transparent[forloop.index0].name }}<br>{{ site.transparent[forloop.index0].hsl }}</figcaption></figure></li>
-{% endfor %}
-</ul>
