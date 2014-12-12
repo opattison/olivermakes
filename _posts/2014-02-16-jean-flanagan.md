@@ -43,6 +43,11 @@ image:
     alt: 'A screenshot of an image floated right alongside some text in a flexible layout'
     caption: 'The image of Darwin’s finches floats right on larger screens, while it would be layed out in the center on smaller screens. [View this page](http://jeancflanagan.com/2013/communicating-about-evolution-the-danger-of-shortcuts/).'
     date: 2014-12-05
+  - src: 2014-02-16-PhyloPic.ef63437d.Michelle-Site.Scyphozoa.svg
+    alt: 'Floating jellyfish vector graphic'
+    caption: 'A snippet from the [404 page](http://jeancflanagan.com/404.html), using CSS `keyframes` animations to `translate` an SVG image and shift the background color. The vector jellyfish illustration is by [Michelle Site via Phylopic](http://phylopic.org/image/ef63437d-d6f4-4583-9d75-a8c9b19a203d/), licensed [CC BY-NC](http://creativecommons.org/licenses/by-nc/3.0/).'
+    license: 'CC BY-NC'
+    license-url: http://creativecommons.org/licenses/by-nc/3.0/
 
 ---
 
@@ -119,7 +124,7 @@ Not every image is meant to be showcased, nor should every image overshadow the 
 <figure class="narrow screenshot">
   <img
     src="{{ site.image-url }}/{{ page.image[7].src }}" 
-    alt="{{ page.image[6].alt }}"
+    alt="{{ page.image[7].alt }}"
   >
   <figcaption>{{ page.image[7].caption | markdownify }}</figcaption>
 </figure>
@@ -130,8 +135,8 @@ We wanted to make sure that some of Jean’s interests and personality were part
 
 <div id="error-404">
   <figure class="wide">
-    <img src="{{ site.image-url }}/2014-02-16-PhyloPic.ef63437d.Michelle-Site.Scyphozoa.svg" alt="Floating jellyfish vector graphic">
-    <figcaption><p>A snippet from <a href="http://jeancflanagan.com/404.html">the 404 page</a>, using CSS <code>keyframes</code> animations to <code>translate</code> an SVG image and shift the background color. The vector jellyfish illustration is by <a href="http://phylopic.org/image/ef63437d-d6f4-4583-9d75-a8c9b19a203d/">Michelle Site via Phylopic</a>, licensed <a href="http://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>.</p></figcaption>
+    <img src="{{ site.image-url }}/{{ page.image[8].src }}" alt="{{ page.image[8].alt }}">
+    <figcaption>{{ page.image[8].caption | markdownify }}</figcaption>
   </figure>
 </div>
 
