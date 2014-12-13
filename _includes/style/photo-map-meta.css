@@ -204,7 +204,6 @@ screen and (min-resolution: 144dpi) and (min-width: 40em),
 }
 
 @media screen and (min-width: 30em) {
-
   .photo-meta {
     padding: 1em;
   }
@@ -217,21 +216,17 @@ screen and (min-resolution: 144dpi) and (min-width: 40em),
     bottom: 1em;
     right: 1em;
   }
-
 }
 
 @media screen and (min-width: 34em) {
-
   .shift-map:checked ~ .container .shift-back-label {
     font-size: 1em;
     padding: 1em 0;
     width: 25%;
   }
-
 }
 
 @media screen and (min-width: 60em) {
-
   .photo-meta {
     padding: 1em 1em 1em 2em;
   }
@@ -276,7 +271,6 @@ screen and (min-resolution: 144dpi) and (min-width: 40em),
     background-image: url("http://api.tiles.mapbox.com/v4/{{ site.photo-mapid }}/{{ page.image[forloop.index0].longitude }},{{ page.image[forloop.index0].latitude }}{% if page.image[forloop.index0].zoom %},{{ page.image[forloop.index0].zoom }}{% else %},15{% endif %}/450x338.png64?access_token={{ site.mapbox-key }}");
   }
   {% endfor %}
-
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 60em),
@@ -290,7 +284,6 @@ screen and (min-resolution: 144dpi) and (min-width: 60em),
 }
 
 @media screen and (min-width: 95em) {
-
   .photo-meta ul {
     font-size: 1.25em;
   }
@@ -298,5 +291,4 @@ screen and (min-resolution: 144dpi) and (min-width: 60em),
   .camera-icon {
     width: 10em;
   }
-
 }

@@ -1,6 +1,6 @@
 ---
 title: 'Fujifilm X-E2 Vector'
-layout: 'photo'
+layout: contrast
 option:
   - code
   - sample-svg

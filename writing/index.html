@@ -8,7 +8,7 @@ description: 'A repository of writing and notes on archiving, technology, and ot
 
 <div class="items">
 {% for post in site.categories.writing limit: 10 %}
-{% include index-article-item.html %}
+{% include index/article-item.html %}
 {% endfor %}
-{% include index-archive-link.html %}
+{% include index/link-archive.html %}
 </div>

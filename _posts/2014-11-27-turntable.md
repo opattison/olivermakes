@@ -1,6 +1,6 @@
 ---
 title: 'My turntable'
-layout: photo
+layout: contrast
 option:
   - map-meta
 category: photo
@@ -50,7 +50,7 @@ image:
         <li>Date: {{ page.image[0].date }}</li>
         <li>Location: {{ page.image[0].location }}</li>
       </ul>
-      <label for="shift-map0" class="shift-map-label">View map{% include icon-location.html %}</label>
+      <label for="shift-map0" class="shift-map-label">View map{% include icon/location.html %}</label>
     </div>
   </div>
   <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>

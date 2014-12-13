@@ -1,0 +1,6 @@
+  <!-- styles -->
+  <link rel="stylesheet" href="/site.css">
+  {% if page.option contains 'custom-css' %}<link rel="stylesheet" href="{{ site.style-url }}/{{ page.custom-css }}">{% endif %}
+  {% if page.option contains 'map-meta' %}<link rel="stylesheet" href="{{ site.style-url }}/photo-map-meta.css">{% endif %}
+  {% if page.title == 'Patterns' %}<style>{% include style/patterns.css %}</style>{% endif %}
+  {% if page.option contains 'code-block' %}<style>{% include style/pygments.css %}</style>{% endif %}
