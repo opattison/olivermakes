@@ -520,11 +520,11 @@ nav li {
   text-align: center;
 }
 
-.link a.project-url {
+.link .project-url {
   background-color: hsla(4, 60%, 50%, 1);
 }
 
-.link a.project-source {
+.link .project-source {
   background-color: hsla(225, 35%, 52%, 1);
 }
 
@@ -534,12 +534,12 @@ nav li {
   outline: none;
 }
 
-.link a.project-url:hover {
+.link .project-url:hover {
   background-color: hsla(204, 10%, 96%, 1);
   color: hsla(4, 60%, 50%, 1);
 }
 
-.link a.project-source:hover {
+.link .project-source:hover {
   background-color: hsla(204, 10%, 96%, 1);
   color: hsla(225, 35%, 52%, 1);
 }

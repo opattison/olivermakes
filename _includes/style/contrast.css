@@ -75,6 +75,14 @@
   color: hsla(204, 10%, 96%, 1);
 }
 
+.contrast .link .project-url:hover {
+  color: hsla(4, 60%, 50%, 1);
+}
+
+.contrast .link .project-source:hover {
+  color: hsla(225, 35%, 52%, 1);
+}
+
 .contrast .site-nav li a {
   background-color: hsla(204, 10%, 10%, .8);
 }
