@@ -1026,11 +1026,11 @@ article img {
 }
 
 .dark img {
-  background-color: hsla(204, 10%, 18%, 1)
+  background-color: hsla(204, 10%, 24%, 1)
 }
 
 .light img {
-  background-color: hsla(204, 10%, 93%, 1);
+  background-color: hsla(204, 10%, 88%, 1);
 }
 
 .extralight img {
