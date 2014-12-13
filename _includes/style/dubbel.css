@@ -4,6 +4,10 @@
     margin: -1.25em -2.25em 0;
     padding: 2.25em;
   }
+
+  .dubbel .important {
+    padding: 0;
+  }
 }
 
 @media screen and (min-width: 70em) {

@@ -142,6 +142,10 @@ body {
   color: hsla(204, 10%, 10%, 1);
 }
 
+[role="main"] {
+  margin-top: 0;
+}
+
 strong,
 b {
   font-weight: 500;
@@ -241,21 +245,21 @@ ul {
   list-style-type: square;
 }
 
-.page ul,
-.page ol {
-  margin-top: 1.5em;
+article ul,
+article ol {
+  margin: 1.5em 0;
 }
 
-.page ol {
+article ol {
   counter-reset: listNumbering;
   list-style-type: none;
 }
 
-.page ol li {
+article ol li {
   counter-increment: listNumbering;
 }
 
-.page ol li::before {
+article ol li::before {
   content: counter(listNumbering) '.';
   font-weight: bolder;
   margin-right: .25em;
@@ -393,36 +397,25 @@ nav li {
   width: 50%;
 }
 
-/* Transition helpers */
-
-svg circle {
-  transition: all 320ms cubic-bezier(0,1,1,1);
-}
-
-a svg circle {
-  transition: all 160ms cubic-bezier(0,1,1,1);
-}
-
 /***! END Basic styles ***/
 
-/*** Page layouts ******************************/
-
-[role="main"] {
-  margin-top: 0;
-}
-
-.page {
-  margin: 0 auto;
-  padding: 1.25em 1em 2.5em;
-}
+/*** Page layout *******************************/
 
 .page-header {
   margin: 0 auto;
 }
 
+.page,
 .page-header .inside {
   background-color: hsla(204, 10%, 98%, 1);
   margin: 0 auto;
+}
+
+.page {
+  padding: 1.25em 1em 2.5em;
+}
+
+.page-header .inside {
   padding: 1em;
 }
 
@@ -474,10 +467,6 @@ a svg circle {
 .page-meta .time p {
   font-size: .875em;
   margin-top: 0;
-}
-
-.page {
-  background-color: hsla(204, 10%, 98%, 1);
 }
 
 /* Block content – essays, code blocks */
@@ -1059,21 +1048,6 @@ article img {
   outline: solid 1px hsla(204, 10%, 88%, 1);
 }
 
-/* Hero figure-image */
-
-.hero {
-  margin: 0 auto;
-}
-
-.hero figcaption {
-  background-color: hsla(204, 10%, 98%, 1);
-  margin: 0;
-}
-
-.hero figcaption p {
-  font-size: .875em;
-}
-
 /***! END Images ***/
 
 /*** Archives **********************************/
@@ -1513,10 +1487,6 @@ screen and (min-resolution: 1.5dppx) {
     margin: 0 auto;
   }
 
-  .hero {
-    max-width: 45em;
-  }
-
   article[role="main"] + .site-footer {
     margin-top: 2.75em;
   }
@@ -1590,7 +1560,6 @@ screen and (min-resolution: 1.5dppx) {
     padding: 2em 1.25em;
   }
 
-  .hero,
   .site-nav {
     max-width: 56.25em;
   }
@@ -1720,15 +1689,6 @@ screen and (min-resolution: 1.5dppx) {
     text-align: left;
   }
 
-  .hero figcaption p {
-    font-size: .875em;
-  }
-
-  .hero figcaption p {
-    margin-left: 50%;
-    width: 50%;
-  }
-
   .page-meta .chronology li,
   .page-meta .chronology li:only-child {
     width: 9em;
@@ -1755,10 +1715,6 @@ screen and (min-resolution: 1.5dppx) {
 }
 
 @media screen and (min-width: 80em) {
-  .hero {
-    max-width: 67.5em;
-  }
-
   .title {
     font-size: 1.5em;
     margin: 1.5em auto;
@@ -1852,10 +1808,6 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 1.25em;
   }
 
-  .hero {
-    max-width: 81rem;
-  }
-
   .site-nav {
     width: 33.3333333%;
   }
@@ -1886,7 +1838,6 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 2em;
   }
 
-  .hero,
   .site-footer {
     max-width: 94.5em;
   }
@@ -1932,6 +1883,15 @@ screen and (min-width: 60em) and (max-height: 36em) {
 
 /***! END Media queries ***/
 
+/* Transition helpers */
+
+svg circle {
+  transition: all 320ms cubic-bezier(0,1,1,1);
+}
+
+a svg circle {
+  transition: all 160ms cubic-bezier(0,1,1,1);
+}
 
 /*** Animations ********************************/
 
