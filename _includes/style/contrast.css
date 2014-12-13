@@ -64,7 +64,7 @@
 
 .contrast .project {
   background-color: hsla(204, 10%, 24%, 1);
-  margin-top: 1em;
+  margin-top: 0;
 }
 
 .contrast .project .description {
