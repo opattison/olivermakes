@@ -126,6 +126,7 @@ screen and (min-resolution: 144dpi) and (min-width: 40em),
   height: 1.25em;
   margin-left: .25em;
   padding: 0 2px;
+  width: 1em;
 }
 
 .icon-location svg * {
