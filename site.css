@@ -56,8 +56,15 @@ source: http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
   box-sizing: border-box;
 }
 
-/* Custom normalization */
+/* Viewport normalization for modern IE and future via Trent Walton
+source: http://trentwalton.com/2013/01/16/windows-phone-8-viewport-fix */
+@-webkit-viewport{ width: device-width; }
+   @-moz-viewport{ width: device-width; }
+    @-ms-viewport{ width: device-width; }
+     @-o-viewport{ width: device-width; }
+        @viewport{ width: device-width; }
 
+/* Custom normalization */
 html {
   height: 100%;
 }
