@@ -140,24 +140,33 @@
   }
 }
 
-@media screen and (min-width: 115em) {
-  .contrast .site-footer {
-    max-width: 78.75em;
+@media screen and (min-width: 80em) {
+  .contrast .essay {
+    margin: 2em -4.5em 0 4.5em;
+    padding: 2em;
   }
+}
 
+@media screen and (min-width: 115em) {
   .contrast .site-info {
     padding: 2em;
   }
 }
 
 @media screen and (min-width: 140em) {
-  .contrast .page {
+  .page-header {
     font-size: 2em;
   }
 
+  .wide,
+  .grid2 {
+    margin: 5% calc(-12em) 0;
+    width: calc(100% + 24em);
+  }
+
   .contrast .page-meta,
-  .contrast .site-footer {
-    max-width: 90rem;
+  .contrast .page-meta .time {
+    max-width: none;
   }
 }
 

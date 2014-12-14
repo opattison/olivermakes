@@ -289,6 +289,7 @@ screen and (min-resolution: 144dpi) and (min-width: 60em),
   }
 
   .camera-icon {
-    width: 10em;
+    height: 8em;
+    width: 12em;
   }
 }
