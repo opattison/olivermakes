@@ -59,7 +59,7 @@
 
 .contrast .page-meta {
   background-color: hsla(204, 10%, 24%, 1);
-  margin: 2.75em auto 0;
+  margin: 2em auto 0;
 }
 
 .contrast .project {
@@ -110,7 +110,7 @@
 
 @media screen and (min-width: 45em) {
   .contrast .page-meta {
-    margin: 2.75em auto;
+    margin: 2em auto;
   }
 }
 
