@@ -145,6 +145,11 @@
     margin: 2em -4.5em 0 4.5em;
     padding: 2em;
   }
+
+  .contrast .align {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media screen and (min-width: 115em) {
