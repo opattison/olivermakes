@@ -2,10 +2,11 @@
 title: 'Fujifilm X-E2 Vector'
 layout: contrast
 option:
-  - code
-  - sample-svg
-  - index-image
   - feature
+  - index-image
+  - sample-svg
+  - code
+  - srcset
 category: 'project'
 tags:
   - minor

@@ -5,6 +5,7 @@ option:
   - code
   - index-image
   - sample-srcset
+  - srcset
   - custom-css
 category: 'project'
 date: 2014-02-16 12:34

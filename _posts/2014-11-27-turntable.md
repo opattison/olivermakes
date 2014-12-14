@@ -3,6 +3,7 @@ title: 'My turntable'
 layout: contrast
 option:
   - map-meta
+  - srcset
 category: photo
 date: 2014-11-27 19:02
 updated: 2014-12-05 01:29

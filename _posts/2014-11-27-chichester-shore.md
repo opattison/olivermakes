@@ -3,6 +3,7 @@ title: 'The shore at Bosham in Chichester Harbor'
 layout: contrast
 option:
   - map-meta
+  - srcset
 category: photo
 date: 2014-11-27 21:30
 updated: 2014-11-28 03:06

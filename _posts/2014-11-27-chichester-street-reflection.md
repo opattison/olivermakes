@@ -3,6 +3,7 @@ title: 'Chichester street reflection'
 layout: contrast
 option:
   - map-meta
+  - srcset
 category: photo
 date: 2014-11-27 20:20
 updated: 2014-11-28 03:07

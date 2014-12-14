@@ -4,6 +4,7 @@ layout: contrast
 option:
   - feature
   - map-meta
+  - srcset
 category: 'photo'
 date: 2014-12-05 22:01
 updated: 2014-12-05 01:28
