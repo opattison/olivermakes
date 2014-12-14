@@ -1,8 +1,9 @@
 ---
 title: 'The shore at Bosham in Chichester Harbor'
-layout: photo
+layout: contrast
 option:
   - map-meta
+  - srcset
 category: photo
 date: 2014-11-27 21:30
 updated: 2014-11-28 03:06
@@ -80,7 +81,7 @@ image:
         <li>Date: {{ page.image[0].date }}</li>
         <li>Location: {{ page.image[0].location }}</li>
       </ul>
-      <label for="shift-map0" class="shift-map-label">View map{% include icon-location.html %}</label>
+      <label for="shift-map0" class="shift-map-label">View map{% include icon/location.html %}</label>
     </div>
   </div>
 </figure>
@@ -108,7 +109,7 @@ image:
         <li>Date: {{ page.image[1].date }}</li>
         <li>Location: {{ page.image[0].location }}</li>
       </ul>
-      <label for="shift-map1" class="shift-map-label">View map{% include icon-location.html %}</label>
+      <label for="shift-map1" class="shift-map-label">View map{% include icon/location.html %}</label>
     </div>
   </div>
 </figure>
@@ -134,7 +135,7 @@ image:
         <li>Date: {{ page.image[2].date }}</li>
         <li>Location: {{ page.image[0].location }}</li>
       </ul>
-      <label for="shift-map2" class="shift-map-label">View map{% include icon-location.html %}</label>
+      <label for="shift-map2" class="shift-map-label">View map{% include icon/location.html %}</label>
     </div>
   </div>
 </figure>

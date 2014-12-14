@@ -1,11 +1,12 @@
 ---
 title: 'Fujifilm X-E2 Vector'
-layout: 'photo'
+layout: contrast
 option:
-  - code
-  - sample-svg
-  - index-image
   - feature
+  - index-image
+  - sample-svg
+  - code
+  - srcset
 category: 'project'
 tags:
   - minor
@@ -46,7 +47,7 @@ To complement the metadata on my [photo pages](/photography/), I wanted accurate
   {{ p1 | markdownify }}
 </div>
 
-<figure class="wide svg extralight noedges">
+<figure class="wide svg light noedges">
   <img
     src="{{ site.image-url }}/{{ page.image[0].src }}" 
     alt="{{ page.image[0].alt }}"
@@ -55,14 +56,14 @@ To complement the metadata on my [photo pages](/photography/), I wanted accurate
 </figure>
 
 <div class="grid2">
-  <figure class="svg extralight noedges">
+  <figure class="svg light noedges">
     <img
       src="{{ site.icon-url }}/{{ page.image[1].src }}" 
       alt="{{ page.image[1].alt }}"
     >
     <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
   </figure>
-  <figure class="svg extradark noedges">
+  <figure class="svg dark noedges">
     <img
       src="{{ site.icon-url }}/{{ page.image[2].src }}" 
       alt="{{ page.image[2].alt }}"

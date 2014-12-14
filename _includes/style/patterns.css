@@ -1,3 +1,4 @@
+
 .page .swatches,
 .swatches li,
 .swatches li figure,
@@ -38,16 +39,13 @@
 }
 
 @media screen and (min-width: 36em) {
-
   .swatches li {
     float: left;
     width: 50%;
   }
-
 }
 
 @media screen and (min-width: 80em) {
-
   .swatches {
     font-size: .625em;
   }
@@ -55,5 +53,4 @@
   .swatches li {
     width: 25%;
   }
-
 }

@@ -1,8 +1,9 @@
 ---
 title: 'My turntable'
-layout: photo
+layout: contrast
 option:
   - map-meta
+  - srcset
 category: photo
 date: 2014-11-27 19:02
 updated: 2014-12-05 01:29
@@ -50,7 +51,7 @@ image:
         <li>Date: {{ page.image[0].date }}</li>
         <li>Location: {{ page.image[0].location }}</li>
       </ul>
-      <label for="shift-map0" class="shift-map-label">View map{% include icon-location.html %}</label>
+      <label for="shift-map0" class="shift-map-label">View map{% include icon/location.html %}</label>
     </div>
   </div>
   <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>

@@ -1,9 +1,10 @@
 ---
 title: 'Mount Pleasant photowalk'
-layout: 'photo'
+layout: contrast
 option:
   - feature
   - map-meta
+  - srcset
 category: 'photo'
 date: 2014-12-05 22:01
 updated: 2014-12-05 01:28
@@ -79,7 +80,7 @@ image:
         <li>Date: {{ page.image[0].date }}</li>
         <li>Location: {{ page.image[0].location }}</li>
       </ul>
-      <label for="shift-map0" class="shift-map-label">View map{% include icon-location.html %}</label>
+      <label for="shift-map0" class="shift-map-label">View map{% include icon/location.html %}</label>
     </div>
   </div>
 </figure>
@@ -106,7 +107,7 @@ image:
         <li>Date: {{ page.image[1].date }}</li>
         <li>Location: {{ page.image[1].location }}</li>
       </ul>
-      <label for="shift-map1" class="shift-map-label">View map{% include icon-location.html %}</label>
+      <label for="shift-map1" class="shift-map-label">View map{% include icon/location.html %}</label>
     </div>
   </div>
 </figure>
@@ -134,7 +135,7 @@ image:
         <li>Date: {{ page.image[2].date }}</li>
         <li>Location: {{ page.image[2].location }}</li>
       </ul>
-      <label for="shift-map2" class="shift-map-label">View map{% include icon-location.html %}</label>
+      <label for="shift-map2" class="shift-map-label">View map{% include icon/location.html %}</label>
     </div>
   </div>
 </figure>

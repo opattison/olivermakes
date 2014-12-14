@@ -1,5 +1,3 @@
----
----
 /*** Normalization *****************************/
 /* following adapted from HTML5 Reset
 source: http://html5reset.org */
@@ -139,6 +137,15 @@ html {
    font-variant-ligatures: common-ligatures;
 }
 
+body {
+  background-color: hsla(204, 10%, 96%, 1);
+  color: hsla(204, 10%, 10%, 1);
+}
+
+[role="main"] {
+  margin-top: 0;
+}
+
 strong,
 b {
   font-weight: 500;
@@ -238,21 +245,16 @@ ul {
   list-style-type: square;
 }
 
-.page ul,
-.page ol {
-  margin-top: 1.5em;
-}
-
-.page ol {
+article ol {
   counter-reset: listNumbering;
   list-style-type: none;
 }
 
-.page ol li {
+article ol li {
   counter-increment: listNumbering;
 }
 
-.page ol li::before {
+article ol li::before {
   content: counter(listNumbering) '.';
   font-weight: bolder;
   margin-right: .25em;
@@ -390,36 +392,25 @@ nav li {
   width: 50%;
 }
 
-/* Transition helpers */
-
-svg circle {
-  transition: all 320ms cubic-bezier(0,1,1,1);
-}
-
-a svg circle {
-  transition: all 160ms cubic-bezier(0,1,1,1);
-}
-
 /***! END Basic styles ***/
 
-/*** Page layouts ******************************/
-
-[role="main"] {
-  margin-top: 0;
-}
-
-.page {
-  margin: 0 auto;
-  padding: 1.25em 1em 2.5em;
-}
+/*** Page layout *******************************/
 
 .page-header {
   margin: 0 auto;
 }
 
+.page,
 .page-header .inside {
   background-color: hsla(204, 10%, 98%, 1);
   margin: 0 auto;
+}
+
+.page {
+  padding: 1.25em 1em 2.5em;
+}
+
+.page-header .inside {
   padding: 1em;
 }
 
@@ -473,100 +464,12 @@ a svg circle {
   margin-top: 0;
 }
 
-/* Singel and dubbel common */
-
-.singel,
-.dubbel {
-  background-color: hsla(204, 10%, 96%, 1);
-}
-
-.singel .page,
-.dubbel .page {
-  background-color: hsla(204, 10%, 98%, 1);
-}
-
-/* Photo */
-
-.photo,
-.photo .page-header .inside {
-  background-color: hsla(204, 10%, 18%, 1);
-  color: hsla(204, 10%, 96%, 1);
-}
-
-.photo .page {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.photo h1,
-.photo h2 {
-  color: hsla(204, 10%, 96%, 1);
-}
-
-.photo .page-header h1 {
-  text-align: center;
-}
-
-.photo .page a,
-.photo .time a {
-  color: hsla(5, 30%, 80%, 1);
-  border-color: hsla(5, 30%, 80%, .5);
-}
-
-.photo .page a:hover,
-.photo .page a:focus,
-.photo .time a:hover,
-.photo .time a:focus {
-  color: hsla(204, 30%, 80%, 1);
-}
-
-.photo .title:hover h1,
-.photo .title:focus h1 {
-  color: hsla(204, 30%, 80%, 1);
-}
-
-.photo .title .logo circle {
-  stroke: hsla(204, 10%, 96%, 1);
-}
-
-.photo .title:hover .logo circle,
-.photo .title:focus .logo circle {
-  stroke: hsla(204, 30%, 80%, 1);
-  -webkit-animation-name: step-fill--contrast;
-          animation-name: step-fill--contrast;
-}
-
-.photo .page > figure:first-child {
-  margin-top: 0;
-}
-
-.photo .page figcaption {
-  color: hsla(204, 10%, 88%, 1);
-}
-
-.photo .page-meta {
-  background-color: hsla(204, 10%, 24%, 1);
-  margin: 2.75em auto 0;
-}
-
-.photo .project {
-  background-color: hsla(204, 10%, 24%, 1);
-  margin-top: 1em;
-}
-
-.photo .project .description {
-  color: hsla(204, 10%, 96%, 1);
-}
-
-.photo .project .link a {
-  color: hsla(204, 10%, 96%, 1);
-}
-
 /* Block content – essays, code blocks */
 
 .essay {
   background-color: hsla(204, 10%, 24%, 1);
-  margin-top: 2.75em;
+  color: hsla(204, 10%, 96%, 1);
+  margin-top: 2em;
 }
 
 .highlight,
@@ -618,11 +521,11 @@ a svg circle {
   text-align: center;
 }
 
-.link a.project-url {
+.link .project-url {
   background-color: hsla(4, 60%, 50%, 1);
 }
 
-.link a.project-source {
+.link .project-source {
   background-color: hsla(225, 35%, 52%, 1);
 }
 
@@ -632,12 +535,12 @@ a svg circle {
   outline: none;
 }
 
-.link a.project-url:hover {
+.link .project-url:hover {
   background-color: hsla(204, 10%, 96%, 1);
   color: hsla(4, 60%, 50%, 1);
 }
 
-.link a.project-source:hover {
+.link .project-source:hover {
   background-color: hsla(204, 10%, 96%, 1);
   color: hsla(225, 35%, 52%, 1);
 }
@@ -950,28 +853,23 @@ a.reversefootnote:focus {
   z-index: 2;
 }
 
-.site-nav:target li a,
-.photo .site-nav li a {
+.site-nav:target li a {
   background-color: hsla(204, 10%, 10%, .8);
 }
 
-.site-nav:target li:nth-child(2) a,
-.photo .site-nav li:nth-child(2) a {
+.site-nav:target li:nth-child(2) a {
   background-color: hsla(204, 10%, 24%, .8);
 }
 
-.site-nav:target li:nth-child(3) a,
-.photo .site-nav li:nth-child(3) a {
+.site-nav:target li:nth-child(3) a {
   background-color: hsla(204, 10%, 32%, .8);
 }
 
-.site-nav:target li:nth-child(4) a,
-.photo .site-nav li:nth-child(4) a {
+.site-nav:target li:nth-child(4) a {
   background-color: hsla(204, 10%, 18%, .8);
 }
 
-.site-nav:target li a:hover,
-.photo .site-nav li a:hover {
+.site-nav:target li a:hover {
   background-color: hsla(204, 80%, 40%, .8);
 }
 
@@ -1000,8 +898,7 @@ a.reversefootnote:focus {
 }
 
 .site-nav li a:focus,
-.site-nav:target li a:focus,
-.photo .site-nav li a:focus {
+.site-nav:target li a:focus {
   background-color: hsla(204, 10%, 88%, 1);
   color: hsla(204, 80%, 40%, 1);
   outline: none;
@@ -1130,11 +1027,11 @@ article img {
 }
 
 .dark img {
-  background-color: hsla(204, 10%, 18%, 1)
+  background-color: hsla(204, 10%, 24%, 1)
 }
 
 .light img {
-  background-color: hsla(204, 10%, 93%, 1);
+  background-color: hsla(204, 10%, 88%, 1);
 }
 
 .extralight img {
@@ -1145,21 +1042,6 @@ article img {
 
 .screenshot img {
   outline: solid 1px hsla(204, 10%, 88%, 1);
-}
-
-/* Hero figure-image */
-
-.hero {
-  margin: 0 auto;
-}
-
-.hero figcaption {
-  background-color: hsla(204, 10%, 98%, 1);
-  margin: 0;
-}
-
-.hero figcaption p {
-  font-size: .875em;
 }
 
 /***! END Images ***/
@@ -1284,12 +1166,12 @@ article img {
   background-color: hsla(204, 10%, 93%, 1);
 }
 
-.archive-link a {
+.link-archive a {
   background-color: hsla(4, 60%, 50%, 1);
 }
 
-.archive-link a:hover,
-.archive-link a:focus {
+.link-archive a:hover,
+.link-archive a:focus {
   background-color: hsla(204, 10%, 88%, 1);
   color: hsla(4, 60%, 50%, 1);
 }
@@ -1301,7 +1183,6 @@ article img {
 @media screen and (-webkit-min-device-pixel-ratio: 1.5),
 screen and (min-resolution: 108dpi),
 screen and (min-resolution: 1.5dppx) {
-
   html {
     font: 300 1rem/1.4375 'ratio', 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
   }
@@ -1310,33 +1191,27 @@ screen and (min-resolution: 1.5dppx) {
   b {
     font-weight: 400;
   }
-
 }
 
 @media screen and (min-width: 22.5em) {
-
   .page,
   .page-header,
   .page-meta,
   .site-info {
     font-size: 1.0625em;
   }
-
 }
 
 @media screen and (min-width: 28em) {
-
   .page,
   .page-header,
   .page-meta,
   .site-info {
     font-size: 1.125em;
   }
-
 }
 
 @media screen and (min-width: 30em) {
-
   .page {
     padding: 1.25em 2em 2.5em;
   }
@@ -1432,11 +1307,9 @@ screen and (min-resolution: 1.5dppx) {
   .features {
     margin-top: -1em;
   }
-
 }
 
 @media screen and (min-width: 34em) {
-
   .page {
     padding: 1.25em 2.5em 2.5em;
   }
@@ -1550,16 +1423,14 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 1.125em;
   }
 
-  .archive-link {
+  .link-archive {
     clear: both;
     float: left;
     width: 50%;
   }
-
 }
 
 @media screen and (min-width: 40em) {
-
   .page,
   .page-header,
   .page-meta,
@@ -1588,11 +1459,9 @@ screen and (min-resolution: 1.5dppx) {
     margin: 0;
     text-align: center;
   }
-
 }
 
 @media screen and (min-width: 45em) {
-
   .page,
   .page-header .inside,
   .page-meta {
@@ -1612,10 +1481,6 @@ screen and (min-resolution: 1.5dppx) {
 
   .page-header {
     margin: 0 auto;
-  }
-
-  .hero {
-    max-width: 45em;
   }
 
   article[role="main"] + .site-footer {
@@ -1661,26 +1526,18 @@ screen and (min-resolution: 1.5dppx) {
     z-index: 2;
   }
 
-  .photo .page-meta {
-    margin: 2.75em auto;
-  }
-
   .features {
     margin-top: 1em;
   }
-
 }
 
 @media screen and (min-width: 50em) {
-
   html {
     line-height: 1.5;
   }
-
 }
 
 @media screen and (min-width: 60em) {
-
   .page {
     padding: 1.25em 4.5em 4.5em;
   }
@@ -1699,15 +1556,6 @@ screen and (min-resolution: 1.5dppx) {
     padding: 2em 1.25em;
   }
 
-  .photo .page-header .inside {
-    padding: .75em 1.25em;
-  }
-
-  .photo .page {
-    padding-top: 1em;
-  }
-
-  .hero,
   .site-nav {
     max-width: 56.25em;
   }
@@ -1753,11 +1601,6 @@ screen and (min-resolution: 1.5dppx) {
     margin: 0 auto;
   }
 
-  .dubbel .project {
-    margin: -1.25em -2.25em 0;
-    padding: 2.25em;
-  }
-
   .ancillary {
     float: right;
     font-size: .75em;
@@ -1770,7 +1613,7 @@ screen and (min-resolution: 1.5dppx) {
     padding: 2.5em;
   }
 
-  .singel .important {
+  .important {
     padding: 0 2em;
   }
 
@@ -1842,20 +1685,6 @@ screen and (min-resolution: 1.5dppx) {
     text-align: left;
   }
 
-  .photo [role="main"] figcaption {
-    padding: .5em 0 0;
-  }
-
-  .hero figcaption p,
-  .photo [role="main"] figcaption p {
-    font-size: .875em;
-  }
-
-  .hero figcaption p {
-    margin-left: 50%;
-    width: 50%;
-  }
-
   .page-meta .chronology li,
   .page-meta .chronology li:only-child {
     width: 9em;
@@ -1865,19 +1694,9 @@ screen and (min-resolution: 1.5dppx) {
     margin: 0 9em;
     width: 27em;
   }
-
-  .photo .page-meta {
-    max-width: 45em;
-  }
-
-  .photo .page-meta .time {
-    max-width: 27em;
-  }
-
 }
 
 @media screen and (min-width: 70em) {
-
   .site-info,
   .site-nav {
     float: right;
@@ -1889,111 +1708,9 @@ screen and (min-resolution: 1.5dppx) {
     min-height: 17.125rem; /* keeps .back-home link down */
     padding: 1.5em 2em;
   }
-
-  .dubbel .page,
-  .dubbel .page-header .inside,
-  .dubbel .page-meta {
-    width: 54em;  
-  }
-
-  .dubbel .page-header .inside {
-    padding-left: 9em;
-    padding-right: 9em;
-  }
-
-  .dubbel .page {
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 2em 9em 4.5em;
-    width: 54em;
-  }
-
-  .dubbel .wide {
-    margin: 5% calc(-9em) 0;
-    max-width: none;
-    width: calc(100% + 18em);
-  }
-
-  .dubbel .flow-side {
-    padding: 0 4.25em 0 0;
-    position: relative;
-    margin-top: 1.25em;
-    width: 75%;
-  }
-
-  .dubbel .flow-side > figure {
-    margin: 1.25em 0 0 -9em;
-    max-width: none;
-    width: calc(100% + 9em);
-  }
-
-  .dubbel .ancillary {
-    font-size: .875em;
-    margin: 1.25em -25% 1.25em 2em;
-    width: 50%;
-  }
-
-  .dubbel .ancillary figure {
-    margin: 1.25em auto 0;
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .dubbel .flow-side > .ancillary {
-    margin-top: 0;
-    position: absolute;
-    right: -75%;
-    top: 0;
-    width: 100%;
-  }
-
-  .dubbel .flow-side > figure + .ancillary {
-    top: 25%;
-  }
-
-  .dubbel .project {
-    margin: -2em -9em 2em;
-    overflow: auto;
-    padding: 2em;
-    position: relative;
-  }
-
-  .dubbel .sample {
-    border-top: solid 1px hsla(204, 10%, 88%, 1);
-    border-bottom: solid 1px hsla(204, 10%, 88%, 1);
-    margin: -2em 2em -2em -2em;
-    float: left;
-    width: calc(50% + 2em);
-  }
-
-  .dubbel .project .description {
-    margin: 0;
-  }
-
-  .dubbel .project .link {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 50%;
-  }
-
-  .dubbel .highlight {
-    margin: 1.5em -9em;
-    padding: 1.5em 9em;
-  }
-
-  .dubbel .page-meta .time {
-    width: 36em;
-  }
-
 }
 
 @media screen and (min-width: 80em) {
-
-  .hero {
-    max-width: 67.5em;
-  }
-
   .title {
     font-size: 1.5em;
     margin: 1.5em auto;
@@ -2008,8 +1725,8 @@ screen and (min-resolution: 1.5dppx) {
     padding-top: 5em;
   }
 
-  .singel .page,
-  .singel .page-header .inside,
+  .page,
+  .page-header .inside,
   .page-meta {
     width: 54em;
   }
@@ -2019,12 +1736,12 @@ screen and (min-resolution: 1.5dppx) {
     text-align: center;
   }
 
-  .singel .page {
+  .page {
     padding: 1.25em 9em 6em;
   }
 
-  .singel .wide,
-  .singel .grid2 {
+  .wide,
+  .grid2 {
     margin: 5% calc(-9em) 0;
     width: calc(100% + 18em);
   }
@@ -2053,7 +1770,7 @@ screen and (min-resolution: 1.5dppx) {
     margin: 2.5em -9em -3em 4.5em;
   }
 
-  .singel .ancillary {
+  .ancillary {
     font-size: .875em;
     margin-right: -10.28571429em;
     margin-right: calc(-9em / .875);
@@ -2067,14 +1784,10 @@ screen and (min-resolution: 1.5dppx) {
   .site-info {
     padding: 2em;
   }
-
 }
 
 @media screen and (min-width: 95em) {
-
-  .singel .page,
-  .dubbel .page,
-  .photo .page,
+  .page,
   .page-header,
   .page-meta,
   .site-info,
@@ -2091,10 +1804,6 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 1.25em;
   }
 
-  .hero {
-    max-width: 81rem;
-  }
-
   .site-nav {
     width: 33.3333333%;
   }
@@ -2109,17 +1818,13 @@ screen and (min-resolution: 1.5dppx) {
     max-width: none;
   }
 
-  .archive-link {
+  .link-archive {
     margin: 1em auto;
   }
-
 }
 
 @media screen and (min-width: 115em) {
-
-  .singel .page,
-  .dubbel .page,
-  .photo .page,
+  .page,
   .page-header,
   .page-meta {
     font-size: 1.75em;
@@ -2129,36 +1834,13 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 2em;
   }
 
-  .hero,
   .site-footer {
     max-width: 94.5em;
-  }
-
-  .photo .site-footer {
-    max-width: 78.75em;
   }
 
   .site-info {
     padding: 2em 5em;
   }
-
-  .photo .site-info {
-    padding: 2em;
-  }
-
-}
-
-@media screen and (min-width: 140em) {
-
-  .photo .page {
-    font-size: 2em;
-  }
-
-  .photo .page-meta,
-  .photo .site-footer {
-    max-width: 90rem;
-  }
-
 }
 
 /* Height queries – 1.666666667 ratio height limiter  */
@@ -2182,7 +1864,6 @@ screen and (min-width: 55em) and (max-height: 33em),
 screen and (min-width: 57em) and (max-height: 34em),
 screen and (min-width: 58.5em) and (max-height: 35em),
 screen and (min-width: 60em) and (max-height: 36em) {
-
   .wide,
   .narrow,
   .grid2 {
@@ -2194,11 +1875,19 @@ screen and (min-width: 60em) and (max-height: 36em) {
     margin: 1.25em auto;
     padding: 2em;
   }
-
 }
 
 /***! END Media queries ***/
 
+/* Transition helpers */
+
+svg circle {
+  transition: all 320ms cubic-bezier(0,1,1,1);
+}
+
+a svg circle {
+  transition: all 160ms cubic-bezier(0,1,1,1);
+}
 
 /*** Animations ********************************/
 
@@ -2222,28 +1911,4 @@ screen and (min-width: 60em) and (max-height: 36em) {
   }
 }
 
-/* For photo layout */
-
-@-webkit-keyframes step-fill--contrast {
-  0% {
-    fill: hsla(0, 0%, 100%, .01);
-  }
-
-  100% {
-    fill: hsla(204, 35%, 80%, 1);
-  }
-}
-
-@keyframes step-fill--contrast {
-  0% {
-    fill: hsla(0, 0%, 100%, .01);
-  }
-
-  100% {
-    fill: hsla(204, 35%, 80%, 1);
-  }
-}
-
 /***! END Animations ***/
-
-{% include pygments.css %}

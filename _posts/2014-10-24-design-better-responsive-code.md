@@ -4,6 +4,7 @@ layout: singel
 option:
   - hero
   - code
+  - code-block
   - index-image
 category: writing
 date: 2014-10-24 16:15

@@ -5,6 +5,7 @@ option:
   - no-title
   - hero-srcset
   - code
+  - srcset
 category: meta
 date: 2014-10-31 18:25
 updated: 2014-11-30 17:54

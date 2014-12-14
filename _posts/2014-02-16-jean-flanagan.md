@@ -1,10 +1,11 @@
 ---
 title: 'Website for Jean Flanagan'
-layout: 'dubbel'
+layout: dubbel
 option:
   - code
   - index-image
   - sample-srcset
+  - srcset
   - custom-css
 category: 'project'
 date: 2014-02-16 12:34
@@ -52,8 +53,6 @@ image:
     license-url: http://creativecommons.org/licenses/by-nc/3.0/
 
 ---
-
-{{ page.layout }}
 
 My partner Jean Flanagan and I have a shared interest in writing, photography, and self-archiving. Over the years we've experimented with shared blogs and photo repositories on a number of different web services. We enjoyed working together but limitations in those services often made our projects feel ephemeral. So it made sense for us to pool our resources to make Jean a website to serve as a professional portfolio featuring her writing and photography. Jean would collect and edit her output and I would help her design and develop it.
 

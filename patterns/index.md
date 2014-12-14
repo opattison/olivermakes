@@ -3,6 +3,8 @@ title: 'Patterns'
 layout: singel
 option:
   - code
+  - code-block
+  - srcset
 category: meta
 date: 2014-10-31 18:25
 updated: 2014-11-29 11:20
