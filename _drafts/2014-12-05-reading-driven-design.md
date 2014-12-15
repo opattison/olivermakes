@@ -1,6 +1,6 @@
 ---
 title: 'Reading-Driven Design'
-layout: 'singel'
+layout: singel
 category: 'writing'
 date: 2014-12-05 21:54
 updated: 2014-12-05 21:54
