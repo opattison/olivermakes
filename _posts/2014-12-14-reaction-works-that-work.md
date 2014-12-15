@@ -5,10 +5,11 @@ category: 'writing'
 tags:
   - 'minor'
   - 'reaction'
-date: 2014-12-14 20:00
-updated: 2014-12-14 20:00
+date: 2014-12-15 10:00
+updated: 2014-12-15 09:11
+drafted: 2014-12-14 20:00
 unique-id: 2014-12-14:reaction-works-that-work
-description: ''
+description: 'Notes on an independent publication about design and creativity.'
 
 ---
 
