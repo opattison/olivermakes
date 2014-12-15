@@ -6,11 +6,6 @@
   color: hsla(204, 10%, 96%, 1);
 }
 
-.contrast .page {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
 .contrast h1,
 .contrast h2 {
   color: hsla(204, 10%, 96%, 1);
