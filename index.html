@@ -6,7 +6,7 @@ category: index
 ---
 
 <div class="features">
-{% for post in site.posts limit:2 %}
+{% for post in site.posts %}
 {% if post.option contains 'feature' %}
 {% include index/article-feature.html %}
 {% endif %}
