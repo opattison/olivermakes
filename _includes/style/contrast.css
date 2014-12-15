@@ -116,10 +116,11 @@
 
   .contrast .page {
     padding-top: 1em;
+    padding-bottom: 1em;
   }
 
   .contrast .essay {
-    margin: 2em auto;
+    margin: 2em auto 0;
     padding: 2em;
   }
 
