@@ -1,6 +1,6 @@
 ---
 title: 'Jekyll and privilege'
-layout: 'singel'
+layout: singel
 category: 'writing'
 date: 2014-12-03 09:45
 updated: 2014-12-03 09:45
