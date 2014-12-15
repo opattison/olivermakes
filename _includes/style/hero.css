@@ -8,6 +8,10 @@
   margin: 0;
 }
 
+.hero + .page {
+  padding-top: 1.5em;
+}
+
 @media screen and (min-width: 40em) {
   .hero {
     font-size: 1.25em;

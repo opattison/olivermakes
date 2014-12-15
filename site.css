@@ -407,6 +407,10 @@ nav li {
   margin: 0 auto;
 }
 
+.page-header .inside {
+  padding: 1em;
+}
+
 .page,
 .page-header .inside {
   background-color: hsla(204, 10%, 98%, 1);
@@ -414,11 +418,7 @@ nav li {
 }
 
 .page {
-  padding: 1.25em 1em 2.5em;
-}
-
-.page-header .inside {
-  padding: 1em;
+  padding: .5em 1em 2.5em;
 }
 
 .page-info {
@@ -489,7 +489,6 @@ nav li {
 
 .project {
   background-color: hsla(204, 10%, 88%, 1);
-  margin-top: -1em;
 }
 
 .project .description {
@@ -1053,138 +1052,6 @@ article img {
 
 /***! END Images ***/
 
-/*** Archives **********************************/
-
-.home,
-.category {
-  background-color: hsla(204, 10%, 96%, 1);
-}
-
-.archive {
-  background-color: hsla(204, 10%, 80%, 1)
-}
-
-.index {
-  margin: 1em;
-}
-
-.features {
-  margin: 1em -1em 0;
-  width: calc(100% + 2em);
-}
-
-.items {
-  margin: 1em auto;
-  overflow: hidden;
-}
-
-.archive-items {
-  margin: 1em auto .5em;
-}
-
-.index header h1 {
-  font-size: 1.25em;
-  font-weight: 300;
-  letter-spacing: -.03125em;
-  text-align: center;
-}
-
-.index article {
-  background-color: hsla(204, 10%, 88%, 1);
-  display: inline-block;
-  position: relative;
-}
-
-.feature,
-.item,
-.archive-item {
-  width: 100%;
-}
-
-.archive-item {
-  list-style: none;
-}
-
-.index article h1 {
-  display: inline;
-  line-height: 1;
-}
-
-.index article h1 a {
-  color: hsla(4, 60%, 50%, 1);
-}
-
-.index article h1 a:hover,
-.index article h1 a:focus {
-  color: hsla(204, 50%, 45%, 1);
-}
-
-.meta {
-  background-color: hsla(204, 10%, 93%, .8);
-  margin: 0;
-  padding: 1em;
-  position: relative;
-}
-
-.feature .meta {
-  font-size: 1.125em;
-  min-height: 12.5em;
-  padding: .888888889em;
-}
-
-.archive-item .meta {
-  background-color: hsla(204, 10%, 93%, 1);
-}
-
-.meta h1 {
-  font-size: 1.5em;
-}
-
-.archive-item .meta h1 {
-  font-size: 1em;
-}
-
-.index .time {
-  font-size: .875em;
-}
-
-.index article .link {
-  margin: 0;
-}
-
-.feature .link a {
-  background-color: hsla(204, 10%, 10%, 1);
-}
-
-.item .link a {
-  background-color: hsla(204, 10%, 32%, 1);
-}
-
-.item:nth-child(2n + 2) .link a {
-  background-color: hsla(204, 10%, 18%, 1);
-}
-
-.index article .link a:hover {
-  background-color: hsla(204, 80%, 40%, 1);
-  color: hsla(204, 10%, 96%, 1);
-}
-
-.index article .link a:focus {
-  background-color: hsla(204, 10%, 93%, 1);
-}
-
-.link-archive a {
-  background-color: hsla(4, 60%, 50%, 1);
-}
-
-.link-archive a:hover,
-.link-archive a:focus {
-  background-color: hsla(204, 10%, 88%, 1);
-  color: hsla(4, 60%, 50%, 1);
-}
-
-/***! END Archives ***/
-
 /*** Media queries *****************************/
 
 @media screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -1267,14 +1134,6 @@ screen and (min-resolution: 1.5dppx) {
     margin: 0 1.5em;
   }
 
-  .index-title {
-    margin: 0 .5em;
-  }
-
-  .index header h1 {
-    text-align: left;
-  }
-
   .top-menu,
   .site-nav .close-menu {
     right: 0;
@@ -1318,15 +1177,16 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 34em) {
   .page {
-    padding: 1.25em 2.5em 2.5em;
+    padding: 0 2.5em 2.5em;
+  }
+
+  .page-header .inside {
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
   }
 
   .title {
     margin: 0 2.5em;
-  }
-
-  .index-title {
-    margin: 0 .5em;
   }
 
   .narrow,
@@ -1358,7 +1218,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .project {
-    padding: 2.5em;
+    padding: 2em 2.5em;
   }
 
   blockquote {
@@ -1382,58 +1242,9 @@ screen and (min-resolution: 1.5dppx) {
     margin-top: 2.5em;
   }
 
-  .index {
-    margin: 1em auto 0;
-    max-width: 45em;
-  }
-
-  .features + .items {
-    margin-top: 0;
-  }
-
-  .features {
-    margin: -1em auto 0;
-    width: 100%;
-  }
-
-  .archive-items {
-    font-size: 1.25em;
-  }
-
-  .index header h1 {
-    margin-left: .8em;
-  }
-
-  .item {
-    float: left;
-    height: 20em;
-    margin: 1em 0 0;
-    width: 50%;
-  }
-
-  .feature .meta {
-    font-size: 1.25em;
-    min-height: 15em;
-    padding: .8em;
-  }
-
-  .item .meta {
-    height: 16em;
-  }
-
   .link a {
     line-height: 2em;
     font-size: 1em;
-  }
-
-  .feature .link a {
-    font-size: 1.125em;
-  }
-
-  .link-archive {
-    clear: both;
-    float: left;
-    width: 50%;
   }
 }
 
@@ -1461,11 +1272,6 @@ screen and (min-resolution: 1.5dppx) {
   figcaption p {
     font-size: .75em;
   }
-
-  .index header h1 {
-    margin: 0;
-    text-align: center;
-  }
 }
 
 @media screen and (min-width: 45em) {
@@ -1480,8 +1286,7 @@ screen and (min-resolution: 1.5dppx) {
     padding: 0;
   }
 
-  .title,
-  .index-title {
+  .title {
     font-size: 1.25em;
     margin: .5em auto 1em;
   }
@@ -1532,10 +1337,6 @@ screen and (min-resolution: 1.5dppx) {
     width: 26em;
     z-index: 2;
   }
-
-  .features {
-    margin-top: 1em;
-  }
 }
 
 @media screen and (min-width: 50em) {
@@ -1546,7 +1347,12 @@ screen and (min-resolution: 1.5dppx) {
 
 @media screen and (min-width: 60em) {
   .page {
-    padding: 1.25em 4.5em 4.5em;
+    padding: 0 4.5em 4.5em;
+  }
+
+  .page-header .inside {
+    padding-top: 2.25em;
+    padding-bottom: 2.25em;
   }
 
   .page,
@@ -1572,8 +1378,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .site-nav li a,
-  .alt-nav li a,
-  .index {
+  .alt-nav li a {
     font-size: 1.25em;
   }
 
@@ -1744,7 +1549,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .page {
-    padding: 1.25em 9em 6em;
+    padding: 0 9em 6em;
   }
 
   .wide,
@@ -1797,8 +1602,7 @@ screen and (min-resolution: 1.5dppx) {
   .page,
   .page-header,
   .page-meta,
-  .site-info,
-  .index {
+  .site-info {
     font-size: 1.5em;
   }
 
@@ -1823,10 +1627,6 @@ screen and (min-resolution: 1.5dppx) {
 
   .site-info .inside {
     max-width: none;
-  }
-
-  .link-archive {
-    margin: 1em auto;
   }
 }
 
