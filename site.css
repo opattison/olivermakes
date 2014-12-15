@@ -1358,7 +1358,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .project {
-    padding: 2.5em;
+    padding: 2em 2.5em;
   }
 
   blockquote {
