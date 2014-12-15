@@ -1,15 +1,38 @@
 ---
 title: 'Reaction: <i>Works That Work</i>'
 layout: singel
+option:
+  - hero-srcset
+  - index-image
 category: 'writing'
 tags:
   - 'minor'
   - 'reaction'
-date: 2014-12-15 10:00
-updated: 2014-12-15 09:11
+date: 2014-12-15 11:01
+updated: 2014-12-15 11:01
 drafted: 2014-12-14 20:00
 unique-id: 2014-12-14:reaction-works-that-work
 description: 'Notes on an independent publication about design and creativity.'
+image:
+  - src: 2014-12-14-wtw-olivermakes-ccbync.jpg
+    alt: ''
+    date: 2014-12-14
+    camera: 'Fujifilm X-E2'
+    lens: 'Fujinon XF35mmF1.4 R'
+    focal: '35mm'
+    aperture: 'f/2.8'
+    shutter: '1/50'
+    iso: 2000
+    description: 'Photo of three issues of Works That Work, taken at home.'
+    aspect: '3:1'
+  - src: 2014-12-15-wtw-N80_7110.jpg
+    date: 2014-12-15
+    license: 'copyright'
+    author: 'Works That Work'
+  - src: 2014-12-15-wtw-N80_7152.jpg
+    date: 2014-12-15
+    license: 'copyright'
+    author: 'Works That Work'
 
 ---
 
@@ -29,18 +52,39 @@ Nearly as important as the writing and photography, <i class="publication">Works
 
 [Issue 4](https://worksthatwork.com/4) was released in November 2014, and I am still in the middle of reading it. My favorite article so far is “From Earth to Mars”, which (in part) tells the story of a group of aspiring amateur space explorers, Copenhagen Suborbitals. A sample:
 
-<blockquote>The rocket itself is an amalgam of reverse engineering and declassified technology from the American and Soviet space programmes, some of it from the 1950s and 60s, some of it essentially the same propulsion mechanisms used by German rocketeers during the Second World War. The liquid helium canisters used to cool the rocket are labelled ‘balloon gas’. It’s far from pretty, but Wilson insists it will work. ‘Our goal is always to find the simplest solution. There’s nothing on the rockets themselves that you can’t buy in a hardware store. They’re all industrial components,’ Wilson says. ‘A lot of it is ordinary plumbing that you would use in your bathroom.’<footer><cite>Pete Guest</cite> – <a href="https://worksthatwork.com/4/from-earth-to-mars/share/c12ab909b3d4f77993fdb758a8a4ad5d">“From Earth to Mars”</a>, Issue 4, <i class="publication">Works That Work</i></footer></blockquote>
+<blockquote>The rocket itself is an amalgam of reverse engineering and declassified technology from the American and Soviet space programmes, some of it from the 1950s and 60s, some of it essentially the same propulsion mechanisms used by German rocketeers during the Second World War. The liquid helium canisters used to cool the rocket are labelled ‘balloon gas’. It’s far from pretty, but Wilson insists it will work. ‘Our goal is always to find the simplest solution …’<footer><cite>Pete Guest</cite> – <a href="https://worksthatwork.com/4/from-earth-to-mars/share/c12ab909b3d4f77993fdb758a8a4ad5d">“From Earth to Mars”</a>, Issue 4, <i class="publication">Works That Work</i></footer></blockquote>
 
-I also enjoyed the photos in [“Living Underground”](https://worksthatwork.com/4/living-underground), a short story about an otherworldly, half-underground mining town in south Australia. Both the website and the print publication are laid out to give proper space for sweeping landscapes and small objects – it was definitely a creative influence for me for my own site.
+I also enjoyed the photos in [“Living Underground”](https://worksthatwork.com/4/living-underground), a short story about an otherworldly, half-underground mining town in south Australia. Both the website and the print publication are laid out to give proper space for sweeping landscapes and small objects – it was definitely a creative influence for my own site.
 
-The latest issue has an even better feel than the previous ones – each one is better than the last. It is particularly impressive how much this small magazine accomplishes, considering that the effort is very much an independent one. It is published by the small [Typotheque](https://www.typotheque.com) foundry, run by [a lean team of editors](https://worksthatwork.com/about/) and contributors. The project is additionally supported by very minimal advertising. 
+The latest issue has an even better feel than the previous ones – each one is better than the last. It is particularly impressive how much this small magazine accomplishes, considering that the effort is very much an independent one. It is published by the small [Typotheque](https://www.typotheque.com) foundry, run by [a lean team of editors](https://worksthatwork.com/about/) and contributors. The project is additionally supported by very minimal advertising.
 
-They are also engaging with readers through interesting [social distribution](https://worksthatwork.com/distribution/) experiment. The one compromise in their approach is partial pay-walling on the website, which is common to a lot of the best publications today. I do not like pay walls, but at the same time, I happily pay for writing and creative work that is worth it, whether pay-walled or not. In some ways it feels like it is against the open spirit of the web to lock content away from potential readers. At the same time, I have a lot of sympathy for creators who want to selectively release their work, especially when it would otherwise go uncompensated. 
+<div class="grid2">
+  <figure class="image">
+    <img
+      src="{{ site.image-url }}/{{ page.image[1].src }}" 
+      sizes="{{ site.wide-sizes }}"
+      srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+      alt="{{ page.image[1].alt }}"
+    >
+  </figure>
+  <figure class="image">
+    <img
+      src="{{ site.image-url }}/{{ page.image[2].src }}" 
+      sizes="{{ site.wide-sizes }}"
+      srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[2].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+      alt="{{ page.image[2].alt }}"
+    >
+  </figure>
+</div>
 
-Fortunately, <i class="publication">WTW’s</i> approach to protecting content is liberal, encouraging and enabling readers to share articles and the magazine itself with friends. In this case it seems to be a fair balance, since sharing is encouraged and a good portion of the writing is available freely. When sharing articles by them or recommending that others read it, I do not feel that the pay-wall is a significant limitation, like it does with the <i class="publication">New York Times</i>, <i class="publication">The Economist</i>, or the <i class="publication">The New Yorker</i> (although the latter [has since reformed](http://www.newyorker.com/magazine/2014/07/28/note-readers)).
+They are also engaging with readers through interesting [social distribution](https://worksthatwork.com/distribution/) experiment. The idea is to encourage readers to become distributors to help the publisher bypass conventional distribution networks, which account for a large part of the cover price of a magazine. The reader helps to distribute the magazine, and gets a discount in the process. None of this adds to the base cover price of the magazine, and more people get local access to the magazine without the overhead of a traditional distribution.
+
+The one compromise in their approach is partial pay-walling on the website, which is common to a lot of the best publications today. I do not like pay walls, but at the same time, I happily pay for writing and creative work that is worth it, whether pay-walled or not. In some ways it feels like it is against the open spirit of the web to lock content away from potential readers. At the same time, I have a lot of sympathy for creators who want to selectively release their work, especially when it would otherwise go uncompensated. 
+
+Fortunately, <i class="publication">WTW’s</i> approach to protecting content is liberal, encouraging and enabling readers to share articles and the magazine itself with friends. In this case it seems to be a fair balance, with multiple reasonable options for paying or donating. Additionally, sharing is encouraged and a good portion of the writing is available freely. When sharing articles by them or recommending that others read it, I do not feel that the pay-wall is a significant limitation, like it is with the <i class="publication">New York Times</i>, <i class="publication">The Economist</i>, or the <i class="publication">The New Yorker</i> (although the latter [has since reformed](http://www.newyorker.com/magazine/2014/07/28/note-readers)).
 
 <i class="publication">WTW</i> is taking a truly innovative approach to publishing, both in philosophy and form. I really hope they stick around for a while.
 
 - - -
 
-[Read more](https://worksthatwork.com/blog/4) about the process behind Issue 4, including some sample pages from the print magazine.
+[Read more](https://worksthatwork.com/blog/4) about the process behind Issue 4, including some sample pages from the print magazine. The two images of the magazine above are by Works That Work.
