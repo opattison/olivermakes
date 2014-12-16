@@ -919,7 +919,8 @@ a.reversefootnote:focus {
   outline: none;
 }
 
-.site-nav li a:active {
+.site-nav li a:active,
+.site-nav:target li a:active {
   background-color: hsla(4, 60%, 50%, 1);
   color: hsla(204, 10%, 93%, 1);
 }

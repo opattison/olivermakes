@@ -63,6 +63,10 @@
   color: hsla(204, 50%, 45%, 1);
 }
 
+.index article h1 a:active {
+  color: hsla(204, 10%, 56%, 1);
+}
+
 .meta {
   background-color: hsla(204, 10%, 93%, .8);
   margin: 0;
