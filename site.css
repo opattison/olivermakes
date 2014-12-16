@@ -1198,7 +1198,8 @@ screen and (min-resolution: 1.5dppx) {
 
   .page-header .inside,
   .highlight,
-  .essay {
+  .essay,
+  .project {
     padding-left: 2.5em;
     padding-right: 2.5em;
   }
@@ -1215,10 +1216,6 @@ screen and (min-resolution: 1.5dppx) {
     float: right;
     margin: 1em -2.5em 1em 1.25em;
     width: 50%;
-  }
-
-  .project {
-    padding: 2em 2.5em;
   }
 
   blockquote {
