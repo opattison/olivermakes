@@ -558,6 +558,11 @@ nav li {
   outline: none;
 }
 
+.link a:active {
+  color: hsla(204, 10%, 93%, 1);
+  background-color: hsla(4, 60%, 50%, 1);
+}
+
 /* Bold emphasis text blocks – <div class="important"> */
 
 .important {
@@ -575,6 +580,10 @@ nav li {
 .important a:hover,
 .important a:focus {
   color: hsla(204, 10%, 32%, 1);
+}
+
+.important a:active {
+  color: hsla(204, 10%, 56%, 1);
 }
 
 .center {
@@ -908,6 +917,11 @@ a.reversefootnote:focus {
   background-color: hsla(204, 10%, 88%, 1);
   color: hsla(204, 80%, 40%, 1);
   outline: none;
+}
+
+.site-nav li a:active {
+  background-color: hsla(4, 60%, 50%, 1);
+  color: hsla(204, 10%, 93%, 1);
 }
 
 /* Alternative nav – home and back-to-top */

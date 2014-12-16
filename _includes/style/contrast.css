@@ -74,6 +74,11 @@
   color: hsla(204, 10%, 96%, 1);
 }
 
+.contrast .project .link a:focus {
+  background-color: hsla(204, 10%, 93%, 1);
+  color: hsla(204, 80%, 40%, 1);
+}
+
 .contrast .link .project-url:hover {
   color: hsla(4, 60%, 50%, 1);
 }

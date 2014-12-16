@@ -115,6 +115,12 @@
 
 .index article .link a:focus {
   background-color: hsla(204, 10%, 93%, 1);
+  color: hsla(204, 80%, 40%, 1);
+}
+
+.index article .link a:active {
+  color: hsla(204, 10%, 93%, 1);
+  background-color: hsla(4, 60%, 50%, 1);
 }
 
 .link-archive a {
@@ -125,6 +131,11 @@
 .link-archive a:focus {
   background-color: hsla(204, 10%, 88%, 1);
   color: hsla(4, 60%, 50%, 1);
+}
+
+.link-archive a:active {
+  color: hsla(204, 10%, 93%, 1);
+  background-color: hsla(204, 80%, 40%, 1);
 }
 
 @media screen and (min-width: 30em) {
