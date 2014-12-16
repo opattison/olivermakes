@@ -558,6 +558,11 @@ nav li {
   outline: none;
 }
 
+.link a:active {
+  color: hsla(204, 10%, 93%, 1);
+  background-color: hsla(4, 60%, 50%, 1);
+}
+
 /* Bold emphasis text blocks – <div class="important"> */
 
 .important {
@@ -575,6 +580,10 @@ nav li {
 .important a:hover,
 .important a:focus {
   color: hsla(204, 10%, 32%, 1);
+}
+
+.important a:active {
+  color: hsla(204, 10%, 56%, 1);
 }
 
 .center {
@@ -910,6 +919,12 @@ a.reversefootnote:focus {
   outline: none;
 }
 
+.site-nav li a:active,
+.site-nav:target li a:active {
+  background-color: hsla(4, 60%, 50%, 1);
+  color: hsla(204, 10%, 93%, 1);
+}
+
 /* Alternative nav – home and back-to-top */
 
 .alt-nav {
@@ -1198,7 +1213,8 @@ screen and (min-resolution: 1.5dppx) {
 
   .page-header .inside,
   .highlight,
-  .essay {
+  .essay,
+  .project {
     padding-left: 2.5em;
     padding-right: 2.5em;
   }
@@ -1215,10 +1231,6 @@ screen and (min-resolution: 1.5dppx) {
     float: right;
     margin: 1em -2.5em 1em 1.25em;
     width: 50%;
-  }
-
-  .project {
-    padding: 2em 2.5em;
   }
 
   blockquote {
