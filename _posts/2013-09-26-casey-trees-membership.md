@@ -50,6 +50,10 @@ image:
   - src: 2014-10-02-membership-form-responsive-2.png
     alt: 'Screenshot: responsive membership inputs on an iPhone screen October 2014'
     caption: '<span class="text-after">After:</span> Responsive donation inputs, 2013'
+  - src: 2014-12-17-membership-page-large-screen.png
+    alt: 'Screenshot: membership page on a MacBook Pro December 2014'
+  - src: 2014-12-17-membership-page-medium-screen.png
+    alt: 'Screenshot: membership page on Nexus 7 December 2014'
 
 ---
 
@@ -96,6 +100,21 @@ Working with the fundraising team, I iterated on the visual design until we had 
 ## A modular design pattern
 
 For the main page that would explain the membership program and encourage visitors to donate, my goal was to create repeatable and reusable content blocks (which we loosely referred to as “cards”) that could be used on the membership pages as well as other sections of the website. My method to deal with this complexity was to excerpt this audience-specific content and distill it into high-contrast, discrete blocks, with strong call-to-action links.
+
+<div class="grid2">
+<figure class="w66 screenshot">
+  <img
+    src="{{ site.image-url }}/{{ page.image[4].src }}" 
+    alt="{{ page.image[4].alt }}"
+  >
+</figure>
+<figure class="w33 screenshot">
+  <img
+    src="{{ site.image-url }}/{{ page.image[5].src }}" 
+    alt="{{ page.image[5].alt }}"
+  >
+</figure>
+</div>
 
 ### Buttons and edges
 
