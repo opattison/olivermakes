@@ -616,6 +616,23 @@ nav li {
   width: calc(100% + 1em);
 }
 
+/* Before/after for projects */
+
+.text-before,
+.text-after {
+  color: hsla(204, 10%, 96%, 1);
+  border-radius: .125em;
+  padding: .125em .375em;
+}
+
+.text-before {
+  background-color: hsla(4, 60%, 50%, 1);
+}
+
+.text-after {
+  background-color: hsla(144, 50%, 35%, 1);
+}
+
 /* Footnotes */
 
 .footnotes {
@@ -1027,7 +1044,8 @@ article img {
   margin-top: 5%;
 }
 
-.w33 {
+.grid3 figure,
+.grid2 .w33 {
   width: 66.66666667%;
 }
 
@@ -1107,7 +1125,8 @@ screen and (min-resolution: 1.5dppx) {
 
   .narrow,
   .wide,
-  .grid2 {
+  .grid2,
+  .grid3 {
     margin: 5% calc(-2em) 0;
     width: calc(100% + 4em);
   }
@@ -1206,7 +1225,8 @@ screen and (min-resolution: 1.5dppx) {
 
   .narrow,
   .wide,
-  .grid2 {
+  .grid2,
+  .grid3 {
     margin: 5% calc(-2.5em) 0;
     width: calc(100% + 5em);
   }
@@ -1466,7 +1486,8 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .wide,
-  .grid2 {
+  .grid2,
+  .grid3 {
     margin: 5% calc(-4.5em) 0;
     max-width: none;
     width: calc(100% + 9em);
@@ -1478,15 +1499,24 @@ screen and (min-resolution: 1.5dppx) {
     width: 48%;
   }
 
-  .grid2 {
+  .grid2,
+  .grid3 {
     display: inline-block;
   }
 
-  .grid2 figure {
+  .grid2 figure,
+  .grid3 figure {
     float: left;
     margin: 0;
     max-width: 100%;
+  }
+
+  .grid2 figure {
     width: 48%;
+  }
+
+  .grid3 figure {
+    width: 30.66666666%;
   }
 
   .grid2 .w33 {
@@ -1497,15 +1527,18 @@ screen and (min-resolution: 1.5dppx) {
     width: 64.66666667%;
   }
 
-  .grid2 figure + figure {
+  .grid2 figure + figure,
+  .grid3 figure + figure {
     margin-left: 4%;
   }
 
-  .grid2 + figure {
+  .grid2 + figure,
+  .grid3 + figure {
     clear: both;
   }
 
-  .grid2 :first-child figcaption p {
+  .grid2 :first-child figcaption p,
+  .grid3 figcaption p {
     text-align: left;
   }
 
@@ -1565,7 +1598,8 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .wide,
-  .grid2 {
+  .grid2,
+  .grid3 {
     margin: 5% calc(-9em) 0;
     width: calc(100% + 18em);
   }
@@ -1685,7 +1719,8 @@ screen and (min-width: 58.5em) and (max-height: 35em),
 screen and (min-width: 60em) and (max-height: 36em) {
   .wide,
   .narrow,
-  .grid2 {
+  .grid2,
+  .grid3 {
     margin: 5% auto 0!important;
     max-width: 100%!important;
   }
