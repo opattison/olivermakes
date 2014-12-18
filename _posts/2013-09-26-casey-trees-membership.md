@@ -53,11 +53,11 @@ image:
 
 ---
 
-[Casey Trees](http://caseytrees.org/) is an urban forestry non-profit dedicated to protecting the tree canopy of Washington, DC. I worked there from 2010 to 2014, managing a web redesign project, maintaining the website, administering the CRM, and assisting communications and fundraising efforts. I had a part in anything in the organization that involved the web, data collection, or communications. What follows is one sample of work that I had a central role in designing and implementing.
+[Casey Trees](http://caseytrees.org/) is an urban forestry non-profit dedicated to protecting the tree canopy of Washington, DC. I worked there from 2010 to 2014, managing a web redesign project, maintaining the website, administering the CRM, and contributed to other communications and fundraising efforts. I had a part in anything in the organization that involved the web, data collection, or communications. What follows is one sample of work that I had a central role in designing and implementing.
 
 ## A new membership program
 
-In the summer of 2013, my department (a creative team of five including me) planned to overhaul the membership program, launching by the end of September 2013. My fundraising colleagues structured the program and wrote the content for the website and print material. I would help with designing and implementing the donation forms and informational web pages. [Pittny Creative](http://www.pittnycreative.com), a local design firm, helped design icons and other campaign-specific graphic design.
+In the summer of 2013, my department (a creative team of five including me) planned to overhaul the membership program, launching by the end of September 2013. My fundraising colleagues structured the program and wrote the content for the website and print material. I would help with designing and implementing the donation forms and informational web pages. [Pittny Creative](http://www.pittnycreative.com), a local design firm, helped design icons, and created other campaign-specific graphic design.
 
 ## A revisited, *responsive* donation form
 
@@ -113,9 +113,9 @@ Since we already had strong colors and icons for each membership level, it made 
 
 Of the colors above, the first six were newly chosen for the membership campaign, while the last four were already in use on the site.
 
-### “Hiding” content
+### Progressively disclosing content
 
-We ended up with so many membership benefits to list that the excerpt cards explaining the benefits would be *long*: at least 100 to over 300 words, with a lot of repetition from one level to the next. I decided to use the HTML5 `<details>` and `<summary>` elements to manage this density. This is a JavaScript-free[^2] method for [progressively disclosing](http://en.wikipedia.org/wiki/Progressive_disclosure) content. We would include only the brief summary of each benefit, such as “**Invitation for you and a guest to our annual fall event**” (the `<summary>`) with more information available in the `<details>` element activated by a click or a tap.
+We had so many membership benefits to list that the excerpts explaining the benefits would be long: at least 100 to over 300 words, with a lot of repetition from one level to the next. I decided to use the HTML5 `<details>` and `<summary>` elements to manage this density. This is a JavaScript-free[^2] method for [progressively disclosing](http://en.wikipedia.org/wiki/Progressive_disclosure) content. We would include only the brief summary of each benefit, such as “**Invitation for you and a guest to our annual fall event**” (the `<summary>`) with more information available in the `<details>` element activated by a click or a tap.
 
 ## Turning custom styles into reusable patterns
 
@@ -127,21 +127,21 @@ The markup looks something like the following, with each `<div class="card">` el
     <div class="amount">$50</div>
     <h1><a href="http://example.com/donate-link">Level 1</a></h1>
     <details>
-    <summary>Benefit</summary>
-    <p>A description of the benefits provided.</p>
+      <summary>Benefit</summary>
+      <p>A description of the benefits provided.</p>
     </details>
     <details>
-    <summary>Another benefit</summary>
-    <p>A description of the benefits provided.</p>
+      <summary>Another benefit</summary>
+      <p>A description of the benefits provided.</p>
     </details>
     <div class="link"><a href="http://example.com/donate-link">Become a Level 1</a></div>
   </div>
 </section>
 {% endhighlight %}
 
-The parent `<section>` sets specific program-specific styles for content within. Membership gets a different theme from Advocacy, though they share the same structure and layout. By only changing the parent element, the standard HTML blocks can be reused from one section of the site to another, only changing one class (and then adding a new set of selectors and declarations in CSS for any new classes required).
+The parent `<section>` sets specific topic-specific styles for content within. For example, Membership gets a different theme from Advocacy, though they share the same structure and layout. By only changing the parent element, the standard HTML blocks can be reused from one section of the site to another, only changing one class (and then adding a new set of selectors and declarations in CSS for any new classes required).
 
-### Reusing the pattern elsewhere
+### Reusing the pattern
 
 This design pattern would prove useful for other informational pages on the website. Most programs at Casey Trees have multiple parts, and many have elements aimed at different audiences. The [tree planting programs](http://caseytrees.org/programs/planting/) are aimed at individuals, schools, and community groups. There are many different [ways to volunteer](http://caseytrees.org/get-involved/volunteer/). The Membership program has six different levels. Both informational and transactional pages tend to have segmented content for those different constituencies – lots of options to handle for a visitor to the site! So we wanted a design that could handle that complexity better.
 
@@ -149,10 +149,7 @@ Earlier designs of the Casey Trees site (dating back to 2002) focused on directi
 
 The method used on the Membership page would prove quite useful on other pages, with more legible indexes and better methods of distinguishing similar information and actions on the site. For example, the [advocacy page](http://caseytrees.org/get-involved/action/), which I designed concurrently with the Membership page, would benefit from the same layout. An iteration of the pattern was also used for the [volunteer pages](http://caseytrees.org/get-involved/volunteer/), designed a year later.
 
-### Reusing the donation form
+The work on the membership-specific responsive donation form also paid off elsewhere in the site: at the same time that we launched the Membership pages and form, we also launched the re-worked standard donation forms. Other forms on the site could borrow from all of the same design work that went into the membership-specific forms. Now that the design work was done, new forms would only require a few minutes to configure, and importantly, they would now work exactly the same on all screen sizes.
 
-The work on the membership-specific responsive donation form paid off elsewhere in the site too: at the same time that we launched the Membership pages and form, we also launched the re-worked standard donation forms. Other forms on the site could borrow from all of the same design work that went into the membership-specific forms. Now that the design work was done, new forms would only require a few minutes to configure, and importantly, they would now work exactly the same on all screen sizes.
-
-
-[^1]: Android tablets were getting a donation form that assumed “iPhone”. This is yet another example of how device detection is not usually a robust solution and can become outdated very quickly. In early 2012 when the site was designed, Android tablet users made up approximately 0% of visitors to the site, but by 2013 the market had shifted and they had become quite popular. It would have been possible back in 2012 to design a more future-friendly method of device detection that would better account for in-between sizes, but that is precisely when responsive design makes even more sense.
+[^1]: Android tablets were being served a donation form that assumed “iPhone”. This is yet another example of how device detection is not usually a robust solution and can become outdated very quickly. In early 2012 when the site was designed, Android tablet users made up approximately 0% of visitors to the site, but by 2013 the market had shifted and they had become quite popular. It would have been possible back in 2012 to design a more future-friendly method of device detection that would better account for in-between sizes, but that is precisely when responsive design makes even more sense.
 [^2]: Although the `<details>` element is JavaScript-free in theory, in practice it needs to be polyfilled for some browsers. I made sure to include a [polyfill by Remy Sharp](https://gist.github.com/remy/370590) to ensure compatibility with browsers that had not yet adopted the standard (Firefox and Internet Explorer).
