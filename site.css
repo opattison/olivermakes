@@ -1457,6 +1457,10 @@ screen and (min-resolution: 1.5dppx) {
     padding: 2.5em;
   }
 
+  .footnotes .reversefootnote {
+    margin: 0 -2.5em;
+  }
+
   .important {
     padding: 0 2em;
   }
