@@ -60,9 +60,13 @@ srcset_project:
   - 1080
 
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 permalink: /:year/:month/:title/
 
-exclude: [s3_website.yml, Rakefile, _images]
+exclude: [s3_website.yml, Rakefile]
 
 # shades
 

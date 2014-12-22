@@ -325,7 +325,6 @@ hr {
 }
 
 code,
-pre,
 samp {
   font: 400 .8125em/1.4375 'source-code-pro', Menlo, Consolas, monospace;
   white-space: pre-wrap;
@@ -340,19 +339,9 @@ samp {
   padding: .0625em .25em 0;
 }
 
-pre > code {
-  font-size: 1em;
-  margin: 0;
-  padding: 0;
-}
-
-.highlight {
+div.highlighter-rouge {
   border-bottom: solid .0625em hsla(204, 10%, 88%, 1);
   border-top: solid .0625em hsla(204, 10%, 88%, 1);
-}
-
-.lineno {
-  margin: 0 .5em 0 -1em;
 }
 
 kbd > kbd {
@@ -479,7 +468,7 @@ nav li {
   margin-top: 2em;
 }
 
-.highlight,
+div.highlighter-rouge,
 .essay,
 .project {
   margin-left: -1em;
@@ -1132,13 +1121,13 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .page-header .inside,
-  .highlight,
+  div.highlighter-rouge,
   .essay {
     padding-left: 2em;
     padding-right: 2em;
   }
 
-  .highlight,
+  div.highlighter-rouge,
   .essay,
   .project,
   .code figcaption {
@@ -1232,14 +1221,14 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .page-header .inside,
-  .highlight,
+  div.highlighter-rouge,
   .essay,
   .project {
     padding-left: 2.5em;
     padding-right: 2.5em;
   }
 
-  .highlight,
+  div.highlighter-rouge,
   .essay,
   .project,
   .code figcaption {
@@ -1259,7 +1248,7 @@ screen and (min-resolution: 1.5dppx) {
     padding-left: 1.75em;
   }
 
-  .highlight,
+  div.highlighter-rouge,
   .essay {
     padding-bottom: 1.25em;
     padding-top: 1.25em;
@@ -1415,13 +1404,13 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .page-header .inside,
-  .highlight,
+  div.highlighter-rouge,
   .essay {
     padding-left: 4.5em;
     padding-right: 4.5em;
   }
 
-  .highlight,
+  div.highlighter-rouge,
   .essay,
   .code figcaption {
     margin-left: -4.5em;
@@ -1436,7 +1425,7 @@ screen and (min-resolution: 1.5dppx) {
     margin-left: 0;
   }
 
-  .highlight {
+  div.highlighter-rouge {
     padding-bottom: 2em;
     padding-top: 2em;
   }
@@ -1608,12 +1597,12 @@ screen and (min-resolution: 1.5dppx) {
     width: calc(100% + 18em);
   }
 
-  .highlight {
+  div.highlighter-rouge {
     padding-left: 9em;
     padding-right: 9em;
   }
 
-  .highlight,
+  div.highlighter-rouge,
   .code figcaption {
     margin-left: -9em;
     margin-right: -9em;
@@ -1621,11 +1610,6 @@ screen and (min-resolution: 1.5dppx) {
 
   .right {
     margin-right: -9em;
-  }
-
-  .highlight {
-    padding-bottom: 2em;
-    padding-top: 2em;
   }
 
   .footnotes {
