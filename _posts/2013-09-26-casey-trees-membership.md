@@ -140,7 +140,7 @@ We had so many membership benefits to list that the excerpts explaining the bene
 
 The markup looks something like the following, with each `<div class="card">` element being a repeatable unit:
 
-{% highlight html %}
+```html
 <section class="membership">
   <div id="level1" class="card level1">
     <div class="amount">$50</div>
@@ -156,7 +156,7 @@ The markup looks something like the following, with each `<div class="card">` el
     <div class="link"><a href="http://example.com/donate-link">Become a Level 1</a></div>
   </div>
 </section>
-{% endhighlight %}
+```
 
 The parent `<section>` sets specific topic-specific styles for content within. For example, Membership gets a different theme from Advocacy, though they share the same structure and layout. By only changing the parent element, the standard HTML blocks can be reused from one section of the site to another, only changing one class (and then adding a new set of selectors and declarations in CSS for any new classes required).
 
