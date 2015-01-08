@@ -11,7 +11,7 @@ GEM
     blankslate (2.1.2.4)
     celluloid (0.16.0)
       timers (~> 4.0.0)
-    classifier-reborn (2.0.2)
+    classifier-reborn (2.0.3)
       fast-stemmer (~> 1.0)
     coffee-script (2.3.0)
       coffee-script-source
@@ -27,7 +27,7 @@ GEM
     fast-stemmer (1.0.2)
     ffi (1.9.6)
     hitimes (1.2.2)
-    jekyll (2.5.2)
+    jekyll (2.5.3)
       classifier-reborn (~> 2.0)
       colorator (~> 0.1)
       jekyll-coffeescript (~> 1.0)
@@ -42,6 +42,8 @@ GEM
       redcarpet (~> 3.1)
       safe_yaml (~> 1.0)
       toml (~> 0.1.0)
+    jekyll-archives (1.0.0)
+      jekyll (~> 2.0)
     jekyll-coffeescript (1.0.1)
       coffee-script (~> 2.2)
     jekyll-gist (1.1.0)
@@ -67,7 +69,7 @@ GEM
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     redcarpet (3.2.2)
-    rouge (1.7.4)
+    rouge (1.7.7)
     s3_website (2.7.2)
       colored (= 1.2)
       configure-s3-website (= 1.6.0)
@@ -87,6 +89,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (>= 2.5)
+  jekyll-archives
   kramdown (= 1.5.0)!
   rake
   rouge

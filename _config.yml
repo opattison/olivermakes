@@ -66,6 +66,23 @@ kramdown:
 
 permalink: /:year/:month/:title/
 
+jekyll-archives:
+  enabled:
+    - year
+    - month
+    - categories
+    - tags
+  layouts:
+    year: archive-year
+    month: archive-year
+    categories: archive-year
+    tags: archive-year
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    tag: '/archive/tag/:name/'
+    category: '/archive/category/:name/'
+
 exclude: [s3_website.yml, Rakefile]
 
 # shades
