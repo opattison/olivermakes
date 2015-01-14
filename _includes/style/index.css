@@ -1,4 +1,3 @@
-
 .home,
 .category {
   background-color: hsla(204, 10%, 96%, 1);
@@ -17,6 +16,11 @@
   width: calc(100% + 2em);
 }
 
+.home .features,
+.home .index {
+  margin-top: 0;
+}
+
 .items {
   margin: 1em auto;
   overflow: hidden;
@@ -33,7 +37,8 @@
   text-align: center;
 }
 
-.index article {
+.feature,
+.item {
   background-color: hsla(204, 10%, 88%, 1);
   display: inline-block;
   position: relative;
@@ -142,6 +147,28 @@
   background-color: hsla(204, 80%, 40%, 1);
 }
 
+.introduction {
+  background-color: hsla(204, 50%, 45%, 1);
+  color: hsla(204, 10%, 98%, 1);
+  font-size: 1.125em;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.introduction a {
+  color: hsla(4, 30%, 80%, 1);
+}
+
+.introduction a:hover,
+.introduction a:focus {
+  color: hsla(204, 30%, 80%, 1);
+  border-bottom: solid 1px hsla(204, 30%, 80%, .5);
+}
+
+.introduction .meta {
+  background-color: initial;
+}
+
 @media screen and (min-width: 30em) {
   .index-title {
     margin: 0 .5em;
@@ -182,10 +209,18 @@
     width: 50%;
   }
 
+  .meta {
+    padding: 2em;
+  }
+
   .feature .meta {
     font-size: 1.25em;
     min-height: 15em;
-    padding: .8em;
+    padding: 1.6em;
+  }
+
+  .introduction {
+    font-size: 1.25em;
   }
 
   .item .meta {
