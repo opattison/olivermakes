@@ -6,12 +6,7 @@ category: index
 ---
 
 <div class="features">
-<article class="introduction">
-  <div class="meta">
-    <h1>My name is Oliver Pattison</h1>
-    <p>I am a designer focused on the future of the web. This site is my personal archive of writing and photography, and serves as a portfolio for my projects. <a href="/about">Read more about me</a>.</p>
-  </div>
-</article>
+{% include index/introduction.html %}
 {% for post in site.posts %}
 {% if post.option contains 'feature' %}
 {% include index/article-feature.html %}
