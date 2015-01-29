@@ -2,7 +2,6 @@
 title: 'Fujifilm X-E2 Vector'
 layout: contrast
 option:
-  - feature
   - index-image
   - sample-svg
   - code

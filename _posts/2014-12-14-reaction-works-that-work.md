@@ -2,6 +2,7 @@
 title: 'Reaction: <i>Works That Work</i>'
 layout: singel
 option:
+  - feature
   - hero-srcset
   - index-image
 category: 'writing'
@@ -13,6 +14,7 @@ updated: 2014-12-15 11:01
 drafted: 2014-12-14 20:00
 unique-id: 2014-12-14:reaction-works-that-work
 description: 'Notes on an independent publication about design and creativity.'
+feature-description: 'At its best, a print magazine can be as valuable as a book. These are my notes on <i>Works That Work</i>, an independent publication about design and creativity.'
 image:
   - src: 2014-12-14-wtw-olivermakes-ccbync.jpg
     alt: ''
