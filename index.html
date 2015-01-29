@@ -14,7 +14,7 @@ category: index
 {% endfor %}
 </div>
 <div class="items">
-{% for post in site.posts limit: 10 %}
+{% for post in site.posts limit: 9 %}
 {% unless post.option contains 'feature' %}
 {% include index/article-item.html %}
 {% endunless %}

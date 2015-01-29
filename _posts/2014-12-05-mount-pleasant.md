@@ -2,7 +2,6 @@
 title: 'Mount Pleasant photowalk'
 layout: contrast
 option:
-  - feature
   - map-meta
   - srcset
 category: 'photo'
