@@ -166,7 +166,7 @@
 }
 
 .introduction .meta {
-  background-color: initial;
+  background-color: inherit;
 }
 
 @media screen and (min-width: 30em) {
