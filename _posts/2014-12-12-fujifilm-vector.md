@@ -1,5 +1,5 @@
 ---
-title: 'Fujifilm X-E2 Vector'
+title: 'Fujifilm X-E2 vector'
 layout: contrast
 option:
   - index-image

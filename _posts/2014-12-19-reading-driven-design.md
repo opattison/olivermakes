@@ -1,5 +1,5 @@
 ---
-title: 'Reading-Driven Design'
+title: 'Reading-driven design'
 layout: singel
 category: 'writing'
 date: 2014-12-19 23:14
