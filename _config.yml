@@ -24,6 +24,10 @@ link:
 
 # Site configuration
 
+## Gems configuration
+gems:
+  - jekyll-archives
+
 ## Markdown configuration
 markdown: kramdown
 kramdown:
@@ -42,15 +46,15 @@ jekyll-archives:
     - categories
     - tags
   layouts:
-    year: archive-year
-    month: archive-year
-    categories: archive-year
-    tags: archive-year
+    year: archive-time
+    month: archive-time
+    category: archive-name
+    tag: archive-name
   permalinks:
     year: '/:year/'
     month: '/:year/:month/'
-    tag: '/archive/tag/:name/'
-    category: '/archive/category/:name/'
+    tag: '/:name/archive/'
+    category: '/:name/archive/'
 
 ## Project configuration
 exclude: [s3_website.yml, Rakefile]

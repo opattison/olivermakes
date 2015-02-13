@@ -1,0 +1,18 @@
+---
+layout: archive
+
+---
+
+{{ content }}
+
+<header>
+  <h1>/{{ page.title | date: '%Y' }}</h1>
+</header>
+
+<div class="archive-items">
+  <ul>
+{% for post in page.posts %}
+{% include index/archive-item.html %}
+{% endfor %}
+  </ul>
+</div>

@@ -7,7 +7,7 @@ option:
   - index-image
   - sample-srcset
   - patterns
-category: 'project'
+category: 'projects'
 date: 2013-09-26 15:52
 updated: 2014-12-17 15:52
 drafted: 2014-12-17 12:00

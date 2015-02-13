@@ -6,7 +6,7 @@ option:
   - sample-svg
   - code
   - srcset
-category: 'project'
+category: 'projects'
 tags:
   - 'minor'
 date: 2014-12-08 9:00

@@ -1,1 +1,9 @@
-  <div class="link-archive link"><a href="/archive">Archive ⇀</a></div>
+  <div class="link-archive">
+    <div class="link"><a href="/archive">Full site archive ⇀</a></div>
+
+    {% if page.title == 'Photography' %}<div class="link"><a href="/photography/archive">Photography archive ⇀</a></div>{% endif %}
+
+    {% if page.title == 'Writing' %}<div class="link"><a href="/writing/archive">Writing archive ⇀</a></div>{% endif %} 
+
+    {% if page.title == 'Projects' %}<div class="link"><a href="/projects/archive">Projects archive ⇀</a></div>{% endif %}
+  </div>

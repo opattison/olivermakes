@@ -132,19 +132,32 @@
   background-color: hsla(4, 60%, 50%, 1);
 }
 
-.link-archive a {
+.link-archive .link a {
   background-color: hsla(4, 60%, 50%, 1);
 }
 
-.link-archive a:hover,
-.link-archive a:focus {
+.link-archive .link:nth-child(2) a {
+  background-color: hsla(204, 50%, 45%, 1);
+}
+
+.link-archive .link a:hover,
+.link-archive .link a:focus {
   background-color: hsla(204, 10%, 88%, 1);
   color: hsla(4, 60%, 50%, 1);
 }
 
-.link-archive a:active {
+.link-archive .link:nth-child(2) a:hover,
+.link-archive .link:nth-child(2) a:focus {
+  color: hsla(204, 50%, 45%, 1);
+}
+
+.link-archive .link a:active {
   color: hsla(204, 10%, 93%, 1);
   background-color: hsla(204, 80%, 40%, 1);
+}
+
+.link-archive .link:nth-child(2) a:active {
+  background-color: hsla(4, 80%, 40%, 1);
 }
 
 .introduction {
@@ -233,8 +246,17 @@
 
   .link-archive {
     clear: both;
+  }
+
+  .link-archive .link {
+    margin: 1em 0 0;
     float: left;
     width: 50%;
+  }
+
+  .link-archive .link:only-child {
+    margin: 1em auto 0;
+    width: 100%;
   }
 }
 
