@@ -165,7 +165,7 @@ Text below a grid.
 
 ### HTML
 
-{% highlight html %}
+```html
 <header class="site-header" id="top" role="banner">
   <a class="title" href="/">
     <h1>Page title</h1>
@@ -178,12 +178,13 @@ Text below a grid.
 <p>Some paragraph text may require <em>stress</em> emphasis and some it may be important enough to require something <strong>stronger</strong>. <q>Just as the plume of smoke rose and died so too will the glow of gold. Elevated status moves us now through the darkened halls of the quick.</q> This is <mark>highlighted text</mark> that uses the <code>&lt;mark&gt;</code> element. <dfn>H<sub>2</sub>O</dfn> is the chemical formula for a water molecule, indicating that it contains one oxygen and two hydrogen atoms. Oxygen is the 8<sup>th</sup> element on the <a href="https://en.wikipedia.org/wiki/Periodic_table">periodic table of elements</a>.</p>
 
 <!-- comment -->
-{% endhighlight %}
+```
 
 ### CSS
 
 <figure class="code">
-{% highlight css %}
+{% markdown %}
+```css
 article strong a,
 article strong a:visited {
   color: hsla(205, 10%, 98%, 1);
@@ -207,9 +208,9 @@ kbd > kbd + b {
   font-family: 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
   margin: 0 -.375em;
 }
-
 /* comment */
-{% endhighlight %}
+```
+{% endmarkdown %}
 <figcaption><p>This is a figcaption for a figure that encloses a code block.</p></figcaption>
 </figure>
 
