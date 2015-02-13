@@ -141,7 +141,8 @@ html {
   -o-font-feature-settings: "liga", "dlig";
   -webkit-font-feature-settings: "liga", "dlig";
    font-feature-settings: "liga", "dlig";
-   font-variant-ligatures: common-ligatures;
+  font-variant-ligatures: common-ligatures;
+  text-rendering: optimizeLegibility;
 }
 
 body {
@@ -216,7 +217,7 @@ h5 {
 a {
   color: hsla(4, 80%, 40%, 1);
   transition-duration: 320ms;
-  transition-property: color, background-color;
+  transition-property: color, background-color, border-bottom;
   transition-timing-function: cubic-bezier(0,1,1,1);
 }
 

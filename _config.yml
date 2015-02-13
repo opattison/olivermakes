@@ -4,6 +4,9 @@ author:
   email: oliverpattison@gmail.com
 description: 'I am Oliver Pattison, a designer focused on the future of the web.'
 
+# Content
+
+## Referenced URLs (internal and external links for inline use)
 link:
   attribution: http://creativecommons.org/licenses/by-nc/4.0/
   flickr: https://www.flickr.com/photos/ok-oyot
@@ -19,24 +22,54 @@ link:
   twitter: http://twitter.com/olivermakes
   vsco: http://olivermakes.vsco.co
 
+# Site configuration
+
+## Markdown configuration
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+## Permalink configuration
+permalink: /:year/:month/:title/
+
+## Jekyll Archives configuration
+
+jekyll-archives:
+  enabled:
+    - year
+    - month
+    - categories
+    - tags
+  layouts:
+    year: archive-year
+    month: archive-year
+    categories: archive-year
+    tags: archive-year
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    tag: '/archive/tag/:name/'
+    category: '/archive/category/:name/'
+
+## Project configuration
+exclude: [s3_website.yml, Rakefile]
+
+## Configuration URLs
 domain: olivermak.es
 url: http://olivermak.es
-
 patterns-url: http://olivermak.es/patterns
 image-url: http://static.olivermak.es/images
 icon-url: http://static.olivermak.es/icons
 style-url: http://static.olivermak.es/style
 script-url: http://static.olivermak.es/scripts
 fragments-url: http://static.olivermak.es/fragments
-
 source-url:
   repo: https://github.com/opattison/olivermakes
   blob: https://github.com/opattison/olivermakes/blob/master
   commits: https://github.com/opattison/olivermakes/commits/master
 
-mapbox-key: pk.eyJ1Ijoib3BhdHRpc29uIiwiYSI6Il9DU3p1MEkifQ.3cvRQB5hVIONMpDAflBUNw
-photo-mapid: opattison.942a5f69
-
+## srcset implementation
 wide-sizes: '(min-width: 140em) 1440px, (min-width: 115em) 1260px, (min-width: 95em) 1080px, (min-width: 60em) 900px, (min-width: 45em) 720px, 100vw'
 grid2-sizes: '(min-width: 140em) 691px, (min-width: 115em) 605px, (min-width: 95em) 518px, (min-width: 60em) 432px, (min-width: 45em) 720px, 100vw'
 project-sizes: '(min-width: 115em) 756px, (min-width: 90em) 648px, (min-width: 70em) 540px, (min-width: 60em) 740px, (min-width: 45em) 620px, (min-width: 30em) calc(100vw - 4em), calc(100vw - 2em)'
@@ -59,34 +92,11 @@ srcset_project:
   - 720
   - 1080
 
-markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+## Mapbox authentication and configuration
+mapbox-key: pk.eyJ1Ijoib3BhdHRpc29uIiwiYSI6Il9DU3p1MEkifQ.3cvRQB5hVIONMpDAflBUNw
+photo-mapid: opattison.942a5f69
 
-permalink: /:year/:month/:title/
-
-jekyll-archives:
-  enabled:
-    - year
-    - month
-    - categories
-    - tags
-  layouts:
-    year: archive-year
-    month: archive-year
-    categories: archive-year
-    tags: archive-year
-  permalinks:
-    year: '/:year/'
-    month: '/:year/:month/'
-    tag: '/archive/tag/:name/'
-    category: '/archive/category/:name/'
-
-exclude: [s3_website.yml, Rakefile]
-
-# shades
-
+## Shade values
 shade:
   - name: black
     hsl: 'hsla(204, 10%, 10%, 1)'
@@ -125,8 +135,7 @@ shade:
     hsl: 'hsla(204, 10%, 98%, 1)'
     hex: '#f9fafa'
 
-#colors
-
+## Color values
 color:
   - name: blue
     hsl: 'hsla(204, 50%, 45%, 1)'
@@ -168,8 +177,7 @@ color:
     hsl: 'hsla(184, 32%, 38%, 1)'
     hex: '#427c80'
 
-# semi-transparent shades and colors
-
+## Semi-transparent shade and color values
 transparent:
   - name: black-80
     hsl: 'hsla(204, 10%, 10%, .8)'
