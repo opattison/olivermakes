@@ -1,0 +1,23 @@
+---
+layout: archive
+
+---
+
+<header>
+  {% if page.type == 'year' %}
+  <h1>/{{ page.date | date: '%Y' }}</h1>
+  {% elsif page.type == 'month' %}
+  <h1>/{{ page.date | date: '%Y/%m' }}</h1>
+  {% endif %}
+</header>
+
+<div class="archive-items">
+  <ul>
+{% for post in page.posts %}
+{% include index/archive-item.html %}
+{% endfor %}
+  </ul>
+{% include index/link-archive-back.html %}
+</div>
+
+{{ content }}

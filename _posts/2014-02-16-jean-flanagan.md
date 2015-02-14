@@ -7,7 +7,7 @@ option:
   - sample-srcset
   - srcset
   - custom-css
-category: 'project'
+category: 'projects'
 date: 2014-02-16 12:34
 updated: 2014-12-06 16:01
 drafted: 2014-12-03 17:10

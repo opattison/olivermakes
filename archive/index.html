@@ -6,6 +6,10 @@ description: 'A minimal archive list of all posts on this website, by Oliver Pat
 
 ---
 
+<header>
+  <h1>/{{ page.title | downcase }}</h1>
+</header>
+
 <div class="archive-items">
   <ul>
 {% for post in site.posts %}

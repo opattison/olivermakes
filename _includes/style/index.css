@@ -27,7 +27,12 @@
 }
 
 .archive-items {
-  margin: 1em auto .5em;
+  margin: 1em auto;
+  overflow: auto;
+}
+
+.archive-items li {
+  margin: 1em 0;
 }
 
 .index header h1 {
@@ -94,7 +99,7 @@
 }
 
 .archive-item .meta h1 {
-  font-size: 1em;
+  font-size: 1.125em;
 }
 
 .index .time {
@@ -132,19 +137,36 @@
   background-color: hsla(4, 60%, 50%, 1);
 }
 
-.link-archive a {
+.link-archive .link a {
   background-color: hsla(4, 60%, 50%, 1);
 }
 
-.link-archive a:hover,
-.link-archive a:focus {
+.link-archive .link:nth-child(2) a {
+  background-color: hsla(204, 50%, 45%, 1);
+}
+
+.link-archive .link a:hover,
+.link-archive .link a:focus {
   background-color: hsla(204, 10%, 88%, 1);
   color: hsla(4, 60%, 50%, 1);
 }
 
-.link-archive a:active {
+.link-archive .link:nth-child(2) a:hover,
+.link-archive .link:nth-child(2) a:focus {
+  color: hsla(204, 50%, 45%, 1);
+}
+
+.link-archive .link a:active {
   color: hsla(204, 10%, 93%, 1);
   background-color: hsla(204, 80%, 40%, 1);
+}
+
+.link-archive .link:nth-child(2) a:active {
+  background-color: hsla(4, 80%, 40%, 1);
+}
+
+.archive .link-archive {
+  margin: 0;
 }
 
 .introduction {
@@ -194,7 +216,7 @@
     width: 100%;
   }
 
-  .archive-items {
+  .archive-items .meta {
     font-size: 1.25em;
   }
 
@@ -219,6 +241,10 @@
     padding: 1.6em;
   }
 
+  .archive .meta {
+    padding: 1em 2em;
+  }
+
   .introduction {
     font-size: 1.25em;
   }
@@ -232,9 +258,18 @@
   }
 
   .link-archive {
-    clear: both;
+    float: left;
+    width: 100%;
+  }
+
+  .link-archive .link {
+    margin: 0;
     float: left;
     width: 50%;
+  }
+
+  .link-archive .link:only-child {
+    width: 100%;
   }
 }
 
@@ -270,9 +305,5 @@
 @media screen and (min-width: 95em) {
   .index {
     font-size: 1.5em;
-  }
-
-  .link-archive {
-    margin: 1em auto;
   }
 }

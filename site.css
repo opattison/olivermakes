@@ -233,7 +233,7 @@ a:active {
 
 .page a,
 footer a {
-  border-bottom: solid 1px hsla(5, 30%, 80%, 1);
+  border-bottom: solid 1px hsla(4, 30%, 80%, 1);
 }
 
 .page a:hover,
