@@ -3,10 +3,8 @@ layout: archive
 
 ---
 
-{{ content }}
-
 <header>
-  <h1>/{{ page.title | date: '%Y' }}</h1>
+  <h1>/{{ page.date | date: '%Y' }}</h1>
 </header>
 
 <div class="archive-items">
@@ -16,3 +14,5 @@ layout: archive
 {% endfor %}
   </ul>
 </div>
+
+{{ content }}
