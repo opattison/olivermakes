@@ -83,7 +83,7 @@ The trade-off is supposedly an easier user interface for editing and administrat
   <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
 </figure>
 
-I am willing to admit that I don’t have a handle on working alone with a complex dynamic site suited to my design goals. Fortunately, static sites make up for their deficiencies in dynamism with high performance and robustness. Dealing with opaque and breakable databases, worrying about security holes, and spending time figuring out limitations of a dynamically programmed site takes my time away from writing, photography, and improving the user interface of the site.
+I am willing to admit that I don’t have a handle on working alone with a complex dynamic site suited to my design goals. Fortunately, static sites make up for their deficiencies in dynamism with high performance and robustness. Dealing with [opaque and breakable databases](http://indiewebcamp.com/wiki/index.php?title=database-antipattern), worrying about security holes, and spending time figuring out limitations of a dynamically programmed site takes my time away from writing, photography, and improving the user interface of the site.
 
 Most importantly, no cruft or opinionated design from a framework or CMS can change my approach to structure and presentation. Anything I put into my site, whether an enhancement or method of working, is my choice alone.
 
