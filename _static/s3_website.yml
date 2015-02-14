@@ -1,6 +1,7 @@
 s3_id: <%= ENV['S3_ID'] %>
 s3_secret: <%= ENV['S3_SECRET'] %>
 s3_bucket: static.olivermak.es
+cloudfront_distribution_id: E28XODJVNMKWMD
 
 max_age:
   "*.css": 2419200

@@ -1,12 +1,22 @@
 ---
-title: 'Design notes: future-friendliness and&nbsp;robustness'
+title: 'Designing this site: future-friendliness and&nbsp;robustness'
 layout: singel
-category: writing
 option:
   - code
+  - index-image
+category: writing
 date: 2014-11-06 09:17
-updated: 2014-11-30 21:07
+updated: 2014-12-12 02:44
+drafted: 2014-11-06 09:17
 unique-id: 2014-11-06:design-notes-future-friendliness
+description: 'A discussion about designing for the long term, covering HTML, independent publishing, and web hosting.'
+image:
+  - src: 2014-12-12-futurefriendly.svg
+    alt: 'future friendly logo'
+    caption: 'The [future friendly](http://futurefriendlyweb.com/) movement is a significant inspiration for my approach, in both philosophy and implementation. [#ffly](https://twitter.com/search?q=%23ffly) astronaut logo is licensed [CC BY](http://creativecommons.org/licenses/by/3.0/), modified slightly by me.'
+    description: 'hero color is gray3 #49535a; index-image color is gray6 #84919a'
+    license: CC BY
+    license-url: http://creativecommons.org/licenses/by/3.0/
 
 ---
 
@@ -40,7 +50,7 @@ Fundamentally, Markdown is plain text enhanced with semantic properties and a st
 
 By using Jekyll, my site is inherently easy to transfer to another host. The server only needs to be able to serve plain HTML and linked resources. There is no significant dependency on the server, such as PHP or server-side JavaScript. Although Jekyll can be set up many ways, my initial setup is one that has a proven balance between reliability and cost at this scale: Amazon S3. It costs a few dollars a month for me, at most, currently, and performance is solid. Deploying takes a matter of seconds using [s3_website](https://github.com/laurilehmijoki/s3_website), a service that uses Amazon’s API to upload files.
 
-I don’t much care for Amazon (I can’t trust that any large company will continue to share my ethical standards over the coming years), but for right now, S3 is cheap and easy enough for me to configure. I also have no need to like Amazon, since it is not my content’s “home”. Rather it is merely a conduit for distribution. If I hosted (and *crucially*, published) with other services such as GitHub Pages, Tumblr, SquareSpace, WordPress, I would tie the fate of my site (and maybe even aspects of my content, presentation and process) to the fortunes of larger businesses. Even if a company survives and thrives, there is always the possibility that I may outgrow its capabilities our sour on its services.
+I don’t much care for Amazon (I can’t trust that any large company will continue to share my ethical standards over the coming years), but for right now, S3 is cheap and easy enough for me to configure. I also have no need to like Amazon, since it is not my content’s “home”. Rather it is merely a conduit for distribution. If I hosted (and *crucially*, published) with other services such as GitHub Pages, Tumblr, SquareSpace, WordPress, I would tie the fate of my site (and maybe even aspects of my content, presentation and process) to the fortunes of larger businesses. Even if a company survives and thrives, there is always the possibility that I may outgrow its capabilities or sour on its services.
 
 <aside class="ancillary">
 <p>Having just mentioned GitHub Pages, I should note that I love GitHub. <a href="http://github.com/opattison/olivermakes/">The repository for this site</a> lives there. I have reasons for avoiding GitHub Pages despite its advantages. GitHub Pages is a remarkably convenient and affordable way to host a Jekyll site. Unfortunately, the service rests on the shoulders of a fast-moving venture capital-funded startup, and there is more limited flexibility with implementing Jekyll (no plugins allowed). Even if GitHub dies or becomes untenable for me, I know how to use Git and a web server to keep my repository backed up elsewhere.</p>
@@ -64,6 +74,14 @@ Serving only static files is future-friendly and robust, which means my content 
 Another aspect of working with a static site that appeals to me is that I am able to handle the scope and output much more easily that I would with a dynamic site. I have had experience maintaining and designing for a WordPress site and the complexity and fragility of a WordPress site is off-putting and beyond my current set of technical skills.
 
 The trade-off is supposedly an easier user interface for editing and administration, and more flexibility with dynamic content. However, I find a CMS in the WordPress model more intimidating after a couple of years getting comfortable with tools like Jekyll and Git. I like working in a text editor. I have grown to appreciate the power of the command line. The data that I input into my site is under my control because I manage the input and the output from my own computer, rather than relying on someone else’s server.
+
+<figure class="right svg">
+  <img
+    src="{{ site.image-url }}/{{ page.image[0].src }}" 
+    alt="{{ page.image[0].alt }}"
+  >
+  <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
+</figure>
 
 I am willing to admit that I don’t have a handle on working alone with a complex dynamic site suited to my design goals. Fortunately, static sites make up for their deficiencies in dynamism with high performance and robustness. Dealing with [opaque and breakable databases](http://indiewebcamp.com/wiki/index.php?title=database-antipattern), worrying about security holes, and spending time figuring out limitations of a dynamically programmed site takes my time away from writing, photography, and improving the user interface of the site.
 

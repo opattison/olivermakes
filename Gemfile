@@ -1,0 +1,7 @@
+source 'https://rubygems.org'
+gem 'jekyll', '>= 2.5'
+gem 'rake'
+gem 's3_website'
+gem 'kramdown', '= 1.5.0', :git => 'https://github.com/opattison/kramdown.git', :branch => 'master'
+gem 'rouge'
+gem 'jekyll-archives'

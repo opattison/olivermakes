@@ -4,10 +4,16 @@ layout: singel
 option:
   - hero
   - code
-category: writing
+  - code-block
+  - index-image
+category: 'writing'
+tags:
+  - 'design'
 date: 2014-10-24 16:15
 updated: 2014-11-28 00:05
+drafted: 2014-10-24 16:15
 unique-id: 2014-10-24:better-responsive-code
+description: 'A CSS walkthrough of an approach to code blocks for responsive websites and technical documentation.'
 image:
   - src: 2014-11-26-hero-design-better-css-desat.png
     alt: ''
@@ -34,7 +40,8 @@ In this example for “front-end” web code blocks, I am including styles that 
 
 ### The defaults
 
-{% highlight css linenos %}
+
+```css
 body {
   max-width: 100%;
   word-wrap: break-word; /* force long words to break */
@@ -46,7 +53,7 @@ pre,
 samp {
   white-space: pre-wrap; /* force long lines to break */
 }
-{% endhighlight %}
+```
 
 ### Visual examples without `pre-wrap` and `break-word`
 
@@ -76,8 +83,8 @@ I have many more styles used to make the code blocks work on this site [^2] but 
 
 ### Expanding on the defaults
 
-<figure class="code">
-{% highlight css linenos %}
+{% capture c1 %}
+```css
 body {
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -108,7 +115,11 @@ pre > code {
   font-size: 1em; /* prevents recursive .8125em from applying in common <pre><code> markup pattern */
   padding: 0;
 }
-{% endhighlight %}
+```
+{% endcapture %}
+
+<figure class="code">
+{{ c1 | markdownify }}
 <figcaption><p><a href="https://github.com/opattison/olivermakes/blob/cc471fa92a270e4bc44423fd796ead2609005a40/site.css#L346">View the source CSS (as of {{ page.updated | date: '%B %d, %Y' }})</a> for a more detailed view of how code formatting is handled on this page.</p></figcaption>
 </figure>
 
@@ -118,27 +129,25 @@ Notice how the long comments above wrap around the page. I have intentionally in
 
 The following HTML block sample has a long paragraph that illustrates the line-length issue. HTML commonly has long line-lengths where wrapping is essential for readability.
 
-{% highlight html linenos %}
+```html
 <p>My monospace font is <a href="http://adobe-fonts.github.io/source-code-pro">Adobe Source Code Pro</a>. It is beautiful, and <a href="http://www.google.com/fonts/specimen/Source+Code+Pro">it is free to use</a>. To make sure that code blocks look their best, I set the monospace typeface to be proportional to the rest of the typography on my site – around .8125em for a site based on a 1em scale. This proportion works slightly differently depending on the typeface and weight chosen.</p>
 
 <hr>
 
 <p>An example of <a href="http://example.com/areallylongurlthatwouldotherwisebreakwithoutbreakword">a really long string</a>.</p>
-{% endhighlight %}
+```
 
 ## Is there any other way to handle code blocks responsively?
 
 The other way to handle this responsive dilemma is to use `overflow: scroll` for code blocks. This declaration makes long code blocks scroll instead of wrap around to new lines.
 
-{% highlight css linenos %}
-
+```css
 code,
 pre,
 samp {
   overflow: scroll;
 }
-
-{% endhighlight %}
+```
 
 A few notes about this method:
 
@@ -151,11 +160,11 @@ The following shows the scroll method using the HTML sample from earlier.
 
 ### It’s not too beautiful
 
-<div class="highlight" style="background-color: hsla(4, 30%, 80%, .2); padding-left: 0; padding-right: 2.5em; padding-bottom: 2.5em; position: relative;"><pre style="overflow: scroll; padding-left: 2.5em;"><code class="language-html" data-lang="html" style="word-wrap: normal; overflow-wrap: normal; white-space: pre"><span class="lineno">1</span> <span class="nt">&lt;p&gt;</span>My monospace font is <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://adobe-fonts.github.io/source-code-pro&quot;</span><span class="nt">&gt;</span>Adobe Source Code Pro<span class="nt">&lt;/a&gt;</span>. It is beautiful, and <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://www.google.com/fonts/specimen/Source+Code+Pro&quot;</span><span class="nt">&gt;</span>it is free to use<span class="nt">&lt;/a&gt;</span>. To make sure that code blocks look their best, I set the monospace typeface to be proportional to the rest of the typography on my site – around .8125em for a site based on a 1em scale. This proportion works slightly differently depending on the typeface and weight chosen.<span class="nt">&lt;/p&gt;</span>
-<span class="lineno">2</span> 
-<span class="lineno">3</span> <span class="nt">&lt;hr&gt;</span>
-<span class="lineno">4</span> 
-<span class="lineno">5</span> <span class="nt">&lt;p&gt;</span>An example of <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://example.com/areallylongurlthatwouldotherwisebreakwithoutbreakword&quot;</span><span class="nt">&gt;</span>a really long string<span class="nt">&lt;/a&gt;</span>.<span class="nt">&lt;/p&gt;</span></code></pre><div style="color: hsla(204, 10%, 56%, 1); font-size: .75em; padding: .5em; position: absolute; bottom: 0; right: 0;">Scroll ⇀</div></div>
+<div class="highlighter-rouge" style="background-color: hsla(4, 30%, 80%, .2); padding-left: 0; padding-right: 2.5em; padding-bottom: 2.5em; position: relative;"><pre class="highlight" style="background-color: transparent; overflow: scroll; padding-left: 2.5em;"><code class="language-html" data-lang="html" style="word-wrap: normal; overflow-wrap: normal; white-space: pre"><span class="nt">&lt;p&gt;</span>My monospace font is <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://adobe-fonts.github.io/source-code-pro&quot;</span><span class="nt">&gt;</span>Adobe Source Code Pro<span class="nt">&lt;/a&gt;</span>. It is beautiful, and <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://www.google.com/fonts/specimen/Source+Code+Pro&quot;</span><span class="nt">&gt;</span>it is free to use<span class="nt">&lt;/a&gt;</span>. To make sure that code blocks look their best, I set the monospace typeface to be proportional to the rest of the typography on my site – around .8125em for a site based on a 1em scale. This proportion works slightly differently depending on the typeface and weight chosen.<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;hr&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>An example of <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://example.com/areallylongurlthatwouldotherwisebreakwithoutbreakword&quot;</span><span class="nt">&gt;</span>a really long string<span class="nt">&lt;/a&gt;</span>.<span class="nt">&lt;/p&gt;</span></code></pre><div style="color: hsla(204, 10%, 56%, 1); font-size: .75em; padding: .5em; position: absolute; bottom: 0; right: 0;">Scroll ⇀</div></div>
 
 I believe this method is particularly poorly suited for HTML or any other code with comments in it. It is responsive, but not as adaptive to different screens as the `break-word` method.[^3]
 
@@ -163,4 +172,4 @@ But fortunately we do not have to rely on the `scroll` method. For HTML and CSS 
 
 [^1]: I am focusing here on web front-end markup, since that is what I care most about. I have not covered exceptions and use cases from other programming languages. The same principles should apply to some other contexts, but I have not tested them out thoroughly. I know that some programming languages have peculiarities with white space and line numbers, so this might have limited use for those cases. I know that editing HTML in a text editor requires word wrapping; Python does not. This technique prioritizes readability on small screens *for the web* ahead of any other concerns so that readers do not have to suffer scrolling or tiny font sizes.
 [^2]: To get code highlighting to match my site’s design, I designed a [custom base16 color pattern]({{ site.fragments-url }}/base16-olivermakes.html), which is generated into a [Pygments](http://pygments.org/) theme with [base16-builder](https://github.com/chriskempson/base16-builder). Take a look at [this site’s source](https://github.com/opattison/olivermakes/blob/cc471fa92a270e4bc44423fd796ead2609005a40/site.css#L346) for more examples of code formatting.
-[^3]: In this example, I even gave the code block less padding at greater widths to fit more on the screen, and it was still unreadable. There is also the usability issue in OS X and iOS of `overflow` scrollbars being hidden by default until scrolling begins, which makes the problem even worse.
+[^3]: In this example, I provided the code block less padding for larger screens widths to make better use of the viewport, and it was still unreadable. There is also the usability issue in OS X and iOS of `overflow` scrollbars being hidden by default until scrolling begins, which makes the problem even worse.

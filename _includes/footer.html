@@ -1,0 +1,11 @@
+  <footer class="site-footer">
+
+{% include nav.html %}
+
+{% include info.html %}
+
+{% unless page.title == 'Home' %}
+{% include alt-nav.html %}
+{% endunless %}
+    
+  </footer>

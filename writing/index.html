@@ -1,14 +1,14 @@
 ---
 title: Writing
-layout: archive
+layout: category
 category: index
+description: 'A repository of writing and notes on archiving, technology, and other topics, by Oliver Pattison.'
 
 ---
 
-<ul>
-{% for post in site.categories.writing %}
-  <li>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-  </li>
+<div class="items">
+{% for post in site.categories.writing limit: 10 %}
+{% include index/article-item.html %}
 {% endfor %}
-</ul>
+{% include index/link-archive.html %}
+</div>

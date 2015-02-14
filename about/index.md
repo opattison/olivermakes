@@ -5,8 +5,11 @@ option:
   - no-title
   - hero-srcset
   - code
+  - srcset
+category: meta
 date: 2014-10-31 18:25
 updated: 2014-11-30 17:54
+description: 'A short biography of Oliver Pattison, as well as details about how this website was made.'
 image:
   - src: 2011-11-10-oliver-bench-jeancflanagan-ccbync.jpg
     alt: 'Oliver Pattison sitting on a bench'
@@ -25,15 +28,15 @@ I am <span class="p-name">Oliver Pattison</span>, a designer focused on the futu
 
 I currently live in Washington, DC. I am originally from New York City.
 
-<div class="feature">I am available for hire. <a href="mailto:{{ site.author.email }}" rel="me" class="u-email">Get in touch</a> by email if you have a project in mind.</div>
+<p class="important">I am available for hire. <a href="mailto:{{ site.author.email }}" rel="me" class="u-email">Get in touch</a> by email if you have a project in mind.</p>
 
 ## About this site
 
 This website is an archive for my work, featuring:
 
-- **[Writing](/writing)**, a collection of quick notes as well as longer essays
-- **[Photography](/photos)**, a collection of images documenting details of my environment
-- **[Projects](/projects)**, documentation and reflections on professional and open source work
+- **[Writing](/writing/)**, a collection of quick notes as well as longer essays
+- **[Photography](/photography/)**, a collection of images documenting details of my environment
+- **[Projects](/projects/)**, documentation and reflections on professional and open source work
 
 **[Subscribe]({{ site.link.subscribe.full }})** or do whatever else you want to this site’s Atom feed.
 

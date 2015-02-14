@@ -1,5 +1,3 @@
----
----
 /*** Normalization *****************************/
 /* following adapted from HTML5 Reset
 source: http://html5reset.org */
@@ -58,8 +56,15 @@ source: http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
   box-sizing: border-box;
 }
 
-/* Custom normalization */
+/* Viewport normalization for modern IE and future via Trent Walton
+source: http://trentwalton.com/2013/01/16/windows-phone-8-viewport-fix */
+@-webkit-viewport{ width: device-width; }
+   @-moz-viewport{ width: device-width; }
+    @-ms-viewport{ width: device-width; }
+     @-o-viewport{ width: device-width; }
+        @viewport{ width: device-width; }
 
+/* Custom normalization */
 html {
   height: 100%;
 }
@@ -136,7 +141,17 @@ html {
   -o-font-feature-settings: "liga", "dlig";
   -webkit-font-feature-settings: "liga", "dlig";
    font-feature-settings: "liga", "dlig";
-   font-variant-ligatures: common-ligatures;
+  font-variant-ligatures: common-ligatures;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-color: hsla(204, 10%, 96%, 1);
+  color: hsla(204, 10%, 10%, 1);
+}
+
+[role="main"] {
+  margin-top: 0;
 }
 
 strong,
@@ -202,13 +217,13 @@ h5 {
 a {
   color: hsla(4, 80%, 40%, 1);
   transition-duration: 320ms;
-  transition-property: color, background-color;
+  transition-property: color, background-color, border-bottom;
   transition-timing-function: cubic-bezier(0,1,1,1);
 }
 
 a:hover,
 a:focus {
-  color: hsla(204, 80%, 40%, 1);
+  color: hsla(204, 80%, 32%, 1);
   transition-duration: 160ms;
 }
 
@@ -218,7 +233,7 @@ a:active {
 
 .page a,
 footer a {
-  border-bottom: solid 1px hsla(5, 30%, 80%, 1);
+  border-bottom: solid 1px hsla(4, 30%, 80%, 1);
 }
 
 .page a:hover,
@@ -238,21 +253,16 @@ ul {
   list-style-type: square;
 }
 
-.page ul,
-.page ol {
-  margin-top: 1.5em;
-}
-
-.page ol {
+article ol {
   counter-reset: listNumbering;
   list-style-type: none;
 }
 
-.page ol li {
+article ol li {
   counter-increment: listNumbering;
 }
 
-.page ol li::before {
+article ol li::before {
   content: counter(listNumbering) '.';
   font-weight: bolder;
   margin-right: .25em;
@@ -316,7 +326,6 @@ hr {
 }
 
 code,
-pre,
 samp {
   font: 400 .8125em/1.4375 'source-code-pro', Menlo, Consolas, monospace;
   white-space: pre-wrap;
@@ -331,19 +340,9 @@ samp {
   padding: .0625em .25em 0;
 }
 
-pre > code {
-  font-size: 1em;
-  margin: 0;
-  padding: 0;
-}
-
-.highlight {
+div.highlighter-rouge {
   border-bottom: solid .0625em hsla(204, 10%, 88%, 1);
   border-top: solid .0625em hsla(204, 10%, 88%, 1);
-}
-
-.lineno {
-  margin: 0 .5em 0 -1em;
 }
 
 kbd > kbd {
@@ -390,37 +389,26 @@ nav li {
   width: 50%;
 }
 
-/* Transition helpers */
-
-svg circle {
-  transition: all 320ms cubic-bezier(0,1,1,1);
-}
-
-a svg circle {
-  transition: all 160ms cubic-bezier(0,1,1,1);
-}
-
 /***! END Basic styles ***/
 
-/*** Page layouts ******************************/
-
-[role="main"] {
-  margin-top: 0;
-}
-
-.page {
-  margin: 0 auto;
-  padding: 1.25em 1em 2.5em;
-}
+/*** Page layout *******************************/
 
 .page-header {
   margin: 0 auto;
 }
 
-.page-header .inner {
+.page-header .inside {
+  padding: 1em;
+}
+
+.page,
+.page-header .inside {
   background-color: hsla(204, 10%, 98%, 1);
   margin: 0 auto;
-  padding: 1em;
+}
+
+.page {
+  padding: .5em 1em 2.5em;
 }
 
 .page-info {
@@ -473,101 +461,101 @@ a svg circle {
   margin-top: 0;
 }
 
-.page-meta .time time {
-  font-style: normal;
-}
-
-/* Singel and dubbel common */
-
-.singel,
-.dubbel {
-  background-color: hsla(204, 10%, 96%, 1);
-}
-
-.singel .page,
-.dubbel .page {
-  background-color: hsla(204, 10%, 98%, 1);
-}
-
-/* Photo */
-
-.photo,
-.photo .page-header .inner {
-  background-color: hsla(204, 10%, 18%, 1);
-  color: hsla(204, 10%, 96%, 1);
-}
-
-.photo .page {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.photo h1,
-.photo h2 {
-  color: hsla(204, 10%, 96%, 1);
-}
-
-.photo h1 {
-  text-align: center;
-}
-
-.photo .page a,
-.photo .time a {
-  color: hsla(5, 30%, 80%, 1);
-  border-color: hsla(5, 30%, 80%, .5);
-}
-
-.photo .page a:hover,
-.photo .page a:focus,
-.photo .time a:hover,
-.photo .time a:focus {
-  color: hsla(204, 30%, 80%, 1);
-}
-
-.photo .title:hover h1 {
-  color: hsla(204, 30%, 80%, 1);
-}
-
-.photo .title .logo circle {
-  stroke: hsla(204, 10%, 96%, 1);
-}
-
-.photo .title:hover .logo circle {
-  stroke: hsla(204, 30%, 80%, 1);
-  -webkit-animation-name: step-fill--contrast;
-          animation-name: step-fill--contrast;
-}
-
-.photo .page > figure:first-child {
-  margin-top: 0;
-}
-
-.photo .page figcaption {
-  color: hsla(204, 10%, 88%, 1);
-}
-
-.photo .page-meta {
-  background-color: hsla(204, 10%, 24%, 1);
-  margin: 2.75em auto 0;
-}
-
 /* Block content – essays, code blocks */
 
 .essay {
   background-color: hsla(204, 10%, 24%, 1);
-  margin-top: 2.75em;
+  color: hsla(204, 10%, 96%, 1);
+  margin-top: 2em;
 }
 
-.highlight,
-.essay {
+div.highlighter-rouge,
+.essay,
+.project {
   margin-left: -1em;
   margin-right: -1em;
   padding: 1em;
 }
 
-/* Feature emphasis text blocks – <div class="feature"> */
+.project {
+  background-color: hsla(204, 10%, 88%, 1);
+}
 
-.feature {
+.project .description {
+  color: hsla(204, 10%, 32%, 1);
+  font-size: 1.125em;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.33333333;
+}
+
+.project .link {
+  overflow: auto;
+}
+
+.link li {
+  display: inline-block;
+  float: left;
+  list-style: none;
+  margin: 0;
+  width: 50%;
+}
+
+.link li:only-child {
+  width: 100%;
+}
+
+.link a {
+  background-color: hsla(204, 10%, 18%, 1);
+  border-bottom: none;
+  color: hsla(204, 10%, 96%, 1);
+  display: block;
+  font-size: .875em;
+  font-weight: 400;
+  line-height: 1.5em;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.link .project-url {
+  background-color: hsla(4, 60%, 50%, 1);
+}
+
+.link .project-source {
+  background-color: hsla(225, 35%, 52%, 1);
+}
+
+.link a:hover {
+  background-color: hsla(204, 80%, 40%, 1);
+  border-bottom: none;
+  outline: none;
+}
+
+.link .project-url:hover {
+  background-color: hsla(204, 10%, 96%, 1);
+  color: hsla(4, 60%, 50%, 1);
+}
+
+.link .project-source:hover {
+  background-color: hsla(204, 10%, 96%, 1);
+  color: hsla(225, 35%, 52%, 1);
+}
+
+.link a:focus {
+  background-color: hsla(204, 10%, 93%, 1);
+  border-bottom: none;
+  color: hsla(204, 80%, 40%, 1);
+  outline: none;
+}
+
+.link a:active {
+  color: hsla(204, 10%, 93%, 1);
+  background-color: hsla(4, 60%, 50%, 1);
+}
+
+/* Bold emphasis text blocks – <div class="important"> */
+
+.important {
   color: hsla(204, 50%, 45%, 1);
   font-size: 1.25em;
   font-style: italic;
@@ -575,13 +563,17 @@ a svg circle {
   margin-top: 1em;
 }
 
-.feature a {
+.important a {
   color: hsla(4, 60%, 50%, 1);
 }
 
-.feature a:hover,
-.feature a:focus {
-  color: hsla(44, 50%, 44%, 1);
+.important a:hover,
+.important a:focus {
+  color: hsla(204, 10%, 32%, 1);
+}
+
+.important a:active {
+  color: hsla(204, 10%, 56%, 1);
 }
 
 .center {
@@ -602,16 +594,33 @@ a svg circle {
 }
 
 .ancillary h1 {
-  font: 500 1.25em/1.5 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
+  font: 500 1.25em/1.25 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
 }
 
 .ancillary h2 {
-  font: 400 1.125em/1.5 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
+  font: 400 1.125em/1.125 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
 }
 
 .ancillary img {
   max-width: none;
-  width: calc(100% + 1em)
+  width: calc(100% + 1em);
+}
+
+/* Before/after for projects */
+
+.text-before,
+.text-after {
+  color: hsla(204, 10%, 96%, 1);
+  border-radius: .125em;
+  padding: .125em .375em;
+}
+
+.text-before {
+  background-color: hsla(4, 60%, 50%, 1);
+}
+
+.text-after {
+  background-color: hsla(144, 50%, 35%, 1);
 }
 
 /* Footnotes */
@@ -640,6 +649,14 @@ a svg circle {
   padding: 0;
 }
 
+.footnotes li p {
+  display: inline; /* overwrites default block style */
+}
+
+.footnotes ol li::before {
+  margin-right: 0;
+}
+
 .footnotes .reversefootnote {
   border: solid 1px hsla(204, 10%, 80%, 1);
   border-radius: .125em;
@@ -662,17 +679,17 @@ a.reversefootnote:focus {
 /*** Site headers and footers ******************/
 
 .site-header {
-  margin-bottom: 2.5em;
-  padding: 1em 0;
+  height: 7em;
+  padding-top: .5em;
 }
 
 .title {
-  color: hsla(204, 10%, 18%, 1);
   display: block;
-  height: 2.5em;
+  height: 3.5em;
   margin: 0 auto;
+  padding: .5em;
   position: relative;
-  width: 13em;
+  width: 14em;
 }
 
 .title h1 {
@@ -697,7 +714,7 @@ a.reversefootnote:focus {
 }
 
 .title .logo circle {
-  stroke: hsla(204, 10%, 18%, 1);
+  stroke: hsla(204, 10%, 32%, 1);
 }
 
 /* Logo animation */
@@ -715,20 +732,20 @@ a.reversefootnote:focus {
           animation-duration: 320ms;
 }
 
-.title:hover .logo .core,
-.title:active .logo .core {
+.title:hover .logo .secret,
+.title:active .logo .secret {
   -webkit-animation-delay: 1600ms;
           animation-delay: 1600ms;
 }
 
-.title:hover .logo .mantle,
-.title:active .logo .mantle {
+.title:hover .logo .inner,
+.title:active .logo .inner {
   -webkit-animation-delay: 2400ms;
           animation-delay: 2400ms;
 }
 
-.title:hover .logo .earth,
-.title:active .logo .earth {
+.title:hover .logo .outer,
+.title:active .logo .outer {
   -webkit-animation-delay: 3200ms;
           animation-delay: 3200ms;
 }
@@ -737,9 +754,6 @@ a.reversefootnote:focus {
 
 .top-menu,
 .site-nav .close-menu {
-  background-color: hsla(4, 80%, 40%, 1);
-  color: hsla(204, 10%, 98%, 1);
-  height: 2.5em;
   margin: 0;
   position: absolute;
   text-align: center;
@@ -750,6 +764,8 @@ a.reversefootnote:focus {
 
 .top-menu a,
 .site-nav .close-menu a {
+  background-color: hsla(4, 60%, 50%, 1);
+  color: hsla(204, 10%, 98%, 1);
   height: 2.5em;
 }
 
@@ -763,15 +779,14 @@ a.reversefootnote:focus {
 }
 
 .top-menu a:hover,
-.top-menu a:focus,
 .site-nav .close-menu a {
-  background-color: hsla(204, 50%, 45%, 1);
+  background-color: hsla(204, 80%, 40%, 1);
 }
 
 .top-menu a:focus,
 .site-nav .close-menu a:focus {
   background-color: hsla(204, 10%, 88%, 1);
-  color: hsla(204, 10%, 18%, 1);
+  color: hsla(204, 80%, 40%, 1);
   outline: none;
 }
 
@@ -779,7 +794,7 @@ a.reversefootnote:focus {
 
 .site-footer {
   clear: both;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .site-nav,
@@ -795,7 +810,7 @@ a.reversefootnote:focus {
   width: 100%;
 }
 
-.site-info .inner {
+.site-info .inside {
   margin: 0 auto;
   max-width: 36em;
 }
@@ -837,7 +852,7 @@ a.reversefootnote:focus {
 }
 
 .site-nav li a:hover {
-  background-color: hsla(204, 50%, 45%, 1);
+  background-color: hsla(204, 80%, 40%, 1);
 }
 
 /* Target navigation - JS-free modal navigation */
@@ -860,29 +875,24 @@ a.reversefootnote:focus {
   z-index: 2;
 }
 
-.site-nav:target li a,
-.photo .site-nav li a {
+.site-nav:target li a {
   background-color: hsla(204, 10%, 10%, .8);
 }
 
-.site-nav:target li:nth-child(2) a,
-.photo .site-nav li:nth-child(2) a {
+.site-nav:target li:nth-child(2) a {
   background-color: hsla(204, 10%, 24%, .8);
 }
 
-.site-nav:target li:nth-child(3) a,
-.photo .site-nav li:nth-child(3) a {
+.site-nav:target li:nth-child(3) a {
   background-color: hsla(204, 10%, 32%, .8);
 }
 
-.site-nav:target li:nth-child(4) a,
-.photo .site-nav li:nth-child(4) a {
+.site-nav:target li:nth-child(4) a {
   background-color: hsla(204, 10%, 18%, .8);
 }
 
-.site-nav:target li a:hover,
-.photo .site-nav li a:hover {
-  background-color: hsla(204, 50%, 45%, .8);
+.site-nav:target li a:hover {
+  background-color: hsla(204, 80%, 40%, .8);
 }
 
 .site-nav:target .close-menu {
@@ -910,11 +920,16 @@ a.reversefootnote:focus {
 }
 
 .site-nav li a:focus,
-.site-nav:target li a:focus,
-.photo .site-nav li a:focus {
+.site-nav:target li a:focus {
   background-color: hsla(204, 10%, 88%, 1);
-  color: hsla(204, 10%, 18%, 1);
+  color: hsla(204, 80%, 40%, 1);
   outline: none;
+}
+
+.site-nav li a:active,
+.site-nav:target li a:active {
+  background-color: hsla(4, 60%, 50%, 1);
+  color: hsla(204, 10%, 93%, 1);
 }
 
 /* Alternative nav – home and back-to-top */
@@ -931,12 +946,12 @@ a.reversefootnote:focus {
 
 .alt-nav .back-home a,
 .page-meta .later a {
-  background-color: hsla(4, 80%, 40%, 1);
+  background-color: hsla(4, 60%, 50%, 1);
 }
 
 .alt-nav .back-top a,
 .page-meta .earlier a {
-  background-color: hsla(204, 80%, 40%, 1);
+  background-color: hsla(204, 50%, 45%, 1);
 }
 
 .alt-nav a:hover,
@@ -951,37 +966,35 @@ a.reversefootnote:focus {
 .alt-nav .back-home a:focus,
 .page-meta .later a:hover,
 .page-meta .later a:focus {
-  color: hsla(4, 80%, 40%, 1);
+  color: hsla(4, 60%, 50%, 1);
 }
 
 .alt-nav .back-home a:hover circle {
-  stroke: hsla(4, 80%, 40%, 1);
+  stroke: hsla(4, 60%, 50%, 1);
 }
 
 .alt-nav .back-home a:focus circle {
-  stroke: hsla(204, 10%, 18%, 1);
+  stroke: hsla(4, 80%, 40%, 1);
 }
 
 .alt-nav .back-home a:focus,
 .page-meta .later a:focus {
   background-color: hsla(204, 10%, 88%, 1);
-  color: hsla(204, 10%, 18%, 1);
+  color: hsla(4, 80%, 40%, 1);
 }
 
 .alt-nav .back-top a:hover,
-.alt-nav .back-top a:focus,
-.page-meta .earlier a:hover,
-.page-meta .earlier a:focus {
-  color: hsla(204, 80%, 40%, 1);
+.page-meta .earlier a:hover {
+  color: hsla(204, 50%, 45%, 1);
 }
 
 .alt-nav .back-top a:focus,
 .page-meta .earlier a:focus {
   background-color: hsla(204, 10%, 88%, 1);
-  color: hsla(204, 10%, 18%, 1);
+  color: hsla(204, 80%, 40%, 1);
 }
 
-.back-home .inner {
+.back-home .inside {
   margin: 0 auto;
   width: 4.5em;
 }
@@ -1003,13 +1016,13 @@ a.reversefootnote:focus {
 
 /***! END Site headers and footers ***/
 
-/*** Image styles ******************************/
+/*** Images ************************************/
 
 article img {
   width: 100%;
 }
 
-.image,
+.narrow,
 .wide,
 .grid2 {
   margin: 5% calc(-1em) 0;
@@ -1021,29 +1034,52 @@ article img {
   margin-top: 5%;
 }
 
-/* Hero figure-image */
-
-.hero {
-  margin: 0 auto;
+.grid3 figure,
+.grid2 .w33 {
+  width: 66.66666667%;
 }
 
-.hero figcaption {
+/* SVG figure padding helper */
+
+.svg img {
+  padding: 0 2em 1em;
+}
+
+.noedges img {
+  padding: 1em;
+}
+
+/* SVG figure background helper */
+
+.extradark img {
+  background-color: hsla(204, 10%, 10%, 1);
+}
+
+.dark img {
+  background-color: hsla(204, 10%, 24%, 1)
+}
+
+.light img {
+  background-color: hsla(204, 10%, 88%, 1);
+}
+
+.extralight img {
   background-color: hsla(204, 10%, 98%, 1);
-  margin: 0;
 }
 
-.hero figcaption p {
-  font-size: .875em;
+/* Screenshot border/outline helper */
+
+.screenshot img {
+  outline: solid 1px hsla(204, 10%, 88%, 1);
 }
 
-/***! END Image styles ***/
+/***! END Images ***/
 
 /*** Media queries *****************************/
 
 @media screen and (-webkit-min-device-pixel-ratio: 1.5),
 screen and (min-resolution: 108dpi),
 screen and (min-resolution: 1.5dppx) {
-
   html {
     font: 300 1rem/1.4375 'ratio', 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
   }
@@ -1052,56 +1088,60 @@ screen and (min-resolution: 1.5dppx) {
   b {
     font-weight: 400;
   }
-
 }
 
 @media screen and (min-width: 22.5em) {
-
   .page,
   .page-header,
   .page-meta,
   .site-info {
     font-size: 1.0625em;
   }
-
 }
 
 @media screen and (min-width: 28em) {
-
   .page,
   .page-header,
   .page-meta,
   .site-info {
     font-size: 1.125em;
   }
-
 }
 
 @media screen and (min-width: 30em) {
-
   .page {
     padding: 1.25em 2em 2.5em;
   }
 
-  .image,
+  .narrow,
   .wide,
-  .grid2 {
+  .grid2,
+  .grid3 {
     margin: 5% calc(-2em) 0;
     width: calc(100% + 4em);
   }
 
-  .page-header .inner,
-  .highlight,
+  .page-header .inside,
+  div.highlighter-rouge,
   .essay {
     padding-left: 2em;
     padding-right: 2em;
   }
 
-  .highlight,
+  div.highlighter-rouge,
   .essay,
+  .project,
   .code figcaption {
     margin-left: -2em;
     margin-right: -2em;
+  }
+
+  .project {
+    padding: 2em;
+  }
+
+  .project .link a {
+    font-size: 1em;
   }
 
   blockquote {
@@ -1112,16 +1152,14 @@ screen and (min-resolution: 1.5dppx) {
 
   .site-header {
     height: 4.5em;
-    margin-bottom: 0;
   }
 
   .title {
-    margin: 0 2em;
+    margin: 0 1.5em;
   }
 
   .top-menu,
   .site-nav .close-menu {
-    height: auto;
     right: 0;
     top: 0;
     width: auto;
@@ -1148,7 +1186,7 @@ screen and (min-resolution: 1.5dppx) {
     margin-right: -2em;
   }
 
-  .ancillary img {;
+  .ancillary img {
     width: calc(100% + 2em)
   }
 
@@ -1156,37 +1194,53 @@ screen and (min-resolution: 1.5dppx) {
     margin-right: -2em;
   }
 
+  .features {
+    margin-top: -1em;
+  }
 }
 
 @media screen and (min-width: 34em) {
-
   .page {
-    padding: 1.25em 2.5em 2.5em;
+    padding: 0 2.5em 2.5em;
+  }
+
+  .page-header .inside {
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
   }
 
   .title {
-    margin: 0 3em;
+    margin: 0 2.5em;
   }
 
-  .image,
+  .narrow,
   .wide,
-  .grid2 {
+  .grid2,
+  .grid3 {
     margin: 5% calc(-2.5em) 0;
     width: calc(100% + 5em);
   }
 
-  .page-header .inner,
-  .highlight,
-  .essay {
+  .page-header .inside,
+  div.highlighter-rouge,
+  .essay,
+  .project {
     padding-left: 2.5em;
     padding-right: 2.5em;
   }
 
-  .highlight,
+  div.highlighter-rouge,
   .essay,
+  .project,
   .code figcaption {
     margin-left: -2.5em;
     margin-right: -2.5em;
+  }
+
+  .right {
+    float: right;
+    margin: 1em -2.5em 1em 1.25em;
+    width: 50%;
   }
 
   blockquote {
@@ -1195,7 +1249,7 @@ screen and (min-resolution: 1.5dppx) {
     padding-left: 1.75em;
   }
 
-  .highlight,
+  div.highlighter-rouge,
   .essay {
     padding-bottom: 1.25em;
     padding-top: 1.25em;
@@ -1210,10 +1264,13 @@ screen and (min-resolution: 1.5dppx) {
     margin-top: 2.5em;
   }
 
+  .link a {
+    line-height: 2em;
+    font-size: 1em;
+  }
 }
 
 @media screen and (min-width: 40em) {
-
   .page,
   .page-header,
   .page-meta,
@@ -1237,26 +1294,30 @@ screen and (min-resolution: 1.5dppx) {
   figcaption p {
     font-size: .75em;
   }
-
 }
 
 @media screen and (min-width: 45em) {
-
   .page,
-  .page-header .inner,
+  .page-header .inside,
   .page-meta {
     width: 36em;
+  }
+
+  .site-header {
+    height: auto;
+    padding: 0;
+  }
+
+  .title {
+    font-size: 1.25em;
+    margin: .5em auto 1em;
   }
 
   .page-header {
     margin: 0 auto;
   }
 
-  .hero {
-    max-width: 45em;
-  }
-
-  .site-nav {
+  article[role="main"] + .site-footer {
     margin-top: 2.75em;
   }
 
@@ -1298,59 +1359,38 @@ screen and (min-resolution: 1.5dppx) {
     width: 26em;
     z-index: 2;
   }
-
-  .photo .page-meta {
-    margin: 2.75em auto;
-  }
-
 }
 
 @media screen and (min-width: 50em) {
-
   html {
     line-height: 1.5;
   }
-
-  .site-header {
-    height: auto;
-    padding: 1.5em 0;
-  }
-
-  .title {
-    font-size: 1.25em;
-  }
-
 }
 
 @media screen and (min-width: 60em) {
-
   .page {
-    padding: 1.25em 4.5em 4.5em;
+    padding: 0 4.5em 4.5em;
+  }
+
+  .page-header .inside {
+    padding-top: 2.25em;
+    padding-bottom: 2.25em;
   }
 
   .page,
-  .page-header .inner,
+  .page-header .inside,
   .page-meta {
     width: 45em;
   }
 
-  .site-header {
-    padding-bottom: 2.5em;
+  .title {
+    margin-bottom: 1.5em;
   }
 
-  .page-header .inner {
+  .page-header .inside {
     padding: 2em 1.25em;
   }
 
-  .photo .page-header .inner {
-    padding: .75em 1.25em;
-  }
-
-  .photo .page {
-    padding-top: 1em;
-  }
-
-  .hero,
   .site-nav {
     max-width: 56.25em;
   }
@@ -1364,27 +1404,35 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 1.25em;
   }
 
-  .page-header .inner,
-  .highlight,
+  .page-header .inside,
+  div.highlighter-rouge,
   .essay {
     padding-left: 4.5em;
     padding-right: 4.5em;
   }
 
-  .highlight,
+  div.highlighter-rouge,
   .essay,
   .code figcaption {
     margin-left: -4.5em;
     margin-right: -4.5em;
   }
 
+  .right {
+    margin: 1.5em -4.5em 1.5em 2em;
+  }
+
   blockquote {
     margin-left: 0;
   }
 
-  .highlight {
+  div.highlighter-rouge {
     padding-bottom: 2em;
     padding-top: 2em;
+  }
+
+  .project {
+    margin: 0 auto;
   }
 
   .ancillary {
@@ -1399,7 +1447,11 @@ screen and (min-resolution: 1.5dppx) {
     padding: 2.5em;
   }
 
-  .singel .feature {
+  .footnotes .reversefootnote {
+    margin: 0 -2.5em;
+  }
+
+  .important {
     padding: 0 2em;
   }
 
@@ -1407,28 +1459,29 @@ screen and (min-resolution: 1.5dppx) {
     text-align: right;
   }
 
-  .image {
+  .narrow {
     margin: 5% auto;
     width: 100%;
   }
 
-  .image figcaption {
+  .narrow figcaption {
     padding-left: 0;
     padding-right: 0;
   }
 
-  .image {
+  .narrow {
     margin: 5% auto;
     width: 100%;
   }
 
-  .image figcaption {
+  .narrow figcaption {
     padding-left: 0;
     padding-right: 0;
   }
 
   .wide,
-  .grid2 {
+  .grid2,
+  .grid3 {
     margin: 5% calc(-4.5em) 0;
     max-width: none;
     width: calc(100% + 9em);
@@ -1436,42 +1489,51 @@ screen and (min-resolution: 1.5dppx) {
 
   .wide figcaption p,
   .code figcaption p {
-    margin-left: 50%;
-    width: 50%;
-  }
-
-  .grid2 {
-    display: inline-block;
-  }
-
-  .grid2 figure {
-    float: left;
-    margin: 0;
-    max-width: 100%;
+    margin-left: 52%;
     width: 48%;
   }
 
-  .grid2 figure + figure {
+  .grid2,
+  .grid3 {
+    display: inline-block;
+  }
+
+  .grid2 figure,
+  .grid3 figure {
+    float: left;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .grid2 figure {
+    width: 48%;
+  }
+
+  .grid3 figure {
+    width: 30.66666666%;
+  }
+
+  .grid2 .w33 {
+    width: 31.33333333%;
+  }
+
+  .grid2 .w66 {
+    width: 64.66666667%;
+  }
+
+  .grid2 figure + figure,
+  .grid3 figure + figure {
     margin-left: 4%;
   }
 
-  .grid2 + figure {
+  .grid2 + figure,
+  .grid3 + figure {
     clear: both;
   }
 
-  .grid2 :first-child figcaption p {
+  .grid2 :first-child figcaption p,
+  .grid3 figcaption p {
     text-align: left;
-  }
-
-  .photo [role="main"] figcaption {
-    padding: .5em 0 0;
-  }
-
-  .hero figcaption p,
-  .photo [role="main"] figcaption p {
-    font-size: .875em;
-    margin-left: 50%;
-    width: 50%;
   }
 
   .page-meta .chronology li,
@@ -1483,23 +1545,9 @@ screen and (min-resolution: 1.5dppx) {
     margin: 0 9em;
     width: 27em;
   }
-
-  .photo .page-meta {
-    max-width: 45em;
-  }
-
-  .photo .page-meta .time {
-    max-width: 27em;
-  }
-
 }
 
 @media screen and (min-width: 70em) {
-
-  .site-footer {
-    margin: 2.75em auto 0;
-  }
-
   .site-info,
   .site-nav {
     float: right;
@@ -1511,131 +1559,65 @@ screen and (min-resolution: 1.5dppx) {
     min-height: 17.125rem; /* keeps .back-home link down */
     padding: 1.5em 2em;
   }
-
-  .dubbel .page,
-  .dubbel .page-header,
-  .dubbel .page-meta {
-    width: 54em;  
-  }
-
-  .dubbel .page-header {
-    padding-left: 4.5em;
-    padding-right: 4.5em;
-  }
-
-  .dubbel .page {
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 2em 9em 4.5em;
-    width: 54em;
-  }
-
-  .dubbel .wide {
-    margin: 5% calc(-9em) 0;
-    max-width: none;
-    width: calc(100% + 18em);
-  }
-
-  .dubbel .flow-side {
-    padding: 0 4.25em 0 0;
-    position: relative;
-    margin-top: 1.25em;
-    width: 62.5%;
-  }
-
-  .dubbel .flow-side > figure {
-    margin: 1.25em 0 0 -9em;
-    max-width: none;
-    width: calc(100% + 9em);
-  }
-
-  .dubbel .ancillary {
-    font-size: .875em;
-    margin: 1.25em -25% 1.25em 2em;
-    width: 62.5%;
-  }
-
-  .dubbel .ancillary figure {
-    margin: 1.25em auto 0;
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .dubbel .flow-side > .ancillary {
-    margin-top: 0;
-    position: absolute;
-    right: -75%;
-    top: 0;
-    width: 100%;
-  }
-
-  .dubbel .flow-side > figure + .ancillary {
-    top: 25%;
-  }
-
-  .dubbel .highlight {
-    margin: 1.5em -9em;
-    padding: 1.5em 9em;
-  }
-
 }
 
 @media screen and (min-width: 80em) {
-
-  .hero {
-    max-width: 67.5em;
-  }
-
-  .site-header {
-    padding-top: 2.25em;
-  }
-
   .title {
     font-size: 1.5em;
+    margin: 1.5em auto;
   }
 
-  .singel .page,
-  .singel .page-header .inner,
+  .top-menu,
+  .site-nav .close-menu {
+    font-size: 1.125em;
+  }
+
+  .site-nav:target {
+    padding-top: 5em;
+  }
+
+  .page,
+  .page-header .inside,
   .page-meta {
     width: 54em;
   }
 
-  .page-header .inner {
+  .page-header .inside {
     padding: 2.5em 0;
     text-align: center;
   }
 
-  .singel .page {
-    padding: 1.25em 9em 6em;
+  .page {
+    padding: 0 9em 6em;
   }
 
-  .singel .wide,
-  .singel .grid2 {
+  .wide,
+  .grid2,
+  .grid3 {
     margin: 5% calc(-9em) 0;
     width: calc(100% + 18em);
   }
 
-  .highlight {
+  div.highlighter-rouge {
     padding-left: 9em;
     padding-right: 9em;
   }
 
-  .highlight,
+  div.highlighter-rouge,
   .code figcaption {
     margin-left: -9em;
     margin-right: -9em;
   }
 
-  .highlight {
-    padding-bottom: 2em;
-    padding-top: 2em;
+  .right {
+    margin-right: -9em;
   }
 
   .footnotes {
     margin: 2.5em -9em -3em 4.5em;
   }
 
-  .singel .ancillary {
+  .ancillary {
     font-size: .875em;
     margin-right: -10.28571429em;
     margin-right: calc(-9em / .875);
@@ -1649,22 +1631,23 @@ screen and (min-resolution: 1.5dppx) {
   .site-info {
     padding: 2em;
   }
-
 }
 
 @media screen and (min-width: 95em) {
-
-  .singel .page,
-  .dubbel .page,
-  .photo .page,
+  .page,
   .page-header,
   .page-meta,
   .site-info {
     font-size: 1.5em;
   }
 
-  .hero {
-    max-width: 81rem;
+  .title {
+    font-size: 1.75em;
+  }
+
+  .top-menu,
+  .site-nav .close-menu {
+    font-size: 1.25em;
   }
 
   .site-nav {
@@ -1677,57 +1660,29 @@ screen and (min-resolution: 1.5dppx) {
     width: 66.66666667%;
   }
 
-  .site-info .inner {
+  .site-info .inside {
     max-width: none;
   }
-
 }
 
 @media screen and (min-width: 115em) {
-
-  .singel .page,
-  .dubbel .page,
-  .photo .page,
-  .title,
+  .page,
   .page-header,
   .page-meta {
     font-size: 1.75em;
   }
 
-  .site-header {
-    padding-top: 4.5em;
+  .title {
+    font-size: 2em;
   }
 
-  .hero,
   .site-footer {
     max-width: 94.5em;
-  }
-
-  .photo .site-footer {
-    max-width: 78.75em;
   }
 
   .site-info {
     padding: 2em 5em;
   }
-
-  .photo .site-info {
-    padding: 2em 2.5em;
-  }
-
-}
-
-@media screen and (min-width: 140em) {
-
-  .photo .page {
-    font-size: 2em;
-  }
-
-  .photo .page-meta,
-  .photo .site-footer {
-    max-width: 90rem;
-  }
-
 }
 
 /* Height queries – 1.666666667 ratio height limiter  */
@@ -1751,21 +1706,31 @@ screen and (min-width: 55em) and (max-height: 33em),
 screen and (min-width: 57em) and (max-height: 34em),
 screen and (min-width: 58.5em) and (max-height: 35em),
 screen and (min-width: 60em) and (max-height: 36em) {
-
-  .wide {
-    margin: 5% auto 0;
-    max-width: 100%;
+  .wide,
+  .narrow,
+  .grid2,
+  .grid3 {
+    margin: 5% auto 0!important;
+    max-width: 100%!important;
   }
 
   .essay {
     margin: 1.25em auto;
     padding: 2em;
   }
-
 }
 
 /***! END Media queries ***/
 
+/* Transition helpers */
+
+svg circle {
+  transition: all 320ms cubic-bezier(0,1,1,1);
+}
+
+a svg circle {
+  transition: all 160ms cubic-bezier(0,1,1,1);
+}
 
 /*** Animations ********************************/
 
@@ -1789,28 +1754,4 @@ screen and (min-width: 60em) and (max-height: 36em) {
   }
 }
 
-/* For photo layout */
-
-@-webkit-keyframes step-fill--contrast {
-  0% {
-    fill: hsla(0, 0%, 100%, .01);
-  }
-
-  100% {
-    fill: hsla(204, 35%, 80%, 1);
-  }
-}
-
-@keyframes step-fill--contrast {
-  0% {
-    fill: hsla(0, 0%, 100%, .01);
-  }
-
-  100% {
-    fill: hsla(204, 35%, 80%, 1);
-  }
-}
-
 /***! END Animations ***/
-
-{% include pygments.css %}

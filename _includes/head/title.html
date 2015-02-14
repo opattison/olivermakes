@@ -1,0 +1,10 @@
+  {% if page.title == 'Home' %}
+  <title>{{ site.title }}</title>
+  {% elsif page.type == 'category' or page.type == 'tag' %}
+  <title>{{ page.title | capitalize }} Archive – {{ site.title }}</title>
+  {% elsif page.type == 'year' %}
+  <title>{{ page.date | date: '%Y' }} Archive – {{ site.title }}</title>
+  {% elsif page.type == 'month' %}
+  <title>{{ page.date | date: '%B %Y' }} Archive – {{ site.title }}</title>
+  {% else %}
+  <title>{{ page.title | strip_html }} – {{ site.title }}</title>{% endif %}
