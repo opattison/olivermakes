@@ -8,7 +8,7 @@ option:
   - srcset
 category: meta
 date: 2014-10-31 18:25
-updated: 2014-11-30 17:54
+updated: 2015-02-14 00:59
 description: 'A short biography of Oliver Pattison, as well as details about how this website was made.'
 image:
   - src: 2011-11-10-oliver-bench-jeancflanagan-ccbync.jpg
@@ -38,7 +38,7 @@ This website is an archive for my work, featuring:
 - **[Photography](/photography/)**, a collection of images documenting details of my environment
 - **[Projects](/projects/)**, documentation and reflections on professional and open source work
 
-**[Subscribe]({{ site.link.subscribe.full }})** or do whatever else you want to this site’s Atom feed.
+**[Subscribe]({{ site.link.subscribe.full }})** or do whatever else you want to this site’s Atom feed. There are also filtered feeds for my [writing]({{ site.link.subscribe.writing }}), [photography]({{ site.link.subscribe.photography }}), and [projects]({{ site.link.subscribe.projects }}).
 
 {% capture influences %}
 # Influences
