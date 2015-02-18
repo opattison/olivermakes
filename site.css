@@ -171,6 +171,7 @@ h1,
 h2 {
   color: hsla(204, 10%, 32%, 1);
   line-height: 1.125;
+  letter-spacing: -.0125em;
 }
 
 h1 {
