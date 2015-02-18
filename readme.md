@@ -43,7 +43,7 @@
 
 ### Front-end
 
-- [respimage](https://github.com/aFarkas/respimage) 1.1.6
+- [respimage](https://github.com/aFarkas/respimage) 1.3.0
 
 ## License
 
