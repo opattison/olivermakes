@@ -1,0 +1,19 @@
+# PNG
+optipng:
+  level: 4
+advpng:
+  level: 3
+#pngquant
+
+# JPEG
+jpegtran:
+  copy_chunks: true
+jpegoptim:
+  strip: comments
+
+# Disabled
+gifsicle: false
+jhead: false
+jpegrecompress: false
+svgo: false
+pngout: false

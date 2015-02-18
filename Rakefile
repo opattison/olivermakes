@@ -1,8 +1,9 @@
 ## Website deploying config ##
 
 # Assumes that Jekyll gem is configured for site.
-# Assumes that S3_website gem is configured.
-# Assumes that ImageOptim and ImageOptim-CLI are installed.
+
+require 's3_website'
+require 'image_optim'
 
 local_images   = "_static" # typically called "_images"
 local_site     = "_site" # typically called "_site"
@@ -10,7 +11,7 @@ local_site     = "_site" # typically called "_site"
 ## "rake optimize" to optimize a folder of images in ImageOptim-CLI
 desc "run a folder of images through ImageOptim-CLI"
 task :optimize do
-  system "imageoptim -d #{local_images}/"
+  system "image_optim #{local_images} -r"
   puts "## Images optimized ##"
 end
 
