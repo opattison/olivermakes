@@ -27,7 +27,7 @@
 }
 
 .archive-items {
-  margin: 1em auto;
+  margin: 0 auto;
   overflow: auto;
 }
 
@@ -193,10 +193,11 @@
 
 @media screen and (min-width: 30em) {
   .index-title {
-    margin: 0 .5em;
+    margin: 0 1.5em;
   }
 
   .index header h1 {
+    margin-left: .8em;
     text-align: left;
   }
 }
@@ -216,12 +217,16 @@
     width: 100%;
   }
 
+  .archive-items {
+    margin: 1em auto;
+  }
+
   .archive-items .meta {
     font-size: 1.25em;
   }
 
   .index header h1 {
-    margin-left: .8em;
+    margin-left: 1.6em;
   }
 
   .item {
@@ -273,13 +278,6 @@
   }
 }
 
-@media screen and (min-width: 40em) {
-  .index header h1 {
-    margin: 0;
-    text-align: center;
-  }
-}
-
 @media screen and (min-width: 45em) {
   .index-title {
     margin: .5em auto 1em;
@@ -287,6 +285,11 @@
 
   .features {
     margin-top: 1em;
+  }
+
+  .index header h1 {
+    margin: 0;
+    text-align: center;
   }
 }
 
