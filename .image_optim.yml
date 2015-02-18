@@ -1,0 +1,18 @@
+# PNG
+optipng:
+  level: 4
+advpng:
+  level: 3
+#pngquant
+
+# JPEG
+jpegoptim:
+  strip: comments
+#jpegtran
+
+# Disabled
+gifsicle: false
+jhead: false
+jpegrecompress: false
+svgo: false
+pngout: false
