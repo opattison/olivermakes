@@ -6,9 +6,10 @@ advpng:
 #pngquant
 
 # JPEG
+jpegtran:
+  copy_chunks: true
 jpegoptim:
   strip: comments
-#jpegtran
 
 # Disabled
 gifsicle: false
