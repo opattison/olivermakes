@@ -26,17 +26,24 @@
 - GitHub for version control
 - TypeKit for fonts: 300, 400 and 500 weights of [the Ratio typeface](http://cargocollective.com/pstype/Ratio) and 400 weight of [Source Code Pro](http://adobe-fonts.github.io/source-code-pro/)) are [hosted by Typekit](https://typekit.com/colophons/ojm0eig)
 - Responsive images using `srcset` HTML specification and the [respimage](https://github.com/aFarkas/respimage) polyfill
+- Processing of archives with the [jekyll-archives](https://github.com/jekyll/jekyll-archives) gem
 - MapBox for maps
-- No templates, pre-processors or boilerplate
+- No templates, frameworks, pre-processors or boilerplate
 - As little JavaScript as possible
 
 ## Requirements
 
-- [Jekyll](http://jekyllrb.com) >2.5.2
-- [s3_website](https://github.com/laurilehmijoki/s3_website) >2.7
-- [ImageOptim](https://imageoptim.com) 1.5.4
-- [ImageOptim-CLI](https://github.com/JamieMason/ImageOptim-CLI) 1.7.11
-- [respimage](https://github.com/aFarkas/respimage) 1.1.6
+### Configuration
+
+- [Jekyll](http://jekyllrb.com) >2.5.3
+- [jekyll-archives](https://github.com/jekyll/jekyll-archives) >2.0.0
+- [rouge](https://github.com/jneen/rouge) >1.7.4
+- [image_optim](https://github.com/toy/image_optim) >0.20.2
+- [s3_website](https://github.com/laurilehmijoki/s3_website) >2.7.2
+
+### Front-end
+
+- [respimage](https://github.com/aFarkas/respimage) 1.3.0
 
 ## License
 
