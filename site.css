@@ -171,6 +171,7 @@ h1,
 h2 {
   color: hsla(204, 10%, 32%, 1);
   line-height: 1.125;
+  letter-spacing: -.0125em;
 }
 
 h1 {
@@ -560,6 +561,7 @@ div.highlighter-rouge,
   font-size: 1.25em;
   font-style: italic;
   font-weight: 500;
+  line-height: 1.25;
   margin-top: 1em;
 }
 
