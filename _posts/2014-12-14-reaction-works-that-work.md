@@ -2,7 +2,6 @@
 title: 'Reaction: <i>Works That Work</i>'
 layout: singel
 option:
-  - feature
   - hero-srcset
   - index-image
 category: 'writing'

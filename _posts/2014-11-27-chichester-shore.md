@@ -33,7 +33,7 @@ image:
     lens: 'iPhone f/2.2'
     focal: '4.12mm'
     aperture: 'f/2.2'
-    shutter: '1/1,050'
+    shutter: '1/1050'
     iso: 32
     location: 'Bosham, near Chichester'
     latitude: 50.8286
