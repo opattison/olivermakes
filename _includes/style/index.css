@@ -134,7 +134,7 @@
 
 .photo-gallery .item {
   height: 10em;
-  margin: .5em 0 0;
+  margin: 1em 0 0;
 }
 
 .photo-gallery .item a {
@@ -272,7 +272,6 @@
 
   .photo-gallery .item {
     height: 12.5em;
-    margin: 1em 0 0;
   }
 
   .meta {
