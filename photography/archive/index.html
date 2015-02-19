@@ -1,0 +1,20 @@
+---
+title: Photography Archive
+layout: archive
+category: index
+description: 'A collection of photos of nature and urban environments by Oliver Pattison.'
+
+---
+
+<header>
+  <h1>/photography/archive</h1>
+</header>
+
+<div class="items photo-gallery">
+{% for post in site.categories.photography %}
+{% for item in post.image %}
+{% include index/article-item-photo.html %}
+{% endfor %}
+{% endfor %}
+{% include index/link-archive-back.html %}
+</div>

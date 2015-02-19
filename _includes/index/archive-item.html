@@ -1,6 +1,6 @@
   <li class="archive-item">
     <div class="meta">
       <h1><a href="{{ post.url }}">{{ post.title | markdownify }}</a></h1>
-      <p class="time">Published <time class="dt-published" pubdate datetime="{{ post.date }}">{{ post.date | date: '%Y-%m-%d' }}</time>{% if post.category %}<span class="location"> in {% if post.category == 'writing' %}<a href="/writing">/writing</a>{% elsif post.category == 'photography' %}<a href="/photography">/photography</a>{% elsif post.category == 'projects' %}<a href="/projects">/projects</a>{% endif %}</span>{% endif %}</p>
+      <p class="time">Published <time class="dt-published" pubdate datetime="{{ post.date }}">{{ post.date | date: '%Y-%m-%d' }}</time>{% if post.category and page.title == "Archive" %}<span class="location"> in {% if post.category == 'writing' %}<a href="/writing">/writing</a>{% elsif post.category == 'photography' %}<a href="/photography">/photography</a>{% elsif post.category == 'projects' %}<a href="/projects">/projects</a>{% endif %}</span>{% endif %}</p>
     </div>
   </li>
