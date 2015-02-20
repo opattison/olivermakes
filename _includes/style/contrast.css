@@ -1,4 +1,3 @@
-
 .contrast,
 .contrast .page,
 .contrast .page-header .inside {
@@ -11,8 +10,10 @@
 }
 
 .contrast h1,
-.contrast h2 {
-  color: hsla(204, 10%, 96%, 1);
+.contrast h2,
+.contrast h3,
+.contrast h4 {
+  color: hsla(204, 10%, 93%, 1);
 }
 
 .contrast .page-header h1 {
@@ -38,7 +39,7 @@
 }
 
 .contrast .title .logo circle {
-  stroke: hsla(204, 10%, 96%, 1);
+  stroke: hsla(204, 10%, 93%, 1);
 }
 
 .contrast .title:hover .logo circle,
@@ -67,7 +68,7 @@
 }
 
 .contrast .project .description {
-  color: hsla(204, 10%, 96%, 1);
+  color: hsla(204, 10%, 93%, 1);
 }
 
 .contrast .project .link a {
