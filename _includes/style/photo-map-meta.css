@@ -83,6 +83,7 @@ screen and (min-resolution: 144dpi) and (min-width: 40em),
 .photo-meta {
   background-color: hsla(204, 10%, 10%, .8);
   bottom: 0;
+  color: hsla(204, 10%, 96%, 1);
   font-weight: 300;
   margin: 0;
   padding: .5em .5em .5em 1em;
@@ -98,6 +99,10 @@ screen and (min-resolution: 144dpi) and (min-width: 40em),
   list-style: none;
   margin: 0;
   padding-right: 7em;
+}
+
+.photo-meta li + li {
+  margin-top: .25em;
 }
 
 .shift-map-label {

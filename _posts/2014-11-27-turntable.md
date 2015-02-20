@@ -1,9 +1,10 @@
 ---
 title: 'My turntable'
-layout: contrast
+layout: edgeless
 option:
   - map-meta
   - srcset
+  - contrast
 category: 'photography'
 date: 2014-11-27 19:02
 updated: 2014-12-05 01:29

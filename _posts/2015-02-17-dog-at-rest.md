@@ -1,10 +1,11 @@
 ---
 title: 'Dog at rest'
-layout: contrast
+layout: edgeless
 option:
   - map-meta
   - srcset
   - feature
+  - contrast
 category: 'photography'
 tags:
   - ''

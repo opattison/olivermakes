@@ -291,7 +291,7 @@ sup[id] {
 
 sup[id] a {
   background-color: hsla(204, 30%, 80%, .5);
-  border-bottom: 0;
+  border: 0;
   border-radius: .125em;
   color: hsla(204, 10%, 24%, 1);
   font-size: .875em;
@@ -300,8 +300,10 @@ sup[id] a {
   padding: 0 .25em;
 }
 
-sup[id] a:hover {
+sup[id] a:hover,
+sup[id] a:focus {
   background-color: hsla(4, 30%, 80%, .5);
+  border: 0;
 }
 
 sup[id] a::before {
@@ -465,8 +467,6 @@ nav li {
 /* Block content – essays, code blocks */
 
 .essay {
-  background-color: hsla(204, 10%, 24%, 1);
-  color: hsla(204, 10%, 96%, 1);
   margin-top: 2em;
 }
 
