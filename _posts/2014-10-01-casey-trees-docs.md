@@ -11,8 +11,22 @@ date: 2014-10-01 12:00
 updated: 2015-02-19 22:11
 drafted: 2015-02-18 9:00
 unique-id: 2015-02-19:casey-trees-docs
-period: 2014-07 to 2014-10
+period: 2014-06 to 2014-10
 description: 'An archive of organizational knowledge about web design, strategy, and implementation for a non-profit.'
+image:
+  - src: 2015-02-18-casey-trees-docs-style.png
+    alt: 'A screenshot and accompanying HTML code sample that document the design of a component.'
+    date: 2015-02-18
+    description: 'Feature image'
+    aspect: '3:2'
+  - src: 2015-02-18-casey-trees-docs-nav.png
+    alt: 'The navigation for the documentation including headings for Documentation, Code Samples, and Reference, with listed items under each heading.'
+    date: 2015-02-18
+    aspect: '2:3'
+  - src: 2015-02-18-casey-trees-docs-code.png
+    alt: 'An HTML code sample that documents the design of a component, with class parameters.'
+    date: 2015-02-18
+    aspect: '3:2'
 
 ---
 
@@ -27,7 +41,22 @@ I focused on the most important aspects of website management and design for the
 
 Unfortunately, the documents in the project contain proprietary information, so I can’t link to the repository as it existed when I left. Here is a sample of the project:
 
-{ images }
+<div class="grid2">
+<figure class="w33 screenshot">
+  <img
+    src="{{ site.image-url }}/{{ page.image[1].src }}" 
+    alt="{{ page.image[1].alt }}"
+  >
+</figure>
+<figure class="w66 screenshot">
+  <img
+    src="{{ site.image-url }}/{{ page.image[2].src }}" 
+    alt="{{ page.image[2].alt }}"
+  >
+</figure>
+</div>
+
+I used the [Solarized scheme](http://ethanschoonover.com/solarized) for code highlighting.
 
 ## Why Jekyll?
 
