@@ -1,5 +1,5 @@
 ---
-title: 'Technical documentation for Casey Trees'
+title: 'Technical documentation for Casey&nbsp;Trees'
 layout: dubbel
 option:
   - index-image
@@ -8,8 +8,8 @@ category: 'projects'
 tags:
   - 'minor'
 date: 2014-10-01 12:00
-updated: 2015-02-19 22:11
-drafted: 2015-02-18 9:00
+updated: 2015-02-20 11:24
+drafted: 2015-02-18 16:20
 unique-id: 2015-02-19:casey-trees-docs
 period: 2014-06 to 2014-10
 description: 'An archive of organizational knowledge about web design, strategy, and implementation for a non-profit.'
@@ -25,6 +25,7 @@ image:
     aspect: '2:3'
   - src: 2015-02-18-casey-trees-docs-code.png
     alt: 'An HTML code sample that documents the design of a component, with class parameters.'
+    caption: 'I used the [Solarized color scheme](http://ethanschoonover.com/solarized) for code highlighting.'
     date: 2015-02-18
     aspect: '3:2'
 
@@ -39,7 +40,7 @@ I focused on the most important aspects of website management and design for the
 - Common issues with WordPress and other content management systems.
 - Resources and tools for further learning.
 
-Unfortunately, the documents in the project contain proprietary information, so I can’t link to the repository as it existed when I left. Here is a sample of the project:
+Unfortunately, the documents in the project contain proprietary information, so I can’t link to or substantially excerpt from the repository (it is not mine to share). Here is what the project looked like in the autumn of 2014:
 
 <div class="grid2">
 <figure class="w33 screenshot">
@@ -53,23 +54,22 @@ Unfortunately, the documents in the project contain proprietary information, so 
     src="{{ site.image-url }}/{{ page.image[2].src }}" 
     alt="{{ page.image[2].alt }}"
   >
+  <figcaption>{{ page.image[2].caption | markdownify }}</figcaption>
 </figure>
 </div>
 
-I used the [Solarized scheme](http://ethanschoonover.com/solarized) for code highlighting.
+## Implementation
 
-## Why Jekyll?
-
-I chose Jekyll not just because I was familiar with it, but because I had some strong requirements. The project needed to be:
+I chose [Jekyll](http://jekyllrb.com/), a static website generator, not only because I was familiar with it, but because I had some strong requirements. The project needed to be:
 
 1. Maintainable through only text files and images.
 2. Accessible with a web browser (rather than proprietary software), locally or remotely.
 3. Robust, with no platform lock-in.
 
-Jekyll is flexible enough for pretty much any small project that has text at the center of it. A lot of other platforms fail the third criterion of robustness, particularly solutions like word processing, web content management systems, or wiki software. I had to make sure that the system would consist of plain text files that are readable even if Jekyll could not be used in the future or was temporarily unavailable. The Markdown files used as input for Jekyll (and their cached HTML output) can be reused in other contexts and are quite easily read as plain text.
+Jekyll is flexible enough for pretty much any small project that has text at the center of it. A lot of other platforms fail the third criterion of robustness, particularly solutions like local word processing, web content management systems, or wiki software. I had to make sure that the system would consist of plain text files that are readable even if Jekyll could not be used in the future or was temporarily unavailable. The Markdown files used as input for Jekyll (and their cached HTML output) can be reused in other contexts and are quite easily read as plain text.
 
-## Implementation
+## Design
 
-While normally I would design all elements of a project like this from scratch, with constrained time I chose to use a template ([jekyll-docs-template](https://github.com/bruth/jekyll-docs-template)) to focus more of my efforts on content and information architecture. This template system had built-in support for chapter-style navigation that is commonly used in technical documentation, so that a user can see the entirety of the topics under their respective headings covered without needing to search.
+While normally I would design all elements of a project like this from scratch, with constrained time I chose to use a template ([jekyll-docs-template](https://github.com/bruth/jekyll-docs-template)) to focus more of my efforts on content and information architecture. This template system had built-in support for chapter-style navigation that is commonly used in technical documentation, so that a user can see the entirety of the topics under their respective headings without needing to search.
 
 This project accomplished two significant goals for Casey Trees. I was able to pass along my accrued knowledge to new employees that would extend far past my term. Additionally, I created the foundation for a history of the organization’s design patterns and approaches to communicating, encoded in a way that others would be able to contribute to or repurpose as needed.
