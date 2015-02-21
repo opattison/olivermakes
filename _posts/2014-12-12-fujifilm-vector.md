@@ -10,6 +10,8 @@ option:
 category: 'projects'
 tags:
   - 'minor'
+  - 'design'
+  - 'photography'
 date: 2014-12-08 9:00
 updated: 2014-12-12 13:16
 drafted: 2014-12-12 02:00

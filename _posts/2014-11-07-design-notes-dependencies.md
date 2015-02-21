@@ -4,6 +4,11 @@ layout: singel
 option:
   - index-image
 category: writing
+tags:
+  - 'design'
+  - 'process'
+  - 'jekyll'
+  - 'typography'
 date: 2014-11-07 12:34
 updated: 2014-11-29 18:21
 drafted: 2014-11-07 12:34

@@ -8,6 +8,7 @@ category: 'writing'
 tags:
   - 'minor'
   - 'reaction'
+  - 'design'
 date: 2014-12-15 11:01
 updated: 2014-12-15 11:01
 drafted: 2014-12-14 20:00

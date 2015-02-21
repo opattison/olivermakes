@@ -5,6 +5,10 @@ option:
   - code
   - index-image
 category: writing
+tags:
+  - 'design'
+  - 'jekyll'
+  - 'future'
 date: 2014-11-06 09:17
 updated: 2014-12-12 02:44
 drafted: 2014-11-06 09:17

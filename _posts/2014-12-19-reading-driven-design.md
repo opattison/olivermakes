@@ -2,6 +2,9 @@
 title: 'Reading-driven design'
 layout: singel
 category: 'writing'
+tags:
+  - 'design'
+  - 'reading'
 date: 2014-12-19 23:14
 updated: 2014-12-20 11:31
 drafted: 2014-12-19 15:59
