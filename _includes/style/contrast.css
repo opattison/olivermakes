@@ -66,6 +66,12 @@ div.highlighter-rouge {
   border-color: hsla(204, 10%, 40%, 1);
 }
 
+p > code,
+li > code,
+samp {
+  border-color: hsla(204, 10%, 56%, 1);
+}
+
 sup[id] a {
   background-color: hsla(5, 30%, 80%, .5);
   border: none;
@@ -76,6 +82,7 @@ sup[id] a:hover,
 sup[id] a:focus {
   background-color: hsla(204, 30%, 80%, .5);
   border: none;
+  color: hsla(204, 10%, 88%, 1);
 }
 
 .important {
@@ -90,6 +97,11 @@ sup[id] a:focus {
 .footnotes {
   color: inherit;
   background-color: hsla(204, 10%, 32%, 1);
+}
+
+.footnotes li,
+.footnotes .reversefootnote {
+  border-color: hsla(204, 10%, 56%, 1);
 }
 
 a.reversefootnote {
