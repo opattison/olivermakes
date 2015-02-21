@@ -362,7 +362,7 @@ kbd > kbd + b {
 } /* <kbd><kbd>cmd</kbd> <b class="kbd-plus">+</b> <kbd>C</kbd></kbd> */
 
 mark {
-  background-color: hsla(44, 30%, 88%, .5);
+  background-color: hsla(204, 30%, 80%, .5);
   padding: .0625em;
 }
 
