@@ -200,7 +200,7 @@
 
 .introduction {
   background-color: hsla(204, 50%, 45%, 1);
-  color: hsla(204, 10%, 98%, 1);
+  color: hsla(204, 10%, 88%, 1);
   font-size: 1.125em;
   font-style: italic;
   font-weight: 400;
@@ -208,7 +208,8 @@
 }
 
 .introduction a {
-  color: hsla(4, 30%, 80%, 1);
+  color: hsla(204, 10%, 96%, 1);
+  border-bottom: solid 1px hsla(204, 10%, 96%, 1);
 }
 
 .introduction a:hover,
