@@ -17,9 +17,7 @@ description: 'Organizational knowledge can be fragile. This is a story about cre
 
 Organizational knowledge can be fragile. Particularly for small organizations without the budget to hire more than a few technical staff members, even one person leaving can create a gap that can be difficult to fill. 
 
-<p class="important">Unless there is a method for remembering.</p>
-
-- - -
+## Developing a method for remembering
 
 After four years working on a wide range of projects at the non-profit [Casey Trees](http://caseytrees.org), I realized that a good deal of information about the organization and its technical interests was locked in my head. Documenting my work – making my efforts and knowledge last beyond my time at the organization – was not initially part of my job description. But it was my job. In 2014, two new technical staff members were joining the team (hired and trained by me), so I took the initiative to [thoroughly document](http://olivermak.es/2014/10/casey-trees-docs/) a significant subset of my work.
 
@@ -29,9 +27,9 @@ When I started at the organization in 2010, Casey Trees was still a relatively s
 
 In my first months, I became used to emails and calls from fellow staff with a request for help, from implementing design ideas to figuring out common software issues. Even though I didn’t feel like an “expert”, I was often the person on hand who was willing to learn quickly and pick up technical tasks. I found my role as a generalist; a technological omnivore, I would learn as I went, picking up bits about optimizing images for the web, or figuring out bugs in our fundraising management software, and even becoming a <i lang="la">de facto</i> CRM administrator. My role was not limited to the web or communications. I learned that, at least at a small- to medium-sized non-profit, being a technological generalist *does* tend to qualify you as a local expert.
 
-I was frequently called in to provide one-on-one training for staff and interns any time their jobs intersected with the website, CRM, and related systems like our event management or fundraising tools. Unfortunately, a lot of tasks in the organization relied on the outcomes of these limited trainings (constrained by my learning curve as an instructor and limited by the time that I had to give to fellow staff). People benefitted from the trainings, and I learned a lot as an educator, but more support was needed.
+I was frequently called in to provide one-on-one training for staff and interns any time their jobs intersected with the website, CRM, and related systems like our event management or fundraising tools. Unfortunately, a lot of tasks in the organization relied on the outcomes of these limited trainings. Our success was constrained by my learning curve as an instructor, and limited by the time that I had to give to fellow staff.
 
-These trainings were work that I really enjoyed doing, but it was simply too time-consuming. Although only a small part of my responsibilities, some days I might be working on training for most of my working hours. One-on-one training sessions can often be enormously helpful because they can be personalized and tend to have an immediate impact, but the time spent can be difficult to justify if one’s role is not specified as a full-time educator.
+Although only a small part of my responsibilities, some days I might be working on training for most of my working hours. One-on-one training sessions can often be enormously helpful because they can be personalized and tend to have an immediate impact, but the time spent can be difficult to justify if one’s role is not specified as a full-time educator.
 
 In response to this dilemma, we worked on a “curriculum” of training materials to provide a course of standardized study for new staff; to fill in these gaps and reinforce our hands-on training sessions. This curriculum would hopefully cover the *basics* so that more time could be spent in one-on-one trainings covering the *specifics*. This new process worked to some degree, but the exercises and structure provided by it only took new staff so far. Existing staff could benefit from these newly-developed materials, but they had typically already graduated past the introductory matter covered by the curriculum, and had concerns that a standardized approach could not fully address.
 
