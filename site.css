@@ -352,7 +352,7 @@ kbd > kbd {
   background-color: hsla(204, 10%, 10%, 1);
   border-radius: .25em;
   color: hsla(204, 10%, 96%, 1);
-  font: 300 .8125em/1 'Open Sans', sans-serif;
+  font: 400 .8125em/1 'Open Sans', sans-serif;
   padding: .0625em .5em;
 }
 
