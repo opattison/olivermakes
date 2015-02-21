@@ -5,7 +5,8 @@ option:
   - index-image
 category: 'writing'
 tags:
-  - ''
+  - 'archive'
+  - 'process'
 date: 2015-02-20 22:11
 updated: 2015-02-20 22:42
 drafted: 2015-02-14 12:34
@@ -59,6 +60,6 @@ This latter category involves tasks that might need to be referred to at any tim
 
 Instead of starting with a pile of papers and forwarded email threads, I thought about how much more prepared I would have felt as a new staff member if I had a working base of knowledge – one that I would feel empowered to contribute to myself. Working for quite a long while at Casey Trees, I wanted ways for newcomers to be able to pick up where departed members left off in an organization: indirect collaboration with others across time.
 
-This model of accumulated knowledge is how the web works. The web my direct inspiration to build a document base that would consist of HTML and be maintained with plain text and images. The base of the project had to be a robust medium for storing and sharing information. So I started with something I already knew how to build: a website. I decided to balance the larger goals of gathering organizational knowledge equally with the immediate concerns of training to accomplish goals. This method would provide a more complete picture, one that could be self-documenting; one that would describe what it is like to do a certain job.
+This model of accumulated knowledge is how the web works. The web was my direct inspiration to build a document base that would consist of HTML and be maintained with plain text and images. The base of the project had to be a robust medium for storing and sharing information. So I started with something I already knew how to build: a website. I decided to balance the larger goals of gathering organizational knowledge equally with the immediate concerns of training to accomplish goals. This method would provide a more complete picture, one that could be self-documenting; one that would describe what it is like to do a certain job.
 
 The result was only a [small start](http://olivermak.es/2014/10/casey-trees-docs/), but one that could be built upon.
