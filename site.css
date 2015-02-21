@@ -271,7 +271,7 @@ article ol li::before {
 
 blockquote {
   border-left: solid .25em hsla(204, 50%, 45%, 1);
-  color: hsla(204, 10%, 48%, 1);
+  color: hsla(204, 10%, 40%, 1);
   margin: 2em 0 2em -1em;
   padding-left: .75em;
 }
