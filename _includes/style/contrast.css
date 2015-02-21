@@ -54,7 +54,7 @@ h4 {
 
 blockquote {
   color: hsla(204, 10%, 80%, 1);
-  border-left: solid .25em hsla(204, 30%, 80%, 1);
+  border-color: hsla(204, 30%, 80%, 1);
 }
 
 blockquote footer {
