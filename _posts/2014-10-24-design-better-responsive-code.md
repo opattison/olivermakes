@@ -6,7 +6,6 @@ option:
   - code
   - code-block
   - index-image
-  - contrast
 category: 'writing'
 tags:
   - 'design'
