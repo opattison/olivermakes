@@ -1,27 +1,23 @@
 ---
 title: 'Insitutional memory'
 layout: singel
-option:
-  - index-image
 category: 'writing'
 tags:
   - 'archive'
   - 'process'
 date: 2015-02-20 22:11
-updated: 2015-02-20 22:42
+updated: 2015-02-21 14:06
 drafted: 2015-02-14 12:34
 unique-id: 2015-02-20:institutional-memory
 description: 'Organizational knowledge can be fragile. This is a story about creating an archive at a non-profit.'
 
 ---
 
-Organizational knowledge can be fragile. Particularly for small organizations without the budget to hire more than a few technical staff members, even one person leaving can create a gap that can be difficult to fill. 
-
-## Developing a method for remembering
-
-After four years working on a wide range of projects at the non-profit [Casey Trees](http://caseytrees.org), I realized that a good deal of information about the organization and its technical interests was locked in my head. Documenting my work – making my efforts and knowledge last beyond my time at the organization – was not initially part of my job description. But it was my job. In 2014, two new technical staff members were joining the team (hired and trained by me), so I took the initiative to [thoroughly document](http://olivermak.es/2014/10/casey-trees-docs/) a significant subset of my work.
+Organizational knowledge can be fragile. Particularly for small organizations without the budget to hire more than a few technical staff members, even one person leaving creates a gap that is difficult to fill.
 
 ## The need for documentation
+
+After four years working on a wide range of projects at the non-profit [Casey Trees](http://caseytrees.org), I realized that a good deal of information about the organization and its technical interests was locked in my head. Documenting my work – making my efforts and knowledge last beyond my time at the organization – was not initially part of my job description. But it was my job. In 2014, two new technical staff members were joining the team (hired and trained by me), so I took the initiative to [thoroughly document](http://olivermak.es/2014/10/casey-trees-docs/) a significant subset of my work.
 
 When I started at the organization in 2010, Casey Trees was still a relatively small organization. In my first week, I was handed two folders, both labeled **Website**. These folders contained a few years worth of communications with previous external web developers, and a few pages of research notes. There was no guide for how things were supposed to be done, or how to get started. For an organization growing quickly, raising money and organizing events, as far as the web was concerned, we had not yet found a way to explain to ourselves where we had come from and where we intended to go.
 
