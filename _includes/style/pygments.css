@@ -7,7 +7,7 @@ Light pygments template modified by Oliver Pattison */
 .highlight  { background: #f9fafa; color: #292f32 }
 .highlight .c { color: #84919a } /* Comment */
 .highlight .err { color: #cc3d33 } /* Error */
-.highlight .k { color: #0f77bd } /* Keyword */
+.highlight .k { color: #5a6faf } /* Keyword */
 .highlight .l { color: #a86138 } /* Literal */
 .highlight .n { color: #292f32 } /* Name */
 .highlight .o { color: #427c80 } /* Operator */
@@ -17,31 +17,31 @@ Light pygments template modified by Oliver Pattison */
 .highlight .c1 { color: #84919a } /* Comment.Single */
 .highlight .cs { color: #84919a } /* Comment.Special */
 .highlight .gd { color: #cc3d33 } /* Generic.Deleted */
-.highlight .ge { color: #0f77bd } /* Generic.Emph */
+.highlight .ge { color: #5a6faf } /* Generic.Emph */
 .highlight .gh { color: #292f32 } /* Generic.Heading */
 .highlight .gi { color: #2d8650 } /* Generic.Inserted */
 .highlight .gp { color: #84919a } /* Generic.Prompt */
-.highlight .gs { color: #5a6faf } /* Generic.Strong */
+.highlight .gs { color: #734d80 } /* Generic.Strong */
 .highlight .gu { color: #427c80 } /* Generic.Subheading */
-.highlight .kc { color: #0f77bd } /* Keyword.Constant */
-.highlight .kd { color: #0f77bd } /* Keyword.Declaration */
+.highlight .kc { color: #5a6faf } /* Keyword.Constant */
+.highlight .kd { color: #5a6faf } /* Keyword.Declaration */
 .highlight .kn { color: #427c80 } /* Keyword.Namespace */
-.highlight .kp { color: #0f77bd } /* Keyword.Pseudo */
-.highlight .kr { color: #0f77bd } /* Keyword.Reserved */
-.highlight .kt { color: #a88a38 } /* Keyword.Type */
+.highlight .kp { color: #5a6faf } /* Keyword.Pseudo */
+.highlight .kr { color: #5a6faf } /* Keyword.Reserved */
+.highlight .kt { color: #ab892b } /* Keyword.Type */
 .highlight .ld { color: #2d8650 } /* Literal.Date */
 .highlight .m { color: #a86138 } /* Literal.Number */
 .highlight .s { color: #2d8650 } /* Literal.String */
 .highlight .na { color: #397eac } /* Name.Attribute */
 .highlight .nb { color: #292f32 } /* Name.Builtin */
-.highlight .nc { color: #a88a38 } /* Name.Class */
+.highlight .nc { color: #ab892b } /* Name.Class */
 .highlight .no { color: #cc3d33 } /* Name.Constant */
 .highlight .nd { color: #427c80 } /* Name.Decorator */
 .highlight .ni { color: #292f32 } /* Name.Entity */
 .highlight .ne { color: #cc3d33 } /* Name.Exception */
 .highlight .nf { color: #397eac } /* Name.Function */
 .highlight .nl { color: #292f32 } /* Name.Label */
-.highlight .nn { color: #a88a38 } /* Name.Namespace */
+.highlight .nn { color: #ab892b } /* Name.Namespace */
 .highlight .nx { color: #397eac } /* Name.Other */
 .highlight .py { color: #292f32 } /* Name.Property */
 .highlight .nt { color: #427c80 } /* Name.Tag */
@@ -76,7 +76,7 @@ Light pygments template modified by Oliver Pattison */
 .highlight .language-css .n { color: #397eac }
 .highlight .language-css .o { color: #5c6870 }
 .highlight .language-css .nc { color: #cc3d33 }
-.highlight .language-css .nd { color: #5a6faf }
+.highlight .language-css .nd { color: #734d80 }
 .highlight .language-css .nt { color: #cc3d33 }
 .highlight .language-css .m { color: #373e43 }
 

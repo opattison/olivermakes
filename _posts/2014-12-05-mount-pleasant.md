@@ -1,9 +1,10 @@
 ---
 title: 'Mount Pleasant photowalk'
-layout: contrast
+layout: edgeless
 option:
   - map-meta
   - srcset
+  - contrast
 category: 'photography'
 date: 2014-12-05 22:01
 updated: 2014-12-05 01:28

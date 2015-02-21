@@ -1,9 +1,10 @@
 ---
 title: 'The shore at Bosham in Chichester Harbor'
-layout: contrast
+layout: edgeless
 option:
   - map-meta
   - srcset
+  - contrast
 category: 'photography'
 date: 2014-11-27 21:30
 updated: 2014-11-28 03:06

@@ -59,17 +59,21 @@ samp {
 
 So how bad is it when code or any other long content breaks a layout? Here is what a sample from this page without `white-space: pre-wrap`:
 
-<img
-  src="{{ site.image-url }}/{{ page.image[1].src }}" 
-  alt="{{ page.image[1].alt }}"
->
+<figure class="narrow screenshot">
+  <img
+    src="{{ site.image-url }}/{{ page.image[1].src }}" 
+    alt="{{ page.image[1].alt }}"
+  >
+</figure>
 
 Here is what a sample from this page without `overflow-wrap: break-word`:
 
-<img
-  src="{{ site.image-url }}/{{ page.image[2].src }}" 
-  alt="{{ page.image[2].alt }}"
->
+<figure class="narrow screenshot">
+  <img
+    src="{{ site.image-url }}/{{ page.image[2].src }}" 
+    alt="{{ page.image[2].alt }}"
+  >
+</figure>
 
 I think these samples speak for themselves to explain why these declarations are needed for a responsive code block. With both of them not implemented, nearly every code block on this page runs off the page, breaking the layout on small and large screens alike.
 

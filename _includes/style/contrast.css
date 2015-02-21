@@ -1,194 +1,175 @@
-
-.contrast,
-.contrast .page,
-.contrast .page-header .inside {
+body {
   background-color: hsla(204, 10%, 18%, 1);
   color: hsla(204, 10%, 96%, 1);
 }
 
-.contrast .page {
-  padding-bottom: 0;
+.page,
+.page-header .inside  {
+  background-color: hsla(204, 10%, 24%, 1)
 }
 
-.contrast h1,
-.contrast h2 {
-  color: hsla(204, 10%, 96%, 1);
+h1,
+h2,
+h3,
+h4 {
+  color: hsla(204, 10%, 93%, 1);
 }
 
-.contrast .page-header h1 {
-  text-align: center;
-}
-
-.contrast .page a,
-.contrast .time a {
+.page a,
+.time a {
   color: hsla(5, 30%, 80%, 1);
   border-color: hsla(5, 30%, 80%, .5);
 }
 
-.contrast .page a:hover,
-.contrast .page a:focus,
-.contrast .time a:hover,
-.contrast .time a:focus {
+.page a:hover,
+.page a:focus,
+.time a:hover,
+.time a:focus {
   color: hsla(204, 30%, 80%, 1);
 }
 
-.contrast .title:hover h1,
-.contrast .title:focus h1 {
+.title:hover h1,
+.title:focus h1 {
   color: hsla(204, 30%, 80%, 1);
 }
 
-.contrast .title .logo circle {
-  stroke: hsla(204, 10%, 96%, 1);
+.title .logo circle {
+  stroke: hsla(204, 10%, 93%, 1);
 }
 
-.contrast .title:hover .logo circle,
-.contrast .title:focus .logo circle {
+.title:hover .logo circle,
+.title:focus .logo circle {
   stroke: hsla(204, 30%, 80%, 1);
   -webkit-animation-name: step-fill--contrast;
           animation-name: step-fill--contrast;
 }
 
-.contrast .page > figure:first-child {
-  margin-top: 0;
-}
-
-.contrast .page figcaption {
+.page figcaption {
   color: hsla(204, 10%, 88%, 1);
 }
 
-.contrast .page-meta {
+.page-meta {
   background-color: hsla(204, 10%, 24%, 1);
-  margin: 2em auto 0;
 }
 
-.contrast .project {
-  background-color: hsla(204, 10%, 24%, 1);
-  margin-top: 0;
+blockquote {
+  color: hsla(204, 10%, 80%, 1);
+  border-color: hsla(204, 30%, 80%, 1);
 }
 
-.contrast .project .description {
+blockquote footer {
+  color: hsla(204, 10%, 88%, 1);
+}
+
+div.highlighter-rouge {
+  background-color: hsla(204, 10%, 98%, 1);
+  border-color: hsla(204, 10%, 40%, 1);
+}
+
+p > code,
+li > code,
+samp {
+  border-color: hsla(204, 10%, 56%, 1);
+}
+
+sup[id] a {
+  background-color: hsla(5, 30%, 80%, .5);
+  border: none;
+  color: hsla(204, 10%, 88%, 1);
+}
+
+sup[id] a:hover,
+sup[id] a:focus {
+  background-color: hsla(204, 30%, 80%, .5);
+  border: none;
+  color: hsla(204, 10%, 88%, 1);
+}
+
+.important {
+  color: hsla(204, 30%, 80%, 1);
+}
+
+.ancillary {
+  background-color: hsla(204, 10%, 18%, 1);
+  color: hsla(204, 10%, 80%, 1);
+}
+
+.footnotes {
+  color: inherit;
+  background-color: hsla(204, 10%, 32%, 1);
+}
+
+.footnotes li,
+.footnotes .reversefootnote {
+  border-color: hsla(204, 10%, 56%, 1);
+}
+
+a.reversefootnote {
   color: hsla(204, 10%, 96%, 1);
 }
 
-.contrast .project .link a {
+a.reversefootnote:hover,
+a.reversefootnote:focus {
+  color: hsla(204, 10%, 96%, 1);
+  background-color: hsla(204, 30%, 80%, .5);
+}
+.project {
+  background-color: hsla(204, 10%, 32%, 1);
+}
+
+.project .description {
+  color: hsla(204, 10%, 93%, 1);
+}
+
+.project .link a {
   color: hsla(204, 10%, 96%, 1);
 }
 
-.contrast .project .link a:focus {
+.project .link a:focus {
   background-color: hsla(204, 10%, 93%, 1);
   color: hsla(204, 80%, 40%, 1);
 }
 
-.contrast .link .project-url:hover {
+.essay {
+  background-color: hsla(204, 10%, 32%, 1);
+  color: hsla(204, 10%, 96%, 1);
+}
+
+.link .project-url:hover {
   color: hsla(4, 60%, 50%, 1);
 }
 
-.contrast .link .project-source:hover {
+.link .project-source:hover {
   color: hsla(225, 35%, 52%, 1);
 }
 
-.contrast .site-nav li a {
+.page-meta {
+  background-color: hsla(204, 10%, 32%, 1);
+}
+
+.site-nav li a {
   background-color: hsla(204, 10%, 10%, .8);
 }
 
-.contrast .site-nav li:nth-child(2) a {
+.site-nav li:nth-child(2) a {
   background-color: hsla(204, 10%, 24%, .8);
 }
 
-.contrast .site-nav li:nth-child(3) a {
+.site-nav li:nth-child(3) a {
   background-color: hsla(204, 10%, 32%, .8);
 }
 
-.contrast .site-nav li:nth-child(4) a {
+.site-nav li:nth-child(4) a {
   background-color: hsla(204, 10%, 18%, .8);
 }
 
-.contrast .site-nav li a:hover {
+.site-nav li a:hover {
   background-color: hsla(204, 80%, 40%, .8);
 }
 
-.contrast .site-nav li a:focus {
+.site-nav li a:focus {
   background-color: hsla(204, 10%, 88%, 1);
   color: hsla(204, 80%, 40%, 1);
-}
-
-@media screen and (min-width: 30em) {
-  .contrast .essay {
-    padding: 2em;
-  }
-}
-
-@media screen and (min-width: 45em) {
-  .contrast .page-meta {
-    margin: 2em auto;
-  }
-}
-
-@media screen and (min-width: 60em) {
-  .contrast .page-header .inside {
-    padding: .75em 1.25em;
-  }
-
-  .contrast .page {
-    padding-top: 1em;
-    padding-bottom: 1em;
-  }
-
-  .contrast .essay {
-    margin: 2em auto 0;
-    padding: 2.5em;
-  }
-
-  .contrast [role="main"] figcaption {
-    padding: .5em 0 0;
-  }
-
-  .contrast [role="main"] figcaption p {
-    font-size: .875em;
-  }
-
-  .contrast .page-meta {
-    max-width: 45em;
-  }
-
-  .contrast .page-meta .time {
-    max-width: 27em;
-  }
-}
-
-@media screen and (min-width: 80em) {
-  .contrast .essay {
-    margin: 2em -4.5em 0 4.5em;
-    padding: 2em 2.5em;
-  }
-
-  .contrast .align {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media screen and (min-width: 115em) {
-  .contrast .site-info {
-    padding: 2em;
-  }
-}
-
-@media screen and (min-width: 140em) {
-  .page-header {
-    font-size: 2em;
-  }
-
-  .wide,
-  .grid2 {
-    margin: 5% calc(-12em) 0;
-    width: calc(100% + 24em);
-  }
-
-  .contrast .page-meta,
-  .contrast .page-meta .time {
-    max-width: none;
-  }
 }
 
 @-webkit-keyframes step-fill--contrast {

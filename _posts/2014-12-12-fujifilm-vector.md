@@ -1,11 +1,12 @@
 ---
 title: 'Fujifilm X-E2 vector'
-layout: contrast
+layout: edgeless
 option:
   - index-image
   - sample-svg
   - code
   - srcset
+  - contrast
 category: 'projects'
 tags:
   - 'minor'
@@ -95,6 +96,6 @@ I use SVG for all of the graphics on this site, with all three of these methods 
 
 {% endcapture %}
 
-<div class="essay align">
+<div class="essay">
 {{ p3 | markdownify }}
 </div>
