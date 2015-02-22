@@ -5,10 +5,10 @@ category: 'writing'
 tags:
   - 'archive'
   - 'process'
-date: 2015-02-20 22:11
-updated: 2015-02-21 14:06
+date: 2015-02-21 20:52
+updated: 2015-02-21 20:52
 drafted: 2015-02-14 12:34
-unique-id: 2015-02-20:institutional-memory
+unique-id: 2015-02-21:institutional-memory
 description: 'Organizational knowledge can be fragile. This is a story about creating an archive at a non-profit.'
 
 ---
