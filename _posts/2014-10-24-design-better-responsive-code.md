@@ -8,7 +8,10 @@ option:
   - index-image
 category: 'writing'
 tags:
+  - 'css'
   - 'design'
+  - 'responsive'
+  - 'typography'
 date: 2014-10-24 16:15
 updated: 2014-11-28 00:05
 drafted: 2014-10-24 16:15

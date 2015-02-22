@@ -5,9 +5,10 @@ option:
   - index-image
 category: writing
 tags:
-  - 'archive'
+  - 'archiving'
   - 'future'
   - 'photography'
+  - 'web'
 date: 2014-11-08 12:34
 updated: 2014-12-06 22:02
 drafted: 2014-11-08 12:34

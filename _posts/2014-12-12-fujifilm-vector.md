@@ -9,7 +9,6 @@ option:
   - contrast
 category: 'projects'
 tags:
-  - 'minor'
   - 'design'
   - 'photography'
 date: 2014-12-08 9:00

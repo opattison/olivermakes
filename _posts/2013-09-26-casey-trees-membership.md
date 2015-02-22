@@ -9,9 +9,12 @@ option:
   - patterns
 category: 'projects'
 tags:
+  - 'css'
   - 'design'
+  - 'html'
   - 'process'
   - 'responsive'
+  - 'web'
 date: 2013-09-26 15:52
 updated: 2014-12-17 15:52
 drafted: 2014-12-17 12:00
