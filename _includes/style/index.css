@@ -1,5 +1,5 @@
 article a {
-  border-bottom: none;
+  border-bottom: solid 1px hsla(0, 0%, 100%, .01);
 }
 
 .home,
