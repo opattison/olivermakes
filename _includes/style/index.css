@@ -1,3 +1,7 @@
+article a {
+  border-bottom: none;
+}
+
 .home,
 .category {
   background-color: hsla(204, 10%, 96%, 1);

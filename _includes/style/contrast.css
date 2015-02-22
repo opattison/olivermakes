@@ -3,11 +3,6 @@ body {
   color: hsla(204, 10%, 96%, 1);
 }
 
-.page,
-.page-header .inside  {
-  background-color: hsla(204, 10%, 24%, 1)
-}
-
 h1,
 h2,
 h3,
@@ -15,6 +10,24 @@ h4 {
   color: hsla(204, 10%, 93%, 1);
 }
 
+
+sup[id] a {
+  background-color: hsla(5, 30%, 80%, .5);
+  border: none;
+  color: hsla(204, 10%, 88%, 1);
+}
+
+sup[id] a:hover,
+sup[id] a:focus {
+  background-color: hsla(204, 30%, 80%, .5);
+  border: none;
+  color: hsla(204, 10%, 88%, 1);
+}
+
+.page,
+.page-header .inside  {
+  background-color: hsla(204, 10%, 24%, 1)
+}
 .page a,
 .time a {
   color: hsla(5, 30%, 80%, 1);
@@ -70,19 +83,6 @@ p > code,
 li > code,
 samp {
   border-color: hsla(204, 10%, 56%, 1);
-}
-
-sup[id] a {
-  background-color: hsla(5, 30%, 80%, .5);
-  border: none;
-  color: hsla(204, 10%, 88%, 1);
-}
-
-sup[id] a:hover,
-sup[id] a:focus {
-  background-color: hsla(204, 30%, 80%, .5);
-  border: none;
-  color: hsla(204, 10%, 88%, 1);
 }
 
 .important {

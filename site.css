@@ -236,13 +236,13 @@ a:active {
   color: hsla(204, 10%, 56%, 1);
 }
 
-.page a,
+article a,
 footer a {
   border-bottom: solid 1px hsla(4, 30%, 80%, 1);
 }
 
-.page a:hover,
-.page a:focus,
+article a:hover,
+article a:focus,
 footer a:hover,
 footer a:focus {
   border-bottom: solid 1px hsla(204, 30%, 80%, 1);
@@ -345,11 +345,6 @@ samp {
   border-radius: .25em;
   margin: 0 -.03125em;
   padding: .0625em .25em 0;
-}
-
-div.highlighter-rouge {
-  border-bottom: solid .0625em hsla(204, 10%, 88%, 1);
-  border-top: solid .0625em hsla(204, 10%, 88%, 1);
 }
 
 kbd > kbd {
@@ -474,12 +469,19 @@ nav li {
   margin-top: 2em;
 }
 
-div.highlighter-rouge,
+.highlight,
 .essay,
 .project {
   margin-left: -1em;
   margin-right: -1em;
   padding: 1em;
+}
+
+.highlight {
+  border-bottom: solid .0625em hsla(204, 10%, 88%, 1);
+  border-top: solid .0625em hsla(204, 10%, 88%, 1);
+  font-size: 1em;
+  font-family: sans-serif;
 }
 
 .project {
@@ -663,20 +665,17 @@ div.highlighter-rouge,
   margin-right: 0;
 }
 
-.footnotes .reversefootnote {
+.reversefootnote {
   border: solid 1px hsla(204, 10%, 80%, 1);
   border-radius: .125em;
+  color: hsla(204, 10%, 24%, 1);
   float: right;
   margin: 0 -1.5em;
   padding: 0 .25em;
 }
 
-a.reversefootnote {
-  color: hsla(204, 10%, 24%, 1);
-}
-
-a.reversefootnote:hover,
-a.reversefootnote:focus {
+.reversefootnote:hover,
+.reversefootnote:focus {
   background-color: hsla(4, 30%, 80%, .5);
 }
 
@@ -1128,13 +1127,13 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .page-header .inside,
-  div.highlighter-rouge,
+  .highlight,
   .essay {
     padding-left: 2em;
     padding-right: 2em;
   }
 
-  div.highlighter-rouge,
+  .highlight,
   .essay,
   .project,
   .code figcaption {
@@ -1228,14 +1227,14 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .page-header .inside,
-  div.highlighter-rouge,
+  .highlight,
   .essay,
   .project {
     padding-left: 2.5em;
     padding-right: 2.5em;
   }
 
-  div.highlighter-rouge,
+  .highlight,
   .essay,
   .project,
   .code figcaption {
@@ -1255,7 +1254,7 @@ screen and (min-resolution: 1.5dppx) {
     padding-left: 1.75em;
   }
 
-  div.highlighter-rouge,
+  .highlight,
   .essay {
     padding-bottom: 1.25em;
     padding-top: 1.25em;
@@ -1411,13 +1410,13 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .page-header .inside,
-  div.highlighter-rouge,
+  .highlight,
   .essay {
     padding-left: 4.5em;
     padding-right: 4.5em;
   }
 
-  div.highlighter-rouge,
+  .highlight,
   .essay,
   .code figcaption {
     margin-left: -4.5em;
@@ -1432,7 +1431,7 @@ screen and (min-resolution: 1.5dppx) {
     margin-left: 0;
   }
 
-  div.highlighter-rouge {
+  .highlight {
     padding-bottom: 2em;
     padding-top: 2em;
   }
@@ -1453,7 +1452,7 @@ screen and (min-resolution: 1.5dppx) {
     padding: 2.5em;
   }
 
-  .footnotes .reversefootnote {
+  .reversefootnote {
     margin: 0 -2.5em;
   }
 
@@ -1604,12 +1603,12 @@ screen and (min-resolution: 1.5dppx) {
     width: calc(100% + 18em);
   }
 
-  div.highlighter-rouge {
+  .highlight {
     padding-left: 9em;
     padding-right: 9em;
   }
 
-  div.highlighter-rouge,
+  .highlight,
   .code figcaption {
     margin-left: -9em;
     margin-right: -9em;
