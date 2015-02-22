@@ -166,13 +166,9 @@ samp {
   background-color: hsla(204, 10%, 18%, .8);
 }
 
-.site-nav li a:hover {
-  background-color: hsla(204, 80%, 40%, .8);
-}
-
+.site-nav li a:hover,
 .site-nav li a:focus {
-  background-color: hsla(204, 10%, 88%, 1);
-  color: hsla(204, 80%, 40%, 1);
+  background-color: hsla(204, 80%, 40%, .8);
 }
 
 @-webkit-keyframes step-fill--contrast {

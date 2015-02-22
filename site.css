@@ -233,7 +233,8 @@ a:focus {
 }
 
 a:active {
-  color: hsla(204, 10%, 56%, 1);
+  color: hsla(144, 50%, 35%, 1);
+  border-color: hsla(0, 0%, 100%, .01)!important;
 }
 
 article a,
@@ -557,7 +558,7 @@ nav li {
 
 .link a:active {
   color: hsla(204, 10%, 93%, 1);
-  background-color: hsla(4, 60%, 50%, 1);
+  background-color: hsla(144, 50%, 35%, 1);
 }
 
 /* Bold emphasis text blocks – <div class="important"> */
@@ -785,14 +786,13 @@ nav li {
 }
 
 .top-menu a:hover,
+.top-menu a:active,
 .close-menu a {
   background-color: hsla(204, 80%, 40%, 1);
 }
 
 .top-menu a:focus,
 .close-menu a:focus {
-  background-color: hsla(204, 10%, 88%, 1);
-  color: hsla(204, 80%, 40%, 1);
   outline: none;
 }
 
@@ -927,14 +927,13 @@ nav li {
 
 .site-nav li a:focus,
 .site-nav:target li a:focus {
-  background-color: hsla(204, 10%, 88%, 1);
-  color: hsla(204, 80%, 40%, 1);
+  background-color: hsla(204, 80%, 40%, 1);
   outline: none;
 }
 
 .site-nav li a:active,
 .site-nav:target li a:active {
-  background-color: hsla(4, 60%, 50%, 1);
+  background-color: hsla(144, 50%, 35%, 1);
   color: hsla(204, 10%, 93%, 1);
 }
 

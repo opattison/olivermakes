@@ -73,7 +73,7 @@ article a {
 }
 
 .index article h1 a:active {
-  color: hsla(204, 10%, 56%, 1);
+  color: hsla(144, 50%, 35%, 1);
 }
 
 .meta {
@@ -121,19 +121,15 @@ article a {
   background-color: hsla(204, 10%, 18%, 1);
 }
 
-.index article .link a:hover {
+.index .link a:hover,
+.index .link a:focus {
   background-color: hsla(204, 80%, 40%, 1);
   color: hsla(204, 10%, 96%, 1);
 }
 
-.index article .link a:focus {
-  background-color: hsla(204, 10%, 93%, 1);
-  color: hsla(204, 80%, 40%, 1);
-}
-
-.index article .link a:active {
+.index .link a:active {
   color: hsla(204, 10%, 93%, 1);
-  background-color: hsla(4, 60%, 50%, 1);
+  background-color: hsla(144, 50%, 35%, 1);
 }
 
 .photo-gallery .item {
@@ -184,7 +180,7 @@ article a {
 
 .link-archive .link a:hover,
 .link-archive .link a:focus {
-  background-color: hsla(204, 10%, 88%, 1);
+  background-color: hsla(204, 10%, 93%, 1);
   color: hsla(4, 60%, 50%, 1);
 }
 
@@ -193,13 +189,9 @@ article a {
   color: hsla(204, 50%, 45%, 1);
 }
 
-.link-archive .link a:active {
-  color: hsla(204, 10%, 93%, 1);
-  background-color: hsla(204, 80%, 40%, 1);
-}
-
-.link-archive .link:nth-child(2) a:active {
-  background-color: hsla(4, 80%, 40%, 1);
+.link-archive .link a:focus,
+.link-archive .link:nth-child(2) a:focus {
+  background-color: hsla(204, 10%, 88%, 1);
 }
 
 .introduction {
