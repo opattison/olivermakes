@@ -759,7 +759,7 @@ nav li {
 /* Menu navigation - top right */
 
 .top-menu,
-.site-nav .close-menu {
+.close-menu {
   margin: 0;
   position: absolute;
   text-align: center;
@@ -769,14 +769,14 @@ nav li {
 }
 
 .top-menu a,
-.site-nav .close-menu a {
+.close-menu a {
   background-color: hsla(4, 60%, 50%, 1);
   color: hsla(204, 10%, 98%, 1);
   height: 2.5em;
 }
 
 .top-menu a,
-.site-nav .close-menu a,
+.close-menu a,
 .alt-nav a {
   color: hsla(204, 10%, 98%, 1);
   display: block;
@@ -785,12 +785,12 @@ nav li {
 }
 
 .top-menu a:hover,
-.site-nav .close-menu a {
+.close-menu a {
   background-color: hsla(204, 80%, 40%, 1);
 }
 
 .top-menu a:focus,
-.site-nav .close-menu a:focus {
+.close-menu a:focus {
   background-color: hsla(204, 10%, 88%, 1);
   color: hsla(204, 80%, 40%, 1);
   outline: none;
@@ -838,7 +838,7 @@ nav li {
   margin: 0 auto;
 }
 
-.site-nav a {
+.site-nav li a {
   background-color: hsla(204, 10%, 10%, 1);
   display: block;
   color: hsla(204, 10%, 98%, 1);
@@ -863,7 +863,7 @@ nav li {
 
 /* Target navigation - JS-free modal navigation */
 
-.site-nav .close-menu {
+.close-menu {
   display: none; /* only displays with :target */
 }
 
@@ -1165,14 +1165,14 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .top-menu,
-  .site-nav .close-menu {
+  .close-menu {
     right: 0;
     top: 0;
     width: auto;
   }
 
   .top-menu a,
-  .site-nav .close-menu a {
+  .close-menu a {
     font-size: 1.125em;
     height: 4em;
     line-height: 2em;
@@ -1574,7 +1574,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .top-menu,
-  .site-nav .close-menu {
+  .close-menu {
     font-size: 1.125em;
   }
 
@@ -1652,7 +1652,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .top-menu,
-  .site-nav .close-menu {
+  .close-menu {
     font-size: 1.25em;
   }
 
