@@ -24,21 +24,22 @@ sup[id] a:focus {
   color: hsla(204, 10%, 88%, 1);
 }
 
-.page,
-.page-header .inside  {
-  background-color: hsla(204, 10%, 24%, 1)
-}
-.page a,
+article a,
 .time a {
   color: hsla(5, 30%, 80%, 1);
   border-color: hsla(5, 30%, 80%, .5);
 }
 
-.page a:hover,
-.page a:focus,
+article a:hover,
+article a:focus,
 .time a:hover,
 .time a:focus {
   color: hsla(204, 30%, 80%, 1);
+}
+
+.page,
+.page-header .inside  {
+  background-color: hsla(204, 10%, 24%, 1)
 }
 
 .title:hover h1,
@@ -100,19 +101,21 @@ samp {
 }
 
 .footnotes li,
-.footnotes .reversefootnote {
+.reversefootnote {
   border-color: hsla(204, 10%, 56%, 1);
 }
 
-a.reversefootnote {
+.reversefootnote {
   color: hsla(204, 10%, 96%, 1);
 }
 
-a.reversefootnote:hover,
-a.reversefootnote:focus {
+.reversefootnote:hover,
+.reversefootnote:focus {
   color: hsla(204, 10%, 96%, 1);
   background-color: hsla(204, 30%, 80%, .5);
+  border-color: hsla(204, 30%, 80%, .5);
 }
+
 .project {
   background-color: hsla(204, 10%, 32%, 1);
 }

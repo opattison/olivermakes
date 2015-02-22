@@ -677,6 +677,7 @@ nav li {
 .reversefootnote:hover,
 .reversefootnote:focus {
   background-color: hsla(4, 30%, 80%, .5);
+  border-color: hsla(4, 30%, 80%, .5);
 }
 
 /***! END Page layouts ***/
@@ -711,7 +712,7 @@ nav li {
 
 /** Logo **/
 
-.site-header .logo {
+.title .logo {
   float: left;
   height: 2.5em;
   margin: 0 .5em 0 0;
@@ -1114,6 +1115,12 @@ screen and (min-resolution: 1.5dppx) {
 }
 
 @media screen and (min-width: 30em) {
+  blockquote {
+    border-width: .5em;
+    margin-left: -2em;
+    padding-left: 1.5em;
+  }
+
   .page {
     padding: 1.25em 2em 2.5em;
   }
@@ -1147,12 +1154,6 @@ screen and (min-resolution: 1.5dppx) {
 
   .project .link a {
     font-size: 1em;
-  }
-
-  blockquote {
-    border-width: .5em;
-    margin-left: -2em;
-    padding-left: 1.5em;
   }
 
   .site-header {
@@ -1205,6 +1206,12 @@ screen and (min-resolution: 1.5dppx) {
 }
 
 @media screen and (min-width: 34em) {
+  blockquote {
+    border-width: .75em;
+    margin-left: -2.5em;
+    padding-left: 1.75em;
+  }
+
   .page {
     padding: 0 2.5em 2.5em;
   }
@@ -1248,12 +1255,6 @@ screen and (min-resolution: 1.5dppx) {
     width: 50%;
   }
 
-  blockquote {
-    border-width: .75em;
-    margin-left: -2.5em;
-    padding-left: 1.75em;
-  }
-
   .highlight,
   .essay {
     padding-bottom: 1.25em;
@@ -1276,6 +1277,10 @@ screen and (min-resolution: 1.5dppx) {
 }
 
 @media screen and (min-width: 40em) {
+  figcaption p {
+    font-size: .75em;
+  }
+
   .page,
   .page-header,
   .page-meta,
@@ -1294,10 +1299,6 @@ screen and (min-resolution: 1.5dppx) {
   .site-nav li a,
   .alt-nav li a {
     font-size: 1.125em;
-  }
-
-  figcaption p {
-    font-size: .75em;
   }
 }
 
@@ -1373,6 +1374,14 @@ screen and (min-resolution: 1.5dppx) {
 }
 
 @media screen and (min-width: 60em) {
+  blockquote {
+    margin-left: 0;
+  }
+
+  figcaption p {
+    text-align: right;
+  }
+
   .page {
     padding: 0 4.5em 4.5em;
   }
@@ -1427,10 +1436,6 @@ screen and (min-resolution: 1.5dppx) {
     margin: 1.5em -4.5em 1.5em 2em;
   }
 
-  blockquote {
-    margin-left: 0;
-  }
-
   .highlight {
     padding-bottom: 2em;
     padding-top: 2em;
@@ -1458,10 +1463,6 @@ screen and (min-resolution: 1.5dppx) {
 
   .important {
     padding: 0 2em;
-  }
-
-  figcaption p {
-    text-align: right;
   }
 
   .narrow {
