@@ -4,6 +4,10 @@ layout: singel
 option:
   - index-image
 category: writing
+tags:
+  - 'archive'
+  - 'future'
+  - 'photography'
 date: 2014-11-08 12:34
 updated: 2014-12-06 22:02
 drafted: 2014-11-08 12:34
@@ -41,7 +45,8 @@ It takes a lot of effort to keep a comprehensive and long-lasting archive of one
   <p>This means I have a local repository, a working remote copy on GitHub, and then a local backup of everything (Time Machine), and a remote backup of everything (Backblaze). It is robust enough for now, and it is literally fire-proof.</p>
 </aside>
 
-<p class="important">I am building an archive.</p>
+I am building an archive.
+{:.important}
 
 Git will help me keep track of versions, while ensuring that I lose as little data as possible while working on projects. Because the data for the site will be kept off-site (in a GitHub repo) that can also be backed up in multiple other ways, this should prove more robust and long-lasting than any software I have ever used.
 

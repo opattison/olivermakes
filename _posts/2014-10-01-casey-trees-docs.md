@@ -7,6 +7,7 @@ option:
 category: 'projects'
 tags:
   - 'minor'
+  - 'jekyll'
 date: 2014-10-01 12:00
 updated: 2015-02-20 11:24
 drafted: 2015-02-18 16:20

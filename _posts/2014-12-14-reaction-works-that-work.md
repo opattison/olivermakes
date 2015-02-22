@@ -8,6 +8,7 @@ category: 'writing'
 tags:
   - 'minor'
   - 'reaction'
+  - 'design'
 date: 2014-12-15 11:01
 updated: 2014-12-15 11:01
 drafted: 2014-12-14 20:00
@@ -49,7 +50,8 @@ A highlight from last year that hooked me was [“The Box That Shrank the World�
 
 Nearly as important as the writing and photography, <i class="publication">Works That Work</i> gets typography, layout and physical feel of the magazine <em>right</em>. Like <i class="publication"><a href="http://nautil.us">Nautilus</a></i>, another multidisciplinary publication I subscribe to, their print issues are carefully put together. Great care is put into the reproduction of photos and use of color. The paper is thick, rough, and substantial. I really look forward to receiving these issues in the mail, and I enjoy coming back to them months later like a good book.
 
-<p class="important">At its best, a print magazine can be as valuable as a book.</p>
+At its best, a print magazine can be as valuable as a book.
+{:.important}
 
 [Issue 4](https://worksthatwork.com/4) was released in November 2014, and I am still in the middle of reading it. My favorite article so far is “From Earth to Mars”, which (in part) tells the story of a group of aspiring amateur space explorers, Copenhagen Suborbitals. A sample:
 

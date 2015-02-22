@@ -73,7 +73,7 @@
 }
 
 .meta {
-  background-color: hsla(204, 10%, 93%, .8);
+  background-color: hsla(204, 10%, 93%, .9);
   margin: 0;
   padding: 1em;
   position: relative;
@@ -157,7 +157,7 @@
 
 .photo-gallery .item a:hover,
 .photo-gallery .item a:focus {
-  background-color: hsla(204, 10%, 93%, .8);
+  background-color: hsla(204, 10%, 93%, .9);
 }
 
 .photo-gallery .item a:hover .meta h1,
