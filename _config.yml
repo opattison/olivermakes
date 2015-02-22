@@ -18,9 +18,9 @@ link:
   source: http://github.com/opattison/olivermakes
   subscribe:
     full: http://olivermak.es/full.xml
-    writing: http://olivermak.es/writing.xml
-    photography: http://olivermak.es/photography.xml
-    projects: http://olivermak.es/projects.xml
+    writing: http://olivermak.es/writing/feed.xml
+    photography: http://olivermak.es/photography/feed.xml
+    projects: http://olivermak.es/projects/feed.xml
   tumblr: http://olivermakes.tumblr.com
   twitter: http://twitter.com/olivermakes
   vsco: http://olivermakes.vsco.co
