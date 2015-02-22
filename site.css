@@ -114,6 +114,10 @@ cite {
   font-style: normal;
 }
 
+small {
+  font-size: .75em;
+}
+
 /***! END Normalization ***/
 
 /*** Axiomatic styles **************************/

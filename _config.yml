@@ -51,12 +51,12 @@ jekyll-archives:
   layouts:
     year: archive-time
     month: archive-time
-    category: archive-name
-    tag: archive-name
+    category: archive-type
+    tag: archive-label
   permalinks:
     year: '/:year/'
     month: '/:year/:month/'
-    tag: '/:name/archive/'
+    tag: '/label/:name/'
     category: '/:name/archive/'
 
 ## Project configuration
