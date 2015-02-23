@@ -2,144 +2,11 @@
 ---
 @import 'variables/all.scss';
 
-/*** Normalization *****************************/
-/* following adapted from HTML5 Reset
-source: http://html5reset.org */
-* {
-  background: transparent;
-  border: 0;
-  font-size: 100%;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  vertical-align: baseline;
-}
+@import 'normalize.scss';
+@import 'defaults.scss';
 
-/* following adapted from CSS Normalize
-source: http://necolas.github.io/normalize.css */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-  display: block;
-}
+/*** Basics ************************************/
 
-html,
-body {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-img,
-object,
-embed {
-  max-width: 100%;
-}
-
-html,
-button,
-input,
-select,
-textarea {
-  font-family: sans-serif;
-}
-
-sub,
-sup {
-  font-size: .75em;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sup {
-  top: -0.5em;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-
-/* Box-sizing borrowed from Paul Irish
-source: http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
-* { 
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* Viewport normalization for modern IE and future via Trent Walton
-source: http://trentwalton.com/2013/01/16/windows-phone-8-viewport-fix */
-@-webkit-viewport{ width: device-width; }
-   @-moz-viewport{ width: device-width; }
-    @-ms-viewport{ width: device-width; }
-     @-o-viewport{ width: device-width; }
-        @viewport{ width: device-width; }
-
-/* Custom normalization */
-html {
-  height: 100%;
-}
-
-body {
-  margin: 0 auto;
-  max-width: 100%;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}
-
-figure img {
-  display: block;
-}
-
-em,
-i {
-  font-style: italic;
-}
-
-dfn {
-  font-style: normal;
-  font-weight: 500;
-}
-
-ul,
-ol {
-  list-style-position: inside;
-  padding: 0;
-}
-
-cite {
-  font-style: normal;
-}
-
-small {
-  font-size: .75em;
-}
-
-/***! END Normalization ***/
-
-/*** Axiomatic styles **************************/
-/* via Heydon Pickering
-source: http://alistapart.com/article/axiomatic-css-and-lobotomized-owls */
-
-* + * {
-  margin-top: 1em;
-}
-
-li + li {
-  margin-top: .5em; /* Half of axiomatic top margins */
-}
-
-/***! END Axiomatic styles ***/
 html {
   color: $black;
   font: 400 16px/1.4375 $ratio;
@@ -166,6 +33,8 @@ strong,
 b {
   font-weight: 500;
 }
+
+/* Headings */
 
 h1,
 h2 {
@@ -215,6 +84,8 @@ h5 {
   line-height: 1.375;
 }
 
+/* Links */
+
 a {
   color: $boldred;
   transition-duration: 320ms;
@@ -251,6 +122,8 @@ nav a:focus {
   border-bottom: none;
 }
 
+/* Lists */
+
 ul {
   list-style-type: square;
 }
@@ -269,6 +142,8 @@ article ol li::before {
   font-weight: bolder;
   margin-right: .25em;
 }
+
+/* Blockquotes */
 
 blockquote {
   border-left: solid .25em $blue;
@@ -311,6 +186,8 @@ sup[id] a::before {
   content: "note ";
 }
 
+/* Figcaptions */
+
 figcaption {
   color: $gray01;
   margin: 0 0 .5em;
@@ -321,6 +198,8 @@ figcaption p {
   font-size: .875em;
   margin: 0;
 }
+
+/* Inline styles */
 
 hr {
   background-color: $gray04;
@@ -387,6 +266,11 @@ nav li {
   text-align: center;
   width: 50%;
 }
+
+/*** Site-wide *********************************/
+
+/** Header **/
+
 .site-header {
   height: 7em;
   padding-top: .5em;
@@ -720,6 +604,9 @@ nav li {
   stroke: $whiter;
   stroke-width: 32px;
 }
+
+/*** Page **************************************/
+
 .page-header {
   margin: 0 auto;
 }
