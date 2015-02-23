@@ -39,7 +39,8 @@
 - [jekyll-archives](https://github.com/jekyll/jekyll-archives) >2.0.0
 - [rouge](https://github.com/jneen/rouge) >1.7.4
 - [image_optim](https://github.com/toy/image_optim) >0.20.2
-- [s3_website](https://github.com/laurilehmijoki/s3_website) >2.7.2
+- [sass](https://github.com/sass/sass) >3.4.12
+- [s3_website](https://github.com/laurilehmijoki/s3_website) >2.8.3
 
 ### Front-end
 
