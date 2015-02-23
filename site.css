@@ -1628,7 +1628,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .site-info {
-    padding: 2em;
+    padding: 2em 2em 0;
   }
 }
 
