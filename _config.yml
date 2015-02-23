@@ -51,8 +51,8 @@ jekyll-archives:
   layouts:
     year: archive-time
     month: archive-time
-    category: archive-type
-    tag: archive-label
+    category: archive-category
+    tag: archive-tag
   permalinks:
     year: '/:year/'
     month: '/:year/:month/'

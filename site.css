@@ -164,14 +164,6 @@ b {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
-}
-
-h1,
 h2 {
   color: hsla(204, 10%, 32%, 1);
   line-height: 1.125;
@@ -414,12 +406,6 @@ nav li {
   padding: .5em 1em 2.5em;
 }
 
-.page-info {
-  color: hsla(204, 10%, 56%, 1);
-  font-size: .75em;
-  font-weight: 400;
-}
-
 /* Page metadata */
 
 .page-meta {
@@ -485,6 +471,30 @@ nav li {
   font-family: sans-serif;
 }
 
+.link {
+  background-color: hsla(204, 10%, 18%, 1);
+  border-bottom: none;
+  color: hsla(204, 10%, 96%, 1);
+  display: block;
+  font-size: .875em;
+  font-weight: 400;
+  line-height: 1.5em;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.link:hover,
+.link:focus {
+  background-color: hsla(204, 80%, 40%, 1);
+  border-bottom: none;
+  outline: none;
+}
+
+.link:active {
+  color: hsla(204, 10%, 93%, 1);
+  background-color: hsla(144, 50%, 35%, 1);
+}
+
 .project {
   background-color: hsla(204, 10%, 88%, 1);
 }
@@ -497,11 +507,11 @@ nav li {
   line-height: 1.33333333;
 }
 
-.project .link {
+.project-links {
   overflow: auto;
 }
 
-.link li {
+.project-links li {
   display: inline-block;
   float: left;
   list-style: none;
@@ -509,56 +519,26 @@ nav li {
   width: 50%;
 }
 
-.link li:only-child {
+.project-links :only-child {
   width: 100%;
 }
 
-.link a {
-  background-color: hsla(204, 10%, 18%, 1);
-  border-bottom: none;
-  color: hsla(204, 10%, 96%, 1);
-  display: block;
-  font-size: .875em;
-  font-weight: 400;
-  line-height: 1.5em;
-  padding: 1em 0;
-  text-align: center;
-}
-
-.link .project-url {
+.project-url {
   background-color: hsla(4, 60%, 50%, 1);
 }
 
-.link .project-source {
+.project-source {
   background-color: hsla(225, 35%, 52%, 1);
 }
 
-.link a:hover {
-  background-color: hsla(204, 80%, 40%, 1);
-  border-bottom: none;
-  outline: none;
-}
-
-.link .project-url:hover {
+.project-url:hover {
   background-color: hsla(204, 10%, 96%, 1);
   color: hsla(4, 60%, 50%, 1);
 }
 
-.link .project-source:hover {
+.project-source:hover {
   background-color: hsla(204, 10%, 96%, 1);
   color: hsla(225, 35%, 52%, 1);
-}
-
-.link a:focus {
-  background-color: hsla(204, 10%, 93%, 1);
-  border-bottom: none;
-  color: hsla(204, 80%, 40%, 1);
-  outline: none;
-}
-
-.link a:active {
-  color: hsla(204, 10%, 93%, 1);
-  background-color: hsla(144, 50%, 35%, 1);
 }
 
 /* Bold emphasis text blocks – <div class="important"> */
@@ -1151,7 +1131,7 @@ screen and (min-resolution: 1.5dppx) {
     padding: 2em;
   }
 
-  .project .link a {
+  .link-project a {
     font-size: 1em;
   }
 
@@ -1180,10 +1160,6 @@ screen and (min-resolution: 1.5dppx) {
 
   .site-nav:target {
     padding-top: 4.5em;
-  }
-
-  .lineno {
-    margin: 0 .5em 0 -2em;
   }
 
   .ancillary {
@@ -1269,7 +1245,7 @@ screen and (min-resolution: 1.5dppx) {
     margin-top: 2.5em;
   }
 
-  .link a {
+  .link {
     line-height: 2em;
     font-size: 1em;
   }
@@ -1634,7 +1610,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .site-info {
-    padding: 2em;
+    padding: 2em 2em 0;
   }
 }
 

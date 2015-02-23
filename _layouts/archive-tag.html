@@ -3,7 +3,7 @@ layout: archive
 
 ---
 
-{% include archive/header.html %}
+{% include archive/header.html prefix='label' %}
 
 <div class="archive-items">
   <ul>
@@ -11,7 +11,7 @@ layout: archive
 {% include archive/item.html %}
 {% endfor %}
   </ul>
-{% include archive/link-standard.html %}
+{% include archive/link-tag.html %}
 </div>
 
 {{ content }}

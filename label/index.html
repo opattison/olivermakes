@@ -6,16 +6,14 @@ description: 'Links to all of the label archives for the posts on this website, 
 
 ---
 
-<header>
-  <h1>/label</h1>
-</header>
+{% include index/header.html title='label' %}
 
 <div class="archive-items">
   <ul>
 {% assign tags = site.tags | sort %}
 {% for tag in tags %}
-{% include index/archive-item-tag.html %}
+{% include archive/tag.html %}
 {% endfor %}
   </ul>
-{% include index/link-archive-back.html %}
+{% include archive/link-tag.html %}
 </div>
