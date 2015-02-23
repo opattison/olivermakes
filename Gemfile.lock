@@ -84,7 +84,7 @@ GEM
       ffi (>= 0.5.0)
     redcarpet (3.2.2)
     rouge (1.8.0)
-    s3_website (2.8.1)
+    s3_website (2.8.3)
       colored (= 1.2)
       configure-s3-website (= 1.7.1)
       dotenv (~> 1.0)
@@ -110,3 +110,4 @@ DEPENDENCIES
   rake
   rouge
   s3_website
+  sass
