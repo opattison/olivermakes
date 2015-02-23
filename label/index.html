@@ -12,8 +12,10 @@ description: 'Links to all of the label archives for the posts on this website, 
 
 <div class="archive-items">
   <ul>
-{% for tag in site.tags %}
+{% assign tags = site.tags | sort %}
+{% for tag in tags %}
 {% include index/archive-item-tag.html %}
 {% endfor %}
   </ul>
+{% include index/link-archive-back.html %}
 </div>

@@ -8,6 +8,7 @@ option:
 category: 'photography'
 tags:
   - 'photography'
+  - 'dc'
 date: 2014-12-05 22:01
 updated: 2014-12-05 01:28
 drafted: 2014-11-14 22:01

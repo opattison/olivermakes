@@ -3,11 +3,6 @@ body {
   color: hsla(204, 10%, 96%, 1);
 }
 
-.page,
-.page-header .inside  {
-  background-color: hsla(204, 10%, 24%, 1)
-}
-
 h1,
 h2,
 h3,
@@ -15,17 +10,36 @@ h4 {
   color: hsla(204, 10%, 93%, 1);
 }
 
-.page a,
+
+sup[id] a {
+  background-color: hsla(5, 30%, 80%, .5);
+  border: none;
+  color: hsla(204, 10%, 88%, 1);
+}
+
+sup[id] a:hover,
+sup[id] a:focus {
+  background-color: hsla(204, 30%, 80%, .5);
+  border: none;
+  color: hsla(204, 10%, 88%, 1);
+}
+
+article a,
 .time a {
   color: hsla(5, 30%, 80%, 1);
   border-color: hsla(5, 30%, 80%, .5);
 }
 
-.page a:hover,
-.page a:focus,
+article a:hover,
+article a:focus,
 .time a:hover,
 .time a:focus {
   color: hsla(204, 30%, 80%, 1);
+}
+
+.page,
+.page-header .inside  {
+  background-color: hsla(204, 10%, 24%, 1)
 }
 
 .title:hover h1,
@@ -72,19 +86,6 @@ samp {
   border-color: hsla(204, 10%, 56%, 1);
 }
 
-sup[id] a {
-  background-color: hsla(5, 30%, 80%, .5);
-  border: none;
-  color: hsla(204, 10%, 88%, 1);
-}
-
-sup[id] a:hover,
-sup[id] a:focus {
-  background-color: hsla(204, 30%, 80%, .5);
-  border: none;
-  color: hsla(204, 10%, 88%, 1);
-}
-
 .important {
   color: hsla(204, 30%, 80%, 1);
 }
@@ -100,19 +101,21 @@ sup[id] a:focus {
 }
 
 .footnotes li,
-.footnotes .reversefootnote {
+.reversefootnote {
   border-color: hsla(204, 10%, 56%, 1);
 }
 
-a.reversefootnote {
+.reversefootnote {
   color: hsla(204, 10%, 96%, 1);
 }
 
-a.reversefootnote:hover,
-a.reversefootnote:focus {
+.reversefootnote:hover,
+.reversefootnote:focus {
   color: hsla(204, 10%, 96%, 1);
   background-color: hsla(204, 30%, 80%, .5);
+  border-color: hsla(204, 30%, 80%, .5);
 }
+
 .project {
   background-color: hsla(204, 10%, 32%, 1);
 }
@@ -163,13 +166,9 @@ a.reversefootnote:focus {
   background-color: hsla(204, 10%, 18%, .8);
 }
 
-.site-nav li a:hover {
-  background-color: hsla(204, 80%, 40%, .8);
-}
-
+.site-nav li a:hover,
 .site-nav li a:focus {
-  background-color: hsla(204, 10%, 88%, 1);
-  color: hsla(204, 80%, 40%, 1);
+  background-color: hsla(204, 80%, 40%, .8);
 }
 
 @-webkit-keyframes step-fill--contrast {

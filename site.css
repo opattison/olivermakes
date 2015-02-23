@@ -233,16 +233,17 @@ a:focus {
 }
 
 a:active {
-  color: hsla(204, 10%, 56%, 1);
+  color: hsla(144, 50%, 35%, 1);
+  border-color: hsla(0, 0%, 100%, .01)!important;
 }
 
-.page a,
+article a,
 footer a {
   border-bottom: solid 1px hsla(4, 30%, 80%, 1);
 }
 
-.page a:hover,
-.page a:focus,
+article a:hover,
+article a:focus,
 footer a:hover,
 footer a:focus {
   border-bottom: solid 1px hsla(204, 30%, 80%, 1);
@@ -345,11 +346,6 @@ samp {
   border-radius: .25em;
   margin: 0 -.03125em;
   padding: .0625em .25em 0;
-}
-
-div.highlighter-rouge {
-  border-bottom: solid .0625em hsla(204, 10%, 88%, 1);
-  border-top: solid .0625em hsla(204, 10%, 88%, 1);
 }
 
 kbd > kbd {
@@ -474,12 +470,19 @@ nav li {
   margin-top: 2em;
 }
 
-div.highlighter-rouge,
+.highlight,
 .essay,
 .project {
   margin-left: -1em;
   margin-right: -1em;
   padding: 1em;
+}
+
+.highlight {
+  border-bottom: solid .0625em hsla(204, 10%, 88%, 1);
+  border-top: solid .0625em hsla(204, 10%, 88%, 1);
+  font-size: 1em;
+  font-family: sans-serif;
 }
 
 .project {
@@ -555,7 +558,7 @@ div.highlighter-rouge,
 
 .link a:active {
   color: hsla(204, 10%, 93%, 1);
-  background-color: hsla(4, 60%, 50%, 1);
+  background-color: hsla(144, 50%, 35%, 1);
 }
 
 /* Bold emphasis text blocks – <div class="important"> */
@@ -663,21 +666,19 @@ div.highlighter-rouge,
   margin-right: 0;
 }
 
-.footnotes .reversefootnote {
+.reversefootnote {
   border: solid 1px hsla(204, 10%, 80%, 1);
   border-radius: .125em;
+  color: hsla(204, 10%, 24%, 1);
   float: right;
   margin: 0 -1.5em;
   padding: 0 .25em;
 }
 
-a.reversefootnote {
-  color: hsla(204, 10%, 24%, 1);
-}
-
-a.reversefootnote:hover,
-a.reversefootnote:focus {
+.reversefootnote:hover,
+.reversefootnote:focus {
   background-color: hsla(4, 30%, 80%, .5);
+  border-color: hsla(4, 30%, 80%, .5);
 }
 
 /***! END Page layouts ***/
@@ -712,7 +713,7 @@ a.reversefootnote:focus {
 
 /** Logo **/
 
-.site-header .logo {
+.title .logo {
   float: left;
   height: 2.5em;
   margin: 0 .5em 0 0;
@@ -759,7 +760,7 @@ a.reversefootnote:focus {
 /* Menu navigation - top right */
 
 .top-menu,
-.site-nav .close-menu {
+.close-menu {
   margin: 0;
   position: absolute;
   text-align: center;
@@ -769,14 +770,14 @@ a.reversefootnote:focus {
 }
 
 .top-menu a,
-.site-nav .close-menu a {
+.close-menu a {
   background-color: hsla(4, 60%, 50%, 1);
   color: hsla(204, 10%, 98%, 1);
   height: 2.5em;
 }
 
 .top-menu a,
-.site-nav .close-menu a,
+.close-menu a,
 .alt-nav a {
   color: hsla(204, 10%, 98%, 1);
   display: block;
@@ -785,14 +786,13 @@ a.reversefootnote:focus {
 }
 
 .top-menu a:hover,
-.site-nav .close-menu a {
+.top-menu a:active,
+.close-menu a {
   background-color: hsla(204, 80%, 40%, 1);
 }
 
 .top-menu a:focus,
-.site-nav .close-menu a:focus {
-  background-color: hsla(204, 10%, 88%, 1);
-  color: hsla(204, 80%, 40%, 1);
+.close-menu a:focus {
   outline: none;
 }
 
@@ -838,7 +838,7 @@ a.reversefootnote:focus {
   margin: 0 auto;
 }
 
-.site-nav a {
+.site-nav li a {
   background-color: hsla(204, 10%, 10%, 1);
   display: block;
   color: hsla(204, 10%, 98%, 1);
@@ -863,7 +863,7 @@ a.reversefootnote:focus {
 
 /* Target navigation - JS-free modal navigation */
 
-.site-nav .close-menu {
+.close-menu {
   display: none; /* only displays with :target */
 }
 
@@ -927,14 +927,13 @@ a.reversefootnote:focus {
 
 .site-nav li a:focus,
 .site-nav:target li a:focus {
-  background-color: hsla(204, 10%, 88%, 1);
-  color: hsla(204, 80%, 40%, 1);
+  background-color: hsla(204, 80%, 40%, 1);
   outline: none;
 }
 
 .site-nav li a:active,
 .site-nav:target li a:active {
-  background-color: hsla(4, 60%, 50%, 1);
+  background-color: hsla(144, 50%, 35%, 1);
   color: hsla(204, 10%, 93%, 1);
 }
 
@@ -1115,6 +1114,12 @@ screen and (min-resolution: 1.5dppx) {
 }
 
 @media screen and (min-width: 30em) {
+  blockquote {
+    border-width: .5em;
+    margin-left: -2em;
+    padding-left: 1.5em;
+  }
+
   .page {
     padding: 1.25em 2em 2.5em;
   }
@@ -1128,13 +1133,13 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .page-header .inside,
-  div.highlighter-rouge,
+  .highlight,
   .essay {
     padding-left: 2em;
     padding-right: 2em;
   }
 
-  div.highlighter-rouge,
+  .highlight,
   .essay,
   .project,
   .code figcaption {
@@ -1150,12 +1155,6 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 1em;
   }
 
-  blockquote {
-    border-width: .5em;
-    margin-left: -2em;
-    padding-left: 1.5em;
-  }
-
   .site-header {
     height: 4.5em;
   }
@@ -1165,14 +1164,14 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .top-menu,
-  .site-nav .close-menu {
+  .close-menu {
     right: 0;
     top: 0;
     width: auto;
   }
 
   .top-menu a,
-  .site-nav .close-menu a {
+  .close-menu a {
     font-size: 1.125em;
     height: 4em;
     line-height: 2em;
@@ -1206,6 +1205,12 @@ screen and (min-resolution: 1.5dppx) {
 }
 
 @media screen and (min-width: 34em) {
+  blockquote {
+    border-width: .75em;
+    margin-left: -2.5em;
+    padding-left: 1.75em;
+  }
+
   .page {
     padding: 0 2.5em 2.5em;
   }
@@ -1228,14 +1233,14 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .page-header .inside,
-  div.highlighter-rouge,
+  .highlight,
   .essay,
   .project {
     padding-left: 2.5em;
     padding-right: 2.5em;
   }
 
-  div.highlighter-rouge,
+  .highlight,
   .essay,
   .project,
   .code figcaption {
@@ -1249,13 +1254,7 @@ screen and (min-resolution: 1.5dppx) {
     width: 50%;
   }
 
-  blockquote {
-    border-width: .75em;
-    margin-left: -2.5em;
-    padding-left: 1.75em;
-  }
-
-  div.highlighter-rouge,
+  .highlight,
   .essay {
     padding-bottom: 1.25em;
     padding-top: 1.25em;
@@ -1277,6 +1276,10 @@ screen and (min-resolution: 1.5dppx) {
 }
 
 @media screen and (min-width: 40em) {
+  figcaption p {
+    font-size: .75em;
+  }
+
   .page,
   .page-header,
   .page-meta,
@@ -1295,10 +1298,6 @@ screen and (min-resolution: 1.5dppx) {
   .site-nav li a,
   .alt-nav li a {
     font-size: 1.125em;
-  }
-
-  figcaption p {
-    font-size: .75em;
   }
 }
 
@@ -1374,6 +1373,14 @@ screen and (min-resolution: 1.5dppx) {
 }
 
 @media screen and (min-width: 60em) {
+  blockquote {
+    margin-left: 0;
+  }
+
+  figcaption p {
+    text-align: right;
+  }
+
   .page {
     padding: 0 4.5em 4.5em;
   }
@@ -1411,13 +1418,13 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .page-header .inside,
-  div.highlighter-rouge,
+  .highlight,
   .essay {
     padding-left: 4.5em;
     padding-right: 4.5em;
   }
 
-  div.highlighter-rouge,
+  .highlight,
   .essay,
   .code figcaption {
     margin-left: -4.5em;
@@ -1428,11 +1435,7 @@ screen and (min-resolution: 1.5dppx) {
     margin: 1.5em -4.5em 1.5em 2em;
   }
 
-  blockquote {
-    margin-left: 0;
-  }
-
-  div.highlighter-rouge {
+  .highlight {
     padding-bottom: 2em;
     padding-top: 2em;
   }
@@ -1453,16 +1456,12 @@ screen and (min-resolution: 1.5dppx) {
     padding: 2.5em;
   }
 
-  .footnotes .reversefootnote {
+  .reversefootnote {
     margin: 0 -2.5em;
   }
 
   .important {
     padding: 0 2em;
-  }
-
-  figcaption p {
-    text-align: right;
   }
 
   .narrow {
@@ -1574,7 +1573,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .top-menu,
-  .site-nav .close-menu {
+  .close-menu {
     font-size: 1.125em;
   }
 
@@ -1604,12 +1603,12 @@ screen and (min-resolution: 1.5dppx) {
     width: calc(100% + 18em);
   }
 
-  div.highlighter-rouge {
+  .highlight {
     padding-left: 9em;
     padding-right: 9em;
   }
 
-  div.highlighter-rouge,
+  .highlight,
   .code figcaption {
     margin-left: -9em;
     margin-right: -9em;
@@ -1652,7 +1651,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .top-menu,
-  .site-nav .close-menu {
+  .close-menu {
     font-size: 1.25em;
   }
 
