@@ -6,9 +6,7 @@ description: 'A collection of photos of nature and urban environments by Oliver 
 
 ---
 
-<div class="index-header">
-  <h1>/photography/archive</h1>
-</div>
+{% include archive/header.html prefix='photography' title='archive' %}
 
 <div class="items photo-gallery">
 {% for post in site.categories.photography %}

@@ -3,13 +3,7 @@ layout: archive
 
 ---
 
-<div class="index-header">
-  {% if page.type == 'year' %}
-  <h1>/{{ page.date | date: '%Y' }}</h1>
-  {% elsif page.type == 'month' %}
-  <h1>/{{ page.date | date: '%Y/%m' }}</h1>
-  {% endif %}
-</div>
+{% include archive/header.html %}
 
 <div class="archive-items">
   <ul>
