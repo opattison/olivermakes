@@ -1,3 +1,5 @@
+@import 'variables/all';
+
 figure,
 figure > * {
   position: relative;
@@ -53,7 +55,7 @@ input {
   position: absolute;
   right: .5em;
   text-align: center;
-  text-shadow: hsla(204, 10%, 32%, 0.8) 0 0 .125em;
+  text-shadow: $gray02-80 0 0 .125em;
   transition-duration: 640ms;
 }
 
@@ -81,9 +83,9 @@ screen and (min-resolution: 144dpi) and (min-width: 40em),
   {% endfor %}
 }
 .photo-meta {
-  background-color: hsla(204, 10%, 10%, .8);
+  background-color: $black-80;
   bottom: 0;
-  color: hsla(204, 10%, 96%, 1);
+  color: $white;
   font-weight: 300;
   margin: 0;
   padding: .5em .5em .5em 1em;
@@ -106,19 +108,21 @@ screen and (min-resolution: 144dpi) and (min-width: 40em),
 }
 
 .shift-map-label {
-  color: hsla(5, 30%, 80%, 1);
+  color: $pink;
   bottom: .5em;
   font-size: 1em;
   font-weight: 400;
   right: .5em;
 }
 
-.shift-map-label:hover {
-  color: hsla(204, 30%, 80%, 1);
+.shift-map-label:hover,
+.shift-map-label:focus {
+  color: $grayblue;
 }
 
-.shift-map-label:hover svg * {
-  stroke: hsla(204, 30%, 80%, 1);
+.shift-map-label:hover svg *,
+.shift-map-label:focus svg * {
+  stroke: $grayblue;
 }
 
 .icon-location {
@@ -135,7 +139,7 @@ screen and (min-resolution: 144dpi) and (min-width: 40em),
 }
 
 .icon-location svg * {
-  stroke: hsla(5, 30%, 80%, 1);
+  stroke: $pink;
   stroke-width: 35px;
 }
 
@@ -174,7 +178,7 @@ screen and (min-resolution: 144dpi) and (min-width: 40em),
 }
 
 .shift-map:checked ~ .container .shift-back-label {
-  background-color: hsla(204, 10%, 24%, .8);
+  background-color: $gray02-80;
   padding: .5em 0;
   width: 50%;
 }
@@ -198,7 +202,7 @@ screen and (min-resolution: 144dpi) and (min-width: 40em),
 }
 
 .shift-map:checked ~ .container .shift-back-label:hover {
-  background-color: hsla(204, 80%, 40%, .8);
+  background-color: $boldblue-80;
 }
 
 .shift-overlay:checked ~ .container .shift-overlay-label::after {

@@ -25,18 +25,13 @@
 }
 
 .swatches figcaption {
-  background-color: hsla(0, 0%, 100%, .8);
+  background-color: $gray07-80;
   border-bottom: none;
   bottom: 0;
   padding: .5em 0;
   position: absolute;
   text-align: center;
   width: 100%;
-}
-
-.logo-demo {
-  background-color: hsla(204, 10%, 96%, 1);
-  padding: 2em;
 }
 
 @media screen and (min-width: 20em) {
@@ -49,9 +44,5 @@
 @media screen and (min-width: 80em) {
   .swatches li {
     width: 25%;
-  }
-
-  .swatches figcaption {
-    font-size: .95em;
   }
 }

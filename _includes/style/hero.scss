@@ -1,10 +1,11 @@
+@import 'variables/all.scss';
 
 .hero {
   margin: 0 auto;
 }
 
 .hero figcaption {
-  background-color: hsla(204, 10%, 98%, 1);
+  background-color: $whiter;
   margin: 0;
 }
 
