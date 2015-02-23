@@ -11,9 +11,9 @@
   <p>This project was originally completed <time class="dt-published" datetime="{{ page.date }}">{{ page.date | date: '%Y-%m-%d' }}</time>{% if page.period %} and worked on from {{ page.period }}{% endif %}.{% if page.project.license %} Licensed <a href="{{ page.project.license.url }}">{{ page.project.license }}</a>.{% endif %}</p>
   {% if page.project %}{% else %}<p>No public source or link is available for this project.</p>{% endif %}
   {% if page.project %}
-  <ul class="link">
-    {% if page.project.url %}<li><a class="project-url" href="{{ page.project.url }}">View it live</a></li>{% endif %}
-    {% if page.project.source %}<li><a class="project-source" href="{{ page.project.source }}">View project source</a></li>{% elsif page.project.download %}<li><a class="project-source" href="{{ page.project.download }}">Download project {% if page.project.filetype %}({{ page.project.filetype }}){% endif %}</a></li>{% endif %}
+  <ul class="project-links">
+    {% if page.project.url %}<li><a class="link project-url" href="{{ page.project.url }}">View it live</a></li>{% endif %}
+    {% if page.project.source %}<li><a class="link project-source" href="{{ page.project.source }}">View project source</a></li>{% elsif page.project.download %}<li><a class="link project-source" href="{{ page.project.download }}">Download project {% if page.project.filetype %}({{ page.project.filetype }}){% endif %}</a></li>{% endif %}
   </ul>
   {% endif %}
 </article>

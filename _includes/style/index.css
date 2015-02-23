@@ -1,5 +1,11 @@
-article a {
+article a,
+.location a {
   border-bottom: solid 1px hsla(0, 0%, 100%, .01);
+}
+
+.location a:hover,
+.location a:focus {
+  border-bottom: solid 1px hsla(204, 30%, 80%, 1);
 }
 
 .home,
@@ -39,7 +45,7 @@ article a {
   margin: 1em 0 0;
 }
 
-.index header h1 {
+.index-header h1 {
   font-size: 1.25em;
   font-weight: 300;
   letter-spacing: -.03125em;
@@ -101,7 +107,7 @@ article a {
   font-size: 1.125em;
 }
 
-.index .time {
+.time {
   font-size: .875em;
 }
 
@@ -109,25 +115,25 @@ article a {
   margin: 0;
 }
 
-.feature .link a {
+.feature .link {
   background-color: hsla(204, 10%, 10%, 1);
 }
 
-.item .link a {
+.item .link {
   background-color: hsla(204, 10%, 32%, 1);
 }
 
-.item:nth-child(2n + 2) .link a {
+.item:nth-child(2n + 2) .link {
   background-color: hsla(204, 10%, 18%, 1);
 }
 
-.index .link a:hover,
-.index .link a:focus {
+.index .link:hover,
+.index .link:focus {
   background-color: hsla(204, 80%, 40%, 1);
   color: hsla(204, 10%, 96%, 1);
 }
 
-.index .link a:active {
+.index .link:active {
   color: hsla(204, 10%, 93%, 1);
   background-color: hsla(144, 50%, 35%, 1);
 }
@@ -170,27 +176,27 @@ article a {
   color: hsla(204, 10%, 10%, 1);
 }
 
-.link-archive .link a {
+.link-archive .link {
   background-color: hsla(4, 60%, 50%, 1);
 }
 
-.link-archive .link:nth-child(2) a {
+.link-archive .link:nth-child(2) {
   background-color: hsla(204, 50%, 45%, 1);
 }
 
-.link-archive .link a:hover,
-.link-archive .link a:focus {
+.link-archive .link:hover,
+.link-archive .link:focus {
   background-color: hsla(204, 10%, 93%, 1);
   color: hsla(4, 60%, 50%, 1);
 }
 
-.link-archive .link:nth-child(2) a:hover,
-.link-archive .link:nth-child(2) a:focus {
+.link-archive .link:nth-child(2):hover,
+.link-archive .link:nth-child(2):focus {
   color: hsla(204, 50%, 45%, 1);
 }
 
-.link-archive .link a:focus,
-.link-archive .link:nth-child(2) a:focus {
+.link-archive .link:focus,
+.link-archive .link:nth-child(2):focus {
   background-color: hsla(204, 10%, 88%, 1);
 }
 
@@ -223,7 +229,7 @@ article a {
     margin: 0 1.5em;
   }
 
-  .index header h1 {
+  .index-header h1 {
     margin-left: .8em;
     text-align: left;
   }
@@ -256,7 +262,7 @@ article a {
     font-size: 1.25em;
   }
 
-  .index header h1 {
+  .index-header h1 {
     margin-left: 1.6em;
   }
 
@@ -293,7 +299,7 @@ article a {
     height: 16em;
   }
 
-  .feature .link a {
+  .feature .link {
     font-size: 1.125em;
   }
 
@@ -322,7 +328,7 @@ article a {
     margin-top: 1em;
   }
 
-  .index header h1 {
+  .index-header h1 {
     margin: 0;
     text-align: center;
   }

@@ -3,17 +3,17 @@ layout: archive
 
 ---
 
-<header>
+<div class="index-header">
   <h1>/{{ page.title | downcase }}/archive</h1>
-</header>
+</div>
 
 <div class="archive-items">
   <ul>
 {% for post in page.posts %}
-{% include index/archive-item.html %}
+{% include archive/item.html %}
 {% endfor %}
   </ul>
-{% include index/link-archive-back.html %}
+{% include archive/link-standard.html %}
 </div>
 
 {{ content }}

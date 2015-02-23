@@ -1,66 +1,65 @@
-
 @media screen and (min-width: 60em) {
-  .dubbel .project {
+  .project {
     margin: 0 -2.25em;
     padding: 2.25em;
   }
 
-  .dubbel .important {
+  .important {
     padding: 0;
   }
 }
 
 @media screen and (min-width: 70em) {
-  .dubbel .page,
-  .dubbel .page-header .inside,
-  .dubbel .page-meta {
+  .page,
+  .page-header .inside,
+  .page-meta {
     width: 54em;  
   }
 
-  .dubbel .page-header .inside {
+  .page-header .inside {
     padding-left: 9em;
     padding-right: 9em;
   }
 
-  .dubbel .page {
+  .page {
     margin: 0 auto;
     overflow: hidden;
     padding: 2em 9em 4.5em;
     width: 54em;
   }
 
-  .dubbel .wide {
+  .wide {
     margin: 5% calc(-9em) 0;
     max-width: none;
     width: calc(100% + 18em);
   }
 
-  .dubbel .flow-side {
+  .flow-side {
     padding: 0 4.25em 0 0;
     position: relative;
     margin-top: 1.25em;
     width: 75%;
   }
 
-  .dubbel .flow-side > figure {
+  .flow-side > figure {
     margin: 1.25em 0 0 -9em;
     max-width: none;
     width: calc(100% + 9em);
   }
 
-  .dubbel .ancillary {
+  .ancillary {
     font-size: .875em;
     margin: 1.25em -25% 1.25em 2em;
     width: 50%;
   }
 
-  .dubbel .ancillary figure {
+  .ancillary figure {
     margin: 1.25em auto 0;
     max-width: 100%;
     width: 100%;
   }
 
-  .dubbel .flow-side > .ancillary {
+  .flow-side > .ancillary {
     margin-top: 0;
     position: absolute;
     right: -75%;
@@ -68,18 +67,18 @@
     width: 100%;
   }
 
-  .dubbel .flow-side > figure + .ancillary {
+  .flow-side > figure + .ancillary {
     top: 25%;
   }
 
-  .dubbel .project {
+  .project {
     margin: -2em -9em 2em;
     overflow: auto;
     padding: 2em;
     position: relative;
   }
 
-  .dubbel .sample {
+  .sample {
     border-top: solid 1px hsla(204, 10%, 88%, 1);
     border-bottom: solid 1px hsla(204, 10%, 88%, 1);
     margin: -2em 2em -2em -2em;
@@ -87,23 +86,23 @@
     width: calc(50% + 2em);
   }
 
-  .dubbel .project .description {
+  .project .description {
     margin: 0;
   }
 
-  .dubbel .project .link {
+  .project-links {
     position: absolute;
     bottom: 0;
     right: 0;
     width: 50%;
   }
 
-  .dubbel div.highlighter-rouge {
+  .highlight {
     margin: 1.5em -9em;
     padding: 1.5em 9em;
   }
 
-  .dubbel .page-meta .time {
+  .page-meta .time {
     width: 36em;
   }
 }

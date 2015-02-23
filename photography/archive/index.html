@@ -6,15 +6,15 @@ description: 'A collection of photos of nature and urban environments by Oliver 
 
 ---
 
-<header>
+<div class="index-header">
   <h1>/photography/archive</h1>
-</header>
+</div>
 
 <div class="items photo-gallery">
 {% for post in site.categories.photography %}
 {% for item in post.image %}
-{% include index/article-item-photo.html %}
+{% include archive/item-photo.html %}
 {% endfor %}
 {% endfor %}
-{% include index/link-archive-back.html %}
+{% include archive/link-standard.html %}
 </div>
