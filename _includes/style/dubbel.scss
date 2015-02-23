@@ -1,3 +1,5 @@
+@import 'variables/all.scss';
+
 @media screen and (min-width: 60em) {
   .project {
     margin: 0 -2.25em;
@@ -79,8 +81,8 @@
   }
 
   .sample {
-    border-top: solid 1px hsla(204, 10%, 88%, 1);
-    border-bottom: solid 1px hsla(204, 10%, 88%, 1);
+    border-top: solid 1px $gray06;
+    border-bottom: solid 1px $gray06;
     margin: -2em 2em -2em -2em;
     float: left;
     width: calc(50% + 2em);

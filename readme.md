@@ -28,7 +28,7 @@
 - Responsive images using `srcset` HTML specification and the [respimage](https://github.com/aFarkas/respimage) polyfill
 - Processing of archives with the [jekyll-archives](https://github.com/jekyll/jekyll-archives) gem
 - MapBox for maps
-- No templates, frameworks, pre-processors or boilerplate
+- No templates, frameworks, ~~pre-processors~~ or boilerplate (now using SCSS for minification and some variables)
 - As little JavaScript as possible
 
 ## Requirements

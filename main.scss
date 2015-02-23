@@ -1,145 +1,17 @@
-/*** Normalization *****************************/
-/* following adapted from HTML5 Reset
-source: http://html5reset.org */
-* {
-  background: transparent;
-  border: 0;
-  font-size: 100%;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  vertical-align: baseline;
-}
+---
+---
+@import 'variables/all.scss';
 
-/* following adapted from CSS Normalize
-source: http://necolas.github.io/normalize.css */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-  display: block;
-}
+@import 'normalize.scss';
+@import 'defaults.scss';
+@import 'animation.scss';
 
-html,
-body {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-img,
-object,
-embed {
-  max-width: 100%;
-}
-
-html,
-button,
-input,
-select,
-textarea {
-  font-family: sans-serif;
-}
-
-/* Box-sizing borrowed from Paul Irish
-source: http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
-* { 
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* Viewport normalization for modern IE and future via Trent Walton
-source: http://trentwalton.com/2013/01/16/windows-phone-8-viewport-fix */
-@-webkit-viewport{ width: device-width; }
-   @-moz-viewport{ width: device-width; }
-    @-ms-viewport{ width: device-width; }
-     @-o-viewport{ width: device-width; }
-        @viewport{ width: device-width; }
-
-/* Custom normalization */
-html {
-  height: 100%;
-}
-
-body {
-  margin: 0 auto;
-  max-width: 100%;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}
-
-figure img {
-  display: block;
-}
-
-em,
-i {
-  font-style: italic;
-}
-
-dfn {
-  font-style: normal;
-  font-weight: 500;
-}
-
-ul,
-ol {
-  list-style-position: inside;
-  padding: 0;
-}
-
-sub,
-sup {
-  font-size: .875em;
-  line-height: 1;
-}
-
-sup {
-  vertical-align: text-top;
-}
-
-sub {
-  vertical-align: text-bottom;
-}
-
-cite {
-  font-style: normal;
-}
-
-small {
-  font-size: .75em;
-}
-
-/***! END Normalization ***/
-
-/*** Axiomatic styles **************************/
-/* via Heydon Pickering
-source: http://alistapart.com/article/axiomatic-css-and-lobotomized-owls */
-
-* + * {
-  margin-top: 1em;
-}
-
-li + li {
-  margin-top: .5em; /* Half of axiomatic top margins */
-}
-
-/***! END Axiomatic styles ***/
-
-/*** Basic structure and typography ************/
+/*** Basics ************************************/
 
 html {
-  color: hsla(204, 10%, 10%, 1);
-  font: 400 16px/1.4375 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
-  font: 400 1rem/1.4375 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
+  color: $black;
+  font: 400 16px/1.4375 $ratio;
+  font: 400 1rem/1.4375 $ratio;
   -moz-font-feature-settings: "liga", "dlig"; 
   -ms-font-feature-settings: "liga", "dlig";
   -o-font-feature-settings: "liga", "dlig";
@@ -150,8 +22,8 @@ html {
 }
 
 body {
-  background-color: hsla(204, 10%, 96%, 1);
-  color: hsla(204, 10%, 10%, 1);
+  background-color: $white;
+  color: $black;
 }
 
 [role="main"] {
@@ -163,9 +35,11 @@ b {
   font-weight: 500;
 }
 
+/* Headings */
+
 h1,
 h2 {
-  color: hsla(204, 10%, 32%, 1);
+  color: $gray02;
   line-height: 1.125;
   letter-spacing: -.0125em;
 }
@@ -182,7 +56,7 @@ h2 {
 
 h3,
 h4 {
-  color: hsla(204, 10%, 18%, 1);
+  color: $gray00;
   line-height: 1.25;
 }
 
@@ -206,13 +80,15 @@ h4 {
 }
 
 h5 {
-  color: hsla(204, 10%, 48%, 1);
+  color: $gray03;
   font-size: 1.125em;
   line-height: 1.375;
 }
 
+/* Links */
+
 a {
-  color: hsla(4, 80%, 40%, 1);
+  color: $boldred;
   transition-duration: 320ms;
   transition-property: color, background-color, border-bottom;
   transition-timing-function: cubic-bezier(0,1,1,1);
@@ -220,25 +96,25 @@ a {
 
 a:hover,
 a:focus {
-  color: hsla(204, 80%, 32%, 1);
+  color: $darkblue;
   transition-duration: 160ms;
 }
 
 a:active {
-  color: hsla(144, 50%, 35%, 1);
-  border-color: hsla(0, 0%, 100%, .01)!important;
+  color: $green;
+  border-color: $pure-1!important;
 }
 
 article a,
 footer a {
-  border-bottom: solid 1px hsla(4, 30%, 80%, 1);
+  border-bottom: solid 1px $pink;
 }
 
 article a:hover,
 article a:focus,
 footer a:hover,
 footer a:focus {
-  border-bottom: solid 1px hsla(204, 30%, 80%, 1);
+  border-bottom: solid 1px $grayblue;
 }
 
 nav a,
@@ -246,6 +122,8 @@ nav a:hover,
 nav a:focus {
   border-bottom: none;
 }
+
+/* Lists */
 
 ul {
   list-style-type: square;
@@ -266,15 +144,17 @@ article ol li::before {
   margin-right: .25em;
 }
 
+/* Blockquotes */
+
 blockquote {
-  border-left: solid .25em hsla(204, 50%, 45%, 1);
-  color: hsla(204, 10%, 40%, 1);
+  border-left: solid .25em $blue;
+  color: $gray03;
   margin: 2em 0 2em -1em;
   padding-left: .75em;
 }
 
 blockquote footer {
-  color: hsla(204, 10%, 32%, 1);
+  color: $gray02;
   margin-top: 1em;
   text-align: right;
 }
@@ -282,24 +162,22 @@ blockquote footer {
 /* Footnotes */
 
 sup[id] {
-  margin-left: .125em;
-  vertical-align: baseline;
+  margin: 0 .125em;
+  top: 0;
 }
 
 sup[id] a {
-  background-color: hsla(204, 30%, 80%, .5);
+  background-color: $grayblue-50;
   border: 0;
   border-radius: .125em;
-  color: hsla(204, 10%, 24%, 1);
-  font-size: .875em;
+  color: $gray01;
   font-weight: 400;
-  margin-right: .25em;
   padding: 0 .25em;
 }
 
 sup[id] a:hover,
 sup[id] a:focus {
-  background-color: hsla(4, 30%, 80%, .5);
+  background-color: $pink-50;
   border: 0;
 }
 
@@ -307,8 +185,10 @@ sup[id] a::before {
   content: "note ";
 }
 
+/* Figcaptions */
+
 figcaption {
-  color: hsla(204, 10%, 24%, 1);
+  color: $gray01;
   margin: 0 0 .5em;
   padding: .25em 1em;
 }
@@ -318,8 +198,10 @@ figcaption p {
   margin: 0;
 }
 
+/* Inline styles */
+
 hr {
-  background-color: hsla(204, 10%, 80%, .8);
+  background-color: $gray04;
   border: 0;
   height: .25em;
   margin: 2.5em 0;
@@ -327,34 +209,34 @@ hr {
 
 code,
 samp {
-  font: 400 .8125em/1.4375 'source-code-pro', Menlo, Consolas, monospace;
+  font: 400 .8125em/1.4375 $source-code-pro;
   white-space: pre-wrap;
 }
 
 p > code,
 li > code,
 samp {
-  border: solid 1px hsla(204, 10%, 80%, 1);
+  border: solid 1px $gray04;
   border-radius: .25em;
   margin: 0 -.03125em;
   padding: .0625em .25em 0;
 }
 
 kbd > kbd {
-  background-color: hsla(204, 10%, 10%, 1);
+  background-color: $black;
   border-radius: .25em;
-  color: hsla(204, 10%, 96%, 1);
-  font: 400 .8125em/1 'Open Sans', sans-serif;
+  color: $white;
+  font: 400 .8125em/1 $open-sans;
   padding: .0625em .5em;
 }
 
 kbd > kbd + b {
-  font-family: 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
+  font-family: $ratio;
   margin: 0 -.375em;
 } /* <kbd><kbd>cmd</kbd> <b class="kbd-plus">+</b> <kbd>C</kbd></kbd> */
 
 mark {
-  background-color: hsla(204, 30%, 80%, .5);
+  background-color: $grayblue-50;
   padding: .0625em;
 }
 
@@ -384,286 +266,9 @@ nav li {
   width: 50%;
 }
 
-/***! END Basic styles ***/
+/*** Site-wide *********************************/
 
-/*** Page layout *******************************/
-
-.page-header {
-  margin: 0 auto;
-}
-
-.page-header .inside {
-  padding: 1em;
-}
-
-.page,
-.page-header .inside {
-  background-color: hsla(204, 10%, 98%, 1);
-  margin: 0 auto;
-}
-
-.page {
-  padding: .5em 1em 2.5em;
-}
-
-/* Page metadata */
-
-.page-meta {
-  background-color: hsla(204, 10%, 93%, 1);
-  margin: 0 auto;
-  position: relative;
-}
-
-.page-meta .chronology,
-.page-meta .time {
-  margin-top: 0;
-  width: 100%;
-}
-
-.page-meta .chronology {
-  overflow: auto;
-}
-
-.page-meta .chronology ul {
-  height: 100%;
-}
-
-.page-meta .chronology li:only-child {
-  width: 100%;
-}
-
-.page-meta .chronology a {
-  color: hsla(204, 10%, 93%, 1);
-  display: block;
-  font-weight: 400;
-  height: 100%;
-  min-height: 2.5em;
-  padding: .5em 0;
-}
-
-.page-meta .time {
-  padding: 1em;
-}
-
-.page-meta .time p {
-  font-size: .875em;
-  margin-top: 0;
-}
-
-/* Block content – essays, code blocks */
-
-.essay {
-  margin-top: 2em;
-}
-
-.highlight,
-.essay,
-.project {
-  margin-left: -1em;
-  margin-right: -1em;
-  padding: 1em;
-}
-
-.highlight {
-  border-bottom: solid .0625em hsla(204, 10%, 88%, 1);
-  border-top: solid .0625em hsla(204, 10%, 88%, 1);
-  font-size: 1em;
-  font-family: sans-serif;
-}
-
-.link {
-  background-color: hsla(204, 10%, 18%, 1);
-  border-bottom: none;
-  color: hsla(204, 10%, 96%, 1);
-  display: block;
-  font-size: .875em;
-  font-weight: 400;
-  line-height: 1.5em;
-  padding: 1em 0;
-  text-align: center;
-}
-
-.link:hover,
-.link:focus {
-  background-color: hsla(204, 80%, 40%, 1);
-  border-bottom: none;
-  outline: none;
-}
-
-.link:active {
-  color: hsla(204, 10%, 93%, 1);
-  background-color: hsla(144, 50%, 35%, 1);
-}
-
-.project {
-  background-color: hsla(204, 10%, 88%, 1);
-}
-
-.project .description {
-  color: hsla(204, 10%, 32%, 1);
-  font-size: 1.125em;
-  font-style: italic;
-  font-weight: 500;
-  line-height: 1.33333333;
-}
-
-.project-links {
-  overflow: auto;
-}
-
-.project-links li {
-  display: inline-block;
-  float: left;
-  list-style: none;
-  margin: 0;
-  width: 50%;
-}
-
-.project-links :only-child {
-  width: 100%;
-}
-
-.project-url {
-  background-color: hsla(4, 60%, 50%, 1);
-}
-
-.project-source {
-  background-color: hsla(225, 35%, 52%, 1);
-}
-
-.project-url:hover {
-  background-color: hsla(204, 10%, 96%, 1);
-  color: hsla(4, 60%, 50%, 1);
-}
-
-.project-source:hover {
-  background-color: hsla(204, 10%, 96%, 1);
-  color: hsla(225, 35%, 52%, 1);
-}
-
-/* Bold emphasis text blocks – <div class="important"> */
-
-.important {
-  color: hsla(204, 50%, 45%, 1);
-  font-size: 1.25em;
-  font-style: italic;
-  font-weight: 500;
-  line-height: 1.25;
-  margin-top: 1em;
-}
-
-.important a {
-  color: hsla(4, 60%, 50%, 1);
-}
-
-.important a:hover,
-.important a:focus {
-  color: hsla(204, 10%, 32%, 1);
-}
-
-.important a:active {
-  color: hsla(204, 10%, 56%, 1);
-}
-
-.center {
-  text-align: center;
-}
-
-/* Asides and footnotes for supporting content */
-
-.ancillary,
-.footnotes {
-  color: hsla(204, 10%, 24%, 1);
-  margin-right: -1em;
-  padding: 1em;
-}
-
-.ancillary {
-  background-color: hsla(204, 10%, 96%, 1);
-}
-
-.ancillary h1 {
-  font: 500 1.25em/1.25 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
-}
-
-.ancillary h2 {
-  font: 400 1.125em/1.125 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
-}
-
-.ancillary img {
-  max-width: none;
-  width: calc(100% + 1em);
-}
-
-/* Before/after for projects */
-
-.text-before,
-.text-after {
-  color: hsla(204, 10%, 96%, 1);
-  border-radius: .125em;
-  padding: .125em .375em;
-}
-
-.text-before {
-  background-color: hsla(4, 60%, 50%, 1);
-}
-
-.text-after {
-  background-color: hsla(144, 50%, 35%, 1);
-}
-
-/* Footnotes */
-
-.footnotes {
-  background-color: hsla(204, 30%, 80%, .5);
-  padding-bottom: 2em;
-}
-
-.footnotes ol {
-  list-style-position: outside;
-  padding: 0 1.25em;
-}
-
-.footnotes li {
-  border-bottom: solid 1px hsla(204, 10%, 80%, 1);
-  padding-bottom: 1.25em;
-}
-
-.footnotes li + li {
-  margin-top: 1.25em;
-}
-
-.footnotes li:last-child {
-  border: none;
-  padding: 0;
-}
-
-.footnotes li p {
-  display: inline; /* overwrites default block style */
-}
-
-.footnotes ol li::before {
-  margin-right: 0;
-}
-
-.reversefootnote {
-  border: solid 1px hsla(204, 10%, 80%, 1);
-  border-radius: .125em;
-  color: hsla(204, 10%, 24%, 1);
-  float: right;
-  margin: 0 -1.5em;
-  padding: 0 .25em;
-}
-
-.reversefootnote:hover,
-.reversefootnote:focus {
-  background-color: hsla(4, 30%, 80%, .5);
-  border-color: hsla(4, 30%, 80%, .5);
-}
-
-/***! END Page layouts ***/
-
-/*** Site headers and footers ******************/
+/** Header **/
 
 .site-header {
   height: 7em;
@@ -688,10 +293,10 @@ nav li {
 
 .title:hover h1,
 .title:focus h1 {
-  color: hsla(204, 80%, 40%, 1);
+  color: $boldblue;
 }
 
-/** Logo **/
+/* Logo */
 
 .title .logo {
   float: left;
@@ -701,14 +306,14 @@ nav li {
 }
 
 .title .logo circle {
-  stroke: hsla(204, 10%, 32%, 1);
+  stroke: $gray02;
 }
 
 /* Logo animation */
 
 .title:hover .logo circle,
 .title:focus .logo circle {
-  stroke: hsla(204, 80%, 40%, 1);
+  stroke: $boldblue;
   -webkit-animation-name: step-fill;
           animation-name: step-fill;
   -webkit-animation-timing-function: cubic-bezier(0,1,1,1);
@@ -751,15 +356,15 @@ nav li {
 
 .top-menu a,
 .close-menu a {
-  background-color: hsla(4, 60%, 50%, 1);
-  color: hsla(204, 10%, 98%, 1);
+  background-color: $red;
+  color: $whiter;
   height: 2.5em;
 }
 
 .top-menu a,
 .close-menu a,
 .alt-nav a {
-  color: hsla(204, 10%, 98%, 1);
+  color: $whiter;
   display: block;
   font-weight: 400;
   padding: .5em;
@@ -768,7 +373,7 @@ nav li {
 .top-menu a:hover,
 .top-menu a:active,
 .close-menu a {
-  background-color: hsla(204, 80%, 40%, 1);
+  background-color: $boldblue;
 }
 
 .top-menu a:focus,
@@ -790,8 +395,8 @@ nav li {
 }
 
 .site-info {
-  background-color: hsla(204, 10%, 93%, 1);
-  color: hsla(204, 10%, 18%, 1);
+  background-color: $gray07;
+  color: $gray00;
   padding: 2em 1em;
   width: 100%;
 }
@@ -819,26 +424,26 @@ nav li {
 }
 
 .site-nav li a {
-  background-color: hsla(204, 10%, 10%, 1);
+  background-color: $black;
   display: block;
-  color: hsla(204, 10%, 98%, 1);
+  color: $whiter;
   padding: 2em 0;
 }
 
 .site-nav li:nth-child(2) a {
-  background-color: hsla(204, 10%, 24%, 1);
+  background-color: $gray01;
 }
 
 .site-nav li:nth-child(3) a {
-  background-color: hsla(204, 10%, 32%, 1);
+  background-color: $gray02;
 }
 
 .site-nav li:nth-child(4) a {
-  background-color: hsla(204, 10%, 18%, 1);
+  background-color: $gray00;
 }
 
 .site-nav li a:hover {
-  background-color: hsla(204, 80%, 40%, 1);
+  background-color: $boldblue;
 }
 
 /* Target navigation - JS-free modal navigation */
@@ -862,23 +467,23 @@ nav li {
 }
 
 .site-nav:target li a {
-  background-color: hsla(204, 10%, 10%, .8);
+  background-color: $black-80;
 }
 
 .site-nav:target li:nth-child(2) a {
-  background-color: hsla(204, 10%, 24%, .8);
+  background-color: $gray01-80;
 }
 
 .site-nav:target li:nth-child(3) a {
-  background-color: hsla(204, 10%, 32%, .8);
+  background-color: $gray02-80;
 }
 
 .site-nav:target li:nth-child(4) a {
-  background-color: hsla(204, 10%, 18%, .8);
+  background-color: $gray00-80;
 }
 
 .site-nav:target li a:hover {
-  background-color: hsla(204, 80%, 40%, .8);
+  background-color: $boldblue-80;
 }
 
 .site-nav:target .close-menu {
@@ -902,19 +507,19 @@ nav li {
 }
 
 .site-nav:target::after {
-  background-color: hsla(204, 10%, 10%, .8);
+  background-color: $black-80;
 }
 
 .site-nav li a:focus,
 .site-nav:target li a:focus {
-  background-color: hsla(204, 80%, 40%, 1);
+  background-color: $boldblue;
   outline: none;
 }
 
 .site-nav li a:active,
 .site-nav:target li a:active {
-  background-color: hsla(144, 50%, 35%, 1);
-  color: hsla(204, 10%, 93%, 1);
+  background-color: $green;
+  color: $gray07;
 }
 
 /* Alternative nav – home and back-to-top */
@@ -924,26 +529,26 @@ nav li {
 }
 
 .alt-nav li a {
-  background-color: hsla(204, 10%, 18%, 1);
-  color: hsla(204, 10%, 98%, 1);
+  background-color: $gray00;
+  color: $whiter;
   padding: 1em;
 }
 
 .alt-nav .back-home a,
 .page-meta .later a {
-  background-color: hsla(4, 60%, 50%, 1);
+  background-color: $red;
 }
 
 .alt-nav .back-top a,
 .page-meta .earlier a {
-  background-color: hsla(204, 50%, 45%, 1);
+  background-color: $blue;
 }
 
 .alt-nav a:hover,
 .alt-nav a:focus,
 .page-meta .chronology a:hover,
 .page-meta .chronology a:focus {
-  background-color: hsla(204, 10%, 98%, 1);
+  background-color: $whiter;
   outline: none;
 }
 
@@ -951,32 +556,32 @@ nav li {
 .alt-nav .back-home a:focus,
 .page-meta .later a:hover,
 .page-meta .later a:focus {
-  color: hsla(4, 60%, 50%, 1);
-}
-
-.alt-nav .back-home a:hover circle {
-  stroke: hsla(4, 60%, 50%, 1);
-}
-
-.alt-nav .back-home a:focus circle {
-  stroke: hsla(4, 80%, 40%, 1);
+  color: $red;
 }
 
 .alt-nav .back-home a:focus,
 .page-meta .later a:focus {
-  background-color: hsla(204, 10%, 88%, 1);
-  color: hsla(4, 80%, 40%, 1);
+  background-color: $gray05;
+  color: $boldred;
+}
+
+.alt-nav .back-home a:hover circle {
+  stroke: $red;
+}
+
+.alt-nav .back-home a:focus circle {
+  stroke: $boldred;
 }
 
 .alt-nav .back-top a:hover,
 .page-meta .earlier a:hover {
-  color: hsla(204, 50%, 45%, 1);
+  color: $blue;
 }
 
 .alt-nav .back-top a:focus,
 .page-meta .earlier a:focus {
-  background-color: hsla(204, 10%, 88%, 1);
-  color: hsla(204, 80%, 40%, 1);
+  background-color: $gray05;
+  color: $boldblue;
 }
 
 .back-home .inside {
@@ -995,14 +600,288 @@ nav li {
 }
 
 .back-home .logo circle {
-  stroke: hsla(204, 10%, 98%, 1);
+  stroke: $whiter;
   stroke-width: 32px;
 }
 
-/***! END Site headers and footers ***/
+/*** Page **************************************/
 
-/*** Images ************************************/
+.page-header {
+  margin: 0 auto;
+}
 
+.page-header .inside {
+  padding: 1em;
+}
+
+.page,
+.page-header .inside {
+  background-color: $whiter;
+  margin: 0 auto;
+}
+
+.page {
+  padding: .5em 1em 2.5em;
+}
+
+/* Page metadata */
+
+.page-meta {
+  background-color: $gray07;
+  margin: 0 auto;
+  position: relative;
+}
+
+.page-meta .chronology,
+.page-meta .time {
+  margin-top: 0;
+  width: 100%;
+}
+
+.page-meta .chronology {
+  overflow: auto;
+}
+
+.page-meta .chronology ul {
+  height: 100%;
+}
+
+.page-meta .chronology li:only-child {
+  width: 100%;
+}
+
+.page-meta .chronology a {
+  color: $gray07;
+  display: block;
+  font-weight: 400;
+  height: 100%;
+  min-height: 2.5em;
+  padding: .5em 0;
+}
+
+.page-meta .time {
+  padding: 1em;
+}
+
+.page-meta .time p {
+  font-size: .875em;
+  margin-top: 0;
+}
+
+/* Block content – essays, code blocks */
+
+.essay {
+  margin-top: 2em;
+}
+
+.highlight,
+.essay,
+.project {
+  margin-left: -1em;
+  margin-right: -1em;
+  padding: 1em;
+}
+
+.highlight {
+  border-bottom: solid .0625em $gray05;
+  border-top: solid .0625em $gray05;
+  font-size: 1em;
+  font-family: sans-serif;
+}
+
+.link {
+  background-color: $gray00;
+  border-bottom: none;
+  color: $white;
+  display: block;
+  font-size: .875em;
+  font-weight: 400;
+  line-height: 1.5em;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.link:hover,
+.link:focus {
+  background-color: $boldblue;
+  border-bottom: none;
+  outline: none;
+}
+
+.link:active {
+  color: $gray07;
+  background-color: $green;
+}
+
+.project {
+  background-color: $gray06;
+}
+
+.project .description {
+  color: $gray02;
+  font-size: 1.125em;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.33333333;
+}
+
+.project-links {
+  overflow: auto;
+}
+
+.project-links li {
+  display: inline-block;
+  float: left;
+  list-style: none;
+  margin: 0;
+  width: 50%;
+}
+
+.project-links :only-child {
+  width: 100%;
+}
+
+.project-url {
+  background-color: $red;
+}
+
+.project-source {
+  background-color: $violet;
+}
+
+.project-url:hover {
+  background-color: $white;
+  color: $red;
+}
+
+.project-source:hover {
+  background-color: $white;
+  color: $violet;
+}
+
+/* Bold emphasis text blocks – <div class="important"> */
+
+.important {
+  color: $blue;
+  font-size: 1.25em;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.25;
+  margin-top: 1em;
+}
+
+.important a {
+  color: $red;
+}
+
+.important a:hover,
+.important a:focus {
+  color: $gray02;
+}
+
+.important a:active {
+  color: $green;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Asides and footnotes for supporting content */
+
+.ancillary,
+.footnotes {
+  color: $gray01;
+  margin-right: -1em;
+  padding: 1em;
+}
+
+.ancillary {
+  background-color: $white;
+}
+
+.ancillary h1 {
+  font-weight: 500;
+  font-size: 1.25em;
+  line-height: 1.125;
+}
+
+.ancillary h2 {
+  font-weight: 400;
+  font-size: 1.125em;
+  line-height: 1.25;
+}
+
+.ancillary img {
+  max-width: none;
+  width: calc(100% + 1em);
+}
+
+/* Before/after for projects */
+
+.text-before,
+.text-after {
+  color: $white;
+  border-radius: .125em;
+  padding: .125em .375em;
+}
+
+.text-before {
+  background-color: $red;
+}
+
+.text-after {
+  background-color: $green;
+}
+
+/* Footnotes */
+
+.footnotes {
+  background-color: $grayblue-50;
+  padding-bottom: 2em;
+}
+
+.footnotes ol {
+  list-style-position: outside;
+  padding: 0 1.25em;
+}
+
+.footnotes li {
+  border-bottom: solid 1px $gray04;
+  padding-bottom: 1.25em;
+}
+
+.footnotes li + li {
+  margin-top: 1.25em;
+}
+
+.footnotes li:last-child {
+  border: none;
+  padding: 0;
+}
+
+.footnotes li p {
+  display: inline; /* overwrites default block style */
+}
+
+.footnotes ol li::before {
+  margin-right: 0;
+}
+
+.reversefootnote {
+  border: solid 1px $gray04;
+  border-radius: .125em;
+  color: $gray01;
+  float: right;
+  margin: 0 -1.5em;
+  padding: 0 .25em;
+}
+
+.reversefootnote:hover,
+.reversefootnote:focus {
+  background-color: $pink-50;
+  border-color: $pink-50;
+}
 article img {
   width: 100%;
 }
@@ -1037,28 +916,271 @@ article img {
 /* SVG figure background helper */
 
 .extradark img {
-  background-color: hsla(204, 10%, 10%, 1);
+  background-color: $black;
 }
 
 .dark img {
-  background-color: hsla(204, 10%, 24%, 1)
+  background-color: $gray01;
 }
 
 .light img {
-  background-color: hsla(204, 10%, 88%, 1);
+  background-color: $gray06;
 }
 
 .extralight img {
-  background-color: hsla(204, 10%, 98%, 1);
+  background-color: $whiter;
 }
 
 /* Screenshot border/outline helper */
 
 .screenshot img {
-  outline: solid 1px hsla(204, 10%, 88%, 1);
+  outline: solid 1px $gray05;
 }
 
-/***! END Images ***/
+/*** Index *************************************/
+
+.home,
+.category {
+  background-color: $white;
+}
+
+.archive {
+  background-color: $gray05;
+}
+
+.index {
+  margin: 1em;
+}
+
+/* Title header */
+
+.index-header h1 {
+  font-size: 1.25em;
+  font-weight: 300;
+  letter-spacing: -.03125em;
+  text-align: center;
+}
+
+/* Homepage introduction feature */
+
+.introduction {
+  background-color: $blue;
+  color: $gray07;
+  font-size: 1.125em;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.25em;
+}
+
+.introduction a {
+  color: $whiter;
+  border-bottom: solid 1px $gray07;
+}
+
+.introduction a:hover,
+.introduction a:focus {
+  color: $grayblue;
+  border-bottom: solid 1px $grayblue-50;
+}
+
+.introduction .meta {
+  background-color: inherit;
+}
+
+/* Sections and items */
+
+.features {
+  margin: 1em -1em 0;
+  width: calc(100% + 2em);
+}
+
+.home .features,
+.home .index {
+  margin-top: 0;
+}
+
+.items {
+  margin: 1em auto;
+  overflow: hidden;
+}
+
+.archive-items {
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.archive-item {
+  margin: 1em 0 0;
+}
+
+.feature,
+.item {
+  background-color: $gray07;
+  display: inline-block;
+  position: relative;
+}
+
+.item:nth-child(2n + 2) {
+  background-color: $gray05;
+}
+
+.feature,
+.item,
+.archive-item {
+  width: 100%;
+}
+
+.index .location a {
+  border-bottom: solid 1px $pure-1;
+}
+
+.index .location a:hover,
+.index .location a:focus {
+  border-bottom: solid 1px $grayblue;
+}
+
+.meta {
+  background-color: $gray07-90;
+  margin: 0;
+  padding: 1em;
+  position: relative;
+}
+
+.feature .meta {
+  font-size: 1.125em;
+  min-height: 12.5em;
+  padding: .888888889em;
+}
+
+.meta h1 {
+  font-size: 1.5em;
+}
+
+.meta h1 a {
+  color: $red;
+}
+
+.meta h1 a:hover,
+.meta h1 a:focus {
+  color: $blue;
+}
+
+.meta h1 a:active {
+  color: $green;
+}
+
+.meta .time {
+  font-size: .875em;
+}
+
+.item .link,
+.feature .link {
+  margin: 0;
+}
+
+.feature .link {
+  background-color: $black;
+}
+
+.item .link {
+  background-color: $gray02;
+}
+
+.item:nth-child(2n + 2) .link {
+  background-color: $gray00;
+}
+
+.item .link:hover,
+.item .link:focus,
+.feature .link:hover,
+.feature .link:focus {
+  background-color: $boldblue;
+  color: $white;
+}
+
+.item .link:active,
+.feature .link:active {
+  color: $gray07;
+  background-color: $green;
+}
+
+.archive-item {
+  list-style: none;
+}
+
+.archive-item .meta {
+  background-color: $gray07;
+}
+
+.archive-item .meta h1 {
+  font-size: 1.125em;
+}
+
+/* Photo gallery for archive page */
+
+.photo-gallery .item {
+  height: 10em;
+  margin: 1em 0 0;
+}
+
+.photo-gallery .item a {
+  color: $pure-1;
+  display: block;
+  height: 100%;
+}
+
+.photo-gallery .item .meta {
+  background-color: transparent;
+  height: auto;
+  padding: 1em;
+}
+
+.photo-gallery .item .meta h1 {
+  color: inherit;
+  font-size: 1.125em;
+  font-weight: 500;
+}
+
+.photo-gallery .item a:hover,
+.photo-gallery .item a:focus {
+  background-color: $gray07-90;
+}
+
+.photo-gallery .item a:hover .meta h1,
+.photo-gallery .item a:focus .meta h1 {
+  color: $boldblue;
+}
+
+.photo-gallery .item a:hover .meta p,
+.photo-gallery .item a:focus .meta p {
+  color: $black;
+}
+
+/* Links to archives */
+
+.link-archive .link {
+  background-color: $red;
+}
+
+.link-archive .link:nth-child(2) {
+  background-color: $blue;
+}
+
+.link-archive .link:hover,
+.link-archive .link:focus {
+  background-color: $gray07;
+  color: $red;
+}
+
+.link-archive .link:nth-child(2):hover,
+.link-archive .link:nth-child(2):focus {
+  color: $blue;
+}
+
+.link-archive .link:focus,
+.link-archive .link:nth-child(2):focus {
+  background-color: $gray05;
+}
 
 /*** Media queries *****************************/
 
@@ -1066,11 +1188,12 @@ article img {
 screen and (min-resolution: 108dpi),
 screen and (min-resolution: 1.5dppx) {
   html {
-    font: 300 1rem/1.4375 'ratio', 'Helvetica Neue', Helvetica, 'Roboto', Arial, sans-serif;
+    font: 300 1rem/1.4375 $ratio;
   }
 
   strong,
-  b {
+  b,
+  dfn {
     font-weight: 400;
   }
 }
@@ -1178,6 +1301,19 @@ screen and (min-resolution: 1.5dppx) {
   .features {
     margin-top: -1em;
   }
+
+  .index-title {
+    margin: 0 1.5em;
+  }
+
+  .index-header h1 {
+    margin-left: .8em;
+    text-align: left;
+  }
+
+  .photo-gallery .item .meta h1 {
+    font-size: 1.25em;
+  }
 }
 
 @media screen and (min-width: 34em) {
@@ -1248,6 +1384,84 @@ screen and (min-resolution: 1.5dppx) {
   .link {
     line-height: 2em;
     font-size: 1em;
+  }
+
+  .index {
+    margin: 1em auto 0;
+    max-width: 45em;
+  }
+
+  .features + .items {
+    margin-top: 0;
+  }
+
+  .features {
+    margin: -1em auto 0;
+    width: 100%;
+  }
+
+  .archive-items {
+    margin: 1em auto;
+  }
+
+  .archive-item .meta {
+    font-size: 1.25em;
+  }
+
+  .index-header h1 {
+    margin-left: 1.6em;
+  }
+
+  .item {
+    float: left;
+    height: 20em;
+    margin: 1em 0 0;
+    width: 50%;
+  }
+
+  .photo-gallery .item {
+    height: 12.5em;
+  }
+
+  .meta {
+    padding: 2em;
+  }
+
+  .feature .meta {
+    font-size: 1.25em;
+    min-height: 15em;
+    padding: 1.6em;
+  }
+
+  .archive .meta {
+    padding: 1em 2em;
+  }
+
+  .introduction {
+    font-size: 1.25em;
+  }
+
+  .item .meta {
+    height: 16em;
+  }
+
+  .feature .link {
+    font-size: 1.125em;
+  }
+
+  .link-archive {
+    float: left;
+    width: 100%;
+  }
+
+  .link-archive .link {
+    margin: 0;
+    float: left;
+    width: 50%;
+  }
+
+  .link-archive .link:only-child {
+    width: 100%;
   }
 }
 
@@ -1339,6 +1553,28 @@ screen and (min-resolution: 1.5dppx) {
     text-align: center;
     width: 26em;
     z-index: 2;
+  }
+
+  .index-title {
+    margin: .5em auto 1em;
+  }
+
+  .features {
+    margin-top: 1em;
+  }
+
+  .index-header h1 {
+    margin: 0;
+    text-align: center;
+  }
+
+  .photo-gallery .item {
+    height: 7.5em;
+    width: 25%;  
+  }
+
+  .photo-gallery .item .meta h1 {
+    font-size: 1em;
   }
 }
 
@@ -1526,6 +1762,10 @@ screen and (min-resolution: 1.5dppx) {
     margin: 0 9em;
     width: 27em;
   }
+
+  .index {
+    font-size: 1.25em;
+  }
 }
 
 @media screen and (min-width: 70em) {
@@ -1612,6 +1852,10 @@ screen and (min-resolution: 1.5dppx) {
   .site-info {
     padding: 2em 2em 0;
   }
+
+  .index-title {
+    margin: 1.5em auto;
+  }
 }
 
 @media screen and (min-width: 95em) {
@@ -1643,6 +1887,10 @@ screen and (min-resolution: 1.5dppx) {
 
   .site-info .inside {
     max-width: none;
+  }
+
+  .index {
+    font-size: 1.5em;
   }
 }
 
@@ -1700,39 +1948,3 @@ screen and (min-width: 60em) and (max-height: 36em) {
     padding: 2em;
   }
 }
-
-/***! END Media queries ***/
-
-/* Transition helpers */
-
-svg circle {
-  transition: all 320ms cubic-bezier(0,1,1,1);
-}
-
-a svg circle {
-  transition: all 160ms cubic-bezier(0,1,1,1);
-}
-
-/*** Animations ********************************/
-
-@-webkit-keyframes step-fill {
-  0% {
-    fill: hsla(0, 0%, 100%, .01);
-  }
-
-  100% {
-    fill: hsla(204, 80%, 40%, 1);
-  }
-}
-
-@keyframes step-fill {
-  0% {
-    fill: hsla(0, 0%, 100%, .01);
-  }
-
-  100% {
-    fill: hsla(204, 80%, 40%, 1);
-  }
-}
-
-/***! END Animations ***/

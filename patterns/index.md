@@ -54,8 +54,8 @@ These are stored in the site’s [`_config.yml` file](https://github.com/opattis
 
 - - -
 
-<figure class="right">
-  <img class="logo-demo"
+<figure class="right svg extralight noedges">
+  <img
     src="{{ site.icon-url }}/{{ page.image[0].src }}" 
     alt="{{ page.image[0].alt }}"
   >
@@ -72,7 +72,7 @@ These are stored in the site’s [`_config.yml` file](https://github.com/opattis
 
 <h5>Level five heading</h5>
 
-<p>Some paragraph text may require <em>stress</em> emphasis and some it may be important enough to require something <strong>stronger</strong>. “<q>Just as the plume of smoke rose and died so too will the glow of gold. Elevated status moves us now through the darkened halls of the quick.</q>” This is <mark>highlighted text</mark> that uses the <code>&lt;mark&gt;</code> element. <dfn>H<sub>2</sub>O</dfn> is the chemical formula for a water molecule, indicating that it contains one oxygen and two hydrogen atoms. Oxygen is the 8<sup>th</sup> element on the <a href="https://en.wikipedia.org/wiki/Periodic_table">periodic table of elements</a>.</p>
+<p>Some paragraph text may require <em>stress</em> emphasis and some it may be important enough to require something <strong>stronger</strong>. <q>Just as the plume of smoke rose and died so too will the glow of gold. Elevated status moves us now through the darkened halls of the quick.</q> This is <mark>highlighted text</mark> that uses the <code>&lt;mark&gt;</code> element. <dfn>H<sub>2</sub>O</dfn> is the chemical formula for a water molecule, indicating that it contains one oxygen and two hydrogen atoms. Oxygen is the 8<sup>th</sup> element on the <a href="https://en.wikipedia.org/wiki/Periodic_table">periodic table of elements</a>.</p>
 
 <p class="important">This is “feature” text, used for emphasis and attention in storytelling.</p>
 

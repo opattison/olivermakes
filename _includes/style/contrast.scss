@@ -1,0 +1,158 @@
+@import 'variables/all.scss';
+
+body {
+  background-color: $gray00;
+  color: $white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: $gray07;
+}
+
+
+sup[id] a {
+  background-color: $pink-50;
+  border: none;
+  color: $gray06;
+}
+
+sup[id] a:hover,
+sup[id] a:focus {
+  background-color: $grayblue-50;
+  border: none;
+  color: $gray06;
+}
+
+article a,
+.time a {
+  color: $pink;
+  border-color: $pink-50;
+}
+
+article a:hover,
+article a:focus,
+.time a:hover,
+.time a:focus {
+  color: $grayblue;
+  border-color: $grayblue-50;
+}
+
+.page,
+.page-header .inside  {
+  background-color: $gray01;
+}
+
+.title:hover h1,
+.title:focus h1 {
+  color: $grayblue;
+}
+
+.title .logo circle {
+  stroke: $gray07;
+}
+
+.title:hover .logo circle,
+.title:focus .logo circle {
+  stroke: $grayblue;
+  -webkit-animation-name: step-fill--contrast;
+          animation-name: step-fill--contrast;
+}
+
+.page figcaption {
+  color: $gray06;
+}
+
+.page-meta {
+  background-color: $gray01;
+}
+
+blockquote {
+  color: $gray05;
+  border-color: $grayblue;
+}
+
+blockquote footer {
+  color: $gray06;
+}
+
+.highlight {
+  background-color: $whiter;
+  border-color: $gray03;
+}
+
+p > code,
+li > code,
+samp {
+  border-color: $gray04;
+}
+
+.important {
+  color: $grayblue;
+}
+
+.ancillary {
+  background-color: $gray00;
+  color: $gray05;
+}
+
+.footnotes {
+  color: inherit;
+  background-color: $gray02;
+}
+
+.footnotes li,
+.reversefootnote {
+  border-color: $gray04;
+}
+
+.reversefootnote {
+  color: $white;
+}
+
+.reversefootnote:hover,
+.reversefootnote:focus {
+  color: $white;
+  background-color: $grayblue-50;
+  border-color: $grayblue-50;
+}
+
+.project {
+  background-color: $gray02;
+}
+
+.project .description {
+  color: $gray07;
+}
+
+.essay {
+  background-color: $gray02;
+  color: $white;
+}
+
+.page-meta {
+  background-color: $gray02;
+}
+
+.site-nav li a {
+  background-color: $black-80;
+}
+
+.site-nav li:nth-child(2) a {
+  background-color: $gray01-80;
+}
+
+.site-nav li:nth-child(3) a {
+  background-color: $gray02-80;
+}
+
+.site-nav li:nth-child(4) a {
+  background-color: $gray00-80;
+}
+
+.site-nav li a:hover,
+.site-nav li a:focus {
+  background-color: $boldblue-80;
+}

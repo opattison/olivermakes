@@ -1,0 +1,51 @@
+/*** Custom normalization **********************/
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+figure img {
+  display: block;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+dfn {
+  font-style: normal;
+  font-weight: 500;
+}
+
+ul,
+ol {
+  list-style-position: inside;
+  padding: 0;
+}
+
+cite {
+  font-style: normal;
+}
+
+small {
+  font-size: .75em;
+}
+
+/*** Axiomatic styles **************************/
+/* via Heydon Pickering
+source: http://alistapart.com/article/axiomatic-css-and-lobotomized-owls */
+
+* + * {
+  margin-top: 1em;
+}
+
+li + li {
+  margin-top: .5em; /* Half of axiomatic top margins */
+}
