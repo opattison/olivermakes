@@ -155,23 +155,3 @@ samp {
 .site-nav li a:focus {
   background-color: $boldblue-80;
 }
-
-@-webkit-keyframes step-fill--contrast {
-  0% {
-    fill: $pure-1;
-  }
-
-  100% {
-    fill: $grayblue;
-  }
-}
-
-@keyframes step-fill--contrast {
-  0% {
-    fill: $pure-1;
-  }
-
-  100% {
-    fill: $grayblue;
-  }
-}
