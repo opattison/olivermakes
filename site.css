@@ -164,14 +164,6 @@ b {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
-}
-
-h1,
 h2 {
   color: hsla(204, 10%, 32%, 1);
   line-height: 1.125;
@@ -412,12 +404,6 @@ nav li {
 
 .page {
   padding: .5em 1em 2.5em;
-}
-
-.page-info {
-  color: hsla(204, 10%, 56%, 1);
-  font-size: .75em;
-  font-weight: 400;
 }
 
 /* Page metadata */
@@ -1174,10 +1160,6 @@ screen and (min-resolution: 1.5dppx) {
 
   .site-nav:target {
     padding-top: 4.5em;
-  }
-
-  .lineno {
-    margin: 0 .5em 0 -2em;
   }
 
   .ancillary {
