@@ -30,6 +30,7 @@ link:
 ## Gems configuration
 gems:
   - jekyll-archives
+  - sass
 
 ## Markdown configuration
 markdown: kramdown
@@ -58,6 +59,12 @@ jekyll-archives:
     month: '/:year/:month/'
     tag: '/label/:name/'
     category: '/:name/archive/'
+
+## Sass configuration
+
+sass:
+  sass_dir: _sass
+  style: compressed
 
 ## Project configuration
 exclude: [s3_website.yml, Rakefile]
@@ -103,44 +110,41 @@ srcset_project:
 mapbox-key: pk.eyJ1Ijoib3BhdHRpc29uIiwiYSI6Il9DU3p1MEkifQ.3cvRQB5hVIONMpDAflBUNw
 photo-mapid: opattison.942a5f69
 
-## Shade values
+## shade values
 shade:
   - name: black
-    hsl: 'hsla(204, 10%, 10%, 1)'
+    hsl: 'hsla(204, 10%, 12%, 1)'
     hex: '#1c1f22'
-  - name: gray1
+  - name: gray00
     hsl: 'hsla(204, 10%, 18%, 1)'
     hex: '#292f32'
-  - name: gray2
+  - name: gray01
     hsl: 'hsla(204, 10%, 24%, 1)'
     hex: '#373e43'
-  - name: gray3
+  - name: gray02
     hsl: 'hsla(204, 10%, 32%, 1)'
     hex: '#49535a'
-  - name: gray4
+  - name: gray03
     hsl: 'hsla(204, 10%, 40%, 1)'
     hex: '#5c6870'
-  - name: gray5
-    hsl: 'hsla(204, 10%, 48%, 1)'
-    hex: '#6e7d87'
-  - name: gray6
-    hsl: 'hsla(204, 10%, 56%, 1)'
-    hex: '#84919a'
-  - name: gray7
+  - name: gray04
+    hsl: 'hsla(204, 10%, 72%, 1)'
+    hex: '#b0b9bf'
+  - name: gray05
     hsl: 'hsla(204, 10%, 80%, 1)'
     hex: '#c7cdd1'
-  - name: gray8
+  - name: gray06
     hsl: 'hsla(204, 10%, 88%, 1)'
     hex: '#dde1e3'
-  - name: gray9
-    hsl: 'hsla(204, 10%, 93%, 1)'
-    hex: '#dde1e3'
+  - name: gray07
+    hsl: 'hsla(204, 10%, 92%, 1)'
+    hex: '#e9ebed'
   - name: offwhite
-    hsl: 'hsla(204, 10%, 96%, 1)'
-    hex: '#f4f5f6'
-  - name: white
-    hsl: 'hsla(204, 10%, 98%, 1)'
-    hex: '#f9fafa'
+    hsl: 'hsla(204, 10%, 95%, 1)'
+    hex: '#f1f3f4'
+  - name: whiter
+    hsl: 'hsla(204, 10%, 97%, 1)'
+    hex: '#f7f8f8'
 
 ## Color values
 color:
@@ -187,12 +191,12 @@ color:
 ## Semi-transparent shade and color values
 transparent:
   - name: black-80
-    hsl: 'hsla(204, 10%, 10%, .8)'
-  - name: gray1-80
+    hsl: 'hsla(204, 10%, 12%, .8)'
+  - name: gray00-80
     hsl: 'hsla(204, 10%, 18%, .8)'
-  - name: gray2-80
+  - name: gray01-80
     hsl: 'hsla(204, 10%, 24%, .8)'
-  - name: gray3-80
+  - name: gray02-80
     hsl: 'hsla(204, 10%, 32%, .8)'
   - name: boldblue-80
     hsl: 'hsla(204, 80%, 40%, .8)'
@@ -200,7 +204,7 @@ transparent:
     hsl: 'hsla(204, 30%, 80%, .5)'
   - name: pink-50
     hsl: 'hsla(4, 30%, 80%, .5)'
-  - name: gray9-90
-    hsl: 'hsla(204, 10%, 93%, .9)'
+  - name: gray07-90
+    hsl: 'hsla(204, 10%, 92%, .9)'
   - name: pure-1
     hsl: 'hsla(0, 0%, 100%, .01)'

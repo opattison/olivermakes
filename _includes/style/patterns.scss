@@ -1,15 +1,16 @@
+@import 'variables/all';
 
-.page .swatches,
+.swatches,
 .swatches li,
-.swatches li figure,
-.swatches li figcaption {
+.swatches figure,
+.swatches figcaption {
   margin: 0;
   padding: 0;
   width: 100%;
 }
 
 .swatches {
-  font: 400 .625em/1.5 'source-sans-pro', Menlo, Consolas, monospace;
+  font: 400 .625em/1.5 $source-code-pro;
   list-style-type: none;
   overflow: hidden;
 }
@@ -18,12 +19,12 @@
   margin-top: 1em;
 }
 
-.swatches li figure {
+.swatches figure {
   height: 16em;
   position: relative;
 }
 
-.swatches li figcaption {
+.swatches figcaption {
   background-color: hsla(0, 0%, 100%, .8);
   border-bottom: none;
   bottom: 0;
@@ -48,5 +49,9 @@
 @media screen and (min-width: 80em) {
   .swatches li {
     width: 25%;
+  }
+
+  .swatches figcaption {
+    font-size: .95em;
   }
 }
