@@ -35,14 +35,14 @@ image:
 
 In 2012, I managed a complete responsive website redesign for [Casey Trees](http://caseytrees.org/), an urban forestry non-profit dedicated to protecting the tree canopy of Washington, DC.
 
-My prime responsibilities were:
+My primary responsibilities were:
 
 - Project management and technical translation on the client side, working with external designers and developers at [Firefly Partners](http://www.fireflypartners.com) who accomplished the bulk of the visual design and implementation.
 - Providing guidance on user experience and information architecture decisions.
 - Writing, editing, photo curation, and content strategy – with hundreds of pages and a decade’s worth of programs to review, filter, and edit.
 - Ongoing support after the redesign, supporting the organization’s content and design needs after the initial launch.[^1]
 
-**My most important role on the project, however, was as an advocate for responsive web design.** By responsive design, I mean that our goal was to develop a site that would cater to multiple screen sizes, without the false constraint of assuming only a “desktop” browser context.[^2] In 2011 when we were planning to redesign the website, responsive design was not yet implemented widely. The web changes quickly. While the approach is now viewed by many leaders in user experience design as an *essential* part of designing for an uncertain future, back then we were taking a decisive step towards a more flexible experience, in our small corner of the web.
+**My most important role on the project, however, was as an advocate for responsive web design.** By responsive design, I mean that our goal was to develop a site that would cater to multiple screen sizes, without the false constraint of assuming only a “desktop” browser context.[^2] When we were planning to redesign the website in 2011, responsive design was not yet implemented widely. The web changes quickly. While the approach is now viewed by many leaders in user experience design as an *essential* part of designing for an uncertain future, back then we were taking a decisive step towards a more flexible experience, in our small corner of the web.
 
 We turned the project around in only a few months, with design and content work starting in December 2011 and the website launching in March 2012.
 
@@ -70,7 +70,7 @@ The previous iteration of the website had been designed in 2008. We faced a few 
 - Portions of the site relied on Adobe Flash for content and interaction. Portions of the site were not usable without Flash support. Even aside from accessibility issues, the organization also lacked the technical support to maintain these quickly aging resources.
 - The organization’s blog was not integrated with the website. It ran on a different host and content management system. There was virtually no shared experience with the main site, and all of the resources on the blog were managed separately.
 - The visual design reflected the organization as it existed years ago when it had fewer employees and programs. New programs were on the way: a tree farm, local advocacy, expanded education efforts, and new tree planting programs. Additionally, the communications and development team had larger design goals that could only be met with a substantial visual redesign.
-- The site was maintained with Adobe Contribute, outdated and limited software that the communications staff did not enjoy using. The site’s design was not modular enough to flexibly design new pages or experiences, and content management was getting increasingly difficult as the site grew.
+- The site was maintained with Adobe Contribute: outdated and limited software that the communications staff did not enjoy using. The site’s design was not modular enough to flexibly design new pages or experiences, and content management was getting increasingly difficult as the site grew.
 
 ## Results
 
@@ -85,7 +85,7 @@ Feedback from users of the site was very positive, and staff appreciated the eas
 {% capture stats %}
 # The business case
 
-In the first year after the redesign, there were 35% more unique visits. Of those **182% were “mobile and tablet” visits**, with most of the increase in visitors coming from these smaller devices.
+In the first year after the redesign, there were **182% more “mobile and tablet” visits** contributing to 35% more unique visits for *all* devices. Mobile visits made up a significant part of the increase in visitors to the site after the redesign.
 
 When considering numbers like this, it is important to acknowledge that *some* of the increase is from a significant shift in the device landscape – people are buying mobile devices in huge numbers, so the number of potential mobile visitors is rising, whether or not sites are designed responsively.
 {% endcapture %}
@@ -95,7 +95,7 @@ When considering numbers like this, it is important to acknowledge that *some* o
 </aside>
 
 {% capture longterm %}
-### Long-term
+### Long-term gain
 
 With ever-shorter life spans of websites, the 2012 redesign has so far lasted quite a while without the need for a substantial overhaul. As I write this in 2015, the site is entering its third year since the redesign. Nothing lasts forever on the web, but it is refreshing to see a smaller budget website last a few years before the organization's needs outgrow the design.
 
@@ -112,4 +112,4 @@ This approach gave Casey Trees not only a better experience for visitors to the 
 </div>
 
 [^1]: [Read my review of the responsive design process]({% post_url 2013-09-26-casey-trees-membership %}) for the subsequently launched Membership campaign to get a closer look at my approach to responsive design and implementation. I also wrote about [technical documentation and training]({% post_url 2014-10-01-casey-trees-docs %}) for the Casey Trees website.
-[^2]: Technically, responsive design is about designing with a flexible grid layout, using fluid image widths, and using CSS media queries to conditionally control layout and presentation for different device sizes. As Ethan Marcotte put it in his foundational <i class="publication">Responsive Web Design</i>): “… design that can adapt to the constraints of the browser window or device that renders it, creating a design that almost responds to the user’s needs.”
+[^2]: Technically, responsive design is about designing with a flexible grid layout, using fluid image widths, and using CSS media queries to conditionally control layout and presentation for different device sizes. As Ethan Marcotte put it in his foundational <i class="publication"><a href="http://www.abookapart.com/products/responsive-web-design">Responsive Web Design</a></i>): “… design that can adapt to the constraints of the browser window or device that renders it, creating a design that almost responds to the user’s needs.”
