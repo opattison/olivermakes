@@ -72,7 +72,7 @@ h5 {
 }
 
 h3 {
-  font-size: 1.375em;
+  font-size: 1.5em;
 }
 
 h4 {
@@ -715,6 +715,10 @@ nav li {
 
 .project {
   background-color: $gray06;
+}
+
+.project .sample {
+  background-color: $gray07;
 }
 
 .project .description {

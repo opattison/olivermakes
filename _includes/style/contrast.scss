@@ -12,7 +12,6 @@ h4 {
   color: $gray07;
 }
 
-
 sup[id] a {
   background-color: $pink-50;
   border: none;
@@ -120,6 +119,10 @@ samp {
 }
 
 .project {
+  background-color: $gray02;
+}
+
+.project .sample {
   background-color: $gray02;
 }
 
