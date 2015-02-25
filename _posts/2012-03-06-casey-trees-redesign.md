@@ -82,18 +82,6 @@ We integrated more tightly with our existing Convio non-profit fundraising and s
 
 Feedback from users of the site was very positive, and staff appreciated the easier management and new design as well. After a refresh of our events management and fundraising systems, it was far easier to get fully subscribed events. Mobile device visits went from being about 6% of visitors to 12% (and even higher later on) as device user trends changed, and as our website became more friendly to visitors with different types of screens and contexts. It is fair to say that we would have been turning away a significant portion of our audience without a responsive redesign.
 
-{% capture stats %}
-# The business case
-
-In the first year after the redesign, there were **182% more “mobile and tablet” visits** contributing to 35% more unique visits for *all* devices. Mobile visits made up a significant part of the increase in visitors to the site after the redesign.
-
-When considering numbers like this, it is important to acknowledge that *some* of the increase is from a significant shift in the device landscape – people are buying mobile devices in huge numbers, so the number of potential mobile visitors is rising, whether or not sites are designed responsively.
-{% endcapture %}
-
-<aside class="ancillary">
-  {{ stats | markdownify }}
-</aside>
-
 {% capture longterm %}
 ### Long-term gain
 
