@@ -16,7 +16,7 @@ unique-id: 2012-03-06:casey-trees-redesign
 period: 2011-11 to 2012-03
 description: 'My work on a redesign for an urban forestry non-profit, in the early days of responsive web design.'
 project:
-  url: http://caseytrees.org/donate/membership/
+  url: http://caseytrees.org/
 image:
   - src: 2015-02-23-ct-logo.svg
     background: 'site.shade.white'
@@ -40,9 +40,9 @@ My primary responsibilities were:
 - Project management and technical translation on the client side, working with external designers and developers at [Firefly Partners](http://www.fireflypartners.com) who accomplished the bulk of the visual design and implementation.
 - Providing guidance on user experience and information architecture decisions.
 - Writing, editing, photo curation, and content strategy – with hundreds of pages and a decade’s worth of programs to review, filter, and edit.
-- Ongoing support after the redesign, supporting the organization’s content and design needs after the initial launch.[^1]
+- Ongoing support after the redesign, supporting the organization’s content and design needs after the initial launch.
 
-**My most important role on the project, however, was as an advocate for responsive web design.** By responsive design, I mean that our goal was to develop a site that would cater to multiple screen sizes, without the false constraint of assuming only a “desktop” browser context.[^2] When we were planning to redesign the website in 2011, responsive design was not yet implemented widely. The web changes quickly. While the approach is now viewed by many leaders in user experience design as an *essential* part of designing for an uncertain future, back then we were taking a decisive step towards a more flexible experience, in our small corner of the web.
+**My most important role on the project, however, was as an advocate for responsive web design.** By responsive design, I mean that our goal was to develop a site that would cater to multiple screen sizes, without the false constraint of assuming only a “desktop” browser context.[^1] When we were planning to redesign the website in 2011, responsive design was not yet implemented widely. The web changes quickly. While the approach is now viewed by many leaders in user experience design as an *essential* part of designing for an uncertain future, back then we were taking a decisive step towards a more flexible experience, in our small corner of the web.
 
 We turned the project around in only a few months, with design and content work starting in December 2011 and the website launching in March 2012.
 
@@ -82,6 +82,18 @@ We integrated more tightly with our existing Convio non-profit fundraising and s
 
 Feedback from users of the site was very positive, and staff appreciated the easier management and new design as well. After a refresh of our events management and fundraising systems, it was far easier to get fully subscribed events. Mobile device visits went from being about 6% of visitors to 12% (and even higher later on) as device user trends changed, and as our website became more friendly to visitors with different types of screens and contexts. It is fair to say that we would have been turning away a significant portion of our audience without a responsive redesign.
 
+{% capture related %}
+# More on my work for Casey&nbsp;Trees
+
+- [The responsive design process]({% post_url 2013-09-26-casey-trees-membership %}) for the subsequently launched Membership campaign to get a closer look at my approach to responsive design and implementation. 
+- [Technical documentation and training]({% post_url 2014-10-01-casey-trees-docs %}) for the Casey Trees website.
+
+{% endcapture %}
+
+<aside class="ancillary">
+{{ related | markdownify }}
+</aside>
+
 {% capture longterm %}
 ### Long-term gain
 
@@ -99,5 +111,4 @@ This approach gave Casey Trees not only a better experience for visitors to the 
   {{ longterm | markdownify }}
 </div>
 
-[^1]: [Read my review of the responsive design process]({% post_url 2013-09-26-casey-trees-membership %}) for the subsequently launched Membership campaign to get a closer look at my approach to responsive design and implementation. I also wrote about [technical documentation and training]({% post_url 2014-10-01-casey-trees-docs %}) for the Casey Trees website.
-[^2]: Technically, responsive design is about designing with a flexible grid layout, using fluid image widths, and using CSS media queries to conditionally control layout and presentation for different device sizes. As Ethan Marcotte put it in his foundational <i class="publication"><a href="http://www.abookapart.com/products/responsive-web-design">Responsive Web Design</a></i>): “… design that can adapt to the constraints of the browser window or device that renders it, creating a design that almost responds to the user’s needs.”
+[^1]: Technically, responsive design is about designing with a flexible grid layout, using fluid image widths, and using CSS media queries to conditionally control layout and presentation for different device sizes. As Ethan Marcotte put it in his foundational <i class="publication"><a href="http://www.abookapart.com/products/responsive-web-design">Responsive Web Design</a></i>): “… design that can adapt to the constraints of the browser window or device that renders it, creating a design that almost responds to the user’s needs.”
