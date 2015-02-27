@@ -3,10 +3,10 @@ title: 'Website for Jean Flanagan'
 layout: dubbel
 option:
   - code
+  - custom-css
   - index-image
   - sample-srcset
   - srcset
-  - custom-css
 category: 'projects'
 tags:
   - 'design'

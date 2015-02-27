@@ -1,161 +1,159 @@
-@import 'variables/all.scss';
-
-body {
+.dark {
   background-color: $gray00;
   color: $white;
 }
 
-h1,
-h2,
-h3,
-h4 {
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4 {
   color: $gray07;
 }
 
-sup[id] a {
+.dark sup[id] a {
   background-color: $pink-50;
   border: none;
   color: $gray06;
 }
 
-sup[id] a:hover,
-sup[id] a:focus {
+.dark sup[id] a:hover,
+.dark sup[id] a:focus {
   background-color: $grayblue-50;
   border: none;
   color: $gray06;
 }
 
-article a,
-.time a {
+.dark article a,
+.dark .time a {
   color: $pink;
   border-color: $pink-50;
 }
 
-article a:hover,
-article a:focus,
-.time a:hover,
-.time a:focus {
+.dark article a:hover,
+.dark article a:focus,
+.dark .time a:hover,
+.dark .time a:focus {
   color: $grayblue;
   border-color: $grayblue-50;
 }
 
-.page,
-.page-header .inside  {
-  background-color: $gray01;
+.dark .page,
+.dark .page-header .inside  {
+  background-color: $gray00;
 }
 
-.title:hover h1,
-.title:focus h1 {
+.dark .title:hover h1,
+.dark .title:focus h1 {
   color: $grayblue;
 }
 
-.title .logo circle {
+.dark .title .logo circle {
   stroke: $gray07;
 }
 
-.title:hover .logo circle,
-.title:focus .logo circle {
+.dark .title:hover .logo circle,
+.dark .title:focus .logo circle {
   stroke: $grayblue;
   -webkit-animation-name: step-fill--contrast;
           animation-name: step-fill--contrast;
 }
 
-.page figcaption {
+.dark .page figcaption {
   color: $gray06;
 }
 
-.page-meta {
+.dark .page-meta {
   background-color: $gray01;
 }
 
-blockquote {
+.dark blockquote {
   color: $gray05;
   border-color: $grayblue;
 }
 
-blockquote footer {
+.dark blockquote footer {
   color: $gray06;
 }
 
-.highlight {
+.dark .highlight {
   background-color: $whiter;
   border-color: $gray03;
 }
 
-p > code,
-li > code,
-samp {
+.dark p > code,
+.dark li > code,
+.dark samp {
   border-color: $gray04;
 }
 
-.important {
+.dark .important {
   color: $grayblue;
 }
 
-.ancillary {
+.dark .ancillary {
   background-color: $gray00;
   color: $gray05;
 }
 
-.footnotes {
+.dark .footnotes {
   color: inherit;
   background-color: $gray02;
 }
 
-.footnotes li,
-.reversefootnote {
+.dark .footnotes li,
+.dark .reversefootnote {
   border-color: $gray04;
 }
 
-.reversefootnote {
+.dark .reversefootnote {
   color: $white;
 }
 
-.reversefootnote:hover,
-.reversefootnote:focus {
+.dark .reversefootnote:hover,
+.dark .reversefootnote:focus {
   color: $white;
   background-color: $grayblue-50;
   border-color: $grayblue-50;
 }
 
-.project {
+.dark .project {
   background-color: $gray02;
 }
 
-.project .sample {
+.dark .project .sample {
   background-color: $gray02;
 }
 
-.project .description {
+.dark .project .description {
   color: $gray07;
 }
 
-.essay {
+.dark .essay {
   background-color: $gray02;
   color: $white;
 }
 
-.page-meta {
+.dark .page-meta {
   background-color: $gray02;
 }
 
-.site-nav li a {
+.dark .site-nav li a {
   background-color: $black-80;
 }
 
-.site-nav li:nth-child(2) a {
+.dark .site-nav li:nth-child(2) a {
   background-color: $gray01-80;
 }
 
-.site-nav li:nth-child(3) a {
+.dark .site-nav li:nth-child(3) a {
   background-color: $gray02-80;
 }
 
-.site-nav li:nth-child(4) a {
+.dark .site-nav li:nth-child(4) a {
   background-color: $gray00-80;
 }
 
-.site-nav li a:hover,
-.site-nav li a:focus {
+.dark .site-nav li a:hover,
+.dark .site-nav li a:focus {
   background-color: $boldblue-80;
 }

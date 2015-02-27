@@ -2,9 +2,9 @@
 title: 'Mount Pleasant photowalk'
 layout: edgeless
 option:
+  - dark
   - map-meta
   - srcset
-  - contrast
 category: 'photography'
 tags:
   - 'photography'

@@ -3,7 +3,6 @@
 {% capture pygments %}{% include style/pygments.scss %}{% endcapture %}
 {% capture hero %}{% include style/hero.scss %}{% endcapture %}
 {% capture photo %}{% include style/photo.scss %}{% endcapture %}
-{% capture contrast %}{% include style/contrast.scss %}{% endcapture %}
 
   <link rel="stylesheet" href="/main.css">
   {% if page.option contains 'custom-css' %}<link rel="stylesheet" href="{{ site.style-url }}/{{ page.custom-css }}">{% endif %}
@@ -11,7 +10,6 @@
   {% if page.option contains 'code-block' %}<style>{{ pygments | scssify }}</style>{% endif %}
   {% if page.option contains 'hero' or page.option contains 'hero-srcset' %}<style>{{ hero | scssify }}</style>{% endif %}
   {% if page.option contains 'map-meta' %}<style>{{ photo | scssify }}</style>{% endif %}
-  {% if page.option contains 'contrast' %}<style>{{ contrast | scssify }}</style>{% endif %}
 
 {% capture edgeless %}{% include style/edgeless.scss %}{% endcapture %}
 {% capture dubbel %}{% include style/dubbel.scss %}{% endcapture %}
