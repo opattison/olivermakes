@@ -2,9 +2,9 @@
 title: 'Chichester street reflection'
 layout: edgeless
 option:
+  - dark
   - map-meta
   - srcset
-  - contrast
 category: 'photography'
 tags:
   - 'travel'

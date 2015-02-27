@@ -2,11 +2,11 @@
 title: 'Fujifilm X-E2 vector'
 layout: edgeless
 option:
+  - code
+  - dark
   - index-image
   - sample-svg
-  - code
   - srcset
-  - contrast
 category: 'projects'
 tags:
   - 'design'

@@ -2,9 +2,9 @@
 title: 'My turntable'
 layout: edgeless
 option:
+  - dark
   - map-meta
   - srcset
-  - contrast
 category: 'photography'
 tags:
   - 'music'

@@ -2,9 +2,9 @@
 title: 'Dog at rest'
 layout: edgeless
 option:
+  - dark
   - map-meta
   - srcset
-  - contrast
 category: 'photography'
 tags:
   - 'dog'

@@ -5,8 +5,8 @@ option:
   - code
   - code-block
   - index-image
-  - sample-srcset
   - patterns
+  - sample-srcset
 category: 'projects'
 tags:
   - 'css'

@@ -2,7 +2,7 @@
 title: 'Reading-driven design'
 layout: singel
 option:
-  - 'index-image'
+  - index-image
 category: 'writing'
 tags:
   - 'css'
