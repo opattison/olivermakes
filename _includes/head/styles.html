@@ -12,3 +12,9 @@
   {% if page.option contains 'hero' or page.option contains 'hero-srcset' %}<style>{{ hero | scssify }}</style>{% endif %}
   {% if page.option contains 'map-meta' %}<style>{{ photo | scssify }}</style>{% endif %}
   {% if page.option contains 'contrast' %}<style>{{ contrast | scssify }}</style>{% endif %}
+
+{% capture edgeless %}{% include style/edgeless.scss %}{% endcapture %}
+{% capture dubbel %}{% include style/dubbel.scss %}{% endcapture %}
+
+  {% if page.layout == 'edgeless' %}<style>{{ edgeless | scssify }}</style>{% endif %}
+  {% if page.layout == 'dubbel' %}<style>{{ dubbel | scssify }}</style>{% endif %}
