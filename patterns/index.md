@@ -31,24 +31,27 @@ These are stored in the site’s [`_config.yml` file](https://github.com/opattis
 ### Shades
 
 <ul class="swatches">
-{% for name in site.shade %}
-<li><figure style="background-color: {{ site.shade[forloop.index0].hsl }}"><figcaption>{{ site.shade[forloop.index0].name }}<br>{{ site.shade[forloop.index0].hsl }}<br>{{ site.shade[forloop.index0].hex }}</figcaption></figure></li>
+{% assign swatches = site.data.shade %}
+{% for swatch in swatches %}
+<li><figure style="background-color: {{ swatch.hsl }}"><figcaption>{{ swatch.name }}<br>{{ swatch.hsl }}<br>{{ swatch.hex }}</figcaption></figure></li>
 {% endfor %}
 </ul>
 
 ### Colors
 
 <ul class="swatches">
-{% for name in site.color %}
-<li><figure style="background-color: {{ site.color[forloop.index0].hsl }}"><figcaption>{{ site.color[forloop.index0].name }}<br>{{ site.color[forloop.index0].hsl }}<br>{{ site.color[forloop.index0].hex }}</figcaption></figure></li>
+{% assign swatches = site.data.color %}
+{% for swatch in swatches %}
+<li><figure style="background-color: {{ swatch.hsl }}"><figcaption>{{ swatch.name }}<br>{{ swatch.hsl }}<br>{{ swatch.hex }}</figcaption></figure></li>
 {% endfor %}
 </ul>
 
 ### Semi-transparent shades and colors
 
 <ul class="swatches">
-{% for name in site.transparent %}
-<li><figure style="background-color: {{ site.transparent[forloop.index0].hsl }}"><figcaption>{{ site.transparent[forloop.index0].name }}<br>{{ site.transparent[forloop.index0].hsl }}</figcaption></figure></li>
+{% assign swatches = site.data.transparent %}
+{% for swatch in swatches %}
+<li><figure style="background-color: {{ swatch.hsl }}"><figcaption>{{ swatch.name }}<br>{{ swatch.hsl }}<br>{{ swatch.hex }}</figcaption></figure></li>
 {% endfor %}
 </ul>
 

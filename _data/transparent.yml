@@ -1,0 +1,20 @@
+  - name: black-80
+    hsl: 'hsla(204, 10%, 12%, .8)'
+  - name: gray00-80
+    hsl: 'hsla(204, 10%, 18%, .8)'
+  - name: gray01-80
+    hsl: 'hsla(204, 10%, 24%, .8)'
+  - name: gray02-80
+    hsl: 'hsla(204, 10%, 32%, .8)'
+  - name: gray07-80
+    hsl: 'hsla(204, 10%, 92%, .8)'
+  - name: gray07-90
+    hsl: 'hsla(204, 10%, 92%, .9)'
+  - name: pure-1
+    hsl: 'hsla(0, 0%, 100%, .01)'
+  - name: boldblue-80
+    hsl: 'hsla(204, 80%, 40%, .8)'
+  - name: grayblue-50
+    hsl: 'hsla(204, 30%, 80%, .5)'
+  - name: pink-50
+    hsl: 'hsla(4, 30%, 80%, .5)'
