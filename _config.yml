@@ -25,6 +25,13 @@ link:
   twitter: http://twitter.com/olivermakes
   vsco: http://olivermakes.vsco.co
 
+## Collections
+
+collections:
+  patterns:
+    output: true
+    permalink: patterns/:path/
+
 # Site configuration
 
 ## Gems configuration
