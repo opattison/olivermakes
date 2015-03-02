@@ -298,11 +298,14 @@ nav li {
 
 /* Logo */
 
+.logo {
+  height: 2.5em;
+  width: 2.5em;
+}
+
 .title .logo {
   float: left;
-  height: 2.5em;
   margin: 0 .5em 0 0;
-  width: 2.5em;
 }
 
 .title .logo circle {

@@ -34,10 +34,84 @@
   width: 100%;
 }
 
+.sans {
+  font-family: $ratio;
+}
+
+.monospace {
+  font-family: $source-code-pro;
+  font-size: .8125em;
+}
+
+.w300 {
+  font-weight: 300;
+}
+
+.w400 {
+  font-weight: 400;
+}
+
+.w500 {
+  font-weight: 500;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.pattern {
+  margin-top: 2em;
+}
+
+.pattern-view {
+  background-color: $gray01;
+  color: $white;
+}
+
+.pattern-view summary {
+  background-color: $blue;
+  padding: 1em;
+}
+
+.pattern-view figure {
+  margin-top: 0;
+  padding: 1em;
+}
+
+.pattern-view textarea {
+  background-color: $white;
+  color: $gray01;
+  font-family: $source-code-pro;
+  font-size: .75em;
+  padding: .5em 1em;
+  width: 100%;
+}
+
+.pattern-view h5 {
+  color: inherit;
+}
+
+.pattern-view figcaption {
+  color: inherit;
+  margin: .5em 0 0;
+  padding: 0;
+}
+
+.pattern-view figcaption p {
+  font-size: .875em;
+  text-align: left;
+}
+
 @media screen and (min-width: 20em) {
   .swatches li {
     float: left;
     width: 50%;
+  }
+}
+
+@media screen and (min-width: 45em) {
+  .pattern-view summary {
+    font-size: 1.125em;
   }
 }
 
