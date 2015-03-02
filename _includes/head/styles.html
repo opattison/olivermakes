@@ -1,13 +1,11 @@
   <!-- styles -->
 {% capture patterns %}{% include style/patterns.scss %}{% endcapture %}
-{% capture pygments %}{% include style/pygments.scss %}{% endcapture %}
 {% capture hero %}{% include style/hero.scss %}{% endcapture %}
 {% capture photo %}{% include style/photo.scss %}{% endcapture %}
 
   <link rel="stylesheet" href="/main.css">
   {% if page.option contains 'custom-css' %}<link rel="stylesheet" href="{{ site.style-url }}/{{ page.custom-css }}">{% endif %}
   {% if page.option contains 'patterns' %}<style>{{ patterns | scssify }}</style>{% endif %}
-  {% if page.option contains 'code-block' %}<style>{{ pygments | scssify }}</style>{% endif %}
   {% if page.option contains 'hero' or page.option contains 'hero-srcset' %}<style>{{ hero | scssify }}</style>{% endif %}
   {% if page.option contains 'map-meta' %}<style>{{ photo | scssify }}</style>{% endif %}
 

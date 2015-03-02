@@ -1,0 +1,20 @@
+---
+title: .ancillary [aside]
+use: 'For content that is related to the main body but not necessarily as important – supporting the main story without being directly a part of it.'
+spec: 'Lower contrast light background that connects seamlessly with the body background, pushed slightly or significantly to the right of body text.'
+type: markdown
+---
+
+{% capture ancillary %}
+# Ancillary content
+
+Using a `capture` tag with Liquid allows one to encode Markdown text into an HTML block. One could use a Ruby plugin for Jekyll to process it, but that may be less effective.
+{% endcapture %}
+
+<aside class="ancillary">
+{{ ancillary | markdownify }}
+</aside>
+
+Content flows after or around the `<aside>` block. The `.ancillary` block should be used: 
+
+> {{ page.use }}

@@ -3,7 +3,6 @@ title: 'How to design a better responsive code&nbsp;block'
 layout: singel
 option:
   - code
-  - code-block
   - hero
   - index-image
 category: 'writing'
@@ -168,12 +167,12 @@ The following shows the scroll method using the HTML sample from earlier.
 ### It’s not too beautiful
 
 <div class="highlighter-rouge" style="position: relative;">
-<pre class="highlight" style=" overflow: scroll; padding-left: 1em; padding-right: 1em;"><code class="language-html" data-lang="html" style="word-wrap: normal; overflow-wrap: normal; white-space: pre"><span class="nt">&lt;p&gt;</span>My monospace font is <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://adobe-fonts.github.io/source-code-pro&quot;</span><span class="nt">&gt;</span>Adobe Source Code Pro<span class="nt">&lt;/a&gt;</span>. It is beautiful, and <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://www.google.com/fonts/specimen/Source+Code+Pro&quot;</span><span class="nt">&gt;</span>it is free to use<span class="nt">&lt;/a&gt;</span>. To make sure that code blocks look their best, I set the monospace typeface to be proportional to the rest of the typography on my site – around .8125em for a site based on a 1em scale. This proportion works slightly differently depending on the typeface and weight chosen.<span class="nt">&lt;/p&gt;</span>
+<pre class="highlight" style=" overflow: scroll; padding-bottom: 1.5em; padding-left: 1em; padding-right: 1em;"><code class="language-html" data-lang="html" style="word-wrap: normal; overflow-wrap: normal; white-space: pre"><span class="nt">&lt;p&gt;</span>My monospace font is <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://adobe-fonts.github.io/source-code-pro&quot;</span><span class="nt">&gt;</span>Adobe Source Code Pro<span class="nt">&lt;/a&gt;</span>. It is beautiful, and <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://www.google.com/fonts/specimen/Source+Code+Pro&quot;</span><span class="nt">&gt;</span>it is free to use<span class="nt">&lt;/a&gt;</span>. To make sure that code blocks look their best, I set the monospace typeface to be proportional to the rest of the typography on my site – around .8125em for a site based on a 1em scale. This proportion works slightly differently depending on the typeface and weight chosen.<span class="nt">&lt;/p&gt;</span>
 
 <span class="nt">&lt;hr&gt;</span>
 
 <span class="nt">&lt;p&gt;</span>An example of <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://example.com/areallylongurlthatwouldotherwisebreakwithoutbreakword&quot;</span><span class="nt">&gt;</span>a really long string<span class="nt">&lt;/a&gt;</span>.<span class="nt">&lt;/p&gt;</span></code></pre>
-<div style="color: hsla(204, 10%, 32%, 1); font-size: .75em; font-weight: 400; padding: .5em; position: absolute; bottom: 0; right: 0;">Scroll ⇀</div>
+<div style="color: hsla(204, 10%, 80%, 1); font-size: .75em; font-weight: 400; padding: .5em; position: absolute; bottom: 0; right: 0;">Scroll ⇀</div>
 </div>
 
 I believe this method is particularly poorly suited for HTML or any other code with comments in it. It is responsive, but not as adaptive to different screens as the `break-word` method.[^3]

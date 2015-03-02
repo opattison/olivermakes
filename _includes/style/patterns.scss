@@ -34,10 +34,93 @@
   width: 100%;
 }
 
+.sans {
+  font-family: $ratio;
+}
+
+.monospace {
+  font-family: $source-code-pro;
+  font-size: .8125em;
+}
+
+.w300 {
+  font-weight: 300;
+}
+
+.w400 {
+  font-weight: 400;
+}
+
+.w500 {
+  font-weight: 500;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.pattern {
+  margin-top: 3em;
+}
+
+.pattern-view {
+  background-color: $gray06;
+  clear: both;
+  color: $black;
+}
+
+.pattern-view summary {
+  background-color: $gray03;
+  color: $whiter;
+  padding: 1em;
+  transition: all 160ms;
+}
+
+.pattern-view summary:hover,
+.pattern-view summary:focus {
+  background-color: $blue;
+  outline: none;
+}
+
+.pattern-view figure {
+  margin-top: 0;
+  padding: 1em;
+}
+
+.pattern-view textarea {
+  background-color: $gray02;
+  color: $whiter;
+  font-family: $source-code-pro;
+  font-size: .75em;
+  min-height: 5.5em;
+  padding: .5em 1em;
+  width: 100%;
+}
+
+.pattern-view figcaption {
+  margin: .5em 0 0;
+  padding: 0;
+}
+
+.pattern-view figcaption strong {
+  font-weight: 500;
+}
+
+.pattern-view figcaption p {
+  font-size: .875em;
+  text-align: left;
+}
+
 @media screen and (min-width: 20em) {
   .swatches li {
     float: left;
     width: 50%;
+  }
+}
+
+@media screen and (min-width: 45em) {
+  .pattern-view summary {
+    font-size: 1.125em;
   }
 }
 

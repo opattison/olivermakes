@@ -1,0 +1,12 @@
+- name: purple
+  hsl: 'hsla(285, 25%, 40%, 1)'
+  hex: '#734d80'
+- name: orange
+  hsl: 'hsla(22, 50%, 44%, 1)'
+  hex: '#a86138'
+- name: gold
+  hsl: 'hsla(44, 60%, 42%, 1)'
+  hex: '#ab892b'
+- name: bluegreen
+  hsl: 'hsla(184, 32%, 38%, 1)'
+  hex: '#427c80'

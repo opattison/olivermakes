@@ -1,0 +1,33 @@
+  - name: black
+    hsl: 'hsla(204, 10%, 12%, 1)'
+    hex: '#1c1f22'
+  - name: gray00
+    hsl: 'hsla(204, 10%, 18%, 1)'
+    hex: '#292f32'
+  - name: gray01
+    hsl: 'hsla(204, 10%, 24%, 1)'
+    hex: '#373e43'
+  - name: gray02
+    hsl: 'hsla(204, 10%, 32%, 1)'
+    hex: '#49535a'
+  - name: gray03
+    hsl: 'hsla(204, 10%, 40%, 1)'
+    hex: '#5c6870'
+  - name: gray04
+    hsl: 'hsla(204, 10%, 72%, 1)'
+    hex: '#b0b9bf'
+  - name: gray05
+    hsl: 'hsla(204, 10%, 80%, 1)'
+    hex: '#c7cdd1'
+  - name: gray06
+    hsl: 'hsla(204, 10%, 88%, 1)'
+    hex: '#dde1e3'
+  - name: gray07
+    hsl: 'hsla(204, 10%, 92%, 1)'
+    hex: '#e9ebed'
+  - name: white
+    hsl: 'hsla(204, 10%, 95%, 1)'
+    hex: '#f1f3f4'
+  - name: whiter
+    hsl: 'hsla(204, 10%, 97%, 1)'
+    hex: '#f7f8f8'

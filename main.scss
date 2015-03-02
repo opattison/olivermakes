@@ -129,19 +129,36 @@ ul {
   list-style-type: square;
 }
 
+ul ul,
+ol ol {
+  margin: .5em 1em;
+}
+
 article ol {
-  counter-reset: listNumbering;
+  counter-reset: ordered-list;
   list-style-type: none;
 }
 
+article ol ol {
+  counter-reset: ordered-list-sub;
+}
+
 article ol li {
-  counter-increment: listNumbering;
+  counter-increment: ordered-list;
+}
+
+article ol ol li {
+  counter-increment: ordered-list-sub;
 }
 
 article ol li::before {
-  content: counter(listNumbering) '.';
+  content: counter(ordered-list) ':';
   font-weight: bolder;
   margin-right: .25em;
+}
+
+article ol ol li::before {
+  content: counter(ordered-list) "." counter(ordered-list-sub) ":";
 }
 
 /* Blockquotes */
@@ -216,7 +233,7 @@ samp {
 p > code,
 li > code,
 samp {
-  border: solid 1px $gray04;
+  border: solid 1px $gray05;
   border-radius: .25em;
   margin: 0 -.03125em;
   padding: .0625em .25em 0;
@@ -298,11 +315,14 @@ nav li {
 
 /* Logo */
 
+.logo {
+  height: 2.5em;
+  width: 2.5em;
+}
+
 .title .logo {
   float: left;
-  height: 2.5em;
   margin: 0 .5em 0 0;
-  width: 2.5em;
 }
 
 .title .logo circle {
@@ -683,10 +703,16 @@ nav li {
 }
 
 .highlight {
+  background-color: $gray02;
   border-bottom: solid .0625em $gray05;
   border-top: solid .0625em $gray05;
+  color: $whiter;
   font-size: 1em;
   font-family: sans-serif;
+}
+
+.highlight .c {
+  color: $gray05; /* Comments */
 }
 
 .link {
@@ -745,20 +771,22 @@ nav li {
   width: 100%;
 }
 
-.project-url {
+.project-links .project-url {
   background-color: $red;
+  color: $white;
 }
 
-.project-source {
+.project-links .project-source {
   background-color: $violet;
+  color: $white;
 }
 
-.project-url:hover {
+.project-links .project-url:hover {
   background-color: $white;
   color: $red;
 }
 
-.project-source:hover {
+.project-links .project-source:hover {
   background-color: $white;
   color: $violet;
 }
@@ -1370,7 +1398,6 @@ screen and (min-resolution: 1.5dppx) {
     width: 50%;
   }
 
-  .highlight,
   .essay {
     padding-bottom: 1.25em;
     padding-top: 1.25em;
@@ -1649,11 +1676,6 @@ screen and (min-resolution: 1.5dppx) {
 
   .right {
     margin: 1.5em -4.5em 1.5em 2em;
-  }
-
-  .highlight {
-    padding-bottom: 2em;
-    padding-top: 2em;
   }
 
   .project {
