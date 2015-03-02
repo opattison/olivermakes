@@ -767,20 +767,22 @@ nav li {
   width: 100%;
 }
 
-.project-url {
+.project-links .project-url {
   background-color: $red;
+  color: $white;
 }
 
-.project-source {
+.project-links .project-source {
   background-color: $violet;
+  color: $white;
 }
 
-.project-url:hover {
+.project-links .project-url:hover {
   background-color: $white;
   color: $red;
 }
 
-.project-source:hover {
+.project-links .project-source:hover {
   background-color: $white;
   color: $violet;
 }
