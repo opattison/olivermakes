@@ -1,6 +1,7 @@
 ---
 title: ol
 use: 'An ordered list for a collection of items with numbered values and a specific sequence.'
+spec: 'Sub-items use contents-style hierarchy like x.1, x.2 and so on.'
 type: markdown
 ---
 
