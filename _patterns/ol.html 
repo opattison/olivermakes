@@ -1,0 +1,12 @@
+---
+title: ol
+use: 'An ordered list for a collection of items with numbered values and a specific sequence.'
+type: markdown
+---
+
+1. The first list item
+2. The second item in the list
+3. And a third item in this list of items
+    1. The first nested sub-item in the list
+    2. The second nested sub-item
+4. A fourth item in the list
