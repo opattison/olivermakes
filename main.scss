@@ -129,19 +129,36 @@ ul {
   list-style-type: square;
 }
 
+ul ul,
+ol ol {
+  margin: .5em 1em;
+}
+
 article ol {
-  counter-reset: listNumbering;
+  counter-reset: ordered-list;
   list-style-type: none;
 }
 
+article ol ol {
+  counter-reset: ordered-list-sub;
+}
+
 article ol li {
-  counter-increment: listNumbering;
+  counter-increment: ordered-list;
+}
+
+article ol ol li {
+  counter-increment: ordered-list-sub;
 }
 
 article ol li::before {
-  content: counter(listNumbering) '.';
+  content: counter(ordered-list) ':';
   font-weight: bolder;
   margin-right: .25em;
+}
+
+article ol ol li::before {
+  content: counter(ordered-list) "." counter(ordered-list-sub) ":";
 }
 
 /* Blockquotes */
