@@ -5,6 +5,6 @@ alphabet:
   lower: 'abcdefghijklmnopqrstuvwxyz'
 numerals: '0123456789'
 characters:
-  sample: '“‘-!?@&$#*–,.;:—’”'
+  sample: '{[(“‘-!?@&$#*–,.;:—’”)]}'
 prose:
   thosefive: 'Those five bad quacking zephyrs officiously jolt my floating waxen effigy. We take this past the line length to show the length of a line.'
