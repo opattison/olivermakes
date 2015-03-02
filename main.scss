@@ -711,6 +711,10 @@ nav li {
   font-family: sans-serif;
 }
 
+.highlight .c {
+  color: $gray05; /* Comments */
+}
+
 .link {
   background-color: $gray00;
   border-bottom: none;
@@ -1394,7 +1398,6 @@ screen and (min-resolution: 1.5dppx) {
     width: 50%;
   }
 
-  .highlight,
   .essay {
     padding-bottom: 1.25em;
     padding-top: 1.25em;
@@ -1673,11 +1676,6 @@ screen and (min-resolution: 1.5dppx) {
 
   .right {
     margin: 1.5em -4.5em 1.5em 2em;
-  }
-
-  .highlight {
-    padding-bottom: 2em;
-    padding-top: 2em;
   }
 
   .project {
