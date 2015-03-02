@@ -64,19 +64,20 @@
 }
 
 .pattern-view {
-  background-color: $gray01;
-  color: $white;
+  background-color: $gray06;
+  color: $black;
 }
 
 .pattern-view summary {
-  background-color: $blue;
+  background-color: $gray03;
+  color: $whiter;
   padding: 1em;
   transition: all 160ms;
 }
 
 .pattern-view summary:hover,
 .pattern-view summary:focus {
-  background-color: $green;
+  background-color: $blue;
   outline: none;
 }
 
@@ -86,22 +87,22 @@
 }
 
 .pattern-view textarea {
-  background-color: $white;
-  color: $gray01;
+  background-color: $gray02;
+  color: $whiter;
   font-family: $source-code-pro;
   font-size: .75em;
+  min-height: 5.5em;
   padding: .5em 1em;
   width: 100%;
 }
 
-.pattern-view h5 {
-  color: inherit;
-}
-
 .pattern-view figcaption {
-  color: inherit;
   margin: .5em 0 0;
   padding: 0;
+}
+
+.pattern-view figcaption strong {
+  font-weight: 500;
 }
 
 .pattern-view figcaption p {
