@@ -29,7 +29,8 @@ I am <span class="p-name">Oliver Pattison</span>, a designer focused on the futu
 
 I currently live in Washington, DC. I am originally from New York City.
 
-<p class="important">I am available for hire. <a href="mailto:{{ site.author.email }}" rel="me" class="u-email">Get in touch</a> by email if you have a project in mind.</p>
+I am available for hire. <a href="mailto:{{ site.author.email }}" rel="me" class="u-email">Get in touch</a> by email if you have a project in mind.
+{:.important}
 
 ## About this site
 
