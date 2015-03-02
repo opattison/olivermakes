@@ -216,7 +216,7 @@ samp {
 p > code,
 li > code,
 samp {
-  border: solid 1px $gray04;
+  border: solid 1px $gray05;
   border-radius: .25em;
   margin: 0 -.03125em;
   padding: .0625em .25em 0;
@@ -686,8 +686,10 @@ nav li {
 }
 
 .highlight {
+  background-color: $gray02;
   border-bottom: solid .0625em $gray05;
   border-top: solid .0625em $gray05;
+  color: $whiter;
   font-size: 1em;
   font-family: sans-serif;
 }

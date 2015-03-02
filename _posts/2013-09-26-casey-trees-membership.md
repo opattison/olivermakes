@@ -3,7 +3,6 @@ title: 'Membership design for Casey Trees'
 layout: dubbel
 option:
   - code
-  - code-block
   - index-image
   - patterns
   - sample-srcset

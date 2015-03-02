@@ -3,7 +3,6 @@ title: 'How to design a better responsive code&nbsp;block'
 layout: singel
 option:
   - code
-  - code-block
   - hero
   - index-image
 category: 'writing'
