@@ -60,7 +60,7 @@
 }
 
 .pattern {
-  margin-top: 2em;
+  margin-top: 3em;
 }
 
 .pattern-view {
@@ -71,6 +71,13 @@
 .pattern-view summary {
   background-color: $blue;
   padding: 1em;
+  transition: all 160ms;
+}
+
+.pattern-view summary:hover,
+.pattern-view summary:focus {
+  background-color: $green;
+  outline: none;
 }
 
 .pattern-view figure {
