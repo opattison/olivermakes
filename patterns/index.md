@@ -57,25 +57,19 @@ This pattern library is a work in progress. Take a look at the [style guide](/st
 
 ## Use of typography
 
-### Ratio font family (300-500)
+### Ratio font family (300, 400, 500)
 
-I’m Oliver Pattison, a designer focused on the future of the web.
-{:.sans .w300}
+{% include meta/type.html class='sans w300' %}
 
-I’m Oliver Pattison, a designer focused on the future of the web.
-{:.sans .w300 .italic}
+{% include meta/type.html class='sans w300 italic' %}
 
-I’m Oliver Pattison, a designer focused on the future of the web.
-{:.sans .w400}
+{% include meta/type.html class='sans w400' %}
 
-I’m Oliver Pattison, a designer focused on the future of the web.
-{:.sans .w400 .italic}
+{% include meta/type.html class='sans w400 italic' %}
 
-I’m Oliver Pattison, a designer focused on the future of the web.
-{:.sans .w500}
+{% include meta/type.html class='sans w500' %}
 
-I’m Oliver Pattison, a designer focused on the future of the web.
-{:.sans .w500 .italic}
+{% include meta/type.html class='sans w500 italic' %}
 
 ```
 $ratio: 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
@@ -83,7 +77,7 @@ $ratio: 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
 
 ### Source Code Pro font family (400)
 
-I’m Oliver Pattison, a designer focused on the future of the web.
+{% include meta/type.html class='monospace' %}
 {:.monospace}
 
 ```
