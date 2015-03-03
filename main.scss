@@ -1019,24 +1019,19 @@ article img {
 
 /* Sections and items */
 
-.features {
-  margin: 1em -1em 0;
-  width: calc(100% + 2em);
-}
-
-.home .features,
 .home .index {
   margin-top: 0;
 }
 
 .items {
-  margin: 1em auto;
-  overflow: hidden;
-}
-
-.archive-items {
-  margin: 0 auto;
-  overflow: auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 
 .archive-item {
@@ -1046,8 +1041,6 @@ article img {
 .feature,
 .item {
   background-color: $gray07;
-  display: inline-block;
-  position: relative;
 }
 
 .item:nth-child(2n + 2) {
@@ -1189,8 +1182,18 @@ article img {
 
 /* Links to archives */
 
+.link-archive {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 100%;
+}
+
 .link-archive .link {
   background-color: $red;
+  margin: 0;
+  width: 100%;
 }
 
 .link-archive .link:nth-child(2) {
@@ -1324,10 +1327,6 @@ screen and (min-resolution: 1.5dppx) {
     margin-right: -2em;
   }
 
-  .features {
-    margin-top: -1em;
-  }
-
   .index-title {
     margin: 0 1.5em;
   }
@@ -1411,82 +1410,12 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 1em;
   }
 
-  .index {
-    margin: 1em auto 0;
-    max-width: 45em;
-  }
-
-  .features + .items {
-    margin-top: 0;
-  }
-
-  .features {
-    margin: -1em auto 0;
-    width: 100%;
-  }
-
-  .archive-items {
-    margin: 1em auto;
-  }
-
   .archive-item .meta {
     font-size: 1.25em;
   }
 
   .index-header h1 {
     margin-left: 1.6em;
-  }
-
-  .item {
-    float: left;
-    height: 20em;
-    margin: 1em 0 0;
-    width: 50%;
-  }
-
-  .photo-gallery .item {
-    height: 12.5em;
-  }
-
-  .meta {
-    padding: 2em;
-  }
-
-  .feature .meta {
-    font-size: 1.25em;
-    min-height: 15em;
-    padding: 1.6em;
-  }
-
-  .archive .meta {
-    padding: 1em 2em;
-  }
-
-  .introduction .meta p {
-    font-size: 1.125em;
-  }
-
-  .item .meta {
-    height: 16em;
-  }
-
-  .feature .link {
-    font-size: 1.125em;
-  }
-
-  .link-archive {
-    float: left;
-    width: 100%;
-  }
-
-  .link-archive .link {
-    margin: 0;
-    float: left;
-    width: 50%;
-  }
-
-  .link-archive .link:only-child {
-    width: 100%;
   }
 }
 
@@ -1506,6 +1435,11 @@ screen and (min-resolution: 1.5dppx) {
     margin: 0 auto;
   }
 
+  .index-header h1 {
+    margin: 0;
+    text-align: center;
+  }
+
   .alt-nav {
     font-size: 1.25em;
   }
@@ -1513,6 +1447,60 @@ screen and (min-resolution: 1.5dppx) {
   .site-nav li a,
   .alt-nav li a {
     font-size: 1.125em;
+  }
+
+  .index {
+    margin: 1em auto 0;
+    max-width: 45em;
+  }
+
+  .items {
+    margin-bottom: 1em;
+  }
+
+  .item {
+    height: 20em;
+    margin: 1em 0 0;
+    width: 50%;
+  }
+
+  .photo-gallery .item {
+    height: 12.5em;
+  }
+
+  .meta {
+    padding: 2em;
+  }
+
+  .item .meta {
+    height: 16em;
+  }
+
+  .feature .meta {
+    font-size: 1.25em;
+    min-height: 15em;
+    padding: 1.6em;
+  }
+
+  .archive .meta {
+    padding: 1em 2em;
+  }
+
+  .introduction .meta p {
+    font-size: 1.125em;
+  }
+
+  .feature .link {
+    font-size: 1.125em;
+  }
+
+  .link-archive .link {
+    margin: 0;
+    width: 50%;
+  }
+
+  .link-archive .link:only-child {
+    width: 100%;
   }
 }
 
@@ -1582,15 +1570,6 @@ screen and (min-resolution: 1.5dppx) {
 
   .index-title {
     margin: .5em auto 1em;
-  }
-
-  .features {
-    margin-top: 1em;
-  }
-
-  .index-header h1 {
-    margin: 0;
-    text-align: center;
   }
 
   .photo-gallery .item {

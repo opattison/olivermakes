@@ -5,12 +5,10 @@ layout: archive
 
 {% include archive/header.html suffix='archive' %}
 
-<div class="archive-items">
-  <ul>
+<div class="items">
 {% for post in page.posts %}
 {% include archive/item.html %}
 {% endfor %}
-  </ul>
 {% include archive/link-standard.html %}
 </div>
 

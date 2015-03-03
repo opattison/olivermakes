@@ -5,15 +5,13 @@ category: index
 
 ---
 
-<div class="features">
+<div class="items">
 {% include index/introduction.html %}
 {% for post in site.posts %}
 {% if post.option contains 'feature' %}
 {% include index/feature.html %}
 {% endif %}
 {% endfor %}
-</div>
-<div class="items">
 {% for post in site.posts limit:6 %}
 {% unless post.option contains 'feature' %}
 {% include index/item.html %}
