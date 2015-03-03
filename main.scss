@@ -1001,7 +1001,7 @@ article img {
   font-size: 1.125em;
   font-style: italic;
   font-weight: 400;
-  line-height: 1.25em;
+  line-height: 1.25;
 }
 
 .introduction a {
@@ -1468,8 +1468,8 @@ screen and (min-resolution: 1.5dppx) {
     padding: 1em 2em;
   }
 
-  .introduction {
-    font-size: 1.25em;
+  .introduction .meta p {
+    font-size: 1.125em;
   }
 
   .item .meta {
