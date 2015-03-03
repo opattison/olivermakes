@@ -7,6 +7,7 @@ option:
 category: 'projects'
 tags:
   - 'css'
+  - 'design'
   - 'html'
   - 'jekyll'
   - 'web'

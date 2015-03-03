@@ -11,10 +11,11 @@ category: 'projects'
 tags:
   - 'design'
   - 'jekyll'
+  - 'process'
   - 'responsive'
   - 'web'
 date: 2014-02-16 12:34
-updated: 2014-12-06 16:01
+updated: 2015-03-02 21:02
 drafted: 2014-12-03 17:10
 unique-id: 2014-02-16:jean-flanagan
 period: 2013-06 to present
@@ -69,7 +70,7 @@ The site was designed from small screens up, using flexible images, fluid layout
 
 ### Content first
 
-The first thing we started out with were full-length articles about science, already written and edited. Having content ahead of time meant that the site could be designed around *actual words and images* rather than lorem ipsum filler text. (I really don’t like using lorem ipsum if I can help it. [^1]) It was essential to the process to test typography and proportion with real content.
+The first thing we started out with were full-length articles about science, already written and edited. Having content ahead of time meant that the site could be designed around *actual words and images* rather than lorem ipsum filler text. (I really don’t like using lorem ipsum if I can help it.[^1]) It was essential to the process to test typography and proportion with real content.
 
 Designing in a browser meant that HTML prototypes were an early part of the process, right after sketching and rough notes. In the first week of active development, prototype code was being written that would evolve into the finished product.
 
@@ -99,7 +100,7 @@ Designing in a browser meant that HTML prototypes were an early part of the proc
 
 ### Flexible layout for long writing and featured photography
 
-Jean takes [beautiful photos](http://jeancflanagan.com/photos/), which I wanted to feature in a “full-bleed” format with photos taking up as much of the screen width as possible (without being so tall that they require vertical scrolling). The photo pages have a distinct layout from the writing pages to ensure that images are featured prominently without affecting the typographic measure of writing pages. Both layouts are able to feature edge-to-edge (margin-breaking) images, but the page proportions are different for each. Both page layouts feature images, but the photo pages tend to feature original photography, while writing layouts often make use of Creative Commons attributed images.
+Jean takes [beautiful photos](http://jeancflanagan.com/photos/), which I wanted to feature in a “full-bleed” format with photos taking up as much of the screen width as possible (without being so tall that they require vertical scrolling). The photo pages have a distinct layout from the writing pages to ensure that images are featured prominently without affecting the typographic measure of writing pages. Both layouts are able to feature edge-to-edge (margin-breaking) images, but the page proportions are different for each. Both page layouts feature images, but the photo pages tend to feature original photography, while writing layouts often make use of Creative Commons-attributed images.
 
 #### Sample from photo layout
 
@@ -139,7 +140,7 @@ Not every image is meant to be showcased, nor should every image overshadow the 
 
 ### Personality
 
-We wanted to make sure that some of Jean’s interests and personality were part of the site’s design. For example, on the 404 page has a floating jellyfish animation which echoes her interest in marine biology. 
+We wanted to make sure that some of Jean’s interests and personality were part of the site’s design. For example, [the 404 page](http://jeancflanagan.com/404.html) has a floating jellyfish animation which echoes her interest in marine biology. 
 
 <div id="error-404">
   <figure class="wide">
@@ -150,17 +151,17 @@ We wanted to make sure that some of Jean’s interests and personality were part
 
 ## Choosing Jekyll
 
-Jean already had a personal WordPress site, which I had helped her transition from the limited WordPress.com service to her own personal domain and host. However, Jean was still feeling constrained by limitations in configuration and design. I could certainly help redesign a WordPress site, but it would be an uphill battle since I have not ever made a theme from scratch, and developing a site with PHP is not my strength. Building on existing themes was a sure way to end up with a compromised design with inflexibile configuration. Hacking around in WordPress would only take time away from my developing my existing strengths in responsive HTML and CSS.
+Jean already had a personal WordPress site. I had helped her transition from the limited WordPress.com service to her own personal domain and host. However, Jean was still feeling constrained by limitations in configuration and design. I could certainly help redesign a WordPress site, but it would be a significant challenge since I have not ever made a theme from scratch, nor have I worked extensively with PHP. Building on existing themes was a sure way to end up with a compromised design with inflexibile configuration. Hacking around in WordPress would only take time away from my developing my existing strengths in responsive HTML and CSS.
 
 Both of us realized that WordPress was no longer a good fit. Jean wanted more control over content and flexible layouts, as well as an interface that wouldn’t involve fighting with a WYSIWYG editor or administering a content management system and database. The trade-off for ease-of-use and getting started quickly with WordPress was outweighed by a desire to publish independently and to develop a process that would be able to withstand servers misbehaving, databases being corrupted, or any of the pitfalls of locking in to a “platform”.
 
-We chose [Jekyll](http://jekyllrb.com) because it would allow for a high performance site with plenty of flexibility in design and configuration. We realized that there would be a learning curve for both of us, since I had only just gotten started with Jekyll and it would be new for Jean. A site built of flat files and no <abbr title="content management system">CMS</abbr> nor server-side processing is limiting for some applications, but has great advantages in performance and maintainability. [^2]
+We chose [Jekyll](http://jekyllrb.com) because it would allow for a high performance site with plenty of flexibility in design and configuration. We realized that there would be a learning curve for both of us, since I had only just gotten started with Jekyll and it would be new for Jean. A site built of flat files with neither a <abbr title="content management system">CMS</abbr> nor server-side processing is limiting for some applications, but has great advantages in performance and maintainability.[^2]
 
 ## Getting it right is difficult
 
-Publishing *something* on the web is relatively easy, but designing a lasting home for creative output that you won’t be forced to abandon or migrate later takes a significant amount of time and effort. For this project, both design and content were weighed deliberately. Working **content first** was key for the design, since it meant that the layout, typography and other design elements would suit the content well.
+Publishing *something* on the web is relatively easy, but designing a lasting home for creative output that you won’t be forced to abandon or migrate later takes a significant amount of time and effort. For this project, both design and content were weighed deliberately. Working **content first** informed the design. The layout, typography and other design elements had to suit the content well.
 
-{% capture p1 %}
+{% capture oliver %}
 
 ## What I learned from this project
 
@@ -172,7 +173,7 @@ Publishing *something* on the web is relatively easy, but designing a lasting ho
 
 {% endcapture %}
 
-{% capture a1 %}
+{% capture jean %}
 # What Jean learned from this project
 
 <i>by <cite><a href="http://jeanflanagan.com">Jean Flanagan</a></cite></i>
@@ -186,10 +187,10 @@ Publishing *something* on the web is relatively easy, but designing a lasting ho
 {% endcapture %}
 
 <aside class="ancillary">
-{{ a1 | markdownify }}
+{{ jean | markdownify }}
 </aside>
 <div class="flow-side">
-{{ p1 | markdownify }}
+{{ oliver | markdownify }}
 </div>
 
 - - -
