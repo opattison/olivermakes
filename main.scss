@@ -1299,6 +1299,11 @@ screen and (min-resolution: 1.5dppx) {
     margin: 0 1.5em;
   }
 
+  .index-header h1 {
+    margin-left: 1.6em;
+    text-align: left;
+  }
+
   .top-menu,
   .close-menu {
     right: 0;
@@ -1331,15 +1336,6 @@ screen and (min-resolution: 1.5dppx) {
     margin-right: -2em;
   }
 
-  .index-title {
-    margin: 0 1.5em;
-  }
-
-  .index-header h1 {
-    margin-left: .8em;
-    text-align: left;
-  }
-
   .photo-gallery .item .meta h1 {
     font-size: 1.25em;
   }
@@ -1359,10 +1355,6 @@ screen and (min-resolution: 1.5dppx) {
   .page-header .inside {
     padding-top: 1.25em;
     padding-bottom: 1.25em;
-  }
-
-  .title {
-    margin: 0 2.5em;
   }
 
   .narrow,
@@ -1570,10 +1562,6 @@ screen and (min-resolution: 1.5dppx) {
     text-align: center;
     width: 26em;
     z-index: 2;
-  }
-
-  .index-title {
-    margin: .5em auto 1em;
   }
 
   .photo-gallery .item {
@@ -1854,10 +1842,6 @@ screen and (min-resolution: 1.5dppx) {
 
   .site-info {
     padding: 2em 2em 0;
-  }
-
-  .index-title {
-    margin: 1.5em auto;
   }
 }
 
