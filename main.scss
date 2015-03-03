@@ -383,7 +383,7 @@ nav li {
 
 .top-menu a,
 .close-menu a,
-.alt-nav a {
+.alt-nav-item {
   color: $whiter;
   display: block;
   font-weight: 400;
@@ -548,78 +548,80 @@ nav li {
   margin: 0;
 }
 
-.alt-nav li a {
+.alt-nav-item {
   background-color: $gray00;
   color: $whiter;
   padding: 1em;
 }
 
-.alt-nav .back-home a,
+.back-home {
+  @include flexbox;
+  @include justify-content(center);
+}
+
+.back-home .logo {
+  height: 1.3em;
+  margin: 0;
+  -webkit-transform: translate(.3em, .05em);
+          transform: translate(.3em, .05em);
+  width: 1.3em;
+}
+
+.back-home .icon-logo {
+  padding: .0625em;
+}
+
+.back-home circle {
+  stroke: $whiter;
+  stroke-width: 36px;
+}
+
+.back-home,
 .page-meta .later a {
   background-color: $red;
 }
 
-.alt-nav .back-top a,
+.back-top,
 .page-meta .earlier a {
   background-color: $blue;
 }
 
-.alt-nav a:hover,
-.alt-nav a:focus,
+.alt-nav-item:hover,
+.alt-nav-item:focus,
 .page-meta .chronology a:hover,
 .page-meta .chronology a:focus {
   background-color: $whiter;
   outline: none;
 }
 
-.alt-nav .back-home a:hover,
-.alt-nav .back-home a:focus,
+.back-home:hover,
+.back-home:focus,
 .page-meta .later a:hover,
 .page-meta .later a:focus {
   color: $red;
 }
 
-.alt-nav .back-home a:focus,
+.back-home:focus,
 .page-meta .later a:focus {
   color: $boldred;
 }
 
-.alt-nav .back-home a:hover circle {
+.back-home:hover circle {
   stroke: $red;
 }
 
-.alt-nav .back-home a:focus circle {
+.back-home:focus circle {
   stroke: $boldred;
 }
 
-.alt-nav .back-top a:hover,
+.back-top:hover,
 .page-meta .earlier a:hover {
   color: $blue;
 }
 
-.alt-nav .back-top a:focus,
+.back-top:focus,
 .page-meta .earlier a:focus {
   color: $boldblue;
-}
-
-.back-home .inside {
-  margin: 0 auto;
-  width: 4.5em;
-}
-
-.back-home .logo {
-  float: right;
-  height: 1.25em;
-  width: 1.25em;
-}
-
-.back-home .logo svg {
-  padding: 2px;
-}
-
-.back-home .logo circle {
-  stroke: $whiter;
-  stroke-width: 32px;
 }
 
 /*** Page **************************************/
@@ -1023,14 +1025,8 @@ article img {
 }
 
 .items {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  -moz-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
+  @include flexbox;
+  @include flex-flow(row wrap);
 }
 
 .archive-item {
@@ -1046,15 +1042,17 @@ article img {
   background-color: $gray05;
 }
 
-.feature,
-.item,
-.archive-item {
-  width: 100%;
-}
-
 .item {
   margin-left: 1em;
   margin-right: 1em;
+  @include flex(0 0 calc(100% - 2em));
+  width: 100%;
+}
+
+.feature,
+.archive-item {
+  width: 100%;
+  @include flex(0 0 100%);
 }
 
 .index .location a {
@@ -1187,10 +1185,7 @@ article img {
 /* Links to archives */
 
 .link-archive {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: flex;
+  @include flexbox;
   width: 100%;
 }
 
@@ -1441,7 +1436,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .site-nav li a,
-  .alt-nav li a {
+  .alt-nav-item {
     font-size: 1.125em;
   }
 
@@ -1458,6 +1453,7 @@ screen and (min-resolution: 1.5dppx) {
     height: 20em;
     margin: 1em 0 0;
     width: 50%;
+    @include flex(0 0 50%);
   }
 
   .photo-gallery .item {
@@ -1621,7 +1617,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .site-nav li a,
-  .alt-nav li a {
+  .alt-nav-item {
     font-size: 1.25em;
   }
 
