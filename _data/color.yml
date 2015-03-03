@@ -17,7 +17,7 @@
   hsl: 'hsla(225, 35%, 52%, 1)'
   hex: '#5a6faf'
 - name: red
-  hsl: 'hsla(4, 60%, 50%, 1)'
+  hsl: 'hsla(4, 60%, 47%, 1)'
   hex: '#cc3d33'
 - name: boldred
   hsl: 'hsla(4, 80%, 40%, 1)'
