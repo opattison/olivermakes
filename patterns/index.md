@@ -1,6 +1,6 @@
 ---
 title: 'Patterns'
-layout: singel
+layout: edgeless
 option:
   - code
   - code-block
