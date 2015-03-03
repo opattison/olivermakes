@@ -443,7 +443,7 @@ nav li {
   margin: 0 auto;
 }
 
-.site-nav li a {
+.site-nav-item {
   background-color: $black;
   display: block;
   color: $whiter;
@@ -462,8 +462,9 @@ nav li {
   background-color: $gray00;
 }
 
-.site-nav li a:hover {
+.site-nav .site-nav-item:hover {
   background-color: $boldblue;
+  color: $whiter;
 }
 
 /* Target navigation - JS-free modal navigation */
@@ -530,14 +531,12 @@ nav li {
   background-color: $black-80;
 }
 
-.site-nav li a:focus,
-.site-nav:target li a:focus {
+.site-nav-item:focus {
   background-color: $boldblue;
   outline: none;
 }
 
-.site-nav li a:active,
-.site-nav:target li a:active {
+.site-nav-item:active {
   background-color: $green;
   color: $gray07;
 }
@@ -1430,7 +1429,7 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 1.25em;
   }
 
-  .site-nav li a,
+  .site-nav-item,
   .alt-nav-item {
     font-size: 1.125em;
   }
@@ -1611,7 +1610,7 @@ screen and (min-resolution: 1.5dppx) {
     max-width: 45rem;
   }
 
-  .site-nav li a,
+  .site-nav-item,
   .alt-nav-item {
     font-size: 1.25em;
   }
