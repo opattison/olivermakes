@@ -581,7 +581,6 @@ nav li {
 
 .alt-nav .back-home a:focus,
 .page-meta .later a:focus {
-  background-color: $gray05;
   color: $boldred;
 }
 
@@ -600,7 +599,6 @@ nav li {
 
 .alt-nav .back-top a:focus,
 .page-meta .earlier a:focus {
-  background-color: $gray05;
   color: $boldblue;
 }
 
@@ -1001,7 +999,7 @@ article img {
   font-size: 1.125em;
   font-style: italic;
   font-weight: 400;
-  line-height: 1.25em;
+  line-height: 1.25;
 }
 
 .introduction a {
@@ -1090,6 +1088,7 @@ article img {
 
 .meta h1 a {
   color: $red;
+  border-bottom: solid 1px $pure-1;
 }
 
 .meta h1 a:hover,
@@ -1207,11 +1206,6 @@ article img {
 .link-archive .link:nth-child(2):hover,
 .link-archive .link:nth-child(2):focus {
   color: $blue;
-}
-
-.link-archive .link:focus,
-.link-archive .link:nth-child(2):focus {
-  background-color: $gray05;
 }
 
 /*** Media queries *****************************/
@@ -1468,8 +1462,8 @@ screen and (min-resolution: 1.5dppx) {
     padding: 1em 2em;
   }
 
-  .introduction {
-    font-size: 1.25em;
+  .introduction .meta p {
+    font-size: 1.125em;
   }
 
   .item .meta {
