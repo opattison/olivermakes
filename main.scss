@@ -734,6 +734,7 @@ nav li {
 
 .project {
   background-color: $gray06;
+  min-height: 15em;
 }
 
 .project .sample {
@@ -749,12 +750,10 @@ nav li {
 }
 
 .project-links {
-  overflow: auto;
+  @include flexbox;
 }
 
 .project-links li {
-  display: inline-block;
-  float: left;
   list-style: none;
   margin: 0;
   width: 50%;
