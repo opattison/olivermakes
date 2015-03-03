@@ -995,7 +995,8 @@ article img {
 
 .introduction a {
   color: $whiter;
-  border-bottom: solid 1px $gray07;
+  border-bottom: solid 1px $gray07-80;
+  padding-bottom: 1px;
 }
 
 .introduction a:hover,
@@ -1009,7 +1010,7 @@ article img {
 }
 
 .introduction .meta p {
-  font-size: 1.125em;
+  font-size: 1.25em;
 }
 
 /* Sections and items */
@@ -1473,7 +1474,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .introduction .meta p {
-    font-size: 1.25em;
+    font-size: 1.375em;
   }
 
   .feature .link {
