@@ -11,6 +11,7 @@ category: 'projects'
 tags:
   - 'design'
   - 'jekyll'
+  - 'process'
   - 'responsive'
   - 'web'
 date: 2014-02-16 12:34
