@@ -581,7 +581,6 @@ nav li {
 
 .alt-nav .back-home a:focus,
 .page-meta .later a:focus {
-  background-color: $gray05;
   color: $boldred;
 }
 
@@ -600,7 +599,6 @@ nav li {
 
 .alt-nav .back-top a:focus,
 .page-meta .earlier a:focus {
-  background-color: $gray05;
   color: $boldblue;
 }
 
@@ -1208,11 +1206,6 @@ article img {
 .link-archive .link:nth-child(2):hover,
 .link-archive .link:nth-child(2):focus {
   color: $blue;
-}
-
-.link-archive .link:focus,
-.link-archive .link:nth-child(2):focus {
-  background-color: $gray05;
 }
 
 /*** Media queries *****************************/
