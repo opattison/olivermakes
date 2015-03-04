@@ -89,7 +89,7 @@ image:
   </div>
 </figure>
 
-<section class="grid2">
+<div class="grid">
 <figure>
   <input type="radio" role="radio" name="shift1" class="shift-back" id="shift-back1">
   <input type="radio" role="radio" name="shift1" class="shift-overlay" id="shift-overlay1">

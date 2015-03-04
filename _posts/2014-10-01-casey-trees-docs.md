@@ -44,7 +44,7 @@ I focused on the most important aspects of website management and design for the
 
 Unfortunately, the documents in the project contain proprietary information, so I can’t link to or substantially excerpt from the repository (it is not mine to share). Here is what the project looked like in the autumn of 2014:
 
-<div class="grid2">
+<div class="grid">
 <figure class="w33 screenshot">
   <img
     src="{{ site.image-url }}/{{ page.image[1].src }}" 
