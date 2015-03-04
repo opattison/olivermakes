@@ -8,7 +8,7 @@ option:
   - patterns
 category: meta
 date: 2014-10-31 18:25
-updated: 2014-11-29 11:20
+updated: 2015-03-02 09:44
 description: 'A collection of patterns for this website.'
 image:
   - src: 'logo.svg'

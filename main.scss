@@ -106,7 +106,7 @@ a:active {
 }
 
 article a,
-footer a {
+footer p a {
   border-bottom: solid 1px $pink;
 }
 
@@ -273,13 +273,6 @@ dt {
   width: 12.5%;
 }
 
-nav li {
-  list-style-type: none;
-  margin: 0;
-  text-align: center;
-  width: 50%;
-}
-
 /*** Site-wide *********************************/
 
 /** Header **/
@@ -409,12 +402,10 @@ nav li {
 }
 
 .site-info {
-  overflow: auto;
-}
-
-.site-info {
   background-color: $gray07;
   color: $gray00;
+  margin: 0;
+  overflow: auto;
   padding: 2em 1em;
   width: 100%;
 }
@@ -442,7 +433,10 @@ nav li {
   @include flex-flow(row wrap);
 }
 
-.sit-nav-list li {
+.site-nav-list li {
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
   @include flex(0 0 50%);
 }
 
@@ -549,24 +543,18 @@ nav li {
 
 .alt-nav {
   margin: 0;
-  @include flex(1 0 100%)
-}
-
-.alt-nav-list {
+  @include flex(1 0 100%);
   @include flexbox;
-}
-
-.alt-nav-list li {
-  @include flex(1 0 50%);
 }
 
 .alt-nav-item {
   background-color: $gray00;
   color: $whiter;
+  margin: 0;
+  max-width: 50%;
   padding: 1em;
-}
-
-.back-home {
+  text-align: center;
+  @include flex(1 0 50%);
   @include flexbox;
   @include justify-content(center);
 }
@@ -582,33 +570,25 @@ nav li {
   stroke-width: 36px;
 }
 
-.back-home,
-.page-meta .later a {
+.back-home {
   background-color: $red;
 }
 
-.back-top,
-.page-meta .earlier a {
+.back-top {
   background-color: $blue;
 }
 
 .alt-nav-item:hover,
-.alt-nav-item:focus,
-.page-meta .chronology a:hover,
-.page-meta .chronology a:focus {
+.alt-nav-item:focus {
   background-color: $whiter;
   outline: none;
 }
 
-.back-home:hover,
-.back-home:focus,
-.page-meta .later a:hover,
-.page-meta .later a:focus {
+.back-home:hover {
   color: $red;
 }
 
-.back-home:focus,
-.page-meta .later a:focus {
+.back-home:focus {
   color: $boldred;
 }
 
@@ -620,13 +600,11 @@ nav li {
   stroke: $boldred;
 }
 
-.back-top:hover,
-.page-meta .earlier a:hover {
+.back-top:hover {
   color: $blue;
 }
 
-.back-top:focus,
-.page-meta .earlier a:focus {
+.back-top:focus {
   color: $boldblue;
 }
 
@@ -655,38 +633,65 @@ nav li {
 .page-meta {
   background-color: $gray07;
   margin: 0 auto;
-  position: relative;
-}
-
-.page-meta .chronology,
-.page-meta .time {
-  margin-top: 0;
   width: 100%;
+  @include flexbox;
+  @include flex-flow(row wrap);
+  @include justify-content(center);
 }
 
-.page-meta .chronology {
-  overflow: auto;
-}
-
-.page-meta .chronology ul {
-  height: 100%;
-}
-
-.page-meta .chronology li:only-child {
-  width: 100%;
-}
-
-.page-meta .chronology a {
-  color: $gray07;
-  display: block;
+.page-meta .page-nav-item {
+  background-color: $red;
+  border: none;
+  color: $white;
   font-weight: 400;
-  height: 100%;
+  margin: 0;
+  max-width: 9em;
   min-height: 2.5em;
   padding: .5em 0;
+  text-align: center;
+  @include flex(1 0 50%);
+}
+
+.page-meta .page-nav-item:only-child {
+  @include flex(1 0 100%);
+}
+
+.page-meta .later {
+  background-color: $red;
+}
+
+.page-meta .earlier {
+  background-color: $blue;
+}
+
+.page-meta .page-nav-item:hover,
+.page-meta .page-nav-item:focus {
+  background-color: $whiter;
+  border: none;
+  outline: none;
+}
+
+.page-meta .later:hover {
+  color: $red;
+}
+
+.page-meta .later:focus {
+  color: $boldred;
+}
+
+.page-meta .earlier:hover {
+  color: $blue;
+}
+
+.page-meta .earlier:focus {
+  color: $boldblue;
 }
 
 .page-meta .time {
   padding: 1em;
+  margin: 0;
+  text-align: center;
+  @include flex(1 0 100%);
 }
 
 .page-meta .time p {
@@ -1531,39 +1536,27 @@ screen and (min-resolution: 1.5dppx) {
     height: 4em;
   }
 
-  .page-meta .chronology,
-  .page-meta .time {
-    position: absolute;
+  .page-meta .page-nav-item, 
+  .page-meta .page-nav-item:only-child {
+    @include flex(1 0 4.5em);
   }
 
-  .page-meta .chronology {
-    height: 4em;
-    bottom: 0;
-  }
-
-  .page-meta .chronology li, 
-  .page-meta .chronology li:only-child {
-    width: 5em;
-  }
-
-  .page-meta .chronology .later {
-    float: left;
-  }
-
-  .page-meta .chronology .earlier {
-    float: right;
-  }
-
-  .page-meta .chronology a {
+  .page-meta .page-nav-item {
     padding: 1.25em 0;
   }
 
+  .page-meta .later {
+    @include order(1);
+  }
+
+  .page-meta .earlier {
+    @include order(3);
+  }
+
   .page-meta .time {
-    margin: 0 5em;
     padding: .5em 1em;
-    text-align: center;
-    width: 26em;
-    z-index: 2;
+    @include flex(1 0 auto);
+    @include order(2);
   }
 
   .photo-gallery .item {
@@ -1746,16 +1739,6 @@ screen and (min-resolution: 1.5dppx) {
     text-align: left;
   }
 
-  .page-meta .chronology li,
-  .page-meta .chronology li:only-child {
-    width: 9em;
-  }
-
-  .page-meta .time {
-    margin: 0 9em;
-    width: 27em;
-  }
-
   .index {
     font-size: 1.25em;
   }
@@ -1845,10 +1828,6 @@ screen and (min-resolution: 1.5dppx) {
     margin-right: -10.28571429em;
     margin-right: calc(-9em / .875);
     width: 50%;
-  }
-
-  .page-meta .time {
-    width: 36em;
   }
 
   .site-info {
