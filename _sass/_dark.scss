@@ -137,7 +137,7 @@
   background-color: $gray02;
 }
 
-.dark .site-nav li a {
+.dark .site-nav-item {
   background-color: $black-80;
 }
 
@@ -153,7 +153,8 @@
   background-color: $gray00-80;
 }
 
-.dark .site-nav li a:hover,
-.dark .site-nav li a:focus {
+.dark .site-nav .site-nav-item:hover,
+.dark .site-nav .site-nav-item:focus {
   background-color: $boldblue-80;
+  color: $whiter;
 }

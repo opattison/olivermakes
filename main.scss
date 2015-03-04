@@ -106,7 +106,7 @@ a:active {
 }
 
 article a,
-footer a {
+footer p a {
   border-bottom: solid 1px $pink;
 }
 
@@ -273,16 +273,6 @@ dt {
   width: 12.5%;
 }
 
-nav li {
-  display: inline-block;
-  float: left;
-  height: 100%;
-  list-style-type: none;
-  margin: 0;
-  text-align: center;
-  width: 50%;
-}
-
 /*** Site-wide *********************************/
 
 /** Header **/
@@ -383,7 +373,7 @@ nav li {
 
 .top-menu a,
 .close-menu a,
-.alt-nav a {
+.alt-nav-item {
   color: $whiter;
   display: block;
   font-weight: 400;
@@ -406,17 +396,16 @@ nav li {
 .site-footer {
   clear: both;
   margin: 0 auto;
-}
-
-.site-nav,
-.site-info {
-  margin: 0 auto;
-  overflow: auto;
+  @include flexbox;
+  @include flex-flow(row wrap);
+  @include justify-content(center);
 }
 
 .site-info {
   background-color: $gray07;
   color: $gray00;
+  margin: 0;
+  overflow: auto;
   padding: 2em 1em;
   width: 100%;
 }
@@ -433,20 +422,29 @@ nav li {
 /* Footer navigation */
 
 .site-nav {
+  max-width: 45em;
+  @include flex(1 0 auto);
+}
+
+.site-nav-list {
+  font-size: 1.25em;
+  margin: 0;
+  @include flexbox;
+  @include flex-flow(row wrap);
+}
+
+.site-nav-list li {
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+  @include flex(0 0 50%);
+}
+
+.site-nav-item {
+  background-color: $black;
+  color: $whiter;
   display: block;
   font-weight: 400;
-  max-width: 45em;
-}
-
-.site-nav ul {
-  font-size: 1.25em;
-  margin: 0 auto;
-}
-
-.site-nav li a {
-  background-color: $black;
-  display: block;
-  color: $whiter;
   padding: 2em 0;
 }
 
@@ -462,8 +460,9 @@ nav li {
   background-color: $gray00;
 }
 
-.site-nav li a:hover {
+.site-nav .site-nav-item:hover {
   background-color: $boldblue;
+  color: $whiter;
 }
 
 /* Target navigation - JS-free modal navigation */
@@ -530,14 +529,12 @@ nav li {
   background-color: $black-80;
 }
 
-.site-nav li a:focus,
-.site-nav:target li a:focus {
+.site-nav-item:focus {
   background-color: $boldblue;
   outline: none;
 }
 
-.site-nav li a:active,
-.site-nav:target li a:active {
+.site-nav-item:active {
   background-color: $green;
   color: $gray07;
 }
@@ -546,80 +543,69 @@ nav li {
 
 .alt-nav {
   margin: 0;
+  @include flex(1 0 100%);
+  @include flexbox;
 }
 
-.alt-nav li a {
+.alt-nav-item {
   background-color: $gray00;
   color: $whiter;
+  margin: 0;
+  max-width: 50%;
   padding: 1em;
+  text-align: center;
+  @include flex(1 0 50%);
+  @include flexbox;
+  @include justify-content(center);
 }
 
-.alt-nav .back-home a,
-.page-meta .later a {
+.back-home .logo {
+  height: 1.3em;
+  margin: .1em .4em 0;
+  width: 1.3em;
+}
+
+.back-home circle {
+  stroke: $whiter;
+  stroke-width: 36px;
+}
+
+.back-home {
   background-color: $red;
 }
 
-.alt-nav .back-top a,
-.page-meta .earlier a {
+.back-top {
   background-color: $blue;
 }
 
-.alt-nav a:hover,
-.alt-nav a:focus,
-.page-meta .chronology a:hover,
-.page-meta .chronology a:focus {
+.alt-nav-item:hover,
+.alt-nav-item:focus {
   background-color: $whiter;
   outline: none;
 }
 
-.alt-nav .back-home a:hover,
-.alt-nav .back-home a:focus,
-.page-meta .later a:hover,
-.page-meta .later a:focus {
+.back-home:hover {
   color: $red;
 }
 
-.alt-nav .back-home a:focus,
-.page-meta .later a:focus {
+.back-home:focus {
   color: $boldred;
 }
 
-.alt-nav .back-home a:hover circle {
+.back-home:hover circle {
   stroke: $red;
 }
 
-.alt-nav .back-home a:focus circle {
+.back-home:focus circle {
   stroke: $boldred;
 }
 
-.alt-nav .back-top a:hover,
-.page-meta .earlier a:hover {
+.back-top:hover {
   color: $blue;
 }
 
-.alt-nav .back-top a:focus,
-.page-meta .earlier a:focus {
+.back-top:focus {
   color: $boldblue;
-}
-
-.back-home .inside {
-  margin: 0 auto;
-  width: 4.5em;
-}
-
-.back-home .logo {
-  float: right;
-  height: 1.25em;
-  width: 1.25em;
-}
-
-.back-home .logo svg {
-  padding: 2px;
-}
-
-.back-home .logo circle {
-  stroke: $whiter;
-  stroke-width: 32px;
 }
 
 /*** Page **************************************/
@@ -647,38 +633,65 @@ nav li {
 .page-meta {
   background-color: $gray07;
   margin: 0 auto;
-  position: relative;
-}
-
-.page-meta .chronology,
-.page-meta .time {
-  margin-top: 0;
   width: 100%;
+  @include flexbox;
+  @include flex-flow(row wrap);
+  @include justify-content(center);
 }
 
-.page-meta .chronology {
-  overflow: auto;
-}
-
-.page-meta .chronology ul {
-  height: 100%;
-}
-
-.page-meta .chronology li:only-child {
-  width: 100%;
-}
-
-.page-meta .chronology a {
-  color: $gray07;
-  display: block;
+.page-meta .page-nav-item {
+  background-color: $red;
+  border: none;
+  color: $white;
   font-weight: 400;
-  height: 100%;
+  margin: 0;
+  max-width: 9em;
   min-height: 2.5em;
   padding: .5em 0;
+  text-align: center;
+  @include flex(1 0 50%);
+}
+
+.page-meta .page-nav-item:only-child {
+  @include flex(1 0 100%);
+}
+
+.page-meta .later {
+  background-color: $red;
+}
+
+.page-meta .earlier {
+  background-color: $blue;
+}
+
+.page-meta .page-nav-item:hover,
+.page-meta .page-nav-item:focus {
+  background-color: $whiter;
+  border: none;
+  outline: none;
+}
+
+.page-meta .later:hover {
+  color: $red;
+}
+
+.page-meta .later:focus {
+  color: $boldred;
+}
+
+.page-meta .earlier:hover {
+  color: $blue;
+}
+
+.page-meta .earlier:focus {
+  color: $boldblue;
 }
 
 .page-meta .time {
   padding: 1em;
+  margin: 0;
+  text-align: center;
+  @include flex(1 0 100%);
 }
 
 .page-meta .time p {
@@ -739,6 +752,7 @@ nav li {
 
 .project {
   background-color: $gray06;
+  min-height: 15em;
 }
 
 .project .sample {
@@ -754,15 +768,13 @@ nav li {
 }
 
 .project-links {
-  overflow: auto;
+  @include flexbox;
 }
 
 .project-links li {
-  display: inline-block;
-  float: left;
   list-style: none;
   margin: 0;
-  width: 50%;
+  @include flex(1 0 50%);
 }
 
 .project-links :only-child {
@@ -978,10 +990,6 @@ article img {
   background-color: $gray05;
 }
 
-.index {
-  margin: 1em;
-}
-
 /* Title header */
 
 .index-header h1 {
@@ -996,7 +1004,6 @@ article img {
 .introduction {
   background-color: $blue;
   color: $gray07;
-  font-size: 1.125em;
   font-style: italic;
   font-weight: 400;
   line-height: 1.25;
@@ -1004,7 +1011,8 @@ article img {
 
 .introduction a {
   color: $whiter;
-  border-bottom: solid 1px $gray07;
+  border-bottom: solid 1px $gray07-80;
+  padding-bottom: 1px;
 }
 
 .introduction a:hover,
@@ -1017,26 +1025,19 @@ article img {
   background-color: inherit;
 }
 
-/* Sections and items */
-
-.features {
-  margin: 1em -1em 0;
-  width: calc(100% + 2em);
+.introduction .meta p {
+  font-size: 1.25em;
 }
 
-.home .features,
+/* Sections and items */
+
 .home .index {
   margin-top: 0;
 }
 
 .items {
-  margin: 1em auto;
-  overflow: hidden;
-}
-
-.archive-items {
-  margin: 0 auto;
-  overflow: auto;
+  @include flexbox;
+  @include flex-flow(row wrap);
 }
 
 .archive-item {
@@ -1046,18 +1047,23 @@ article img {
 .feature,
 .item {
   background-color: $gray07;
-  display: inline-block;
-  position: relative;
 }
 
 .item:nth-child(2n + 2) {
   background-color: $gray05;
 }
 
+.item {
+  margin-left: 1em;
+  margin-right: 1em;
+  @include flex(1 0 calc(100% - 2em));
+  width: 100%;
+}
+
 .feature,
-.item,
 .archive-item {
   width: 100%;
+  @include flex(1 0 100%);
 }
 
 .index .location a {
@@ -1168,7 +1174,7 @@ article img {
 
 .photo-gallery .item .meta h1 {
   color: inherit;
-  font-size: 1.125em;
+  font-size: 1.25em;
   font-weight: 500;
 }
 
@@ -1189,8 +1195,15 @@ article img {
 
 /* Links to archives */
 
+.link-archive {
+  @include flexbox;
+  width: 100%;
+}
+
 .link-archive .link {
   background-color: $red;
+  margin: 0;
+  width: 100%;
 }
 
 .link-archive .link:nth-child(2) {
@@ -1292,6 +1305,11 @@ screen and (min-resolution: 1.5dppx) {
     margin: 0 1.5em;
   }
 
+  .index-header h1 {
+    margin-left: 1.6em;
+    text-align: left;
+  }
+
   .top-menu,
   .close-menu {
     right: 0;
@@ -1324,21 +1342,9 @@ screen and (min-resolution: 1.5dppx) {
     margin-right: -2em;
   }
 
-  .features {
-    margin-top: -1em;
-  }
-
-  .index-title {
-    margin: 0 1.5em;
-  }
-
-  .index-header h1 {
-    margin-left: .8em;
-    text-align: left;
-  }
-
-  .photo-gallery .item .meta h1 {
-    font-size: 1.25em;
+  .photo-gallery .item {
+    max-width: 50%;
+    @include flex(1 0 50%);
   }
 }
 
@@ -1356,10 +1362,6 @@ screen and (min-resolution: 1.5dppx) {
   .page-header .inside {
     padding-top: 1.25em;
     padding-bottom: 1.25em;
-  }
-
-  .title {
-    margin: 0 2.5em;
   }
 
   .narrow,
@@ -1411,82 +1413,12 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 1em;
   }
 
-  .index {
-    margin: 1em auto 0;
-    max-width: 45em;
-  }
-
-  .features + .items {
-    margin-top: 0;
-  }
-
-  .features {
-    margin: -1em auto 0;
-    width: 100%;
-  }
-
-  .archive-items {
-    margin: 1em auto;
-  }
-
   .archive-item .meta {
     font-size: 1.25em;
   }
 
   .index-header h1 {
     margin-left: 1.6em;
-  }
-
-  .item {
-    float: left;
-    height: 20em;
-    margin: 1em 0 0;
-    width: 50%;
-  }
-
-  .photo-gallery .item {
-    height: 12.5em;
-  }
-
-  .meta {
-    padding: 2em;
-  }
-
-  .feature .meta {
-    font-size: 1.25em;
-    min-height: 15em;
-    padding: 1.6em;
-  }
-
-  .archive .meta {
-    padding: 1em 2em;
-  }
-
-  .introduction .meta p {
-    font-size: 1.125em;
-  }
-
-  .item .meta {
-    height: 16em;
-  }
-
-  .feature .link {
-    font-size: 1.125em;
-  }
-
-  .link-archive {
-    float: left;
-    width: 100%;
-  }
-
-  .link-archive .link {
-    margin: 0;
-    float: left;
-    width: 50%;
-  }
-
-  .link-archive .link:only-child {
-    width: 100%;
   }
 }
 
@@ -1506,13 +1438,73 @@ screen and (min-resolution: 1.5dppx) {
     margin: 0 auto;
   }
 
+  .index-header h1 {
+    margin: 0;
+    text-align: center;
+  }
+
   .alt-nav {
     font-size: 1.25em;
   }
 
-  .site-nav li a,
-  .alt-nav li a {
+  .site-nav-item,
+  .alt-nav-item {
     font-size: 1.125em;
+  }
+
+  .index {
+    margin: 1em auto 0;
+    max-width: 45em;
+  }
+
+  .items {
+    margin-bottom: 1em;
+  }
+
+  .item {
+    height: 20em;
+    margin: 1em 0 0;
+    max-width: 50%;
+    @include flex(1 0 50%);
+  }
+
+  .photo-gallery .item {
+    height: 12.5em;
+  }
+
+  .meta {
+    padding: 2em;
+  }
+
+  .item .meta {
+    height: 16em;
+  }
+
+  .feature .meta {
+    font-size: 1.25em;
+    min-height: 15em;
+    padding: 1.6em;
+  }
+
+  .archive .meta {
+    padding: 1em 2em;
+  }
+
+  .introduction .meta p {
+    font-size: 1.375em;
+  }
+
+  .feature .link {
+    font-size: 1.125em;
+  }
+
+  .link-archive .link {
+    margin: 0;
+    width: 50%;
+  }
+
+  .link-archive .link:only-child {
+    width: 100%;
   }
 }
 
@@ -1545,57 +1537,33 @@ screen and (min-resolution: 1.5dppx) {
     height: 4em;
   }
 
-  .page-meta .chronology,
-  .page-meta .time {
-    position: absolute;
+  .page-meta .page-nav-item, 
+  .page-meta .page-nav-item:only-child {
+    @include flex(1 0 4.5em);
   }
 
-  .page-meta .chronology {
-    height: 4em;
-    bottom: 0;
-  }
-
-  .page-meta .chronology li, 
-  .page-meta .chronology li:only-child {
-    width: 5em;
-  }
-
-  .page-meta .chronology .later {
-    float: left;
-  }
-
-  .page-meta .chronology .earlier {
-    float: right;
-  }
-
-  .page-meta .chronology a {
+  .page-meta .page-nav-item {
     padding: 1.25em 0;
   }
 
+  .page-meta .later {
+    @include order(1);
+  }
+
+  .page-meta .earlier {
+    @include order(3);
+  }
+
   .page-meta .time {
-    margin: 0 5em;
     padding: .5em 1em;
-    text-align: center;
-    width: 26em;
-    z-index: 2;
-  }
-
-  .index-title {
-    margin: .5em auto 1em;
-  }
-
-  .features {
-    margin-top: 1em;
-  }
-
-  .index-header h1 {
-    margin: 0;
-    text-align: center;
+    @include flex(1 0 auto);
+    @include order(2);
   }
 
   .photo-gallery .item {
     height: 7.5em;
-    width: 25%;  
+    max-width: 25%;
+    @include flex(1 0 25%);
   }
 
   .photo-gallery .item .meta h1 {
@@ -1649,8 +1617,8 @@ screen and (min-resolution: 1.5dppx) {
     max-width: 45rem;
   }
 
-  .site-nav li a,
-  .alt-nav li a {
+  .site-nav-item,
+  .alt-nav-item {
     font-size: 1.25em;
   }
 
@@ -1773,16 +1741,6 @@ screen and (min-resolution: 1.5dppx) {
     text-align: left;
   }
 
-  .page-meta .chronology li,
-  .page-meta .chronology li:only-child {
-    width: 9em;
-  }
-
-  .page-meta .time {
-    margin: 0 9em;
-    width: 27em;
-  }
-
   .index {
     font-size: 1.25em;
   }
@@ -1791,14 +1749,23 @@ screen and (min-resolution: 1.5dppx) {
 @media screen and (min-width: 70em) {
   .site-info,
   .site-nav {
-    float: right;
     margin: 0;
-    width: 50%;
   }
 
   .site-info {
     min-height: 17.125rem; /* keeps .back-home link down */
     padding: 1.5em 2em;
+    @include order(1);
+    @include flex(1 0 50%);
+  }
+
+  .site-nav {
+    @include order(2);
+    @include flex(1 0 50%);
+  }
+
+  .alt-nav {
+    @include order(3);
   }
 }
 
@@ -1865,16 +1832,8 @@ screen and (min-resolution: 1.5dppx) {
     width: 50%;
   }
 
-  .page-meta .time {
-    width: 36em;
-  }
-
   .site-info {
     padding: 2em 2em 0;
-  }
-
-  .index-title {
-    margin: 1.5em auto;
   }
 }
 
@@ -1896,13 +1855,13 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .site-nav {
-    width: 33.3333333%;
+    @include flex(0 0 33.3333333%);
   }
 
   .site-info {
     padding: 2em 4em;
     font-size: 1.5em;
-    width: 66.66666667%;
+    @include flex(0 0 66.6666667%);
   }
 
   .site-info .inside {

@@ -25,6 +25,7 @@
 - Amazon S3 and [s3_website](https://github.com/laurilehmijoki/s3_website) for hosting and deploying
 - GitHub for version control
 - TypeKit for fonts: 300, 400 and 500 weights of [the Ratio typeface](http://cargocollective.com/pstype/Ratio) and 400 weight of [Source Code Pro](http://adobe-fonts.github.io/source-code-pro/)) are [hosted by Typekit](https://typekit.com/colophons/ojm0eig)
+- `flexbox` for flexible CSS layout.
 - Responsive images using `srcset` HTML specification and the [respimage](https://github.com/aFarkas/respimage) polyfill
 - Processing of archives with the [jekyll-archives](https://github.com/jekyll/jekyll-archives) gem
 - MapBox for maps
