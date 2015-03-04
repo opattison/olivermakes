@@ -16,11 +16,13 @@
 .swatches {
   font: 400 .625em/1.5 $source-code-pro;
   list-style-type: none;
-  overflow: hidden;
+  @include flexbox;
+  @include flex-flow(row wrap);
 }
 
 .swatches li {
   margin-top: 1em;
+  @include flex(1 0 100%);
 }
 
 .swatches figure {
@@ -117,8 +119,8 @@
 
 @media screen and (min-width: 20em) {
   .swatches li {
-    float: left;
-    width: 50%;
+    max-width: 50%;
+    @include flex(1 0 50%);
   }
 }
 
@@ -130,6 +132,7 @@
 
 @media screen and (min-width: 80em) {
   .swatches li {
-    width: 25%;
+    max-width: 25%;
+    @include flex(1 0 25%);
   }
 }
