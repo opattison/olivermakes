@@ -702,6 +702,7 @@ dt {
 
 .essay {
   margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .highlight,
@@ -1550,7 +1551,8 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .page-meta .page-nav-item, 
-  .page-meta .page-nav-item:only-child {
+  .page-meta .page-nav-item:only-child,
+  .page-nav-blank {
     max-width: 9em;
     @include flex(1 0 4.5em);
   }
@@ -1908,10 +1910,5 @@ screen and (min-width: 60em) and (max-height: 36em) {
   .grid {
     margin: 1em auto 0!important;
     max-width: 100%!important;
-  }
-
-  .essay {
-    margin: 1.25em auto;
-    padding: 2em;
   }
 }
