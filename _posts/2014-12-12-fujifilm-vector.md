@@ -56,7 +56,7 @@ To complement the metadata on my [photo pages](/photography/), I wanted accurate
   <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
 </figure>
 
-<div class="grid2">
+<div class="grid">
   <figure class="svg light noedges">
     <img
       src="{{ site.icon-url }}/{{ page.image[1].src }}" 

@@ -48,7 +48,7 @@ My primary responsibilities were:
 
 We turned the project around in only a few months, with design and content work starting in December 2011 and the website launching in March 2012.
 
-<div class="grid2">
+<div class="grid">
 <figure class="w66 screenshot">
   <img
     src="{{ site.image-url }}/{{ page.image[1].src }}" 

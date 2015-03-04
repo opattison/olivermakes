@@ -923,25 +923,32 @@ dt {
   background-color: $pink-50;
   border-color: $pink-50;
 }
+
+/** Images **/
+
 article img {
   width: 100%;
 }
 
 .narrow,
 .wide,
-.grid2 {
-  margin: 5% calc(-1em) 0;
+.grid {
+  margin: 1em calc(-1em) 0;
   max-width: none;
   width: calc(100% + 2em);
 }
 
-.grid2 figure {
-  margin-top: 5%;
+.grid {
+  @include flexbox;
+  @include flex-flow(column nowrap)
 }
 
-.grid3 figure,
-.grid2 .w33 {
-  width: 66.66666667%;
+.grid figure {
+  @include flex(1 0 100%);
+}
+
+.grid .w33 {
+  max-width: calc(100% / 3 * 2);
 }
 
 /* SVG figure padding helper */
@@ -1271,9 +1278,8 @@ screen and (min-resolution: 1.5dppx) {
 
   .narrow,
   .wide,
-  .grid2,
-  .grid3 {
-    margin: 5% calc(-2em) 0;
+  .grid {
+    margin: 1em calc(-2em) 0;
     width: calc(100% + 4em);
   }
 
@@ -1369,9 +1375,8 @@ screen and (min-resolution: 1.5dppx) {
 
   .narrow,
   .wide,
-  .grid2,
-  .grid3 {
-    margin: 5% calc(-2.5em) 0;
+  .grid {
+    margin: 1em calc(-2.5em) 0;
     width: calc(100% + 5em);
   }
 
@@ -1426,6 +1431,10 @@ screen and (min-resolution: 1.5dppx) {
 }
 
 @media screen and (min-width: 40em) {
+  figcaption {
+    padding: .5em 1em;
+  }
+
   figcaption p {
     font-size: .75em;
   }
@@ -1669,17 +1678,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .narrow {
-    margin: 5% auto;
-    width: 100%;
-  }
-
-  .narrow figcaption {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .narrow {
-    margin: 5% auto;
+    margin: 1.5em auto;
     width: 100%;
   }
 
@@ -1689,60 +1688,41 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .wide,
-  .grid2,
-  .grid3 {
-    margin: 5% calc(-4.5em) 0;
+  .grid {
+    margin: 1em calc(-4.5em) 0;
     max-width: none;
     width: calc(100% + 9em);
   }
 
+  .grid {
+    @include flex-flow(row nowrap);
+  }
+
   .wide figcaption p,
   .code figcaption p {
-    margin-left: 52%;
-    width: 48%;
+    margin-left: calc(50% + 1em);
+    width: calc(50% - 1em);
   }
 
-  .grid2,
-  .grid3 {
-    display: inline-block;
-  }
-
-  .grid2 figure,
-  .grid3 figure {
-    float: left;
-    margin: 0;
-    max-width: 100%;
-  }
-
-  .grid2 figure {
-    width: 48%;
-  }
-
-  .grid3 figure {
-    width: 30.66666666%;
-  }
-
-  .grid2 .w33 {
-    width: 31.33333333%;
-  }
-
-  .grid2 .w66 {
-    width: 64.66666667%;
-  }
-
-  .grid2 figure + figure,
-  .grid3 figure + figure {
-    margin-left: 4%;
-  }
-
-  .grid2 + figure,
-  .grid3 + figure {
-    clear: both;
-  }
-
-  .grid2 :first-child figcaption p,
-  .grid3 figcaption p {
+  .grid .w33 figcaption p {
     text-align: left;
+  }
+
+  .grid figure {
+    margin: 0;
+    @include flex(1 1 calc(50% - 1em));
+  }
+
+  .grid .w33 {
+    @include flex(1 1 calc(100% / 3 - 1em));
+  }
+
+  .grid .w66 {
+    @include flex(1 1 calc(100% / 3 * 2 - 1em));
+  }
+
+  .grid figure + figure {
+    margin-left: 1em;
   }
 
   .index {
@@ -1770,6 +1750,10 @@ screen and (min-resolution: 1.5dppx) {
 
   .alt-nav {
     @include order(3);
+  }
+
+  .grid .w33 figcaption {
+    padding: .25em 0;
   }
 }
 
@@ -1804,9 +1788,8 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .wide,
-  .grid2,
-  .grid3 {
-    margin: 5% calc(-9em) 0;
+  .grid {
+    margin: 1em calc(-9em) 0;
     width: calc(100% + 18em);
   }
 
@@ -1922,9 +1905,8 @@ screen and (min-width: 58.5em) and (max-height: 35em),
 screen and (min-width: 60em) and (max-height: 36em) {
   .wide,
   .narrow,
-  .grid2,
-  .grid3 {
-    margin: 5% auto 0!important;
+  .grid {
+    margin: 1em auto 0!important;
     max-width: 100%!important;
   }
 
