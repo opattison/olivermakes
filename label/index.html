@@ -9,11 +9,9 @@ description: 'Links to all of the label archives for the posts on this website, 
 {% include index/header.html title='label' %}
 
 <div class="archive-items">
-  <ul>
 {% assign tags = site.tags | sort %}
 {% for tag in tags %}
 {% include archive/tag.html %}
 {% endfor %}
-  </ul>
 {% include archive/link-standard.html %}
 </div>

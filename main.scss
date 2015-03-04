@@ -645,7 +645,6 @@ dt {
   color: $white;
   font-weight: 400;
   margin: 0;
-  max-width: 9em;
   min-height: 2.5em;
   padding: .5em 0;
   text-align: center;
@@ -1033,6 +1032,10 @@ article img {
 
 .home .index {
   margin-top: 0;
+}
+
+.archive .index {
+  margin: 1em auto;
 }
 
 .items {
@@ -1539,6 +1542,7 @@ screen and (min-resolution: 1.5dppx) {
 
   .page-meta .page-nav-item, 
   .page-meta .page-nav-item:only-child {
+    max-width: 9em;
     @include flex(1 0 4.5em);
   }
 
