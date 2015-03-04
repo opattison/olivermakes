@@ -774,7 +774,7 @@ dt {
 .project-links li {
   list-style: none;
   margin: 0;
-  width: 50%;
+  @include flex(1 0 50%);
 }
 
 .project-links :only-child {
