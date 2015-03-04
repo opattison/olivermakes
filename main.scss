@@ -1174,7 +1174,7 @@ article img {
 
 .photo-gallery .item .meta h1 {
   color: inherit;
-  font-size: 1.125em;
+  font-size: 1.25em;
   font-weight: 500;
 }
 
@@ -1342,8 +1342,9 @@ screen and (min-resolution: 1.5dppx) {
     margin-right: -2em;
   }
 
-  .photo-gallery .item .meta h1 {
-    font-size: 1.25em;
+  .photo-gallery .item {
+    max-width: 50%;
+    @include flex(1 0 50%);
   }
 }
 
@@ -1463,7 +1464,7 @@ screen and (min-resolution: 1.5dppx) {
   .item {
     height: 20em;
     margin: 1em 0 0;
-    width: 50%;
+    max-width: 50%;
     @include flex(1 0 50%);
   }
 
@@ -1561,7 +1562,8 @@ screen and (min-resolution: 1.5dppx) {
 
   .photo-gallery .item {
     height: 7.5em;
-    width: 25%;  
+    max-width: 25%;
+    @include flex(1 0 25%);
   }
 
   .photo-gallery .item .meta h1 {
