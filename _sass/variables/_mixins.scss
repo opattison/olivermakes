@@ -1,3 +1,5 @@
+/* Container */
+
 @mixin flexbox {
   display: -webkit-box;
   display: -webkit-flex;
@@ -34,6 +36,8 @@
   justify-content: $value;
 }
 
+/* Content */
+
 @mixin flex($fg: 1, $fs: null, $fb: null) {
   $fg-boxflex: $fg;
 
@@ -47,4 +51,12 @@
   -moz-flex: $fg $fs $fb;
   -ms-flex: $fg $fs $fb;
   flex: $fg $fs $fb;
+}
+
+@mixin order($int: 0) {
+  -webkit-box-ordinal-group: $int + 1;
+  -webkit-order: $int;
+  -moz-order: $int;
+  -ms-flex-order: $int;
+  order: $int;
 }

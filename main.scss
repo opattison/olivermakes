@@ -274,9 +274,6 @@ dt {
 }
 
 nav li {
-  display: inline-block;
-  float: left;
-  height: 100%;
   list-style-type: none;
   margin: 0;
   text-align: center;
@@ -405,12 +402,13 @@ nav li {
 
 .site-footer {
   clear: both;
-  margin: 0;
+  margin: 0 auto;
+  @include flexbox;
+  @include flex-flow(row wrap);
+  @include justify-content(center);
 }
 
-.site-nav,
 .site-info {
-  margin: 0 auto;
   overflow: auto;
 }
 
@@ -433,20 +431,26 @@ nav li {
 /* Footer navigation */
 
 .site-nav {
-  display: block;
-  font-weight: 400;
   max-width: 45em;
+  @include flex(1 0 auto);
 }
 
-.site-nav ul {
+.site-nav-list {
   font-size: 1.25em;
-  margin: 0 auto;
+  margin: 0;
+  @include flexbox;
+  @include flex-flow(row wrap);
+}
+
+.sit-nav-list li {
+  @include flex(0 0 50%);
 }
 
 .site-nav-item {
   background-color: $black;
-  display: block;
   color: $whiter;
+  display: block;
+  font-weight: 400;
   padding: 2em 0;
 }
 
@@ -545,6 +549,15 @@ nav li {
 
 .alt-nav {
   margin: 0;
+  @include flex(1 0 100%)
+}
+
+.alt-nav-list {
+  @include flexbox;
+}
+
+.alt-nav-list li {
+  @include flex(1 0 50%);
 }
 
 .alt-nav-item {
@@ -1038,14 +1051,14 @@ article img {
 .item {
   margin-left: 1em;
   margin-right: 1em;
-  @include flex(0 0 calc(100% - 2em));
+  @include flex(1 0 calc(100% - 2em));
   width: 100%;
 }
 
 .feature,
 .archive-item {
   width: 100%;
-  @include flex(0 0 100%);
+  @include flex(1 0 100%);
 }
 
 .index .location a {
@@ -1446,7 +1459,7 @@ screen and (min-resolution: 1.5dppx) {
     height: 20em;
     margin: 1em 0 0;
     width: 50%;
-    @include flex(0 0 50%);
+    @include flex(1 0 50%);
   }
 
   .photo-gallery .item {
@@ -1751,14 +1764,23 @@ screen and (min-resolution: 1.5dppx) {
 @media screen and (min-width: 70em) {
   .site-info,
   .site-nav {
-    float: right;
     margin: 0;
-    width: 50%;
   }
 
   .site-info {
     min-height: 17.125rem; /* keeps .back-home link down */
     padding: 1.5em 2em;
+    @include order(1);
+    @include flex(1 0 50%);
+  }
+
+  .site-nav {
+    @include order(2);
+    @include flex(1 0 50%);
+  }
+
+  .alt-nav {
+    @include order(3);
   }
 }
 
@@ -1852,13 +1874,13 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .site-nav {
-    width: 33.3333333%;
+    @include flex(0 0 33.3333333%);
   }
 
   .site-info {
     padding: 2em 4em;
     font-size: 1.5em;
-    width: 66.66666667%;
+    @include flex(0 0 66.6666667%);
   }
 
   .site-info .inside {
