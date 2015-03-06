@@ -397,15 +397,16 @@ dt {
   overflow: auto;
   padding: 2em 1em;
   width: 100%;
-}
-
-.site-info .inside {
-  margin: 0 auto;
-  max-width: 36em;
+  @include flexbox;
+  @include align-items(center);
 }
 
 .site-info p {
   font-size: .875em;
+}
+
+.site-info p + p {
+  margin-top: .75em;
 }
 
 /* Footer navigation */
@@ -1713,7 +1714,6 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .site-info {
-    min-height: 17.125rem; /* keeps .back-home link down */
     padding: 1.5em 2em;
     @include order(1);
     @include flex(1 0 50%);
@@ -1797,10 +1797,6 @@ screen and (min-resolution: 1.5dppx) {
     margin-right: calc(-9em / .875);
     width: 50%;
   }
-
-  .site-info {
-    padding: 2em 2em 0;
-  }
 }
 
 @media screen and (min-width: 95em) {
@@ -1823,10 +1819,6 @@ screen and (min-resolution: 1.5dppx) {
     padding: 2em 4em;
     font-size: 1.5em;
     @include flex(0 0 66.6666667%);
-  }
-
-  .site-info .inside {
-    max-width: none;
   }
 
   .index {
