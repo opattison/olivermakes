@@ -26,10 +26,6 @@ body {
   color: $black;
 }
 
-[role="main"] {
-  margin-top: 0;
-}
-
 strong,
 b {
   font-weight: 500;
@@ -278,24 +274,24 @@ dt {
 /** Header **/
 
 .site-header {
-  height: 7em;
-  padding-top: .5em;
+  height: 4.5em;
+  padding: 1em;
+  @include flexbox;
+  @include flex-flow(column nowrap);
 }
 
 .title {
-  display: block;
-  height: 3.5em;
-  margin: 0 auto;
-  padding: .5em;
-  position: relative;
-  width: 14em;
+  @include flex(1 0 auto);
+  @include flexbox;
+  @include justify-content(center);
+  @include flex-flow(row wrap);
 }
 
 .title h1 {
   font-weight: 300;
   letter-spacing: -.03125em;
   line-height: 1.25em;
-  margin: 0;
+  margin: 0 .1875em;
 }
 
 .title:hover h1,
@@ -308,11 +304,6 @@ dt {
 .logo {
   height: 2.5em;
   width: 2.5em;
-}
-
-.title .logo {
-  float: left;
-  margin: 0 .5em 0 0;
 }
 
 .title .logo circle {
@@ -356,24 +347,23 @@ dt {
 
 .top-menu,
 .close-menu {
-  margin: 0;
-  position: absolute;
   text-align: center;
-  top: 4.5em;
   width: 100%;
   z-index: 2;
+}
+
+.close-menu {
+  display: none; /* only displays with :target */
 }
 
 .top-menu a,
 .close-menu a {
   background-color: $red;
   color: $whiter;
-  height: 2.5em;
 }
 
 .top-menu a,
-.close-menu a,
-.alt-nav-item {
+.close-menu a {
   color: $whiter;
   display: block;
   font-weight: 400;
@@ -404,19 +394,23 @@ dt {
 .site-info {
   background-color: $gray07;
   color: $gray00;
-  margin: 0;
   overflow: auto;
   padding: 2em 1em;
   width: 100%;
+  @include flexbox;
 }
 
 .site-info .inside {
-  margin: 0 auto;
+  margin: auto;
   max-width: 36em;
 }
 
 .site-info p {
   font-size: .875em;
+}
+
+.site-info p + p {
+  margin-top: .75em;
 }
 
 /* Footer navigation */
@@ -428,7 +422,6 @@ dt {
 
 .site-nav-list {
   font-size: 1.25em;
-  margin: 0;
   @include flexbox;
   @include flex-flow(row wrap);
 }
@@ -466,14 +459,9 @@ dt {
 }
 
 /* Target navigation - JS-free modal navigation */
-
-.close-menu {
-  display: none; /* only displays with :target */
-}
-
 .site-nav:target {
   margin: 0 auto;
-  padding-top: 7em;
+  padding-top: 4.5em;
   position: absolute; /* now visible when target:ed */
   right: 0;
   top: 0;
@@ -529,20 +517,20 @@ dt {
   background-color: $black-80;
 }
 
-.site-nav-item:focus {
+.site-nav .site-nav-item:focus {
   background-color: $boldblue;
+  color: $whiter;
   outline: none;
 }
 
-.site-nav-item:active {
+.site-nav .site-nav-item:active {
   background-color: $green;
-  color: $gray07;
+  color: $white;
 }
 
 /* Alternative nav – home and back-to-top */
 
 .alt-nav {
-  margin: 0;
   @include flex(1 0 100%);
   @include flexbox;
 }
@@ -550,7 +538,7 @@ dt {
 .alt-nav-item {
   background-color: $gray00;
   color: $whiter;
-  margin: 0;
+  font-weight: 400;
   max-width: 50%;
   padding: 1em;
   text-align: center;
@@ -999,11 +987,15 @@ article img {
 
 /* Title header */
 
+.index-header {
+  margin-top: 1em;
+  text-align: center;
+}
+
 .index-header h1 {
   font-size: 1.25em;
   font-weight: 300;
   letter-spacing: -.03125em;
-  text-align: center;
 }
 
 /* Homepage introduction feature */
@@ -1014,6 +1006,7 @@ article img {
   font-style: italic;
   font-weight: 400;
   line-height: 1.25;
+  width: 100%;
 }
 
 .introduction a {
@@ -1051,10 +1044,6 @@ article img {
   @include flex-flow(row wrap);
 }
 
-.archive-item {
-  margin: 1em 0 0;
-}
-
 .feature,
 .item {
   background-color: $gray07;
@@ -1065,14 +1054,14 @@ article img {
 }
 
 .item {
-  margin-left: 1em;
-  margin-right: 1em;
+  margin: 1em 1em 0;
   @include flex(1 0 calc(100% - 2em));
   width: 100%;
 }
 
 .feature,
 .archive-item {
+  margin: 1em 0 0;
   width: 100%;
   @include flex(1 0 100%);
 }
@@ -1207,13 +1196,13 @@ article img {
 /* Links to archives */
 
 .link-archive {
-  @include flexbox;
+  margin-top: 1em;
   width: 100%;
+  @include flexbox;
 }
 
 .link-archive .link {
   background-color: $red;
-  margin: 0;
   width: 100%;
 }
 
@@ -1273,6 +1262,14 @@ screen and (min-resolution: 1.5dppx) {
     padding-left: 1.5em;
   }
 
+  .site-header {
+    padding: 1em 2em;
+  }
+
+  .title {
+    @include justify-content(flex-start);
+  }
+
   .page {
     padding: 1.25em 2em 2.5em;
   }
@@ -1307,36 +1304,29 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 1em;
   }
 
-  .site-header {
-    height: 4.5em;
-  }
-
-  .title {
-    margin: 0 1.5em;
-  }
-
-  .index-header h1 {
-    margin-left: 1.6em;
+  .index-header {
+    margin-left: 2em;
     text-align: left;
   }
 
   .top-menu,
   .close-menu {
+    height: 4.5em;
+    position: absolute;
     right: 0;
     top: 0;
     width: auto;
   }
 
-  .top-menu a,
-  .close-menu a {
+  .top-menu,
+  .close-menu {
     font-size: 1.125em;
-    height: 4em;
-    line-height: 2em;
-    padding: 1em;
   }
 
-  .site-nav:target {
-    padding-top: 4.5em;
+  .top-menu a,
+  .close-menu a {
+    line-height: 2em;
+    padding: 1em;
   }
 
   .ancillary {
@@ -1425,10 +1415,6 @@ screen and (min-resolution: 1.5dppx) {
   .archive-item .meta {
     font-size: 1.25em;
   }
-
-  .index-header h1 {
-    margin-left: 1.6em;
-  }
 }
 
 @media screen and (min-width: 40em) {
@@ -1448,10 +1434,10 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .title {
-    margin: 0 auto;
+    @include justify-content(center);
   }
 
-  .index-header h1 {
+  .index-header {
     margin: 0;
     text-align: center;
   }
@@ -1471,7 +1457,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .items {
-    margin-bottom: 1em;
+    margin: 1em 0;
   }
 
   .item {
@@ -1530,12 +1516,11 @@ screen and (min-resolution: 1.5dppx) {
 
   .site-header {
     height: auto;
-    padding: 0;
+    padding: 2em 6em;
   }
 
   .title {
     font-size: 1.25em;
-    margin: .5em auto 1em;
   }
 
   .page-header {
@@ -1614,10 +1599,6 @@ screen and (min-resolution: 1.5dppx) {
   .page-header .inside,
   .page-meta {
     width: 45em;
-  }
-
-  .title {
-    margin-bottom: 1.5em;
   }
 
   .page-header .inside {
@@ -1739,7 +1720,6 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .site-info {
-    min-height: 17.125rem; /* keeps .back-home link down */
     padding: 1.5em 2em;
     @include order(1);
     @include flex(1 0 50%);
@@ -1760,14 +1740,17 @@ screen and (min-resolution: 1.5dppx) {
 }
 
 @media screen and (min-width: 80em) {
+  .site-header {
+    padding: 3em 7em;
+  }
+
   .title {
     font-size: 1.5em;
-    margin: 1.5em auto;
   }
 
   .top-menu,
   .close-menu {
-    font-size: 1.125em;
+    font-size: 1.25em;
   }
 
   .site-nav:target {
@@ -1820,10 +1803,6 @@ screen and (min-resolution: 1.5dppx) {
     margin-right: calc(-9em / .875);
     width: 50%;
   }
-
-  .site-info {
-    padding: 2em 2em 0;
-  }
 }
 
 @media screen and (min-width: 95em) {
@@ -1838,23 +1817,15 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 1.75em;
   }
 
-  .top-menu,
-  .close-menu {
-    font-size: 1.25em;
-  }
-
   .site-nav {
     @include flex(0 0 33.3333333%);
   }
 
   .site-info {
-    padding: 2em 4em;
     font-size: 1.5em;
+    max-width: 66.6666667%;
+    padding: 2em 4em;
     @include flex(0 0 66.6666667%);
-  }
-
-  .site-info .inside {
-    max-width: none;
   }
 
   .index {
@@ -1867,6 +1838,10 @@ screen and (min-resolution: 1.5dppx) {
   .page-header,
   .page-meta {
     font-size: 1.75em;
+  }
+
+  .site-header {
+    padding: 4em 7em;
   }
 
   .title {
@@ -1884,31 +1859,4 @@ screen and (min-resolution: 1.5dppx) {
 
 @import 'dark.scss';
 
-/* Height queries – 1.666666667 ratio height limiter  */
-
-@media screen and (min-width: 28.25em) and (max-height: 17em),
-screen and (min-width: 30em) and (max-height: 18em),
-screen and (min-width: 31.5em) and (max-height: 19em),
-screen and (min-width: 33.25em) and (max-height: 20em),
-screen and (min-width: 35em) and (max-height: 21em),
-screen and (min-width: 36.75em) and (max-height: 22em),
-screen and (min-width: 38.25em) and (max-height: 23em),
-screen and (min-width: 40em) and (max-height: 24em),
-screen and (min-width: 41.5em) and (max-height: 25em),
-screen and (min-width: 43.5em) and (max-height: 26em),
-screen and (min-width: 45em) and (max-height: 27em),
-screen and (min-width: 46.75em) and (max-height: 28em),
-screen and (min-width: 48.25em) and (max-height: 29em),
-screen and (min-width: 50em) and (max-height: 30em),
-screen and (min-width: 53.25em) and (max-height: 32em),
-screen and (min-width: 55em) and (max-height: 33em),
-screen and (min-width: 57em) and (max-height: 34em),
-screen and (min-width: 58.5em) and (max-height: 35em),
-screen and (min-width: 60em) and (max-height: 36em) {
-  .wide,
-  .narrow,
-  .grid {
-    margin: 1em auto 0!important;
-    max-width: 100%!important;
-  }
-}
+@import 'height-queries.scss';
