@@ -1689,7 +1689,7 @@ screen and (min-resolution: 1.5dppx) {
 
   .grid figure {
     margin: auto;
-    @include flex(1 1 calc(50% - 1em));
+    @include flex(1 1 50%);
   }
 
   .grid .w33 {
