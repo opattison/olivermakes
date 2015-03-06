@@ -513,14 +513,15 @@ dt {
   background-color: $black-80;
 }
 
-.site-nav-item:focus {
+.site-nav .site-nav-item:focus {
   background-color: $boldblue;
+  color: $whiter;
   outline: none;
 }
 
-.site-nav-item:active {
+.site-nav .site-nav-item:active {
   background-color: $green;
-  color: $gray07;
+  color: $white;
 }
 
 /* Alternative nav – home and back-to-top */
