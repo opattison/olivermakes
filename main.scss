@@ -354,8 +354,6 @@ dt {
 
 .close-menu {
   display: none; /* only displays with :target */
-  position: absolute;
-  top: 4.5em;
 }
 
 .top-menu a,
@@ -458,7 +456,7 @@ dt {
 /* Target navigation - JS-free modal navigation */
 .site-nav:target {
   margin: 0 auto;
-  padding-top: 7em;
+  padding-top: 4.5em;
   position: absolute; /* now visible when target:ed */
   right: 0;
   top: 0;
@@ -983,11 +981,15 @@ article img {
 
 /* Title header */
 
+.index-header {
+  margin-top: 1em;
+  text-align: center;
+}
+
 .index-header h1 {
   font-size: 1.25em;
   font-weight: 300;
   letter-spacing: -.03125em;
-  text-align: center;
 }
 
 /* Homepage introduction feature */
@@ -1295,8 +1297,8 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 1em;
   }
 
-  .index-header h1 {
-    margin-left: 1.6em;
+  .index-header {
+    margin-left: 2em;
     text-align: left;
   }
 
@@ -1318,10 +1320,6 @@ screen and (min-resolution: 1.5dppx) {
   .close-menu a {
     line-height: 2em;
     padding: 1em;
-  }
-
-  .site-nav:target {
-    padding-top: 4.5em;
   }
 
   .ancillary {
@@ -1410,10 +1408,6 @@ screen and (min-resolution: 1.5dppx) {
   .archive-item .meta {
     font-size: 1.25em;
   }
-
-  .index-header h1 {
-    margin-left: 1.6em;
-  }
 }
 
 @media screen and (min-width: 40em) {
@@ -1436,7 +1430,7 @@ screen and (min-resolution: 1.5dppx) {
     @include justify-content(center);
   }
 
-  .index-header h1 {
+  .index-header {
     margin: 0;
     text-align: center;
   }
