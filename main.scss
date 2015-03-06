@@ -932,10 +932,6 @@ article img {
   @include flex-flow(column nowrap)
 }
 
-.grid figure {
-  @include flex(1 0 100%);
-}
-
 .grid .w33 {
   max-width: calc(100% / 3 * 2);
 }
@@ -1692,15 +1688,17 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .grid figure {
-    margin: 0;
+    margin: auto;
     @include flex(1 1 calc(50% - 1em));
   }
 
   .grid .w33 {
+    width: calc(100% / 3 - 1em);
     @include flex(1 1 calc(100% / 3 - 1em));
   }
 
   .grid .w66 {
+    width: calc(100% / 3 * 2 - 1em);
     @include flex(1 1 calc(100% / 3 * 2 - 1em));
   }
 
@@ -1735,7 +1733,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .grid .w33 figcaption {
-    padding: .25em 0;
+    padding: .5em;
   }
 }
 
