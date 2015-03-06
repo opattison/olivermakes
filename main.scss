@@ -278,24 +278,24 @@ dt {
 /** Header **/
 
 .site-header {
-  height: 7em;
-  padding-top: .5em;
+  height: 4.5em;
+  padding: 1em;
+  @include flexbox;
+  @include flex-flow(column nowrap);
 }
 
 .title {
-  display: block;
-  height: 3.5em;
-  margin: 0 auto;
-  padding: .5em;
-  position: relative;
-  width: 14em;
+  @include flex(1 0 auto);
+  @include flexbox;
+  @include justify-content(center);
+  @include flex-flow(row wrap);
 }
 
 .title h1 {
   font-weight: 300;
   letter-spacing: -.03125em;
   line-height: 1.25em;
-  margin: 0;
+  margin: 0 .1875em;
 }
 
 .title:hover h1,
@@ -308,11 +308,6 @@ dt {
 .logo {
   height: 2.5em;
   width: 2.5em;
-}
-
-.title .logo {
-  float: left;
-  margin: 0 .5em 0 0;
 }
 
 .title .logo circle {
@@ -357,23 +352,25 @@ dt {
 .top-menu,
 .close-menu {
   margin: 0;
-  position: absolute;
   text-align: center;
-  top: 4.5em;
   width: 100%;
   z-index: 2;
+}
+
+.close-menu {
+  display: none; /* only displays with :target */
+  position: absolute;
+  top: 4.5em;
 }
 
 .top-menu a,
 .close-menu a {
   background-color: $red;
   color: $whiter;
-  height: 2.5em;
 }
 
 .top-menu a,
-.close-menu a,
-.alt-nav-item {
+.close-menu a {
   color: $whiter;
   display: block;
   font-weight: 400;
@@ -466,11 +463,6 @@ dt {
 }
 
 /* Target navigation - JS-free modal navigation */
-
-.close-menu {
-  display: none; /* only displays with :target */
-}
-
 .site-nav:target {
   margin: 0 auto;
   padding-top: 7em;
@@ -550,6 +542,7 @@ dt {
 .alt-nav-item {
   background-color: $gray00;
   color: $whiter;
+  font-weight: 400;
   margin: 0;
   max-width: 50%;
   padding: 1em;
@@ -1307,14 +1300,6 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 1em;
   }
 
-  .site-header {
-    height: 4.5em;
-  }
-
-  .title {
-    margin: 0 1.5em;
-  }
-
   .index-header h1 {
     margin-left: 1.6em;
     text-align: left;
@@ -1322,15 +1307,20 @@ screen and (min-resolution: 1.5dppx) {
 
   .top-menu,
   .close-menu {
+    height: 4.5em;
+    position: absolute;
     right: 0;
     top: 0;
     width: auto;
   }
 
+  .top-menu,
+  .close-menu {
+    font-size: 1.125em;
+  }
+
   .top-menu a,
   .close-menu a {
-    font-size: 1.125em;
-    height: 4em;
     line-height: 2em;
     padding: 1em;
   }
@@ -1447,10 +1437,6 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 1.25em;
   }
 
-  .title {
-    margin: 0 auto;
-  }
-
   .index-header h1 {
     margin: 0;
     text-align: center;
@@ -1530,12 +1516,11 @@ screen and (min-resolution: 1.5dppx) {
 
   .site-header {
     height: auto;
-    padding: 0;
+    padding: 2em 6em;
   }
 
   .title {
     font-size: 1.25em;
-    margin: .5em auto 1em;
   }
 
   .page-header {
@@ -1614,10 +1599,6 @@ screen and (min-resolution: 1.5dppx) {
   .page-header .inside,
   .page-meta {
     width: 45em;
-  }
-
-  .title {
-    margin-bottom: 1.5em;
   }
 
   .page-header .inside {
@@ -1760,14 +1741,17 @@ screen and (min-resolution: 1.5dppx) {
 }
 
 @media screen and (min-width: 80em) {
+  .site-header {
+    padding: 3em 7em;
+  }
+
   .title {
     font-size: 1.5em;
-    margin: 1.5em auto;
   }
 
   .top-menu,
   .close-menu {
-    font-size: 1.125em;
+    font-size: 1.25em;
   }
 
   .site-nav:target {
@@ -1838,11 +1822,6 @@ screen and (min-resolution: 1.5dppx) {
     font-size: 1.75em;
   }
 
-  .top-menu,
-  .close-menu {
-    font-size: 1.25em;
-  }
-
   .site-nav {
     @include flex(0 0 33.3333333%);
   }
@@ -1867,6 +1846,10 @@ screen and (min-resolution: 1.5dppx) {
   .page-header,
   .page-meta {
     font-size: 1.75em;
+  }
+
+  .site-header {
+    padding: 4em 7em;
   }
 
   .title {
