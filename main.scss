@@ -26,10 +26,6 @@ body {
   color: $black;
 }
 
-[role="main"] {
-  margin-top: 0;
-}
-
 strong,
 b {
   font-weight: 500;
@@ -351,7 +347,6 @@ dt {
 
 .top-menu,
 .close-menu {
-  margin: 0;
   text-align: center;
   width: 100%;
   z-index: 2;
@@ -401,7 +396,6 @@ dt {
 .site-info {
   background-color: $gray07;
   color: $gray00;
-  margin: 0;
   overflow: auto;
   padding: 2em 1em;
   width: 100%;
@@ -425,7 +419,6 @@ dt {
 
 .site-nav-list {
   font-size: 1.25em;
-  margin: 0;
   @include flexbox;
   @include flex-flow(row wrap);
 }
@@ -534,7 +527,6 @@ dt {
 /* Alternative nav – home and back-to-top */
 
 .alt-nav {
-  margin: 0;
   @include flex(1 0 100%);
   @include flexbox;
 }
@@ -543,7 +535,6 @@ dt {
   background-color: $gray00;
   color: $whiter;
   font-weight: 400;
-  margin: 0;
   max-width: 50%;
   padding: 1em;
   text-align: center;
@@ -1044,10 +1035,6 @@ article img {
   @include flex-flow(row wrap);
 }
 
-.archive-item {
-  margin: 1em 0 0;
-}
-
 .feature,
 .item {
   background-color: $gray07;
@@ -1058,14 +1045,14 @@ article img {
 }
 
 .item {
-  margin-left: 1em;
-  margin-right: 1em;
+  margin: 1em 1em 0;
   @include flex(1 0 calc(100% - 2em));
   width: 100%;
 }
 
 .feature,
 .archive-item {
+  margin: 1em 0 0;
   width: 100%;
   @include flex(1 0 100%);
 }
@@ -1200,13 +1187,13 @@ article img {
 /* Links to archives */
 
 .link-archive {
-  @include flexbox;
+  margin-top: 1em;
   width: 100%;
+  @include flexbox;
 }
 
 .link-archive .link {
   background-color: $red;
-  margin: 0;
   width: 100%;
 }
 
@@ -1469,7 +1456,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .items {
-    margin-bottom: 1em;
+    margin: 1em 0;
   }
 
   .item {
