@@ -398,7 +398,11 @@ dt {
   padding: 2em 1em;
   width: 100%;
   @include flexbox;
-  @include align-items(center);
+}
+
+.site-info .inside {
+  margin: auto;
+  max-width: 36em;
 }
 
 .site-info p {
