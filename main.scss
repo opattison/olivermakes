@@ -12,11 +12,11 @@ html {
   color: $black;
   font: 400 16px/1.4375 $ratio;
   font: 400 1rem/1.4375 $ratio;
-  -moz-font-feature-settings: "liga", "dlig"; 
-  -ms-font-feature-settings: "liga", "dlig";
-  -o-font-feature-settings: "liga", "dlig";
-  -webkit-font-feature-settings: "liga", "dlig";
-   font-feature-settings: "liga", "dlig";
+  -moz-font-feature-settings: 'liga', 'dlig'; 
+  -ms-font-feature-settings: 'liga', 'dlig';
+  -o-font-feature-settings: 'liga', 'dlig';
+  -webkit-font-feature-settings: 'liga', 'dlig';
+   font-feature-settings: 'liga', 'dlig';
   font-variant-ligatures: common-ligatures;
   text-rendering: optimizeLegibility;
 }
@@ -154,7 +154,7 @@ article ol li::before {
 }
 
 article ol ol li::before {
-  content: counter(ordered-list) "." counter(ordered-list-sub) ":";
+  content: counter(ordered-list) '.' counter(ordered-list-sub) ':';
 }
 
 /* Blockquotes */
@@ -195,7 +195,7 @@ sup[id] a:focus {
 }
 
 sup[id] a::before {
-  content: "note ";
+  content: 'note ';
 }
 
 /* Figcaptions */
@@ -503,7 +503,7 @@ dt {
 
 .site-nav:target::after,
 .site-nav:target .close-menu a::after {
-  content: "";
+  content: '';
   display: block;
   height: 100%;
   left: 0;
