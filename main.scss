@@ -274,17 +274,17 @@ dt {
 /** Header **/
 
 .site-header {
+  display: flex;
+  flex-flow: column nowrap;
   height: 4.5em;
   padding: 1em;
-  @include flexbox;
-  @include flex-flow(column nowrap);
 }
 
 .title {
-  @include flex(1 0 auto);
-  @include flexbox;
-  @include justify-content(center);
-  @include flex-flow(row wrap);
+  flex: 1 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .title h1 {
@@ -384,11 +384,10 @@ dt {
 /* Site meta information */
 
 .site-footer {
-  clear: both;
   margin: 0 auto;
-  @include flexbox;
-  @include flex-flow(row wrap);
-  @include justify-content(center);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .site-info {
@@ -397,10 +396,11 @@ dt {
   overflow: auto;
   padding: 2em 1em;
   width: 100%;
-  @include flexbox;
+  display: flex;
 }
 
 .site-info .inside {
+  align-self: center;
   margin: auto;
   max-width: 36em;
 }
@@ -417,20 +417,20 @@ dt {
 
 .site-nav {
   max-width: 45em;
-  @include flex(1 0 auto);
+  flex: 1 0 auto;
 }
 
 .site-nav-list {
   font-size: 1.25em;
-  @include flexbox;
-  @include flex-flow(row wrap);
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .site-nav-list li {
   list-style-type: none;
   margin: 0;
   text-align: center;
-  @include flex(0 0 50%);
+  flex: 0 0 50%;
 }
 
 .site-nav-item {
@@ -531,8 +531,8 @@ dt {
 /* Alternative nav – home and back-to-top */
 
 .alt-nav {
-  @include flex(1 0 100%);
-  @include flexbox;
+  flex: 1 0 100%;
+  display: flex;
 }
 
 .alt-nav-item {
@@ -542,9 +542,9 @@ dt {
   max-width: 50%;
   padding: 1em;
   text-align: center;
-  @include flex(1 0 50%);
-  @include flexbox;
-  @include justify-content(center);
+  flex: 1 0 50%;
+  display: flex;
+  justify-content: center;
 }
 
 .back-home .logo {
@@ -622,9 +622,9 @@ dt {
   background-color: $gray07;
   margin: 0 auto;
   width: 100%;
-  @include flexbox;
-  @include flex-flow(row wrap);
-  @include justify-content(center);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .page-meta .page-nav-item {
@@ -636,11 +636,11 @@ dt {
   min-height: 2.5em;
   padding: .5em 0;
   text-align: center;
-  @include flex(1 0 50%);
+  flex: 1 0 50%;
 }
 
 .page-meta .page-nav-item:only-child {
-  @include flex(1 0 100%);
+  flex: 1 0 100%;
 }
 
 .page-meta .later {
@@ -678,7 +678,7 @@ dt {
   padding: 1em;
   margin: 0;
   text-align: center;
-  @include flex(1 0 100%);
+  flex: 1 0 100%;
 }
 
 .page-meta .time p {
@@ -756,13 +756,13 @@ dt {
 }
 
 .project-links {
-  @include flexbox;
+  display: flex;
 }
 
 .project-links li {
   list-style: none;
   margin: 0;
-  @include flex(1 0 50%);
+  flex: 1 0 50%;
 }
 
 .project-links :only-child {
@@ -928,8 +928,8 @@ article img {
 }
 
 .grid {
-  @include flexbox;
-  @include flex-flow(column nowrap)
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .grid .w33 {
@@ -1036,8 +1036,8 @@ article img {
 }
 
 .items {
-  @include flexbox;
-  @include flex-flow(row wrap);
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .feature,
@@ -1051,7 +1051,7 @@ article img {
 
 .item {
   margin: 1em 1em 0;
-  @include flex(1 0 calc(100% - 2em));
+  flex: 1 0 calc(100% - 2em);
   width: 100%;
 }
 
@@ -1059,7 +1059,7 @@ article img {
 .archive-item {
   margin: 1em 0 0;
   width: 100%;
-  @include flex(1 0 100%);
+  flex: 1 0 100%;
 }
 
 .index .location a {
@@ -1194,7 +1194,7 @@ article img {
 .link-archive {
   margin-top: 1em;
   width: 100%;
-  @include flexbox;
+  display: flex;
 }
 
 .link-archive .link {
@@ -1263,7 +1263,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .title {
-    @include justify-content(flex-start);
+    justify-content: flex-start;
   }
 
   .page {
@@ -1340,7 +1340,7 @@ screen and (min-resolution: 1.5dppx) {
 
   .photo-gallery .item {
     max-width: 50%;
-    @include flex(1 0 50%);
+    flex: 1 0 50%;
   }
 }
 
@@ -1430,7 +1430,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .title {
-    @include justify-content(center);
+    justify-content: center;
   }
 
   .index-header {
@@ -1460,7 +1460,7 @@ screen and (min-resolution: 1.5dppx) {
     height: 20em;
     margin: 1em 0 0;
     max-width: 50%;
-    @include flex(1 0 50%);
+    flex: 1 0 50%;
   }
 
   .photo-gallery .item {
@@ -1535,7 +1535,7 @@ screen and (min-resolution: 1.5dppx) {
   .page-meta .page-nav-item:only-child,
   .page-nav-blank {
     max-width: 9em;
-    @include flex(1 0 4.5em);
+    flex: 1 0 4.5em;
   }
 
   .page-meta .page-nav-item {
@@ -1543,23 +1543,23 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .page-meta .later {
-    @include order(1);
+    order: 1;
   }
 
   .page-meta .earlier {
-    @include order(3);
+    order: 3;
   }
 
   .page-meta .time {
     padding: .5em 1em;
-    @include flex(1 0 auto);
-    @include order(2);
+    flex: 1 0 auto;
+    order: 2;
   }
 
   .photo-gallery .item {
     height: 7.5em;
     max-width: 25%;
-    @include flex(1 0 25%);
+    flex: 1 0 25%;
   }
 
   .photo-gallery .item .meta h1 {
@@ -1674,7 +1674,7 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .grid {
-    @include flex-flow(row nowrap);
+    flex-flow: row nowrap;
   }
 
   .wide figcaption p,
@@ -1688,18 +1688,18 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .grid figure {
-    margin: auto;
-    @include flex(1 1 50%);
+    margin: 0 auto;
+    flex: 1 1 50%;
   }
 
   .grid .w33 {
     width: calc(100% / 3 - 1em);
-    @include flex(1 1 calc(100% / 3 - 1em));
+    flex: 1 1 calc(100% / 3 - 1em);
   }
 
   .grid .w66 {
     width: calc(100% / 3 * 2 - 1em);
-    @include flex(1 1 calc(100% / 3 * 2 - 1em));
+    flex: 1 1 calc(100% / 3 * 2 - 1em);
   }
 
   .grid figure + figure {
@@ -1719,17 +1719,18 @@ screen and (min-resolution: 1.5dppx) {
 
   .site-info {
     padding: 1.5em 2em;
-    @include order(1);
-    @include flex(1 0 50%);
+    order: 1;
+    flex: 1 0 50%;
+    max-width: 50%;
   }
 
   .site-nav {
-    @include order(2);
-    @include flex(1 0 50%);
+    order: 2;
+    flex: 1 0 50%;
   }
 
   .alt-nav {
-    @include order(3);
+    order: 3;
   }
 
   .grid .w33 figcaption {
@@ -1816,14 +1817,14 @@ screen and (min-resolution: 1.5dppx) {
   }
 
   .site-nav {
-    @include flex(0 0 33.3333333%);
+    flex: 0 0 33.3333333%;
   }
 
   .site-info {
     font-size: 1.5em;
     max-width: 66.6666667%;
     padding: 2em 4em;
-    @include flex(0 0 66.6666667%);
+    flex: 0 0 66.6666667%;
   }
 
   .index {

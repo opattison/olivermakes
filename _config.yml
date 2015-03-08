@@ -38,6 +38,8 @@ collections:
 gems:
   - jekyll-archives
   - sass
+  - octopress-autoprefixer
+  - autoprefixer-rails
 
 ## Markdown configuration
 markdown: kramdown
