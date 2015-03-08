@@ -53,9 +53,9 @@ li + li {
 /*** Order helpers for flexbox *****************/
 
 .order-first {
-  @include order(0);
+  order: 0;
 }
 
 .order-last {
-  @include order(99);
+  order: 99;
 }
