@@ -54,8 +54,7 @@
 .dark .title:hover .logo circle,
 .dark .title:focus .logo circle {
   stroke: $grayblue;
-  -webkit-animation-name: step-fill--contrast;
-          animation-name: step-fill--contrast;
+  animation-name: step-fill--contrast;
 }
 
 .dark .page figcaption {
