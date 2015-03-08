@@ -384,7 +384,6 @@ dt {
 /* Site meta information */
 
 .site-footer {
-  clear: both;
   margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
@@ -401,6 +400,7 @@ dt {
 }
 
 .site-info .inside {
+  align-self: center;
   margin: auto;
   max-width: 36em;
 }
@@ -1721,6 +1721,7 @@ screen and (min-resolution: 1.5dppx) {
     padding: 1.5em 2em;
     order: 1;
     flex: 1 0 50%;
+    max-width: 50%;
   }
 
   .site-nav {
