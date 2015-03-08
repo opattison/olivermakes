@@ -12,11 +12,11 @@ html {
   color: $black;
   font: 400 16px/1.4375 $ratio;
   font: 400 1rem/1.4375 $ratio;
-  -moz-font-feature-settings: 'liga', 'dlig'; 
-  -ms-font-feature-settings: 'liga', 'dlig';
-  -o-font-feature-settings: 'liga', 'dlig';
+     -moz-font-feature-settings: 'liga', 'dlig'; 
+      -ms-font-feature-settings: 'liga', 'dlig';
+       -o-font-feature-settings: 'liga', 'dlig';
   -webkit-font-feature-settings: 'liga', 'dlig';
-   font-feature-settings: 'liga', 'dlig';
+          font-feature-settings: 'liga', 'dlig';
   font-variant-ligatures: common-ligatures;
   text-rendering: optimizeLegibility;
 }
@@ -315,32 +315,25 @@ dt {
 .title:hover .logo circle,
 .title:focus .logo circle {
   stroke: $boldblue;
-  -webkit-animation-name: step-fill;
-          animation-name: step-fill;
-  -webkit-animation-timing-function: cubic-bezier(0,1,1,1);
-          animation-timing-function: cubic-bezier(0,1,1,1);
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-duration: 320ms;
-          animation-duration: 320ms;
+  animation-name: step-fill;
+  animation-timing-function: cubic-bezier(0,1,1,1);
+  animation-fill-mode: forwards;
+  animation-duration: 320ms;
 }
 
 .title:hover .logo .secret,
 .title:active .logo .secret {
-  -webkit-animation-delay: 1600ms;
-          animation-delay: 1600ms;
+  animation-delay: 1600ms;
 }
 
 .title:hover .logo .inner,
 .title:active .logo .inner {
-  -webkit-animation-delay: 2400ms;
-          animation-delay: 2400ms;
+  animation-delay: 2400ms;
 }
 
 .title:hover .logo .outer,
 .title:active .logo .outer {
-  -webkit-animation-delay: 3200ms;
-          animation-delay: 3200ms;
+  animation-delay: 3200ms;
 }
 
 /* Menu navigation - top right */

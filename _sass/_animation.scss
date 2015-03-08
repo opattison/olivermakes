@@ -7,16 +7,6 @@ a svg circle {
   transition: all 160ms cubic-bezier(0,1,1,1);
 }
 
-@-webkit-keyframes step-fill {
-  0% {
-    fill: $pure-1;
-  }
-
-  100% {
-    fill: $boldblue;
-  }
-}
-
 @keyframes step-fill {
   0% {
     fill: $pure-1;
@@ -24,16 +14,6 @@ a svg circle {
 
   100% {
     fill: $boldblue;
-  }
-}
-
-@-webkit-keyframes step-fill--contrast {
-  0% {
-    fill: $pure-1;
-  }
-
-  100% {
-    fill: $grayblue;
   }
 }
 
