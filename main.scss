@@ -366,7 +366,8 @@ dt {
 .top-menu a:hover,
 .top-menu a:active,
 .close-menu a {
-  background-color: $boldblue;
+  background-color: $gray07;
+  color: $red;
 }
 
 .top-menu a:focus,
@@ -445,9 +446,19 @@ dt {
   background-color: $gray00;
 }
 
-.site-nav .site-nav-item:hover {
-  background-color: $boldblue;
-  color: $whiter;
+.site-nav .site-nav-item:hover,
+.site-nav .site-nav-item:focus {
+  background-color: $whiter;
+  color: $gray00;
+}
+
+.site-nav .site-nav-item:focus {
+  outline: none;
+}
+
+.site-nav .site-nav-item:active {
+  background-color: $whiter;
+  color: $green;
 }
 
 /* Target navigation - JS-free modal navigation */
@@ -482,7 +493,7 @@ dt {
 }
 
 .site-nav:target li a:hover {
-  background-color: $boldblue-80;
+  background-color: $gray07-80;
 }
 
 .site-nav:target .close-menu {
@@ -507,17 +518,6 @@ dt {
 
 .site-nav:target::after {
   background-color: $black-80;
-}
-
-.site-nav .site-nav-item:focus {
-  background-color: $boldblue;
-  color: $whiter;
-  outline: none;
-}
-
-.site-nav .site-nav-item:active {
-  background-color: $green;
-  color: $white;
 }
 
 /* Alternative nav – home and back-to-top */
@@ -720,14 +720,15 @@ dt {
 
 .link:hover,
 .link:focus {
-  background-color: $boldblue;
+  background-color: $whiter;
   border-bottom: none;
+  color: $gray00;
   outline: none;
 }
 
 .link:active {
-  color: $gray07;
-  background-color: $green;
+  background-color: $whiter;
+  color: $green;
 }
 
 .project {
@@ -1119,14 +1120,14 @@ article img {
 .item .link:focus,
 .feature .link:hover,
 .feature .link:focus {
-  background-color: $boldblue;
-  color: $white;
+  background-color: $whiter;
+  color: $gray00;
 }
 
 .item .link:active,
 .feature .link:active {
-  color: $gray07;
-  background-color: $green;
+  color: $green;
+  background-color: $whiter;
 }
 
 .archive-item {
@@ -1149,6 +1150,7 @@ article img {
 }
 
 .photo-gallery .item a {
+  border-bottom: none;
   color: $pure-1;
   display: block;
   height: 100%;
