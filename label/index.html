@@ -11,7 +11,7 @@ description: 'Links to all of the label archives for the posts on this website, 
 <div class="index-grid">
 {% assign tags = site.tags | sort %}
 {% for tag in tags %}
-{% include l-index/item--tag.html %}
+{% include l-index/item--short--tag.html %}
 {% endfor %}
 {% include l-index/index-nav--archive.html %}
 </div>
