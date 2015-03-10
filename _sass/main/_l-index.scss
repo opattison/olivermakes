@@ -1,0 +1,181 @@
+.home,
+.category {
+  background-color: $white;
+}
+
+.archive {
+  background-color: $gray05;
+}
+
+/* Title header */
+
+.index-heading {
+  font-size: 1.25em;
+  font-weight: 300;
+  letter-spacing: -.03125em;
+  text-align: center;
+}
+
+/* Sections and items */
+
+.index-grid {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.item {
+  background-color: $gray07;
+  flex: 1 0 calc(100% - 2em);
+  margin: 1em 1em 0;
+  width: 100%;
+  & {
+    @include axiom;
+  }
+}
+
+.item:nth-child(2n + 2) {
+  background-color: $gray05;
+}
+
+.item--feature,
+.item--short {
+  margin: 1em 0 0;
+  width: 100%;
+  flex: 0 0 100%;
+}
+
+.item-description {
+  background-color: $gray07-90;
+  margin: 0;
+  padding: 1em;
+  position: relative;
+}
+
+.item--feature-description {
+  font-size: 1.125em;
+  min-height: 12.5em;
+  padding: .888888889em;
+}
+
+.item--short-description {
+  background-color: $gray07;
+}
+
+.item-location a {
+  border-bottom: solid 1px $pure-1;
+}
+
+.item-location a:hover,
+.item-location a:focus {
+  border-bottom: solid 1px $grayblue;
+}
+
+.item-description h1 {
+  font-size: 1.5em;
+}
+
+.item-description h1 a {
+  color: $red;
+  border-bottom: solid 1px $pure-1;
+}
+
+.item-description h1 a:hover,
+.item-description h1 a:focus {
+  color: $blue;
+}
+
+.item-description h1 a:active {
+  color: $green;
+}
+
+.item--short-description h1 {
+  font-size: 1.125em;
+}
+
+.item-time {
+  font-size: .875em;
+}
+
+.item-action {
+  @include action($gray02, $whiter);
+}
+
+.item:nth-child(2n + 2) .item-action {
+  background-color: $gray00;
+}
+
+.item:nth-child(2n + 2) .item-action:hover {
+  background-color: $whiter;
+}
+
+.item--feature-action {
+  background-color: $black;
+}
+
+/* Photo gallery for archive page */
+
+.item--photo {
+  height: 10em;
+  margin: 1em 0 0;
+}
+
+.item--photo a {
+  color: $pure-1;
+  display: block;
+  height: 100%;
+}
+
+.item--photo-description {
+  background-color: transparent;
+  height: auto;
+  padding: 1em;
+}
+
+.item--photo-description h1 {
+  color: inherit;
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+.item--photo a:hover,
+.item--photo a:focus {
+  background-color: $gray07-90;
+}
+
+.item--photo a:hover h1,
+.item--photo a:focus h1 {
+  color: $boldblue;
+}
+
+.item--photo a:hover p,
+.item--photo a:focus p {
+  color: $black;
+}
+
+/* Links to archives */
+
+.index-nav {
+  margin-top: 1em;
+  width: 100%;
+  display: flex;
+}
+
+.index-nav-action {
+  @include action($red, $white);
+  width: 100%;
+}
+
+.index-nav-action:nth-child(2) {
+  background-color: $blue;
+}
+
+.index-nav-action:hover,
+.index-nav-action:focus {
+  background-color: $gray07;
+  color: $red;
+}
+
+.index-nav-action:nth-child(2):hover,
+.index-nav-action:nth-child(2):focus {
+  color: $blue;
+}

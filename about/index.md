@@ -3,7 +3,7 @@ title: 'About'
 layout: singel
 option:
   - no-title
-  - hero-srcset
+  - hero
   - code
   - code-block
   - srcset

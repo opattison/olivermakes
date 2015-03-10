@@ -6,10 +6,10 @@ description: 'A minimal archive list of all posts on this website, by Oliver Pat
 
 ---
 
-{% include archive/header.html title='archive' %}
+{% include l-index/heading.html title='archive' %}
 
-<div class="items">
+<div class="index-grid">
 {% for post in site.posts %}
-{% include archive/item.html %}
+{% include l-index/item--short.html %}
 {% endfor %}
 </div>

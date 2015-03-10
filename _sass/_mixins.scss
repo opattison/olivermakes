@@ -1,0 +1,40 @@
+@mixin axiom($value: 1em) {
+  * + * {
+    margin-top: $value;
+  }
+}
+
+@mixin action($ground: $black, $figure: $white) {
+  background-color: $ground;
+  color: $figure;
+  display: block;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 1em 0;
+  text-align: center;
+  &:hover,
+  &:focus {
+    background-color: $figure;
+    color: $ground;
+    outline: none;
+  }
+  &:active {
+    background-color: $whiter;
+    color: $green;
+  }
+}
+
+@mixin menu {
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+}
+
+@mixin a-underline($link: $pink, $hover: $grayblue) {
+  border-bottom: solid 1px $link;
+  &:hover,
+  &:focus {
+    border-bottom: solid 1px $hover;
+  }
+}

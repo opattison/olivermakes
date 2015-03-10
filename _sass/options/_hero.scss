@@ -1,0 +1,50 @@
+@import 'variables';
+
+.hero {
+  margin: auto;
+}
+
+.hero figcaption {
+  background-color: $whiter;
+  margin: 0;
+}
+
+.hero + .page {
+  padding-top: 1.5em;
+}
+
+@media screen and (min-width: 45em) {
+  .hero {
+    font-size: 1.25em;
+    flex: 0 0 36em;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .hero {
+    flex: 0 0 45em;
+  }
+
+  .hero figcaption p {
+    margin-left: 50%;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .hero {
+    flex: 0 0 54em;
+  }
+}
+
+@media screen and (min-width: 95em) {
+  .hero {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 115em) {
+  .hero {
+    font-size: 1.75em;
+  }
+}

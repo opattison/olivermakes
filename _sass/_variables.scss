@@ -1,0 +1,52 @@
+/* Color processing */
+@function hsl($h, $s, $l) {
+  @return unquote('hsl(#{$h}, #{$s}, #{$l})');
+}
+
+@function hsla($h, $s, $l, $a) {
+  @return unquote('hsla(#{$h}, #{$s}, #{$l}, #{$a})');
+}
+
+/* Colors */
+$black: hsla(204, 10%, 12%, 1);
+$gray00: hsla(204, 10%, 18%, 1);
+$gray01: hsla(204, 10%, 24%, 1);
+$gray02: hsla(204, 10%, 32%, 1);
+$gray03: hsla(204, 10%, 40%, 1);
+$gray04: hsla(204, 10%, 72%, 1);
+$gray05: hsla(204, 10%, 80%, 1);
+$gray06: hsla(204, 10%, 88%, 1);
+$gray07: hsla(204, 10%, 92%, 1);
+$white: hsla(204, 10%, 95%, 1);
+$whiter: hsla(204, 10%, 97%, 1);
+
+$blue: hsla(204, 50%, 45%, 1);
+$boldblue: hsla(204, 80%, 40%, 1);
+$darkblue: hsla(204, 80%, 32%, 1);
+$violet: hsla(225, 35%, 52%, 1);
+$purple: hsla(285, 25%, 40%, 1);
+$red: hsla(4, 60%, 47%, 1);
+$boldred: hsla(4, 80%, 40%, 1);
+$orange: hsla(22, 50%, 44%, 1);
+$gold: hsla(44, 60%, 42%, 1);
+$green: hsla(144, 50%, 35%, 1);
+$bluegreen: hsla(184, 32%, 38%, 1);
+$grayblue: hsla(204, 30%, 80%, 1);
+$pink: hsla(4, 30%, 80%, 1);
+
+$black-80: hsla(204, 10%, 12%, .8);
+$gray00-80: hsla(204, 10%, 18%, .8);
+$gray01-80: hsla(204, 10%, 24%, .8);
+$gray02-80: hsla(204, 10%, 32%, .8);
+$gray07-80: hsla(204, 10%, 92%, .8);
+$gray07-90: hsla(204, 10%, 92%, .9);
+$pure-1: hsla(0, 0%, 100%, .01);
+$boldblue-80: hsla(204, 80%, 40%, .8);
+$grayblue-50: hsla(204, 30%, 80%, .5);
+$pink-50: hsla(4, 30%, 80%, .5);
+
+/* Typography */
+
+$ratio: 'ratio', 'Seravek', 'Helvetica Neue', sans-serif;
+$source-code-pro: 'source-code-pro', Menlo, Consolas, monospace;
+$open-sans: 'Open Sans', sans-serif;

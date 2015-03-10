@@ -59,17 +59,17 @@ This pattern library is a work in progress. Take a look at the [style guide](/st
 
 ### Ratio font family (300, 400, 500)
 
-{% include meta/type.html class='sans w300' %}
+{% include c-meta/type.html class='sans w300' %}
 
-{% include meta/type.html class='sans w300 italic' %}
+{% include c-meta/type.html class='sans w300 italic' %}
 
-{% include meta/type.html class='sans w400' %}
+{% include c-meta/type.html class='sans w400' %}
 
-{% include meta/type.html class='sans w400 italic' %}
+{% include c-meta/type.html class='sans w400 italic' %}
 
-{% include meta/type.html class='sans w500' %}
+{% include c-meta/type.html class='sans w500' %}
 
-{% include meta/type.html class='sans w500 italic' %}
+{% include c-meta/type.html class='sans w500 italic' %}
 
 ```
 $ratio: 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
@@ -77,7 +77,7 @@ $ratio: 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
 
 ### Source Code Pro font family (400)
 
-{% include meta/type.html class='monospace' %}
+{% include c-meta/type.html class='monospace' %}
 {:.monospace}
 
 ```
@@ -90,5 +90,5 @@ $source-code-pro: 'source-code-pro', Menlo, Consolas, monospace;
 ## Common patterns (with code examples)
 
 {% for pattern in site.patterns %}
-{% include meta/pattern.html %}
+{% include c-meta/pattern.html %}
 {% endfor %}

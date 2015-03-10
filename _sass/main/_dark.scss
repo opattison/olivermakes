@@ -1,0 +1,177 @@
+.dark,
+.dark .core {
+  background-color: $gray00;
+  color: $white;
+}
+
+.dark .banner-title-logo circle {
+  stroke: $gray07;
+}
+
+.dark .banner-title:hover .banner-title-logo circle,
+.dark .banner-title:focus .banner-title-logo circle {
+  stroke: $grayblue;
+  animation-name: step-fill--contrast;
+}
+
+.dark .banner-title:hover .banner-title-heading,
+.dark .banner-title:focus .banner-title-heading {
+  color: $grayblue;
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4 {
+  color: $gray07;
+}
+
+.dark sup[id] a {
+  background-color: $pink-50;
+  border: none;
+  color: $gray06;
+}
+
+.dark sup[id] a:hover,
+.dark sup[id] a:focus {
+  background-color: $grayblue-50;
+  border: none;
+  color: $gray06;
+}
+
+.dark .core-body a,
+.dark .core-meta a {
+  color: $pink;
+  @include a-underline($pink-50, $grayblue-50);
+}
+
+.dark .core-meta {
+  background-color: $gray01;
+}
+
+.dark .core figcaption {
+  color: $gray06;
+}
+
+.dark blockquote {
+  color: $gray05;
+  border-color: $grayblue;
+}
+
+.dark blockquote footer {
+  color: $gray06;
+}
+
+.dark .highlight {
+  background-color: $whiter;
+  border-color: $gray03;
+}
+
+.dark p > code,
+.dark li > code,
+.dark samp {
+  border-color: $gray04;
+}
+
+.dark .important {
+  color: $grayblue;
+}
+
+.dark .ancillary {
+  background-color: $gray00;
+  color: $gray05;
+}
+
+.dark .footnotes {
+  color: inherit;
+  background-color: $gray02;
+}
+
+.dark .footnotes li,
+.dark .reversefootnote {
+  border-color: $gray04;
+}
+
+.dark .reversefootnote {
+  color: $white;
+}
+
+.dark .reversefootnote:hover,
+.dark .reversefootnote:focus {
+  color: $white;
+  background-color: $grayblue-50;
+  border-color: $grayblue-50;
+}
+
+.dark .project {
+  background-color: $gray02;
+}
+
+.dark .project-image {
+  background-color: $gray02;
+}
+
+.dark .project-summary {
+  color: $gray07;
+}
+
+.dark .project-nav .project-nav-action {
+  border: none;
+  color: $whiter;
+}
+
+.dark .project-nav .project-nav-action--url {
+  background-color: $red;
+  color: $white;
+}
+
+.dark .project-nav .project-nav-action--source {
+  background-color: $violet;
+  border: none;
+  color: $white;
+}
+
+.dark .project-nav .project-nav-action:hover,
+.dark .project-nav .project-nav-action:focus {
+  background-color: $white;
+  border: none;
+}
+
+.dark .project-nav .project-nav-action--url:hover,
+.dark .project-nav .project-nav-action--url:focus {
+  color: $red;
+}
+
+.dark .project-nav .project-nav-action--source:hover,
+.dark .project-nav .project-nav-action--source:focus {
+  color: $violet;
+}
+
+.dark .essay {
+  background-color: $gray02;
+  color: $white;
+}
+
+.dark .core-meta {
+  background-color: $gray02;
+}
+
+.dark .routing-nav-action {
+  background-color: $black-80;
+}
+
+.dark .routing-nav-action:nth-child(2) {
+  background-color: $gray01-80;
+}
+
+.dark .routing-nav-action:nth-child(3) {
+  background-color: $gray02-80;
+}
+
+.dark .routing-nav-action:nth-child(4) {
+  background-color: $gray00-80;
+}
+
+.dark .routing-nav-action:hover {
+  background-color: $gray07-80;
+}

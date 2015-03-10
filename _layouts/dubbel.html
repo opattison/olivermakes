@@ -4,27 +4,25 @@
 
 <body class="dubbel{% if page.option contains 'dark' %} dark{% endif %}">
 
-{% include header.html %}
+{% include l-header.html %}
 
-  <article class="h-entry" role="main">
+  <article class="h-entry core" role="main">
 
-{% include page/header.html %}
+{% include l-core/header.html %}
 
-    <div class="e-content page">
+    <div class="e-content core-body">
 
-{% if page.category == 'projects' %}
-{% include page/project.html %}
-{% endif %}
+{% include c-block/project.html %}
 
 {{ content }}
 
     </div>
 
-{% include page/footer.html %}
+{% include l-core/footer.html %}
 
   </article>
 
-{% include footer.html %}
+{% include l-footer.html %}
 
 </body>
 </html>

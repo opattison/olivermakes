@@ -2,19 +2,19 @@
 <html lang="en">
 {% include head.html %}
 
-<body class="category category-{{ page.title | downcase }}">
+<body class="category--{{ page.title | downcase }} category">
 
-{% include header.html %}
+{% include l-header.html %}
 
   <section class="index">
 
-{% include index/header.html %}
+{% include l-index/heading.html %}
 
 {{ content }}
 
   </section>
 
-{% include footer.html %}
+{% include l-footer.html %}
 
 </body>
 </html>

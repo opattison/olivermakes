@@ -1,0 +1,80 @@
+/* Homepage introduction feature */
+
+.primer {
+  background-color: $blue;
+  color: $gray07;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.25;
+  padding: 1em;
+  width: 100%;
+}
+
+.primer a {
+  color: $whiter;
+  border-bottom: solid 1px $gray07-80;
+  padding-bottom: 1px;
+}
+
+.primer a:hover,
+.primer a:focus {
+  color: $grayblue;
+  border-bottom: solid 1px $grayblue-50;
+}
+
+.primer p {
+  font-size: 1.25em;
+}
+
+/* Project */
+
+.project {
+  background-color: $gray06;
+  min-height: 15em;
+}
+
+.project-image {
+  background-color: $gray07;
+}
+
+.project-summary {
+  color: $gray02;
+  font-size: 1.125em;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.33333333;
+}
+
+.project-nav {
+  display: flex;
+}
+
+.project-nav-action {
+  @include action;
+  flex: 1 0 50%;
+}
+
+.project-nav-action--url {
+  background-color: $red;
+  color: $white;
+}
+
+.project-nav-action--source {
+  background-color: $violet;
+  color: $white;
+}
+
+.project-nav-action:hover,
+.project-nav-action:focus {
+  background-color: $white;
+}
+
+.project-nav-action--url:hover,
+.project-nav-action--url:focus {
+  color: $red;
+}
+
+.project-nav-action--source:hover,
+.project-nav-action--source:focus {
+  color: $violet;
+}
