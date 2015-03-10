@@ -305,7 +305,8 @@
   }
 
   .core-nav-action, 
-  .core-nav-action:only-child {
+  .core-nav-action:only-child,
+  .core-nav-blank {
     max-width: 9em;
     flex: 1 0 4.5em;
   }
