@@ -9,14 +9,24 @@
   margin: 0;
 }
 
-.hero + .page {
+.hero + .core-body {
   padding-top: 1.5em;
+}
+
+@media screen and (min-width: 30em) {
+  .hero figcaption p {
+    font-size: 1em;
+  }
 }
 
 @media screen and (min-width: 45em) {
   .hero {
     font-size: 1.25em;
     flex: 0 0 36em;
+  }
+
+  .hero figcaption p {
+    font-size: .75em;
   }
 }
 
