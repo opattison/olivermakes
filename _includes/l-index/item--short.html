@@ -1,0 +1,6 @@
+  <article class="item--short item">
+    <div class="item--short-description item-description">
+      <h1><a href="{{ post.url }}">{{ post.title | markdownify | p_escape }}</a></h1>
+      <p class="item-time">Published <time class="dt-published" pubdate datetime="{{ post.date }}">{{ post.date | date: '%Y-%m-%d' }}</time>{% if page.title == 'Full Site Archive' or page.type == 'tag' %}<span class="item-location"> in {% if post.category == 'writing' %}<a href="/writing">/writing</a>{% elsif post.category == 'photography' %}<a href="/photography">/photography</a>{% elsif post.category == 'projects' %}<a href="/projects">/projects</a>{% endif %}</span>{% endif %}</p>
+    </div>
+  </article>

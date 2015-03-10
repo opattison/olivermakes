@@ -6,12 +6,12 @@ description: 'Links to all of the label archives for the posts on this website, 
 
 ---
 
-{% include index/header.html title='label' %}
+{% include l-index/heading.html title='label' %}
 
-<div class="archive-items">
+<div class="index-grid">
 {% assign tags = site.tags | sort %}
 {% for tag in tags %}
-{% include archive/tag.html %}
+{% include l-index/item--short--tag.html %}
 {% endfor %}
-{% include archive/link-standard.html %}
+{% include l-index/index-nav--archive.html %}
 </div>

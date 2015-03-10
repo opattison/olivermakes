@@ -1,0 +1,11 @@
+{% if page.next.url %}
+        <a class="core-nav-action--later core-nav-action action" rel="next" href="{{ page.next.url }}" title="{{ page.next.title }}">↼ later</a>
+{% else %}
+        <div class="core-nav-blank order-first"></div>
+{% endif %}
+
+{% if page.previous.url %}
+        <a class="core-nav-action--earlier core-nav-action action" rel="previous" href="{{ page.previous.url }}" title="{{ page.previous.title }}">earlier ⇀</a>
+{% else %}
+        <div class="core-nav-blank order-last"></div>
+{% endif %}

@@ -3,13 +3,13 @@ layout: archive
 
 ---
 
-{% include archive/header.html suffix='archive' %}
+{% include l-index/heading--archive.html suffix='archive' %}
 
-<div class="items">
+    <div class="index-grid">
 {% for post in page.posts %}
-{% include archive/item.html %}
+{% include l-index/item--short.html %}
 {% endfor %}
-{% include archive/link-standard.html %}
-</div>
+{% include l-index/index-nav--archive.html %}
+    </div>
 
 {{ content }}

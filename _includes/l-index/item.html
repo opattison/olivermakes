@@ -1,0 +1,8 @@
+  <article class="item"{% if post.option contains 'index-image' or post.category == 'photography' %} style="background-image: url({{ site.image-url }}/index/{{ post.image[0].src }}); background-size: cover; background-position: 50%;"{% endif %}>
+    <div class="item-description">
+      <h1><a href="{{ post.url }}">{{ post.title | markdownify | p_escape }}</a></h1>
+      <p class="p-summary item-summary">{{ post.description }}</p>
+      <p class="item-time">Published <time class="dt-published" pubdate datetime="{{ post.date }}">{{ post.date | date: '%Y-%m-%d' }}</time>{% if page.title == 'Home' and post.category %}<span class="item-location"> in {% if post.category == 'writing' %}<a href="/writing/">/writing</a>{% elsif post.category == 'photography' %}<a href="/photography/">/photography</a>{% elsif post.category == 'projects' %}<a href="/projects/">/projects</a>{% endif %}</span>{% endif %}</p>
+    </div>
+    <a class="item-action action" href="{{ post.url }}">{% if post.category == 'projects' %}View this project{% elsif post.category == 'writing' %}Read this post{% else %}View this post{% endif %}</a>
+  </article>

@@ -1,4 +1,3 @@
-/*** Normalization *****************************/
 /* following adapted from HTML5 Reset
 source: http://html5reset.org */
 * {
@@ -18,6 +17,7 @@ aside,
 details,
 figcaption,
 figure,
+figure img,
 footer,
 header,
 hgroup,
@@ -32,6 +32,14 @@ html,
 body {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 img,
@@ -40,11 +48,14 @@ embed {
   max-width: 100%;
 }
 
+img {
+  width: 100%;
+}
+
 html,
 button,
 input,
-select,
-textarea {
+select {
   font-family: sans-serif;
 }
 

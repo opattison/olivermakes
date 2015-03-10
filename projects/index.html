@@ -6,9 +6,9 @@ description: 'An index of projects that Oliver Pattison has designed or contribu
 
 ---
 
-<div class="items">
+<div class="index-grid">
 {% for post in site.categories.projects limit: 8 %}
-{% include index/item.html %}
+{% include l-index/item.html %}
 {% endfor %}
-{% include index/link-archive.html %}
+{% include l-index/index-nav.html %}
 </div>
