@@ -259,7 +259,7 @@ mark {
   color: $whiter;
 }
 
-/*** Order helpers for flexbox ***/
+/** Order helpers for flexbox **/
 
 .order-first {
   order: 0;
@@ -272,4 +272,8 @@ mark {
 .logo {
   height: 2.5em;
   width: 2.5em;
+}
+
+.center {
+  text-align: center;
 }

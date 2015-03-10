@@ -26,6 +26,26 @@
   font-size: 1.25em;
 }
 
+/* Bold emphasis text blocks – <p class="focus"> */
+
+.focus {
+  color: $blue;
+  font-size: 1.25em;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.25;
+  margin-top: 1em;
+}
+
+.focus a {
+  color: $red;
+}
+
+.focus a:hover,
+.focus a:focus {
+  color: $gray02;
+}
+
 /* Project */
 
 .project {
