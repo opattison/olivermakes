@@ -42,11 +42,11 @@
 }
 
 @media screen and (min-width: 60em) {
-  .page-header .inside {
+  .core-header {
     padding: .75em 1.25em;
   }
 
-  .page {
+  .core-body {
     padding-top: 1em;
   }
 
@@ -56,19 +56,19 @@
     padding: 2.5em;
   }
 
-  [role="main"] figcaption {
+  .core-body figcaption {
     padding: .5em 0 0;
   }
 
-  [role="main"] figcaption p {
+  .core-body figcaption p {
     font-size: .875em;
   }
 
-  .page-meta {
+  .core-footer {
     max-width: 45em;
   }
 
-  .page-meta .time {
+  .core-meta {
     max-width: 27em;
   }
 }
@@ -86,13 +86,13 @@
 }
 
 @media screen and (min-width: 115em) {
-  .site-info {
+  .credits {
     padding: 2em;
   }
 }
 
 @media screen and (min-width: 140em) {
-  .page-header {
+  .core-header {
     font-size: 2em;
   }
 
@@ -102,8 +102,8 @@
     width: calc(100% + 24em);
   }
 
-  .page-meta,
-  .page-meta .time {
+  .core-footer,
+  .core-meta {
     max-width: none;
   }
 }

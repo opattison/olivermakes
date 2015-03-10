@@ -601,8 +601,18 @@
     flex: 0 0 33.3333333%;
   }
 
-  .credits {
+  .routing:target {
+    padding-top: 6em;
+    max-width: 54em;
+  }
+
+  .menu,
+  .routing-menu,
+  .routing:target .routing-nav {
     font-size: 1.5em;
+  }
+
+  .credits {
     max-width: 66.6666667%;
     padding: 2em 4em;
     flex: 0 0 66.6666667%;
