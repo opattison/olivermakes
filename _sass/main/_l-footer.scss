@@ -1,5 +1,5 @@
 .footer {
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -12,7 +12,6 @@
   color: $gray00;
   display: flex;
   padding: 2em 1em;
-  width: 100%;
   & {
     @include axiom(.75em);
   }

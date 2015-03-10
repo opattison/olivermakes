@@ -55,10 +55,8 @@
   @include action($red, $white);
   flex: 1 0 50%;
   line-height: 2em;
-  margin: 0;
   min-height: 2.5em;
   padding: .5em 0;
-  text-align: center;
 }
 
 .core-nav-action:only-child {
