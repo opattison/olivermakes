@@ -23,7 +23,6 @@
   .hero {
     font-size: 1.25em;
     flex: 0 0 36em;
-    max-width: 36em;
   }
 
   .hero figcaption p {
@@ -34,7 +33,6 @@
 @media screen and (min-width: 60em) {
   .hero {
     flex: 0 0 45em;
-    max-width: 45em;
   }
 
   .hero figcaption p {
@@ -46,7 +44,6 @@
 @media screen and (min-width: 80em) {
   .hero {
     flex: 0 0 54em;
-    max-width: 54em;
   }
 }
 

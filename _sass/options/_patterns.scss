@@ -14,10 +14,10 @@
 }
 
 .swatches {
-  font: 400 .625em/1.5 $source-code-pro;
-  list-style-type: none;
   display: flex;
   flex-flow: row wrap;
+  font: 400 .625em/1.5 $source-code-pro;
+  list-style-type: none;
 }
 
 .swatches li {
@@ -119,8 +119,7 @@
 
 @media screen and (min-width: 20em) {
   .swatches li {
-    max-width: 50%;
-    flex: 1 0 50%;
+    flex: 0 0 50%;
   }
 }
 
@@ -132,7 +131,6 @@
 
 @media screen and (min-width: 80em) {
   .swatches li {
-    flex: 1 0 25%;
-    max-width: 25%;
+    flex: 0 0 25%;
   }
 }
