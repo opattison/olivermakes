@@ -28,9 +28,8 @@ label *:hover {
   transition-duration: 160ms;
 }
 
-input {
-  bottom: 50%;
-  left: -10000px;
+[role="radio"] {
+  display: none;
 }
 
 .shift-overlay-label,
@@ -169,6 +168,7 @@ figure:focus .shift-overlay-label::after {
   bottom: 0;
   height: initial;
   opacity: 1;
+  max-height: 3.5em;
   right: 0;
   top: initial;
   z-index: 2;
