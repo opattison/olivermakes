@@ -57,7 +57,11 @@
   background-color: $gray07;
 }
 
-.project-summary {
+.project-description p {
+  font-size: .875em;
+}
+
+.project-description .project-summary {
   color: $gray02;
   font-size: 1.125em;
   font-style: italic;

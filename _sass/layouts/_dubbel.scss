@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 
 @media screen and (min-width: 60em) {
   .project {
@@ -76,22 +77,22 @@
   }
 
   .project {
-    margin: -2em -9em 2em;
+    margin: -1em -9em 1em;
     overflow: auto;
-    padding: 2em;
+    padding: 1em 2em;
     position: relative;
   }
 
   .project-image {
     border-top: solid 1px $gray06;
     border-bottom: solid 1px $gray06;
-    margin: -2em 2em -2em -2em;
+    margin: -1em 2em -1em -2em;
     float: left;
     width: calc(50% + 2em);
   }
 
   .project-description {
-    margin: 0;
+    margin-top: 0;
   }
 
   .project-nav {
@@ -104,5 +105,17 @@
   .highlight {
     margin: 1.5em -9em;
     padding: 1.5em 9em;
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .project {
+    margin: -2em -9em 2em;
+    padding: 2em;
+  }
+
+  .project-image {
+    margin: -2em 2em -2em -2em;
+    width: calc(50% + 2em);
   }
 }
