@@ -15,6 +15,4 @@ Using a `capture` tag with Liquid allows one to encode Markdown text into an HTM
 {{ ancillary | markdownify }}
 </aside>
 
-Content flows after or around the `<aside>` block. The `.ancillary` block should be used: 
-
-> {{ page.use }}
+Content flows after or around the `<aside>` block. The `.ancillary` block should be used {{ page.use | downcase }} This paragraph represents the layout and style of main body content.
