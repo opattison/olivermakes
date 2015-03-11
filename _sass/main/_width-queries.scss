@@ -280,6 +280,11 @@
     font-size: 1.25em;
   }
 
+  .menu,
+  .routing-menu {
+    height: auto;
+  }
+
   .core + .footer {
     margin-top: 2.5em;
   }

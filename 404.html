@@ -22,69 +22,68 @@
       background-color: hsla(4, 60%, 47%, 1);
     }
 
-    #error .title h1 {
+    #error .banner-title h1 {
       color: hsla(204, 10%, 97%, 1);
     }
 
-    #error .title circle {
+    #error .banner-title circle {
       stroke: hsla(204, 10%, 97%, 1);
     }
 
-    #error .title:hover .logo circle {
+    #error .banner-title:hover .logo circle {
       -webkit-animation-name: step-fill--404;
               animation-name: step-fill--404;
     }
 
-    #error .title:focus .logo circle {
+    #error .banner-title:focus .logo circle {
       fill: hsla(204, 10%, 97%, 1);
     }
 
-    #error .top-menu a {
+    #error .menu-action {
       background-color: hsla(204, 10%, 97%, 1);
       color: hsla(4, 60%, 47%, 1);
     }
 
-    #error .top-menu a:hover,
-    #error .top-menu a:focus,
-    #error .site-nav .close-menu a:hover
-    #error .site-nav .close-menu a:focus, 
-    #error .site-nav .close-menu a {
-      background-color: hsla(204, 80%, 40%, 1);
+    #error .menu-action:hover,
+    #error .menu-action:focus,
+    #error .routing-menu-action {
+      background-color: hsla(204, 10%, 12%, 1);
       color: hsla(204, 10%, 95%, 1);
     }
 
-    #error .page-header .inside,
-    #error .page {
+    #core-body,
+    #error .core-header,
+    #error .core-body {
       background-color: hsla(4, 60%, 47%, 1);
     }
 
-    #error .page-header h1 {
+    #error .core-header h1 {
       color: hsla(204, 10%, 97%, 1);
       text-align: center;
     }
 
-    #error [role="main"] {
+    #error .core-body {
       color: hsla(204, 10%, 97%, 1);
       text-align: center;
     }
 
-    #error [role="main"] a {
+    #error .core-body a {
       color: hsla(204, 10%, 95%, 1);
     }
 
-    #error [role="main"] a:hover,
-    #error [role="main"] a:focus {
+    #error .core-body a:hover,
+    #error .core-body a:focus {
       color: hsla(204, 30%, 80%, 1);
     }
 
-    #error [role="main"] .logo {
+    #error .core-body .logo {
       height: 50%;
-      margin: 0 auto;
+      margin: 1em auto 0;
       max-width: 35em;
       width: 50%;
     }
 
-    #error [role="main"] .logo circle {
+    #error .core-body .logo circle {
         stroke: hsla(204, 10%, 97%, 1);
   -webkit-animation-name: step-fill--404;
           animation-name: step-fill--404;
@@ -122,7 +121,7 @@
 
     @media screen and (min-width: 60em) {
 
-      #error .page {
+      #error .core-body {
         padding-bottom: 2em;
       }
 
@@ -141,7 +140,7 @@
 
   <script src="http://static.olivermak.es/scripts/respimage.min.js" async=""></script>
 
-  <!-- fonts via Typekit https://typekit.com/colophons/ojm0eig -->
+  <!-- fonts via Typekit https://typekit.com/colophons/hro5wuc -->
   <script src="//use.typekit.net/hro5wuc.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
 
@@ -162,37 +161,27 @@
   <!-- but no Analytics! -->
 </head>
 
-<body id="error" class="singel">
+<body id="error" class="edgeless">
 
-  <header class="site-header" id="top" role="banner">
-    <a class="title" href="/" rel="home" tabindex="1">
-      <div class="logo">
-        <svg version="1.1" class="icon-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-10 -10 600 600" enable-background="new 0 0 600 600" xml:space="preserve">
-          <circle class="outer" fill="none" stroke="#49535A" stroke-width="24" stroke-miterlimit="10" cx="280" cy="280" r="270"/>
-          <circle class="inner" fill="none" stroke="#49535A" stroke-width="24" stroke-miterlimit="10" cx="280" cy="190" r="180"/>
-          <circle class="secret" fill="none" stroke="#49535A" stroke-width="24" stroke-miterlimit="10" cx="280" cy="100" r="90"/>
-        </svg>
+  <header class="banner" id="top" role="banner">
+    <a class="banner-title" href="/" rel="home">
+      <div class="banner-title-logo logo">
+<svg version="1.1" class="logo-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-10 -10 600 600" enable-background="new 0 0 600 600" xml:space="preserve">
+  <circle class="outer" fill="none" stroke="#49535A" stroke-width="24" stroke-miterlimit="10" cx="280" cy="280" r="270"/>
+  <circle class="inner" fill="none" stroke="#49535A" stroke-width="24" stroke-miterlimit="10" cx="280" cy="190" r="180"/>
+  <circle class="secret" fill="none" stroke="#49535A" stroke-width="24" stroke-miterlimit="10" cx="280" cy="100" r="90"/>
+</svg>        
       </div>
-      <h1>olivermak.es</h1>
+      <h1 class="banner-title-heading">olivermak.es</h1>
     </a>
-    <nav class="top-menu">
-      <a href="#navigation" tabindex="-1">Menu ⇂</a>
-    </nav>
   </header>
+  <nav class="menu">
+    <a class="menu-action action" href="#routing" tabindex="-1">Menu ⇂</a>
+  </nav>
 
-  <article class="h-entry" role="main">
+  <article class="h-entry core" role="main">
 
-
-
-    
-    <header class="page-header">
-      <div class="inside">
-        <h1>404 error: Page&nbsp;not&nbsp;found</h1>
-      </div>
-    </header>
-    
-
-    <div class="e-content page">
+    <div class="e-content core-body">
 
       <a href="/">
         <div class="logo">
@@ -213,31 +202,34 @@
 
   </article>
 
-  <footer class="site-footer">
-
-    <nav class="site-nav" id="navigation" role="navigation">
-      <nav class="close-menu">
-        <a href="#">Menu ↾</a>
-      </nav>
-      <ul class="site-nav-list">
-        <li><a class="site-nav-item" href="/about/">About</a></li>
-        <li><a class="site-nav-item" href="/writing/">Writing</a></li>
-        <li><a class="site-nav-item" href="/projects/">Projects</a></li>
-        <li><a class="site-nav-item" href="/photography/">Photography</a></li>
-      </ul>
-    </nav>
-
-    <div class="site-info" role="contentinfo">
-      <div class="inside">
-        <p>The writing and photography here is licensed <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC</a> <a rel="author" href="/">Oliver Pattison</a>. Everything else is <a href="/about#copyright">under copyright</a> unless stated otherwise. </p>
-        <p><strong><a rel="source" href="http://github.com/opattison/olivermakes">View the source code</a></strong> for this site. See anything wrong here? <a href="https://github.com/opattison/olivermakes/issues">Make an issue</a> of it.</p>
-        <p><strong><a rel="alternate" href="http://olivermak.es/full.xml">Subscribe</a></strong> via Atom/RSS or follow me on <strong><a rel="me" href="http://twitter.com/olivermakes">Twitter</a></strong> for updates.</p>
+<footer class="footer">
+      <nav class="routing" id="routing" role="navigation">
+      <div class="routing-menu">
+        <a class="routing-menu-action" href="#">Menu ↾</a>
       </div>
+      <div class="routing-nav">
+        <a class="routing-nav-action" href="/about/">About</a>
+        <a class="routing-nav-action" href="/writing/">Writing</a>
+        <a class="routing-nav-action" href="/projects/">Projects</a>
+        <a class="routing-nav-action" href="/photography/">Photography</a>
+      </div>
+    </nav>
+    <div class="credits" role="contentinfo">
+    <div class="credits-meta">
+      <p>The writing and photography here is licensed <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC</a> <a rel="author" href="/">Oliver Pattison</a>. Everything else is <a href="/about#copyright">under copyright</a> unless stated otherwise. </p>
+      <p><strong><a rel="source" href="http://github.com/opattison/olivermakes">View the source code</a></strong> for this site. See anything wrong here? <a href="https://github.com/opattison/olivermakes/issues">Make an issue</a> of it.</p>
+      <p><strong><a rel="alternate" href="http://olivermak.es/full.xml">Subscribe</a></strong> via Atom/RSS or follow me on <strong><a rel="me" href="http://twitter.com/olivermakes">Twitter</a></strong> for updates.</p>
     </div>
-
-
-    
-  </footer>
+  </div>
+      <nav class="return" role="navigation">
+      <a class="return-action--home return-action action" rel="home" href="/"><div class="icon-description">Home</div><div class="return-action-logo"><svg version="1.1" class="logo-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-10 -10 600 600" enable-background="new 0 0 600 600" xml:space="preserve">
+  <circle class="outer" fill="none" stroke="#49535A" stroke-width="24" stroke-miterlimit="10" cx="280" cy="280" r="270"/>
+  <circle class="inner" fill="none" stroke="#49535A" stroke-width="24" stroke-miterlimit="10" cx="280" cy="190" r="180"/>
+  <circle class="secret" fill="none" stroke="#49535A" stroke-width="24" stroke-miterlimit="10" cx="280" cy="100" r="90"/>
+</svg></div></a>
+      <a class="return-action--top return-action action" href="#top">Back to top ↾</a>
+    </nav>
+</footer>
 
 </body>
 </html>
