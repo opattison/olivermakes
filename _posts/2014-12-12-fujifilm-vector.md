@@ -57,14 +57,14 @@ To complement the metadata on my [photo pages](/photography/), I wanted accurate
 </figure>
 
 <div class="grid">
-  <figure class="svg light noedges">
+  <figure class="grid-figure svg light noedges">
     <img
       src="{{ site.icon-url }}/{{ page.image[1].src }}" 
       alt="{{ page.image[1].alt }}"
     >
     <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
   </figure>
-  <figure class="svg dark noedges">
+  <figure class="grid-figure svg dark noedges">
     <img
       src="{{ site.icon-url }}/{{ page.image[2].src }}" 
       alt="{{ page.image[2].alt }}"

@@ -77,10 +77,10 @@ This is “feature” text, used for emphasis and attention in storytelling.
   <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
 </figure>
 
-### Figure+image `grid2` block
+### Figure+image `grid` block
 
-<div class="grid2">
-  <figure>
+<div class="grid">
+  <figure class="grid-figure">
     <img
       src="{{ site.image-url }}/{{ page.image[1].src }}" 
       sizes="{{ site.wide-sizes }}"  
@@ -89,7 +89,7 @@ This is “feature” text, used for emphasis and attention in storytelling.
     >
     <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
   </figure>
-  <figure>
+  <figure class="grid-figure">
     <img
       src="{{ site.image-url }}/{{ page.image[1].src }}" 
       sizes="{{ site.wide-sizes }}"  
@@ -108,20 +108,3 @@ Text below a grid.
   src="{{ site.image-url }}/{{ page.image[1].src }}" 
   alt="{{ page.image[1].alt }}"
 >
-
-- - -
-
-## Code blocks
-
-```html
-<header class="site-header" id="top" role="banner">
-  <a class="title" href="/">
-    <h1>Page title</h1>
-  </a>
-  <nav class="top-menu">
-    <a href="#navigation">Menu ⇂</a>
-  </nav>
-</header>
-
-<p>I am Oliver Pattison, a designer focused on the future of the web. My main interests are archiving, usable and universal design, mobile technology, and photography.</p>
-```
