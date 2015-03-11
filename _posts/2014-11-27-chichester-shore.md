@@ -90,7 +90,7 @@ image:
 </figure>
 
 <div class="grid">
-<figure>
+<figure class="grid-figure">
   <input type="radio" role="radio" name="shift1" class="shift-back" id="shift-back1">
   <input type="radio" role="radio" name="shift1" class="shift-overlay" id="shift-overlay1">
   <input type="radio" role="radio" name="shift1" class="shift-map" id="shift-map1">
@@ -116,7 +116,7 @@ image:
     </div>
   </div>
 </figure>
-<figure>
+<figure class="grid-figure">
   <input type="radio" role="radio" name="shift2" class="shift-back" id="shift-back2">
   <input type="radio" role="radio" name="shift2" class="shift-overlay" id="shift-overlay2">
   <input type="radio" role="radio" name="shift2" class="shift-map" id="shift-map2">

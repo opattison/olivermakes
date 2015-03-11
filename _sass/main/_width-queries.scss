@@ -467,27 +467,27 @@
     width: calc(50% - 1em);
   }
 
-  .grid .w33 figcaption p {
+  .grid-figure--33 figcaption p {
     text-align: left;
   }
 
-  .grid figure {
+  .grid-figure {
     margin: 0 auto;
     flex: 1 1 50%;
   }
 
-  .grid .w33 {
+  .grid-figure--33 {
     width: calc(100% / 3 - 1em);
     flex: 1 1 calc(100% / 3 - 1em);
   }
 
-  .grid .w66 {
+  .grid-figure--66 {
     width: calc(100% / 3 * 2 - 1em);
     flex: 1 1 calc(100% / 3 * 2 - 1em);
   }
 
   .grid figure + figure {
-    margin-left: 1em;
+    margin: 0 0 0 1em;
   }
 
   .index {
@@ -521,7 +521,7 @@
     order: 3;
   }
 
-  .grid .w33 figcaption {
+  .grid-figure--33 figcaption {
     padding: .5em;
   }
 }

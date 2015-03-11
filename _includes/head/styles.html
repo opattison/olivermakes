@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="/main.css">
   {% if page.option contains 'custom-css' %}<link rel="stylesheet" href="{{ site.style-url }}/{{ page.custom-css }}">{% endif %}
   {% if page.option contains 'patterns' %}<style>{{ patterns | scssify | autoprefix }}</style>{% endif %}
-  {% if page.option contains 'hero' or page.option contains 'hero-srcset' %}<style>{{ hero | scssify | autoprefix }}</style>{% endif %}
+  {% if page.option contains 'hero' %}<style>{{ hero | scssify | autoprefix }}</style>{% endif %}
   {% if page.option contains 'map-meta' %}<style>{{ photo | scssify | autoprefix }}</style>{% endif %}
 
 {% capture edgeless %}{% include style/edgeless.scss %}{% endcapture %}

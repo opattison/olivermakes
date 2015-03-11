@@ -114,13 +114,13 @@ Jean takes [beautiful photos](http://jeancflanagan.com/photos/), which I wanted 
 #### Samples from writing layout
 
 <div class="grid">
-  <figure class="w33 screenshot">
+  <figure class="grid-figure--33 grid-figure screenshot">
     <img
       src="{{ site.image-url }}/{{ page.image[5].src }}" 
       alt="{{ page.image[5].alt }}"
     >
   </figure>
-  <figure class="w66 screenshot">
+  <figure class="grid-figure--66 grid-figure screenshot">
     <img
       src="{{ site.image-url }}/{{ page.image[6].src }}" 
       alt="{{ page.image[6].alt }}"

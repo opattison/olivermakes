@@ -4,6 +4,7 @@ layout: dubbel
 option:
   - index-image
   - sample-srcset
+  - srcset
 category: 'projects'
 tags:
   - 'archiving'
@@ -45,13 +46,13 @@ I focused on the most important aspects of website management and design for the
 Unfortunately, the documents in the project contain proprietary information, so I can’t link to or substantially excerpt from the repository (it is not mine to share). Here is what the project looked like in the autumn of 2014:
 
 <div class="grid">
-<figure class="w33 screenshot">
+<figure class="grid-figure--33 grid-figure screenshot">
   <img
     src="{{ site.image-url }}/{{ page.image[1].src }}" 
     alt="{{ page.image[1].alt }}"
   >
 </figure>
-<figure class="w66 screenshot">
+<figure class="grid-figure--66 grid-figure screenshot">
   <img
     src="{{ site.image-url }}/{{ page.image[2].src }}" 
     alt="{{ page.image[2].alt }}"
