@@ -84,7 +84,7 @@ This is “feature” text, used for emphasis and attention in storytelling.
     <img
       src="{{ site.image-url }}/{{ page.image[1].src }}" 
       sizes="{{ site.wide-sizes }}"  
-      srcset="{% for srcset1440 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+      srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
       alt="{{ page.image[1].alt }}"
     >
     <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
@@ -93,7 +93,7 @@ This is “feature” text, used for emphasis and attention in storytelling.
     <img
       src="{{ site.image-url }}/{{ page.image[1].src }}" 
       sizes="{{ site.wide-sizes }}"  
-      srcset="{% for srcset1440 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+      srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
       alt="{{ page.image[1].alt }}"
     >
     <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
