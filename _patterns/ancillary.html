@@ -1,7 +1,7 @@
 ---
 title: .ancillary [aside]
 use: 'For content that is related to the main body but not necessarily as important – supporting the main story without being directly a part of it.'
-spec: 'Lower contrast light background that connects seamlessly with the body background, pushed slightly or significantly to the right of body text.'
+spec: 'Lower contrast light background that connects seamlessly with the body background, pushed slightly or significantly to the right of body text on larger layouts.'
 type: markdown
 ---
 
@@ -15,6 +15,4 @@ Using a `capture` tag with Liquid allows one to encode Markdown text into an HTM
 {{ ancillary | markdownify }}
 </aside>
 
-Content flows after or around the `<aside>` block. The `.ancillary` block should be used: 
-
-> {{ page.use }}
+Content flows after or around the `<aside>` block. The `.ancillary` block should be used {{ page.use | downcase }} This paragraph represents the layout and style of main body content.

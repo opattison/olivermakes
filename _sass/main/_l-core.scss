@@ -30,6 +30,10 @@
   margin: 2em 0;
 }
 
+.core-body li + li {
+  margin-top: .5em;
+}
+
 /* Core footer: page navigation and metadata */
 
 .core-footer {

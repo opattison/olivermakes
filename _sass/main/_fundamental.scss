@@ -135,12 +135,20 @@ article ol ol {
   counter-reset: ordered-list-sub;
 }
 
+article ol ol ol {
+  counter-reset: ordered-list-sub-sub;
+}
+
 article ol li {
   counter-increment: ordered-list;
 }
 
 article ol ol li {
   counter-increment: ordered-list-sub;
+}
+
+article ol ol ol li {
+  counter-increment: ordered-list-sub-sub;
 }
 
 article ol li::before {
@@ -151,6 +159,10 @@ article ol li::before {
 
 article ol ol li::before {
   content: counter(ordered-list) '.' counter(ordered-list-sub) ':';
+}
+
+article ol ol ol li::before {
+  content: counter(ordered-list) '.' counter(ordered-list-sub) '.' counter(ordered-list-sub-sub) ':';
 }
 
 /* Blockquotes */
