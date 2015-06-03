@@ -47,7 +47,7 @@ It takes a lot of effort to keep a comprehensive and long-lasting archive of one
 </aside>
 
 I am building an archive.
-{:.important}
+{:.focus}
 
 Git will help me keep track of versions and ensure that I lose as little data as possible while working on projects. Because the data for the site will be kept off-site (in a GitHub repo) that can also be backed up in multiple other ways, this should prove more robust and long-lasting than any software I have ever used.
 

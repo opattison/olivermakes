@@ -104,7 +104,7 @@ With ever-shorter life spans of websites, the 2012 redesign has so far lasted qu
 One key to the relative success of the site was its forward-thinking approach: responsive design was the indispensable decision that allowed us to enter the next few years without feeling left behind by changes in technology and web design.
 
 Responsive design is about more than merely reaching a diversity of screens.
-{:.important}
+{:.focus}
 
 This approach gave Casey Trees not only a better experience for visitors to the site, but more flexibility in presenting its mission, and more effective methods of communicating with people. Responsive thinking is a fundamentally more empathetic approach to an audience – one that can be felt directly regardless of user capabilities or the device they happen to be using.
 {% endcapture %}
