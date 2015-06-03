@@ -29,7 +29,7 @@ This style guide is a work in progress. Take a look at the [pattern library](/pa
 Some paragraph text may require <em>stress</em> emphasis and some it may be important enough to require something <strong>stronger</strong>. <q>Just as the plume of smoke rose and died so too will the glow of gold. Elevated status moves us now through the darkened halls of the quick.</q> This is <mark>highlighted text</mark> that uses the <code>&lt;mark&gt;</code> element. <dfn>H<sub>2</sub>O</dfn> is the chemical formula for a water molecule, indicating that it contains one oxygen and two hydrogen atoms. Oxygen is the 8<sup>th</sup> element on the <a href="https://en.wikipedia.org/wiki/Periodic_table">periodic table of elements</a>.
 
 This is “feature” text, used for emphasis and attention in storytelling.
-{:.important}
+{:.focus}
 
 <blockquote><p>This text is quoted. A <code>blockquote</code> is particularly useful to emphasize and give space to a quotation from an attributed piece of writing. Make sure to include a footer with a citation to an author, where applicable.</p><footer>– said <cite>someone</cite> <time datetime="2014-11-24 15:07">today</time></footer></blockquote>
 

@@ -30,7 +30,7 @@ I prefer to design with real content. The purpose of designing for the web with 
 The problem I had when I first starting working on this site was that I only had some of the content written. And some of it was in an incomplete state of editing. Worse still, what I did have written, I had written myself and thoroughly read.
 
 The most common problem in designing written content: what you have written already, you can’t read for the first time ever again.
-{:.important}
+{:.focus}
 
 Visitors to a website typically have a key difference in experience from those who designed and edited that website. They have not yet read the content on the page. To mimic that experience as someone involved in the design process, two things are needed:
 
