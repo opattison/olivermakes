@@ -68,7 +68,7 @@ image:
   <input type="radio" role="radio" name="shift0" class="shift-map" id="shift-map0">
   <div class="container map-background" id="i0">
     <img
-      src="{{ site.image-url }}/{{ page.image[0].src }}" 
+      src="{{ site.image-url }}/{{ page.image[0].src }}"
       sizes="{{ site.wide-sizes }}"
       srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image-url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[0].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
        alt="{{ page.image[0].alt }}"
@@ -96,7 +96,7 @@ image:
   <input type="radio" role="radio" name="shift1" class="shift-map" id="shift-map1">
   <div class="container map-background" id="i1">
     <img
-      src="{{ site.image-url }}/{{ page.image[1].src }}" 
+      src="{{ site.image-url }}/{{ page.image[1].src }}"
       sizes="{{ site.grid2-sizes }}"
       srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
       alt="{{ page.image[1].alt }}"
@@ -110,7 +110,7 @@ image:
         <li>Lens: {{ page.image[1].lens }} at {{ page.image[1].focal }}</li>
         <li>Exposure: {{ page.image[1].aperture }} | {{ page.image[1].shutter }} s | ISO {{ page.image[1].iso }}</li>
         <li>Date: {{ page.image[1].date }}</li>
-        <li>Location: {{ page.image[0].location }}</li>
+        <li>Location: {{ page.image[1].location }}</li>
       </ul>
       <label for="shift-map1" class="shift-map-label">View map</label>
     </div>
@@ -122,7 +122,7 @@ image:
   <input type="radio" role="radio" name="shift2" class="shift-map" id="shift-map2">
   <div class="container map-background" id="i2">
     <img
-      src="{{ site.image-url }}/{{ page.image[2].src }}" 
+      src="{{ site.image-url }}/{{ page.image[2].src }}"
       sizes="{{ site.grid2-sizes }}"
       srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[2].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
       alt="{{ page.image[2].alt }}"
@@ -136,7 +136,7 @@ image:
         <li>Lens: {{ page.image[2].lens }} at {{ page.image[2].focal }}</li>
         <li>Exposure: {{ page.image[2].aperture }} | {{ page.image[2].shutter }} s | ISO {{ page.image[2].iso }}</li>
         <li>Date: {{ page.image[2].date }}</li>
-        <li>Location: {{ page.image[0].location }}</li>
+        <li>Location: {{ page.image[2].location }}</li>
       </ul>
       <label for="shift-map2" class="shift-map-label">View map</label>
     </div>
