@@ -45,10 +45,6 @@
   @include a-underline($pink-50, $grayblue-50);
 }
 
-.dark .core-meta {
-  background-color: $gray01;
-}
-
 .dark .core figcaption {
   color: $gray06;
 }
@@ -152,7 +148,8 @@
   color: $white;
 }
 
-.dark .core-meta {
+.dark .core-meta,
+.dark .core-footer {
   background-color: $gray02;
 }
 
