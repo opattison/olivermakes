@@ -7,7 +7,7 @@ function scroll (destination) {
     destination,
     'scroll',
     {
-      duration: 200,
+      duration: 320,
       easing: 'easeInOutExpo'
     }
   )
