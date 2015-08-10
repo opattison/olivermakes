@@ -1,7 +1,8 @@
-
+/* select page markers */
 var Top = document.querySelector('#top');
 var backTop = document.querySelector('.return-action--top');
 
+/* use Velocity UI function to scroll to any destination */
 function scroll (destination) {
   Velocity(
     destination,
@@ -13,6 +14,7 @@ function scroll (destination) {
   )
 };
 
+/* back-to-top function and click listener */
 function scrollTop () {
   scroll(Top);
 };
