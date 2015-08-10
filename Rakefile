@@ -4,9 +4,15 @@
 
 require 's3_website'
 require 'image_optim'
+# require npm uglifyjs
 
-local_images   = "_static" # typically called "_images"
-local_site     = "_site" # typically called "_site"
+local_static   = "_static"
+local_images   = "_static/images"
+local_site     = "_site"
+
+velocity_js    = "File.read('_static/scripts/velocity.js')"
+velocity_ui_js = "File.read('_static/scripts/velocity.ui.js')"
+site_js        = "File.read('_static/scripts/site.js')"
 
 ## "rake optimize" to optimize a folder of images in ImageOptim-CLI
 desc "run a folder of images through ImageOptim-CLI"
@@ -15,10 +21,12 @@ task :optimize do
   puts "## Images optimized ##"
 end
 
-## "rake load" to load images in the local image directory to the server
-desc "deploy Jekyll images to remote server via s3_website"
+## "rake load" to load images and scripts in the local static directory to the server
+desc "deploy Jekyll images and scripts to remote server via s3_website"
 task :load do
-    system "s3_website push --site #{local_images} --config-dir #{local_images}"
+    puts "## Concatenating and minifying JavaScript ##"
+    system "uglifyjs _static/scripts/velocity.js _static/scripts/velocity.ui.js _static/scripts/site.js --comments -o _static/scripts/all.min.js"
+    system "s3_website push --site #{local_static} --config-dir #{local_static}"
     puts "## Deployed images to S3 ##"
 end
 

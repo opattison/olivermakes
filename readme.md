@@ -39,13 +39,16 @@
 - [Jekyll](http://jekyllrb.com) >2.5.3
 - [jekyll-archives](https://github.com/jekyll/jekyll-archives) >2.0.0
 - [rouge](https://github.com/jneen/rouge) >1.7.4
-- [image_optim](https://github.com/toy/image_optim) >0.20.2
 - [sass](https://github.com/sass/sass) >3.4.12
+- [uglifier](https://github.com/lautis/uglifier) >2.7.1
+- [image_optim](https://github.com/toy/image_optim) >0.20.2
 - [s3_website](https://github.com/laurilehmijoki/s3_website) >2.8.3
 
 ### Front-end
 
+- [loadJS](https://github.com/filamentgroup/loadJS) 0.2
 - [respimage](https://github.com/aFarkas/respimage) 1.3.0
+- [Velocity.js](http://julian.com/research/velocity/) 1.2.2
 
 ## License
 
