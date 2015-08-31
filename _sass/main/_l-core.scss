@@ -184,7 +184,7 @@
   margin-right: 0;
 }
 
-.reversefootnote {
+.footnotes .reversefootnote {
   border: solid 1px $gray04;
   border-radius: .125em;
   color: $gray01;
@@ -193,8 +193,8 @@
   padding: 0 .25em;
 }
 
-.reversefootnote:hover,
-.reversefootnote:focus {
+.footnotes .reversefootnote:hover,
+.footnotes .reversefootnote:focus {
   background-color: $pink-50;
   border-color: $pink-50;
 }
