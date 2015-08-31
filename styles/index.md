@@ -31,7 +31,12 @@ Some paragraph text may require <em>stress</em> emphasis and some it may be impo
 This is “feature” text, used for emphasis and attention in storytelling.
 {:.focus}
 
-<blockquote><p>This text is quoted. A <code>blockquote</code> is particularly useful to emphasize and give space to a quotation from an attributed piece of writing. Make sure to include a footer with a citation to an author, where applicable.</p><footer>– said <cite>someone</cite> <time datetime="2014-11-24 15:07">today</time></footer></blockquote>
+<blockquote>
+  This text is quoted. A <code>blockquote</code> is particularly useful to emphasize and give space to a quotation from an attributed piece of writing. Make sure to include a footer with a citation to an author, where applicable.
+  <footer>
+    – said <cite>someone <time datetime="2014-11-24 15:07">today</time></cite>
+  </footer>
+</blockquote>
 
 - - -
 
@@ -57,7 +62,7 @@ This is “feature” text, used for emphasis and attention in storytelling.
 
 <figure class="narrow">
   <img
-    src="{{ site.image-url }}/{{ page.image[1].src }}" 
+    src="{{ site.image-url }}/{{ page.image[1].src }}"
     sizes="{{ site.wide-sizes }}"  
     srcset="{% for srcset1440 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
     alt="{{ page.image[1].alt }}"
@@ -69,7 +74,7 @@ This is “feature” text, used for emphasis and attention in storytelling.
 
 <figure class="wide">
   <img
-    src="{{ site.image-url }}/{{ page.image[1].src }}" 
+    src="{{ site.image-url }}/{{ page.image[1].src }}"
     sizes="{{ site.wide-sizes }}"  
     srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image-url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
     alt="{{ page.image[1].alt }}"
@@ -82,7 +87,7 @@ This is “feature” text, used for emphasis and attention in storytelling.
 <div class="grid">
   <figure class="grid-figure">
     <img
-      src="{{ site.image-url }}/{{ page.image[1].src }}" 
+      src="{{ site.image-url }}/{{ page.image[1].src }}"
       sizes="{{ site.wide-sizes }}"  
       srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
       alt="{{ page.image[1].alt }}"
@@ -91,7 +96,7 @@ This is “feature” text, used for emphasis and attention in storytelling.
   </figure>
   <figure class="grid-figure">
     <img
-      src="{{ site.image-url }}/{{ page.image[1].src }}" 
+      src="{{ site.image-url }}/{{ page.image[1].src }}"
       sizes="{{ site.wide-sizes }}"  
       srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
       alt="{{ page.image[1].alt }}"
@@ -105,6 +110,6 @@ Text below a grid.
 ### Image (no `srcset`; no `<figure>`)
 
 <img
-  src="{{ site.image-url }}/{{ page.image[1].src }}" 
+  src="{{ site.image-url }}/{{ page.image[1].src }}"
   alt="{{ page.image[1].alt }}"
 >

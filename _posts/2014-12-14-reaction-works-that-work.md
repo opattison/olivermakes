@@ -56,7 +56,12 @@ At its best, a print magazine can be as valuable as a book.
 
 [Issue 4](https://worksthatwork.com/4) was released in November 2014, and I am still in the middle of reading it. My favorite article so far is “From Earth to Mars”, which (in part) tells the story of a group of aspiring amateur space explorers, Copenhagen Suborbitals. A sample:
 
-<blockquote>The rocket itself is an amalgam of reverse engineering and declassified technology from the American and Soviet space programmes, some of it from the 1950s and 60s, some of it essentially the same propulsion mechanisms used by German rocketeers during the Second World War. The liquid helium canisters used to cool the rocket are labelled ‘balloon gas’. It’s far from pretty, but Wilson insists it will work. ‘Our goal is always to find the simplest solution …’<footer><cite>Pete Guest</cite> – <a href="https://worksthatwork.com/4/from-earth-to-mars/share/c12ab909b3d4f77993fdb758a8a4ad5d">“From Earth to Mars”</a>, Issue 4, <i class="publication">Works That Work</i></footer></blockquote>
+<blockquote>
+  The rocket itself is an amalgam of reverse engineering and declassified technology from the American and Soviet space programmes, some of it from the 1950s and 60s, some of it essentially the same propulsion mechanisms used by German rocketeers during the Second World War. The liquid helium canisters used to cool the rocket are labelled ‘balloon gas’. It’s far from pretty, but Wilson insists it will work. ‘Our goal is always to find the simplest solution …’
+  <footer>
+    <cite>Pete Guest – <a href="https://worksthatwork.com/4/from-earth-to-mars/share/c12ab909b3d4f77993fdb758a8a4ad5d">“From Earth to Mars”</a>, Issue 4, <i class="publication">Works That Work</i></cite>
+  </footer>
+</blockquote>
 
 I also enjoyed the photos in [“Living Underground”](https://worksthatwork.com/4/living-underground), a short story about an otherworldly, half-underground mining town in south Australia. Both the website and the print publication are laid out to give proper space for sweeping landscapes and small objects – the form became a creative influence for my own site.
 
@@ -65,7 +70,7 @@ The latest issue has an more finished feel than the previous ones – each one i
 <div class="grid">
   <figure class="grid-figure">
     <img
-      src="{{ site.image-url }}/{{ page.image[1].src }}" 
+      src="{{ site.image-url }}/{{ page.image[1].src }}"
       sizes="{{ site.wide-sizes }}"
       srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
       alt="{{ page.image[1].alt }}"
@@ -73,7 +78,7 @@ The latest issue has an more finished feel than the previous ones – each one i
   </figure>
   <figure class="grid-figure">
     <img
-      src="{{ site.image-url }}/{{ page.image[2].src }}" 
+      src="{{ site.image-url }}/{{ page.image[2].src }}"
       sizes="{{ site.wide-sizes }}"
       srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[2].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
       alt="{{ page.image[2].alt }}"
@@ -83,7 +88,7 @@ The latest issue has an more finished feel than the previous ones – each one i
 
 They are also engaging with readers through interesting [social distribution](https://worksthatwork.com/distribution/) experiment. The idea is to encourage readers to become distributors to help the publisher bypass conventional distribution networks, which account for a large part of the cover price of a magazine. The reader helps to distribute the magazine, and gets a discount in the process. None of this adds to the base cover price of the magazine, and more people get local access to the magazine without the overhead of a traditional distribution.
 
-The one compromise in their approach is partial pay-walling on the website, which is common to a lot of the best publications today. I do not like pay walls, but at the same time, I happily pay for writing and creative work that is worth it, whether pay-walled or not. In some ways it feels like it is against the open spirit of the web to lock content away from potential readers. At the same time, I have a lot of sympathy for creators who want to selectively release their work, especially when it would otherwise go uncompensated. 
+The one compromise in their approach is partial pay-walling on the website, which is common to a lot of the best publications today. I do not like pay walls, but at the same time, I happily pay for writing and creative work that is worth it, whether pay-walled or not. In some ways it feels like it is against the open spirit of the web to lock content away from potential readers. At the same time, I have a lot of sympathy for creators who want to selectively release their work, especially when it would otherwise go uncompensated.
 
 Fortunately, <i class="publication">WTW’s</i> approach to protecting content is liberal, encouraging and enabling readers to share articles and the magazine itself with friends. In this case it seems to be a fair balance, with multiple reasonable options for paying or donating. Additionally, sharing is encouraged and a good portion of the writing is available freely. When sharing articles by them or recommending that others read it, I do not feel that the pay-wall is a significant limitation, like it is with the <i class="publication">New York Times</i>, <i class="publication">The Economist</i>, or the <i class="publication">The New Yorker</i> (although the latter [has since reformed](http://www.newyorker.com/magazine/2014/07/28/note-readers)).
 
