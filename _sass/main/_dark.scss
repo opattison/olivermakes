@@ -4,6 +4,16 @@
   color: $white;
 }
 
+.dark .core-body,
+.dark .core-header {
+  background-color: $gray01;
+}
+
+.edgeless .core-body,
+.edgeless .core-header {
+  background-color: $gray00;
+}
+
 .dark .banner-title-logo circle {
   stroke: $gray07;
 }
@@ -73,14 +83,10 @@
   color: $grayblue;
 }
 
-.dark .ancillary {
-  background-color: $gray00;
-  color: $gray05;
-}
-
+.dark .ancillary,
 .dark .footnotes {
+  background-color: $gray00;
   color: inherit;
-  background-color: $gray02;
 }
 
 .dark .footnotes li,

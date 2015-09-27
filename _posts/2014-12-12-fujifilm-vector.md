@@ -40,17 +40,11 @@ image:
 
 ---
 
-{% capture p1 %}
 To complement the metadata on my [photo pages](/photography/), I wanted accurate but minimal vector representations of my cameras (currently a Fujifilm X-E2 and an iPhone 5S), so I had to design my own. Although generic representations of cameras are appropriate for many circumstances (such as indicating a photo gallery on a navigation menu), something more defined was needed for this circumstance. Part of what I am communicating here is “how this photo was created”, so I designed something recognizable as a unique object. After completing the initial work, I realized I would need something even more minimal for smaller sizes (20% of a screen width or much smaller), so I abstracted the icon even further.
-{% endcapture %}
-
-<div class="essay align">
-  {{ p1 | markdownify }}
-</div>
 
 <figure class="wide svg light noedges">
   <img
-    src="{{ site.image-url }}/{{ page.image[0].src }}" 
+    src="{{ site.image-url }}/{{ page.image[0].src }}"
     alt="{{ page.image[0].alt }}"
   >
   <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
@@ -59,23 +53,23 @@ To complement the metadata on my [photo pages](/photography/), I wanted accurate
 <div class="grid">
   <figure class="grid-figure svg light noedges">
     <img
-      src="{{ site.icon-url }}/{{ page.image[1].src }}" 
+      src="{{ site.icon-url }}/{{ page.image[1].src }}"
       alt="{{ page.image[1].alt }}"
     >
     <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
   </figure>
   <figure class="grid-figure svg dark noedges">
     <img
-      src="{{ site.icon-url }}/{{ page.image[2].src }}" 
+      src="{{ site.icon-url }}/{{ page.image[2].src }}"
       alt="{{ page.image[2].alt }}"
     >
     <figcaption>{{ page.image[2].caption | markdownify }}</figcaption>
   </figure>
 </div>
 
-<figure class="wide"> 
+<figure class="wide">
   <img
-    src="{{ site.image-url }}/{{ page.image[3].src }}" 
+    src="{{ site.image-url }}/{{ page.image[3].src }}"
     sizes="{{ site.wide-sizes }}"
     srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image-url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[3].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
     alt="{{ page.image[3].alt }}"
@@ -83,7 +77,6 @@ To complement the metadata on my [photo pages](/photography/), I wanted accurate
   <figcaption>{{ page.image[3].caption | markdownify }}</figcaption>
 </figure>
 
-{% capture p3 %}
 ## Vector graphics
 
 As a format, <abbr title="Scalable Vector Graphics">SVG</abbr> has plenty of advantages:
@@ -94,9 +87,3 @@ As a format, <abbr title="Scalable Vector Graphics">SVG</abbr> has plenty of adv
 - **It is flexible:** it can be served as a background image with CSS, in an HTML `<img>` tag, or even inline as an `<svg>` element (which can be styled and animated with CSS and JavaScript).
 
 I use SVG for all of the graphics on this site, with all three of these methods depending on performance and semantic context.
-
-{% endcapture %}
-
-<div class="essay">
-{{ p3 | markdownify }}
-</div>
