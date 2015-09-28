@@ -4,16 +4,6 @@
   color: $white;
 }
 
-.dark .core-body,
-.dark .core-header {
-  background-color: $gray01;
-}
-
-.edgeless .core-body,
-.edgeless .core-header {
-  background-color: $gray00;
-}
-
 .dark .banner-title-logo circle {
   stroke: $gray07;
 }
