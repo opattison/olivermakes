@@ -1,0 +1,13 @@
+# Site configuration
+
+## Sass configuration
+sass:
+  sass_dir: _sass
+  style: expanded
+
+## Configuration URLs
+image-url: http://dev.static.olivermak.es/images
+icon-url: http://dev.static.olivermak.es/icons
+style-url: http://dev.static.olivermak.es/style
+script-url: http://dev.static.olivermak.es/scripts
+fragments-url: http://dev.static.olivermak.es/fragments

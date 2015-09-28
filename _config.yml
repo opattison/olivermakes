@@ -51,7 +51,6 @@ kramdown:
 permalink: /:year/:month/:title/
 
 ## Jekyll Archives configuration
-
 jekyll-archives:
   enabled:
     - year
@@ -70,7 +69,6 @@ jekyll-archives:
     category: '/:name/archive/'
 
 ## Sass configuration
-
 sass:
   sass_dir: _sass
   style: compressed
