@@ -1,9 +1,3 @@
-@mixin axiom($value: 1em) {
-  * + * {
-    margin-top: $value;
-  }
-}
-
 @mixin action($ground: $black, $figure: $white) {
   background-color: $ground;
   color: $figure;

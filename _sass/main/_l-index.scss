@@ -29,9 +29,6 @@
   flex: 1 0 calc(100% - 2em);
   margin: 1em 1em 0;
   width: 100%;
-  & {
-    @include axiom;
-  }
 }
 
 .item:nth-child(2n + 2) {

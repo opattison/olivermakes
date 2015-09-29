@@ -2,7 +2,7 @@ html {
   color: $black;
   font: 400 16px/1.4375 $ratio;
   font: 400 1rem/1.4375 $ratio;
-     -moz-font-feature-settings: 'liga', 'dlig'; 
+     -moz-font-feature-settings: 'liga', 'dlig';
       -ms-font-feature-settings: 'liga', 'dlig';
        -o-font-feature-settings: 'liga', 'dlig';
   -webkit-font-feature-settings: 'liga', 'dlig';
@@ -89,6 +89,20 @@ h5 {
   line-height: 1.375;
 }
 
+/* Axiomatic spacing */
+
+p + *,
+* + p,
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + ul,
+* + ol {
+  margin-top: 1em;
+}
+
 /* Links */
 
 a {
@@ -163,6 +177,10 @@ article ol ol li::before {
 
 article ol ol ol li::before {
   content: counter(ordered-list) '.' counter(ordered-list-sub) '.' counter(ordered-list-sub-sub) ':';
+}
+
+li {
+  margin-top: .5em;
 }
 
 /* Blockquotes */

@@ -28,28 +28,28 @@ This pattern library is a work in progress. Take a look at the [style guide](/st
 
 ### Shades
 
-<ul class="swatches">
+<ul class="grid grid--swatches">
 {% assign swatches = site.data.shade %}
 {% for swatch in swatches %}
-<li><figure style="background-color: {{ swatch.hsl }}"><figcaption>{{ swatch.name }}<br>{{ swatch.hsl }}<br>{{ swatch.hex }}</figcaption></figure></li>
+{% include c-meta/pattern--swatch.html %}
 {% endfor %}
 </ul>
 
 ### Colors
 
-<ul class="swatches">
+<ul class="grid grid--swatches">
 {% assign swatches = site.data.color %}
 {% for swatch in swatches %}
-<li><figure style="background-color: {{ swatch.hsl }}"><figcaption>{{ swatch.name }}<br>{{ swatch.hsl }}<br>{{ swatch.hex }}</figcaption></figure></li>
+{% include c-meta/pattern--swatch.html %}
 {% endfor %}
 </ul>
 
 ### Semi-transparent shades and colors
 
-<ul class="swatches">
+<ul class="grid grid--swatches">
 {% assign swatches = site.data.transparent %}
 {% for swatch in swatches %}
-<li><figure style="background-color: {{ swatch.hsl }}"><figcaption>{{ swatch.name }}<br>{{ swatch.hsl }}<br>{{ swatch.hex }}</figcaption></figure></li>
+{% include c-meta/pattern--swatch.html %}
 {% endfor %}
 </ul>
 
@@ -59,17 +59,17 @@ This pattern library is a work in progress. Take a look at the [style guide](/st
 
 ### Ratio font family (300, 400, 500)
 
-{% include c-meta/type.html class='sans w300' %}
+{% include c-meta/pattern--type.html class='sans w300' %}
 
-{% include c-meta/type.html class='sans w300 italic' %}
+{% include c-meta/pattern--type.html class='sans w300 italic' %}
 
-{% include c-meta/type.html class='sans w400' %}
+{% include c-meta/pattern--type.html class='sans w400' %}
 
-{% include c-meta/type.html class='sans w400 italic' %}
+{% include c-meta/pattern--type.html class='sans w400 italic' %}
 
-{% include c-meta/type.html class='sans w500' %}
+{% include c-meta/pattern--type.html class='sans w500' %}
 
-{% include c-meta/type.html class='sans w500 italic' %}
+{% include c-meta/pattern--type.html class='sans w500 italic' %}
 
 ```
 $ratio: 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
@@ -77,7 +77,7 @@ $ratio: 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
 
 ### Source Code Pro font family (400)
 
-{% include c-meta/type.html class='monospace' %}
+{% include c-meta/pattern--type.html class='monospace' %}
 {:.monospace}
 
 ```
@@ -90,5 +90,5 @@ $source-code-pro: 'source-code-pro', Menlo, Consolas, monospace;
 ## Common patterns (with code examples)
 
 {% for pattern in site.patterns %}
-{% include c-meta/pattern.html %}
+{% include c-meta/pattern--element.html %}
 {% endfor %}

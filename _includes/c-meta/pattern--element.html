@@ -1,6 +1,6 @@
-<section class="pattern" id="{{ pattern.title | slugify }}">
-{{ pattern.content | markdownify }}
-  <details class="pattern-view">
+<section class="pattern pattern--element" id="{{ pattern.title | slugify }}">
+  <div class="pattern-display">{{ pattern.content | markdownify }}</div>
+  <details class="pattern-meta">
     <summary><code>{{ pattern.title }}</code> details</summary>
     <figure>
     {% if pattern.type == 'markdown' %}<h5>Markdown</h5>

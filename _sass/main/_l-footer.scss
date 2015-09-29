@@ -13,9 +13,6 @@
   display: flex;
   padding: 2em 1em;
   width: 100%;
-  & {
-    @include axiom(.75em);
-  }
 }
 
 .credits-meta {

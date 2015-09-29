@@ -13,9 +13,6 @@
   background-color: $whiter;
   margin: auto;
   padding: 0 1em 2.5em;
-  & {
-    @include axiom;
-  }
 }
 
 .core-body figcaption {
@@ -28,10 +25,6 @@
 
 .core-body hr {
   margin: 2em 0;
-}
-
-.core-body li + li {
-  margin-top: .5em;
 }
 
 /* Core footer: page navigation and metadata */
@@ -114,6 +107,7 @@
   color: $whiter;
   font-size: 1em;
   font-family: sans-serif;
+  margin-top: 1em;
 }
 
 .highlight .c {
