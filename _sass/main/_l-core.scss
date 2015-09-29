@@ -195,18 +195,18 @@
 
 /** Images **/
 
-.narrow,
-.wide,
-.grid {
-  margin: 1em calc(-1em) 0;
-  max-width: none;
-  width: calc(100% + 2em);
-}
-
 .grid {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
+}
+
+.narrow,
+.wide,
+.grid--wide {
+  margin: 1em calc(-1em) 0;
+  max-width: none;
+  width: calc(100% + 2em);
 }
 
 .grid-figure--33 {

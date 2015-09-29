@@ -39,7 +39,7 @@
 
   .narrow,
   .wide,
-  .grid {
+  .--wide {
     margin: 1em calc(-2em) 0;
     width: calc(100% + 4em);
   }
@@ -134,7 +134,7 @@
 
   .narrow,
   .wide,
-  .grid {
+  .grid--wide {
     margin: 1em calc(-2.5em) 0;
     width: calc(100% + 5em);
   }
@@ -310,7 +310,7 @@
     height: 4em;
   }
 
-  .core-nav-action, 
+  .core-nav-action,
   .core-nav-action:only-child,
   .core-nav-blank {
     max-width: 9em;
@@ -451,13 +451,13 @@
   }
 
   .wide,
-  .grid {
+  .grid--wide {
     margin: 1em calc(-4.5em) 0;
     max-width: none;
     width: calc(100% + 9em);
   }
 
-  .grid {
+  .grid--wide {
     flex-flow: row nowrap;
   }
 
@@ -561,7 +561,7 @@
   }
 
   .wide,
-  .grid {
+  .grid--wide {
     margin: 1em calc(-9em) 0;
     width: calc(100% + 18em);
   }

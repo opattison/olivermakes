@@ -113,7 +113,7 @@ Jean takes [beautiful photos](http://jeancflanagan.com/photos/), which I wanted 
 
 #### Samples from writing layout
 
-<div class="grid">
+<div class="grid grid--wide">
   <figure class="grid-figure--33 grid-figure screenshot">
     <img
       src="{{ site.image-url }}/{{ page.image[5].src }}" 

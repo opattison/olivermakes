@@ -67,7 +67,7 @@ I also enjoyed the photos in [“Living Underground”](https://worksthatwork.co
 
 The latest issue has an more finished feel than the previous ones – each one is better than the last. It is particularly impressive how much this small magazine accomplishes, considering that the effort is very much an independent one. It is published by the small [Typotheque](https://www.typotheque.com) foundry, run by [a lean team of editors](https://worksthatwork.com/about/) and contributors. The project is additionally supported by very minimal advertising.
 
-<div class="grid">
+<div class="grid grid--wide">
   <figure class="grid-figure">
     <img
       src="{{ site.image-url }}/{{ page.image[1].src }}"
