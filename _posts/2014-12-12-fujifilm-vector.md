@@ -42,7 +42,7 @@ image:
 
 To complement the metadata on my [photo pages](/photography/), I wanted accurate but minimal vector representations of my cameras (currently a Fujifilm X-E2 and an iPhone 5S), so I had to design my own. Although generic representations of cameras are appropriate for many circumstances (such as indicating a photo gallery on a navigation menu), something more defined was needed for this circumstance. Part of what I am communicating here is “how this photo was created”, so I designed something recognizable as a unique object. After completing the initial work, I realized I would need something even more minimal for smaller sizes (20% of a screen width or much smaller), so I abstracted the icon even further.
 
-<figure class="wide svg light noedges">
+<figure class="image--wide svg light noedges">
   <img
     src="{{ site.image-url }}/{{ page.image[0].src }}"
     alt="{{ page.image[0].alt }}"
@@ -67,7 +67,7 @@ To complement the metadata on my [photo pages](/photography/), I wanted accurate
   </figure>
 </div>
 
-<figure class="wide">
+<figure class="image--wide">
   <img
     src="{{ site.image-url }}/{{ page.image[3].src }}"
     sizes="{{ site.wide-sizes }}"

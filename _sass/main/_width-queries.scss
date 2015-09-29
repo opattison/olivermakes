@@ -37,8 +37,8 @@
     padding: 0 2em 2.5em;
   }
 
-  .narrow,
-  .wide,
+  .image--narrow,
+  .image--wide,
   .--wide {
     margin: 1em calc(-2em) 0;
     width: calc(100% + 4em);
@@ -132,8 +132,8 @@
     padding-bottom: 1.5em;
   }
 
-  .narrow,
-  .wide,
+  .image--narrow,
+  .image--wide,
   .grid--wide {
     margin: 1em calc(-2.5em) 0;
     width: calc(100% + 5em);
@@ -440,23 +440,24 @@
     padding: 0 2em;
   }
 
-  .narrow {
+  .image--narrow {
     margin: 1.5em auto;
     width: 100%;
   }
 
-  .narrow figcaption {
+  .image--narrow figcaption {
     padding-left: 0;
     padding-right: 0;
   }
 
-  .wide,
+  .image--wide,
   .grid--wide {
     margin: 1em calc(-4.5em) 0;
     max-width: none;
     width: calc(100% + 9em);
   }
 
+  .grid,
   .grid--wide {
     flex-flow: row nowrap;
   }
@@ -560,7 +561,7 @@
     padding: 0 9em 6em;
   }
 
-  .wide,
+  .image--wide,
   .grid--wide {
     margin: 1em calc(-9em) 0;
     width: calc(100% + 18em);

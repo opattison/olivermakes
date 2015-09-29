@@ -46,7 +46,7 @@ image:
 
 ---
 
-<figure class="wide">
+<figure class="image--wide">
   <input type="radio" role="radio" name="shift0" class="shift-back" id="shift-back0">
   <input type="radio" role="radio" name="shift0" class="shift-overlay" id="shift-overlay0">
   <input type="radio" role="radio" name="shift0" class="shift-map" id="shift-map0">
@@ -73,7 +73,7 @@ image:
   </div>
 </figure>
 
-<figure class="wide">
+<figure class="image--wide">
   <input type="radio" role="radio" name="shift1" class="shift-back" id="shift-back1">
   <input type="radio" role="radio" name="shift1" class="shift-overlay" id="shift-overlay1">
   <input type="radio" role="radio" name="shift1" class="shift-map" id="shift-map1">
