@@ -210,6 +210,10 @@
   width: calc(100% + 2em);
 }
 
+.grid figure + figure {
+  margin-top: 1em;
+}
+
 .grid-figure--33 {
   max-width: calc(100% / 3 * 2);
 }
