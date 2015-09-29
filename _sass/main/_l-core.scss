@@ -19,10 +19,6 @@
   margin-top: 0;
 }
 
-.core-body a {
-  @include a-underline;
-}
-
 .core-body hr {
   margin: 2em 0;
 }
@@ -47,6 +43,10 @@
 .core-meta p {
   font-size: .875em;
   margin: 0;
+}
+
+.core-meta a {
+  @include a-underline($pure-1, $grayblue);
 }
 
 .core-nav-action {

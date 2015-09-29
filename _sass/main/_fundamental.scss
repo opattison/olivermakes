@@ -123,6 +123,12 @@ a:active {
   border-color: $pure-1!important;
 }
 
+p a,
+li a,
+blockquote a {
+  @include a-underline;
+}
+
 /* Lists */
 
 ul,

@@ -59,12 +59,7 @@
 }
 
 .item-location a {
-  border-bottom: solid 1px $pure-1;
-}
-
-.item-location a:hover,
-.item-location a:focus {
-  border-bottom: solid 1px $grayblue;
+  @include a-underline($pure-1, $grayblue);
 }
 
 .item-description h1 {

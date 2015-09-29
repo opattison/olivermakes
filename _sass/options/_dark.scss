@@ -1,3 +1,6 @@
+@import 'variables';
+@import 'mixins';
+
 .dark,
 .dark .core {
   background-color: $gray00;
@@ -39,10 +42,23 @@
   color: $gray06;
 }
 
-.dark .core-body a,
-.dark .core-meta a {
+article a {
   color: $pink;
+}
+
+article a:focus,
+article a:hover {
+  color: $grayblue;
+}
+
+p a,
+li a,
+blockquote a {
   @include a-underline($pink-50, $grayblue-50);
+}
+
+.dark .core-meta a {
+  @include a-underline($pure-1, $grayblue-50);
 }
 
 .dark .core figcaption {
