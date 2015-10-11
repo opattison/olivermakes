@@ -26,6 +26,8 @@ end
 ## "rake dev" for development deployment
 desc "build and deploy scripts, images and site to development servers via s3_website"
 task :dev do
+  puts "## Concatenating JavaScript ##"
+  system "uglifyjs _static/scripts/velocity.js _static/scripts/velocity.ui.js _static/scripts/site.js --comments -b -o _static/scripts/all.min.js"
   system "s3_website push --site #{local_static} --config-dir #{local_static}"
   puts "## Deployed scripts and images to S3 ##"
   system "jekyll build --config _config.yml,_config-dev.yml"

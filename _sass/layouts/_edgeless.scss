@@ -1,23 +1,23 @@
 @import 'variables';
 
-.core-body,
-.core-header {
+.content,
+.title {
   background-color: inherit;
 }
 
-.core-body {
+.content {
   padding-bottom: 0;
 }
 
-.core-body figure:first-child {
+.content figure:first-child {
   margin-top: 0;
 }
 
-.core-header h1 {
+.title h1 {
   text-align: center;
 }
 
-.core-footer {
+.footer {
   margin: 2em auto 0;
 }
 
@@ -36,17 +36,17 @@
 }
 
 @media screen and (min-width: 45em) {
-  .core-footer {
+  .footer {
     margin: 2em auto 0;
   }
 }
 
 @media screen and (min-width: 60em) {
-  .core-header {
+  .title {
     padding: .75em 1.25em;
   }
 
-  .core-body {
+  .content {
     padding-top: 1em;
   }
 
@@ -56,19 +56,19 @@
     padding: 2.5em;
   }
 
-  .core-body figcaption {
+  .content figcaption {
     padding: .5em 0 0;
   }
 
-  .core-body figcaption p {
+  .content figcaption p {
     font-size: .875em;
   }
 
-  .core-footer {
+  .footer {
     max-width: 45em;
   }
 
-  .core-meta {
+  .meta {
     max-width: 27em;
   }
 }
@@ -92,7 +92,7 @@
 }
 
 @media screen and (min-width: 140em) {
-  .core-header {
+  .title {
     font-size: 2em;
   }
 
@@ -102,8 +102,8 @@
     width: calc(100% + 24em);
   }
 
-  .core-footer,
-  .core-meta {
+  .footer,
+  .meta {
     max-width: none;
   }
 }

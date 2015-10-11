@@ -2,27 +2,28 @@
 <html lang="en">
 {% include head.html %}
 
-<body class="edgeless{% if page.option contains 'dark' %} dark{% endif %}">
+<body {% if page.option contains 'error' %}id="error" {% endif %}class="edgeless{% if page.option contains 'dark' %} dark{% endif %}">
 
-{% include l-header.html %}
+{% include container/banner.html %}
+{% include block/menu.html %}
 
   <article class="h-entry core" role="main">
 
-{% include l-core/header.html %}
+{% include block/title.html %}
 
-    <div class="e-content{% if page.title == 'About' %} h-card{% endif %} core-body">
+    <div class="e-content{% if page.title == 'About' %} h-card{% endif %} content">
 
-{% include c-block/project.html %}
+{% include block/project.html %}
 
 {{ content }}
 
     </div>
 
-{% include l-core/footer.html %}
+{% unless page.option contains 'error' %}{% include block/footer.html %}{% endunless %}
 
   </article>
 
-{% include l-footer.html %}
+{% include container/end.html %}
 
 </body>
 </html>

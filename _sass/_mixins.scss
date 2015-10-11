@@ -32,3 +32,14 @@
     border-bottom: solid 1px $hover;
   }
 }
+
+@mixin bleed($amount) {
+  margin-left: -$amount;
+  margin-right: -$amount;
+  padding: $amount;
+}
+
+@mixin bleed-right($amount) {
+  margin-right: -$amount;
+  padding: $amount;
+}

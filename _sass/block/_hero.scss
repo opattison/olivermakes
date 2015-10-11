@@ -1,0 +1,13 @@
+/* Full-width image block */
+.hero {
+  margin: auto;
+}
+
+.hero figcaption {
+  background-color: $whiter;
+  margin: 0;
+}
+
+.hero + .content {
+  padding-top: 1.5em;
+}

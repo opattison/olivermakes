@@ -1,0 +1,64 @@
+/* Alternative nav – home and back-to-top */
+.return {
+  display: flex;
+  flex: 0 0 100%;
+  flex-flow: row nowrap;
+  font-size: 1.25em;
+}
+
+.return-action {
+  @include action($gray00, $whiter);
+  display: flex;
+  flex: 0 0 50%;
+  justify-content: center;
+  line-height: 1.5em;
+}
+
+.return-action-logo {
+  height: 1.3em;
+  margin: .1em .4em 0;
+  width: 1.3em;
+}
+
+.return-action-logo circle {
+  stroke: $whiter;
+  stroke-width: 36px;
+}
+
+.return-action--home {
+  background-color: $red;
+}
+
+.return-action--top {
+  background-color: $blue;
+}
+
+.return-action:hover,
+.return-action:focus {
+  background-color: $whiter;
+  outline: none;
+}
+
+.return-action--home:hover {
+  color: $red;
+}
+
+.return-action--home:focus {
+  color: $boldred;
+}
+
+.return-action--home:hover circle {
+  stroke: $red;
+}
+
+.return-action--home:focus circle {
+  stroke: $boldred;
+}
+
+.return-action--top:hover {
+  color: $blue;
+}
+
+.return-action--top:focus {
+  color: $boldblue;
+}

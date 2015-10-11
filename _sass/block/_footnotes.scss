@@ -1,0 +1,48 @@
+.footnotes {
+  background-color: $grayblue-50;
+  color: $gray01;
+  padding-bottom: 2em;
+  @include bleed-right(1em);
+}
+
+.footnotes ol {
+  list-style-position: outside;
+  padding: 0 1.25em;
+}
+
+.footnotes li {
+  border-bottom: solid 1px $gray04;
+  padding-bottom: 1.25em;
+}
+
+.footnotes li + li {
+  margin-top: 1.25em;
+}
+
+.footnotes li:last-child {
+  border: none;
+  padding: 0;
+}
+
+.footnotes li p {
+  display: inline; /* overwrites default block style */
+}
+
+.footnotes ol li::before {
+  margin-right: 0;
+}
+
+.footnotes .reversefootnote {
+  border: solid 1px $gray04;
+  border-radius: .125em;
+  color: $gray01;
+  float: right;
+  margin: 0 -1.5em;
+  padding: 0 .25em;
+}
+
+.footnotes .reversefootnote:hover,
+.footnotes .reversefootnote:focus {
+  background-color: $pink-50;
+  border-color: $pink-50;
+}

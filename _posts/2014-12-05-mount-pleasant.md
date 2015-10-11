@@ -67,7 +67,7 @@ image:
   <input type="radio" role="radio" name="shift0" class="shift-map" id="shift-map0">
   <div class="container map-background" id="i0">
     <img
-      src="{{ site.image-url }}/{{ page.image[0].src }}" 
+      src="{{ site.image-url }}/{{ page.image[0].src }}"
       sizes="{{ site.wide-sizes }}"
       srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image-url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[0].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
        alt="{{ page.image[0].alt }}"
@@ -94,7 +94,7 @@ image:
   <input type="radio" role="radio" name="shift1" class="shift-map" id="shift-map1">
   <div class="container map-background" id="i1">
     <img
-      src="{{ site.image-url }}/{{ page.image[1].src }}" 
+      src="{{ site.image-url }}/{{ page.image[1].src }}"
       sizes="{{ site.wide-sizes }}"
       srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image-url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
       alt="{{ page.image[1].alt }}"
@@ -117,30 +117,11 @@ image:
 
 
 <figure class="image--wide">
-  <input type="radio" role="radio" name="shift2" class="shift-back" id="shift-back2">
-  <input type="radio" role="radio" name="shift2" class="shift-overlay" id="shift-overlay2">
-  <input type="radio" role="radio" name="shift2" class="shift-map" id="shift-map2">
-  <div class="container map-background" id="i2">
-    <img
-      src="{{ site.image-url }}/{{ page.image[2].src }}" 
-      sizes="{{ site.wide-sizes }}"
-      srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image-url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[2].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-       alt="{{ page.image[2].alt }}"
-    >
-    <label for="shift-back2" class="shift-back-label"></label>
-    <label for="shift-overlay2" class="shift-overlay-label"></label>
-    <div class="photo-meta overlay">
-      <div class="camera-icon {% if page.image[2].camera contains 'iPhone 5S' %}icon-iphone5s{% elsif page.image[2].camera contains 'X-E2' %}icon-fxe2{% endif %}"></div>
-      <ul class="camera-details">
-        <li>Camera: {{ page.image[2].camera }}</li>
-        <li>Lens: {{ page.image[2].lens }} at {{ page.image[2].focal }}</li>
-        <li>Exposure: {{ page.image[2].aperture }} | {{ page.image[2].shutter }} s | ISO {{ page.image[2].iso }}</li>
-        <li>Date: {{ page.image[2].date }}</li>
-        <li>Location: {{ page.image[2].location }}</li>
-      </ul>
-      <label for="shift-map2" class="shift-map-label">View map</label>
-    </div>
-  </div>
+  <img
+    src="{{ site.image-url }}/{{ page.image[2].src }}"
+    sizes="{{ site.wide-sizes }}"
+    srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image-url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[2].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+    alt="{{ page.image[2].alt }}">
 </figure>
 
 <section class="essay">

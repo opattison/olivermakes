@@ -1,0 +1,14 @@
+.meta {
+  flex: 1 0 100%;
+  padding: 1em;
+  text-align: center;
+}
+
+.meta p {
+  font-size: .875em;
+  margin: 0;
+}
+
+.meta a {
+  @include a-underline($pure-1, $grayblue);
+}

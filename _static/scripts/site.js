@@ -15,7 +15,8 @@ function scroll (destination) {
 };
 
 /* back-to-top function and click listener */
-function scrollTop () {
+function scrollTop (event) {
+  event.preventDefault();
   scroll(Top);
 };
 

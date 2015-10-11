@@ -13,18 +13,18 @@
 }
 
 @media screen and (min-width: 80em) {
-  .core-body,
-  .core-header,
-  .core-footer {
+  .content,
+  .title,
+  .footer {
     flex: 0 0 54em;
   }
 
-  .core-header {
+  .title {
     padding-left: 9em;
     padding-right: 9em;
   }
 
-  .core-body {
+  .content {
     margin: 0 auto;
     padding: 2em 9em 4.5em;
   }

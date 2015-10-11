@@ -4,22 +4,41 @@
         'mixins',
         'normalize';
 
-@import 'main/fundamental';
+@import 'fundamental';
+@import 'helpers';
 
-@import 'main/l-header';
+@import 'block/logo';
+@import 'container/banner';
+@import 'block/menu';
 
-@import 'main/l-footer';
+@import 'container/core';
+@import 'block/hero';
+@import 'block/title';
+@import 'block/content';
+@import 'block/essay';
+@import 'block/ancillary';
+@import 'block/focus';
+@import 'block/project';
+@import 'block/footnotes';
+@import 'container/grid';
+@import 'block/image';
+@import 'container/footer';
+@import 'block/meta';
+@import 'block/pagination';
+@import 'block/credits';
+@import 'block/pagination';
 
-@import 'main/l-core';
+@import 'container/index';
+@import 'block/heading';
+@import 'block/item';
+@import 'block/primer';
 
-@import 'main/l-index';
+@import 'container/end';
+@import 'block/routing';
+@import 'block/credits';
+@import 'block/return';
 
-@import 'main/c-block';
+@import 'theme/default';
 
-@import 'main/pixel-queries';
-
-@import 'main/width-queries';
-
-@import 'main/animation';
-
-@import 'main/height-queries';
+@import 'density-queries';
+@import 'width-queries';
