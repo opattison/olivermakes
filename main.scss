@@ -14,7 +14,7 @@
 
 @import 'container/core';
 @import 'block/hero';
-@import 'block/title';
+@import 'block/core-title';
 @import 'block/content';
 @import 'block/essay';
 @import 'block/highlight';
@@ -25,21 +25,20 @@
 @import 'block/footnotes';
 @import 'container/grid';
 @import 'block/image';
-@import 'container/footer';
+@import 'container/core-footer';
 @import 'block/meta';
-@import 'block/pagination';
-@import 'block/credits';
 @import 'block/pagination';
 
 @import 'container/index';
-@import 'block/heading';
-@import 'block/item';
+@import 'block/index-title';
 @import 'block/index-nav';
+@import 'block/item';
 @import 'block/primer';
 
 @import 'container/end';
 @import 'block/routing';
-@import 'block/credits';
+@import 'container/credits';
+@import 'block/credits-meta';
 @import 'block/return';
 
 @import 'theme';
