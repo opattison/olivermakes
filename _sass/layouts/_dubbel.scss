@@ -35,20 +35,20 @@
     width: calc(100% + 18em);
   }
 
-  .flow-side {
+  .flow--side {
     padding: 0 4.25em 0 0;
     position: relative;
     margin-top: 1.25em;
     width: 75%;
   }
 
-  .flow-side > figure {
+  .flow--side > figure {
     margin: 1.25em 0 0 -9em;
     max-width: none;
     width: calc(100% + 9em);
   }
 
-  .flow-side figcaption p {
+  .flow--side figcaption p {
     font-size: .875em;
   }
 
@@ -64,7 +64,7 @@
     width: 100%;
   }
 
-  .flow-side > .ancillary {
+  .flow--side > .ancillary {
     margin-top: 0;
     position: absolute;
     right: -75%;
@@ -72,7 +72,7 @@
     width: 100%;
   }
 
-  .flow-side > figure + .ancillary {
+  .flow--side > figure + .ancillary {
     top: 25%;
   }
 

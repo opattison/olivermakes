@@ -97,8 +97,7 @@
   }
 
   .ancillary {
-    padding: 2em;
-    margin-right: -2em;
+    @include bleed-right(2em);
   }
 
   .ancillary img {

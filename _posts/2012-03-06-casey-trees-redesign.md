@@ -51,13 +51,13 @@ We turned the project around in only a few months, with design and content work 
 <div class="grid grid--wide">
 <figure class="grid-figure--66 grid-figure screenshot">
   <img
-    src="{{ site.image-url }}/{{ page.image[1].src }}" 
+    src="{{ site.image-url }}/{{ page.image[1].src }}"
     alt="{{ page.image[1].alt }}"
   >
 </figure>
 <figure class="grid-figure--33 grid-figure screenshot">
   <img
-    src="{{ site.image-url }}/{{ page.image[2].src }}" 
+    src="{{ site.image-url }}/{{ page.image[2].src }}"
     alt="{{ page.image[2].alt }}"
   >
 </figure>
@@ -87,7 +87,7 @@ Feedback from users of the site was very positive, and staff appreciated the eas
 {% capture related %}
 # More on my work for Casey&nbsp;Trees
 
-- [The responsive design process]({% post_url 2013-09-26-casey-trees-membership %}) for the subsequently launched Membership campaign to get a closer look at my approach to responsive design and implementation. 
+- [The responsive design process]({% post_url 2013-09-26-casey-trees-membership %}) for the subsequently launched Membership campaign to get a closer look at my approach to responsive design and implementation.
 - [Technical documentation and training]({% post_url 2014-10-01-casey-trees-docs %}) for the Casey Trees website.
 
 {% endcapture %}
@@ -109,7 +109,7 @@ Responsive design is about more than merely reaching a diversity of screens.
 This approach gave Casey Trees not only a better experience for visitors to the site, but more flexibility in presenting its mission, and more effective methods of communicating with people. Responsive thinking is a fundamentally more empathetic approach to an audience – one that can be felt directly regardless of user capabilities or the device they happen to be using.
 {% endcapture %}
 
-<div class="flow-side">
+<div class="flow--side">
   {{ longterm | markdownify }}
 </div>
 

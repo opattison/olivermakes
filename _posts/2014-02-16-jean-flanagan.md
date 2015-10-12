@@ -189,7 +189,7 @@ Publishing *something* on the web is relatively easy, but designing a lasting ho
 <aside class="ancillary">
 {{ jean | markdownify }}
 </aside>
-<div class="flow-side">
+<div class="flow--side">
 {{ oliver | markdownify }}
 </div>
 
