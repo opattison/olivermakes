@@ -10,7 +10,6 @@
   flex: 1 0 auto;
   flex-flow: row wrap;
   justify-content: center;
-  @include bleed(1em);
 }
 
 .banner-title-heading {
