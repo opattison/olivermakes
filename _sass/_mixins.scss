@@ -34,13 +34,19 @@
   }
 }
 
-@mixin bleed($amount) {
+@mixin bleed($amount: 1em) {
   margin-left: -$amount;
   margin-right: -$amount;
   padding: $amount;
 }
 
-@mixin bleed-right($amount) {
+@mixin bleed-right($amount: 1em) {
   margin-right: -$amount;
   padding: $amount;
+}
+
+@mixin bleed-image($amount: 1em) {
+  margin: $amount calc(-$amount) 0;
+  max-width: none;
+  width: calc(100% + 2*$amount);
 }

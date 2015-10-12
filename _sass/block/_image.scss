@@ -1,9 +1,7 @@
+/* Image block styles for figures containing img elements. */
 .image--narrow,
-.image--wide,
-.grid--wide {
-  margin: 1em calc(-1em) 0;
-  max-width: none;
-  width: calc(100% + 2em);
+.image--wide {
+  @include bleed-image(1em);
 }
 
 .grid-figure--33 {
