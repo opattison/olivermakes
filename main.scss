@@ -9,6 +9,7 @@
 
 @import 'block/logo';
 @import 'container/banner';
+@import 'block/banner-title';
 @import 'block/menu';
 
 @import 'container/core';
@@ -32,6 +33,7 @@
 @import 'container/index';
 @import 'block/heading';
 @import 'block/item';
+@import 'block/index-nav';
 @import 'block/primer';
 
 @import 'container/end';
@@ -39,7 +41,7 @@
 @import 'block/credits';
 @import 'block/return';
 
-@import 'theme/default';
+@import 'theme';
 
 @import 'density-queries';
 @import 'width-queries';

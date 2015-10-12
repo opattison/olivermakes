@@ -1,6 +1,4 @@
 .credits {
-  background-color: $gray07;
-  color: $gray00;
   display: flex;
   padding: 2em 1em;
   width: 100%;
@@ -18,8 +16,4 @@
 
 .credits-meta p + p {
   margin-top: .75em;
-}
-
-.credits-meta a {
-  @include a-underline;
 }

@@ -4,31 +4,3 @@
   height: 4.5em;
   padding: 1em;
 }
-
-.banner-title {
-  display: flex;
-  flex: 1 0 auto;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-
-.banner-title-heading {
-  font-weight: 300;
-  letter-spacing: -.03125em;
-  line-height: 1.25em;
-  margin: 0 .1875em;
-}
-
-.banner-title:hover .banner-title-heading,
-.banner-title:focus .banner-title-heading {
-  color: $boldblue;
-}
-
-.banner-title:hover circle,
-.banner-title:focus circle {
-  stroke: $boldblue;
-}
-
-.banner-title-logo circle {
-  stroke: $gray02;
-}

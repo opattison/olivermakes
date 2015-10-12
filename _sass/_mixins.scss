@@ -1,12 +1,14 @@
-@mixin action($ground: $black, $figure: $white) {
-  background-color: $ground;
-  color: $figure;
+@mixin action($margin: 0, $padding: 1em 0) {
   display: block;
   font-weight: 400;
-  line-height: 1.5em;
-  margin: 0;
-  padding: 1em 0;
+  margin: $margin;
+  padding: $padding;
   text-align: center;
+}
+
+@mixin action-color($ground: $black, $figure: $white) {
+  background-color: $ground;
+  color: $figure;
   &:hover,
   &:focus {
     background-color: $figure;

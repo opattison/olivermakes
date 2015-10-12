@@ -1,5 +1,5 @@
 .pagination {
-  @include action($red, $white);
+  @include action;
   flex: 1 0 50%;
   line-height: 2em;
   min-height: 2.5em;
@@ -8,29 +8,4 @@
 
 .pagination:only-child {
   flex: 0 0 100%;
-}
-
-.pagination--later {
-  background-color: $red;
-}
-
-.pagination--earlier {
-  background-color: $blue;
-}
-
-.pagination:hover,
-.pagination:focus {
-  background-color: $whiter;
-  border: none;
-  outline: none;
-}
-
-.pagination--later:hover,
-.pagination--later:focus {
-  color: $red;
-}
-
-.pagination--earlier:hover,
-.pagination--earlier:focus {
-  color: $blue;
 }

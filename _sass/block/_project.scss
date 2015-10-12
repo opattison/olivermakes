@@ -1,12 +1,7 @@
 /* Block of text and images for a project summary */
 .project {
-  background-color: $gray06;
   min-height: 15em;
   padding: 1em;
-}
-
-.project-image {
-  background-color: $gray07;
 }
 
 .project-meta {
@@ -14,7 +9,6 @@
 }
 
 .project-summary {
-  color: $gray02;
   font-size: 1.125em;
   font-style: italic;
   font-weight: 500;
@@ -32,29 +26,4 @@
 .project-nav-action {
   @include action;
   flex: 1 0 50%;
-}
-
-.project-nav-action--url {
-  background-color: $red;
-  color: $white;
-}
-
-.project-nav-action--source {
-  background-color: $violet;
-  color: $white;
-}
-
-.project-nav-action:hover,
-.project-nav-action:focus {
-  background-color: $white;
-}
-
-.project-nav-action--url:hover,
-.project-nav-action--url:focus {
-  color: $red;
-}
-
-.project-nav-action--source:hover,
-.project-nav-action--source:focus {
-  color: $violet;
 }

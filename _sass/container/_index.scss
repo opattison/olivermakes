@@ -1,34 +1,5 @@
 /* Sections and items */
-
-.index-grid {
+.index {
   display: flex;
   flex-flow: row wrap;
-}
-
-/* Links to archives */
-
-.index-nav {
-  margin-top: 1em;
-  width: 100%;
-  display: flex;
-}
-
-.index-nav-action {
-  @include action($red, $white);
-  width: 100%;
-}
-
-.index-nav-action:nth-child(2) {
-  background-color: $blue;
-}
-
-.index-nav-action:hover,
-.index-nav-action:focus {
-  background-color: $gray07;
-  color: $red;
-}
-
-.index-nav-action:nth-child(2):hover,
-.index-nav-action:nth-child(2):focus {
-  color: $blue;
 }

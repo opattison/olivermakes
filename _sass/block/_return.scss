@@ -7,11 +7,10 @@
 }
 
 .return-action {
-  @include action($gray00, $whiter);
+  @include action;
   display: flex;
   flex: 0 0 50%;
   justify-content: center;
-  line-height: 1.5em;
 }
 
 .return-action-logo {
@@ -21,43 +20,5 @@
 }
 
 .return-action-logo circle {
-  stroke: $whiter;
   stroke-width: 36px;
-}
-
-.return-action--home {
-  background-color: $red;
-}
-
-.return-action--top {
-  background-color: $blue;
-}
-
-.return-action:hover,
-.return-action:focus {
-  background-color: $whiter;
-}
-
-.return-action--home:hover {
-  color: $red;
-}
-
-.return-action--home:focus {
-  color: $boldred;
-}
-
-.return-action--home:hover circle {
-  stroke: $red;
-}
-
-.return-action--home:focus circle {
-  stroke: $boldred;
-}
-
-.return-action--top:hover {
-  color: $blue;
-}
-
-.return-action--top:focus {
-  color: $boldblue;
 }

@@ -8,7 +8,7 @@ description: 'Links to all of the label archives for the posts on this website, 
 
 {% include block/heading.html title='label' %}
 
-<div class="index-grid">
+<div class="index">
 {% assign tags = site.tags | sort %}
 {% for tag in tags %}
 {% include block/item--short--tag.html %}

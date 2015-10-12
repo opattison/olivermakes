@@ -1,5 +1,4 @@
 html {
-  color: $black;
   font: 400 16px/1.4375 $ratio;
   font: 400 1rem/1.4375 $ratio;
      -moz-font-feature-settings: 'liga', 'dlig';
@@ -9,11 +8,6 @@ html {
           font-feature-settings: 'liga', 'dlig';
   font-variant-ligatures: common-ligatures;
   text-rendering: optimizeLegibility;
-}
-
-body {
-  background-color: $white;
-  color: $black;
 }
 
 strong,
@@ -43,7 +37,6 @@ small {
 
 h1,
 h2 {
-  color: $gray02;
   line-height: 1.125;
   letter-spacing: -.0125em;
 }
@@ -60,7 +53,6 @@ h2 {
 
 h3,
 h4 {
-  color: $gray00;
   line-height: 1.25;
 }
 
@@ -84,7 +76,6 @@ h4 {
 }
 
 h5 {
-  color: $gray03;
   font-size: 1.125em;
   line-height: 1.375;
 }
@@ -106,7 +97,6 @@ p + *,
 /* Links */
 
 a {
-  color: $boldred;
   transition-duration: 320ms;
   transition-property: color, background-color, border-bottom;
   transition-timing-function: cubic-bezier(0,1,1,1);
@@ -114,19 +104,7 @@ a {
 
 a:hover,
 a:focus {
-  color: $darkblue;
   transition-duration: 160ms;
-}
-
-a:active {
-  color: $green;
-  border-color: $pure-1!important;
-}
-
-p a,
-li a,
-blockquote a {
-  @include a-underline;
 }
 
 /* Lists */
@@ -192,14 +170,12 @@ li {
 /* Blockquotes */
 
 blockquote {
-  border-left: solid .25em $blue;
-  color: $gray03;
+  border-left: solid .25em;
   margin: 2em 0 2em -1em;
   padding-left: .75em;
 }
 
 blockquote footer {
-  color: $gray02;
   margin-top: 1em;
   text-align: right;
 }
@@ -212,17 +188,14 @@ sup[id] {
 }
 
 sup[id] a {
-  background-color: $grayblue-50;
   border: 0;
   border-radius: .125em;
-  color: $gray01;
   font-weight: 400;
   padding: 0 .25em;
 }
 
 sup[id] a:hover,
 sup[id] a:focus {
-  background-color: $pink-50;
   border: 0;
 }
 
@@ -233,7 +206,6 @@ sup[id] a::before {
 /* Figcaptions */
 
 figcaption {
-  color: $gray01;
   margin: 0 0 .5em;
   padding: .25em 1em;
 }
@@ -246,7 +218,6 @@ figcaption p {
 /* Inline styles */
 
 hr {
-  background-color: $gray04;
   border: 0;
   height: .2em;
   margin: 2em 0;
@@ -261,16 +232,14 @@ samp {
 p > code,
 li > code,
 samp {
-  border: solid 1px $gray05;
+  border: solid 1px ;
   border-radius: .25em;
   margin: 0 -.03125em;
   padding: .0625em .25em 0;
 }
 
 kbd > kbd {
-  background-color: $black;
   border-radius: .25em;
-  color: $white;
   font: 400 .8125em/1 $open-sans;
   padding: .0625em .5em;
 }
@@ -281,16 +250,5 @@ kbd > kbd + b {
 } /* <kbd><kbd>cmd</kbd> <b class="kbd-plus">+</b> <kbd>C</kbd></kbd> */
 
 mark {
-  background-color: $grayblue-50;
   padding: .0625em;
-}
-
-::-moz-selection {
-  background: $boldblue;
-  color: $whiter;
-}
-
-::selection {
-  background: $boldblue;
-  color: $whiter;
 }

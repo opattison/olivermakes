@@ -9,14 +9,7 @@
 }
 
 .routing-menu-action {
-  @include action($red, $whiter);
-}
-
-.routing-menu-action,
-.routing-menu-action:hover,
-.routing-menu-action:focus {
-  background-color: $whiter;
-  color: $red;
+  @include action
 }
 
 .routing-nav {
@@ -26,34 +19,13 @@
 }
 
 .routing-nav-action {
-  @include action($black, $whiter);
+  @include action(0, 2em 0);
   display: block;
   flex: 0 0 50%;
-  padding: 2em 0;
   text-align: center;
 }
 
-.routing-nav-action:nth-child(2) {
-  background-color: $gray01;
-}
-
-.routing-nav-action:nth-child(3) {
-  background-color: $gray02;
-}
-
-.routing-nav-action:nth-child(4) {
-  background-color: $gray00;
-}
-
-.routing-nav-action:hover,
-.routing-nav-action:focus {
-  background-color: $whiter;
-  color: $gray00;
-}
-
-.routing-nav-action:active {
-  background-color: $whiter;
-  color: $green;
+.routing-nav-action {
 }
 
 /* Target navigation - JS-free modal navigation */
@@ -71,26 +43,6 @@
   position: relative;
   right: 0;
   z-index: 2;
-}
-
-.routing:target .routing-nav-action {
-  background-color: $black-80;
-}
-
-.routing:target .routing-nav-action:nth-child(2) {
-  background-color: $gray01-80;
-}
-
-.routing:target .routing-nav-action:nth-child(3) {
-  background-color: $gray02-80;
-}
-
-.routing:target .routing-nav-action:nth-child(4) {
-  background-color: $gray00-80;
-}
-
-.routing:target .routing-nav-action:hover {
-  background-color: $gray07-80;
 }
 
 .routing:target .routing-menu {
@@ -111,8 +63,4 @@
   position: fixed;
   top: 0;
   width: 100%;
-}
-
-.routing:target::after {
-  background-color: $black-80;
 }

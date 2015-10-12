@@ -5,5 +5,5 @@
 }
 
 .menu-action {
-  @include action($red, $whiter);
+  @include action;
 }

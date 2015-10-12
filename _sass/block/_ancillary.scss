@@ -1,10 +1,5 @@
 .ancillary {
-  color: $gray01;
   @include bleed-right(-1em);
-}
-
-.ancillary {
-  background-color: $white;
 }
 
 .ancillary h1 {

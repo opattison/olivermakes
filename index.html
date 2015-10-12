@@ -5,7 +5,6 @@ category: index
 
 ---
 
-<div class="index-grid">
 {% include block/primer.html %}
 {% for post in site.posts %}
 {% if post.option contains 'feature' %}
@@ -18,4 +17,3 @@ category: index
 {% endunless %}
 {% endfor %}
 {% include block/index-nav.html %}
-</div>

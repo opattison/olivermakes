@@ -5,11 +5,9 @@ layout: archive
 
 {% include block/heading--archive.html prefix='label' %}
 
-    <div class="index-grid">
 {% for post in page.posts %}
 {% include block/item--short.html %}
 {% endfor %}
 {% include block/index-nav--tag.html %}
-    </div>
 
 {{ content }}
