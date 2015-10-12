@@ -34,7 +34,7 @@ Even if a CMS or site builder has syntax highlighting built in (like [Jekyll](ht
 
 So how bad is it when code or any other long content breaks a layout? Here is what code might look like without corrected `white-space`:
 
-<figure class="narrow screenshot">
+<figure class="image--narrow screenshot">
   <img
     src="{{ site.image-url }}/{{ page.image[1].src }}" 
     alt="{{ page.image[1].alt }}"
@@ -43,7 +43,7 @@ So how bad is it when code or any other long content breaks a layout? Here is wh
 
 Here is a sample with default values for `overflow-wrap`:
 
-<figure class="narrow screenshot">
+<figure class="image--narrow screenshot">
   <img
     src="{{ site.image-url }}/{{ page.image[2].src }}" 
     alt="{{ page.image[2].alt }}"
