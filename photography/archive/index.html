@@ -8,11 +8,9 @@ description: 'A collection of photos of nature and urban environments by Oliver 
 
 {% include block/heading.html prefix='photography' title='archive' %}
 
-<div class="index">
 {% for post in site.categories.photography %}
 {% for item in post.image %}
 {% include block/item--photo.html %}
 {% endfor %}
 {% endfor %}
 {% include block/index-nav--archive.html %}
-</div>
