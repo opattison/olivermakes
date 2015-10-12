@@ -1,7 +1,7 @@
 @import 'variables';
 
 .content,
-.title {
+.core-title {
   background-color: inherit;
 }
 
@@ -13,7 +13,7 @@
   margin-top: 0;
 }
 
-.title h1 {
+.core-title h1 {
   text-align: center;
 }
 
@@ -42,7 +42,7 @@
 }
 
 @media screen and (min-width: 60em) {
-  .title {
+  .core-title {
     padding: .75em 1.25em;
   }
 
@@ -92,7 +92,7 @@
 }
 
 @media screen and (min-width: 140em) {
-  .title {
+  .core-title {
     font-size: 2em;
   }
 

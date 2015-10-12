@@ -14,7 +14,7 @@
 
 @import 'container/core';
 @import 'block/hero';
-@import 'block/title';
+@import 'block/core-title';
 @import 'block/content';
 @import 'block/essay';
 @import 'block/highlight';
@@ -32,9 +32,9 @@
 @import 'block/pagination';
 
 @import 'container/index';
-@import 'block/heading';
-@import 'block/item';
+@import 'block/index-title';
 @import 'block/index-nav';
+@import 'block/item';
 @import 'block/primer';
 
 @import 'container/end';
