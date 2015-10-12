@@ -6,9 +6,7 @@ description: 'A repository of writing and notes on archiving, technology, and ot
 
 ---
 
-<div class="index-grid">
 {% for post in site.categories.writing limit: 8 %}
-{% include l-index/item.html %}
+{% include block/item.html %}
 {% endfor %}
-{% include l-index/index-nav.html %}
-</div>
+{% include block/index-nav.html %}

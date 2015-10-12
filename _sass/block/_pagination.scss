@@ -1,0 +1,11 @@
+.pagination {
+  @include action;
+  flex: 1 0 50%;
+  line-height: 2em;
+  min-height: 2.5em;
+  padding: .5em 0;
+}
+
+.pagination:only-child {
+  flex: 0 0 100%;
+}

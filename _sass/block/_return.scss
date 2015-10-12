@@ -1,0 +1,24 @@
+/* Alternative nav – home and back-to-top */
+.return {
+  display: flex;
+  flex: 0 0 100%;
+  flex-flow: row nowrap;
+  font-size: 1.25em;
+}
+
+.return-action {
+  @include action;
+  display: flex;
+  flex: 0 0 50%;
+  justify-content: center;
+}
+
+.return-action-logo {
+  height: 1.3em;
+  margin: .1em .4em 0;
+  width: 1.3em;
+}
+
+.return-action-logo circle {
+  stroke-width: 36px;
+}

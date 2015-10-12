@@ -1,0 +1,479 @@
+html {
+  color: $black;
+}
+
+body {
+  background-color: $white;
+  color: $black;
+}
+
+h1,
+h2 {
+  color: $gray02;
+}
+
+h3,
+h4 {
+  color: $gray00;
+}
+
+h5 {
+  color: $gray03;
+}
+
+a {
+  color: $boldred;
+}
+
+a:hover,
+a:focus {
+  color: $darkblue;
+}
+
+a:active {
+  color: $green;
+  border-color: $pure-1!important;
+}
+
+p a,
+li a,
+blockquote a {
+  @include a-underline;
+}
+
+blockquote {
+  border-color: $blue;
+  color: $gray03;
+}
+
+blockquote footer {
+  color: $gray02;
+}
+
+sup[id] a {
+  background-color: $grayblue-50;
+  color: $gray01;
+}
+
+sup[id] a:hover,
+sup[id] a:focus {
+  background-color: $pink-50;
+}
+
+figcaption {
+  color: $gray01;
+}
+
+hr {
+  background-color: $gray04;
+}
+
+.ancillary {
+  background-color: $white;
+  color: $gray01;
+}
+
+p > code,
+li > code,
+samp {
+  border-color: $gray05;
+}
+
+kbd > kbd {
+  background-color: $black;
+  color: $white;
+}
+
+mark {
+  background-color: $grayblue-50;
+}
+
+::-moz-selection {
+  background: $boldblue;
+  color: $whiter;
+}
+
+::selection {
+  background: $boldblue;
+  color: $whiter;
+}
+
+.banner-title:hover .banner-title-heading,
+.banner-title:focus .banner-title-heading {
+  color: $boldblue;
+}
+
+.banner-title:hover circle,
+.banner-title:focus circle {
+  stroke: $boldblue;
+}
+
+.banner-title-logo circle {
+  stroke: $gray02;
+}
+
+.category {
+  background-color: $white;
+}
+
+.archive {
+  background-color: $gray05;
+}
+
+.content {
+  background-color: $whiter;
+}
+
+.credits {
+  background-color: $gray07;
+  color: $gray00;
+}
+
+.credits-meta a {
+  @include a-underline;
+}
+
+.focus {
+  color: $blue;
+}
+
+.focus a {
+  color: $red;
+}
+
+.focus a:hover,
+.focus a:focus {
+  color: $gray02;
+}
+
+.footnotes {
+  background-color: $grayblue-50;
+  color: $gray01;
+}
+
+.footnotes li {
+  border-color: $gray04;
+}
+
+.footnotes .reversefootnote {
+  border-color: $gray04;
+  color: $gray01;
+}
+
+.footnotes .reversefootnote:hover,
+.footnotes .reversefootnote:focus {
+  background-color: $pink-50;
+  border-color: $pink-50;
+}
+
+.hero figcaption {
+  background-color: $whiter;
+}
+
+.highlight {
+  background-color: $gray02;
+  border-color: $gray05;
+  color: $whiter;
+}
+
+.highlight .c {
+  color: $gray05; /* Comments */
+}
+
+.home {
+  background-color: $white;
+}
+
+.index-nav-action {
+  @include action-color($red, $white);
+}
+
+.index-nav-action:nth-child(2) {
+  background-color: $blue;
+}
+
+.index-nav-action:hover,
+.index-nav-action:focus {
+  background-color: $gray07;
+  color: $red;
+}
+
+.index-nav-action:nth-child(2):hover,
+.index-nav-action:nth-child(2):focus {
+  color: $blue;
+}
+
+.item {
+  background-color: $gray07;
+}
+
+.item:nth-child(2n + 2) {
+  background-color: $gray05;
+}
+
+.item-description {
+  background-color: $gray07-90;
+}
+
+.item--short-description {
+  background-color: $gray07;
+}
+
+.item-location a {
+  @include a-underline($pure-1, $grayblue);
+}
+
+.item-description h1 a {
+  color: $red;
+  border-bottom: solid 1px $pure-1;
+}
+
+.item-description h1 a:hover,
+.item-description h1 a:focus {
+  color: $blue;
+}
+
+.item-description h1 a:active {
+  color: $green;
+}
+
+.item-action {
+  @include action-color($gray02, $whiter);
+}
+
+.item:nth-child(2n + 2) .item-action {
+  background-color: $gray00;
+}
+
+.item:nth-child(2n + 2) .item-action:hover,
+.item:nth-child(2n + 2) .item-action:focus {
+  background-color: $whiter;
+  color: $gray00;
+}
+
+.item--feature-action {
+  background-color: $black;
+}
+
+.item--photo-description {
+  background-color: transparent;
+}
+
+.item--photo a:hover,
+.item--photo a:focus {
+  background-color: $gray07-90;
+}
+
+.item--photo a:hover h1,
+.item--photo a:focus h1 {
+  color: $boldblue;
+}
+
+.item--photo a:hover p,
+.item--photo a:focus p {
+  color: $black;
+}
+
+.menu-action {
+  @include action-color($red, $whiter);
+}
+
+.meta a {
+  @include a-underline($pure-1, $grayblue);
+}
+
+.pagination {
+  @include action-color($red, $white);
+}
+
+.pagination--later {
+  background-color: $red;
+}
+
+.pagination--earlier {
+  background-color: $blue;
+}
+
+.pagination:hover,
+.pagination:focus {
+  background-color: $whiter;
+  border: none;
+}
+
+.pagination--later:hover,
+.pagination--later:focus {
+  color: $red;
+}
+
+.pagination--earlier:hover,
+.pagination--earlier:focus {
+  color: $blue;
+}
+
+.primer {
+  background-color: $blue;
+  color: $gray07;
+}
+
+.primer a {
+  color: $whiter;
+  border-color: $gray07-80;
+}
+
+.primer a:hover,
+.primer a:focus {
+  color: $grayblue;
+  border-bottom: solid 1px $grayblue-50;
+}
+
+.project {
+  background-color: $gray06;
+}
+
+.project-image {
+  background-color: $gray07;
+}
+
+.project-summary {
+  color: $gray02;
+}
+
+.project-nav-action--url {
+  background-color: $red;
+  color: $white;
+}
+
+.project-nav-action--source {
+  background-color: $violet;
+  color: $white;
+}
+
+.project-nav-action:hover,
+.project-nav-action:focus {
+  background-color: $white;
+}
+
+.project-nav-action--url:hover,
+.project-nav-action--url:focus {
+  color: $red;
+}
+
+.project-nav-action--source:hover,
+.project-nav-action--source:focus {
+  color: $violet;
+}
+
+.return-action {
+  @include action-color($gray00, $whiter);
+}
+
+.return-action-logo circle {
+  stroke: $whiter;
+}
+
+.return-action--home {
+  background-color: $red;
+}
+
+.return-action--top {
+  background-color: $blue;
+}
+
+.return-action:hover,
+.return-action:focus {
+  background-color: $whiter;
+}
+
+.return-action--home:hover {
+  color: $red;
+}
+
+.return-action--home:focus {
+  color: $boldred;
+}
+
+.return-action--home:hover circle {
+  stroke: $red;
+}
+
+.return-action--home:focus circle {
+  stroke: $boldred;
+}
+
+.return-action--top:hover {
+  color: $blue;
+}
+
+.return-action--top:focus {
+  color: $boldblue;
+}
+
+.routing-menu-action {
+  @include action-color($red, $whiter);
+}
+
+.routing-menu-action,
+.routing-menu-action:hover,
+.routing-menu-action:focus {
+  background-color: $whiter;
+  color: $red;
+}
+
+.routing-nav-action {
+  @include action-color($black, $whiter);
+}
+
+.routing-nav-action:nth-child(2) {
+  background-color: $gray01;
+}
+
+.routing-nav-action:nth-child(3) {
+  background-color: $gray02;
+}
+
+.routing-nav-action:nth-child(4) {
+  background-color: $gray00;
+}
+
+.routing-nav-action:hover,
+.routing-nav-action:focus {
+  background-color: $whiter;
+  color: $gray00;
+}
+
+.routing-nav-action:active {
+  background-color: $whiter;
+  color: $green;
+}
+
+.routing:target .routing-nav-action {
+  background-color: $black-80;
+}
+
+.routing:target .routing-nav-action:nth-child(2) {
+  background-color: $gray01-80;
+}
+
+.routing:target .routing-nav-action:nth-child(3) {
+  background-color: $gray02-80;
+}
+
+.routing:target .routing-nav-action:nth-child(4) {
+  background-color: $gray00-80;
+}
+
+.routing:target .routing-nav-action:hover {
+  background-color: $gray07-80;
+}
+
+.routing:target::after {
+  background-color: $black-80;
+}
+
+.title {
+  background-color: $whiter;
+}
+
+.footer {
+  background-color: $gray07;
+}

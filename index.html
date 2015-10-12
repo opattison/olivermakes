@@ -5,17 +5,15 @@ category: index
 
 ---
 
-<div class="index-grid">
-{% include c-block/primer.html %}
+{% include block/primer.html %}
 {% for post in site.posts %}
 {% if post.option contains 'feature' %}
-{% include l-index/item--feature.html %}
+{% include block/item--feature.html %}
 {% endif %}
 {% endfor %}
 {% for post in site.posts limit:6 %}
 {% unless post.option contains 'feature' %}
-{% include l-index/item.html %}
+{% include block/item.html %}
 {% endunless %}
 {% endfor %}
-{% include l-index/index-nav.html %}
-</div>
+{% include block/index-nav.html %}

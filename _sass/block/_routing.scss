@@ -1,0 +1,66 @@
+/* Routing: site-wide navigation */
+.routing {
+  flex: 0 0 100%;
+}
+
+.routing-menu {
+  @include menu;
+  display: none; /* only displays with :target */
+}
+
+.routing-menu-action {
+  @include action
+}
+
+.routing-nav {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 1.25em;
+}
+
+.routing-nav-action {
+  @include action(0, 2em 0);
+  display: block;
+  flex: 0 0 50%;
+  text-align: center;
+}
+
+.routing-nav-action {
+}
+
+/* Target navigation - JS-free modal navigation */
+.routing:target {
+  margin: 0 auto;
+  padding-top: 4.5em;
+  position: absolute; /* now visible when target:ed */
+  right: 0;
+  top: 0;
+  max-width: 36em;
+  width: 100%;
+}
+
+.routing:target .routing-nav {
+  position: relative;
+  right: 0;
+  z-index: 2;
+}
+
+.routing:target .routing-menu {
+  display: block; /* now visible when target:ed */
+}
+
+.routing:target .routing-menu-action {
+  position: relative;
+  z-index: 1;
+}
+
+.routing:target::after,
+.routing:target .routing-menu-action::after {
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}

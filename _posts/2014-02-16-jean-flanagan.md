@@ -90,7 +90,7 @@ Designing in a browser meant that HTML prototypes were an early part of the proc
   <figcaption>{{ page.image[2].caption | markdownify }}</figcaption>
 </figure>
 
-<figure class="wide screenshot">
+<figure class="image--wide screenshot">
   <img
     src="{{ site.image-url }}/{{ page.image[3].src }}" 
     alt="{{ page.image[3].alt }}"
@@ -113,7 +113,7 @@ Jean takes [beautiful photos](http://jeancflanagan.com/photos/), which I wanted 
 
 #### Samples from writing layout
 
-<div class="grid">
+<div class="grid grid--wide">
   <figure class="grid-figure--33 grid-figure screenshot">
     <img
       src="{{ site.image-url }}/{{ page.image[5].src }}" 
@@ -143,7 +143,7 @@ Not every image is meant to be showcased, nor should every image overshadow the 
 We wanted to make sure that some of Jean’s interests and personality were part of the site’s design. For example, [the 404 page](http://jeancflanagan.com/404.html) has a floating jellyfish animation which echoes her interest in marine biology. 
 
 <div id="error-404">
-  <figure class="wide">
+  <figure class="image--wide">
     <img src="{{ site.image-url }}/{{ page.image[8].src }}" alt="{{ page.image[8].alt }}">
     <figcaption>{{ page.image[8].caption | markdownify }}</figcaption>
   </figure>
@@ -189,7 +189,7 @@ Publishing *something* on the web is relatively easy, but designing a lasting ho
 <aside class="ancillary">
 {{ jean | markdownify }}
 </aside>
-<div class="flow-side">
+<div class="flow--side">
 {{ oliver | markdownify }}
 </div>
 

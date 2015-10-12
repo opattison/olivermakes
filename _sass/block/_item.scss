@@ -1,0 +1,63 @@
+.item {
+  flex: 1 0 calc(100% - 2em);
+  margin: 1em 1em 0;
+  width: 100%;
+}
+
+.item--feature,
+.item--short {
+  margin: 1em 0 0;
+  width: 100%;
+  flex: 0 0 100%;
+}
+
+.item-description {
+  padding: 1em;
+  position: relative;
+}
+
+.item--feature-description {
+  font-size: 1.125em;
+  min-height: 12.5em;
+  padding: .888888889em;
+}
+
+.item-description h1 {
+  font-size: 1.5em;
+}
+
+.item--short-description h1 {
+  font-size: 1.125em;
+}
+
+.item-time {
+  font-size: .875em;
+}
+
+.item-action {
+  @include action;
+}
+
+/* Photo gallery for archive page */
+
+.item--photo {
+  height: 10em;
+  margin: 1em 0 0;
+}
+
+.item--photo a {
+  color: $pure-1;
+  display: block;
+  height: 100%;
+}
+
+.item--photo-description {
+  height: auto;
+  padding: 1em;
+}
+
+.item--photo-description h1 {
+  color: inherit;
+  font-size: 1.25em;
+  font-weight: 500;
+}

@@ -1,0 +1,9 @@
+.grid {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.grid figure + figure {
+  margin-top: 1em;
+}

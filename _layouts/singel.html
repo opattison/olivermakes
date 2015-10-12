@@ -4,25 +4,27 @@
 
 <body class="singel{% if page.option contains 'dark' %} dark{% endif %}">
 
-{% include l-header.html %}
+{% include container/banner.html %}
+{% include block/menu.html %}
 
   <article class="h-entry core" role="main">
 
-{% include l-core/header.html %}
+{% if page.option contains 'hero' %}{% include block/hero.html %}{% endif %}
+{% include block/title.html %}
 
-    <div class="e-content{% if page.title == 'About' %} h-card{% endif %} core-body">
+    <div class="e-content{% if page.title == 'About' %} h-card{% endif %} content">
 
-{% include c-block/project.html %}
+{% include block/project.html %}
 
 {{ content }}
 
     </div>
 
-{% include l-core/footer.html %}
+{% include block/footer.html %}
 
   </article>
 
-{% include l-footer.html %}
+{% include container/end.html %}
 
 </body>
 </html>

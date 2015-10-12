@@ -1,0 +1,23 @@
+{% if page.category == 'projects' %}
+<article class="project">
+  {% if page.option contains 'sample-srcset' %}<img
+    class="project-image"
+    sizes="{{ site.project-sizes }}"
+    src="{{ site.image-url }}/{{ page.image[0].src }}"
+    srcset="{% for srcset_project in site.srcset_project %}{{ site.image-url }}/{{ site.srcset_project[forloop.index0] }}/{{ page.image[0].src }} {{ site.srcset_project[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+  >{% elsif page.option contains 'sample-svg' %}<img
+    class="project-image" src="{{ site.image-url }}/index/{{ page.image[0].src }}">{% else %}<img
+    class="project-image" src="{{ site.image-url }}/{{ page.image[0].src }}">{% endif %}
+  <div class="project-meta">
+    <p class="p-summary project-summary">{{ page.description }}</p>
+    <p class="project-description">This project was originally completed <time class="dt-published" datetime="{{ page.date }}">{{ page.date | date: '%Y-%m-%d' }}</time>{% if page.period %} and worked on from {{ page.period }}{% endif %}.{% if page.project.license %} Licensed <a href="{{ page.project.license.url }}">{{ page.project.license }}</a>.{% endif %}</p>
+    {% if page.project %}{% else %}<p>No public source or link is available for this project.</p>{% endif %}
+    {% if page.project %}
+    <div class="project-nav">
+      {% if page.project.url %}<a class="project-nav-action--url project-nav-action" href="{{ page.project.url }}">View it live</a>{% endif %}
+      {% if page.project.source %}<a class="project-nav-action--source project-nav-action" href="{{ page.project.source }}">View project source</a>{% elsif page.project.download %}<a class="project-nav-action--source project-nav-action" href="{{ page.project.download }}">Download project {% if page.project.filetype %}({{ page.project.filetype }}){% endif %}</a>{% endif %}
+    </div>
+  </div>
+  {% endif %}
+</article>
+{% endif %}

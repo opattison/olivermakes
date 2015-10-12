@@ -1,0 +1,16 @@
+    <figure class="hero">
+      {% if page.option contains 'srcset' %}<img
+        src="{{ site.image-url }}/{{ page.image[0].src }}"
+        sizes="{{ site.wide-sizes }}"
+        srcset="{% for srcset1440 in site.srcset1440%}{{ site.image-url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[0].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+        alt="{{ page.image[0].alt }}"
+      >{% else %}
+      <img
+        src="{{ site.image-url }}/{{ page.image[0].src }}"
+        alt="{{ page.image[0].alt }}"
+      >
+      {% endif %}
+      {% if page.image[0].caption %}
+      <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
+      {% endif %}
+    </figure>

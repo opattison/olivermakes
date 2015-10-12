@@ -60,7 +60,7 @@ This is “feature” text, used for emphasis and attention in storytelling.
 
 ### Figure+image
 
-<figure class="narrow">
+<figure class="image--narrow">
   <img
     src="{{ site.image-url }}/{{ page.image[1].src }}"
     sizes="{{ site.wide-sizes }}"  
@@ -72,7 +72,7 @@ This is “feature” text, used for emphasis and attention in storytelling.
 
 ### Figure+image `.wide`
 
-<figure class="wide">
+<figure class="image--wide">
   <img
     src="{{ site.image-url }}/{{ page.image[1].src }}"
     sizes="{{ site.wide-sizes }}"  
@@ -84,7 +84,7 @@ This is “feature” text, used for emphasis and attention in storytelling.
 
 ### Figure+image `grid` block
 
-<div class="grid">
+<div class="grid grid--wide">
   <figure class="grid-figure">
     <img
       src="{{ site.image-url }}/{{ page.image[1].src }}"

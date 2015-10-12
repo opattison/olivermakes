@@ -13,42 +13,42 @@
 }
 
 @media screen and (min-width: 80em) {
-  .core-body,
-  .core-header,
-  .core-footer {
+  .content,
+  .title,
+  .footer {
     flex: 0 0 54em;
   }
 
-  .core-header {
+  .title {
     padding-left: 9em;
     padding-right: 9em;
   }
 
-  .core-body {
+  .content {
     margin: 0 auto;
     padding: 2em 9em 4.5em;
   }
 
-  .wide {
+  .image--wide {
     margin: 5% calc(-9em) 0;
     max-width: none;
     width: calc(100% + 18em);
   }
 
-  .flow-side {
+  .flow--side {
     padding: 0 4.25em 0 0;
     position: relative;
     margin-top: 1.25em;
     width: 75%;
   }
 
-  .flow-side > figure {
+  .flow--side > figure {
     margin: 1.25em 0 0 -9em;
     max-width: none;
     width: calc(100% + 9em);
   }
 
-  .flow-side figcaption p {
+  .flow--side figcaption p {
     font-size: .875em;
   }
 
@@ -64,7 +64,7 @@
     width: 100%;
   }
 
-  .flow-side > .ancillary {
+  .flow--side > .ancillary {
     margin-top: 0;
     position: absolute;
     right: -75%;
@@ -72,7 +72,7 @@
     width: 100%;
   }
 
-  .flow-side > figure + .ancillary {
+  .flow--side > figure + .ancillary {
     top: 25%;
   }
 

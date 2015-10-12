@@ -4,17 +4,18 @@
 
 <body class="category--{{ page.title | downcase }} category">
 
-{% include l-header.html %}
+{% include container/banner.html %}
+{% include block/menu.html %}
 
   <section class="index">
 
-{% include l-index/heading.html %}
+{% include block/heading.html %}
 
 {{ content }}
 
   </section>
 
-{% include l-footer.html %}
+{% include container/end.html %}
 
 </body>
 </html>

@@ -1,0 +1,20 @@
+.ancillary {
+  @include bleed-right(1em);
+}
+
+.ancillary h1 {
+  font-weight: 500;
+  font-size: 1.25em;
+  line-height: 1.125;
+}
+
+.ancillary h2 {
+  font-weight: 400;
+  font-size: 1.125em;
+  line-height: 1.25;
+}
+
+.ancillary img {
+  max-width: none;
+  width: calc(100% + 1em);
+}

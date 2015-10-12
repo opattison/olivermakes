@@ -1,0 +1,29 @@
+/* Block of text and images for a project summary */
+.project {
+  min-height: 15em;
+  padding: 1em;
+}
+
+.project-meta {
+  margin-top: 1em;
+}
+
+.project-summary {
+  font-size: 1.125em;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.33333333;
+}
+
+.project-description {
+  font-size: .875em;
+}
+
+.project-nav {
+  display: flex;
+}
+
+.project-nav-action {
+  @include action;
+  flex: 1 0 50%;
+}

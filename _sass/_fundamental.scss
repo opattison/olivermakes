@@ -1,0 +1,255 @@
+html {
+  font: 400 16px/1.4375 $ratio;
+  font: 400 1rem/1.4375 $ratio;
+     -moz-font-feature-settings: 'liga', 'dlig';
+      -ms-font-feature-settings: 'liga', 'dlig';
+       -o-font-feature-settings: 'liga', 'dlig';
+  -webkit-font-feature-settings: 'liga', 'dlig';
+          font-feature-settings: 'liga', 'dlig';
+  font-variant-ligatures: common-ligatures;
+  text-rendering: optimizeLegibility;
+}
+
+strong,
+b {
+  font-weight: 500;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+dfn {
+  font-style: normal;
+  font-weight: 500;
+}
+
+cite {
+  font-style: normal;
+}
+
+small {
+  font-size: .75em;
+}
+
+/* Headings */
+
+h1,
+h2 {
+  line-height: 1.125;
+  letter-spacing: -.0125em;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+h3,
+h4 {
+  line-height: 1.25;
+}
+
+h3,
+h4,
+h5 {
+  font-weight: 300;
+}
+
+h4,
+h5 {
+  font-style: italic;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+h5 {
+  font-size: 1.125em;
+  line-height: 1.375;
+}
+
+/* Axiomatic spacing */
+
+p + *,
+* + p,
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + ul,
+* + ol {
+  margin-top: 1em;
+}
+
+/* Links */
+
+a {
+  transition-duration: 320ms;
+  transition-property: color, background-color, border-bottom;
+  transition-timing-function: cubic-bezier(0,1,1,1);
+}
+
+a:hover,
+a:focus {
+  transition-duration: 160ms;
+}
+
+/* Lists */
+
+ul,
+ol {
+  list-style-position: inside;
+  padding: 0;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ul ul,
+ol ol {
+  margin: .5em 1em;
+}
+
+article ol {
+  counter-reset: ordered-list;
+  list-style-type: none;
+}
+
+article ol ol {
+  counter-reset: ordered-list-sub;
+}
+
+article ol ol ol {
+  counter-reset: ordered-list-sub-sub;
+}
+
+article ol li {
+  counter-increment: ordered-list;
+}
+
+article ol ol li {
+  counter-increment: ordered-list-sub;
+}
+
+article ol ol ol li {
+  counter-increment: ordered-list-sub-sub;
+}
+
+article ol li::before {
+  content: counter(ordered-list) ':';
+  font-weight: bolder;
+  margin-right: .25em;
+}
+
+article ol ol li::before {
+  content: counter(ordered-list) '.' counter(ordered-list-sub) ':';
+}
+
+article ol ol ol li::before {
+  content: counter(ordered-list) '.' counter(ordered-list-sub) '.' counter(ordered-list-sub-sub) ':';
+}
+
+li {
+  margin-top: .5em;
+}
+
+/* Blockquotes */
+
+blockquote {
+  border-left: solid .25em;
+  margin: 2em 0 2em -1em;
+  padding-left: .75em;
+}
+
+blockquote footer {
+  font-size: .875em;
+  margin-top: 1em;
+  text-align: right;
+}
+
+/* Footnotes */
+
+sup[id] {
+  margin: 0 .125em;
+  top: 0;
+}
+
+sup[id] a {
+  border: 0;
+  border-radius: .125em;
+  font-weight: 400;
+  padding: 0 .25em;
+}
+
+sup[id] a:hover,
+sup[id] a:focus {
+  border: 0;
+}
+
+sup[id] a::before {
+  content: 'note ';
+}
+
+/* Figcaptions */
+
+figcaption {
+  margin: 0 0 .5em;
+  padding: .25em 1em;
+}
+
+figcaption p {
+  font-size: .875em;
+  margin: 0;
+}
+
+/* Inline styles */
+
+hr {
+  border: 0;
+  height: .2em;
+  margin: 2em 0;
+}
+
+code,
+samp {
+  font: 400 .8125em/1.4375 $source-code-pro;
+  white-space: pre-wrap;
+}
+
+p > code,
+li > code,
+samp {
+  border: solid 1px ;
+  border-radius: .25em;
+  margin: 0 -.03125em;
+  padding: .0625em .25em 0;
+}
+
+kbd > kbd {
+  border-radius: .25em;
+  font: 400 .8125em/1 $open-sans;
+  padding: .0625em .5em;
+}
+
+kbd > kbd + b {
+  font-family: $ratio;
+  margin: 0 -.375em;
+} /* <kbd><kbd>cmd</kbd> <b class="kbd-plus">+</b> <kbd>C</kbd></kbd> */
+
+mark {
+  padding: .0625em;
+}
