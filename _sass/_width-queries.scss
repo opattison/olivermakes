@@ -1,7 +1,7 @@
 @media screen and (min-width: 22.5em) {
   .content,
   .core-title,
-  .footer,
+  .core-footer,
   .credits {
     font-size: 1.0625em;
   }
@@ -10,7 +10,7 @@
 @media screen and (min-width: 28em) {
   .content,
   .core-title,
-  .footer,
+  .core-footer,
   .credits {
     font-size: 1.125em;
   }
@@ -195,7 +195,7 @@
 
   .content,
   .core-title,
-  .footer,
+  .core-footer,
   .credits {
     font-size: 1.25em;
   }
@@ -294,7 +294,7 @@
 
   .content,
   .core-title,
-  .footer {
+  .core-footer {
     flex: 0 0 36em;
     margin: auto;
     max-width: 36em;
@@ -305,7 +305,7 @@
     padding-bottom: 2em;
   }
 
-  .footer {
+  .core-footer {
     height: 4em;
   }
 
@@ -384,7 +384,7 @@
 
   .content,
   .core-title,
-  .footer {
+  .core-footer {
     flex: 0 0 45em;
     max-width: 45em;
   }
@@ -564,7 +564,7 @@
 
   .content,
   .core-title,
-  .footer {
+  .core-footer {
     flex: 0 0 54em;
     max-width: 54em;
   }
@@ -618,7 +618,7 @@
 @media screen and (min-width: 95em) {
   .content,
   .core-title,
-  .footer,
+  .core-footer,
   .hero,
   .credits {
     font-size: 1.5em;
@@ -657,7 +657,7 @@
 @media screen and (min-width: 115em) {
   .content,
   .core-title,
-  .footer,
+  .core-footer,
   .hero {
     font-size: 1.75em;
   }

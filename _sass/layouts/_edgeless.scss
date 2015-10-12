@@ -17,7 +17,7 @@
   text-align: center;
 }
 
-.footer {
+.core-footer {
   margin: 2em auto 0;
 }
 
@@ -36,7 +36,7 @@
 }
 
 @media screen and (min-width: 45em) {
-  .footer {
+  .core-footer {
     margin: 2em auto 0;
   }
 }
@@ -64,7 +64,7 @@
     font-size: .875em;
   }
 
-  .footer {
+  .core-footer {
     max-width: 45em;
   }
 
@@ -102,7 +102,7 @@
     width: calc(100% + 24em);
   }
 
-  .footer,
+  .core-footer,
   .meta {
     max-width: none;
   }
