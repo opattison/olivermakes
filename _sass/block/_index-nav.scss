@@ -1,11 +1,11 @@
 /* Links to archives */
 .index-nav {
-  @include action;
   margin-top: 1em;
   width: 100%;
   display: flex;
 }
 
 .index-nav-action {
+  @include action;
   width: 100%;
 }
