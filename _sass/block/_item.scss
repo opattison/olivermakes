@@ -70,8 +70,10 @@
   background-color: $gray00;
 }
 
-.item:nth-child(2n + 2) .item-action:hover {
+.item:nth-child(2n + 2) .item-action:hover,
+.item:nth-child(2n + 2) .item-action:focus {
   background-color: $whiter;
+  color: $gray00;
 }
 
 .item--feature-action {
