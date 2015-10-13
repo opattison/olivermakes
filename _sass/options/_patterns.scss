@@ -82,7 +82,7 @@
 .pattern-meta summary:hover,
 .pattern-meta summary:focus {
   background-color: $blue;
-  outline: none;
+  cursor: pointer;
 }
 
 .pattern-meta figure {
