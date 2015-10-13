@@ -1,16 +1,8 @@
   <!-- styles -->
-{% capture patterns %}{% include style/patterns.scss %}{% endcapture %}
-{% capture dark %}{% include style/dark.scss %}{% endcapture %}
-{% capture error %}{% include style/404.scss %}{% endcapture %}
-
-  <link rel="stylesheet" href="/main.css">
-  {% if page.option contains 'patterns' %}<style>{{ patterns | scssify | autoprefix }}</style>{% endif %}
-  {% if page.option contains 'dark' %}<style>{{ dark | scssify | autoprefix }}</style>{% endif %}
-  {% if page.option contains 'error' %}<style>{{ error | scssify | autoprefix }}</style>{% endif %}
+  <link rel="stylesheet" href="{{ site.style-url }}/main.css">
+  {% if page.option contains 'patterns' %}<link rel="stylesheet" href="{{ site.style-url }}/patterns.css">{% endif %}
+  {% if page.option contains 'dark' %}<link rel="stylesheet" href="{{ site.style-url }}/dark.css">{% endif %}
+  {% if page.option contains 'error' %}<link rel="stylesheet" href="{{ site.style-url }}/404.css">{% endif %}
+  {% if page.layout == 'edgeless' %}<link rel="stylesheet" href="{{ site.style-url }}/edgeless.css">{% endif %}
+  {% if page.layout == 'dubbel' %}<link rel="stylesheet" href="{{ site.style-url }}/dubbel.css">{% endif %}
   {% if page.option contains 'custom-css' %}<link rel="stylesheet" href="{{ site.style-url }}/{{ page.custom-css }}">{% endif %}
-
-{% capture edgeless %}{% include style/edgeless.scss %}{% endcapture %}
-{% capture dubbel %}{% include style/dubbel.scss %}{% endcapture %}
-
-  {% if page.layout == 'edgeless' %}<style>{{ edgeless | scssify | autoprefix }}</style>{% endif %}
-  {% if page.layout == 'dubbel' %}<style>{{ dubbel | scssify | autoprefix }}</style>{% endif %}

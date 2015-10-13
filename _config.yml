@@ -39,7 +39,6 @@ gems:
   - jekyll-archives
   - sass
   - octopress-autoprefixer
-  - autoprefixer-rails
 
 ## Markdown configuration
 markdown: kramdown
@@ -79,12 +78,12 @@ exclude: [s3_website.yml, Rakefile]
 ## Configuration URLs
 domain: olivermak.es
 url: http://olivermak.es
-patterns-url: http://olivermak.es/patterns
-image-url: http://static.olivermak.es/images
-icon-url: http://static.olivermak.es/icons
-style-url: http://static.olivermak.es/style
-script-url: http://static.olivermak.es/scripts
-fragments-url: http://static.olivermak.es/fragments
+patterns-url: /patterns
+image-url: /resources/images
+icon-url: /resources/icons
+style-url: /resources/style
+script-url: /resources/scripts
+fragments-url: /resources/fragments
 source-url:
   repo: https://github.com/opattison/olivermakes
   blob: https://github.com/opattison/olivermakes/blob/master
