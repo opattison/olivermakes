@@ -73,7 +73,7 @@
 }
 
 .pattern-meta summary {
-  background-color: $gray03;
+  background-color: $violet;
   color: $whiter;
   padding: 1em;
   transition: all 160ms;
@@ -81,7 +81,7 @@
 
 .pattern-meta summary:hover,
 .pattern-meta summary:focus {
-  background-color: $blue;
+  background-color: $green;
   cursor: pointer;
 }
 

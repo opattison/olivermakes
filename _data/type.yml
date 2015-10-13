@@ -1,5 +1,4 @@
 # samples of type
-
 alphabet:
   upper: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
   lower: 'abcdefghijklmnopqrstuvwxyz'
