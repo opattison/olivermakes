@@ -27,7 +27,7 @@ end
 desc "build and deploy scripts, images and site to development servers via s3_website"
 task :dev do
   puts "## Concatenating JavaScript ##"
-  system "uglifyjs resources/scripts/velocity.js static/resources/velocity.ui.js resources/scripts/site.js --comments -b -o static/resources/all.min.js"
+  system "uglifyjs resources/scripts/velocity.js resources/scripts/velocity.ui.js resources/scripts/site.js --comments -b -o resources/scripts/all.min.js"
   system "jekyll build --config _config.yml,_config-dev.yml"
   system "s3_website push --site #{local_site}"
   puts "## Deployed site to S3 ##"

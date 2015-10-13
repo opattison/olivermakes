@@ -26,7 +26,7 @@
 - GitHub for version control
 - TypeKit for fonts: 300, 400 and 500 weights of [the Ratio typeface](http://cargocollective.com/pstype/Ratio) and 400 weight of [Source Code Pro](http://adobe-fonts.github.io/source-code-pro/)) are [hosted by Typekit](https://typekit.com/colophons/ojm0eig)
 - `flexbox` for flexible CSS layout.
-- Responsive images using `srcset` HTML specification and the [respimage](https://github.com/aFarkas/respimage) polyfill
+- Responsive images using `srcset`
 - Processing of archives with the [jekyll-archives](https://github.com/jekyll/jekyll-archives) gem
 - MapBox for maps
 - No templates, frameworks, ~~pre-processors~~ or boilerplate (now using SCSS for minification and some variables)
@@ -47,8 +47,8 @@
 ### Front-end
 
 - [loadJS](https://github.com/filamentgroup/loadJS) 0.2
-- [respimage](https://github.com/aFarkas/respimage) 1.3.0
 - [Velocity.js](http://julian.com/research/velocity/) 1.2.2
+- [typekit-cache](https://github.com/morris/typekit-cache)
 
 ## License
 
