@@ -34,7 +34,6 @@ small {
 }
 
 /* Headings */
-
 h1,
 h2 {
   line-height: 1.125;
@@ -81,7 +80,6 @@ h5 {
 }
 
 /* Axiomatic spacing */
-
 p + *,
 * + p,
 * + h1,
@@ -95,7 +93,6 @@ p + *,
 }
 
 /* Links */
-
 a {
   transition-duration: 320ms;
   transition-property: color, background-color, border-bottom;
@@ -108,7 +105,6 @@ a:focus {
 }
 
 /* Lists */
-
 ul,
 ol {
   list-style-position: inside;
@@ -168,7 +164,6 @@ li {
 }
 
 /* Blockquotes */
-
 blockquote {
   border-left: solid .25em;
   margin: 2em 0 2em -1em;
@@ -205,7 +200,6 @@ sup[id] a::before {
 }
 
 /* Figcaptions */
-
 figcaption {
   margin: 0 0 .5em;
   padding: .25em 1em;
@@ -217,7 +211,6 @@ figcaption p {
 }
 
 /* Inline styles */
-
 hr {
   border: 0;
   height: .2em;
@@ -233,7 +226,7 @@ samp {
 p > code,
 li > code,
 samp {
-  border: solid 1px ;
+  border: solid 1px;
   border-radius: .25em;
   margin: 0 -.03125em;
   padding: .0625em .25em 0;
