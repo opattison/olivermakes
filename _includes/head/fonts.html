@@ -1,5 +1,15 @@
+  <!-- Loading via https://github.com/morris/typekit-cache -->
+  <script>
+    !function(e,t,n,a,r,s,l,p){n&&(s=n[a],s&&(l=e.createElement("style"),l.innerHTML=s,e.getElementsByTagName("head")[0].appendChild(l)),p=t.setAttribute,t.setAttribute=function(e,l,u,i){"string"==typeof l&&l.indexOf(r)>-1&&(u=new XMLHttpRequest,u.open("GET",l,!0),u.onreadystatechange=function(){4===u.readyState&&(i=u.responseText.replace(/url\(\//g,"url("+r+"/"),i!==s&&(n[a]=i))},u.send(null),t.setAttribute=p,s)||p.apply(this,arguments)})}(document,Element.prototype,localStorage,"tk","https://use.typekit.net");
+  </script>
   <!-- fonts via Typekit https://typekit.com/colophons/ojm0eig -->
-  {% if page.option contains 'code' %}<script src="//use.typekit.net/ojm0eig.js"></script> 
-  {% comment %} 'olivermakes code' – includes Source Code Pro and Ratio {% endcomment %}
-  {% else %}<script src="//use.typekit.net/hro5wuc.js"></script>{% comment %} 'olivermakes' – only includes Ratio {% endcomment %}{% endif %}
-  <script>try{Typekit.load();}catch(e){}</script>
+  <script>
+    (function(d) {
+      var config = {
+        {% if page.option contains 'code' %}kitId: 'ojm0eig',{% else %}kitId: 'hro5wuc',{% endif %}
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
