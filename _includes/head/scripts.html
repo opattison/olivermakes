@@ -13,7 +13,4 @@
     	return script;
     };
     loadJS('{{ site.script-url }}/all.min.js');
-    {% if page.option contains 'srcset' %}
-    loadJS('{{ site.script-url }}/respimage.min.js');
-    {% endif %}
   </script>
