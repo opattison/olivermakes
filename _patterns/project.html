@@ -4,15 +4,15 @@ use: 'Block of text and images for a project summary with actions for source and
 restriction: 'Only on project pages.'
 spec: 'Different color from body text, with block links to a project source, link, or download. When no link is available, no links are included. Generated automatically on project pages with Liquid.'
 type: html
+category: component
 ---
 
 <article class="project">
   <img
     class="project-image"
     sizes="(min-width: 115em) 756px, (min-width: 90em) 648px, (min-width: 70em) 540px, (min-width: 60em) 740px, (min-width: 45em) 620px, (min-width: 30em) calc(100vw - 4em), calc(100vw - 2em)"
-    src="http://dev.static.olivermak.es/images/2014-12-01-pattern-primer-project-feature-screen.png"
-    srcset="http://dev.static.olivermak.es/images/480/2014-12-01-pattern-primer-project-feature-screen.png 480w, http://dev.static.olivermak.es/images/720/2014-12-01-pattern-primer-project-feature-screen.png 720w, http://dev.static.olivermak.es/images/1080/2014-12-01-pattern-primer-project-feature-screen.png 1080w"
-  >
+    src="{{ site.image-url }}/2014-12-01-pattern-primer-project-feature-screen.png"
+    srcset="{{ site.image-url }}/480/2014-12-01-pattern-primer-project-feature-screen.png 480w, {{ site.image-url }}/720/2014-12-01-pattern-primer-project-feature-screen.png 720w, {{ site.image-url }}/1080/2014-12-01-pattern-primer-project-feature-screen.png 1080w">
   <div class="project-description">
     <p class="p-summary project-summary">A pattern documentation tool for designing websites, based on Jeremy Keith’s Pattern Primer.</p>
     <p>This project was originally completed <time class="dt-published" datetime="2013-07-21 12:34:00 -0400">2013-07-21</time>.</p>
