@@ -6,4 +6,5 @@
   font-family: sans-serif;
   margin-top: 1em;
   padding: 1em;
+  @include bleed(1em);
 }
