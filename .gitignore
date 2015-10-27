@@ -2,4 +2,5 @@ _site
 .DS_Store
 .bundle/
 .sass-cache
+.jekyll-metadata
 all.min.js

@@ -36,8 +36,8 @@
 
 ### Configuration
 
-- [Jekyll](http://jekyllrb.com) >2.5.3
-- [jekyll-archives](https://github.com/jekyll/jekyll-archives) >2.0.0
+- [Jekyll](http://jekyllrb.com) >3.0
+- [jekyll-archives](https://github.com/jekyll/jekyll-archives) >2.0.0 (using master branch on GitHub)
 - [rouge](https://github.com/jneen/rouge) >1.7.4
 - [sass](https://github.com/sass/sass) >3.4.12
 - [uglifier](https://github.com/lautis/uglifier) >2.7.1
