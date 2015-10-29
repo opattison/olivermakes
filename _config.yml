@@ -38,13 +38,13 @@ collections:
 gems:
   - jekyll-archives
   - sass
-  - octopress-autoprefixer
 
 ## Markdown configuration
 markdown: kramdown
+highlighter: rouge
 kramdown:
   input: GFM
-  syntax_highlighter: rouge
+  footnote_backlink: '&#8638;'
 
 ## Permalink configuration
 permalink: /:year/:month/:title/
