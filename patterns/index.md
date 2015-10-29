@@ -1,6 +1,6 @@
 ---
 title: 'Patterns'
-layout: edgeless
+layout: category
 option:
   - code
   - code-block
@@ -20,6 +20,9 @@ image:
 
 ---
 
-- [Text](/patterns/text/)
-- [Components](/patterns/components/)
-- [Color](/patterns/color/)
+{% assign items = site.data.pattern_items %}
+{% for item in items %}
+{% include block/item--pattern.html %}
+{% endfor %}
+
+{% include block/index-nav--pattern.html %}

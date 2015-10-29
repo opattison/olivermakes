@@ -1,0 +1,12 @@
+- title: 'Color'
+  src: 'color'
+  image: 2015-10-29-patchwork-270deg.svg
+  summary: 'All of the colors and shades used on this site, with code and specification for each.'
+- title: 'Text'
+  src: 'text'
+  image: 2015-10-29-ratio-sample.png
+  summary: 'All of the typography on this site, including sample applications of each of the basic typographic forms on the site.'
+- title: 'Component'
+  src: 'component'
+  image: '2015-10-29-navigation-pattern.svg'
+  summary: 'All “block”-level patterns on this site, including grids, images, and summary items.'

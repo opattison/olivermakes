@@ -2,6 +2,15 @@
 ---
 @import 'variables';
 
+
+.item--pattern {
+  background-color: transparent;
+}
+
+.item--pattern-description {
+  height: 12em;
+}
+
 .edgeless {
   background-color: $whiter;
 }

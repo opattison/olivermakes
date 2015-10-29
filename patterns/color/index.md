@@ -1,5 +1,5 @@
 ---
-title: 'Patterns – Color'
+title: 'Color Patterns'
 layout: edgeless
 option:
   - code

@@ -1,5 +1,5 @@
 ---
-title: 'Patterns – Components'
+title: 'Component Patterns'
 layout: edgeless
 option:
   - code
