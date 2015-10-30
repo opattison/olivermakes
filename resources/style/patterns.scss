@@ -1,7 +1,24 @@
 ---
 ---
 @import 'variables';
+@import 'mixins';
 
+.primer--pattern {
+  background-color: $gray07;
+  color: $gray01;
+  margin-top: 1em;
+}
+
+.primer--pattern a {
+  color: $boldred;
+
+  &:hover,
+  &:focus {
+    color: $darkblue;
+  }
+  
+  @include a-underline;
+}
 
 .item--pattern {
   background-color: transparent;

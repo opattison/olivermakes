@@ -20,6 +20,8 @@ image:
 
 ---
 
+{% include block/primer--pattern.html %}
+
 {% assign items = site.data.pattern_items %}
 {% for item in items %}
 {% include block/item--pattern.html %}
