@@ -16,7 +16,7 @@
   &:focus {
     color: $darkblue;
   }
-  
+
   @include a-underline;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .item--pattern-description {
-  height: 12em;
+  height: 14em;
 }
 
 .edgeless {
