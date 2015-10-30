@@ -1,3 +1,4 @@
+# as-yet unused colors that match the theme
 - name: purple
   hsl: 'hsla(285, 25%, 40%, 1)'
   hex: '#734d80'

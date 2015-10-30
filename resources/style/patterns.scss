@@ -1,6 +1,32 @@
 ---
 ---
 @import 'variables';
+@import 'mixins';
+
+.primer--pattern {
+  background-color: $gray07;
+  color: $gray01;
+  margin-top: 1em;
+}
+
+.primer--pattern a {
+  color: $boldred;
+
+  &:hover,
+  &:focus {
+    color: $darkblue;
+  }
+
+  @include a-underline;
+}
+
+.item--pattern {
+  background-color: transparent;
+}
+
+.item--pattern-description {
+  height: 14em;
+}
 
 .edgeless {
   background-color: $whiter;
@@ -75,7 +101,7 @@
 }
 
 .pattern-meta summary {
-  background-color: $gray03;
+  background-color: $violet;
   color: $whiter;
   padding: 1em;
   transition: all 160ms;
@@ -83,8 +109,8 @@
 
 .pattern-meta summary:hover,
 .pattern-meta summary:focus {
-  background-color: $blue;
-  outline: none;
+  background-color: $green;
+  cursor: pointer;
 }
 
 .pattern-meta figure {
@@ -113,6 +139,7 @@
 
 .pattern-meta figcaption p {
   font-size: .875em;
+  margin-top: 1em;
   text-align: left;
 }
 

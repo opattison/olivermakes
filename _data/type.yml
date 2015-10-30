@@ -1,5 +1,4 @@
 # samples of type
-
 alphabet:
   upper: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
   lower: 'abcdefghijklmnopqrstuvwxyz'
@@ -7,4 +6,4 @@ numerals: '0123456789'
 characters:
   sample: '{[(“‘-!?@&$#*–,.;:—’”)]}'
 prose:
-  zephyrs: 'The five bad quacking zephyrs officiously jolt my floating waxen effigy. We take this past the line length to show the length of a line.'
+  zephyrs: 'The five bad quacking zephyrs officiously jolt my floating waxen effigy. This sentence makes the paragraph long enough to break.'

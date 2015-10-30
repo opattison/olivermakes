@@ -1,0 +1,5 @@
+{%  assign patterns = site.patterns | where: 'category', 'text' | sort: 'priority', 'last' %}
+
+{% for pattern in patterns %}
+{% include block/pattern--element.html %}
+{% endfor %}

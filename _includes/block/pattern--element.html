@@ -1,13 +1,15 @@
 <section class="pattern pattern--element" id="{{ pattern.title | slugify }}">
   <div class="pattern-display">{{ pattern.content | markdownify }}</div>
   <details class="pattern-meta">
-    <summary><code>{{ pattern.title }}</code> details</summary>
+    <summary><code>{{ pattern.title }}</code></summary>
     <figure>
     {% if pattern.type == 'markdown' %}<h5>Markdown</h5>
     <textarea class="pattern-markdown">{{ pattern.content | xml_escape }}</textarea>{% endif %}
     <h5>HTML</h5>
     <textarea class="pattern-html">{{ pattern.content | markdownify | xml_escape }}</textarea>
-    <figcaption>{% if pattern.use %}{{ pattern.use | prepend:'**Usage:** ' | markdownify }}{% endif %}{% if pattern.restriction %}{{ pattern.restriction | prepend: '**Restrictions:** ' | markdownify }}{% endif %}{% if pattern.spec %}{{ pattern.spec | prepend:'**Specification:** ' | markdownify }}{% endif %}</figcaption>
+    <figcaption>{% if pattern.use %}{{ pattern.use | prepend:'**Usage:** ' | markdownify }}{% endif %}{% if pattern.restriction %}{{ pattern.restriction | prepend: '**Restrictions:** ' | markdownify }}{% endif %}{% if pattern.spec %}{{ pattern.spec | prepend:'**Specification:** ' | markdownify }}{% endif %}
+    </figcaption>
     </figure>
+
   </details>
 </section>
