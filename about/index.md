@@ -109,16 +109,16 @@ The fonts on the site (300, 400 and 500 weights of [the Ratio typeface](http://c
 
 ## Copyright
 
-All writing and photography on the site is my original work and is licensed under [Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC)]({{ site.link.attribution }}){:rel="license"}. All design and code is under conventional copyright (as opposed to CC-style “copyleft” copyright), but is available for fair use [on GitHub]({{ site.link.source }}){:rel="source"}. If you are looking at the repository, almost everything in the `_static` and `_posts` folders is CC BY-NC and the most of the rest of it is under copyright, where applicable.
+All writing and photography on the site is my original work and is licensed under [{{ site.license.long }} ({{ site.license.short }})]({{ site.link.attribution }}){:rel="license"}. All design and code is under conventional copyright (as opposed to CC-style “copyleft” copyright), but is available for fair use [on GitHub]({{ site.link.source }}){:rel="source"}. If you are looking at the repository, almost everything in the `_static` and `_posts` folders is {{ site.license.short }} and the most of the rest of it is under copyright, where applicable.
 
 I designed the site myself, so most of the source was written by me by hand. Exceptions where I derived inspiration or an approach from another source are noted inline. An example of copyright violation would be copying all of the source code outright and using it to make a public website that could be confused for this one.
 
 ### Attribution
 
-Proper CC BY-NC attribution with a link and credit would look like: **“The title” [Oliver Pattison]({{ site.url }}) [CC BY-NC]({{ site.link.attribution }})** or:
+Proper {{ site.license.short }} attribution with a link and credit would look like: **“The title” [Oliver Pattison]({{ site.url }}) [{{ site.license.short }}]({{ site.link.attribution }})** or:
 
 ```html
-“The title” <a href="{{ site.url }}">Oliver Pattison</a> <a href="{{ site.link.attribution }}">CC BY-NC</a>
+“The title” <a href="{{ site.url }}">Oliver Pattison</a> <a href="{{ site.link.attribution }}">{{ site.license.short }}</a>
 ```
 
 If you have any questions about licensing or use of content from the site, please [contact me by email](mailto:{{ site.author.email }}).

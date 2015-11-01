@@ -25,7 +25,7 @@ Looking back at my files and memories from my life so far, I find there are few 
 
 <figure class="right">
   <img
-    src="{{ site.image-url }}/{{ page.image[0].src }}" 
+    src="{{ site.image_url }}/{{ page.image[0].src }}" 
     alt="{{ page.image[0].alt }}"
   >
   <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>

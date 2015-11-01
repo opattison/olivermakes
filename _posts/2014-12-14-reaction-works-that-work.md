@@ -70,17 +70,17 @@ The latest issue has an more finished feel than the previous ones – each one i
 <div class="grid grid--wide">
   <figure class="grid-figure">
     <img
-      src="{{ site.image-url }}/{{ page.image[1].src }}"
+      src="{{ site.image_url }}/{{ page.image[1].src }}"
       sizes="{{ site.wide-sizes }}"
-      srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+      srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image_url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
       alt="{{ page.image[1].alt }}"
     >
   </figure>
   <figure class="grid-figure">
     <img
-      src="{{ site.image-url }}/{{ page.image[2].src }}"
+      src="{{ site.image_url }}/{{ page.image[2].src }}"
       sizes="{{ site.wide-sizes }}"
-      srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[2].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+      srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image_url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[2].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
       alt="{{ page.image[2].alt }}"
     >
   </figure>

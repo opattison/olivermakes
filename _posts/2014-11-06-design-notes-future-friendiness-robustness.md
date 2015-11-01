@@ -92,7 +92,7 @@ The trade-off is supposedly an easier user interface for editing and administrat
 
 <figure class="right svg">
   <img
-    src="{{ site.image-url }}/{{ page.image[0].src }}"
+    src="{{ site.image_url }}/{{ page.image[0].src }}"
     alt="{{ page.image[0].alt }}"
   >
   <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>

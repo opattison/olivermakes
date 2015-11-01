@@ -36,7 +36,7 @@ So how bad is it when code or any other long content breaks a layout? Here is wh
 
 <figure class="image--narrow screenshot">
   <img
-    src="{{ site.image-url }}/{{ page.image[1].src }}" 
+    src="{{ site.image_url }}/{{ page.image[1].src }}" 
     alt="{{ page.image[1].alt }}"
   >
 </figure>
@@ -45,7 +45,7 @@ Here is a sample with default values for `overflow-wrap`:
 
 <figure class="image--narrow screenshot">
   <img
-    src="{{ site.image-url }}/{{ page.image[2].src }}" 
+    src="{{ site.image_url }}/{{ page.image[2].src }}" 
     alt="{{ page.image[2].alt }}"
   >
 </figure>

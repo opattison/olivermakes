@@ -1,4 +1,4 @@
-  <article class="item--feature item" style="background-image: url({{ site.image-url }}/feature/{{ post.image[0].src }}); background-size: cover; background-position: 50%;">
+  <article class="item--feature item" style="background-image: url({{ site.image_url }}/feature/{{ post.image[0].src }}); background-size: cover; background-position: 50%;">
     <div class="item--feature-description item-description">
       <h1><a href="{{ post.url }}">{{ post.title | markdownify | p_escape }}</a></h1>
       <p class="p-summary item--feature-summary item-summary">{% if post.feature-description %}{{ post.feature-description }}{% else %}{{ post.description }}{% endif %}</p>

@@ -12,8 +12,8 @@ title: olivermak.es
   <author>
     <name>{{ site.author.name }}</name>
   </author>
-  <rights>CC BY-NC {{ site.author.name }}</rights>
-  
+  <rights>{{ site.license.short }} {{ site.author.name }}</rights>
+
   {% for post in site.posts %}
   <entry>
     <title>{{ post.title | strip_html | nbsp_escape }}</title>

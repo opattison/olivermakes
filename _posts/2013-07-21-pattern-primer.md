@@ -50,7 +50,7 @@ Pattern Primer ([as well as many other similar tools](http://styleguides.io/tool
 
 <figure class="image--narrow screenshot">
   <img
-    src="{{ site.image-url }}/{{ page.image[1].src }}"
+    src="{{ site.image_url }}/{{ page.image[1].src }}"
     alt="{{ page.image[1].alt }}"
   >
   <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>

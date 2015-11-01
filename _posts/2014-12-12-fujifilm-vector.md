@@ -44,7 +44,7 @@ To complement the metadata on my [photo pages](/photography/), I wanted accurate
 
 <figure class="image--wide svg light noedges">
   <img
-    src="{{ site.image-url }}/{{ page.image[0].src }}"
+    src="{{ site.image_url }}/{{ page.image[0].src }}"
     alt="{{ page.image[0].alt }}"
   >
   <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
@@ -53,14 +53,14 @@ To complement the metadata on my [photo pages](/photography/), I wanted accurate
 <div class="grid grid--wide">
   <figure class="grid-figure svg light noedges">
     <img
-      src="{{ site.icon-url }}/{{ page.image[1].src }}"
+      src="{{ site.icon_url }}/{{ page.image[1].src }}"
       alt="{{ page.image[1].alt }}"
     >
     <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
   </figure>
   <figure class="grid-figure svg dark noedges">
     <img
-      src="{{ site.icon-url }}/{{ page.image[2].src }}"
+      src="{{ site.icon_url }}/{{ page.image[2].src }}"
       alt="{{ page.image[2].alt }}"
     >
     <figcaption>{{ page.image[2].caption | markdownify }}</figcaption>
@@ -69,9 +69,9 @@ To complement the metadata on my [photo pages](/photography/), I wanted accurate
 
 <figure class="image--wide">
   <img
-    src="{{ site.image-url }}/{{ page.image[3].src }}"
+    src="{{ site.image_url }}/{{ page.image[3].src }}"
     sizes="{{ site.wide-sizes }}"
-    srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image-url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[3].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+    srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image_url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[3].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
     alt="{{ page.image[3].alt }}"
   >
   <figcaption>{{ page.image[3].caption | markdownify }}</figcaption>

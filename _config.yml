@@ -4,6 +4,10 @@ author:
   email: oliverpattison@gmail.com
 description: 'I am Oliver Pattison, a designer focused on the future of the web.'
 
+license:
+  short: 'CC BY-NC 4.0'
+  long: 'Creative Commons Attribution-NonCommercial 4.0 International'
+
 # Content
 
 ## Referenced URLs (internal and external links for inline use)
@@ -78,13 +82,13 @@ exclude: [s3_website.yml, Rakefile]
 ## Configuration URLs
 domain: olivermak.es
 url: http://olivermak.es
-patterns-url: /patterns
-image-url: /resources/images
-icon-url: /resources/icons
-style-url: /resources/style
-script-url: /resources/scripts
-fragments-url: /resources/fragments
-source-url:
+patterns_url: /patterns
+image_url: /resources/images
+icon_url: /resources/icons
+style_url: /resources/style
+script_url: /resources/scripts
+fragments_url: /resources/fragments
+source_url:
   repo: https://github.com/opattison/olivermakes
   blob: https://github.com/opattison/olivermakes/blob/master
   commits: https://github.com/opattison/olivermakes/commits/master
