@@ -11,5 +11,5 @@
   {% if page.image[0] and page.category == 'photography' %}<meta property="og:image" content="{{ site.image_url }}/720/{{ page.image[0].src }}">{% elsif page.image[0] and page.category != 'photography' %}<meta property="og:image" content="{{ site.image_url }}/{{ page.image[0].src }}">{% else %}<meta property="og:image" content="{{ site.icon_url }}/touchicon192.png">{% endif %}
   {% if page.description %}<meta property="og:description" content="{{ page.description }}">{% else %}<meta property="og:description" content="{{ site.description }}">{% endif %}
 
-  <meta name="google-site-verification" content="v50CkzaVPDL_gBaZnlGdxJmfnZDYCP74l1JTMgLsyp4" />
+  <meta name="google-site-verification" content="{{ site.google_verification }}" />
   <!-- but no Analytics! -->

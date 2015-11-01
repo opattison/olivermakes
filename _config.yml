@@ -120,3 +120,6 @@ srcset_project:
 ## Mapbox authentication and configuration
 mapbox-key: pk.eyJ1Ijoib3BhdHRpc29uIiwiYSI6Il9DU3p1MEkifQ.3cvRQB5hVIONMpDAflBUNw
 photo-mapid: opattison.942a5f69
+
+## Google site verification
+google_verification: v50CkzaVPDL_gBaZnlGdxJmfnZDYCP74l1JTMgLsyp4
