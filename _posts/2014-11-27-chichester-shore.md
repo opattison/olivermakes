@@ -11,7 +11,7 @@ tags:
 date: 2014-11-27 21:30
 updated: 2014-11-28 03:06
 drafted: 2014-03-23 12:34
-unique-id: 2014-03-23:chichester-shore
+unique_id: 2014-03-23:chichester-shore
 description: 'On a visit to Chichester in southern England, I visited the waterside at Bosham.'
 image:
   - src: 2014-03-23-chichester-sky-olivermakes-ccbync.jpg

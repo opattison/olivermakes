@@ -13,7 +13,7 @@ tags:
 date: 2012-03-06 9:00
 updated: 2015-02-23 16:06
 drafted: 2015-02-23 13:02
-unique-id: 2012-03-06:casey-trees-redesign
+unique_id: 2012-03-06:casey-trees-redesign
 period: 2011-11 to 2012-03
 description: 'My work on a redesign for an urban forestry non-profit, in the early days of responsive web design.'
 feature-description: 'Responsive design is about more than merely reaching a diversity of screens. This is my work on a redesign for an urban forestry non-profit, in the early days of responsive web design.'

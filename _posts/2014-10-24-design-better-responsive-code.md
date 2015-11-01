@@ -14,7 +14,7 @@ tags:
 date: 2014-10-24 16:15
 updated: 2015-03-02 18:38
 drafted: 2014-10-24 16:15
-unique-id: 2014-10-24:better-responsive-code
+unique_id: 2014-10-24:better-responsive-code
 description: 'A walkthrough of an approach to styling code blocks for responsive websites and technical documentation.'
 image:
   - src: 2014-11-26-hero-design-better-css-desat.png

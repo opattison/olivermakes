@@ -13,7 +13,7 @@ tags:
 date: 2014-11-06 09:17
 updated: 2014-12-12 02:44
 drafted: 2014-11-06 09:17
-unique-id: 2014-11-06:design-notes-future-friendliness
+unique_id: 2014-11-06:design-notes-future-friendliness
 description: 'A discussion about designing for the long term, covering HTML, independent publishing, and web hosting.'
 image:
   - src: 2014-12-12-futurefriendly.svg

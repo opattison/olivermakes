@@ -9,7 +9,7 @@ tags:
 date: 2015-02-21 20:52
 updated: 2015-02-21 20:52
 drafted: 2015-02-14 12:34
-unique-id: 2015-02-21:institutional-memory
+unique_id: 2015-02-21:institutional-memory
 description: 'Organizational knowledge can be fragile. This is a story about creating an archive at a non-profit.'
 
 ---

@@ -13,7 +13,7 @@ tags:
 date: 2014-12-19 23:14
 updated: 2014-12-20 11:31
 drafted: 2014-12-19 15:59
-unique-id: 2014-12-19:reading-driven-design
+unique_id: 2014-12-19:reading-driven-design
 description: 'On methods and reasons for designing with real content rather than <i>lorem ipsum</i>.'
 image:
   - src: 2015-02-21-paragraphs.svg
