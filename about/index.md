@@ -129,7 +129,7 @@ If you have any questions about licensing or use of content from the site, pleas
 
 Nearly every significant thing I read or look at is archived on **[Pinboard]({{ site.link.pinboard }}){:rel="me"}**. It is my external brain and my favorite thing on the web. It is as complete an archive as I can keep of my reading online.
 
-I am **[@olivermakes on Twitter]({{ site.link.twitter }}){:rel="me"}**.
+I am **[{{ site.author.twitter }} on Twitter]({{ site.link.twitter }}){:rel="me"}**.
 
 My open source code (including this site) is on **[GitHub]({{ site.link.github }}){:rel="me"}**.
 
