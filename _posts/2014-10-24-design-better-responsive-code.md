@@ -14,7 +14,7 @@ tags:
 date: 2014-10-24 16:15
 updated: 2015-03-02 18:38
 drafted: 2014-10-24 16:15
-unique-id: 2014-10-24:better-responsive-code
+unique_id: 2014-10-24:better-responsive-code
 description: 'A walkthrough of an approach to styling code blocks for responsive websites and technical documentation.'
 image:
   - src: 2014-11-26-hero-design-better-css-desat.png
@@ -36,7 +36,7 @@ So how bad is it when code or any other long content breaks a layout? Here is wh
 
 <figure class="image--narrow screenshot">
   <img
-    src="{{ site.image-url }}/{{ page.image[1].src }}" 
+    src="{{ site.image_url }}/{{ page.image[1].src }}" 
     alt="{{ page.image[1].alt }}"
   >
 </figure>
@@ -45,7 +45,7 @@ Here is a sample with default values for `overflow-wrap`:
 
 <figure class="image--narrow screenshot">
   <img
-    src="{{ site.image-url }}/{{ page.image[2].src }}" 
+    src="{{ site.image_url }}/{{ page.image[2].src }}" 
     alt="{{ page.image[2].alt }}"
   >
 </figure>

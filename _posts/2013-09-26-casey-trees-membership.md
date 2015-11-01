@@ -18,7 +18,7 @@ tags:
 date: 2013-09-26 15:52
 updated: 2014-12-17 15:52
 drafted: 2014-12-17 12:00
-unique-id: 2014-12-17:casey-trees-membership
+unique_id: 2014-12-17:casey-trees-membership
 period: 2013-07 to 2013-10
 description: 'The design and implementation of a non-profit’s new membership campaign page and donation form.'
 project:
@@ -79,21 +79,21 @@ One year after the redesign, it was becoming clear that this device detection so
 <div class="grid grid--wide">
   <figure class="grid-figure--33 grid-figure screenshot">
     <img
-      src="{{ site.image-url }}/{{ page.image[1].src }}"
+      src="{{ site.image_url }}/{{ page.image[1].src }}"
       alt="{{ page.image[1].alt }}"
     >
     <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
   </figure>
   <figure class="grid-figure--33 grid-figure screenshot">
     <img
-      src="{{ site.image-url }}/{{ page.image[2].src }}"
+      src="{{ site.image_url }}/{{ page.image[2].src }}"
       alt="{{ page.image[2].alt }}"
     >
     <figcaption>{{ page.image[2].caption | markdownify }}</figcaption>
   </figure>
   <figure class="grid-figure--33 screenshot">
     <img
-      src="{{ site.image-url }}/{{ page.image[3].src }}"
+      src="{{ site.image_url }}/{{ page.image[3].src }}"
       alt="{{ page.image[3].alt }}"
     >
     <figcaption>{{ page.image[3].caption | markdownify }}</figcaption>
@@ -111,13 +111,13 @@ For the main page that would explain the membership program and encourage visito
 <div class="grid grid--wide">
 <figure class="grid-figure--66 grid-figure screenshot">
   <img
-    src="{{ site.image-url }}/{{ page.image[4].src }}"
+    src="{{ site.image_url }}/{{ page.image[4].src }}"
     alt="{{ page.image[4].alt }}"
   >
 </figure>
 <figure class="grid-figure--33 grid-figure screenshot">
   <img
-    src="{{ site.image-url }}/{{ page.image[5].src }}"
+    src="{{ site.image_url }}/{{ page.image[5].src }}"
     alt="{{ page.image[5].alt }}"
   >
 </figure>

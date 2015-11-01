@@ -13,7 +13,7 @@ tags:
 date: 2014-12-15 11:01
 updated: 2014-12-15 11:01
 drafted: 2014-12-14 20:00
-unique-id: 2014-12-14:reaction-works-that-work
+unique_id: 2014-12-14:reaction-works-that-work
 description: 'Notes on an independent publication about design and creativity.'
 feature-description: 'At its best, a print magazine can be as valuable as a book. These are my notes on <i>Works That Work</i>, an independent publication about design and creativity.'
 image:
@@ -70,17 +70,17 @@ The latest issue has an more finished feel than the previous ones – each one i
 <div class="grid grid--wide">
   <figure class="grid-figure">
     <img
-      src="{{ site.image-url }}/{{ page.image[1].src }}"
+      src="{{ site.image_url }}/{{ page.image[1].src }}"
       sizes="{{ site.wide-sizes }}"
-      srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+      srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image_url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
       alt="{{ page.image[1].alt }}"
     >
   </figure>
   <figure class="grid-figure">
     <img
-      src="{{ site.image-url }}/{{ page.image[2].src }}"
+      src="{{ site.image_url }}/{{ page.image[2].src }}"
       sizes="{{ site.wide-sizes }}"
-      srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[2].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+      srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image_url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[2].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
       alt="{{ page.image[2].alt }}"
     >
   </figure>

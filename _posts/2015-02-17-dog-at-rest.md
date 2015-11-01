@@ -10,7 +10,7 @@ tags:
   - 'dog'
 date: 2015-02-17 19:25
 updated: 2015-02-17 19:25
-unique-id: 2015-02-17:dog-at-rest
+unique_id: 2015-02-17:dog-at-rest
 description: 'Our dog Sapphie loves relaxing on the couch, which makes her an easy subject.'
 image:
   - src: 2014-12-14-dog-at-rest-olivermakes-ccbync.jpg
@@ -33,8 +33,8 @@ image:
 
 <figure class="image--wide">
   <img
-    src="{{ site.image-url }}/{{ page.image[0].src }}"
+    src="{{ site.image_url }}/{{ page.image[0].src }}"
     sizes="{{ site.wide-sizes }}"
-    srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image-url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[0].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+    srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image_url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[0].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
     alt="{{ page.image[0].alt }}">
 </figure>

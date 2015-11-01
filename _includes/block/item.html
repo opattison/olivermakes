@@ -1,4 +1,4 @@
-  <article class="item"{% if post.option contains 'index-image' or post.category == 'photography' %} style="background-image: url({{ site.image-url }}/index/{{ post.image[0].src }}); background-size: cover; background-position: 50%;"{% endif %}>
+  <article class="item"{% if post.option contains 'index-image' or post.category == 'photography' %} style="background-image: url({{ site.image_url }}/index/{{ post.image[0].src }}); background-size: cover; background-position: 50%;"{% endif %}>
     <div class="item-description">
       <h1><a href="{{ post.url }}">{{ post.title | markdownify | p_escape }}</a></h1>
       <p class="p-summary item-summary">{{ post.description }}</p>

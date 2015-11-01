@@ -12,7 +12,7 @@ tags:
 date: 2014-12-05 22:01
 updated: 2014-12-05 01:28
 drafted: 2014-11-14 22:01
-unique-id: 2014-11-14:mount-pleasant
+unique_id: 2014-11-14:mount-pleasant
 description: 'Photos from a neighborhood in Washington, DC; processed with VSCO Film 04.'
 feature-description: 'These are some of my favorite photos from a walk around the Mount Pleasant neighborhood in January 2014, shot with a Fujifilm X-E2 and Fujinon XF35mmF1.4 R lens, re-processed with VSCO Film 04.'
 image:
@@ -63,26 +63,26 @@ image:
 
 <figure class="image--wide">
   <img
-    src="{{ site.image-url }}/{{ page.image[0].src }}"
+    src="{{ site.image_url }}/{{ page.image[0].src }}"
     sizes="{{ site.wide-sizes }}"
-    srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image-url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[0].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+    srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image_url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[0].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
     alt="{{ page.image[0].alt }}">
 </figure>
 
 <figure class="image--wide">
   <img
-    src="{{ site.image-url }}/{{ page.image[1].src }}"
+    src="{{ site.image_url }}/{{ page.image[1].src }}"
     sizes="{{ site.wide-sizes }}"
-    srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image-url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+    srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image_url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
     alt="{{ page.image[1].alt }}">
 </figure>
 
 
 <figure class="image--wide">
   <img
-    src="{{ site.image-url }}/{{ page.image[2].src }}"
+    src="{{ site.image_url }}/{{ page.image[2].src }}"
     sizes="{{ site.wide-sizes }}"
-    srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image-url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[2].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+    srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image_url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[2].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
     alt="{{ page.image[2].alt }}">
 </figure>
 

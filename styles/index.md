@@ -62,9 +62,9 @@ This is “feature” text, used for emphasis and attention in storytelling.
 
 <figure class="image--narrow">
   <img
-    src="{{ site.image-url }}/{{ page.image[1].src }}"
+    src="{{ site.image_url }}/{{ page.image[1].src }}"
     sizes="{{ site.wide-sizes }}"  
-    srcset="{% for srcset1440 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+    srcset="{% for srcset1440 in site.srcset1080 %}{{ site.image_url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
     alt="{{ page.image[1].alt }}"
   >
   <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
@@ -74,9 +74,9 @@ This is “feature” text, used for emphasis and attention in storytelling.
 
 <figure class="image--wide">
   <img
-    src="{{ site.image-url }}/{{ page.image[1].src }}"
+    src="{{ site.image_url }}/{{ page.image[1].src }}"
     sizes="{{ site.wide-sizes }}"  
-    srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image-url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+    srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image_url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
     alt="{{ page.image[1].alt }}"
   >
   <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
@@ -87,18 +87,18 @@ This is “feature” text, used for emphasis and attention in storytelling.
 <div class="grid grid--wide">
   <figure class="grid-figure">
     <img
-      src="{{ site.image-url }}/{{ page.image[1].src }}"
+      src="{{ site.image_url }}/{{ page.image[1].src }}"
       sizes="{{ site.wide-sizes }}"  
-      srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+      srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image_url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
       alt="{{ page.image[1].alt }}"
     >
     <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
   </figure>
   <figure class="grid-figure">
     <img
-      src="{{ site.image-url }}/{{ page.image[1].src }}"
+      src="{{ site.image_url }}/{{ page.image[1].src }}"
       sizes="{{ site.wide-sizes }}"  
-      srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+      srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image_url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
       alt="{{ page.image[1].alt }}"
     >
     <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
@@ -110,6 +110,6 @@ Text below a grid.
 ### Image (no `srcset`; no `<figure>`)
 
 <img
-  src="{{ site.image-url }}/{{ page.image[1].src }}"
+  src="{{ site.image_url }}/{{ page.image[1].src }}"
   alt="{{ page.image[1].alt }}"
 >

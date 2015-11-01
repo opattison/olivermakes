@@ -18,3 +18,5 @@ gzip:
 
 exclude_from_upload:
   - .DS_Store
+  - Gemfile
+  - Gemfile.lock

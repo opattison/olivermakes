@@ -13,7 +13,7 @@ tags:
 date: 2014-12-19 23:14
 updated: 2014-12-20 11:31
 drafted: 2014-12-19 15:59
-unique-id: 2014-12-19:reading-driven-design
+unique_id: 2014-12-19:reading-driven-design
 description: 'On methods and reasons for designing with real content rather than <i>lorem ipsum</i>.'
 image:
   - src: 2015-02-21-paragraphs.svg
@@ -41,9 +41,9 @@ My solution is to use writing that I want to read anyway. For me, that is my [In
 
 <figure class="screenshot image">
   <img
-    src="{{ site.image-url }}/{{ page.image[1].src }}" 
+    src="{{ site.image_url }}/{{ page.image[1].src }}" 
     sizes="{{ site.wide-sizes }}"
-    srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image-url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+    srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image_url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
     alt="{{ page.image[1].alt }}"
   >
   <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>

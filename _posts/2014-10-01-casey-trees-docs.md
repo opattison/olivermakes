@@ -13,7 +13,7 @@ tags:
 date: 2014-10-01 12:00
 updated: 2015-02-20 11:24
 drafted: 2015-02-18 16:20
-unique-id: 2015-02-19:casey-trees-docs
+unique_id: 2015-02-19:casey-trees-docs
 period: 2014-06 to 2014-10
 description: 'An archive of organizational knowledge about web design, strategy, and implementation for a non-profit.'
 image:
@@ -48,13 +48,13 @@ Unfortunately, the documents in the project contain proprietary information, so 
 <div class="grid grid--wide">
 <figure class="grid-figure--33 grid-figure screenshot">
   <img
-    src="{{ site.image-url }}/{{ page.image[1].src }}" 
+    src="{{ site.image_url }}/{{ page.image[1].src }}" 
     alt="{{ page.image[1].alt }}"
   >
 </figure>
 <figure class="grid-figure--66 grid-figure screenshot">
   <img
-    src="{{ site.image-url }}/{{ page.image[2].src }}" 
+    src="{{ site.image_url }}/{{ page.image[2].src }}" 
     alt="{{ page.image[2].alt }}"
   >
   <figcaption>{{ page.image[2].caption | markdownify }}</figcaption>

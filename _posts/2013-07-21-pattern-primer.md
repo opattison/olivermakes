@@ -14,7 +14,7 @@ tags:
 date: 2013-07-21 12:34
 updated: 2014-12-01 20:30
 drafted: 2014-12-01 12:40
-unique-id: 2014-11-30:pattern-primer
+unique_id: 2014-11-30:pattern-primer
 description: 'A pattern documentation tool for designing websites, based on Jeremy Keith’s Pattern Primer.'
 project:
   url: http://patternprimer.olivermak.es
@@ -50,7 +50,7 @@ Pattern Primer ([as well as many other similar tools](http://styleguides.io/tool
 
 <figure class="image--narrow screenshot">
   <img
-    src="{{ site.image-url }}/{{ page.image[1].src }}"
+    src="{{ site.image_url }}/{{ page.image[1].src }}"
     alt="{{ page.image[1].alt }}"
   >
   <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>

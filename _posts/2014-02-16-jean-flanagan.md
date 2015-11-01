@@ -17,7 +17,7 @@ tags:
 date: 2014-02-16 12:34
 updated: 2015-03-02 21:02
 drafted: 2014-12-03 17:10
-unique-id: 2014-02-16:jean-flanagan
+unique_id: 2014-02-16:jean-flanagan
 period: 2013-06 to present
 description: 'A personal website for a science education and communication specialist.'
 project: 
@@ -76,7 +76,7 @@ Designing in a browser meant that HTML prototypes were an early part of the proc
 
 <figure class="image--narrow screenshot">
   <img
-    src="{{ site.image-url }}/{{ page.image[1].src }}" 
+    src="{{ site.image_url }}/{{ page.image[1].src }}" 
     alt="{{ page.image[1].alt }}"
   >
   <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
@@ -84,7 +84,7 @@ Designing in a browser meant that HTML prototypes were an early part of the proc
 
 <figure class="image--narrow screenshot">
   <img
-    src="{{ site.image-url }}/{{ page.image[2].src }}" 
+    src="{{ site.image_url }}/{{ page.image[2].src }}" 
     alt="{{ page.image[2].alt }}"
   >
   <figcaption>{{ page.image[2].caption | markdownify }}</figcaption>
@@ -92,7 +92,7 @@ Designing in a browser meant that HTML prototypes were an early part of the proc
 
 <figure class="image--wide screenshot">
   <img
-    src="{{ site.image-url }}/{{ page.image[3].src }}" 
+    src="{{ site.image_url }}/{{ page.image[3].src }}" 
     alt="{{ page.image[3].alt }}"
   >
   <figcaption>{{ page.image[3].caption | markdownify }}</figcaption>
@@ -106,7 +106,7 @@ Jean takes [beautiful photos](http://jeancflanagan.com/photos/), which I wanted 
 
 <figure class="image--narrow screenshot">
   <img
-    src="{{ site.image-url }}/{{ page.image[4].src }}" 
+    src="{{ site.image_url }}/{{ page.image[4].src }}" 
     alt="{{ page.image[4].alt }}"
   >
 </figure>
@@ -116,13 +116,13 @@ Jean takes [beautiful photos](http://jeancflanagan.com/photos/), which I wanted 
 <div class="grid grid--wide">
   <figure class="grid-figure--33 grid-figure screenshot">
     <img
-      src="{{ site.image-url }}/{{ page.image[5].src }}" 
+      src="{{ site.image_url }}/{{ page.image[5].src }}" 
       alt="{{ page.image[5].alt }}"
     >
   </figure>
   <figure class="grid-figure--66 grid-figure screenshot">
     <img
-      src="{{ site.image-url }}/{{ page.image[6].src }}" 
+      src="{{ site.image_url }}/{{ page.image[6].src }}" 
       alt="{{ page.image[6].alt }}"
     >
   </figure>
@@ -132,7 +132,7 @@ Not every image is meant to be showcased, nor should every image overshadow the 
 
 <figure class="image--narrow screenshot">
   <img
-    src="{{ site.image-url }}/{{ page.image[7].src }}" 
+    src="{{ site.image_url }}/{{ page.image[7].src }}" 
     alt="{{ page.image[7].alt }}"
   >
   <figcaption>{{ page.image[7].caption | markdownify }}</figcaption>
@@ -144,7 +144,7 @@ We wanted to make sure that some of Jean’s interests and personality were part
 
 <div id="error-404">
   <figure class="image--wide">
-    <img src="{{ site.image-url }}/{{ page.image[8].src }}" alt="{{ page.image[8].alt }}">
+    <img src="{{ site.image_url }}/{{ page.image[8].src }}" alt="{{ page.image[8].alt }}">
     <figcaption>{{ page.image[8].caption | markdownify }}</figcaption>
   </figure>
 </div>

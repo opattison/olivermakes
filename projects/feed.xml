@@ -6,7 +6,7 @@ title: olivermak.es — Projects
   <title>{{ page.title }}</title>
   <link href="{{ site.link.subscribe.projects }}" rel="self"/>
   <link href="{{ site.url }}/"/>
-  <icon>{{ site.icons-url }}/favicon64.png</icon>
+  <icon>{{ site.url }}{{ site.icon_url }}/favicon64.png</icon>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>{{ site.url }}/</id>
   <author>
@@ -20,7 +20,7 @@ title: olivermak.es — Projects
     <link href="{{ site.url }}{{ post.url }}"/>
     <published>{{ post.date | date_to_xmlschema }}</published>
     <updated>{{ post.updated | date_to_xmlschema }}</updated>
-    <id>tag:{{ site.domain }},{{ post.unique-id }}</id>
+    <id>tag:{{ site.domain }},{{ post.unique_id }}</id>
     <content type="html">
       {{ post.content | syndication_escape | xml_escape }}
     </content>

@@ -42,9 +42,3 @@ task :prod do
   system "DEPLOY=production s3_website push --site #{local_site}"
   puts "## Deployed site to S3 ##"
 end
-
-
-def get_stdin(message)
-  print message
-  STDIN.gets.chomp
-end

@@ -2,7 +2,12 @@ title: olivermak.es
 author:
   name: Oliver Pattison
   email: oliverpattison@gmail.com
+  twitter: '@olivermakes'
 description: 'I am Oliver Pattison, a designer focused on the future of the web.'
+
+license:
+  short: 'CC BY-NC 4.0'
+  long: 'Creative Commons Attribution-NonCommercial 4.0 International'
 
 # Content
 
@@ -44,6 +49,7 @@ markdown: kramdown
 highlighter: rouge
 kramdown:
   input: GFM
+  syntax_highlighter: rouge
   footnote_backlink: '&#8638;'
 
 ## Permalink configuration
@@ -78,13 +84,13 @@ exclude: [s3_website.yml, Rakefile]
 ## Configuration URLs
 domain: olivermak.es
 url: http://olivermak.es
-patterns-url: /patterns
-image-url: /resources/images
-icon-url: /resources/icons
-style-url: /resources/style
-script-url: /resources/scripts
-fragments-url: /resources/fragments
-source-url:
+patterns_url: /patterns
+image_url: /resources/images
+icon_url: /resources/icons
+style_url: /resources/style
+script_url: /resources/scripts
+fragments_url: /resources/fragments
+source_url:
   repo: https://github.com/opattison/olivermakes
   blob: https://github.com/opattison/olivermakes/blob/master
   commits: https://github.com/opattison/olivermakes/commits/master
@@ -113,5 +119,8 @@ srcset_project:
   - 1080
 
 ## Mapbox authentication and configuration
-mapbox-key: pk.eyJ1Ijoib3BhdHRpc29uIiwiYSI6Il9DU3p1MEkifQ.3cvRQB5hVIONMpDAflBUNw
-photo-mapid: opattison.942a5f69
+mapbox_key: pk.eyJ1Ijoib3BhdHRpc29uIiwiYSI6Il9DU3p1MEkifQ.3cvRQB5hVIONMpDAflBUNw
+photo_mapid: opattison.942a5f69
+
+## Google site verification
+google_verification: v50CkzaVPDL_gBaZnlGdxJmfnZDYCP74l1JTMgLsyp4
