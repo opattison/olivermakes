@@ -491,6 +491,10 @@
     flex: 1 1 50%;
   }
 
+  .grid figure:last-of-type {
+    margin-right: 0;
+  }
+
   .grid-figure--33 {
     width: calc(100% / 3 - 1em);
     flex: 1 1 calc(100% / 3 - 1em);
