@@ -44,7 +44,7 @@
   .image--narrow,
   .image--wide,
   .grid--wide {
-    margin: 1em calc(-2em) 0;
+    margin: 1em -2em 0;
     width: calc(100% + 4em);
   }
 
@@ -138,7 +138,8 @@
   .image--narrow,
   .image--wide,
   .grid--wide {
-    margin: 1em calc(-2.5em) 0;
+    margin-top: 1em;
+    @include bleed-image(2.5em);
     width: calc(100% + 5em);
   }
 
@@ -469,7 +470,7 @@
 
   .image--wide,
   .grid--wide {
-    margin: 1em calc(-4.5em) 0;
+    margin: 1em -4.5em 0;
     max-width: none;
     width: calc(100% + 9em);
   }
@@ -490,7 +491,7 @@
   }
 
   .grid-figure {
-    margin: 0 auto;
+    margin-right: 1em;
     flex: 1 1 50%;
   }
 
@@ -505,7 +506,7 @@
   }
 
   .grid figure + figure {
-    margin: 0 0 0 1em;
+    margin-top: 0;
   }
 
   .index {
@@ -584,7 +585,7 @@
 
   .image--wide,
   .grid--wide {
-    margin: 1em calc(-9em) 0;
+    margin: 1em -9em 0;
     width: calc(100% + 18em);
   }
 
