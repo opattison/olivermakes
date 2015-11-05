@@ -46,7 +46,21 @@ $grayblue-50: hsla(204, 30%, 80%, .5);
 $pink-50: hsla(4, 30%, 80%, .5);
 
 /* Typography */
-
 $ratio: ratio, Seravek, 'Helvetica Neue', sans-serif;
 $source-code-pro: source-code-pro, 'Source Code Pro', Menlo, Consolas, monospace;
 $open-sans: 'Open Sans', sans-serif;
+
+/* Widths */
+$widths: (
+  s01: 22.5em,
+  s02: 28em,
+  s03: 30em,
+  s04: 34em,
+  s05: 40em,
+  m01: 45em,
+  m02: 60em,
+  l01: 70em,
+  l02: 80em,
+  l03: 95em,
+  l04: 115em
+)

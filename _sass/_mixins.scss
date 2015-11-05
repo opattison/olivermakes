@@ -1,3 +1,19 @@
+@mixin width-query($width) {
+  $value: map-get($widths, $width);
+
+  @if $value != null {
+    @media (min-width: $value) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "No value could be retrieved from #{$width}. "
+        + "Define the value in the $widths map in _variables.scss.";
+  }
+}
+
+
 @mixin action($margin: 0, $padding: 1em 0) {
   display: block;
   font-weight: 400;
