@@ -32,14 +32,16 @@
 }
 
 .item--feature-description {
-  font-size: 1.125em;
   min-height: 12.5em;
   padding: 8 / 9 * 1em;
 
+  font-size: 1.125em;
+
   @include min-width(m01) {
-    font-size: 1.25em;
     min-height: 16em;
     padding: 1.6em;
+
+    font-size: 1.25em;
   }
 }
 

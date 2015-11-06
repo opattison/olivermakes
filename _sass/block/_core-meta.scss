@@ -2,6 +2,7 @@
 .core-meta {
   flex: 1 0 100%;
   padding: 1em;
+
   text-align: center;
 
   @include min-width(m02) {
@@ -12,6 +13,7 @@
 }
 
 .core-meta p {
-  font-size: .875em;
   margin: 0;
+  
+  font-size: .875em;
 }

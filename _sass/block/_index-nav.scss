@@ -1,8 +1,8 @@
 /* Links to archives on index pages. */
 .index-nav {
+  display: flex;
   margin-top: 1em;
   width: 100%;
-  display: flex;
 }
 
 .index-nav-action {

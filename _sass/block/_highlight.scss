@@ -1,11 +1,12 @@
 /* Code blocks for page layouts. Markdown style is GitHub Flavored Markdown for fenced code blocks. */
 .highlight {
+  margin-top: 1em;
+  padding: 1em;
+
   border-bottom: solid .0625em;
   border-top: solid .0625em;
   font-size: 1em;
   font-family: sans-serif;
-  margin-top: 1em;
-  padding: 1em;
   @include bleed(1em);
 
   @include min-width(s03) {

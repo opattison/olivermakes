@@ -32,22 +32,17 @@
   .grid-figure--33 figcaption p {
     text-align: left;
   }
-
 }
 
 @include min-width(l02) {
-
   .grid-figure--33 figcaption {
     padding: .5em;
   }
-
 }
 
 @include min-width(l03) {
-
   .code figcaption {
     margin-left: -9em;
     margin-right: -9em;
   }
-
 }

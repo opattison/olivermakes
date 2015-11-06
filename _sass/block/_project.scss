@@ -1,5 +1,6 @@
 /* Block of text and images for a project summary with actions for source and links where available. */
 .project {
+  @include bleed(1em);
   min-height: 15em;
   padding: 1em;
 

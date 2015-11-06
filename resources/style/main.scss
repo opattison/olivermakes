@@ -37,7 +37,9 @@
         'block/primer';
 
 @import 'container/end',
-        'block/routing',
+        'container/routing',
+        'block/routing-menu',
+        'block/routing-nav',
         'container/credits',
         'block/credits-meta',
         'block/return';

@@ -23,6 +23,8 @@
 .menu-action {
   @include action;
 
+  outline: none;
+
   @include min-width(s03) {
     line-height: 2em;
     padding: 1em;

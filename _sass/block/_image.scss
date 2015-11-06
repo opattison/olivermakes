@@ -9,8 +9,8 @@
   }
 
   @include min-width(s04) {
-    margin-top: 1em;
     @include bleed-image(2.5em);
+    margin-top: 1em;
     width: calc(100% + 5em);
   }
 }

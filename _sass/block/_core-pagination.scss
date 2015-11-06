@@ -2,9 +2,10 @@
 .core-pagination {
   @include action;
   flex: 1 0 50%;
-  line-height: 2em;
   min-height: 2.5em;
   padding: .5em 0;
+
+  line-height: 2em;
 
   @include min-width(m02) {
     padding: 1em 0;
