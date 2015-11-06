@@ -56,11 +56,18 @@ $widths: (
   s02: 28em,
   s03: 30em,
   s04: 34em,
-  s05: 40em,
-  m01: 45em,
-  m02: 60em,
-  l01: 70em,
-  l02: 80em,
-  l03: 95em,
-  l04: 115em
-)
+  m01: 40em,
+  m02: 45em,
+  l01: 60em,
+  l02: 70em,
+  l03: 80em,
+  l04: 95em,
+  l05: 115em
+);
+
+$width-limit: (
+  m02: 36em,
+  l01: 45em,
+  l03: 54em,
+  l05: 94.5em
+);

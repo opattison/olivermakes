@@ -59,7 +59,7 @@ blockquote a {
   @include a-underline($pink-50, $grayblue-50);
 }
 
-.dark .meta a {
+.dark .core-meta a {
   @include a-underline($pure-1, $grayblue-50);
 }
 
@@ -162,7 +162,7 @@ blockquote a {
   color: $white;
 }
 
-.dark .meta,
+.dark .core-meta,
 .dark .core-footer {
   background-color: $gray02;
 }

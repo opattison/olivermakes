@@ -2,4 +2,9 @@
 .index {
   display: flex;
   flex-flow: row wrap;
+
+  @include min-width(m01) {
+    @include width-max(l01);
+    margin: 1em auto;
+  }
 }

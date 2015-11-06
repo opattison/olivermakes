@@ -203,19 +203,22 @@ mark {
   color: $blue;
 }
 
-.item {
+.item:nth-child(2n + 1),
+.item--feature:nth-child(2n + 1) {
   background-color: $gray07;
 }
 
-.item:nth-child(2n + 2) {
+.item:nth-child(2n),
+.item--feature:nth-child(2n) {
   background-color: $gray05;
 }
 
-.item-description {
+.item-description,
+.item--feature-description {
   background-color: $gray07-90;
 }
 
-.item--short-description {
+.item--short {
   background-color: $gray07;
 }
 
@@ -237,7 +240,8 @@ mark {
   color: $green;
 }
 
-.item-action {
+.item-action,
+.item--feature-action {
   @include action-color($gray02, $whiter);
 }
 
@@ -245,8 +249,8 @@ mark {
   background-color: $gray00;
 }
 
-.item:nth-child(2n + 2) .item-action:hover,
-.item:nth-child(2n + 2) .item-action:focus {
+.item:nth-child(2n) .item-action:hover,
+.item:nth-child(2n) .item-action:focus {
   background-color: $whiter;
   color: $gray00;
 }
@@ -278,35 +282,35 @@ mark {
   @include action-color($red, $whiter);
 }
 
-.meta a {
+.core-meta a {
   @include a-underline($pure-1, $grayblue);
 }
 
-.pagination {
+.core-pagination {
   @include action-color($red, $white);
 }
 
-.pagination--later {
+.core-pagination--later {
   background-color: $red;
 }
 
-.pagination--earlier {
+.core-pagination--earlier {
   background-color: $blue;
 }
 
-.pagination:hover,
-.pagination:focus {
+.core-pagination:hover,
+.core-pagination:focus {
   background-color: $whiter;
   border: none;
 }
 
-.pagination--later:hover,
-.pagination--later:focus {
+.core-pagination--later:hover,
+.core-pagination--later:focus {
   color: $red;
 }
 
-.pagination--earlier:hover,
-.pagination--earlier:focus {
+.core-pagination--earlier:hover,
+.core-pagination--earlier:focus {
   color: $blue;
 }
 

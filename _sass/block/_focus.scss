@@ -5,4 +5,8 @@
   font-weight: 500;
   line-height: 1.25;
   margin-top: 1em;
+
+  @include min-width(l01) {
+    padding: 0 2em;
+  }
 }

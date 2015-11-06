@@ -3,4 +3,22 @@
   display: flex;
   padding: 2em 1em;
   width: 100%;
+
+  @include min-width(l02) {
+    padding: 1.5em 2em;
+    order: 1; // before .routing
+    flex: 1 0 50%;
+    margin: 0;
+    max-width: 50%;
+  }
+
+  @include min-width(l04) {
+    flex: 0 0 66.6666667%;
+    max-width: 66.6666667%;
+    padding: 2em 4em;
+  }
+
+  @include min-width(l05) {
+    padding: 2em 5em;
+  }
 }

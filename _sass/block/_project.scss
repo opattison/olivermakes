@@ -2,6 +2,22 @@
 .project {
   min-height: 15em;
   padding: 1em;
+
+  @include min-width(s03) {
+    @include bleed(2em);
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  @include min-width(s04) {
+    @include bleed(2.5em);
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+  }
+
+  @include min-width(l01) {
+    margin: 0 auto;
+  }
 }
 
 .project-meta {
