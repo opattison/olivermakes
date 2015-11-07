@@ -1,8 +1,13 @@
 /* Links to archives on index pages. */
 .index-nav {
   display: flex;
+  flex-direction: column;
   margin-top: 1em;
   width: 100%;
+
+  @include min-width(s01) {
+    flex-direction: row;
+  }
 }
 
 .index-nav-action {

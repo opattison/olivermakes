@@ -38,6 +38,11 @@
 
 .project-nav {
   display: flex;
+  flex-direction: column;
+
+  @include min-width(s01) {
+    flex-direction: row;
+  }
 }
 
 .project-nav-action {
