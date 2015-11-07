@@ -49,3 +49,8 @@
   @include action;
   flex: 1 0 50%;
 }
+
+.project-nav-action--source,
+.project-nav-action--url {
+  @extend .project-nav-action;
+}
