@@ -2,7 +2,7 @@
 <html lang="en">
 {% include head.html %}
 
-<body class="archive">
+<body class="archive {% if page.title == 'Photography Archive' %}archive--photography{% endif %}">
 
 {% include container/banner.html %}
 {% include block/menu.html %}
