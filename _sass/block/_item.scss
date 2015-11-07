@@ -1,30 +1,58 @@
 /* Blocks containing text summaries and links for articles. */
 .item {
-  flex: 1 0 calc(100% - 2em);
-  margin: 1em 1em 0;
+  flex: 0 0 calc(100% - 2em);
+  margin-top: 1em;
   width: 100%;
+
+  @include min-width(m01) {
+    flex: 0 0 50%;
+    margin: 1em 0 0;
+  }
 }
 
 .item--feature,
 .item--short {
+  flex: 0 0 100%;
   margin: 1em 0 0;
   width: 100%;
-  flex: 0 0 100%;
+
+  @include min-width(m01) {
+    flex: 0 0 100%;
+  }
 }
 
 .item-description {
   padding: 1em;
   position: relative;
+
+  @include min-width(m01) {
+    height: 16em;
+    padding: 2em;
+  }
 }
 
 .item--feature-description {
-  font-size: 1.125em;
   min-height: 12.5em;
-  padding: .888888889em;
+  padding: 8 / 9 * 1em;
+
+  font-size: 1.125em;
+
+  @include min-width(m01) {
+    min-height: 16em;
+    padding: 1.6em;
+
+    font-size: 1.25em;
+  }
 }
 
-.item-description h1 {
+.item-description h1,
+.item--feature-description h1 {
   font-size: 1.5em;
+}
+
+.item--short-description {
+  height: auto;
+  padding: 1em 2em;
 }
 
 .item--short-description h1 {
@@ -39,17 +67,40 @@
   @include action;
 }
 
+.item--feature-action {
+  @include action;
+
+  @include min-width(m01) {
+    font-size: 1.125em;
+  }
+}
+
 /* Photo gallery for archive page */
 
 .item--photo {
   height: 10em;
   margin: 1em 0 0;
+
+  @include min-width(s03) {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  @include min-width(m01) {
+    height: 12.5em;
+  }
+
+  @include min-width(m02) {
+    flex: 0 0 25%;
+    height: 7.5em;
+  }
 }
 
 .item--photo a {
-  color: $pure-1;
   display: block;
   height: 100%;
+
+  color: $pure-1;
 }
 
 .item--photo-description {
@@ -61,4 +112,8 @@
   color: inherit;
   font-size: 1.25em;
   font-weight: 500;
+
+  @include min-width(m02) {
+    font-size: 1em;
+  }
 }

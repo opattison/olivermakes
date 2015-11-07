@@ -1,8 +1,32 @@
 /* Site-wide menu navigation link to `routing` navigation. */
 .menu {
-  @include menu;
+  width: 100%;
+  z-index: 2;
+
+  text-align: center;
+
+  @include min-width(s03) {
+    height: 4.5em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+
+    font-size: 1.125em;
+  }
+
+  @include min-width(m02) {
+    height: auto;
+  }
 }
 
 .menu-action {
   @include action;
+
+  outline: none;
+
+  @include min-width(s03) {
+    line-height: 2em;
+    padding: 1em;
+  }
 }

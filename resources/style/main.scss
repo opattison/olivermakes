@@ -7,41 +7,43 @@
         'fundamental',
         'helpers';
 
-@import 'block/logo';
-@import 'container/banner';
-@import 'block/banner-title';
-@import 'block/menu';
+@import 'block/logo',
+        'container/banner',
+        'block/banner-title',
+        'block/menu';
 
-@import 'container/core';
-@import 'block/hero';
-@import 'block/core-title';
-@import 'block/content';
-@import 'block/essay';
-@import 'block/highlight';
-@import 'block/ancillary';
-@import 'block/flow--side';
-@import 'block/focus';
-@import 'block/project';
-@import 'block/footnotes';
-@import 'container/grid';
-@import 'block/image';
-@import 'container/core-footer';
-@import 'block/meta';
-@import 'block/pagination';
+@import 'container/core',
+        'block/hero',
+        'block/core-title',
+        'block/content',
+        'block/essay',
+        'block/highlight',
+        'block/ancillary',
+        'block/flow--side',
+        'block/focus',
+        'block/project',
+        'block/footnotes',
+        'container/grid',
+        'block/image',
+        'block/figcaption',
+        'container/core-footer',
+        'block/core-meta',
+        'block/core-pagination';
 
-@import 'container/index';
-@import 'block/index-title';
-@import 'block/index-nav';
-@import 'block/item';
-@import 'block/primer';
+@import 'container/index',
+        'block/index-title',
+        'block/index-nav',
+        'block/item',
+        'block/primer';
 
-@import 'container/end';
-@import 'block/routing';
-@import 'container/credits';
-@import 'block/credits-meta';
-@import 'block/return';
+@import 'container/end',
+        'container/routing',
+        'block/routing-menu',
+        'block/routing-nav',
+        'container/credits',
+        'block/credits-meta',
+        'block/return';
 
 @import 'theme';
 
-@import 'density-queries';
-@import 'width-queries';
+@import 'multipliers';

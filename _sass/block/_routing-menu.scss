@@ -1,0 +1,10 @@
+/* Duplicate menu button that only extends the .menu element */
+
+.routing-menu {
+  @extend .menu;
+  display: none; /* only displays with :target */
+}
+
+.routing-menu-action {
+  @extend .menu-action;
+}

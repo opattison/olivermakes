@@ -3,7 +3,12 @@
   display: flex;
   flex: 0 0 100%;
   flex-flow: row nowrap;
+
   font-size: 1.25em;
+
+  @include min-width(l02) {
+    order: 3; // after .routing
+  }
 }
 
 .return-action {
@@ -11,6 +16,14 @@
   display: flex;
   flex: 0 0 50%;
   justify-content: center;
+
+  @include min-width(m01) {
+    font-size: 1.125em;
+  }
+
+  @include min-width(l01) {
+    font-size: 1.25em;
+  }
 }
 
 .return-action-logo {

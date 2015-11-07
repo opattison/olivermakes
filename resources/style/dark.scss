@@ -16,7 +16,6 @@
 .dark .banner-title:hover .banner-title-logo circle,
 .dark .banner-title:focus .banner-title-logo circle {
   stroke: $grayblue;
-  animation-name: step-fill--contrast;
 }
 
 .dark .banner-title:hover .banner-title-heading,
@@ -59,7 +58,7 @@ blockquote a {
   @include a-underline($pink-50, $grayblue-50);
 }
 
-.dark .meta a {
+.dark .core-meta a {
   @include a-underline($pure-1, $grayblue-50);
 }
 
@@ -162,7 +161,7 @@ blockquote a {
   color: $white;
 }
 
-.dark .meta,
+.dark .core-meta,
 .dark .core-footer {
   background-color: $gray02;
 }

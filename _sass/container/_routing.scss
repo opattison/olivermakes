@@ -1,31 +1,16 @@
 /* Site-wide navigation, typically included in the `.end` element on every page. */
 .routing {
   flex: 0 0 100%;
-}
 
-.routing-menu {
-  @include menu;
-  display: none; /* only displays with :target */
-}
+  @include min-width(l02) {
+    flex: 1 0 50%;
+    margin: 0;
+    order: 2; // after .credits
+  }
 
-.routing-menu-action {
-  @include action
-}
-
-.routing-nav {
-  display: flex;
-  flex-flow: row wrap;
-  font-size: 1.25em;
-}
-
-.routing-nav-action {
-  @include action(0, 2em 0);
-  display: block;
-  flex: 0 0 50%;
-  text-align: center;
-}
-
-.routing-nav-action {
+  @include min-width(l04) {
+    flex: 0 0 33.3333333%;
+  }
 }
 
 /* Target navigation - JS-free modal navigation */
@@ -37,12 +22,19 @@
   top: 0;
   max-width: 36em;
   width: 100%;
-}
 
-.routing:target .routing-nav {
-  position: relative;
-  right: 0;
-  z-index: 2;
+  @include min-width(l01) {
+    @include width-max(l01);
+  }
+
+  @include min-width(l03) {
+    @include width-max(l03);
+    padding-top: 5em;
+  }
+
+  @include min-width(l04) {
+    padding-top: 6em;
+  }
 }
 
 .routing:target .routing-menu {

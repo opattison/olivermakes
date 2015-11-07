@@ -1,0 +1,34 @@
+/* Links to other articles, next and previous – typically inside `core-footer`. */
+.core-pagination {
+  @include action;
+  flex: 1 0 50%;
+  min-height: 2.5em;
+  padding: .5em 0;
+
+  line-height: 2em;
+
+  @include min-width(m02) {
+    padding: 1em 0;
+  }
+}
+
+.core-pagination:only-child {
+  flex: 0 0 100%;
+}
+
+@include min-width(m02) {
+  .core-pagination,
+  .core-pagination:only-child,
+  .core-pagination--blank {
+    flex: 1 0 4.5em;
+    max-width: 9em;
+  }
+
+  .core-pagination--later {
+    order: 1; // before .core-meta
+  }
+
+  .core-pagination--earlier {
+    order: 3; // after .core-meta
+  }
+}

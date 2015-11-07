@@ -1,11 +1,19 @@
 /* Descriptive text containing metadata like date and source for page content – typically inside `core-footer`. */
-.meta {
+.core-meta {
   flex: 1 0 100%;
   padding: 1em;
+
   text-align: center;
+
+  @include min-width(m02) {
+    flex: 1 0 auto;
+    padding: .5em 1em;
+    order: 2; // after .core-pagination--later
+  }
 }
 
-.meta p {
-  font-size: .875em;
+.core-meta p {
   margin: 0;
+  
+  font-size: .875em;
 }

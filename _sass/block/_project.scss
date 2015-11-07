@@ -1,7 +1,24 @@
 /* Block of text and images for a project summary with actions for source and links where available. */
 .project {
+  @include bleed(1em);
   min-height: 15em;
   padding: 1em;
+
+  @include min-width(s03) {
+    @include bleed(2em);
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  @include min-width(s04) {
+    @include bleed(2.5em);
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+  }
+
+  @include min-width(l01) {
+    margin: 0 auto;
+  }
 }
 
 .project-meta {
@@ -21,9 +38,19 @@
 
 .project-nav {
   display: flex;
+  flex-direction: column;
+
+  @include min-width(s01) {
+    flex-direction: row;
+  }
 }
 
 .project-nav-action {
   @include action;
   flex: 1 0 50%;
+}
+
+.project-nav-action--source,
+.project-nav-action--url {
+  @extend .project-nav-action;
 }

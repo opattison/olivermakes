@@ -1,3 +1,40 @@
+@mixin min-width($width) {
+  $value: map-get($widths, $width);
+
+  @if $value != null {
+    @media (min-width: $value) {
+      @content;
+  }
+}
+
+  @else {
+    @warn "No value could be retrieved from #{$width}. "
+        + "Define the value in the $widths map in _variables.scss.";
+  }
+}
+
+@mixin width-max($width) {
+  $value: map-get($width-limit, $width);
+
+  @if $value != null {
+    flex: 0 0 $value;
+    max-width: $value;
+  }
+
+  @else {
+    @warn "No value could be retrieved from #{$width}. "
+        + "Define the value in the $width-limit map in _variables.scss.";
+  }
+}
+
+@mixin density-query {
+  @media screen and (-webkit-min-device-pixel-ratio: 1.5),
+  screen and (min-resolution: 108dpi),
+  screen and (min-resolution: 1.5dppx) {
+    @content;
+  }
+}
+
 @mixin action($margin: 0, $padding: 1em 0) {
   display: block;
   font-weight: 400;
@@ -20,12 +57,6 @@
   }
 }
 
-@mixin menu {
-  text-align: center;
-  width: 100%;
-  z-index: 2;
-}
-
 @mixin a-underline($link: $pink, $hover: $grayblue) {
   border-bottom: solid 1px $link;
   &:hover,
@@ -37,16 +68,16 @@
 @mixin bleed($amount: 1em) {
   margin-left: -$amount;
   margin-right: -$amount;
-  padding: $amount;
+  padding-left: $amount;
+  padding-right: $amount;
 }
 
 @mixin bleed-right($amount: 1em) {
   margin-right: -$amount;
-  padding: $amount;
 }
 
 @mixin bleed-image($amount: 1em) {
-  margin: $amount calc(-#{$amount}) 0;
+  margin: $amount -#{$amount} 0;
   max-width: none;
   width: calc(100% + #{2*$amount});
 }

@@ -3,4 +3,21 @@
   flex-flow: row nowrap;
   height: 4.5em;
   padding: 1em;
+
+  @include min-width(s03) {
+    padding: 1em 2em;
+  }
+
+  @include min-width(m02) {
+    height: auto;
+    padding: 2em 9em;
+  }
+
+  @include min-width(l03) {
+    padding: 3em 9em;
+  }
+
+  @include min-width(l05) {
+    padding: 4em 9em;
+  }
 }

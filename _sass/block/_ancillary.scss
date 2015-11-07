@@ -1,6 +1,31 @@
 /* Used for content that is related to the main body but not necessarily as important – supporting the main story without being directly a part of it. */
 .ancillary {
   @include bleed-right(1em);
+  padding: 1em;
+
+  @include min-width(s03) {
+    @include bleed-right(2em);
+    padding: 2em;
+  }
+
+  @include min-width(s04) {
+    @include bleed-right(2.5em);
+    padding: 2.5em;
+  }
+
+  @include min-width(l01) {
+    float: right;
+    font-size: .75em;
+    margin: 2em -6em 2em 2em;
+    width: 40%;
+  }
+
+  @include min-width(l03) {
+    font-size: .875em;
+    margin-right: -9em / .875em;
+    margin-right: calc(-9em / .875);
+    width: 50%;
+  }
 }
 
 .ancillary h1 {
@@ -18,4 +43,8 @@
 .ancillary img {
   max-width: none;
   width: calc(100% + 1em);
+
+  @include min-width(s03) {
+    width: calc(100% + 2em);
+  }
 }

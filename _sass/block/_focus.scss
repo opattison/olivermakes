@@ -1,8 +1,13 @@
 /* Heavy emphasis for paragraph text. */
 .focus {
+  margin-top: 1em;
+
   font-size: 1.25em;
   font-style: italic;
   font-weight: 500;
   line-height: 1.25;
-  margin-top: 1em;
+
+  @include min-width(l01) {
+    padding: 0 2em;
+  }
 }

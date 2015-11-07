@@ -1,0 +1,93 @@
+@include min-width(s01) {
+  .content,
+  .core-title,
+  .core-footer,
+  .credits {
+    font-size: 1.0625em;
+  }
+}
+
+@include min-width(s02) {
+  .content,
+  .core-title,
+  .core-footer,
+  .credits {
+    font-size: 1.125em;
+  }
+}
+
+@include min-width(m01) {
+  .content,
+  .core-title,
+  .core-footer,
+  .credits {
+    font-size: 1.25em;
+  }
+}
+
+@include min-width(m02) {
+  .content,
+  .core-title,
+  .core-footer {
+    @include width-max(m02);
+    margin: auto;
+  }
+}
+
+@include min-width(l01) {
+  .content,
+  .core-title,
+  .core-footer {
+    @include width-max(l01);
+  }
+
+  .index {
+    font-size: 1.25em;
+  }
+}
+
+@include min-width(l03) {
+  .content,
+  .core-title,
+  .core-footer {
+    @include width-max(l03);
+  }
+
+  .menu,
+  .routing-menu {
+    font-size: 1.25em;
+  }
+}
+
+@include min-width(l04) {
+  .content,
+  .core-title,
+  .core-footer,
+  .credits {
+    font-size: 1.5em;
+  }
+
+  .menu,
+  .routing-menu,
+  .routing:target .routing-nav {
+    font-size: 1.5em;
+  }
+
+  .index {
+    font-size: 1.5em;
+  }
+}
+
+@include min-width(l05) {
+  .content,
+  .core-title,
+  .core-footer {
+    font-size: 1.75em;
+  }
+}
+
+@include min-width(l05) {
+  .site-footer {
+    @include width-max(l05);
+  }
+}

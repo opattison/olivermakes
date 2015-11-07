@@ -2,4 +2,19 @@
 .index {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
+
+  @include min-width(m01) {
+    @include width-max(l01);
+    margin: 1em auto 0;
+    justify-content: flex-start;
+  }
+
+  @include min-width(m02) {
+    margin: 1em auto;
+  }
+}
+
+.archive--photography .index {
+  justify-content: flex-start;
 }
