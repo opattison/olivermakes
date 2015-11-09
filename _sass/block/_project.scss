@@ -47,7 +47,10 @@
 
 .project-nav-action {
   @include action;
-  flex: 1 0 50%;
+
+  @include min-width(s01) {
+    flex: 1 0 50%;
+  }
 }
 
 .project-nav-action--source,
