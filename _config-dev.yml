@@ -1,5 +1,11 @@
 # Site configuration
 
+## Gems configuration
+gems:
+  - jekyll-archives
+  - sass
+# - octopress-autoprefixer
+
 ## Sass configuration
 sass:
   sass_dir: _sass

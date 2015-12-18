@@ -6,6 +6,7 @@ gem 'jekyll-archives'
 gem 'kramdown'
 gem 'rouge'
 gem 'sass'
+gem 'octopress-autoprefixer'
 
 gem 's3_website'
 gem 'rake'
