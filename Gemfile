@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'jekyll', '~> 3.0'
-gem 'jekyll-archives', github: 'jekyll/jekyll-archives'
+gem 'jekyll-archives'
 
 gem 'kramdown'
 gem 'rouge'
