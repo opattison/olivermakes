@@ -5,12 +5,12 @@ option:
   - code
   - dark
   - index-image
+  - minor
   - sample-svg
   - srcset
 category: 'projects'
 tags:
   - 'design'
-  - 'minor'
   - 'photography'
 date: 2014-12-08 9:00
 updated: 2014-12-12 13:16

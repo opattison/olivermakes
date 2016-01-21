@@ -56,6 +56,12 @@
   }
 }
 
+.item--minor-description {
+  @include min-width(m01) {
+    height: 10em;
+  }
+}
+
 .item--feature-description {
   min-height: 12.5em;
   padding: 8 / 9 * 1em;
