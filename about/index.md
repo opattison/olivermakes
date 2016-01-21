@@ -9,7 +9,7 @@ option:
   - srcset
 category: meta
 date: 2014-10-31 18:25
-updated: 2015-08-31 05:48
+updated: 2016-01-21 17:36
 description: 'A short biography of Oliver Pattison, as well as details about how this website was made.'
 image:
   - src: 2011-11-10-oliver-bench-jeancflanagan-ccbync.jpg
@@ -29,7 +29,7 @@ I am <span class="p-name">Oliver Pattison</span>, a designer focused on the futu
 
 I currently live in Washington, DC. I am originally from New York City.
 
-I’m employed full-time but still available to work on small projects. [Get in touch](mailto:{{ site.author.email }}){:.u-email rel="me"} by email if you have a project in mind.
+I’m available to work on small projects. [Get in touch](mailto:{{ site.author.email }}){:.u-email rel="me"} by email if you have a project in mind.
 {:.focus}
 
 ## About this site
