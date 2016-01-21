@@ -1,0 +1,30 @@
+---
+title: .item--section
+use: 'Linked sections of the website with summaries.'
+spec: 'Thin hyperlinked headlines with no underline style (except on hover/focus). List first three items in category (or for non-category sections, a text summary). Don’t show lists of items when linked to as a menu. On large screens, alternate right/left alignment using flexbox and `text-align`.'
+restriction: 'Only for use on the home/menu page.'
+type: html
+category: component
+---
+
+<section class="index--home">
+  <article class="item--section--writing">
+    <div class="item--section-description">
+      <h1><a href="/writing/">/writing</a></h1>
+      <ul>
+        <li><a href="/2015/02/institutional-memory/">Institutional memory
+  </a></li>
+        <li><a href="/2014/12/reading-driven-design/">Reading-driven design
+  </a></li>
+        <li><a href="/2014/12/reaction-works-that-work/">Reaction: <i>Works That Work</i>
+  </a></li>
+      </ul>
+    </div>
+  </article>
+  <article class="item--section--about">
+    <div class="item--section-description">
+      <h1><a href="/about/">/about</a></h1>
+      <p>I’m <a href="/about/">Oliver Pattison</a>, a designer focused on the future of the web. This site is my personal archive. <a href="/about/">Read more about me</a>.</p>
+    </div>
+  </article>
+</section>
