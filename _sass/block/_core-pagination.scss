@@ -34,7 +34,9 @@
 }
 
 @include min-width(l01) {
-  .core-pagination {
+  .core-pagination,
+  .core-pagination:only-child,
+  .core-pagination--blank {
     flex: 0 0 9em;
   }
 }
