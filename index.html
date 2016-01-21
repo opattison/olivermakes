@@ -5,15 +5,7 @@ category: index
 
 ---
 
-{% include block/primer.html %}
-{% for post in site.posts %}
-{% if post.option contains 'feature' %}
-{% include block/item--feature.html %}
-{% endif %}
-{% endfor %}
-{% for post in site.posts limit:6 %}
-{% unless post.option contains 'feature' %}
-{% include block/item.html %}
-{% endunless %}
-{% endfor %}
-{% include block/index-nav.html %}
+{% include block/item--section--writing.html %}
+{% include block/item--section--projects.html %}
+{% include block/item--section--photography.html %}
+{% include block/item--section--archive.html %}

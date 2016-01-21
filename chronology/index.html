@@ -1,0 +1,20 @@
+---
+title: Label Archive
+layout: archive
+category: index
+description: 'Links to all of the label archives for the posts on this website, by Oliver Pattison.'
+years:
+  - 2015
+  - 2014
+  - 2013
+  - 2012
+
+---
+
+{% include block/index-title.html title='chronology' %}
+
+{% assign years = page.years %}
+{% for year in years %}
+{% include block/item--short--year.html %}
+{% endfor %}
+{% include block/index-nav--archive.html %}

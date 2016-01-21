@@ -189,6 +189,27 @@ mark {
   color: $blue;
 }
 
+.item--section {
+  color: $whiter;
+  background-color: $gray01;
+
+  a {
+    color: $white;
+  }
+}
+
+.item--section--writing {
+  background-color: $blue;
+}
+
+.item--section--projects {
+  background-color: $violet;
+}
+
+.item--section--photography {
+  background-color: $red;
+}
+
 .item:nth-child(2n + 1),
 .item--feature:nth-child(2n + 1) {
   background-color: $gray07;
@@ -297,19 +318,18 @@ mark {
 }
 
 .primer {
-  background-color: $blue;
-  color: $gray07;
+  color: $blue;
 }
 
 .primer a {
-  color: $whiter;
-  border-color: $gray07-80;
+  color: $red;
+  @include a-underline($pink, $gray04);
 }
 
 .primer a:hover,
 .primer a:focus {
-  color: $grayblue;
-  border-bottom: solid 1px $grayblue-50;
+  color: $gray00;
+
 }
 
 .project {

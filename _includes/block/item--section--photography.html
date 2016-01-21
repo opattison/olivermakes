@@ -1,0 +1,10 @@
+<article class="item--section--photography">
+  <div class="item--section-description">
+    <h1><a href="/photography/">/photography</a></h1>
+    <ul>
+      {% for post in site.categories.photography limit:3 %}
+      <li><a href="{{ post.url }}">{{ post.title | markdownify | p_escape }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</article>

@@ -1,4 +1,37 @@
 .banner {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
+}
+
+.banner--home {
+  display: flex;
+  flex: 1 0 auto;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: -16em;
+  padding: 1em;
+
+  svg {
+    height: 24em;
+    width: 24em;
+  }
+
+  @include min-width(l01) {
+    margin-top: -20em;
+    padding: 2em;
+
+    svg {
+      height: 28em;
+      width: 28em;
+    }
+  }
+
+  @include min-width(l03) {
+    margin-top: -28em;
+
+    svg {
+      height: 40em;
+      width: 40em;
+    }
+  }
 }

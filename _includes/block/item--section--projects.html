@@ -1,0 +1,10 @@
+<article class="item--section--projects">
+  <div class="item--section-description">
+    <h1><a href="/projects/">/projects</a></h1>
+    <ul>
+      {% for post in site.categories.projects limit:3 %}
+      <li><a href="{{ post.url }}">{{ post.title | markdownify | p_escape }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</article>

@@ -21,6 +21,32 @@
   }
 }
 
+.item--section {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  padding: 1em;
+
+  @include min-width(m01) {
+    flex: 0 0 50%;
+  }
+
+  @include min-width(m01) {
+    padding: 2em;
+  }
+}
+
+.item--section ul {
+  list-style: none;
+}
+
+.item--section--writing,
+.item--section--projects,
+.item--section--photography,
+.item--section--archive {
+  @extend .item--section;
+}
+
 .item-description {
   padding: 1em;
   position: relative;
@@ -59,6 +85,29 @@
   font-size: 1.125em;
 }
 
+.item--section-description {
+  max-width: 30em;
+}
+
+.item--section-description h1 {
+  font-weight: 300;
+}
+
+.item--section-description a {
+  @include a-underline($gray05, $whiter);
+}
+
+.item--section-description h1 a {
+  border-bottom: none;
+}
+
+.index--home :nth-child(odd) .item--section-description {
+  @include min-width(m01) {
+    align-self: flex-end;
+    text-align: right;
+  }
+}
+
 .item-time {
   font-size: .875em;
 }
@@ -74,8 +123,6 @@
     font-size: 1.125em;
   }
 }
-
-/* Photo gallery for archive page */
 
 .item--photo {
   height: 10em;

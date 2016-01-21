@@ -41,7 +41,8 @@
     @include width-max(l01);
   }
 
-  .index {
+  .index,
+  .index--home {
     font-size: 1.25em;
   }
 }
@@ -62,7 +63,8 @@
     font-size: 1.5em;
   }
 
-  .index {
+  .index,
+  .index--home {
     font-size: 1.5em;
   }
 }

@@ -11,6 +11,12 @@
   }
 }
 
-.archive--photography .index {
+.index--home {
+  display: flex;
+  flex-flow: column wrap;
   justify-content: flex-start;
+
+  @include min-width(m01) {
+    flex-flow: row wrap;
+  }
 }
