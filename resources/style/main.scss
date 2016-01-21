@@ -7,10 +7,8 @@
         'fundamental',
         'helpers';
 
-@import 'block/logo',
-        'container/banner',
-        'block/banner-title',
-        'block/menu';
+@import 'container/banner',
+        'block/banner-title';
 
 @import 'container/core',
         'block/hero',
@@ -37,9 +35,6 @@
         'block/primer';
 
 @import 'container/end',
-        'container/routing',
-        'block/routing-menu',
-        'block/routing-nav',
         'container/credits',
         'block/credits-meta',
         'block/return';

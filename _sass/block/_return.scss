@@ -5,10 +5,6 @@
   flex-flow: row nowrap;
 
   font-size: 1.25em;
-
-  @include min-width(l02) {
-    order: 3; // after .routing
-  }
 }
 
 .return-action {
@@ -24,14 +20,9 @@
   @include min-width(l01) {
     font-size: 1.25em;
   }
-}
 
-.return-action-logo {
-  height: 1.3em;
-  margin: .1em .4em 0;
-  width: 1.3em;
-}
-
-.return-action-logo circle {
-  stroke-width: 36px;
+  svg {
+    height: 1.5em;
+    width: 2em;
+  }
 }

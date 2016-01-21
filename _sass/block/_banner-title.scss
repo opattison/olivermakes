@@ -4,11 +4,15 @@
   flex: 1 0 auto;
   flex-flow: row wrap;
   justify-content: center;
+  padding: 1em;
+
+  svg {
+    height: 8em;
+    width: 8em;
+  }
 
   @include min-width(s03) {
     justify-content: flex-start;
-    margin: -1em -2em;
-    padding: 1em 2em;
   }
 
   @include min-width(m01) {
@@ -16,26 +20,14 @@
   }
 
   @include min-width(m02) {
-    font-size: 1.25em;
+    padding: 2em;
   }
 
   @include min-width(l03) {
-    font-size: 1.5em;
-  }
-
-  @include min-width(l04) {
-    font-size: 1.75em;
+    padding: 3em;
   }
 
   @include min-width(l05) {
-    font-size: 2em;
+    padding: 4em;
   }
-}
-
-.banner-title-heading {
-  margin: 0 .1875em;
-
-  font-weight: 300;
-  letter-spacing: -.03125em;
-  line-height: 1.25em;
 }

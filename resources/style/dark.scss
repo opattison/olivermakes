@@ -9,15 +9,6 @@
   color: $white;
 }
 
-.dark .banner-title-logo circle {
-  stroke: $gray07;
-}
-
-.dark .banner-title:hover .banner-title-logo circle,
-.dark .banner-title:focus .banner-title-logo circle {
-  stroke: $grayblue;
-}
-
 .dark .banner-title:hover .banner-title-heading,
 .dark .banner-title:focus .banner-title-heading {
   color: $grayblue;
