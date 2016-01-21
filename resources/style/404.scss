@@ -8,10 +8,6 @@
   color: hsla(204, 10%, 97%, 1);
 }
 
-#error .banner-title circle {
-  stroke: hsla(204, 10%, 97%, 1);
-}
-
 #error .core-title,
 #error .content {
   background-color: hsla(4, 60%, 47%, 1);
@@ -38,15 +34,4 @@
 #error .content a:hover,
 #error .content a:focus {
   color: hsla(204, 30%, 80%, 1);
-}
-
-#error .content .logo {
-  height: 50%;
-  margin: 1em auto 0;
-  max-width: 35em;
-  width: 50%;
-}
-
-#error .content .logo circle {
-  stroke: hsla(204, 10%, 97%, 1);
 }
