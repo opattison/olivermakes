@@ -19,7 +19,7 @@ unique_id: 2014-12-12:fujifilm-vector
 description: 'Hand-designed graphics of my Fujifilm camera, used for photo metadata on this site.'
 feature-description: 'To complement the metadata for photo collections on this site, I created hand-designed minimal vector graphics to represent my camera. I needed a custom design, so I had to do it myself!'
 project:
-  download: http://static.olivermak.es/fragments/2014-12-12-xe2-1.1.ai
+  download: '/resources/fragments/2014-12-12-xe2-1.1.ai'
   filetype: '.ai'
   license: 'CC BY-NC'
   license-url: 'http://creativecommons.org/licenses/by-nc/4.0/'
