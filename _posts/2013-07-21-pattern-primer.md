@@ -10,6 +10,7 @@ tags:
   - 'design'
   - 'html'
   - 'jekyll'
+  - 'minor'
   - 'web'
 date: 2013-07-21 12:34
 updated: 2014-12-01 20:30

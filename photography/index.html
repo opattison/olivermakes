@@ -6,7 +6,9 @@ description: 'A collection of photos of nature and urban environments by Oliver 
 
 ---
 
-{% for post in site.categories.photography limit: 8 %}
-{% include block/item.html %}
+{% for post in site.categories.photography %}
+{% for item in post.image %}
+{% include block/item--photo.html %}
+{% endfor %}
 {% endfor %}
 {% include block/index-nav.html %}

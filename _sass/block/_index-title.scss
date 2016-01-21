@@ -13,9 +13,15 @@
     margin-left: 1.6em;
     text-align: left;
   }
-  
+
   @include min-width(m01) {
     margin: 0;
     text-align: center;
   }
+}
+
+.index-title--minor {
+  flex: 0 0 100%;
+  margin-top: 1em;
+  width: 100%;
 }
