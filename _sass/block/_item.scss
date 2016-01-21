@@ -22,8 +22,6 @@
 }
 
 .item--section {
-  display: flex;
-  flex-flow: column nowrap;
   width: 100%;
   padding: 1em;
 
@@ -86,26 +84,39 @@
   font-size: 1.125em;
 }
 
-.item--section-description {
-  max-width: 30em;
-}
-
 .item--section-description h1 {
   font-weight: 300;
 }
 
-.item--section-description a {
-  @include a-underline($gray05, $whiter);
+.item--section-description p {
+  margin-top: 1.5em;
+  text-align: right;
 }
 
-.item--section-description h1 a {
-  border-bottom: none;
+.item--section-description ul {
+  margin-top: 0;
+  text-align: right;
 }
 
-.index--home :nth-child(odd) .item--section-description {
+.item--section-description li {
+  margin-top: 0;
+}
+
+.index--home :nth-child(odd) .item--section-description h1,
+.index--home :nth-child(even) .item--section-description p,
+.index--home :nth-child(even) .item--section-description ul {
   @include min-width(m01) {
-    align-self: flex-end;
     text-align: right;
+    padding-left: 3em;
+  }
+}
+
+.index--home :nth-child(even) .item--section-description h1,
+.index--home :nth-child(odd) .item--section-description p,
+.index--home :nth-child(odd) .item--section-description ul {
+  @include min-width(m01) {
+    text-align: left;
+    padding-right: 3em;
   }
 }
 

@@ -289,6 +289,14 @@ mark {
   color: $black;
 }
 
+.item--section-description a {
+  @include a-underline($gray05, $whiter);
+}
+
+.item--section-description h1 a {
+  border-bottom: solid 1px $pure-1;
+}
+
 .core-meta a {
   @include a-underline($pure-1, $grayblue);
 }
