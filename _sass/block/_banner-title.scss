@@ -4,19 +4,23 @@
   flex: 1 0 auto;
   flex-flow: row wrap;
   justify-content: center;
-  padding: 1em;
+  margin-top: -18em;
+  max-width: 100%;
+  padding: 1em 0;
 
   svg {
-    height: 8em;
-    width: 8em;
-  }
-
-  @include min-width(s03) {
-    justify-content: flex-start;
+    height: 24em;
+    max-width: 100%;
+    width: 24em;
   }
 
   @include min-width(m01) {
-    justify-content: center;
+    margin-top: 0;
+
+    svg {
+      height: 12em;
+      width: 12em;
+    }
   }
 
   @include min-width(m02) {
