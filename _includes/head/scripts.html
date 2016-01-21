@@ -1,4 +1,14 @@
   <script>
+    var itemList = document.querySelectorAll('.item--section-description ul');
+
+    if (window.location.hash == '#menu') {
+      [].forEach.call(itemList, function(item) {
+        item.style.display = 'none';
+      });
+    }
+  </script>
+  
+  <script>
     /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
     function loadJS(src, cb){
     	"use strict";

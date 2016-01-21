@@ -3,23 +3,6 @@
 @import 'variables';
 @import 'mixins';
 
-.primer--pattern {
-  background-color: $gray07;
-  color: $gray01;
-  margin-top: 1em;
-}
-
-.primer--pattern a {
-  color: $boldred;
-
-  &:hover,
-  &:focus {
-    color: $darkblue;
-  }
-
-  @include a-underline;
-}
-
 .item--pattern {
   background-color: transparent;
 }
@@ -93,6 +76,10 @@
   margin-top: 4em;
 }
 
+.pattern--element:first-of-type {
+  margin-top: 0;
+}
+
 .pattern-meta {
   background-color: $gray06;
   clear: both;
@@ -141,6 +128,60 @@
   font-size: .875em;
   margin-top: 1em;
   text-align: left;
+}
+
+#logo-512 {
+  max-width: 512px;
+}
+
+#logo-64 {
+  max-width: 64px;
+}
+
+/* Block of high-contrast introductory text */
+.primer {
+  margin: 1em auto 0;
+  padding: 1em;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.25;
+
+  background-color: $gray07;
+  color: $gray01;
+
+  @include min-width(m01) {
+    padding: 1em 2em;
+  }
+
+  @include min-width(l01) {
+    @include width-max(l01);
+  }
+}
+
+.primer a {
+  border-bottom: solid 1px;
+  padding-bottom: 1px;
+
+  color: $boldred;
+
+  &:hover,
+  &:focus {
+    color: $darkblue;
+  }
+
+  @include a-underline;
+}
+
+.primer p {
+  font-size: 1.125em;
+
+  @include min-width(m01) {
+    font-size: 1.25em;
+  }
+
+  @include min-width(l01) {
+    font-size: 1.375em;
+  }
 }
 
 @media screen and (min-width: 22.5em) {

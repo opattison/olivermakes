@@ -23,14 +23,3 @@ function scrollTop (event) {
 if (backTop) {
   backTop.addEventListener('click', scrollTop, false);
 }
-
-/* Check whether the homepage load is menu-only and selectively hide items */
-var primer = document.querySelector('.primer');
-var itemList = document.querySelectorAll('.item--section-description ul');
-
-if (window.location.hash == '#menu') {
-  primer.style.display = 'none';
-  [].forEach.call(itemList, function(item) {
-    item.style.display = 'none';
-  });
-}

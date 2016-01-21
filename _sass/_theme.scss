@@ -191,7 +191,7 @@ mark {
 
 .item--section {
   color: $whiter;
-  background-color: $gray01;
+  background-color: $gray00;
 
   a {
     color: $white;
@@ -208,6 +208,10 @@ mark {
 
 .item--section--photography {
   background-color: $red;
+}
+
+.item--section--about {
+  background-color: $gray02;
 }
 
 .item:nth-child(2n + 1),
@@ -315,21 +319,6 @@ mark {
 .core-pagination--earlier:hover,
 .core-pagination--earlier:focus {
   color: $blue;
-}
-
-.primer {
-  color: $blue;
-}
-
-.primer a {
-  color: $red;
-  @include a-underline($pink, $gray04);
-}
-
-.primer a:hover,
-.primer a:focus {
-  color: $gray00;
-
 }
 
 .project {
