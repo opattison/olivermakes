@@ -9,7 +9,7 @@ option:
   - srcset
 category: meta
 date: 2014-10-31 18:25
-updated: 2016-01-21 17:36
+updated: 2016-01-22 12:22
 description: 'A short biography of Oliver Pattison, as well as details about how this website was made.'
 image:
   - src: 2011-11-10-oliver-bench-jeancflanagan-ccbync.jpg
@@ -136,10 +136,3 @@ My open source code (including this site) is on **[GitHub]({{ site.link.github }
 Some of my design experiments are posted on **[CodePen](http://codepen.io/opattison/){:rel="me"}**.
 
 A selection of my mobile photography is on **[VSCO Grid]({{ site.link.vsco }}){:rel="me"}**.
-
-I post less frequently to:
-
-- [Tumblr]({{ site.link.tumblr }}){:rel="me"}
-- [Google+]({{ site.link.googleplus }}){:rel="me"}
-- [Panoramio]({{ site.link.panoramio }}){:rel="me"}
-- [Flickr]({{ site.link.flickr }}){:rel="me"}

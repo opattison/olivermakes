@@ -1,5 +1,5 @@
 ---
-title: 'Old Jekyll homepage with modern CSS'
+title: 'Old Jekyll home page with modern CSS'
 layout: edgeless
 option:
   - code

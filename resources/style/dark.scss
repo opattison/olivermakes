@@ -50,7 +50,7 @@ blockquote a {
 }
 
 .dark .core-meta a {
-  @include a-underline($pure-1, $grayblue-50);
+  @include a-underline($pink-50, $grayblue-50);
 }
 
 .dark .core figcaption {

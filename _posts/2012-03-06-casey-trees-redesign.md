@@ -23,12 +23,12 @@ image:
     background: 'site.shade.white'
     description: 'Logo SVG'
   - src: 2012-04-27-casey-trees-homepage-desktop.jpg
-    alt: 'The Casey Trees homepage on a desktop early on after the redesign, with a series of slides and all navigation items visible, including events and the Tree Report Card.'
+    alt: 'The Casey Trees home page on a desktop early on after the redesign, with a series of slides and all navigation items visible, including events and the Tree Report Card.'
     date: 2012-04-27
-    caption: 'The homepage less than two months after the redesign.'
+    caption: 'The home page less than two months after the redesign.'
     description: 'Taken with Google Chrome on a Windows computer in 2012, shortly after the redesign.'
   - src: 2013-01-09-casey-trees-homepage-android.jpg
-    alt: 'The Casey Trees homepage on an Android mobile browser'
+    alt: 'The Casey Trees home page on an Android mobile browser'
     date: 2013-01-09
     description: 'Taken on a Galaxy Nexus using Google Chrome for Android in 2013'
 
