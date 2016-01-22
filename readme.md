@@ -1,5 +1,7 @@
 # olivermak.es an archive
 
+![concentric circle logo](http://olivermak.es/resources/icons/favicon144.png)
+
 ## Goals
 
 - Build a personal website as an archive for my creative output.
@@ -25,7 +27,7 @@
 - Amazon S3 and [s3_website](https://github.com/laurilehmijoki/s3_website) for hosting and deploying
 - GitHub for version control
 - TypeKit for fonts: 300, 400 and 500 weights of [the Ratio typeface](http://cargocollective.com/pstype/Ratio) and 400 weight of [Source Code Pro](http://adobe-fonts.github.io/source-code-pro/)) are [hosted by Typekit](https://typekit.com/colophons/ojm0eig)
-- `flexbox` for flexible CSS layout.
+- `flexbox` for flexible CSS layout
 - Responsive images using `srcset`
 - Processing of archives with the [jekyll-archives](https://github.com/jekyll/jekyll-archives) gem
 - MapBox for maps
@@ -37,12 +39,13 @@
 ### Configuration
 
 - [Jekyll](http://jekyllrb.com) >3.0
-- [jekyll-archives](https://github.com/jekyll/jekyll-archives) >2.0.0 (using master branch on GitHub)
-- [rouge](https://github.com/jneen/rouge) >1.7.4
-- [sass](https://github.com/sass/sass) >3.4.12
-- [uglifier](https://github.com/lautis/uglifier) >2.7.1
-- [image_optim](https://github.com/toy/image_optim) >0.20.2
-- [s3_website](https://github.com/laurilehmijoki/s3_website) >2.8.3
+- [jekyll-archives](https://github.com/jekyll/jekyll-archives) >2.1.0
+- [rouge](https://github.com/jneen/rouge)
+- [sass](https://github.com/sass/sass)
+- [octopress-autoprefixer](https://github.com/octopress/autoprefixer)
+- [image_optim](https://github.com/toy/image_optim)
+- [s3_website](https://github.com/laurilehmijoki/s3_website)
+- [uglifyJS (NPM needed to install)](https://github.com/mishoo/UglifyJS2)
 
 ### Front-end
 

@@ -7,22 +7,23 @@ description: 'An index of projects that Oliver Pattison has designed or contribu
 ---
 
 <h2>Portfolio</h2>
+{% assign index = 1 %}
 {% for post in site.categories.projects %}
-{% if post.option contains 'feature' %}
-{% include block/item--feature.html %}
-{% endif %}
-{% endfor %}
-{% for post in site.categories.projects limit:6 %}
-{% unless post.option contains 'feature' %}
+{% unless index > 6 %}
 {% unless post.option contains 'minor' %}
 {% include block/item.html %}
+{% assign index = index | plus: 1 %}
 {% endunless %}
 {% endunless %}
 {% endfor %}
 <h2>Minor projects</h2>
-{% for post in site.categories.projects limit:6 %}
+{% assign index = 1 %}
+{% for post in site.categories.projects %}
+{% unless index > 6 %}
 {% if post.option contains 'minor' %}
 {% include block/item.html %}
+{% assign index = index | plus: 1 %}
 {% endif %}
+{% endunless %}
 {% endfor %}
 {% include block/index-nav.html %}
