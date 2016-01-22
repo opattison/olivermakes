@@ -31,7 +31,7 @@ image:
     description: 'original graphic. index version is cropped and colored gray7'
   - src: fxe2.svg
     alt: 'simplfied vector of Fujifilm X-E2 camera – dark on light'
-    caption: 'A simplified version in light …'
+    caption: 'A simplified version in light&nbsp;…'
   - src: fxe2-offwhite.svg
     alt: 'simplfied vector of Fujifilm X-E2 camera – dark on light'
     caption: '… and dark themes.'
