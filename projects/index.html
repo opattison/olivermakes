@@ -6,7 +6,22 @@ description: 'An index of projects that Oliver Pattison has designed or contribu
 
 ---
 
-{% for post in site.categories.projects limit: 8 %}
+{% for post in site.categories.projects %}
+{% if post.option contains 'feature' %}
+{% include block/item--feature.html %}
+{% endif %}
+{% endfor %}
+{% for post in site.categories.projects limit:4 %}
+{% unless post.option contains 'feature' %}
+{% unless post.option contains 'minor' %}
 {% include block/item.html %}
+{% endunless %}
+{% endunless %}
+{% endfor %}
+<h2>Minor projects</h2>
+{% for post in site.categories.projects limit:8 %}
+{% if post.option contains 'minor' %}
+{% include block/item.html %}
+{% endif %}
 {% endfor %}
 {% include block/index-nav.html %}

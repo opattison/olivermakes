@@ -20,4 +20,6 @@ function scrollTop (event) {
   scroll(Top);
 };
 
-backTop.addEventListener('click', scrollTop, false);
+if (backTop) {
+  backTop.addEventListener('click', scrollTop, false);
+}

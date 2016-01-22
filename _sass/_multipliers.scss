@@ -41,7 +41,8 @@
     @include width-max(l01);
   }
 
-  .index {
+  .index,
+  .index--home {
     font-size: 1.25em;
   }
 }
@@ -51,11 +52,6 @@
   .core-title,
   .core-footer {
     @include width-max(l03);
-  }
-
-  .menu,
-  .routing-menu {
-    font-size: 1.25em;
   }
 }
 
@@ -67,13 +63,8 @@
     font-size: 1.5em;
   }
 
-  .menu,
-  .routing-menu,
-  .routing:target .routing-nav {
-    font-size: 1.5em;
-  }
-
-  .index {
+  .index,
+  .index--home {
     font-size: 1.5em;
   }
 }

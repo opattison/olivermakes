@@ -4,6 +4,7 @@
   flex: 1 0 50%;
   min-height: 2.5em;
   padding: .5em 0;
+  width: 100%;
 
   line-height: 2em;
 
@@ -21,7 +22,6 @@
   .core-pagination:only-child,
   .core-pagination--blank {
     flex: 1 0 4.5em;
-    max-width: 9em;
   }
 
   .core-pagination--later {
@@ -30,5 +30,13 @@
 
   .core-pagination--earlier {
     order: 3; // after .core-meta
+  }
+}
+
+@include min-width(l01) {
+  .core-pagination,
+  .core-pagination:only-child,
+  .core-pagination--blank {
+    flex: 0 0 9em;
   }
 }

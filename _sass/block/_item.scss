@@ -21,6 +21,31 @@
   }
 }
 
+.item--section {
+  width: 100%;
+  padding: 1em;
+
+  @include min-width(m01) {
+    flex: 0 0 50%;
+  }
+
+  @include min-width(m01) {
+    padding: 2em;
+  }
+}
+
+.item--section ul {
+  list-style: none;
+}
+
+.item--section--writing,
+.item--section--projects,
+.item--section--photography,
+.item--section--archive,
+.item--section--about {
+  @extend .item--section;
+}
+
 .item-description {
   padding: 1em;
   position: relative;
@@ -28,6 +53,12 @@
   @include min-width(m01) {
     height: 16em;
     padding: 2em;
+  }
+}
+
+.item--minor-description {
+  @include min-width(m01) {
+    height: 10em;
   }
 }
 
@@ -59,6 +90,52 @@
   font-size: 1.125em;
 }
 
+.item--section-description h1 {
+  font-weight: 300;
+}
+
+.item--section-description p {
+  margin-top: 1.5em;
+  text-align: right;
+}
+
+.item--section-description ul {
+  margin-top: 0;
+  text-align: right;
+}
+
+.item--section-description li {
+  margin-top: 0;
+}
+
+.index--home :nth-child(odd) .item--section-description h1 {
+  @include min-width(m01) {
+    text-align: right;
+  }
+}
+
+.index--home :nth-child(even) .item--section-description h1 {
+  @include min-width(m01) {
+    text-align: left;
+  }
+}
+
+.index--home :nth-child(even) .item--section-description p,
+.index--home :nth-child(even) .item--section-description ul {
+  @include min-width(m01) {
+    text-align: right;
+    padding-left: 3em;
+  }
+}
+
+.index--home :nth-child(odd) .item--section-description p,
+.index--home :nth-child(odd) .item--section-description ul {
+  @include min-width(m01) {
+    text-align: left;
+    padding-right: 3em;
+  }
+}
+
 .item-time {
   font-size: .875em;
 }
@@ -74,8 +151,6 @@
     font-size: 1.125em;
   }
 }
-
-/* Photo gallery for archive page */
 
 .item--photo {
   height: 10em;

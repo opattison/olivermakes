@@ -6,7 +6,15 @@ description: 'A repository of writing and notes on archiving, technology, and ot
 
 ---
 
-{% for post in site.categories.writing limit: 8 %}
+
+{% for post in site.categories.writing %}
+{% if post.option contains 'feature' %}
+{% include block/item--feature.html %}
+{% endif %}
+{% endfor %}
+{% for post in site.categories.writing limit:8 %}
+{% unless post.option contains 'feature' %}
 {% include block/item.html %}
+{% endunless %}
 {% endfor %}
 {% include block/index-nav.html %}

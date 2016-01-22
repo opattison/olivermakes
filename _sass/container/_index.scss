@@ -6,15 +6,25 @@
 
   @include min-width(m01) {
     @include width-max(l01);
-    margin: 1em auto 0;
+    margin: 0 auto;
     justify-content: flex-start;
-  }
-
-  @include min-width(m02) {
-    margin: 1em auto;
   }
 }
 
-.archive--photography .index {
+.index--home {
+  display: flex;
+  flex-flow: column wrap;
   justify-content: flex-start;
+
+  @include min-width(m01) {
+    flex-flow: row wrap;
+  }
+}
+
+.category--projects h2 {
+  flex: 0 0 100%;
+  margin-top: 1em;
+  width: 100%;
+
+  text-align: center;
 }

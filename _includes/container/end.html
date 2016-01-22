@@ -1,5 +1,4 @@
 <footer class="end">
-  {% include block/routing.html %}
   {% include block/credits.html %}
-  {% include block/return.html %}
+  {% unless page.title == 'Home' %}{% include block/return.html %}{% endunless %}
 </footer>

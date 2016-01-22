@@ -98,20 +98,6 @@ mark {
   color: $whiter;
 }
 
-.banner-title:hover .banner-title-heading,
-.banner-title:focus .banner-title-heading {
-  color: $boldblue;
-}
-
-.banner-title:hover circle,
-.banner-title:focus circle {
-  stroke: $boldblue;
-}
-
-.banner-title-logo circle {
-  stroke: $gray02;
-}
-
 .category {
   background-color: $white;
 }
@@ -125,11 +111,11 @@ mark {
 }
 
 .credits {
-  background-color: $gray07;
-  color: $gray00;
+  background-color: $gray06;
+  color: $black;
 }
 
-.credits-meta a {
+.credits a {
   @include a-underline;
 }
 
@@ -201,6 +187,31 @@ mark {
 .index-nav-action:nth-child(2):hover,
 .index-nav-action:nth-child(2):focus {
   color: $blue;
+}
+
+.item--section {
+  color: $whiter;
+  background-color: $gray00;
+
+  a {
+    color: $white;
+  }
+}
+
+.item--section--writing {
+  background-color: $red;
+}
+
+.item--section--projects {
+  background-color: $violet;
+}
+
+.item--section--photography {
+  background-color: $blue;
+}
+
+.item--section--about {
+  background-color: $gray02;
 }
 
 .item:nth-child(2n + 1),
@@ -278,8 +289,12 @@ mark {
   color: $black;
 }
 
-.menu-action {
-  @include action-color($red, $whiter);
+.item--section-description a {
+  @include a-underline($gray05, $whiter);
+}
+
+.item--section-description h1 a {
+  border-bottom: solid 1px $pure-1;
 }
 
 .core-meta a {
@@ -312,22 +327,6 @@ mark {
 .core-pagination--earlier:hover,
 .core-pagination--earlier:focus {
   color: $blue;
-}
-
-.primer {
-  background-color: $blue;
-  color: $gray07;
-}
-
-.primer a {
-  color: $whiter;
-  border-color: $gray07-80;
-}
-
-.primer a:hover,
-.primer a:focus {
-  color: $grayblue;
-  border-bottom: solid 1px $grayblue-50;
 }
 
 .project {
@@ -368,110 +367,21 @@ mark {
 }
 
 .return-action {
-  @include action-color($gray00, $whiter);
-}
-
-.return-action-logo circle {
-  stroke: $whiter;
+  @include action-color($gray07, $black);
 }
 
 .return-action--home {
-  background-color: $red;
+  background-color: $white;
 }
 
 .return-action--top {
-  background-color: $blue;
+  background-color: $gray07;
 }
 
 .return-action:hover,
 .return-action:focus {
-  background-color: $whiter;
-}
-
-.return-action--home:hover {
-  color: $red;
-}
-
-.return-action--home:focus {
-  color: $boldred;
-}
-
-.return-action--home:hover circle {
-  stroke: $red;
-}
-
-.return-action--home:focus circle {
-  stroke: $boldred;
-}
-
-.return-action--top:hover {
-  color: $blue;
-}
-
-.return-action--top:focus {
-  color: $boldblue;
-}
-
-.routing-menu-action {
-  @include action-color($red, $whiter);
-}
-
-.routing-menu-action,
-.routing-menu-action:hover,
-.routing-menu-action:focus {
-  background-color: $whiter;
-  color: $red;
-}
-
-.routing-nav-action {
-  @include action-color($black, $whiter);
-}
-
-.routing-nav-action:nth-child(2) {
-  background-color: $gray01;
-}
-
-.routing-nav-action:nth-child(3) {
-  background-color: $gray02;
-}
-
-.routing-nav-action:nth-child(4) {
-  background-color: $gray00;
-}
-
-.routing-nav-action:hover,
-.routing-nav-action:focus {
-  background-color: $whiter;
-  color: $gray00;
-}
-
-.routing-nav-action:active {
-  background-color: $whiter;
-  color: $green;
-}
-
-.routing:target .routing-nav-action {
-  background-color: $black-80;
-}
-
-.routing:target .routing-nav-action:nth-child(2) {
-  background-color: $gray01-80;
-}
-
-.routing:target .routing-nav-action:nth-child(3) {
-  background-color: $gray02-80;
-}
-
-.routing:target .routing-nav-action:nth-child(4) {
-  background-color: $gray00-80;
-}
-
-.routing:target .routing-nav-action:hover {
-  background-color: $gray07-80;
-}
-
-.routing:target::after {
-  background-color: $black-80;
+  background-color: $gray03;
+  color: $white;
 }
 
 .core-title {
@@ -479,5 +389,5 @@ mark {
 }
 
 .core-footer {
-  background-color: $gray07;
+  background-color: $gray06;
 }

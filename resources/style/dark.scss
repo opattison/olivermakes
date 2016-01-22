@@ -9,15 +9,6 @@
   color: $white;
 }
 
-.dark .banner-title-logo circle {
-  stroke: $gray07;
-}
-
-.dark .banner-title:hover .banner-title-logo circle,
-.dark .banner-title:focus .banner-title-logo circle {
-  stroke: $grayblue;
-}
-
 .dark .banner-title:hover .banner-title-heading,
 .dark .banner-title:focus .banner-title-heading {
   color: $grayblue;
@@ -140,19 +131,15 @@ blockquote a {
   color: $white;
 }
 
-.dark .project-nav .project-nav-action:hover,
-.dark .project-nav .project-nav-action:focus {
-  background-color: $white;
-  border: none;
-}
-
 .dark .project-nav .project-nav-action--url:hover,
 .dark .project-nav .project-nav-action--url:focus {
+  background-color: $white;
   color: $red;
 }
 
 .dark .project-nav .project-nav-action--source:hover,
 .dark .project-nav .project-nav-action--source:focus {
+  background-color: $white;
   color: $violet;
 }
 

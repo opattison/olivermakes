@@ -2,7 +2,6 @@
 title: 'Responsive redesign for Casey&nbsp;Trees'
 layout: dubbel
 option:
-  - feature
   - index-image
 category: 'projects'
 tags:

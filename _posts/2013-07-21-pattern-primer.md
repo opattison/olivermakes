@@ -2,6 +2,7 @@
 title: 'Jekyll Version of Pattern Primer'
 layout: dubbel
 option:
+  - minor
   - sample-srcset
   - srcset
 category: 'projects'
