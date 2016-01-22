@@ -1,5 +1,7 @@
 # olivermak.es an archive
 
+![concentric circle logo](http://olivermak.es/resources/icons/favicon144.png)
+
 ## Goals
 
 - Build a personal website as an archive for my creative output.
