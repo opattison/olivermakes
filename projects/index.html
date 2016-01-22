@@ -6,12 +6,13 @@ description: 'An index of projects that Oliver Pattison has designed or contribu
 
 ---
 
+<h2>Portfolio</h2>
 {% for post in site.categories.projects %}
 {% if post.option contains 'feature' %}
 {% include block/item--feature.html %}
 {% endif %}
 {% endfor %}
-{% for post in site.categories.projects limit:4 %}
+{% for post in site.categories.projects limit:6 %}
 {% unless post.option contains 'feature' %}
 {% unless post.option contains 'minor' %}
 {% include block/item.html %}
@@ -19,7 +20,7 @@ description: 'An index of projects that Oliver Pattison has designed or contribu
 {% endunless %}
 {% endfor %}
 <h2>Minor projects</h2>
-{% for post in site.categories.projects limit:8 %}
+{% for post in site.categories.projects limit:6 %}
 {% if post.option contains 'minor' %}
 {% include block/item.html %}
 {% endif %}
