@@ -9,6 +9,7 @@
   flex-flow: row wrap;
   justify-content: center;
   margin-top: -16em;
+  margin-bottom: -2em;
   padding: 1em;
 
   svg {
@@ -16,6 +17,10 @@
     height: 24em;
     margin: auto;
     width: 24em;
+  }
+
+  @include min-width(s01) {
+    margin-bottom: 0;
   }
 
   @include min-width(l01) {
