@@ -20,14 +20,13 @@ project:
 image:
   - src: 2016-01-21-jekyll-transform.png
     alt: 'The old Jekyll home page design, reimplemented. The design features a black/white contrast split with typography that reverses the shade of each side of the background color.'
-    caption: 'The basis for the graphics used on the site. I hand-traced an image of the camera in Adobe Illustrator. I could have automated this process, but I preferred to brush up on Illustrator and create a more maintainable result.'
-    date: 2014-12-08
+    date: 2016-01-21
 
 ---
 
-I loved [the original home page for Jekyll](http://web.archive.org/web/20120505063819/http://jekyllrb.com/) as it existed from 2009-2013. The stark, contrastive split layout and the blunt text “transform your text into a monster” had a mystique that only hinted at what the tool actually does – make websites. [^1]
+I loved [the original home page for Jekyll](http://web.archive.org/web/20120505063819/http://jekyllrb.com/) as it existed from 2009-2013. The stark, contrastive split layout and the blunt text “transform your text into a monster” had a mystique that only hinted at what the tool actually does: make websites. [^1]
 
-Over eight years and three major versions later, [the Jekyll project has matured](http://jekyllrb.com) and dropped the old design. I decided to revive the design with a [CodePen demo](http://codepen.io/opattison/pen/WQzZRG/?editors=1100) with new web standards that didn’t exist back then. The initial implementation relied on a lot of hacks to achieve its uncommon split layout. I used CSS flexbox layout, `vh` (viewport heihgt units), a two-tone `linear-gradient` background, and `mix-blend-mode` to create the text contrast. The blend mode bit is the most forward-looking and least-well supported part of this demo, but it _is_ usable on real websites with proper care.
+Over eight years and three major versions later, [the Jekyll project has matured](http://jekyllrb.com) and dropped the old design. I decided to revive the design with a [CodePen demo](http://codepen.io/opattison/pen/WQzZRG/?editors=1100) with new web standards that didn’t exist back then. The initial implementation relied on a lot of hacks to achieve its uncommon split layout. I used CSS flexbox for layout, `vh` (viewport height) units, a two-tone `linear-gradient` background, and `mix-blend-mode` to create the text contrast. The blend mode bit is the most forward-looking (and least well-supported) part of this demo, but it _is_ usable on production websites with proper care.
 
 ## CodePen demo
 
@@ -81,4 +80,4 @@ h2 {
 }
 ```
 
-[^1]: Jekyll is the technology behind this website – it is a static site generator that helps build and publish very fast websites, and I use it for most of my work on the web. [I write quite a bit about it](http://olivermak.es/label/jekyll/) as well.
+[^1]: Jekyll is the technology behind this website – it is a static site generator that helps build and publish very fast websites, and I have used it for much of my recent work on the web. [I have written quite a bit about it](http://olivermak.es/label/jekyll/) as well.
