@@ -131,19 +131,15 @@ blockquote a {
   color: $white;
 }
 
-.dark .project-nav .project-nav-action:hover,
-.dark .project-nav .project-nav-action:focus {
-  background-color: $white;
-  border: none;
-}
-
 .dark .project-nav .project-nav-action--url:hover,
 .dark .project-nav .project-nav-action--url:focus {
+  background-color: $white;
   color: $red;
 }
 
 .dark .project-nav .project-nav-action--source:hover,
 .dark .project-nav .project-nav-action--source:focus {
+  background-color: $white;
   color: $violet;
 }
 
