@@ -136,10 +136,3 @@ My open source code (including this site) is on **[GitHub]({{ site.link.github }
 Some of my design experiments are posted on **[CodePen](http://codepen.io/opattison/){:rel="me"}**.
 
 A selection of my mobile photography is on **[VSCO Grid]({{ site.link.vsco }}){:rel="me"}**.
-
-I post less frequently to:
-
-- [Tumblr]({{ site.link.tumblr }}){:rel="me"}
-- [Google+]({{ site.link.googleplus }}){:rel="me"}
-- [Panoramio]({{ site.link.panoramio }}){:rel="me"}
-- [Flickr]({{ site.link.flickr }}){:rel="me"}

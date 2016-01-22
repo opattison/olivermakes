@@ -14,11 +14,8 @@ license:
 ## Referenced URLs (internal and external links for inline use)
 link:
   attribution: http://creativecommons.org/licenses/by-nc/4.0/
-  flickr: https://www.flickr.com/photos/ok-oyot
   jean: http://jeancflanagan.com
   github: https://github.com/opattison
-  googleplus: http://plus.google.com/+OliverPattison
-  panoramio: http://www.panoramio.com/user/oliverpattison
   pinboard: https://pinboard.in/u:opattison
   source: http://github.com/opattison/olivermakes
   subscribe:
@@ -26,7 +23,6 @@ link:
     writing: http://olivermak.es/writing/feed.xml
     photography: http://olivermak.es/photography/feed.xml
     projects: http://olivermak.es/projects/feed.xml
-  tumblr: http://olivermakes.tumblr.com
   twitter: http://twitter.com/olivermakes
   vsco: http://olivermakes.vsco.co
 
