@@ -1,5 +1,5 @@
 <section class="pattern pattern--element" id="{{ pattern.title | slugify }}">
-  <div class="pattern-display" {% if pattern.option contains 'fix-rem' %} style="font-size: 1rem;"{% endif %}>{{ pattern.content | markdownify }}</div>
+  <div class="pattern-display {% if pattern.option contains 'fix-rem' %}pattern-display--wider{% endif %}" {% if pattern.option contains 'fix-rem' %} style="font-size: 1rem;"{% endif %}>{{ pattern.content | markdownify }}</div>
   <details class="pattern-meta">
     <summary><code>{{ pattern.title }}</code></summary>
     <figure>

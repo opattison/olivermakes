@@ -297,10 +297,6 @@ mark {
   border-bottom: solid 1px $pure-1;
 }
 
-.core-meta a {
-  @include a-underline($pure-1, $grayblue);
-}
-
 .core-pagination {
   @include action-color($red, $white);
 }

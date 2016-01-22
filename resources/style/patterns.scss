@@ -80,6 +80,13 @@
   margin-top: 0;
 }
 
+.pattern-display--wider {
+  @include min-width(l01) {
+    margin-left: -6em;
+    margin-right: -6em;
+  }
+}
+
 .pattern-meta {
   background-color: $gray06;
   clear: both;
