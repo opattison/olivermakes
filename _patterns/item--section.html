@@ -4,6 +4,8 @@ use: 'Linked sections of the website with summaries.'
 spec: 'Thin hyperlinked headlines with no underline style (except on hover/focus). List first three items in category (or for non-category sections, a text summary). On large screens, alternate right/left alignment using flexbox and `text-align`.'
 restriction: 'Only for use on the home/menu page.'
 type: html
+option:
+  - fix-rem
 category: component
 ---
 
@@ -11,6 +13,7 @@ category: component
   <article class="item--section--writing">
     <div class="item--section-description">
       <h1><a href="/writing/">/writing</a></h1>
+      <p><em>Recently:</em></p>
       <ul>
         <li><a href="/2015/02/institutional-memory/">Institutional memory
   </a></li>
