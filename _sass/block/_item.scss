@@ -108,7 +108,18 @@
   margin-top: 0;
 }
 
-.index--home :nth-child(odd) .item--section-description h1,
+.index--home :nth-child(odd) .item--section-description h1 {
+  @include min-width(m01) {
+    text-align: right;
+  }
+}
+
+.index--home :nth-child(even) .item--section-description h1 {
+  @include min-width(m01) {
+    text-align: left;
+  }
+}
+
 .index--home :nth-child(even) .item--section-description p,
 .index--home :nth-child(even) .item--section-description ul {
   @include min-width(m01) {
@@ -117,7 +128,6 @@
   }
 }
 
-.index--home :nth-child(even) .item--section-description h1,
 .index--home :nth-child(odd) .item--section-description p,
 .index--home :nth-child(odd) .item--section-description ul {
   @include min-width(m01) {
