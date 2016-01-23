@@ -84,7 +84,7 @@ samp {
 
 .ancillary {
   background-color: $gray00;
-  color: inherit;
+  color: $white;
 }
 
 .edgeless .ancillary {
@@ -92,8 +92,7 @@ samp {
 }
 
 .footnotes {
-  background-color: $grayblue-50;
-  color: inherit;
+  color: $white;
 }
 
 .footnotes .reversefootnote {
@@ -148,4 +147,8 @@ samp {
 .core-meta,
 .core-footer {
   background-color: $gray02;
+}
+
+.screenshot img {
+  outline: solid 1px $gray03;
 }
