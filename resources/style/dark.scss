@@ -152,23 +152,3 @@ blockquote a {
 .dark .core-footer {
   background-color: $gray02;
 }
-
-.dark .routing-nav-action {
-  background-color: $black-80;
-}
-
-.dark .routing-nav-action:nth-child(2) {
-  background-color: $gray01-80;
-}
-
-.dark .routing-nav-action:nth-child(3) {
-  background-color: $gray02-80;
-}
-
-.dark .routing-nav-action:nth-child(4) {
-  background-color: $gray00-80;
-}
-
-.dark .routing-nav-action:hover {
-  background-color: $gray07-80;
-}
