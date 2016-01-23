@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="192px" height="192px" viewBox="0 0 192 192" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>touchicon192</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="touchicon192">
+            <rect id="Background" fill="#F1F3F4" x="0" y="0" width="192" height="192"></rect>
+            <g id="layers" transform="translate(35.000000, 35.000000)">
+                <circle id="layer16" fill="#BD1B0F" cx="61" cy="61" r="61"></circle>
+                <circle id="layer15" fill="#373E43" cx="61" cy="61" r="59"></circle>
+                <circle id="layer14" fill="#BD1B0F" cx="61" cy="61" r="54"></circle>
+                <circle id="layer12" fill="#CC3D33" cx="61" cy="61" r="50"></circle>
+                <circle id="layer10" fill="#49535A" cx="61" cy="61" r="46"></circle>
+                <circle id="layer9" fill="#397EAC" cx="61" cy="61" r="38"></circle>
+                <circle id="layer8" fill="#5A6FAF" cx="61" cy="61" r="32"></circle>
+                <circle id="layer7" fill="#5C6870" cx="61" cy="61" r="28"></circle>
+                <circle id="layer6" fill="#105F93" cx="61" cy="61" r="26"></circle>
+                <circle id="layer5" fill="#397EAC" cx="61" cy="61" r="24"></circle>
+                <circle id="layer4" fill="#B0B9BF" cx="61" cy="61" r="20"></circle>
+                <circle id="layer3" fill="#1476B8" cx="61" cy="61" r="17"></circle>
+                <circle id="layer2" fill="#5C6870" cx="61" cy="61" r="13"></circle>
+                <circle id="layer1" fill="#397EAC" cx="61" cy="61" r="9"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

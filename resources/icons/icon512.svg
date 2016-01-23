@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon512</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon512">
+            <g id="layers" transform="translate(73.000000, 73.000000)">
+                <circle id="layer16" fill="#BD1B0F" cx="183" cy="183" r="183"></circle>
+                <circle id="layer15" fill="#373E43" cx="183" cy="183" r="177"></circle>
+                <circle id="layer14" fill="#BD1B0F" cx="183" cy="183" r="162"></circle>
+                <circle id="layer12" fill="#CC3D33" cx="183" cy="183" r="150"></circle>
+                <circle id="layer10" fill="#49535A" cx="183" cy="183" r="138"></circle>
+                <circle id="layer9" fill="#397EAC" cx="183" cy="183" r="114"></circle>
+                <circle id="layer8" fill="#5A6FAF" cx="183" cy="183" r="96"></circle>
+                <circle id="layer7" fill="#5C6870" cx="183" cy="183" r="84"></circle>
+                <circle id="layer6" fill="#105F93" cx="183" cy="183" r="78"></circle>
+                <circle id="layer5" fill="#397EAC" cx="183" cy="183" r="72"></circle>
+                <circle id="layer4" fill="#B0B9BF" cx="183" cy="183" r="60"></circle>
+                <circle id="layer3" fill="#1476B8" cx="183" cy="183" r="51"></circle>
+                <circle id="layer2" fill="#5C6870" cx="183" cy="183" r="39"></circle>
+                <circle id="layer1" fill="#397EAC" cx="183" cy="183" r="27"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
