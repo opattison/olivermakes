@@ -3,8 +3,10 @@
 @import 'variables',
         'mixins';
 
-#error {
-  background-color: hsla(4, 60%, 47%, 1);
+#error,
+#error .core-title,
+#error .content {
+  background-color: $red;
 }
 
 #error .banner-title svg {
@@ -12,13 +14,8 @@
   width: 12em;
 }
 
-#error .core-title,
-#error .content {
-  background-color: hsla(4, 60%, 47%, 1);
-}
-
 #error .core-title h1 {
-  color: hsla(204, 10%, 97%, 1);
+  color: $whiter;
   text-align: center;
 }
 
@@ -28,17 +25,17 @@
 }
 
 #error .content * {
-  color: hsla(204, 10%, 97%, 1);
+  color: $whiter;
   text-align: center;
 }
 
 #error a {
-  color: hsla(204, 10%, 95%, 1);
+  color: $white;
 }
 
 #error a:hover,
 #error a:focus {
-  color: hsla(204, 30%, 80%, 1);
+  color: $grayblue;
 }
 
 #error .return {
@@ -48,12 +45,12 @@
 }
 
 #error .return-action--home {
-  color: hsla(204, 10%, 12%, 1);
+  color: $black;
   flex: 0 0 100%;
 
   &:hover,
   &:focus {
-    color: hsla(204, 10%, 95%, 1);
+    color: $white;
   }
 
   @include min-width(m01) {
