@@ -1,8 +1,8 @@
 ---
 title: 'Meridian Hill Park'
 layout: edgeless
+theme: dark
 option:
-  - dark
   - index-image
   - map-meta
   - srcset

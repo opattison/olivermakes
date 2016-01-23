@@ -1,9 +1,9 @@
 ---
 title: 'Fujifilm X-E2 vector'
 layout: edgeless
+theme: dark
 option:
   - code
-  - dark
   - index-image
   - minor
   - sample-svg

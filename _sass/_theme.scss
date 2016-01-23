@@ -362,6 +362,10 @@ mark {
   color: $violet;
 }
 
+.essay {
+  background-color: $gray06;
+}
+
 .return-action {
   @include action-color($gray07, $black);
 }

@@ -1,8 +1,8 @@
 ---
 title: 'Chichester street reflection'
 layout: edgeless
+theme: dark
 option:
-  - dark
   - map-meta
   - srcset
 category: 'photography'

@@ -1,8 +1,8 @@
 ---
 title: 'Summer at the National Arboretum'
 layout: edgeless
+theme: dark
 option:
-  - dark
   - index-image
   - map-meta
   - srcset
