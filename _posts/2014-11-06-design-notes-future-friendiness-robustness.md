@@ -90,7 +90,7 @@ Another aspect of working with a static site that appeals to me is that I am abl
 
 The trade-off is supposedly an easier user interface for editing and administration, and more flexibility with dynamic content. However, I find a CMS in the WordPress model more intimidating after a couple of years getting comfortable with tools like Jekyll and Git. I like working in a text editor. I have grown to appreciate the power of the command line. The data that I input into my site is under my control because I manage the input and the output from my own computer, rather than relying on someone else’s server.
 
-<figure class="right svg">
+<figure class="extralight right svg">
   <img
     src="{{ site.image_url }}/{{ page.image[0].src }}"
     alt="{{ page.image[0].alt }}"
