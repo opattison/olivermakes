@@ -78,6 +78,10 @@ samp {
   color: $gray06;
 }
 
+.pattern--swatch figcaption {
+  background-color: $gray01-90;
+}
+
 .focus {
   color: $grayblue;
 }
@@ -150,5 +154,5 @@ samp {
 }
 
 .screenshot img {
-  outline: solid 1px $gray03;
+  outline: solid 1px $gray02;
 }
