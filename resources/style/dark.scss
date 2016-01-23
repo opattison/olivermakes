@@ -92,6 +92,11 @@ samp {
   color: inherit;
 }
 
+.edgeless .ancillary,
+.edgeless .footnotes {
+  background-color: $gray02;
+}
+
 .footnotes .reversefootnote {
   color: $white;
 }
