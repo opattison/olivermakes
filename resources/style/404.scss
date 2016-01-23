@@ -6,7 +6,7 @@
 #error,
 #error .core-title,
 #error .content {
-  background-color: $red;
+  background-color: $violet;
 }
 
 #error .banner-title svg {
@@ -29,13 +29,14 @@
   text-align: center;
 }
 
-#error a {
+#error .content a {
   color: $white;
+  @include a-underline($white, $pink-50);
 }
 
-#error a:hover,
-#error a:focus {
-  color: $grayblue;
+#error .content a:hover,
+#error .content a:focus {
+  color: $pink;
 }
 
 #error .return {
@@ -44,9 +45,10 @@
   justify-content: center;
 }
 
-#error .return-action--home {
+#error .return .return-action--home {
   color: $black;
   flex: 0 0 100%;
+  @include a-underline($pure-1, $pure-1);
 
   &:hover,
   &:focus {
