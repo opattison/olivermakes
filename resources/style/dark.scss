@@ -16,15 +16,11 @@ h4 {
 }
 
 sup[id] a {
-  background-color: $pink-50;
-  border: none;
   color: $gray06;
 }
 
 sup[id] a:hover,
 sup[id] a:focus {
-  background-color: $grayblue-50;
-  border: none;
   color: $gray06;
 }
 
@@ -86,26 +82,22 @@ samp {
   color: $grayblue;
 }
 
-.ancillary,
-.footnotes {
+.ancillary {
   background-color: $gray00;
   color: inherit;
 }
 
-.edgeless .ancillary,
-.edgeless .footnotes {
+.edgeless .ancillary {
   background-color: $gray02;
+}
+
+.footnotes {
+  background-color: $grayblue-50;
+  color: inherit;
 }
 
 .footnotes .reversefootnote {
   color: $white;
-}
-
-.reversefootnote:hover,
-.reversefootnote:focus {
-  color: $white;
-  background-color: $grayblue-50;
-  border-color: $grayblue-50;
 }
 
 .project {
