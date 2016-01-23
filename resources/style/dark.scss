@@ -54,7 +54,12 @@ blockquote footer {
 
 .highlight {
   background-color: $whiter;
-  border-color: $gray03;
+  color: $gray01;
+  border-color: $gray04;
+}
+
+.highlight .c {
+  color: $gray04; /* Comments */
 }
 
 p > code,
@@ -82,12 +87,7 @@ samp {
   color: inherit;
 }
 
-.footnotes li,
-.reversefootnote {
-  border-color: $gray04;
-}
-
-.reversefootnote {
+.footnotes .reversefootnote {
   color: $white;
 }
 
