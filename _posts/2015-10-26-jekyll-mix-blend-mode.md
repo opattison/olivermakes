@@ -31,8 +31,6 @@ Over eight years and three major versions later, [the Jekyll project has matured
 
 ## CodePen demo
 
----
-
 <p data-height="320" data-theme-id="0" data-slug-hash="WQzZRG" data-default-tab="result" data-user="opattison" class='codepen'>See the Pen <a href='http://codepen.io/opattison/pen/WQzZRG/'>transform your text into a monster</a> by Oliver Pattison (<a href='http://codepen.io/opattison'>@opattison</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
