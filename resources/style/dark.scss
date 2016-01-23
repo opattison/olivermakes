@@ -3,32 +3,26 @@
 @import 'variables';
 @import 'mixins';
 
-.dark,
-.dark .core {
+body {
   background-color: $gray00;
   color: $white;
 }
 
-.dark .banner-title:hover .banner-title-heading,
-.dark .banner-title:focus .banner-title-heading {
-  color: $grayblue;
-}
-
-.dark h1,
-.dark h2,
-.dark h3,
-.dark h4 {
+h1,
+h2,
+h3,
+h4 {
   color: $gray07;
 }
 
-.dark sup[id] a {
+sup[id] a {
   background-color: $pink-50;
   border: none;
   color: $gray06;
 }
 
-.dark sup[id] a:hover,
-.dark sup[id] a:focus {
+sup[id] a:hover,
+sup[id] a:focus {
   background-color: $grayblue-50;
   border: none;
   color: $gray06;
@@ -49,106 +43,107 @@ blockquote a {
   @include a-underline($pink-50, $grayblue-50);
 }
 
-.dark .core-meta a {
-  @include a-underline($pink-50, $grayblue-50);
-}
-
-.dark .core figcaption {
-  color: $gray06;
-}
-
-.dark blockquote {
+blockquote {
   color: $gray05;
   border-color: $grayblue;
 }
 
-.dark blockquote footer {
+blockquote footer {
   color: $gray06;
 }
 
-.dark .highlight {
+.highlight {
   background-color: $whiter;
   border-color: $gray03;
 }
 
-.dark p > code,
-.dark li > code,
-.dark samp {
+p > code,
+li > code,
+samp {
   border-color: $gray04;
 }
 
-.dark .focus {
+.core {
+  background-color: $gray00;
+  color: $white;
+}
+
+.core figcaption {
+  color: $gray06;
+}
+
+.focus {
   color: $grayblue;
 }
 
-.dark .ancillary,
-.dark .footnotes {
+.ancillary,
+.footnotes {
   background-color: $gray00;
   color: inherit;
 }
 
-.dark .footnotes li,
-.dark .reversefootnote {
+.footnotes li,
+.reversefootnote {
   border-color: $gray04;
 }
 
-.dark .reversefootnote {
+.reversefootnote {
   color: $white;
 }
 
-.dark .reversefootnote:hover,
-.dark .reversefootnote:focus {
+.reversefootnote:hover,
+.reversefootnote:focus {
   color: $white;
   background-color: $grayblue-50;
   border-color: $grayblue-50;
 }
 
-.dark .project {
+.project {
   background-color: $gray02;
 }
 
-.dark .project-image {
+.project-image {
   background-color: $gray02;
 }
 
-.dark .project-summary {
+.project-summary {
   color: $gray07;
 }
 
-.dark .project-nav .project-nav-action {
+.project-nav .project-nav-action {
   border: none;
   color: $whiter;
 }
 
-.dark .project-nav .project-nav-action--url {
+.project-nav .project-nav-action--url {
   background-color: $red;
   color: $white;
 }
 
-.dark .project-nav .project-nav-action--source {
+.project-nav .project-nav-action--source {
   background-color: $violet;
   border: none;
   color: $white;
 }
 
-.dark .project-nav .project-nav-action--url:hover,
-.dark .project-nav .project-nav-action--url:focus {
+.project-nav .project-nav-action--url:hover,
+.project-nav .project-nav-action--url:focus {
   background-color: $white;
   color: $red;
 }
 
-.dark .project-nav .project-nav-action--source:hover,
-.dark .project-nav .project-nav-action--source:focus {
+.project-nav .project-nav-action--source:hover,
+.project-nav .project-nav-action--source:focus {
   background-color: $white;
   color: $violet;
 }
 
-.dark .essay {
+.essay {
   background-color: $gray02;
   color: $white;
 }
 
-.dark .core-meta,
-.dark .core-footer {
+.core-meta,
+.core-footer {
   background-color: $gray02;
 }
