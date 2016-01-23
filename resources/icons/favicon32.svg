@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>favicon32</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="favicon32">
+            <g id="layers">
+                <circle id="layer15" fill="#373E43" cx="16" cy="16" r="16"></circle>
+                <circle id="layer12" fill="#CC3D33" cx="16" cy="16" r="14"></circle>
+                <circle id="layer10" fill="#49535A" cx="16" cy="16" r="10"></circle>
+                <circle id="layer6" fill="#105F93" cx="16" cy="16" r="8"></circle>
+                <circle id="layer1" fill="#397EAC" cx="16" cy="16" r="5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

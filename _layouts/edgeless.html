@@ -22,7 +22,7 @@
 
   </article>
 
-{% include container/end.html %}
+{% unless page.option contains 'error' %}{% include container/end.html %}{% endunless %}
 
 </body>
 </html>

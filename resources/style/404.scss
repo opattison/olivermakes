@@ -1,37 +1,61 @@
 ---
 ---
-#error {
-  background-color: hsla(4, 60%, 47%, 1);
-}
+@import 'variables',
+        'mixins';
 
-#error .banner-title h1 {
-  color: hsla(204, 10%, 97%, 1);
-}
-
+#error,
 #error .core-title,
 #error .content {
-  background-color: hsla(4, 60%, 47%, 1);
+  background-color: $violet;
+}
+
+#error .banner-title svg {
+  height: 12em;
+  width: 12em;
 }
 
 #error .core-title h1 {
-  color: hsla(204, 10%, 97%, 1);
+  color: $whiter;
   text-align: center;
 }
 
 #error .content {
-  padding-bottom: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 #error .content * {
-  color: hsla(204, 10%, 97%, 1);
+  color: $whiter;
   text-align: center;
 }
 
 #error .content a {
-  color: hsla(204, 10%, 95%, 1);
+  color: $white;
+  @include a-underline($white, $pink-50);
 }
 
 #error .content a:hover,
 #error .content a:focus {
-  color: hsla(204, 30%, 80%, 1);
+  color: $pink;
+}
+
+#error .return {
+  margin-top: 4em;
+  font-size: 1rem;
+  justify-content: center;
+}
+
+#error .return .return-action--home {
+  color: $black;
+  flex: 0 0 100%;
+  @include a-underline($pure-1, $pure-1);
+
+  &:hover,
+  &:focus {
+    color: $white;
+  }
+
+  @include min-width(m01) {
+    flex: 0 0 50%;
+  }
 }
