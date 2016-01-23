@@ -1,8 +1,8 @@
 ---
 title: 'My turntable'
 layout: edgeless
+theme: dark
 option:
-  - dark
   - map-meta
   - srcset
 category: 'photography'
