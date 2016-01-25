@@ -37,7 +37,7 @@ image:
     caption: '… and dark themes.'
   - src: 2014-12-12-photo-meta-example.jpg
     alt: 'an example of the graphics in action a photo metadata excerpt'
-    caption: 'What the vector graphic looks like [in context on a photo page](http://olivermak.es/2014/11/turntable/).'
+    caption: 'What the vector graphic looks like [in context on a photo page](/2014/11/turntable/).'
 
 ---
 
