@@ -1,4 +1,4 @@
-# <a href="https://olivermak.es/"><img src="https://olivermak.es/resources/icons/favicon64.svg" width="50" height="50"> olivermak.es</a> an archive
+# <a href="https://olivermak.es/"><img src="https://olivermak.es/resources/icons/favicon32.svg" width="32" height="32"></a> <a href="https://olivermak.es/">olivermak.es</a> an archive
 
 ## Goals
 
