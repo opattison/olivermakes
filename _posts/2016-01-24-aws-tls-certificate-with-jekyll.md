@@ -58,7 +58,7 @@ Serving over HTTPS with SSL or TLS used to be difficult to configure, and someti
 
 Amazon Simple Storage Service (S3) is a fast and usually inexpensive way of hosting a static site. S3 typically offers better value for money compared to other budget hosting options, since the initial costs are lower with no fixed payment floor and performance can be surprisingly fast compared to shared hosting. Amazon CloudFront, a content delivery network, enhances S3’s capability by serving files based on their location as determined by network latency. Serving files as close as possible to the user can yield significant gains in performance. A bucket of hosted S3 files can hook right into CloudFront, so an S3 site can be configured to serve with CloudFront instead with only a few minutes of configuration time.
 
-AWS is the so-called “cloud”. What this really means is that Amazon provides a collection of remote, abstracted servers with tools for deploying and hosting website and web services. Together, S3, CloudFront and the AWS Certificate Manager enable hosting a personal static site for potentially only a couple of dollars per month. Now a TLS certificate can now be had initially for *free* for a CloudFront site.
+AWS is the so-called “cloud”. What this really means is that Amazon provides a collection of remote, abstracted servers with tools for deploying and hosting website and web services. Together, S3, CloudFront and the AWS Certificate Manager enable hosting a personal static site for potentially only a couple of dollars per month. A TLS certificate can now be had initially for *free* for a CloudFront site.
 
 ## Assumptions before starting
 
@@ -74,7 +74,7 @@ Before I get to [the part about configuring a TLS certificate](#step-4), I’ll 
 ## Step 1: S3
 {:#step-1}
 
-I have been working with hosting static sites on S3 in 2013, so I already had a head start on this part. Initial setup was a bit confusing, but now that I am familiar with it, it is my preferred method for hosting Jekyll sites.
+I have been working with hosting static sites on S3 since 2013, so I already had a head start on this part. Initial setup was a bit confusing, but now that I am familiar with it, it is my preferred method for hosting Jekyll sites.
 
 S3 initially requires setting up at least one “bucket” of files, which is essentially a directory that can be made into a public site. An S3 bucket is the target to deploy a static site to.
 
@@ -168,7 +168,7 @@ If `example.com` is desired instead of `www.example.com`, Route 53 can be set up
 
 Go to the S3 console and create a new bucket exactly as before but instead of creating a policy go immediately to **Static Website Hosting**. Select **Redirect all requests to another host name** and set it to the root URL (such as `https://example.com`). While here, copy the **Endpoint** which looks like `BUCKET.NAME.s3-website-us-east-1.amazonaws.com`. Save.
 
-Afterward, in Route 53 create a new record set the same as before, but set the **Value** to the endpoint copied from the S3 console (looks like `BUCKET.NAME.s3-website-us-east-1.amazonaws.com`). Save. Now all requests to `www.example.com` requests will resolve to `example.com`.
+Afterward, in Route 53 create a new record set the same as before, but set the **Value** to the endpoint copied from the S3 console (looks like `BUCKET.NAME.s3-website-us-east-1.amazonaws.com`). Save. All requests to `www.example.com` requests will resolve to `example.com`.
 
 Before setting up TLS, make sure all URLs on the site are working properly at their `http://` location.
 
