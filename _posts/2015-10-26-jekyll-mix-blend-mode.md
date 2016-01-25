@@ -79,4 +79,4 @@ h2 {
 }
 ```
 
-[^1]: Jekyll is the technology behind this website – it is a static site generator that helps build and publish very fast websites, and I have used it for much of my recent work on the web. [I have written quite a bit about it](http://olivermak.es/label/jekyll/) as well.
+[^1]: Jekyll is the technology behind this website – it is a static site generator that helps build and publish very fast websites, and I have used it for much of my recent work on the web. [I have written quite a bit about it](/label/jekyll/) as well.

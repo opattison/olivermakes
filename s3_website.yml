@@ -1,6 +1,8 @@
 s3_id: <%= ENV['S3_ID'] %>
 s3_secret: <%= ENV['S3_SECRET'] %>
 s3_bucket: <%= ENV['DEPLOY'] == 'production' ? '' : 'dev.' %>olivermak.es
+cloudfront_distribution_id: <%= ENV['DEPLOY'] == 'production' ? 'E12X056WJY9NPN' : 'E1ZEUSCMK4SFIP' %>
+cloudfront_invalidate_root: true
 
 max_age:
   "*.css": 2419200

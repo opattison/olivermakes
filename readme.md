@@ -1,6 +1,4 @@
-# olivermak.es an archive
-
-![concentric circle logo](http://olivermak.es/resources/icons/favicon144.png)
+# <a href="https://olivermak.es/"><img src="https://olivermak.es/resources/icons/favicon32.svg" width="32" height="32"></a> <a href="https://olivermak.es/">olivermak.es</a> an archive
 
 ## Goals
 
@@ -57,4 +55,6 @@
 
 All writing and photography on the site is my original work and is licensed under [Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC)](http://creativecommons.org/licenses/by-nc/4.0/). All design and code is under conventional copyright (as opposed to CC-style “copyleft” copyright), but is available for fair use [on GitHub](https://github.com/opattison/olivermakes). If you are looking at the repository, almost everything in the `_static` and `_posts` folders is CC BY-NC and the most of the rest of it is under copyright, where applicable.
 
-[Read more](http://olivermak.es/about/#copyright) on attribution and copyright for the site. If you have any questions about licensing or use of content from the site, please [contact me by email](oliverpattison@gmail.com).
+[Read more](https://olivermak.es/about/#copyright) on attribution and copyright for the site. If you have any questions about licensing or use of content from the site, please [contact me by email](oliverpattison@gmail.com).
+
+<a href="https://olivermak.es/"><img src="https://olivermak.es/resources/icons/favicon144.svg" width="100%" height="144"></a>

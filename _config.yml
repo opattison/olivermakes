@@ -19,10 +19,10 @@ link:
   pinboard: https://pinboard.in/u:opattison
   source: http://github.com/opattison/olivermakes
   subscribe:
-    full: http://olivermak.es/full.xml
-    writing: http://olivermak.es/writing/feed.xml
-    photography: http://olivermak.es/photography/feed.xml
-    projects: http://olivermak.es/projects/feed.xml
+    full: https://olivermak.es/full.xml
+    writing: https://olivermak.es/writing/feed.xml
+    photography: https://olivermak.es/photography/feed.xml
+    projects: https://olivermak.es/projects/feed.xml
   twitter: http://twitter.com/olivermakes
   vsco: http://olivermakes.vsco.co
 
@@ -80,7 +80,7 @@ exclude: [s3_website.yml, Rakefile]
 
 ## Configuration URLs
 domain: olivermak.es
-url: http://olivermak.es
+url: https://olivermak.es
 patterns_url: /patterns
 image_url: /resources/images
 icon_url: /resources/icons
