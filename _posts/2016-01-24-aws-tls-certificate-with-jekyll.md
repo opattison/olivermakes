@@ -1,5 +1,5 @@
 ---
-title: 'Setting up AWS CloudFront and TLS (HTTPS) with Jekyll'
+title: 'Setting up CloudFront and TLS (HTTPS) with Jekyll'
 layout: singel
 option:
   - code
@@ -11,24 +11,25 @@ tags:
   - 'jekyll'
   - 'privacy'
   - 'web'
-date: 2016-01-25 10:42
-updated: 2016-01-25 10:42
-drafted: 2016-01-24 8:45
-unique_id: 2016-01-25:aws-tls-certificate-with-jekyll
-description: 'How to configure and host a secure static site on a small budget.'
-feature-description: 'A step-by-step guide on how I configured and hosted a secure static site on a small budget in an afternoon.'
+date: 2016-01-24 20:37
+updated: 2016-01-25 11:33
+drafted: 2016-01-24 22:00
+unique_id: 2016-01-24:aws-tls-certificate-with-jekyll
+description: 'A step-by-step guide on how I configured and hosted a secure static site using AWS.'
+project:
+  source: https://github.com/opattison/olivermakes/pull/228
 image:
   - src: 2016-01-25-lock.svg
     src_png: 2016-01-25-lock.png
     alt: 'A stylized lock inspired by the green TLS lock symbol in a web browser.'
     date: 2016-01-25
     description: 'Designed in Sketch'
-  - src: 2016-01-25-cloudfront-record-set.png
-    alt: 'Screenshot of a CloudFront record set.'
-    date: 2016-01-25
   - src: 2014-10-08-tea-olivermakes-ccbync.jpg
     alt: 'A hot cup of English tea.'
     date: 2014-10-08
+  - src: 2016-01-25-cloudfront-record-set.png
+    alt: 'Screenshot of a CloudFront record set.'
+    date: 2016-01-25
   - src: 2016-01-25-only-sni.png
     alt: 'Screenshot of radio select for SNI'
     caption: 'Adjusting Custom SSL Client Support and Default Root Object in CloudFront.'
@@ -49,9 +50,9 @@ image:
 This is a guide to getting set up quickly and cheaply to host a static website on Amazon Web Services with a [TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security) certificate.
 {:.focus}
 
-We live in a time of significant uncertainty about what privacy means. Our personal privacy and identity are threatened by governments, companies, and individuals who have proven that they can’t be trusted. At the very least, we expect our email services, banks and shopping carts to be served entirely over secure connections. Transport Layer Security (TLS) prevents [information from being altered mid-stream](https://www.aaron-gustafson.com/notebook/more-proof-we-dont-control-our-web-pages/) and is the main line of protection on the web against passwords and other sensitive information being read over open networks. It is one method for determining that a site is what it claims to be. I would want others to configure their websites using TLS, so why wouldn’t I do my part, even for a private website like my own? I value privacy of communication and freedom from surveillance enough that I decided my own site should be served over a secure connection.
+We live in a time of significant uncertainty about what privacy means. Our personal data and identity are closely monitored and threatened by governments, companies, and individuals who have proven that they can’t be trusted. At the least, we expect our email services, banks and shopping carts to be served entirely over secure connections. Transport Layer Security (TLS) prevents [information from being altered mid-stream](https://www.aaron-gustafson.com/notebook/more-proof-we-dont-control-our-web-pages/) and is the main line of protection on the web against passwords and other sensitive information being read over open networks. TLS is one method for determining that a site is what it claims to be. I would want others to configure their websites using TLS, so why wouldn’t I do my part, even for a private website like my own? I value the principles of privacy of communication and freedom from surveillance enough that I decided my own site should be served over a secure connection.
 
-Serving over HTTPS with SSL or TLS used to be very difficult to configure, and sometimes prohibitively expensive. Fortunately the solution for this problem [isn’t nearly as much of a barrier anymore](https://www.tbray.org/ongoing/When/201x/2012/12/02/HTTPS). An individual can afford to host a website cheaply, and a TLS certificate can now be added for a very low cost on top of that. Amazon Web Services (AWS) has made it straightforward enough for me to do in an afternoon.
+Serving over HTTPS with SSL or TLS used to be difficult to configure, and sometimes prohibitively expensive. Fortunately the solution for this problem [isn’t nearly as much of a barrier anymore](https://www.tbray.org/ongoing/When/201x/2012/12/02/HTTPS). An individual can afford to host a website cheaply, and a TLS certificate can now be added for a very low cost on top of that. Amazon Web Services (AWS) has made it straightforward enough for me to do in an afternoon.
 
 ## Reasons for picking AWS
 
@@ -126,19 +127,19 @@ s3_website configuration could be an article on its own, so I’ll defer to thei
 ## Step 2: CloudFront
 {:#step-2}
 
+### Create a distribution
+
 Go to the [CloudFront configuration](https://console.aws.amazon.com/cloudfront/home) and **Create Distribution** (select a “Web” distribution when prompted). The **Origin Domain Name** should be set to the endpoint from the S3 bucket (looks like `BUCKET.NAME.s3-website-us-east-1.amazonaws.com`).
 
-Set **Viewer Protocol Policy** to “Redirect HTTP to HTTPS”. Set **Alternate Domain Names (CNAMEs)** to the desired domain. Leave **SSL Certificate** alone – or [skip ahead to the final step](#step-4) to take care of this now. Set **Default Root Object** to `index.html` which makes sure that the root domain `https://example.com/` will redirect to an index page rather than showing a directory of files or an error message. I set **Logging** on and created an S3 bucket for it, but it is not essential for configuration. Set **Distribution State** to “enabled” (default value).
+### Configure
 
-<figure class="image--half">
-  <img src="{{ site.image_url }}/{{ page.image[1].src }}" alt="{{ page.image[1].alt }}" />
-</figure>
+Set **Alternate Domain Names (CNAMEs)** to the desired domain. Leave **SSL Certificate** alone – or [skip ahead to the final step](#step-4) to take care of this now. Set **Default Root Object** to `index.html` which makes sure that the root domain `https://example.com/` will redirect to an index page rather than showing a directory of files or an error message. I set **Logging** on and created an S3 bucket for it, but it is not essential for configuration. Set **Distribution State** to “enabled” (default value).
 
 ### Wait
 
 This is point where I would brew a cup of tea since it will take 5-20 minutes for CloudFront to “progress”. The first couple of times I used CloudFront, I spent more time changing configuration items and waiting for effects to kick in than I actually did reading AWS documentation. CloudFront configuration takes a really long time – take time to try to get the configuration correct initially because each further change requires resetting the clock to zero (and making another cup of tea)!
 
-<img src="{{ site.image_url }}/{{ page.image[2].src }}" alt="{{ page.image[2].alt }}">
+<img src="{{ site.image_url }}/{{ page.image[1].src }}" alt="{{ page.image[1].alt }}">
 
 ---
 
@@ -147,11 +148,17 @@ This is point where I would brew a cup of tea since it will take 5-20 minutes fo
 
 Setting up Route 53 for handling routing isn’t absolutely required, but I found it helpful since it keeps all of the administration in one place. Also, Route 53 starts at a flat 50 cents per month per domain. One could configure DNS with another service, but I chose Route 53. Avoid this step for live domains and websites until some brief downtime is acceptable.
 
+### Create a hosted zone
+
 Sign in to the [Route 53 console](https://console.aws.amazon.com/route53/home) and create a new **Hosted Zone** with the target domain. After it is created, copy the **Name Servers** and add them individually to that domain’s registrar administration for name servers. Now Route 53 handles configuration for the domain.
 
 ### Wire Route 53 to CloudFront
 
-Create an `ALIAS` record for the root domain. In the hosted zone select **Create Record Set**. Leave **Name** blank to set the target URL without a subdomain or prepended `www` (like `example.com`). **Type** should be “A – IPv4 address”. **Alias** should be set to “Yes”. **Alias target** should be set to the CloudFront distribution URL from the distribution created in [step 3](#step-3). Save.
+Create an `ALIAS` record for the root domain. In the hosted zone select **Create Record Set**. Leave **Name** blank to set the target URL without a subdomain or prepended `www` (like `example.com`). **Type** should be “A – IPv4 address”. **Alias** should be set to “Yes”. **Alias target** should be set to the CloudFront distribution URL from the distribution created in [step 2](#step-2) (looks like `a12bcdefgh89yz.cloudfront.net.`). Save.
+
+<figure class="image--half">
+  <img src="{{ site.image_url }}/{{ page.image[2].src }}" alt="{{ page.image[2].alt }}" />
+</figure>
 
 As with CloudFront configuration, do not expect the changes to kick in immediately. Redirecting the domain to the configured distribution takes a few minutes.
 
@@ -185,7 +192,7 @@ Getting a validation email wasn’t as easy as I had hoped. I had to set up an 
 {{ a1 | markdownify }}
 </aside>
 
-After following the instructions in the email and approval page to validate the certificate, go back to the CloudFront distribution and select the certificate. *Absolutely* set **Custom SSL Client Support** to “Only Clients that Support Server Name Indication (SNI)”. The alternative “All Clients” costs $600 per month because it requires a dedicated IP version of custom SSL support. The downside to [SNI](https://en.wikipedia.org/wiki/Server_Name_Indication) is that older browsers (4-10 years old) may not properly support TLS and therefore will get a worse experience (no HTTPS) or no experience (if HTTPS-only is specified).
+After following the instructions in the email and approval page to validate the certificate, go back to the CloudFront distribution and select the certificate. Set **Viewer Protocol Policy** to “Redirect HTTP to HTTPS”. *Absolutely* set **Custom SSL Client Support** to “Only Clients that Support Server Name Indication (SNI)”. The alternative “All Clients” costs $600 per month because it requires a dedicated IP version of custom SSL support. The downside to [SNI](https://en.wikipedia.org/wiki/Server_Name_Indication) is that older browsers (4-10 years old) may not properly support TLS and therefore will get a worse experience (no HTTPS) or no experience (if HTTPS-only is specified). To support older browsers, HTTPS-only can be turned off since it is not a requirement, but this will mean that `http://example.com` won’t automatically redirect to `https://example.com`.
 
 <figure class="image--narrow screenshot">
   <img src="{{ site.image_url }}/{{ page.image[3].src }}" alt="{{ page.image[3].alt }}" />
@@ -216,7 +223,7 @@ It’s time for another cup of tea because CloudFront will need a bit longer to 
 
 ---
 
-## Note of caution
+## Caveat
 
 These are only *my* notes for configuration – there’s a reason I left out the word “you” from this account. I hope that this guide is helpful for anyone working on a similar challenge but I have not covered all of the ways that this process could go wrong. I discovered some of these methods through reading accounts of AWS configuration, some from Amazon’s official documentation, and others from trial and error.
 
@@ -234,10 +241,10 @@ It was completely worth doing and I’d highly recommend it to anyone who is alr
 
 ## Other accounts on setting up TLS
 
-- [Bryce Fisher-Fleig – “Setting Up SSL on AWS CloudFront and S3” [in 2014 before Amazon offered certificates for free]](https://bryce.fisher-fleig.org/blog/setting-up-ssl-on-aws-cloudfront-and-s3/)
+- [Bryce Fisher-Fleig – “Setting Up SSL on AWS CloudFront and S3” (in 2014 before Amazon offered certificates for free)](https://bryce.fisher-fleig.org/blog/setting-up-ssl-on-aws-cloudfront-and-s3/)
 - [Jeff Barr – “AWS Certificate Manager – Deploy SSL/TLS-Based Apps on AWS”](https://aws.amazon.com/blogs/aws/new-aws-certificate-manager-deploy-ssltls-based-apps-on-aws/)
 - [Chris Down – “Migrating Jekyll to Amazon S3 and CloudFront”](https://chrisdown.name/2014/10/03/migrating-jekyll-to-s3-cloudfront.html)
-- [Jeremy Keith – “Switching to https ” [on Apache]](https://adactio.com/articles/7435)
+- [Jeremy Keith – “Switching to https ” (on Apache)](https://adactio.com/articles/7435)
 {% endcapture %}
 
 <aside class="endnote">
