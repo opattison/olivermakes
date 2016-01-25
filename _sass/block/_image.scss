@@ -1,7 +1,15 @@
 /* Image block styles for figures containing img elements. */
 .image--half {
-  max-width: 50%;
+  max-width: 100%;
   margin: 1em auto;
+
+  @include min-width(s01) {
+    max-width: 75%;
+  }
+
+  @include min-width(m01) {
+    max-width: 50%;
+  }
 }
 
 .image--narrow,
