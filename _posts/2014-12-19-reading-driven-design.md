@@ -2,7 +2,6 @@
 title: 'Reading-driven design'
 layout: singel
 option:
-  - feature
   - index-image
 category: 'writing'
 tags:

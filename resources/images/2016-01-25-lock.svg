@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>2016-01-25-lock</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="2016-01-25-lock" sketch:type="MSArtboardGroup">
+            <g id="group" sketch:type="MSLayerGroup" transform="translate(112.000000, 49.000000)">
+                <polygon id="10" fill="#D8D8D8" sketch:type="MSShapeGroup" transform="translate(223.805731, 211.527350) rotate(-147.000000) translate(-223.805731, -211.527350) " points="223.805731 141.52735 253.805731 281.52735 193.805731 281.52735 "></polygon>
+                <polygon id="2" fill="#D8D8D8" sketch:type="MSShapeGroup" transform="translate(53.551043, 157.811788) rotate(-10.000000) translate(-53.551043, -157.811788) " points="53.5510426 87.8117877 83.5510426 227.811788 23.5510426 227.811788 "></polygon>
+                <polygon id="3" fill="#D8D8D8" sketch:type="MSShapeGroup" transform="translate(71.807138, 154.468995) rotate(-352.000000) translate(-71.807138, -154.468995) " points="71.8071385 84.4689954 101.807138 224.468995 41.8071385 224.468995 "></polygon>
+                <polygon id="7" fill="#D8D8D8" sketch:type="MSShapeGroup" transform="translate(205.266915, 96.798737) rotate(-36.000000) translate(-205.266915, -96.798737) " points="205.266915 26.7987373 235.266915 166.798737 175.266915 166.798737 "></polygon>
+                <polygon id="4" fill="#949292" sketch:type="MSShapeGroup" transform="translate(76.267174, 81.654514) rotate(-157.000000) translate(-76.267174, -81.654514) " points="76.2671744 11.6545141 106.267174 151.654514 46.2671744 151.654514 "></polygon>
+                <polygon id="8" fill="#949292" sketch:type="MSShapeGroup" transform="translate(194.817762, 189.781938) rotate(-157.000000) translate(-194.817762, -189.781938) " points="194.817762 119.781938 224.817762 259.781938 164.817762 259.781938 "></polygon>
+                <polygon id="5" fill="#D8D8D8" sketch:type="MSShapeGroup" transform="translate(125.467846, 37.513994) rotate(272.000000) translate(-125.467846, -37.513994) " points="125.467846 -32.486006 155.467846 107.513994 95.4678464 107.513994 "></polygon>
+                <polygon id="6" fill="#949292" sketch:type="MSShapeGroup" transform="translate(195.665822, 57.960203) rotate(-64.000000) translate(-195.665822, -57.960203) " points="195.665822 -12.0397971 225.665822 127.960203 165.665822 127.960203 "></polygon>
+                <polygon id="9" fill="#D8D8D8" sketch:type="MSShapeGroup" transform="translate(174.840454, 199.706323) rotate(-352.000000) translate(-174.840454, -199.706323) " points="174.840454 129.706323 204.840454 269.706323 144.840454 269.706323 "></polygon>
+                <polygon id="1" fill="#949292" sketch:type="MSShapeGroup" transform="translate(54.463504, 202.353433) rotate(-22.000000) translate(-54.463504, -202.353433) " points="54.4635036 132.353433 84.4635036 272.353433 24.4635036 272.353433 "></polygon>
+                <rect id="outer" fill="#99D96E" sketch:type="MSShapeGroup" x="15.7325401" y="211.52735" width="256" height="200"></rect>
+                <path d="M249.33003,215.557076 L263.259546,382.42633 L43.111414,405.557076 L21.316317,238.687822 L249.33003,215.557076 Z" id="inner" fill="#85BD5F" sketch:type="MSShapeGroup" transform="translate(142.287932, 310.557076) rotate(4.000000) translate(-142.287932, -310.557076) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
