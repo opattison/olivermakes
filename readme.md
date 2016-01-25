@@ -1,6 +1,6 @@
 # olivermak.es an archive
 
-![concentric circle logo](http://olivermak.es/resources/icons/favicon144.png)
+<a href="https://olivermak.es/"><img src="https://olivermak.es/resources/icons/favicon144.svg" width="100%" height="144"></a>
 
 ## Goals
 
