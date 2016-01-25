@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="1280px" height="640px" viewBox="0 0 1280 640" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
-    <title>2016-01-25-lock</title>
+    <title>2016-01-25-lock wide</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="2016-01-25-lock" sketch:type="MSArtboardGroup">
-            <g id="group" sketch:type="MSLayerGroup" transform="translate(112.000000, 49.000000)">
-                <polygon id="10" fill="#D8D8D8" sketch:type="MSShapeGroup" transform="translate(223.805731, 211.527350) rotate(-147.000000) translate(-223.805731, -211.527350) " points="223.805731 141.52735 253.805731 281.52735 193.805731 281.52735 "></polygon>
-                <polygon id="2" fill="#D8D8D8" sketch:type="MSShapeGroup" transform="translate(53.551043, 157.811788) rotate(-10.000000) translate(-53.551043, -157.811788) " points="53.5510426 87.8117877 83.5510426 227.811788 23.5510426 227.811788 "></polygon>
-                <polygon id="3" fill="#D8D8D8" sketch:type="MSShapeGroup" transform="translate(71.807138, 154.468995) rotate(-352.000000) translate(-71.807138, -154.468995) " points="71.8071385 84.4689954 101.807138 224.468995 41.8071385 224.468995 "></polygon>
-                <polygon id="7" fill="#D8D8D8" sketch:type="MSShapeGroup" transform="translate(205.266915, 96.798737) rotate(-36.000000) translate(-205.266915, -96.798737) " points="205.266915 26.7987373 235.266915 166.798737 175.266915 166.798737 "></polygon>
-                <polygon id="4" fill="#949292" sketch:type="MSShapeGroup" transform="translate(76.267174, 81.654514) rotate(-157.000000) translate(-76.267174, -81.654514) " points="76.2671744 11.6545141 106.267174 151.654514 46.2671744 151.654514 "></polygon>
-                <polygon id="8" fill="#949292" sketch:type="MSShapeGroup" transform="translate(194.817762, 189.781938) rotate(-157.000000) translate(-194.817762, -189.781938) " points="194.817762 119.781938 224.817762 259.781938 164.817762 259.781938 "></polygon>
-                <polygon id="5" fill="#D8D8D8" sketch:type="MSShapeGroup" transform="translate(125.467846, 37.513994) rotate(272.000000) translate(-125.467846, -37.513994) " points="125.467846 -32.486006 155.467846 107.513994 95.4678464 107.513994 "></polygon>
-                <polygon id="6" fill="#949292" sketch:type="MSShapeGroup" transform="translate(195.665822, 57.960203) rotate(-64.000000) translate(-195.665822, -57.960203) " points="195.665822 -12.0397971 225.665822 127.960203 165.665822 127.960203 "></polygon>
-                <polygon id="9" fill="#D8D8D8" sketch:type="MSShapeGroup" transform="translate(174.840454, 199.706323) rotate(-352.000000) translate(-174.840454, -199.706323) " points="174.840454 129.706323 204.840454 269.706323 144.840454 269.706323 "></polygon>
-                <polygon id="1" fill="#949292" sketch:type="MSShapeGroup" transform="translate(54.463504, 202.353433) rotate(-22.000000) translate(-54.463504, -202.353433) " points="54.4635036 132.353433 84.4635036 272.353433 24.4635036 272.353433 "></polygon>
-                <rect id="outer" fill="#99D96E" sketch:type="MSShapeGroup" x="15.7325401" y="211.52735" width="256" height="200"></rect>
-                <path d="M249.33003,215.557076 L263.259546,382.42633 L43.111414,405.557076 L21.316317,238.687822 L249.33003,215.557076 Z" id="inner" fill="#85BD5F" sketch:type="MSShapeGroup" transform="translate(142.287932, 310.557076) rotate(4.000000) translate(-142.287932, -310.557076) "></path>
+        <g id="2016-01-25-lock-wide" sketch:type="MSArtboardGroup">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(934.000000, 177.000000)">
+                <path d="M176.417707,276.494052 L229.635778,137.167957 L282.052688,171.207897 L176.417707,276.494052 L176.417707,276.494052 Z" id="10" fill="#D8D8D8" sketch:type="MSShapeGroup"></path>
+                <path d="M26.1204897,87.5783802 L82.2194246,225.769672 L20.66894,236.622683 L26.1204897,87.5783802 L26.1204897,87.5783802 Z" id="2" fill="#D8D8D8" sketch:type="MSShapeGroup"></path>
+                <path d="M67.9471412,83.6981569 L78.5969411,232.46141 L16.7051868,223.763091 L67.9471412,83.6981569 L67.9471412,83.6981569 Z" id="3" fill="#D8D8D8" sketch:type="MSShapeGroup"></path>
+                <path d="M153.960362,36.8411955 L264.960826,136.454551 L214.397263,173.19113 L153.960362,36.8411955 L153.960362,36.8411955 Z" id="7" fill="#D8D8D8" sketch:type="MSShapeGroup"></path>
+                <path d="M33.9541619,147.176931 L62.1700081,0.726292229 L119.701561,25.1469878 L33.9541619,147.176931 L33.9541619,147.176931 Z" id="4" fill="#949292" sketch:type="MSShapeGroup"></path>
+                <path d="M157.444357,259.809665 L185.660204,113.359026 L243.191757,137.779721 L157.444357,259.809665 L157.444357,259.809665 Z" id="8" fill="#949292" sketch:type="MSShapeGroup"></path>
+                <path d="M40.8234256,31.5323221 L187.65853,5.3908687 L185.477312,67.8527954 L40.8234256,31.5323221 L40.8234256,31.5323221 Z" id="5" fill="#D8D8D8" sketch:type="MSShapeGroup"></path>
+                <path d="M121.281499,23.4106486 L266.054729,59.2524602 L238.656533,115.427088 L121.281499,23.4106486 L121.281499,23.4106486 Z" id="6" fill="#949292" sketch:type="MSShapeGroup"></path>
+                <path d="M175.273512,130.820373 L185.923312,279.583626 L124.031557,270.885307 L175.273512,130.820373 L175.273512,130.820373 Z" id="9" fill="#D8D8D8" sketch:type="MSShapeGroup"></path>
+                <path d="M12.4177522,138.17767 L96.0223759,261.685526 L38.0733849,285.098438 L12.4177522,138.17767 L12.4177522,138.17767 Z" id="1" fill="#949292" sketch:type="MSShapeGroup"></path>
+                <rect id="outer" fill="#99D96E" sketch:type="MSShapeGroup" x="0" y="215" width="266" height="208"></rect>
+                <path d="M251.133556,227.774955 L253.482904,402.185834 L23.0397985,410.225045 L12.5170959,235.24263 L251.133556,227.774955 L251.133556,227.774955 Z" id="inner" fill="#85BD5F" sketch:type="MSShapeGroup"></path>
+                <path d="M143.144594,354.136662 L123.724844,282.137674 L154.932017,280.502176 L143.144594,354.136662 L143.144594,354.136662 Z" id="key" fill="#949292" sketch:type="MSShapeGroup"></path>
+                <path d="M134.637185,358.95609 L115.217435,286.957103 L146.424608,285.321604 L134.637185,358.95609 L134.637185,358.95609 Z" id="key2" fill="#D8D8D8" sketch:type="MSShapeGroup"></path>
             </g>
         </g>
     </g>
