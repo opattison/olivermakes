@@ -25,6 +25,7 @@ project:
   license-url: 'http://creativecommons.org/licenses/by-nc/4.0/'
 image:
   - src: 2014-12-12-xe2-1.1.svg
+    src_png: 2014-12-12-xe2-1.1.png
     alt: 'vector image of Fujifilm X-E2 digital camera'
     caption: 'The basis for the graphics used on the site. I hand-traced an image of the camera in Adobe Illustrator. I could have automated this process, but I preferred to brush up on Illustrator and create a more maintainable result.'
     date: 2014-12-08
