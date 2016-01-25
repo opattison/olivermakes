@@ -6,7 +6,7 @@ option:
   - index-image
   - feature
   - minor
-category: 'project'
+category: 'projects'
 tags:
   - 'jekyll'
   - 'privacy'
