@@ -19,7 +19,15 @@
   }
 
   @include min-width(l03) {
-    margin: 2.5em -9em .5em 4.5em;
+    margin: 2.5em -9em 1em 4.5em;
+  }
+}
+
+.endnote + .footnotes {
+  margin-top: 0;
+
+  @include min-width(l03) {
+    margin-top: -1em;
   }
 }
 
@@ -47,6 +55,7 @@
 
 .footnotes li p {
   display: inline; /* overwrites default block style */
+  font-size: .875em;
 }
 
 .footnotes ol li::before {

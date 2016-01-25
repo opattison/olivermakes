@@ -76,6 +76,10 @@
   margin-right: -$amount;
 }
 
+@mixin bleed-left($amount: 1em) {
+  margin-left: -$amount;
+}
+
 @mixin bleed-image($amount: 1em) {
   margin: $amount -#{$amount} 0;
   max-width: none;

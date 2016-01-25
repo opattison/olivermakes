@@ -1,0 +1,42 @@
+/* Used for an endnote that is related to the main body recapping and offering context such as further reading or notes that are not captured by footnote-style links from the body. */
+
+.endnote {
+  @include bleed-right(1em);
+  margin-top: 2em;
+  padding: 1em 1em 2em;
+
+  @include min-width(s03) {
+    @include bleed-right(2em);
+  }
+
+  @include min-width(s04) {
+    @include bleed-right(2.5em);
+    margin-top: 2.5em;
+  }
+
+  @include min-width(l01) {
+    @include bleed-right(4.5em);
+    padding: 2.5em;
+  }
+
+  @include min-width(l03) {
+    margin: 2.5em -9em 1em 4.5em;
+  }
+}
+
+.endnote h1 {
+  font-weight: 500;
+  font-size: 1.25em;
+  line-height: 1.125;
+}
+
+.endnote h2 {
+  font-weight: 400;
+  font-size: 1.125em;
+  line-height: 1.25;
+}
+
+.endnote p,
+.endnote li {
+  font-size: .875em;
+}
