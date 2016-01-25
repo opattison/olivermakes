@@ -20,6 +20,7 @@ project:
   url: http://caseytrees.org/
 image:
   - src: 2015-02-23-ct-logo.svg
+    src_png: 2015-02-23-ct-logo.png
     background: 'site.shade.white'
     description: 'Logo SVG'
   - src: 2012-04-27-casey-trees-homepage-desktop.jpg

@@ -17,6 +17,7 @@ unique_id: 2014-11-06:design-notes-future-friendliness
 description: 'A discussion about designing for the long term, covering HTML, independent publishing, and web hosting.'
 image:
   - src: 2014-12-12-futurefriendly.svg
+    src_png: 2014-12-12-futurefriendly.png
     alt: 'future friendly logo'
     caption: 'The [future friendly](http://futurefriendlyweb.com/) movement is a significant inspiration for my approach, in both philosophy and implementation. [#ffly](https://twitter.com/search?q=%23ffly) astronaut logo is licensed [CC BY](http://creativecommons.org/licenses/by/3.0/), modified slightly by me.'
     description: 'hero color is gray3 #49535a; index-image color is gray6 #84919a'
