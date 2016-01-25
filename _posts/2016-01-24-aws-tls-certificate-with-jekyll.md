@@ -5,7 +5,8 @@ option:
   - code
   - index-image
   - feature
-category: 'writing'
+  - minor
+category: 'project'
 tags:
   - 'jekyll'
   - 'privacy'
@@ -48,7 +49,7 @@ image:
 This is a guide to getting set up quickly and cheaply to host a static website on Amazon Web Services with a [TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security) certificate.
 {:.focus}
 
-We live in a time of significant uncertainty about what privacy means. We expect our email services, banks and shopping carts to be served entirely over secure connections. Our personal privacy and identity are threatened by governments, companies, and individuals who have proven that they can’t be trusted. Transport Layer Security (TLS) prevents [information from being altered mid-stream](https://www.aaron-gustafson.com/notebook/more-proof-we-dont-control-our-web-pages/) and is the main line of protection on the web against passwords and other sensitive information being read over open networks. It is one method for determining that a site is what it claims to be. I would want others to configure their websites using TLS, so why wouldn’t I do my part, even for a private website like my own? I value privacy of communication and freedom from surveillance enough that I decided my own site should be served over a secure connection.
+We live in a time of significant uncertainty about what privacy means. Our personal privacy and identity are threatened by governments, companies, and individuals who have proven that they can’t be trusted. At the very least, we expect our email services, banks and shopping carts to be served entirely over secure connections. Transport Layer Security (TLS) prevents [information from being altered mid-stream](https://www.aaron-gustafson.com/notebook/more-proof-we-dont-control-our-web-pages/) and is the main line of protection on the web against passwords and other sensitive information being read over open networks. It is one method for determining that a site is what it claims to be. I would want others to configure their websites using TLS, so why wouldn’t I do my part, even for a private website like my own? I value privacy of communication and freedom from surveillance enough that I decided my own site should be served over a secure connection.
 
 Serving over HTTPS with SSL or TLS used to be very difficult to configure, and sometimes prohibitively expensive. Fortunately the solution for this problem [isn’t nearly as much of a barrier anymore](https://www.tbray.org/ongoing/When/201x/2012/12/02/HTTPS). An individual can afford to host a website cheaply, and a TLS certificate can now be added for a very low cost on top of that. Amazon Web Services (AWS) has made it straightforward enough for me to do in an afternoon.
 
@@ -118,7 +119,7 @@ I deploy my Jekyll sites with [s3_website](https://github.com/laurilehmijoki/s3_
 
 [Read the s3_website docs](https://github.com/laurilehmijoki/s3_website) or take a look at [my site’s configuration]({{ site.source_url.repo }}), particularly [the s3_website.yml configuration file (current at time of publishing)](https://github.com/opattison/olivermakes/blob/232b52175caa18f6897f615ccc70133e78962bc2/s3_website.yml). One important warning here: *make sure not to commit private AWS keys to version control*. I used environmental variables in OS X’s Terminal to privately save my AWS [“access key ID” and “secret access key”](http://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html) to keep them out of my site’s Git version control.
 
-s3_website configuration could be an article on its own, so I’ll defer to their extensive documentation. In any case, it’s part of [my deployment process](https://github.com/opattison/olivermakes/blob/232b52175caa18f6897f615ccc70133e78962bc2/Rakefile#L26-L44) for this site, and it *can* be done even without being a professional programmer – I’m certainly not one!
+s3_website configuration could be an article on its own, so I’ll defer to their extensive documentation. In any case, it’s part of [my deployment process](https://github.com/opattison/olivermakes/blob/232b52175caa18f6897f615ccc70133e78962bc2/Rakefile#L26-L44) for this site, and it *can* be done even without being an experienced programmer.
 
 ---
 
@@ -135,7 +136,7 @@ Set **Viewer Protocol Policy** to “Redirect HTTP to HTTPS”. Set **Alternate 
 
 ### Wait
 
-This is point where I now know to brew a cup of tea since it will take 5-20 minutes for CloudFront to “progress”. The first couple of times I used CloudFront, I spent more time changing configuration items and waiting for effects to kick in than I actually did reading AWS documentation. CloudFront configuration takes a really long time – take time to try to get the configuration correct initially because each further change requires resetting the clock to zero and making another cup of tea!
+This is point where I would brew a cup of tea since it will take 5-20 minutes for CloudFront to “progress”. The first couple of times I used CloudFront, I spent more time changing configuration items and waiting for effects to kick in than I actually did reading AWS documentation. CloudFront configuration takes a really long time – take time to try to get the configuration correct initially because each further change requires resetting the clock to zero (and making another cup of tea)!
 
 <img src="{{ site.image_url }}/{{ page.image[2].src }}" alt="{{ page.image[2].alt }}">
 
