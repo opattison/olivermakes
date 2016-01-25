@@ -1,4 +1,9 @@
 /* Image block styles for figures containing img elements. */
+.image--half {
+  max-width: 50%;
+  margin: 1em auto;
+}
+
 .image--narrow,
 .image--wide {
   @include bleed-image(1em);
