@@ -1,0 +1,28 @@
+---
+title: .return
+use: 'Site-wide menu/home and back-to-top “return” navigation.'
+spec: 'Use standard action block style for the site, with light background and dark foreground text. Each action should have a slightly different background color but both should be strong reverse contrast on hover/focus. Home action is accompanied by `logo-medium.svg`.'
+restriction: 'Not used on the home page.'
+type: html
+category: interface
+priority: 5
+option:
+  - fix-rem
+sass: block/_return.scss
+---
+
+<nav class="return" role="navigation">
+  <a class="return-action--home return-action action" rel="home" href="/#menu">Menu
+    <svg viewBox="0 0 64 64" enable-background="new 0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="logo-64">
+      <title>olivermakes</title>
+      <g>
+        <circle id="layer15" fill="#373E43" cx="32" cy="32" r="32"></circle>
+        <circle id="layer12" fill="#CC3D33" cx="32" cy="32" r="28"></circle>
+        <circle id="layer10" fill="#49535A" cx="32" cy="32" r="20"></circle>
+        <circle id="layer6" fill="#105F93" cx="32" cy="32" r="16"></circle>
+        <circle id="layer1" fill="#397EAC" cx="32" cy="32" r="10"></circle>
+      </g>
+    </svg>
+  </a>
+  <a class="return-action--top return-action action" href="#top">Back to top ↾</a>
+</nav>
