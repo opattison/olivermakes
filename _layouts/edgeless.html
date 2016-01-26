@@ -20,7 +20,9 @@
 
     </div>
 
-{% unless page.option contains 'error' %}{% include block/core-footer.html %}{% endunless %}
+{% unless page.option contains 'error' or page.option contains 'patterns' %}{% include block/core-footer.html %}{% endunless %}
+
+{% include block/pattern-nav.html %}
 
   </article>
 

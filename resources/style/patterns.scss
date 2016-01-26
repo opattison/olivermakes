@@ -16,7 +16,6 @@
 }
 
 .core-title:first-of-type {
-  margin-top: 1.5em;
   margin-bottom: 2em;
 }
 
@@ -24,7 +23,7 @@
   display: flex;
   flex-direction: column;
   flex: 1 0 100%;
-  margin: 0 auto;
+  margin: 3em auto;
   max-width: 36em;
 
   @include min-width(s01) {
