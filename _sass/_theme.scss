@@ -167,6 +167,10 @@ mark {
   background-color: $white;
 }
 
+.index--home {
+  background-color: $gray00;
+}
+
 .index-nav-action {
   @include action-color($red, $white);
 }
