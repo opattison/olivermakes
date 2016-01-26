@@ -10,6 +10,7 @@ category: meta
 date: 2014-10-31 18:25
 updated: 2016-01-22 15:10
 description: 'A collection of patterns for this website.'
+source: https://github.com/opattison/olivermakes
 ---
 
 ## Shades

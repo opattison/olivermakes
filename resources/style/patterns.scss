@@ -15,6 +15,45 @@
   background-color: $whiter;
 }
 
+.core-title:first-of-type {
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+}
+
+.pattern-nav {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 100%;
+  margin: 0 auto;
+  max-width: 36em;
+
+  @include min-width(s01) {
+    flex-direction: row;
+  }
+}
+
+.pattern-nav-action {
+  @include action;
+
+  @include min-width(s01) {
+    flex: 1 0 50%;
+  }
+}
+
+.pattern-nav-action--back,
+.pattern-nav-action--source {
+  @extend .pattern-nav-action;
+  @include action-color($gray07, $gray00)
+}
+
+.pattern-nav-action--back {
+  background-color: $gray07;
+}
+
+.pattern-nav-action--source {
+  background-color: $gray06;
+}
+
 .grid--swatches {
   flex-flow: row wrap;
   list-style-type: none;

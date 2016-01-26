@@ -10,6 +10,7 @@ category: meta
 date: 2014-10-31 18:25
 updated: 2015-10-15 23:43
 description: 'A collection of text patterns for this website.'
+source: https://github.com/opattison/olivermakes
 ---
 
 ## Use of typography
