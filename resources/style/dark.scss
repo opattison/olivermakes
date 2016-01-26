@@ -64,6 +64,15 @@ samp {
   border-color: $gray04;
 }
 
+.item--short {
+  background-color: $gray01;
+}
+
+.item-location a {
+  color: $gray07;
+  @include a-underline($gray07-90, $grayblue);
+}
+
 .core {
   background-color: $gray00;
   color: $white;
