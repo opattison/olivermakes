@@ -92,6 +92,7 @@ source_url:
   blob: https://github.com/opattison/olivermakes/blob/master
   commits: https://github.com/opattison/olivermakes/commits/master
   issues: https://github.com/opattison/olivermakes/issues
+  sass: https://github.com/opattison/olivermakes/blob/master/_sass
 
 ## srcset implementation
 wide-sizes: '(min-width: 140em) 1440px, (min-width: 115em) 1260px, (min-width: 95em) 1080px, (min-width: 60em) 900px, (min-width: 45em) 720px, 100vw'

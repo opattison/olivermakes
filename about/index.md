@@ -9,7 +9,7 @@ option:
   - srcset
 category: meta
 date: 2014-10-31 18:25
-updated: 2016-01-22 12:22
+updated: 2016-01-25 18:24
 description: 'A short biography of Oliver Pattison, as well as details about how this website was made.'
 image:
   - src: 2011-11-10-oliver-bench-jeancflanagan-ccbync.jpg
@@ -37,8 +37,8 @@ I’m available for hire. [Get in touch](mailto:{{ site.author.email }}){:.u-ema
 This website is an archive for my work, featuring:
 
 - **[Writing](/writing/)**, a collection of quick notes as well as longer essays
-- **[Photography](/photography/)**, a collection of images documenting details of my environment
 - **[Projects](/projects/)**, documentation and reflections on professional and open source work
+- **[Photography](/photography/)**, a collection of images documenting details of my environment
 
 **[Subscribe]({{ site.link.subscribe.full }})** to this site’s Atom feed. Or subscribe to filtered feeds for my [writing]({{ site.link.subscribe.writing }}), [photography]({{ site.link.subscribe.photography }}), and [projects]({{ site.link.subscribe.projects }}).
 
@@ -77,22 +77,11 @@ These people and their creative works inspired elements of the site – in parti
 {{ influences | markdownify }}
 </aside>
 
-### Principles
-
-- Future-friendly
-- Content-first
-- Responsive
-- High performance
-- Minimalist aesthetics
-- Progressive enhancement
-- Respect for users and their devices
-- Empathy in content, design and tone
-
 ### Design and development
 
-I designed this site solo in the space of a few weeks in October and November 2014.
+I designed this site solo in the space of a few weeks in October and November 2014. Development continues regularly.
 
-Early in the process, I established a **[pattern page](/patterns)** with reference examples of general HTML and specific use cases for my own designs. I plan to expand it and turn it into a pattern library and style guide for the site.
+Early in the process, I established a **[pattern page](/patterns/)** with reference examples of general HTML and specific use cases for my own designs. I plan to expand it and turn it into a pattern library and style guide for the site.
 
 I would like to thank [Jean]({{ site.link.jean }}) for editing and design input.
 
@@ -123,8 +112,7 @@ Proper {{ site.license.short }} attribution with a link and credit would look li
 
 If you have any questions about licensing or use of content from the site, please [contact me by email](mailto:{{ site.author.email }}).
 
-- - -
-
+{% capture elsewhere %}
 ## Elsewhere on the web
 
 Nearly every significant thing I read or look at is archived on **[Pinboard]({{ site.link.pinboard }}){:rel="me"}**. It is my external brain and my favorite thing on the web. It is as complete an archive as I can keep of my reading online.
@@ -136,3 +124,8 @@ My open source code (including this site) is on **[GitHub]({{ site.link.github }
 Some of my design experiments are posted on **[CodePen](http://codepen.io/opattison/){:rel="me"}**.
 
 A selection of my mobile photography is on **[VSCO Grid]({{ site.link.vsco }}){:rel="me"}**.
+{% endcapture %}
+
+<aside class="endnote">
+{{ elsewhere | markdownify }}
+</aside>

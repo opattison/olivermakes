@@ -1,0 +1,18 @@
+---
+title: .image--half
+use: 'Images that need to take up the full width of the body but not much more. Vertically oriented images are a good use case for this style. Contrast with [.image--narrow](#image-narrow)'
+spec: 'Typically 50% width (wider on smaller screens), but this is somewhat layout-dependent. Contains an `<img>`. Figcaption is optional.'
+type: html
+category: component
+sass: block/_image.scss#l2
+---
+
+<figure class="image--half">
+  <img
+    src="{{ site.image_url }}/2015-10-29-patchwork-270deg.svg"
+    alt="An example image. Never forget alt text."
+  >
+  <figcaption>
+    <p>This is the narrowest possible image pattern.</p>
+  </figcaption>
+</figure>
