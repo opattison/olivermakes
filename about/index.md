@@ -9,7 +9,7 @@ option:
   - srcset
 category: meta
 date: 2014-10-31 18:25
-updated: 2016-01-22 12:22
+updated: 2016-01-25 18:24
 description: 'A short biography of Oliver Pattison, as well as details about how this website was made.'
 image:
   - src: 2011-11-10-oliver-bench-jeancflanagan-ccbync.jpg
