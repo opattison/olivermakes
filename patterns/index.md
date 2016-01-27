@@ -21,7 +21,7 @@ image:
 ---
 
 <div class="primer">
-  <p>This is a collection of all of the patterns on <a href="/">olivermak.es</a>, organized by <a href="/patterns/color/">color</a>, <a href="/patterns/text/">text</a> and modular <a href="/patterns/component/">components</a>. These patterns serve as living documentation for this site’s present design. They also prescribe use and specification for every element on the site. The source for these patterns is <a href="{{ site.source_url.repo }}">on GitHub</a>.</p>
+  <p>This is a collection of all of the patterns on <a href="/">olivermak.es</a>, organized by <a href="/patterns/color/">color</a>, <a href="/patterns/text/">text</a>, modular <a href="/patterns/component/">components</a>, and other <a href="/patterns/interface/">interface</a> elements. These patterns serve as living documentation for this site’s present design. They also prescribe use and specification for every element on the site. The source for these patterns is <a href="{{ site.source_url.repo }}">on GitHub</a>.</p>
 </div>
 
 {% assign items = site.data.pattern_items %}
@@ -29,4 +29,4 @@ image:
 {% include block/item--pattern.html %}
 {% endfor %}
 
-{% include block/index-nav--pattern.html %}
+{% include block/pattern-nav--index.html %}

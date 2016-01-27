@@ -35,6 +35,13 @@
   }
 }
 
+.pattern-nav--index {
+  @extend .pattern-nav;
+  
+  margin: 1em auto;
+  max-width: none;
+}
+
 .pattern-nav-action {
   @include action;
 
