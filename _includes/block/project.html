@@ -10,7 +10,7 @@
     class="project-image" src="{{ site.image_url }}/{{ page.image[0].src }}">{% endif %}
   <div class="project-meta">
     <p class="p-summary project-summary">{{ page.description }}</p>
-    <p class="project-description">This project was originally completed <time class="dt-published" datetime="{{ page.date }}">{{ page.date | date: '%Y-%m-%d' }}</time>{% if page.period %} and worked on from {{ page.period }}{% endif %}.{% if page.project.license %} Licensed <a href="{{ page.project.license.url }}">{{ page.project.license }}</a>.{% endif %}</p>
+    <p class="project-description">This project was originally completed <time class="dt-published" datetime="{{ page.date }}">{{ page.date | date: '%Y-%m-%d' }}</time>{% if page.period %} and worked on from {{ page.period }}{% endif %}.{% if page.project.license %} Licensed <a href="{{ page.project.license-url }}">{{ page.project.license }}</a>.{% endif %}</p>
     {% if page.project %}{% else %}<p>No public source or link is available for this project.</p>{% endif %}
     {% if page.project %}
     <div class="project-nav">
