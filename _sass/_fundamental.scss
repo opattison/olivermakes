@@ -210,24 +210,16 @@ blockquote footer {
 
 /* Footnotes */
 sup[id] {
-  margin: 0 .125em;
+  margin: 0;
   top: 0;
 }
 
 sup[id] a {
-  border: 0;
+  border: solid 1px;
   border-radius: .125em;
   font-weight: 400;
+  margin-right: .125em;
   padding: 0 .25em;
-}
-
-sup[id] a:hover,
-sup[id] a:focus {
-  border: 0;
-}
-
-sup[id] a::before {
-  content: 'note ';
 }
 
 /* Figcaptions */
