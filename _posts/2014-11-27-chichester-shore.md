@@ -70,7 +70,7 @@ image:
     alt="{{ page.image[0].alt }}">
 </figure>
 
-<div class="grid grid--wide">
+<div class="grid--wide">
 <figure class="grid-figure">
   <img
     src="{{ site.image_url }}/{{ page.image[1].src }}"

@@ -84,7 +84,7 @@ This is “feature” text, used for emphasis and attention in storytelling.
 
 ### Figure+image `grid` block
 
-<div class="grid grid--wide">
+<div class="grid--wide">
   <figure class="grid-figure">
     <img
       src="{{ site.image_url }}/{{ page.image[1].src }}"

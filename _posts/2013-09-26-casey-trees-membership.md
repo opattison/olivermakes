@@ -76,7 +76,7 @@ When we initially redesigned the website in 2012, it was a *mostly* responsive d
 
 One year after the redesign, it was becoming clear that this device detection solution method would not work so well long-term.[^1] Additionally, I wanted to revisit the interface design of the form to make it better fit the rest of the fundraising pages. A responsive donation form would be more flexible and more future-friendly. Convio had since released a new “responsive” donation form template to test, so I worked on a prototype that would suit the site design.
 
-<div class="grid grid--wide">
+<div class="grid--wide">
   <figure class="grid-figure--33 grid-figure screenshot">
     <img
       src="{{ site.image_url }}/{{ page.image[1].src }}"
@@ -108,7 +108,7 @@ Working with the fundraising team, I iterated on the visual design until we had 
 
 For the main page that would explain the membership program and encourage visitors to donate, my goal was to create repeatable and reusable content blocks (which we loosely referred to as “cards”) that could be used on the membership pages as well as other sections of the website. My method to deal with this complexity was to excerpt this audience-specific content and distill it into high-contrast, discrete blocks, with strong call-to-action links.
 
-<div class="grid grid--wide">
+<div class="grid--wide">
 <figure class="grid-figure--66 grid-figure screenshot">
   <img
     src="{{ site.image_url }}/{{ page.image[4].src }}"
