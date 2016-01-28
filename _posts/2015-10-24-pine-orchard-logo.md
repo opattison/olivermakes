@@ -1,5 +1,5 @@
 ---
-title: 'Pine Orchard Prints logotype and typography'
+title: 'Pine Orchard Prints typographic indentity'
 layout: edgeless
 option:
   - index-image
@@ -15,7 +15,7 @@ date: 2015-10-24 9:00
 updated: 2016-01-27 23:39
 drafted: 2016-01-26 23:22
 unique_id: 2015-10-24:pine-orchard-logo
-description: 'A typographic identity for a small online retail shop.'
+description: 'Logotype and typography for a small online retail shop.'
 project:
   url: http://pineorchardprints.com
   download: '/resources/fragments/2016-01-15-logo-type.svg'
@@ -39,6 +39,12 @@ image:
   - src: 2016-01-27-pine-orchard-close.png
     alt: 'Close view of the letter forms for Pine in the logo.'
     date: 2016-01-27
+  - src: 2016-01-28-print-collections.png
+    alt: 'A list of collections using Cardo with small caps'
+    date: 2016-01-28
+  - src: 2016-01-28-print-index-title.jpg
+    alt: 'The title text in Cardo for a print'
+    date: 2016-01-28
   - src: 2016-01-27-pine-orchard-banner.jpg
     alt: 'Pine Orchard Antique Prints banner logo as a part of the banner on the shop'
     date: 2016-01-27
@@ -46,12 +52,14 @@ image:
 
 ---
 
-Typography formed the core of my design work for the Pine Orchard Antique Prints shop. I worked on the typography early in the design of the website, to strongly differentiate the shop with distinguished heading styles implemented with restraint. For the identity I wanted to avoid symbols or iconography and instead draw inspiration from the descriptive text that accompanies these nineteenth century prints.
+[Pine Orchard](http://pineorchardprints.com) is a small, online-only antique print shop that I designed and developed for a client.
+{:.focus}
 
+Typography set the tone for my design work on the Pine Orchard Antique Prints shop. I established the typography early in the design of the website, to strongly differentiate the shop with distinguished heading styles implemented with restraint. For the identity I drew inspiration from the descriptive text that accompanies these nineteenth century prints.
 
 ## Inspiration
 
-I had to avoid the more eclectic Victorian typographic styles which might be inappropriate or illegible on this particular website. I eschewed excessive contrast and overly decorative typefaces. Reviewing text samples in books and prints from the catalog, I found styles that could be adapted for use. I would not adopt conventions like outlined text or centered layouts, but the overall feel of these forms could be emulated.
+I had to avoid the more eclectic Victorian typographic styles which might be illegible on this particular website. For the same reason, I eschewed excessive contrast, conventions like outlined text, centered layouts, and overly decorative typefaces. Reviewing text samples in books and prints from the shop’s catalog, I found these styles could be emulated and adapted for use.
 
 <div class="grid">
   <figure class="grid-figure">
@@ -64,30 +72,41 @@ I had to avoid the more eclectic Victorian typographic styles which might be ina
   </figure>
 </div>
 
-I sought a typeface that could serve equally well in a display or body context. It would have to be a distinctive serif font – traditional but still able to sit comfortably next to modern user interface typefaces (such as Avenir or Roboto). I would have to do with only one regular weight and one style, to keep up performance for the site. I also saw a single font as an artificial but useful constraint. This constraint led to another requirement: the typeface would need small capitals both to mitigate the need for bold or italic styles for emphasis, and also to more effectively evoke the type of that era.
+I sought a typeface that could serve equally well in a display or body context. It would have to be a distinctive serif font – traditional but still able to sit comfortably next to modern user interface typefaces (such as Avenir or Roboto). To maintain a higher level of performance for the site, I limited my design to only one regular weight and one style. A single font additionally served as an artificial but useful constraint. This constraint led to creatively addressing emphasized forms: small capitals could mitigate the lack of bold or italic styles and more effectively evoke the type of that era.
 
 ## Choosing Cardo
 
-I chose [Cardo](http://scholarsfonts.net/cardofnt.html), an old-style font by David Perry based on the Renaissance-era [Bembo typeface](https://en.wikipedia.org/wiki/Bembo). It helped that the typeface was freely distributed through an open source license, which meant I was able to try it out extensively in development before committing. [^1]
+I chose [Cardo](http://scholarsfonts.net/cardofnt.html), an old-style font by David Perry based on the Renaissance-era [Bembo](https://en.wikipedia.org/wiki/Bembo). It helped that the typeface was freely distributed through an open source license. I could try it out extensively in development before committing. [^1]
 
-The typeface performed quite well, even with only a single weight. Cardo has excellent OpenType support and beautiful small capital styles, making headings and featured text stand out against the striking photos of the prints. I ended up using Cardo for all of the headings on the site, as well as for stylized collection links and for the logo identity. Using small capitals for titles, and ultimately for the logotype ended up being a stylistic success. It is still difficult to implement small caps with OpenType and CSS properly, since browser support is not as extensive as it could be. [^2]
+The typeface performed quite well, even with only a single weight. Cardo has excellent OpenType support and beautiful small capital styles, making headings and featured text stand out against the striking photos of the prints. I ended up using Cardo for all of the headings on the site, as well as for stylized collection links and for the logo identity. Using small capitals for titles, and ultimately for the logotype ended up being a stylistic success.
 
 <figure class="image--narrow screenshot">
   <img src="{{ site.image_url }}/{{ page.image[3].src }}" alt="{{ page.image[3].alt }}" />
 </figure>
 
-In my earliest take on the design, I attempted a logo designed only with CSS, but limited control over letter spacing and relative proportions led to unimpressive initial efforts. I designed the next takes of the logotype with Adobe Illustrator, because I wanted SVG output and fine control over kerning. The final iteration appears on the site header as well as in transactional email messages and mailing labels.
+In my earliest take on the design, I attempted a logo designed only with CSS, but limited control over letter spacing and relative proportions led to unimpressive initial efforts. It is still difficult to implement small caps with OpenType and CSS properly, since browser support is not as extensive as it could be. [^2] I designed the next takes of the logotype with Adobe Illustrator, because I wanted SVG output and fine control over kerning. The final iteration appears on the site header as well as in transactional email messages and mailing labels.
+
+For a small shop, memorable and appropriate typography effectively served the business goals and provided a strong identity. Using a straightforward logotype supported the typographic style of the site and evoked the visual appeal of the items in the shop, without relying on symbols or iconography.
+
+<div class="grid--wide">
+  <figure class="grid-figure screenshot">
+    <img src="{{ site.image_url }}/{{ page.image[4].src }}" alt="{{ page.image[4].alt }}" />
+  </figure>
+  <figure class="grid-figure screenshot">
+    <img src="{{ site.image_url }}/{{ page.image[5].src }}" alt="{{ page.image[5].alt }}" />
+  </figure>
+</div>
 
 <figure class="image--wide screenshot">
   <img
-    src="{{ site.image_url }}/{{ page.image[4].src }}"
+    src="{{ site.image_url }}/{{ page.image[6].src }}"
     sizes="{{ site.wide-sizes }}"
-    srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image_url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[4].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-    alt="{{ page.image[4].alt }}"
+    srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image_url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[6].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+    alt="{{ page.image[6].alt }}"
   >
-  <figcaption>{{ page.image[4].caption | markdownify }}</figcaption>
+  <figcaption>{{ page.image[6].caption | markdownify }}</figcaption>
 </figure>
 
 
-[^1]: Cardo is available for free through Google Fonts, but I chose to serve it through an Adobe TypeKit subscription because of its superior OpenType support.
+[^1]: Cardo is available for free through Google Fonts, but I chose to serve it through an Adobe TypeKit subscription because of their superior OpenType support.
 [^2]: Even Safari 9.0 for OS X and iOS does not have support for it at the time of this writing, but 9.1 will! Following the principle of progressive enhancement and not relying too heavily on the small caps style meant that I could get away without optimizing for Safari in this case. The logotype, however, uses SVG outlines to ensure that it renders consistently across browsers.
