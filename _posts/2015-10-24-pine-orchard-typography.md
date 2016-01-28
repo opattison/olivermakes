@@ -1,5 +1,5 @@
 ---
-title: 'Pine Orchard Prints typographic indentity'
+title: 'Pine Orchard Prints typographic identity'
 layout: edgeless
 option:
   - index-image
@@ -14,7 +14,7 @@ tags:
 date: 2015-10-24 9:00
 updated: 2016-01-27 23:39
 drafted: 2016-01-26 23:22
-unique_id: 2015-10-24:pine-orchard-logo
+unique_id: 2015-10-24:pine-orchard-typography
 description: 'Logotype and typography for a small online retail shop.'
 project:
   url: http://pineorchardprints.com
@@ -52,14 +52,14 @@ image:
 
 ---
 
-[Pine Orchard](http://pineorchardprints.com) is a small, online-only antique print shop that I designed and developed for a client.
+[Pine Orchard](http://pineorchardprints.com) is an online-only antique print shop that I designed and developed for a client.
 {:.focus}
 
 Typography set the tone for my design work on the Pine Orchard Antique Prints shop. I established the typography early in the design of the website, to strongly differentiate the shop with distinguished heading styles implemented with restraint. For the identity I drew inspiration from the descriptive text that accompanies these nineteenth century prints.
 
 ## Inspiration
 
-I had to avoid the more eclectic Victorian typographic styles which might be illegible on this particular website. For the same reason, I eschewed excessive contrast, conventions like outlined text, centered layouts, and overly decorative typefaces. Reviewing text samples in books and prints from the shop’s catalog, I found these styles could be emulated and adapted for use.
+I avoided the more eclectic Victorian typographic styles which might be illegible on this particular website. For the same reason, I eschewed excessive contrast, outlined text, centered layouts, and overly decorative typefaces. Reviewing text samples in books and prints from the shop’s catalog, I found these styles could be emulated and adapted for use.
 
 <div class="grid">
   <figure class="grid-figure">
