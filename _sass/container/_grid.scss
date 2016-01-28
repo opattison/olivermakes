@@ -6,10 +6,14 @@
 }
 
 .grid--wide {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
   @include bleed-image(1em);
 }
 
-.grid figure + figure {
+.grid figure + figure,
+.grid--wide figure + figure {
   margin-top: 1em;
 }
 
@@ -49,7 +53,8 @@
     flex: 1 1 50%;
   }
 
-  .grid figure:last-of-type {
+  .grid figure:last-of-type,
+  .grid--wide figure:last-of-type {
     margin-right: 0;
   }
 
@@ -63,7 +68,8 @@
     flex: 1 1 calc(100% / 3 * 2 - 1em);
   }
 
-  .grid figure + figure {
+  .grid figure + figure,
+  .grid--wide figure + figure {
     margin-top: 0;
   }
 }
