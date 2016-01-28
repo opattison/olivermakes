@@ -52,12 +52,14 @@ blockquote footer {
 
 sup[id] a {
   background-color: $grayblue-50;
+  border-color: $grayblue;
   color: $gray01;
 }
 
 sup[id] a:hover,
 sup[id] a:focus {
   background-color: $pink-50;
+  border-color: $pink;
 }
 
 figcaption {
