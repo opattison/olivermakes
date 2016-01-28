@@ -48,11 +48,11 @@ image:
   - src: 2016-01-27-pine-orchard-banner.jpg
     alt: 'Pine Orchard Antique Prints banner logo as a part of the banner on the shop'
     date: 2016-01-27
-    caption: 'The logo in context on the [Pine Orchard Prints website](http://pineorchardprints.com).'
+    caption: 'The typography in context on the [Pine Orchard Prints website](http://pineorchardprints.com).'
 
 ---
 
-[Pine Orchard](http://pineorchardprints.com) is an online-only antique print shop that I designed and developed for a client.
+[Pine Orchard Prints](http://pineorchardprints.com) is an online-only antique print shop that I designed and developed for a client.
 {:.focus}
 
 Typography set the tone for my design work on the Pine Orchard Antique Prints shop. I established the typography early in the design of the website, to strongly differentiate the shop with distinguished heading styles implemented with restraint. For the identity I drew inspiration from the descriptive text that accompanies these nineteenth century prints.
