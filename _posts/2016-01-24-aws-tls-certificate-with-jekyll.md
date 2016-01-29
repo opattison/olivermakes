@@ -12,7 +12,7 @@ tags:
   - 'privacy'
   - 'web'
 date: 2016-01-24 20:37
-updated: 2016-01-25 11:33
+updated: 2016-01-29 16:13
 drafted: 2016-01-24 22:00
 unique_id: 2016-01-24:aws-tls-certificate-with-jekyll
 description: 'A step-by-step guide on how I configured and hosted a secure static site using AWS.'
@@ -47,7 +47,7 @@ image:
 
 ---
 
-This is a guide to getting set up quickly and cheaply to host a static website on Amazon Web Services with a [TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security) certificate.
+This is a guide to getting set up quickly and cheaply to host a static website on Amazon Web Services with a [TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security) certificate. Updated {{ page.updated | date: '%Y-%m-%d' }}.
 {:.focus}
 
 We live in a time of significant uncertainty about what privacy means. Our personal data and identity are closely monitored and threatened by governments, companies, and individuals who have proven that they can’t be trusted. At the least, we expect our email services, banks and shopping carts to be served entirely over secure connections. Transport Layer Security (TLS) prevents [information from being altered mid-stream](https://www.aaron-gustafson.com/notebook/more-proof-we-dont-control-our-web-pages/) and is the main line of protection on the web against passwords and other sensitive information being read over open networks. TLS is one method for determining that a site is what it claims to be. I would want others to configure their websites using TLS, so why wouldn’t I do my part, even for a private website like my own? I value the principles of privacy of communication and freedom from surveillance enough that I decided my own site should be served over a secure connection.
@@ -89,30 +89,30 @@ In the **Properties** configuration for the bucket go to the **Permissions** sec
 {% capture c1 %}
 ```
 {
-	"Version": "2008-10-17",
-	"Statement": [
-		{
-			"Sid": "AddPermissions",
-			"Effect": "Allow",
-			"Principal": {
-				"AWS": "*"
-			},
-			"Action": "s3:GetObject",
-			"Resource": "arn:aws:s3:::BUCKET.NAME/*”
-		}
-	]
+  "Version": "2008-10-17",
+  "Statement": [
+    {
+      "Sid": "AddPermissions",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "*"
+      },
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::BUCKETNAME/*"
+    }
+  ]
 }
 ```
 {% endcapture %}
 
 <figure class="code">
 {{ c1 | markdownify }}
-<figcaption><p>A sample S3 bucket policy – without this JSON file the bucket’s data will be completely private and inaccessible on the web. Replace <code>BUCKET.NAME</code> with the name of the bucket.</p></figcaption>
+<figcaption><p>A sample S3 bucket policy – without this JSON file the bucket’s data will be completely private and inaccessible on the web. Replace <code>BUCKETNAME</code> with the name of the bucket.</p></figcaption>
 </figure>
 
 ### Configure static website hosting
 
-Go to the **Static Website Hosting** section and choose the option **Enable website hosting**. Add `index.html` for the index document and `404/index.html` for the error document. While here, copy the **Endpoint** which looks like `BUCKET.NAME.s3-website-us-east-1.amazonaws.com`. Save.
+Go to the **Static Website Hosting** section and choose the option **Enable website hosting**. Add `index.html` for the index document and `404/index.html` for the error document. While here, copy the **Endpoint** which looks like `BUCKETNAME.s3-website-us-east-1.amazonaws.com`. Save.
 
 ### Set up s3_website for deploying (optional)
 
@@ -129,11 +129,13 @@ s3_website configuration could be an article on its own, so I’ll defer to thei
 
 ### Create a distribution
 
-Go to the [CloudFront configuration](https://console.aws.amazon.com/cloudfront/home) and **Create Distribution** (select a “Web” distribution when prompted). The **Origin Domain Name** should be set to the endpoint from the S3 bucket (looks like `BUCKET.NAME.s3-website-us-east-1.amazonaws.com`).
+Go to the [CloudFront configuration](https://console.aws.amazon.com/cloudfront/home) and **Create Distribution** (select a “Web” distribution when prompted). The **Origin Domain Name** should be set to the endpoint from the S3 bucket (looks like `BUCKETNAME.s3-website-us-east-1.amazonaws.com`).
 
 ### Configure
 
 Set **Alternate Domain Names (CNAMEs)** to the desired domain. Leave **SSL Certificate** alone – or [skip ahead to the final step](#step-4) to take care of this now. Set **Default Root Object** to `index.html` which makes sure that the root domain `https://example.com/` will redirect to an index page rather than showing a directory of files or an error message. I set **Logging** on and created an S3 bucket for it, but it is not essential for configuration. Set **Distribution State** to “enabled” (default value).
+
+If using s3_website to handle S3 and CloudFront, [read about invalidations](https://github.com/laurilehmijoki/s3_website#how-to-use-cloudfront-to-deliver-your-blog). CloudFront invalidations cost money after the first 1,000 URLs. [Read about CloudFront caching](http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Expiration.html) (TTL settings) to avoid issues around invalidations.
 
 ### Wait
 
@@ -154,21 +156,13 @@ Sign in to the [Route 53 console](https://console.aws.amazon.com/route53/home) a
 
 ### Wire Route 53 to CloudFront
 
-Create an `ALIAS` record for the root domain. In the hosted zone select **Create Record Set**. Leave **Name** blank to set the target URL without a subdomain or prepended `www` (like `example.com`). **Type** should be “A – IPv4 address”. **Alias** should be set to “Yes”. **Alias target** should be set to the CloudFront distribution URL from the distribution created in [step 2](#step-2) (looks like `a12bcdefgh89yz.cloudfront.net.`). Save.
+Create an `ALIAS` record for the root domain. In the hosted zone select **Create Record Set**. Leave **Name** blank to set the target URL. **Type** should be “A – IPv4 address”. **Alias** should be set to “Yes”. **Alias target** should be set to the CloudFront distribution URL from the distribution created in [step 2](#step-2) (looks like `a12bcdefgh89yz.cloudfront.net.`). Save.
 
 <figure class="image--half">
   <img src="{{ site.image_url }}/{{ page.image[2].src }}" alt="{{ page.image[2].alt }}" />
 </figure>
 
 As with CloudFront configuration, do not expect the changes to kick in immediately. Redirecting the domain to the configured distribution takes a few minutes.
-
-### Bonus: set `www` URLs to redirect
-
-If `example.com` is desired instead of `www.example.com`, Route 53 can be set up to automatically redirect these requests.
-
-Go to the S3 console and create a new bucket exactly as before but instead of creating a policy go immediately to **Static Website Hosting**. Select **Redirect all requests to another host name** and set it to the root URL (such as `https://example.com`). While here, copy the **Endpoint** which looks like `BUCKET.NAME.s3-website-us-east-1.amazonaws.com`. Save.
-
-Afterward, in Route 53 create a new record set the same as before, but set the **Value** to the endpoint copied from the S3 console (looks like `BUCKET.NAME.s3-website-us-east-1.amazonaws.com`). Save. All requests to `www.example.com` requests will resolve to `example.com`.
 
 Before setting up TLS, make sure all URLs on the site are working properly at their `http://` location.
 
@@ -191,6 +185,8 @@ Getting a validation email wasn’t as easy as I had hoped. I had to set up an 
 <aside class="ancillary">
 {{ a1 | markdownify }}
 </aside>
+
+To be on the safe side, choose _both_ `example.com` and `*.example.com` when setting up the certificate. Since only one certificate is allowed per CloudFront distribution, this covers any subdomains needed for the same certificate.
 
 After following the instructions in the email and approval page to validate the certificate, go back to the CloudFront distribution and select the certificate. Set **Viewer Protocol Policy** to “Redirect HTTP to HTTPS”. *Absolutely* set **Custom SSL Client Support** to “Only Clients that Support Server Name Indication (SNI)”. The alternative “All Clients” costs $600 per month because it requires a dedicated IP version of custom SSL support. The downside to [SNI](https://en.wikipedia.org/wiki/Server_Name_Indication) is that older browsers (4-10 years old) may not properly support TLS and therefore will get a worse experience (no HTTPS) or no experience (if HTTPS-only is specified). To support older browsers, HTTPS-only can be turned off since it is not a requirement, but this will mean that `http://example.com` won’t automatically redirect to `https://example.com`.
 
