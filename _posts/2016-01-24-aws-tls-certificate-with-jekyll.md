@@ -47,7 +47,7 @@ image:
 
 ---
 
-This is a guide to getting set up quickly and cheaply to host a static website on Amazon Web Services with a [TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security) certificate. Updated {{ page.updated | date: '%Y-%m-%d' }}.
+This is a guide to getting set up quickly and cheaply to host a static website on Amazon Web Services with a [TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security) certificate.
 {:.focus}
 
 We live in a time of significant uncertainty about what privacy means. Our personal data and identity are closely monitored and threatened by governments, companies, and individuals who have proven that they can’t be trusted. At the least, we expect our email services, banks and shopping carts to be served entirely over secure connections. Transport Layer Security (TLS) prevents [information from being altered mid-stream](https://www.aaron-gustafson.com/notebook/more-proof-we-dont-control-our-web-pages/) and is the main line of protection on the web against passwords and other sensitive information being read over open networks. TLS is one method for determining that a site is what it claims to be. I would want others to configure their websites using TLS, so why wouldn’t I do my part, even for a private website like my own? I value the principles of privacy of communication and freedom from surveillance enough that I decided my own site should be served over a secure connection.
@@ -250,6 +250,7 @@ It was completely worth doing and I’d highly recommend it to anyone who is alr
 - [Bryce Fisher-Fleig – “Setting Up SSL on AWS CloudFront and S3” (in 2014 before Amazon offered certificates for free)](https://bryce.fisher-fleig.org/blog/setting-up-ssl-on-aws-cloudfront-and-s3/)
 - [Jeff Barr – “AWS Certificate Manager – Deploy SSL/TLS-Based Apps on AWS”](https://aws.amazon.com/blogs/aws/new-aws-certificate-manager-deploy-ssltls-based-apps-on-aws/)
 - [Chris Down – “Migrating Jekyll to Amazon S3 and CloudFront”](https://chrisdown.name/2014/10/03/migrating-jekyll-to-s3-cloudfront.html)
+- [David Celis – “Easily Publish Your Site to S3 and CloudFront”](https://davidcel.is/posts/publish-your-site-to-s3/)
 - [Jeremy Keith – “Switching to https ” (on Apache)](https://adactio.com/articles/7435)
 
 # Credit

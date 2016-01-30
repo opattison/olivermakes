@@ -1,4 +1,6 @@
 {% if page.category == 'projects' %}
+{% assign completed = page.date | date: '%Y-%m-%d' %}
+{% assign updated = page.updated | date: '%Y-%m-%d' %}
 <article class="project">
   {% if page.option contains 'sample-srcset' %}<img
     class="project-image"
@@ -10,8 +12,9 @@
     class="project-image" src="{{ site.image_url }}/{{ page.image[0].src }}">{% endif %}
   <div class="project-meta">
     <p class="p-summary project-summary">{{ page.description }}</p>
-    <p class="project-description">This project was originally completed <time class="dt-published" datetime="{{ page.date }}">{{ page.date | date: '%Y-%m-%d' }}</time>{% if page.period %} and worked on from {{ page.period }}{% endif %}.{% if page.project.license %} Licensed <a href="{{ page.project.license-url }}">{{ page.project.license }}</a>.{% endif %}</p>
-    {% if page.project %}{% else %}<p>No public source or link is available for this project.</p>{% endif %}
+    <p class="project-description">This project was originally completed <time class="dt-published" datetime="{{ page.date }}">{{ completed }}</time>{% if page.period %} and worked on from {{ page.period }}{% endif %}. {% if page.project.license %} Licensed <a href="{{ page.project.license-url }}">{{ page.project.license }}</a>.{% endif %}</p>
+    {% unless updated == completed %}<p class="project-description">This writing was last updated {{ updated }}.</p>{% endunless %}
+    {% if page.project %}{% else %}<p class="project-description">No public source or link is available for this project.</p>{% endif %}
     {% if page.project %}
     <div class="project-nav">
       {% if page.project.url %}<a class="project-nav-action--url" href="{{ page.project.url }}">View it live</a>{% endif %}
