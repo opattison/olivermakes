@@ -250,6 +250,7 @@ It was completely worth doing and I’d highly recommend it to anyone who is alr
 - [Bryce Fisher-Fleig – “Setting Up SSL on AWS CloudFront and S3” (in 2014 before Amazon offered certificates for free)](https://bryce.fisher-fleig.org/blog/setting-up-ssl-on-aws-cloudfront-and-s3/)
 - [Jeff Barr – “AWS Certificate Manager – Deploy SSL/TLS-Based Apps on AWS”](https://aws.amazon.com/blogs/aws/new-aws-certificate-manager-deploy-ssltls-based-apps-on-aws/)
 - [Chris Down – “Migrating Jekyll to Amazon S3 and CloudFront”](https://chrisdown.name/2014/10/03/migrating-jekyll-to-s3-cloudfront.html)
+- [David Celis – “Easily Publish Your Site to S3 and CloudFront”](https://davidcel.is/posts/publish-your-site-to-s3/)
 - [Jeremy Keith – “Switching to https ” (on Apache)](https://adactio.com/articles/7435)
 
 # Credit
