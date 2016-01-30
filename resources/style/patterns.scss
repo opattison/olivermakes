@@ -15,10 +15,6 @@
   background-color: $whiter;
 }
 
-.core-title:first-of-type {
-  margin-bottom: 1em;
-}
-
 .pattern-nav {
   display: flex;
   flex-direction: column;
@@ -37,7 +33,7 @@
 
 .pattern-nav--index {
   @extend .pattern-nav;
-  
+
   margin: 1em auto;
   max-width: none;
 }
