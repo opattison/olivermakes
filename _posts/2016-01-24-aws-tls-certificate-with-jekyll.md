@@ -219,6 +219,16 @@ It’s time for another cup of tea because CloudFront will need a bit longer to 
 
 ---
 
+### Bonus: set `www` URLs to redirect
+
+If `https://example.com` is desired instead of `https://www.example.com`, Route 53 can be set up to automatically redirect these requests. Route 53 treats `www` just like any other subdomain. It is possible to set up an `ALIAS`-type record in the same hosted zone for the `www` domain and forward it to the same CloudFront distribution (with CNAMES for both domains set), but this has the disadvantage of offering no obvious canonical URL for the site. A URL like `www.example.com` would direct to the same exact resource as `example.com` would – but neither would be preferred because neither is set up as canonical. Both for users and search engines, having only a single URL for each unique resource is definitely preferred.
+
+The process is similar to [Step 1 (S3)](#step-1) through Step 2 (CloudFront) and Step 3 (Route 53) applied to a new bucket and distribution prepended with `www`. However, there are a few adjustments. The S3 bucket should be set to **Redirect all requests to another host name** which should be set at the root domain (`example.com`). That bucket can then be wired to a second CloudFront distribution and routed with Route 53, attached to the same certificate exactly as above. Setting up a parallel distribution that uses the S3 bucket’s built-in redirection service results in a single canonical URL.
+
+This process could be mirrored to serve `www` as the canonical URL instead.
+
+---
+
 ## Caveat
 
 These are only *my* notes for configuration – there’s a reason I left out the word “you” from this account. I hope that this guide is helpful for anyone working on a similar challenge but I have not covered all of the ways that this process could go wrong. I discovered some of these methods through reading accounts of AWS configuration, some from Amazon’s official documentation, and others from trial and error.
@@ -241,6 +251,10 @@ It was completely worth doing and I’d highly recommend it to anyone who is alr
 - [Jeff Barr – “AWS Certificate Manager – Deploy SSL/TLS-Based Apps on AWS”](https://aws.amazon.com/blogs/aws/new-aws-certificate-manager-deploy-ssltls-based-apps-on-aws/)
 - [Chris Down – “Migrating Jekyll to Amazon S3 and CloudFront”](https://chrisdown.name/2014/10/03/migrating-jekyll-to-s3-cloudfront.html)
 - [Jeremy Keith – “Switching to https ” (on Apache)](https://adactio.com/articles/7435)
+
+# Credit
+
+Thanks [Mike Lissner](http://michaeljaylissner.com) for helping me look into and fix issues around domain redirecting.
 {% endcapture %}
 
 <aside class="endnote">
