@@ -1,8 +1,8 @@
 {% assign posts = site.posts %}
-{% assign completed = page.date | date: '%Y-%m-%d' %}
-{% assign updated = page.updated | date: '%Y-%m-%d' %}
 {% for post in posts %}
 {% if post.unique_id == include.id %}
+{% assign completed = post.date | date: '%Y-%m-%d' %}
+{% assign updated = post.updated | date: '%Y-%m-%d' %}
 <article class="project--satellite">
   <div class="project-image" style="background-image: url({{ site.image_url }}/{{ post.image[0].src }});">
   </div>
