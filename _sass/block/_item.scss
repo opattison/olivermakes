@@ -10,7 +10,6 @@
   }
 }
 
-.item--feature,
 .item--short {
   flex: 0 0 100%;
   margin: 1em 0 0;
@@ -62,22 +61,7 @@
   }
 }
 
-.item--feature-description {
-  min-height: 12.5em;
-  padding: 8 / 9 * 1em;
-
-  font-size: 1.125em;
-
-  @include min-width(m01) {
-    min-height: 16em;
-    padding: 1.6em;
-
-    font-size: 1.25em;
-  }
-}
-
-.item-description h1,
-.item--feature-description h1 {
+.item-description h1 {
   font-size: 1.5em;
 }
 
@@ -142,14 +126,6 @@
 
 .item-action {
   @include action;
-}
-
-.item--feature-action {
-  @include action;
-
-  @include min-width(m01) {
-    font-size: 1.125em;
-  }
 }
 
 .item--photo {
