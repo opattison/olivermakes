@@ -329,17 +329,24 @@ mark {
   color: $blue;
 }
 
-.project {
+.project,
+.project--satellite {
   background-color: $gray06;
 }
 
-.project-image {
+.project-image,
+.project--satellite .project-image {
   background-color: $gray07;
   border-color: $gray06;
 }
 
 .project-summary {
   color: $gray02;
+}
+
+.project-nav-action {
+  background-color: $gray02;
+  color: $white;
 }
 
 .project-nav-action--url {
@@ -355,6 +362,7 @@ mark {
 .project-nav-action:hover,
 .project-nav-action:focus {
   background-color: $white;
+  color: $gray02;
 }
 
 .project-nav-action--url:hover,

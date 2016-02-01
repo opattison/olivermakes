@@ -1,0 +1,18 @@
+{% assign posts = site.posts %}
+{% assign completed = page.date | date: '%Y-%m-%d' %}
+{% assign updated = page.updated | date: '%Y-%m-%d' %}
+{% for post in posts %}
+{% if post.unique_id == include.id %}
+<article class="project--satellite">
+  <div class="project-image" style="background-image: url({{ site.image_url }}/{{ post.image[0].src }});">
+  </div>
+  <div class="project-meta">
+    <h1><a href="{{ post.url }}">{{ post.title | markdownify | p_escape }}</a></h1>
+    <p class="project-description">This project was originally completed <time class="dt-published" datetime="{{ post.date }}">{{ completed }}</time>.{% unless updated == completed %} This writing was last updated {{ updated }}.{% endunless %}</p>
+    <div class="project-nav">
+      <a class="project-nav-action--satellite" href="{{ post.url }}">View this project</a>
+    </div>
+  </div>
+</article>
+{% endif %}
+{% endfor %}
