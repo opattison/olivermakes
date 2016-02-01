@@ -6,7 +6,6 @@ option:
   - code
   - index-image
   - minor
-  - sample-svg
   - srcset
 category: 'projects'
 tags:
@@ -23,8 +22,11 @@ project:
   license: 'CC BY-NC'
   license-url: 'http://creativecommons.org/licenses/by-nc/4.0/'
 image:
-  - src: 2014-12-12-xe2-1.1.svg
+  - src: 2016-02-01-xe2-1.1.svg
     src_png: 2014-12-12-xe2-1.1.png
+    date: 2016-02-01
+    description: 'original graphic cropped for project item. index version is cropped and colored gray07'
+  - src: 2014-12-12-xe2-1.1.svg
     alt: 'vector image of Fujifilm X-E2 digital camera'
     caption: 'The basis for the graphics used on the site. I hand-traced an image of the camera in Adobe Illustrator. I could have automated this process, but I preferred to brush up on Illustrator and create a more maintainable result.'
     date: 2014-12-08
@@ -45,37 +47,37 @@ To complement the metadata on my [photo pages](/photography/), I wanted accurate
 
 <figure class="image--wide svg light noedges">
   <img
-    src="{{ site.image_url }}/{{ page.image[0].src }}"
-    alt="{{ page.image[0].alt }}"
+    src="{{ site.image_url }}/{{ page.image[1].src }}"
+    alt="{{ page.image[1].alt }}"
   >
-  <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
+  <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
 </figure>
 
 <div class="grid--wide">
   <figure class="grid-figure svg light noedges">
-    <img
-      src="{{ site.icon_url }}/{{ page.image[1].src }}"
-      alt="{{ page.image[1].alt }}"
-    >
-    <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
-  </figure>
-  <figure class="grid-figure svg dark noedges">
     <img
       src="{{ site.icon_url }}/{{ page.image[2].src }}"
       alt="{{ page.image[2].alt }}"
     >
     <figcaption>{{ page.image[2].caption | markdownify }}</figcaption>
   </figure>
+  <figure class="grid-figure svg dark noedges">
+    <img
+      src="{{ site.icon_url }}/{{ page.image[3].src }}"
+      alt="{{ page.image[3].alt }}"
+    >
+    <figcaption>{{ page.image[3].caption | markdownify }}</figcaption>
+  </figure>
 </div>
 
 <figure class="image--wide">
   <img
-    src="{{ site.image_url }}/{{ page.image[3].src }}"
+    src="{{ site.image_url }}/{{ page.image[4].src }}"
     sizes="{{ site.wide-sizes }}"
-    srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image_url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[3].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-    alt="{{ page.image[3].alt }}"
+    srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image_url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[4].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+    alt="{{ page.image[4].alt }}"
   >
-  <figcaption>{{ page.image[3].caption | markdownify }}</figcaption>
+  <figcaption>{{ page.image[4].caption | markdownify }}</figcaption>
 </figure>
 
 ## Vector graphics
