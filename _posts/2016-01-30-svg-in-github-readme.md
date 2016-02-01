@@ -8,6 +8,7 @@ category: 'writing'
 tags:
   - 'css'
   - 'design'
+  - 'documentation'
   - 'git'
   - 'html'
   - 'web'
@@ -53,7 +54,7 @@ Use responsibly.
 <figure class="code">
 {{ c1 | markdownify }}
 <figcaption>
-<p>Setting width at `100%` centers the image. Alternatively, setting a unitless width sizes the element in pixels. This image sources an SVG from my website’s icon directory and is wrapped by a hyperlinked block.</p>
+<p>Setting width at <code>100%</code> centers the image. Alternatively, setting a unitless width sizes the element in pixels. This image sources an SVG from my website’s icon directory and is wrapped by a hyperlinked block.</p>
 </figcaption>
 </figure>
 
