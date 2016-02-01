@@ -22,7 +22,8 @@
   }
 
   svg {
-    height: 1.5em;
+    height: calc(1.5em + 1px);
     width: 2em;
+    padding-bottom: 1px
   }
 }
