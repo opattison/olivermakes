@@ -70,7 +70,7 @@ The site was designed from small screens up, using flexible images, fluid layout
 
 ### Content first
 
-The first thing we started out with were full-length articles about science, already written and edited. Having content ahead of time meant that the site could be designed around *actual words and images* rather than lorem ipsum filler text. (I really don’t like using lorem ipsum if I can help it.[^1]) It was essential to the process to test typography and proportion with real content.
+The first thing we started out with were full-length articles about science, already written and edited. Having content ahead of time meant that the site could be designed around *actual words and images* rather than lorem ipsum filler text. (I really don’t like using lorem ipsum if I can help it. [^1]) It was essential to the process to test typography and proportion with real content.
 
 Designing in a browser meant that HTML prototypes were an early part of the process, right after sketching and rough notes. In the first week of active development, prototype code was being written that would evolve into the finished product.
 
@@ -155,7 +155,7 @@ Jean already had a personal WordPress site. I had helped her transition from the
 
 Both of us realized that WordPress was no longer a good fit. Jean wanted more control over content and flexible layouts, as well as an interface that wouldn’t involve fighting with a WYSIWYG editor or administering a content management system and database. The trade-off for ease-of-use and getting started quickly with WordPress was outweighed by a desire to publish independently and to develop a process that would be able to withstand servers misbehaving, databases being corrupted, or any of the pitfalls of locking in to a “platform”.
 
-We chose [Jekyll](http://jekyllrb.com) because it would allow for a high performance site with plenty of flexibility in design and configuration. We realized that there would be a learning curve for both of us, since I had only just gotten started with Jekyll and it would be new for Jean. A site built of flat files with neither a <abbr title="content management system">CMS</abbr> nor server-side processing is limiting for some applications, but has great advantages in performance and maintainability.[^2]
+We chose [Jekyll](http://jekyllrb.com) because it would allow for a high performance site with plenty of flexibility in design and configuration. We realized that there would be a learning curve for both of us, since I had only just gotten started with Jekyll and it would be new for Jean. A site built of flat files with neither a <abbr title="content management system">CMS</abbr> nor server-side processing is limiting for some applications, but has great advantages in performance and maintainability. [^2]
 
 ## Getting it right is difficult
 

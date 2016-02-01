@@ -56,7 +56,7 @@ So how do we fix this?
 
 ## Prevent breaking words and lines
 
-In this example for “front-end” web code blocks, I am using styles that are robust in that they won’t be able to break the layout.[^1]
+In this example for “front-end” web code blocks, I am using styles that are robust in that they won’t be able to break the layout. [^1]
 
 ```css
 body {
@@ -165,7 +165,7 @@ The following shows the scroll method using the HTML sample from earlier.
 <div style="color: hsla(204, 10%, 80%, 1); font-size: .75em; font-weight: 400; padding: .5em; position: absolute; bottom: 0; right: 0;">Scroll ⇀</div>
 </div>
 
-I believe this method is particularly poorly suited for HTML or any other code with comments in it. It is responsive, but not as adaptive to different screens as the `break-word` method.[^2]
+I believe this method is particularly poorly suited for HTML or any other code with comments in it. It is responsive, but not as adaptive to different screens as the `break-word` method. [^2]
 
 But fortunately we do not have to rely on the `scroll` method. For HTML and CSS blocks, `break-word` and `pre-wrap` solve a lot of inherit problems with responsive code block design.
 

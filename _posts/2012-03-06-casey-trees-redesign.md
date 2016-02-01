@@ -44,7 +44,7 @@ My primary responsibilities were:
 - Writing, editing, photo curation, and content strategy – with hundreds of pages and a decade’s worth of programs to review, filter, and edit.
 - Ongoing support after the redesign, supporting the organization’s content and design needs after the initial launch.
 
-**My most important role on the project, however, was as an advocate for responsive web design.** By responsive design, I mean that our goal was to develop a site that would cater to multiple screen sizes, without the false constraint of assuming only a “desktop” browser context.[^1] When we were planning to redesign the website in 2011, responsive design was not yet implemented widely. The web changes quickly. While the approach is now viewed by many leaders in user experience design as an *essential* part of designing for an uncertain future, back then we were taking a decisive step towards a more flexible experience, in our small corner of the web.
+**My most important role on the project, however, was as an advocate for responsive web design.** By responsive design, I mean that our goal was to develop a site that would cater to multiple screen sizes, without the false constraint of assuming only a “desktop” browser context. [^1] When we were planning to redesign the website in 2011, responsive design was not yet implemented widely. The web changes quickly. While the approach is now viewed by many leaders in user experience design as an *essential* part of designing for an uncertain future, back then we were taking a decisive step towards a more flexible experience, in our small corner of the web.
 
 We turned the project around in only a few months, with design and content work starting in December 2011 and the website launching in March 2012.
 
