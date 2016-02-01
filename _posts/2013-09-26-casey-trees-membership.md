@@ -5,7 +5,6 @@ option:
   - code
   - index-image
   - patterns
-  - sample-srcset
   - srcset
 category: 'projects'
 tags:

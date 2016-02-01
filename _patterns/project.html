@@ -2,26 +2,24 @@
 title: .project
 use: 'Block of text and images for a project summary with actions for source and links where available.'
 restriction: 'Only on project pages.'
-spec: 'Different color from body text, with block links to a project source, link, or download. When no link is available, no links are included. Generated automatically on project pages with Liquid.'
+spec: 'Different color from body text, with block links to a project source, link, or download. When no link is available, no links are included. Generated automatically on project pages with Liquid. Image uses `background-image` (scaled roughly 3:2) from an image from the project. Optionally includes license information.'
 type: html
 category: component
 sass: block/_project.scss
 ---
 
 <article class="project">
-  <img
-    class="project-image"
-    sizes="(min-width: 115em) 756px, (min-width: 90em) 648px, (min-width: 70em) 540px, (min-width: 60em) 740px, (min-width: 45em) 620px, (min-width: 30em) calc(100vw - 4em), calc(100vw - 2em)"
-    src="{{ site.image_url }}/2014-12-01-pattern-primer-project-feature-screen.png"
-    srcset="{{ site.image_url }}/480/2014-12-01-pattern-primer-project-feature-screen.png 480w, {{ site.image_url }}/720/2014-12-01-pattern-primer-project-feature-screen.png 720w, {{ site.image_url }}/1080/2014-12-01-pattern-primer-project-feature-screen.png 1080w">
-  <div class="project-description">
-    <p class="p-summary project-summary">A pattern documentation tool for designing websites, based on Jeremy Keith’s Pattern Primer.</p>
-    <p>This project was originally completed <time class="dt-published" datetime="2013-07-21 12:34:00 -0400">2013-07-21</time>.</p>
+  <div class="project-image" style="background-image: url(/resources/images/2016-01-15-logotype-pine-orchard--green.svg);">
+  </div>
+  <div class="project-meta">
+    <p class="p-summary project-summary">Logotype and typography for a small online retail shop.</p>
+    <p class="project-description">This project was originally completed <time class="dt-published" datetime="2015-10-24 09:00:00 -0400">2015-10-24</time>.  Licensed <a href="https://github.com/opattison/pine-orchard-antique-prints#credits">© copyright</a>.</p>
+    <p class="project-description">This writing was last updated 2016-01-27.</p>
 
 
     <div class="project-nav">
-      <a class="project-nav-action--url project-nav-action action" href="http://patternprimer.olivermak.es">View it live</a>
-      <a class="project-nav-action--source project-nav-action action" href="https://github.com/opattison/Pattern-Primer-Jekyll">View project source</a>
+      <a class="project-nav-action--url" href="http://pineorchardprints.com">View it live</a>
+      <a class="project-nav-action--source" href="/resources/fragments/2016-01-15-logo-type.svg">Download project (.svg)</a>
     </div>
   </div>
 

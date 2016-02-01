@@ -1,13 +1,11 @@
 /* Block of text and images for a project summary with actions for source and links where available. */
 .project {
   @include bleed(1em);
-  min-height: 15em;
-  padding: 1em;
+  padding: 0;
 
   @include min-width(s03) {
     @include bleed(2em);
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding: 0;
   }
 
   @include min-width(s04) {
@@ -21,8 +19,36 @@
   }
 }
 
+.project-image {
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  height: 12.5em;
+  background-size: cover;
+  background-position: 50% 0;
+
+  @include min-width(s01) {
+    height: 15em;
+  }
+
+  @include min-width(s02) {
+    height: 16em;
+  }
+
+  @include min-width(s03) {
+    height: 18em;
+  }
+
+  @include min-width(m01) {
+    height: 20em;
+  }
+}
+
 .project-meta {
-  margin-top: 1em;
+  padding: 1em;
+
+  @include min-width(s04) {
+    padding: 1em 0 0;
+  }
 }
 
 .project-summary {
