@@ -92,8 +92,12 @@ The one compromise in their approach is partial pay-walling on the website, whic
 
 Fortunately, <i class="publication">WTW’s</i> approach to protecting content is liberal, encouraging and enabling readers to share articles and the magazine itself with friends. In this case it seems to be a fair balance, with multiple reasonable options for paying or donating. Additionally, sharing is encouraged and a good portion of the writing is available freely. When sharing articles by them or recommending that others read it, I do not feel that the pay-wall is a significant limitation, like it is with the <i class="publication">New York Times</i>, <i class="publication">The Economist</i>, or the <i class="publication">The New Yorker</i> (although the latter [has since reformed](http://www.newyorker.com/magazine/2014/07/28/note-readers)).
 
-<i class="publication">WTW</i> is taking a truly innovative approach to publishing, both in philosophy and form. I really hope they stick around for a while.
+<i class="publication">WTW</i> is taking a truly innovative approach to publishing, both in philosophy and form. I hope they stick around for a while.
 
-- - -
+{% capture endnote %}
+[Read more about the process behind Issue 4](https://worksthatwork.com/blog/4), including some sample pages from the print magazine. The two images of the magazine above are by Works That Work.
+{% endcapture %}
 
-[Read more](https://worksthatwork.com/blog/4) about the process behind Issue 4, including some sample pages from the print magazine. The two images of the magazine above are by Works That Work.
+<aside class="endnote">
+{{ endnote | markdownify }}
+</aside>

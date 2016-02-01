@@ -158,7 +158,7 @@ Sign in to the [Route 53 console](https://console.aws.amazon.com/route53/home) a
 
 Create an `ALIAS` record for the root domain. In the hosted zone select **Create Record Set**. Leave **Name** blank to set the target URL. **Type** should be “A – IPv4 address”. **Alias** should be set to “Yes”. **Alias target** should be set to the CloudFront distribution URL from the distribution created in [step 2](#step-2) (looks like `a12bcdefgh89yz.cloudfront.net.`). Save.
 
-<figure class="image--half">
+<figure class="image--half screenshot">
   <img src="{{ site.image_url }}/{{ page.image[2].src }}" alt="{{ page.image[2].alt }}" />
 </figure>
 
@@ -211,7 +211,7 @@ After following the instructions in the email and approval page to validate the 
   </figcaption>
 </figure>
 
-<figure class="image--half">
+<figure class="image--half screenshot">
   <img src="{{ site.image_url }}/{{ page.image[6].src }}" alt="{{ page.image[6].alt }}" />
 </figure>
 

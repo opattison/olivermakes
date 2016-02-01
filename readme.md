@@ -47,7 +47,6 @@
 
 ### Front-end
 
-- [loadJS](https://github.com/filamentgroup/loadJS) 0.2
 - [Velocity.js](http://julian.com/research/velocity/) 1.2.2
 - [typekit-cache](https://github.com/morris/typekit-cache)
 

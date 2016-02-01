@@ -65,8 +65,14 @@ I forked [Jeremy’s source](https://github.com/adactio/Pattern-Primer) from Git
 
 - How Jekyll could be used for a project other than a blog or personal site.
 - How to make an open source Jekyll project that would be reusable for other people with the same goals.
-- How to set up Amazon Web Services (S3 and Cloudfront) for hosting a Jekyll site.
+- How to set up Amazon Web Services (S3 and CloudFront) for hosting a Jekyll site.
 
-- - -
-
+{% capture endnote %}
 **[View Pattern Primer Jekyll live]({{ page.project.url }})** or **[check it out on GitHub]({{ page.project.source }})**.
+
+**[View the original project](https://github.com/adactio/Pattern-Primer)** that this is forked from.
+{% endcapture %}
+
+<aside class="endnote">
+{{ endnote | markdownify }}
+</aside>

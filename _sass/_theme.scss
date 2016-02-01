@@ -100,6 +100,11 @@ mark {
   color: $whiter;
 }
 
+#skip {
+  color: $whiter;
+  background-color: $boldred;
+}
+
 .category {
   background-color: $white;
 }
@@ -149,6 +154,10 @@ mark {
 .footnotes .reversefootnote:focus {
   background-color: $pink-50;
   border-color: $pink-50;
+}
+
+.endnote + .footnotes {
+  border-color: $gray04;
 }
 
 .hero figcaption {

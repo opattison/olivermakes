@@ -74,7 +74,7 @@ In the summer of 2013, my department (a creative team of five including me) plan
 
 When we initially redesigned the website in 2012, it was a *mostly* responsive design. An exception was the donation form design. The donation form framework provided by Convio Luminate Online did not yet have strong support for responsive layout. It was designed for a *desktop-only* web, archaically using HTML `<table>`s for layout and small-screen-unfriendly CSS. The solution was to use a mobile-specific donation form (determined by device detection), so that visitors using mobile devices would conditionally be served a touch-friendly, small-scale version of the form.
 
-One year after the redesign, it was becoming clear that this device detection solution method would not work so well long-term.[^1] Additionally, I wanted to revisit the interface design of the form to make it better fit the rest of the fundraising pages. A responsive donation form would be more flexible and more future-friendly. Convio had since released a new “responsive” donation form template to test, so I worked on a prototype that would suit the site design.
+One year after the redesign, it was becoming clear that this device detection solution method would not work so well long-term. [^1] Additionally, I wanted to revisit the interface design of the form to make it better fit the rest of the fundraising pages. A responsive donation form would be more flexible and more future-friendly. Convio had since released a new “responsive” donation form template to test, so I worked on a prototype that would suit the site design.
 
 <div class="grid--wide">
   <figure class="grid-figure--33 grid-figure screenshot">
