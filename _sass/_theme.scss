@@ -156,6 +156,10 @@ mark {
   border-color: $pink-50;
 }
 
+.endnote + .footnotes {
+  border-color: $gray04;
+}
+
 .hero figcaption {
   background-color: $whiter;
 }
