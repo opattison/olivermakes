@@ -8,7 +8,7 @@
   </div>
   <div class="project-meta">
     <h1><a href="{{ post.url }}">{{ post.title | markdownify | p_escape }}</a></h1>
-    <p class="project-description">This project was originally completed <time class="dt-published" datetime="{{ post.date }}">{{ completed }}</time>.{% unless updated == completed %} This writing was last updated {{ updated }}.{% endunless %}</p>
+    <p class="project-description">This was originally {% if post.category == 'projects' %}completed{% else %}published{% endif %} {{ completed }}{% unless updated == completed %} and last updated {{ updated }}.{% endunless %}</p>
     <div class="project-nav">
       <a class="project-nav-action--satellite" href="{{ post.url }}">{% if post.category == 'projects' %}View this project{% elsif post.category == 'writing' %}Read this post{% else %}View this post{% endif %}</a>
     </div>

@@ -41,6 +41,10 @@ blockquote a {
   @include a-underline;
 }
 
+ul li::before {
+  color: $gray04;
+}
+
 blockquote {
   border-color: $blue;
   color: $gray03;

@@ -60,24 +60,26 @@
 }
 
 /* inline list */
-.inline-list,
-.inline-list ul {
+ul.inline-list {
   list-style: none;
 }
 
-.inline-list li {
+ul.inline-list li {
   display: inline;
   font-style: italic;
   font-size: 1.25em;
 }
 
-.inline-list li:after {
-  content: ' ■';
+ul.inline-list li::after {
+  content: '⊙';
   color: $gray04;
+  font-size: .75em;
   font-style: normal;
-  margin: 0 .25em;
+  margin-left: .25em;
 }
 
-.inline-list :last-child:after {
-  content: ''
+ul.inline-list li::before,
+ul.inline-list :last-child::after {
+  content: '';
+  margin: 0;
 }

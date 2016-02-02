@@ -1,28 +1,30 @@
 # <a href="https://olivermak.es/"><img src="https://olivermak.es/resources/icons/favicon32.svg" width="32" height="32"></a> <a href="https://olivermak.es/">olivermak.es</a> an archive
 
+[Read about my process for building this site](https://olivermak.es/2014/12/oliver-pattison/).
+
 ## Goals
 
 - Build a personal website as an archive for my creative output.
-- Experiment with HTML, CSS and design patterns that I have not implemented before.
-- Showcase my work for friends, colleagues, and potential collaborators and employers.
-- Learn more about building advanced static sites with Jekyll.
-- Initially, design and implement entirely by myself, with later feedback from others.
+- Experiment with HTML, CSS, and JavaScript using design patterns that I have not implemented before.
+- Self-built: design and implement as much as possible by myself.
+- Showcase my work for others.
+- Improve at building advanced static sites with Jekyll.
 
 ## Principles
 
 - Future-friendly
-- Content-first
-- Responsive
-- High performance
-- Minimalist aesthetics
-- Progressive enhancement
-- Respect for users and their devices
-- Empathy in content, design and tone
+- Focused on content
+- Economical, high performance design
+- Progressively enhanced
+- Flexible in layout and form
+- Respectful of users and their devices
+- Usable and accessible
+- Empathetic in content, design and tone
 
 ## Implementation
 
 - Jekyll for building
-- Amazon S3 and [s3_website](https://github.com/laurilehmijoki/s3_website) for hosting and deploying
+- Amazon CloudFront, S3 and [s3_website](https://github.com/laurilehmijoki/s3_website) for hosting and deploying
 - GitHub for version control
 - TypeKit for fonts: 300, 400 and 500 weights of [the Ratio typeface](http://cargocollective.com/pstype/Ratio) and 400 weight of [Source Code Pro](http://adobe-fonts.github.io/source-code-pro/)) are [hosted by Typekit](https://typekit.com/colophons/ojm0eig)
 - `flexbox` for flexible CSS layout

@@ -1,11 +1,10 @@
 ---
 title: 'This website: olivermak.es'
-layout: dubbel
+layout: singel
 option:
   - code
-  - custom-css
+  - featured-home
   - index-image
-  - srcset
 category: 'projects'
 tags:
   - 'design'
@@ -15,7 +14,7 @@ tags:
   - 'typography'
   - 'web'
 date: 2014-12-02 12:34
-updated: 2016-02-01 17:16
+updated: 2016-02-02 02:15
 drafted: 2016-02-01 17:16
 unique_id: 2014-12-02:oliver-pattison
 period: 2014-10 to present
@@ -33,13 +32,13 @@ Here is a collection of writing and projects that document this website. I first
 ## Principles
 
 - Future-friendly
-- Content-first
-- Responsive
-- High performance
-- Minimalist aesthetics
-- Progressive enhancement
-- Respect for users and their devices
-- Empathy in content, design and tone
+- Focused on content
+- Economical, high performance design
+- Progressively enhanced
+- Flexible in layout and form
+- Respectful of users and their devices
+- Usable and accessible
+- Empathetic in content, design and tone
 {:.inline-list}
 
 Publishing on my own site has given me personal freedom in working towards these goals, but these are principles that I attempt to incorporate into all of my creative work on the web.

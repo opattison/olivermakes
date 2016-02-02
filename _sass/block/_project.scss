@@ -17,6 +17,14 @@
   @include min-width(l01) {
     margin: 0 auto;
   }
+
+  @include min-width(l03) {
+    display: flex;
+    margin-left: -9em;
+    margin-right: -9em;
+    margin-bottom: 2em;
+    padding: 0;
+  }
 }
 
 .project--satellite {
@@ -88,6 +96,12 @@
   @include min-width(m01) {
     height: 20em;
   }
+
+  @include min-width(l03) {
+    flex: 0 0 50%;
+    height: 18em;
+    width: 50%;
+  }
 }
 
 .project-meta {
@@ -95,6 +109,15 @@
 
   @include min-width(s04) {
     padding: 1em 0 0;
+  }
+
+  @include min-width(l03) {
+    display: flex;
+    flex: 0 0 50%;
+    flex-flow: column nowrap;
+    height: 18em;
+    margin-top: 0;
+    padding: 2em;
   }
 }
 
@@ -109,12 +132,21 @@
   font-size: .875em;
 }
 
+.project-description + p {
+  margin-top: .5em;
+}
+
 .project-nav {
   display: flex;
   flex-direction: column;
 
   @include min-width(s01) {
     flex-direction: row;
+  }
+
+  @include min-width(l03) {
+    margin: auto auto 0;
+    width: 100%;
   }
 }
 

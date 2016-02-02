@@ -73,6 +73,11 @@
   margin-top: 1em;
 }
 
+li.pattern--swatch::before {
+  content: '';
+  margin: 0;
+}
+
 .pattern--swatch figure {
   height: 16em;
   position: relative;

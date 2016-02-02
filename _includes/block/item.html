@@ -4,7 +4,8 @@
       {% unless post.option contains 'minor' %}
       <p class="p-summary item-summary">{{ post.description }}</p>
       {% endunless %}
-      <p class="item-time">Published <time class="dt-published" pubdate datetime="{{ post.date }}">{{ post.date | date: '%Y-%m-%d' }}</time></p>
+      <p class="item-time">{% if post.category =='projects' %}Completed{% else %}Published{% endif %} <time class="dt-published" pubdate datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%Y-%m-%d' }}</time> {% if post.period %}(worked on from {{ post.period }}){% endif %}</p>
+
     </div>
     <a class="item-action" href="{{ post.url }}">{% if post.category == 'projects' %}View this project{% elsif post.category == 'writing' %}Read this post{% else %}View this post{% endif %}</a>
   </article>

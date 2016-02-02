@@ -34,7 +34,7 @@ This is “feature” text, used for emphasis and attention in storytelling.
 <blockquote>
   This text is quoted. A <code>blockquote</code> is particularly useful to emphasize and give space to a quotation from an attributed piece of writing. Make sure to include a footer with a citation to an author, where applicable.
   <footer>
-    – said <cite>someone <time datetime="2014-11-24 15:07">today</time></cite>
+    – said <cite>someone <time datetime="2014-11-24">today</time></cite>
   </footer>
 </blockquote>
 
