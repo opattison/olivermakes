@@ -128,12 +128,17 @@ ol {
 }
 
 ul {
-  list-style-type: square;
+  list-style-type: none;
 }
 
 ul ul,
 ol ol {
   margin: .5em 1em;
+}
+
+[role="main"] ul li::before {
+  content: '⊙';
+  margin-right: .5em;
 }
 
 article ol {
