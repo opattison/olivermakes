@@ -1,5 +1,7 @@
 # <a href="https://olivermak.es/"><img src="https://olivermak.es/resources/icons/favicon32.svg" width="32" height="32"></a> <a href="https://olivermak.es/">olivermak.es</a> an archive
 
+[Read about my process for building this site](https://olivermak.es/2014/12/oliver-pattison/).
+
 ## Goals
 
 - Build a personal website as an archive for my creative output.
