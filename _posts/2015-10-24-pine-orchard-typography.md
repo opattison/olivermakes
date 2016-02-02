@@ -2,6 +2,7 @@
 title: 'Pine Orchard Prints typographic identity'
 layout: edgeless
 option:
+  - featured-home
   - index-image
   - minor
   - sample-svg

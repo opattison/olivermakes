@@ -1,11 +1,10 @@
 ---
 title: 'This website: olivermak.es'
-layout: dubbel
+layout: singel
 option:
   - code
-  - custom-css
+  - featured-home
   - index-image
-  - srcset
 category: 'projects'
 tags:
   - 'design'
