@@ -3,6 +3,7 @@ title: 'Technical documentation for Casey&nbsp;Trees'
 layout: dubbel
 option:
   - index-image
+  - minor
   - srcset
 category: 'projects'
 tags:
