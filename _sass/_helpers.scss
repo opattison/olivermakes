@@ -58,3 +58,26 @@
 .text-after {
   background-color: $green;
 }
+
+/* inline list */
+.inline-list,
+.inline-list ul {
+  list-style: none;
+}
+
+.inline-list li {
+  display: inline;
+  font-style: italic;
+  font-size: 1.25em;
+}
+
+.inline-list li:after {
+  content: ' ■';
+  color: $gray04;
+  font-style: normal;
+  margin: 0 .25em;
+}
+
+.inline-list :last-child:after {
+  content: ''
+}

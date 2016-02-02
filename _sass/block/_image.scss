@@ -39,6 +39,11 @@
     max-width: none;
     width: calc(100% + 9em);
   }
+
+  .image--wide figcaption {
+    width: 50%;
+    margin-left: 50%;
+  }
 }
 
 @include min-width(l03) {

@@ -4,7 +4,6 @@ layout: singel
 option:
   - code
   - index-image
-  - feature
   - minor
 category: 'projects'
 tags:

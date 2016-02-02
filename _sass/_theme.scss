@@ -226,18 +226,15 @@ mark {
   background-color: $gray02;
 }
 
-.item:nth-child(2n + 1),
-.item--feature:nth-child(2n + 1) {
+.item:nth-child(2n + 1) {
   background-color: $gray07;
 }
 
-.item:nth-child(2n),
-.item--feature:nth-child(2n) {
+.item:nth-child(2n) {
   background-color: $gray05;
 }
 
-.item-description,
-.item--feature-description {
+.item-description {
   background-color: $gray07-90;
 }
 
@@ -263,8 +260,7 @@ mark {
   color: $green;
 }
 
-.item-action,
-.item--feature-action {
+.item-action {
   @include action-color($gray02, $whiter);
 }
 
@@ -276,10 +272,6 @@ mark {
 .item:nth-child(2n) .item-action:focus {
   background-color: $whiter;
   color: $gray00;
-}
-
-.item--feature-action {
-  background-color: $black;
 }
 
 .item--photo-description {
@@ -337,16 +329,24 @@ mark {
   color: $blue;
 }
 
-.project {
+.project,
+.project--satellite {
   background-color: $gray06;
 }
 
-.project-image {
+.project-image,
+.project--satellite .project-image {
   background-color: $gray07;
+  border-color: $gray06;
 }
 
 .project-summary {
   color: $gray02;
+}
+
+.project-nav-action {
+  background-color: $gray02;
+  color: $white;
 }
 
 .project-nav-action--url {
@@ -362,6 +362,7 @@ mark {
 .project-nav-action:hover,
 .project-nav-action:focus {
   background-color: $white;
+  color: $gray02;
 }
 
 .project-nav-action--url:hover,

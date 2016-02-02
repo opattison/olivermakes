@@ -1,4 +1,4 @@
-title: olivermak.es
+title: Oliver Pattison
 author:
   name: Oliver Pattison
   email: oliverpattison@gmail.com
@@ -97,7 +97,6 @@ source_url:
 ## srcset implementation
 wide-sizes: '(min-width: 140em) 1440px, (min-width: 115em) 1260px, (min-width: 95em) 1080px, (min-width: 60em) 900px, (min-width: 45em) 720px, 100vw'
 grid2-sizes: '(min-width: 140em) 691px, (min-width: 115em) 605px, (min-width: 95em) 518px, (min-width: 60em) 432px, (min-width: 45em) 720px, 100vw'
-project-sizes: '(min-width: 115em) 756px, (min-width: 90em) 648px, (min-width: 70em) 540px, (min-width: 60em) 740px, (min-width: 45em) 620px, (min-width: 30em) calc(100vw - 4em), calc(100vw - 2em)'
 srcset1440:
   - 480
   - 640
@@ -111,10 +110,6 @@ srcset1080:
   - 640
   - 720
   - 900
-  - 1080
-srcset_project:
-  - 480
-  - 720
   - 1080
 
 ## Mapbox authentication and configuration

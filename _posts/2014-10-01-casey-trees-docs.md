@@ -3,7 +3,7 @@ title: 'Technical documentation for Casey&nbsp;Trees'
 layout: dubbel
 option:
   - index-image
-  - sample-srcset
+  - minor
   - srcset
 category: 'projects'
 tags:
@@ -48,13 +48,13 @@ Unfortunately, the documents in the project contain proprietary information, so 
 <div class="grid--wide">
 <figure class="grid-figure--33 grid-figure screenshot">
   <img
-    src="{{ site.image_url }}/{{ page.image[1].src }}" 
+    src="{{ site.image_url }}/{{ page.image[1].src }}"
     alt="{{ page.image[1].alt }}"
   >
 </figure>
 <figure class="grid-figure--66 grid-figure screenshot">
   <img
-    src="{{ site.image_url }}/{{ page.image[2].src }}" 
+    src="{{ site.image_url }}/{{ page.image[2].src }}"
     alt="{{ page.image[2].alt }}"
   >
   <figcaption>{{ page.image[2].caption | markdownify }}</figcaption>

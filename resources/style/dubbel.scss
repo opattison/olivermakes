@@ -4,11 +4,6 @@
 @import 'mixins';
 
 @media screen and (min-width: 60em) {
-  .project {
-    margin: 0 -2.25em;
-    padding: 2.25em;
-  }
-
   .focus {
     padding: 0;
   }
@@ -28,7 +23,7 @@
 
   .content {
     margin: 0 auto;
-    padding: 2em 9em 4.5em;
+    padding: 0 9em 4.5em;
   }
 
   .image--wide {
@@ -79,45 +74,39 @@
   }
 
   .project {
-    margin: -1em -9em 1em;
-    overflow: auto;
-    padding: 1em 2em;
-    position: relative;
+    display: flex;
+    margin-left: -9em;
+    margin-right: -9em;
+    padding: 0;
+    min-height: 0;
+    align-items: flex-start;
+  }
+
+  .project-image,
+  .project-meta {
+    height: 18em;
   }
 
   .project-image {
-    border-top: solid 1px $gray06;
-    border-bottom: solid 1px $gray06;
-    margin: -1em 2em -1em -2em;
-    float: left;
-    width: calc(50% + 2em);
+    flex: 0 0 50%;
+    width: 50%;
   }
 
-  .project-description {
-    margin-top: .5em;
+  .project-meta {
+    display: flex;
+    flex: 0 0 50%;
+    padding: 1em 2em 2em;
+    margin-top: 0;
+    flex-flow: column nowrap;
   }
 
   .project-nav {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 50%;
+    margin: auto auto 0;
+    width: 100%;
   }
 
   .highlight {
     margin: 1.5em -9em;
     padding: 1.5em 9em;
-  }
-}
-
-@media screen and (min-width: 80em) {
-  .project {
-    margin: -2em -9em 2em;
-    padding: 2em;
-  }
-
-  .project-image {
-    margin: -2em 2em -2em -2em;
-    width: calc(50% + 2em);
   }
 }

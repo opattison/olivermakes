@@ -1,7 +1,7 @@
 ---
 title: .image--wide
 use: 'Images that need to take up more than the full width of the body for maximum visual impact. Contrast with [.image--narrow](#image-narrow)'
-spec: 'Typically greater than 100% width, with overflowing margins on larger screens. Contains an `<img>`. Figcaption is optional.'
+spec: 'Typically greater than 100% width, with overflowing margins on larger screens. Contains an `<img>`. Figcaption is optional, right-aligned and capped at 50% width on larger screens.'
 type: html
 category: component
 sass: block/_image.scss#l16
@@ -13,6 +13,6 @@ sass: block/_image.scss#l16
     alt="An example image. Never forget alt text."
   >
   <figcaption>
-    <p>This is the widest possible image pattern.</p>
+    <p>This is the widest possible image pattern. The figcaption for this style is optional, right-aligned and capped at 50% width on larger screens.</p>
   </figcaption>
 </figure>
