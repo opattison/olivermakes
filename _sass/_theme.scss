@@ -117,6 +117,10 @@ mark {
   background-color: $whiter;
 }
 
+.action {
+  @include action-color($gray03, $whiter);
+}
+
 .credits {
   background-color: $gray06;
   color: $black;
