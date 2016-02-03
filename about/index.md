@@ -33,6 +33,24 @@ I currently live in Washington, DC. I am originally from New York City.
 I’m available for hire. [Get in touch](mailto:{{ site.author.email }}){:.u-email rel="me"} by email if you have a project in mind.
 {:.focus}
 
+{% capture elsewhere %}
+# Elsewhere on the web
+
+Nearly every significant thing I read or look at is archived on **[Pinboard]({{ site.link.pinboard }}){:rel="me"}**. It is my external brain and my favorite thing on the web. It is as complete an archive as I can keep of my reading online.
+
+I am **[{{ site.author.twitter }} on Twitter]({{ site.link.twitter }}){:rel="me"}**.
+
+My open source code (including this site) is on **[GitHub]({{ site.link.github }}){:rel="me"}**.
+
+Some of my design experiments are posted on **[CodePen](http://codepen.io/opattison/){:rel="me"}**.
+
+A selection of my mobile photography is on **[VSCO Grid]({{ site.link.vsco }}){:rel="me"}**.
+{% endcapture %}
+
+<aside class="ancillary">
+{{ elsewhere | markdownify }}
+</aside>
+
 ## About this site
 
 This website is an archive for my work, featuring:
@@ -55,40 +73,20 @@ I would like to thank [Jean]({{ site.link.jean }}) for editing and design input.
 
 The fonts on the site (300, 400 and 500 weights of [the Ratio typeface](http://cargocollective.com/pstype/Ratio) and 400 weight of [Source Code Pro](http://adobe-fonts.github.io/source-code-pro/)) are [hosted by Typekit](https://typekit.com/colophons/ojm0eig).
 
-### More about this site
+### How this site is designed
 
 {% include block/project--satellite.html id="2014-12-02:oliver-pattison" %}
 
 {% include block/project--satellite--patterns.html %}
 
-## Copyright
 
-All writing and photography on the site is my original work and is licensed under [{{ site.license.long }} ({{ site.license.short }})]({{ site.link.attribution }}){:rel="license"}. All design and code is *under copyright*, but is available for fair use [on GitHub]({{ site.link.source }}){:rel="source"}. If you are looking at the repository, almost everything in the `_static` and `_posts` folders is {{ site.license.short }} and the most of the rest of it is under copyright, where applicable.
+{% capture license %}
+# License and copyright
 
-I designed the site myself, so most of the source was written by me by hand. Exceptions where I derived inspiration or an approach from another source are noted inline. An example of copyright violation would be copying all of the source code outright and using it to make a public website that could be confused for this one. If you have any questions about licensing or use of content from the site, please [contact me by email](mailto:{{ site.author.email }}).
-
-### Attribution
-
-Proper {{ site.license.short }} attribution with a link and credit would look like: **“The title” [Oliver Pattison]({{ site.url }}) [{{ site.license.short }}]({{ site.link.attribution }})**; or like this in HTML:
-
-```html
-“The title” <a href="{{ site.url }}">Oliver Pattison</a> <a href="{{ site.link.attribution }}">{{ site.license.short }}</a>
-```
-
-{% capture elsewhere %}
-## Elsewhere on the web
-
-Nearly every significant thing I read or look at is archived on **[Pinboard]({{ site.link.pinboard }}){:rel="me"}**. It is my external brain and my favorite thing on the web. It is as complete an archive as I can keep of my reading online.
-
-I am **[{{ site.author.twitter }} on Twitter]({{ site.link.twitter }}){:rel="me"}**.
-
-My open source code (including this site) is on **[GitHub]({{ site.link.github }}){:rel="me"}**.
-
-Some of my design experiments are posted on **[CodePen](http://codepen.io/opattison/){:rel="me"}**.
-
-A selection of my mobile photography is on **[VSCO Grid]({{ site.link.vsco }}){:rel="me"}**.
+In short: the code and design are under [copyright (MIT license)](/license/#code) and original photos, images are [{{ site.license.long }} ({{ site.license.short }})]({{ site.link.attribution }}){:rel="license"}.
 {% endcapture %}
 
 <aside class="endnote">
-{{ elsewhere | markdownify }}
+{{ license | markdownify }}
+<a class="action" href="/license/">More on attribution</a>
 </aside>
