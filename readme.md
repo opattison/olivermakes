@@ -45,7 +45,8 @@
 - [octopress-autoprefixer](https://github.com/octopress/autoprefixer)
 - [image_optim](https://github.com/toy/image_optim)
 - [s3_website](https://github.com/laurilehmijoki/s3_website)
-- [uglifyJS (NPM needed to install)](https://github.com/mishoo/UglifyJS2)
+- [NPM for JavaScript dependencies](https://www.npmjs.com)
+- [uglifyJS](https://github.com/mishoo/UglifyJS2)
 
 ### Front-end
 

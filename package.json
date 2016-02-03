@@ -1,0 +1,22 @@
+{
+  "name": "olivermakes",
+  "description": "NPM development setup for olivermak.es",
+  "dependencies": {
+    "uglify-js": "2.6",
+    "velocity": "1.2.3"
+  },
+  "scripts": {
+    "concatenate": "uglifyjs resources/scripts/velocity.js resources/scripts/velocity.ui.js resources/scripts/site.js --comments -b -o resources/scripts/all.min.js",
+    "minify": "uglifyjs resources/scripts/velocity.js resources/scripts/velocity.ui.js resources/scripts/site.js --comments -o resources/scripts/all.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opattison/olivermakes.git"
+  },
+  "author": "Oliver Pattison",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/opattison/olivermakes/issues"
+  },
+  "homepage": "https://github.com/opattison/olivermakes#readme"
+}
