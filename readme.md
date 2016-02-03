@@ -29,9 +29,9 @@
 - TypeKit for fonts: 300, 400 and 500 weights of [the Ratio typeface](http://cargocollective.com/pstype/Ratio) and 400 weight of [Source Code Pro](http://adobe-fonts.github.io/source-code-pro/)) are [hosted by Typekit](https://typekit.com/colophons/ojm0eig)
 - `flexbox` for flexible CSS layout
 - Responsive images using `srcset`
-- Processing of archives with the [jekyll-archives](https://github.com/jekyll/jekyll-archives) gem
+- Processing of archives with the [Jekyll Archives](https://github.com/jekyll/jekyll-archives) gem
 - MapBox for maps
-- No templates, frameworks, ~~pre-processors~~ or boilerplate (now using SCSS for minification and some variables)
+- No templates, frameworks or boilerplate
 - As little JavaScript as possible
 
 ## Requirements
@@ -39,9 +39,9 @@
 ### Configuration
 
 - [Jekyll](http://jekyllrb.com) >3.0
-- [jekyll-archives](https://github.com/jekyll/jekyll-archives) >2.1.0
+- [Jekyll Archives](https://github.com/jekyll/jekyll-archives)
 - [rouge](https://github.com/jneen/rouge)
-- [sass](https://github.com/sass/sass)
+- [Sass (SCSS)](https://github.com/sass/sass)
 - [octopress-autoprefixer](https://github.com/octopress/autoprefixer)
 - [image_optim](https://github.com/toy/image_optim)
 - [s3_website](https://github.com/laurilehmijoki/s3_website)
@@ -50,7 +50,7 @@
 
 ### Front-end
 
-- [Velocity.js](http://julian.com/research/velocity/) 1.2.2
+- [Velocity.js](http://julian.com/research/velocity/)
 - [typekit-cache](https://github.com/morris/typekit-cache)
 
 ## License

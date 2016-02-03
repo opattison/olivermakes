@@ -1,4 +1,4 @@
-## Website deploying config ##
+# Website development and deployment config #
 
 require 'jekyll'
 require 's3_website'
@@ -19,8 +19,8 @@ task :serve do
   system "bundle exec jekyll serve --config _config.yml,_config-dev.yml"
 end
 
-## "rake optimize" to optimize a folder of images in ImageOptim-CLI
-desc "run a folder of images through ImageOptim-CLI"
+## "rake optimize" to optimize a folder of images in image_optim
+desc "run a folder of images through image_optim"
 task :optimize do
   system "image_optim #{local_images} -r"
   puts "## Images optimized ##"
