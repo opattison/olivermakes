@@ -20,10 +20,15 @@
   @include min-width(l01) {
     font-size: 1.25em;
   }
+}
 
-  svg {
-    height: calc(1.5em + 1px);
-    width: 2em;
-    padding-bottom: 1px
-  }
+.return-action--home,
+.return-action--top {
+  @extend .return-action;
+}
+
+.return-action--home svg {
+  height: calc(1.5em + 1px);
+  width: 2em;
+  padding-bottom: 1px
 }

@@ -13,7 +13,7 @@ local_site     = "_site"
 ## "rake serve"
 desc "custom Jekyll serve for local development"
 task :serve do
-  system "jekyll serve --config _config.yml,_config-dev.yml"
+  system "bundle exec jekyll serve --config _config.yml,_config-dev.yml"
 end
 
 ## "rake optimize" to optimize a folder of images in ImageOptim-CLI
@@ -28,7 +28,7 @@ desc "build and deploy scripts, images and site to development servers via s3_we
 task :dev do
   puts "## Concatenating JavaScript ##"
   system "uglifyjs resources/scripts/velocity.js resources/scripts/velocity.ui.js resources/scripts/site.js --comments -b -o resources/scripts/all.min.js"
-  system "jekyll build --config _config.yml,_config-dev.yml"
+  system "bundle exec jekyll build --config _config.yml,_config-dev.yml"
   system "s3_website push --site #{local_site}"
   puts "## Deployed site to S3 ##"
 end
@@ -38,7 +38,7 @@ desc "build and deploy scripts, images and site to production servers via s3_web
 task :prod do
   puts "## Concatenating and minifying JavaScript ##"
   system "uglifyjs resources/scripts/velocity.js resources/scripts/velocity.ui.js resources/scripts/site.js --comments -o resources/scripts/all.min.js"
-  system "jekyll build"
+  system "bundle exec jekyll build"
   system "DEPLOY=production s3_website push --site #{local_site}"
   puts "## Deployed site to S3 ##"
 end
