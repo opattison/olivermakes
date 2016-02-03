@@ -18,9 +18,10 @@ drafted: 2016-01-29 20:00
 unique_id: 2016-01-30:svg-in-github-readme
 description: 'Enhancing Markdown files for open source projects.'
 image:
-  - src: 2016-01-30-pixel-logo.png
-    alt: ''
-    date: 2016-01-30
+  - src: 2016-02-02-gh-mark.svg
+    src_png: 2016-02-02-gh-mark.png
+    alt: 'GitHub Octocat logo'
+    date: 2016-02-02
   - src: 2016-01-30-github-readme-svg.png
     alt: 'circular logo below readme text as rendered on a GitHub project page'
     date: 2016-01-30
