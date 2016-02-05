@@ -3,8 +3,6 @@ title: 'Component Patterns'
 layout: edgeless
 option:
   - code
-  - code-block
-  - srcset
   - patterns
 category: meta
 date: 2014-10-31 18:25

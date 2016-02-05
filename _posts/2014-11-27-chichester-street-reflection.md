@@ -4,7 +4,7 @@ layout: edgeless
 theme: dark
 option:
   - map-meta
-  - srcset
+
 category: 'photography'
 tags:
   - 'travel'
@@ -14,7 +14,7 @@ drafted: 2014-03-23 12:34
 unique_id: 2014-03-23:chichester-street-reflection
 description: 'After the rain in Chichester, on a brief trip to England.'
 image:
-  - src: 2014-03-23-chichester-street-reflection-olivermakes-ccbync.jpg
+  - src: /images/2014-03-23-chichester-street-reflection-olivermakes-ccbync.jpg
     alt: 'Reflections from a puddle where a street meets a sidewalk'
     caption: 'After the rain in Chichester, West Sussex'
     date: 2014-03-23
@@ -35,8 +35,8 @@ image:
 
 <figure class="image--wide">
   <img
-    src="{{ site.image_url }}/{{ page.image[0].src }}"
-    sizes="{{ site.wide-sizes }}"
-    srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image_url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[0].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+    src="{{ page.image[0].src | imgix_url: w: 720, q: 50 }}"
+    sizes="{{ site.sizes }}"
+    srcset="{% for width in site.srcset %}{{ page.image[0].src | imgix_url: w: width, q: 60 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
     alt="{{ page.image[0].alt }}">
 </figure>

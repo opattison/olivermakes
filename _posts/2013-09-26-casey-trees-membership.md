@@ -3,9 +3,8 @@ title: 'Membership design for Casey Trees'
 layout: dubbel
 option:
   - code
-  - index-image
   - patterns
-  - srcset
+  - no-imgix-source
 category: 'projects'
 tags:
   - 'css'
@@ -43,22 +42,23 @@ color:
     hex: '#e37c1c'
   - name: border brown
     hex: '#6a5f56'
+image_index: /images/index/2014-12-17-casey-trees-membership-logo.png
 image:
-  - src: 2014-12-17-casey-trees-membership-feature.png
+  - src: /images/2014-12-17-casey-trees-membership-feature.png
     alt: 'A screenshot of the Casey Trees membership page'
     date: 2014-12-17
-  - src: 2013-09-18-donation-form-mobile.png
+  - src: /images/2013-09-18-donation-form-mobile.png
     alt: 'Screenshot: membership form on an iPhone screen September 2013'
     caption: '<span class="text-before">Before:</span> “Mobile-only” donation form, 2012'
-  - src: 2014-10-02-membership-form-responsive.png
+  - src: /images/2014-10-02-membership-form-responsive.png
     alt: 'Screenshot: responsive membership form on an iPhone screen October 2014'
     caption: '<span class="text-after">After:</span> Responsive donation levels, 2013'
-  - src: 2014-10-02-membership-form-responsive-2.png
+  - src: /images/2014-10-02-membership-form-responsive-2.png
     alt: 'Screenshot: responsive membership inputs on an iPhone screen October 2014'
     caption: '<span class="text-after">After:</span> Responsive donation inputs, 2013'
-  - src: 2014-12-17-membership-page-large-screen.png
+  - src: /images/2014-12-17-membership-page-large-screen.png
     alt: 'Screenshot: membership page on a MacBook Pro December 2014'
-  - src: 2014-12-17-membership-page-medium-screen.png
+  - src: /images/2014-12-17-membership-page-medium-screen.png
     alt: 'Screenshot: membership page on Nexus 7 December 2014'
 
 ---
@@ -78,23 +78,20 @@ One year after the redesign, it was becoming clear that this device detection so
 <div class="grid--wide">
   <figure class="grid-figure--33 grid-figure screenshot">
     <img
-      src="{{ site.image_url }}/{{ page.image[1].src }}"
-      alt="{{ page.image[1].alt }}"
-    >
+      src="{{ page.image[1].src | imgix_url }}"
+      alt="{{ page.image[1].alt }}">
     <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
   </figure>
   <figure class="grid-figure--33 grid-figure screenshot">
     <img
-      src="{{ site.image_url }}/{{ page.image[2].src }}"
-      alt="{{ page.image[2].alt }}"
-    >
+      src="{{ page.image[2].src | imgix_url }}"
+      alt="{{ page.image[2].alt }}">
     <figcaption>{{ page.image[2].caption | markdownify }}</figcaption>
   </figure>
   <figure class="grid-figure--33 screenshot">
     <img
-      src="{{ site.image_url }}/{{ page.image[3].src }}"
-      alt="{{ page.image[3].alt }}"
-    >
+      src="{{ page.image[3].src | imgix_url }}"
+      alt="{{ page.image[3].alt }}">
     <figcaption>{{ page.image[3].caption | markdownify }}</figcaption>
   </figure>
 </div>
@@ -110,15 +107,13 @@ For the main page that would explain the membership program and encourage visito
 <div class="grid--wide">
 <figure class="grid-figure--66 grid-figure screenshot">
   <img
-    src="{{ site.image_url }}/{{ page.image[4].src }}"
-    alt="{{ page.image[4].alt }}"
-  >
+    src="{{ page.image[4].src | imgix_url }}"
+    alt="{{ page.image[4].alt }}">
 </figure>
 <figure class="grid-figure--33 grid-figure screenshot">
   <img
-    src="{{ site.image_url }}/{{ page.image[5].src }}"
-    alt="{{ page.image[5].alt }}"
-  >
+    src="{{ page.image[5].src | imgix_url }}"
+    alt="{{ page.image[5].alt }}">
 </figure>
 </div>
 
@@ -132,7 +127,7 @@ Since we already had strong colors and icons for each membership level, it made 
 
 <ul class="grid grid--swatches">
 {% for color in page.color %}
-<li class="pattern--swatch"><figure style="background-color: {{ page.color[forloop.index0].hex }}"><figcaption>{{ page.color[forloop.index0].name }}<br>{{ page.color[forloop.index0].hex }}</p></figcaption></figure></li>
+  <li class="pattern--swatch"><figure style="background-color: {{ page.color[forloop.index0].hex }}"><figcaption>{{ page.color[forloop.index0].name }}<br>{{ page.color[forloop.index0].hex }}</p></figcaption></figure></li>
 {% endfor %}
 </ul>
 

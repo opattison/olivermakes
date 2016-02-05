@@ -1,15 +1,13 @@
     <figure class="hero">
-      {% if page.option contains 'srcset' %}<img
-        src="{{ site.image_url }}/{{ page.image[0].src }}"
-        sizes="{{ site.wide-sizes }}"
-        srcset="{% for srcset1440 in site.srcset1440%}{{ site.image_url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[0].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-        alt="{{ page.image[0].alt }}"
-      >{% else %}
       <img
-        src="{{ site.image_url }}/{{ page.image[0].src }}"
-        alt="{{ page.image[0].alt }}"
-      >
-      {% endif %}
+        {% if page.option contains 'no-imgix-source' %}
+        src="{{ page.image[0].src }}"
+        {% else %}
+        src="{{ page.image[0].src | imgix_url: w: 720, q: 50 }}"
+        sizes="{{ site.sizes }}"
+        srcset="{% for width in site.srcset %}{{ page.image[0].src | imgix_url: w: width, q: 60 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+        {% endif %}
+        alt="{{ page.image[0].alt }}">
       {% if page.image[0].caption %}
       <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
       {% endif %}

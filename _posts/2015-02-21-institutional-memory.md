@@ -1,6 +1,8 @@
 ---
 title: 'Institutional memory'
 layout: singel
+option:
+  - no-image_index
 category: 'writing'
 tags:
   - 'archiving'

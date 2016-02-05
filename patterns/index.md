@@ -3,8 +3,6 @@ title: 'Patterns'
 layout: category
 option:
   - code
-  - code-block
-  - srcset
   - patterns
 category: meta
 date: 2014-10-31 18:25
@@ -12,8 +10,8 @@ updated: 2016-01-26 23:04
 unique_id: 2014-10-31:patterns
 description: 'A collection of patterns for this website.'
 image:
-  - src: 2015-10-29-patchwork-270deg.svg
-    png_src: 2015-10-29-patchwork-270deg.png
+  - src: /images/2015-10-29-patchwork-270deg.svg
+    png_src: /images/2015-10-29-patchwork-270deg.png
     alt: ''
 
 ---

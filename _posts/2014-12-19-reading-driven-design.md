@@ -1,9 +1,9 @@
 ---
 title: 'Reading-driven design'
 layout: singel
-option:
-  - index-image
 category: 'writing'
+option:
+  - no-imgix-source
 tags:
   - 'css'
   - 'design'
@@ -15,11 +15,13 @@ updated: 2016-01-26 23:14
 drafted: 2014-12-19 15:59
 unique_id: 2014-12-19:reading-driven-design
 description: 'On methods and reasons for designing with real content rather than <i>lorem ipsum</i>.'
+image_index: /images/2015-02-21-paragraphs.svg
 image:
-  - src: 2015-02-21-paragraphs.svg
+  - src: /images/2015-02-21-paragraphs.svg
+    src_png: /images/2015-02-21-paragraphs.png
     alt: ''
     description: 'Vector image of lines on a page – implicitly critical of an ‘ipsum’ approach.'
-  - src: 2014-11-02-green-arabia-reading-driven-design.jpg
+  - src: /images/2014-11-02-green-arabia-reading-driven-design.jpg
     alt: 'A screenshot of an early version of this website'
     caption: 'This is an example of a development version of this website borrowing from the essay [“Green Arabia”](http://idlewords.com/2014/08/green_arabia.htm) by Maciej Cegłowski to test layout and typography.'
 
@@ -41,11 +43,10 @@ My solution is to use writing that I want to read anyway. For me, that is my [In
 
 <figure class="screenshot image">
   <img
-    src="{{ site.image_url }}/{{ page.image[1].src }}"
-    sizes="{{ site.wide-sizes }}"
-    srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image_url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-    alt="{{ page.image[1].alt }}"
-  >
+    src="{{ page.image[1].src | imgix_url: w: 720, q: 70 }}"
+    sizes="{{ site.sizes_grid2 }}"
+    srcset="{% for width in site.srcset_grid2 %}{{ page.image[1].src | imgix_url: w: width, q: 70 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+    alt="{{ page.image[1].alt }}">
   <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
 </figure>
 

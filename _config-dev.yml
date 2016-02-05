@@ -5,6 +5,11 @@ gems:
   - jekyll-archives
   - sass
 # - octopress-autoprefixer
+  - imgix
+
+## Imgix configuration
+imgix:
+  source: dev-olivermakes.imgix.net
 
 ## Sass configuration
 sass:

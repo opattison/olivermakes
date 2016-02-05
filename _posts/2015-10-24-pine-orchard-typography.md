@@ -3,10 +3,8 @@ title: 'Pine Orchard Prints typographic identity'
 layout: edgeless
 option:
   - featured-home
-  - index-image
   - minor
-  - sample-svg
-  - srcset
+  - no-imgix-source
 category: 'projects'
 tags:
   - 'design'
@@ -23,30 +21,31 @@ project:
   filetype: '.svg'
   license: '© copyright'
   license-url: https://github.com/opattison/pine-orchard-antique-prints#credits
+image_index: /images/2016-01-15-logotype-pine-orchard--green.svg
 image:
-  - src: 2016-01-15-logotype-pine-orchard--green.svg
+  - src: /images/2016-01-15-logotype-pine-orchard--green.svg
     src_png: 2016-01-15-logotype-pine-orchard--green.png
     alt: 'Pine Orchard Antique Prints logo type'
     date: 2016-01-26
     description: 'background #bdc6c0, foreground text #182905 – background was generated for this context, since the original logo is typically superimposed on an image background.'
-  - src: 2016-01-28-costume-of-china.jpg
+  - src: /images/2016-01-28-costume-of-china.jpg
     alt: 'All caps text for a title page'
     date: 2016-01-28
     caption: '[William Alexander](http://pineorchardprints.com/collections/alexander-costume-of-china), <i>Costume of China</i>, 1814'
-  - src: 2016-01-28-ausable-typography.jpg
+  - src: /images/2016-01-28-ausable-typography.jpg
     alt: 'Serif text description for a print'
     date: 2016-01-28
     caption: '[William Pate](http://pineorchardprints.com/collections/american-landscape), <i>American Landscape</i>, 1869'
-  - src: 2016-01-27-pine-orchard-close.png
+  - src: /images/2016-01-27-pine-orchard-close.png
     alt: 'Close view of the letter forms for Pine in the logo.'
     date: 2016-01-27
-  - src: 2016-01-28-print-collections.png
+  - src: /images/2016-01-28-print-collections.png
     alt: 'A list of collections using Cardo with small caps'
     date: 2016-01-28
-  - src: 2016-01-28-print-index-title.jpg
+  - src: /images/2016-01-28-print-index-title.jpg
     alt: 'The title text in Cardo for a print'
     date: 2016-01-28
-  - src: 2016-01-27-pine-orchard-banner.jpg
+  - src: /images/2016-01-27-pine-orchard-banner.jpg
     alt: 'Pine Orchard Antique Prints banner logo as a part of the banner on the shop'
     date: 2016-01-27
     caption: 'The typography in context on the [Pine Orchard Prints website](http://pineorchardprints.com).'
@@ -64,11 +63,19 @@ I avoided the more eclectic Victorian typographic styles which might be illegibl
 
 <div class="grid">
   <figure class="grid-figure">
-    <img src="{{ site.image_url }}/{{ page.image[1].src }}" alt="{{ page.image[1].alt }}" />
+    <img
+      src="{{ page.image[1].src | imgix_url: q: 60 }}"
+      sizes="{{ site.sizes_grid2 }}"
+      srcset="{% for width in site.srcset_grid2 %}{{ page.image[1].src | imgix_url: w: width, q: 60 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+      alt="{{ page.image[1].alt }}">
     <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
   </figure>
   <figure class="grid-figure">
-    <img src="{{ site.image_url }}/{{ page.image[2].src }}" alt="{{ page.image[2].alt }}" />
+    <img
+      src="{{ page.image[2].src | imgix_url: q: 60 }}"
+      sizes="{{ site.sizes_grid2 }}"
+      srcset="{% for width in site.srcset_grid2 %}{{ page.image[2].src | imgix_url: w: width, q: 70 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+      alt="{{ page.image[2].alt }}">
     <figcaption>{{ page.image[2].caption | markdownify }}</figcaption>
   </figure>
 </div>
@@ -82,7 +89,7 @@ I chose [Cardo](http://scholarsfonts.net/cardofnt.html), an old-style font by Da
 The typeface performed quite well, even with only a single weight. Cardo has excellent OpenType support and beautiful small capital styles, making headings and featured text stand out against the striking photos of the prints. I ended up using Cardo for all of the headings on the site, as well as for stylized collection links and for the logo identity. Using small capitals for titles, and ultimately for the logotype ended up being a stylistic success.
 
 <figure class="image--narrow screenshot">
-  <img src="{{ site.image_url }}/{{ page.image[3].src }}" alt="{{ page.image[3].alt }}" />
+  <img src="{{ page.image[3].src | imgix_url }}" alt="{{ page.image[3].alt }}" />
 </figure>
 
 In my earliest take on the design, I attempted a logo designed only with CSS, but limited control over letter spacing and relative proportions led to unimpressive initial efforts. It is still difficult to implement small caps with OpenType and CSS properly, since browser support is not as extensive as it could be. [^2] I designed the next takes of the logotype with Adobe Illustrator, because I wanted SVG output and fine control over kerning. The final iteration appears on the site header as well as in transactional email messages and mailing labels.
@@ -91,20 +98,27 @@ For a small shop, memorable and appropriate typography effectively served the bu
 
 <div class="grid--wide">
   <figure class="grid-figure screenshot">
-    <img src="{{ site.image_url }}/{{ page.image[4].src }}" alt="{{ page.image[4].alt }}" />
+    <img
+      src="{{ page.image[4].src | imgix_url }}"
+      sizes="{{ site.sizes_grid2 }}"
+      srcset="{% for width in site.srcset_grid2 %}{{ page.image[4].src | imgix_url: w: width }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+      alt="{{ page.image[4].alt }}">
   </figure>
   <figure class="grid-figure screenshot">
-    <img src="{{ site.image_url }}/{{ page.image[5].src }}" alt="{{ page.image[5].alt }}" />
+    <img
+      src="{{ page.image[5].src | imgix_url: w: 720, q: 70 }}"
+      sizes="{{ site.sizes_grid2 }}"
+      srcset="{% for width in site.srcset_grid2 %}{{ page.image[5].src | imgix_url: w: width, q: 70 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+      alt="{{ page.image[5].alt }}">
   </figure>
 </div>
 
 <figure class="image--wide screenshot">
   <img
-    src="{{ site.image_url }}/{{ page.image[6].src }}"
-    sizes="{{ site.wide-sizes }}"
-    srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image_url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[6].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-    alt="{{ page.image[6].alt }}"
-  >
+    src="{{ page.image[6].src | imgix_url: w: 720, q: 70 }}"
+    sizes="{{ site.sizes }}"
+    srcset="{% for width in site.srcset %}{{ page.image[6].src | imgix_url: w: width, q: 70 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+    alt="{{ page.image[6].alt }}">
   <figcaption>{{ page.image[6].caption | markdownify }}</figcaption>
 </figure>
 
