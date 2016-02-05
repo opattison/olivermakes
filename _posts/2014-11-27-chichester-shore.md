@@ -72,16 +72,16 @@ image:
 <div class="grid--wide">
   <figure class="grid-figure">
     <img
-      src="{{ page.image[1].src | imgix_url: w: 640, q: 60 }}"
+      src="{{ page.image[1].src | imgix_url: w: 640, q: 50 }}"
       sizes="{{ site.sizes_grid2 }}"
-      srcset="{% for source in site.srcset_grid2 %}{{ page.image[1].src | imgix_url: w: site.srcset_grid2[forloop.index0], q: 60 }} {{ site.srcset_grid2[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+      srcset="{% for source in site.srcset_grid2 %}{{ page.image[1].src | imgix_url: w: site.srcset_grid2[forloop.index0], q: 50 }} {{ site.srcset_grid2[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
       alt="{{ page.image[1].alt }}">
   </figure>
   <figure class="grid-figure">
     <img
-      src="{{ page.image[2].src | imgix_url: w: 640, q: 60 }}"
+      src="{{ page.image[2].src | imgix_url: w: 640, q: 50 }}"
       sizes="{{ site.sizes_grid2 }}"
-      srcset="{% for source in site.srcset_grid2 %}{{ page.image[2].src | imgix_url: w: site.srcset_grid2[forloop.index0], q: 60 }} {{ site.srcset_grid2[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+      srcset="{% for source in site.srcset_grid2 %}{{ page.image[2].src | imgix_url: w: site.srcset_grid2[forloop.index0], q: 50 }} {{ site.srcset_grid2[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
       alt="{{ page.image[2].alt }}">
   </figure>
 </div>

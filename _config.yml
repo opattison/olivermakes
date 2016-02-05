@@ -100,8 +100,8 @@ source_url:
   sass: https://github.com/opattison/olivermakes/blob/master/_sass
 
 ## srcset implementation
-sizes: '(min-width: 140em) 1440px, (min-width: 115em) 1260px, (min-width: 95em) 1080px, (min-width: 60em) 900px, (min-width: 45em) 720px, 100vw'
-sizes_grid2: '(min-width: 140em) 742px, (min-width: 115em) 636px, (min-width: 95em) 518px, (min-width: 60em) 432px, (min-width: 45em) 720px, 100vw'
+sizes: '(min-width: 140em) 1512px, (min-width: 95em) 1296px, (min-width: 80em) 1080px, (min-width: 60em) 900px, (min-width: 45em) 720px, 100vw'
+sizes_grid2: '(min-width: 115em) 742px, (min-width: 95em) 636px, (min-width: 80em) 530px, (min-width: 60em) 440px, (min-width: 45em) 720px, 100vw'
 srcset:
   - 480
   - 640
