@@ -40,6 +40,11 @@ gems:
   - jekyll-archives
   - sass
   - octopress-autoprefixer
+  - imgix
+
+## Imgix configuration
+imgix:
+  source: olivermakes.imgix.net
 
 ## Markdown configuration
 markdown: kramdown
