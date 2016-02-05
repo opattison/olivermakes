@@ -17,7 +17,7 @@ unique_id: 2016-01-24:aws-tls-certificate-with-jekyll
 description: 'A step-by-step guide on how I configured and hosted a secure static site using AWS.'
 project:
   source: https://github.com/opattison/olivermakes/pull/228
-image_index: /images/2016-01-25-lock.svg 
+image_index: /images/2016-01-25-lock.svg
 image:
   - src: /images/2016-01-25-lock.svg
     src_png: 2016-01-25-lock.png
@@ -141,7 +141,11 @@ If using s3_website to handle S3 and CloudFront, [read about invalidations](http
 
 This is point where I would brew a cup of tea since it will take 5-20 minutes for CloudFront to “progress”. The first couple of times I used CloudFront, I spent more time changing configuration items and waiting for effects to kick in than I actually did reading AWS documentation. CloudFront configuration takes a really long time – take time to try to get the configuration correct initially because each further change requires resetting the clock to zero (and making another cup of tea)!
 
-<img src="{{ page.image[1].src | imgix_url: w: 720, q: 50 }}" alt="{{ page.image[1].alt }}">
+<img
+  src="{{ page.image[1].src | imgix_url: w: 720, q: 50 }}"
+  sizes="{{ site.sizes_narrow }}"
+  srcset="{% for source in site.srcset %}{{ page.image[1].src | imgix_url: w: site.srcset[forloop.index0], q: 50 }} {{ site.srcset[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+  alt="{{ page.image[1].alt }}">
 
 ---
 
@@ -159,7 +163,7 @@ Sign in to the [Route 53 console](https://console.aws.amazon.com/route53/home) a
 Create an `ALIAS` record for the root domain. In the hosted zone select **Create Record Set**. Leave **Name** blank to set the target URL. **Type** should be “A – IPv4 address”. **Alias** should be set to “Yes”. **Alias target** should be set to the CloudFront distribution URL from the distribution created in [step 2](#step-2) (looks like `a12bcdefgh89yz.cloudfront.net.`). Save.
 
 <figure class="image--half screenshot">
-  <img src="{{ page.image[2].src | imgix_url: w: 720, q: 50 }}" alt="{{ page.image[2].alt }}" />
+  <img src="{{ page.image[2].src | imgix_url }}" alt="{{ page.image[2].alt }}" />
 </figure>
 
 As with CloudFront configuration, do not expect the changes to kick in immediately. Redirecting the domain to the configured distribution takes a few minutes.
@@ -191,14 +195,14 @@ To be on the safe side, choose _both_ `example.com` and `*.example.com` when set
 After following the instructions in the email and approval page to validate the certificate, go back to the CloudFront distribution and select the certificate. Set **Viewer Protocol Policy** to “Redirect HTTP to HTTPS”. *Absolutely* set **Custom SSL Client Support** to “Only Clients that Support Server Name Indication (SNI)”. The alternative “All Clients” costs $600 per month because it requires a dedicated IP version of custom SSL support. The downside to [SNI](https://en.wikipedia.org/wiki/Server_Name_Indication) is that older browsers (4-10 years old) may not properly support TLS and therefore will get a worse experience (no HTTPS) or no experience (if HTTPS-only is specified). To support older browsers, HTTPS-only can be turned off since it is not a requirement, but this will mean that `http://example.com` won’t automatically redirect to `https://example.com`.
 
 <figure class="image--narrow screenshot">
-  <img src="{{ page.image[3].src | imgix_url: w: 720, q: 50 }}" alt="{{ page.image[3].alt }}" />
+  <img src="{{ page.image[3].src | imgix_url }}" alt="{{ page.image[3].alt }}" />
   <figcaption>
     <p>{{ page.image[3].caption }}</p>
   </figcaption>
 </figure>
 
 <figure class="image--narrow screenshot">
-  <img src="{{ page.image[4].src | imgix_url: w: 720, q: 50 }}" alt="{{ page.image[4].alt }}" />
+  <img src="{{ page.image[4].src | imgix_url }}" alt="{{ page.image[4].alt }}" />
   <figcaption>
     <p>{{ page.image[4].caption }}</p>
   </figcaption>
@@ -212,7 +216,7 @@ After following the instructions in the email and approval page to validate the 
 </figure>
 
 <figure class="image--half screenshot">
-  <img src="{{ page.image[6].src | imgix_url: w: 720, q: 50 }}" alt="{{ page.image[6].alt }}" />
+  <img src="{{ page.image[6].src | imgix_url }}" alt="{{ page.image[6].alt }}" />
 </figure>
 
 It’s time for another cup of tea because CloudFront will need a bit longer to process after changes are saved. After this, setup should be complete. Make sure the status of the distribution is marked as “deployed” and check whether the `https://` URLs for the site work properly. Done.

@@ -17,7 +17,7 @@ updated: 2016-01-30 15:05
 drafted: 2016-01-29 20:00
 unique_id: 2016-01-30:svg-in-github-readme
 description: 'Enhancing Markdown files for open source projects.'
-image_index: /images/2016-02-02-gh-mark.svg
+image_index: /images/index/2016-02-02-gh-mark.svg
 image:
   - src: /images/2016-02-02-gh-mark.svg
     src_png: 2016-02-02-gh-mark.png

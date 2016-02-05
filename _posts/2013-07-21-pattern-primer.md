@@ -1,9 +1,10 @@
 ---
 title: 'Jekyll Version of Pattern Primer'
-layout: dubbel
+layout: singel
 option:
   - minor
   - no-imgix-source
+category: 'projects'
 tags:
   - 'css'
   - 'design'
@@ -50,9 +51,8 @@ Pattern Primer ([as well as many other similar tools](http://styleguides.io/tool
 
 <figure class="image--narrow screenshot">
   <img
-    src="{{ page.image[1].src | imgix_url: w: 720, q: 50 }}"
-    alt="{{ page.image[1].alt }}"
-  >
+    src="{{ page.image[1].src | imgix_url }}"
+    alt="{{ page.image[1].alt }}">
   <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
 </figure>
 

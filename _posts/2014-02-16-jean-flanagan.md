@@ -91,8 +91,7 @@ Designing in a browser meant that HTML prototypes were an early part of the proc
 <figure class="image--wide screenshot">
   <img
     src="{{ page.image[3].src | imgix_url }}"
-    alt="{{ page.image[3].alt }}"
-  >
+    alt="{{ page.image[3].alt }}">
   <figcaption>{{ page.image[3].caption | markdownify }}</figcaption>
 </figure>
 
@@ -105,8 +104,7 @@ Jean takes [beautiful photos](http://jeancflanagan.com/photos/), which I wanted 
 <figure class="image--narrow screenshot">
   <img
     src="{{ page.image[4].src | imgix_url }}"
-    alt="{{ page.image[4].alt }}"
-  >
+    alt="{{ page.image[4].alt }}">
 </figure>
 
 #### Samples from writing layout
@@ -115,14 +113,12 @@ Jean takes [beautiful photos](http://jeancflanagan.com/photos/), which I wanted 
   <figure class="grid-figure--33 grid-figure screenshot">
     <img
       src="{{ page.image[5].src | imgix_url }}"
-      alt="{{ page.image[5].alt }}"
-    >
+      alt="{{ page.image[5].alt }}">
   </figure>
   <figure class="grid-figure--66 grid-figure screenshot">
     <img
       src="{{ page.image[6].src | imgix_url }}"
-      alt="{{ page.image[6].alt }}"
-    >
+      alt="{{ page.image[6].alt }}">
   </figure>
 </div>
 
