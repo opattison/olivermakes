@@ -2,7 +2,6 @@
 title: 'Pine Orchard Prints typographic identity'
 layout: edgeless
 option:
-  - featured-home
   - index-image
   - minor
   - sample-svg
@@ -18,8 +17,8 @@ drafted: 2016-01-26 23:22
 unique_id: 2015-10-24:pine-orchard-typography
 description: 'Logotype and typography for a small online retail shop.'
 project:
-  url: http://pineorchardprints.com
-  download: '/resources/fragments/2016-01-15-logo-type.svg'
+  url: https://pineorchardprints.com
+  download: /resources/fragments/2016-01-15-logo-type.svg
   filetype: '.svg'
   license: '© copyright'
   license-url: https://github.com/opattison/pine-orchard-antique-prints#credits
