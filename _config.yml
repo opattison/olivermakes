@@ -113,10 +113,11 @@ srcset:
   - 1440
   - 1800
 srcset_grid2:
-  - 480
-  - 640
+  - 440
+  - 636
   - 720
-  - 900
+  - 880
+  - 954
   - 1080
 
 ## Mapbox authentication and configuration
