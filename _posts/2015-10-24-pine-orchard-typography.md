@@ -66,14 +66,14 @@ I avoided the more eclectic Victorian typographic styles which might be illegibl
     <img src="{{ page.image[1].src | imgix_url }}" alt="{{ page.image[1].alt }}"
     sizes="{{ site.sizes_grid2 }}"
     srcset="{% for source in site.srcset_grid2 %}{{ page.image[1].src | imgix_url: w: site.srcset_grid2[forloop.index0] }} {{ site.srcset_grid2[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-    alt="{{ page.image[1].alt }}">>
+    alt="{{ page.image[1].alt }}">
     <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
   </figure>
   <figure class="grid-figure">
     <img src="{{ page.image[2].src | imgix_url, q: 60 }}" alt="{{ page.image[2].alt }}"
     sizes="{{ site.sizes_grid2 }}"
     srcset="{% for source in site.srcset_grid2 %}{{ page.image[2].src | imgix_url: w: site.srcset_grid2[forloop.index0], q: 60 }} {{ site.srcset_grid2[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-    alt="{{ page.image[2].alt }}">>
+    alt="{{ page.image[2].alt }}">
     <figcaption>{{ page.image[2].caption | markdownify }}</figcaption>
   </figure>
 </div>

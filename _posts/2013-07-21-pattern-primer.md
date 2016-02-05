@@ -4,6 +4,7 @@ layout: singel
 option:
   - minor
   - no-imgix-source
+  - no-image_index
 category: 'projects'
 tags:
   - 'css'
@@ -20,7 +21,6 @@ project:
   url: http://patternprimer.olivermak.es
   source: https://github.com/opattison/Pattern-Primer-Jekyll
   period: '2013-07 to present'
-image_index: /images/index/2014-12-01-pattern-primer-project-feature-screen.png
 image:
   - src: /images/2014-12-01-pattern-primer-project-feature-screen.png
     alt: 'A screenshot of Pattern Primer Jekyll'
