@@ -2,7 +2,7 @@
 title: 'Responsive redesign for Casey&nbsp;Trees'
 layout: dubbel
 option:
-  - index-image
+  - no-imgix-source
 category: 'projects'
 tags:
   - 'design'
@@ -17,17 +17,18 @@ period: 2011-11 to 2012-03
 description: 'My work on a redesign for an urban forestry non-profit, in the early days of responsive web design.'
 project:
   url: http://caseytrees.org/
+image_index: /images/index/2015-02-23-ct-logo.svg
 image:
-  - src: 2015-02-23-ct-logo.svg
+  - src: /images/2015-02-23-ct-logo.svg
     src_png: 2015-02-23-ct-logo.png
     background: 'site.shade.white'
     description: 'Logo SVG'
-  - src: 2012-04-27-casey-trees-homepage-desktop.jpg
+  - src: /images/2012-04-27-casey-trees-homepage-desktop.jpg
     alt: 'The Casey Trees home page on a desktop early on after the redesign, with a series of slides and all navigation items visible, including events and the Tree Report Card.'
     date: 2012-04-27
     caption: 'The home page less than two months after the redesign.'
     description: 'Taken with Google Chrome on a Windows computer in 2012, shortly after the redesign.'
-  - src: 2013-01-09-casey-trees-homepage-android.jpg
+  - src: /images/2013-01-09-casey-trees-homepage-android.jpg
     alt: 'The Casey Trees home page on an Android mobile browser'
     date: 2013-01-09
     description: 'Taken on a Galaxy Nexus using Google Chrome for Android in 2013'
@@ -50,13 +51,13 @@ We turned the project around in only a few months, with design and content work 
 <div class="grid--wide">
 <figure class="grid-figure--66 grid-figure screenshot">
   <img
-    src="{{ site.image_url }}/{{ page.image[1].src }}"
+    src="{{ page.image[1].src | imgix_url }}"
     alt="{{ page.image[1].alt }}"
   >
 </figure>
 <figure class="grid-figure--33 grid-figure screenshot">
   <img
-    src="{{ site.image_url }}/{{ page.image[2].src }}"
+    src="{{ page.image[2].src | imgix_url }}"
     alt="{{ page.image[2].alt }}"
   >
 </figure>

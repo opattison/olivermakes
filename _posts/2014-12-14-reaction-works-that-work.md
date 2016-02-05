@@ -3,8 +3,6 @@ title: 'Reaction: <i>Works That Work</i>'
 layout: singel
 option:
   - hero
-  - index-image
-  - srcset
 category: 'writing'
 tags:
   - 'design'
@@ -15,8 +13,9 @@ updated: 2014-12-15 11:01
 drafted: 2014-12-14 20:00
 unique_id: 2014-12-14:reaction-works-that-work
 description: 'Notes on an independent publication about design and creativity.'
+image_index: /images/index/2014-12-14-wtw-olivermakes-ccbync.jpg
 image:
-  - src: 2014-12-14-wtw-olivermakes-ccbync.jpg
+  - src: /images/2014-12-14-wtw-olivermakes-ccbync.jpg
     alt: ''
     date: 2014-12-14
     camera: 'Fujifilm X-E2'
@@ -27,11 +26,11 @@ image:
     iso: 2000
     description: 'Photo of three issues of Works That Work, taken at home.'
     aspect: '3:1'
-  - src: 2014-12-15-wtw-N80_7110.jpg
+  - src: /images/2014-12-15-wtw-N80_7110.jpg
     date: 2014-12-15
     license: 'copyright'
     author: 'Works That Work'
-  - src: 2014-12-15-wtw-N80_7152.jpg
+  - src: /images/2014-12-15-wtw-N80_7152.jpg
     date: 2014-12-15
     license: 'copyright'
     author: 'Works That Work'
@@ -69,19 +68,17 @@ The latest issue has an more finished feel than the previous ones – each one i
 <div class="grid--wide">
   <figure class="grid-figure">
     <img
-      src="{{ site.image_url }}/{{ page.image[1].src }}"
-      sizes="{{ site.wide-sizes }}"
-      srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image_url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-      alt="{{ page.image[1].alt }}"
-    >
+      src="{{ page.image[1].src | imgix_url: w: 640, q: 50 }}"
+      sizes="{{ site.sizes_grid2 }}"
+      srcset="{% for source in site.srcset_grid2 %}{{ page.image[1].src | imgix_url: w: site.srcset_grid2[forloop.index0], q: 70 }} {{ site.srcset_grid2[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+      alt="{{ page.image[1].alt }}">
   </figure>
   <figure class="grid-figure">
     <img
-      src="{{ site.image_url }}/{{ page.image[2].src }}"
-      sizes="{{ site.wide-sizes }}"
-      srcset="{% for srcset1080 in site.srcset1080 %}{{ site.image_url }}/{{ site.srcset1080[forloop.index0] }}/{{ page.image[2].src }} {{ site.srcset1080[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-      alt="{{ page.image[2].alt }}"
-    >
+      src="{{ page.image[2].src | imgix_url: w: 640, q: 50 }}"
+      sizes="{{ site.sizes_grid2 }}"
+      srcset="{% for source in site.srcset_grid2 %}{{ page.image[2].src | imgix_url: w: site.srcset_grid2[forloop.index0], q: 70 }} {{ site.srcset_grid2[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+      alt="{{ page.image[2].alt }}">
   </figure>
 </div>
 

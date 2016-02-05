@@ -4,7 +4,7 @@ layout: singel
 option:
   - code
   - featured-home
-  - index-image
+  - no-imgix-source
 category: 'projects'
 tags:
   - 'design'
@@ -21,8 +21,9 @@ period: 2014-10 to present
 description: 'Designing and developing my personal archive (an ongoing project).'
 project:
   source: https://github.com/opattison/olivermakes
+image_index: /images/2016-02-01-logo-close.svg
 image:
-  - src: 2016-02-01-logo-close.svg
+  - src: /images/2016-02-01-logo-close.svg
     src_png: 2016-02-01-logo-close.png
 
 ---

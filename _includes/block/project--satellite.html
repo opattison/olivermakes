@@ -4,7 +4,7 @@
 {% assign completed = post.date | date: '%Y-%m-%d' %}
 {% assign updated = post.updated | date: '%Y-%m-%d' %}
 <article class="project--satellite">
-  <div class="project-image" style="background-image: url({{ site.image_url }}/{{ post.image[0].src }});">
+  <div class="project-image" style="background-image: {% if post.option contains 'no-imgix-source' %}url({{ post.image[0].src }}){% else %}url({{ post.image[0].src | imgix_url: w: 620, q: 70 }});{% endif %}">
   </div>
   <div class="project-meta">
     <h1><a href="{{ post.url }}">{{ post.title | markdownify | p_escape }}</a></h1>

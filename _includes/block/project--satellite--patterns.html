@@ -3,7 +3,7 @@
 {% if item.unique_id == '2014-10-31:patterns' %}
 {% assign updated = item.updated | date: '%Y-%m-%d' %}
 <article class="project--satellite">
-  <div class="project-image" style="background-image: url({{ site.image_url }}/{{ item.image[0].src }});">
+  <div class="project-image" style="background-image: url({{ item.image[0].src }});">
   </div>
   <div class="project-meta">
     <h1><a href="{{ item.url }}">Pattern library</a></h1>

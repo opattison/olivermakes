@@ -2,7 +2,7 @@
 {% assign completed = page.date | date: '%Y-%m-%d' %}
 {% assign updated = page.updated | date: '%Y-%m-%d' %}
 <article class="project">
-  <div class="project-image" style="background-image: url({{ site.image_url }}/{{ page.image[0].src }});">
+  <div class="project-image" style="background-image: {% if page.option contains 'no-imgix-source' %}url({{ page.image[0].src }}){% else %}url({{ page.image[0].src | imgix_url: w: 620, q: 70 }});{% endif %}">
   </div>
   <div class="project-meta">
     <p class="p-summary project-summary">{{ page.description }}</p>

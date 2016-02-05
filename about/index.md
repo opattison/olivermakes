@@ -5,15 +5,13 @@ option:
   - no-title
   - hero
   - code
-  - code-block
-  - srcset
 category: meta
 date: 2014-10-31 18:25
 updated: 2016-02-02 03:46
 unique_id: 2014-10-31:about
 description: 'A short biography of Oliver Pattison, as well as details about how this website was made.'
 image:
-  - src: 2011-11-10-oliver-bench-jeancflanagan-ccbync.jpg
+  - src: /images/2011-11-10-oliver-bench-jeancflanagan-ccbync.jpg
     alt: 'Oliver Pattison sitting on a bench'
     caption: 'Photo of me by [Jean Flanagan](http://jeancflanagan.com), [CC BY-NC](http://creativecommons.org/licenses/by-nc/4.0/)'
     date: 2011-11-10

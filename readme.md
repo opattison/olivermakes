@@ -1,4 +1,4 @@
-# <a href="https://olivermak.es/"><img src="https://olivermak.es/resources/icons/favicon32.svg" width="32" height="32"></a> <a href="https://olivermak.es/">olivermak.es</a> an archive
+# <a href="https://olivermak.es/"><img src="https://olivermak.es/icons/favicon32.svg" width="32" height="32"></a> <a href="https://olivermak.es/">olivermak.es</a> an archive
 
 [Read about my process for building this site](https://olivermak.es/2014/12/oliver-pattison/).
 
@@ -59,4 +59,4 @@ All writing and photography on the site is my original work and is licensed unde
 
 [Read more](https://olivermak.es/license/) on attribution and copyright for the site. If you have any questions about licensing or use of content from the site, please [contact me by email](oliverpattison@gmail.com).
 
-<a href="https://olivermak.es/"><img src="https://olivermak.es/resources/icons/favicon144.svg" width="100%" height="144"></a>
+<a href="https://olivermak.es/"><img src="https://olivermak.es/icons/favicon144.svg" width="100%" height="144"></a>

@@ -3,6 +3,8 @@
   flex: 0 0 calc(100% - 2em);
   margin-top: 1em;
   width: 100%;
+  background-position: center;
+  background-size: cover;
 
   @include min-width(m01) {
     flex: 0 0 50%;
@@ -70,6 +72,11 @@
   padding: 1em 2em;
 }
 
+.item--pattern-description {
+  background-position: center;
+  background-size: cover;
+}
+
 .item--short-description h1 {
   font-size: 1.125em;
 }
@@ -131,6 +138,9 @@
 .item--photo {
   height: 10em;
   margin: 1em 0 0;
+
+  background-position: center;
+  background-size: cover;
 
   @include min-width(s03) {
     flex: 0 0 50%;
