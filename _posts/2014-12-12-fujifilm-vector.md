@@ -74,7 +74,7 @@ To complement the metadata on my [photo pages](/photography/), I wanted accurate
   <img
     src="{{ page.image[4].src | imgix_url: w: 900, q: 60 }}"
     sizes="{{ site.sizes }}"
-    srcset="{% for source in site.srcset %}{{ page.image[4].src | imgix_url: w: site.srcset[forloop.index0] }} {{ site.srcset[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+    srcset="{% for width in site.srcset %}{{ page.image[4].src | imgix_url: w: width }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
     alt="{{ page.image[1].alt }}">
   <figcaption>{{ page.image[4].caption | markdownify }}</figcaption>
 </figure>

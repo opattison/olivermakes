@@ -78,23 +78,20 @@ One year after the redesign, it was becoming clear that this device detection so
 <div class="grid--wide">
   <figure class="grid-figure--33 grid-figure screenshot">
     <img
-      src="{{ page.image[1].src }}"
-      alt="{{ page.image[1].alt }}"
-    >
+      src="{{ page.image[1].src | imgix_url }}"
+      alt="{{ page.image[1].alt }}">
     <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
   </figure>
   <figure class="grid-figure--33 grid-figure screenshot">
     <img
-      src="{{ page.image[2].src }}"
-      alt="{{ page.image[2].alt }}"
-    >
+      src="{{ page.image[2].src | imgix_url }}"
+      alt="{{ page.image[2].alt }}">
     <figcaption>{{ page.image[2].caption | markdownify }}</figcaption>
   </figure>
   <figure class="grid-figure--33 screenshot">
     <img
-      src="{{ page.image[3].src }}"
-      alt="{{ page.image[3].alt }}"
-    >
+      src="{{ page.image[3].src | imgix_url }}"
+      alt="{{ page.image[3].alt }}">
     <figcaption>{{ page.image[3].caption | markdownify }}</figcaption>
   </figure>
 </div>
@@ -110,15 +107,13 @@ For the main page that would explain the membership program and encourage visito
 <div class="grid--wide">
 <figure class="grid-figure--66 grid-figure screenshot">
   <img
-    src="{{ page.image[4].src }}"
-    alt="{{ page.image[4].alt }}"
-  >
+    src="{{ page.image[4].src | imgix_url }}"
+    alt="{{ page.image[4].alt }}">
 </figure>
 <figure class="grid-figure--33 grid-figure screenshot">
   <img
-    src="{{ page.image[5].src }}"
-    alt="{{ page.image[5].alt }}"
-  >
+    src="{{ page.image[5].src | imgix_url }}"
+    alt="{{ page.image[5].alt }}">
 </figure>
 </div>
 
@@ -132,7 +127,7 @@ Since we already had strong colors and icons for each membership level, it made 
 
 <ul class="grid grid--swatches">
 {% for color in page.color %}
-<li class="pattern--swatch"><figure style="background-color: {{ page.color[forloop.index0].hex }}"><figcaption>{{ page.color[forloop.index0].name }}<br>{{ page.color[forloop.index0].hex }}</p></figcaption></figure></li>
+  <li class="pattern--swatch"><figure style="background-color: {{ page.color[forloop.index0].hex }}"><figcaption>{{ page.color[forloop.index0].name }}<br>{{ page.color[forloop.index0].hex }}</p></figcaption></figure></li>
 {% endfor %}
 </ul>
 

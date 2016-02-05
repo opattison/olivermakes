@@ -48,7 +48,7 @@ image:
   <img
     src="{{ page.image[0].src | imgix_url: w: 720, q: 50 }}"
     sizes="{{ site.sizes }}"
-    srcset="{% for source in site.srcset %}{{ page.image[0].src | imgix_url: w: site.srcset[forloop.index0], q: 50 }} {{ site.srcset[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+    srcset="{% for width in site.srcset %}{{ page.image[0].src | imgix_url: w: width, q: 50 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
     alt="{{ page.image[0].alt }}">
 </figure>
 
@@ -56,6 +56,6 @@ image:
   <img
     src="{{ page.image[1].src | imgix_url: w: 720, q: 50 }}"
     sizes="{{ site.sizes }}"
-    srcset="{% for source in site.srcset %}{{ page.image[1].src | imgix_url: w: site.srcset[forloop.index0], q: 50 }} {{ site.srcset[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+    srcset="{% for width in site.srcset %}{{ page.image[1].src | imgix_url: w: width, q: 50 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
     alt="{{ page.image[1].alt }}">
 </figure>

@@ -45,7 +45,7 @@ My solution is to use writing that I want to read anyway. For me, that is my [In
   <img
     src="{{ page.image[1].src | imgix_url: w: 720, q: 70 }}"
     sizes="{{ site.sizes_grid2 }}"
-    srcset="{% for source in site.srcset_grid2 %}{{ page.image[1].src | imgix_url: w: site.srcset_grid2[forloop.index0], q: 70 }} {{ site.srcset_grid2[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+    srcset="{% for width in site.srcset_grid2 %}{{ page.image[1].src | imgix_url: w: width, q: 70 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
     alt="{{ page.image[1].alt }}">
   <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
 </figure>
