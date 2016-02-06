@@ -13,5 +13,3 @@ end
 
 gem 's3_website'
 gem 'rake'
-gem 'image_optim'
-gem 'image_optim_pack'

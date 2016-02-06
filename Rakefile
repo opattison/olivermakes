@@ -2,7 +2,6 @@
 
 require 'jekyll'
 require 's3_website'
-require 'image_optim'
 # require npm
 
 local_static   = "resources"
@@ -19,13 +18,6 @@ task :serve do
   system "npm run concatenate"
   puts "## Locally serving and watching Jekyll development site ##"
   system "#{jekyll_prod} bundle exec jekyll serve --config _config.yml,_config-dev.yml"
-end
-
-## "rake optimize" to optimize a folder of images in image_optim
-desc "run a folder of images through image_optim"
-task :optimize do
-  system "image_optim #{local_images} -r"
-  puts "## Images optimized ##"
 end
 
 ## "rake dev" for development deployment
