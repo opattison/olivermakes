@@ -75,16 +75,14 @@ Designing in a browser meant that HTML prototypes were an early part of the proc
 <figure class="image--narrow screenshot">
   <img
     src="{{ page.image[1].src | imgix_url }}"
-    alt="{{ page.image[1].alt }}"
-  >
+    alt="{{ page.image[1].alt }}">
   <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
 </figure>
 
 <figure class="image--narrow screenshot">
   <img
     src="{{ page.image[2].src | imgix_url }}"
-    alt="{{ page.image[2].alt }}"
-  >
+    alt="{{ page.image[2].alt }}">
   <figcaption>{{ page.image[2].caption | markdownify }}</figcaption>
 </figure>
 
@@ -127,8 +125,7 @@ Not every image is meant to be showcased, nor should every image overshadow the 
 <figure class="image--narrow screenshot">
   <img
     src="{{ page.image[7].src | imgix_url }}"
-    alt="{{ page.image[7].alt }}"
-  >
+    alt="{{ page.image[7].alt }}">
   <figcaption>{{ page.image[7].caption | markdownify }}</figcaption>
 </figure>
 
