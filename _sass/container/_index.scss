@@ -1,12 +1,25 @@
 /* Sections and items */
 .index {
+  @include width-max(l01);
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 
   @include min-width(m01) {
-    @include width-max(l01);
     margin: 0 auto;
+    justify-content: flex-start;
+  }
+}
+
+.index--photography {
+  @include width-max(l01);
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  justify-content: center;
+
+  /* see .item--photo in _item.scss */
+  @include min-width(s03) {
     justify-content: flex-start;
   }
 }
