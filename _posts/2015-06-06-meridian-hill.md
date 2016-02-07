@@ -33,7 +33,7 @@ image:
 
 <figure class="image--wide">
   <img
-    src="{{ page.image[0].src | imgix_url: w: 720, q: 60 }}"
+    src="{{ page.image[0].src | imgix_url: w: 720, q: 50 }}"
     sizes="{{ site.sizes }}"
     srcset="{% for width in site.srcset %}{{ page.image[0].src | imgix_url: w: width, q: 70 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
     alt="{{ page.image[0].alt }}">

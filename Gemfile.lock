@@ -12,22 +12,9 @@ GEM
     deep_merge (1.0.0)
     dotenv (1.0.2)
     execjs (2.6.0)
-    exifr (1.2.4)
     ffi (1.9.10)
-    fspath (2.1.1)
-    image_optim (0.22.0)
-      exifr (~> 1.2, >= 1.2.2)
-      fspath (~> 2.1)
-      image_size (~> 1.3)
-      in_threads (~> 1.3)
-      progress (~> 3.0, >= 3.0.1)
-    image_optim_pack (0.2.1.20160119)
-      fspath (~> 2.1)
-      image_optim (~> 0.19)
-    image_size (1.4.1)
     imgix (1.0.0)
       addressable
-    in_threads (1.3.1)
     jekyll (3.0.2)
       colorator (~> 0.1)
       jekyll-sass-converter (~> 1.0)
@@ -55,10 +42,9 @@ GEM
     octopress-autoprefixer (2.0.0)
       autoprefixer-rails
       jekyll (~> 3.0)
-    progress (3.1.1)
     rake (10.5.0)
     rb-fsevent (0.9.7)
-    rb-inotify (0.9.5)
+    rb-inotify (0.9.6)
       ffi (>= 0.5.0)
     rouge (1.10.1)
     s3_website (2.12.3)
@@ -74,8 +60,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  image_optim
-  image_optim_pack
   jekyll (~> 3.0.2)
   jekyll-archives
   jekyll-imgix

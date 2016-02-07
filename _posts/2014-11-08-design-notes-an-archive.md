@@ -24,7 +24,7 @@ Looking back at my files and memories from my life so far, I find there are few 
 
 <figure class="right">
   <img
-    src="{{ page.image[0].src | imgix_url: w: 450, q: 50 }}"
+    src="{{ page.image[0].src | imgix_url: w: 450, q: 60 }}"
     alt="{{ page.image[0].alt }}">
   <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
 </figure>
