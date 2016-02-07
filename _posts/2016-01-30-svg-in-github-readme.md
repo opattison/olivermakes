@@ -20,7 +20,7 @@ description: 'Enhancing Markdown files for open source projects.'
 image_index: /images/index/2016-02-02-gh-mark.svg
 image:
   - src: /images/2016-02-02-gh-mark.svg
-    src_png: 2016-02-02-gh-mark.png
+    src_png: /images/2016-02-02-gh-mark.png
     alt: 'GitHub Octocat logo'
     date: 2016-02-02
     license: 'copyright'

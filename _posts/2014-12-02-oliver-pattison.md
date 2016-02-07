@@ -24,7 +24,7 @@ project:
 image_index: /images/2016-02-01-logo-close.svg
 image:
   - src: /images/2016-02-01-logo-close.svg
-    src_png: 2016-02-01-logo-close.png
+    src_png: /images/2016-02-01-logo-close.png
 
 ---
 

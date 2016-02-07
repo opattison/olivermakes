@@ -23,7 +23,7 @@ project:
 image_index: /images/2016-02-01-xe2-1.1.svg
 image:
   - src: /images/2016-02-01-xe2-1.1.svg
-    src_png: 2014-12-12-xe2-1.1.png
+    src_png: /images/2014-12-12-xe2-1.1.png
     date: 2016-02-01
     description: 'original graphic cropped for project item. index version is cropped and colored gray07'
   - src: /images/2014-12-12-xe2-1.1.svg
