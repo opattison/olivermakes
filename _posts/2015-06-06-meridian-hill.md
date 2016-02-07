@@ -37,4 +37,5 @@ image:
     sizes="{{ site.sizes }}"
     srcset="{% for width in site.srcset %}{{ page.image[0].src | imgix_url: w: width, q: 70 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
     alt="{{ page.image[0].alt }}">
+  <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
 </figure>

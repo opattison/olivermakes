@@ -48,8 +48,7 @@ To complement the metadata on my [photo pages](/photography/), I wanted accurate
 <figure class="image--wide svg light noedges">
   <img
     src="{{ page.image[1].src }}"
-    alt="{{ page.image[1].alt }}"
-  >
+    alt="{{ page.image[1].alt }}">
   <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
 </figure>
 
@@ -57,15 +56,13 @@ To complement the metadata on my [photo pages](/photography/), I wanted accurate
   <figure class="grid-figure svg light noedges">
     <img
       src="{{ page.image[2].src }}"
-      alt="{{ page.image[2].alt }}"
-    >
+      alt="{{ page.image[2].alt }}">
     <figcaption>{{ page.image[2].caption | markdownify }}</figcaption>
   </figure>
   <figure class="grid-figure svg dark noedges">
     <img
       src="{{ page.image[3].src }}"
-      alt="{{ page.image[3].alt }}"
-    >
+      alt="{{ page.image[3].alt }}">
     <figcaption>{{ page.image[3].caption | markdownify }}</figcaption>
   </figure>
 </div>
