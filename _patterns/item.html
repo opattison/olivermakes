@@ -2,17 +2,23 @@
 title: .item
 use: 'Post summaries and details on index pages.'
 spec: 'Fluid, whole- to half-width block. Large action button at the bottom. Background image pulled from post (where available). Strong link color hyperlinked headlines.'
+restriction: 'Generally contained by `.index` container as shown here.'
 type: html
 category: interface
 priority: 1
+option:
+  - fix-rem
+  - wider
 sass: block/_item.scss
 ---
 
-<article class="item" style="background-image: url({{ site.image_url }}/index/2014-09-17-wave-crash-olivermakes-ccbync.jpg); background-size: cover; background-position: 50%;">
-  <div class="item-description">
-    <h1><a href="/2015/06/cape-may/">Cape May</a></h1>
-    <p class="p-summary item-summary">Photos from a vacation in Cape May, New Jersey.</p>
-    <p class="item-time">Published <time class="dt-published" pubdate="" datetime="2015-06-04">2015-06-04</time><span class="item-location"> in <a href="/photography/">/photography</a></span></p>
-  </div>
-  <a class="item-action" href="/2015/06/cape-may/">View this post</a>
-</article>
+<div class="index">
+  <article class="item" style="background-image: url(/images/2016-02-01-logo-close.svg)">
+    <div class="item-description ">
+      <h1><a href="/2014/12/oliver-pattison/">This website: olivermak.es</a></h1>
+      <p class="p-summary item-summary">Designing and developing my personal archive (an ongoing project).</p>
+      <p class="item-time">Completed <time class="dt-published" pubdate datetime="2014-12-02">2014-12-02</time> (worked on from 2014-10 to present)</p>
+    </div>
+    <a class="item-action" href="/2014/12/oliver-pattison/">View this project</a>
+  </article>
+</div>

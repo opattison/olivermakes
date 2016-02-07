@@ -73,11 +73,6 @@
   margin-top: 1em;
 }
 
-.pattern--swatch::before {
-  content: ''!important;
-  margin: 0!important;
-}
-
 .pattern--swatch figure {
   height: 16em;
   position: relative;
@@ -194,12 +189,19 @@
   text-align: right;
 }
 
-#logo-512 {
+.pattern-display .logo--large {
+  margin: 0 auto;
   max-width: 512px;
 }
 
-#logo-64 {
+.pattern-display .logo--medium {
+  margin: 0 auto;
   max-width: 64px;
+}
+
+.no-bullets li::before {
+  content: ''!important;
+  margin: 0!important;
 }
 
 /* Block of high-contrast introductory text */
