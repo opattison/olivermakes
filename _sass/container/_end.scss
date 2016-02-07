@@ -12,7 +12,8 @@
   }
 }
 
-.index + .end {
+.index + .end,
+.index--photography + .end {
   @include min-width(m01) {
     margin-top: 1em;
   }
