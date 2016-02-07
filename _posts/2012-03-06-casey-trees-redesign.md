@@ -20,7 +20,7 @@ project:
 image_index: /images/index/2015-02-23-ct-logo.svg
 image:
   - src: /images/2015-02-23-ct-logo.svg
-    src_png: 2015-02-23-ct-logo.png
+    src_png: /images/2015-02-23-ct-logo.png
     background: 'site.shade.white'
     description: 'Logo SVG'
   - src: /images/2012-04-27-casey-trees-homepage-desktop.jpg

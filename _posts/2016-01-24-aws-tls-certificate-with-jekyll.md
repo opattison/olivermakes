@@ -20,7 +20,7 @@ project:
 image_index: /images/2016-01-25-lock.svg
 image:
   - src: /images/2016-01-25-lock.svg
-    src_png: 2016-01-25-lock.png
+    src_png: /images/2016-01-25-lock.png
     alt: 'A stylized lock inspired by the green TLS lock symbol in a web browser.'
     date: 2016-01-25
     description: 'Designed in Sketch'

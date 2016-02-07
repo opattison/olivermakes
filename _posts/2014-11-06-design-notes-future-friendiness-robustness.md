@@ -18,7 +18,7 @@ description: 'A discussion about designing for the long term, covering HTML, ind
 image_index: /images/2014-12-12-futurefriendly.svg
 image:
   - src: /images/2014-12-12-futurefriendly.svg
-    src_png: 2014-12-12-futurefriendly.png
+    src_png: /images/2014-12-12-futurefriendly.png
     alt: 'future friendly logo'
     caption: 'The [future friendly](http://futurefriendlyweb.com/) movement is a significant inspiration for my approach, in both philosophy and implementation. [#ffly](https://twitter.com/search?q=%23ffly) astronaut logo is licensed [CC BY](http://creativecommons.org/licenses/by/3.0/), modified slightly by me.'
     description: 'hero color is gray3 #49535a; index-image color is gray6 #84919a'

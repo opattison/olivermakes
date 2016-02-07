@@ -24,7 +24,7 @@ project:
 image_index: /images/2016-01-15-logotype-pine-orchard--green.svg
 image:
   - src: /images/2016-01-15-logotype-pine-orchard--green.svg
-    src_png: 2016-01-15-logotype-pine-orchard--green.png
+    src_png: /images/2016-01-15-logotype-pine-orchard--green.png
     alt: 'Pine Orchard Antique Prints logo type'
     date: 2016-01-26
     description: 'background #bdc6c0, foreground text #182905 – background was generated for this context, since the original logo is typically superimposed on an image background.'

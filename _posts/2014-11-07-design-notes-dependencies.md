@@ -17,7 +17,7 @@ description: 'What runs this site? What is most essential and what could affect 
 image_index: /images/2014-12-12-logo.svg
 image:
   - src: /images/2014-12-12-logo.svg
-    src_png: 2014-12-12-logo.png
+    src_png: /images/2014-12-12-logo.png
     description: 'index-image color is gray6 #84919a and grayblue #bdcfdb'
 
 ---

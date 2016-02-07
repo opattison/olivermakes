@@ -23,7 +23,7 @@ project:
 image_index: /images/2016-02-01-xe2-1.1.svg
 image:
   - src: /images/2016-02-01-xe2-1.1.svg
-    src_png: 2014-12-12-xe2-1.1.png
+    src_png: /images/2014-12-12-xe2-1.1.png
     date: 2016-02-01
     description: 'original graphic cropped for project item. index version is cropped and colored gray07'
   - src: /images/2014-12-12-xe2-1.1.svg
@@ -48,8 +48,7 @@ To complement the metadata on my [photo pages](/photography/), I wanted accurate
 <figure class="image--wide svg light noedges">
   <img
     src="{{ page.image[1].src }}"
-    alt="{{ page.image[1].alt }}"
-  >
+    alt="{{ page.image[1].alt }}">
   <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
 </figure>
 
@@ -57,15 +56,13 @@ To complement the metadata on my [photo pages](/photography/), I wanted accurate
   <figure class="grid-figure svg light noedges">
     <img
       src="{{ page.image[2].src }}"
-      alt="{{ page.image[2].alt }}"
-    >
+      alt="{{ page.image[2].alt }}">
     <figcaption>{{ page.image[2].caption | markdownify }}</figcaption>
   </figure>
   <figure class="grid-figure svg dark noedges">
     <img
       src="{{ page.image[3].src }}"
-      alt="{{ page.image[3].alt }}"
-    >
+      alt="{{ page.image[3].alt }}">
     <figcaption>{{ page.image[3].caption | markdownify }}</figcaption>
   </figure>
 </div>
