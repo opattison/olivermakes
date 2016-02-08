@@ -6,7 +6,7 @@
 
 {% include container/banner.html %}
 
-  <section id="maincontent" class="index">
+  <section id="maincontent" class="index{% if page.title == 'Photography' %}--photography{% endif %}">
 
 {% include block/index-title.html %}
 

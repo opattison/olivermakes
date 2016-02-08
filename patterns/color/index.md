@@ -3,8 +3,6 @@ title: 'Color Patterns'
 layout: edgeless
 option:
   - code
-  - code-block
-  - srcset
   - patterns
 category: meta
 date: 2014-10-31 18:25
@@ -15,7 +13,7 @@ source: https://github.com/opattison/olivermakes
 
 ## Shades
 
-<ul class="grid grid--swatches">
+<ul class="grid grid--swatches no-bullets">
 {% assign swatches = site.data.shade %}
 {% for swatch in swatches %}
 {% include block/pattern--swatch.html %}
@@ -24,7 +22,7 @@ source: https://github.com/opattison/olivermakes
 
 ## Colors
 
-<ul class="grid grid--swatches">
+<ul class="grid grid--swatches no-bullets">
 {% assign swatches = site.data.color %}
 {% for swatch in swatches %}
 {% include block/pattern--swatch.html %}
@@ -33,7 +31,7 @@ source: https://github.com/opattison/olivermakes
 
 ## Semi-transparent shades and colors
 
-<ul class="grid grid--swatches">
+<ul class="grid grid--swatches no-bullets">
 {% assign swatches = site.data.transparent %}
 {% for swatch in swatches %}
 {% include block/pattern--swatch.html %}

@@ -1,9 +1,10 @@
 ---
 title: 'Jekyll Version of Pattern Primer'
-layout: dubbel
+layout: singel
 option:
   - minor
-  - srcset
+  - no-imgix-source
+  - no-image_index
 category: 'projects'
 tags:
   - 'css'
@@ -21,10 +22,10 @@ project:
   source: https://github.com/opattison/Pattern-Primer-Jekyll
   period: '2013-07 to present'
 image:
-  - src: 2014-12-01-pattern-primer-project-feature-screen.png
+  - src: /images/2014-12-01-pattern-primer-project-feature-screen.png
     alt: 'A screenshot of Pattern Primer Jekyll'
     date: 2014-12-01
-  - src: 2014-12-01-pattern-primer-headings.png
+  - src: /images/2014-12-01-pattern-primer-headings.png
     alt: 'Heading styles in Pattern Primer Jekyll'
     caption: 'Find out how your headings look and what markup is needed for them with a primer.'
     date: 2014-12-01
@@ -50,9 +51,8 @@ Pattern Primer ([as well as many other similar tools](http://styleguides.io/tool
 
 <figure class="image--narrow screenshot">
   <img
-    src="{{ site.image_url }}/{{ page.image[1].src }}"
-    alt="{{ page.image[1].alt }}"
-  >
+    src="{{ page.image[1].src | imgix_url }}"
+    alt="{{ page.image[1].alt }}">
   <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
 </figure>
 

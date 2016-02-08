@@ -4,8 +4,6 @@ layout: dubbel
 option:
   - code
   - custom-css
-  - index-image
-  - srcset
 category: 'projects'
 tags:
   - 'design'
@@ -23,35 +21,36 @@ project:
   url: http://jeancflanagan.com
   source: https://github.com/opattison/jeancflanagan
 custom-css: 2014-02-16-jean-flanagan.css
+image_index: /images/index/2014-12-05-jean-flanagan-feature.jpg
 image:
-  - src: 2014-12-05-jean-flanagan-feature.jpg
+  - src: /images/2014-12-05-jean-flanagan-feature.jpg
     alt: 'A screenshot of jeancflanagan.com'
     date: 2014-12-05
-  - src: 2013-07-08-jean-flanagan-early-excerpt.png
+  - src: /images/2013-07-08-jean-flanagan-early-excerpt.png
     alt: 'Two text excerpts from a prototype of Jean’s website'
     caption: 'Content excerpts from the very early stages of the site’s design.'
     date: 2013-07-08
-  - src: 2014-12-05-jean-flanagan-excerpt.png
+  - src: /images/2014-12-05-jean-flanagan-excerpt.png
     alt: 'Two text excerpts from a current version of Jean’s website'
     caption: 'How the same content excerpts turned out in a later design iteration of the site.'
     date: 2014-12-05
-  - src: 2014-12-05-jean-flanagan-large-grid.jpg
+  - src: /images/2014-12-05-jean-flanagan-large-grid.jpg
     alt: 'The grid of posts on the home page on a large desktop screen'
     caption: 'What the grid of posts [on the homepage](http://jeancflanagan.com/) looks like on a large screen. This four-column grid is different from the single-column grid on small-sized screens and the double-column grid on medium-sized screens.'
     date: 2014-12-05
-  - src: 2014-12-05-jean-flanagan-photo-page.jpg
+  - src: /images/2014-12-05-jean-flanagan-photo-page.jpg
     alt: 'A screenshot of the photo layout on a medium-sized browser'
-  - src: 2014-12-05-jean-flanagan-article-mobile.jpg
+  - src: /images/2014-12-05-jean-flanagan-article-mobile.jpg
     alt: 'A screenshot of the writing layout on a phone-sized browser'
     date: 2014-12-05
-  - src: 2014-12-05-jean-flanagan-article-desktop.jpg
+  - src: /images/2014-12-05-jean-flanagan-article-desktop.jpg
     alt: 'A screenshot of the writing layout on a large desktop browser'
     date: 2014-12-05
-  - src: 2014-12-05-jean-flanagan-article-float-image.png
+  - src: /images/2014-12-05-jean-flanagan-article-float-image.png
     alt: 'A screenshot of an image floated right alongside some text in a flexible layout'
     caption: 'The image of Darwin’s finches floats right on larger screens, while it would be layed out in the center on smaller screens. [View this page](http://jeancflanagan.com/2013/communicating-about-evolution-the-danger-of-shortcuts/).'
     date: 2014-12-05
-  - src: 2014-02-16-PhyloPic.ef63437d.Michelle-Site.Scyphozoa.svg
+  - src: /images/2014-02-16-PhyloPic.ef63437d.Michelle-Site.Scyphozoa.svg
     alt: 'Floating jellyfish vector graphic'
     caption: 'A snippet from the [404 page](http://jeancflanagan.com/404.html), using CSS `keyframes` animations to `translate` an SVG image and shift the background color. The vector jellyfish illustration is by [Michelle Site via Phylopic](http://phylopic.org/image/ef63437d-d6f4-4583-9d75-a8c9b19a203d/), licensed [CC BY-NC](http://creativecommons.org/licenses/by-nc/3.0/).'
     license: 'CC BY-NC'
@@ -75,25 +74,22 @@ Designing in a browser meant that HTML prototypes were an early part of the proc
 
 <figure class="image--narrow screenshot">
   <img
-    src="{{ site.image_url }}/{{ page.image[1].src }}"
-    alt="{{ page.image[1].alt }}"
-  >
+    src="{{ page.image[1].src | imgix_url }}"
+    alt="{{ page.image[1].alt }}">
   <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
 </figure>
 
 <figure class="image--narrow screenshot">
   <img
-    src="{{ site.image_url }}/{{ page.image[2].src }}"
-    alt="{{ page.image[2].alt }}"
-  >
+    src="{{ page.image[2].src | imgix_url }}"
+    alt="{{ page.image[2].alt }}">
   <figcaption>{{ page.image[2].caption | markdownify }}</figcaption>
 </figure>
 
 <figure class="image--wide screenshot">
   <img
-    src="{{ site.image_url }}/{{ page.image[3].src }}"
-    alt="{{ page.image[3].alt }}"
-  >
+    src="{{ page.image[3].src | imgix_url }}"
+    alt="{{ page.image[3].alt }}">
   <figcaption>{{ page.image[3].caption | markdownify }}</figcaption>
 </figure>
 
@@ -105,9 +101,8 @@ Jean takes [beautiful photos](http://jeancflanagan.com/photos/), which I wanted 
 
 <figure class="image--narrow screenshot">
   <img
-    src="{{ site.image_url }}/{{ page.image[4].src }}"
-    alt="{{ page.image[4].alt }}"
-  >
+    src="{{ page.image[4].src | imgix_url }}"
+    alt="{{ page.image[4].alt }}">
 </figure>
 
 #### Samples from writing layout
@@ -115,15 +110,13 @@ Jean takes [beautiful photos](http://jeancflanagan.com/photos/), which I wanted 
 <div class="grid--wide">
   <figure class="grid-figure--33 grid-figure screenshot">
     <img
-      src="{{ site.image_url }}/{{ page.image[5].src }}"
-      alt="{{ page.image[5].alt }}"
-    >
+      src="{{ page.image[5].src | imgix_url }}"
+      alt="{{ page.image[5].alt }}">
   </figure>
   <figure class="grid-figure--66 grid-figure screenshot">
     <img
-      src="{{ site.image_url }}/{{ page.image[6].src }}"
-      alt="{{ page.image[6].alt }}"
-    >
+      src="{{ page.image[6].src | imgix_url }}"
+      alt="{{ page.image[6].alt }}">
   </figure>
 </div>
 
@@ -131,9 +124,8 @@ Not every image is meant to be showcased, nor should every image overshadow the 
 
 <figure class="image--narrow screenshot">
   <img
-    src="{{ site.image_url }}/{{ page.image[7].src }}"
-    alt="{{ page.image[7].alt }}"
-  >
+    src="{{ page.image[7].src | imgix_url }}"
+    alt="{{ page.image[7].alt }}">
   <figcaption>{{ page.image[7].caption | markdownify }}</figcaption>
 </figure>
 
@@ -143,14 +135,14 @@ We wanted to make sure that some of Jean’s interests and personality were part
 
 <div id="error-404">
   <figure class="image--wide">
-    <img src="{{ site.image_url }}/{{ page.image[8].src }}" alt="{{ page.image[8].alt }}">
+    <img src="{{ page.image[8].src }}" alt="{{ page.image[8].alt }}">
     <figcaption>{{ page.image[8].caption | markdownify }}</figcaption>
   </figure>
 </div>
 
 ## Choosing Jekyll
 
-Jean already had a personal WordPress site. I had helped her transition from the limited WordPress.com service to her own personal domain and host. However, Jean was still feeling constrained by limitations in configuration and design. I could certainly help redesign a WordPress site, but it would be a significant challenge since I have not ever made a theme from scratch, nor have I worked extensively with PHP. Building on existing themes was a sure way to end up with a compromised design with inflexibile configuration. Hacking around in WordPress would only take time away from my developing my existing strengths in responsive HTML and CSS.
+Jean already had a personal WordPress site. I had helped her transition from the limited WordPress.com service to her own personal domain and host. However, Jean was still feeling constrained by limitations in configuration and design. I could certainly help redesign a WordPress site, but it would be a significant challenge since I have not ever made a theme from scratch, nor have I worked extensively with PHP. Building on existing themes was a sure way to end up with a compromised design with inflexible configuration. Hacking around in WordPress would only take time away from my developing my existing strengths in responsive HTML and CSS.
 
 Both of us realized that WordPress was no longer a good fit. Jean wanted more control over content and flexible layouts, as well as an interface that wouldn’t involve fighting with a WYSIWYG editor or administering a content management system and database. The trade-off for ease-of-use and getting started quickly with WordPress was outweighed by a desire to publish independently and to develop a process that would be able to withstand servers misbehaving, databases being corrupted, or any of the pitfalls of locking in to a “platform”.
 

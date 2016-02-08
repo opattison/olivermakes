@@ -11,7 +11,7 @@ tags:
   - 'typography'
   - 'web'
 date: 2016-01-29 12:34
-updated: 2016-02-04 12:16
+updated: 2016-02-08 17:30
 drafted: 2016-02-03 16:22
 unique_id: 2015-01-29:pine-orchard-site
 description: 'Design and development for an online retail shop selling antique prints.'
@@ -21,7 +21,7 @@ project:
   license: '© copyright'
   license-url: https://github.com/opattison/pine-orchard-antique-prints#credits
 image:
-  - src: 2016-01-27-pine-orchard-banner.jpg
+  - src: /images/2016-01-27-pine-orchard-banner.jpg
     alt: 'Pine Orchard Antique Prints banner logo as a part of the banner on the shop'
     date: 2016-01-27
     caption: 'The typography in context on the [Pine Orchard Prints website](http://pineorchardprints.com).'

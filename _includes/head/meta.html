@@ -8,7 +8,13 @@
   {% if page.category == 'index' %}<meta property="og:type" content="website">{% else %}<meta property="og:type" content="article">{% endif %}
   <meta property="og:url" content="{{ site.url }}{{ page.id }}/">
   <meta property="og:title" content="{{ page.title | strip_html }} – {{ site.title }}">
-  {% if page.image[0] and page.category == 'photography' %}<meta property="og:image" content="{{ site.image_url }}/720/{{ page.image[0].src }}">{% elsif page.image[0] and page.category != 'photography' %}{% unless page.image[0].src contains 'svg' %}<meta property="og:image" content="{{ site.image_url }}/{{ page.image[0].src }}">{% else %}<meta property="og:image" content="{{ site.image_url }}/{{ page.image[0].src_png }}">{% endunless %}{% else %}<meta property="og:image" content="{{ site.icon_url }}/touchicon192.png">{% endif %}
+  {% if page.image[0] and page.category == 'photography' %}<meta property="og:image" content="{{ page.image[0].src | imgix_url: w: 1024, q: 50 }}">
+  <meta property="og:image:secure_url" content="{{ page.image[0].src | imgix_url: w: 1024, q: 50 }}">
+  {% elsif page.image[0] and page.category != 'photography' %}{% unless page.image[0].src contains 'svg' %}
+  <meta property="og:image" content="{{ page.image[0].src }}">
+  {% else %}<meta property="og:image" content="{{ page.image[0].src_png }}">{% endunless %}
+  {% else %}<meta property="og:image" content="{{ site.icon_url }}/touchicon192.png">{% endif %}
+
   {% if page.description %}<meta property="og:description" content="{{ page.description }}">{% else %}<meta property="og:description" content="{{ site.description }}">{% endif %}
 
   <meta name="google-site-verification" content="{{ site.google_verification }}" />

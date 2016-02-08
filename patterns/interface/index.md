@@ -3,8 +3,6 @@ title: 'Interface Patterns'
 layout: edgeless
 option:
   - code
-  - code-block
-  - srcset
   - patterns
 category: meta
 date: 2016-01-22 15:10

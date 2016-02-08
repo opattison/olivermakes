@@ -40,6 +40,11 @@ gems:
   - jekyll-archives
   - sass
   - octopress-autoprefixer
+  - imgix
+
+## Imgix configuration
+imgix:
+  source: olivermakes.imgix.net
 
 ## Markdown configuration
 markdown: kramdown
@@ -82,8 +87,8 @@ exclude: [s3_website.yml, Rakefile]
 domain: olivermak.es
 url: https://olivermak.es
 patterns_url: /patterns
-image_url: /resources/images
-icon_url: /resources/icons
+image_url: /images
+icon_url: /icons
 style_url: /resources/style
 script_url: /resources/scripts
 fragments_url: /resources/fragments
@@ -95,9 +100,10 @@ source_url:
   sass: https://github.com/opattison/olivermakes/blob/master/_sass
 
 ## srcset implementation
-wide-sizes: '(min-width: 140em) 1440px, (min-width: 115em) 1260px, (min-width: 95em) 1080px, (min-width: 60em) 900px, (min-width: 45em) 720px, 100vw'
-grid2-sizes: '(min-width: 140em) 691px, (min-width: 115em) 605px, (min-width: 95em) 518px, (min-width: 60em) 432px, (min-width: 45em) 720px, 100vw'
-srcset1440:
+sizes: '(min-width: 140em) 1512px, (min-width: 95em) 1296px, (min-width: 80em) 1080px, (min-width: 60em) 900px, (min-width: 45em) 720px, 100vw'
+sizes_narrow: '(min-width: 140em) 1008, (min-width: 95em) 864px, (min-width: 80em) 720px, (min-width: 45em) 620px, 100vw'
+sizes_grid2: '(min-width: 115em) 742px, (min-width: 95em) 636px, (min-width: 80em) 530px, (min-width: 60em) 440px, (min-width: 45em) 720px, 100vw'
+srcset:
   - 480
   - 640
   - 720
@@ -105,11 +111,13 @@ srcset1440:
   - 1080
   - 1260
   - 1440
-srcset1080:
-  - 480
-  - 640
+  - 1800
+srcset_grid2:
+  - 440
+  - 636
   - 720
-  - 900
+  - 880
+  - 954
   - 1080
 
 ## Mapbox authentication and configuration

@@ -2,9 +2,8 @@
 title: 'Technical documentation for Casey&nbsp;Trees'
 layout: dubbel
 option:
-  - index-image
   - minor
-  - srcset
+  - no-imgix-source
 category: 'projects'
 tags:
   - 'archiving'
@@ -16,17 +15,18 @@ drafted: 2015-02-18 16:20
 unique_id: 2015-02-19:casey-trees-docs
 period: 2014-06 to 2014-10
 description: 'An archive of organizational knowledge about web design, strategy, and implementation for a non-profit.'
+image_index: /images/index/2015-02-18-casey-trees-docs-style.png
 image:
-  - src: 2015-02-18-casey-trees-docs-style.png
+  - src: /images/2015-02-18-casey-trees-docs-style.png
     alt: 'A screenshot and accompanying HTML code sample that document the design of a component.'
     date: 2015-02-18
     description: 'Feature image'
     aspect: '3:2'
-  - src: 2015-02-18-casey-trees-docs-nav.png
+  - src: /images/2015-02-18-casey-trees-docs-nav.png
     alt: 'The navigation for the documentation including headings for Documentation, Code Samples, and Reference, with listed items under each heading.'
     date: 2015-02-18
     aspect: '2:3'
-  - src: 2015-02-18-casey-trees-docs-code.png
+  - src: /images/2015-02-18-casey-trees-docs-code.png
     alt: 'An HTML code sample that documents the design of a component, with class parameters.'
     caption: 'I used the [Solarized color scheme](http://ethanschoonover.com/solarized) for code highlighting.'
     date: 2015-02-18
@@ -48,15 +48,13 @@ Unfortunately, the documents in the project contain proprietary information, so 
 <div class="grid--wide">
 <figure class="grid-figure--33 grid-figure screenshot">
   <img
-    src="{{ site.image_url }}/{{ page.image[1].src }}"
-    alt="{{ page.image[1].alt }}"
-  >
+    src="{{ page.image[1].src | imgix_url }}"
+    alt="{{ page.image[1].alt }}">
 </figure>
 <figure class="grid-figure--66 grid-figure screenshot">
   <img
-    src="{{ site.image_url }}/{{ page.image[2].src }}"
-    alt="{{ page.image[2].alt }}"
-  >
+    src="{{ page.image[2].src | imgix_url }}"
+    alt="{{ page.image[2].alt }}">
   <figcaption>{{ page.image[2].caption | markdownify }}</figcaption>
 </figure>
 </div>

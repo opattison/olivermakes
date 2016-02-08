@@ -1,0 +1,34 @@
+image:
+  - src: 2011-11-10-oliver-bench-jeancflanagan-ccbync.jpg
+    alt: 'Oliver Pattison sitting on a bench'
+    caption: 'Photo of me by [Jean Flanagan](http://jeancflanagan.com), [CC BY-NC](http://creativecommons.org/licenses/by-nc/4.0/)'
+    date: 2011-11-10
+    camera: 'Nikon D3000'
+    lens: 'Nikon DX 55-200 mm f/4.0-5.6'
+    focal: '55mm'
+    aperture: 'f/4.0'
+    shutter: '1/40'
+    iso: 200
+    author: 'Jean C. Flanagan'
+    license: 'CC BY-NC'
+    license-url: http://creativecommons.org/licenses/by-nc/4.0/
+    description: 'An image of Oliver Pattison taken in a park in Paris, France.'
+  - src: 2014-02-16-PhyloPic.ef63437d.Michelle-Site.Scyphozoa.svg
+    alt: 'Floating jellyfish vector graphic'
+    caption: 'A snippet from the [404 page](http://jeancflanagan.com/404.html), using CSS `keyframes` animations to `translate` an SVG image and shift the background color. The vector jellyfish illustration is by [Michelle Site via Phylopic](http://phylopic.org/image/ef63437d-d6f4-4583-9d75-a8c9b19a203d/), licensed [CC BY-NC](http://creativecommons.org/licenses/by-nc/3.0/).'
+    license: 'CC BY-NC'
+    license-url: http://creativecommons.org/licenses/by-nc/3.0/
+  - src: 2014-12-15-wtw-N80_7110.jpg
+    date: 2014-12-15
+    license: 'copyright'
+    author: 'Works That Work'
+  - src: 2014-12-15-wtw-N80_7152.jpg
+    date: 2014-12-15
+    license: 'copyright'
+    author: 'Works That Work'
+  - src: 2016-02-02-gh-mark.svg
+    src_png: 2016-02-02-gh-mark.png
+    alt: 'GitHub Octocat logo'
+    date: 2016-02-02
+    license: 'copyright'
+    author: 'GitHub'

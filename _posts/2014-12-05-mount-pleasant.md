@@ -4,7 +4,6 @@ layout: edgeless
 theme: dark
 option:
   - map-meta
-  - srcset
 category: 'photography'
 tags:
   - 'dc'
@@ -15,7 +14,7 @@ drafted: 2014-11-14 22:01
 unique_id: 2014-11-14:mount-pleasant
 description: 'Photos from a neighborhood in Washington, DC; processed with VSCO Film 04.'
 image:
-  - src: 2014-01-20-orange-leaves-olivermakes-ccbync.jpg
+  - src: /images/2014-01-20-orange-leaves-olivermakes-ccbync.jpg
     alt: 'Backlit orange leaves'
     date: 2014-01-20
     camera: 'Fujifilm X-E2'
@@ -29,7 +28,7 @@ image:
     longitude: -77.0438
     zoom: 16
     description: 'VSCO Film Kodak E200'
-  - src: 2014-01-20-bark-close-olivermakes-ccbync.jpg
+  - src: /images/2014-01-20-bark-close-olivermakes-ccbync.jpg
     alt: 'Close view of tree bark in a residential neighborhood'
     date: 2014-01-20
     camera: 'Fujifilm X-E2'
@@ -43,7 +42,7 @@ image:
     longitude: -77.0413
     zoom: 16
     description: 'VSCO Film Kodak E200'
-  - src: 2014-01-20-sidewalk-olivermakes-ccbync.jpg
+  - src: /images/2014-01-20-sidewalk-olivermakes-ccbync.jpg
     alt: 'Small green leaves growing from a rocky wall next to a sidewalk'
     date: 2014-01-20
     camera: 'Fujifilm X-E2'
@@ -62,26 +61,26 @@ image:
 
 <figure class="image--wide">
   <img
-    src="{{ site.image_url }}/{{ page.image[0].src }}"
-    sizes="{{ site.wide-sizes }}"
-    srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image_url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[0].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+    src="{{ page.image[0].src | imgix_url: w: 720, q: 50 }}"
+    sizes="{{ site.sizes }}"
+    srcset="{% for width in site.srcset %}{{ page.image[0].src | imgix_url: w: width, q: 70 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
     alt="{{ page.image[0].alt }}">
 </figure>
 
 <figure class="image--wide">
   <img
-    src="{{ site.image_url }}/{{ page.image[1].src }}"
-    sizes="{{ site.wide-sizes }}"
-    srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image_url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[1].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+    src="{{ page.image[1].src | imgix_url: w: 720, q: 50 }}"
+    sizes="{{ site.sizes }}"
+    srcset="{% for width in site.srcset %}{{ page.image[1].src | imgix_url: w: width, q: 70 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
     alt="{{ page.image[1].alt }}">
 </figure>
 
 
 <figure class="image--wide">
   <img
-    src="{{ site.image_url }}/{{ page.image[2].src }}"
-    sizes="{{ site.wide-sizes }}"
-    srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image_url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[2].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+    src="{{ page.image[2].src | imgix_url: w: 720, q: 50 }}"
+    sizes="{{ site.sizes }}"
+    srcset="{% for width in site.srcset %}{{ page.image[2].src | imgix_url: w: width, q: 70 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
     alt="{{ page.image[2].alt }}">
 </figure>
 

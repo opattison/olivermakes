@@ -1,9 +1,7 @@
 ---
 title: 'Designing this site: an archive'
 layout: singel
-option:
-  - index-image
-category: writing
+category: 'writing'
 tags:
   - 'archiving'
   - 'future'
@@ -14,8 +12,9 @@ updated: 2015-03-02 21:05
 drafted: 2014-11-08 12:34
 unique_id: 2014-11-08:design-notes-an-archive
 description: 'On my approach to self-archiving.'
+image_index: /images/index/1988-oliver-young.jpg
 image:
-  - src: 1988-oliver-young.jpg
+  - src: /images/1988-oliver-young.jpg
     alt: 'Oliver as a toddler'
     caption: 'A photo taken of me in … 1988? I have no idea! This is an example of why I miss having a complete archive.'
 
@@ -25,9 +24,8 @@ Looking back at my files and memories from my life so far, I find there are few 
 
 <figure class="right">
   <img
-    src="{{ site.image_url }}/{{ page.image[0].src }}" 
-    alt="{{ page.image[0].alt }}"
-  >
+    src="{{ page.image[0].src | imgix_url: w: 450, q: 60 }}"
+    alt="{{ page.image[0].alt }}">
   <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
 </figure>
 

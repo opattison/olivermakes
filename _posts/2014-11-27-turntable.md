@@ -4,7 +4,7 @@ layout: edgeless
 theme: dark
 option:
   - map-meta
-  - srcset
+
 category: 'photography'
 tags:
   - 'music'
@@ -14,7 +14,7 @@ drafted: 2014-11-27 19:02
 unique_id: 2014-11-27:turntable
 description: 'A close-up view of my record player.'
 image:
-  - src: 2014-06-15-turntable-kodak-portra-400-olivermakes-ccbync.jpg
+  - src: /images/2014-06-15-turntable-kodak-portra-400-olivermakes-ccbync.jpg
     alt: 'The tone arm of a record player'
     caption: 'My record player at home, captured in low light with a fast lens. This photo was re-processed with VSCO Film 02 (Kodak Portra 400).'
     date: 2014-06-15
@@ -34,8 +34,8 @@ image:
 
 <figure class="image--wide">
   <img
-    src="{{ site.image_url }}/{{ page.image[0].src }}"
-    sizes="{{ site.wide-sizes }}"
-    srcset="{% for srcset1440 in site.srcset1440 %}{{ site.image_url }}/{{ site.srcset1440[forloop.index0] }}/{{ page.image[0].src }} {{ site.srcset1440[forloop.index0] }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+    src="{{ page.image[0].src | imgix_url: w: 720, q: 50 }}"
+    sizes="{{ site.sizes }}"
+    srcset="{% for width in site.srcset %}{{ page.image[0].src | imgix_url: w: width, q: 70 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
     alt="{{ page.image[0].alt }}">
 </figure>

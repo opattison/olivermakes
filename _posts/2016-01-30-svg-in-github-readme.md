@@ -3,7 +3,7 @@ title: 'How to enhance a GitHub readme with SVG'
 layout: singel
 option:
   - code
-  - index-image
+  - no-imgix-source
 category: 'writing'
 tags:
   - 'css'
@@ -17,12 +17,15 @@ updated: 2016-01-30 15:05
 drafted: 2016-01-29 20:00
 unique_id: 2016-01-30:svg-in-github-readme
 description: 'Enhancing Markdown files for open source projects.'
+image_index: /images/index/2016-02-02-gh-mark.svg
 image:
-  - src: 2016-02-02-gh-mark.svg
-    src_png: 2016-02-02-gh-mark.png
+  - src: /images/2016-02-02-gh-mark.svg
+    src_png: /images/2016-02-02-gh-mark.png
     alt: 'GitHub Octocat logo'
     date: 2016-02-02
-  - src: 2016-01-30-github-readme-svg.png
+    license: 'copyright'
+    author: 'GitHub'
+  - src: /images/2016-01-30-github-readme-svg.png
     alt: 'circular logo below readme text as rendered on a GitHub project page'
     date: 2016-01-30
     caption: 'This is just a screenshot. [View this readme on GitHub](https://github.com/opattison/olivermakes/blob/5c68d2ed4c97a236489548fd61f3254dd1235928/readme.md).'
@@ -62,6 +65,6 @@ Use responsibly.
 ## Sample output
 
 <figure class="image--wide screenshot">
-  <img src="{{ site.image_url }}/{{ page.image[1].src }}" alt="{{ page.image[1].alt }}">
+  <img src="{{ page.image[1].src | imgix_url: w: 1800 }}" alt="{{ page.image[1].alt }}">
 <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
 </figure>
