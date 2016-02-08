@@ -3,11 +3,13 @@
   "description": "NPM development setup for olivermak.es",
   "dependencies": {
     "uglify-js": "2.6",
+    "watch": "0.17",
     "velocity": "1.2.3"
   },
   "scripts": {
     "concatenate": "uglifyjs resources/scripts/velocity.js resources/scripts/velocity.ui.js resources/scripts/site.js --comments -b -o resources/scripts/all.min.js",
-    "minify": "uglifyjs resources/scripts/velocity.js resources/scripts/velocity.ui.js resources/scripts/site.js --comments -o resources/scripts/all.min.js"
+    "minify": "uglifyjs resources/scripts/velocity.js resources/scripts/velocity.ui.js resources/scripts/site.js --comments -o resources/scripts/all.min.js",
+    "watch": "watch 'npm run concatenate' resources/scripts/ --wait=20"
   },
   "repository": {
     "type": "git",
