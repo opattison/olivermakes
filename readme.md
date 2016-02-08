@@ -48,6 +48,7 @@
 - [s3_website](https://github.com/laurilehmijoki/s3_website)
 - [NPM for JavaScript dependencies](https://www.npmjs.com)
 - [uglifyJS](https://github.com/mishoo/UglifyJS2)
+- [watch](https://github.com/mikeal/watch)
 
 ### Front-end
 
