@@ -10,7 +10,7 @@ tags:
   - 'typography'
   - 'web'
 date: 2015-10-24 9:00
-updated: 2016-01-27 23:39
+updated: 2016-02-09 01:01
 drafted: 2016-01-26 23:22
 unique_id: 2015-10-24:pine-orchard-typography
 description: 'Logotype and typography for a small online retail shop.'
@@ -51,7 +51,7 @@ image:
 
 ---
 
-[Pine Orchard Prints](http://pineorchardprints.com) is an online-only antique print shop that I designed and developed for a client.
+[Pine Orchard Antique Prints](https://pineorchardprints.com) is an online-only print shop that I designed and developed for a client.
 {:.focus}
 
 Typography set the tone for my design work on the Pine Orchard Antique Prints shop. I established the typography early in the design of the website, to strongly differentiate the shop with distinguished heading styles implemented with restraint. For the identity I drew inspiration from the descriptive text that accompanies these nineteenth century prints.
@@ -92,6 +92,16 @@ The typeface performed quite well, even with only a single weight. Cardo has exc
 </figure>
 
 In my earliest take on the design, I attempted a logo designed only with CSS, but limited control over letter spacing and relative proportions led to unimpressive initial efforts. It is still difficult to implement small caps with OpenType and CSS properly, since browser support is not as extensive as it could be. [^2] I designed the next takes of the logotype with Adobe Illustrator, because I wanted SVG output and fine control over kerning. The final iteration appears on the site header as well as in transactional email messages and mailing labels.
+
+{% capture more %}
+Read more about [the rest of the work that went into the Pine Orchard Prints project]({% post_url 2016-01-29-pine-orchard-site %}).
+
+Visit the [Pine Orchard Prints website](https://pineorchardprints.com) to see the typography up close.
+{% endcapture %}
+
+<aside class="ancillary">
+{{ more | markdownify }}
+</aside>
 
 For a small shop, memorable and appropriate typography effectively served the business goals and provided a strong identity. Using a straightforward logotype supported the typographic style of the site and evoked the visual appeal of the items in the shop, without relying on symbols or iconography.
 
