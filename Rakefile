@@ -10,21 +10,32 @@ local_site     = "_site"
 deploy_prod    = "DEPLOY=production"
 jekyll_prod    = "JEKYLL_ENV=production"
 
+## "rake concatenate"
+desc "run npm concatenate"
+task :concatenate do
+  puts "## Concatenating JavaScript ##"
+  system "npm run concatenate"
+end
 
 ## "rake serve"
 desc "custom Jekyll serve for local development"
-task :serve do
-  puts "## Concatenating JavaScript ##"
-  system "npm run concatenate"
+task :serve => [:concatenate] do
   puts "## Locally serving and watching Jekyll development site ##"
-  system "#{jekyll_prod} bundle exec jekyll serve --config _config.yml,_config-dev.yml"
+  system "#{jekyll_prod} bundle exec jekyll serve --detach --incremental --config _config.yml,_config-dev.yml"
+  puts "## Watching JavaScript files for changes ##"
+  system "npm run watch"
+end
+
+## "rake kill"
+desc "kill silent 'detached' Jekyll serve process"
+task :kill do
+  puts "## Killing Jekyll serve process ##"
+  system "pkill -f jekyll"
 end
 
 ## "rake dev" for development deployment
 desc "build and deploy scripts, images and site to development site dev.olivermak.es via s3_website"
-task :dev do
-  puts "## Concatenating JavaScript ##"
-  system "npm run concatenate"
+task :dev => [:kill, :concatenate] do
   puts "## Building Jekyll development site ##"
   system "#{jekyll_prod} bundle exec jekyll build --config _config.yml,_config-dev.yml"
   system "s3_website push --site #{local_site}"
