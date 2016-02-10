@@ -125,7 +125,7 @@ We already used “button”-like hyperlinks with rounded corners, right- or lef
 
 Since we already had strong colors and icons for each membership level, it made sense to “theme” the content blocks, by adding level-specific colors to the titles and call-to-action links. These would be new colors for the site to give a unique identity to the campaign, but they would still fit in well with the existing palette. I echoed the colors and icons on the [membership donation form](https://secure3.convio.net/ct/site/Donation2?df_id=1625&amp;1625.donation=form1).
 
-<ul class="grid grid--swatches">
+<ul class="grid grid--swatches no-bullets">
 {% for color in page.color %}
   <li class="pattern--swatch"><figure style="background-color: {{ page.color[forloop.index0].hex }}"><figcaption>{{ page.color[forloop.index0].name }}<br>{{ page.color[forloop.index0].hex }}</p></figcaption></figure></li>
 {% endfor %}
