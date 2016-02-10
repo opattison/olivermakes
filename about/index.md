@@ -24,7 +24,7 @@ image:
 
 ---
 
-I am <span class="p-name">Oliver Pattison</span>, a designer focused on the future of the web. My main interests are archiving, usable and universal design, typography, and photography.
+I am <span class="p-name">Oliver Pattison</span>, a designer focused on the future of the web. My main interests are archiving, usable and universal design, typography, and photography. I like to work on [open source projects]({{ site.link.github }}){:rel="me"}, and I am open to collaboration and work opportunities. Have any questions for me? [Send me an email](mailto:{{ site.author.email }}){:.u-email rel="me"}.
 
 I currently live in Washington, DC. I am originally from New York City.
 

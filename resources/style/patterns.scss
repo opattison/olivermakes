@@ -199,11 +199,6 @@
   max-width: 64px;
 }
 
-.no-bullets li::before {
-  content: ''!important;
-  margin: 0!important;
-}
-
 /* Block of high-contrast introductory text */
 .primer {
   margin: 1em auto 0;

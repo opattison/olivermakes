@@ -79,7 +79,7 @@
   border-bottom: solid 1px;
   height: 12.5em;
   background-size: cover;
-  background-position: 50% 25%;
+  background-position: 50% 50%;
 
   @include min-width(s01) {
     height: 15em;
@@ -101,6 +101,7 @@
     flex: 0 0 50%;
     height: 18em;
     width: 50%;
+    background-position: 50% 25%;
   }
 }
 
