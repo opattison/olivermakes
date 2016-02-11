@@ -8,6 +8,7 @@ category: 'writing'
 tags:
   - 'design'
   - 'future'
+  - 'indieweb'
   - 'jekyll'
   - 'web'
 date: 2014-11-06 09:17

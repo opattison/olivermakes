@@ -5,6 +5,7 @@ category: 'writing'
 tags:
   - 'archiving'
   - 'future'
+  - 'indieweb'
   - 'photography'
   - 'web'
 date: 2014-11-08 12:34
