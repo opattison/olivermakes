@@ -5,7 +5,6 @@ option:
   - no-title
   - hero
   - code
-category: meta
 date: 2014-10-31 18:25
 updated: 2016-02-02 03:46
 unique_id: 2014-10-31:about

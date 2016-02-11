@@ -2,7 +2,7 @@
 .return {
   display: flex;
   flex: 0 0 100%;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
 
   font-size: 1.25em;
 }
@@ -10,7 +10,6 @@
 .return-action {
   @include action;
   display: flex;
-  flex: 0 0 50%;
   justify-content: center;
 
   @include min-width(m01) {
@@ -23,8 +22,23 @@
 }
 
 .return-action--home,
+.return-action--category,
 .return-action--top {
   @extend .return-action;
+  flex: 1 1 50%;
+}
+
+.return-action--home {
+  @include min-width(l01) {
+    flex: 0 1 50%;
+  }
+}
+
+.return-action--category,
+.return-action--top {
+  @include min-width(l01) {
+    flex: 1 0 25%;
+  }
 }
 
 .return-action--home svg {
