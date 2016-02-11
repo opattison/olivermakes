@@ -6,6 +6,7 @@ option:
   - no-imgix-source
 tags:
   - 'design'
+  - 'indieweb'
   - 'jekyll'
   - 'typography'
   - 'web'

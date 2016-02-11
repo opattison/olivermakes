@@ -7,6 +7,7 @@ option:
   - no-imgix-source
 category: 'projects'
 tags:
+  - 'archiving'
   - 'design'
   - 'jekyll'
   - 'process'
