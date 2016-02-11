@@ -4,7 +4,7 @@ layout: edgeless
 option:
   - code
   - patterns
-category: meta
+category: patterns
 date: 2014-10-31 18:25
 updated: 2016-01-22 15:10
 description: 'A collection of component patterns for this website – how the content design is made.'

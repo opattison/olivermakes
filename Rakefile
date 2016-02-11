@@ -17,13 +17,18 @@ task :concatenate do
   system "npm run concatenate"
 end
 
+## "rake watch"
+desc "run npm watch"
+task :watch do
+  puts "## Watching JavaScript files for changes ##"
+  system "npm run watch"
+end
+
 ## "rake serve"
 desc "custom Jekyll serve for local development"
 task :serve => [:concatenate] do
   puts "## Locally serving and watching Jekyll development site ##"
-  system "#{jekyll_prod} bundle exec jekyll serve --detach --incremental --config _config.yml,_config-dev.yml"
-  puts "## Watching JavaScript files for changes ##"
-  system "npm run watch"
+  system "#{jekyll_prod} bundle exec jekyll serve --config _config.yml,_config-dev.yml"
 end
 
 ## "rake kill"

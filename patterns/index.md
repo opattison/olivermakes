@@ -4,7 +4,6 @@ layout: category
 option:
   - code
   - patterns
-category: meta
 date: 2014-10-31 18:25
 updated: 2016-01-26 23:04
 unique_id: 2014-10-31:patterns

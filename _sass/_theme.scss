@@ -396,13 +396,46 @@ mark {
 }
 
 .return-action--top {
-  background-color: $gray07;
+  background-color: $gray05;
 }
 
 .return-action:hover,
 .return-action:focus {
   background-color: $gray03;
   color: $white;
+}
+
+.background--projects {
+  background-color: $violet;
+  color: $white;
+}
+
+.background--projects:hover,
+.background--projects:focus {
+  background-color: $whiter;
+  color: $violet;
+}
+
+.background--writing {
+  background-color: $red;
+  color: $white;
+}
+
+.background--writing:hover,
+.background--writing:focus {
+  background-color: $whiter;
+  color: $red;
+}
+
+.background--photography {
+  background-color: $blue;
+  color: $white;
+}
+
+.background--photography:hover,
+.background--photography:focus {
+  background-color: $whiter;
+  color: $blue;
 }
 
 .core-title {
