@@ -84,8 +84,10 @@ include:
   - _pages
 
 exclude:
-  - config
-  - Rakefile
+  - _config
+  - Gemfile*
+  - node_modules
+  - package.json
   - resources/scss
 
 ## Configuration URLs
