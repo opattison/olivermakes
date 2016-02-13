@@ -23,7 +23,7 @@
 
 ## Implementation
 
-- Jekyll for building
+- Jekyll (with help from npm) for building
 - Amazon CloudFront, S3 and [imgix](https://www.imgix.com) for hosting
 - [s3_website](https://github.com/laurilehmijoki/s3_website) for deploying to Amazon Web Services
 - GitHub for version control
@@ -43,10 +43,9 @@
 - [Jekyll Archives](https://github.com/jekyll/jekyll-archives)
 - [rouge](https://github.com/jneen/rouge)
 - [Sass (SCSS)](https://github.com/sass/sass)
-- [octopress-autoprefixer](https://github.com/octopress/autoprefixer)
 - [jekyll-imgix](https://github.com/imgix/jekyll-imgix)
 - [s3_website](https://github.com/laurilehmijoki/s3_website)
-- [NPM for JavaScript dependencies](https://www.npmjs.com)
+- [npm for dependencies and building](https://www.npmjs.com)
 - [uglifyJS](https://github.com/mishoo/UglifyJS2)
 - [watch](https://github.com/mikeal/watch)
 
@@ -57,7 +56,7 @@
 
 ## License
 
-All writing and photography on the site is my original work and is licensed under [Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC)](http://creativecommons.org/licenses/by-nc/4.0/). All design and code is under conventional copyright (as opposed to CC-style “copyleft” copyright), but is available for fair use [on GitHub](https://github.com/opattison/olivermakes). If you are looking at the repository, almost everything in the `_static` and `_posts` folders is CC BY-NC and the most of the rest of it is under copyright, where applicable.
+All writing and photography on the site is my original work and is licensed under [Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC)](http://creativecommons.org/licenses/by-nc/4.0/). All design and code is under conventional copyright (as opposed to CC-style “copyleft” copyright), but is available for fair use [on GitHub](https://github.com/opattison/olivermakes). If you are looking at the repository, almost everything in the `_pages`, `_posts`, `icons`, and `images` folders is CC BY-NC and the most of the rest of it is under copyright, where applicable.
 
 [Read more](https://olivermak.es/license/) on attribution and copyright for the site. If you have any questions about licensing or use of content from the site, please [contact me by email](oliverpattison@gmail.com).
 
