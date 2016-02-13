@@ -2,9 +2,10 @@
   "name": "olivermakes",
   "description": "NPM development setup for olivermak.es",
   "dependencies": {
+    "npm-run-all": "^1.5.1",
     "uglify-js": "2.6",
-    "watch": "0.17",
-    "velocity-animate": "1.2.3"
+    "velocity-animate": "1.2.3",
+    "watch": "0.17"
   },
   "scripts": {
     "js-minify": "uglifyjs _site/resources/js/velocity.js _site/resources/js/velocity.ui.js _site/resources/js/site.js -o resources/all.min.js --comments",
