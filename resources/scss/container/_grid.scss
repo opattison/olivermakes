@@ -20,6 +20,10 @@
 .grid-figure--33 {
   max-width: calc(100% / 3 * 2);
   margin: auto;
+
+  @include min-width(l01) {
+    margin: 0;
+  }
 }
 
 @include min-width(s03) {
