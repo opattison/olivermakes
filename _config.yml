@@ -72,7 +72,7 @@ jekyll-archives:
   permalinks:
     year: '/:year/'
     month: '/:year/:month/'
-    tag: '/label/:name/'
+    tag: '/labels/:name/'
     category: '/:name/archive/'
 
 ## Sass configuration

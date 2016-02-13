@@ -59,7 +59,7 @@ Pine Orchard Prints is a family business: I worked directly with my own family 
 
 For a small-scale project that nevertheless would require uploading and maintaining a large number of unique items, the tools for managing the content and hosting the site had to be inexpensive and flexible. Shopify is a platform for getting a shop set up quickly for a low monthly cost. Shopify handles security and user data, and provides shop-owner customers with content management, inventory, and checkout systems. These built-in tools make running a small shop much more approachable for a small business, and they have done an impressive job creating a responsive and usable administrative interface.
 
-Having built plenty of projects with [Jekyll](/label/jekyll), I was excited to work with Shopify since both systems share the same Liquid template language. As a centrally managed shopping content management system, Shopify works quite differently from Jekyll, but the language underpinning them is identical.
+Having built plenty of projects with [Jekyll](/labels/jekyll), I was excited to work with Shopify since both systems share the same Liquid template language. As a centrally managed shopping content management system, Shopify works quite differently from Jekyll, but the language underpinning them is identical.
 
 ### Working with a theme framework
 
