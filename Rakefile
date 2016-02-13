@@ -26,7 +26,7 @@ end
 desc "custom Jekyll serve for local development"
 task :serve => [:concatenate] do
   puts "## Locally serving and watching Jekyll development site ##"
-  system "#{jekyll_prod} bundle exec jekyll serve --config config/prod.yml,config/dev.yml"
+  system "#{jekyll_prod} bundle exec jekyll serve --config _config/prod.yml,_config/dev.yml"
 end
 
 ## "rake kill"
@@ -40,8 +40,8 @@ end
 desc "build and deploy scripts, images and site to development site dev.olivermak.es via s3_website"
 task :dev => [:kill, :concatenate] do
   puts "## Building Jekyll development site ##"
-  system "#{jekyll_prod} bundle exec jekyll build --config config/prod.yml,config/dev.yml"
-  system "s3_website push --config-dir config --site #{local_site}"
+  system "#{jekyll_prod} bundle exec jekyll build --config _config/prod.yml,_config/dev.yml"
+  system "s3_website push --config-dir _config --site #{local_site}"
   puts "## Deployed development site to S3 ##"
 end
 
@@ -51,7 +51,7 @@ task :prod do
   puts "## Concatenating and minifying JavaScript ##"
   system "npm run minify"
   puts "## Building Jekyll production site ##"
-  system "#{jekyll_prod} bundle exec jekyll build --config config/prod.yml"
-  system "#{deploy_prod} s3_website push --config-dir config --site #{local_site}"
+  system "#{jekyll_prod} bundle exec jekyll build --config _config/prod.yml"
+  system "#{deploy_prod} s3_website push --config-dir _config --site #{local_site}"
   puts "## Deployed production site to S3 ##"
 end

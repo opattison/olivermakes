@@ -7,9 +7,9 @@
     "velocity-animate": "1.2.3"
   },
   "scripts": {
-    "concatenate": "uglifyjs resources/js/velocity.js resources/js/velocity.ui.js resources/js/site.js --comments -b -o resources/all.min.js",
-    "minify": "uglifyjs resources/js/velocity.js resources/js/velocity.ui.js resources/js/site.js --comments -o resources/all.min.js",
-    "watch": "watch 'npm run concatenate' resources/js/ --wait=20"
+    "concatenate": "uglifyjs _site/resources/js/velocity.js _site/resources/js/velocity.ui.js _site/resources/js/site.js --comments -b -o _site/resources/all.min.js",
+    "minify": "uglifyjs _site/resources/js/velocity.js _site/resources/js/velocity.ui.js _site/resources/js/site.js --comments -o _site/resources/all.min.js",
+    "watch": "watch 'npm run concatenate' _site/resources/js/ --wait=2"
   },
   "repository": {
     "type": "git",
