@@ -4,7 +4,6 @@ layout: edgeless
 theme: dark
 option:
   - map-meta
-
 category: 'photography'
 tags:
   - 'travel'
@@ -34,10 +33,8 @@ image:
 ---
 
 <figure class="image--wide">
-  <img
-    src="{{ page.image[0].src | imgix_url: w: 720, q: 50 }}"
-    sizes="{{ site.sizes }}"
-    srcset="{% for width in site.srcset %}{{ page.image[0].src | imgix_url: w: width, q: 60 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-    alt="{{ page.image[0].alt }}">
+  {% assign count = 0 %}
+  {% assign quality = 60 %}
+  {% include block/srcset.html %}
   <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
 </figure>

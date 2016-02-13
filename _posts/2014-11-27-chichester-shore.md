@@ -62,26 +62,20 @@ image:
 ---
 
 <figure class="image--wide">
-  <img
-    src="{{ page.image[0].src | imgix_url: w: 720, q: 60 }}"
-    sizes="{{ site.sizes }}"
-    srcset="{% for width in site.srcset %}{{ page.image[0].src | imgix_url: w: width, q: 60 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-    alt="{{ page.image[0].alt }}">
+  {% assign count = 0 %}
+  {% assign quality = 60 %}
+  {% include block/srcset.html %}
 </figure>
 
 <div class="grid--wide">
   <figure class="grid-figure">
-    <img
-      src="{{ page.image[1].src | imgix_url: w: 640, q: 50 }}"
-      sizes="{{ site.sizes_grid2 }}"
-      srcset="{% for width in site.srcset_grid2 %}{{ page.image[1].src | imgix_url: w: width, q: 50 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-      alt="{{ page.image[1].alt }}">
+    {% assign count = 1 %}
+    {% assign quality = 55 %}
+    {% include block/srcset_grid2.html %}
   </figure>
   <figure class="grid-figure">
-    <img
-      src="{{ page.image[2].src | imgix_url: w: 640, q: 50 }}"
-      sizes="{{ site.sizes_grid2 }}"
-      srcset="{% for width in site.srcset_grid2 %}{{ page.image[2].src | imgix_url: w: width, q: 50 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-      alt="{{ page.image[2].alt }}">
+    {% assign count = 2 %}
+    {% assign quality = 55 %}
+    {% include block/srcset_grid2.html %}
   </figure>
 </div>
