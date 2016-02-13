@@ -67,18 +67,14 @@ The latest issue has an more finished feel than the previous ones – each one i
 
 <div class="grid--wide">
   <figure class="grid-figure">
-    <img
-      src="{{ page.image[1].src | imgix_url: w: 640, q: 50 }}"
-      sizes="{{ site.sizes_grid2 }}"
-      srcset="{% for width in site.srcset_grid2 %}{{ page.image[1].src | imgix_url: w: width, q: 70 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-      alt="{{ page.image[1].alt }}">
+    {% assign count = 1 %}
+    {% assign quality = 70 %}
+    {% include block/srcset_grid2.html %}
   </figure>
   <figure class="grid-figure">
-    <img
-      src="{{ page.image[2].src | imgix_url: w: 640, q: 50 }}"
-      sizes="{{ site.sizes_grid2 }}"
-      srcset="{% for width in site.srcset_grid2 %}{{ page.image[2].src | imgix_url: w: width, q: 70 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-      alt="{{ page.image[2].alt }}">
+    {% assign count = 2 %}
+    {% assign quality = 70 %}
+    {% include block/srcset_grid2.html %}
   </figure>
 </div>
 

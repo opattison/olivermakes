@@ -68,11 +68,9 @@ To complement the metadata on my [photo pages](/photography/), I wanted accurate
 </div>
 
 <figure class="image--wide">
-  <img
-    src="{{ page.image[4].src | imgix_url: w: 900, q: 60 }}"
-    sizes="{{ site.sizes }}"
-    srcset="{% for width in site.srcset %}{{ page.image[4].src | imgix_url: w: width }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-    alt="{{ page.image[1].alt }}">
+  {% assign count = 4 %}
+  {% assign quality = 60 %}
+  {% include block/srcset.html %}
   <figcaption>{{ page.image[4].caption | markdownify }}</figcaption>
 </figure>
 

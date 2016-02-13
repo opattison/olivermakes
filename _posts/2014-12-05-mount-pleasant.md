@@ -2,8 +2,6 @@
 title: 'Mount Pleasant photowalk'
 layout: edgeless
 theme: dark
-option:
-  - map-meta
 category: 'photography'
 tags:
   - 'dc'
@@ -60,28 +58,22 @@ image:
 ---
 
 <figure class="image--wide">
-  <img
-    src="{{ page.image[0].src | imgix_url: w: 720, q: 50 }}"
-    sizes="{{ site.sizes }}"
-    srcset="{% for width in site.srcset %}{{ page.image[0].src | imgix_url: w: width, q: 70 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-    alt="{{ page.image[0].alt }}">
+  {% assign count = 0 %}
+  {% assign quality = 70 %}
+  {% include block/srcset.html %}
 </figure>
 
 <figure class="image--wide">
-  <img
-    src="{{ page.image[1].src | imgix_url: w: 720, q: 50 }}"
-    sizes="{{ site.sizes }}"
-    srcset="{% for width in site.srcset %}{{ page.image[1].src | imgix_url: w: width, q: 70 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-    alt="{{ page.image[1].alt }}">
+  {% assign count = 1 %}
+  {% assign quality = 70 %}
+  {% include block/srcset.html %}
 </figure>
 
 
 <figure class="image--wide">
-  <img
-    src="{{ page.image[2].src | imgix_url: w: 720, q: 50 }}"
-    sizes="{{ site.sizes }}"
-    srcset="{% for width in site.srcset %}{{ page.image[2].src | imgix_url: w: width, q: 70 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-    alt="{{ page.image[2].alt }}">
+  {% assign count = 2 %}
+  {% assign quality = 70 %}
+  {% include block/srcset.html %}
 </figure>
 
 <section class="essay">

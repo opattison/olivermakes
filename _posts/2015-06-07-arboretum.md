@@ -2,8 +2,6 @@
 title: 'Summer at the National Arboretum'
 layout: edgeless
 theme: dark
-option:
-  - map-meta
 category: 'photography'
 tags:
   - 'dc'
