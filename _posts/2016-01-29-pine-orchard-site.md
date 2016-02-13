@@ -49,17 +49,16 @@ image:
 Pine Orchard Prints is a family business: I worked directly with my own family to see it through from initial sketches to final implementation and support after launch. The business started years ago in upstate New York when my dad, [Keith Pattison](https://pineorchardprints.com/pages/about), assembled a collection of 19th century antique prints, selling some of them in a local shop and building an extensive catalog. Early in 2015 we talked about the possibility of selling part of the collection online, as a passion project for both of us. This project asked a lot from me: I was the sole designer, developer, copy editor, information architect, photo editor, and content strategist. Here is how it came together.
 
 <figure class="image--narrow screenshot">
-  <img src="{{ page.image[1].src | imgix_url: w: 720, q: 70 }}"
-  sizes="{{ site.sizes_narrow }}"
-  srcset="{% for width in site.srcset %}{{ page.image[1].src | imgix_url: w: width, q: 70 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-  alt="{{ page.image[1].alt }}">
+  {% assign count = 1 %}
+  {% assign quality = 70 %}
+  {% include block/srcset_narrow.html %}
 </figure>
 
 ## Shopify and Timber
 
 For a small-scale project that nevertheless would require uploading and maintaining a large number of unique items, the tools for managing the content and hosting the site had to be inexpensive and flexible. Shopify is a platform for getting a shop set up quickly for a low monthly cost. Shopify handles security and user data, and provides shop-owner customers with content management, inventory, and checkout systems. These built-in tools make running a small shop much more approachable for a small business, and they have done an impressive job creating a responsive and usable administrative interface.
 
-Having built plenty of projects with [Jekyll](/label/jekyll), I was excited to work with Shopify since both systems share the same Liquid template language. As a centrally managed shopping content management system, Shopify works quite differently from Jekyll, but the language underpinning them is identical.
+Having built plenty of projects with [Jekyll](/labels/jekyll), I was excited to work with Shopify since both systems share the same Liquid template language. As a centrally managed shopping content management system, Shopify works quite differently from Jekyll, but the language underpinning them is identical.
 
 ### Working with a theme framework
 
@@ -111,11 +110,9 @@ Early on we addressed the information architecture to determine how so many uniq
 After discovering the most important features to highlight, along with the information we had readily available about each print, we came up with a loose list of around 20 important tags which grew as the cataloging process continued. We eventually added dozens of supplementary tags, but the few we started with formed the core of the site’s structure: collections based on regions, key artists and publications, and subject matter.
 
 <figure class="image--wide screenshot">
-  <img
-    src="{{ page.image[5].src | imgix_url: w: 720, q: 60 }}"
-    sizes="{{ site.sizes }}"
-    srcset="{% for width in site.srcset %}{{ page.image[5].src | imgix_url: w: width, q: 75 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-    alt="{{ page.image[5].alt }}">
+  {% assign count = 5 %}
+  {% assign quality = 60 %}
+  {% include block/srcset.html %}
 </figure>
 
 ## Modern and antique

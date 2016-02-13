@@ -42,11 +42,9 @@ Visitors to a website typically have a key difference in experience from those w
 My solution is to use writing that I want to read anyway. For me, that is my [Instapaper](https://www.instapaper.com) queue. I find an article that I have been intending to read that is roughly in the style of the content that the site will have. This is challenging, but it is usually possible to find something in the same vein as the target content, even if that content hasn’t been written yet. For this site, I tested the design with a mix of narrative essays and some of my own technical notes.
 
 <figure class="screenshot image">
-  <img
-    src="{{ page.image[1].src | imgix_url: w: 720, q: 70 }}"
-    sizes="{{ site.sizes_grid2 }}"
-    srcset="{% for width in site.srcset_grid2 %}{{ page.image[1].src | imgix_url: w: width, q: 70 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-    alt="{{ page.image[1].alt }}">
+    {% assign count = 1 %}
+    {% assign quality = 70 %}
+    {% include block/srcset_grid2.html %}
   <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
 </figure>
 

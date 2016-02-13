@@ -1,0 +1,15 @@
+---
+title: Photography
+layout: category
+category: index
+description: 'A collection of photos of nature and urban environments by Oliver Pattison.'
+permalink: /photography/
+
+---
+
+{% for post in site.categories.photography %}
+{% for item in post.image %}
+{% include block/item--photo.html %}
+{% endfor %}
+{% endfor %}
+{% include block/index-nav.html %}

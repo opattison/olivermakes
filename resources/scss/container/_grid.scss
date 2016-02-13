@@ -1,0 +1,87 @@
+/* Flexing grid container for images and other items */
+.grid {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.grid--wide {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  @include bleed-image(1em);
+}
+
+.grid figure + figure,
+.grid--wide figure + figure {
+  margin-top: 1em;
+}
+
+.grid-figure--33 {
+  max-width: calc(100% / 3 * 2);
+  margin: auto;
+
+  @include min-width(l01) {
+    margin: 0;
+  }
+}
+
+@include min-width(s03) {
+  .grid--wide {
+    margin: 1em -2em 0;
+    width: calc(100% + 4em);
+  }
+}
+
+@include min-width(s04) {
+  .grid--wide {
+    margin-top: 1em;
+    @include bleed-image(2.5em);
+    width: calc(100% + 5em);
+  }
+}
+
+@include min-width(l01) {
+  .grid,
+  .grid--wide {
+    flex-flow: row nowrap;
+  }
+
+  .grid--wide {
+    margin: 1em -4.5em 0;
+    max-width: none;
+    width: calc(100% + 9em);
+  }
+
+  .grid-figure {
+    margin-right: 1em;
+    flex: 1 1 50%;
+  }
+
+  .grid figure:last-of-type,
+  .grid--wide figure:last-of-type {
+    margin-right: 0;
+  }
+
+  .grid-figure--33 {
+    width: calc(100% / 3 - 1em);
+    flex: 1 1 calc(100% / 3 - 1em);
+  }
+
+  .grid-figure--66 {
+    width: calc(100% / 3 * 2 - 1em);
+    flex: 1 1 calc(100% / 3 * 2 - 1em);
+  }
+
+  .grid figure + figure,
+  .grid--wide figure + figure {
+    margin-top: 0;
+  }
+}
+
+@include min-width(l03) {
+  .grid--wide {
+    margin: 1em -9em 0;
+    width: calc(100% + 18em);
+  }
+}

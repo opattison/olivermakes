@@ -1,0 +1,9 @@
+# Site configuration
+
+## Imgix configuration
+imgix:
+  source: dev-olivermakes.imgix.net
+
+## Sass configuration
+sass:
+  style: expanded

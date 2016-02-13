@@ -52,4 +52,4 @@ Git will help me keep track of versions and ensure that I lose as little data as
 
 I hope that the best way to maintain an archive that I will be happy to browse years later is to take extra effort now to design it as one. Once I have more written and archived, I look forward to the design challenge of organizing that information. Too much of the web right now is structured as “news”, or otherwise oriented toward ephemerality. I want to see more sites that treat themselves as long-lasting things, with information design and content that is built to last – not to be buried and forgotten about.
 
-I plan to share more about archiving-friendly design practices as they take form. **[Read more writing on archiving](/label/archiving/)** from this site.
+I plan to share more about archiving-friendly design practices as they take form. **[Read more writing on archiving](/labels/archiving/)** from this site.

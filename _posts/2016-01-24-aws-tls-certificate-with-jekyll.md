@@ -142,11 +142,9 @@ If using s3_website to handle S3 and CloudFront, [read about invalidations](http
 
 This is point where I would brew a cup of tea since it will take 5-20 minutes for CloudFront to “progress”. The first couple of times I used CloudFront, I spent more time changing configuration items and waiting for effects to kick in than I actually did reading AWS documentation. CloudFront configuration takes a really long time – take time to try to get the configuration correct initially because each further change requires resetting the clock to zero (and making another cup of tea)!
 
-<img
-  src="{{ page.image[1].src | imgix_url: w: 720, q: 50 }}"
-  sizes="{{ site.sizes_narrow }}"
-  srcset="{% for width in site.srcset %}{{ page.image[1].src | imgix_url: w: width, q: 50 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-  alt="{{ page.image[1].alt }}">
+{% assign count = 1 %}
+{% assign quality = 50 %}
+{% include block/srcset_narrow.html %}
 
 ---
 
@@ -164,7 +162,7 @@ Sign in to the [Route 53 console](https://console.aws.amazon.com/route53/home) a
 Create an `ALIAS` record for the root domain. In the hosted zone select **Create Record Set**. Leave **Name** blank to set the target URL. **Type** should be “A – IPv4 address”. **Alias** should be set to “Yes”. **Alias target** should be set to the CloudFront distribution URL from the distribution created in [step 2](#step-2) (looks like `a12bcdefgh89yz.cloudfront.net.`). Save.
 
 <figure class="image--half screenshot">
-  <img src="{{ page.image[2].src | imgix_url }}" alt="{{ page.image[2].alt }}" />
+  <img src="{{ page.image[2].src | imgix_url }}" alt="{{ page.image[2].alt }}">
 </figure>
 
 As with CloudFront configuration, do not expect the changes to kick in immediately. Redirecting the domain to the configured distribution takes a few minutes.

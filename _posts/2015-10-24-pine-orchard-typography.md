@@ -62,19 +62,15 @@ I avoided the more eclectic Victorian typographic styles which might be illegibl
 
 <div class="grid">
   <figure class="grid-figure">
-    <img
-      src="{{ page.image[1].src | imgix_url: q: 60 }}"
-      sizes="{{ site.sizes_grid2 }}"
-      srcset="{% for width in site.srcset_grid2 %}{{ page.image[1].src | imgix_url: w: width, q: 60 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-      alt="{{ page.image[1].alt }}">
+    {% assign count = 1 %}
+    {% assign quality = 60 %}
+    {% include block/srcset_grid2.html %}
     <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
   </figure>
   <figure class="grid-figure">
-    <img
-      src="{{ page.image[2].src | imgix_url: q: 60 }}"
-      sizes="{{ site.sizes_grid2 }}"
-      srcset="{% for width in site.srcset_grid2 %}{{ page.image[2].src | imgix_url: w: width, q: 70 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-      alt="{{ page.image[2].alt }}">
+    {% assign count = 2 %}
+    {% assign quality = 70 %}
+    {% include block/srcset_grid2.html %}
     <figcaption>{{ page.image[2].caption | markdownify }}</figcaption>
   </figure>
 </div>
@@ -107,27 +103,20 @@ For a small shop, memorable and appropriate typography effectively served the bu
 
 <div class="grid--wide">
   <figure class="grid-figure screenshot">
-    <img
-      src="{{ page.image[4].src | imgix_url }}"
-      sizes="{{ site.sizes_grid2 }}"
-      srcset="{% for width in site.srcset_grid2 %}{{ page.image[4].src | imgix_url: w: width }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-      alt="{{ page.image[4].alt }}">
+    {% assign count = 4 %}
+    {% include block/srcset_grid2--png.html %}
   </figure>
   <figure class="grid-figure screenshot">
-    <img
-      src="{{ page.image[5].src | imgix_url: w: 720, q: 70 }}"
-      sizes="{{ site.sizes_grid2 }}"
-      srcset="{% for width in site.srcset_grid2 %}{{ page.image[5].src | imgix_url: w: width, q: 70 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-      alt="{{ page.image[5].alt }}">
+    {% assign count = 5 %}
+    {% assign quality = 70 %}
+    {% include block/srcset_grid2.html %}
   </figure>
 </div>
 
 <figure class="image--wide screenshot">
-  <img
-    src="{{ page.image[6].src | imgix_url: w: 720, q: 70 }}"
-    sizes="{{ site.sizes }}"
-    srcset="{% for width in site.srcset %}{{ page.image[6].src | imgix_url: w: width, q: 70 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-    alt="{{ page.image[6].alt }}">
+  {% assign count = 6 %}
+  {% assign quality = 70 %}
+  {% include block/srcset.html %}
   <figcaption>{{ page.image[6].caption | markdownify }}</figcaption>
 </figure>
 

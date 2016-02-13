@@ -1,0 +1,135 @@
+title: Oliver Pattison
+author:
+  name: Oliver Pattison
+  email: oliverpattison@gmail.com
+  twitter: '@olivermakes'
+description: 'I am Oliver Pattison, a designer focused on the future of the web.'
+
+license:
+  short: 'CC BY-NC 4.0'
+  long: 'Creative Commons Attribution-NonCommercial 4.0 International'
+
+# Content
+
+## Referenced URLs (internal and external links for inline use)
+link:
+  attribution: http://creativecommons.org/licenses/by-nc/4.0/
+  jean: http://jeancflanagan.com
+  github: https://github.com/opattison
+  pinboard: https://pinboard.in/u:opattison
+  source: http://github.com/opattison/olivermakes
+  subscribe:
+    full: https://olivermak.es/full.xml
+    writing: https://olivermak.es/writing/feed.xml
+    photography: https://olivermak.es/photography/feed.xml
+    projects: https://olivermak.es/projects/feed.xml
+  twitter: http://twitter.com/olivermakes
+  vsco: http://olivermakes.vsco.co
+
+## Collections
+
+collections:
+  patterns:
+    output: true
+    permalink: patterns/:path/
+
+# Site configuration
+
+## Gems configuration
+gems:
+  - jekyll-archives
+  - sass
+  - imgix
+
+## Imgix configuration
+imgix:
+  source: olivermakes.imgix.net
+
+## Markdown configuration
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  footnote_backlink: '&#8638;'
+
+## Permalink configuration
+permalink: /:year/:month/:title/
+
+## Jekyll Archives configuration
+jekyll-archives:
+  enabled:
+    - year
+    - month
+    - categories
+    - tags
+  layouts:
+    year: archive-time
+    month: archive-time
+    category: archive-category
+    tag: archive-tag
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    tag: '/labels/:name/'
+    category: '/:name/archive/'
+
+## Sass configuration
+sass:
+  sass_dir: resources/scss
+  style: compressed
+
+## Project configuration
+include:
+  - _pages
+
+exclude:
+  - _config
+  - Gemfile*
+  - node_modules
+  - package.json
+  - resources/scss
+
+## Configuration URLs
+domain: olivermak.es
+url: https://olivermak.es
+patterns_url: /patterns
+image_url: /images
+icon_url: /icons
+style_url: /resources
+script_url: /resources
+fragments_url: /resources/fragments
+source_url:
+  repo: https://github.com/opattison/olivermakes
+  blob: https://github.com/opattison/olivermakes/blob/master
+  commits: https://github.com/opattison/olivermakes/commits/master
+  issues: https://github.com/opattison/olivermakes/issues
+  sass: https://github.com/opattison/olivermakes/blob/master/resources/scss
+
+## srcset implementation
+sizes: '(min-width: 140em) 1512px, (min-width: 95em) 1296px, (min-width: 80em) 1080px, (min-width: 60em) 900px, (min-width: 45em) 720px, 100vw'
+sizes_narrow: '(min-width: 140em) 1008, (min-width: 95em) 864px, (min-width: 80em) 720px, (min-width: 45em) 620px, 100vw'
+sizes_grid2: '(min-width: 115em) 742px, (min-width: 95em) 636px, (min-width: 80em) 530px, (min-width: 60em) 440px, (min-width: 45em) 720px, 100vw'
+srcset:
+  - 480
+  - 640
+  - 720
+  - 900
+  - 1080
+  - 1260
+  - 1440
+  - 1800
+srcset_grid2:
+  - 440
+  - 636
+  - 720
+  - 880
+  - 954
+  - 1080
+
+## Mapbox authentication and configuration
+mapbox_key: pk.eyJ1Ijoib3BhdHRpc29uIiwiYSI6Il9DU3p1MEkifQ.3cvRQB5hVIONMpDAflBUNw
+photo_mapid: opattison.942a5f69
+
+## Google site verification
+google_verification: v50CkzaVPDL_gBaZnlGdxJmfnZDYCP74l1JTMgLsyp4

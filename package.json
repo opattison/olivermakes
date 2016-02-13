@@ -7,9 +7,16 @@
     "velocity-animate": "1.2.3"
   },
   "scripts": {
-    "concatenate": "uglifyjs resources/scripts/velocity.js resources/scripts/velocity.ui.js resources/scripts/site.js --comments -b -o resources/scripts/all.min.js",
-    "minify": "uglifyjs resources/scripts/velocity.js resources/scripts/velocity.ui.js resources/scripts/site.js --comments -o resources/scripts/all.min.js",
-    "watch": "watch 'npm run concatenate' resources/scripts/ --wait=20"
+    "js-minify": "uglifyjs _site/resources/js/velocity.js _site/resources/js/velocity.ui.js _site/resources/js/site.js -o resources/all.min.js --comments",
+    "watch": "watch 'npm run js-minify' _site/resources/js/ --wait=2",
+    "jekyll-serve": "JEKYLL_ENV=production bundle exec jekyll serve --config _config/prod.yml,_config/dev.yml",
+    "jekyll-dev": "JEKYLL_ENV=production bundle exec jekyll build --config _config/prod.yml,_config/dev.yml",
+    "jekyll-prod": "JEKYLL_ENV=production bundle exec jekyll build --config _config/prod.yml",
+    "deploy-dev": "s3_website push --config-dir _config",
+    "deploy-prod": "DEPLOY=production s3_website push --config-dir _config",
+    "start": "npm run jekyll-dev && npm run js-minify && npm run jekyll-serve",
+    "dev": "npm run jekyll-dev && npm run js-minify && npm run deploy-dev",
+    "prod": "npm run jekyll-prod && npm run js-minify && npm run deploy-prod"
   },
   "repository": {
     "type": "git",
