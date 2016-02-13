@@ -17,13 +17,3 @@ gzip:
   - .js
 
 s3_reduced_redundancy: <%= ENV['DEPLOY'] == 'production' ? '' : 'true' %>
-
-exclude_from_upload:
-  - .DS_Store
-  - .gitignore
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - package.json
-  - Rakefile
-  - s3_website.yml
