@@ -8,6 +8,7 @@ option:
 date: 2014-10-31 18:25
 updated: 2016-02-02 03:46
 unique_id: 2014-10-31:about
+permalink: /about/
 description: 'A short biography of Oliver Pattison, as well as details about how this website was made.'
 image:
   - src: /images/2011-11-10-oliver-bench-jeancflanagan-ccbync.jpg

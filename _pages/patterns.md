@@ -7,6 +7,7 @@ option:
 date: 2014-10-31 18:25
 updated: 2016-01-26 23:04
 unique_id: 2014-10-31:patterns
+permalink: /patterns/
 description: 'A collection of patterns for this website.'
 image:
   - src: /images/2015-10-29-patchwork-270deg.svg

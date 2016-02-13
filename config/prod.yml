@@ -81,12 +81,17 @@ sass:
   style: compressed
 
 ## Project configuration
-exclude: [s3_website.yml, Rakefile]
+include:
+  - _pages
+
+exclude:
+  - s3_website.yml
+  - Rakefile
 
 ## Configuration URLs
 domain: olivermak.es
 url: https://olivermak.es
-patterns_url: /patterns
+patterns_url: /patterns/
 image_url: /images
 icon_url: /icons
 style_url: /resources/style
