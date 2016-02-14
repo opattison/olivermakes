@@ -48,6 +48,7 @@
 - [npm for dependencies and building](https://www.npmjs.com)
 - [uglifyJS](https://github.com/mishoo/UglifyJS2)
 - [watch](https://github.com/mikeal/watch)
+- [npm-run-all](https://github.com/mysticatea/npm-run-all)
 
 ### Front-end
 
