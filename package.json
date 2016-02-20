@@ -8,6 +8,7 @@
     "watch": "0.17"
   },
   "scripts": {
+    "js:upgrade": "mv -f node_modules/velocity-animate/velocity.js resources/js/velocity.js && mv -f node_modules/velocity-animate/velocity.ui.js resources/js/velocity.ui.js",
     "js:minify": "uglifyjs resources/js/velocity.js resources/js/velocity.ui.js resources/js/site.js -o resources/all.min.js --comments",
     "js:watch": "watch 'npm run js:minify' resources/js/ --wait=2",
     "jekyll:serve": "JEKYLL_ENV=production bundle exec jekyll serve --config _config/prod.yml,_config/dev.yml",
@@ -15,7 +16,7 @@
     "jekyll:prod": "JEKYLL_ENV=production bundle exec jekyll build --config _config/prod.yml",
     "deploy:dev": "s3_website push --config-dir _config",
     "deploy:prod": "DEPLOY=production s3_website push --config-dir _config",
-    "start": "npm-run-all js:minify jekyll:serve",
+    "start": "npm-run-all --parallel js:watch jekyll:serve",
     "dev": "npm-run-all jekyll:dev js:minify deploy:dev",
     "prod": "npm-run-all jekyll:prod js:minify deploy:prod"
   },
