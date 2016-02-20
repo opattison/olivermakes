@@ -16,7 +16,7 @@
     "jekyll:prod": "JEKYLL_ENV=production bundle exec jekyll build --config _config/prod.yml",
     "deploy:dev": "s3_website push --config-dir _config",
     "deploy:prod": "DEPLOY=production s3_website push --config-dir _config",
-    "start": "npm-run-all js:minify jekyll:serve",
+    "start": "npm-run-all --parallel js:watch jekyll:serve",
     "dev": "npm-run-all jekyll:dev js:minify deploy:dev",
     "prod": "npm-run-all jekyll:prod js:minify deploy:prod"
   },
