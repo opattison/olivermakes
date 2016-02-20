@@ -8,6 +8,7 @@
     "watch": "0.17"
   },
   "scripts": {
+    "js:upgrade": "mv -f node_modules/velocity-animate/velocity.js resources/js/velocity.js && mv -f node_modules/velocity-animate/velocity.ui.js resources/js/velocity.ui.js",
     "js:minify": "uglifyjs resources/js/velocity.js resources/js/velocity.ui.js resources/js/site.js -o resources/all.min.js --comments",
     "js:watch": "watch 'npm run js:minify' resources/js/ --wait=2",
     "jekyll:serve": "JEKYLL_ENV=production bundle exec jekyll serve --config _config/prod.yml,_config/dev.yml",
