@@ -11,7 +11,7 @@ GEM
     ffi (1.9.10)
     imgix (1.0.0)
       addressable
-    jekyll (3.0.3)
+    jekyll (3.1.2)
       colorator (~> 0.1)
       jekyll-sass-converter (~> 1.0)
       jekyll-watch (~> 1.1)
@@ -51,7 +51,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (~> 3.0.2)
+  jekyll (~> 3.1)
   jekyll-archives
   jekyll-imgix
   kramdown
