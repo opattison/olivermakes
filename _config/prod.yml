@@ -81,6 +81,7 @@ sass:
 
 ## Project configuration
 include:
+  - _feeds
   - _pages
 
 exclude:
