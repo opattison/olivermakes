@@ -22,7 +22,7 @@ h5 {
 }
 
 a {
-  color: $boldred;
+  color: $red;
 }
 
 a:hover,
@@ -95,18 +95,18 @@ mark {
 }
 
 ::-moz-selection {
-  background: $boldblue;
+  background: $blue;
   color: $whiter;
 }
 
 ::selection {
-  background: $boldblue;
+  background: $blue;
   color: $whiter;
 }
 
 #skip {
   color: $whiter;
-  background-color: $boldred;
+  background-color: $red;
 }
 
 .category {
@@ -283,7 +283,7 @@ mark {
 }
 
 .item--photo-description {
-  background-color: transparent;
+  background-color: $pure-1;
 }
 
 .item--photo a:hover,
@@ -293,7 +293,7 @@ mark {
 
 .item--photo a:hover h1,
 .item--photo a:focus h1 {
-  color: $boldblue;
+  color: $darkblue;
 }
 
 .item--photo a:hover p,

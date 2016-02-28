@@ -1,12 +1,9 @@
 - name: blue
   hsl: 'hsla(204, 50%, 45%, 1)'
   hex: '#397eac'
-- name: boldblue
-  hsl: 'hsla(204, 80%, 40%, 1)'
-  hex: '#1476b8'
 - name: darkblue
-  hsl: 'hsla(204, 80%, 32%, 1)'
-  hex: '#105f93'
+  hsl: 'hsla(204, 50%, 33%, 1)'
+  hex: '#2a5d7e'
 - name: grayblue
   hsl: 'hsla(204, 30%, 80%, 1)'
   hex: '#bdcfdb'
@@ -17,11 +14,8 @@
   hsl: 'hsla(225, 35%, 52%, 1)'
   hex: '#5a6faf'
 - name: red
-  hsl: 'hsla(4, 60%, 47%, 1)'
-  hex: '#cc3d33'
-- name: boldred
-  hsl: 'hsla(4, 80%, 40%, 1)'
-  hex: '#bd1b0f'
+  hsl: 'hsla(4, 60%, 42%, 1)'
+  hex: '#ab332b'
 - name: green
   hsl: 'hsla(144, 50%, 35%, 1)'
   hex: '#2d8650'
