@@ -1,12 +1,3 @@
-/* Color processing */
-@function hsl($h, $s, $l) {
-  @return unquote('hsl(#{$h}, #{$s}, #{$l})');
-}
-
-@function hsla($h, $s, $l, $a) {
-  @return unquote('hsla(#{$h}, #{$s}, #{$l}, #{$a})');
-}
-
 /* Colors */
 $black: hsla(204, 10%, 12%, 1);
 $gray00: hsla(204, 10%, 18%, 1);
