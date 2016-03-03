@@ -141,7 +141,6 @@
 }
 
 .item-time {
-  font-size: .875em;
   font-weight: $weight-thin;
 }
 
@@ -185,10 +184,16 @@
 
 .item--photo-description h1 {
   color: inherit;
-  font-size: 1.25em;
+  font-size: 1.5em;
   font-weight: $weight-medium;
 
   @include min-width(m02) {
-    font-size: 1em;
+    font-size: 1.125em;
+  }
+}
+
+.item--photo-description p {
+  @include min-width(m02) {
+    font-size: .875em;
   }
 }

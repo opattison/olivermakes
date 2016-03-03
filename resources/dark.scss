@@ -70,8 +70,7 @@ samp {
 }
 
 .item-location a {
-  color: $gray07;
-  @include a-underline($gray07--trans90, $lightblue);
+  @include a-underline($pink--trans50, $lightblue);
 }
 
 .core {
