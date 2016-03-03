@@ -7,26 +7,26 @@ $colors: (
   shade: hsla(204, 10%, 12%, 1)
 );
 
-// Output shades
-$black: s(shade);
-$gray00: s(shade, 18%);
-$gray01: s(shade, 24%);
-$gray02: s(shade, 32%);
-$gray03: s(shade, 40%);
-$gray04: s(shade, 72%);
-$gray05: s(shade, 80%);
-$gray06: s(shade, 88%);
-$gray07: s(shade, 92%);
-$white: s(shade, 95%);
-$whiter: s(shade, 97%);
-
 // Output colors
 $blue: c(blue);
-$lightblue: s(blue, 88%);
+$lightblue: c(blue, 88%);
 $violet: c(violet);
 $red: c(red);
-$pink: s(red, 88%);
+$pink: c(red, 88%);
 $green: c(green);
+
+// Output shades
+$black: c(shade);
+$gray00: c(shade, 18%);
+$gray01: c(shade, 24%);
+$gray02: c(shade, 32%);
+$gray03: c(shade, 40%);
+$gray04: c(shade, 72%);
+$gray05: c(shade, 80%);
+$gray06: c(shade, 88%);
+$gray07: c(shade, 92%);
+$white: c(shade, 95%);
+$whiter: c(shade, 97%);
 
 // Output transparent colors and shades
 $blue--trans20: trans20($blue);

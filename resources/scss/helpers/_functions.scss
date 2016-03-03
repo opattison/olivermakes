@@ -1,64 +1,39 @@
-@function dark($value) {
-  $color: scale-color($value, $lightness: -75%);
+@function c($value, $color-lightness: false) {
+  $color: map-get($colors, $value);
+  $color-hue: hue($color);
+  $color-saturation: saturation($color);
 
-  @return $color;
-}
+  @if $color-lightness == false {
+    $color-lightness: lightness($color);
+  }
 
-@function light($value) {
-  $color: scale-color($value, $lightness: 75%);
+  $adjusted-lightness: $color-lightness;
 
-  @return $color;
+  $output: hsl($color-hue, $color-saturation, $adjusted-lightness);
+
+  @return $output;
 }
 
 @function trans90($value) {
-  $color: adjust-color($value, $alpha: -.10);
+  $color: scale-color($value, $alpha: -10%);
 
   @return $color;
 }
 
 @function trans50($value) {
-  $color: adjust-color($value, $alpha: -.50);
+  $color: scale-color($value, $alpha: -50%);
 
   @return $color;
 }
 
 @function trans20($value) {
-  $color: adjust-color($value, $alpha: -.80);
+  $color: scale-color($value, $alpha: -80%);
 
   @return $color;
 }
 
 @function trans01($value) {
-  $color: adjust-color($value, $alpha: -.99);
+  $color: scale-color($value, $alpha: -99%);
 
   @return $color;
-}
-
-@function c($value, $color-lightness: false) {
-  $color: map-get($colors, $value);
-
-  @if $color-lightness == 'dark' {
-    $color: dark($color);
-  }
-  @if $color-lightness == 'light' {
-    $color: light($color);
-  }
-
-  @return $color;
-};
-
-@function s($value, $shade-lightness: false) {
-  $shade: map-get($colors, $value);
-  $shade-hue: hue($shade);
-  $shade-saturation: saturation($shade);
-
-  @if $shade-lightness == false {
-    $shade-lightness: lightness($shade);
-  }
-
-  $adjusted-lightness: $shade-lightness;
-
-  $output: hsl($shade-hue, $shade-saturation, $adjusted-lightness);
-
-  @return $output;
 }
