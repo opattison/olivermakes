@@ -75,11 +75,6 @@ hr {
   background-color: $gray04;
 }
 
-.ancillary {
-  background-color: $white;
-  color: $gray01;
-}
-
 p > code,
 li > code,
 samp {
@@ -138,11 +133,17 @@ mark {
 
 .focus a {
   color: $red;
+  @include a-underline($red--trans20, $violet);
 }
 
 .focus a:hover,
 .focus a:focus {
-  color: $gray02;
+  color: $violet;
+}
+
+.ancillary {
+  background-color: $white;
+  color: $gray03;
 }
 
 .footnotes,
