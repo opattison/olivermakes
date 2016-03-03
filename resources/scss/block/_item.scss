@@ -67,6 +67,10 @@
   font-size: 1.5em;
 }
 
+.item-description p {
+  line-height: 1.25;
+}
+
 .item--short-description {
   height: auto;
   padding: 1em 2em;
@@ -94,7 +98,6 @@
 }
 
 .item--section-description p {
-  line-height: 1.25;
   margin-top: 1.5em;
   text-align: right;
 }
@@ -134,10 +137,6 @@
     text-align: left;
     padding-right: 3em;
   }
-}
-
-.item-summary {
-  line-height: 1.25;
 }
 
 .item-time {

@@ -1,6 +1,6 @@
 ---
 title: 'Membership design for Casey Trees'
-layout: dubbel
+layout: singel
 option:
   - code
   - patterns
@@ -135,7 +135,7 @@ Of the colors above, the first six were newly chosen for the membership campaign
 
 ### Progressively disclosing content
 
-We had so many membership benefits to list that the excerpts explaining the benefits would be long: at least 100 to over 300 words, with a lot of repetition from one level to the next. I decided to use the HTML5 `<details>` and `<summary>` elements to manage this density. This is a JavaScript-free[^2] method for [progressively disclosing](http://en.wikipedia.org/wiki/Progressive_disclosure) content. We would include only the brief summary of each benefit, such as “**Invitation for you and a guest to our annual fall event**” (the `<summary>`) with more information available in the `<details>` element activated by a click or a tap.
+We had so many membership benefits to list that the excerpts explaining the benefits would be long: at least 100 to over 300 words, with a lot of repetition from one level to the next. I decided to use the HTML5 `<details>` and `<summary>` elements to manage this density. This is a JavaScript-free method [^2] for [progressively disclosing](http://en.wikipedia.org/wiki/Progressive_disclosure) content. We would include only the brief summary of each benefit, such as “**Invitation for you and a guest to our annual fall event**” (the `<summary>`) with more information available in the `<details>` element activated by a click or a tap.
 
 ## Turning custom styles into reusable patterns
 

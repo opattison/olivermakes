@@ -1,6 +1,6 @@
 ---
-title: 'Technical documentation for Casey&nbsp;Trees'
-layout: dubbel
+title: 'Technical documentation for Casey Trees'
+layout: singel
 option:
   - minor
   - no-imgix-source

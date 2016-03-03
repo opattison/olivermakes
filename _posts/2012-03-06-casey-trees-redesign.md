@@ -1,6 +1,6 @@
 ---
-title: 'Responsive redesign for Casey&nbsp;Trees'
-layout: dubbel
+title: 'Responsive redesign for Casey Trees'
+layout: singel
 option:
   - no-imgix-source
 category: 'projects'
@@ -52,14 +52,12 @@ We turned the project around in only a few months, with design and content work 
 <figure class="grid-figure--66 grid-figure screenshot">
   <img
     src="{{ page.image[1].src | imgix_url }}"
-    alt="{{ page.image[1].alt }}"
-  >
+    alt="{{ page.image[1].alt }}">
 </figure>
 <figure class="grid-figure--33 grid-figure screenshot">
   <img
     src="{{ page.image[2].src | imgix_url }}"
-    alt="{{ page.image[2].alt }}"
-  >
+    alt="{{ page.image[2].alt }}">
 </figure>
 </div>
 
@@ -96,7 +94,6 @@ Feedback from users of the site was very positive, and staff appreciated the eas
 {{ related | markdownify }}
 </aside>
 
-{% capture longterm %}
 ### Long-term gain
 
 With ever-shorter life spans of websites, the 2012 redesign has so far lasted quite a while without the need for a substantial overhaul. As I write this in 2015, the site is entering its third year since the redesign. Nothing lasts forever on the web, but it is refreshing to see a smaller budget website last a few years before the organization's needs outgrow the design.
@@ -107,10 +104,5 @@ Responsive design is about more than merely reaching a diversity of screens.
 {:.focus}
 
 This approach gave Casey Trees not only a better experience for visitors to the site, but more flexibility in presenting its mission, and more effective methods of communicating with people. Responsive thinking is a fundamentally more empathetic approach to an audience – one that can be felt directly regardless of user capabilities or the device they happen to be using.
-{% endcapture %}
-
-<div class="flow--side">
-  {{ longterm | markdownify }}
-</div>
 
 [^1]: Technically, responsive design is about designing with a flexible grid layout, using fluid image widths, and using CSS media queries to conditionally control layout and presentation for different device sizes. As Ethan Marcotte put it in his foundational <i class="publication"><a href="http://www.abookapart.com/products/responsive-web-design">Responsive Web Design</a></i>): “… design that can adapt to the constraints of the browser window or device that renders it, creating a design that almost responds to the user’s needs.”
