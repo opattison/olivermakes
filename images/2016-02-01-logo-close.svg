@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="600px" height="400px" viewBox="0 0 600 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.5.1 (25234) - http://www.bohemiancoding.com/sketch -->
+<svg width="600px" height="400px" viewBox="0 0 600 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>2016-02-01-logo-close</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="2016-02-01-logo-close" sketch:type="MSArtboardGroup">
-            <g id="layers" sketch:type="MSLayerGroup" transform="translate(0.000000, -88.442979)">
-                <circle id="layer16" fill="#BD1B0F" sketch:type="MSShapeGroup" cx="750" cy="750" r="750"></circle>
-                <circle id="layer15" fill="#373E43" sketch:type="MSShapeGroup" cx="750" cy="750" r="726.5625"></circle>
-                <circle id="layer14" fill="#BD1B0F" sketch:type="MSShapeGroup" cx="750" cy="750" r="673.828125"></circle>
-                <circle id="layer13" fill="#373E43" sketch:type="MSShapeGroup" cx="750" cy="750" r="615.234375"></circle>
-                <circle id="layer12" fill="#CC3D33" sketch:type="MSShapeGroup" cx="750" cy="750" r="562.5"></circle>
-                <circle id="layer11" fill="#373E43" sketch:type="MSShapeGroup" cx="750" cy="750" r="527.34375"></circle>
-                <circle id="layer10" fill="#49535A" sketch:type="MSShapeGroup" cx="750" cy="750" r="486.328125"></circle>
-                <circle id="layer9" fill="#397EAC" sketch:type="MSShapeGroup" cx="750" cy="750" r="427.734375"></circle>
-                <circle id="layer8" fill="#5A6FAF" sketch:type="MSShapeGroup" cx="750" cy="750" r="375"></circle>
-                <circle id="layer7" fill="#5C6870" sketch:type="MSShapeGroup" cx="750" cy="750" r="328.125"></circle>
-                <circle id="layer6" fill="#105F93" sketch:type="MSShapeGroup" cx="750" cy="750" r="304.6875"></circle>
-                <circle id="layer5" fill="#397EAC" sketch:type="MSShapeGroup" cx="750" cy="750" r="281.25"></circle>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2016-02-01-logo-close">
+            <g id="layers" transform="translate(0.000000, -106.000000)">
+                <circle id="layer16" fill="#AB332B" cx="768" cy="768" r="768"></circle>
+                <circle id="layer15" fill="#373E43" cx="768" cy="768" r="744"></circle>
+                <circle id="layer14" fill="#AB332B" cx="768" cy="768" r="690"></circle>
+                <circle id="layer13" fill="#49535A" cx="768" cy="768" r="630"></circle>
+                <circle id="layer12" fill="#AB332B" cx="768" cy="768" r="576"></circle>
+                <circle id="layer11" fill="#373E43" cx="768" cy="768" r="540"></circle>
+                <circle id="layer10" fill="#49535A" cx="768" cy="768" r="498"></circle>
+                <circle id="layer9" fill="#3676A1" cx="768" cy="768" r="438"></circle>
+                <circle id="layer8" fill="#4B5F9C" cx="768" cy="768" r="384"></circle>
+                <circle id="layer7" fill="#5C6870" cx="768" cy="768" r="336"></circle>
+                <circle id="layer6" fill="#49535A" cx="768" cy="768" r="312"></circle>
+                <circle id="layer5" fill="#3676A1" cx="768" cy="768" r="288"></circle>
             </g>
         </g>
     </g>

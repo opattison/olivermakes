@@ -3,23 +3,23 @@
     <title>icon512-full</title>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="icon512-full">
-            <g id="layers">
-                <circle id="layer16" fill="#BD1B0F" cx="256" cy="256" r="256"></circle>
-                <circle id="layer15" fill="#373E43" cx="256" cy="256" r="248"></circle>
-                <circle id="layer14" fill="#BD1B0F" cx="256" cy="256" r="230"></circle>
-                <circle id="layer13" fill="#373E43" cx="256" cy="256" r="210"></circle>
-                <circle id="layer12" fill="#CC3D33" cx="256" cy="256" r="192"></circle>
-                <circle id="layer11" fill="#373E43" cx="256" cy="256" r="180"></circle>
-                <circle id="layer10" fill="#49535A" cx="256" cy="256" r="166"></circle>
-                <circle id="layer9" fill="#397EAC" cx="256" cy="256" r="146"></circle>
-                <circle id="layer8" fill="#5A6FAF" cx="256" cy="256" r="128"></circle>
-                <circle id="layer7" fill="#5C6870" cx="256" cy="256" r="112"></circle>
-                <circle id="layer6" fill="#105F93" cx="256" cy="256" r="104"></circle>
-                <circle id="layer5" fill="#397EAC" cx="256" cy="256" r="96"></circle>
-                <circle id="layer4" fill="#B0B9BF" cx="256" cy="256" r="80"></circle>
-                <circle id="layer3" fill="#1476B8" cx="256" cy="256" r="68"></circle>
-                <circle id="layer2" fill="#5C6870" cx="256" cy="256" r="52"></circle>
-                <circle id="layer1" fill="#397EAC" cx="256" cy="256" r="36"></circle>
+            <g class="logo-layers">
+                <circle class="logo-layer16" fill="#AB332B" cx="256" cy="256" r="256"></circle>
+                <circle class="logo-layer15" fill="#373E43" cx="256" cy="256" r="248"></circle>
+                <circle class="logo-layer14" fill="#AB332B" cx="256" cy="256" r="230"></circle>
+                <circle class="logo-layer13" fill="#49535A" cx="256" cy="256" r="210"></circle>
+                <circle class="logo-layer12" fill="#AB332B" cx="256" cy="256" r="192"></circle>
+                <circle class="logo-layer11" fill="#373E43" cx="256" cy="256" r="180"></circle>
+                <circle class="logo-layer10" fill="#49535A" cx="256" cy="256" r="166"></circle>
+                <circle class="logo-layer9" fill="#3676A1" cx="256" cy="256" r="146"></circle>
+                <circle class="logo-layer8" fill="#4B5F9C" cx="256" cy="256" r="128"></circle>
+                <circle class="logo-layer7" fill="#5C6870" cx="256" cy="256" r="112"></circle>
+                <circle class="logo-layer6" fill="#49535A" cx="256" cy="256" r="104"></circle>
+                <circle class="logo-layer5" fill="#3676A1" cx="256" cy="256" r="96"></circle>
+                <circle class="logo-layer4" fill="#B0B9BF" cx="256" cy="256" r="80"></circle>
+                <circle class="logo-layer3" fill="#49535A" cx="256" cy="256" r="68"></circle>
+                <circle class="logo-layer2" fill="#5C6870" cx="256" cy="256" r="52"></circle>
+                <circle class="logo-layer1" fill="#3676A1" cx="256" cy="256" r="36"></circle>
             </g>
         </g>
     </g>
