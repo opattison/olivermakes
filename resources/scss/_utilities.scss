@@ -48,7 +48,10 @@
 .text-after {
   border-radius: .125em;
   color: $white;
-  padding: .125em .375em;
+  font-family: $source-code-pro;
+  font-size: .875em;
+  font-weight: $weight-medium;
+  padding: .125em .5em;
 }
 
 .text-before {
