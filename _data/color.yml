@@ -1,21 +1,18 @@
 - name: blue
-  hsl: 'hsla(204, 50%, 45%, 1)'
-  hex: '#397eac'
-- name: darkblue
-  hsl: 'hsla(204, 50%, 33%, 1)'
-  hex: '#2a5d7e'
-- name: grayblue
-  hsl: 'hsla(204, 30%, 80%, 1)'
-  hex: '#bdcfdb'
+  hsl: 'hsl(204, 50%, 42%)'
+  hex: '#3676a1'
+- name: lightblue
+  hsl: 'hsl(204, 50%, 88%)'
+  hex: '#d1e3f0'
 - name: pink
-  hsl: 'hsla(4, 30%, 80%, 1)'
-  hex: '#dbbfbd'
+  hsl: 'hsl(4, 60%, 88%)'
+  hex: '#f3d0ce'
 - name: violet
-  hsl: 'hsla(225, 35%, 52%, 1)'
-  hex: '#5a6faf'
+  hsl: 'hsl(225, 35%, 45%)'
+  hex: '#4b5f9c'
 - name: red
-  hsl: 'hsla(4, 60%, 42%, 1)'
+  hsl: 'hsl(4, 60%, 42%)'
   hex: '#ab332b'
 - name: green
-  hsl: 'hsla(144, 50%, 35%, 1)'
+  hsl: 'hsl(144, 50%, 35%)'
   hex: '#2d8650'

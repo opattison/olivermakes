@@ -1,10 +1,12 @@
-  - name: gray01-90
+  - name: gray01--trans90
     hsl: 'hsla(204, 10%, 24%, .9)'
-  - name: gray07-90
+  - name: gray07--trans90
     hsl: 'hsla(204, 10%, 92%, .9)'
-  - name: pure-1
+  - name: trans01
     hsl: 'hsla(0, 0%, 100%, .01)'
-  - name: grayblue-50
-    hsl: 'hsla(204, 30%, 80%, .5)'
-  - name: pink-50
-    hsl: 'hsla(4, 30%, 80%, .5)'
+  - name: pink--trans50
+    hsl: 'hsla(4, 60%, 88%, .5)'
+  - name: blue--trans20
+    hsl: 'hsla(204, 50%, 42%, .2)'
+  - name: red--trans20
+    hsl: 'hsla(4, 60%, 42%, .2)'
