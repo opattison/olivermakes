@@ -32,9 +32,9 @@ source: https://github.com/opattison/olivermakes
 $ratio: 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
 ```
 
-### Source Code Pro font family (400)
+### Source Code Pro font family (500)
 
-{% include block/pattern--type.html class='monospace' %}
+{% include block/pattern--type.html class='monospace w500' %}
 
 ```
 $source-code-pro: 'source-code-pro', Menlo, Consolas, monospace;

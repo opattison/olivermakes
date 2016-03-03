@@ -27,7 +27,7 @@
 - Amazon CloudFront, S3 and [imgix](https://www.imgix.com) for hosting
 - [s3_website](https://github.com/laurilehmijoki/s3_website) for deploying to Amazon Web Services
 - GitHub for version control
-- TypeKit for fonts: 300, 400 and 500 weights of [the Ratio typeface](http://cargocollective.com/pstype/Ratio) and 400 weight of [Source Code Pro](http://adobe-fonts.github.io/source-code-pro/)) are [hosted by Typekit](https://typekit.com/colophons/ojm0eig)
+- TypeKit for fonts: 300, 400 and 500 weights of [the Ratio typeface](http://cargocollective.com/pstype/Ratio) and 500 weight of [Source Code Pro](http://adobe-fonts.github.io/source-code-pro/)) are [hosted by Typekit](https://typekit.com/colophons/ojm0eig)
 - `flexbox` for flexible CSS layout
 - Responsive images using [`srcset` syntax](https://responsiveimages.org), processed with imgix
 - Generation of archives with the [Jekyll Archives](https://github.com/jekyll/jekyll-archives) gem
