@@ -30,19 +30,24 @@ image:
   - src: /images/2016-02-09-pine-orchard-full-desktop.jpg
     alt: 'About page for the Pine Orchard Prints site'
     date: 2016-02-09
+    quality: 70
   - src: /images/2016-02-09-pine-orchard-purchase-1.jpg
     alt: 'Add to cart action on a product page'
     date: 2016-02-09
+    quality: 70
     caption: 'Responsive interaction flow from product page to cart.'
   - src: /images/2016-02-09-pine-orchard-purchase-2.jpg
     alt: 'Item added to cart, indicated after the action is taken'
     date: 2016-02-09
+    quality: 70
   - src: /images/2016-02-09-pine-orchard-purchase-3.jpg
     alt: 'Item within a cart'
     date: 2016-02-09
+    quality: 70
   - src: /images/2016-02-09-pine-orchard-tablet-collections.jpg
     alt: 'View of collections on a tablet screen, featuring images of a single print and sample items'
     date: 2016-02-09
+    quality: 60
 
 ---
 
@@ -50,7 +55,6 @@ Pine Orchard Prints is a family business: I worked directly with my own family 
 
 <figure class="image--narrow screenshot">
   {% assign count = 1 %}
-  {% assign quality = 70 %}
   {% include block/srcset_narrow.html %}
 </figure>
 
@@ -111,7 +115,6 @@ After discovering the most important features to highlight, along with the infor
 
 <figure class="image--wide screenshot">
   {% assign count = 5 %}
-  {% assign quality = 60 %}
   {% include block/srcset.html %}
 </figure>
 

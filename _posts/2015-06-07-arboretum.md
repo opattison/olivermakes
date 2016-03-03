@@ -21,10 +21,11 @@ image:
     iso: 320
     latitude: 38.9124
     longitude: -76.9556
+    zoom: 16
     location: 'Asian Collections, National Arboretum'
     description: 'Processed ‘Kodak E100G Vibrant’ in VSCO Film'
+    quality: 60
     aspect: '3:2'
-    zoom: 16
   - src: /images/2014-06-29-arboretum-olivermakes-ccbync.jpg
     alt: 'Sunlit evergreen plants in a garden'
     date: 2014-06-29
@@ -36,20 +37,19 @@ image:
     iso: 200
     latitude: 38.9124
     longitude: -76.9556
-    location: 'Asian Collections, National Arboretum'
-    aspect: '3:2'
     zoom: 16
+    location: 'Asian Collections, National Arboretum'
+    quality: 60
+    aspect: '3:2'
 
 ---
 
 <figure class="image--wide">
   {% assign count = 0 %}
-  {% assign quality = 60 %}
   {% include block/srcset.html %}
 </figure>
 
 <figure class="image--wide">
   {% assign count = 1 %}
-  {% assign quality = 60 %}
   {% include block/srcset.html %}
 </figure>

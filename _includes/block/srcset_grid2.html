@@ -1,3 +1,8 @@
+{% if page.image[count].quality %}
+  {% assign quality = page.image[count].quality %}
+{% else %}
+  {% assign quality = 50 %}
+{% endif %}
 <img
   src="{{ page.image[count].src | imgix_url: w: 640, q: 50 }}"
   sizes="{{ site.sizes_grid2 }}"

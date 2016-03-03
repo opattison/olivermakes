@@ -28,13 +28,13 @@ image:
     longitude: -0.7782
     zoom: 16
     description: 'VSCOcam m5 preset'
+    quality: 60
     aspect: '3:2'
 
 ---
 
 <figure class="image--wide">
   {% assign count = 0 %}
-  {% assign quality = 60 %}
   {% include block/srcset.html %}
   <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
 </figure>

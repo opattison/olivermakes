@@ -31,10 +31,12 @@ image:
     alt: 'All caps text for a title page'
     date: 2016-01-28
     caption: '[William Alexander](http://pineorchardprints.com/collections/alexander-costume-of-china), <i>Costume of China</i>, 1814'
+    quality: 60
   - src: /images/2016-01-28-ausable-typography.jpg
     alt: 'Serif text description for a print'
     date: 2016-01-28
     caption: '[William Pate](http://pineorchardprints.com/collections/american-landscape), <i>American Landscape</i>, 1869'
+    quality: 70
   - src: /images/2016-01-27-pine-orchard-close.png
     alt: 'Close view of the letter forms for Pine in the logo.'
     date: 2016-01-27
@@ -44,10 +46,12 @@ image:
   - src: /images/2016-01-28-print-index-title.jpg
     alt: 'The title text in Cardo for a print'
     date: 2016-01-28
+    quality: 70
   - src: /images/2016-01-27-pine-orchard-banner.jpg
     alt: 'Pine Orchard Antique Prints banner logo as a part of the banner on the shop'
     date: 2016-01-27
     caption: 'The typography in context on the [Pine Orchard Prints website](http://pineorchardprints.com).'
+    quality: 70
 
 ---
 
@@ -63,13 +67,11 @@ I avoided the more eclectic Victorian typographic styles which might be illegibl
 <div class="grid">
   <figure class="grid-figure">
     {% assign count = 1 %}
-    {% assign quality = 60 %}
     {% include block/srcset_grid2.html %}
     <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
   </figure>
   <figure class="grid-figure">
     {% assign count = 2 %}
-    {% assign quality = 70 %}
     {% include block/srcset_grid2.html %}
     <figcaption>{{ page.image[2].caption | markdownify }}</figcaption>
   </figure>
@@ -108,14 +110,12 @@ For a small shop, memorable and appropriate typography effectively served the bu
   </figure>
   <figure class="grid-figure screenshot">
     {% assign count = 5 %}
-    {% assign quality = 70 %}
     {% include block/srcset_grid2.html %}
   </figure>
 </div>
 
 <figure class="image--wide screenshot">
   {% assign count = 6 %}
-  {% assign quality = 70 %}
   {% include block/srcset.html %}
   <figcaption>{{ page.image[6].caption | markdownify }}</figcaption>
 </figure>

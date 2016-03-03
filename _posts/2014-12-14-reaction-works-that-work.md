@@ -30,10 +30,12 @@ image:
     date: 2014-12-15
     license: 'copyright'
     author: 'Works That Work'
+    quality: 70
   - src: /images/2014-12-15-wtw-N80_7152.jpg
     date: 2014-12-15
     license: 'copyright'
     author: 'Works That Work'
+    quality: 70
 
 ---
 
@@ -68,12 +70,10 @@ The latest issue has an more finished feel than the previous ones – each one i
 <div class="grid--wide">
   <figure class="grid-figure">
     {% assign count = 1 %}
-    {% assign quality = 70 %}
     {% include block/srcset_grid2.html %}
   </figure>
   <figure class="grid-figure">
     {% assign count = 2 %}
-    {% assign quality = 70 %}
     {% include block/srcset_grid2.html %}
   </figure>
 </div>

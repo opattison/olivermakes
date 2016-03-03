@@ -22,16 +22,16 @@ image:
     iso: 200
     latitude: 38.9198
     longitude: -77.0353
+    zoom: 15
     location: 'South fountains at Meridian Hill Park (also known as Malcolm X Park)'
     description: 'Processed ‘Fuji Astia 100F Balance Warm’ in VSCO Film'
+    quality: 70
     aspect: '3:2'
-    zoom: 15
 
 ---
 
 <figure class="image--wide">
   {% assign count = 0 %}
-  {% assign quality = 70 %}
   {% include block/srcset.html %}
   <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
 </figure>
