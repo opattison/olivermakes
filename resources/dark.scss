@@ -1,7 +1,6 @@
 ---
 ---
-@import 'variables';
-@import 'mixins';
+@import 'helpers';
 
 body {
   background-color: $gray00;
@@ -30,18 +29,18 @@ article a {
 
 article a:focus,
 article a:hover {
-  color: $grayblue;
+  color: $lightblue;
 }
 
 p a,
 li a,
 blockquote a {
-  @include a-underline($pink-50, $grayblue-50);
+  @include a-underline($pink--trans50, $lightblue);
 }
 
 blockquote {
   color: $gray05;
-  border-color: $grayblue;
+  border-color: $lightblue;
 }
 
 blockquote footer {
@@ -70,7 +69,7 @@ samp {
 
 .item-location a {
   color: $gray07;
-  @include a-underline($gray07-90, $grayblue);
+  @include a-underline($gray07--trans90, $lightblue);
 }
 
 .core {
@@ -88,11 +87,11 @@ samp {
 }
 
 .pattern--swatch figcaption {
-  background-color: $gray01-90;
+  background-color: $gray01--trans90;
 }
 
 .focus {
-  color: $grayblue;
+  color: $lightblue;
 }
 
 .ancillary {

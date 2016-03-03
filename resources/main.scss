@@ -1,11 +1,10 @@
 ---
 ---
-@import 'variables',
-        'mixins';
+@import 'helpers';
 
 @import 'normalize',
         'fundamental',
-        'helpers';
+        'utilities';
 
 @import 'container/banner',
         'block/banner-title';

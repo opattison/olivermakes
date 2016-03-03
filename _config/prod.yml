@@ -89,7 +89,6 @@ exclude:
   - Gemfile*
   - node_modules
   - package.json
-  - resources/scss
 
 ## Configuration URLs
 domain: olivermak.es

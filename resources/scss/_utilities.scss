@@ -1,0 +1,90 @@
+/* Order helpers for flexbox */
+.order-first {
+  order: 0;
+}
+
+.order-last {
+  order: 99;
+}
+
+/* Position helper */
+.center {
+  text-align: center;
+}
+
+/* SVG figure padding helper */
+.svg img {
+  padding: 1em 2em;
+}
+
+.noedges img {
+  padding: 1em;
+}
+
+/* SVG figure background helper */
+.extradark img {
+  background-color: $black;
+}
+
+.dark img {
+  background-color: $gray01;
+}
+
+.light img {
+  background-color: $gray06;
+}
+
+.extralight img {
+  background-color: $whiter;
+}
+
+/* Screenshot border/outline helper */
+.screenshot img {
+  outline: solid 1px $gray05;
+}
+
+/* Before/after for project figures */
+.text-before,
+.text-after {
+  border-radius: .125em;
+  color: $white;
+  padding: .125em .375em;
+}
+
+.text-before {
+  background-color: $red;
+}
+
+.text-after {
+  background-color: $green;
+}
+
+/* inline list */
+ul.inline-list {
+  list-style: none;
+}
+
+ul.inline-list li {
+  display: inline;
+  font-style: italic;
+  font-size: 1.25em;
+}
+
+ul.inline-list li::after {
+  content: '⊙';
+  color: $gray04;
+  font-size: .75em;
+  font-style: normal;
+  margin-left: .25em;
+}
+
+ul.inline-list li::before,
+ul.inline-list :last-child::after {
+  content: '';
+  margin: 0;
+}
+
+.no-bullets li::before {
+  content: ''!important;
+  margin: 0!important;
+}

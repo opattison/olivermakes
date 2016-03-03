@@ -57,7 +57,7 @@
   }
 }
 
-@mixin a-underline($link: $pink, $hover: $grayblue) {
+@mixin a-underline($link: $red--trans20, $hover: $blue) {
   border-bottom: solid 1px $link;
   &:hover,
   &:focus {

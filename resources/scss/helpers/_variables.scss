@@ -1,0 +1,66 @@
+// Color map processed by functions.scss
+$colors: (
+  blue: hsl(204, 50%, 45%),
+  violet: hsl(225, 35%, 52%),
+  red: hsl(4, 60%, 42%),
+  green: hsl(144, 50%, 35%),
+  shade: hsla(204, 10%, 12%, 1)
+);
+
+// Output shades
+$black: s(shade);
+$gray00: s(shade, 18%);
+$gray01: s(shade, 24%);
+$gray02: s(shade, 32%);
+$gray03: s(shade, 40%);
+$gray04: s(shade, 72%);
+$gray05: s(shade, 80%);
+$gray06: s(shade, 88%);
+$gray07: s(shade, 92%);
+$white: s(shade, 95%);
+$whiter: s(shade, 97%);
+
+// Output colors
+$blue: c(blue);
+$darkblue: c(blue, dark);
+$lightblue: c(blue, light);
+$violet: c(violet);
+$red: c(red);
+$green: c(green);
+$pink: c(red, light);
+
+// Output transparent colors and shades
+$blue--trans20: trans20($blue);
+$red--trans20: trans20($red);
+$pink--trans50: trans50($pink);
+$gray01--trans90: trans90($gray01);
+$gray07--trans90: trans90($gray07);
+$trans01: trans01($white);
+
+// Typography
+$ratio: ratio, Seravek, 'Helvetica Neue', sans-serif;
+$source-code-pro: source-code-pro, 'Source Code Pro', Menlo, Consolas, monospace;
+$open-sans: 'Open Sans', sans-serif;
+
+// Media query width map
+$widths: (
+  s01: 22.5em,
+  s02: 28em,
+  s03: 30em,
+  s04: 34em,
+  m01: 40em,
+  m02: 45em,
+  l01: 60em,
+  l02: 70em,
+  l03: 80em,
+  l04: 95em,
+  l05: 115em
+);
+
+// Maximum container width map
+$width-limit: (
+  m02: 36em,
+  l01: 45em,
+  l03: 54em,
+  l05: 94.5em
+);

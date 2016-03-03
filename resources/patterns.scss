@@ -1,7 +1,6 @@
 ---
 ---
-@import 'variables';
-@import 'mixins';
+@import 'helpers';
 
 .item--pattern {
   background-color: transparent;
@@ -79,7 +78,7 @@
 }
 
 .pattern--swatch figcaption {
-  background-color: $gray07-90;
+  background-color: $gray07--trans90;
   border-bottom: none;
   bottom: 0;
   margin: 0;

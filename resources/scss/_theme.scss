@@ -27,12 +27,12 @@ a {
 
 a:hover,
 a:focus {
-  color: $darkblue;
+  color: $blue;
 }
 
 a:active {
   color: $green;
-  border-color: $pure-1!important;
+  border-color: $trans01!important;
 }
 
 p a,
@@ -55,14 +55,14 @@ blockquote footer {
 }
 
 sup[id] a {
-  background-color: $grayblue-50;
-  border-color: $grayblue;
+  background-color: $blue--trans20;
+  border-color: $lightblue;
   color: $gray01;
 }
 
 sup[id] a:hover,
 sup[id] a:focus {
-  background-color: $pink-50;
+  background-color: $red--trans20;
   border-color: $pink;
 }
 
@@ -91,7 +91,7 @@ kbd > kbd {
 }
 
 mark {
-  background-color: $grayblue-50;
+  background-color: $blue--trans20;
 }
 
 ::-moz-selection {
@@ -145,7 +145,7 @@ mark {
 
 .footnotes,
 .endnote {
-  background-color: $grayblue-50;
+  background-color: $blue--trans20;
   color: $gray01;
 }
 
@@ -160,8 +160,8 @@ mark {
 
 .footnotes .reversefootnote:hover,
 .footnotes .reversefootnote:focus {
-  background-color: $pink-50;
-  border-color: $pink-50;
+  background-color: $red--trans20;
+  border-color: $red--trans20;
 }
 
 .endnote + .footnotes {
@@ -243,7 +243,7 @@ mark {
 }
 
 .item-description {
-  background-color: $gray07-90;
+  background-color: $gray07--trans90;
 }
 
 .item--short {
@@ -251,12 +251,12 @@ mark {
 }
 
 .item-location a {
-  @include a-underline($pure-1, $grayblue);
+  @include a-underline($trans01, $lightblue);
 }
 
 .item-description h1 a {
   color: $red;
-  border-bottom: solid 1px $pure-1;
+  border-bottom: solid 1px $trans01;
 }
 
 .item-description h1 a:hover,
@@ -283,17 +283,17 @@ mark {
 }
 
 .item--photo-description {
-  background-color: $pure-1;
+  background-color: $trans01;
 }
 
 .item--photo a:hover,
 .item--photo a:focus {
-  background-color: $gray07-90;
+  background-color: $gray07--trans90;
 }
 
 .item--photo a:hover h1,
 .item--photo a:focus h1 {
-  color: $darkblue;
+  color: $blue;
 }
 
 .item--photo a:hover p,
@@ -306,7 +306,7 @@ mark {
 }
 
 .item--section-description h1 a {
-  border-bottom: solid 1px $pure-1;
+  border-bottom: solid 1px $trans01;
 }
 
 .core-pagination {
