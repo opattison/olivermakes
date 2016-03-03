@@ -30,13 +30,13 @@
 }
 
 .ancillary h1 {
-  font-weight: 500;
+  font-weight: $weight-medium;
   font-size: 1.25em;
   line-height: 1.125;
 }
 
 .ancillary h2 {
-  font-weight: 400;
+  font-weight: $weight-regular;
   font-size: 1.125em;
   line-height: 1.25;
 }

@@ -81,11 +81,20 @@
   font-size: 1.125em;
 }
 
+.item--short-description small {
+  font-weight: $weight-thin;
+}
+
+.item--section-description {
+  font-weight: $weight-thin;
+}
+
 .item--section-description h1 {
-  font-weight: 300;
+  font-weight: $weight-thin;
 }
 
 .item--section-description p {
+  line-height: 1.25;
   margin-top: 1.5em;
   text-align: right;
 }
@@ -127,8 +136,13 @@
   }
 }
 
+.item-summary {
+  line-height: 1.25;
+}
+
 .item-time {
   font-size: .875em;
+  font-weight: $weight-thin;
 }
 
 .item-action {
@@ -172,7 +186,7 @@
 .item--photo-description h1 {
   color: inherit;
   font-size: 1.25em;
-  font-weight: 500;
+  font-weight: $weight-medium;
 
   @include min-width(m02) {
     font-size: 1em;
