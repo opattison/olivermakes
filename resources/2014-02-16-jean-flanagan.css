@@ -8,20 +8,14 @@
 }
 
 #error-404 figcaption {
-  background-color: hsla(204, 10%, 24%, .9);
-  color: hsla(204, 10%, 97%, 1);
+  background-color: hsla(204, 10%, 95%, .2);
+  color: hsla(204, 10%, 10%, 1);
   margin-bottom: 0;
 }
 
-#error-404 a {
-  color: hsla(4, 30%, 80%, 1);
-  border-color: hsla(4, 30%, 80%, .5);
-}
-
-#error-404 a:hover,
-#error-404 a:focus {
-  color: hsla(204, 30%, 80%, 1);
-  border-color: hsla(204, 30%, 80%, .5);
+#error-404 code {
+  color: inherit;
+  border-color: inherit;
 }
 
 #error-404 img {
