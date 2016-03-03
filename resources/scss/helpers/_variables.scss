@@ -22,12 +22,11 @@ $whiter: s(shade, 97%);
 
 // Output colors
 $blue: c(blue);
-$darkblue: c(blue, dark);
-$lightblue: c(blue, light);
+$lightblue: s(blue, 88%);
 $violet: c(violet);
 $red: c(red);
+$pink: s(red, 88%);
 $green: c(green);
-$pink: c(red, light);
 
 // Output transparent colors and shades
 $blue--trans20: trans20($blue);

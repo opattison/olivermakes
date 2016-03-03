@@ -56,14 +56,15 @@ blockquote footer {
 
 sup[id] a {
   background-color: $blue--trans20;
-  border-color: $lightblue;
-  color: $gray01;
+  border-color: $blue;
+  color: $blue;
 }
 
 sup[id] a:hover,
 sup[id] a:focus {
   background-color: $red--trans20;
-  border-color: $pink;
+  border-color: $red;
+  color: $red;
 }
 
 figcaption {
@@ -145,7 +146,7 @@ mark {
 
 .footnotes,
 .endnote {
-  background-color: $blue--trans20;
+  background-color: $lightblue;
   color: $gray01;
 }
 
@@ -154,14 +155,15 @@ mark {
 }
 
 .footnotes .reversefootnote {
-  border-color: $gray04;
-  color: $gray01;
+  border-color: $blue;
+  color: $blue;
 }
 
 .footnotes .reversefootnote:hover,
 .footnotes .reversefootnote:focus {
   background-color: $red--trans20;
-  border-color: $red--trans20;
+  border-color: $red;
+  color: $red;
 }
 
 .endnote + .footnotes {

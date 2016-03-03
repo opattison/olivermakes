@@ -15,12 +15,14 @@ h4 {
 }
 
 sup[id] a {
-  color: $gray06;
+  border-color: $lightblue;
+  color: $lightblue;
 }
 
 sup[id] a:hover,
 sup[id] a:focus {
-  color: $gray06;
+  border-color: $pink;
+  color: $pink;
 }
 
 article a {
@@ -103,12 +105,21 @@ samp {
   background-color: $gray02;
 }
 
-.footnotes {
+.footnotes,
+.endnote {
+  background-color: $gray02;
   color: $white;
 }
 
 .footnotes .reversefootnote {
-  color: $white;
+  border-color: $lightblue;
+  color: $lightblue;
+}
+
+.footnotes .reversefootnote:hover,
+.footnotes .reversefootnote:focus {
+  border-color: $pink;
+  color: $pink;
 }
 
 .project {
