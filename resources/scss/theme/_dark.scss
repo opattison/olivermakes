@@ -1,144 +1,196 @@
+$back: $gray00;
+$back--minus: $gray02;
+$back--plus: $black;
+$back--inverse: $white;
+$back--project: $gray02;
+$back--project-image: $gray03;
+$back--notes: $gray01;
+$fore: $gray07;
+$fore--plus: $white;
+$fore--minus: $gray06;
+$fore--inverse: $gray00;
+$code--inline: $gray06;
+$code--comment: $gray04;
+$code--border: $gray04;
+$code-block--fore: $gray02;
+$code-block--back: $whiter;
+$accent: $lightblue;
+$accent--trans: $gray07--trans50;
+$accent--neutral: $gray05;
+$accent--notes: $gray03;
+$focus: $accent;
+$focus-link--hover: $pink;
+$link: $pink;
+$link--hover: $lightblue;
+$link--active: $green;
+$link-underline: $pink--trans50;
+$anchor: $lightblue;
+$anchor--hover: $pink;
+$anchor-back: $blue--trans20;
+$anchor-back--hover: $red--trans20;
+
+html {
+  color: $fore;
+}
+
 body {
-  background-color: $gray00;
-  color: $white;
+  background-color: $back;
+  color: $fore;
 }
 
 h1,
-h2,
+h2 {
+  color: $fore--minus;
+}
+
 h3,
 h4 {
-  color: $gray07;
+  color: $fore;
+}
+
+h5 {
+  color: $fore--minus;
 }
 
 sup[id] a {
-  border-color: $lightblue;
-  color: $lightblue;
+  border-color: $anchor;
+  color: $anchor;
 }
 
 sup[id] a:hover,
 sup[id] a:focus {
-  border-color: $pink;
-  color: $pink;
+  border-color: $anchor--hover;
+  color: $anchor--hover;
 }
 
 article a {
-  color: $pink;
+  color: $link;
 }
 
 article a:focus,
 article a:hover {
-  color: $lightblue;
+  color: $link--hover;
 }
 
 p a,
 li a,
 blockquote a {
-  @include a-underline($pink--trans50, $lightblue);
+  @include a-underline($link-underline, $link--hover);
 }
 
 blockquote {
-  color: $gray05;
-  border-color: $lightblue;
+  border-color: $accent;
+  color: $fore--minus;
 }
 
 blockquote footer {
-  color: $gray06;
-}
-
-.highlight {
-  background-color: $whiter;
-  color: $gray01;
-  border-color: $gray04;
-}
-
-.highlight .c {
-  color: $gray04; /* Comments */
+  color: $fore;
 }
 
 p > code,
 li > code,
 samp {
-  border-color: $gray04;
-  color: $gray06;
+  border-color: $code--border;
+  color: $code--inline;
+}
+
+kbd > kbd {
+  background-color: $back--inverse;
+  color: $fore--inverse;
 }
 
 .item--short {
-  background-color: $gray01;
+  background-color: $back--minus;
 }
 
 .item-location a {
-  @include a-underline($pink--trans50, $lightblue);
+  @include a-underline($link-underline, $link--hover);
 }
 
 .core {
-  color: $gray07;
+  color: $fore;
 }
 
 .content,
 .core-title {
-  background-color: $gray01;
+  background-color: $back--minus;
 }
 
 .core figcaption {
-  color: $gray06;
-}
-
-.pattern--swatch figcaption {
-  background-color: $gray01--trans90;
+  color: $fore--minus;
 }
 
 .focus {
-  color: $lightblue;
+  color: $focus;
+}
+
+.focus a {
+  color: $link;
+  @include a-underline($link-underline, $focus-link--hover);
+}
+
+.focus a:hover,
+.focus a:focus {
+  color: $focus-link--hover;
 }
 
 .ancillary {
-  background-color: $gray00;
-  color: $gray07;
+  background-color: $back;
+  color: $fore--minus;
 }
 
 .edgeless .ancillary {
-  background-color: $gray02;
+  background-color: $back--plus;
+}
+
+.highlight {
+  background-color: $code-block--back;
+  border-color: $code--border;
+  color: $code-block--fore;
+}
+
+.highlight .c {
+  color: $code--comment;
 }
 
 .footnotes,
 .endnote {
-  background-color: $gray02;
-  color: $white;
+  background-color: $back--notes;
+}
+
+.endnote + .footnotes,
+.footnotes li {
+  border-color: $accent--notes;
 }
 
 .footnotes .reversefootnote {
-  border-color: $lightblue;
-  color: $lightblue;
+  border-color: $anchor;
+  color: $anchor;
 }
 
 .footnotes .reversefootnote:hover,
 .footnotes .reversefootnote:focus {
-  border-color: $pink;
-  color: $pink;
+  border-color: $anchor--hover;
+  color: $anchor--hover;
 }
 
 .project {
-  background-color: $gray02;
+  background-color: $back--project;
 }
 
 .project-image {
-  border-color: $gray02;
-}
-
-.project-summary {
-  color: $gray07;
+  border-color: $back--project;
 }
 
 .essay {
-  background-color: $gray02;
-  color: $white;
+  background-color: $back--minus;
+  color: $fore--plus;
 }
 
-.core-meta,
 .core-footer {
-  background-color: $gray02;
+  background-color: $back--notes;
 }
 
 .screenshot img {
-  outline: solid 1px $gray02;
+  outline: solid 1px $accent--trans;
 }

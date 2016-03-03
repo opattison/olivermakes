@@ -38,6 +38,7 @@
         'block/credits',
         'block/return';
 
-@import 'theme/base';
+@import 'theme/universal',
+        'theme/base';
 
 @import 'multipliers';

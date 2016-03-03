@@ -1,37 +1,68 @@
+$back: $white;
+$back--plus: $whiter;
+$back--minus: $gray06;
+$back--inverse: $gray00;
+$back--project: $gray06;
+$back--project-image: $gray07;
+$back--notes: $lightblue;
+$fore: $gray01;
+$fore--plus: $black;
+$fore--minus: $gray03;
+$fore--inverse: $whiter;
+$code--inline: $gray02;
+$code--comment: $gray05;
+$code--border: $gray05;
+$code-block--fore: $whiter;
+$code-block--back: $gray02;
+$accent: $blue;
+$accent--trans: $blue--trans20;
+$accent--neutral: $gray04;
+$accent--notes: $accent--trans;
+$focus: $accent;
+$focus-link--hover: $violet;
+$link: $red;
+$link--hover: $blue;
+$link--active: $green;
+$link-underline: $red--trans20;
+$anchor: $blue;
+$anchor--hover: $red;
+$anchor-back: $blue--trans20;
+$anchor-back--hover: $red--trans20;
+
 html {
-  color: $gray01;
+  color: $fore;
 }
 
 body {
-  background-color: $white;
-  color: $gray01;
+  background-color: $back;
+  color: $fore;
 }
 
 h1,
 h2 {
-  color: $gray02;
+  color: $fore--minus;
 }
 
 h3,
 h4 {
-  color: $gray00;
+  color: $fore;
 }
 
 h5 {
-  color: $gray03;
+  color: $fore--minus;
 }
 
 a {
-  color: $red;
+  color: $link;
 }
 
 a:hover,
 a:focus {
-  color: $blue;
+  color: $link--hover;
 }
 
 a:active {
-  color: $green;
+  color: $link--active;
   border-color: $trans01!important;
 }
 
@@ -41,412 +72,148 @@ blockquote a {
   @include a-underline;
 }
 
-ul li::before {
-  color: $gray04;
-}
-
-blockquote {
-  border-color: $blue;
-  color: $gray03;
-}
-
-blockquote footer {
-  color: $gray02;
-}
-
 sup[id] a {
-  background-color: $blue--trans20;
-  border-color: $blue;
-  color: $blue;
+  background-color: $anchor-back;
+  border-color: $anchor;
+  color: $anchor;
 }
 
 sup[id] a:hover,
 sup[id] a:focus {
-  background-color: $red--trans20;
-  border-color: $red;
-  color: $red;
+  background-color: $anchor-back--hover;
+  border-color: $anchor--hover;
+  color: $anchor--hover;
+}
+
+ul li::before {
+  color: $accent--neutral;
+}
+
+blockquote {
+  border-color: $accent;
+  color: $fore--minus;
+}
+
+blockquote footer {
+  color: $fore;
 }
 
 figcaption {
-  color: $gray01;
+  color: $fore--minus;
 }
 
 hr {
-  background-color: $gray04;
+  background-color: $accent--neutral;
 }
 
 p > code,
 li > code,
 samp {
-  border-color: $gray05;
-  color: $gray02;
+  border-color: $code--border;
+  color: $code--inline;
 }
 
 kbd > kbd {
-  background-color: $black;
-  color: $white;
+  background-color: $back--inverse;
+  color: $fore--inverse;
 }
 
 mark {
-  background-color: $blue--trans20;
+  background-color: $accent--trans;
 }
 
 ::-moz-selection {
-  background: $blue;
-  color: $whiter;
+  background: $accent;
+  color: $fore--inverse;
 }
 
 ::selection {
-  background: $blue;
-  color: $whiter;
+  background: $accent;
+  color: $fore--inverse;
 }
 
-#skip {
-  color: $whiter;
-  background-color: $red;
-}
-
-.category {
-  background-color: $white;
+.core-title {
+  background-color: $back--plus;
 }
 
 .content {
-  background-color: $whiter;
+  background-color: $back--plus;
+}
+
+.core-footer {
+  background-color: $back--minus;
 }
 
 .action {
-  @include action-color($gray03, $whiter);
-}
-
-.credits {
-  background-color: $gray06;
-  color: $black;
-}
-
-.credits a {
-  @include a-underline;
+  @include action-color($fore--minus, $back--inverse);
 }
 
 .focus {
-  color: $blue;
+  color: $focus;
 }
 
 .focus a {
-  color: $red;
-  @include a-underline($red--trans20, $violet);
+  color: $link;
+  @include a-underline($link-underline, $focus-link--hover);
 }
 
 .focus a:hover,
 .focus a:focus {
-  color: $violet;
+  color: $focus-link--hover;
 }
 
 .ancillary {
-  background-color: $white;
-  color: $gray03;
+  background-color: $back;
+  color: $fore--minus;
 }
 
 .footnotes,
 .endnote {
-  background-color: $lightblue;
-  color: $gray01;
+  background-color: $back--notes;
 }
 
+.endnote + .footnotes,
 .footnotes li {
-  border-color: $gray04;
+  border-color: $accent--notes;
 }
 
 .footnotes .reversefootnote {
-  border-color: $blue;
-  color: $blue;
+  border-color: $anchor;
+  color: $anchor;
 }
 
 .footnotes .reversefootnote:hover,
 .footnotes .reversefootnote:focus {
-  background-color: $red--trans20;
-  border-color: $red;
-  color: $red;
-}
-
-.endnote + .footnotes {
-  border-color: $gray04;
+  background-color: $anchor-back--hover;
+  border-color: $anchor--hover;
+  color: $anchor--hover;
 }
 
 .hero figcaption {
-  background-color: $whiter;
+  background-color: $back--plus;
 }
 
 .highlight {
-  background-color: $gray02;
-  border-color: $gray05;
-  color: $whiter;
+  background-color: $code-block--back;
+  border-color: $code--border;
+  color: $code-block--fore;
 }
 
 .highlight .c {
-  color: $gray05; /* Comments */
-}
-
-.home {
-  background-color: $white;
-}
-
-.index--home {
-  background-color: $gray00;
-}
-
-.index-nav-action {
-  @include action-color($red, $white);
-}
-
-.index-nav-action:nth-child(2) {
-  background-color: $blue;
-}
-
-.index-nav-action:hover,
-.index-nav-action:focus {
-  background-color: $gray07;
-  color: $red;
-}
-
-.index-nav-action:nth-child(2):hover,
-.index-nav-action:nth-child(2):focus {
-  color: $blue;
-}
-
-.item--section {
-  color: $white;
-  background-color: $gray00;
-
-  a {
-    color: $white;
-
-    &:hover,
-    &:focus {
-      color: $whiter;
-    }
-  }
-}
-
-.item--section--writing {
-  background-color: $red;
-}
-
-.item--section--projects {
-  background-color: $violet;
-}
-
-.item--section--photography {
-  background-color: $blue;
-}
-
-.item--section--about {
-  background-color: $gray02;
-}
-
-.item:nth-child(2n + 1) {
-  background-color: $gray07;
-}
-
-.item:nth-child(2n) {
-  background-color: $gray05;
-}
-
-.item-description {
-  background-color: $gray07--trans90;
-}
-
-.item--short {
-  background-color: $gray07;
-}
-
-.item-location a {
-  @include a-underline($trans01, $lightblue);
-}
-
-.item-description h1 a {
-  color: $red;
-  border-bottom: solid 1px $trans01;
-}
-
-.item-description h1 a:hover,
-.item-description h1 a:focus {
-  color: $blue;
-}
-
-.item-description h1 a:active {
-  color: $green;
-}
-
-.item-action {
-  @include action-color($gray02, $whiter);
-}
-
-.item:nth-child(2n + 2) .item-action {
-  background-color: $gray00;
-}
-
-.item:nth-child(2n) .item-action:hover,
-.item:nth-child(2n) .item-action:focus {
-  background-color: $whiter;
-  color: $gray00;
-}
-
-.item--photo-description {
-  background-color: $trans01;
-}
-
-.item--photo a:hover,
-.item--photo a:focus {
-  background-color: $gray07--trans90;
-}
-
-.item--photo a:hover h1,
-.item--photo a:focus h1 {
-  color: $blue;
-}
-
-.item--photo a:hover p,
-.item--photo a:focus p {
-  color: $black;
-}
-
-.item--section-description a {
-  @include a-underline($gray07--trans50, $whiter);
-}
-
-.core-pagination {
-  @include action-color($red, $white);
-}
-
-.core-pagination--later {
-  background-color: $red;
-}
-
-.core-pagination--earlier {
-  background-color: $blue;
-}
-
-.core-pagination:hover,
-.core-pagination:focus {
-  background-color: $whiter;
-  border: none;
-}
-
-.core-pagination--later:hover,
-.core-pagination--later:focus {
-  color: $red;
-}
-
-.core-pagination--earlier:hover,
-.core-pagination--earlier:focus {
-  color: $blue;
+  color: $code--comment;
 }
 
 .project,
 .project--satellite {
-  background-color: $gray06;
+  background-color: $back--project;
 }
 
 .project-image,
 .project--satellite .project-image {
-  background-color: $gray07;
-  border-color: $gray06;
-}
-
-.project-summary {
-  color: $gray02;
-}
-
-.project-nav-action {
-  background-color: $gray02;
-  color: $white;
-}
-
-.project-nav-action--url {
-  background-color: $red;
-  color: $white;
-}
-
-.project-nav-action--source {
-  background-color: $violet;
-  color: $white;
-}
-
-.project-nav-action:hover,
-.project-nav-action:focus {
-  background-color: $white;
-  color: $gray02;
-}
-
-.project-nav-action--url:hover,
-.project-nav-action--url:focus {
-  color: $red;
-}
-
-.project-nav-action--source:hover,
-.project-nav-action--source:focus {
-  color: $violet;
+  background-color: $back--project-image;
+  border-color: $back--minus;
 }
 
 .essay {
-  background-color: $gray06;
-}
-
-.return-action {
-  @include action-color($gray07, $black);
-}
-
-.return-action--home {
-  background-color: $white;
-}
-
-.return-action--top {
-  background-color: $gray05;
-}
-
-.return-action:hover,
-.return-action:focus {
-  background-color: $gray03;
-  color: $white;
-}
-
-.background--projects {
-  background-color: $violet;
-  color: $white;
-}
-
-.background--projects:hover,
-.background--projects:focus {
-  background-color: $whiter;
-  color: $violet;
-}
-
-.background--writing {
-  background-color: $red;
-  color: $white;
-}
-
-.background--writing:hover,
-.background--writing:focus {
-  background-color: $whiter;
-  color: $red;
-}
-
-.background--photography {
-  background-color: $blue;
-  color: $white;
-}
-
-.background--photography:hover,
-.background--photography:focus {
-  background-color: $whiter;
-  color: $blue;
-}
-
-.core-title {
-  background-color: $whiter;
-}
-
-.core-footer {
-  background-color: $gray06;
+  background-color: $back--minus;
 }
