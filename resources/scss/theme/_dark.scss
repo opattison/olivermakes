@@ -120,6 +120,10 @@ kbd > kbd {
   color: $fore--minus;
 }
 
+.action {
+  @include action-color($back--inverse, $accent);
+}
+
 .focus {
   color: $focus;
 }

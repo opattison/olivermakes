@@ -145,7 +145,7 @@ mark {
 }
 
 .action {
-  @include action-color($fore--minus, $back--inverse);
+  @include action-color($accent, $fore--inverse);
 }
 
 .focus {
