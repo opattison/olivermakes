@@ -26,12 +26,12 @@ image:
     latitude: 38.9172
     longitude: -77.0461
     zoom: 15
+    quality: 70
     aspect: '3:2'
 
 ---
 
 <figure class="image--wide">
   {% assign count = 0 %}
-  {% assign quality = 60 %}
   {% include block/srcset.html %}
 </figure>

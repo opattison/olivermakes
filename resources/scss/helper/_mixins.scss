@@ -1,11 +1,12 @@
+// Media queries defined in helper/_variables.scss $widths map
 @mixin min-width($width) {
   $value: map-get($widths, $width);
 
   @if $value != null {
     @media (min-width: $value) {
       @content;
+    }
   }
-}
 
   @else {
     @warn "No value could be retrieved from #{$width}. "
@@ -13,6 +14,7 @@
   }
 }
 
+// Container width limits defined in helper/_variables.scss $width-limit map
 @mixin width-max($width) {
   $value: map-get($width-limit, $width);
 
@@ -27,17 +29,9 @@
   }
 }
 
-@mixin density-query {
-  @media screen and (-webkit-min-device-pixel-ratio: 1.5),
-  screen and (min-resolution: 108dpi),
-  screen and (min-resolution: 1.5dppx) {
-    @content;
-  }
-}
-
 @mixin action($margin: 0, $padding: 1em 0) {
   display: block;
-  font-weight: 400;
+  font-weight: $weight-regular;
   margin: $margin;
   padding: $padding;
   text-align: center;
@@ -57,7 +51,7 @@
   }
 }
 
-@mixin a-underline($link: $pink, $hover: $grayblue) {
+@mixin a-underline($link: $red--trans20, $hover: $blue) {
   border-bottom: solid 1px $link;
   &:hover,
   &:focus {

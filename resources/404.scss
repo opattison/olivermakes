@@ -1,7 +1,6 @@
 ---
 ---
-@import 'variables',
-        'mixins';
+@import 'helpers';
 
 #error,
 #error .core-title,
@@ -31,7 +30,7 @@
 
 #error .content a {
   color: $white;
-  @include a-underline($white, $pink-50);
+  @include a-underline($white, $red--trans20);
 }
 
 #error .content a:hover,
@@ -48,7 +47,7 @@
 #error .return .return-action--home {
   color: $black;
   flex: 0 0 100%;
-  @include a-underline($pure-1, $pure-1);
+  @include a-underline($trans01, $trans01);
 
   &:hover,
   &:focus {

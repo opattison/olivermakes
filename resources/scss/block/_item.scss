@@ -67,6 +67,10 @@
   font-size: 1.5em;
 }
 
+.item-description p {
+  line-height: 1.25;
+}
+
 .item--short-description {
   height: auto;
   padding: 1em 2em;
@@ -81,8 +85,16 @@
   font-size: 1.125em;
 }
 
+.item--short-description small {
+  font-weight: $weight-thin;
+}
+
+.item--section-description {
+  font-weight: $weight-thin;
+}
+
 .item--section-description h1 {
-  font-weight: 300;
+  font-weight: $weight-thin;
 }
 
 .item--section-description p {
@@ -128,7 +140,7 @@
 }
 
 .item-time {
-  font-size: .875em;
+  font-weight: $weight-thin;
 }
 
 .item-action {
@@ -161,7 +173,7 @@
   display: block;
   height: 100%;
 
-  color: $pure-1;
+  color: $trans01;
 }
 
 .item--photo-description {
@@ -171,10 +183,16 @@
 
 .item--photo-description h1 {
   color: inherit;
-  font-size: 1.25em;
-  font-weight: 500;
+  font-size: 1.5em;
+  font-weight: $weight-medium;
 
   @include min-width(m02) {
-    font-size: 1em;
+    font-size: 1.125em;
+  }
+}
+
+.item--photo-description p {
+  @include min-width(m02) {
+    font-size: .875em;
   }
 }

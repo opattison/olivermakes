@@ -24,6 +24,7 @@ image:
   - src: /images/2014-11-02-green-arabia-reading-driven-design.jpg
     alt: 'A screenshot of an early version of this website'
     caption: 'This is an example of a development version of this website borrowing from the essay [“Green Arabia”](http://idlewords.com/2014/08/green_arabia.htm) by Maciej Cegłowski to test layout and typography.'
+    quality: 70
 
 ---
 
@@ -43,7 +44,6 @@ My solution is to use writing that I want to read anyway. For me, that is my [In
 
 <figure class="screenshot image">
     {% assign count = 1 %}
-    {% assign quality = 70 %}
     {% include block/srcset_grid2.html %}
   <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
 </figure>

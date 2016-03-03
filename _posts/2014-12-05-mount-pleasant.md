@@ -26,6 +26,7 @@ image:
     longitude: -77.0438
     zoom: 16
     description: 'VSCO Film Kodak E200'
+    quality: 70
   - src: /images/2014-01-20-bark-close-olivermakes-ccbync.jpg
     alt: 'Close view of tree bark in a residential neighborhood'
     date: 2014-01-20
@@ -40,6 +41,7 @@ image:
     longitude: -77.0413
     zoom: 16
     description: 'VSCO Film Kodak E200'
+    quality: 70
   - src: /images/2014-01-20-sidewalk-olivermakes-ccbync.jpg
     alt: 'Small green leaves growing from a rocky wall next to a sidewalk'
     date: 2014-01-20
@@ -54,25 +56,23 @@ image:
     longitude: -77.0438
     zoom: 16
     description: 'VSCO Film Kodak E200'
+    quality: 70
 
 ---
 
 <figure class="image--wide">
   {% assign count = 0 %}
-  {% assign quality = 70 %}
   {% include block/srcset.html %}
 </figure>
 
 <figure class="image--wide">
   {% assign count = 1 %}
-  {% assign quality = 70 %}
   {% include block/srcset.html %}
 </figure>
 
 
 <figure class="image--wide">
   {% assign count = 2 %}
-  {% assign quality = 70 %}
   {% include block/srcset.html %}
 </figure>
 

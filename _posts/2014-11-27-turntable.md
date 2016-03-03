@@ -28,12 +28,12 @@ image:
     longitude: -77.0460
     zoom: 15
     description: 'VSCO Film Kodak Portra 400'
+    quality: 75
 
 ---
 
 <figure class="image--wide">
   {% assign count = 0 %}
-  {% assign quality = 75 %}
   {% include block/srcset.html %}
   <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
 </figure>

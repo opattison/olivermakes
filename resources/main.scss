@@ -1,11 +1,10 @@
 ---
 ---
-@import 'variables',
-        'mixins';
+@import 'helpers';
 
 @import 'normalize',
         'fundamental',
-        'helpers';
+        'utilities';
 
 @import 'container/banner',
         'block/banner-title';
@@ -39,6 +38,7 @@
         'block/credits',
         'block/return';
 
-@import 'theme';
+@import 'theme/universal',
+        'theme/base';
 
 @import 'multipliers';

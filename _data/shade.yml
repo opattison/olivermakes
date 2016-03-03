@@ -1,33 +1,33 @@
   - name: black
-    hsl: 'hsla(204, 10%, 12%, 1)'
+    hsl: 'hsl(204, 10%, 12%)'
     hex: '#1c1f22'
   - name: gray00
-    hsl: 'hsla(204, 10%, 18%, 1)'
+    hsl: 'hsl(204, 10%, 18%)'
     hex: '#292f32'
   - name: gray01
-    hsl: 'hsla(204, 10%, 24%, 1)'
+    hsl: 'hsl(204, 10%, 24%)'
     hex: '#373e43'
   - name: gray02
-    hsl: 'hsla(204, 10%, 32%, 1)'
+    hsl: 'hsl(204, 10%, 32%)'
     hex: '#49535a'
   - name: gray03
-    hsl: 'hsla(204, 10%, 40%, 1)'
+    hsl: 'hsl(204, 10%, 40%)'
     hex: '#5c6870'
   - name: gray04
-    hsl: 'hsla(204, 10%, 72%, 1)'
+    hsl: 'hsl(204, 10%, 72%)'
     hex: '#b0b9bf'
   - name: gray05
-    hsl: 'hsla(204, 10%, 80%, 1)'
+    hsl: 'hsl(204, 10%, 80%)'
     hex: '#c7cdd1'
   - name: gray06
-    hsl: 'hsla(204, 10%, 88%, 1)'
+    hsl: 'hsl(204, 10%, 88%)'
     hex: '#dde1e3'
   - name: gray07
-    hsl: 'hsla(204, 10%, 92%, 1)'
+    hsl: 'hsl(204, 10%, 92%)'
     hex: '#e9ebed'
   - name: white
-    hsl: 'hsla(204, 10%, 95%, 1)'
+    hsl: 'hsl(204, 10%, 95%)'
     hex: '#f1f3f4'
   - name: whiter
-    hsl: 'hsla(204, 10%, 97%, 1)'
+    hsl: 'hsl(204, 10%, 97%)'
     hex: '#f7f8f8'

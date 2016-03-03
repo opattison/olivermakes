@@ -27,6 +27,7 @@ image:
     longitude: -0.8599
     zoom: 14
     description: 'VSCOcam a2'
+    quality: 60
     aspect: '4:3'
   - src: /images/2014-03-23-chichester-shore-close-olivermakes-ccbync.jpg
     alt: 'Close view of moss, concrete and water on a shoreline'
@@ -42,6 +43,7 @@ image:
     longitude: -0.8574
     zoom: 14
     description: 'VSCOcam n1'
+    quality: 55
     aspect: '3:2'
   - src: /images/2014-03-23-moss-on-bricks-olivermakes-ccbync.jpg
     alt: 'Wisps of moss on a brick, highlighted by sun, with trees and sky far in the background'
@@ -57,25 +59,23 @@ image:
     longitude: -0.8593
     zoom: 14
     description: 'VSCOcam k1'
+    quality: 55
     aspect: '3:2'
 
 ---
 
 <figure class="image--wide">
   {% assign count = 0 %}
-  {% assign quality = 60 %}
   {% include block/srcset.html %}
 </figure>
 
 <div class="grid--wide">
   <figure class="grid-figure">
     {% assign count = 1 %}
-    {% assign quality = 55 %}
     {% include block/srcset_grid2.html %}
   </figure>
   <figure class="grid-figure">
     {% assign count = 2 %}
-    {% assign quality = 55 %}
     {% include block/srcset_grid2.html %}
   </figure>
 </div>

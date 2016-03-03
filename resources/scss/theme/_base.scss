@@ -1,0 +1,219 @@
+$back: $white;
+$back--plus: $whiter;
+$back--minus: $gray06;
+$back--inverse: $gray00;
+$back--project: $gray06;
+$back--project-image: $gray07;
+$back--notes: $lightblue;
+$fore: $gray01;
+$fore--plus: $black;
+$fore--minus: $gray03;
+$fore--inverse: $whiter;
+$code--inline: $gray02;
+$code--comment: $gray05;
+$code--border: $gray05;
+$code-block--fore: $whiter;
+$code-block--back: $gray02;
+$accent: $blue;
+$accent--trans: $blue--trans20;
+$accent--neutral: $gray04;
+$accent--notes: $accent--trans;
+$focus: $accent;
+$focus-link--hover: $violet;
+$link: $red;
+$link--hover: $blue;
+$link--active: $green;
+$link-underline: $red--trans20;
+$anchor: $blue;
+$anchor--hover: $red;
+$anchor-back: $blue--trans20;
+$anchor-back--hover: $red--trans20;
+
+html {
+  color: $fore;
+}
+
+body {
+  background-color: $back;
+  color: $fore;
+}
+
+h1,
+h2 {
+  color: $fore--minus;
+}
+
+h3,
+h4 {
+  color: $fore;
+}
+
+h5 {
+  color: $fore--minus;
+}
+
+a {
+  color: $link;
+}
+
+a:hover,
+a:focus {
+  color: $link--hover;
+}
+
+a:active {
+  color: $link--active;
+  border-color: $trans01!important;
+}
+
+p a,
+li a,
+blockquote a {
+  @include a-underline;
+}
+
+sup[id] a {
+  background-color: $anchor-back;
+  border-color: $anchor;
+  color: $anchor;
+}
+
+sup[id] a:hover,
+sup[id] a:focus {
+  background-color: $anchor-back--hover;
+  border-color: $anchor--hover;
+  color: $anchor--hover;
+}
+
+ul li::before {
+  color: $accent--neutral;
+}
+
+blockquote {
+  border-color: $accent;
+  color: $fore--minus;
+}
+
+blockquote footer {
+  color: $fore;
+}
+
+figcaption {
+  color: $fore--minus;
+}
+
+hr {
+  background-color: $accent--neutral;
+}
+
+p > code,
+li > code,
+samp {
+  border-color: $code--border;
+  color: $code--inline;
+}
+
+kbd > kbd {
+  background-color: $back--inverse;
+  color: $fore--inverse;
+}
+
+mark {
+  background-color: $accent--trans;
+}
+
+::-moz-selection {
+  background: $accent;
+  color: $fore--inverse;
+}
+
+::selection {
+  background: $accent;
+  color: $fore--inverse;
+}
+
+.core-title {
+  background-color: $back--plus;
+}
+
+.content {
+  background-color: $back--plus;
+}
+
+.core-footer {
+  background-color: $back--minus;
+}
+
+.action {
+  @include action-color($accent, $fore--inverse);
+}
+
+.focus {
+  color: $focus;
+}
+
+.focus a {
+  color: $link;
+  @include a-underline($link-underline, $focus-link--hover);
+}
+
+.focus a:hover,
+.focus a:focus {
+  color: $focus-link--hover;
+}
+
+.ancillary {
+  background-color: $back;
+  color: $fore--minus;
+}
+
+.footnotes,
+.endnote {
+  background-color: $back--notes;
+}
+
+.endnote + .footnotes,
+.footnotes li {
+  border-color: $accent--notes;
+}
+
+.footnotes .reversefootnote {
+  border-color: $anchor;
+  color: $anchor;
+}
+
+.footnotes .reversefootnote:hover,
+.footnotes .reversefootnote:focus {
+  background-color: $anchor-back--hover;
+  border-color: $anchor--hover;
+  color: $anchor--hover;
+}
+
+.hero figcaption {
+  background-color: $back--plus;
+}
+
+.highlight {
+  background-color: $code-block--back;
+  border-color: $code--border;
+  color: $code-block--fore;
+}
+
+.highlight .c {
+  color: $code--comment;
+}
+
+.project,
+.project--satellite {
+  background-color: $back--project;
+}
+
+.project-image,
+.project--satellite .project-image {
+  background-color: $back--project-image;
+  border-color: $back--minus;
+}
+
+.essay {
+  background-color: $back--minus;
+}

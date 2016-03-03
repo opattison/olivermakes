@@ -1,7 +1,6 @@
 ---
 ---
-@import 'variables';
-@import 'mixins';
+@import 'helpers';
 
 .item--pattern {
   background-color: transparent;
@@ -69,7 +68,7 @@
 
 .pattern--swatch {
   flex: 1 0 100%;
-  font: 400 .625em/1.5 $source-code-pro;
+  font: $weight-medium .625em/1.5 $source-code-pro;
   margin-top: 1em;
 }
 
@@ -79,7 +78,7 @@
 }
 
 .pattern--swatch figcaption {
-  background-color: $gray07-90;
+  background-color: $gray07--trans90;
   border-bottom: none;
   bottom: 0;
   margin: 0;
@@ -103,15 +102,15 @@
 }
 
 .w300 {
-  font-weight: 300;
+  font-weight: $weight-thin;
 }
 
 .w400 {
-  font-weight: 400;
+  font-weight: $weight-regular;
 }
 
 .w500 {
-  font-weight: 500;
+  font-weight: $weight-medium;
 }
 
 .italic {
@@ -174,7 +173,7 @@
 }
 
 .pattern-meta figcaption strong {
-  font-weight: 500;
+  font-weight: $weight-medium;
 }
 
 .pattern-meta figcaption p {
@@ -204,7 +203,7 @@
   margin: 1em auto 0;
   padding: 1em;
   font-style: italic;
-  font-weight: 300;
+  font-weight: $weight-thin;
   line-height: 1.25;
 
   background-color: $gray07;
@@ -223,11 +222,11 @@
   border-bottom: solid 1px;
   padding-bottom: 1px;
 
-  color: $boldred;
+  color: $red;
 
   &:hover,
   &:focus {
-    color: $darkblue;
+    color: $blue;
   }
 
   @include a-underline;

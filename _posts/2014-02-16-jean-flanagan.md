@@ -1,6 +1,6 @@
 ---
 title: 'Website for Jean Flanagan'
-layout: dubbel
+layout: singel
 option:
   - code
   - custom-css
@@ -152,18 +152,6 @@ We chose [Jekyll](http://jekyllrb.com) because it would allow for a high perform
 
 Publishing *something* on the web is relatively easy, but designing a lasting home for creative output that you won’t be forced to abandon or migrate later takes a significant amount of time and effort. For this project, both design and content were weighed deliberately. Working **content first** informed the design. The layout, typography and other design elements had to suit the content well.
 
-{% capture oliver %}
-
-## What I learned from this project
-
-- That Jekyll is fast and I love using it to design and build a website.
-- How to set up a Jekyll site for personal publishing, with processes that would inspire me to create my own site.
-- How to use [GitHub Issues](https://github.com/opattison/jeancflanagan/issues) to communicate in real time about the process, organize collaborative work, and document the history of the project.
-- That working with development environments and version control is essential for a collaborative project, even if only two people are involved and their roles are well-defined.
-- That designing for yourself or someone close to you takes time – in this case, our personal time. (This process took months longer than we thought it might initially, but it ended up being worth additional effort to get certain design and content elements done *right*.)
-
-{% endcapture %}
-
 {% capture jean %}
 # What Jean learned from this project
 
@@ -177,18 +165,23 @@ Publishing *something* on the web is relatively easy, but designing a lasting ho
 
 {% endcapture %}
 
+<aside class="ancillary">
+{{ jean | markdownify }}
+</aside>
+
+## What I learned from this project
+
+- That Jekyll is fast and I love using it to design and build a website.
+- How to set up a Jekyll site for personal publishing, with processes that would inspire me to create my own site.
+- How to use [GitHub Issues](https://github.com/opattison/jeancflanagan/issues) to communicate in real time about the process, organize collaborative work, and document the history of the project.
+- That working with development environments and version control is essential for a collaborative project, even if only two people are involved and their roles are well-defined.
+- That designing for yourself or someone close to you takes time – in this case, our personal time. (This process took months longer than we thought it might initially, but it ended up being worth additional effort to get certain design and content elements done *right*.)
+
 {% capture endnote %}
 **[View Jean’s website live]({{ page.project.url }})** or **[check it out on GitHub]({{ page.project.source }})**.
 
 **Note:** this website is continually being updated and developed, so the information on this page is only a snapshot of it as it existed on {{ page.updated | date: '%Y-%m-%d' }}.
 {% endcapture %}
-
-<aside class="ancillary">
-{{ jean | markdownify }}
-</aside>
-<div class="flow--side">
-{{ oliver | markdownify }}
-</div>
 
 <aside class="endnote">
 {{ endnote | markdownify }}
