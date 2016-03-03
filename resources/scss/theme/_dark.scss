@@ -59,6 +59,7 @@ p > code,
 li > code,
 samp {
   border-color: $gray04;
+  color: $gray06;
 }
 
 .item--short {
@@ -71,7 +72,7 @@ samp {
 
 .core {
   background-color: $gray00;
-  color: $white;
+  color: $gray07;
 }
 
 .content,
@@ -93,7 +94,7 @@ samp {
 
 .ancillary {
   background-color: $gray00;
-  color: $white;
+  color: $gray07;
 }
 
 .edgeless .ancillary {
@@ -127,34 +128,6 @@ samp {
 
 .project-summary {
   color: $gray07;
-}
-
-.project-nav .project-nav-action {
-  border: none;
-  color: $whiter;
-}
-
-.project-nav .project-nav-action--url {
-  background-color: $red;
-  color: $white;
-}
-
-.project-nav .project-nav-action--source {
-  background-color: $violet;
-  border: none;
-  color: $white;
-}
-
-.project-nav .project-nav-action--url:hover,
-.project-nav .project-nav-action--url:focus {
-  background-color: $white;
-  color: $red;
-}
-
-.project-nav .project-nav-action--source:hover,
-.project-nav .project-nav-action--source:focus {
-  background-color: $white;
-  color: $violet;
 }
 
 .essay {
