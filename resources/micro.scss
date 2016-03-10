@@ -25,9 +25,11 @@
 }
 
 .banner h1 {
+  flex: 1 0 auto;
   font-size: 1.125em;
   margin: auto 0;
   padding: .5em;
+  text-align: right;
 
   @include min-width(l01) {
     padding: 1em;
@@ -35,7 +37,7 @@
 }
 
 .banner-title {
-  flex: 0 auto;
+  flex: 0 0 auto;
   padding: .5em;
 
   @include min-width(l01) {
