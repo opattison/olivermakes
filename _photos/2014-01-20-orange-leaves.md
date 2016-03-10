@@ -1,4 +1,5 @@
 ---
+title: 'Orange leaves'
 src: /images/2014-01-20-orange-leaves-olivermakes-ccbync.jpg
 alt: 'Backlit orange leaves'
 date: 2014-01-20

@@ -1,4 +1,5 @@
 ---
+title: 'Arboretum'
 src: /images/2014-06-29-arboretum-olivermakes-ccbync.jpg
 alt: 'Sunlit evergreen plants in a garden'
 date: 2014-06-29

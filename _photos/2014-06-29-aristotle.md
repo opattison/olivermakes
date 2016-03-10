@@ -1,4 +1,5 @@
 ---
+title: 'Aristotle’s Eyes'
 src: /images/2014-06-29-aristotles-eyes-olivermakes-ccbync.jpg
 alt: 'A book open to a page with the title “Aristotle’s Eyes”, set in a grassy, shady garden.'
 date: 2014-06-29

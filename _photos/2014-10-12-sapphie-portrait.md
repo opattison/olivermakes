@@ -1,6 +1,7 @@
 ---
+title: 'Sapphie looks'
 src: /images/2014-10-12-sapphie-portrait-olivermakes-ccbync.jpg
-alt: 'A black labrador retriever mix dog looks out into a park.'
+alt: 'A black hound dog looks out into a park.'
 date: 2014-10-12
 camera: 'Fujifilm X-E2'
 lens: 'Fujinon XF35mmF1.4 R'

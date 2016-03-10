@@ -1,4 +1,5 @@
 ---
+title: 'Chichester shore'
 src: /images/2014-03-23-chichester-shore-close-olivermakes-ccbync.jpg
 alt: 'Close view of moss, concrete and water on a shoreline'
 date: 2014-03-23

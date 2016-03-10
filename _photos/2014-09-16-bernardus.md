@@ -1,4 +1,5 @@
 ---
+title: 'St. Bernardus'
 src: /images/2014-09-16-bernardus-olivermakes-ccbync.jpg
 alt: 'A bottle of ale on a glass table.'
 date: 2014-09-16
