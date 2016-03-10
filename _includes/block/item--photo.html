@@ -7,7 +7,7 @@
 
 {% assign photo_count = post.photo | size %}
 
-  <article class="item--photo item" style="background-image: linear-gradient(hsla(0, 0%, 100%, .01) 50%, #1c1f22), url({{ image.src | imgix_url: w: 480, q: 35 }});">
+  <article class="item--photo item" style="background-image: linear-gradient(hsla(0, 0%, 100%, .01), hsla(204, 10%, 12%, .2) 60%, #1c1f22), url({{ image.src | imgix_url: w: 480, q: 35 }});">
     <a href="{{ post.url }}">
       <div class="item--photo-description item-description">
         <h1>{{ post.title }}</h1>
