@@ -79,6 +79,7 @@
 
 .photo-details {
   line-height: 1.5;
+  max-width: 28em;
 
   @include min-width(m02) {
     padding-right: 1em;
