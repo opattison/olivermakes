@@ -45,14 +45,8 @@
 }
 
 #error .return .return-action--home {
-  color: $black;
+  @include action-color($white, $gray00);
   flex: 0 0 100%;
-  @include a-underline($trans01, $trans01);
-
-  &:hover,
-  &:focus {
-    color: $white;
-  }
 
   @include min-width(m01) {
     flex: 0 0 50%;
