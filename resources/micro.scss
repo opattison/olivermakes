@@ -19,6 +19,20 @@
   }
 }
 
+.banner {
+  justify-content: space-between;
+}
+
+.banner h1 {
+  font-size: 1.125em;
+  margin: auto 0;
+  padding: .5em;
+
+  @include min-width(l01) {
+    padding: 1em;
+  }
+}
+
 .banner-title {
   flex: 0 auto;
   padding: .5em;
@@ -30,8 +44,8 @@
 
 .banner-title svg {
   margin: 0;
-  height: 2.5em;
-  width: 2.5em;
+  height: 1.6em;
+  width: 1.6em;
 
   @include min-width(l01) {
     font-size: 1.25em;
