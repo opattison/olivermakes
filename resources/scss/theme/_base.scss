@@ -146,6 +146,11 @@ dd::after {
   color: $fore--inverse;
 }
 
+.banner-title:hover,
+.banner-title:focus {
+  @include random-fill(2, 17);
+}
+
 .core-title {
   background-color: $back--plus;
 }
@@ -230,4 +235,9 @@ dd::after {
 
 .essay {
   background-color: $back--minus;
+}
+
+.return-action--home:hover,
+.return-action--home:focus {
+    @include random-fill(2, 6);
 }

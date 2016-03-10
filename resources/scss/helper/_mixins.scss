@@ -79,3 +79,11 @@
   max-width: none;
   width: calc(100% + #{2*$amount});
 }
+
+@mixin random-fill($start: 2, $end: 17) {
+  @for $i from $start through $end {
+    svg :nth-child(#{$i}) {
+      fill: c(shade, random(80) + 12);
+    }
+  }
+}
