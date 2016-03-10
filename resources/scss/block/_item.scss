@@ -140,11 +140,25 @@
 }
 
 .item-time {
+  margin-top: .5em;
   font-weight: $weight-thin;
 }
 
 .item-action {
   @include action;
+}
+
+.item-count {
+  color: $gray07;
+  font-weight: $weight-medium;
+  font-size: .75em;
+  left: calc(100% - 5em);
+  margin: 0;
+  mix-blend-mode: difference;
+  position: relative;
+  bottom: 2em;
+  width: 5em;
+  text-align: center;
 }
 
 .item--photo {
@@ -177,7 +191,7 @@
 }
 
 .item--photo-description {
-  height: auto;
+  height: 100%;
   padding: 1em;
 }
 
@@ -187,12 +201,12 @@
   font-weight: $weight-medium;
 
   @include min-width(m02) {
-    font-size: 1.125em;
+    font-size: 1em;
   }
 }
 
 .item--photo-description p {
   @include min-width(m02) {
-    font-size: .875em;
+    font-size: .75em;
   }
 }

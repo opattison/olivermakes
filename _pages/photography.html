@@ -8,8 +8,6 @@ permalink: /photography/
 ---
 
 {% for post in site.categories.photography %}
-  {% for photo in post.photo %}
-    {% include block/item--photo.html %}
-  {% endfor %}
+  {% include block/item--photo.html %}
 {% endfor %}
 {% include block/index-nav.html %}
