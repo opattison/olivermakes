@@ -1,7 +1,8 @@
 ---
-title: 'Arboretum'
+title: 'Sunlit evergreen plants'
 src: /images/2014-06-29-arboretum-olivermakes-ccbync.jpg
 alt: 'Sunlit evergreen plants in a garden'
+description: 'Sunlit evergreen plants from a day out at the arboretum.'
 date: 2014-06-29
 camera: 'Fujifilm X-E2'
 lens: 'Fujinon XF35mmF1.4 R'
