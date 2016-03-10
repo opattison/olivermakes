@@ -1,0 +1,127 @@
+---
+---
+@import 'helpers';
+
+.content {
+  background-color: inherit;
+  max-width: none;
+  padding: 0;
+  flex: 1 1 auto;
+
+  @media (max-width: 60em) and (min-aspect-ratio: 5/3),
+  (min-width: 60em) and (min-aspect-ratio: 16/9) {
+    max-width: 90%;
+    padding-top: 5%;
+  }
+
+  @media (min-aspect-ratio: 2/1) {
+    max-width: 80%;
+    padding-top: 10%;
+  }
+}
+
+.banner {
+  justify-content: space-between;
+}
+
+.banner h1 {
+  flex: 1 0 auto;
+  font-size: 1.125em;
+  margin: auto 0;
+  padding: .5em;
+  text-align: right;
+
+  @include min-width(l01) {
+    padding: 1em;
+  }
+}
+
+.banner-title {
+  flex: 0 0 auto;
+  padding: .5em;
+
+  @include min-width(l01) {
+    padding: 1em;
+  }
+}
+
+.banner-title svg {
+  margin: 0;
+  height: 1.6em;
+  width: 1.6em;
+
+  @include min-width(l01) {
+    font-size: 1.25em;
+  }
+}
+
+.image--micro {
+  display: block;
+  margin: auto;
+}
+
+.photo-meta {
+  display: flex;
+  flex-flow: column wrap;
+  margin: auto;
+  max-width: 100%;
+  padding: 2em 1em 2em;
+
+  @include min-width(m02) {
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    @include width-max(m02);
+  }
+
+  @include min-width(l01) {
+    @include width-max(l01);
+  }
+}
+
+.photo-details {
+  font-size: .875em;
+  line-height: 1.5;
+  max-width: 28em;
+
+  @include min-width(s02) {
+    font-size: 1em;
+  }
+
+  @include min-width(m02) {
+    padding-right: 1em;
+  }
+}
+
+.photo-details dt {
+  font-weight: $weight-light;
+}
+
+.photo-details dd {
+  font-weight: $weight-regular;
+}
+
+.separate::after {
+  content: '/';
+  color: $gray03;
+  font-weight: $weight-light;
+  margin: auto .25em;
+}
+
+.camera-icon {
+  margin-top: 1em;
+  width: 10em;
+
+  @include min-width(l01) {
+    width: 15em;
+  }
+}
+
+.photo-description {
+  margin-top: 1em;
+  max-width: 100%;
+
+  @include min-width(m02) {
+    flex: 1 0 100%;
+  }
+}

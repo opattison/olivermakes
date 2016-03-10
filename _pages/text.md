@@ -16,17 +16,17 @@ source: https://github.com/opattison/olivermakes
 
 ### Ratio font family (300, 400, 500)
 
-{% include block/pattern--type.html class='sans w300' %}
+{% include block/pattern--type.html class='font-sans weight-light' %}
 
-{% include block/pattern--type.html class='sans w300 italic' %}
+{% include block/pattern--type.html class='font-sans weight-light font-italic' %}
 
-{% include block/pattern--type.html class='sans w400' %}
+{% include block/pattern--type.html class='font-sans weight-regular' %}
 
-{% include block/pattern--type.html class='sans w400 italic' %}
+{% include block/pattern--type.html class='font-sans weight-regular font-italic' %}
 
-{% include block/pattern--type.html class='sans w500' %}
+{% include block/pattern--type.html class='font-sans weight-medium' %}
 
-{% include block/pattern--type.html class='sans w500 italic' %}
+{% include block/pattern--type.html class='font-sans weight-medium font-italic' %}
 
 ```
 $ratio: 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
@@ -34,7 +34,7 @@ $ratio: 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
 
 ### Source Code Pro font family (500)
 
-{% include block/pattern--type.html class='monospace w500' %}
+{% include block/pattern--type.html class='font-monospace weight-medium' %}
 
 ```
 $source-code-pro: 'source-code-pro', Menlo, Consolas, monospace;

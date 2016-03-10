@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" class="svg-location" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 340 510" enable-background="new 0 0 340 510" xml:space="preserve">
-  <circle class="inner" fill="none" stroke="#49535A" stroke-width="20" stroke-miterlimit="10" cx="170" cy="90" r="80"/>
-  <path class="outer" fill="none" stroke="#49535A" stroke-width="20" stroke-miterlimit="10" d="M330,170c0-88.4-71.6-160-160-160
-    S10,81.6,10,170c0,29.9,8.2,57.9,22.5,81.8L100.7,370L170,490l69.3-120l68.2-118.2C321.8,227.9,330,199.9,330,170z"/>
-</svg>

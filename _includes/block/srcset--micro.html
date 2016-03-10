@@ -1,0 +1,11 @@
+{% if image.quality %}
+  {% assign quality = image.quality %}
+{% else %}
+  {% assign quality = 50 %}
+{% endif %}
+<img
+  class="image--micro"
+  src="{{ image.src | imgix_url: w: 1080, q: 50 }}"
+  sizes="100vw"
+  srcset="{% for width in site.srcset %}{{ image.src | imgix_url: w: width, q: quality }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+  alt="{{ image.alt }}">

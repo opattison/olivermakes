@@ -122,6 +122,20 @@ mark {
   background-color: $accent--trans;
 }
 
+dt {
+  display: inline-block;
+  min-width: 5em;
+}
+
+dd {
+  display: inline;
+}
+
+dd::after {
+  content: '';
+  display: block;
+}
+
 ::-moz-selection {
   background: $accent;
   color: $fore--inverse;
@@ -130,6 +144,11 @@ mark {
 ::selection {
   background: $accent;
   color: $fore--inverse;
+}
+
+.banner-title:hover,
+.banner-title:focus {
+  @include random-fill(2, 17);
 }
 
 .core-title {
@@ -216,4 +235,9 @@ mark {
 
 .essay {
   background-color: $back--minus;
+}
+
+.return-action--home:hover,
+.return-action--home:focus {
+    @include random-fill(2, 6);
 }

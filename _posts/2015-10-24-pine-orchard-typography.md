@@ -66,12 +66,12 @@ I avoided the more eclectic Victorian typographic styles which might be illegibl
 
 <div class="grid">
   <figure class="grid-figure">
-    {% assign count = 1 %}
+    {% assign image = page.image[1] %}
     {% include block/srcset_grid2.html %}
     <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
   </figure>
   <figure class="grid-figure">
-    {% assign count = 2 %}
+    {% assign image = page.image[2] %}
     {% include block/srcset_grid2.html %}
     <figcaption>{{ page.image[2].caption | markdownify }}</figcaption>
   </figure>
@@ -105,17 +105,17 @@ For a small shop, memorable and appropriate typography effectively served the bu
 
 <div class="grid--wide">
   <figure class="grid-figure screenshot">
-    {% assign count = 4 %}
+    {% assign image = page.image[4] %}
     {% include block/srcset_grid2--png.html %}
   </figure>
   <figure class="grid-figure screenshot">
-    {% assign count = 5 %}
+    {% assign image = page.image[5] %}
     {% include block/srcset_grid2.html %}
   </figure>
 </div>
 
 <figure class="image--wide screenshot">
-  {% assign count = 6 %}
+  {% assign image = page.image[6] %}
   {% include block/srcset.html %}
   <figcaption>{{ page.image[6].caption | markdownify }}</figcaption>
 </figure>

@@ -11,27 +11,12 @@ date: 2015-02-17 19:25
 updated: 2015-02-17 19:25
 unique_id: 2015-02-17:dog-at-rest
 description: 'Our dog Sapphie loves relaxing on the couch, which makes her an easy subject.'
-image:
-  - src: /images/2014-12-14-dog-at-rest-olivermakes-ccbync.jpg
-    alt: 'A close-up of the head of a black dog in side profile, looking out into a living room.'
-    date: 2014-12-14
-    camera: 'Fujifilm X-E2'
-    lens: 'Fujinon XF35mmF1.4 R'
-    focal: '35mm'
-    aperture: 'f/1.4'
-    shutter: '1/55'
-    iso: 4000
-    description: 'Our dog Sapphie loves relaxing on the couch, which makes her an easy subject.'
-    location: 'Washington, DC'
-    latitude: 38.9172
-    longitude: -77.0461
-    zoom: 15
-    quality: 70
-    aspect: '3:2'
+photo:
+  - 2014-12-14-dog
 
 ---
 
 <figure class="image--wide">
-  {% assign count = 0 %}
-  {% include block/srcset.html %}
+  {% assign photo = page.photo[0] %}
+  {% include block/photo.html %}
 </figure>

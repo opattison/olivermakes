@@ -62,7 +62,7 @@ h4 {
 h3,
 h4,
 h5 {
-  font-weight: $weight-thin;
+  font-weight: $weight-light;
 }
 
 h4,
@@ -106,6 +106,10 @@ a {
 a:hover,
 a:focus {
   transition-duration: 160ms;
+}
+
+circle {
+  transition-duration: 320ms;
 }
 
 /* Lists */

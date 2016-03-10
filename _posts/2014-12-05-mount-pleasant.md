@@ -11,69 +11,26 @@ updated: 2014-12-05 01:28
 drafted: 2014-11-14 22:01
 unique_id: 2014-11-14:mount-pleasant
 description: 'Photos from a neighborhood in Washington, DC; processed with VSCO Film 04.'
-image:
-  - src: /images/2014-01-20-orange-leaves-olivermakes-ccbync.jpg
-    alt: 'Backlit orange leaves'
-    date: 2014-01-20
-    camera: 'Fujifilm X-E2'
-    lens: 'Fujinon XF35mmF1.4 R'
-    focal: '35mm'
-    aperture: 'f/5'
-    shutter: '1/800'
-    iso: 500
-    location: 'Mount Pleasant, Washington DC'
-    latitude: 38.9298
-    longitude: -77.0438
-    zoom: 16
-    description: 'VSCO Film Kodak E200'
-    quality: 70
-  - src: /images/2014-01-20-bark-close-olivermakes-ccbync.jpg
-    alt: 'Close view of tree bark in a residential neighborhood'
-    date: 2014-01-20
-    camera: 'Fujifilm X-E2'
-    lens: 'Fujinon XF35mmF1.4 R'
-    focal: '35mm'
-    aperture: 'f/5'
-    shutter: '1/210'
-    iso: 200
-    location: 'Mount Pleasant, Washington DC'
-    latitude: 38.9329
-    longitude: -77.0413
-    zoom: 16
-    description: 'VSCO Film Kodak E200'
-    quality: 70
-  - src: /images/2014-01-20-sidewalk-olivermakes-ccbync.jpg
-    alt: 'Small green leaves growing from a rocky wall next to a sidewalk'
-    date: 2014-01-20
-    camera: 'Fujifilm X-E2'
-    lens: 'Fujinon XF35mmF1.4 R'
-    focal: '35mm'
-    aperture: 'f/2.5'
-    shutter: '1/640'
-    iso: 200
-    location: 'Mount Pleasant, Washington DC'
-    latitude: 38.9298
-    longitude: -77.0438
-    zoom: 16
-    description: 'VSCO Film Kodak E200'
-    quality: 70
+photo:
+  - 2014-01-20-orange-leaves
+  - 2014-01-20-bark
+  - 2014-01-20-sidewalk
 
 ---
 
 <figure class="image--wide">
-  {% assign count = 0 %}
-  {% include block/srcset.html %}
+  {% assign photo = page.photo[0] %}
+  {% include block/photo.html %}
 </figure>
 
 <figure class="image--wide">
-  {% assign count = 1 %}
-  {% include block/srcset.html %}
+  {% assign photo = page.photo[1] %}
+  {% include block/photo.html %}
 </figure>
 
-
 <figure class="image--wide">
-  {% assign count = 2 %}
-  {% include block/srcset.html %}
+  {% assign photo = page.photo[2] %}
+  {% include block/photo.html %}
 </figure>
 
 <section class="essay">

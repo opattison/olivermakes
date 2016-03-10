@@ -26,13 +26,6 @@ link:
   twitter: http://twitter.com/olivermakes
   vsco: http://olivermakes.vsco.co
 
-## Collections
-
-collections:
-  patterns:
-    output: true
-    permalink: patterns/:path/
-
 # Site configuration
 
 ## Gems configuration
@@ -55,6 +48,22 @@ kramdown:
 
 ## Permalink configuration
 permalink: /:year/:month/:title/
+
+## Collections
+collections:
+  patterns:
+    output: true
+    permalink: patterns/:path/
+  photos:
+    output: true
+    permalink: photography/:path/
+
+defaults:
+  - scope:
+      type: photos
+    values:
+      layout: micro
+      category: photography
 
 ## Jekyll Archives configuration
 jekyll-archives:
