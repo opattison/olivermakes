@@ -12,6 +12,8 @@ updated: 2014-12-05 01:29
 drafted: 2014-11-27 19:02
 unique_id: 2014-11-27:turntable
 description: 'A close-up view of my record player.'
+photo:
+  - 2014-06-15-turntable
 image:
   - src: /images/2014-06-15-turntable-kodak-portra-400-olivermakes-ccbync.jpg
     alt: 'The tone arm of a record player'
@@ -33,7 +35,8 @@ image:
 ---
 
 <figure class="image--wide">
-  {% assign count = 0 %}
+  {% assign photo = page.photo[0] %}
+  {% include helper/photo-from-collection.liquid %}
   {% include block/srcset.html %}
-  <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
+  <figcaption>{{ image.caption | markdownify }}</figcaption>
 </figure>

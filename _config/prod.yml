@@ -32,6 +32,9 @@ collections:
   patterns:
     output: true
     permalink: patterns/:path/
+  photos:
+    output: true
+    permalink: photography/:year/:month/:path/
 
 # Site configuration
 

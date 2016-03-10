@@ -1,0 +1,5 @@
+{% for item in site.photos %}
+  {% if item.url contains photo %}
+    {% assign image = item %}
+  {% endif %}
+{% endfor %}
