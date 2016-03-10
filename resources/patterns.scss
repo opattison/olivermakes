@@ -92,31 +92,6 @@
   margin-top: 1em;
 }
 
-.sans {
-  font-family: $ratio;
-}
-
-.monospace {
-  font-family: $source-code-pro;
-  font-size: .8125em;
-}
-
-.w300 {
-  font-weight: $weight-thin;
-}
-
-.w400 {
-  font-weight: $weight-regular;
-}
-
-.w500 {
-  font-weight: $weight-medium;
-}
-
-.italic {
-  font-style: italic;
-}
-
 .pattern--element {
   margin-top: 6em;
 }
@@ -203,7 +178,7 @@
   margin: 1em auto 0;
   padding: 1em;
   font-style: italic;
-  font-weight: $weight-thin;
+  font-weight: $weight-light;
   line-height: 1.25;
 
   background-color: $gray07;

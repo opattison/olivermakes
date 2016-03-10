@@ -91,3 +91,28 @@ ul.inline-list :last-child::after {
   content: ''!important;
   margin: 0!important;
 }
+
+.font-sans {
+  font-family: $ratio;
+}
+
+.font-monospace {
+  font-family: $source-code-pro;
+  font-size: .8125em;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.weight-light {
+  font-weight: $weight-light;
+}
+
+.weight-regular {
+  font-weight: $weight-regular;
+}
+
+.weight-medium {
+  font-weight: $weight-medium;
+}
