@@ -19,7 +19,6 @@ photo:
 
 <figure class="image--wide">
   {% assign photo = page.photo[0] %}
-  {% include helper/photo-from-collection.liquid %}
-  {% include block/srcset.html %}
+  {% include block/photo.html %}
   <figcaption>{{ image.caption | markdownify }}</figcaption>
 </figure>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body class="micro">
+
+{% include container/banner.html %}
+
+  <article id="maincontent" class="h-entry core" role="main">
+
+    <div class="e-content content">
+
+{% if page.collection == 'photos' %}
+  {% assign image = page %}
+  {% include block/srcset--micro.html %}
+{% endif %}
+
+{{ content }}
+
+    </div>
+
+  </article>
+
+{% include container/end.html %}
+
+</body>
+</html>

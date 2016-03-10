@@ -53,8 +53,12 @@
   }
 }
 
+.image--micro {
+  display: block;
+  margin: auto;
+}
 
-/* Helper for right-aligned images */
+/* Utility for right-aligned images */
 .right {
   @include min-width(s04) {
     float: right;

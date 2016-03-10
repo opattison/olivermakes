@@ -1,0 +1,18 @@
+---
+---
+@import 'helpers';
+
+.content {
+  background-color: inherit;
+  padding: 0;
+}
+
+.banner-title {
+  flex: 0 auto;
+}
+
+.banner-title svg {
+  margin: 0;
+  height: 6em;
+  width: 6em;
+}

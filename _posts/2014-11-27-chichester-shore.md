@@ -21,19 +21,16 @@ photo:
 
 <figure class="image--wide">
   {% assign photo = page.photo[0] %}
-  {% include helper/photo-from-collection.liquid %}
-  {% include block/srcset.html %}
+  {% include block/photo.html %}
 </figure>
 
 <div class="grid--wide">
   <figure class="grid-figure">
     {% assign photo = page.photo[1] %}
-    {% include helper/photo-from-collection.liquid %}
-    {% include block/srcset_grid2.html %}
+    {% include block/photo--grid2.html %}
   </figure>
   <figure class="grid-figure">
     {% assign photo = page.photo[2] %}
-    {% include helper/photo-from-collection.liquid %}
-    {% include block/srcset_grid2.html %}
+    {% include block/photo--grid2.html %}
   </figure>
 </div>
