@@ -70,7 +70,7 @@
   }
 }
 
-@media (min-aspect-ratio: 5/3),
+@media (max-width: 60em) and (min-aspect-ratio: 5/3),
 (min-width: 60em) and (min-aspect-ratio: 16/9) {
   .image--wide,
   .image--narrow,

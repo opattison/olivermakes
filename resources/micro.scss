@@ -8,14 +8,15 @@
   padding: 0;
   flex: 1 1 auto;
 
-  @media (min-aspect-ratio: 5/3),
-  (min-width: 45em) and (min-aspect-ratio: 9/5),
-  (min-width: 60em) and (min-aspect-ratio: 18/8) {
+  @media (max-width: 60em) and (min-aspect-ratio: 5/3),
+  (min-width: 60em) and (min-aspect-ratio: 16/9) {
     max-width: 90%;
+    padding-top: 5%;
   }
 
   @media (min-aspect-ratio: 2/1) {
     max-width: 80%;
+    padding-top: 10%;
   }
 }
 
