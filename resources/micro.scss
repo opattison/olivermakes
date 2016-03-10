@@ -4,15 +4,41 @@
 
 .content {
   background-color: inherit;
+  max-width: none;
   padding: 0;
+  flex: 1 0 auto;
+
+  @media (min-aspect-ratio: 5/3),
+  (min-width: 45em) and (min-aspect-ratio: 9/5),
+  (min-width: 60em) and (min-aspect-ratio: 18/8) {
+    max-width: 90%;
+  }
+
+  @media (min-aspect-ratio: 2/1) {
+    max-width: 80%;
+  }
 }
 
 .banner-title {
   flex: 0 auto;
+  padding: .5em;
+
+  @include min-width(l01) {
+    padding: 1em;
+  }
 }
 
 .banner-title svg {
   margin: 0;
-  height: 6em;
-  width: 6em;
+  height: 2.5em;
+  width: 2.5em;
+
+  @include min-width(l01) {
+    font-size: 1.25em;
+  }
+}
+
+.image--micro {
+  display: block;
+  margin: auto;
 }

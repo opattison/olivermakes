@@ -53,11 +53,6 @@
   }
 }
 
-.image--micro {
-  display: block;
-  margin: auto;
-}
-
 /* Utility for right-aligned images */
 .right {
   @include min-width(s04) {
@@ -82,9 +77,5 @@
   .grid--wide {
     margin: 1em auto 0!important;
     max-width: 100%!important;
-  }
-
-  .image--micro {
-    max-width: 90%!important;
   }
 }
