@@ -6,7 +6,7 @@
   background-color: inherit;
   max-width: none;
   padding: 0;
-  flex: 1 0 auto;
+  flex: 1 1 auto;
 
   @media (min-aspect-ratio: 5/3),
   (min-width: 45em) and (min-aspect-ratio: 9/5),
@@ -55,4 +55,64 @@
 .image--micro {
   display: block;
   margin: auto;
+}
+
+.photo-meta {
+  display: flex;
+  flex-flow: column wrap;
+  margin: auto;
+  max-width: 100%;
+  padding: 2em 1em 2em;
+
+  @include min-width(m02) {
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    @include width-max(m02);
+  }
+
+  @include min-width(l01) {
+    @include width-max(l01);
+  }
+}
+
+.photo-details {
+  line-height: 1.5;
+
+  @include min-width(m02) {
+    padding-right: 1em;
+  }
+}
+
+.photo-details dt {
+  font-weight: $weight-light;
+}
+
+.photo-details dd {
+  font-weight: $weight-regular;
+}
+
+.separate::after {
+  content: '/';
+  color: $gray03;
+  font-weight: $weight-light;
+  margin: auto .25em;
+}
+
+.camera-icon {
+  margin-top: 1em;
+  width: 10em;
+
+  @include min-width(l01) {
+    width: 15em;
+  }
+}
+
+.photo-description {
+  margin-top: 1em;
+  max-width: 100%;
+
+  @include min-width(m02) {
+    flex: 1 0 100%;
+  }
 }

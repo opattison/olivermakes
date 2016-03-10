@@ -1,0 +1,19 @@
+<div class="photo-meta">
+  <dl class="photo-details">
+    <dt>Camera</dt><dd>{{ page.camera }}</dd>
+    <dt>Lens</dt><dd>{{ page.lens }} at {{ page.focal }}</dd>
+    <dt>Exposure</dt><dd><span class="separate">{{ page.aperture }}</span><span class="separate">{{ page.shutter }} s</span>ISO {{ page.iso }}</dd>
+    <dt>Date</dt><dd><time class="dt-published" pubdate datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%Y-%m-%d' }}</time></dd>
+    <dt>Location</dt><dd>{{ page.location }}</dd>
+  </dl>
+  <div class="camera-icon">
+  {% if page.camera contains 'iPhone 5S' %}
+    {% include block/icon-iphone5s.svg.html %}
+  {% elsif page.camera contains 'X-E2' %}
+    {% include block/icon-fxe2.svg.html %}
+  {% endif %}
+  </div>
+  <div class="photo-description">
+    {% if page.description %}{{ page.description | markdownify }}{% endif %}
+  </div>
+</div>
