@@ -2,20 +2,49 @@
   <link rel="me" href="mailto:{{ site.author.email }}">
 
   <meta name="twitter:site" content="{{ site.author.twitter }}">
-  {% if page.category == 'photography' %}<meta name="twitter:card" content="photo">{% endif %}
-  {% if page.category != 'photography' %}<meta name="twitter:card" content="summary">{% endif %}
+{% if page.category == 'photography' %}
+  <meta name="twitter:card" content="photo">
+{% else %}
+  <meta name="twitter:card" content="summary">
+{% endif %}
 
-  {% if page.category == 'index' %}<meta property="og:type" content="website">{% else %}<meta property="og:type" content="article">{% endif %}
-  <meta property="og:url" content="{{ site.url }}{{ page.id }}/">
-  <meta property="og:title" content="{{ page.title | strip_html }} – {{ site.title }}">
-  {% if page.image[0] and page.category == 'photography' %}<meta property="og:image" content="{{ page.image[0].src | imgix_url: w: 1024, q: 50 }}">
-  <meta property="og:image:secure_url" content="{{ page.image[0].src | imgix_url: w: 1024, q: 50 }}">
-  {% elsif page.image[0] and page.category != 'photography' %}{% unless page.image[0].src contains 'svg' %}
-  <meta property="og:image" content="{{ page.image[0].src }}">
-  {% else %}<meta property="og:image" content="{{ page.image[0].src_png }}">{% endunless %}
-  {% else %}<meta property="og:image" content="{{ site.icon_url }}/touchicon192.png">{% endif %}
+{% if page.category == 'index' or page.category == 'archive' %}
+  <meta property="og:type" content="website">
+{% else %}
+  <meta property="og:type" content="article">
+{% endif %}
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:title" content="{{ page.title | strip_html }}">
 
-  {% if page.description %}<meta property="og:description" content="{{ page.description }}">{% else %}<meta property="og:description" content="{{ site.description }}">{% endif %}
+{% if page.collection == 'photos' %}
+  {% assign image = page %}
+{% elsif page.category == 'photography' %}
+  {% assign photo = page.photo[0] %}
+  {% include helper/photo-from-collection.liquid %}
+{% elsif page.image[0] and page.category != 'photography' %}
+  {% assign image = page.image[0] %}
+{% endif %}
+
+{% if image %}
+  {% if image.src contains 'svg' %}
+  <meta property="og:image" content="{{ site.url }}{{ image.src_png }}">
+  <meta property="og:image:secure_url" content="{{ site.url }}{{ image.src_png }}">
+  {% elsif image.src contains 'png' %}
+  <meta property="og:image" content="{{ image.src | imgix_url }}">
+  <meta property="og:image:secure_url" content="{{ image.src | imgix_url }}">
+  {% else %}
+  <meta property="og:image" content="{{ image.src | imgix_url: w: 1024, q: 50 }}">
+  <meta property="og:image:secure_url" content="{{ image.src | imgix_url: w: 1024, q: 50 }}">
+  {% endif %}
+{% else %}
+  <meta property="og:image" content="{{ site.url }}{{ site.icon_url }}/touchicon192.png">
+{% endif %}
+
+{% if page.description %}
+  <meta property="og:description" content="{{ page.description | markdownify | strip_html }}">
+{% else %}
+  <meta property="og:description" content="{{ site.description }}">
+{% endif %}
 
   <meta name="google-site-verification" content="{{ site.google_verification }}" />
   <!-- but no Analytics! -->
