@@ -1,6 +1,8 @@
   <link rel="source" href="{{ site.link.source }}" />
   <link rel="me" href="mailto:{{ site.author.email }}">
 
+  <meta name="author" content="{{ site.author.name }}">
+
   <meta name="twitter:site" content="{{ site.author.twitter }}">
 {% if page.category == 'photography' %}
   <meta name="twitter:card" content="photo">
@@ -10,15 +12,26 @@
   <meta name="twitter:card" content="summary">
 {% endif %}
 
-  <meta property="og:site_name" content="{{ site.title }}">
 
 {% if page.category == 'index' or page.category == 'archive' %}
   <meta property="og:type" content="website">
 {% else %}
   <meta property="og:type" content="article">
 {% endif %}
+
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:title" content="{{ page.title | strip_html }}">
+
+{% if page.date %}
+  <meta property="og:article:published_time" content="{{ page.date | date_to_xmlschema }}">
+{% endif %}
+{% if page.updated %}
+  <meta property="og:article:modified_time" content="{{ page.updated | date_to_xmlschema }}">
+{% else %}
+  <meta property="og:article:modified_time" content="{{ site.time | date_to_xmlschema }}">
+{% endif %}
+
 
 {% if page.collection == 'photos' %}
   {% assign image = page %}
@@ -46,8 +59,10 @@
 
 {% if page.description %}
   <meta property="og:description" content="{{ page.description | markdownify | strip_html }}">
+  <meta name="description" content="{{ page.description | markdownify | strip_html }}">
 {% else %}
   <meta property="og:description" content="{{ site.description }}">
+  <meta name="description" content="{{ site.description }}">
 {% endif %}
 
   <meta name="google-site-verification" content="{{ site.google_verification }}" />

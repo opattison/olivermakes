@@ -6,7 +6,7 @@
   </div>
   <div class="project-meta">
     <p class="p-summary project-summary">{{ page.description }}</p>
-    <p class="project-description">This project was originally completed <time class="dt-published" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ completed }}</time>{% if page.period %} and worked on from {{ page.period }}{% endif %}. {% if page.project.license %} Licensed <a href="{{ page.project.license-url }}">{{ page.project.license }}</a>.{% endif %}</p>
+    <p class="project-description">This project was originally completed <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ completed }}</time>{% if page.period %} and worked on from {{ page.period }}{% endif %}. {% if page.project.license %} Licensed <a href="{{ page.project.license-url }}">{{ page.project.license }}</a>.{% endif %}</p>
     {% unless updated == completed %}<p class="project-description">This writing was last updated {{ updated }}.</p>{% endunless %}
     {% if page.project %}{% else %}<p class="project-description">No public source or link is available for this project.</p>{% endif %}
     {% if page.project %}

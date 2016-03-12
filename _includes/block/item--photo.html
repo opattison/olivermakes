@@ -11,7 +11,7 @@
     <a href="{{ post.url }}">
       <div class="item--photo-description item-description">
         <h1>{{ post.title }}</h1>
-        <p class="item-time">Published <time class="dt-published" pubdate datetime="{{ post.date }}">{{ post.date | date: '%Y-%m-%d' }}</time></p>
+        <p class="item-time">Published <time class="dt-published" pubdate datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y-%m-%d' }}</time></p>
       </div>
       <div class="item-count">{{ photo_count }} photo{% if photo_count > 1 %}s{% endif %}</div>
     </a>
