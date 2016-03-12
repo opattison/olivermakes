@@ -4,9 +4,13 @@
   <meta name="twitter:site" content="{{ site.author.twitter }}">
 {% if page.category == 'photography' %}
   <meta name="twitter:card" content="photo">
+{% elsif page.category == 'projects' %}
+  <meta name="twitter:card" content="summary_large_image">
 {% else %}
   <meta name="twitter:card" content="summary">
 {% endif %}
+
+  <meta property="og:site_name" content="{{ site.title }}">
 
 {% if page.category == 'index' or page.category == 'archive' %}
   <meta property="og:type" content="website">
