@@ -3,7 +3,7 @@
     <dt>Camera</dt><dd>{{ page.camera }}</dd>
     <dt>Lens</dt><dd>{{ page.lens }} at {{ page.focal }}</dd>
     <dt>Exposure</dt><dd><span class="separate">{{ page.aperture }}</span><span class="separate">{{ page.shutter }} s</span>ISO {{ page.iso }}</dd>
-    <dt>Date</dt><dd><time class="dt-published" pubdate datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%Y-%m-%d' }}</time></dd>
+    <dt>Date</dt><dd><time class="dt-published" pubdate datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y-%m-%d' }}</time></dd>
     <dt>Location</dt><dd>{{ page.location }}</dd>
   </dl>
   <div class="camera-icon">
