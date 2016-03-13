@@ -1,4 +1,6 @@
-# Site configuration
+## Configuration URLs
+domain: dev.olivermak.es
+url: https://dev.olivermak.es
 
 ## Sass configuration
 sass:
