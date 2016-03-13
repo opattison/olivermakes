@@ -8,25 +8,12 @@ category: interface
 priority: 5
 option:
   - fix-rem
+  - wider
 sass: block/_return.scss
 ---
 
 <nav class="return" role="navigation">
-  <a class="return-action--home" rel="home" href="/#menu">
-    Menu
-    <svg viewBox="0 0 64 64" enable-background="new 0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
-      <title>olivermakes</title>
-      <desc>Multi-colored concentric circles used as a logo for this site.</desc>
-      <g>
-        <circle class="logo-layer15" fill="#373E43" cx="32" cy="32" r="32"></circle>
-        <circle class="logo-layer12" fill="#CC3D33" cx="32" cy="32" r="28"></circle>
-        <circle class="logo-layer10" fill="#49535A" cx="32" cy="32" r="20"></circle>
-        <circle class="logo-layer6" fill="#105F93" cx="32" cy="32" r="16"></circle>
-        <circle class="logo-layer1" fill="#397EAC" cx="32" cy="32" r="10"></circle>
-      </g>
-    </svg>
-  </a>
-  <a class="return-action--top js-backTop" href="#top">
-    Back to top ↾
-  </a>
+  <a class="return-action--home" rel="home" href="/#menu">menu{% include icon/logo-medium.svg.html %}</a>
+  <a class="return-action--category background--photography" href="/photography/">/photography</a>
+  <a class="return-action--top js-backTop" href="#top">back to top ↾</a>
 </nav>
