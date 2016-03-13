@@ -227,29 +227,23 @@
 }
 
 .core-pagination {
-  @include action-color($red, $white);
+  @include action-color($red, $gray07);
 }
 
 .core-pagination--later {
   background-color: $red;
+
+  &:hover,
+  &:focus {
+    color: $red;
+  }
 }
 
 .core-pagination--earlier {
   background-color: $blue;
-}
 
-.core-pagination:hover,
-.core-pagination:focus {
-  background-color: $whiter;
-  border: none;
-}
-
-.core-pagination--later:hover,
-.core-pagination--later:focus {
-  color: $red;
-}
-
-.core-pagination--earlier:hover,
-.core-pagination--earlier:focus {
-  color: $blue;
+  &:hover,
+  &:focus {
+    color: $blue;
+  }
 }

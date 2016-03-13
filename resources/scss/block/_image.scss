@@ -15,40 +15,40 @@
 .image--narrow,
 .image--wide {
   @include bleed-image(1em);
+  margin-top: 1em;
 
   @include min-width(s03) {
-    margin: 1em -2em 0;
+    @include bleed-image(2em);
     width: calc(100% + 4em);
   }
 
   @include min-width(s04) {
     @include bleed-image(2.5em);
-    margin-top: 1em;
     width: calc(100% + 5em);
   }
 }
 
-@include min-width(l01) {
-  .image--narrow {
+.image--narrow {
+  @include min-width(l01) {
     margin: 1.5em auto;
     width: 100%;
   }
-
-  .image--wide {
-    margin: 1em -4.5em 0;
-    max-width: none;
-    width: calc(100% + 9em);
-  }
-
-  .image--wide figcaption {
-    width: 50%;
-    margin-left: 50%;
-  }
 }
 
-@include min-width(l03) {
-  .image--wide {
-    margin: 1em -9em 0;
+.image--wide {
+  @include min-width(l01) {
+    @include bleed-image(4.5em);
+    max-width: none;
+    width: calc(100% + 9em);
+
+    figcaption {
+      width: 50%;
+      margin-left: 50%;
+    }
+  }
+
+  @include min-width(l03) {
+    @include bleed-image(9em);
     width: calc(100% + 18em);
   }
 }
