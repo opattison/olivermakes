@@ -75,7 +75,8 @@
 }
 
 @mixin bleed-image($amount: 1em) {
-  margin: $amount -#{$amount} 0;
+  margin-left: -$amount;
+  margin-right: -$amount;
   max-width: none;
   width: calc(100% + #{2*$amount});
 }
