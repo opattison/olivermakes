@@ -69,7 +69,7 @@
 
   @include min-width(m01) {
     align-items: center;
-    @include width-max(m01);
+    @include width-max(m02);
   }
 
   @include min-width(l01) {

@@ -3,7 +3,7 @@
 @import 'helpers';
 
 #error,
-#error .core-title,
+#error .page-title,
 #error .content {
   background-color: $violet;
 }
@@ -13,7 +13,7 @@
   width: 12em;
 }
 
-#error .core-title h1 {
+#error .page-title h1 {
   color: $whiter;
   text-align: center;
 }
