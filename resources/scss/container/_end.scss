@@ -6,7 +6,7 @@
   justify-content: center;
 }
 
-.core + .end {
+.page + .end {
   @include min-width(m02) {
     margin-top: 2.5em;
   }

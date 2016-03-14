@@ -3,7 +3,7 @@
 @import 'helpers';
 
 .content,
-.core-title {
+.page-title {
   background-color: inherit;
 }
 
@@ -15,11 +15,11 @@
   margin-top: 0;
 }
 
-.core-title h1 {
+.page-title h1 {
   text-align: center;
 }
 
-.core-footer {
+.page-footer {
   margin: 2em auto 0;
 }
 
@@ -38,13 +38,13 @@
 }
 
 @media screen and (min-width: 45em) {
-  .core-footer {
+  .page-footer {
     margin: 2em auto 0;
   }
 }
 
 @media screen and (min-width: 60em) {
-  .core-title {
+  .page-title {
     padding: .75em 1.25em;
   }
 
@@ -66,11 +66,11 @@
     font-size: .875em;
   }
 
-  .core-footer {
+  .page-footer {
     max-width: 45em;
   }
 
-  .core-meta {
+  .page-meta {
     max-width: 27em;
   }
 }
@@ -94,7 +94,7 @@
 }
 
 @media screen and (min-width: 140em) {
-  .core-title {
+  .page-title {
     font-size: 2em;
   }
 
@@ -104,8 +104,8 @@
     width: calc(100% + 24em);
   }
 
-  .core-footer,
-  .core-meta {
+  .page-footer,
+  .page-meta {
     max-width: none;
   }
 }

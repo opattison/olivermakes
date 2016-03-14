@@ -214,7 +214,7 @@ sup[id] {
 sup[id] a {
   border: solid 1px;
   border-radius: .125em;
-  font-weight: $weight-regular;
+  font-weight: $weight-medium;
   margin-right: .125em;
   padding: 0 .25em;
 }
@@ -242,11 +242,21 @@ figcaption p {
   }
 }
 
-/* Inline styles */
 hr {
   border: 0;
   height: .2em;
   margin: 2em 0;
+}
+
+dt {
+  display: inline-block;
+  height: 1.5em;
+}
+
+dd {
+  display: block;
+  margin-top: -1.5em;
+  margin-left: 5em;
 }
 
 code,

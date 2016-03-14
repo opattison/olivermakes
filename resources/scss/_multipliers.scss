@@ -1,7 +1,7 @@
 @include min-width(s01) {
   .content,
-  .core-title,
-  .core-footer,
+  .page-title,
+  .page-footer,
   .credits {
     font-size: 1.0625em;
   }
@@ -9,8 +9,8 @@
 
 @include min-width(s02) {
   .content,
-  .core-title,
-  .core-footer,
+  .page-title,
+  .page-footer,
   .credits {
     font-size: 1.125em;
   }
@@ -18,8 +18,8 @@
 
 @include min-width(m01) {
   .content,
-  .core-title,
-  .core-footer,
+  .page-title,
+  .page-footer,
   .credits {
     font-size: 1.25em;
   }
@@ -27,8 +27,8 @@
 
 @include min-width(m02) {
   .content,
-  .core-title,
-  .core-footer {
+  .page-title,
+  .page-footer {
     @include width-max(m02);
     margin: auto;
   }
@@ -36,8 +36,8 @@
 
 @include min-width(l01) {
   .content,
-  .core-title,
-  .core-footer {
+  .page-title,
+  .page-footer {
     @include width-max(l01);
   }
 
@@ -50,16 +50,16 @@
 
 @include min-width(l03) {
   .content,
-  .core-title,
-  .core-footer {
+  .page-title,
+  .page-footer {
     @include width-max(l03);
   }
 }
 
 @include min-width(l04) {
   .content,
-  .core-title,
-  .core-footer,
+  .page-title,
+  .page-footer,
   .credits {
     font-size: 1.5em;
   }
@@ -73,8 +73,8 @@
 
 @include min-width(l05) {
   .content,
-  .core-title,
-  .core-footer {
+  .page-title,
+  .page-footer {
     font-size: 1.75em;
   }
 }

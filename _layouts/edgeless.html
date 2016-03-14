@@ -6,11 +6,11 @@
 
 {% include container/banner.html %}
 
-  <article id="maincontent" class="h-entry core" role="main">
+  <article id="maincontent" class="h-entry page" role="main">
 
 {% include block/pattern-nav.html %}
 
-{% include block/core-title.html %}
+{% include block/page-title.html %}
 
     <div class="e-content content">
 
@@ -20,7 +20,7 @@
 
     </div>
 
-{% unless page.option contains 'error' or page.option contains 'patterns' %}{% include block/core-footer.html %}{% endunless %}
+{% unless page.option contains 'error' or page.option contains 'patterns' %}{% include block/page-footer.html %}{% endunless %}
 
 {% include block/pattern-nav.html %}
 

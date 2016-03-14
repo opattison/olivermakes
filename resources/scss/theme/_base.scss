@@ -122,20 +122,6 @@ mark {
   background-color: $accent--trans;
 }
 
-dt {
-  display: inline-block;
-  min-width: 5em;
-}
-
-dd {
-  display: inline;
-}
-
-dd::after {
-  content: '';
-  display: block;
-}
-
 ::-moz-selection {
   background: $accent;
   color: $fore--inverse;
@@ -151,7 +137,7 @@ dd::after {
   @include random-fill(2, 17);
 }
 
-.core-title {
+.page-title {
   background-color: $back--plus;
 }
 
@@ -159,7 +145,7 @@ dd::after {
   background-color: $back--plus;
 }
 
-.core-footer {
+.page-footer {
   background-color: $back--minus;
 }
 
@@ -194,6 +180,11 @@ dd::after {
 .endnote + .footnotes,
 .footnotes li {
   border-color: $accent--notes;
+}
+
+.footnotes ol li::before {
+  border-color: $accent--trans;
+  color: $fore--minus;
 }
 
 .footnotes .reversefootnote {

@@ -107,16 +107,12 @@ kbd > kbd {
   @include a-underline($link-underline, $link--hover);
 }
 
-.core {
-  color: $fore;
-}
-
 .content,
-.core-title {
+.page-title {
   background-color: $back--minus;
 }
 
-.core figcaption {
+figcaption {
   color: $fore--minus;
 }
 
@@ -195,7 +191,7 @@ kbd > kbd {
   background-color: $back--plus;
 }
 
-.core-footer {
+.page-footer {
   background-color: $back--notes;
 }
 

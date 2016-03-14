@@ -226,11 +226,11 @@
   color: $violet;
 }
 
-.core-pagination {
+.page-pagination {
   @include action-color($red, $gray07);
 }
 
-.core-pagination--later {
+.page-pagination--later {
   background-color: $red;
 
   &:hover,
@@ -239,7 +239,7 @@
   }
 }
 
-.core-pagination--earlier {
+.page-pagination--earlier {
   background-color: $blue;
 
   &:hover,

@@ -62,15 +62,13 @@
 
 .photo-meta {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   margin: auto;
   max-width: 100%;
   padding: 2em 1em 2em;
 
-  @include min-width(m02) {
+  @include min-width(m01) {
     align-items: center;
-    flex-flow: row wrap;
-    justify-content: space-between;
     @include width-max(m02);
   }
 
@@ -82,14 +80,14 @@
 .photo-details {
   font-size: .875em;
   line-height: 1.5;
-  max-width: 28em;
 
   @include min-width(s02) {
     font-size: 1em;
   }
 
-  @include min-width(m02) {
-    padding-right: 1em;
+  @include min-width(m01) {
+    padding-right: 10%;
+    width: 70%;
   }
 }
 
@@ -110,10 +108,10 @@
 
 .camera-icon {
   margin-top: 1em;
-  width: 10em;
+  width: 50%;
 
-  @include min-width(l01) {
-    width: 15em;
+  @include min-width(m01) {
+    width: 30%;
   }
 }
 
@@ -121,7 +119,7 @@
   margin-top: 1em;
   max-width: 100%;
 
-  @include min-width(m02) {
+  @include min-width(m01) {
     flex: 1 0 100%;
   }
 }
