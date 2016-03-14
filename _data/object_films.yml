@@ -1,35 +1,35 @@
-faults:
-  title: Faults
-  date: 2015-03-06
-  watched-date: 2015-08-23
-  watched-medium: Netflix
-the-hunt:
-  title: The Hunt
-  date: 2013-07-12
-  watched-date: 2015-04-01
-  watched-medium: Netflix
 another-earth:
   title: Another Earth
   date: 2011-07-22
   watched-date: 2012-01-28
-  watched-medium: iTunes
-upstream-color:
-  title: Upstream Color
-  date: 2013-04-05
-  watched-date: 2013-04-20
-  watched-medium: theater
-victoria:
-  title: Victoria
-  date: 2015-06-11
-  watched-date: 2015-12-12
-  watched-medium: iTunes
-ex-machina:
-  title: Ex Machina
-  date: 2015-04-24
-  watched-date: 2015-08-17
   watched-medium: iTunes
 expedition-to-the-end-of-the-world:
   title: Expedition to the End of the World
   date: 2013-02-06
   watched-date: 2015-06-06
   watched-medium: Netflix
+upstream-color:
+  title: Upstream Color
+  date: 2013-04-05
+  watched-date: 2013-04-20
+  watched-medium: theater
+the-hunt:
+  title: The Hunt
+  date: 2013-07-12
+  watched-date: 2015-04-01
+  watched-medium: Netflix
+faults:
+  title: Faults
+  date: 2015-03-06
+  watched-date: 2015-08-23
+  watched-medium: Netflix
+ex-machina:
+  title: Ex Machina
+  date: 2015-04-24
+  watched-date: 2015-08-17
+  watched-medium: iTunes
+victoria:
+  title: Victoria
+  date: 2015-06-11
+  watched-date: 2015-12-12
+  watched-medium: iTunes
