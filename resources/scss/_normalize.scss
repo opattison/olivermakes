@@ -35,18 +35,6 @@ body {
   height: 100%;
 }
 
-html {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
 body {
   margin: 0 auto;
   max-width: 100%;
@@ -85,6 +73,14 @@ sup {
 
 sub {
   bottom: -0.25em;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Viewport normalization for modern IE and future via Trent Walton
