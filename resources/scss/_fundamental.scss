@@ -242,11 +242,21 @@ figcaption p {
   }
 }
 
-/* Inline styles */
 hr {
   border: 0;
   height: .2em;
   margin: 2em 0;
+}
+
+dt {
+  display: inline-block;
+  height: 1.5em;
+}
+
+dd {
+  display: block;
+  margin-top: -1.5em;
+  margin-left: 5em;
 }
 
 code,

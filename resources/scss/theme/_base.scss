@@ -122,20 +122,6 @@ mark {
   background-color: $accent--trans;
 }
 
-dt {
-  display: inline-block;
-  min-width: 5em;
-}
-
-dd {
-  display: inline;
-}
-
-dd::after {
-  content: '';
-  display: block;
-}
-
 ::-moz-selection {
   background: $accent;
   color: $fore--inverse;
