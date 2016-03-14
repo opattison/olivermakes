@@ -182,6 +182,11 @@ mark {
   border-color: $accent--notes;
 }
 
+.footnotes ol li::before {
+  border-color: $accent--trans;
+  color: $fore--minus;
+}
+
 .footnotes .reversefootnote {
   border-color: $anchor;
   color: $anchor;
