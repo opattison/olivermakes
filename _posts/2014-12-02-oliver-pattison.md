@@ -4,7 +4,6 @@ layout: singel
 option:
   - code
   - featured-home
-  - no-imgix-source
 category: 'projects'
 tags:
   - 'archiving'

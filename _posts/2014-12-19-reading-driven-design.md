@@ -2,8 +2,6 @@
 title: 'Reading-driven design'
 layout: singel
 category: 'writing'
-option:
-  - no-imgix-source
 tags:
   - 'css'
   - 'design'

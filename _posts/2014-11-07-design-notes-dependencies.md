@@ -2,8 +2,6 @@
 title: 'Designing this site: an accounting of dependencies'
 layout: singel
 category: 'writing'
-option:
-  - no-imgix-source
 tags:
   - 'design'
   - 'indieweb'

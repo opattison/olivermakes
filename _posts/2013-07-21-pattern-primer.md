@@ -3,8 +3,6 @@ title: 'Jekyll Version of Pattern Primer'
 layout: singel
 option:
   - minor
-  - no-imgix-source
-  - no-image_index
 category: 'projects'
 tags:
   - 'css'

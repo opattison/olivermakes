@@ -1,8 +1,6 @@
 ---
 title: 'Responsive redesign for Casey Trees'
 layout: singel
-option:
-  - no-imgix-source
 category: 'projects'
 tags:
   - 'design'

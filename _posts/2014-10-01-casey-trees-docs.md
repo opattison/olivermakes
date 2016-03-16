@@ -3,7 +3,6 @@ title: 'Technical documentation for Casey Trees'
 layout: singel
 option:
   - minor
-  - no-imgix-source
 category: 'projects'
 tags:
   - 'archiving'

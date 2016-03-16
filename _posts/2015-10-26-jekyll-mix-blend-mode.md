@@ -5,7 +5,6 @@ theme: dark
 option:
   - code
   - minor
-  - no-imgix-source
 category: 'projects'
 tags:
   - 'css'

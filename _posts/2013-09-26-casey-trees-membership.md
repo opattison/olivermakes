@@ -4,7 +4,6 @@ layout: singel
 option:
   - code
   - patterns
-  - no-imgix-source
 category: 'projects'
 tags:
   - 'css'
