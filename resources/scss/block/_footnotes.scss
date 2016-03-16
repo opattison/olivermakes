@@ -60,7 +60,7 @@
 .footnotes ol li::before {
   border: 1px solid;
   border-radius: .125em;
-  content: counter(ordered-list);
+  content: counter(ol);
   font-size: .875em;
   margin-right: 0;
   padding: 0 .25em;

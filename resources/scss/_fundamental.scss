@@ -125,7 +125,7 @@ ul {
 
 ul ul,
 ol ol {
-  margin: .5em 1em;
+  margin-left: 1em;
 }
 
 [role="main"] ul li::before {
@@ -133,43 +133,16 @@ ol ol {
   margin-right: .5em;
 }
 
-article ol {
-  counter-reset: ordered-list;
+ol {
+  counter-reset: ol;
   list-style-type: none;
 }
 
-article ol ol {
-  counter-reset: ordered-list-sub;
-}
-
-article ol ol ol {
-  counter-reset: ordered-list-sub-sub;
-}
-
-article ol li {
-  counter-increment: ordered-list;
-}
-
-article ol ol li {
-  counter-increment: ordered-list-sub;
-}
-
-article ol ol ol li {
-  counter-increment: ordered-list-sub-sub;
-}
-
-article ol li::before {
-  content: counter(ordered-list) ':';
+ol li::before {
+  counter-increment: ol;
+  content: counters(ol,'.') ':';
   font-weight: $weight-medium;
   margin-right: .25em;
-}
-
-article ol ol li::before {
-  content: counter(ordered-list) '.' counter(ordered-list-sub) ':';
-}
-
-article ol ol ol li::before {
-  content: counter(ordered-list) '.' counter(ordered-list-sub) '.' counter(ordered-list-sub-sub) ':';
 }
 
 li {

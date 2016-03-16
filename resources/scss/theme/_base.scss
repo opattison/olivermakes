@@ -89,6 +89,10 @@ ul li::before {
   color: $accent--neutral;
 }
 
+ol li::before {
+  color: $fore--minus;
+}
+
 blockquote {
   border-color: $accent;
   color: $fore--minus;
