@@ -5,6 +5,7 @@ category: 'writing'
 tags:
   - 'archiving'
   - 'future'
+  - 'git'
   - 'indieweb'
   - 'photography'
   - 'web'
