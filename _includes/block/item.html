@@ -8,5 +8,5 @@
       <p class="item-time">{% if post.category =='projects' %}Completed{% else %}Published{% endif %} <time class="dt-published" pubdate datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y-%m-%d' }}</time> {% if post.period %}(worked on from {{ post.period }}){% endif %}</p>
 
     </div>
-    <a class="item-action" href="{{ post.url }}">{% if post.category == 'projects' %}View this project{% elsif post.category == 'writing' %}Read this post{% else %}View this post{% endif %}</a>
+    <a class="item-action" href="{{ post.url }}">{% if post.category == 'projects' %}view this project{% elsif post.category == 'writing' %}read this post{% else %}view this post{% endif %}</a>
   </article>

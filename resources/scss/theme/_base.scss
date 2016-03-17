@@ -1,29 +1,36 @@
 $back: $white;
+$fore: $gray01;
+
 $back--plus: $whiter;
 $back--minus: $gray06;
-$back--inverse: $gray00;
+$back--inverse: $fore;
 $back--project: $gray06;
 $back--project-image: $gray07;
 $back--notes: $lightblue;
-$fore: $gray01;
+
 $fore--plus: $black;
 $fore--minus: $gray03;
-$fore--inverse: $whiter;
+$fore--inverse: $back;
+
 $code--inline: $gray02;
 $code--comment: $gray05;
 $code--border: $gray05;
 $code-block--fore: $whiter;
 $code-block--back: $gray02;
+
 $accent: $blue;
 $accent--trans: $blue--trans20;
 $accent--neutral: $gray04;
 $accent--notes: $accent--trans;
+
 $focus: $accent;
 $focus-link--hover: $violet;
+
 $link: $red;
 $link--hover: $blue;
 $link--active: $green;
 $link-underline: $red--trans20;
+
 $anchor: $blue;
 $anchor--hover: $red;
 $anchor-back: $blue--trans20;
@@ -155,6 +162,7 @@ mark {
 
 .action {
   @include action-color($accent, $fore--inverse);
+  @include a-borderless;
 }
 
 .focus {

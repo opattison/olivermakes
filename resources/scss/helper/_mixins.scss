@@ -51,6 +51,16 @@
   }
 }
 
+@mixin a-borderless {
+  border: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: none;
+  }
+}
+
 @mixin a-underline($link: $red--trans20, $hover: $blue) {
   border-bottom: solid 1px $link;
   &:hover,
