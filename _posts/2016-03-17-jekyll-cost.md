@@ -20,9 +20,9 @@ Chatting with [Michael Lee](https://michaelsoolee.com/) about my [previous post 
 - Amazon [S3](https://aws.amazon.com/s3/): starting at **$0.03** to a few dollars per month for higher traffic (rate depends on usage).
 - S3 with [Route53](https://aws.amazon.com/route53/) for DNS routing: starting at **$0.53** to a few dollars per month.
 - S3, Route53 and [CloudFront](https://aws.amazon.com/cloudfront/): starting at **$0.70** to a few dollars per month. My own site costs around **$1.50** per month with this setup in early 2016.
-- [Shared hosting](https://en.wikipedia.org/wiki/Shared_web_hosting_service) cost: estimated **~$5-20** per month (often a bare minimum for a dynamic site).
-- [VPS](https://en.wikipedia.org/wiki/Virtual_private_server) or “cloud” hosting cost: variable, but I’ve seen costs as low as **$5** per month (and there is really no upper limit, as with everything virtualized or “cloudy”). One might want to look into an option like this for a dynamic site.
+- [Shared hosting](https://en.wikipedia.org/wiki/Shared_web_hosting_service): estimated **~$5-20** per month (often a bare minimum for a dynamic site).
+- [VPS](https://en.wikipedia.org/wiki/Virtual_private_server) or “cloud” hosting: variable, can be as low as **$5** per month (and there is really no upper limit, as with everything virtualized or “cloudy”). One might want to look into an option like this for a dynamic site.
 
 Without advocating for any other particular services (since I haven’t used enough of them myself to report accurately), there are a wide variety of [other deployment options](https://jekyllrb.com/docs/deployment-methods/), since Jekyll does not have specific requirements for serving. As always, it depends on your need. But if your needs are minimal, static sites are very cheap to run.
 
-I chose S3 with Route53 and CloudFront for flexibility in deployment (like setting up [secure TLS with a fast CloudFront CDN](https://olivermak.es/2016/01/aws-tls-certificate-with-jekyll/)).
+I chose S3 with Route53 and CloudFront for its acceptable cost, high reliability, and flexibility in deployment (like setting up [secure TLS with a fast CloudFront CDN](https://olivermak.es/2016/01/aws-tls-certificate-with-jekyll/)).
