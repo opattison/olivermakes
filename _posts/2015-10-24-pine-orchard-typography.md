@@ -84,7 +84,7 @@ I chose [Cardo](http://scholarsfonts.net/cardofnt.html), an old-style font by Da
 
 The typeface performed quite well, even with only a single weight. Cardo has excellent OpenType support and beautiful small capital styles, making headings and featured text stand out against the striking photos of the prints. I ended up using Cardo for all of the headings on the site, as well as for stylized collection links and for the logo identity. Using small capitals for titles, and ultimately for the logotype ended up being a stylistic success.
 
-<figure class="image--narrow screenshot">
+<figure class="image screenshot">
   <img src="{{ page.image[3].src | imgix_url }}" alt="{{ page.image[3].alt }}" />
 </figure>
 

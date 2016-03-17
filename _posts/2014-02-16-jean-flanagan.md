@@ -72,14 +72,14 @@ The first thing we started out with were full-length articles about science, alr
 
 Designing in a browser meant that HTML prototypes were an early part of the process, right after sketching and rough notes. In the first week of active development, prototype code was being written that would evolve into the finished product.
 
-<figure class="image--narrow screenshot">
+<figure class="image screenshot">
   <img
     src="{{ page.image[1].src | imgix_url }}"
     alt="{{ page.image[1].alt }}">
   <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
 </figure>
 
-<figure class="image--narrow screenshot">
+<figure class="image screenshot">
   <img
     src="{{ page.image[2].src | imgix_url }}"
     alt="{{ page.image[2].alt }}">
@@ -99,7 +99,7 @@ Jean takes [beautiful photos](http://jeancflanagan.com/photos/), which I wanted 
 
 #### Sample from photo layout
 
-<figure class="image--narrow screenshot">
+<figure class="image screenshot">
   <img
     src="{{ page.image[4].src | imgix_url }}"
     alt="{{ page.image[4].alt }}">
@@ -122,7 +122,7 @@ Jean takes [beautiful photos](http://jeancflanagan.com/photos/), which I wanted 
 
 Not every image is meant to be showcased, nor should every image overshadow the writing. For complementary images in writing posts, I crafted alternative styles for right/left floated images for large screens. These optional styles are automated through a [Jekyll figure/image plugin](https://github.com/opattison/jekyll-figure-image-tag) that I wrote. The styles are flexible, reusable, and easy to maintain as well.
 
-<figure class="image--narrow screenshot">
+<figure class="image screenshot">
   <img
     src="{{ page.image[7].src | imgix_url }}"
     alt="{{ page.image[7].alt }}">

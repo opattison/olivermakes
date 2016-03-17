@@ -53,7 +53,7 @@ image:
 
 Pine Orchard Prints is a family business: I worked directly with my own family to see it through from initial sketches to final implementation and support after launch. The business started years ago in upstate New York when my dad, [Keith Pattison](https://pineorchardprints.com/pages/about), assembled a collection of 19th century antique prints, selling some of them in a local shop and building an extensive catalog. Early in 2015 we talked about the possibility of selling part of the collection online, as a passion project for both of us. This project asked a lot from me: I was the sole designer, developer, copy editor, information architect, photo editor, and content strategist. Here is how it came together.
 
-<figure class="image--narrow screenshot">
+<figure class="image screenshot">
   {% assign image = page.image[1] %}
   {% include block/srcset_narrow.html %}
 </figure>
