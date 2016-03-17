@@ -3,13 +3,14 @@ title: 'Designing this site: future-friendliness and&nbsp;robustness'
 layout: singel
 option:
   - code
-  - no-imgix-source
 category: 'writing'
 tags:
   - 'design'
   - 'future'
+  - 'html'
   - 'indieweb'
   - 'jekyll'
+  - 'publishing'
   - 'web'
 date: 2014-11-06 09:17
 updated: 2014-12-12 02:44

@@ -3,7 +3,6 @@ title: 'How to enhance a GitHub readme with SVG'
 layout: singel
 option:
   - code
-  - no-imgix-source
 category: 'writing'
 tags:
   - 'css'

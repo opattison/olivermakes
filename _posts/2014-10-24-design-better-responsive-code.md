@@ -4,7 +4,6 @@ layout: singel
 option:
   - code
   - hero
-  - no-imgix-source
 category: 'writing'
 tags:
   - 'css'

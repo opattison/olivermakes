@@ -3,7 +3,6 @@ title: 'Pine Orchard Prints typographic identity'
 layout: edgeless
 option:
   - minor
-  - no-imgix-source
 category: 'projects'
 tags:
   - 'design'

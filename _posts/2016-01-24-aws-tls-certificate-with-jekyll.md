@@ -4,7 +4,6 @@ layout: singel
 option:
   - code
   - minor
-  - no-imgix-source
 category: 'projects'
 tags:
   - 'indieweb'

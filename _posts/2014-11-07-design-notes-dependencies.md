@@ -2,12 +2,11 @@
 title: 'Designing this site: an accounting of dependencies'
 layout: singel
 category: 'writing'
-option:
-  - no-imgix-source
 tags:
   - 'design'
   - 'indieweb'
   - 'jekyll'
+  - 'process'
   - 'typography'
   - 'web'
 date: 2014-11-07 12:34
