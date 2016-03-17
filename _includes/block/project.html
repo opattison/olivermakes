@@ -12,8 +12,8 @@
     {% if page.project %}{% else %}<p class="project-description">No public source or link is available for this project.</p>{% endif %}
     {% if page.project %}
     <div class="project-nav">
-      {% if page.project.url %}<a class="project-nav-action--url" href="{{ page.project.url }}">View it live</a>{% endif %}
-      {% if page.project.source %}<a class="project-nav-action--source" href="{{ page.project.source }}">View project source</a>{% elsif page.project.download %}<a class="project-nav-action--source" href="{{ page.project.download }}">Download project {% if page.project.filetype %}({{ page.project.filetype }}){% endif %}</a>{% endif %}
+      {% if page.project.url %}<a class="project-nav-action--url" href="{{ page.project.url }}">view it live</a>{% endif %}
+      {% if page.project.source %}<a class="project-nav-action--source" href="{{ page.project.source }}">view project source</a>{% elsif page.project.download %}<a class="project-nav-action--source" href="{{ page.project.download }}">download project {% if page.project.filetype %}({{ page.project.filetype }}){% endif %}</a>{% endif %}
     </div>
   </div>
   {% endif %}

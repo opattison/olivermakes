@@ -1,29 +1,36 @@
 $back: $gray00;
-$back--minus: $gray02;
+$fore: $gray07;
+
 $back--plus: $black;
-$back--inverse: $white;
+$back--minus: $gray02;
+$back--inverse: $fore;
 $back--project: $gray02;
 $back--project-image: $gray03;
 $back--notes: $gray01;
-$fore: $gray07;
+
 $fore--plus: $white;
 $fore--minus: $gray06;
-$fore--inverse: $gray00;
+$fore--inverse: $back;
+
 $code--inline: $gray06;
 $code--comment: $gray04;
 $code--border: $gray04;
 $code-block--fore: $gray02;
 $code-block--back: $whiter;
+
 $accent: $lightblue;
 $accent--trans: $gray07--trans50;
 $accent--neutral: $gray05;
 $accent--notes: $gray03;
+
 $focus: $accent;
 $focus-link--hover: $pink;
+
 $link: $pink;
 $link--hover: $lightblue;
 $link--active: $green;
 $link-underline: $pink--trans50;
+
 $anchor: $lightblue;
 $anchor--hover: $pink;
 $anchor-back: $blue--trans20;

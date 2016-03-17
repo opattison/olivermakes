@@ -10,8 +10,8 @@ unique_id: 2014-10-31:patterns
 permalink: /patterns/
 description: 'A collection of patterns for this website.'
 image:
-  - src: /images/2015-10-29-patchwork-270deg.svg
-    png_src: /images/2015-10-29-patchwork-270deg.png
+  - src: /images/index/2016-03-16-flag.svg
+    png_src: /images/index/2016-03-16-flag.png
     alt: ''
 
 ---
