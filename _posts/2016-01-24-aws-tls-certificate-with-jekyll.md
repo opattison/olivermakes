@@ -191,21 +191,21 @@ To be on the safe side, choose _both_ `example.com` and `*.example.com` when set
 
 After following the instructions in the email and approval page to validate the certificate, go back to the CloudFront distribution and select the certificate. Set **Viewer Protocol Policy** to “Redirect HTTP to HTTPS”. *Absolutely* set **Custom SSL Client Support** to “Only Clients that Support Server Name Indication (SNI)”. The alternative “All Clients” costs $600 per month because it requires a dedicated IP version of custom SSL support. The downside to [SNI](https://en.wikipedia.org/wiki/Server_Name_Indication) is that older browsers (4-10 years old) may not properly support TLS and therefore will get a worse experience (no HTTPS) or no experience (if HTTPS-only is specified). To support older browsers, HTTPS-only can be turned off since it is not a requirement, but this will mean that `http://example.com` won’t automatically redirect to `https://example.com`.
 
-<figure class="image--narrow screenshot">
+<figure class="image screenshot">
   <img src="{{ page.image[3].src | imgix_url }}" alt="{{ page.image[3].alt }}" />
   <figcaption>
     <p>{{ page.image[3].caption }}</p>
   </figcaption>
 </figure>
 
-<figure class="image--narrow screenshot">
+<figure class="image screenshot">
   <img src="{{ page.image[4].src | imgix_url }}" alt="{{ page.image[4].alt }}" />
   <figcaption>
     <p>{{ page.image[4].caption }}</p>
   </figcaption>
 </figure>
 
-<figure class="image--narrow screenshot">
+<figure class="image screenshot">
   <img src="{{ page.image[5].src | imgix_url: w: 720, q: 50 }}" alt="{{ page.image[5].alt }}" />
   <figcaption>
     <p>{{ page.image[5].caption }}</p>
