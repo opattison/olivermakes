@@ -16,6 +16,7 @@ description: 'A brief introduction to Jekyll and why I use it for my web project
 image_index: /images/2016-03-16-jekyll-test-tube.svg
 image:
   - src: /images/2016-03-16-jekyll-logo-reverse.svg
+    src_png: /images/2016-03-16-jekyll-logo-reverse.png
     alt: 'Jekyll logo, script with a test tube'
   - src: /images/2016-03-16-jekyll-post.png
     alt: 'A post in the Jekyll site repository being edited.'
