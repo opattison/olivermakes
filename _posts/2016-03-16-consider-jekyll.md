@@ -41,7 +41,7 @@ I use Jekyll for many of my personal projects, including this website. With only
 Jekyll sites load fast. With no database calls or server-side scripting, there is far less overhead on the server compared to a dynamic site. [^1] Latency for serving static resources is minimal. A single HTML file can be served in a barely perceivable fraction of a second. For sites served dynamically, caching can close the performance gap, but Jekyll sites load quickly by default. It is comparatively easy to tune a Jekyll site for performance by optimizing the size of resources before deploying to a server.
 
 {% capture dynamic %}
-When I say “[dynamic](https://en.wikipedia.org/wiki/Dynamic_web_page)”, this is shorthand for a server-side program (using a language like PHP or Ruby) run on a web server that generates HTML files to be served on request. WordPress is an example of a CMS that can be installed on a server running PHP. This is opposed to “static” which implies HTML files served directly as HTML. Jekyll generates files that are served [statically](https://en.wikipedia.org/wiki/Static_web_page), directly from a server. Static only describes how a site is built and served, but does not imply that a site has no dynamic features. A Jekyll site can run JavaScript on the client side (in a browser) to enable “dynamic” user interfaces or implement third party services like commenting systems or interactive maps.
+When I say “[dynamic](https://en.wikipedia.org/wiki/Dynamic_web_page)”, this is shorthand for a server-side program (using a language like PHP or Ruby) run on a web server that generates HTML files to be served on request. WordPress is an example of a CMS that can be installed on a server running PHP. This is opposed to “static” which implies HTML files served directly as HTML. Jekyll generates files that are served [statically](https://en.wikipedia.org/wiki/Static_web_page), directly from a server. Static merely describes how a site is built and served, but does not imply that a site has no dynamic features. A Jekyll site can run JavaScript on the client side (in a browser) to enable “dynamic” user interfaces or implement third party services like commenting systems or interactive maps.
 {% endcapture %}
 
 <aside class="ancillary">
@@ -58,7 +58,7 @@ With no server-side code, there are fewer vectors for attacking a static site. S
 
 ### Minimalist
 
-Jekyll is what you make of it. Its minimal assumptions about what users intend to do with it means it can be used for any sort of website. It is absolutely a viable strategy to start with only HTML and CSS and then only adding template and metadata features. A site can start as an HTML prototype and be continuously refined and enhanced until it is a working production site. Jekyll’s simplicity is an opportunity.
+Jekyll is what you make of it. Its minimal assumptions about what users intend to do with it means it can be used for any sort of website. It is absolutely a viable strategy to start with only HTML and CSS and afterward enhancing with template and metadata features. A site can start as an HTML prototype and be continuously refined and enhanced until it is a working production site. Jekyll’s simplicity is an opportunity.
 
 {% assign image = page.image[1] %}
 <figure class="image--wide">
@@ -82,7 +82,9 @@ Once the complexity of developing a static site fades into familiarity and comfo
 
 ### Affordable
 
-Hosting a static site is exceptionally affordable, with rates ranging from free (for example, with [GitHub Pages](https://pages.github.com)) to only a few dollars per month. My website currently costs under $1.50 per month to host. Dynamic sites are invariably more expensive to host.
+Hosting a static site is exceptionally affordable, with rates ranging from free to a few dollars per month. My website currently costs **[under $1.50]({% post_url 2016-03-17-jekyll-cost %})** per month to host. Dynamic sites are invariably more expensive to host.
+
+<a class="action" href="{% post_url 2016-03-17-jekyll-cost %}">more on Jekyll’s cost</a>
 
 ## The right tool for the job
 
@@ -105,11 +107,13 @@ For most of the projects that I currently work on or plan to work on, static is 
 # Credit
 
 Thanks [Jean Flanagan]({{ site.link.jean }}) for editing assistance and giving this a title.
+
+Thanks [Michael Lee](https://michaelsoolee.com/) for technical feedback.
 {% endcapture %}
 
 <aside class="endnote">
 {{ resources | markdownify }}
-<a class="action" href="/labels/jekyll/">My writing on Jekyll</a>
+<a class="action" href="/labels/jekyll/">my writing on Jekyll</a>
 {{ credit | markdownify }}
 </aside>
 
