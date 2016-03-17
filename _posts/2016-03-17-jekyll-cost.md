@@ -10,7 +10,7 @@ date: 2016-03-17 16:30
 updated: 2016-03-17 15:24
 drafted: 2016-03-17 15:00
 unique_id: 2016-03-17:jekyll-cost
-description: 'Just how cheap is it to host a site with Jekyll? Costs start at $0.'
+description: 'Just how cheap is it to host a static Jekyll site? Costs start at $0.'
 
 ---
 
