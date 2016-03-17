@@ -60,7 +60,7 @@ With no server-side code, there are fewer vectors for attacking a static site. S
 Jekyll is what you make of it. Its minimal assumptions about what users intend to do with it means it can be used for any sort of website. It is absolutely a viable strategy to start with only HTML and CSS and then only adding template and metadata features. A site can start as an HTML prototype and be continuously refined and enhanced until it is a working production site. Jekyll’s simplicity is an opportunity.
 
 {% assign image = page.image[1] %}
-<figure class="image--wide screenshot">
+<figure class="image--wide">
   <img
     src="{{ image.src | imgix_url }}"
     alt="{{ image.alt }}">
