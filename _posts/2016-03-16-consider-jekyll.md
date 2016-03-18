@@ -8,7 +8,6 @@ tags:
   - 'jekyll'
   - 'publishing'
   - 'web'
-date: 2016-03-16 20:00
 updated: 2016-03-16 20:04
 drafted: 2016-02-12 12:34
 unique_id: 2016-03-16:consider-jekyll

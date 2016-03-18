@@ -8,7 +8,6 @@ tags:
   - 'design'
   - 'typography'
   - 'web'
-date: 2015-10-24 9:00
 updated: 2016-02-09 01:01
 drafted: 2016-01-26 23:22
 unique_id: 2015-10-24:pine-orchard-typography

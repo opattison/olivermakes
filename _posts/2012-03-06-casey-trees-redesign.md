@@ -7,7 +7,6 @@ tags:
   - 'process'
   - 'responsive'
   - 'web'
-date: 2012-03-06 9:00
 updated: 2015-02-23 16:06
 drafted: 2015-02-23 13:02
 unique_id: 2012-03-06:casey-trees-redesign

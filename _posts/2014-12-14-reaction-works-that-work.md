@@ -8,7 +8,6 @@ tags:
   - 'design'
   - 'publishing'
   - 'reaction'
-date: 2014-12-15 11:01
 updated: 2014-12-15 11:01
 drafted: 2014-12-14 20:00
 unique_id: 2014-12-14:reaction-works-that-work

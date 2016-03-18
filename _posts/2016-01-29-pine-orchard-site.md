@@ -10,7 +10,6 @@ tags:
   - 'metadata'
   - 'typography'
   - 'web'
-date: 2016-01-29 12:34
 updated: 2016-02-09 21:27
 drafted: 2016-02-03 16:22
 unique_id: 2015-01-29:pine-orchard-site

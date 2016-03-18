@@ -6,7 +6,6 @@ tags:
   - 'archiving'
   - 'process'
   - 'web'
-date: 2015-02-21 20:52
 updated: 2015-02-21 20:52
 drafted: 2015-02-14 12:34
 unique_id: 2015-02-21:institutional-memory

@@ -2,12 +2,9 @@
 title: 'My turntable'
 layout: edgeless
 theme: dark
-option:
-  - map-meta
 category: 'photography'
 tags:
   - 'music'
-date: 2014-11-27 19:02
 updated: 2014-12-05 01:29
 drafted: 2014-11-27 19:02
 unique_id: 2014-11-27:turntable

@@ -8,7 +8,6 @@ tags:
   - 'reading'
   - 'typography'
   - 'web'
-date: 2014-12-19 23:14
 updated: 2016-01-26 23:14
 drafted: 2014-12-19 15:59
 unique_id: 2014-12-19:reading-driven-design

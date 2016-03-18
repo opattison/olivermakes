@@ -10,7 +10,6 @@ tags:
   - 'jekyll'
   - 'privacy'
   - 'web'
-date: 2016-01-24 20:37
 updated: 2016-01-29 16:13
 drafted: 2016-01-24 22:00
 unique_id: 2016-01-24:aws-tls-certificate-with-jekyll

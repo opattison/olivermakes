@@ -9,7 +9,6 @@ tags:
   - 'indieweb'
   - 'photography'
   - 'web'
-date: 2014-11-08 12:34
 updated: 2015-03-02 21:05
 drafted: 2014-11-08 12:34
 unique_id: 2014-11-08:design-notes-an-archive

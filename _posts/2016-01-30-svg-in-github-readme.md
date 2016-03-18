@@ -11,7 +11,6 @@ tags:
   - 'git'
   - 'html'
   - 'web'
-date: 2016-01-30 15:05
 updated: 2016-01-30 15:05
 drafted: 2016-01-29 20:00
 unique_id: 2016-01-30:svg-in-github-readme

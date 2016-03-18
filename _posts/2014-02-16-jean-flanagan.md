@@ -11,7 +11,6 @@ tags:
   - 'process'
   - 'responsive'
   - 'web'
-date: 2014-02-16 12:34
 updated: 2015-03-02 21:02
 drafted: 2014-12-03 17:10
 unique_id: 2014-02-16:jean-flanagan

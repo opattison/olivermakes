@@ -10,7 +10,6 @@ tags:
   - 'html'
   - 'jekyll'
   - 'web'
-date: 2013-07-21 12:34
 updated: 2014-12-01 20:30
 drafted: 2014-12-01 12:40
 unique_id: 2014-11-30:pattern-primer
