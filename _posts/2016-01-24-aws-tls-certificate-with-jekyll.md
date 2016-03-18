@@ -141,7 +141,7 @@ If using s3_website to handle S3 and CloudFront, [read about invalidations](http
 This is point where I would brew a cup of tea since it will take 5-20 minutes for CloudFront to “progress”. The first couple of times I used CloudFront, I spent more time changing configuration items and waiting for effects to kick in than I actually did reading AWS documentation. CloudFront configuration takes a really long time – take time to try to get the configuration correct initially because each further change requires resetting the clock to zero (and making another cup of tea)!
 
 {% assign image = page.image[1] %}
-{% include block/srcset_narrow.html %}
+{% include block/srcset.html %}
 
 ---
 

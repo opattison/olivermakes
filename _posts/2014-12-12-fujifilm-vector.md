@@ -67,7 +67,7 @@ To complement the metadata on my [photo pages](/photography/), I wanted accurate
 
 <figure class="image--wide">
   {% assign image = page.image[4] %}
-  {% include block/srcset.html %}
+  {% include block/srcset--wide.html %}
   <figcaption>{{ page.image[4].caption | markdownify }}</figcaption>
 </figure>
 
