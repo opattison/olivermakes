@@ -1,6 +1,5 @@
-    {% if page.option contains 'no-title' %}
-    {% else %}
-    <header class="page-title">
-      <h1 class="p-name">{{ page.title }}</h1>
-    </header>
-    {% endif %}
+{% unless page.option contains 'no-title' %}
+<header class="page-title">
+  <h1 class="p-name">{{ page.title }}</h1>
+</header>
+{% endunless %}

@@ -1,15 +1,16 @@
 {% assign image = page.image[0] %}
-    <figure class="hero">
-      <img
-        {% if image.src contains 'svg' or image.src contains 'png' %}
-        src="{{ image.src }}"
-        {% else %}
-        src="{{ image.src | imgix_url: w: 720, q: 50 }}"
-        sizes="{{ site.sizes }}"
-        srcset="{% for width in site.srcset %}{{ image.src | imgix_url: w: width, q: 60 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-        {% endif %}
-        alt="{{ image.alt }}">
-      {% if image.caption %}
-      <figcaption>{{ image.caption | markdownify }}</figcaption>
-      {% endif %}
-    </figure>
+
+<figure class="hero">
+  <img
+    {% if image.src contains 'svg' or image.src contains 'png' %}
+    src="{{ image.src }}"
+    {% else %}
+    src="{{ image.src | imgix_url: w: 720, q: 50 }}"
+    sizes="{{ site.sizes }}"
+    srcset="{% for width in site.srcset %}{{ image.src | imgix_url: w: width, q: 60 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+    {% endif %}
+    alt="{{ image.alt }}">
+  {% if image.caption %}
+  <figcaption>{{ image.caption | markdownify }}</figcaption>
+  {% endif %}
+</figure>

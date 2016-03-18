@@ -7,7 +7,6 @@ permalink: /writing/
 
 ---
 
-
 {% for post in site.categories.writing limit:8 %}
 {% include block/item.html %}
 {% endfor %}
