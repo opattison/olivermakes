@@ -46,11 +46,10 @@ While working on a project, it can be helpful to both designers, developers and 
 
 Pattern Primer ([as well as many other similar tools](http://styleguides.io/tools.html)) can be used as design clarification and communication tools at any stage in a design process. This approach is quite useful near the beginning of a project, to make sure that design patterns can stand on their own as atomic units.
 
+{% assign image = page.image[1] %}
 <figure class="image screenshot">
-  <img
-    src="{{ page.image[1].src | imgix_url }}"
-    alt="{{ page.image[1].alt }}">
-  <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
+  {% include block/image--imgix.html %}
+  {% include block/figcaption--image.html %}
 </figure>
 
 ## Implementation

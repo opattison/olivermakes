@@ -10,7 +10,7 @@ tags:
   - 'design'
   - 'responsive'
   - 'typography'
-updated: 2015-03-02 18:38
+updated: 2016-03-18 09:13
 drafted: 2014-10-24 16:15
 unique_id: 2014-10-24:better-responsive-code
 description: 'A walkthrough of an approach to styling code blocks for responsive websites and technical documentation.'
@@ -33,21 +33,19 @@ Even if a CMS or site builder has syntax highlighting built in (like [Jekyll](ht
 
 So how bad is it when code or any other long content breaks a layout? Here is what code might look like without corrected `white-space`:
 
+{% assign image = page.image[1] %}
 <figure class="image screenshot">
-  <img
-    src="{{ page.image[1].src | imgix_url }}"
-    alt="{{ page.image[1].alt }}">
+  {% include block/image--imgix.html %}
 </figure>
 
 Here is a sample with default values for `overflow-wrap`:
 
+{% assign image = page.image[2] %}
 <figure class="image screenshot">
-  <img
-    src="{{ page.image[2].src | imgix_url }}"
-    alt="{{ page.image[2].alt }}">
+  {% include block/image--imgix.html %}
 </figure>
 
-I think these samples speak for themselves to explain why these declarations are needed for a responsive code block. With both of them not implemented, nearly every code block on this page runs off the page, breaking the layout on small and large screens alike.
+With neither declaration implemented, nearly every code block on this page runs off the page, breaking the layout on small and large screens alike.
 
 So how do we fix this?
 
@@ -78,7 +76,7 @@ There is more to a well-designed responsive code block than line wrapping. One s
 
 My current favorite monospace font for the web is [Adobe Source Code Pro](http://adobe-fonts.github.io/source-code-pro). It is beautiful, and [it is free to use](http://www.google.com/fonts/specimen/Source+Code+Pro). To make sure that code blocks look their best, I set the monospace typeface to be proportional to the rest of the typography on my site – around .8125em for a site based on a 1em scale. This proportion works slightly differently depending on the typeface and weight chosen.
 
-{% capture c1 %}
+{% capture code %}
 ```css
 body {
   word-wrap: break-word;
@@ -111,9 +109,13 @@ article {
 ```
 {% endcapture %}
 
+{% capture caption %}
+[View the source CSS](https://github.com/opattison/olivermakes/blob/53efd647ca65d7ad271db2a6e33555f118d8d44f/main.scss#L227) (as of 2015-03-02) for a more detailed view of how code formatting is handled on this page.
+{% endcapture %}
+
 <figure class="code">
-{{ c1 | markdownify }}
-<figcaption><p><a href="https://github.com/opattison/olivermakes/blob/53efd647ca65d7ad271db2a6e33555f118d8d44f/main.scss#L227">View the source CSS (as of {{ page.updated | date: '%B %d, %Y' }})</a> for a more detailed view of how code formatting is handled on this page.</p></figcaption>
+{{ code | markdownify }}
+{% include block/figcaption--text.html %}
 </figure>
 
 Notice how the long comments above wrap around the page. I have intentionally included long comments with no line breaks to show how they look in a code block. (The `.highlight` selector targets a class that Jekyll applies to the `<pre>` block containing the `<code>` element.)

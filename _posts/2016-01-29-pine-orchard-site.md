@@ -70,21 +70,18 @@ For most of my [projects](/projects/) I typically build from the ground up, brin
 I stripped the theme framework of some elements that the site would not need. A text-only navigation interface would do instead of relying on an icon font (for better accessibility, legibility, and performance). I replaced the JavaScript-based shopping cart drawer interface with a purpose-built static cart, although I did retain and repurpose some of the dynamic features built into the theme like auto-updating cart totals and visual confirmation that an item had been added to the cart. I used Timber’s included grid system extensively, but also expanded it, using CSS `flex` properties to create micro-layouts (in the navigation bar and the [shopping cart](https://pineorchardprints.com/cart)). Adopting a framework meant adopting the conventions of the design system provided for me – trying to work in a harmonious and complementary manner with the tools at hand, instead of attempting to discard and reinvent.
 
 <div class="grid--wide">
+  {% assign image = page.image[2] %}
   <figure class="grid-figure--33 grid-figure screenshot">
-    <img
-      src="{{ page.image[2].src | imgix_url: q: 70 }}"
-      alt="{{ page.image[2].alt }}">
-    <figcaption>{{ page.image[2].caption | markdownify }}</figcaption>
+    {% include block/image--imgix.html %}
+    {% include block/figcaption--image.html %}
   </figure>
+  {% assign image = page.image[3] %}
   <figure class="grid-figure--33 grid-figure screenshot">
-    <img
-      src="{{ page.image[3].src | imgix_url: q: 70 }}"
-      alt="{{ page.image[3].alt }}">
+    {% include block/image--imgix.html %}
   </figure>
+  {% assign image = page.image[4] %}
   <figure class="grid-figure--33 grid-figure screenshot">
-    <img
-      src="{{ page.image[4].src | imgix_url: q: 70 }}"
-      alt="{{ page.image[4].alt }}">
+    {% include block/image--imgix.html %}
   </figure>
 </div>
 

@@ -66,12 +66,12 @@ I avoided the more eclectic Victorian typographic styles which might be illegibl
   <figure class="grid-figure">
     {% assign image = page.image[1] %}
     {% include block/srcset--grid2.html %}
-    <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
+    {% include block/figcaption--image.html %}
   </figure>
   <figure class="grid-figure">
     {% assign image = page.image[2] %}
     {% include block/srcset--grid2.html %}
-    <figcaption>{{ page.image[2].caption | markdownify }}</figcaption>
+    {% include block/figcaption--image.html %}
   </figure>
 </div>
 
@@ -89,14 +89,14 @@ The typeface performed quite well, even with only a single weight. Cardo has exc
 
 In my earliest take on the design, I attempted a logo designed only with CSS, but limited control over letter spacing and relative proportions led to unimpressive initial efforts. It is still difficult to implement small caps with OpenType and CSS properly, since browser support is not as extensive as it could be. [^2] I designed the next takes of the logotype with Adobe Illustrator, because I wanted SVG output and fine control over kerning. The final iteration appears on the site header as well as in transactional email messages and mailing labels.
 
-{% capture more %}
+{% capture ancillary %}
 Read more about [the rest of the work that went into the Pine Orchard Prints project]({% post_url 2016-01-29-pine-orchard-site %}).
 
 Visit the [Pine Orchard Prints website](https://pineorchardprints.com) to see the typography up close.
 {% endcapture %}
 
 <aside class="ancillary">
-{{ more | markdownify }}
+{{ ancillary | markdownify }}
 </aside>
 
 For a small shop, memorable and appropriate typography effectively served the business goals and provided a strong identity. Using a straightforward logotype supported the typographic style of the site and evoked the visual appeal of the items in the shop, without relying on symbols or iconography.
@@ -115,7 +115,7 @@ For a small shop, memorable and appropriate typography effectively served the bu
 <figure class="image--wide screenshot">
   {% assign image = page.image[6] %}
   {% include block/srcset--wide.html %}
-  <figcaption>{{ page.image[6].caption | markdownify }}</figcaption>
+  {% include block/figcaption--image.html %}
 </figure>
 
 

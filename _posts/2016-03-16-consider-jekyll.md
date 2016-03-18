@@ -39,12 +39,12 @@ I use Jekyll for many of my personal projects, including this website. With only
 
 Jekyll sites load fast. With no database calls or server-side scripting, there is far less overhead on the server compared to a dynamic site. [^1] Latency for serving static resources is minimal. A single HTML file can be served in a barely perceivable fraction of a second. For sites served dynamically, caching can close the performance gap, but Jekyll sites load quickly by default. It is comparatively easy to tune a Jekyll site for performance by optimizing the size of resources before deploying to a server.
 
-{% capture dynamic %}
+{% capture ancillary %}
 When I say “[dynamic](https://en.wikipedia.org/wiki/Dynamic_web_page)”, this is shorthand for a server-side program (using a language like PHP or Ruby) run on a web server that generates HTML files to be served on request. WordPress is an example of a CMS that can be installed on a server running PHP. This is opposed to “static” which implies HTML files served directly as HTML. Jekyll generates files that are served [statically](https://en.wikipedia.org/wiki/Static_web_page), directly from a server. Static merely describes how a site is built and served, but does not imply that a site has no dynamic features. A Jekyll site can run JavaScript on the client side (in a browser) to enable “dynamic” user interfaces or implement third party services like commenting systems or interactive maps.
 {% endcapture %}
 
 <aside class="ancillary">
-{{ dynamic | markdownify }}
+{{ ancillary | markdownify }}
 </aside>
 
 Quicker response times and no processing power required to generate pages means that limited server resources can be stretched further. A server that would fail under heavy traffic would be able to keep serving static files reliably under the same conditions.
@@ -61,10 +61,8 @@ Jekyll is what you make of it. Its minimal assumptions about what users intend t
 
 {% assign image = page.image[1] %}
 <figure class="image--wide">
-  <img
-    src="{{ image.src | imgix_url }}"
-    alt="{{ image.alt }}">
-  <figcaption>{{ image.caption | markdownify }}</figcaption>
+  {% include block/image--imgix.html %}
+  {% include block/figcaption--image.html %}
 </figure>
 
 Although Jekyll is built around a blog-friendly core, the template and metadata features in Jekyll can be used for content of all types. With so few assumptions about how it should be used, there is room to ignore core features and layer on functionality as needed.
@@ -93,7 +91,7 @@ But there are plenty of cases where a tool like Jekyll won’t be the most appro
 
 For most of the projects that I currently work on or plan to work on, static is the answer to designing and delivering high performance content for the web.
 
-{% capture resources %}
+{% capture endnote %}
 # Further reading
 
 - [{static is} The New Dynamic, a collection of resources on the “post-CMS paradigm”](https://www.thenewdynamic.org/)
@@ -111,7 +109,7 @@ Thanks [Michael Lee](https://michaelsoolee.com/) for technical feedback.
 {% endcapture %}
 
 <aside class="endnote">
-{{ resources | markdownify }}
+{{ endnote | markdownify }}
 <a class="action" href="/labels/jekyll/">my writing on Jekyll</a>
 {{ credit | markdownify }}
 </aside>

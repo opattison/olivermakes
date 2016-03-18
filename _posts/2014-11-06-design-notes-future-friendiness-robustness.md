@@ -99,7 +99,7 @@ The trade-off is supposedly an easier user interface for editing and administrat
 {% assign image = page.image[0] %}
 <figure class="extralight right svg">
   {% include block/image.html %}
-  <figcaption>{{ image.caption | markdownify }}</figcaption>
+  {% include block/figcaption--image.html %}
 </figure>
 
 I am willing to admit that I don’t have a handle on working alone with a complex dynamic site suited to my design goals. Fortunately, static sites make up for their deficiencies in dynamism with high performance and robustness. Dealing with [opaque and breakable databases](http://indiewebcamp.com/wiki/index.php?title=database-antipattern), worrying about security holes, and spending time figuring out limitations of a dynamically programmed site takes my time away from writing, photography, and improving the user interface of the site.

@@ -74,23 +74,20 @@ When we initially redesigned the website in 2012, it was a *mostly* responsive d
 One year after the redesign, it was becoming clear that this device detection solution method would not work so well long-term. [^1] Additionally, I wanted to revisit the interface design of the form to make it better fit the rest of the fundraising pages. A responsive donation form would be more flexible and more future-friendly. Convio had since released a new “responsive” donation form template to test, so I worked on a prototype that would suit the site design.
 
 <div class="grid--wide">
+  {% assign image = page.image[1] %}
   <figure class="grid-figure--33 grid-figure screenshot">
-    <img
-      src="{{ page.image[1].src | imgix_url }}"
-      alt="{{ page.image[1].alt }}">
-    <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
+    {% include block/image--imgix.html %}
+    {% include block/figcaption--image.html %}
   </figure>
+  {% assign image = page.image[2] %}
   <figure class="grid-figure--33 grid-figure screenshot">
-    <img
-      src="{{ page.image[2].src | imgix_url }}"
-      alt="{{ page.image[2].alt }}">
-    <figcaption>{{ page.image[2].caption | markdownify }}</figcaption>
+    {% include block/image--imgix.html %}
+    {% include block/figcaption--image.html %}
   </figure>
+  {% assign image = page.image[3] %}
   <figure class="grid-figure--33 screenshot">
-    <img
-      src="{{ page.image[3].src | imgix_url }}"
-      alt="{{ page.image[3].alt }}">
-    <figcaption>{{ page.image[3].caption | markdownify }}</figcaption>
+    {% include block/image--imgix.html %}
+    {% include block/figcaption--image.html %}
   </figure>
 </div>
 
