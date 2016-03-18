@@ -80,6 +80,7 @@
 .photo-details {
   font-size: .875em;
   line-height: 1.5;
+  width: 100%;
 
   @include min-width(s02) {
     font-size: 1em;
