@@ -7,7 +7,6 @@ tags:
   - 'process'
   - 'responsive'
   - 'web'
-date: 2012-03-06 9:00
 updated: 2015-02-23 16:06
 drafted: 2015-02-23 13:02
 unique_id: 2012-03-06:casey-trees-redesign
@@ -47,16 +46,14 @@ My primary responsibilities were:
 We turned the project around in only a few months, with design and content work starting in December 2011 and the website launching in March 2012.
 
 <div class="grid--wide">
-<figure class="grid-figure--66 grid-figure screenshot">
-  <img
-    src="{{ page.image[1].src | imgix_url }}"
-    alt="{{ page.image[1].alt }}">
-</figure>
-<figure class="grid-figure--33 grid-figure screenshot">
-  <img
-    src="{{ page.image[2].src | imgix_url }}"
-    alt="{{ page.image[2].alt }}">
-</figure>
+  {% assign image = page.image[1] %}
+  <figure class="grid-figure--66 grid-figure screenshot">
+    {% include block/image--imgix.html %}
+  </figure>
+  {% assign image = page.image[2] %}
+  <figure class="grid-figure--33 grid-figure screenshot">
+    {% include block/image--imgix.html %}
+  </figure>
 </div>
 
 ## The need for a new website
@@ -80,7 +77,7 @@ We integrated more tightly with our existing Convio non-profit fundraising and s
 
 Feedback from users of the site was very positive, and staff appreciated the easier management and new design as well. After a refresh of our events management and fundraising systems, it was far easier to get fully subscribed events. Mobile device visits went from being about 6% of visitors to 12% (and even higher later on) as device user trends changed, and as our website became more friendly to visitors with different types of screens and contexts. It is fair to say that we would have been turning away a significant portion of our audience without a responsive redesign.
 
-{% capture related %}
+{% capture ancillary %}
 # More on my work for Casey&nbsp;Trees
 
 - [The responsive design process]({% post_url 2013-09-26-casey-trees-membership %}) for the subsequently launched Membership campaign to get a closer look at my approach to responsive design and implementation.
@@ -89,7 +86,7 @@ Feedback from users of the site was very positive, and staff appreciated the eas
 {% endcapture %}
 
 <aside class="ancillary">
-{{ related | markdownify }}
+{{ ancillary | markdownify }}
 </aside>
 
 ### Long-term gain

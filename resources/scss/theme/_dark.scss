@@ -128,7 +128,7 @@ figcaption {
 }
 
 .action {
-  @include action-color($back--inverse, $accent);
+  @include action-color($link, $back--inverse);
 }
 
 .focus {

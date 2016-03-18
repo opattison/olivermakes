@@ -7,7 +7,8 @@ permalink: /projects/
 
 ---
 
-<h2>Portfolio</h2>
+## Portfolio
+
 {% assign index = 1 %}
 {% for post in site.categories.projects %}
 {% unless index > 6 %}
@@ -17,7 +18,9 @@ permalink: /projects/
 {% endunless %}
 {% endunless %}
 {% endfor %}
-<h2>Minor projects</h2>
+
+## Minor projects
+
 {% assign index = 1 %}
 {% for post in site.categories.projects %}
 {% unless index > 6 %}

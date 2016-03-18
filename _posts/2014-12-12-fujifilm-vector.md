@@ -9,7 +9,6 @@ category: 'projects'
 tags:
   - 'design'
   - 'photography'
-date: 2014-12-08 9:00
 updated: 2014-12-12 13:16
 drafted: 2014-12-12 02:00
 unique_id: 2014-12-12:fujifilm-vector
@@ -45,31 +44,28 @@ image:
 To complement the metadata on my [photo pages](/photography/), I wanted accurate but minimal vector representations of my cameras (currently a Fujifilm X-E2 and an iPhone 5S), so I had to design my own. Although generic representations of cameras are appropriate for many circumstances (such as indicating a photo gallery on a navigation menu), something more defined was needed for this circumstance. Part of what I am communicating here is “how this photo was created”, so I designed something recognizable as a unique object. After completing the initial work, I realized I would need something even more minimal for smaller sizes (20% of a screen width or much smaller), so I abstracted the icon even further.
 
 <figure class="image--wide svg light noedges">
-  <img
-    src="{{ page.image[1].src }}"
-    alt="{{ page.image[1].alt }}">
-  <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
+  {% assign image = page.image[1] %}
+  {% include block/image.html %}
+  {% include block/figcaption--image.html %}
 </figure>
 
 <div class="grid--wide">
   <figure class="grid-figure svg light noedges">
-    <img
-      src="{{ page.image[2].src }}"
-      alt="{{ page.image[2].alt }}">
-    <figcaption>{{ page.image[2].caption | markdownify }}</figcaption>
+    {% assign image = page.image[2] %}
+    {% include block/image.html %}
+    {% include block/figcaption--image.html %}
   </figure>
   <figure class="grid-figure svg dark noedges">
-    <img
-      src="{{ page.image[3].src }}"
-      alt="{{ page.image[3].alt }}">
-    <figcaption>{{ page.image[3].caption | markdownify }}</figcaption>
+    {% assign image = page.image[3] %}
+    {% include block/image.html %}
+    {% include block/figcaption--image.html %}
   </figure>
 </div>
 
 <figure class="image--wide">
   {% assign image = page.image[4] %}
-  {% include block/srcset.html %}
-  <figcaption>{{ page.image[4].caption | markdownify }}</figcaption>
+  {% include block/srcset--wide.html %}
+  {% include block/figcaption--image.html %}
 </figure>
 
 ## Vector graphics

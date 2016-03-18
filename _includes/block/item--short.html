@@ -1,6 +1,6 @@
-  <article class="item--short">
-    <div class="item--short-description">
-      <h1><a href="{{ post.url }}">{{ post.title | markdownify | p_escape }}</a></h1>
-      <p class="item-time">{% if post.category =='projects' %}Completed{% else %}Published{% endif %} <time class="dt-published" pubdate datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y-%m-%d' }}</time>{% if page.title == 'Full Site Archive' or page.type == 'tag' or page.type == 'year' or page.type == 'month' %}<span class="item-location"> in {% if post.category == 'writing' %}<a href="/writing/">/writing</a>{% elsif post.category == 'photography' %}<a href="/photography/">/photography</a>{% elsif post.category == 'projects' %}<a href="/projects/">/projects</a>{% endif %}</span>{% endif %}</p>
-    </div>
-  </article>
+<article class="item--short">
+  <div class="item--short-description">
+    <h1><a href="{{ post.url }}">{{ post.title | markdownify | p_escape }}</a></h1>
+    <p class="item-time">{% if post.category =='projects' %}Completed{% else %}Published{% endif %} <time class="dt-published" pubdate datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y-%m-%d' }}</time>{% if page.title == 'Full Site Archive' or page.type == 'tag' or page.type == 'year' or page.type == 'month' %}<span class="item-location"> in {% if post.category == 'writing' %}<a href="/writing/">/writing</a>{% elsif post.category == 'photography' %}<a href="/photography/">/photography</a>{% elsif post.category == 'projects' %}<a href="/projects/">/projects</a>{% endif %}</span>{% endif %}</p>
+  </div>
+</article>

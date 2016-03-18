@@ -6,8 +6,7 @@ tags:
   - 'jekyll'
   - 'publishing'
   - 'web'
-date: 2016-03-17 16:30
-updated: 2016-03-17 15:24
+updated: 2016-03-17 19:00
 drafted: 2016-03-17 15:00
 unique_id: 2016-03-17:jekyll-cost
 description: 'Just how cheap is it to host a static Jekyll site? Costs start at $0.'
@@ -31,10 +30,8 @@ Without advocating for any other particular services (since I haven’t used eno
 
 {% assign image = page.image[0] %}
 <figure class="image screenshot">
-  <img
-    src="{{ image.src | imgix_url }}"
-    alt="{{ image.alt }}">
-  <figcaption>{{ image.caption | markdownify }}</figcaption>
+  {% include block/image--imgix.html %}
+  {% include block/figcaption--image.html %}
 </figure>
 
 I chose S3 with Route53 and CloudFront for its acceptable cost, high reliability, and flexibility in deployment (like setting up [secure TLS with a fast CloudFront CDN](https://olivermak.es/2016/01/aws-tls-certificate-with-jekyll/)).

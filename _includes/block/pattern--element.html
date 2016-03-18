@@ -4,13 +4,13 @@
     <summary><code>{{ pattern.title }}</code></summary>
     <figure>
     {% if pattern.type == 'markdown' %}<h5>Markdown</h5>
-    <textarea class="pattern-markdown">{{ pattern.content | xml_escape }}</textarea>{% endif %}
-    <h5>HTML</h5>
-    <textarea class="pattern-html">{{ pattern.content | markdownify | xml_escape }}</textarea>
-    <figcaption>
-    {% if pattern.sass %}<p class="pattern-sass"><a href="{{ site.source_url.sass }}/{{ pattern.sass }}">View SCSS source</a></p>{% endif %}
-    {% if pattern.use %}{{ pattern.use | prepend:'**Usage:** ' | markdownify }}{% endif %}{% if pattern.restriction %}{{ pattern.restriction | prepend: '**Restrictions:** ' | markdownify }}{% endif %}{% if pattern.spec %}{{ pattern.spec | prepend:'**Specification:** ' | markdownify }}{% endif %}
-    </figcaption>
+      <textarea class="pattern-markdown">{{ pattern.content | xml_escape }}</textarea>{% endif %}
+      <h5>HTML</h5>
+      <textarea class="pattern-html">{{ pattern.content | markdownify | xml_escape }}</textarea>
+      <figcaption>
+      {% if pattern.sass %}<p class="pattern-sass"><a href="{{ site.source_url.sass }}/{{ pattern.sass }}">View SCSS source</a></p>{% endif %}
+      {% if pattern.use %}{{ pattern.use | prepend:'**Usage:** ' | markdownify }}{% endif %}{% if pattern.restriction %}{{ pattern.restriction | prepend: '**Restrictions:** ' | markdownify }}{% endif %}{% if pattern.spec %}{{ pattern.spec | prepend:'**Specification:** ' | markdownify }}{% endif %}
+      </figcaption>
     </figure>
   </details>
 </section>

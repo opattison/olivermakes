@@ -5,7 +5,6 @@ theme: dark
 category: 'photography'
 tags:
   - 'dc'
-date: 2015-06-06 13:20
 updated: 2015-06-06 13:20
 unique_id: 2015-06-06:meridian-hill
 description: 'A single shallow shot at a local DC park fountain walkway.'
@@ -17,5 +16,5 @@ photo:
 <figure class="image--wide">
   {% assign photo = page.photo[0] %}
   {% include block/photo.html %}
-  <figcaption>{{ image.caption | markdownify }}</figcaption>
+  {% include block/figcaption--image.html %}
 </figure>

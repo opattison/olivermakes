@@ -161,7 +161,7 @@ mark {
 }
 
 .action {
-  @include action-color($accent, $fore--inverse);
+  @include action-color($link, $fore--inverse);
   @include a-borderless;
 }
 

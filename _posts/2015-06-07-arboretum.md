@@ -5,8 +5,8 @@ theme: dark
 category: 'photography'
 tags:
   - 'dc'
-date: 2015-06-07 19:36
 updated: 2015-06-07 19:36
+drafted: 2015-06-07 12:34
 unique_id: 2015-06-07:arboretum
 description: 'Scenes from an afternoon visiting the Asian Collections at DC’s arboretum.'
 photo:

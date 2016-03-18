@@ -9,7 +9,6 @@ tags:
   - 'process'
   - 'typography'
   - 'web'
-date: 2014-11-07 12:34
 updated: 2016-02-10 22:51
 drafted: 2014-11-07 12:34
 unique_id: 2014-11-08:design-notes-dependencies

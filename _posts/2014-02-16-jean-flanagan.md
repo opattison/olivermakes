@@ -11,8 +11,7 @@ tags:
   - 'process'
   - 'responsive'
   - 'web'
-date: 2014-02-16 12:34
-updated: 2015-03-02 21:02
+updated: 2016-03-18 10:01
 drafted: 2014-12-03 17:10
 unique_id: 2014-02-16:jean-flanagan
 period: 2013-06 to present
@@ -73,24 +72,21 @@ The first thing we started out with were full-length articles about science, alr
 Designing in a browser meant that HTML prototypes were an early part of the process, right after sketching and rough notes. In the first week of active development, prototype code was being written that would evolve into the finished product.
 
 <figure class="image screenshot">
-  <img
-    src="{{ page.image[1].src | imgix_url }}"
-    alt="{{ page.image[1].alt }}">
-  <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
+  {% assign image = page.image[1] %}
+  {% include block/image--imgix.html %}
+  {% include block/figcaption--image.html %}
 </figure>
 
 <figure class="image screenshot">
-  <img
-    src="{{ page.image[2].src | imgix_url }}"
-    alt="{{ page.image[2].alt }}">
-  <figcaption>{{ page.image[2].caption | markdownify }}</figcaption>
+  {% assign image = page.image[2] %}
+  {% include block/image--imgix.html %}
+  {% include block/figcaption--image.html %}
 </figure>
 
 <figure class="image--wide screenshot">
-  <img
-    src="{{ page.image[3].src | imgix_url }}"
-    alt="{{ page.image[3].alt }}">
-  <figcaption>{{ page.image[3].caption | markdownify }}</figcaption>
+  {% assign image = page.image[3] %}
+  {% include block/image--imgix.html %}
+  {% include block/figcaption--image.html %}
 </figure>
 
 ### Flexible layout for long writing and featured photography
@@ -100,33 +96,29 @@ Jean takes [beautiful photos](http://jeancflanagan.com/photos/), which I wanted 
 #### Sample from photo layout
 
 <figure class="image screenshot">
-  <img
-    src="{{ page.image[4].src | imgix_url }}"
-    alt="{{ page.image[4].alt }}">
+  {% assign image = page.image[4] %}
+  {% include block/image--imgix.html %}
 </figure>
 
 #### Samples from writing layout
 
 <div class="grid--wide">
   <figure class="grid-figure--33 grid-figure screenshot">
-    <img
-      src="{{ page.image[5].src | imgix_url }}"
-      alt="{{ page.image[5].alt }}">
+    {% assign image = page.image[5] %}
+    {% include block/image--imgix.html %}
   </figure>
   <figure class="grid-figure--66 grid-figure screenshot">
-    <img
-      src="{{ page.image[6].src | imgix_url }}"
-      alt="{{ page.image[6].alt }}">
+    {% assign image = page.image[6] %}
+    {% include block/image--imgix.html %}
   </figure>
 </div>
 
 Not every image is meant to be showcased, nor should every image overshadow the writing. For complementary images in writing posts, I crafted alternative styles for right/left floated images for large screens. These optional styles are automated through a [Jekyll figure/image plugin](https://github.com/opattison/jekyll-figure-image-tag) that I wrote. The styles are flexible, reusable, and easy to maintain as well.
 
 <figure class="image screenshot">
-  <img
-    src="{{ page.image[7].src | imgix_url }}"
-    alt="{{ page.image[7].alt }}">
-  <figcaption>{{ page.image[7].caption | markdownify }}</figcaption>
+  {% assign image = page.image[7] %}
+  {% include block/image--imgix.html %}
+  {% include block/figcaption--image.html %}
 </figure>
 
 ### Personality
@@ -135,8 +127,9 @@ We wanted to make sure that some of Jean’s interests and personality were part
 
 <div id="error-404">
   <figure class="image--wide">
-    <img src="{{ page.image[8].src }}" alt="{{ page.image[8].alt }}">
-    <figcaption>{{ page.image[8].caption | markdownify }}</figcaption>
+    {% assign image = page.image[8] %}
+    {% include block/image.html %}
+    {% include block/figcaption--image.html %}
   </figure>
 </div>
 
@@ -180,7 +173,7 @@ Publishing *something* on the web is relatively easy, but designing a lasting ho
 {% capture endnote %}
 **[View Jean’s website live]({{ page.project.url }})** or **[check it out on GitHub]({{ page.project.source }})**.
 
-**Note:** this website is continually being updated and developed, so the information on this page is only a snapshot of it as it existed on {{ page.updated | date: '%Y-%m-%d' }}.
+**Note:** this website is continually being updated and developed, so the information on this page is only a snapshot of it as it existed on 2015-03-02.
 {% endcapture %}
 
 <aside class="endnote">
@@ -188,5 +181,5 @@ Publishing *something* on the web is relatively easy, but designing a lasting ho
 </aside>
 
 
-[^1]: Using lorem ipsum filler text encourages people reviewing the design *not* to read the text, which makes it difficult to judge legibility of body text until too late in the design process. [Nathan Ford wrote some good words](http://artequalswork.com/posts/tweeking.php) on this topic. Nathan Ford suggests reading tweets instead of ipsum, but I prefer a different approach. If I am constrained in my ability to design content-first, my current practice is to use unread content from my Instapaper queue, so my eyes will focus on trying to read in the working design or prototype.
+[^1]: Using lorem ipsum filler text encourages people reviewing the design *not* to read the text, which makes it difficult to judge legibility of body text until too late in the design process. [Nathan Ford wrote some good words](http://artequalswork.com/posts/tweeking.php) on this topic. Nathan Ford suggests reading tweets instead of ipsum, but I prefer a different approach. If I am constrained in my ability to design content-first, [my current practice]({% post_url 2014-12-19-reading-driven-design %}) is to use unread content from my Instapaper queue, so my eyes will focus on trying to read in the working design or prototype.
 [^2]: I wrote more about my preference of minimal tools like Jekyll instead of tools like WordPress in [an essay on future-friendliness and robustness]({% post_url 2014-11-06-design-notes-future-friendiness-robustness %}).
