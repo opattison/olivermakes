@@ -86,5 +86,5 @@ In short: the code and design are under [copyright (MIT license)](/license/#code
 
 <aside class="endnote">
 {{ license | markdownify }}
-<a class="action" href="/license/">More on attribution</a>
+<a class="action" href="/license/">more on attribution</a>
 </aside>
