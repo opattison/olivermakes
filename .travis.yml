@@ -13,7 +13,8 @@ install:
   - npm install
 
 script:
-  - 'if [ "$TRAVIS_BRANCH" != "master" ]; then npm run dev; else npm run prod; fi'
+  - npm run dev
+  - if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then npm run prod; fi
 
 env:
   global:
