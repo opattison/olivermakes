@@ -39,7 +39,7 @@ It takes a lot of effort to keep a comprehensive and long-lasting archive of one
   <p>Right now my home backup system works like this:</p>
   <ul>
     <li>Back up my MacBook to a Time Capsule running <a href="http://en.wikipedia.org/wiki/Time_Machine_(OS_X)">Time Machine</a>.</li>
-    <li>Store a complete archive of all of my photography on a local external drive. I use a <a href="https://www.lacie.com/US/products/product.htm?id=10600">LaCie D2 Thunderbolt</a>.</li>
+    <li>Store a complete archive of all of my photography on a local external drive. I use a <a href="http://www.lacie.com/products/desktop-storage/d2-qudra-usb-3/">LaCie D2 Thunderbolt</a>.</li>
     <li>Keep <a href="https://www.backblaze.com">Backblaze</a> running, backing up both the MacBook and the external drive.</li>
   </ul>
   <p>This means I have a local repository, a working remote copy on GitHub, and then a local backup of everything (Time Machine), and a remote backup of everything (Backblaze). It is robust enough for now, and it is literally fire-proof.</p>

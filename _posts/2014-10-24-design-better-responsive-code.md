@@ -17,7 +17,7 @@ description: 'A walkthrough of an approach to styling code blocks for responsive
 image_index: /images/index/2014-11-26-hero-design-better-css-desat.png
 image:
   - src: /images/2014-11-26-hero-design-better-css-desat.png
-    alt: ''
+    alt: 'Example of non-wrapping code'
   - src: /images/2014-11-27-without-word-wrap.png
     alt: 'A sample of layout-breaking code without word-wrap'
   - src: /images/2014-11-27-without-break-word.png

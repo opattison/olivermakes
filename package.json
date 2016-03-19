@@ -9,6 +9,7 @@
     "watch": "0.17"
   },
   "scripts": {
+    "test": "htmlproofer ./_site",
     "svg:minify": "svgo -q -f _site/icons _site/images",
     "js:upgrade": "mv -f node_modules/velocity-animate/velocity.js resources/js/velocity.js && mv -f node_modules/velocity-animate/velocity.ui.js resources/js/velocity.ui.js",
     "js:minify": "uglifyjs resources/js/velocity.js resources/js/velocity.ui.js resources/js/site.js -o resources/all.min.js --comments",

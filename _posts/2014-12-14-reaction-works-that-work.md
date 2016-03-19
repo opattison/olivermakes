@@ -15,7 +15,7 @@ description: 'Notes on an independent publication about design and creativity.'
 image_index: /images/index/2014-12-14-wtw-olivermakes-ccbync.jpg
 image:
   - src: /images/2014-12-14-wtw-olivermakes-ccbync.jpg
-    alt: ''
+    alt: 'Three recent issues of Works that Work laid out on a table'
     date: 2014-12-14
     camera: 'Fujifilm X-E2'
     lens: 'Fujinon XF35mmF1.4 R'
@@ -26,11 +26,13 @@ image:
     description: 'Photo of three issues of Works That Work, taken at home.'
     aspect: '3:1'
   - src: /images/2014-12-15-wtw-N80_7110.jpg
+    alt: 'Magazine cover'
     date: 2014-12-15
     license: 'copyright'
     author: 'Works That Work'
     quality: 70
   - src: /images/2014-12-15-wtw-N80_7152.jpg
+    alt: 'Inner page – From Earth to Mars'
     date: 2014-12-15
     license: 'copyright'
     author: 'Works That Work'
