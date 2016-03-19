@@ -99,6 +99,7 @@ exclude:
   - Gemfile*
   - node_modules
   - package.json
+  - vendor
 
 ## Configuration URLs
 domain: olivermak.es
