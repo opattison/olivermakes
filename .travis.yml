@@ -13,7 +13,7 @@ install:
   - npm install
 
 script:
-  - npm run dev
+  - 'if [ "$TRAVIS_BRANCH" != "master" ]; then npm run dev; else npm run prod; fi'
 
 env:
   global:
