@@ -11,3 +11,4 @@ group :jekyll_plugins do
 end
 
 gem 's3_website'
+gem 'html-proofer'
