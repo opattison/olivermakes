@@ -62,7 +62,7 @@
 
 ## License
 
-All writing and photography on the site is my original work and is licensed under [Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC)](http://creativecommons.org/licenses/by-nc/4.0/). All design and code is under conventional copyright (as opposed to CC-style “copyleft” copyright), but is available for fair use [on GitHub](https://github.com/opattison/olivermakes). Almost everything in the `_pages`, `_posts`, `icons`, and `images` folders is CC BY-NC and the most of the rest of the repository is under copyright, where applicable.
+All writing and photography on the site is my original work and is licensed under [Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC)](http://creativecommons.org/licenses/by-nc/4.0/). All design and code is licensed under [the MIT license](https://olivermak.es/license/#mit), but is available for fair use [on GitHub](https://github.com/opattison/olivermakes). Almost everything in the `_pages`, `_posts`, `icons`, and `images` folders is CC BY-NC and the most of the rest of the repository is under copyright, where applicable.
 
 [Read more](https://olivermak.es/license/) on attribution and copyright for the site. If you have any questions about licensing or use of content from the site, please [contact me by email](oliverpattison@gmail.com).
 
