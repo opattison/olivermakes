@@ -53,7 +53,7 @@ permalink: /:year/:month/:title/
 ## Collections
 collections:
   patterns:
-    output: true
+    output: false
     permalink: patterns/:path/
   photos:
     output: true

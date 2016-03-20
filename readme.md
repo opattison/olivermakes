@@ -23,32 +23,37 @@
 
 ## Implementation
 
-- Jekyll (with help from npm) for building
-- Amazon CloudFront, S3 and [imgix](https://www.imgix.com) for hosting
-- [s3_website](https://github.com/laurilehmijoki/s3_website) for deploying to Amazon Web Services
-- GitHub for version control
-- TypeKit for fonts: 300, 400 and 500 weights of [the Ratio typeface](http://cargocollective.com/pstype/Ratio) and 500 weight of [Source Code Pro](http://adobe-fonts.github.io/source-code-pro/)) are [hosted by Typekit](https://typekit.com/colophons/ojm0eig)
-- `flexbox` for flexible CSS layout
-- Responsive images using [`srcset` syntax](https://responsiveimages.org), processed with imgix
-- Generation of archives with the [Jekyll Archives](https://github.com/jekyll/jekyll-archives) gem
-- MapBox for maps
+- Building: [Jekyll](http://jekyllrb.com) and [npm scripting](https://docs.npmjs.com/cli/run-script)
+- Archive generation: [Jekyll Archives](https://github.com/jekyll/jekyll-archives) gem
+- Hosting: Amazon [CloudFront](https://aws.amazon.com/cloudfront/), [S3](https://aws.amazon.com/s3/) and [imgix](https://www.imgix.com) for hosting; [AWS ACM](https://aws.amazon.com/certificate-manager/) for TLS (HTTPS) certificate
+- Deploying: [s3_website](https://github.com/laurilehmijoki/s3_website), via [Travis CI](https://travis-ci.org)
+- Version control: GitHub
+- Typography: [Adobe Typekit](https://typekit.com/colophons/ojm0eig) – 300, 400 and 500 weights of [the Ratio typeface](http://cargocollective.com/pstype/Ratio) and 500 weight of [Source Code Pro](http://adobe-fonts.github.io/source-code-pro/))
+- Layout: custom [`flexbox`](https://www.w3.org/TR/2016/CR-css-flexbox-1-20160301/) CSS
+- Responsive images: [`srcset`](https://responsiveimages.org), processed with [imgix](https://www.imgix.com/)
+- Maps: [MapBox](https://www.mapbox.com/)
 - No templates, frameworks or boilerplate
-- As little JavaScript as possible
+- A minimum of front-end JavaScript
 
 ## Requirements
 
 ### Configuration
 
-- [Jekyll](http://jekyllrb.com) >3.0
+- [Jekyll](http://jekyllrb.com) >3.1
 - [Jekyll Archives](https://github.com/jekyll/jekyll-archives)
 - [rouge](https://github.com/jneen/rouge)
 - [Sass (SCSS)](https://github.com/sass/sass)
 - [jekyll-imgix](https://github.com/imgix/jekyll-imgix)
-- [s3_website](https://github.com/laurilehmijoki/s3_website)
 - [npm for dependencies and building](https://www.npmjs.com)
 - [uglifyJS](https://github.com/mishoo/UglifyJS2)
 - [watch](https://github.com/mikeal/watch)
 - [npm-run-all](https://github.com/mysticatea/npm-run-all)
+
+### Testing and deploying
+
+- [HTMLProofer](https://github.com/gjtorikian/html-proofer)
+- [s3_website](https://github.com/laurilehmijoki/s3_website)
+- [Travis CI](https://travis-ci.org)
 
 ### Front-end
 
@@ -57,7 +62,7 @@
 
 ## License
 
-All writing and photography on the site is my original work and is licensed under [Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC)](http://creativecommons.org/licenses/by-nc/4.0/). All design and code is under conventional copyright (as opposed to CC-style “copyleft” copyright), but is available for fair use [on GitHub](https://github.com/opattison/olivermakes). If you are looking at the repository, almost everything in the `_pages`, `_posts`, `icons`, and `images` folders is CC BY-NC and the most of the rest of it is under copyright, where applicable.
+All writing and photography on the site is my original work and is licensed under [Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC)](http://creativecommons.org/licenses/by-nc/4.0/). All design and code is licensed under [the MIT license](https://olivermak.es/license/#mit), but is available for fair use [on GitHub](https://github.com/opattison/olivermakes). Almost everything in the `_pages`, `_posts`, `icons`, and `images` folders is CC BY-NC and the most of the rest of the repository is under copyright, where applicable.
 
 [Read more](https://olivermak.es/license/) on attribution and copyright for the site. If you have any questions about licensing or use of content from the site, please [contact me by email](oliverpattison@gmail.com).
 

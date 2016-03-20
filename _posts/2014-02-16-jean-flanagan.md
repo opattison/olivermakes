@@ -148,7 +148,7 @@ Publishing *something* on the web is relatively easy, but designing a lasting ho
 {% capture jean %}
 # What Jean learned from this project
 
-<i>by <cite><a href="http://jeanflanagan.com">Jean Flanagan</a></cite></i>
+<i>by <cite><a href="http://jeancflanagan.com">Jean Flanagan</a></cite></i>
 
 - How to use Jekyll, Git, GitHub, and a command line interface.
 - How photo file sizes, fonts, and more affect a website's performance.
