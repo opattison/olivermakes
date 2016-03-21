@@ -1,9 +1,11 @@
 var Scrolling = (function () {
+  var windowPathName = window.location.pathname;
 /* select page markers */
   var Top = document.querySelector('#top');
   var backTop = document.querySelectorAll('.js-backTop');
   var Footnote = document.querySelectorAll('.footnote');
   var reverseFootnote = document.querySelectorAll('.reversefootnote');
+  var patternNavLink = document.querySelectorAll('.pattern-nav-link--sub');
 
 /* forEach loop through for querySelectorAll – not an array */
   var forEach = function (array, callback, scope) {
@@ -61,6 +63,23 @@ var Scrolling = (function () {
     };
 
     element.addEventListener('click', scrollReverseFootnote, false);
+  });
+
+/* loop through each sidebar link and scroll if on the same page as hash */
+  forEach(patternNavLink, function (index, element) {
+    var linkPathName = element.pathname;
+    var linkHash = element.hash;
+
+    if (windowPathName == linkPathName) {
+      var destination = document.querySelector(linkHash);
+
+      function scrollPatternNavLink (event) {
+        event.preventDefault();
+        scroll(destination);
+      };
+    }
+
+    element.addEventListener('click', scrollPatternNavLink, false);
   });
 
 })();
