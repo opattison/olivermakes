@@ -76,6 +76,7 @@ var Scrolling = (function () {
       function scrollPatternNavLink (event) {
         event.preventDefault();
         scroll(destination);
+        window.location.hash = linkHash.substr(1);
       };
     }
 
