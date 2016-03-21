@@ -1,4 +1,6 @@
-<div class="pattern pattern--typography {{ include.class }}">
+<h3>{{ font.name }} {{ font.weight }} {% if font.italic == true %}italic{% else %}normal{% endif %}</h3>
+
+<div class="font-{{ type }} weight-{{ font.weight }} {% if font.italic == true %}font-italic{% endif %}">
   {{ site.data.type.prose.zephyrs }}
   <br>
   {{ site.data.type.alphabet.upper }}

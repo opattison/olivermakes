@@ -1,0 +1,22 @@
+---
+title: type (sans-serif)
+use: 'Ratio is used everywhere on the site, from headings to body text. Three weights are used: 300 (light), 400 (regular) and 500 (medium).'
+restriction: 'Not used in code samples.'
+type: markdown
+category: text
+priority: 0
+sass: _fundamental.scss
+---
+
+## Ratio font family
+
+{% assign fonts = site.data.font.sans %}
+{% assign type = 'sans' %}
+
+{% for font in fonts %}
+{% include block/pattern--type-sample.html %}
+{% endfor %}
+
+```
+$ratio: 'ratio', 'Helvetica Neue', 'Roboto', Arial, sans-serif;
+```

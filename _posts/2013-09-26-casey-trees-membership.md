@@ -3,7 +3,6 @@ title: 'Membership design for Casey Trees'
 layout: singel
 option:
   - code
-  - patterns
 category: 'projects'
 tags:
   - 'css'

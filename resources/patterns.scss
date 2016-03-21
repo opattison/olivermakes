@@ -2,74 +2,167 @@
 ---
 @import 'helpers';
 
-.item--pattern {
-  background-color: transparent;
+.pattern-sidebar {
+
+  @include min-width(l01) {
+    height: calc(100vh - 4em);
+    position: fixed;
+    width: 12em;
+  }
 }
 
-.item--pattern-description {
-  height: 14em;
-}
+.pattern-main {
 
-.edgeless {
-  background-color: $whiter;
+  @include min-width(l01) {
+    padding: 2em 0 2em 12em;
+    width: 100%;
+  }
 }
 
 .pattern-nav {
+  background-color: $gray00;
   display: flex;
-  flex-direction: column;
-  flex: 1 0 100%;
-  margin: 3em auto;
-  max-width: 36em;
+  flex-flow: row wrap;
+  padding-bottom: 10em;
 
-  &:first-of-type {
-    margin-top: 1em;
-  }
-
-  @include min-width(s01) {
-    flex-direction: row;
+  @include min-width(l01) {
+    display: block;
+    max-height: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
   }
 }
 
-.pattern-nav--index {
-  @extend .pattern-nav;
-
-  margin: 1em auto;
-  max-width: none;
+.pattern-nav,
+.pattern-nav ul,
+.pattern-nav li {
+  margin: 0;
 }
 
-.pattern-nav-action {
-  @include action;
+.pattern-nav-li {
+  flex: 1 0 50%;
+  text-align: center;
+  width: 50%;
 
-  @include min-width(s01) {
-    flex: 1 0 50%;
+  @include min-width(l01) {
+    text-align: left;
+    width: 100%;
   }
 }
 
-.pattern-nav-action--back,
-.pattern-nav-action--source {
-  @extend .pattern-nav-action;
-  @include action-color($gray07, $gray00)
+.pattern-nav-link {
+  @include a-borderless;
+  background-color: $gray00;
+  color: $whiter;
+  display: block;
+  font-size: 1.125em;
+  font-weight: $weight-medium;
+  padding: .5em;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    color: $blue;
+  }
+
+  &--active {
+    background-color: $green;
+
+    &:hover,
+    &:focus {
+      background-color: $gray04;
+      color: $gray07;
+      cursor: default;
+    }
+  }
 }
 
-.pattern-nav-action--back {
-  background-color: $gray07;
+.pattern-nav-li--sub {
+  display: none;
+
+  @include min-width(l01) {
+    display: block;
+  }
 }
 
-.pattern-nav-action--source {
-  background-color: $gray06;
+.pattern-nav-link--sub {
+  @include a-borderless;
+  background-color: $gray01;
+  color: $whiter;
+  display: block;
+  padding: .5em 0 .5em 2em;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    color: $black;
+  }
+}
+
+.pattern-index {
+  @include width-max(l01);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  @include min-width(m01) {
+    margin: 0 auto;
+    justify-content: flex-start;
+  }
+}
+
+.content {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  overflow: hidden;
+}
+
+.item--pattern {
+  flex: 0 0 calc(100% - 2em);
+  margin: 1em auto 0;
+  width: 100%;
+
+  @include min-width(m01) {
+    flex: 0 0 50%;
+    margin: 1em 0 0;
+  }
+}
+
+.item--pattern-description {
+  height: 10em;
+
+  background-position: center;
+  background-size: cover;
+
+  @include min-width(m01) {
+    height: 14em;
+  }
 }
 
 .grid--swatches {
   flex-flow: row wrap;
   justify-content: flex-start;
   list-style-type: none;
-  margin-top: 0;
+  margin: 0 auto;
+  max-width: 45em;
+
+  @include min-width(l03) {
+    max-width: 54em;
+  }
 }
 
 .pattern--swatch {
   flex: 1 0 100%;
-  font: $weight-medium .625em/1.5 $source-code-pro;
+  font: $weight-medium .75em/1.5 $source-code-pro;
   margin-top: 1em;
+
+  @include min-width(s01) {
+    flex: 0 0 50%;
+  }
+
+  @include min-width(l03) {
+    flex: 0 0 25%;
+  }
 }
 
 .pattern--swatch figure {
@@ -88,23 +181,27 @@
   width: 100%;
 }
 
-.pattern--typography {
-  margin-top: 1em;
-}
-
 .pattern--element {
-  margin-top: 6em;
+  margin-top: 4em;
 }
 
 .pattern--element:first-of-type {
   margin-top: 0;
 }
 
-.pattern-display--wider {
-  @include min-width(l01) {
-    margin-left: -6em;
-    margin-right: -6em;
-  }
+.pattern-display--center :first-child {
+  display: block;
+  margin: auto;
+}
+
+.pattern-display--isolate {
+  background-color: inherit;
+  max-width: 100%;
+  padding: 0;
+}
+
+.pattern-display--fix-rem {
+  font-size: 1rem;
 }
 
 .pattern-meta {
@@ -112,6 +209,14 @@
   clear: both;
   color: $black;
   margin-top: 1em;
+
+  @include min-width(m01) {
+    font-size: 1.25em;
+  }
+
+  @include min-width(l04) {
+    font-size: 1.5em;
+  }
 }
 
 .pattern-meta summary {
@@ -129,6 +234,7 @@
 
 .pattern-meta figure {
   margin-top: 0;
+  max-width: 45em;
   padding: 1em;
 }
 
@@ -171,66 +277,29 @@
   max-width: 64px;
 }
 
-/* Block of high-contrast introductory text */
-.primer {
-  margin: 1em auto 0;
-  padding: 1em;
-  font-style: italic;
-  font-weight: $weight-light;
-  line-height: 1.25;
-
-  background-color: $gray07;
-  color: $gray01;
-
-  @include min-width(m01) {
-    padding: 1em 2em;
-  }
-
-  @include min-width(l01) {
-    @include width-max(l01);
-  }
-}
-
-.primer a {
-  border-bottom: solid 1px;
-  padding-bottom: 1px;
-
+.banner-title--patterns {
   color: $red;
+  display: flex;
 
   &:hover,
   &:focus {
-    color: $blue;
+    background-color: $red;
+    color: $whiter;
   }
-
-  @include a-underline;
 }
 
-.primer p {
-  font-size: 1.125em;
-
-  @include min-width(m01) {
-    font-size: 1.25em;
-  }
+.banner-title--patterns h1 {
+  color: inherit;
+  margin: auto;
 
   @include min-width(l01) {
-    font-size: 1.375em;
+    text-align: center;
   }
 }
 
-@media screen and (min-width: 22.5em) {
-  .pattern--swatch {
-    flex: 0 0 50%;
-  }
-}
+.pattern-container > .end {
 
-@media screen and (min-width: 45em) {
-  .pattern-meta summary {
-    font-size: 1.125em;
-  }
-}
-
-@media screen and (min-width: 80em) {
-  .pattern--swatch {
-    flex: 0 0 25%;
+  @include min-width(l01) {
+    padding-left: 12em;
   }
 }

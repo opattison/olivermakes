@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body class="micro">
+
+  <div class="pattern-container" id="top">
+
+    {% include container/pattern-nav.html %}
+
+    <section class="pattern-main" id="maincontent" role="main">
+{{ content }}
+    </section>
+
+    {% include container/end.html %}
+
+  </div>
+
+</body>
+</html>
