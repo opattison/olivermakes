@@ -7,14 +7,15 @@
   @include min-width(l01) {
     height: calc(100vh - 4em);
     position: fixed;
-    width: 12em;
+    width: 15em;
+    z-index: 2;
   }
 }
 
 .pattern-main {
 
   @include min-width(l01) {
-    padding: 2em 0 2em 12em;
+    padding: 2em 0 2em 15em;
     width: 100%;
   }
 }
@@ -23,13 +24,13 @@
   background-color: $gray00;
   display: flex;
   flex-flow: row wrap;
-  padding-bottom: 10em;
 
   @include min-width(l01) {
     display: block;
     max-height: 100%;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+    padding-bottom: 10em;
   }
 }
 
@@ -300,6 +301,6 @@
 .pattern-container > .end {
 
   @include min-width(l01) {
-    padding-left: 12em;
+    padding-left: 15em;
   }
 }
