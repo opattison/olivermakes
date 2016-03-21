@@ -116,6 +116,20 @@
   }
 }
 
+.pattern-main-heading {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 1em 0;
+
+  @include min-width(l01) {
+    font-size: 1.125em;
+    padding: 0;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+  }
+}
+
 .content {
   padding-top: 2em;
   padding-bottom: 2em;

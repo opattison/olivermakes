@@ -91,7 +91,7 @@
   font-size: 1rem;
   justify-content: flex-start;
   list-style-type: none;
-  margin: 0 auto;
+  margin: 0 auto 1em;
   max-width: 45em;
 
   @include min-width(l03) {
