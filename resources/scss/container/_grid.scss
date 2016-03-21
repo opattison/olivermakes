@@ -84,3 +84,17 @@
     margin-right: 0;
   }
 }
+
+.grid--swatches {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 1rem;
+  justify-content: flex-start;
+  list-style-type: none;
+  margin: 0 auto;
+  max-width: 45em;
+
+  @include min-width(l03) {
+    max-width: 54em;
+  }
+}

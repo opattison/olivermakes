@@ -140,48 +140,6 @@
   }
 }
 
-.grid--swatches {
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  list-style-type: none;
-  margin: 0 auto;
-  max-width: 45em;
-
-  @include min-width(l03) {
-    max-width: 54em;
-  }
-}
-
-.pattern--swatch {
-  flex: 1 0 100%;
-  font: $weight-medium .75em/1.5 $source-code-pro;
-  margin-top: 1em;
-
-  @include min-width(s01) {
-    flex: 0 0 50%;
-  }
-
-  @include min-width(l03) {
-    flex: 0 0 25%;
-  }
-}
-
-.pattern--swatch figure {
-  height: 16em;
-  position: relative;
-}
-
-.pattern--swatch figcaption {
-  background-color: $gray07--trans90;
-  border-bottom: none;
-  bottom: 0;
-  margin: 0;
-  padding: .5em 0!important;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-}
-
 .pattern--element {
   margin-top: 4em;
 }

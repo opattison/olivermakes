@@ -16,7 +16,7 @@ image:
 
 ## Shades
 
-<ul class="grid grid--swatches no-bullets">
+<ul class="grid--swatches no-bullets">
 {% assign swatches = site.data.shade %}
 {% for swatch in swatches %}
 {% include block/pattern--swatch.html %}
@@ -25,7 +25,7 @@ image:
 
 ## Colors
 
-<ul class="grid grid--swatches no-bullets">
+<ul class="grid--swatches no-bullets">
 {% assign swatches = site.data.color %}
 {% for swatch in swatches %}
 {% include block/pattern--swatch.html %}
@@ -34,7 +34,7 @@ image:
 
 ## Semi-transparent shades and colors
 
-<ul class="grid grid--swatches no-bullets">
+<ul class="grid--swatches no-bullets">
 {% assign swatches = site.data.transparent %}
 {% for swatch in swatches %}
 {% include block/pattern--swatch.html %}
