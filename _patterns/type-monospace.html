@@ -1,0 +1,25 @@
+---
+title: type (monospace)
+use: 'Primarily used in code samples '
+restriction: ''
+type: markdown
+category: text
+priority: 0
+sass: _fundamental.scss
+---
+
+## Source Code Pro
+{:.font-monospace style="font-size: 1.5em;"}
+
+{% assign fonts = site.data.font.monospace %}
+{% assign type = 'monospace' %}
+
+{% for font in fonts %}
+{% include block/pattern--type-sample.html %}
+{% endfor %}
+
+```
+$source-code-pro: 'source-code-pro', Menlo, Consolas, monospace;
+$weight-medium: 500;
+// default size: .8125em
+```

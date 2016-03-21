@@ -1,3 +1,4 @@
+{% if page.option contains 'hero' %}
 {% assign image = page.image[0] %}
 
 <figure class="hero">
@@ -14,3 +15,4 @@
   <figcaption>{{ image.caption | markdownify }}</figcaption>
   {% endif %}
 </figure>
+{% endif %}

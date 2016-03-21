@@ -45,11 +45,11 @@ Unfortunately, the documents in the project contain proprietary information, so 
 
 <div class="grid--wide">
 {% assign image = page.image[1] %}
-<figure class="grid-figure--33 grid-figure screenshot">
+<figure class="grid-figure--33 screenshot">
   {% include block/image--imgix.html %}
 </figure>
 {% assign image = page.image[2] %}
-<figure class="grid-figure--66 grid-figure screenshot">
+<figure class="grid-figure--66 screenshot">
   {% include block/image--imgix.html %}
   {% include block/figcaption--image.html %}
 </figure>

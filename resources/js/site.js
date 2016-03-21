@@ -1,9 +1,16 @@
 var Scrolling = (function () {
+  var windowPathName = window.location.pathname;
+
+/* select containers */
+  var patternNav = document.querySelector('.pattern-nav');
+
 /* select page markers */
   var Top = document.querySelector('#top');
   var backTop = document.querySelectorAll('.js-backTop');
   var Footnote = document.querySelectorAll('.footnote');
   var reverseFootnote = document.querySelectorAll('.reversefootnote');
+  var patternNavLink = document.querySelectorAll('.pattern-nav-link');
+  var patternNavLinkSub = document.querySelectorAll('.pattern-nav-link--sub');
 
 /* forEach loop through for querySelectorAll – not an array */
   var forEach = function (array, callback, scope) {
@@ -20,6 +27,19 @@ var Scrolling = (function () {
       {
         duration: 320,
         easing: 'easeInOutExpo'
+      }
+    )
+  };
+
+  function scrollContainer (destination, container) {
+    Velocity(
+      destination,
+      'scroll',
+      {
+        duration: 320,
+        easing: 'easeInOutExpo',
+        container: container,
+        offset: -64
       }
     )
   };
@@ -62,5 +82,33 @@ var Scrolling = (function () {
 
     element.addEventListener('click', scrollReverseFootnote, false);
   });
+
+/* loop through each sidebar link and scroll if on the same page as hash */
+  forEach(patternNavLinkSub, function (index, element) {
+    var linkPathName = element.pathname;
+    var linkHash = element.hash;
+
+    if (windowPathName == linkPathName) {
+      var destination = document.querySelector(linkHash);
+
+      function scrollPatternNavLinkSub (event) {
+        event.preventDefault();
+        scroll(destination);
+        window.location.hash = linkHash.substr(1);
+      }
+
+      element.addEventListener('click', scrollPatternNavLinkSub, false);
+    };
+  });
+
+  var scrollPatternNav = (function () {
+    forEach(patternNavLink, function (index, element) {
+      var linkPathName = element.pathname;
+
+      if (windowPathName == linkPathName) {
+        scrollContainer(element, patternNav);
+      };
+    });
+  })();
 
 })();

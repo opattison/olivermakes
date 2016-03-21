@@ -3,7 +3,6 @@ title: 'Membership design for Casey Trees'
 layout: singel
 option:
   - code
-  - patterns
 category: 'projects'
 tags:
   - 'css'
@@ -75,12 +74,12 @@ One year after the redesign, it was becoming clear that this device detection so
 
 <div class="grid--wide">
   {% assign image = page.image[1] %}
-  <figure class="grid-figure--33 grid-figure screenshot">
+  <figure class="grid-figure--33 screenshot">
     {% include block/image--imgix.html %}
     {% include block/figcaption--image.html %}
   </figure>
   {% assign image = page.image[2] %}
-  <figure class="grid-figure--33 grid-figure screenshot">
+  <figure class="grid-figure--33 screenshot">
     {% include block/image--imgix.html %}
     {% include block/figcaption--image.html %}
   </figure>
@@ -100,12 +99,12 @@ Working with the fundraising team, I iterated on the visual design until we had 
 For the main page that would explain the membership program and encourage visitors to donate, my goal was to create repeatable and reusable content blocks (which we loosely referred to as “cards”) that could be used on the membership pages as well as other sections of the website. My method to deal with this complexity was to excerpt this audience-specific content and distill it into high-contrast, discrete blocks, with strong call-to-action links.
 
 <div class="grid--wide">
-<figure class="grid-figure--66 grid-figure screenshot">
+<figure class="grid-figure--66 screenshot">
   <img
     src="{{ page.image[4].src | imgix_url }}"
     alt="{{ page.image[4].alt }}">
 </figure>
-<figure class="grid-figure--33 grid-figure screenshot">
+<figure class="grid-figure--33 screenshot">
   <img
     src="{{ page.image[5].src | imgix_url }}"
     alt="{{ page.image[5].alt }}">
@@ -120,9 +119,10 @@ We already used “button”-like hyperlinks with rounded corners, right- or lef
 
 Since we already had strong colors and icons for each membership level, it made sense to “theme” the content blocks, by adding level-specific colors to the titles and call-to-action links. These would be new colors for the site to give a unique identity to the campaign, but they would still fit in well with the existing palette. I echoed the colors and icons on the [membership donation form](https://secure3.convio.net/ct/site/Donation2?df_id=1625&amp;1625.donation=form1).
 
-<ul class="grid grid--swatches no-bullets">
-{% for color in page.color %}
-  <li class="pattern--swatch"><figure style="background-color: {{ page.color[forloop.index0].hex }}"><figcaption>{{ page.color[forloop.index0].name }}<br>{{ page.color[forloop.index0].hex }}</p></figcaption></figure></li>
+<ul class="grid--swatches no-bullets">
+{% assign swatches = page.color %}
+{% for swatch in swatches %}
+{% include block/pattern--swatch.html %}
 {% endfor %}
 </ul>
 

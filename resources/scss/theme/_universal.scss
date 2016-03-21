@@ -153,6 +153,11 @@
   color: $white;
 }
 
+.return-action--home:hover,
+.return-action--home:focus {
+  @include random-fill(2, 6);
+}
+
 .background--projects {
   background-color: $violet;
   color: $white;

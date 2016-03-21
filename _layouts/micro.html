@@ -8,7 +8,7 @@
 
   <article id="maincontent" class="h-entry page" role="main">
 
-    <div class="e-content content">
+    <div class="e-content content{% if page.collection == 'photos' %} content--photo{% endif %}">
 
     {% if page.collection == 'photos' %}
       {% assign image = page %}

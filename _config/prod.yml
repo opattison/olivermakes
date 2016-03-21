@@ -54,6 +54,8 @@ permalink: /:year/:month/:title/
 collections:
   patterns:
     output: false
+  patterns-categories:
+    output: true
     permalink: patterns/:path/
   photos:
     output: true
@@ -65,6 +67,7 @@ defaults:
     values:
       layout: micro
       category: photography
+      theme: dark
 
 ## Jekyll Archives configuration
 jekyll-archives:

@@ -71,16 +71,16 @@ I stripped the theme framework of some elements that the site would not need. A 
 
 <div class="grid--wide">
   {% assign image = page.image[2] %}
-  <figure class="grid-figure--33 grid-figure screenshot">
+  <figure class="grid-figure--33 screenshot">
     {% include block/image--imgix.html %}
     {% include block/figcaption--image.html %}
   </figure>
   {% assign image = page.image[3] %}
-  <figure class="grid-figure--33 grid-figure screenshot">
+  <figure class="grid-figure--33 screenshot">
     {% include block/image--imgix.html %}
   </figure>
   {% assign image = page.image[4] %}
-  <figure class="grid-figure--33 grid-figure screenshot">
+  <figure class="grid-figure--33 screenshot">
     {% include block/image--imgix.html %}
   </figure>
 </div>

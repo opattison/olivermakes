@@ -8,8 +8,6 @@
 
   <article id="maincontent" class="h-entry page" role="main">
 
-{% include block/pattern-nav.html %}
-
 {% include block/page-title.html %}
 
     <div class="e-content content">
@@ -20,9 +18,7 @@
 
     </div>
 
-{% unless page.option contains 'error' or page.option contains 'patterns' %}{% include block/page-footer.html %}{% endunless %}
-
-{% include block/pattern-nav.html %}
+{% unless page.option contains 'error' %}{% include block/page-footer.html %}{% endunless %}
 
   </article>
 
