@@ -1,0 +1,22 @@
+---
+title: .project--satellite
+use: 'Block of text and images for a project summary for including inline in pages. Hand-picked rather than automatically generated for projects.'
+restriction: 'On any content page.'
+spec: 'Fewer metadata items than a `.project`. Large navigation action directing to the project page on the site (instead of source or live page for the project). Generated automatically on project pages with Liquid. Image uses `background-image` (scaled roughly 3:2) from an image from the project. No license information – only original publishing date and updated date.'
+type: html
+category: component
+sass: block/_project.scss
+---
+
+<article class="project--satellite">
+  <div class="project-image" style="background-image: url(/images/2014-12-12-futurefriendly.svg)">
+  </div>
+  <div class="project-meta">
+    <h1><a href="/2014/11/design-notes-future-friendiness-robustness/">Designing this site: future-friendliness and&nbsp;robustness</a></h1>
+    <p class="project-description">This was originally published 2014-11-06 and last updated 2016-03-18.</p>
+
+    <div class="project-nav">
+      <a class="project-nav-action--satellite" href="/2014/11/design-notes-future-friendiness-robustness/">read this post</a>
+    </div>
+  </div>
+</article>

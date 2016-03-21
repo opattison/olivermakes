@@ -1,0 +1,23 @@
+---
+title: .item--minor
+use: 'Post summaries and details on index pages. These items are from both the writing and project pages to show both styles.'
+spec: 'Smaller than [`.item`](#item) but largely itentical. Fluid, whole- to half-width block. Large action button at the bottom. Background image pulled from post (where available). Strong link color hyperlinked headlines. Description is never shown. Completed period not necessary.'
+restriction: 'Generally contained by `.index` container as shown here.'
+type: html
+category: interface
+priority: 2
+option:
+  - fix-rem
+  - isolate
+sass: block/_item.scss#l60
+---
+
+<div class="index">
+  <article class="item" style="background-image: url(/images/2016-01-15-logotype-pine-orchard--green.svg)">
+    <div class="item-description item--minor-description">
+      <h1><a href="/2015/10/pine-orchard-typography/">Pine Orchard Prints typographic identity</a></h1>
+      <p class="item-time">Completed <time class="dt-published" pubdate="" datetime="2015-10-24T00:00:00-04:00">2015-10-24</time> </p>
+    </div>
+    <a class="item-action" href="/2015/10/pine-orchard-typography/">view this project</a>
+  </article>
+</div>
