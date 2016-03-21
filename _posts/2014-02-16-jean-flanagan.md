@@ -103,11 +103,11 @@ Jean takes [beautiful photos](http://jeancflanagan.com/photos/), which I wanted 
 #### Samples from writing layout
 
 <div class="grid--wide">
-  <figure class="grid-figure--33 grid-figure screenshot">
+  <figure class="grid-figure--33 screenshot">
     {% assign image = page.image[5] %}
     {% include block/image--imgix.html %}
   </figure>
-  <figure class="grid-figure--66 grid-figure screenshot">
+  <figure class="grid-figure--66 screenshot">
     {% assign image = page.image[6] %}
     {% include block/image--imgix.html %}
   </figure>

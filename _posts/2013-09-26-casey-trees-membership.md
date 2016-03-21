@@ -74,12 +74,12 @@ One year after the redesign, it was becoming clear that this device detection so
 
 <div class="grid--wide">
   {% assign image = page.image[1] %}
-  <figure class="grid-figure--33 grid-figure screenshot">
+  <figure class="grid-figure--33 screenshot">
     {% include block/image--imgix.html %}
     {% include block/figcaption--image.html %}
   </figure>
   {% assign image = page.image[2] %}
-  <figure class="grid-figure--33 grid-figure screenshot">
+  <figure class="grid-figure--33 screenshot">
     {% include block/image--imgix.html %}
     {% include block/figcaption--image.html %}
   </figure>
@@ -99,12 +99,12 @@ Working with the fundraising team, I iterated on the visual design until we had 
 For the main page that would explain the membership program and encourage visitors to donate, my goal was to create repeatable and reusable content blocks (which we loosely referred to as “cards”) that could be used on the membership pages as well as other sections of the website. My method to deal with this complexity was to excerpt this audience-specific content and distill it into high-contrast, discrete blocks, with strong call-to-action links.
 
 <div class="grid--wide">
-<figure class="grid-figure--66 grid-figure screenshot">
+<figure class="grid-figure--66 screenshot">
   <img
     src="{{ page.image[4].src | imgix_url }}"
     alt="{{ page.image[4].alt }}">
 </figure>
-<figure class="grid-figure--33 grid-figure screenshot">
+<figure class="grid-figure--33 screenshot">
   <img
     src="{{ page.image[5].src | imgix_url }}"
     alt="{{ page.image[5].alt }}">

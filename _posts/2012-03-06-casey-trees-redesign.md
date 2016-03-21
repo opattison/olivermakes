@@ -47,11 +47,11 @@ We turned the project around in only a few months, with design and content work 
 
 <div class="grid--wide">
   {% assign image = page.image[1] %}
-  <figure class="grid-figure--66 grid-figure screenshot">
+  <figure class="grid-figure--66 screenshot">
     {% include block/image--imgix.html %}
   </figure>
   {% assign image = page.image[2] %}
-  <figure class="grid-figure--33 grid-figure screenshot">
+  <figure class="grid-figure--33 screenshot">
     {% include block/image--imgix.html %}
   </figure>
 </div>

@@ -3,6 +3,10 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
+
+  @include min-width(l01) {
+    flex-flow: row nowrap;
+  }
 }
 
 .grid--wide {
@@ -11,77 +15,72 @@
   flex-flow: column nowrap;
   justify-content: center;
   margin-top: 1em;
+
+  @include min-width(s03) {
+    @include bleed-image(2em);
+    width: calc(100% + 4em);
+  }
+
+  @include min-width(s04) {
+    @include bleed-image(2.5em);
+    width: calc(100% + 5em);
+  }
+
+  @include min-width(l01) {
+    @include bleed-image(4.5em);
+    flex-flow: row nowrap;
+    max-width: none;
+    width: calc(100% + 9em);
+  }
+
+  @include min-width(l03) {
+    @include bleed-image(9em);
+    width: calc(100% + 18em);
+  }
 }
 
 .grid figure + figure,
 .grid--wide figure + figure {
   margin-top: 1em;
+
+  @include min-width(l01) {
+    margin-top: 0;
+    margin-right: 1em;
+  }
 }
+
+.grid-figure {
+
+  @include min-width(l01) {
+    flex: 1 1 50%;
+    margin-right: 1em;
+  }
+}
+
 
 .grid-figure--33 {
   max-width: calc(100% / 3 * 2);
   margin: auto;
 
   @include min-width(l01) {
-    margin: 0;
-  }
-}
-
-@include min-width(s03) {
-  .grid--wide {
-    @include bleed-image(2em);
-    width: calc(100% + 4em);
-  }
-}
-
-@include min-width(s04) {
-  .grid--wide {
-    @include bleed-image(2.5em);
-    width: calc(100% + 5em);
-  }
-}
-
-@include min-width(l01) {
-  .grid,
-  .grid--wide {
-    flex-flow: row nowrap;
-  }
-
-  .grid--wide {
-    @include bleed-image(4.5em);
-    max-width: none;
-    width: calc(100% + 9em);
-  }
-
-  .grid-figure {
-    margin-right: 1em;
-    flex: 1 1 50%;
-  }
-
-  .grid figure:last-of-type,
-  .grid--wide figure:last-of-type {
-    margin-right: 0;
-  }
-
-  .grid-figure--33 {
-    width: calc(100% / 3 - 1em);
     flex: 1 1 calc(100% / 3 - 1em);
-  }
-
-  .grid-figure--66 {
-    width: calc(100% / 3 * 2 - 1em);
-    flex: 1 1 calc(100% / 3 * 2 - 1em);
-  }
-
-  .grid figure + figure,
-  .grid--wide figure + figure {
-    margin-top: 0;
+    margin-right: 1em;
+    width: calc(100% / 3 - 1em);
   }
 }
 
-@include min-width(l03) {
-  .grid--wide {
-    @include bleed-image(9em);
-    width: calc(100% + 18em);
+.grid-figure--66 {
+
+  @include min-width(l01) {
+    flex: 1 1 calc(100% / 3 * 2 - 1em);
+    margin-right: 1em;
+    width: calc(100% / 3 * 2 - 1em);
+  }
+}
+
+.grid figure:last-of-type,
+.grid--wide figure:last-of-type {
+  @include min-width(l01) {
+    margin-right: 0;
   }
 }
