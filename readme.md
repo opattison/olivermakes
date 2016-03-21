@@ -1,6 +1,8 @@
 # <a href="https://olivermak.es/"><img src="https://olivermak.es/icons/favicon32.svg" width="32" height="32"></a> <a href="https://olivermak.es/">olivermak.es</a> an archive
 
-[Read about my process for building this site](https://olivermak.es/2014/12/oliver-pattison/).
+**Read about [my process for building this site](https://olivermak.es/2014/12/oliver-pattison/).**
+
+Not interested in the code? **Take a look at [the pattern library](https://olivermak.es/patterns/).**
 
 ## Goals
 
@@ -28,7 +30,7 @@
 - Hosting: Amazon [CloudFront](https://aws.amazon.com/cloudfront/), [S3](https://aws.amazon.com/s3/) and [imgix](https://www.imgix.com) for hosting; [AWS ACM](https://aws.amazon.com/certificate-manager/) for TLS (HTTPS) certificate
 - Deploying: [s3_website](https://github.com/laurilehmijoki/s3_website), via [Travis CI](https://travis-ci.org)
 - Version control: GitHub
-- Typography: [Adobe Typekit](https://typekit.com/colophons/ojm0eig) – 300, 400 and 500 weights of [the Ratio typeface](http://cargocollective.com/pstype/Ratio) and 500 weight of [Source Code Pro](http://adobe-fonts.github.io/source-code-pro/))
+- Typography: [Adobe Typekit](https://typekit.com/colophons/ojm0eig) – 300, 400 and 500 weights of [the Ratio typeface](http://cargocollective.com/pstype/Ratio) and 500 weight of [Source Code Pro](http://adobe-fonts.github.io/source-code-pro/)
 - Layout: custom [`flexbox`](https://www.w3.org/TR/2016/CR-css-flexbox-1-20160301/) CSS
 - Responsive images: [`srcset`](https://responsiveimages.org), processed with [imgix](https://www.imgix.com/)
 - Maps: [MapBox](https://www.mapbox.com/)
@@ -62,8 +64,8 @@
 
 ## License
 
-All writing and photography on the site is my original work and is licensed under [Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC)](http://creativecommons.org/licenses/by-nc/4.0/). All design and code is licensed under [the MIT license](https://olivermak.es/license/#mit), but is available for fair use [on GitHub](https://github.com/opattison/olivermakes). Almost everything in the `_pages`, `_posts`, `icons`, and `images` folders is CC BY-NC and the most of the rest of the repository is under copyright, where applicable.
+All writing and photography on the site is my original work and is licensed under [Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC)](http://creativecommons.org/licenses/by-nc/4.0/) except where explicitly noted. All design and code is licensed under [the MIT license](https://olivermak.es/license/#mit), but is available for fair use [on GitHub](https://github.com/opattison/olivermakes). Almost everything in the `_pages`, `_posts`, `icons`, and `images` folders is CC BY-NC and the most of the rest of the repository is under copyright, where applicable.
 
-[Read more](https://olivermak.es/license/) on attribution and copyright for the site. If you have any questions about licensing or use of content from the site, please [contact me by email](oliverpattison@gmail.com).
+[Read more](https://olivermak.es/license/) on attribution and copyright. If you have any questions about licensing or use of content from the site, please [contact me by email](oliverpattison@gmail.com).
 
 <a href="https://olivermak.es/"><img src="https://olivermak.es/icons/favicon144.svg" width="100%" height="144"></a>
