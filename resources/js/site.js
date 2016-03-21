@@ -77,10 +77,10 @@ var Scrolling = (function () {
         event.preventDefault();
         scroll(destination);
         window.location.hash = linkHash.substr(1);
-      };
-    }
+      }
 
-    element.addEventListener('click', scrollPatternNavLink, false);
+      element.addEventListener('click', scrollPatternNavLink, false);
+    };
   });
 
 })();
