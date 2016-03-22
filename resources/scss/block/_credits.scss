@@ -1,4 +1,4 @@
-/* Site footer block – typically included within the `.end` element on every page on the site. */
+// Site footer block – typically included within the `.end` element on every page on the site.
 .credits {
   display: flex;
   padding: 2em 1em;
@@ -18,7 +18,7 @@
   }
 }
 
-/* Text description: copyright, authorship, source code, social media and RSS */
+// Text description: copyright, authorship, source code, social media and RSS
 .credits-meta {
   align-self: center;
   margin: auto;

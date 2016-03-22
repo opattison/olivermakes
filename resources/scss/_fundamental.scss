@@ -1,6 +1,9 @@
 html {
-  font: 400 16px/1.4375 $ratio;
-  font: 400 1rem/1.4375 $ratio;
+  font-family: $ratio;
+  font-size: 1rem;
+  font-weight: $weight-regular;
+  line-height: 1.4375;
+
      -moz-font-feature-settings: 'liga', 'dlig';
       -ms-font-feature-settings: 'liga', 'dlig';
        -o-font-feature-settings: 'liga', 'dlig';
@@ -12,6 +15,12 @@ html {
   @include min-width(l01) {
     line-height: 1.5;
   }
+}
+
+button,
+input,
+select {
+  font-family: $ratio;
 }
 
 strong,
@@ -37,7 +46,7 @@ small {
   font-size: .75em;
 }
 
-/* Headings */
+// Headings
 h1,
 h2 {
   line-height: 1.125;
@@ -83,7 +92,7 @@ h5 {
   line-height: 1.375;
 }
 
-/* Axiomatic spacing */
+// Axiomatic spacing
 p + *,
 * + p,
 * + h1,
@@ -96,7 +105,7 @@ p + *,
   margin-top: 1em;
 }
 
-/* Links */
+// Links
 a {
   transition-duration: 320ms;
   transition-property: color, background-color, border-bottom;
@@ -112,7 +121,7 @@ circle {
   transition-duration: 320ms;
 }
 
-/* Lists */
+// Lists
 ul,
 ol {
   list-style-position: inside;
@@ -149,7 +158,7 @@ li {
   margin-top: .5em;
 }
 
-/* Blockquotes */
+// Blockquotes
 blockquote {
   border-left: solid .25em;
   margin: 2em 0 2em -1em;
@@ -178,7 +187,7 @@ blockquote footer {
   text-align: right;
 }
 
-/* Footnotes */
+// Footnotes
 sup[id] {
   margin: 0;
   top: 0;
@@ -192,7 +201,7 @@ sup[id] a {
   padding: 0 .25em;
 }
 
-/* Figcaptions */
+// Figcaptions
 figcaption {
   margin: 0 0 .5em;
   padding: .25em 1em;
@@ -215,12 +224,14 @@ figcaption p {
   }
 }
 
+// Horizontal rule
 hr {
   border: 0;
   height: .2em;
   margin: 2em 0;
 }
 
+// Definition lists
 dt {
   display: inline-block;
   height: 1.5em;
@@ -232,9 +243,14 @@ dd {
   margin-left: 5em;
 }
 
+// Code
 code,
 samp {
-  font: $weight-medium .8125em/1.4375 $source-code-pro;
+  font-family: $source-code-pro;
+  font-size: .8125em;
+  font-weight: $weight-medium;
+  line-height: 1.4375;
+
   white-space: pre-wrap;
 }
 
@@ -247,6 +263,7 @@ samp {
   padding: .0625em .25em 0;
 }
 
+// Keyboard
 kbd > kbd {
   border-radius: .25em;
   font: $weight-regular .8125em/1 $open-sans;
@@ -256,7 +273,7 @@ kbd > kbd {
 kbd > kbd + b {
   font-family: $ratio;
   margin: 0 -.375em;
-} /* <kbd><kbd>cmd</kbd> <b class="kbd-plus">+</b> <kbd>C</kbd></kbd> */
+}
 
 mark {
   padding: .0625em;

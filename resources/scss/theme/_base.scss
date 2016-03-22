@@ -69,8 +69,8 @@ a:focus {
 }
 
 a:active {
+  border-color: $trans01 !important;
   color: $link--active;
-  border-color: $trans01!important;
 }
 
 p a,

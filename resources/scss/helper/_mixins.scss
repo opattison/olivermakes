@@ -52,12 +52,12 @@
 }
 
 @mixin a-borderless {
-  border: none;
+  border: 0;
 
   &:hover,
   &:focus,
   &:active {
-    border: none;
+    border: 0;
   }
 }
 

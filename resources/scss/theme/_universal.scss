@@ -1,6 +1,6 @@
 #skip {
-  color: $whiter;
   background-color: $red;
+  color: $whiter;
 }
 
 .category {
@@ -35,8 +35,8 @@
 }
 
 .item--section {
-  color: $white;
   background-color: $gray00;
+  color: $white;
 
   a {
     color: $white;
@@ -85,8 +85,8 @@
 }
 
 .item-description h1 a {
-  color: $red;
   border-bottom: solid 1px $trans01;
+  color: $red;
 }
 
 .item-description h1 a:hover,
@@ -194,10 +194,10 @@
 .credits {
   background-color: $gray06;
   color: $black;
-}
 
-.credits a {
-  @include a-underline;
+  a {
+    @include a-underline;
+  }
 }
 
 .project-nav-action {

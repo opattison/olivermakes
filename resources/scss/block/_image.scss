@@ -1,4 +1,4 @@
-/* Image block styles for figures containing img elements. */
+// Image block styles for figures containing img elements.
 .image--half {
   max-width: 100%;
   margin: 1em auto;
@@ -53,7 +53,7 @@
   }
 }
 
-/* Utility for right-aligned images */
+// Utility for right-aligned images
 .right {
   @include min-width(s04) {
     float: right;
@@ -74,7 +74,7 @@
 (min-width: 60em) and (min-aspect-ratio: 16/9) {
   .image--wide,
   .grid--wide {
-    margin: 1em auto 0!important;
-    max-width: 100%!important;
+    margin: 1em auto 0 !important;
+    max-width: 100% !important;
   }
 }

@@ -1,4 +1,4 @@
-/* Alternative nav – home and back-to-top. */
+// Alternative nav – home and back-to-top.
 .return {
   display: flex;
   flex: 0 0 100%;
@@ -43,6 +43,6 @@
 
 .return-action--home svg {
   height: calc(1.5em + 1px);
+  padding-bottom: 1px;
   width: 2em;
-  padding-bottom: 1px
 }
