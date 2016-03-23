@@ -123,10 +123,10 @@
 
   @include min-width(l01) {
     font-size: 1.125em;
-    padding: 0;
+    padding: 1em;
     position: absolute;
-    right: 1em;
-    top: 1em;
+    right: 0;
+    top: .25rem;
   }
 }
 
