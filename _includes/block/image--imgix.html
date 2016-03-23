@@ -4,6 +4,7 @@
 {% if image.width %}
   {% assign width = image.width %}
 {% endif %}
+
 <img
 {% if quality and width %}
   src="{{ image.src | imgix_url: w: width, q: quality }}"

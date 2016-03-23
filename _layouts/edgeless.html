@@ -4,25 +4,29 @@
 
 <body {% if page.option contains 'error' %}id="error" {% endif %}class="edgeless">
 
-{% include container/banner.html %}
+  {% include container/banner.html %}
 
   <article id="maincontent" class="h-entry page" role="main">
 
-{% include block/page-title.html %}
+    {% include block/page-title.html %}
 
     <div class="e-content content">
 
-{% include block/project.html %}
+      {% include block/project.html %}
 
-{{ content }}
+      {{ content }}
 
     </div>
 
-{% unless page.option contains 'error' %}{% include block/page-footer.html %}{% endunless %}
+    {% unless page.option contains 'error' %}
+      {% include block/page-footer.html %}
+    {% endunless %}
 
   </article>
 
-{% unless page.option contains 'error' %}{% include container/end.html %}{% endunless %}
+{% unless page.option contains 'error' %}
+  {% include container/end.html %}
+{% endunless %}
 
 </body>
 </html>

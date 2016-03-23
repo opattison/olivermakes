@@ -4,7 +4,7 @@
 
 <body class="micro">
 
-{% include container/banner--micro.html %}
+  {% include container/banner--micro.html %}
 
   <article id="maincontent" class="h-entry page" role="main">
 
@@ -15,7 +15,7 @@
       {% include block/srcset--micro.html %}
     {% endif %}
 
-{{ content }}
+      {{ content }}
 
     {% if page.collection == 'photos' %}
       {% include block/photo-meta.html %}
@@ -25,7 +25,7 @@
 
   </article>
 
-{% include container/end.html %}
+  {% include container/end.html %}
 
 </body>
 </html>
