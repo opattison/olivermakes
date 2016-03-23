@@ -153,7 +153,7 @@
   }
 }
 
-.project-nav-action {
+%project-nav-action {
   @include action;
 
   @include min-width(s01) {
@@ -161,10 +161,14 @@
   }
 }
 
+.project-nav-action {
+  @extend %project-nav-action;
+}
+
 .project-nav-action--source,
 .project-nav-action--url,
 .project-nav-action--satellite {
-  @extend .project-nav-action;
+  @extend %project-nav-action;
 }
 
 .project--satellite h1 {

@@ -37,13 +37,13 @@
   text-align: center;
 }
 
-@mixin action-color($ground: $black, $figure: $white) {
+@mixin action-color($ground: $black, $figure: $white, $ground--reverse: $figure, $figure--reverse: $ground) {
   background-color: $ground;
   color: $figure;
   &:hover,
   &:focus {
-    background-color: $figure;
-    color: $ground;
+    background-color: $ground--reverse;
+    color: $figure--reverse;
   }
   &:active {
     background-color: $whiter;

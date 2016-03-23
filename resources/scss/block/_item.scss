@@ -22,9 +22,9 @@
   }
 }
 
-.item--section {
-  width: 100%;
+%item--section {
   padding: 1em;
+  width: 100%;
 
   @include min-width(m01) {
     flex: 0 0 50%;
@@ -35,8 +35,12 @@
   }
 }
 
-.item--section ul {
-  list-style: none;
+.item--section {
+  @extend %item--section;
+
+  ul {
+    list-style: none;
+  }
 }
 
 .item--section--writing,
@@ -44,7 +48,7 @@
 .item--section--photography,
 .item--section--archive,
 .item--section--about {
-  @extend .item--section;
+  @extend %item--section;
 }
 
 .item-description {

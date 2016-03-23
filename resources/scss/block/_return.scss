@@ -7,7 +7,7 @@
   font-size: 1.25em;
 }
 
-.return-action {
+%return-action {
   @include action;
   display: flex;
   justify-content: center;
@@ -21,10 +21,14 @@
   }
 }
 
+.return-action {
+  @extend %return-action;
+}
+
 .return-action--home,
-.return-action--category,
-.return-action--top {
-  @extend .return-action;
+.return-action--top,
+.return-action--category {
+  @extend %return-action;
   flex: 1 1 50%;
 }
 

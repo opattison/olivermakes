@@ -1,6 +1,5 @@
 #skip {
-  background-color: $red;
-  color: $whiter;
+  @include action-color($red, $whiter);
 }
 
 .category {
@@ -34,46 +33,61 @@
   color: $blue;
 }
 
-.item--section {
-  background-color: $gray00;
-  color: $white;
+.item {
+  &:nth-child(2n + 1) {
+    background-color: $gray07;
+  }
 
-  a {
-    color: $white;
-
-    &:hover,
-    &:focus {
-      color: $whiter;
-    }
+  &:nth-child(2n) {
+    background-color: $gray05;
   }
 }
 
+%item--section {
+  color: $white;
+}
+
 .item--section--writing {
+  @extend %item--section;
   background-color: $red;
 }
 
 .item--section--projects {
+  @extend %item--section;
   background-color: $violet;
 }
 
 .item--section--photography {
+  @extend %item--section;
   background-color: $blue;
 }
 
 .item--section--about {
+  @extend %item--section;
   background-color: $gray02;
 }
 
-.item:nth-child(2n + 1) {
-  background-color: $gray07;
-}
-
-.item:nth-child(2n) {
-  background-color: $gray05;
+.item--section--archive {
+  @extend %item--section;
+  background-color: $gray00;
 }
 
 .item-description {
   background-color: $gray07--trans90;
+
+  h1 a {
+    border-bottom: solid 1px $trans01;
+    color: $red;
+
+    &:hover,
+    &:focus {
+      color: $blue;
+    }
+
+    &:active {
+      color: $green;
+    }
+  }
 }
 
 .item--short {
@@ -84,18 +98,17 @@
   @include a-underline($trans01, $lightblue);
 }
 
-.item-description h1 a {
-  border-bottom: solid 1px $trans01;
-  color: $red;
-}
+.item--section-description {
 
-.item-description h1 a:hover,
-.item-description h1 a:focus {
-  color: $blue;
-}
+  a {
+    @include a-underline($gray07--trans50, $whiter);
+    color: $white;
 
-.item-description h1 a:active {
-  color: $green;
+    &:hover,
+    &:focus {
+      color: $whiter;
+    }
+  }
 }
 
 .item-action {
@@ -131,64 +144,33 @@
   color: $black;
 }
 
-.item--section-description a {
-  @include a-underline($gray07--trans50, $whiter);
-}
-
-.return-action {
-  @include action-color($gray07, $black);
-}
-
 .return-action--home {
-  background-color: $white;
+  @include action-color($white, $gray00, $gray03, $whiter);
+
+  &:hover,
+  &:focus {
+    @include random-fill(2, 6);
+  }
 }
 
 .return-action--top {
-  background-color: $gray05;
+  @include action-color($gray05, $gray00, $gray03, $whiter);
 }
 
-.return-action:hover,
-.return-action:focus {
-  background-color: $gray03;
-  color: $white;
+.return-action--patterns {
+  @include action-color($gray02, $whiter);
 }
 
-.return-action--home:hover,
-.return-action--home:focus {
-  @include random-fill(2, 6);
+.return-action--projects {
+  @include action-color($violet, $whiter);
 }
 
-.background--projects {
-  background-color: $violet;
-  color: $white;
+.return-action--writing {
+  @include action-color($red, $whiter);
 }
 
-.background--projects:hover,
-.background--projects:focus {
-  background-color: $whiter;
-  color: $violet;
-}
-
-.background--writing {
-  background-color: $red;
-  color: $white;
-}
-
-.background--writing:hover,
-.background--writing:focus {
-  background-color: $whiter;
-  color: $red;
-}
-
-.background--photography {
-  background-color: $blue;
-  color: $white;
-}
-
-.background--photography:hover,
-.background--photography:focus {
-  background-color: $whiter;
-  color: $blue;
+.return-action--photography {
+  @include action-color($blue, $whiter);
 }
 
 .credits {
@@ -200,35 +182,16 @@
   }
 }
 
-.project-nav-action {
-  background-color: $gray02;
-  color: $white;
-}
-
 .project-nav-action--url {
-  background-color: $red;
-  color: $white;
+  @include action-color($red, $whiter);
 }
 
 .project-nav-action--source {
-  background-color: $violet;
-  color: $white;
+  @include action-color($violet, $whiter);
 }
 
-.project-nav-action:hover,
-.project-nav-action:focus {
-  background-color: $white;
-  color: $gray02;
-}
-
-.project-nav-action--url:hover,
-.project-nav-action--url:focus {
-  color: $red;
-}
-
-.project-nav-action--source:hover,
-.project-nav-action--source:focus {
-  color: $violet;
+.project-nav-action--satellite {
+  @include action-color($gray02, $whiter);
 }
 
 .page-pagination {
