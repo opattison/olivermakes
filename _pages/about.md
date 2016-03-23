@@ -77,7 +77,6 @@ The fonts on the site (300, 400 and 500 weights of [the Ratio typeface](http://c
 
 {% include block/project--satellite--patterns.html %}
 
-
 {% capture endnote %}
 # License and copyright
 

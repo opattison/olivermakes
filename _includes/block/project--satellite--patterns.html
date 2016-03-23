@@ -2,16 +2,16 @@
 {% for item in pages %}
   {% if item.unique_id == '2014-10-31:patterns' %}
     {% assign updated = item.updated | date: '%Y-%m-%d' %}
-    <article class="project--satellite">
-      <div class="project-image" style="background-image: url({{ item.image[0].src }});">
+  <article class="project--satellite">
+    <div class="project-image" style="background-image: url({{ item.image[0].src }});">
+    </div>
+    <div class="project-meta">
+      <h1><a href="{{ item.url }}">Pattern library</a></h1>
+      <p class="project-description">This is a collection of the design patterns used to make this site – last updated {{ updated }}.</p>
+      <div class="project-nav">
+        <a class="project-nav-action--satellite" href="{{ item.url }}">view site patterns</a>
       </div>
-      <div class="project-meta">
-        <h1><a href="{{ item.url }}">Pattern library</a></h1>
-        <p class="project-description">This is a collection of the design patterns used to make this site – last updated {{ updated }}.</p>
-        <div class="project-nav">
-          <a class="project-nav-action--satellite" href="{{ item.url }}">view site patterns</a>
-        </div>
-      </div>
-    </article>
+    </div>
+  </article>
   {% endif %}
 {% endfor %}
