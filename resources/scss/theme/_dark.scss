@@ -111,7 +111,11 @@ kbd > kbd {
 }
 
 .item--short {
-  background-color: $back--minus;
+  background-color: $gray01;
+
+  &:nth-child(2n) {
+    background-color: $gray02;
+  }
 }
 
 .item-location a {

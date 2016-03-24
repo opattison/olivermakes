@@ -26,16 +26,13 @@
   background-color: $gray07;
 }
 
-.item {
+.item,
+.item--short {
   @extend %item_color;
 
   &:nth-child(2n) {
     background-color: $gray05;
   }
-}
-
-.item--short {
-  @extend %item_color;
 }
 
 .item--photo {
