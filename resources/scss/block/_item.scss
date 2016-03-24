@@ -57,90 +57,92 @@
   position: relative;
 
   @include min-width(m01) {
-    height: 16em;
+    height: 15em;
     padding: 2em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  p {
+    line-height: 1.25;
   }
 }
 
 .item--minor-description {
+
   @include min-width(m01) {
-    height: 10em;
+    height: 9em;
   }
-}
 
-.item-description h1 {
-  font-size: 1.5em;
-}
-
-.item-description p {
-  line-height: 1.25;
+  h1 {
+    font-size: 1.25em
+  }
 }
 
 .item--short-description {
   height: auto;
   padding: 1em 2em;
-}
 
-.item--pattern-description {
-  background-position: center;
-  background-size: cover;
-}
+  h1 {
+    font-size: 1.125em;
+  }
 
-.item--short-description h1 {
-  font-size: 1.125em;
-}
-
-.item--short-description small {
-  font-weight: $weight-light;
+  small {
+    font-weight: $weight-light;
+  }
 }
 
 .item--section-description {
   font-weight: $weight-light;
-}
 
-.item--section-description h1 {
-  font-weight: $weight-light;
-}
+  h1 {
+    font-weight: $weight-light;
+  }
 
-.item--section-description p {
-  margin-top: 1.5em;
-  text-align: right;
-}
-
-.item--section-description ul {
-  margin-top: 0;
-  text-align: right;
-}
-
-.item--section-description li {
-  margin-top: .25em;
-}
-
-.index--home :nth-child(odd) .item--section-description h1 {
-  @include min-width(m01) {
+  p {
+    margin-top: 1.5em;
     text-align: right;
   }
-}
 
-.index--home :nth-child(even) .item--section-description h1 {
-  @include min-width(m01) {
-    text-align: left;
-  }
-}
-
-.index--home :nth-child(even) .item--section-description p,
-.index--home :nth-child(even) .item--section-description ul {
-  @include min-width(m01) {
+  ul {
+    margin-top: 0;
     text-align: right;
-    padding-left: 3em;
+  }
+
+  li {
+    margin-top: .25em;
   }
 }
 
-.index--home :nth-child(odd) .item--section-description p,
-.index--home :nth-child(odd) .item--section-description ul {
+.index--home :nth-child(odd) .item--section-description {
+
   @include min-width(m01) {
-    text-align: left;
-    padding-right: 3em;
+    h1 {
+      text-align: right;
+    }
+
+    p,
+    ul {
+        text-align: left;
+        padding-right: 3em;
+    }
+  }
+}
+
+.index--home :nth-child(even) .item--section-description {
+
+  @include min-width(m01) {
+    h1 {
+      text-align: left;
+    }
+
+    p,
+    ul {
+        text-align: right;
+        padding-left: 3em;
+    }
   }
 }
 
@@ -193,32 +195,32 @@
     flex: 0 0 25%;
     height: 7.5em;
   }
-}
 
-.item--photo a {
-  display: block;
-  height: 100%;
+  a {
+    display: block;
+    height: 100%;
 
-  color: $trans01;
+    color: $trans01;
+  }
 }
 
 .item--photo-description {
   height: 100%;
   padding: 1em;
-}
 
-.item--photo-description h1 {
-  color: inherit;
-  font-size: 1.5em;
-  font-weight: $weight-medium;
+  h1 {
+    color: inherit;
+    font-size: 1.5em;
+    font-weight: $weight-medium;
 
-  @include min-width(m02) {
-    font-size: 1em;
+    @include min-width(m02) {
+      font-size: 1em;
+    }
   }
-}
 
-.item--photo-description p {
-  @include min-width(m02) {
-    font-size: .75em;
+  p {
+    @include min-width(m02) {
+      font-size: .75em;
+    }
   }
 }
