@@ -20,6 +20,14 @@
 
   @include min-width(m01) {
     flex: 0 0 50%;
+
+    h1 {
+      font-size: 1em;
+    }
+
+    p {
+      font-size: .875em;
+    }
   }
 }
 
