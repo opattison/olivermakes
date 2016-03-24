@@ -205,10 +205,10 @@ sup[id] a {
 // Figcaptions
 figcaption {
   margin: 0 0 .5em;
-  padding: .25em 1em;
+  padding: .25em .5em;
 
   @include min-width(m01) {
-    padding: .5em 1em;
+    padding: .5em;
   }
 }
 

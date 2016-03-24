@@ -32,6 +32,11 @@
   @include min-width(l01) {
     margin: 1.5em auto;
     width: 100%;
+
+    figcaption {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }
 
