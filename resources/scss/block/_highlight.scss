@@ -7,7 +7,7 @@
   border-bottom: solid .0625em;
   border-top: solid .0625em;
   font-size: 1em;
-  font-family: sans-serif;
+  font-family: sans-serif; // override monospace default
 
   @include min-width(s03) {
     @include bleed(2em);

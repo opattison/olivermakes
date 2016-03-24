@@ -223,12 +223,13 @@ mark {
   background-color: $code-block--back;
   border-color: $code--border;
   color: $code-block--fore;
-}
 
-.highlight .c {
-  color: $code--comment;
+  .c,
+  .c1,
+  .cm {
+    color: $code--comment;
+  }
 }
-
 .project,
 .project--satellite {
   background-color: $back--project;

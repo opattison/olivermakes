@@ -13,6 +13,30 @@ sass: block/_highlight.scss
 <p>This is an HTML code block processed with Rouge and Jekyll.</p>
 ```
 
+{% capture code %}
+```scss
+// An SCSS code snippet
+$white: hsl(204, 10%, 95%);
+
+.highlight {
+  color: $white;
+  margin-top: 1em;
+  padding: 1em;
+}
+
+// Use {% raw %}{% capture %}{% endraw %} tags in Liquid to markdownify blocks of code or captions.
+```
+{% endcapture %}
+
+{% capture caption %}
+This is a markdownified code caption contained within a parent `.code` block.
+{% endcapture %}
+
+<figure class="code">
+{{ code | markdownify }}
+{% include block/figcaption--text.html %}
+</figure>
+
 ```
 This is a code block with no language specified.
 ```
