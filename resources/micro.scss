@@ -22,17 +22,17 @@
 
 .banner {
   justify-content: space-between;
-}
 
-.banner h1 {
-  flex: 1 0 auto;
-  font-size: 1.125em;
-  margin: auto 0;
-  padding: .5em;
-  text-align: right;
+  h1 {
+    flex: 1 0 auto;
+    font-size: 1.125em;
+    margin: auto 0;
+    padding: .5em;
+    text-align: right;
 
-  @include min-width(l01) {
-    padding: 1em;
+    @include min-width(l01) {
+      padding: 1em;
+    }
   }
 }
 
@@ -43,15 +43,15 @@
   @include min-width(l01) {
     padding: 1em;
   }
-}
 
-.banner-title svg {
-  margin: 0;
-  height: 1.6em;
-  width: 1.6em;
+  svg {
+    margin: 0;
+    height: 1.6em;
+    width: 1.6em;
 
-  @include min-width(l01) {
-    font-size: 1.25em;
+    @include min-width(l01) {
+      font-size: 1.25em;
+    }
   }
 }
 
@@ -90,14 +90,14 @@
     padding-right: 10%;
     width: 70%;
   }
-}
 
-.photo-details dt {
-  font-weight: $weight-light;
-}
+  dt {
+    font-weight: $weight-light;
+  }
 
-.photo-details dd {
-  font-weight: $weight-regular;
+  dd {
+    font-weight: $weight-regular;
+  }
 }
 
 .separate::after {
