@@ -22,6 +22,38 @@
   @include min-width(l03) {
     margin: 2.5em -9em 1em 4.5em;
   }
+
+  ol {
+    padding-right: 1.25em;
+  }
+
+  li {
+    border-bottom: solid 1px;
+    padding-bottom: 1.25em;
+  }
+
+  li + li {
+    margin-top: 1.25em;
+  }
+
+  li:last-child {
+    border: 0;
+    padding: 0;
+  }
+
+  li p {
+    display: inline; // overwrites default block style
+    font-size: .875em;
+  }
+
+  ol li::before {
+    border: 1px solid;
+    border-radius: .125em;
+    content: counter(ol);
+    font-size: .875em;
+    margin-right: 0;
+    padding: 0 .25em;
+  }
 }
 
 .endnote + .footnotes {
@@ -32,39 +64,7 @@
   }
 }
 
-.footnotes ol {
-  padding-right: 1.25em;
-}
-
-.footnotes li {
-  border-bottom: solid 1px;
-  padding-bottom: 1.25em;
-}
-
-.footnotes li + li {
-  margin-top: 1.25em;
-}
-
-.footnotes li:last-child {
-  border: 0;
-  padding: 0;
-}
-
-.footnotes li p {
-  display: inline; // overwrites default block style
-  font-size: .875em;
-}
-
-.footnotes ol li::before {
-  border: 1px solid;
-  border-radius: .125em;
-  content: counter(ol);
-  font-size: .875em;
-  margin-right: 0;
-  padding: 0 .25em;
-}
-
-.footnotes .reversefootnote {
+.reversefootnote {
   float: right;
   margin: .25em -1.5em;
   padding: 0 .25em;

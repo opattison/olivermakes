@@ -179,13 +179,13 @@ figcaption {
   color: $fore--minus;
 }
 
-.footnotes .reversefootnote {
+.reversefootnote {
   border-color: $anchor;
   color: $anchor;
 }
 
-.footnotes .reversefootnote:hover,
-.footnotes .reversefootnote:focus {
+.reversefootnote:hover,
+.reversefootnote:focus {
   border-color: $anchor--hover;
   color: $anchor--hover;
 }

@@ -1,5 +1,4 @@
 // Used for an endnote that is related to the main body recapping and offering context such as further reading or notes that are not captured by footnote-style links from the body.
-
 .endnote {
   @include bleed-right(1em);
   clear: both;
@@ -23,21 +22,17 @@
   @include min-width(l03) {
     margin: 2.5em -9em 1em 4.5em;
   }
-}
 
-.endnote h1 {
-  font-weight: $weight-medium;
-  font-size: 1.25em;
-  line-height: 1.125;
-}
+  h1 {
+    font-size: 1.25em;
+  }
 
-.endnote h2 {
-  font-weight: $weight-regular;
-  font-size: 1.125em;
-  line-height: 1.25;
-}
+  h2 {
+    font-size: 1.125em;
+  }
 
-.endnote p,
-.endnote li {
-  font-size: .875em;
+  p,
+  li {
+    font-size: .875em;
+  }
 }

@@ -23,12 +23,12 @@
   align-self: center;
   margin: auto;
   max-width: 36em;
-}
 
-.credits-meta p {
-  font-size: .875em;
-}
+  p {
+    font-size: .875em;
+  }
 
-.credits-meta p + p {
-  margin-top: .75em;
+  p + p {
+    margin-top: .75em;
+  }
 }
