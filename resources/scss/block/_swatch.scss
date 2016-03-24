@@ -10,20 +10,20 @@
   @include min-width(l03) {
     flex: 0 0 25%;
   }
-}
 
-.swatch figure {
-  height: 12em;
-  position: relative;
-}
+  figure {
+    height: 12em;
+    position: relative;
+  }
 
-.swatch figcaption {
-  background-color: $gray07--trans90;
-  border-bottom: none;
-  bottom: 0;
-  margin: 0;
-  padding: .5em 0;
-  position: absolute;
-  text-align: center;
-  width: 100%;
+  figcaption {
+    background-color: $gray07--trans90;
+    border-bottom: none;
+    bottom: 0;
+    margin: 0;
+    padding: .5em 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
 }

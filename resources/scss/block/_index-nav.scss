@@ -13,15 +13,13 @@
 .index-nav-action {
   @include action;
   width: 100%;
-}
 
-@include min-width(m01) {
-  .index-nav-action {
+  @include min-width(m01) {
     margin: 0;
     width: 50%;
-  }
 
-  .index-nav-action:only-child {
-    width: 100%;
+    &:only-child {
+      width: 100%;
+    }
   }
 }

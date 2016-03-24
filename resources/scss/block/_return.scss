@@ -36,6 +36,12 @@
   @include min-width(l01) {
     flex: 0 1 50%;
   }
+
+  svg {
+    height: calc(1.5em + 1px);
+    padding-bottom: 1px;
+    width: 2em;
+  }
 }
 
 .return-action--category,
@@ -43,10 +49,4 @@
   @include min-width(l01) {
     flex: 1 0 25%;
   }
-}
-
-.return-action--home svg {
-  height: calc(1.5em + 1px);
-  padding-bottom: 1px;
-  width: 2em;
 }
