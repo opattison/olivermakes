@@ -112,6 +112,7 @@ a {
   transition-timing-function: cubic-bezier(0,1,1,1);
 }
 
+// Default animation durations
 a:hover,
 a:focus {
   transition-duration: 160ms;

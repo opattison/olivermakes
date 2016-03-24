@@ -91,6 +91,7 @@
   width: calc(100% + #{2*$amount});
 }
 
+// For randomly assigning shades to layers of the logo
 @mixin random-fill($start: 2, $end: 17) {
   @for $i from $start through $end {
     svg :nth-child(#{$i}) {
