@@ -11,7 +11,7 @@
       <textarea class="pattern-html">{{ pattern.content | markdownify | xml_escape }}</textarea>
       <figcaption>
       {% if pattern.sass %}
-        <p class="pattern-sass"><a href="{{ site.source_url.sass }}/{{ pattern.sass }}">View SCSS source</a></p>
+        <div class="pattern-source"><a href="{{ site.source_url.sass }}/{{ pattern.sass }}">View SCSS source</a></div>
       {% endif %}
       {% if pattern.use %}
         {{ pattern.use | prepend:'**Usage:** ' | markdownify }}

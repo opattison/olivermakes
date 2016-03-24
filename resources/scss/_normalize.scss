@@ -1,5 +1,4 @@
-/* following adapted from HTML5 Reset
-source: http://html5reset.org */
+// via [HTML5 Reset](http://html5reset.org)
 * {
   background: transparent;
   border: 0;
@@ -9,9 +8,9 @@ source: http://html5reset.org */
   text-decoration: none;
   vertical-align: baseline;
 }
+//
 
-/* following adapted from CSS Normalize
-source: http://necolas.github.io/normalize.css */
+// via [CSS Normalize](http://necolas.github.io/normalize.css)
 article,
 aside,
 details,
@@ -34,6 +33,7 @@ body {
   -webkit-text-size-adjust: 100%;
   height: 100%;
 }
+//
 
 body {
   margin: 0 auto;
@@ -52,13 +52,6 @@ img {
   width: 100%;
 }
 
-html,
-button,
-input,
-select {
-  font-family: sans-serif;
-}
-
 sub,
 sup {
   font-size: .75em;
@@ -68,11 +61,11 @@ sup {
 }
 
 sup {
-  top: -0.5em;
+  top: -.5em;
 }
 
 sub {
-  bottom: -0.25em;
+  bottom: -.25em;
 }
 
 *,
@@ -83,10 +76,11 @@ sub {
   box-sizing: border-box;
 }
 
-/* Viewport normalization for modern IE and future via Trent Walton
-source: http://trentwalton.com/2013/01/16/windows-phone-8-viewport-fix */
-@-webkit-viewport{ width: device-width; }
-   @-moz-viewport{ width: device-width; }
-    @-ms-viewport{ width: device-width; }
-     @-o-viewport{ width: device-width; }
-        @viewport{ width: device-width; }
+// Viewport normalization for modern IE and future
+// via [Trent Walton](http://trentwalton.com/2013/01/16/windows-phone-8-viewport-fix)
+@-webkit-viewport { width: device-width; }
+   @-moz-viewport { width: device-width; }
+    @-ms-viewport { width: device-width; }
+     @-o-viewport { width: device-width; }
+        @viewport { width: device-width; }
+//

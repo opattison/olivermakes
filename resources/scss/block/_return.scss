@@ -1,4 +1,4 @@
-/* Alternative nav – home and back-to-top. */
+// Alternative nav – home and back-to-top.
 .return {
   display: flex;
   flex: 0 0 100%;
@@ -7,7 +7,7 @@
   font-size: 1.25em;
 }
 
-.return-action {
+%return-action {
   @include action;
   display: flex;
   justify-content: center;
@@ -21,16 +21,26 @@
   }
 }
 
+.return-action {
+  @extend %return-action;
+}
+
 .return-action--home,
-.return-action--category,
-.return-action--top {
-  @extend .return-action;
+.return-action--top,
+.return-action--category {
+  @extend %return-action;
   flex: 1 1 50%;
 }
 
 .return-action--home {
   @include min-width(l01) {
     flex: 0 1 50%;
+  }
+
+  svg {
+    height: calc(1.5em + 1px);
+    padding-bottom: 1px;
+    width: 2em;
   }
 }
 
@@ -39,10 +49,4 @@
   @include min-width(l01) {
     flex: 1 0 25%;
   }
-}
-
-.return-action--home svg {
-  height: calc(1.5em + 1px);
-  width: 2em;
-  padding-bottom: 1px
 }

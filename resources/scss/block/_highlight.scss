@@ -1,13 +1,13 @@
-/* Code blocks for page layouts. Markdown style is GitHub Flavored Markdown for fenced code blocks. */
+// Code blocks for page layouts. Markdown style is GitHub Flavored Markdown for fenced code blocks.
 .highlight {
+  @include bleed(1em);
   margin-top: 1em;
   padding: 1em;
 
   border-bottom: solid .0625em;
   border-top: solid .0625em;
   font-size: 1em;
-  font-family: sans-serif;
-  @include bleed(1em);
+  font-family: sans-serif; // override monospace default
 
   @include min-width(s03) {
     @include bleed(2em);

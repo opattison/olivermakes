@@ -1,12 +1,13 @@
-  {% if page.title == 'Home' %}
+{% if page.title == 'Home' %}
   <title>{{ site.title }}</title>
-  {% elsif page.type == 'category' %}
+{% elsif page.type == 'category' %}
   <title>{{ page.title | capitalize }} Archive – {{ site.title }}</title>
-  {% elsif page.type == 'tag' %}
+{% elsif page.type == 'tag' %}
   <title>“{{ page.title }}” Archive – {{ site.title }}</title>
-  {% elsif page.type == 'year' %}
+{% elsif page.type == 'year' %}
   <title>{{ page.date | date: '%Y' }} Archive – {{ site.title }}</title>
-  {% elsif page.type == 'month' %}
+{% elsif page.type == 'month' %}
   <title>{{ page.date | date: '%B %Y' }} Archive – {{ site.title }}</title>
-  {% else %}
-  <title>{{ page.title | strip_html }} – {{ site.title }}</title>{% endif %}
+{% else %}
+  <title>{{ page.title | strip_html }} – {{ site.title }}</title>
+{% endif %}

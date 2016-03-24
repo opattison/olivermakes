@@ -1,4 +1,4 @@
-/* Title for the website, included on all pages */
+// Title for the website, included on all pages
 .banner-title {
   display: flex;
   flex: 1 0 auto;
@@ -6,13 +6,6 @@
   justify-content: center;
   max-width: 100%;
   padding: 1em 0;
-
-  svg {
-    display: block;
-    height: 8em;
-    margin: auto;
-    width: 8em;
-  }
 
   @include min-width(m01) {
     padding: 2em;
@@ -24,5 +17,12 @@
 
   @include min-width(l05) {
     padding: 4em;
+  }  
+
+  svg {
+    display: block;
+    height: 8em;
+    margin: auto;
+    width: 8em;
   }
 }

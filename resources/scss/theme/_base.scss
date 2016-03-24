@@ -69,8 +69,8 @@ a:focus {
 }
 
 a:active {
+  border-color: $trans01 !important;
   color: $link--active;
-  border-color: $trans01!important;
 }
 
 p a,
@@ -83,13 +83,13 @@ sup[id] a {
   background-color: $anchor-back;
   border-color: $anchor;
   color: $anchor;
-}
 
-sup[id] a:hover,
-sup[id] a:focus {
-  background-color: $anchor-back--hover;
-  border-color: $anchor--hover;
-  color: $anchor--hover;
+  &:hover,
+  &:focus {
+    background-color: $anchor-back--hover;
+    border-color: $anchor--hover;
+    color: $anchor--hover;
+  }
 }
 
 ul li::before {
@@ -167,16 +167,16 @@ mark {
 
 .focus {
   color: $focus;
-}
 
-.focus a {
-  color: $link;
-  @include a-underline($link-underline, $focus-link--hover);
-}
+  a {
+    color: $link;
+    @include a-underline($link-underline, $focus-link--hover);
+  }
 
-.focus a:hover,
-.focus a:focus {
-  color: $focus-link--hover;
+  a:hover,
+  a:focus {
+    color: $focus-link--hover;
+  }
 }
 
 .ancillary {
@@ -203,16 +203,16 @@ mark {
   color: $fore--minus;
 }
 
-.footnotes .reversefootnote {
+.reversefootnote {
   border-color: $anchor;
   color: $anchor;
-}
 
-.footnotes .reversefootnote:hover,
-.footnotes .reversefootnote:focus {
-  background-color: $anchor-back--hover;
-  border-color: $anchor--hover;
-  color: $anchor--hover;
+  &:hover,
+  &:focus {
+    background-color: $anchor-back--hover;
+    border-color: $anchor--hover;
+    color: $anchor--hover;
+  }
 }
 
 .hero figcaption {
@@ -223,10 +223,12 @@ mark {
   background-color: $code-block--back;
   border-color: $code--border;
   color: $code-block--fore;
-}
 
-.highlight .c {
-  color: $code--comment;
+  .c,
+  .c1,
+  .cm {
+    color: $code--comment;
+  }
 }
 
 .project,
@@ -238,10 +240,6 @@ mark {
 .project--satellite .project-image {
   background-color: $back--project-image;
   border-color: $back--minus;
-}
-
-.essay {
-  background-color: $back--minus;
 }
 
 .micro .banner {

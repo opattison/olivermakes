@@ -28,6 +28,7 @@
   background-color: $gray00;
   display: flex;
   flex-flow: row wrap;
+  margin: 0;
 
   @include min-width(l01) {
     display: block;
@@ -36,12 +37,11 @@
     -webkit-overflow-scrolling: touch;
     padding-bottom: 10em;
   }
-}
 
-.pattern-nav,
-.pattern-nav ul,
-.pattern-nav li {
-  margin: 0;
+  ul,
+  li {
+    margin: 0;
+  }
 }
 
 .pattern-nav-li {
@@ -104,6 +104,34 @@
   }
 }
 
+.banner-title--patterns {
+  color: $red;
+  display: flex;
+
+  &:hover,
+  &:focus {
+    background-color: $red;
+    color: $whiter;
+  }
+}
+
+.banner-title--patterns h1 {
+  color: inherit;
+  margin: auto;
+
+  @include min-width(l01) {
+    text-align: center;
+  }
+}
+
+.pattern-container > .end {
+  margin-top: 2em;
+
+  @include min-width(l01) {
+    padding-left: 15em;
+  }
+}
+
 .pattern-index {
   @include width-max(l01);
   display: flex;
@@ -123,10 +151,10 @@
 
   @include min-width(l01) {
     font-size: 1.125em;
-    padding: 0;
+    padding: 1em;
     position: absolute;
-    right: 1em;
-    top: 1em;
+    right: 0;
+    top: .25rem;
   }
 }
 
@@ -160,10 +188,10 @@
 
 .pattern--element {
   margin-top: 4em;
-}
 
-.pattern--element:first-of-type {
-  margin-top: 0;
+  &:first-of-type {
+    margin-top: 0;
+  }
 }
 
 .pattern-display--center :first-child {
@@ -180,6 +208,14 @@
   font-size: 1rem;
 }
 
+.pattern-display .logo--large {
+  max-width: 512px;
+}
+
+.pattern-display .logo--medium {
+  max-width: 64px;
+}
+
 .pattern-meta {
   background-color: $gray06;
   clear: both;
@@ -193,89 +229,58 @@
   @include min-width(l04) {
     font-size: 1.5em;
   }
+
+  summary {
+    background-color: $violet;
+    color: $whiter;
+    padding: 1em;
+    transition: all 160ms;
+
+    &:hover,
+    &:focus {
+      background-color: $green;
+      cursor: pointer;
+    }
+  }
+
+  figure {
+    margin-top: 0;
+    max-width: 45em;
+    padding: 1em;
+  }
+
+  p {
+    font-size: .875em;
+    margin-top: 1em;
+    text-align: left;
+  }
+
+  figcaption {
+    margin: .5em 0 0;
+    padding: 0;
+  }
+
+  figcaption strong {
+    font-weight: $weight-medium;
+  }
+
+  textarea {
+    background-color: $gray02;
+    color: $whiter;
+    font-family: $source-code-pro;
+    font-size: .75em;
+    min-height: 5.5em;
+    padding: .5em 1em;
+    width: 100%;
+  }
+
+  figcaption strong {
+    font-weight: $weight-medium;
+  }
 }
 
-.pattern-meta summary {
-  background-color: $violet;
-  color: $whiter;
-  padding: 1em;
-  transition: all 160ms;
-}
-
-.pattern-meta summary:hover,
-.pattern-meta summary:focus {
-  background-color: $green;
-  cursor: pointer;
-}
-
-.pattern-meta figure {
-  margin-top: 0;
-  max-width: 45em;
-  padding: 1em;
-}
-
-.pattern-meta textarea {
-  background-color: $gray02;
-  color: $whiter;
-  font-family: $source-code-pro;
-  font-size: .75em;
-  min-height: 5.5em;
-  padding: .5em 1em;
-  width: 100%;
-}
-
-.pattern-meta figcaption {
-  margin: .5em 0 0;
-  padding: 0;
-}
-
-.pattern-meta figcaption strong {
-  font-weight: $weight-medium;
-}
-
-.pattern-meta figcaption p {
+.pattern-source {
   font-size: .875em;
-  margin-top: 1em;
-  text-align: left;
-}
-
-.pattern-meta .pattern-sass {
-  font-size: .75em;
   margin-top: -.5em;
   text-align: right;
-}
-
-.pattern-display .logo--large {
-  max-width: 512px;
-}
-
-.pattern-display .logo--medium {
-  max-width: 64px;
-}
-
-.banner-title--patterns {
-  color: $red;
-  display: flex;
-
-  &:hover,
-  &:focus {
-    background-color: $red;
-    color: $whiter;
-  }
-}
-
-.banner-title--patterns h1 {
-  color: inherit;
-  margin: auto;
-
-  @include min-width(l01) {
-    text-align: center;
-  }
-}
-
-.pattern-container > .end {
-
-  @include min-width(l01) {
-    padding-left: 15em;
-  }
 }

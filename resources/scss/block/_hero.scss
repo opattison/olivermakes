@@ -1,4 +1,4 @@
-/* Full-width image block */
+// Full-width image block
 .hero {
   margin: auto;
 
@@ -23,25 +23,25 @@
   @include min-width(l05) {
     font-size: 1.75em;
   }
-}
 
-.hero figcaption {
-  margin: 0;
-}
-
-.hero figcaption p {
-  // _fundamental font-size: .875em
-
-  @include min-width(s03) {
-    font-size: 1em;
+  figcaption {
+    margin: 0;
   }
 
-  @include min-width(m02) {
-    font-size: .75em;
-  }
+  figcaption p {
+    // _fundamental font-size: .875em
 
-  @include min-width(l01) {
-    margin-left: 50%;
-    width: 50%;
+    @include min-width(s03) {
+      font-size: 1em;
+    }
+
+    @include min-width(m02) {
+      font-size: .75em;
+    }
+
+    @include min-width(l01) {
+      margin-left: 50%;
+      width: 50%;
+    }
   }
 }

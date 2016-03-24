@@ -1,4 +1,6 @@
 <footer class="end h-card">
   {% include block/credits.html %}
-  {% unless page.title == 'Home' %}{% include block/return.html %}{% endunless %}
+{% unless page.title == 'Home' %}
+  {% include block/return.html %}
+{% endunless %}
 </footer>

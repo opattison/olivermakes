@@ -1,4 +1,4 @@
-/* Flexing grid container for images and other items */
+// Flexing grid container for images and other items
 .grid {
   display: flex;
   flex-flow: column nowrap;
@@ -54,18 +54,29 @@
   @include min-width(l01) {
     flex: 1 1 50%;
     margin-right: 1em;
+
+    figcaption p {
+      margin-left: calc(50% + 1em);
+      width: calc(50% - 1em);
+    }
   }
 }
 
 
 .grid-figure--33 {
-  max-width: calc(100% / 3 * 2);
   margin: auto;
+  max-width: calc(100% / 3 * 2);
 
   @include min-width(l01) {
     flex: 1 1 calc(100% / 3 - 1em);
     margin-right: 1em;
     width: calc(100% / 3 - 1em);
+
+    figcaption p {
+      margin-left: 0;
+      text-align: left;
+      width: auto;
+    }
   }
 }
 

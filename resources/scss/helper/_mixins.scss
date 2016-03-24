@@ -37,13 +37,13 @@
   text-align: center;
 }
 
-@mixin action-color($ground: $black, $figure: $white) {
+@mixin action-color($ground: $black, $figure: $white, $ground--reverse: $figure, $figure--reverse: $ground) {
   background-color: $ground;
   color: $figure;
   &:hover,
   &:focus {
-    background-color: $figure;
-    color: $ground;
+    background-color: $ground--reverse;
+    color: $figure--reverse;
   }
   &:active {
     background-color: $whiter;
@@ -52,12 +52,12 @@
 }
 
 @mixin a-borderless {
-  border: none;
+  border: 0;
 
   &:hover,
   &:focus,
   &:active {
-    border: none;
+    border: 0;
   }
 }
 
@@ -91,6 +91,7 @@
   width: calc(100% + #{2*$amount});
 }
 
+// For randomly assigning shades to layers of the logo
 @mixin random-fill($start: 2, $end: 17) {
   @for $i from $start through $end {
     svg :nth-child(#{$i}) {

@@ -1,4 +1,4 @@
-/* Used for content that is related to the main body but not necessarily as important – supporting the main story without being directly a part of it. */
+// Used for content that is related to the main body but not necessarily as important – supporting the main story without being directly a part of it.
 .ancillary {
   @include bleed-right(1em);
   margin-top: 1em;
@@ -27,25 +27,21 @@
     margin-right: calc(-9em / .875);
     width: 50%;
   }
-}
 
-.ancillary h1 {
-  font-weight: $weight-medium;
-  font-size: 1.25em;
-  line-height: 1.125;
-}
+  h1 {
+    font-size: 1.25em;
+  }
 
-.ancillary h2 {
-  font-weight: $weight-regular;
-  font-size: 1.125em;
-  line-height: 1.25;
-}
+  h2 {
+    font-size: 1.125em;
+  }
 
-.ancillary img {
-  max-width: none;
-  width: calc(100% + 1em);
+  img {
+    max-width: none;
+    width: calc(100% + 1em);
 
-  @include min-width(s03) {
-    width: calc(100% + 2em);
+    @include min-width(s03) {
+      width: calc(100% + 2em);
+    }
   }
 }

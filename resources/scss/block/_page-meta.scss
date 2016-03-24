@@ -1,4 +1,4 @@
-/* Descriptive text containing metadata like date and source for page content – typically inside `page-footer`. */
+// Descriptive text containing metadata like date and source for page content – typically inside `page-footer`.
 .page-meta {
   flex: 1 0 100%;
   padding: 1em;
@@ -10,10 +10,10 @@
     padding: .5em 1em;
     order: 2; // after .page-pagination--later
   }
-}
 
-.page-meta p {
-  margin: 0;
+  p {
+    margin: 0;
 
-  font-size: .875em;
+    font-size: .875em;
+  }
 }

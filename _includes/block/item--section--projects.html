@@ -3,11 +3,11 @@
     <h1><a href="/projects/">/projects</a></h1>
     <p><em>Featured:</em></p>
     <ul>
-      {% for post in site.categories.projects %}
+    {% for post in site.categories.projects %}
       {% if post.option contains 'featured-home' %}
-      <li><a href="{{ post.url }}">{{ post.title | markdownify | p_escape }}</a></li>
+        <li><a href="{{ post.url }}">{{ post.title | markdownify | p_escape }}</a></li>
       {% endif %}
-      {% endfor %}
+    {% endfor %}
     </ul>
   </div>
 </article>
