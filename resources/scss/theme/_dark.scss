@@ -60,14 +60,16 @@ h5 {
 }
 
 sup[id] a {
+  background-color: $anchor-back;
   border-color: $anchor;
   color: $anchor;
-}
 
-sup[id] a:hover,
-sup[id] a:focus {
-  border-color: $anchor--hover;
-  color: $anchor--hover;
+  &:hover,
+  &:focus {
+    background-color: $anchor-back--hover;
+    border-color: $anchor--hover;
+    color: $anchor--hover;
+  }
 }
 
 article a {
@@ -137,16 +139,16 @@ figcaption {
 
 .focus {
   color: $focus;
-}
 
-.focus a {
-  color: $link;
-  @include a-underline($link-underline, $focus-link--hover);
-}
+  a {
+    color: $link;
+    @include a-underline($link-underline, $focus-link--hover);
+  }
 
-.focus a:hover,
-.focus a:focus {
-  color: $focus-link--hover;
+  a:hover,
+  a:focus {
+    color: $focus-link--hover;
+  }
 }
 
 .ancillary {
@@ -188,12 +190,13 @@ figcaption {
 .reversefootnote {
   border-color: $anchor;
   color: $anchor;
-}
 
-.reversefootnote:hover,
-.reversefootnote:focus {
-  border-color: $anchor--hover;
-  color: $anchor--hover;
+  &:hover,
+  &:focus {
+    background-color: $anchor-back--hover;
+    border-color: $anchor--hover;
+    color: $anchor--hover;
+  }
 }
 
 .project {
