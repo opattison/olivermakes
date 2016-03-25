@@ -173,7 +173,7 @@ mark {
   color: $focus;
 
   a {
-    color: $link--action;
+    color: $focus-link;
     @include a-underline($link-underline, $focus-link--hover);
   }
 
@@ -217,8 +217,7 @@ mark {
   background-color: $back--project;
 }
 
-.project-image,
-.project--satellite .project-image {
+.project-image {
   background-color: $back--project-image;
   border-color: $back--minus;
 }

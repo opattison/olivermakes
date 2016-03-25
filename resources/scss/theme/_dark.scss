@@ -37,7 +37,7 @@ $anchor-back: $blue--trans20;
 $anchor-back--hover: $red--trans20;
 
 $focus: $accent;
-$focus-link: $link--action;
+$focus-link: $whiter;
 $focus-link--hover: $pink;
 
 html {
@@ -116,11 +116,15 @@ kbd > kbd {
   color: $fore--inverse;
 }
 
+.archive {
+  background-color: $back--plus;
+}
+
 .item--short {
-  background-color: $gray01;
+  background-color: $back;
 
   &:nth-child(2n) {
-    background-color: $gray02;
+    background-color: $back--minus;
   }
 
   h1 a {
@@ -182,6 +186,14 @@ figcaption {
   }
 }
 
+.hero figcaption {
+  background-color: $back--minus;
+
+  .edgeless & {
+    background-color: $back;
+  }
+}
+
 .footnotes,
 .ancillary--endnotes {
   color: $fore--inverse;
@@ -191,7 +203,7 @@ figcaption {
     color: $fore--inverse;
   }
 
-  a:not(.reversefootnote) {
+  a:not(.action):not(.reversefootnote) {
     @include a-underline;
     color: $fore--inverse;
 
@@ -214,12 +226,17 @@ figcaption {
   }
 }
 
-.project {
+.project,
+.project--satellite {
   background-color: $back--project;
 
   .edgeless & {
     background-color: $back--minus;
   }
+}
+
+.project-nav-action--satellite {
+  @include action-color($fore, $back);
 }
 
 .project-image {
