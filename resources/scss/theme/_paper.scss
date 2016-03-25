@@ -1,13 +1,13 @@
 //// Custom defined colors for this theme
 ////
 $beige_tomap: hsl(58, 40%, 92%);
-$black_tomap: hsl(0, 0%, 8%);
+$black_tomap: hsl(58, 10%, 12%);
 
 // add new colors to universal $colors map
 $colors: map-merge($colors, (beige: $beige_tomap));
 $colors: map-merge($colors, (black: $black_tomap));
 
-$black: c(black, 12%);
+$black: c(black);
 $gray00: c(black, 16%);
 $gray01: c(black, 21%);
 $gray02: c(black, 24%);
