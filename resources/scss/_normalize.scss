@@ -68,6 +68,11 @@ sub {
   bottom: -.25em;
 }
 
+pre {
+  font-size: 1em;
+  font-family: $source-code-pro;
+}
+
 *,
 *:before,
 *:after {
