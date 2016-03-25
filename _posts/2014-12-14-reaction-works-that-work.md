@@ -1,6 +1,7 @@
 ---
 title: 'Reaction: <i>Works That Work</i>'
 layout: singel
+theme: dark
 option:
   - hero
 category: 'writing'

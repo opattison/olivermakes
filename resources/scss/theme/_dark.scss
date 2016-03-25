@@ -4,9 +4,11 @@ $fore: $gray07;
 $back--plus: $black;
 $back--minus: $gray02;
 $back--inverse: $fore;
-$back--project: $gray02;
+$back--footer: $gray01;
+$back--project: $gray01;
 $back--project-image: $gray03;
-$back--notes: $gray01;
+$back--notes: $blue--trans20;
+$back--notes--inverse: $gray03;
 
 $fore--plus: $white;
 $fore--minus: $gray06;
@@ -160,16 +162,8 @@ figcaption {
   }
 }
 
-.highlight {
-  background-color: $code-block--back;
-  border-color: $code--border;
-  color: $code-block--fore;
-
-  .c,
-  .c1,
-  .cm {
-    color: $code--comment;
-  }
+.ancillary--thanks {
+  background-color: $back--notes--inverse;
 }
 
 .footnotes,
@@ -199,8 +193,24 @@ figcaption {
   }
 }
 
+.highlight {
+  background-color: $code-block--back;
+  border-color: $code--border;
+  color: $code-block--fore;
+
+  .c,
+  .c1,
+  .cm {
+    color: $code--comment;
+  }
+}
+
 .project {
   background-color: $back--project;
+}
+
+.edgeless .project {
+  background-color: $back--minus;
 }
 
 .project-image {
@@ -212,7 +222,11 @@ figcaption {
 }
 
 .page-footer {
-  background-color: $back--notes;
+  background-color: $back--footer;
+}
+
+.edgeless .page-footer {
+  background-color: $back--minus;
 }
 
 .screenshot img {

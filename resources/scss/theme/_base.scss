@@ -4,6 +4,7 @@ $fore: $gray01;
 $back--plus: $whiter;
 $back--minus: $gray06;
 $back--inverse: $fore;
+$back--footer: $back--minus;
 $back--project: $gray06;
 $back--project-image: $gray07;
 $back--notes: $lightblue;
@@ -158,7 +159,7 @@ mark {
 }
 
 .page-footer {
-  background-color: $back--minus;
+  background-color: $back--footer;
 }
 
 .action {

@@ -5,19 +5,19 @@
   padding: 0 1em 2em;
 
   @include min-width(s03) {
-    padding: 0 2em 2em;
+    padding: 0 2em 4em;
   }
 
   @include min-width(s04) {
-    padding: 0 2.5em 2em;
+    padding: 0 2.5em 4em;
   }
 
   @include min-width(l01) {
-    padding: 0 4.5em 2em;
+    padding: 0 4.5em 4em;
   }
 
   @include min-width(l03) {
-    padding: 0 9em 2em;
+    padding: 0 9em 4em;
   }
 
   figure:first-child {
