@@ -1,6 +1,6 @@
 ---
 title: 'Consider Jekyll'
-layout: singel
+layout: edgeless
 option:
   - hero
 category: 'writing'

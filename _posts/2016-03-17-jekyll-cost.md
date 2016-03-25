@@ -1,6 +1,6 @@
 ---
 title: 'Jekyll’s cost'
-layout: singel
+layout: edgeless
 category: 'writing'
 tags:
   - 'jekyll'
