@@ -1,31 +1,13 @@
 // Used for content that is related to the main body but not necessarily as important – supporting the main story without being directly a part of it.
-.ancillary {
+%ancillary {
   @include bleed-right(1em);
-  margin-top: 1em;
-  padding: 1em;
 
   @include min-width(s03) {
     @include bleed-right(2em);
-    padding: 2em;
   }
 
   @include min-width(s04) {
     @include bleed-right(2.5em);
-    padding: 2.5em;
-  }
-
-  @include min-width(l01) {
-    float: right;
-    font-size: .75em;
-    margin: 2em -6em 2em 2em;
-    width: 40%;
-  }
-
-  @include min-width(l03) {
-    font-size: .875em;
-    margin-right: -9em / .875em;
-    margin-right: calc(-9em / .875);
-    width: 50%;
   }
 
   h1 {
@@ -35,6 +17,42 @@
   h2 {
     font-size: 1.125em;
   }
+}
+
+.ancillary {
+  @extend %ancillary;
+  margin-top: 1em;
+  padding: 1em;
+
+  @include min-width(s03) {
+    padding: 2em;
+  }
+
+  @include min-width(s04) {
+    padding: 2.5em;
+  }
+
+  @include min-width(l01) {
+    float: right;
+    margin: 1em -4.5em 2em 2em;
+    padding: 2em;
+    width: 18em;
+
+    p,
+    li {
+      font-size: .75em;
+    }
+  }
+
+  @include min-width(l03) {
+    margin-right: -9em;
+    width: 22.5em;
+
+    p,
+    li {
+      font-size: .875em;
+    }
+  }
 
   img {
     max-width: none;
@@ -43,5 +61,57 @@
     @include min-width(s03) {
       width: calc(100% + 2em);
     }
+  }
+}
+
+// Used for an endnote that is related to the main body recapping and offering context such as further reading or notes that are not captured by footnote-style links from the body.
+.ancillary--endnotes {
+  @extend %ancillary;
+  clear: both;
+  margin-top: 2em;
+  padding: 1em 1em 2em;
+
+  @include min-width(l01) {
+    @include bleed-right(4.5em);
+    padding: 2.5em;
+  }
+
+  @include min-width(l03) {
+    margin: 2em -9em 1em 4.5em;
+  }
+
+  p,
+  li {
+    font-size: .875em;
+  }
+}
+
+.ancillary--thanks {
+  @include bleed-left(1em);
+  clear: both;
+  margin-top: 1em;
+  padding: 1em;
+
+  @include min-width(s03) {
+    @include bleed-left(2em);
+    margin-top: 2em;
+  }
+
+  @include min-width(s04) {
+    @include bleed-left(2.5em);
+  }
+
+  @include min-width(l01) {
+    @include bleed-left(4.5em);
+    padding: 2.5em;
+  }
+
+  @include min-width(l03) {
+    margin: 2em 4.5em 0 -9em;
+  }
+
+  p,
+  li {
+    font-size: .875em;
   }
 }

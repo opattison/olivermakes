@@ -12,6 +12,10 @@ updated: 2016-03-16 20:04
 drafted: 2016-02-12 12:34
 unique_id: 2016-03-16:consider-jekyll
 description: 'A brief introduction to Jekyll and why I use it for my web projects.'
+thanks: |+
+  Thanks [Jean Flanagan](http://jeancflanagan.com) for editing assistance and giving this a title.
+
+  Thanks [Michael Lee](https://michaelsoolee.com/) for technical feedback.
 image_index: /images/2016-03-16-jekyll-test-tube.svg
 image:
   - src: /images/2016-03-16-jekyll-logo-reverse.svg
@@ -100,18 +104,9 @@ For most of the projects that I currently work on or plan to work on, static is 
 - [Jekyll source on GitHub](https://github.com/jekyll/jekyll)
 {% endcapture %}
 
-{% capture credit %}
-# Credit
-
-Thanks [Jean Flanagan]({{ site.link.jean }}) for editing assistance and giving this a title.
-
-Thanks [Michael Lee](https://michaelsoolee.com/) for technical feedback.
-{% endcapture %}
-
-<aside class="endnote">
+<aside class="ancillary--endnotes">
 {{ endnote | markdownify }}
 <a class="action" href="/labels/jekyll/">my writing on Jekyll</a>
-{{ credit | markdownify }}
 </aside>
 
 [^1]: For some background on why rendering ahead of time is useful, read [Tom MacWright on “Thinking Static”](http://www.macwright.org/2013/01/08/thinking-static.html) which addresses some of the issues of complexity and efficiency in a CMS and the problem that static generation solves. In short: *storage is cheap* and *computation is expensive*.

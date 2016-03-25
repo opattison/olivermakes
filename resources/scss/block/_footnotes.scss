@@ -56,7 +56,7 @@
   }
 }
 
-.endnote + .footnotes {
+.ancillary--endnotes + .footnotes {
   margin-top: 0;
 
   @include min-width(l03) {
@@ -77,6 +77,6 @@
   }
 }
 
-.endnote + .footnotes {
+.ancillary--endnotes + .footnotes {
   border-top: solid 1px;
 }

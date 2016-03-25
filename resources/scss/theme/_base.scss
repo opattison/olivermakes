@@ -7,6 +7,7 @@ $back--inverse: $fore;
 $back--project: $gray06;
 $back--project-image: $gray07;
 $back--notes: $lightblue;
+$back--notes--inverse: $red--trans20;
 
 $fore--plus: $black;
 $fore--minus: $gray03;
@@ -188,12 +189,16 @@ mark {
   }
 }
 
+.ancillary--thanks {
+  background-color: $back--notes--inverse;
+}
+
 .footnotes,
-.endnote {
+.ancillary--endnotes {
   background-color: $back--notes;
 }
 
-.endnote + .footnotes,
+.ancillary--endnotes + .footnotes,
 .footnotes li {
   border-color: $accent--notes;
 }

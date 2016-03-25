@@ -173,11 +173,11 @@ figcaption {
 }
 
 .footnotes,
-.endnote {
+.ancillary--endnotes {
   background-color: $back--notes;
 }
 
-.endnote + .footnotes,
+.ancillary--endnotes + .footnotes,
 .footnotes li {
   border-color: $accent--notes;
 }

@@ -14,6 +14,10 @@ updated: 2016-01-29 16:13
 drafted: 2016-01-24 22:00
 unique_id: 2016-01-24:aws-tls-certificate-with-jekyll
 description: 'A step-by-step guide on how I configured and hosted a secure static site using AWS.'
+thanks: |+
+  Thanks [Mike Lissner](http://michaeljaylissner.com) for helping me look into and fix issues around domain redirecting.
+
+  Thanks [Jean Flanagan](http://jeancflanagan.com) for edits.
 project:
   source: https://github.com/opattison/olivermakes/pull/228
 image_index: /images/2016-01-25-lock.svg
@@ -257,12 +261,8 @@ It was completely worth doing and I’d highly recommend it to anyone who is alr
 - [Chris Down – “Migrating Jekyll to Amazon S3 and CloudFront”](https://chrisdown.name/2014/10/03/migrating-jekyll-to-s3-cloudfront.html)
 - [David Celis – “Easily Publish Your Site to S3 and CloudFront”](https://davidcel.is/posts/publish-your-site-to-s3/)
 - [Jeremy Keith – “Switching to https ” (on Apache)](https://adactio.com/articles/7435)
-
-# Credit
-
-Thanks [Mike Lissner](http://michaeljaylissner.com) for helping me look into and fix issues around domain redirecting.
 {% endcapture %}
 
-<aside class="endnote">
+<aside class="ancillary--endnotes">
 {{ endnote | markdownify }}
 </aside>
