@@ -58,6 +58,11 @@
   }
 }
 
+p + .image,
+p + .image--wide {
+  margin-top: 2em;
+}
+
 // Utility for right-aligned images
 .right {
   @include min-width(s04) {

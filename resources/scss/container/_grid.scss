@@ -7,6 +7,10 @@
   @include min-width(l01) {
     flex-flow: row nowrap;
   }
+
+  p + {
+    margin-top: 2em;
+  }
 }
 
 .grid--wide {
@@ -39,6 +43,11 @@
   }
 }
 
+p + .grid,
+p + .grid--wide {
+  margin-top: 2em;
+}
+
 .grid figure + figure,
 .grid--wide figure + figure {
   margin-top: 1em;
@@ -61,7 +70,6 @@
     }
   }
 }
-
 
 .grid-figure--33 {
   margin: auto;
