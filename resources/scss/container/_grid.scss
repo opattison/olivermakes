@@ -35,6 +35,11 @@
     flex-flow: row nowrap;
     max-width: none;
     width: calc(100% + 9em);
+
+    figcaption p {
+      margin-left: calc(50% + 1em);
+      width: calc(50% - 1em);
+    }
   }
 
   @include min-width(l03) {
@@ -63,11 +68,6 @@ p + .grid--wide {
   @include min-width(l01) {
     flex: 1 1 50%;
     margin-right: 1em;
-
-    figcaption p {
-      margin-left: calc(50% + 1em);
-      width: calc(50% - 1em);
-    }
   }
 }
 
