@@ -25,18 +25,20 @@ $accent--trans: $gray07--trans50;
 $accent--neutral: $gray05;
 $accent--notes: $gray03;
 
-$focus: $accent;
-$focus-link--hover: $pink;
-
-$link: $pink;
+$link: $whiter;
+$link-underline: $pink;
 $link--hover: $lightblue;
 $link--active: $green;
-$link-underline: $pink--trans50;
+$link--action: $red;
 
 $anchor: $lightblue;
 $anchor--hover: $pink;
 $anchor-back: $blue--trans20;
 $anchor-back--hover: $red--trans20;
+
+$focus: $accent;
+$focus-link: $link--action;
+$focus-link--hover: $pink;
 
 html {
   color: $fore;
@@ -120,6 +122,16 @@ kbd > kbd {
   &:nth-child(2n) {
     background-color: $gray02;
   }
+
+  h1 a {
+    @include a-underline($trans01, $lightblue);
+    color: $pink;
+
+    &:hover,
+    &:focus {
+      color: $lightblue;
+    }
+  }
 }
 
 .item-location a {
@@ -136,14 +148,14 @@ figcaption {
 }
 
 .action {
-  @include action-color($link, $back--inverse);
+  @include action-color($link--action, $back--inverse);
 }
 
 .focus {
   color: $focus;
 
   a {
-    color: $link;
+    color: $focus-link;
     @include a-underline($link-underline, $focus-link--hover);
   }
 

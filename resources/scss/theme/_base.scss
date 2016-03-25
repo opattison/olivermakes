@@ -25,18 +25,20 @@ $accent--trans: $blue--trans20;
 $accent--neutral: $gray04;
 $accent--notes: $accent--trans;
 
-$focus: $accent;
-$focus-link--hover: $violet;
-
-$link: $red;
+$link: $black;
+$link-underline: $red;
 $link--hover: $blue;
 $link--active: $green;
-$link-underline: $red--trans20;
+$link--action: $red;
 
 $anchor: $blue;
 $anchor--hover: $red;
 $anchor-back: $blue--trans20;
 $anchor-back--hover: $red--trans20;
+
+$focus: $accent;
+$focus-link: $link--action;
+$focus-link--hover: $violet;
 
 html {
   color: $fore;
@@ -163,7 +165,7 @@ mark {
 }
 
 .action {
-  @include action-color($link, $fore--inverse);
+  @include action-color($link--action, $fore--inverse);
   @include a-borderless;
 }
 
@@ -171,7 +173,7 @@ mark {
   color: $focus;
 
   a {
-    color: $link;
+    color: $link--action;
     @include a-underline($link-underline, $focus-link--hover);
   }
 

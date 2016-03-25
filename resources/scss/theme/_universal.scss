@@ -1,5 +1,5 @@
 .skip {
-  @include action-color($red, $whiter);
+  @include action-color($whiter, $black);
 }
 
 .category {
@@ -81,7 +81,13 @@
   background-color: $gray07--trans90;
 
   h1 a {
-    @include a-underline($trans01, $blue--trans20);
+    @include a-underline($trans01, $blue);
+    color: $red;
+
+    &:hover,
+    &:focus {
+      color: $blue;
+    }
   }
 }
 
