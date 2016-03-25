@@ -2,10 +2,10 @@ $back: $gray00;
 $fore: $gray07;
 
 $back--plus: $black;
-$back--minus: $gray02;
+$back--minus: $gray01;
 $back--inverse: $fore;
-$back--footer: $gray01;
-$back--project: $gray01;
+$back--footer: $gray02;
+$back--project: $gray02;
 $back--project-image: $gray03;
 $back--notes: $blue--trans20;
 $back--notes--inverse: $gray03;
@@ -235,10 +235,6 @@ figcaption {
 
 .page-footer {
   background-color: $back--footer;
-}
-
-.edgeless .page-footer {
-  background-color: $back--minus;
 }
 
 .screenshot img {
