@@ -7,19 +7,19 @@ $black_tomap: hsl(0, 0%, 8%);
 $colors: map-merge($colors, (beige: $beige_tomap));
 $colors: map-merge($colors, (black: $black_tomap));
 
-$black: c(black, 8%);
-$gray00: c(black, 12%);
-$gray01: c(black, 16%);
-$gray02: c(black, 20%);
-$gray03: c(black, 24%);
-$gray04: c(black, 80%);
-$gray05: c(black, 84%);
-$gray06: c(black, 88%);
-$gray07: c(black, 92%);
+$black: c(black, 12%);
+$gray00: c(black, 16%);
+$gray01: c(black, 21%);
+$gray02: c(black, 24%);
+$gray03: c(black, 30%);
+$gray04: c(black, 76%);
+$gray05: c(black, 81%);
+$gray06: c(black, 85%);
+$gray07: c(black, 90%);
 $white: c(beige, 96%);
 $whiter: c(beige, 98%);
 
-$tan: c(beige, 92%);
+$tan: c(beige, 93%);
 ////
 
 //// Theme definition
@@ -290,6 +290,19 @@ mark {
 
 .page-pagination--earlier {
   @include action-color($accent, $tan);
+}
+
+.credits {
+  background-color: $back--minus;
+  color: $fore;
+
+  a {
+    @include a-underline;
+  }
+}
+
+.banner-title {
+  @include random-fill(2, 17, black);
 }
 
 .micro .banner {

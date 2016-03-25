@@ -145,15 +145,6 @@
   @include action-color($blue, $whiter);
 }
 
-.credits {
-  background-color: $gray06;
-  color: $black;
-
-  a {
-    @include a-underline;
-  }
-}
-
 .project-nav-action--url {
   @include action-color($red, $whiter);
 }

@@ -257,7 +257,7 @@ mark {
 }
 
 %page-pagination_color {
-  @include action-color($accent--inverse, $back--minus); // default
+  @include action-color($accent--inverse, $gray07); // default
 }
 
 .page-pagination--later {
@@ -265,7 +265,16 @@ mark {
 }
 
 .page-pagination--earlier {
-  @include action-color($accent, $back--minus);
+  @include action-color($accent, $gray07);
+}
+
+.credits {
+  background-color: $back--minus;
+  color: $fore;
+
+  a {
+    @include a-underline;
+  }
 }
 
 .micro .banner {

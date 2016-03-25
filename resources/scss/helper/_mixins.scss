@@ -92,10 +92,10 @@
 }
 
 // For randomly assigning shades to layers of the logo
-@mixin random-fill($start: 2, $end: 17) {
+@mixin random-fill($start: 2, $end: 17, $color: shade) {
   @for $i from $start through $end {
     svg :nth-child(#{$i}) {
-      fill: c(shade, random(80) + 12);
+      fill: c($color, random(80) + 12);
     }
   }
 }
