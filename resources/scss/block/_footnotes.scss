@@ -58,10 +58,6 @@
 
 .ancillary--endnotes + .footnotes {
   margin-top: 0;
-
-  @include min-width(l03) {
-    margin-top: -1em;
-  }
 }
 
 .reversefootnote {

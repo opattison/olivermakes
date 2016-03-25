@@ -8,7 +8,6 @@ $back--footer: $gray02;
 $back--project: $gray02;
 $back--project-image: $gray03;
 $back--notes: $blue--trans20;
-$back--notes--inverse: $gray03;
 
 $fore--plus: $white;
 $fore--minus: $gray06;
@@ -23,7 +22,8 @@ $code-block--back: $whiter;
 $accent: $lightblue;
 $accent--trans: $gray07--trans50;
 $accent--neutral: $gray05;
-$accent--notes: $gray03;
+$accent--inverse: $pink;
+$accent--inverse--trans: $gray03;
 
 $link: $whiter;
 $link-underline: $pink;
@@ -175,33 +175,30 @@ figcaption {
 }
 
 .ancillary--thanks {
-  background-color: $back--notes--inverse;
+  background-color: $back;
+
+  .edgeless & {
+    background-color: $back--minus;
+  }
 }
 
 .footnotes,
 .ancillary--endnotes {
-  background-color: $back--notes;
-}
+  color: $fore--inverse;
 
-.ancillary--endnotes + .footnotes,
-.footnotes li {
-  border-color: $accent--notes;
-}
+  h1,
+  h2 {
+    color: $fore--inverse;
+  }
 
-.footnotes ol li::before {
-  border-color: $accent--trans;
-  color: $fore--minus;
-}
+  a:not(.reversefootnote) {
+    @include a-underline;
+    color: $fore--inverse;
 
-.reversefootnote {
-  border-color: $anchor;
-  color: $anchor;
-
-  &:hover,
-  &:focus {
-    background-color: $anchor-back--hover;
-    border-color: $anchor--hover;
-    color: $anchor--hover;
+    &:hover,
+    &:focus {
+      color: $blue;
+    }
   }
 }
 
@@ -219,10 +216,10 @@ figcaption {
 
 .project {
   background-color: $back--project;
-}
 
-.edgeless .project {
-  background-color: $back--minus;
+  .edgeless & {
+    background-color: $back--minus;
+  }
 }
 
 .project-image {
