@@ -62,10 +62,10 @@
 }
 
 @mixin a-underline($link: $red, $hover: $blue) {
-  border-bottom: solid 1.5px $link;
+  border-bottom: solid .08em $link;
   &:hover,
   &:focus {
-    border-bottom: solid 1.5px $hover;
+    border-bottom: solid .08em $hover;
   }
 }
 
