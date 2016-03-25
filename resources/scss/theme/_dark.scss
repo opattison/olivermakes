@@ -1,3 +1,5 @@
+//// Theme definition
+////
 $back: $gray00;
 $fore: $gray07;
 
@@ -39,6 +41,7 @@ $anchor-back--hover: $red--trans20;
 $focus: $accent;
 $focus-link: $whiter;
 $focus-link--hover: $pink;
+////
 
 html {
   color: $fore;
