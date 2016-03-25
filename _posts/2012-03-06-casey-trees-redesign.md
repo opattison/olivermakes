@@ -1,6 +1,7 @@
 ---
 title: 'Responsive redesign for Casey Trees'
 layout: singel
+theme: paper
 category: 'projects'
 tags:
   - 'design'
