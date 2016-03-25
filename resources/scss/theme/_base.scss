@@ -83,19 +83,6 @@ blockquote a {
   @include a-underline;
 }
 
-sup[id] a {
-  background-color: $anchor-back;
-  border-color: $anchor;
-  color: $anchor;
-
-  &:hover,
-  &:focus {
-    background-color: $anchor-back--hover;
-    border-color: $anchor--hover;
-    color: $anchor--hover;
-  }
-}
-
 ul li::before {
   color: $accent--neutral;
 }
@@ -198,6 +185,19 @@ mark {
 
 .hero figcaption {
   background-color: $back--plus;
+}
+
+.footnote {
+  background-color: $anchor-back;
+  border-color: $anchor;
+  color: $anchor;
+
+  &:hover,
+  &:focus {
+    background-color: $anchor-back--hover;
+    border-color: $anchor--hover;
+    color: $anchor--hover;
+  }
 }
 
 .highlight {

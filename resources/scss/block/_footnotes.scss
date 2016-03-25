@@ -76,3 +76,17 @@
 .ancillary--endnotes + .footnotes {
   border-top: solid 1px;
 }
+
+// Inline body footnotes
+sup[id] {
+  margin: 0;
+  top: 0;
+}
+
+.footnote {
+  border: solid 1px;
+  border-radius: .125em;
+  font-weight: $weight-medium;
+  margin-right: .125em;
+  padding: 0 .25em;
+}
