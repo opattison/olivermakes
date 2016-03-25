@@ -57,10 +57,10 @@ $link--hover: $blue;
 $link--active: $green;
 $link--action: $red;
 
-$anchor: $blue;
-$anchor--hover: $red;
-$anchor-back: $blue--trans20;
-$anchor-back--hover: $red--trans20;
+$anchor: $accent;
+$anchor--hover: $accent--inverse;
+$anchor-back: $accent--trans;
+$anchor-back--hover: $accent--inverse--trans;
 
 $focus: $accent;
 $focus-link: $link;
