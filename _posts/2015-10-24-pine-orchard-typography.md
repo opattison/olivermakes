@@ -1,6 +1,7 @@
 ---
 title: 'Pine Orchard Prints typographic identity'
 layout: edgeless
+theme: paper
 option:
   - minor
 category: 'projects'

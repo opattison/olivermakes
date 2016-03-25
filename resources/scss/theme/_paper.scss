@@ -1,3 +1,24 @@
+$beige_tomap: hsl(58, 40%, 92%);
+$black_tomap: hsl(0, 0%, 8%);
+
+$colors: map-merge($colors, (beige: $beige_tomap));
+$colors: map-merge($colors, (black: $black_tomap));
+
+$black: c(black, 8%);
+$gray00: c(black, 12%);
+$gray01: c(black, 16%);
+$gray02: c(black, 20%);
+$gray03: c(black, 24%);
+$gray04: c(black, 80%);
+$gray05: c(black, 84%);
+$gray06: c(black, 88%);
+$gray07: c(black, 92%);
+$white: c(beige, 96%);
+$whiter: c(beige, 98%);
+
+$tan: c(beige, 92%);
+
+
 $back: $white;
 $fore: $gray01;
 
@@ -7,7 +28,7 @@ $back--inverse: $fore;
 $back--footer: $back--minus;
 $back--project: $gray06;
 $back--project-image: $gray07;
-$back--notes: $lightblue;
+$back--notes: $tan;
 
 $fore--plus: $black;
 $fore--minus: $gray03;
@@ -19,11 +40,11 @@ $code--border: $gray05;
 $code-block--fore: $whiter;
 $code-block--back: $gray02;
 
-$accent: $blue;
-$accent--trans: $blue--trans20;
+$accent: $red;
+$accent--trans: $red--trans20;
 $accent--neutral: $gray04;
-$accent--inverse: $red;
-$accent--inverse--trans: $red--trans20;
+$accent--inverse: $blue;
+$accent--inverse--trans: $blue--trans20;
 
 $link: $black;
 $link-underline: $red;
@@ -37,7 +58,7 @@ $anchor-back: $blue--trans20;
 $anchor-back--hover: $red--trans20;
 
 $focus: $accent;
-$focus-link: $link--action;
+$focus-link: $link;
 $focus-link--hover: $violet;
 
 html {
@@ -180,7 +201,7 @@ mark {
 }
 
 .ancillary--thanks {
-  background-color: $accent--inverse--trans;
+  background-color: $back--minus;
 }
 
 .hero figcaption {
@@ -250,7 +271,7 @@ mark {
 }
 
 %page-pagination_color {
-  @include action-color($accent--inverse, $back--minus); // default
+  @include action-color($accent--inverse, $tan); // default
 }
 
 .page-pagination--later {
@@ -258,7 +279,7 @@ mark {
 }
 
 .page-pagination--earlier {
-  @include action-color($accent, $back--minus);
+  @include action-color($accent, $tan);
 }
 
 .micro .banner {

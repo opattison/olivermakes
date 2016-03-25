@@ -4,7 +4,7 @@ $colors: (
   violet: hsl(225, 35%, 45%),
   red: hsl(4, 60%, 42%),
   green: hsl(144, 50%, 35%),
-  shade: hsla(204, 10%, 12%, 1)
+  shade: hsl(204, 10%, 12%),
 );
 
 // Output colors
@@ -16,7 +16,7 @@ $pink: c(red, 88%);
 $green: c(green);
 
 // Output shades
-$black: c(shade);
+$black: c(shade, 12%);
 $gray00: c(shade, 18%);
 $gray01: c(shade, 24%);
 $gray02: c(shade, 32%);

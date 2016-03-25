@@ -154,33 +154,6 @@
   }
 }
 
-.footnotes,
-.ancillary--endnotes {
-  background-color: $lightblue;
-}
-
-.ancillary--endnotes + .footnotes,
-.footnotes li {
-  border-color: $blue--trans20;
-}
-
-.footnotes ol li::before {
-  border-color: $blue--trans20;
-  color: $gray03;
-}
-
-.reversefootnote {
-  border-color: $blue;
-  color: $blue;
-
-  &:hover,
-  &:focus {
-    background-color: $red--trans20;
-    border-color: $red;
-    color: $red;
-  }
-}
-
 .project-nav-action--url {
   @include action-color($red, $whiter);
 }
@@ -191,16 +164,4 @@
 
 .project-nav-action--satellite {
   @include action-color($gray02, $whiter);
-}
-
-%page-pagination_color {
-  @include action-color($red, $gray07); // default
-}
-
-.page-pagination--later {
-  @extend %page-pagination_color;
-}
-
-.page-pagination--earlier {
-  @include action-color($blue, $gray07);
 }
