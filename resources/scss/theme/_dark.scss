@@ -233,6 +233,10 @@ figcaption {
   .edgeless & {
     background-color: $back--minus;
   }
+
+  h1 a {
+    @include a-underline($trans01, $link--hover);
+  }
 }
 
 .project-nav-action--satellite {

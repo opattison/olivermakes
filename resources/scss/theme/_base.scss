@@ -242,6 +242,10 @@ mark {
 .project,
 .project--satellite {
   background-color: $back--project;
+
+  h1 a {
+    @include a-underline($trans01, $link--hover);
+  }
 }
 
 .project-image {

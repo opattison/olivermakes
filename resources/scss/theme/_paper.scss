@@ -1,6 +1,9 @@
+//// Custom defined colors for this theme
+////
 $beige_tomap: hsl(58, 40%, 92%);
 $black_tomap: hsl(0, 0%, 8%);
 
+// add new colors to universal $colors map
 $colors: map-merge($colors, (beige: $beige_tomap));
 $colors: map-merge($colors, (black: $black_tomap));
 
@@ -17,8 +20,10 @@ $white: c(beige, 96%);
 $whiter: c(beige, 98%);
 
 $tan: c(beige, 92%);
+////
 
-
+//// Theme definition
+////
 $back: $white;
 $fore: $gray01;
 
@@ -60,6 +65,7 @@ $anchor-back--hover: $red--trans20;
 $focus: $accent;
 $focus-link: $link;
 $focus-link--hover: $violet;
+////
 
 html {
   color: $fore;
@@ -263,6 +269,10 @@ mark {
 .project,
 .project--satellite {
   background-color: $back--project;
+
+  h1 a {
+    @include a-underline($trans01, $link--hover);
+  }
 }
 
 .project-image {
