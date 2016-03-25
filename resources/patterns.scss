@@ -164,6 +164,21 @@
   overflow: hidden;
 }
 
+.content--pattern {
+  background-color: inherit;
+  margin: 1em auto 0;
+  padding: 2em 1em;
+
+  @include min-width(m02) {
+    @include width-max(m02);
+    padding: 1em 0;
+  }
+
+  @include min-width(l01) {
+    font-size: 1.25em;
+  }
+}
+
 .item--pattern {
   flex: 0 0 calc(100% - 2em);
   margin: 1em auto 0;

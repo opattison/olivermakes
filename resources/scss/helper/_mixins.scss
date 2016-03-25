@@ -61,11 +61,11 @@
   }
 }
 
-@mixin a-underline($link: $red--trans20, $hover: $blue) {
-  border-bottom: solid 1px $link;
+@mixin a-underline($link: $red, $hover: $blue) {
+  border-bottom: solid .08em $link;
   &:hover,
   &:focus {
-    border-bottom: solid 1px $hover;
+    border-bottom: solid .08em $hover;
   }
 }
 
@@ -92,10 +92,10 @@
 }
 
 // For randomly assigning shades to layers of the logo
-@mixin random-fill($start: 2, $end: 17) {
+@mixin random-fill($start: 2, $end: 17, $color: shade) {
   @for $i from $start through $end {
     svg :nth-child(#{$i}) {
-      fill: c(shade, random(80) + 12);
+      fill: c($color, random(80) + 12);
     }
   }
 }

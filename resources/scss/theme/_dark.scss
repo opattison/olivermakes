@@ -1,14 +1,15 @@
+//// Theme definition
+////
 $back: $gray00;
 $fore: $gray07;
 
 $back--plus: $black;
-$back--minus: $gray02;
+$back--minus: $gray01;
 $back--inverse: $fore;
-$back--footer: $gray01;
-$back--project: $gray01;
+$back--footer: $gray02;
+$back--project: $gray02;
 $back--project-image: $gray03;
 $back--notes: $blue--trans20;
-$back--notes--inverse: $gray03;
 
 $fore--plus: $white;
 $fore--minus: $gray06;
@@ -23,20 +24,24 @@ $code-block--back: $whiter;
 $accent: $lightblue;
 $accent--trans: $gray07--trans50;
 $accent--neutral: $gray05;
-$accent--notes: $gray03;
+$accent--inverse: $pink;
+$accent--inverse--trans: $gray03;
 
-$focus: $accent;
-$focus-link--hover: $pink;
-
-$link: $pink;
+$link: $whiter;
+$link-underline: $pink;
 $link--hover: $lightblue;
 $link--active: $green;
-$link-underline: $pink--trans50;
+$link--action: $red;
 
 $anchor: $lightblue;
 $anchor--hover: $pink;
 $anchor-back: $blue--trans20;
 $anchor-back--hover: $red--trans20;
+
+$focus: $accent;
+$focus-link: $whiter;
+$focus-link--hover: $pink;
+////
 
 html {
   color: $fore;
@@ -59,19 +64,6 @@ h4 {
 
 h5 {
   color: $fore--minus;
-}
-
-sup[id] a {
-  background-color: $anchor-back;
-  border-color: $anchor;
-  color: $anchor;
-
-  &:hover,
-  &:focus {
-    background-color: $anchor-back--hover;
-    border-color: $anchor--hover;
-    color: $anchor--hover;
-  }
 }
 
 article a {
@@ -114,11 +106,25 @@ kbd > kbd {
   color: $fore--inverse;
 }
 
+.archive {
+  background-color: $back--plus;
+}
+
 .item--short {
-  background-color: $gray01;
+  background-color: $back;
 
   &:nth-child(2n) {
-    background-color: $gray02;
+    background-color: $back--minus;
+  }
+
+  h1 a {
+    @include a-underline($trans01, $lightblue);
+    color: $pink;
+
+    &:hover,
+    &:focus {
+      color: $lightblue;
+    }
   }
 }
 
@@ -136,14 +142,14 @@ figcaption {
 }
 
 .action {
-  @include action-color($link, $back--inverse);
+  @include action-color($link--action, $back--inverse);
 }
 
 .focus {
   color: $focus;
 
   a {
-    color: $link;
+    color: $focus-link;
     @include a-underline($link-underline, $focus-link--hover);
   }
 
@@ -163,25 +169,23 @@ figcaption {
 }
 
 .ancillary--thanks {
-  background-color: $back--notes--inverse;
+  background-color: $back;
+
+  .edgeless & {
+    background-color: $back--minus;
+  }
 }
 
-.footnotes,
-.ancillary--endnotes {
-  background-color: $back--notes;
+.hero figcaption {
+  background-color: $back--minus;
+
+  .edgeless & {
+    background-color: $back;
+  }
 }
 
-.ancillary--endnotes + .footnotes,
-.footnotes li {
-  border-color: $accent--notes;
-}
-
-.footnotes ol li::before {
-  border-color: $accent--trans;
-  color: $fore--minus;
-}
-
-.reversefootnote {
+.footnote {
+  background-color: $trans01;
   border-color: $anchor;
   color: $anchor;
 
@@ -190,6 +194,26 @@ figcaption {
     background-color: $anchor-back--hover;
     border-color: $anchor--hover;
     color: $anchor--hover;
+  }
+}
+
+.footnotes,
+.ancillary--endnotes {
+  color: $fore--inverse;
+
+  h1,
+  h2 {
+    color: $fore--inverse;
+  }
+
+  a:not(.action):not(.reversefootnote) {
+    @include a-underline;
+    color: $fore--inverse;
+
+    &:hover,
+    &:focus {
+      color: $blue;
+    }
   }
 }
 
@@ -205,12 +229,21 @@ figcaption {
   }
 }
 
-.project {
+.project,
+.project--satellite {
   background-color: $back--project;
+
+  .edgeless & {
+    background-color: $back--minus;
+  }
+
+  h1 a {
+    @include a-underline($trans01, $link--hover);
+  }
 }
 
-.edgeless .project {
-  background-color: $back--minus;
+.project-nav-action--satellite {
+  @include action-color($fore, $back);
 }
 
 .project-image {
@@ -223,10 +256,6 @@ figcaption {
 
 .page-footer {
   background-color: $back--footer;
-}
-
-.edgeless .page-footer {
-  background-color: $back--minus;
 }
 
 .screenshot img {

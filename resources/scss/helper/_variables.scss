@@ -4,7 +4,7 @@ $colors: (
   violet: hsl(225, 35%, 45%),
   red: hsl(4, 60%, 42%),
   green: hsl(144, 50%, 35%),
-  shade: hsla(204, 10%, 12%, 1)
+  shade: hsl(204, 10%, 12%),
 );
 
 // Output colors
@@ -17,16 +17,16 @@ $green: c(green);
 
 // Output shades
 $black: c(shade);
-$gray00: c(shade, 18%);
-$gray01: c(shade, 24%);
-$gray02: c(shade, 32%);
-$gray03: c(shade, 40%);
-$gray04: c(shade, 72%);
-$gray05: c(shade, 80%);
-$gray06: c(shade, 88%);
-$gray07: c(shade, 92%);
 $white: c(shade, 95%);
-$whiter: c(shade, 97%);
+$gray00: scale-color($black, $lightness: 5%);
+$gray01: scale-color($black, $lightness: 10%);
+$gray02: scale-color($black, $lightness: 15%);
+$gray03: scale-color($black, $lightness: 20%);
+$gray04: scale-color($white, $lightness: -20%);
+$gray05: scale-color($white, $lightness: -15%);
+$gray06: scale-color($white, $lightness: -10%);
+$gray07: scale-color($white, $lightness: -5%);
+$whiter: scale-color($white, $lightness: 40%);
 
 // Output transparent colors and shades
 $blue--trans20: trans20($blue);

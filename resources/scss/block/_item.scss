@@ -105,6 +105,10 @@
 .item--section-description {
   font-weight: $weight-light;
 
+  a {
+    padding-bottom: .0625em;
+  }
+
   h1 {
     font-weight: $weight-light;
   }

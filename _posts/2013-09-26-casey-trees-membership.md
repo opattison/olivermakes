@@ -1,6 +1,7 @@
 ---
 title: 'Membership design for Casey Trees'
 layout: singel
+theme: paper
 option:
   - code
 category: 'projects'

@@ -1,5 +1,5 @@
 .skip {
-  @include action-color($red, $whiter);
+  @include action-color($whiter, $black);
 }
 
 .category {
@@ -81,7 +81,13 @@
   background-color: $gray07--trans90;
 
   h1 a {
-    @include a-underline($trans01, $blue--trans20);
+    @include a-underline($trans01, $blue);
+    color: $red;
+
+    &:hover,
+    &:focus {
+      color: $blue;
+    }
   }
 }
 
@@ -139,15 +145,6 @@
   @include action-color($blue, $whiter);
 }
 
-.credits {
-  background-color: $gray06;
-  color: $black;
-
-  a {
-    @include a-underline;
-  }
-}
-
 .project-nav-action--url {
   @include action-color($red, $whiter);
 }
@@ -158,16 +155,4 @@
 
 .project-nav-action--satellite {
   @include action-color($gray02, $whiter);
-}
-
-%page-pagination_color {
-  @include action-color($red, $gray07); // default
-}
-
-.page-pagination--later {
-  @extend %page-pagination_color;
-}
-
-.page-pagination--earlier {
-  @include action-color($blue, $gray07);
 }

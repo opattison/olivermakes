@@ -3,6 +3,9 @@
 {% if page.theme == 'dark' or page.layout contains 'archive' %}
   <link rel="stylesheet" href="{{ site.style_url }}/dark.css">
 {% endif %}
+{% if page.theme == 'paper' %}
+  <link rel="stylesheet" href="{{ site.style_url }}/paper.css">
+{% endif %}
 {% if page.layout == 'edgeless' %}
   <link rel="stylesheet" href="{{ site.style_url }}/edgeless.css">
 {% endif %}

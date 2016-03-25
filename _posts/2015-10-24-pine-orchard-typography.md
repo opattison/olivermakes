@@ -1,6 +1,7 @@
 ---
 title: 'Pine Orchard Prints typographic identity'
 layout: edgeless
+theme: paper
 option:
   - minor
 category: 'projects'
@@ -8,7 +9,7 @@ tags:
   - 'design'
   - 'typography'
   - 'web'
-updated: 2016-02-09 01:01
+updated: 2016-03-25 09:13
 drafted: 2016-01-26 23:22
 unique_id: 2015-10-24:pine-orchard-typography
 description: 'Logotype and typography for a small online retail shop.'
@@ -118,6 +119,11 @@ For a small shop, memorable and appropriate typography effectively served the bu
   {% include block/figcaption--image.html %}
 </figure>
 
+---
+
+## Read more about the entire project
+
+{% include block/project--satellite.html id="2015-01-29:pine-orchard-site" %}
 
 [^1]: Cardo is available for free through Google Fonts, but I chose to serve it through an Adobe TypeKit subscription because of their superior OpenType support.
 [^2]: Even Safari 9.0 for OS X and iOS does not have support for it at the time of this writing, but 9.1 will! Following the principle of progressive enhancement and not relying too heavily on the small caps style meant that I could get away without optimizing for Safari in this case. The logotype, however, uses SVG outlines to ensure that it renders consistently across browsers.

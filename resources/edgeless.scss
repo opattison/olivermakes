@@ -23,6 +23,14 @@
   }
 }
 
+.hero {
+  max-width: 100%;
+
+  @include min-width(l01) {
+    margin-bottom: 4em;
+  }
+}
+
 .page-title {
 
   @include min-width(l01) {

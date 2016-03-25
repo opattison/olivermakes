@@ -1,3 +1,27 @@
+//// Custom defined colors for this theme
+////
+$beige_tomap: hsl(58, 40%, 92%);
+$black_tomap: hsl(58, 10%, 12%);
+
+// add new colors to universal $colors map
+$colors: map-merge($colors, (beige: $beige_tomap));
+$colors: map-merge($colors, (black: $black_tomap));
+
+$black: c(black);
+$gray00: c(black, 16%);
+$gray01: c(black, 21%);
+$gray02: c(black, 24%);
+$gray03: c(black, 30%);
+$gray04: c(black, 76%);
+$gray05: c(black, 81%);
+$gray06: c(black, 85%);
+$gray07: c(black, 90%);
+$white: c(beige, 96%);
+$whiter: c(beige, 98%);
+
+$tan: c(beige, 93%);
+////
+
 //// Theme definition
 ////
 $back: $white;
@@ -9,7 +33,7 @@ $back--inverse: $fore;
 $back--footer: $back--minus;
 $back--project: $gray06;
 $back--project-image: $gray07;
-$back--notes: $lightblue;
+$back--notes: $tan;
 
 $fore--plus: $black;
 $fore--minus: $gray03;
@@ -21,11 +45,11 @@ $code--border: $gray05;
 $code-block--fore: $whiter;
 $code-block--back: $gray02;
 
-$accent: $blue;
-$accent--trans: $blue--trans20;
+$accent: $red;
+$accent--trans: $red--trans20;
 $accent--neutral: $gray04;
-$accent--inverse: $red;
-$accent--inverse--trans: $red--trans20;
+$accent--inverse: $blue;
+$accent--inverse--trans: $blue--trans20;
 
 $link: $black;
 $link-underline: $red;
@@ -33,13 +57,13 @@ $link--hover: $blue;
 $link--active: $green;
 $link--action: $red;
 
-$anchor: $blue;
-$anchor--hover: $red;
-$anchor-back: $blue--trans20;
-$anchor-back--hover: $red--trans20;
+$anchor: $accent;
+$anchor--hover: $accent--inverse;
+$anchor-back: $accent--trans;
+$anchor-back--hover: $accent--inverse--trans;
 
 $focus: $accent;
-$focus-link: $link--action;
+$focus-link: $link;
 $focus-link--hover: $violet;
 ////
 
@@ -183,7 +207,7 @@ mark {
 }
 
 .ancillary--thanks {
-  background-color: $accent--inverse--trans;
+  background-color: $back--minus;
 }
 
 .hero figcaption {
@@ -257,7 +281,7 @@ mark {
 }
 
 %page-pagination_color {
-  @include action-color($accent--inverse, $gray07); // default
+  @include action-color($accent--inverse, $tan); // default
 }
 
 .page-pagination--later {
@@ -265,7 +289,7 @@ mark {
 }
 
 .page-pagination--earlier {
-  @include action-color($accent, $gray07);
+  @include action-color($accent, $tan);
 }
 
 .credits {
@@ -275,6 +299,10 @@ mark {
   a {
     @include a-underline;
   }
+}
+
+.banner-title {
+  @include random-fill(2, 17, black);
 }
 
 .micro .banner {

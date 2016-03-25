@@ -7,6 +7,10 @@
   @include min-width(l01) {
     flex-flow: row nowrap;
   }
+
+  p + {
+    margin-top: 2em;
+  }
 }
 
 .grid--wide {
@@ -31,12 +35,22 @@
     flex-flow: row nowrap;
     max-width: none;
     width: calc(100% + 9em);
+
+    figcaption p {
+      margin-left: calc(50% + 1em);
+      width: calc(50% - 1em);
+    }
   }
 
   @include min-width(l03) {
     @include bleed-image(9em);
     width: calc(100% + 18em);
   }
+}
+
+p + .grid,
+p + .grid--wide {
+  margin-top: 2em;
 }
 
 .grid figure + figure,
@@ -54,14 +68,8 @@
   @include min-width(l01) {
     flex: 1 1 50%;
     margin-right: 1em;
-
-    figcaption p {
-      margin-left: calc(50% + 1em);
-      width: calc(50% - 1em);
-    }
   }
 }
-
 
 .grid-figure--33 {
   margin: auto;
@@ -102,7 +110,7 @@
   font-size: 1rem;
   justify-content: flex-start;
   list-style-type: none;
-  margin: 0 auto 1em;
+  margin: 1em auto;
   max-width: 45em;
 
   @include min-width(l03) {

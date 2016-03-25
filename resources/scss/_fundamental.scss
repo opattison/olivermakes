@@ -188,20 +188,6 @@ blockquote footer {
   text-align: right;
 }
 
-// Footnotes
-sup[id] {
-  margin: 0;
-  top: 0;
-}
-
-sup[id] a {
-  border: solid 1px;
-  border-radius: .125em;
-  font-weight: $weight-medium;
-  margin-right: .125em;
-  padding: 0 .25em;
-}
-
 // Figcaptions
 figcaption {
   margin: 0 0 .5em;

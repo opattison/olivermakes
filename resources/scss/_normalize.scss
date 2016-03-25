@@ -1,4 +1,5 @@
-// via [HTML5 Reset](http://html5reset.org)
+//// via [HTML5 Reset](http://html5reset.org)
+////
 * {
   background: transparent;
   border: 0;
@@ -8,9 +9,10 @@
   text-decoration: none;
   vertical-align: baseline;
 }
-//
+////
 
-// via [CSS Normalize](http://necolas.github.io/normalize.css)
+//// via [CSS Normalize](http://necolas.github.io/normalize.css)
+////
 article,
 aside,
 details,
@@ -33,7 +35,7 @@ body {
   -webkit-text-size-adjust: 100%;
   height: 100%;
 }
-//
+////
 
 body {
   margin: 0 auto;
@@ -81,11 +83,12 @@ pre {
   box-sizing: border-box;
 }
 
-// Viewport normalization for modern IE and future
-// via [Trent Walton](http://trentwalton.com/2013/01/16/windows-phone-8-viewport-fix)
+//// Viewport normalization for modern IE and future
+//// via [Trent Walton](http://trentwalton.com/2013/01/16/windows-phone-8-viewport-fix)
+////
 @-webkit-viewport { width: device-width; }
    @-moz-viewport { width: device-width; }
     @-ms-viewport { width: device-width; }
      @-o-viewport { width: device-width; }
         @viewport { width: device-width; }
-//
+////
