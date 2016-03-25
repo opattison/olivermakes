@@ -40,3 +40,17 @@ image:
 {% include block/pattern--swatch.html %}
 {% endfor %}
 </ul>
+
+---
+
+## `paper` theme
+
+This is used on several pages, reusing all of the colors above but replacing the shades.
+{:.content--pattern}
+
+<ul class="grid--swatches no-bullets">
+{% assign swatches = site.data.theme_paper %}
+{% for swatch in swatches %}
+{% include block/pattern--swatch.html %}
+{% endfor %}
+</ul>

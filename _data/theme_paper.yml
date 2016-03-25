@@ -1,0 +1,36 @@
+  - name: black
+    hsl: 'hsl(0, 0%, 12%)'
+    hex: '#1f1f1f'
+  - name: gray00
+    hsl: 'hsl(0, 0%, 18%)'
+    hex: '#2e2e2e'
+  - name: gray01
+    hsl: 'hsl(0, 0%, 24%)'
+    hex: '#3d3d3d'
+  - name: gray02
+    hsl: 'hsl(0, 0%, 32%)'
+    hex: '#525252'
+  - name: gray03
+    hsl: 'hsl(0, 0%, 40%)'
+    hex: '#666666'
+  - name: gray04
+    hsl: 'hsl(0, 0%, 72%)'
+    hex: '#b8b8b8'
+  - name: gray05
+    hsl: 'hsl(0, 0%, 80%)'
+    hex: '#cccccc'
+  - name: gray06
+    hsl: 'hsl(0, 0%, 88%)'
+    hex: '#e0e0e0'
+  - name: gray07
+    hsl: 'hsl(0, 0%, 92%)'
+    hex: '#ebebeb'
+  - name: white
+    hsl: 'hsl(58, 40%, 95%)'
+    hex: '#f7f7ed'
+  - name: whiter
+    hsl: 'hsl(58, 40%, 97%)'
+    hex: '#fafaf4'
+  - name: tan
+    hsl: 'hsl(58, 40%, 92%)'
+    hex: '#f4f3e2'
