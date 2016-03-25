@@ -1,6 +1,7 @@
 ---
 title: 'Reaction: <i>Works That Work</i>'
 layout: singel
+theme: dark
 option:
   - hero
 category: 'writing'
@@ -91,6 +92,6 @@ Fortunately, <i class="publication">WTW’s</i> approach to protecting content i
 [Read more about the process behind Issue 4](https://worksthatwork.com/blog/4), including some sample pages from the print magazine. The two images of the magazine above are by Works That Work.
 {% endcapture %}
 
-<aside class="endnote">
+<aside class="ancillary--endnotes">
 {{ endnote | markdownify }}
 </aside>

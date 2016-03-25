@@ -3,7 +3,7 @@
   @include bleed-right(1em);
   clear: both;
   margin-top: 2em;
-  padding: 1em 1em 2em;
+  padding: 1em 2em 2em;
 
   @include min-width(s03) {
     @include bleed-right(2em);
@@ -20,7 +20,7 @@
   }
 
   @include min-width(l03) {
-    margin: 2.5em -9em 1em 4.5em;
+    @include bleed-right(9em);
   }
 
   ol {
@@ -56,7 +56,7 @@
   }
 }
 
-.endnote + .footnotes {
+.ancillary--endnotes + .footnotes {
   margin-top: 0;
 
   @include min-width(l03) {
@@ -77,6 +77,6 @@
   }
 }
 
-.endnote + .footnotes {
+.ancillary--endnotes + .footnotes {
   border-top: solid 1px;
 }

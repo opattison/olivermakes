@@ -176,7 +176,7 @@ Publishing *something* on the web is relatively easy, but designing a lasting ho
 **Note:** this website is continually being updated and developed, so the information on this page is only a snapshot of it as it existed on 2015-03-02.
 {% endcapture %}
 
-<aside class="endnote">
+<aside class="ancillary--endnotes">
 {{ endnote | markdownify }}
 </aside>
 

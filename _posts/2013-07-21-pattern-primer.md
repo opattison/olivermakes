@@ -68,6 +68,6 @@ I forked [Jeremy’s source](https://github.com/adactio/Pattern-Primer) from Git
 **[View the original project](https://github.com/adactio/Pattern-Primer)** that this is forked from.
 {% endcapture %}
 
-<aside class="endnote">
+<aside class="ancillary--endnotes">
 {{ endnote | markdownify }}
 </aside>
