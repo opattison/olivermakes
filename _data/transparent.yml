@@ -1,7 +1,7 @@
   - name: gray01--trans90
     hsl: 'hsla(204, 10%, 24%, .9)'
   - name: gray07--trans90
-    hsl: 'hsla(204, 10%, 92%, .9)'
+    hsl: 'hsla(204, 10%, 90%, .9)'
   - name: trans01
     hsl: 'hsla(0, 0%, 100%, .01)'
   - name: pink--trans50
