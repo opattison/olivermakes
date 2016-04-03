@@ -69,7 +69,7 @@ I would like to thank [Jean]({{ site.link.jean }}) for editing and design input.
 
 ### Typography
 
-The fonts on the site (300, 400 and 500 weights of [the Ratio typeface](http://cargocollective.com/pstype/Ratio) and 500 weight of [Source Code Pro](http://adobe-fonts.github.io/source-code-pro/)) are [hosted by Typekit](https://typekit.com/colophons/ojm0eig).
+The fonts on the site (300, 400 and 500 weights of [the Ratio typeface](http://cargocollective.com/pstype/Ratio) are [hosted by Typekit](https://typekit.com/colophons/hro5wuc). The 400 weight of Menlo (or Consolas or the default monospace as a fallback) is used for code samples.
 
 ### How this site is designed
 

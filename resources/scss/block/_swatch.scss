@@ -1,6 +1,6 @@
 .swatch {
   flex: 1 0 100%;
-  font: $weight-medium .75em/1.5 $source-code-pro;
+  font: $weight-medium .75em/1.5 $monospace;
   margin-top: 1em;
 
   @include min-width(s01) {
