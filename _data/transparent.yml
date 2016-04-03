@@ -1,5 +1,5 @@
   - name: gray01--trans90
-    hsl: 'hsla(204, 10%, 24%, .9)'
+    hsl: 'hsla(204, 10%, 21%, .9)'
   - name: gray07--trans90
     hsl: 'hsla(204, 10%, 90%, .9)'
   - name: trans01
