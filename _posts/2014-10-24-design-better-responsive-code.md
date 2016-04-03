@@ -74,7 +74,7 @@ samp {
 
 There is more to a well-designed responsive code block than line wrapping. One should also consider typography, color and proportion.
 
-My current favorite monospace font for the web is [Adobe Source Code Pro](http://adobe-fonts.github.io/source-code-pro). It is beautiful, and [it is free to use](http://www.google.com/fonts/specimen/Source+Code+Pro). To make sure that code blocks look their best, I set the monospace typeface to be proportional to the rest of the typography on my site – around .8125em for a site based on a 1em scale. This proportion works slightly differently depending on the typeface and weight chosen.
+To make sure that code blocks look their best, I set the monospace typeface to be proportional to the rest of the typography on my site – around .8125em for a site based on a 1rem scale. This proportion works slightly differently depending on the typeface and weight chosen.
 
 {% capture code %}
 ```css
@@ -85,7 +85,7 @@ body {
 
 code,
 samp {
-  font: 400 .8125em/1.4375 'source-code-pro', Menlo, Consolas, monospace; /* Source Code Pro with fallbacks. */
+  font: 400 .8125em/1.4375, 'Menlo', 'Consolas', 'DejaVu Sans Mono' monospace;
   white-space: pre-wrap;
 }
 
@@ -125,7 +125,7 @@ Notice how the long comments above wrap around the page. I have intentionally in
 The following HTML block sample has a long paragraph that illustrates the line-length issue. HTML commonly has long line-lengths where wrapping is essential for readability.
 
 ```html
-<p>My monospace font is <a href="http://adobe-fonts.github.io/source-code-pro">Adobe Source Code Pro</a>. It is beautiful, and <a href="http://www.google.com/fonts/specimen/Source+Code+Pro">it is free to use</a>. To make sure that code blocks look their best, I set the monospace typeface to be proportional to the rest of the typography on my site – around .8125em for a site based on a 1em scale. This proportion works slightly differently depending on the typeface and weight chosen.</p>
+<p>To make sure that code blocks look their best, I set the monospace typeface to be proportional to the rest of the typography on my site – around .8125em for a site based on a 1rem scale. This proportion works slightly differently depending on the typeface and weight chosen.</p>
 
 <hr>
 
@@ -156,7 +156,7 @@ The following shows the scroll method using the HTML sample from earlier.
 ### It’s not too beautiful
 
 <div class="highlighter-rouge" style="position: relative;">
-<pre class="highlight" style=" overflow: scroll; padding-bottom: 1.5em; padding-left: 1em; padding-right: 1em;"><code class="language-html" data-lang="html" style="word-wrap: normal; overflow-wrap: normal; white-space: pre"><span class="nt">&lt;p&gt;</span>My monospace font is <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://adobe-fonts.github.io/source-code-pro&quot;</span><span class="nt">&gt;</span>Adobe Source Code Pro<span class="nt">&lt;/a&gt;</span>. It is beautiful, and <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://www.google.com/fonts/specimen/Source+Code+Pro&quot;</span><span class="nt">&gt;</span>it is free to use<span class="nt">&lt;/a&gt;</span>. To make sure that code blocks look their best, I set the monospace typeface to be proportional to the rest of the typography on my site – around .8125em for a site based on a 1em scale. This proportion works slightly differently depending on the typeface and weight chosen.<span class="nt">&lt;/p&gt;</span>
+<pre class="highlight" style=" overflow: scroll; padding-bottom: 1.5em; padding-left: 1em; padding-right: 1em;"><code class="language-html" data-lang="html" style="word-wrap: normal; overflow-wrap: normal; white-space: pre"><span class="nt">&lt;p&gt;</span>To make sure that code blocks look their best, I set the monospace typeface to be proportional to the rest of the typography on my site – around .8125em for a site based on a 1rem scale. This proportion works slightly differently depending on the typeface and weight chosen.<span class="nt">&lt;/p&gt;</span>
 
 <span class="nt">&lt;hr&gt;</span>
 

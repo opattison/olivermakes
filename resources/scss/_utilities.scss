@@ -48,9 +48,9 @@
 .text-after {
   border-radius: .125em;
   color: $white;
-  font-family: $source-code-pro;
+  font-family: $monospace;
   font-size: .875em;
-  font-weight: $weight-medium;
+  font-weight: $weight-regular;
   padding: .125em .5em;
 }
 
@@ -98,7 +98,7 @@ ul.inline-list :last-child::after {
 }
 
 .font-monospace {
-  font-family: $source-code-pro;
+  font-family: $monospace;
   font-size: .8125em;
 }
 

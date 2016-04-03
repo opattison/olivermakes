@@ -30,7 +30,7 @@ Not interested in the code? **Take a look at [the pattern library](https://olive
 - Hosting: Amazon [CloudFront](https://aws.amazon.com/cloudfront/), [S3](https://aws.amazon.com/s3/) and [imgix](https://www.imgix.com) for hosting; [AWS ACM](https://aws.amazon.com/certificate-manager/) for TLS (HTTPS) certificate
 - Deploying: [s3_website](https://github.com/laurilehmijoki/s3_website), via [Travis CI](https://travis-ci.org)
 - Version control: GitHub
-- Typography: [Adobe Typekit](https://typekit.com/colophons/ojm0eig) – 300, 400 and 500 weights of [the Ratio typeface](http://cargocollective.com/pstype/Ratio) and 500 weight of [Source Code Pro](http://adobe-fonts.github.io/source-code-pro/)
+- Typography: [Adobe Typekit](https://typekit.com/colophons/hro5wuc) – 300, 400 and 500 weights of [the Ratio typeface](http://cargocollective.com/pstype/Ratio) and system monospace fonts (Menlo or Consolas if available)
 - Layout: custom [`flexbox`](https://www.w3.org/TR/2016/CR-css-flexbox-1-20160301/) CSS
 - Responsive images: [`srcset`](https://responsiveimages.org), processed with [imgix](https://www.imgix.com/)
 - Maps: [MapBox](https://www.mapbox.com/)

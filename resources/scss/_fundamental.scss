@@ -233,10 +233,10 @@ dd {
 // Code
 code,
 samp {
-  font-family: $source-code-pro;
-  font-size: .8125em;
-  font-weight: $weight-medium;
-  line-height: 1.4375;
+  font-family: $monospace;
+  font-size: .75em;
+  font-weight: $weight-regular;
+  line-height: 1.5;
 
   white-space: pre-wrap;
 }

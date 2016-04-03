@@ -18,6 +18,6 @@ sans:
     weight: medium
     italic: true
 monospace:
-  - name: Source Code Pro
-    weight: medium
+  - name: Menlo (or fallback)
+    weight: regular
     italic: false
