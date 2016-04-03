@@ -19,5 +19,5 @@ sans:
     italic: true
 monospace:
   - name: Menlo (or fallback)
-    weight: medium
+    weight: regular
     italic: false
