@@ -8,7 +8,7 @@ tags:
   - 'process'
   - 'responsive'
   - 'web'
-updated: 2015-02-23 16:06
+updated: 2016-04-04 21:45
 drafted: 2015-02-23 13:02
 unique_id: 2012-03-06:casey-trees-redesign
 period: 2011-11 to 2012-03
@@ -61,7 +61,7 @@ We turned the project around in only a few months, with design and content work 
 
 The previous iteration of the website had been designed in 2008. We faced a few significant issues that I worked with my fellow staff to identify:
 
-- The information architecture for the site was based on internal organizational structure (by department), rather than being informed by our constituents’ view of the organization. The navigation on the 2008 site had major usability issues. Programs spanned departments throughout the organization but could only be found within one section of the website. Plenty of efforts (crucially including fundraising and events) had no visible home on the site. We received regular feedback from users of the website about these issues.
+- The information architecture for the site was based on internal organizational structure (by department), rather than being informed by our constituents’ view of the organization. The navigation on the 2008 site had major usability issues, and created a perception of the organization being split into disconnected silos. Programs that spanned departments could only be found within one department’s section of the website. Plenty of efforts, especially fundraising and events, had no visible home on the site. We received regular feedback from users of the website about these issues.
 - The website was practically unusable on smaller devices, with no mobile-specific resources and no consideration for anything except for conventional desktop browsers. Text was illegible on both very large and very small screens. Interfaces were difficult or impossible to use with touch input. No content on the site responded at all to different browser sizes.
 - Portions of the site relied on Adobe Flash for content and interaction. Portions of the site were not usable without Flash support. Even aside from accessibility issues, the organization also lacked the technical support to maintain these quickly aging resources.
 - The organization’s blog was not integrated with the website. It ran on a different host and content management system. There was virtually no shared experience with the main site, and all of the resources on the blog were managed separately.
