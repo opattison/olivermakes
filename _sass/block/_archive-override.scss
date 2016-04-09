@@ -1,0 +1,34 @@
+.archive-override {
+  background-color: $black;
+  color: $white;
+  display: block;
+  font-weight: 500;
+  padding: .75em;
+  width: 100%;
+
+  @include min-width(s03) {
+    width: 75%;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  @include min-width(l01) {
+    width: 50%;
+  }
+
+  strong {
+    color: $pink;
+    font-weight: 500;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $gray01;
+    color: $grayblue;
+
+    strong {
+      color: $whiter;
+      transition-duration: 180ms;
+    }
+  }
+}
