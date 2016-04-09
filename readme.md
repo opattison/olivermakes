@@ -1,3 +1,7 @@
+This is my website archived, frozen in time on November 7, 2015. Take a look at the current version on [the master branch](https://github.com/opattison/olivermakes) or [live on the web](https://olivermak.es/).
+
+---
+
 # olivermak.es an archive
 
 ## Goals
