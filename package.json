@@ -2,26 +2,27 @@
   "name": "olivermakes",
   "description": "NPM development setup for olivermak.es",
   "dependencies": {
+    "browserify": "^13.0.0",
     "npm-run-all": "^1.5.1",
     "svgo": "^0.6.1",
-    "uglify-js": "2.6",
-    "velocity-animate": "1.2.3",
-    "watch": "0.17"
+    "uglify-js": "^2.6",
+    "velocity-animate": "^1.2.3",
+    "watchify": "^3.7.0"
   },
   "scripts": {
     "test": "htmlproofer ./_site",
-    "svg:minify": "svgo -q -f _site/icons _site/images",
-    "js:upgrade": "mv -f node_modules/velocity-animate/velocity.js resources/js/velocity.js && mv -f node_modules/velocity-animate/velocity.ui.js resources/js/velocity.ui.js",
-    "js:minify": "uglifyjs resources/js/velocity.js resources/js/velocity.ui.js resources/js/site.js -o resources/all.min.js --comments",
-    "js:watch": "watch 'npm run js:minify' resources/js/ --wait=2",
+    "svg:prod": "svgo -q -f _site/icons _site/images",
+    "js:watch": "watchify resources/js/site.js -o resources/all.min.js",
+    "js:dev": "browserify resources/js/site.js -o resources/all.min.js",
+    "js:prod": "browserify resources/js/site.js | uglifyjs --comments -o resources/all.min.js",
     "jekyll:serve": "JEKYLL_ENV=production bundle exec jekyll serve --config _config/prod.yml,_config/dev.yml",
     "jekyll:dev": "JEKYLL_ENV=production bundle exec jekyll build --config _config/prod.yml,_config/dev.yml",
     "jekyll:prod": "JEKYLL_ENV=production bundle exec jekyll build --config _config/prod.yml",
     "deploy:dev": "s3_website push --config-dir _config",
     "deploy:prod": "DEPLOY=production s3_website push --config-dir _config",
     "start": "npm-run-all --parallel js:watch jekyll:serve",
-    "dev": "npm-run-all js:minify jekyll:dev svg:minify deploy:dev",
-    "prod": "npm-run-all js:minify jekyll:prod svg:minify deploy:prod"
+    "dev": "npm-run-all js:dev jekyll:dev svg:prod deploy:dev",
+    "prod": "npm-run-all js:prod jekyll:prod svg:prod deploy:prod"
   },
   "repository": {
     "type": "git",

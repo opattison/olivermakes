@@ -1,3 +1,5 @@
+var Velocity = require('../../node_modules/velocity-animate/velocity.min.js');
+
 var Scrolling = (function () {
   var windowPathName = window.location.pathname;
 
