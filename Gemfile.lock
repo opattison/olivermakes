@@ -1,10 +1,3 @@
-GIT
-  remote: git://github.com/jekyll/jekyll-archives.git
-  revision: c9eac2c729bb3f8e3821bbaf529bd53cb5e7da66
-  specs:
-    jekyll-archives (2.0.0)
-      jekyll (>= 2.4)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -37,6 +30,8 @@ GEM
       mercenary (~> 0.3.3)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
+    jekyll-archives (2.1.0)
+      jekyll (>= 2.4)
     jekyll-sass-converter (1.3.0)
       sass (~> 3.2)
     jekyll-watch (1.3.0)
@@ -69,7 +64,7 @@ DEPENDENCIES
   image_optim
   image_optim_pack
   jekyll (~> 3.0)
-  jekyll-archives!
+  jekyll-archives (~> 2.0)
   kramdown
   rake
   rouge
@@ -77,4 +72,4 @@ DEPENDENCIES
   sass
 
 BUNDLED WITH
-   1.10.6
+   1.11.2
