@@ -4,4 +4,4 @@ _site
 .sass-cache
 .jekyll-metadata
 node_modules
-all.min.js
+resources/*.js
