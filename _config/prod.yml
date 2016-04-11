@@ -89,7 +89,7 @@ jekyll-archives:
 
 ## Sass configuration
 sass:
-  sass_dir: resources/scss
+  sass_dir: _source/scss
   style: compressed
 
 ## Project configuration
@@ -99,6 +99,7 @@ include:
 
 exclude:
   - _config
+  - _source
   - Gemfile*
   - node_modules
   - package.json
@@ -118,7 +119,7 @@ source_url:
   blob: https://github.com/opattison/olivermakes/blob/master
   commits: https://github.com/opattison/olivermakes/commits/master
   issues: https://github.com/opattison/olivermakes/issues
-  sass: https://github.com/opattison/olivermakes/blob/master/resources/scss
+  sass: https://github.com/opattison/olivermakes/blob/master/_source/scss
 
 ## srcset implementation
 sizes: '(min-width: 140em) 1008, (min-width: 95em) 864px, (min-width: 80em) 720px, (min-width: 45em) 620px, 100vw'
