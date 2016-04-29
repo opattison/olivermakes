@@ -37,6 +37,7 @@ gems:
 ## Imgix configuration
 imgix:
   source: olivermakes.imgix.net
+  secure_url_token: 0aX05KLtbRdqhzQs
 
 ## Markdown configuration
 markdown: kramdown
