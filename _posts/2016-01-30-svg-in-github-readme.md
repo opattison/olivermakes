@@ -3,7 +3,6 @@ title: 'How to enhance a GitHub readme with SVG'
 layout: singel
 option:
   - code
-  - no-imgix-source
 category: 'writing'
 tags:
   - 'css'
@@ -12,7 +11,6 @@ tags:
   - 'git'
   - 'html'
   - 'web'
-date: 2016-01-30 15:05
 updated: 2016-01-30 15:05
 drafted: 2016-01-29 20:00
 unique_id: 2016-01-30:svg-in-github-readme
@@ -29,6 +27,7 @@ image:
     alt: 'circular logo below readme text as rendered on a GitHub project page'
     date: 2016-01-30
     caption: 'This is just a screenshot. [View this readme on GitHub](https://github.com/opattison/olivermakes/blob/5c68d2ed4c97a236489548fd61f3254dd1235928/readme.md).'
+    width: 1800
 
 ---
 
@@ -47,7 +46,7 @@ Use responsibly.
 
 ## Sample implementation
 
-{% capture c1 %}
+{% capture code %}
 ```
 <a href="https://olivermak.es/">
   <img src="https://olivermak.es/resources/icons/favicon144.svg" width="100%" height="144">
@@ -55,16 +54,19 @@ Use responsibly.
 ```
 {% endcapture %}
 
+{% capture caption %}
+Setting width at `100%` centers the image. Alternatively, setting a unitless width sizes the element in pixels. This image sources an SVG from my website’s icon directory and is wrapped by a hyperlinked block.
+{% endcapture %}
+
 <figure class="code">
-{{ c1 | markdownify }}
-<figcaption>
-<p>Setting width at <code>100%</code> centers the image. Alternatively, setting a unitless width sizes the element in pixels. This image sources an SVG from my website’s icon directory and is wrapped by a hyperlinked block.</p>
-</figcaption>
+{{ code | markdownify }}
+{% include block/figcaption--text.html %}
 </figure>
 
 ## Sample output
 
 <figure class="image--wide screenshot">
-  <img src="{{ page.image[1].src | imgix_url: w: 1800 }}" alt="{{ page.image[1].alt }}">
-<figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
+  {% assign image = page.image[1] %}
+  {% include block/image--imgix.html %}
+  {% include block/figcaption--image.html %}
 </figure>

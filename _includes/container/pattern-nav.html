@@ -1,0 +1,21 @@
+<section class="pattern-sidebar">
+  {% include container/banner--pattern.html %}
+
+  <ul class="pattern-nav">
+  {% assign items = site.patterns-categories %}
+  {% for item in items %}
+    <li class="pattern-nav-li">
+    {% include block/pattern-nav-link.html %}
+    {% assign category = item.slug %}
+    {% include helper/pattern-from-category.liquid %}
+      <ul class="pattern-nav--sub {% if item.slug == page.slug %} pattern-nav--sub--active{% endif %}">
+      {% for pattern in patterns %}
+        <li class="pattern-nav-li--sub">
+          {% include block/pattern-nav-link--sub.html %}
+        </li>
+      {% endfor %}
+      </ul>
+    </li>
+  {% endfor %}
+  </ul>
+</section>

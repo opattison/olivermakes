@@ -1,18 +1,20 @@
-  <!-- styles -->
-  <link rel="stylesheet" href="{{ site.style_url }}/main.css">
-  <link rel="prefetch" href="{{ site.style_url }}/edgeless.css">
-  <link rel="prefetch" href="{{ site.style_url }}/dark.css">
-{% if page.option contains 'patterns' %}
-  <link rel="stylesheet" href="{{ site.style_url }}/patterns.css">
-{% endif %}
-{% if page.theme == 'dark' or page.layout contains 'archive' or page.layout == 'micro' %}
+<!-- styles -->
+<link rel="stylesheet" href="{{ site.style_url }}/main.css">
+{% if page.theme == 'dark' or page.layout contains 'archive' %}
   <link rel="stylesheet" href="{{ site.style_url }}/dark.css">
+{% endif %}
+{% if page.theme == 'paper' %}
+  <link rel="stylesheet" href="{{ site.style_url }}/paper.css">
 {% endif %}
 {% if page.layout == 'edgeless' %}
   <link rel="stylesheet" href="{{ site.style_url }}/edgeless.css">
 {% endif %}
 {% if page.layout == 'micro' %}
   <link rel="stylesheet" href="{{ site.style_url }}/micro.css">
+{% endif %}
+{% if page.layout == 'pattern' %}
+  <link rel="stylesheet" href="{{ site.style_url }}/micro.css">
+  <link rel="stylesheet" href="{{ site.style_url }}/patterns.css">
 {% endif %}
 {% if page.option contains 'error' %}
   <link rel="stylesheet" href="{{ site.style_url }}/404.css">

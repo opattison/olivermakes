@@ -1,0 +1,9 @@
+.action {
+  @include action;
+  margin: 2em auto 0;
+
+  @include min-width(m01) {
+    margin-left: 0;
+    width: 50%;
+  }
+}

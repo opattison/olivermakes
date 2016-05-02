@@ -1,0 +1,90 @@
+// Image block styles for figures containing img elements.
+.image--half {
+  max-width: 100%;
+  margin: 1em auto;
+
+  @include min-width(s01) {
+    max-width: 75%;
+  }
+
+  @include min-width(m01) {
+    max-width: 50%;
+  }
+}
+
+.image,
+.image--wide {
+  @include bleed-image(1em);
+  margin-top: 1em;
+
+  @include min-width(s03) {
+    @include bleed-image(2em);
+    width: calc(100% + 4em);
+  }
+
+  @include min-width(s04) {
+    @include bleed-image(2.5em);
+    width: calc(100% + 5em);
+  }
+}
+
+.image {
+  @include min-width(l01) {
+    margin: 1.5em auto;
+    width: 100%;
+
+    figcaption {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.image--wide {
+  @include min-width(l01) {
+    @include bleed-image(4.5em);
+    max-width: none;
+    width: calc(100% + 9em);
+
+    figcaption {
+      width: 50%;
+      margin-left: 50%;
+    }
+  }
+
+  @include min-width(l03) {
+    @include bleed-image(9em);
+    width: calc(100% + 18em);
+  }
+}
+
+p + .image,
+p + .image--wide {
+  margin-top: 2em;
+}
+
+// Utility for right-aligned images
+.right {
+  @include min-width(s04) {
+    float: right;
+    margin: 1em -2.5em 1em 1.25em;
+    width: 50%;
+  }
+
+  @include min-width(l01) {
+    margin: 1.5em -4.5em 1.5em 2em;
+  }
+
+  @include min-width(l03) {
+    margin-right: -9em;
+  }
+}
+
+@media (max-width: 60em) and (min-aspect-ratio: 5/3),
+(min-width: 60em) and (min-aspect-ratio: 16/9) {
+  .image--wide,
+  .grid--wide {
+    margin: 1em auto 0 !important;
+    max-width: 100% !important;
+  }
+}

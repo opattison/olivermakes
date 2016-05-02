@@ -1,7 +1,7 @@
 ---
 title: .highlight [code block]
 use: 'Code blocks for page layouts. Markdown style is [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/) for fenced code blocks.'
-spec: 'High contrast background. Full bleed within page. Only the text color of comments has contrast against the text color of code. No syntax highlighting.'
+spec: 'High contrast background. Full bleed within page. Only the text color of comments has contrast against the text color of code. No syntax highlighting. `<figcaption>`s work similarly to photo captions. Parent `<figure>` should be called `.code`.'
 type: markdown
 category: component
 sass: block/_highlight.scss
@@ -12,6 +12,30 @@ sass: block/_highlight.scss
 <!-- A comment block in HTML -->
 <p>This is an HTML code block processed with Rouge and Jekyll.</p>
 ```
+
+{% capture code %}
+```scss
+// An SCSS code snippet
+$white: hsl(204, 10%, 95%);
+
+.highlight {
+  color: $white;
+  margin-top: 1em;
+  padding: 1em;
+}
+
+// Use {% raw %}{% capture %}{% endraw %} tags in Liquid to markdownify blocks of code or captions.
+```
+{% endcapture %}
+
+{% capture caption %}
+This is a markdownified code caption contained within a parent `.code` block.
+{% endcapture %}
+
+<figure class="code">
+{{ code | markdownify }}
+{% include block/figcaption--text.html %}
+</figure>
 
 ```
 This is a code block with no language specified.

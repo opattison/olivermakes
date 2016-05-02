@@ -1,0 +1,29 @@
+.page-title {
+  flex: 0 0 100%;
+  padding: 1.5em 1em;
+
+  @include min-width(s03) {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  @include min-width(s04) {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
+
+  @include min-width(m02) {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  @include min-width(l01) {
+    padding-left: 4.5em;
+    padding-right: 4.5em;
+  }
+
+  @include min-width(l03) {
+    padding: 2.5em 0;
+    text-align: center;
+  }
+}

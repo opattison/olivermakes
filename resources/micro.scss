@@ -2,7 +2,7 @@
 ---
 @import 'helpers';
 
-.content {
+.content--photo {
   background-color: inherit;
   max-width: none;
   padding: 0;
@@ -22,17 +22,17 @@
 
 .banner {
   justify-content: space-between;
-}
 
-.banner h1 {
-  flex: 1 0 auto;
-  font-size: 1.125em;
-  margin: auto 0;
-  padding: .5em;
-  text-align: right;
+  h1 {
+    flex: 1 0 auto;
+    font-size: 1.125em;
+    margin: auto 0;
+    padding: .5em;
+    text-align: right;
 
-  @include min-width(l01) {
-    padding: 1em;
+    @include min-width(l01) {
+      padding: 1em;
+    }
   }
 }
 
@@ -43,15 +43,15 @@
   @include min-width(l01) {
     padding: 1em;
   }
-}
 
-.banner-title svg {
-  margin: 0;
-  height: 1.6em;
-  width: 1.6em;
+  svg {
+    margin: 0;
+    height: 1.6em;
+    width: 1.6em;
 
-  @include min-width(l01) {
-    font-size: 1.25em;
+    @include min-width(l01) {
+      font-size: 1.25em;
+    }
   }
 }
 
@@ -62,15 +62,13 @@
 
 .photo-meta {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   margin: auto;
   max-width: 100%;
   padding: 2em 1em 2em;
 
-  @include min-width(m02) {
+  @include min-width(m01) {
     align-items: center;
-    flex-flow: row wrap;
-    justify-content: space-between;
     @include width-max(m02);
   }
 
@@ -82,23 +80,24 @@
 .photo-details {
   font-size: .875em;
   line-height: 1.5;
-  max-width: 28em;
+  width: 100%;
 
   @include min-width(s02) {
     font-size: 1em;
   }
 
-  @include min-width(m02) {
-    padding-right: 1em;
+  @include min-width(m01) {
+    padding-right: 10%;
+    width: 70%;
   }
-}
 
-.photo-details dt {
-  font-weight: $weight-light;
-}
+  dt {
+    font-weight: $weight-light;
+  }
 
-.photo-details dd {
-  font-weight: $weight-regular;
+  dd {
+    font-weight: $weight-regular;
+  }
 }
 
 .separate::after {
@@ -110,10 +109,10 @@
 
 .camera-icon {
   margin-top: 1em;
-  width: 10em;
+  width: 50%;
 
-  @include min-width(l01) {
-    width: 15em;
+  @include min-width(m01) {
+    width: 30%;
   }
 }
 
@@ -121,7 +120,7 @@
   margin-top: 1em;
   max-width: 100%;
 
-  @include min-width(m02) {
+  @include min-width(m01) {
     flex: 1 0 100%;
   }
 }

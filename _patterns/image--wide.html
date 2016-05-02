@@ -1,6 +1,7 @@
 ---
 title: .image--wide
-use: 'Images that need to take up more than the full width of the body for maximum visual impact. Contrast with [.image--narrow](#image-narrow)'
+use: 'Images that need to take up more than the full width of the body for maximum visual impact. Contrast with [`.image`](#image).'
+restriction: 'Avoid using on images taller than 4:3 ratio. Ideally used for 3:2 or wider.'
 spec: 'Typically greater than 100% width, with overflowing margins on larger screens. Contains an `<img>`. Figcaption is optional, right-aligned and capped at 50% width on larger screens.'
 type: html
 category: component
@@ -10,8 +11,7 @@ sass: block/_image.scss#l16
 <figure class="image--wide">
   <img
     src="{{ '/images/2014-10-12-sapphie-portrait-olivermakes-ccbync.jpg' | imgix_url: w: 1080, q: 50 }}"
-    alt="An example image. Never forget alt text."
-  >
+    alt="An example image. Never forget alt text.">
   <figcaption>
     <p>This is the widest possible image pattern. The figcaption for this style is optional, right-aligned and capped at 50% width on larger screens.</p>
   </figcaption>

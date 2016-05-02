@@ -1,18 +1,19 @@
 {% assign posts = site.posts %}
 {% for post in posts %}
-{% if post.unique_id == include.id %}
-{% assign completed = post.date | date: '%Y-%m-%d' %}
-{% assign updated = post.updated | date: '%Y-%m-%d' %}
-<article class="project--satellite">
-  <div class="project-image" style="background-image: {% if post.option contains 'no-imgix-source' %}url({{ post.image[0].src }}){% else %}url({{ post.image[0].src | imgix_url: w: 620, q: 70 }});{% endif %}">
-  </div>
-  <div class="project-meta">
-    <h1><a href="{{ post.url }}">{{ post.title | markdownify | p_escape }}</a></h1>
-    <p class="project-description">This was originally {% if post.category == 'projects' %}completed{% else %}published{% endif %} {{ completed }}{% unless updated == completed %} and last updated {{ updated }}.{% endunless %}</p>
-    <div class="project-nav">
-      <a class="project-nav-action--satellite" href="{{ post.url }}">{% if post.category == 'projects' %}View this project{% elsif post.category == 'writing' %}Read this post{% else %}View this post{% endif %}</a>
+  {% if post.unique_id == include.id %}
+    {% assign completed = post.date | date: '%Y-%m-%d' %}
+    {% assign updated = post.updated | date: '%Y-%m-%d' %}
+    {% assign image = post.image[0] %}
+  <article class="project--satellite">
+    <div class="project-image" style="background-image: {% if image.src contains 'svg' or image.src contains 'png' %}url({{ image.src }}){% else %}url({{ image.src | imgix_url: w: 620, q: 70 }});{% endif %}">
     </div>
-  </div>
-</article>
-{% endif %}
+    <div class="project-meta">
+      <h1><a href="{{ post.url }}">{{ post.title | markdownify | p_escape }}</a></h1>
+      <p class="project-description">This was originally {% if post.category == 'projects' %}completed{% else %}published{% endif %} {{ completed }}{% unless updated == completed %} and last updated {{ updated }}.{% endunless %}</p>
+      <div class="project-nav">
+        <a class="project-nav-action--satellite" href="{{ post.url }}">{% if post.category == 'projects' %}view this project{% elsif post.category == 'writing' %}read this post{% else %}view this post{% endif %}</a>
+      </div>
+    </div>
+  </article>
+  {% endif %}
 {% endfor %}

@@ -1,0 +1,4 @@
+<div class="page-meta">
+  <p>Published <time class="dt-published" pubdate datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y-%m-%d' }}</time>{% if page.updated %}; updated <time class="dt-updated" datetime="{{ page.updated | date_to_xmlschema }}">{{ page.updated | date: '%Y-%m-%d' }}</time>{% endif %}.</p>
+  <p><a rel="source" href="{{ site.source_url.blob }}/{{ page.path }}">View this page’s source</a> or <a rel="source" href="{{ site.source_url.commits }}/{{ page.path }}">read its history</a>.</p>
+</div>

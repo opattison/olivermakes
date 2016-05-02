@@ -1,5 +1,6 @@
-{%  assign patterns = site.patterns | where: 'category', 'component' | sort: 'priority', 'last' %}
+{% assign category = 'component' %}
+{% include helper/pattern-from-category.liquid %}
 
 {% for pattern in patterns %}
-{% include block/pattern--element.html %}
+  {% include block/pattern--element.html %}
 {% endfor %}

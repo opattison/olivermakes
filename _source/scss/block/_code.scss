@@ -1,0 +1,26 @@
+.code figcaption {
+  @include min-width(s03) {
+    margin-right: -2em;
+    margin-left: -2em;
+  }
+
+  @include min-width(s04) {
+    margin-right: -2.5em;
+    margin-left: -2.5em;
+  }
+
+  @include min-width(l01) {
+    margin-right: -4.5em;
+    margin-left: -4.5em;
+
+    p {
+      margin-left: calc(50% + 1em);
+      width: calc(50% - 1em);
+    }
+  }
+
+  @include min-width(l03) {
+    margin-right: -9em;
+    margin-left: -9em;
+  }
+}

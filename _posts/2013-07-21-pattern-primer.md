@@ -3,8 +3,6 @@ title: 'Jekyll Version of Pattern Primer'
 layout: singel
 option:
   - minor
-  - no-imgix-source
-  - no-image_index
 category: 'projects'
 tags:
   - 'css'
@@ -12,7 +10,6 @@ tags:
   - 'html'
   - 'jekyll'
   - 'web'
-date: 2013-07-21 12:34
 updated: 2014-12-01 20:30
 drafted: 2014-12-01 12:40
 unique_id: 2014-11-30:pattern-primer
@@ -49,11 +46,10 @@ While working on a project, it can be helpful to both designers, developers and 
 
 Pattern Primer ([as well as many other similar tools](http://styleguides.io/tools.html)) can be used as design clarification and communication tools at any stage in a design process. This approach is quite useful near the beginning of a project, to make sure that design patterns can stand on their own as atomic units.
 
-<figure class="image--narrow screenshot">
-  <img
-    src="{{ page.image[1].src | imgix_url }}"
-    alt="{{ page.image[1].alt }}">
-  <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
+{% assign image = page.image[1] %}
+<figure class="image screenshot">
+  {% include block/image--imgix.html %}
+  {% include block/figcaption--image.html %}
 </figure>
 
 ## Implementation
@@ -72,6 +68,6 @@ I forked [Jeremy’s source](https://github.com/adactio/Pattern-Primer) from Git
 **[View the original project](https://github.com/adactio/Pattern-Primer)** that this is forked from.
 {% endcapture %}
 
-<aside class="endnote">
+<aside class="ancillary--endnotes">
 {{ endnote | markdownify }}
 </aside>

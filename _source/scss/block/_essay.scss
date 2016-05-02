@@ -1,0 +1,18 @@
+// Standalone prose separated out from other text or photos.
+.essay {
+  margin-top: 2em;
+  margin-bottom: 2em;
+
+  @include min-width(s03) {
+    @include bleed(2em);
+  }
+
+  @include min-width(s04) {
+    @include bleed(2.5em);
+  }
+
+  @include min-width(l01) {
+    margin: 2em -4.5em 0 4.5em;
+    padding: 2em 2.5em;
+  }
+}

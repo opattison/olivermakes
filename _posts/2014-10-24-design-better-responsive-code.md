@@ -4,22 +4,20 @@ layout: singel
 option:
   - code
   - hero
-  - no-imgix-source
 category: 'writing'
 tags:
   - 'css'
   - 'design'
   - 'responsive'
   - 'typography'
-date: 2014-10-24 16:15
-updated: 2015-03-02 18:38
+updated: 2016-03-18 09:13
 drafted: 2014-10-24 16:15
 unique_id: 2014-10-24:better-responsive-code
 description: 'A walkthrough of an approach to styling code blocks for responsive websites and technical documentation.'
 image_index: /images/index/2014-11-26-hero-design-better-css-desat.png
 image:
   - src: /images/2014-11-26-hero-design-better-css-desat.png
-    alt: ''
+    alt: 'Example of non-wrapping code'
   - src: /images/2014-11-27-without-word-wrap.png
     alt: 'A sample of layout-breaking code without word-wrap'
   - src: /images/2014-11-27-without-break-word.png
@@ -35,21 +33,19 @@ Even if a CMS or site builder has syntax highlighting built in (like [Jekyll](ht
 
 So how bad is it when code or any other long content breaks a layout? Here is what code might look like without corrected `white-space`:
 
-<figure class="image--narrow screenshot">
-  <img
-    src="{{ page.image[1].src | imgix_url }}"
-    alt="{{ page.image[1].alt }}">
+{% assign image = page.image[1] %}
+<figure class="image screenshot">
+  {% include block/image--imgix.html %}
 </figure>
 
 Here is a sample with default values for `overflow-wrap`:
 
-<figure class="image--narrow screenshot">
-  <img
-    src="{{ page.image[2].src | imgix_url }}"
-    alt="{{ page.image[2].alt }}">
+{% assign image = page.image[2] %}
+<figure class="image screenshot">
+  {% include block/image--imgix.html %}
 </figure>
 
-I think these samples speak for themselves to explain why these declarations are needed for a responsive code block. With both of them not implemented, nearly every code block on this page runs off the page, breaking the layout on small and large screens alike.
+With neither declaration implemented, nearly every code block on this page runs off the page, breaking the layout on small and large screens alike.
 
 So how do we fix this?
 
@@ -78,9 +74,9 @@ samp {
 
 There is more to a well-designed responsive code block than line wrapping. One should also consider typography, color and proportion.
 
-My current favorite monospace font for the web is [Adobe Source Code Pro](http://adobe-fonts.github.io/source-code-pro). It is beautiful, and [it is free to use](http://www.google.com/fonts/specimen/Source+Code+Pro). To make sure that code blocks look their best, I set the monospace typeface to be proportional to the rest of the typography on my site – around .8125em for a site based on a 1em scale. This proportion works slightly differently depending on the typeface and weight chosen.
+To make sure that code blocks look their best, I set the monospace typeface to be proportional to the rest of the typography on my site – around .8125em for a site based on a 1rem scale. This proportion works slightly differently depending on the typeface and weight chosen.
 
-{% capture c1 %}
+{% capture code %}
 ```css
 body {
   word-wrap: break-word;
@@ -89,7 +85,7 @@ body {
 
 code,
 samp {
-  font: 400 .8125em/1.4375 'source-code-pro', Menlo, Consolas, monospace; /* Source Code Pro with fallbacks. */
+  font: 400 .8125em/1.4375, 'Menlo', 'Consolas', 'DejaVu Sans Mono' monospace;
   white-space: pre-wrap;
 }
 
@@ -113,9 +109,13 @@ article {
 ```
 {% endcapture %}
 
+{% capture caption %}
+[View the source CSS](https://github.com/opattison/olivermakes/blob/53efd647ca65d7ad271db2a6e33555f118d8d44f/main.scss#L227) (as of 2015-03-02) for a more detailed view of how code formatting is handled on this page.
+{% endcapture %}
+
 <figure class="code">
-{{ c1 | markdownify }}
-<figcaption><p><a href="https://github.com/opattison/olivermakes/blob/53efd647ca65d7ad271db2a6e33555f118d8d44f/main.scss#L227">View the source CSS (as of {{ page.updated | date: '%B %d, %Y' }})</a> for a more detailed view of how code formatting is handled on this page.</p></figcaption>
+{{ code | markdownify }}
+{% include block/figcaption--text.html %}
 </figure>
 
 Notice how the long comments above wrap around the page. I have intentionally included long comments with no line breaks to show how they look in a code block. (The `.highlight` selector targets a class that Jekyll applies to the `<pre>` block containing the `<code>` element.)
@@ -125,7 +125,7 @@ Notice how the long comments above wrap around the page. I have intentionally in
 The following HTML block sample has a long paragraph that illustrates the line-length issue. HTML commonly has long line-lengths where wrapping is essential for readability.
 
 ```html
-<p>My monospace font is <a href="http://adobe-fonts.github.io/source-code-pro">Adobe Source Code Pro</a>. It is beautiful, and <a href="http://www.google.com/fonts/specimen/Source+Code+Pro">it is free to use</a>. To make sure that code blocks look their best, I set the monospace typeface to be proportional to the rest of the typography on my site – around .8125em for a site based on a 1em scale. This proportion works slightly differently depending on the typeface and weight chosen.</p>
+<p>To make sure that code blocks look their best, I set the monospace typeface to be proportional to the rest of the typography on my site – around .8125em for a site based on a 1rem scale. This proportion works slightly differently depending on the typeface and weight chosen.</p>
 
 <hr>
 
@@ -156,7 +156,7 @@ The following shows the scroll method using the HTML sample from earlier.
 ### It’s not too beautiful
 
 <div class="highlighter-rouge" style="position: relative;">
-<pre class="highlight" style=" overflow: scroll; padding-bottom: 1.5em; padding-left: 1em; padding-right: 1em;"><code class="language-html" data-lang="html" style="word-wrap: normal; overflow-wrap: normal; white-space: pre"><span class="nt">&lt;p&gt;</span>My monospace font is <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://adobe-fonts.github.io/source-code-pro&quot;</span><span class="nt">&gt;</span>Adobe Source Code Pro<span class="nt">&lt;/a&gt;</span>. It is beautiful, and <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://www.google.com/fonts/specimen/Source+Code+Pro&quot;</span><span class="nt">&gt;</span>it is free to use<span class="nt">&lt;/a&gt;</span>. To make sure that code blocks look their best, I set the monospace typeface to be proportional to the rest of the typography on my site – around .8125em for a site based on a 1em scale. This proportion works slightly differently depending on the typeface and weight chosen.<span class="nt">&lt;/p&gt;</span>
+<pre class="highlight" style=" overflow: scroll; padding-bottom: 1.5em; padding-left: 1em; padding-right: 1em;"><code class="language-html" data-lang="html" style="word-wrap: normal; overflow-wrap: normal; white-space: pre"><span class="nt">&lt;p&gt;</span>To make sure that code blocks look their best, I set the monospace typeface to be proportional to the rest of the typography on my site – around .8125em for a site based on a 1rem scale. This proportion works slightly differently depending on the typeface and weight chosen.<span class="nt">&lt;/p&gt;</span>
 
 <span class="nt">&lt;hr&gt;</span>
 

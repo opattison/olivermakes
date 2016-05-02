@@ -1,0 +1,238 @@
+// Blocks containing text summaries and links for articles.
+.item {
+  flex: 0 0 calc(100% - 2em);
+  margin-top: 1em;
+  width: 100%;
+
+  background-position: center;
+  background-size: cover;
+
+  @include min-width(m01) {
+    flex: 0 0 50%;
+    margin: 1em 0 0;
+  }
+}
+
+.item--short {
+  flex: 0 0 100%;
+  margin: 1em 0 0;
+  width: 100%;
+
+  @include min-width(m01) {
+    flex: 0 0 50%;
+
+    h1 {
+      font-size: 1em;
+    }
+
+    p {
+      font-size: .875em;
+    }
+  }
+}
+
+%item--section {
+  padding: 1em;
+  width: 100%;
+
+  @include min-width(m01) {
+    flex: 0 0 50%;
+  }
+
+  @include min-width(m01) {
+    padding: 2em;
+  }
+}
+
+.item--section {
+  @extend %item--section;
+
+  ul {
+    list-style: none;
+  }
+}
+
+.item--section--writing,
+.item--section--projects,
+.item--section--photography,
+.item--section--archive,
+.item--section--about {
+  @extend %item--section;
+}
+
+.item-description {
+  padding: 1em;
+  position: relative;
+
+  @include min-width(m01) {
+    height: 15em;
+    padding: 2em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  p {
+    line-height: 1.25;
+  }
+}
+
+.item--minor-description {
+
+  @include min-width(m01) {
+    height: 9em;
+  }
+
+  h1 {
+    font-size: 1.25em
+  }
+}
+
+.item--short-description {
+  height: auto;
+  padding: 1em 2em;
+
+  h1 {
+    font-size: 1.125em;
+  }
+
+  small {
+    font-weight: $weight-light;
+  }
+}
+
+.item--section-description {
+  font-weight: $weight-light;
+
+  a {
+    padding-bottom: .0625em;
+  }
+
+  h1 {
+    font-weight: $weight-light;
+  }
+
+  p {
+    margin-top: 1.5em;
+    text-align: right;
+  }
+
+  ul {
+    margin-top: 0;
+    text-align: right;
+  }
+
+  li {
+    margin-top: .25em;
+  }
+}
+
+.index--home :nth-child(odd) .item--section-description {
+
+  @include min-width(m01) {
+    h1 {
+      text-align: right;
+    }
+
+    p,
+    ul {
+        text-align: left;
+        padding-right: 3em;
+    }
+  }
+}
+
+.index--home :nth-child(even) .item--section-description {
+
+  @include min-width(m01) {
+    h1 {
+      text-align: left;
+    }
+
+    p,
+    ul {
+        text-align: right;
+        padding-left: 3em;
+    }
+  }
+}
+
+.item-time {
+  margin-top: .5em;
+  font-weight: $weight-light;
+}
+
+.item-action {
+  @include action;
+}
+
+.item-count {
+  color: $gray07;
+  font-weight: $weight-medium;
+  font-size: .75em;
+  left: calc(100% - 5em);
+  margin: 0;
+  mix-blend-mode: difference;
+  position: relative;
+  bottom: 2em;
+  width: 5em;
+  text-align: center;
+}
+
+.item--photo {
+  flex: 0 0 100%;
+  height: 10em;
+  margin: 1em 0 0;
+  width: 100%;
+
+  background-position: center;
+  background-size: cover;
+
+  @include min-width(s01) {
+    height: 11em;
+  }
+
+  @include min-width(s02) {
+    height: 12.5em;
+  }
+
+  @include min-width(s03) {
+    flex: 0 0 50%;
+    height: 10em;
+    max-width: 50%;
+  }
+
+  @include min-width(m02) {
+    flex: 0 0 25%;
+    height: 7.5em;
+  }
+
+  a {
+    display: block;
+    height: 100%;
+
+    color: $trans01;
+  }
+}
+
+.item--photo-description {
+  height: 100%;
+  padding: 1em;
+
+  h1 {
+    color: inherit;
+    font-size: 1.5em;
+    font-weight: $weight-medium;
+
+    @include min-width(m02) {
+      font-size: 1em;
+    }
+  }
+
+  p {
+    @include min-width(m02) {
+      font-size: .75em;
+    }
+  }
+}

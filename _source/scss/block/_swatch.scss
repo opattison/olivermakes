@@ -1,0 +1,32 @@
+.swatch {
+  flex: 1 0 100%;
+  font-family: $monospace;
+  font-size: .75em;
+  font-weight: $weight-regular;
+  line-height: 1.5;
+  margin-top: 1em;
+
+  @include min-width(s01) {
+    flex: 0 0 50%;
+  }
+
+  @include min-width(l03) {
+    flex: 0 0 25%;
+  }
+
+  figure {
+    height: 12em;
+    position: relative;
+  }
+
+  figcaption {
+    background-color: $gray07--trans90;
+    border-bottom: none;
+    bottom: 0;
+    margin: 0;
+    padding: .5em 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+}

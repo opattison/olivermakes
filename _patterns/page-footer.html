@@ -1,0 +1,33 @@
+---
+title: .page-footer
+use: 'Page metadata for all pages and posts.'
+spec: 'Text block accompanied by “later” and “earlier” navigation actions (shown both with and without). Darker theme available – otherwise same theming as the site-wide footer.'
+type: html
+option:
+  - fix-rem
+  - isolate
+category: interface
+sass: container/_page-footer.scss
+priority: 5
+---
+
+<footer class="page-footer">
+  <div class="page-meta">
+    <p>Published <time class="dt-published" pubdate="" datetime="2016-01-22">2016-01-22</time>; updated <time class="dt-updated" datetime="2016-01-22">2016-01-22</time>.</p>
+    <p><a rel="source" href="https://github.com/opattison/olivermakes/blob/37e7a6299f7fc9b2c529926598004b574b214258/_pages/interface.md">View this page’s source</a> or <a rel="source" href="https://github.com/opattison/olivermakes/commits/37e7a6299f7fc9b2c529926598004b574b214258/_pages/interface.md">read its history</a>.</p>
+  </div>
+  <div class="page-pagination--blank order-first"></div>
+  <div class="page-pagination--blank order-last"></div>
+</footer>
+
+<br>
+
+<footer class="page-footer">
+  <div class="page-meta">
+    <p>Published <time class="dt-published" pubdate="" datetime="2014-12-19">2014-12-19</time>; updated <time class="dt-updated" datetime="2014-12-20">2014-12-20</time>.</p>
+    <p><a rel="source" href="https://github.com/opattison/olivermakes/blob/master/_posts/2014-12-19-reading-driven-design.md">View this page’s source</a> or <a rel="source" href="https://github.com/opattison/olivermakes/commits/master/_posts/2014-12-19-reading-driven-design.md">read its history</a>.</p>
+  </div>
+
+  <a class="page-pagination--later page-pagination" rel="next" href="/2015/02/dog-at-rest/">↼ later</a>
+  <a class="page-pagination--earlier page-pagination" rel="previous" href="/2014/12/reaction-works-that-work/">earlier ⇀</a>
+</footer>

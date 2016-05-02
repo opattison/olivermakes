@@ -1,7 +1,9 @@
-  <article class="item--pattern item">
-    <a href="/patterns{{ item.src }}">
-      <div class="item--pattern-description item-description" style="background-image: url({{ item.image }})">
-      </div>
-    </a>
-    <a class="item-action" href="/patterns{{ item.src }}">View {{ item.title | downcase }} patterns</a>
-  </article>
+{% assign image = item.image[0] %}
+
+<article class="item--pattern item">
+  <a href="{{ item.url }}">
+    <div class="item--pattern-description item-description" style="background-image: url({{ image.src }})">
+    </div>
+  </a>
+  <a class="item-action" href="{{ item.url }}">view {{ item.title | downcase }}</a>
+</article>

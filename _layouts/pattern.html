@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body class="micro">
+
+  <div class="pattern-container" id="top">
+
+    {% include container/pattern-nav.html %}
+
+    <section class="pattern-main" id="maincontent" role="main">
+    {% unless page.unique_id == '2014-10-31:patterns' %}
+      <h1 class="pattern-main-heading">{{ page.title }}</h1>
+    {% endunless %}
+
+        {{ content }}
+
+    </section>
+
+    {% include container/end.html %}
+
+  </div>
+
+</body>
+</html>

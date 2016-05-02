@@ -9,25 +9,23 @@
 @import 'container/banner',
         'block/banner-title';
 
-@import 'container/core',
-        'block/hero',
-        'block/core-title',
+@import 'block/hero',
+        'block/page-title',
         'block/content',
         'block/action',
+        'block/code',
         'block/essay',
         'block/highlight',
         'block/ancillary',
-        'block/flow--side',
         'block/focus',
         'block/project',
-        'block/endnote',
         'block/footnotes',
         'container/grid',
         'block/image',
-        'block/figcaption',
-        'container/core-footer',
-        'block/core-meta',
-        'block/core-pagination';
+        'block/swatch',
+        'container/page-footer',
+        'block/page-meta',
+        'block/page-pagination';
 
 @import 'container/index',
         'block/index-title',

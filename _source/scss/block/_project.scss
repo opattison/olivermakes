@@ -1,0 +1,177 @@
+// Block of text and images for a project summary with actions for source and links where available.
+.project {
+  @include bleed(1em);
+  padding: 0;
+
+  @include min-width(s03) {
+    @include bleed(2em);
+    padding: 0;
+  }
+
+  @include min-width(s04) {
+    @include bleed(2.5em);
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+  }
+
+  @include min-width(l01) {
+    margin: 0 auto;
+  }
+
+  @include min-width(l03) {
+    display: flex;
+    margin-right: -9em;
+    margin-left: -9em;
+    margin-bottom: 2em;
+    padding: 0;
+  }
+}
+
+.project--satellite {
+  padding: 0;
+  margin-top: 1em;
+
+  .project-image {
+    height: 10em;
+  }
+
+  @include min-width(s04) {
+    .project-meta {
+      padding: 1em;
+    }
+  }
+
+  @include min-width(l01) {
+    align-items: flex-start;
+    display: flex;
+    margin-right: -4.5em;
+    margin-left: -4.5em;
+    padding: 0;
+
+    .project-image,
+    .project-meta {
+      height: 14em;
+    }
+
+    .project-image {
+      flex: 0 0 50%;
+      width: 50%;
+    }
+
+    .project-meta {
+      display: flex;
+      flex: 0 0 50%;
+      margin-top: 0;
+      padding: 1em 2em 2em;
+      flex-flow: column nowrap;
+    }
+
+    .project-nav {
+      margin: auto auto 0;
+      width: 100%;
+    }
+  }
+}
+
+.project-image {
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 12.5em;
+
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+
+  @include min-width(s01) {
+    height: 15em;
+  }
+
+  @include min-width(s02) {
+    height: 16em;
+  }
+
+  @include min-width(s03) {
+    height: 18em;
+  }
+
+  @include min-width(m01) {
+    height: 20em;
+  }
+
+  @include min-width(l03) {
+    background-position: 50% 25%;
+    flex: 0 0 50%;
+    height: 18em;
+    width: 50%;
+  }
+}
+
+.project-meta {
+  padding: 1em;
+
+  @include min-width(s04) {
+    padding: 1em 0 0;
+  }
+
+  @include min-width(l03) {
+    display: flex;
+    flex: 0 0 50%;
+    flex-flow: column nowrap;
+    height: 18em;
+    margin-top: 0;
+    padding: 2em;
+  }
+}
+
+.project-summary {
+  font-size: 1.125em;
+  font-style: italic;
+  font-weight: $weight-medium;
+  line-height: 1.33333333;
+}
+
+.project-description {
+  font-size: .875em;
+  font-weight: $weight-light;
+}
+
+.project-description + p {
+  margin-top: .5em;
+}
+
+.project-nav {
+  display: flex;
+  flex-direction: column;
+
+  @include min-width(s01) {
+    flex-direction: row;
+  }
+
+  @include min-width(l03) {
+    margin: auto auto 0;
+    width: 100%;
+  }
+}
+
+%project-nav-action {
+  @include action;
+
+  @include min-width(s01) {
+    flex: 1 0 50%;
+  }
+}
+
+.project-nav-action {
+  @extend %project-nav-action;
+}
+
+.project-nav-action--source,
+.project-nav-action--url,
+.project-nav-action--satellite {
+  @extend %project-nav-action;
+}
+
+.project--satellite h1 {
+  font-size: 1.25em;
+  margin-top: auto;
+  line-height: 1.25;
+}

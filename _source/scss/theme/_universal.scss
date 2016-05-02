@@ -1,0 +1,158 @@
+.skip {
+  @include action-color($whiter, $black);
+}
+
+.category {
+  background-color: $white;
+}
+
+.home {
+  background-color: $white;
+}
+
+.index--home {
+  background-color: $gray00;
+}
+
+.index-nav-action {
+  @include action-color($red, $gray07);
+}
+
+.index-nav-action:nth-child(2) {
+  @include action-color($blue, $gray07);
+}
+
+%item_color {
+  background-color: $gray07;
+}
+
+.item,
+.item--short {
+  @extend %item_color;
+
+  &:nth-child(2n) {
+    background-color: $gray05;
+  }
+}
+
+.item--photo {
+  @extend %item_color;
+
+  a:hover,
+  a:focus {
+    background-color: $gray07--trans90;
+
+    p {
+      color: $black;
+    }
+  }
+}
+
+%item--section_color {
+  color: $white;
+}
+
+.item--section--writing {
+  @extend %item--section_color;
+  background-color: $red;
+}
+
+.item--section--projects {
+  @extend %item--section_color;
+  background-color: $violet;
+}
+
+.item--section--photography {
+  @extend %item--section_color;
+  background-color: $blue;
+}
+
+.item--section--about {
+  @extend %item--section_color;
+  background-color: $gray02;
+}
+
+.item--section--archive {
+  @extend %item--section_color;
+  background-color: $gray00;
+}
+
+.item-description {
+  background-color: $gray07--trans90;
+
+  h1 a {
+    @include a-underline($trans01, $blue);
+    color: $red;
+
+    &:hover,
+    &:focus {
+      color: $blue;
+    }
+  }
+}
+
+.item-location a {
+  @include a-underline($trans01, $lightblue);
+}
+
+.item--section-description {
+
+  a {
+    @include a-underline($gray07--trans50, $whiter);
+    color: $white;
+
+    &:hover,
+    &:focus {
+      color: $whiter;
+    }
+  }
+}
+
+.item-action {
+  @include action-color($gray02, $whiter);
+}
+
+.item:nth-child(2n) .item-action {
+  @include action-color($gray00, $whiter);
+}
+
+.return-action--home {
+  @include action-color($white, $gray00, $gray03, $whiter);
+
+  &:hover,
+  &:focus {
+    @include random-fill(2, 6);
+  }
+}
+
+.return-action--top {
+  @include action-color($gray05, $gray00, $gray03, $whiter);
+}
+
+.return-action--patterns {
+  @include action-color($gray02, $whiter);
+}
+
+.return-action--projects {
+  @include action-color($violet, $whiter);
+}
+
+.return-action--writing {
+  @include action-color($red, $whiter);
+}
+
+.return-action--photography {
+  @include action-color($blue, $whiter);
+}
+
+.project-nav-action--url {
+  @include action-color($red, $whiter);
+}
+
+.project-nav-action--source {
+  @include action-color($violet, $whiter);
+}
+
+.project-nav-action--satellite {
+  @include action-color($gray02, $whiter);
+}

@@ -1,9 +1,12 @@
-  <div class="index-nav">
-    <a class="index-nav-action" href="/archive/">Full site archive ⇀</a>
-
-    {% if page.title == 'Photography' %}<a class="index-nav-action" href="/photography/archive/">Photography archive ⇀</a>{% endif %}
-
-    {% if page.title == 'Writing' %}<a class="index-nav-action" href="/writing/archive/">Writing archive ⇀</a>{% endif %} 
-
-    {% if page.title == 'Projects' %}<a class="index-nav-action" href="/projects/archive/">Projects archive ⇀</a></>{% endif %}
-  </div>
+<div class="index-nav">
+  <a class="index-nav-action" href="/archive/">full site archive ⇀</a>
+{% if page.title == 'Photography' %}
+  <a class="index-nav-action" href="/photography/archive/">photography archive ⇀</a>
+{% endif %}
+{% if page.title == 'Writing' %}
+  <a class="index-nav-action" href="/writing/archive/">writing archive ⇀</a>
+{% endif %}
+{% if page.title == 'Projects' %}
+  <a class="index-nav-action" href="/projects/archive/">projects archive ⇀</a>
+{% endif %}
+</div>

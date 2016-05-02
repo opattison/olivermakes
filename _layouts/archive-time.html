@@ -6,8 +6,9 @@ layout: archive
 {% include block/index-title--archive.html %}
 
 {% for post in page.posts %}
-{% include block/item--short.html %}
+  {% include block/item--short.html %}
 {% endfor %}
+
 {% include block/index-nav--time.html %}
 
 {{ content }}

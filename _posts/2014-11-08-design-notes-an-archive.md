@@ -5,10 +5,10 @@ category: 'writing'
 tags:
   - 'archiving'
   - 'future'
+  - 'git'
   - 'indieweb'
   - 'photography'
   - 'web'
-date: 2014-11-08 12:34
 updated: 2015-03-02 21:05
 drafted: 2014-11-08 12:34
 unique_id: 2014-11-08:design-notes-an-archive
@@ -18,16 +18,16 @@ image:
   - src: /images/1988-oliver-young.jpg
     alt: 'Oliver as a toddler'
     caption: 'A photo taken of me in … 1988? I have no idea! This is an example of why I miss having a complete archive.'
+    quality: 50
 
 ---
 
 Looking back at my files and memories from my life so far, I find there are few things that are constant or well-maintained. I do not own a physical album of photos from when I was young – I wish I did. I do not even have many scans of old photos. I am missing most of my creative output from when I was younger, as well. I think my life would be richer for having a better understanding of where I came from.
 
+{% assign image = page.image[0] %}
 <figure class="right">
-  <img
-    src="{{ page.image[0].src | imgix_url: w: 450, q: 60 }}"
-    alt="{{ page.image[0].alt }}">
-  <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
+  {% include block/image--imgix.html %}
+  {% include block/figcaption--image.html %}
 </figure>
 
 If you never have, you should dig into the [Internet Archive’s Wayback Machine](https://archive.org/web/). You can find the history of sites no longer online, or no longer in their previous form. All of those attempts, versions and missteps are encoded in HTML and publicly hosted until they are discarded in a matter of months or years. The Archive team saves this history. It is cared for by preservationists who realized that if they did not make the effort, this creative output and cultural memory would certainly be lost history in the space of far less than a lifetime (since, by default, not much lasts long on the web).
@@ -39,7 +39,7 @@ It takes a lot of effort to keep a comprehensive and long-lasting archive of one
   <p>Right now my home backup system works like this:</p>
   <ul>
     <li>Back up my MacBook to a Time Capsule running <a href="http://en.wikipedia.org/wiki/Time_Machine_(OS_X)">Time Machine</a>.</li>
-    <li>Store a complete archive of all of my photography on a local external drive. I use a <a href="https://www.lacie.com/US/products/product.htm?id=10600">LaCie D2 Thunderbolt</a>.</li>
+    <li>Store a complete archive of all of my photography on a local external drive. I use a <a href="http://www.lacie.com/products/desktop-storage/d2-usb-3-thunderbolt-series/">LaCie D2 Thunderbolt</a>.</li>
     <li>Keep <a href="https://www.backblaze.com">Backblaze</a> running, backing up both the MacBook and the external drive.</li>
   </ul>
   <p>This means I have a local repository, a working remote copy on GitHub, and then a local backup of everything (Time Machine), and a remote backup of everything (Backblaze). It is robust enough for now, and it is literally fire-proof.</p>

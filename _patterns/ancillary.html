@@ -5,7 +5,7 @@ spec: 'Lower contrast light background that connects seamlessly with the body ba
 type: markdown
 category: component
 sass: block/_ancillary.scss
-include_markdown: >
+include_markdown: |+
   # Ancillary content
 
   Using a `capture` tag with Liquid allows one to encode Markdown text into an HTML block. One could use a Ruby plugin for Jekyll to process it, but that may be less effective.
@@ -15,4 +15,4 @@ include_markdown: >
 {{ page.include_markdown | markdownify }}
 </aside>
 
-Content flows after or around the `<aside>` block. The `.ancillary` block should be used {{ page.use | downcase }} This paragraph represents the layout and style of main body content.
+Content flows after or around the `<aside>` block. The `.ancillary` block should be used for content that is related to the main body but not necessarily as important – supporting the main story without being directly a part of it. This paragraph represents the layout and style of main body content.

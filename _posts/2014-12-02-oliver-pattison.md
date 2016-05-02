@@ -4,7 +4,6 @@ layout: singel
 option:
   - code
   - featured-home
-  - no-imgix-source
 category: 'projects'
 tags:
   - 'archiving'
@@ -14,7 +13,6 @@ tags:
   - 'responsive'
   - 'typography'
   - 'web'
-date: 2014-12-02 12:34
 updated: 2016-02-02 02:15
 drafted: 2016-02-01 17:16
 unique_id: 2014-12-02:oliver-pattison

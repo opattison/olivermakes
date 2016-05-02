@@ -1,16 +1,28 @@
 <section class="pattern pattern--element" id="{{ pattern.title | slugify }}">
-  <div class="pattern-display {% if pattern.option contains 'wider' %}pattern-display--wider{% endif %}{% if pattern.option contains 'no-bullets' %} no-bullets{% endif %}" {% if pattern.option %}style="{% if pattern.option contains 'fix-rem' %}font-size: 1rem;{% endif %}"{% endif %}>{{ pattern.content | markdownify }}</div>
+  <div class="pattern-display{% if page.option contains 'content-simulation' %} content{% endif %}{% if pattern.option contains 'center' %} pattern-display--center{% endif %}{% if pattern.option contains 'isolate' %} pattern-display--isolate{% endif %}{% if pattern.option contains 'fix-rem' %} pattern-display--fix-rem{% endif %}{% if pattern.option contains 'no-bullets' %} no-bullets{% endif %}">{{ pattern.content | markdownify }}</div>
   <details class="pattern-meta">
     <summary><code>{{ pattern.title }}</code></summary>
     <figure>
-    {% if pattern.type == 'markdown' %}<h5>Markdown</h5>
-    <textarea class="pattern-markdown">{{ pattern.content | xml_escape }}</textarea>{% endif %}
-    <h5>HTML</h5>
-    <textarea class="pattern-html">{{ pattern.content | markdownify | xml_escape }}</textarea>
-    <figcaption>
-    {% if pattern.sass %}<p class="pattern-sass"><a href="{{ site.source_url.sass }}/{{ pattern.sass }}">View SCSS source</a></p>{% endif %}
-    {% if pattern.use %}{{ pattern.use | prepend:'**Usage:** ' | markdownify }}{% endif %}{% if pattern.restriction %}{{ pattern.restriction | prepend: '**Restrictions:** ' | markdownify }}{% endif %}{% if pattern.spec %}{{ pattern.spec | prepend:'**Specification:** ' | markdownify }}{% endif %}
-    </figcaption>
+    {% if pattern.type == 'markdown' %}
+      <h5>Markdown</h5>
+      <textarea class="pattern-markdown">{{ pattern.content | xml_escape }}</textarea>
+    {% endif %}
+      <h5>HTML</h5>
+      <textarea class="pattern-html">{{ pattern.content | markdownify | xml_escape }}</textarea>
+      <figcaption>
+      {% if pattern.sass %}
+        <div class="pattern-source"><a href="{{ site.source_url.sass }}/{{ pattern.sass }}">View SCSS source</a></div>
+      {% endif %}
+      {% if pattern.use %}
+        {{ pattern.use | prepend:'**Usage:** ' | markdownify }}
+      {% endif %}
+      {% if pattern.restriction %}
+        {{ pattern.restriction | prepend: '**Restrictions:** ' | markdownify }}
+        {% endif %}
+      {% if pattern.spec %}
+        {{ pattern.spec | prepend:'**Specification:** ' | markdownify }}
+      {% endif %}
+      </figcaption>
     </figure>
   </details>
 </section>

@@ -1,0 +1,119 @@
+// Flexing grid container for images and other items
+.grid {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+
+  @include min-width(l01) {
+    flex-flow: row nowrap;
+  }
+
+  p + {
+    margin-top: 2em;
+  }
+}
+
+.grid--wide {
+  @include bleed-image(1em);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin-top: 1em;
+
+  @include min-width(s03) {
+    @include bleed-image(2em);
+    width: calc(100% + 4em);
+  }
+
+  @include min-width(s04) {
+    @include bleed-image(2.5em);
+    width: calc(100% + 5em);
+  }
+
+  @include min-width(l01) {
+    @include bleed-image(4.5em);
+    flex-flow: row nowrap;
+    max-width: none;
+    width: calc(100% + 9em);
+
+    figcaption p {
+      margin-left: calc(50% + 1em);
+      width: calc(50% - 1em);
+    }
+  }
+
+  @include min-width(l03) {
+    @include bleed-image(9em);
+    width: calc(100% + 18em);
+  }
+}
+
+p + .grid,
+p + .grid--wide {
+  margin-top: 2em;
+}
+
+.grid figure + figure,
+.grid--wide figure + figure {
+  margin-top: 1em;
+
+  @include min-width(l01) {
+    margin-top: 0;
+    margin-right: 1em;
+  }
+}
+
+.grid-figure {
+
+  @include min-width(l01) {
+    flex: 1 1 50%;
+    margin-right: 1em;
+  }
+}
+
+.grid-figure--33 {
+  margin: auto;
+  max-width: calc(100% / 3 * 2);
+
+  @include min-width(l01) {
+    flex: 1 1 calc(100% / 3 - 1em);
+    margin-right: 1em;
+    width: calc(100% / 3 - 1em);
+
+    figcaption p {
+      margin-left: 0;
+      text-align: left;
+      width: auto;
+    }
+  }
+}
+
+.grid-figure--66 {
+
+  @include min-width(l01) {
+    flex: 1 1 calc(100% / 3 * 2 - 1em);
+    margin-right: 1em;
+    width: calc(100% / 3 * 2 - 1em);
+  }
+}
+
+.grid figure:last-of-type,
+.grid--wide figure:last-of-type {
+  @include min-width(l01) {
+    margin-right: 0;
+  }
+}
+
+.grid--swatches {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 1rem;
+  justify-content: flex-start;
+  list-style-type: none;
+  margin: 1em auto;
+  max-width: 45em;
+
+  @include min-width(l03) {
+    max-width: 54em;
+  }
+}

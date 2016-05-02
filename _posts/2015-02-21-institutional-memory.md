@@ -1,14 +1,11 @@
 ---
 title: 'Institutional memory'
 layout: singel
-option:
-  - no-image_index
 category: 'writing'
 tags:
   - 'archiving'
   - 'process'
   - 'web'
-date: 2015-02-21 20:52
 updated: 2015-02-21 20:52
 drafted: 2015-02-14 12:34
 unique_id: 2015-02-21:institutional-memory
@@ -53,14 +50,14 @@ I also wanted to address issues that were addressed less often, but are still im
 
 This latter category involves tasks that might need to be referred to at any time, but are dealt with so infrequently that they are likely to be forgotten in the mean time.
 
-{% capture a1 %}
+{% capture ancillary %}
 # The result
 
 I [wrote a summary]({% post_url 2014-10-01-casey-trees-docs %}) of my documentation efforts for Casey Trees, with an explanation of how it was implemented with Jekyll and some samples of the design.
 {% endcapture %}
 
 <aside class="ancillary">
-{{ a1 | markdownify }}
+{{ ancillary | markdownify }}
 </aside>
 
 ### Gathering organizational knowledge

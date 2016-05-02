@@ -7,12 +7,12 @@
 
 {% assign photo_count = post.photo | size %}
 
-  <article class="item--photo item" style="background-image: linear-gradient(hsla(0, 0%, 100%, .01), hsla(204, 10%, 12%, .2) 60%, #1c1f22), url({{ image.src | imgix_url: w: 480, q: 35 }});">
-    <a href="{{ post.url }}">
-      <div class="item--photo-description item-description">
-        <h1>{{ post.title }}</h1>
-        <p class="item-time">Published <time class="dt-published" pubdate datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y-%m-%d' }}</time></p>
-      </div>
-      <div class="item-count">{{ photo_count }} photo{% if photo_count > 1 %}s{% endif %}</div>
-    </a>
-  </article>
+<article class="item--photo" style="background-image: linear-gradient(hsla(0, 0%, 100%, .01), hsla(204, 10%, 12%, .2) 60%, hsl(204, 10%, 12%)), url({{ image.src | imgix_url: w: 480, q: 35 }});">
+  <a href="{{ post.url }}">
+    <div class="item--photo-description">
+      <h1>{{ post.title }}</h1>
+      <p class="item-time">Published <time class="dt-published" pubdate datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y-%m-%d' }}</time></p>
+    </div>
+    <div class="item-count">{{ photo_count }} photo{% if photo_count > 1 %}s{% endif %}</div>
+  </a>
+</article>

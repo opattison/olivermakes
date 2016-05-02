@@ -1,16 +1,15 @@
 ---
 title: 'Pine Orchard Prints typographic identity'
 layout: edgeless
+theme: paper
 option:
   - minor
-  - no-imgix-source
 category: 'projects'
 tags:
   - 'design'
   - 'typography'
   - 'web'
-date: 2015-10-24 9:00
-updated: 2016-02-09 01:01
+updated: 2016-03-25 09:13
 drafted: 2016-01-26 23:22
 unique_id: 2015-10-24:pine-orchard-typography
 description: 'Logotype and typography for a small online retail shop.'
@@ -67,13 +66,13 @@ I avoided the more eclectic Victorian typographic styles which might be illegibl
 <div class="grid">
   <figure class="grid-figure">
     {% assign image = page.image[1] %}
-    {% include block/srcset_grid2.html %}
-    <figcaption>{{ page.image[1].caption | markdownify }}</figcaption>
+    {% include block/srcset--grid2.html %}
+    {% include block/figcaption--image.html %}
   </figure>
   <figure class="grid-figure">
     {% assign image = page.image[2] %}
-    {% include block/srcset_grid2.html %}
-    <figcaption>{{ page.image[2].caption | markdownify }}</figcaption>
+    {% include block/srcset--grid2.html %}
+    {% include block/figcaption--image.html %}
   </figure>
 </div>
 
@@ -85,20 +84,20 @@ I chose [Cardo](http://scholarsfonts.net/cardofnt.html), an old-style font by Da
 
 The typeface performed quite well, even with only a single weight. Cardo has excellent OpenType support and beautiful small capital styles, making headings and featured text stand out against the striking photos of the prints. I ended up using Cardo for all of the headings on the site, as well as for stylized collection links and for the logo identity. Using small capitals for titles, and ultimately for the logotype ended up being a stylistic success.
 
-<figure class="image--narrow screenshot">
+<figure class="image screenshot">
   <img src="{{ page.image[3].src | imgix_url }}" alt="{{ page.image[3].alt }}" />
 </figure>
 
 In my earliest take on the design, I attempted a logo designed only with CSS, but limited control over letter spacing and relative proportions led to unimpressive initial efforts. It is still difficult to implement small caps with OpenType and CSS properly, since browser support is not as extensive as it could be. [^2] I designed the next takes of the logotype with Adobe Illustrator, because I wanted SVG output and fine control over kerning. The final iteration appears on the site header as well as in transactional email messages and mailing labels.
 
-{% capture more %}
+{% capture ancillary %}
 Read more about [the rest of the work that went into the Pine Orchard Prints project]({% post_url 2016-01-29-pine-orchard-site %}).
 
 Visit the [Pine Orchard Prints website](https://pineorchardprints.com) to see the typography up close.
 {% endcapture %}
 
 <aside class="ancillary">
-{{ more | markdownify }}
+{{ ancillary | markdownify }}
 </aside>
 
 For a small shop, memorable and appropriate typography effectively served the business goals and provided a strong identity. Using a straightforward logotype supported the typographic style of the site and evoked the visual appeal of the items in the shop, without relying on symbols or iconography.
@@ -106,20 +105,25 @@ For a small shop, memorable and appropriate typography effectively served the bu
 <div class="grid--wide">
   <figure class="grid-figure screenshot">
     {% assign image = page.image[4] %}
-    {% include block/srcset_grid2--png.html %}
+    {% include block/srcset--grid2--png.html %}
   </figure>
   <figure class="grid-figure screenshot">
     {% assign image = page.image[5] %}
-    {% include block/srcset_grid2.html %}
+    {% include block/srcset--grid2.html %}
   </figure>
 </div>
 
 <figure class="image--wide screenshot">
   {% assign image = page.image[6] %}
-  {% include block/srcset.html %}
-  <figcaption>{{ page.image[6].caption | markdownify }}</figcaption>
+  {% include block/srcset--wide.html %}
+  {% include block/figcaption--image.html %}
 </figure>
 
+---
+
+## Read more about the entire project
+
+{% include block/project--satellite.html id="2015-01-29:pine-orchard-site" %}
 
 [^1]: Cardo is available for free through Google Fonts, but I chose to serve it through an Adobe TypeKit subscription because of their superior OpenType support.
 [^2]: Even Safari 9.0 for OS X and iOS does not have support for it at the time of this writing, but 9.1 will! Following the principle of progressive enhancement and not relying too heavily on the small caps style meant that I could get away without optimizing for Safari in this case. The logotype, however, uses SVG outlines to ensure that it renders consistently across browsers.

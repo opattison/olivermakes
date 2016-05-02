@@ -3,109 +3,60 @@
 @import 'helpers';
 
 .content,
-.core-title {
+.page-title {
   background-color: inherit;
 }
 
 .content {
   padding-bottom: 0;
+
+  @include min-width(l01) {
+    padding-top: 1em;
+
+    figcaption {
+      padding: .5em 0 0;
+    }
+
+    figcaption p {
+      font-size: .875em;
+    }
+  }
 }
 
-.content figure:first-child {
-  margin-top: 0;
+.hero {
+  max-width: 100%;
+
+  @include min-width(l01) {
+    margin-bottom: 4em;
+  }
 }
 
-.core-title h1 {
-  text-align: center;
-}
+.page-title {
 
-.core-footer {
-  margin: 2em auto 0;
-}
+  @include min-width(l01) {
+    padding: .75em 1.25em;
+  }
 
-.essay {
-  margin-bottom: 0;
+  h1 {
+    text-align: center;
+  }
 }
 
 .project {
   margin-top: 0;
 }
 
-@media screen and (min-width: 30em) {
-  .essay {
-    padding: 2em;
-  }
-}
+.page-footer {
+  margin: 2em auto 0;
 
-@media screen and (min-width: 45em) {
-  .core-footer {
-    margin: 2em auto 0;
-  }
-}
-
-@media screen and (min-width: 60em) {
-  .core-title {
-    padding: .75em 1.25em;
-  }
-
-  .content {
-    padding-top: 1em;
-  }
-
-  .essay {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 2.5em;
-  }
-
-  .content figcaption {
-    padding: .5em 0 0;
-  }
-
-  .content figcaption p {
-    font-size: .875em;
-  }
-
-  .core-footer {
+  @include min-width(l01) {
     max-width: 45em;
   }
+}
 
-  .core-meta {
+.page-meta {
+
+  @include min-width(l01) {
     max-width: 27em;
-  }
-}
-
-@media screen and (min-width: 80em) {
-  .essay {
-    margin: 2em -4.5em 0 4.5em;
-    padding: 2em 2.5em;
-  }
-
-  .align {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media screen and (min-width: 115em) {
-  .credits {
-    padding: 2em;
-  }
-}
-
-@media screen and (min-width: 140em) {
-  .core-title {
-    font-size: 2em;
-  }
-
-  .image--wide,
-  .grid--wide {
-    margin: 5% calc(-12em) 0;
-    width: calc(100% + 24em);
-  }
-
-  .core-footer,
-  .core-meta {
-    max-width: none;
   }
 }

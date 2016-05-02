@@ -1,27 +1,27 @@
-  <link rel="source" href="{{ site.link.source }}" />
-  <link rel="me" href="mailto:{{ site.author.email }}">
+<link rel="source" href="{{ site.link.source }}" />
+<link rel="me" href="mailto:{{ site.author.email }}">
 
-  <meta name="author" content="{{ site.author.name }}">
+<meta name="author" content="{{ site.author.name }}">
 
-  <meta name="twitter:site" content="{{ site.author.twitter }}">
+<meta name="twitter:site" content="{{ site.author.twitter }}">
 {% if page.category == 'photography' %}
-  <meta name="twitter:card" content="photo">
+<meta name="twitter:card" content="photo">
 {% elsif page.category == 'projects' %}
-  <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary_large_image">
 {% else %}
-  <meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary">
 {% endif %}
 
 
 {% if page.category == 'index' or page.category == 'archive' %}
-  <meta property="og:type" content="website">
+<meta property="og:type" content="website">
 {% else %}
-  <meta property="og:type" content="article">
+<meta property="og:type" content="article">
 {% endif %}
 
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-  <meta property="og:site_name" content="{{ site.title }}">
-  <meta property="og:title" content="{{ page.title | strip_html }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:title" content="{{ page.title | strip_html }}">
 
 {% if page.date %}
   <meta property="og:article:published_time" content="{{ page.date | date_to_xmlschema }}">
@@ -44,14 +44,14 @@
 
 {% if image %}
   {% if image.src contains 'svg' %}
-  <meta property="og:image" content="{{ site.url }}{{ image.src_png }}">
-  <meta property="og:image:secure_url" content="{{ site.url }}{{ image.src_png }}">
+    <meta property="og:image" content="{{ site.url }}{{ image.src_png }}">
+    <meta property="og:image:secure_url" content="{{ site.url }}{{ image.src_png }}">
   {% elsif image.src contains 'png' %}
-  <meta property="og:image" content="{{ image.src | imgix_url }}">
-  <meta property="og:image:secure_url" content="{{ image.src | imgix_url }}">
+    <meta property="og:image" content="{{ image.src | imgix_url }}">
+    <meta property="og:image:secure_url" content="{{ image.src | imgix_url }}">
   {% else %}
-  <meta property="og:image" content="{{ image.src | imgix_url: w: 1024, q: 50 }}">
-  <meta property="og:image:secure_url" content="{{ image.src | imgix_url: w: 1024, q: 50 }}">
+    <meta property="og:image" content="{{ image.src | imgix_url: w: 1024, q: 50 }}">
+    <meta property="og:image:secure_url" content="{{ image.src | imgix_url: w: 1024, q: 50 }}">
   {% endif %}
 {% else %}
   <meta property="og:image" content="{{ site.url }}{{ site.icon_url }}/touchicon192.png">
@@ -65,5 +65,7 @@
   <meta name="description" content="{{ site.description }}">
 {% endif %}
 
+{% if site.google_verification %}
   <meta name="google-site-verification" content="{{ site.google_verification }}" />
-  <!-- but no Analytics! -->
+{% endif %}
+<!-- but no Analytics! -->

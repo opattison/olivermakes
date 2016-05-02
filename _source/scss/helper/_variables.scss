@@ -1,0 +1,71 @@
+// Color map processed by /helper/_functions.scss
+$colors: (
+  blue: hsl(204, 50%, 42%),
+  violet: hsl(225, 35%, 45%),
+  red: hsl(4, 60%, 42%),
+  green: hsl(144, 50%, 35%),
+  shade: hsl(204, 10%, 12%),
+);
+
+// Output colors
+$blue: c(blue);
+$lightblue: c(blue, 88%);
+$violet: c(violet);
+$red: c(red);
+$pink: c(red, 88%);
+$green: c(green);
+
+// Output shades
+$black: c(shade);
+$white: c(shade, 95%);
+$gray00: scale-color($black, $lightness: 5%);
+$gray01: scale-color($black, $lightness: 10%);
+$gray02: scale-color($black, $lightness: 15%);
+$gray03: scale-color($black, $lightness: 20%);
+$gray04: scale-color($white, $lightness: -20%);
+$gray05: scale-color($white, $lightness: -15%);
+$gray06: scale-color($white, $lightness: -10%);
+$gray07: scale-color($white, $lightness: -5%);
+$whiter: scale-color($white, $lightness: 40%);
+
+// Output transparent colors and shades
+$blue--trans20: trans20($blue);
+$red--trans20: trans20($red);
+$pink--trans50: trans50($pink);
+$gray01--trans90: trans90($gray01);
+$gray07--trans90: trans90($gray07);
+$gray07--trans50: trans50($gray07);
+$trans01: trans01($white);
+
+// Typography
+$ratio: 'ratio', 'Seravek', 'Helvetica Neue', sans-serif;
+$monospace: 'Menlo', 'Consolas', 'DejaVu Sans Mono', monospace;
+$open-sans: 'Open Sans', sans-serif;
+
+$weight-light: 300;
+$weight-regular: 400;
+$weight-medium: 500;
+
+// Media query width map
+$widths: (
+  s01: 22.5em,
+  s02: 28em,
+  s03: 30em,
+  s04: 34em,
+  m01: 40em,
+  m02: 45em,
+  l01: 60em,
+  l02: 70em,
+  l03: 80em,
+  l04: 95em,
+  l05: 115em,
+);
+
+// Maximum container width map
+$width-limit: (
+  s02: 28em,
+  m02: 36em,
+  l01: 45em,
+  l03: 54em,
+  l05: 94.5em,
+);

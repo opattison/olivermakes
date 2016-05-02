@@ -1,0 +1,40 @@
+
+@function c($value, $color-lightness: false) {
+  $color: map-get($colors, $value);
+  $color-hue: hue($color);
+  $color-saturation: saturation($color);
+
+  @if $color-lightness == false {
+    $color-lightness: lightness($color);
+  }
+
+  $adjusted-lightness: $color-lightness;
+
+  $output: hsl($color-hue, $color-saturation, $adjusted-lightness);
+
+  @return $output;
+}
+
+@function trans90($value) {
+  $color: scale-color($value, $alpha: -10%);
+
+  @return $color;
+}
+
+@function trans50($value) {
+  $color: scale-color($value, $alpha: -50%);
+
+  @return $color;
+}
+
+@function trans20($value) {
+  $color: scale-color($value, $alpha: -80%);
+
+  @return $color;
+}
+
+@function trans01($value) {
+  $color: scale-color($value, $alpha: -99%);
+
+  @return $color;
+}

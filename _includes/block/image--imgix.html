@@ -1,0 +1,18 @@
+{% if image.quality %}
+  {% assign quality = image.quality %}
+{% endif %}
+{% if image.width %}
+  {% assign width = image.width %}
+{% endif %}
+
+<img
+{% if quality and width %}
+  src="{{ image.src | imgix_url: w: width, q: quality }}"
+{% elsif quality %}
+  src="{{ image.src | imgix_url: q: quality }}"
+{% elsif width %}
+  src="{{ image.src | imgix_url: w: width }}"
+{% else %}
+  src="{{ image.src | imgix_url }}"
+{% endif %}
+  alt="{{ image.alt }}">

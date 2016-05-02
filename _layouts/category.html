@@ -4,17 +4,17 @@
 
 <body class="category--{{ page.title | downcase }} category">
 
-{% include container/banner.html %}
+  {% include container/banner.html %}
 
   <section id="maincontent" class="index{% if page.title == 'Photography' %}--photography{% endif %}">
 
-{% include block/index-title.html %}
+    {% include block/index-title.html %}
 
-{{ content }}
+    {{ content }}
 
   </section>
 
-{% include container/end.html %}
+  {% include container/end.html %}
 
 </body>
 </html>

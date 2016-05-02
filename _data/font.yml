@@ -1,0 +1,23 @@
+sans:
+  - name: Ratio
+    weight: light
+    italic: false
+  - name: Ratio
+    weight: light
+    italic: true
+  - name: Ratio
+    weight: regular
+    italic: false
+  - name: Ratio
+    weight: regular
+    italic: true
+  - name: Ratio
+    weight: medium
+    italic: false
+  - name: Ratio
+    weight: medium
+    italic: true
+monospace:
+  - name: Menlo (or fallback)
+    weight: regular
+    italic: false

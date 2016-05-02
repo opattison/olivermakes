@@ -1,15 +1,15 @@
-  <!-- Loading via https://github.com/morris/typekit-cache -->
-  <script>
-    !function(e,t,n,r,a,s,i,l){n&&(s=n[r],s&&(i=e.createElement("style"),i.innerHTML=s,e.getElementsByTagName("head")[0].appendChild(i)),l=t.setAttribute,t.setAttribute=function(e,p,u,o){"string"==typeof p&&p.indexOf(a)>-1&&(u=new XMLHttpRequest,u.open("GET",p,!0),u.onreadystatechange=function(){if(4===u.readyState){o=u.responseText.replace(/url\(\//g,"url("+a+"/");try{o!==s&&(n[r]=o)}catch(e){s&&(s=i.innerHTML="")}}},u.send(null),t.setAttribute=l,s)||l.apply(this,arguments)})}(document,Element.prototype,localStorage,"tk","https://use.typekit.net");
-  </script>
-  <!-- fonts via Typekit https://typekit.com/colophons/ojm0eig -->
-  <script>
-    (function(d) {
-      var config = {
-        {% if page.option contains 'code' %}kitId: 'ojm0eig',{% else %}kitId: 'hro5wuc',{% endif %}
-        scriptTimeout: 2500,
-        async: true
-      },
-      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-    })(document);
-  </script>
+<!-- Loading via https://github.com/morris/typekit-cache -->
+<script>
+  !function(e,t,n,r,a,s,i,l){n&&(s=n[r],s&&(i=e.createElement("style"),i.innerHTML=s,e.getElementsByTagName("head")[0].appendChild(i)),l=t.setAttribute,t.setAttribute=function(e,p,u,o){"string"==typeof p&&p.indexOf(a)>-1&&(u=new XMLHttpRequest,u.open("GET",p,!0),u.onreadystatechange=function(){if(4===u.readyState){o=u.responseText.replace(/url\(\//g,"url("+a+"/");try{o!==s&&(n[r]=o)}catch(e){s&&(s=i.innerHTML="")}}},u.send(null),t.setAttribute=l,s)||l.apply(this,arguments)})}(document,Element.prototype,localStorage,"tk","https://use.typekit.net");
+</script>
+<!-- fonts via Typekit https://typekit.com/colophons/hro5wuc -->
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'hro5wuc',
+      scriptTimeout: 2500,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>

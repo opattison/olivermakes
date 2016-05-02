@@ -1,0 +1,42 @@
+// Links to other articles, next and previous – typically inside `page-footer`.
+.page-pagination {
+  @include action;
+  flex: 1 0 50%;
+  min-height: 2.5em;
+  padding: .5em 0;
+  width: 100%;
+
+  line-height: 2em;
+
+  @include min-width(m02) {
+    padding: 1em 0;
+  }
+}
+
+.page-pagination:only-child {
+  flex: 0 0 100%;
+}
+
+@include min-width(m02) {
+  .page-pagination,
+  .page-pagination:only-child,
+  .page-pagination--blank {
+    flex: 1 0 4.5em;
+  }
+
+  .page-pagination--later {
+    order: 1; // before .page-meta
+  }
+
+  .page-pagination--earlier {
+    order: 3; // after .page-meta
+  }
+}
+
+@include min-width(l01) {
+  .page-pagination,
+  .page-pagination:only-child,
+  .page-pagination--blank {
+    flex: 0 0 9em;
+  }
+}

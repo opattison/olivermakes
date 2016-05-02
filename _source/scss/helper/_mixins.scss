@@ -1,0 +1,101 @@
+// Media queries defined in helper/_variables.scss $widths map
+@mixin min-width($width) {
+  $value: map-get($widths, $width);
+
+  @if $value != null {
+    @media (min-width: $value) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "No value could be retrieved from #{$width}. "
+        + "Define the value in the $widths map in _variables.scss.";
+  }
+}
+
+// Container width limits defined in helper/_variables.scss $width-limit map
+@mixin width-max($width) {
+  $value: map-get($width-limit, $width);
+
+  @if $value != null {
+    flex: 0 0 $value;
+    max-width: $value;
+  }
+
+  @else {
+    @warn "No value could be retrieved from #{$width}. "
+        + "Define the value in the $width-limit map in _variables.scss.";
+  }
+}
+
+@mixin action($margin: 0, $padding: 1em 0) {
+  display: block;
+  font-weight: $weight-regular;
+  margin: $margin;
+  padding: $padding;
+  text-align: center;
+}
+
+@mixin action-color($ground: $black, $figure: $white, $ground--reverse: $figure, $figure--reverse: $ground) {
+  background-color: $ground;
+  color: $figure;
+  &:hover,
+  &:focus {
+    background-color: $ground--reverse;
+    color: $figure--reverse;
+  }
+  &:active {
+    background-color: $whiter;
+    color: $green;
+  }
+}
+
+@mixin a-borderless {
+  border: 0;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 0;
+  }
+}
+
+@mixin a-underline($link: $red, $hover: $blue) {
+  border-bottom: solid .08em $link;
+  &:hover,
+  &:focus {
+    border-bottom: solid .08em $hover;
+  }
+}
+
+@mixin bleed($amount: 1em) {
+  margin-left: -$amount;
+  margin-right: -$amount;
+  padding-left: $amount;
+  padding-right: $amount;
+}
+
+@mixin bleed-right($amount: 1em) {
+  margin-right: -$amount;
+}
+
+@mixin bleed-left($amount: 1em) {
+  margin-left: -$amount;
+}
+
+@mixin bleed-image($amount: 1em) {
+  margin-left: -$amount;
+  margin-right: -$amount;
+  max-width: none;
+  width: calc(100% + #{2*$amount});
+}
+
+// For randomly assigning shades to layers of the logo
+@mixin random-fill($start: 2, $end: 17, $color: shade) {
+  @for $i from $start through $end {
+    svg :nth-child(#{$i}) {
+      fill: c($color, random(80) + 12);
+    }
+  }
+}

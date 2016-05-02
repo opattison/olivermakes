@@ -1,0 +1,46 @@
+// Main body content
+.content {
+  margin: auto;
+  max-width: 100%;
+  padding: 0 1em 2em;
+
+  @include min-width(s03) {
+    padding: 0 2em 4em;
+  }
+
+  @include min-width(s04) {
+    padding: 0 2.5em 4em;
+  }
+
+  @include min-width(l01) {
+    padding: 0 4.5em 4em;
+  }
+
+  @include min-width(l03) {
+    padding: 0 9em 4em;
+  }
+
+  figure:first-child {
+    margin-top: 0;
+  }
+
+  figcaption {
+    margin-top: 0;
+  }
+
+  hr {
+    margin: 2em 0;
+  }
+}
+
+.hero + .content {
+  padding-top: 1.5em;
+}
+
+// prevents margin-less CodePen embed divs
+h1 + div,
+h2 + div,
+h3 + div,
+p + div {
+  margin-top: 1em;
+}

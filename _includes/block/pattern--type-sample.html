@@ -1,0 +1,14 @@
+<h3 class="font-{{ type }}  weight-{{ font.weight }} {% if font.italic == true %}font-italic{% endif %}" style="font-size: 1.5em;">{{ font.name }} {{ font.weight }} {% if font.italic == true %}italic{% else %}normal{% endif %}</h3>
+
+<div class="font-{{ type }} weight-{{ font.weight }} {% if font.italic == true %}font-italic{% endif %}">
+  <p>
+  {{ site.data.type.prose.zephyrs }}
+  </p>
+  <p>
+  {{ site.data.type.alphabet.upper }}
+  <br>
+  {{ site.data.type.alphabet.lower }}
+  <br>
+  {{ site.data.type.numerals }} {{ site.data.type.characters.sample }}
+  </p>
+</div>

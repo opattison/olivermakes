@@ -1,0 +1,11 @@
+{% if page.next.url %}
+  <a class="page-pagination--later page-pagination" rel="next" href="{{ page.next.url }}">↼ later</a>
+{% else %}
+  <div class="page-pagination--blank order-first"></div>
+{% endif %}
+
+{% if page.previous.url %}
+  <a class="page-pagination--earlier page-pagination" rel="previous" href="{{ page.previous.url }}">earlier ⇀</a>
+{% else %}
+  <div class="page-pagination--blank order-last"></div>
+{% endif %}

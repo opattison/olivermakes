@@ -1,20 +1,30 @@
 {% if page.category == 'projects' %}
-{% assign completed = page.date | date: '%Y-%m-%d' %}
-{% assign updated = page.updated | date: '%Y-%m-%d' %}
-<article class="project">
-  <div class="project-image" style="background-image: {% if page.option contains 'no-imgix-source' %}url({{ page.image[0].src }}){% else %}url({{ page.image[0].src | imgix_url: w: 620, q: 70 }});{% endif %}">
-  </div>
-  <div class="project-meta">
-    <p class="p-summary project-summary">{{ page.description }}</p>
-    <p class="project-description">This project was originally completed <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ completed }}</time>{% if page.period %} and worked on from {{ page.period }}{% endif %}. {% if page.project.license %} Licensed <a href="{{ page.project.license-url }}">{{ page.project.license }}</a>.{% endif %}</p>
-    {% unless updated == completed %}<p class="project-description">This writing was last updated {{ updated }}.</p>{% endunless %}
-    {% if page.project %}{% else %}<p class="project-description">No public source or link is available for this project.</p>{% endif %}
-    {% if page.project %}
-    <div class="project-nav">
-      {% if page.project.url %}<a class="project-nav-action--url" href="{{ page.project.url }}">View it live</a>{% endif %}
-      {% if page.project.source %}<a class="project-nav-action--source" href="{{ page.project.source }}">View project source</a>{% elsif page.project.download %}<a class="project-nav-action--source" href="{{ page.project.download }}">Download project {% if page.project.filetype %}({{ page.project.filetype }}){% endif %}</a>{% endif %}
+  {% assign completed = page.date | date: '%Y-%m-%d' %}
+  {% assign updated = page.updated | date: '%Y-%m-%d' %}
+  {% assign image = page.image[0] %}
+  <article class="project">
+    <div class="project-image" style="background-image: {% if image.src contains 'svg' or image.src contains 'png' %}url({{ image.src }}){% else %}url({{ image.src | imgix_url: w: 620, q: 70 }});{% endif %}">
     </div>
-  </div>
-  {% endif %}
-</article>
+    <div class="project-meta">
+      <p class="p-summary project-summary">{{ page.description }}</p>
+      <p class="project-description">This project was originally completed <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ completed }}</time>{% if page.period %} and worked on from {{ page.period }}{% endif %}. {% if page.project.license %} Licensed <a href="{{ page.project.license-url }}">{{ page.project.license }}</a>.{% endif %}</p>
+    {% unless updated == completed %}
+      <p class="project-description">This writing was last updated {{ updated }}.</p>
+    {% endunless %}
+    {% if page.project %}
+      <div class="project-nav">
+      {% if page.project.url %}
+        <a class="project-nav-action--url" href="{{ page.project.url }}">view it live</a>
+      {% endif %}
+      {% if page.project.source %}
+        <a class="project-nav-action--source" href="{{ page.project.source }}">view project source</a>
+      {% elsif page.project.download %}
+        <a class="project-nav-action--source" href="{{ page.project.download }}">download {% if page.project.filetype %}({{ page.project.filetype }}){% endif %}</a>
+      {% endif %}
+      </div>
+    {% else %}
+      <p class="project-description">No public source or link is available for this project.</p>
+    {% endif %}
+    </div>
+  </article>
 {% endif %}

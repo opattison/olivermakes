@@ -2,12 +2,9 @@
 title: 'Dog at rest'
 layout: edgeless
 theme: dark
-option:
-  - map-meta
 category: 'photography'
 tags:
   - 'dog'
-date: 2015-02-17 19:25
 updated: 2015-02-17 19:25
 unique_id: 2015-02-17:dog-at-rest
 description: 'Our dog Sapphie loves relaxing on the couch, which makes her an easy subject.'

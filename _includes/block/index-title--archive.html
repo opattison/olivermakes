@@ -1,9 +1,9 @@
 {% if page.type == 'month' or page.type == 'year' %}
-    {% if page.type == 'year' %}
+  {% if page.type == 'year' %}
     <h1 class="index-title">/{{ page.date | date: '%Y' }}</h1>
-    {% elsif page.type == 'month' %}
+  {% elsif page.type == 'month' %}
     <h1 class="index-title">/{{ page.date | date: '%Y/%m' }}</h1>
-    {% endif %}
+  {% endif %}
 {% else %}
-    <h1 class="index-title">{% if include.prefix %}/{{ include.prefix }}{% endif %}{% if include.title %}/{{ include.title | downcase }}{% else %}/{{ page.title | downcase }}{% endif %}{% if include.suffix %}/{{ include.suffix | downcase }}{% endif %}</h1>
+  <h1 class="index-title">{% if include.prefix %}/{{ include.prefix }}{% endif %}{% if include.title %}/{{ include.title | downcase }}{% else %}/{{ page.title | downcase }}{% endif %}{% if include.suffix %}/{{ include.suffix | downcase }}{% endif %}</h1>
 {% endif %}

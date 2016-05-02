@@ -1,0 +1,52 @@
+// Alternative nav – home and back-to-top.
+.return {
+  display: flex;
+  flex: 0 0 100%;
+  flex-flow: row wrap;
+
+  font-size: 1.25em;
+}
+
+%return-action {
+  @include action;
+  display: flex;
+  justify-content: center;
+
+  @include min-width(m01) {
+    font-size: 1.125em;
+  }
+
+  @include min-width(l01) {
+    font-size: 1.25em;
+  }
+}
+
+.return-action {
+  @extend %return-action;
+}
+
+.return-action--home,
+.return-action--top,
+.return-action--category {
+  @extend %return-action;
+  flex: 1 1 50%;
+}
+
+.return-action--home {
+  @include min-width(l01) {
+    flex: 0 1 50%;
+  }
+
+  svg {
+    height: calc(1.5em + 1px);
+    padding-bottom: 1px;
+    width: 2em;
+  }
+}
+
+.return-action--category,
+.return-action--top {
+  @include min-width(l01) {
+    flex: 1 0 25%;
+  }
+}

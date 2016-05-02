@@ -1,0 +1,42 @@
+---
+title: type
+use: 'Ratio is used everywhere on the site, from headings to body text. Three weights are used: 300 (light), 400 (regular) and 500 (medium). Code samples '
+type: html
+category: text
+priority: 0
+sass: _fundamental.scss
+---
+
+
+
+<div class="rendered">
+  {% assign fonts = site.data.font.sans %}
+  {% assign type = 'sans' %}
+  {% for font in fonts %}
+  {% include block/pattern--type-sample.html %}
+  {% endfor %}
+
+  {% assign fonts = site.data.font.monospace %}
+  {% assign type = 'monospace' %}
+  {% for font in fonts %}
+  {% include block/pattern--type-sample.html %}
+  {% endfor %}
+</div>
+
+{% capture code %}
+```scss
+$ratio: 'ratio', 'Seravek', 'Helvetica Neue', sans-serif;
+$weight-light: 300;
+$weight-regular: 400;
+$weight-medium: 500;
+// default smallest size: 1rem
+
+$monospace: 'Menlo', 'Consolas', 'DejaVu Sans Mono', monospace;
+$weight-regular: 400;
+// default smallest size: .75em
+```
+{% endcapture %}
+
+<figure class="code">
+{{ code | markdownify }}
+</figure>

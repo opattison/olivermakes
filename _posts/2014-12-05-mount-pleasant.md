@@ -6,7 +6,7 @@ category: 'photography'
 tags:
   - 'dc'
   - 'photography'
-date: 2014-12-05 22:01
+  - 'tree'
 updated: 2014-12-05 01:28
 drafted: 2014-11-14 22:01
 unique_id: 2014-11-14:mount-pleasant

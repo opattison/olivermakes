@@ -1,0 +1,282 @@
+//// Theme definition
+////
+$back: $white;
+$fore: $gray01;
+
+$back--plus: $whiter;
+$back--minus: $gray06;
+$back--inverse: $fore;
+$back--footer: $back--minus;
+$back--project: $gray06;
+$back--project-image: $gray07;
+$back--notes: $lightblue;
+
+$fore--plus: $black;
+$fore--minus: $gray03;
+$fore--inverse: $back;
+
+$code--inline: $gray02;
+$code--comment: $gray05;
+$code--border: $gray05;
+$code-block--fore: $whiter;
+$code-block--back: $gray02;
+
+$accent: $blue;
+$accent--trans: $blue--trans20;
+$accent--neutral: $gray04;
+$accent--inverse: $red;
+$accent--inverse--trans: $red--trans20;
+
+$link: $black;
+$link-underline: $red;
+$link--hover: $blue;
+$link--active: $green;
+$link--action: $red;
+
+$anchor: $blue;
+$anchor--hover: $red;
+$anchor-back: $blue--trans20;
+$anchor-back--hover: $red--trans20;
+
+$focus: $accent;
+$focus-link: $link--action;
+$focus-link--hover: $violet;
+////
+
+html {
+  color: $fore;
+}
+
+body {
+  background-color: $back;
+  color: $fore;
+}
+
+h1,
+h2 {
+  color: $fore--minus;
+}
+
+h3,
+h4 {
+  color: $fore;
+}
+
+h5 {
+  color: $fore--minus;
+}
+
+a {
+  color: $link;
+}
+
+a:hover,
+a:focus {
+  color: $link--hover;
+}
+
+a:active {
+  border-color: $trans01 !important;
+  color: $link--active;
+}
+
+p a,
+li a,
+blockquote a {
+  @include a-underline;
+}
+
+ul li::before {
+  color: $accent--neutral;
+}
+
+ol li::before {
+  color: $fore--minus;
+}
+
+blockquote {
+  border-color: $accent;
+  color: $fore--minus;
+}
+
+blockquote footer {
+  color: $fore;
+}
+
+figcaption {
+  color: $fore--minus;
+}
+
+hr {
+  background-color: $accent--neutral;
+}
+
+p > code,
+li > code,
+samp {
+  border-color: $code--border;
+  color: $code--inline;
+}
+
+kbd > kbd {
+  background-color: $back--inverse;
+  color: $fore--inverse;
+}
+
+mark {
+  background-color: $accent--trans;
+}
+
+::-moz-selection {
+  background: $accent;
+  color: $fore--inverse;
+}
+
+::selection {
+  background: $accent;
+  color: $fore--inverse;
+}
+
+.banner-title:hover,
+.banner-title:focus {
+  @include random-fill(2, 17);
+}
+
+.page-title {
+  background-color: $back--plus;
+}
+
+.content {
+  background-color: $back--plus;
+}
+
+.page-footer {
+  background-color: $back--footer;
+}
+
+.action {
+  @include action-color($link--action, $fore--inverse);
+  @include a-borderless;
+}
+
+.focus {
+  color: $focus;
+
+  a {
+    color: $focus-link;
+    @include a-underline($link-underline, $focus-link--hover);
+  }
+
+  a:hover,
+  a:focus {
+    color: $focus-link--hover;
+  }
+}
+
+.ancillary {
+  background-color: $back;
+  color: $fore--minus;
+
+  .edgeless & {
+    background-color: $back--minus;
+  }
+}
+
+.ancillary--thanks {
+  background-color: $accent--inverse--trans;
+}
+
+.hero figcaption {
+  background-color: $back--plus;
+}
+
+.footnote {
+  background-color: $anchor-back;
+  border-color: $anchor;
+  color: $anchor;
+
+  &:hover,
+  &:focus {
+    background-color: $anchor-back--hover;
+    border-color: $anchor--hover;
+    color: $anchor--hover;
+  }
+}
+
+.footnotes,
+.ancillary--endnotes {
+  background-color: $back--notes;
+}
+
+.ancillary--endnotes + .footnotes,
+.footnotes li {
+  border-color: $accent--trans;
+}
+
+.footnotes ol li::before {
+  border-color: $accent--trans;
+  color: $fore--minus;
+}
+
+.reversefootnote {
+  border-color: $accent;
+  color: $accent;
+
+  &:hover,
+  &:focus {
+    background-color: $accent--inverse--trans;
+    border-color: $accent--inverse;
+    color: $accent--inverse;
+  }
+}
+
+.highlight {
+  background-color: $code-block--back;
+  border-color: $code--border;
+  color: $code-block--fore;
+
+  .c,
+  .c1,
+  .cm {
+    color: $code--comment;
+  }
+}
+
+.project,
+.project--satellite {
+  background-color: $back--project;
+
+  h1 a {
+    @include a-underline($trans01, $link--hover);
+  }
+}
+
+.project-image {
+  background-color: $back--project-image;
+  border-color: $back--minus;
+}
+
+%page-pagination_color {
+  @include action-color($accent--inverse, $gray07); // default
+}
+
+.page-pagination--later {
+  @extend %page-pagination_color;
+}
+
+.page-pagination--earlier {
+  @include action-color($accent, $gray07);
+}
+
+.credits {
+  background-color: $back--minus;
+  color: $fore;
+
+  a {
+    @include a-underline;
+  }
+}
+
+.micro .banner {
+  background-color: $back--plus;
+}

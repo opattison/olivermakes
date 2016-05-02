@@ -31,7 +31,7 @@ I currently live in Washington, DC. I am originally from New York City.
 I’m available for hire. [Get in touch](mailto:{{ site.author.email }}){:.u-email rel="me"} by email if you have a project in mind.
 {:.focus}
 
-{% capture elsewhere %}
+{% capture ancillary %}
 # Elsewhere on the web
 
 Nearly every significant thing I read or look at is archived on **[Pinboard]({{ site.link.pinboard }}){:rel="me"}**. It is my external brain and my favorite thing on the web. It is as complete an archive as I can keep of my reading online.
@@ -46,7 +46,7 @@ A selection of my mobile photography is on **[VSCO Grid]({{ site.link.vsco }}){:
 {% endcapture %}
 
 <aside class="ancillary">
-{{ elsewhere | markdownify }}
+{{ ancillary | markdownify }}
 </aside>
 
 ## About this site
@@ -69,7 +69,7 @@ I would like to thank [Jean]({{ site.link.jean }}) for editing and design input.
 
 ### Typography
 
-The fonts on the site (300, 400 and 500 weights of [the Ratio typeface](http://cargocollective.com/pstype/Ratio) and 500 weight of [Source Code Pro](http://adobe-fonts.github.io/source-code-pro/)) are [hosted by Typekit](https://typekit.com/colophons/ojm0eig).
+The fonts on the site (300, 400 and 500 weights of [the Ratio typeface](http://cargocollective.com/pstype/Ratio) are [hosted by Typekit](https://typekit.com/colophons/hro5wuc). The 400 weight of Menlo (or Consolas or the default monospace as a fallback) is used for code samples.
 
 ### How this site is designed
 
@@ -77,14 +77,13 @@ The fonts on the site (300, 400 and 500 weights of [the Ratio typeface](http://c
 
 {% include block/project--satellite--patterns.html %}
 
-
-{% capture license %}
+{% capture endnote %}
 # License and copyright
 
 In short: the code and design are under [copyright (MIT license)](/license/#code) and original photos, images are [{{ site.license.long }} ({{ site.license.short }})]({{ site.link.attribution }}){:rel="license"}.
 {% endcapture %}
 
-<aside class="endnote">
-{{ license | markdownify }}
-<a class="action" href="/license/">More on attribution</a>
+<aside class="ancillary--endnotes">
+{{ endnote | markdownify }}
+<a class="action" href="/license/">more on attribution</a>
 </aside>

@@ -5,13 +5,11 @@ theme: dark
 option:
   - code
   - minor
-  - no-imgix-source
 category: 'projects'
 tags:
   - 'css'
   - 'design'
   - 'jekyll'
-date: 2015-10-26 20:00
 updated: 2016-01-21 18:10
 drafted: 2016-01-21 18:10
 unique_id: 2015-10-26:jekyll-mix-blend-mode

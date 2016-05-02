@@ -1,14 +1,18 @@
-    <figure class="hero">
-      <img
-        {% if page.option contains 'no-imgix-source' %}
-        src="{{ page.image[0].src }}"
-        {% else %}
-        src="{{ page.image[0].src | imgix_url: w: 720, q: 50 }}"
-        sizes="{{ site.sizes }}"
-        srcset="{% for width in site.srcset %}{{ page.image[0].src | imgix_url: w: width, q: 60 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-        {% endif %}
-        alt="{{ page.image[0].alt }}">
-      {% if page.image[0].caption %}
-      <figcaption>{{ page.image[0].caption | markdownify }}</figcaption>
-      {% endif %}
-    </figure>
+{% if page.option contains 'hero' %}
+  {% assign image = page.image[0] %}
+
+  <figure class="hero">
+    <img
+    {% if image.src contains 'svg' or image.src contains 'png' %}
+      src="{{ image.src }}"
+    {% else %}
+      src="{{ image.src | imgix_url: w: 720, q: 50 }}"
+      sizes="{{ site.sizes_wide }}"
+      srcset="{% for width in site.srcset %}{{ image.src | imgix_url: w: width, q: 60 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+    {% endif %}
+      alt="{{ image.alt }}">
+  {% if image.caption %}
+    <figcaption>{{ image.caption | markdownify }}</figcaption>
+  {% endif %}
+  </figure>
+{% endif %}

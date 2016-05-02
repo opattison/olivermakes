@@ -1,24 +1,33 @@
 ---
 title: .item
-use: 'Post summaries and details on index pages.'
-spec: 'Fluid, whole- to half-width block. Large action button at the bottom. Background image pulled from post (where available). Strong link color hyperlinked headlines.'
+use: 'Post summaries and details on index pages. These items are from both the writing and project pages to show both styles.'
+spec: 'Fluid, whole- to half-width block. Large action button at the bottom. Background image pulled from post (where available). Strong link color hyperlinked headlines. Description is always shown. Metadata is more specific for projects.'
 restriction: 'Generally contained by `.index` container as shown here.'
 type: html
 category: interface
 priority: 1
 option:
   - fix-rem
-  - wider
+  - isolate
 sass: block/_item.scss
 ---
 
 <div class="index">
+  <article class="item" style="background-image: url(/images/2016-03-16-jekyll-test-tube.svg)">
+    <div class="item-description ">
+      <h1><a href="/2016/03/consider-jekyll/">Consider Jekyll</a></h1>
+      <p class="p-summary item-summary">A brief introduction to Jekyll and why I use it for my web projects.</p>
+      <p class="item-time">Published <time class="dt-published" pubdate="" datetime="2016-03-16T00:00:00-04:00">2016-03-16</time></p>
+    </div>
+    <a class="item-action" href="/2016/03/consider-jekyll/">read this post</a>
+  </article>
+
   <article class="item" style="background-image: url(/images/2016-02-01-logo-close.svg)">
     <div class="item-description ">
       <h1><a href="/2014/12/oliver-pattison/">This website: olivermak.es</a></h1>
       <p class="p-summary item-summary">Designing and developing my personal archive (an ongoing project).</p>
-      <p class="item-time">Completed <time class="dt-published" pubdate datetime="2014-12-02">2014-12-02</time> (worked on from 2014-10 to present)</p>
+      <p class="item-time">Completed <time class="dt-published" pubdate="" datetime="2014-12-02T00:00:00-05:00">2014-12-02</time> (worked on from 2014-10 to present)</p>
     </div>
-    <a class="item-action" href="/2014/12/oliver-pattison/">View this project</a>
+    <a class="item-action" href="/2014/12/oliver-pattison/">view this project</a>
   </article>
 </div>

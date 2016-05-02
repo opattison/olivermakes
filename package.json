@@ -2,25 +2,28 @@
   "name": "olivermakes",
   "description": "NPM development setup for olivermak.es",
   "dependencies": {
+    "browserify": "^13.0.0",
     "npm-run-all": "^1.5.1",
     "svgo": "^0.6.1",
-    "uglify-js": "2.6",
-    "velocity-animate": "1.2.3",
-    "watch": "0.17"
+    "uglify-js": "^2.6",
+    "velocity-animate": "^1.2.3",
+    "watchify": "^3.7.0"
   },
   "scripts": {
-    "svg:minify": "svgo -q -f _site/icons _site/images",
-    "js:upgrade": "mv -f node_modules/velocity-animate/velocity.js resources/js/velocity.js && mv -f node_modules/velocity-animate/velocity.ui.js resources/js/velocity.ui.js",
-    "js:minify": "uglifyjs resources/js/velocity.js resources/js/velocity.ui.js resources/js/site.js -o resources/all.min.js --comments",
-    "js:watch": "watch 'npm run js:minify' resources/js/ --wait=2",
-    "jekyll:serve": "JEKYLL_ENV=production bundle exec jekyll serve --config _config/prod.yml,_config/dev.yml",
-    "jekyll:dev": "JEKYLL_ENV=production bundle exec jekyll build --config _config/prod.yml,_config/dev.yml",
-    "jekyll:prod": "JEKYLL_ENV=production bundle exec jekyll build --config _config/prod.yml",
-    "deploy:dev": "s3_website push --config-dir _config",
-    "deploy:prod": "DEPLOY=production s3_website push --config-dir _config",
-    "start": "npm-run-all --parallel js:watch jekyll:serve",
-    "dev": "npm-run-all js:minify jekyll:dev svg:minify deploy:dev",
-    "prod": "npm-run-all js:minify jekyll:prod svg:minify deploy:prod"
+    "serve:watch": "watchify _source/js/site.js -o resources/site.js",
+    "serve:jekyll": "JEKYLL_ENV=production bundle exec jekyll serve --config _config/prod.yml,_config/dev.yml",
+    "dev:js": "browserify _source/js/site.js -o resources/site.js",
+    "dev:jekyll": "JEKYLL_ENV=production bundle exec jekyll build --config _config/prod.yml,_config/dev.yml",
+    "dev:svg": "svgo -q -f _site/icons _site/images",
+    "dev:deploy": "s3_website push --config-dir _config",
+    "prod:js": "browserify _source/js/site.js | uglifyjs --comments -o resources/site.js",
+    "prod:jekyll": "JEKYLL_ENV=production bundle exec jekyll build --config _config/prod.yml",
+    "prod:svg": "svgo -q -f _site/icons _site/images",
+    "prod:deploy": "DEPLOY=production s3_website push --config-dir _config",
+    "start": "npm-run-all --parallel serve:*",
+    "dev": "npm-run-all dev:*",
+    "test": "htmlproofer ./_site",
+    "prod": "npm-run-all prod:*"
   },
   "repository": {
     "type": "git",

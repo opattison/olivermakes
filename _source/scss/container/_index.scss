@@ -1,0 +1,44 @@
+// Sections and items
+%index {
+  @include width-max(l03);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.index {
+  @extend %index;
+
+  @include min-width(m01) {
+    margin: 0 auto;
+    justify-content: flex-start;
+  }
+}
+
+.index--photography {
+  @extend %index;
+  margin: 0 auto;
+
+  // see .item--photo in _item.scss
+  @include min-width(s03) {
+    justify-content: flex-start;
+  }
+}
+
+.index--home {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+
+  @include min-width(m01) {
+    flex-flow: row wrap;
+  }
+}
+
+.category--projects h2 {
+  flex: 0 0 100%;
+  margin-top: 1em;
+  width: 100%;
+
+  text-align: center;
+}

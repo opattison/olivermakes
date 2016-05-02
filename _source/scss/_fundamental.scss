@@ -1,0 +1,267 @@
+html {
+  font-family: $ratio;
+  font-size: 1rem;
+  font-weight: $weight-regular;
+  line-height: 1.4375;
+
+     -moz-font-feature-settings: 'liga', 'dlig';
+      -ms-font-feature-settings: 'liga', 'dlig';
+       -o-font-feature-settings: 'liga', 'dlig';
+  -webkit-font-feature-settings: 'liga', 'dlig';
+          font-feature-settings: 'liga', 'dlig';
+  font-variant-ligatures: common-ligatures;
+  text-rendering: optimizeLegibility;
+
+  @include min-width(l01) {
+    line-height: 1.5;
+  }
+}
+
+button,
+input,
+select {
+  font-family: $ratio;
+}
+
+strong,
+b {
+  font-weight: $weight-medium;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+dfn {
+  font-style: normal;
+  font-weight: $weight-medium;
+}
+
+cite {
+  font-style: normal;
+}
+
+small {
+  font-size: .75em;
+}
+
+// Headings
+h1,
+h2 {
+  line-height: 1.125;
+  letter-spacing: -.0125em;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: $weight-medium;
+}
+
+h2 {
+  font-size: 1.75em;
+  font-weight: $weight-regular;
+}
+
+h3,
+h4 {
+  line-height: 1.25;
+}
+
+h3,
+h4,
+h5 {
+  font-weight: $weight-light;
+}
+
+h4,
+h5 {
+  font-style: italic;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+h5 {
+  font-size: 1.125em;
+  line-height: 1.375;
+}
+
+// Axiomatic spacing
+p + *,
+* + p,
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + ul,
+* + ol {
+  margin-top: 1em;
+}
+
+// Links
+a {
+  transition-duration: 320ms;
+  transition-property: color, background-color, border-bottom;
+  transition-timing-function: cubic-bezier(0,1,1,1);
+}
+
+// Default animation durations
+a:hover,
+a:focus {
+  transition-duration: 160ms;
+}
+
+circle {
+  transition-duration: 320ms;
+}
+
+// Lists
+ul,
+ol {
+  list-style-position: inside;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul ul,
+ol ol {
+  margin-left: 1em;
+}
+
+[role="main"] ul li::before {
+  content: '⊙';
+  margin-right: .5em;
+}
+
+ol {
+  counter-reset: ol;
+  list-style-type: none;
+}
+
+ol li::before {
+  counter-increment: ol;
+  content: counters(ol,'.') ':';
+  font-weight: $weight-medium;
+  margin-right: .25em;
+}
+
+li {
+  margin-top: .5em;
+}
+
+// Blockquotes
+blockquote {
+  border-left: solid .25em;
+  margin: 2em 0 2em -1em;
+  padding-left: .75em;
+
+  @include min-width(s03) {
+    border-width: .5em;
+    margin-left: -2em;
+    padding-left: 1.5em;
+  }
+
+  @include min-width(s04) {
+    border-width: .75em;
+    margin-left: -2.5em;
+    padding-left: 1.75em;
+  }
+
+  @include min-width(l01) {
+    margin-left: 0;
+  }
+}
+
+blockquote footer {
+  font-size: .875em;
+  margin-top: 1em;
+  text-align: right;
+}
+
+// Figcaptions
+figcaption {
+  margin: 0 0 .5em;
+  padding: .25em .5em;
+
+  @include min-width(m01) {
+    padding: .5em;
+  }
+}
+
+figcaption p {
+  font-size: .875em;
+  margin: 0;
+
+  @include min-width(m01) {
+    font-size: .75em;
+  }
+
+  @include min-width(l01) {
+    text-align: right;
+  }
+}
+
+// Horizontal rule
+hr {
+  border: 0;
+  height: .2em;
+  margin: 2em 0;
+}
+
+// Definition lists
+dt {
+  display: inline-block;
+  height: 1.5em;
+}
+
+dd {
+  display: block;
+  margin-top: -1.5em;
+  margin-left: 5em;
+}
+
+// Code
+code,
+samp {
+  font-family: $monospace;
+  font-size: .75em;
+  font-weight: $weight-regular;
+  line-height: 1.5;
+
+  white-space: pre-wrap;
+}
+
+p > code,
+li > code,
+samp {
+  border: solid 1px;
+  border-radius: .25em;
+  margin: 0 -.03125em;
+  padding: .0625em .25em 0;
+}
+
+// Keyboard
+kbd > kbd {
+  border-radius: .25em;
+  font: $weight-regular .8125em/1 $open-sans;
+  padding: .0625em .5em;
+}
+
+kbd > kbd + b {
+  font-family: $ratio;
+  margin: 0 -.375em;
+}
+
+mark {
+  padding: .0625em;
+}

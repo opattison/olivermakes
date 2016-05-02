@@ -3,13 +3,11 @@ title: 'Technical documentation for Casey Trees'
 layout: singel
 option:
   - minor
-  - no-imgix-source
 category: 'projects'
 tags:
   - 'archiving'
   - 'documentation'
   - 'jekyll'
-date: 2014-10-01 12:00
 updated: 2015-02-20 11:24
 drafted: 2015-02-18 16:20
 unique_id: 2015-02-19:casey-trees-docs
@@ -46,16 +44,14 @@ I focused on the most important aspects of website management and design for the
 Unfortunately, the documents in the project contain proprietary information, so I can’t link to or substantially excerpt from the repository (it is not mine to share). Here is what the project looked like in the autumn of 2014:
 
 <div class="grid--wide">
-<figure class="grid-figure--33 grid-figure screenshot">
-  <img
-    src="{{ page.image[1].src | imgix_url }}"
-    alt="{{ page.image[1].alt }}">
+{% assign image = page.image[1] %}
+<figure class="grid-figure--33 screenshot">
+  {% include block/image--imgix.html %}
 </figure>
-<figure class="grid-figure--66 grid-figure screenshot">
-  <img
-    src="{{ page.image[2].src | imgix_url }}"
-    alt="{{ page.image[2].alt }}">
-  <figcaption>{{ page.image[2].caption | markdownify }}</figcaption>
+{% assign image = page.image[2] %}
+<figure class="grid-figure--66 screenshot">
+  {% include block/image--imgix.html %}
+  {% include block/figcaption--image.html %}
 </figure>
 </div>
 
