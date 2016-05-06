@@ -3,6 +3,7 @@
   "description": "NPM development setup for olivermak.es",
   "dependencies": {
     "browserify": "^13.0.0",
+    "node-sass": "^3.7.0",
     "npm-run-all": "^1.5.1",
     "svgo": "^0.6.1",
     "uglify-js": "^2.6",
@@ -10,8 +11,10 @@
     "watchify": "^3.7.0"
   },
   "scripts": {
-    "serve:watch": "watchify _source/js/site.js -o resources/site.js",
+    "serve:css": "node-sass _source/scss/ -w -o resources",
+    "serve:js": "watchify _source/js/site.js -o resources/site.js",
     "serve:jekyll": "JEKYLL_ENV=production bundle exec jekyll serve --config _config/prod.yml,_config/dev.yml",
+    "dev:css": "node-sass _source/scss/ -o resources",
     "dev:js": "browserify _source/js/site.js -o resources/site.js",
     "dev:jekyll": "JEKYLL_ENV=production bundle exec jekyll build --config _config/prod.yml,_config/dev.yml",
     "dev:svg": "svgo -q -f _site/icons _site/images",

@@ -31,7 +31,6 @@ link:
 ## Gems configuration
 gems:
   - jekyll-archives
-  - sass
   - jekyll/imgix
 
 ## Imgix configuration
@@ -86,11 +85,6 @@ jekyll-archives:
     month: '/:year/:month/'
     tag: '/labels/:name/'
     category: '/:name/archive/'
-
-## Sass configuration
-sass:
-  sass_dir: _source/scss
-  style: compressed
 
 ## Project configuration
 include:

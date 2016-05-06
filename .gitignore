@@ -1,8 +1,16 @@
-_site
+# OS
 .DS_Store
+
+# Jekyll/Ruby
+_site/
 .bundle/
-.sass-cache
 .jekyll-metadata
+
+# Node
 node_modules
 npm-debug.log
+
+# Build
+.sass-cache/
 resources/*.js
+resources/*.css
