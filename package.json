@@ -23,7 +23,7 @@
     "prod:jekyll": "JEKYLL_ENV=production bundle exec jekyll build --config _config/prod.yml",
     "prod:svg": "svgo -q -f _site/icons _site/images",
     "prod:deploy": "DEPLOY=production s3_website push --config-dir _config",
-    "test:jekyll": "npm run dev:jekyll -- --profile",
+    "test:jekyll": "npm-run-all dev:css dev:js 'dev:jekyll -- --profile'",
     "start": "npm-run-all --parallel serve:*",
     "dev": "npm-run-all dev:*",
     "test": "htmlproofer ./_site",
