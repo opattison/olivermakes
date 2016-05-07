@@ -9,10 +9,10 @@ tags:
   - 'jekyll'
   - 'responsive'
   - 'web'
-updated: 2016-05-07 16:13
+updated: 2016-05-07 16:42
 drafted: 2016-05-07 13:34
 unique_id: 2016-05-07:jekyllconf-responsive-images
-description: 'Video and notes on my talk: how to implement responsive images with imgix.'
+description: 'How to implement responsive images with Jekyll and imgix (video and notes from my talk).'
 project:
   source: https://github.com/opattison/demo-jekyll-imgix
 image_index: /images/2016-03-16-jekyll-test-tube.svg
@@ -24,7 +24,7 @@ image:
 
 ---
 
-These are accompanying notes from a pre-recorded Jekyll lightning talk. Video coming soon.
+Accompanying notes from a pre-recorded Jekyll lightning talk. Video coming soon.
 {:.focus}
 
 Static websites built with tools like Jekyll are fast by their nature. With quickly served static assets (like HTML documents, scripts, images, and stylesheets) there is not much overhead in hosting a static site.
@@ -33,7 +33,7 @@ Images are often the heaviest resources on static sites and are a great place to
 
 `srcset` syntax is necessarily verbose, so I use a Liquid include that pulls site-wide data and page data to generate a loop for each image.
 
-Here are some snippets of code used in the demo. To see it in even more detail, check out the [demo repository on GitHub](https://github.com/opattison/demo-jekyll-imgix).
+Here are some snippets of code used in the demo project. To see it in even more detail, check out the [demo repository on GitHub](https://github.com/opattison/demo-jekyll-imgix).
 
 ### Site-wide variables and imgix configuration
 
@@ -127,7 +127,7 @@ This section uses the [imgix](https://github.com/imgix/jekyll-imgix) plugin for 
 {% capture endnote %}
 ## Useful resources
 
-- A foundational piece by Eric Portis on [implementing responsive images](https://ericportis.com/posts/2014/srcset-sizes/)
+- A foundational piece by Eric Portis on [implementing responsive images with `srcset` and `sizes`](https://ericportis.com/posts/2014/srcset-sizes/)
 - [Responsive Images 101 series](http://blog.cloudfour.com/responsive-images-101-definitions/) by Jason Grigsby (Cloud Four)
 - [imgix, the real-time image processing service](http://imgix.com/)
 - [jekyll-imgix plugin](https://github.com/imgix/jekyll-imgix)
