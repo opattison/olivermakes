@@ -25,7 +25,7 @@ Not interested in the code? **Take a look at [the pattern library](https://olive
 
 ## Implementation
 
-- Building: [Jekyll](http://jekyllrb.com) and [npm scripting](https://docs.npmjs.com/cli/run-script)
+- Building: [Jekyll](http://jekyllrb.com) and [npm scripting for optimizing SCSS, JS and SVG assets and speeding up my process](https://docs.npmjs.com/cli/run-script)
 - Archive generation: [Jekyll Archives](https://github.com/jekyll/jekyll-archives) gem
 - Hosting: Amazon [CloudFront](https://aws.amazon.com/cloudfront/), [S3](https://aws.amazon.com/s3/) and [imgix](https://www.imgix.com) for hosting; [AWS ACM](https://aws.amazon.com/certificate-manager/) for TLS (HTTPS) certificate
 - Deploying: [s3_website](https://github.com/laurilehmijoki/s3_website), via [Travis CI](https://travis-ci.org)
@@ -39,16 +39,17 @@ Not interested in the code? **Take a look at [the pattern library](https://olive
 
 ## Requirements
 
-### Configuration
+### Building
 
 - [Jekyll](http://jekyllrb.com) >3.1
 - [Jekyll Archives](https://github.com/jekyll/jekyll-archives)
 - [rouge](https://github.com/jneen/rouge)
-- [Sass (SCSS)](https://github.com/sass/sass)
 - [jekyll-imgix](https://github.com/imgix/jekyll-imgix)
 - [npm for dependencies and building](https://www.npmjs.com)
 - [uglifyJS](https://github.com/mishoo/UglifyJS2)
-- [watch](https://github.com/mikeal/watch)
+- [node-sass (LibSass)](https://github.com/sass/node-sass)
+- [svgo](https://github.com/svg/svgo)
+- [watchify/browserify](https://github.com/substack/watchify)
 - [npm-run-all](https://github.com/mysticatea/npm-run-all)
 
 ### Testing and deploying
