@@ -3,7 +3,6 @@ title: 'Pine Orchard Antique Prints'
 layout: singel
 option:
   - code
-  - featured-home
 category: 'projects'
 tags:
   - 'design'
