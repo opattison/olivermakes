@@ -20,6 +20,7 @@ thanks: |+
   I was happy to be invited to speak at [JekyllConf 2016](http://jekyllconf.com). Thanks [CloudCannon](http://cloudcannon.com) for hosting it.
 image:
   - src: /images/2016-03-16-jekyll-test-tube.svg
+    src_png: /images/2016-03-16-jekyll-test-tube.png
     alt: 'The Jekyll test tube logo'
 
 ---
