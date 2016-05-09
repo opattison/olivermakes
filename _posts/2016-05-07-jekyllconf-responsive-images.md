@@ -23,7 +23,7 @@ image:
     src_png: /images/2016-03-16-jekyll-test-tube.png
     alt: 'The Jekyll test tube logo'
 video:
-  - src: https://www.youtube.com/embed/BIf6oNpGl74
+  - src: https://www.youtube.com/embed/BIf6oNpGl74?controls=2
 
 ---
 
