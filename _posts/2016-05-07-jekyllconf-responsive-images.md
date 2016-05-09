@@ -9,10 +9,10 @@ tags:
   - 'jekyll'
   - 'responsive'
   - 'web'
-updated: 2016-05-07 16:42
+updated: 2016-05-09 11:03
 drafted: 2016-05-07 13:34
 unique_id: 2016-05-07:jekyllconf-responsive-images
-description: 'How to implement responsive images with Jekyll and imgix (video and notes from my talk).'
+description: 'How to implement responsive images with Jekyll and imgix (video and notes from my lightning talk).'
 project:
   source: https://github.com/opattison/demo-jekyll-imgix
 image_index: /images/2016-03-16-jekyll-test-tube.svg
@@ -22,11 +22,13 @@ image:
   - src: /images/2016-03-16-jekyll-test-tube.svg
     src_png: /images/2016-03-16-jekyll-test-tube.png
     alt: 'The Jekyll test tube logo'
+video:
+  - src: https://www.youtube.com/embed/BIf6oNpGl74
 
 ---
 
-Accompanying notes from a pre-recorded Jekyll lightning talk. Video coming soon.
-{:.focus}
+{% assign src = page.video[0].src %}
+{% include block/video.html %}
 
 Static websites built with tools like Jekyll are fast by their nature. With quickly served static assets (like HTML documents, scripts, images, and stylesheets) there is not much overhead in hosting a static site.
 
