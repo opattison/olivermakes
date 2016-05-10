@@ -6,7 +6,7 @@
 }
 
 .content {
-  padding-bottom: 0;
+  padding-bottom: 2em;
 
   @include min-width(l01) {
     padding-top: 1em;
