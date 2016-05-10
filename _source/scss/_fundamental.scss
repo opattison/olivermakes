@@ -9,7 +9,7 @@ html {
        -o-font-feature-settings: 'liga', 'dlig';
   -webkit-font-feature-settings: 'liga', 'dlig';
           font-feature-settings: 'liga', 'dlig';
-  font-variant-ligatures: common-ligatures;
+  font-variant: common-ligatures;
   text-rendering: optimizeLegibility;
 
   @include min-width(l01) {
@@ -232,12 +232,18 @@ dd {
 
 // Code
 code,
-samp {
+samp,
+textarea {
   font-family: $monospace;
+     -moz-font-feature-settings: normal; // reset
+      -ms-font-feature-settings: normal; // reset
+       -o-font-feature-settings: normal; // reset
+  -webkit-font-feature-settings: normal; // reset
+          font-feature-settings: normal; // reset
   font-size: .75em;
+  font-variant: normal;
   font-weight: $weight-regular;
   line-height: 1.5;
-
   white-space: pre-wrap;
 }
 
