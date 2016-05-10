@@ -15,12 +15,8 @@ photo:
 
 ---
 
-<figure class="image--wide">
-  {% assign photo = page.photo[0] %}
-  {% include block/photo.html %}
-</figure>
+{% assign photo = page.photo[0] %}
+{% include block/image--photo.html class="image--wide" %}
 
-<figure class="image--wide">
-  {% assign photo = page.photo[1] %}
-  {% include block/photo.html %}
-</figure>
+{% assign photo = page.photo[1] %}
+{% include block/image--photo.html class="image--wide" %}

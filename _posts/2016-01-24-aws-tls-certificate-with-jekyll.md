@@ -114,10 +114,7 @@ In the **Properties** configuration for the bucket go to the **Permissions** sec
 A sample S3 bucket policy – without this JSON file the bucket’s data will be completely private and inaccessible on the web. Replace `BUCKETNAME` with the name of the bucket.
 {% endcapture %}
 
-<figure class="code">
-{{ code | markdownify }}
-{% include block/figcaption--text.html %}
-</figure>
+{% include block/code.html %}
 
 ### Configure static website hosting
 
@@ -151,7 +148,7 @@ If using s3_website to handle S3 and CloudFront, [read about invalidations](http
 This is point where I would brew a cup of tea since it will take 5-20 minutes for CloudFront to “progress”. The first couple of times I used CloudFront, I spent more time changing configuration items and waiting for effects to kick in than I actually did reading AWS documentation. CloudFront configuration takes a really long time – take time to try to get the configuration correct initially because each further change requires resetting the clock to zero (and making another cup of tea)!
 
 {% assign image = page.image[1] %}
-{% include block/srcset.html %}
+{% include block/image-srcset.html %}
 
 ---
 
@@ -168,10 +165,8 @@ Sign in to the [Route 53 console](https://console.aws.amazon.com/route53/home) a
 
 Create an `ALIAS` record for the root domain. In the hosted zone select **Create Record Set**. Leave **Name** blank to set the target URL. **Type** should be “A – IPv4 address”. **Alias** should be set to “Yes”. **Alias target** should be set to the CloudFront distribution URL from the distribution created in [step 2](#step-2) (looks like `a12bcdefgh89yz.cloudfront.net.`). Save.
 
-<figure class="image--half screenshot">
-  {% assign image = page.image[2] %}
-  {% include block/image--imgix.html %}
-</figure>
+{% assign image = page.image[2] %}
+{% include block/image--imgix.html class="image--half screenshot" %}
 
 As with CloudFront configuration, do not expect the changes to kick in immediately. Redirecting the domain to the configured distribution takes a few minutes.
 
@@ -201,28 +196,17 @@ To be on the safe side, choose _both_ `example.com` and `*.example.com` when set
 
 After following the instructions in the email and approval page to validate the certificate, go back to the CloudFront distribution and select the certificate. Set **Viewer Protocol Policy** to “Redirect HTTP to HTTPS”. *Absolutely* set **Custom SSL Client Support** to “Only Clients that Support Server Name Indication (SNI)”. The alternative “All Clients” costs $600 per month because it requires a dedicated IP version of custom SSL support. The downside to [SNI](https://en.wikipedia.org/wiki/Server_Name_Indication) is that older browsers (4-10 years old) may not properly support TLS and therefore will get a worse experience (no HTTPS) or no experience (if HTTPS-only is specified). To support older browsers, HTTPS-only can be turned off since it is not a requirement, but this will mean that `http://example.com` won’t automatically redirect to `https://example.com`.
 
-<figure class="image screenshot">
-  {% assign image = page.image[3] %}
-  {% include block/image--imgix.html %}
-  {% include block/figcaption--image.html %}
-</figure>
+{% assign image = page.image[3] %}
+{% include block/image--imgix.html class="image screenshot" %}
 
-<figure class="image screenshot">
-  {% assign image = page.image[4] %}
-  {% include block/image--imgix.html %}
-  {% include block/figcaption--image.html %}
-</figure>
+{% assign image = page.image[4] %}
+{% include block/image--imgix.html class="image screenshot" %}
 
-<figure class="image screenshot">
-  {% assign image = page.image[5] %}
-  {% include block/image--imgix.html %}
-  {% include block/figcaption--image.html %}
-</figure>
+{% assign image = page.image[5] %}
+{% include block/image--imgix.html class="image screenshot" %}
 
-<figure class="image--half screenshot">
-  {% assign image = page.image[6] %}
-  {% include block/image--imgix.html %}
-</figure>
+{% assign image = page.image[6] %}
+{% include block/image--imgix.html class="image--half screenshot" %}
 
 It’s time for another cup of tea because CloudFront will need a bit longer to process after changes are saved. After this, setup should be complete. Make sure the status of the distribution is marked as “deployed” and check whether the `https://` URLs for the site work properly. Done.
 

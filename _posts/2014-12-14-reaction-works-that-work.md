@@ -70,14 +70,10 @@ I also enjoyed the photos in [“Living Underground”](https://worksthatwork.co
 The latest issue has an more finished feel than the previous ones – each one is better than the last. It is particularly impressive how much this small magazine accomplishes, considering that the effort is very much an independent one. It is published by the small [Typotheque](https://www.typotheque.com) foundry, run by [a lean team of editors](https://worksthatwork.com/about/) and contributors. The project is additionally supported by very minimal advertising.
 
 <div class="grid--wide">
-  <figure class="grid-figure">
-    {% assign image = page.image[1] %}
-    {% include block/srcset--grid2.html %}
-  </figure>
-  <figure class="grid-figure">
-    {% assign image = page.image[2] %}
-    {% include block/srcset--grid2.html %}
-  </figure>
+  {% assign image = page.image[1] %}
+  {% include block/image-srcset--grid2.html class="grid-figure" %}
+  {% assign image = page.image[2] %}
+  {% include block/image-srcset--grid2.html class="grid-figure" %}
 </div>
 
 They are also engaging with readers through interesting [social distribution](https://worksthatwork.com/distribution/) experiment. The idea is to encourage readers to become distributors to help the publisher bypass conventional distribution networks, which account for a large part of the cover price of a magazine. The reader helps to distribute the magazine, and gets a discount in the process. None of this adds to the base cover price of the magazine, and more people get local access to the magazine without the overhead of a traditional distribution.

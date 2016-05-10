@@ -16,18 +16,13 @@ photo:
 
 ---
 
-<figure class="image--wide">
-  {% assign photo = page.photo[0] %}
-  {% include block/photo.html %}
-</figure>
+{% assign photo = page.photo[0] %}
+{% include block/image--photo.html class="image--wide" %}
 
 <div class="grid--wide">
-  <figure class="grid-figure">
-    {% assign photo = page.photo[1] %}
-    {% include block/photo--grid2.html %}
-  </figure>
-  <figure class="grid-figure">
-    {% assign photo = page.photo[2] %}
-    {% include block/photo--grid2.html %}
-  </figure>
+  {% assign photo = page.photo[1] %}
+  {% include block/image--photo--grid2.html class="grid-figure" %}
+
+  {% assign photo = page.photo[2] %}
+  {% include block/image--photo--grid2.html class="grid-figure" %}
 </div>

@@ -39,11 +39,8 @@ Visitors to a website typically have a key difference in experience from those w
 
 My solution is to use writing that I want to read anyway. For me, that is my [Instapaper](https://www.instapaper.com) queue. I find an article that I have been intending to read that is roughly in the style of the content that the site will have. This is challenging, but it is usually possible to find something in the same vein as the target content, even if that content hasn’t been written yet. For this site, I tested the design with a mix of narrative essays and some of my own technical notes.
 
-<figure class="screenshot image">
-  {% assign image = page.image[1] %}
-  {% include block/srcset--grid2.html %}
-  {% include block/figcaption--image.html %}
-</figure>
+{% assign image = page.image[1] %}
+{% include block/image-srcset.html class="screenshot image" %}
 
 Key elements to look for are word length, paragraph length, and the use of key HTML elements such as lists, emphasis, hyperlinks and images. These features can have a strong influence on line length, vertical rhythm, relative proportions, color, and typeface.
 

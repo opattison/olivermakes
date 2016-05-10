@@ -65,6 +65,12 @@
   max-width: 100%;
   padding: 2em 1em 2em;
 
+  p {
+    font-size: 1em; // reset
+    margin: 0; // reset
+    text-align: left; // reset
+  }
+
   @include min-width(m01) {
     align-items: center;
     @include width-max(m02);

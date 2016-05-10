@@ -71,23 +71,14 @@ The first thing we started out with were full-length articles about science, alr
 
 Designing in a browser meant that HTML prototypes were an early part of the process, right after sketching and rough notes. In the first week of active development, prototype code was being written that would evolve into the finished product.
 
-<figure class="image screenshot">
-  {% assign image = page.image[1] %}
-  {% include block/image--imgix.html %}
-  {% include block/figcaption--image.html %}
-</figure>
+{% assign image = page.image[1] %}
+{% include block/image--imgix.html class="image screenshot" %}  
 
-<figure class="image screenshot">
-  {% assign image = page.image[2] %}
-  {% include block/image--imgix.html %}
-  {% include block/figcaption--image.html %}
-</figure>
+{% assign image = page.image[2] %}
+{% include block/image--imgix.html class="image screenshot" %}
 
-<figure class="image--wide screenshot">
-  {% assign image = page.image[3] %}
-  {% include block/image--imgix.html %}
-  {% include block/figcaption--image.html %}
-</figure>
+{% assign image = page.image[3] %}
+{% include block/image--imgix.html class="image--wide screenshot" %}
 
 ### Flexible layout for long writing and featured photography
 
@@ -95,42 +86,31 @@ Jean takes [beautiful photos](http://jeancflanagan.com/photos/), which I wanted 
 
 #### Sample from photo layout
 
-<figure class="image screenshot">
-  {% assign image = page.image[4] %}
-  {% include block/image--imgix.html %}
-</figure>
+{% assign image = page.image[4] %}
+{% include block/image--imgix.html class="image screenshot" %}
 
 #### Samples from writing layout
 
 <div class="grid--wide">
-  <figure class="grid-figure--33 screenshot">
-    {% assign image = page.image[5] %}
-    {% include block/image--imgix.html %}
-  </figure>
-  <figure class="grid-figure--66 screenshot">
-    {% assign image = page.image[6] %}
-    {% include block/image--imgix.html %}
-  </figure>
+  {% assign image = page.image[5] %}
+  {% include block/image--imgix.html class="grid-figure--33 screenshot" %}
+
+  {% assign image = page.image[6] %}
+  {% include block/image--imgix.html class="grid-figure--66 screenshot" %}
 </div>
 
 Not every image is meant to be showcased, nor should every image overshadow the writing. For complementary images in writing posts, I crafted alternative styles for right/left floated images for large screens. These optional styles are automated through a [Jekyll figure/image plugin](https://github.com/opattison/jekyll-figure-image-tag) that I wrote. The styles are flexible, reusable, and easy to maintain as well.
 
-<figure class="image screenshot">
-  {% assign image = page.image[7] %}
-  {% include block/image--imgix.html %}
-  {% include block/figcaption--image.html %}
-</figure>
+{% assign image = page.image[7] %}
+{% include block/image--imgix.html class="image screenshot" %}
 
 ### Personality
 
 We wanted to make sure that some of Jean’s interests and personality were part of the site’s design. For example, [the 404 page](http://jeancflanagan.com/404.html) has a floating jellyfish animation which echoes her interest in marine biology.
 
 <div id="error-404">
-  <figure class="image--wide">
-    {% assign image = page.image[8] %}
-    {% include block/image.html %}
-    {% include block/figcaption--image.html %}
-  </figure>
+  {% assign image = page.image[8] %}
+  {% include block/image.html class="image--wide" %}
 </div>
 
 ## Choosing Jekyll

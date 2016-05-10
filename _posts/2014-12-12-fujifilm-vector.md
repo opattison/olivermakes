@@ -43,30 +43,19 @@ image:
 
 To complement the metadata on my [photo pages](/photography/), I wanted accurate but minimal vector representations of my cameras (currently a Fujifilm X-E2 and an iPhone 5S), so I had to design my own. Although generic representations of cameras are appropriate for many circumstances (such as indicating a photo gallery on a navigation menu), something more defined was needed for this circumstance. Part of what I am communicating here is “how this photo was created”, so I designed something recognizable as a unique object. After completing the initial work, I realized I would need something even more minimal for smaller sizes (20% of a screen width or much smaller), so I abstracted the icon even further.
 
-<figure class="image--wide svg light noedges">
-  {% assign image = page.image[1] %}
-  {% include block/image.html %}
-  {% include block/figcaption--image.html %}
-</figure>
+{% assign image = page.image[1] %}
+{% include block/image.html class="image--wide svg light noedges" %}
 
 <div class="grid--wide">
-  <figure class="grid-figure svg light noedges">
-    {% assign image = page.image[2] %}
-    {% include block/image.html %}
-    {% include block/figcaption--image.html %}
-  </figure>
-  <figure class="grid-figure svg dark noedges">
-    {% assign image = page.image[3] %}
-    {% include block/image.html %}
-    {% include block/figcaption--image.html %}
-  </figure>
+  {% assign image = page.image[2] %}
+  {% include block/image.html class="grid-figure svg light noedges" %}
+
+  {% assign image = page.image[3] %}
+  {% include block/image.html class="grid-figure svg dark noedges" %}
 </div>
 
-<figure class="image--wide">
-  {% assign image = page.image[4] %}
-  {% include block/srcset--wide.html %}
-  {% include block/figcaption--image.html %}
-</figure>
+{% assign image = page.image[4] %}
+{% include block/image-srcset.html class="image--wide" %}
 
 ## Vector graphics
 
