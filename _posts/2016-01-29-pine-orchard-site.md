@@ -53,7 +53,7 @@ Pine Orchard Prints is a family business: I worked directly with my own family 
 
 <figure class="image screenshot">
   {% assign image = page.image[1] %}
-  {% include block/srcset.html %}
+  {% include block/image-srcset.html %}
 </figure>
 
 ## Shopify and Timber
@@ -110,7 +110,7 @@ After discovering the most important features to highlight, along with the infor
 
 <figure class="image--wide screenshot">
   {% assign image = page.image[5] %}
-  {% include block/srcset--wide.html %}
+  {% include block/image-srcset--wide.html %}
 </figure>
 
 ## Modern and antique

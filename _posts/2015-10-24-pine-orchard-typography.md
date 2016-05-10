@@ -66,12 +66,12 @@ I avoided the more eclectic Victorian typographic styles which might be illegibl
 <div class="grid">
   <figure class="grid-figure">
     {% assign image = page.image[1] %}
-    {% include block/srcset--grid2.html %}
+    {% include block/image-srcset--grid2.html %}
     {% include block/figcaption--image.html %}
   </figure>
   <figure class="grid-figure">
     {% assign image = page.image[2] %}
-    {% include block/srcset--grid2.html %}
+    {% include block/image-srcset--grid2.html %}
     {% include block/figcaption--image.html %}
   </figure>
 </div>
@@ -105,17 +105,17 @@ For a small shop, memorable and appropriate typography effectively served the bu
 <div class="grid--wide">
   <figure class="grid-figure screenshot">
     {% assign image = page.image[4] %}
-    {% include block/srcset--grid2--png.html %}
+    {% include block/image-srcset--grid2--png.html %}
   </figure>
   <figure class="grid-figure screenshot">
     {% assign image = page.image[5] %}
-    {% include block/srcset--grid2.html %}
+    {% include block/image-srcset--grid2.html %}
   </figure>
 </div>
 
 <figure class="image--wide screenshot">
   {% assign image = page.image[6] %}
-  {% include block/srcset--wide.html %}
+  {% include block/image-srcset--wide.html %}
   {% include block/figcaption--image.html %}
 </figure>
 

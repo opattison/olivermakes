@@ -41,7 +41,7 @@ My solution is to use writing that I want to read anyway. For me, that is my [In
 
 <figure class="screenshot image">
   {% assign image = page.image[1] %}
-  {% include block/srcset--grid2.html %}
+  {% include block/image-srcset--grid2.html %}
   {% include block/figcaption--image.html %}
 </figure>
 

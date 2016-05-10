@@ -72,11 +72,11 @@ The latest issue has an more finished feel than the previous ones – each one i
 <div class="grid--wide">
   <figure class="grid-figure">
     {% assign image = page.image[1] %}
-    {% include block/srcset--grid2.html %}
+    {% include block/image-srcset--grid2.html %}
   </figure>
   <figure class="grid-figure">
     {% assign image = page.image[2] %}
-    {% include block/srcset--grid2.html %}
+    {% include block/image-srcset--grid2.html %}
   </figure>
 </div>
 
