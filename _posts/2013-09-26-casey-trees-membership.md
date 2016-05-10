@@ -75,20 +75,13 @@ One year after the redesign, it was becoming clear that this device detection so
 
 <div class="grid--wide">
   {% assign image = page.image[1] %}
-  <figure class="grid-figure--33 screenshot">
-    {% include block/image--imgix.html %}
-    {% include block/figcaption--image.html %}
-  </figure>
+  {% include block/image--imgix.html class="grid-figure--33 screenshot" %}
+
   {% assign image = page.image[2] %}
-  <figure class="grid-figure--33 screenshot">
-    {% include block/image--imgix.html %}
-    {% include block/figcaption--image.html %}
-  </figure>
+  {% include block/image--imgix.html class="grid-figure--33 screenshot" %}
+
   {% assign image = page.image[3] %}
-  <figure class="grid-figure--33 screenshot">
-    {% include block/image--imgix.html %}
-    {% include block/figcaption--image.html %}
-  </figure>
+  {% include block/image--imgix.html class="grid-figure--33 screenshot" %}
 </div>
 
 Designing this form was fairly challenging because it was not a “clean slate” design: the form had fixed HTML with very few options for configuration, and it relied on two layers of “base” CSS styles from the vendor. To customize it, my only option was to write another layer of CSS on top of the base styles, so I had plenty work to do with overriding specificity and ensuring that what I was writing would be reusable for other donation forms besides the membership-specific form.
@@ -100,16 +93,11 @@ Working with the fundraising team, I iterated on the visual design until we had 
 For the main page that would explain the membership program and encourage visitors to donate, my goal was to create repeatable and reusable content blocks (which we loosely referred to as “cards”) that could be used on the membership pages as well as other sections of the website. My method to deal with this complexity was to excerpt this audience-specific content and distill it into high-contrast, discrete blocks, with strong call-to-action links.
 
 <div class="grid--wide">
-<figure class="grid-figure--66 screenshot">
-  <img
-    src="{{ page.image[4].src | imgix_url }}"
-    alt="{{ page.image[4].alt }}">
-</figure>
-<figure class="grid-figure--33 screenshot">
-  <img
-    src="{{ page.image[5].src | imgix_url }}"
-    alt="{{ page.image[5].alt }}">
-</figure>
+  {% assign image = page.image[4] %}
+  {% include block/image--imgix.html class="grid-figure--66 screenshot" %}
+
+  {% assign image = page.image[5] %}
+  {% include block/image--imgix.html class="grid-figure--33 screenshot" %}
 </div>
 
 ### Buttons and edges
@@ -123,7 +111,7 @@ Since we already had strong colors and icons for each membership level, it made 
 <ul class="grid--swatches no-bullets">
 {% assign swatches = page.color %}
 {% for swatch in swatches %}
-{% include block/pattern--swatch.html %}
+  {% include block/pattern--swatch.html %}
 {% endfor %}
 </ul>
 

@@ -34,16 +34,12 @@ Even if a CMS or site builder has syntax highlighting built in (like [Jekyll](ht
 So how bad is it when code or any other long content breaks a layout? Here is what code might look like without corrected `white-space`:
 
 {% assign image = page.image[1] %}
-<figure class="image screenshot">
-  {% include block/image--imgix.html %}
-</figure>
+{% include block/image--imgix.html class="image screenshot" %}
 
 Here is a sample with default values for `overflow-wrap`:
 
 {% assign image = page.image[2] %}
-<figure class="image screenshot">
-  {% include block/image--imgix.html %}
-</figure>
+{% include block/image--imgix.html class="image screenshot" %}
 
 With neither declaration implemented, nearly every code block on this page runs off the page, breaking the layout on small and large screens alike.
 
@@ -113,10 +109,7 @@ article {
 [View the source CSS](https://github.com/opattison/olivermakes/blob/53efd647ca65d7ad271db2a6e33555f118d8d44f/main.scss#L227) (as of 2015-03-02) for a more detailed view of how code formatting is handled on this page.
 {% endcapture %}
 
-<figure class="code">
-{{ code | markdownify }}
-{% include block/figcaption--text.html %}
-</figure>
+{% include block/code.html %}
 
 Notice how the long comments above wrap around the page. I have intentionally included long comments with no line breaks to show how they look in a code block. (The `.highlight` selector targets a class that Jekyll applies to the `<pre>` block containing the `<code>` element.)
 

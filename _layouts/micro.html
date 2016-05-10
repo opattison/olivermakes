@@ -10,16 +10,15 @@
 
     <div class="e-content content{% if page.collection == 'photos' %} content--photo{% endif %}">
 
-    {% if page.collection == 'photos' %}
-      {% assign image = page %}
-      {% include block/image-srcset--micro.html %}
-    {% endif %}
+      {% if page.collection == 'photos' %}
+        <figure>
+        {% assign image = page %}
+        {% include block/image-srcset--micro.html %}
+        {% include block/photo-meta.html %}
+        </figure>
+      {% endif %}
 
       {{ content }}
-
-    {% if page.collection == 'photos' %}
-      {% include block/photo-meta.html %}
-    {% endif %}
 
     </div>
 

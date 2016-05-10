@@ -23,11 +23,11 @@ image:
     src_png: /images/2016-03-16-jekyll-test-tube.png
     alt: 'The Jekyll test tube logo'
 video:
-  - src: https://www.youtube.com/embed/BIf6oNpGl74?controls=2
+  - src: https://www.youtube.com/embed/BIf6oNpGl74
 
 ---
 
-{% assign src = page.video[0].src %}
+{% assign video = page.video[0] %}
 {% include block/video.html %}
 
 Static websites built with tools like Jekyll are fast by their nature. With quickly served static assets (like HTML documents, scripts, images, and stylesheets) there is not much overhead in hosting a static site.
@@ -63,10 +63,7 @@ imgix:
 This `_config.yml` file includes a string for the `sizes` attribute, a sequence of `srcset` values, and imgix configuration values.
 {% endcapture %}
 
-<figure class="code">
-{{ code | markdownify }}
-{% include block/figcaption--text.html %}
-</figure>
+{% include block/code.html %}
 
 ---
 
@@ -121,10 +118,7 @@ image:
 This section uses the [imgix](https://github.com/imgix/jekyll-imgix) plugin for Jekyll to process images.
 {% endcapture %}
 
-<figure class="code">
-{{ code | markdownify }}
-{% include block/figcaption--text.html %}
-</figure>
+{% include block/code.html %}
 
 
 {% capture endnote %}

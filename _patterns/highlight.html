@@ -32,10 +32,7 @@ $white: hsl(204, 10%, 95%);
 This is a markdownified code caption contained within a parent `.code` block.
 {% endcapture %}
 
-<figure class="code">
-{{ code | markdownify }}
-{% include block/figcaption--text.html %}
-</figure>
+{% include block/code.html %}
 
 ```
 This is a code block with no language specified.

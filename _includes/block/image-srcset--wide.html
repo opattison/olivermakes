@@ -3,8 +3,14 @@
 {% else %}
   {% assign quality = 50 %}
 {% endif %}
-<img
-  src="{{ image.src | imgix_url: w: 720, q: 50 }}"
-  sizes="{{ site.sizes_wide }}"
-  srcset="{% for width in site.srcset %}{{ image.src | imgix_url: w: width, q: quality }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
-  alt="{{ image.alt }}">
+
+<figure{% if include.class %} class="{{ include.class }}"{% endif %}>
+  <img
+    src="{{ image.src | imgix_url: w: 720, q: 50 }}"
+    sizes="{{ site.sizes_wide }}"
+    srcset="{% for width in site.srcset %}{{ image.src | imgix_url: w: width, q: quality }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+    alt="{{ image.alt }}">
+  {% if image.caption %}
+  <figcaption>{{ image.caption | markdownify }}</figcaption>
+  {% endif %}
+</figure>

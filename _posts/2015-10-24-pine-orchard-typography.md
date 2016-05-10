@@ -64,16 +64,11 @@ Typography set the tone for my design work on the Pine Orchard Antique Prints sh
 I avoided the more eclectic Victorian typographic styles which might be illegible on this particular website. For the same reason, I eschewed excessive contrast, outlined text, centered layouts, and overly decorative typefaces. Reviewing text samples in books and prints from the shop’s catalog, I found these styles could be emulated and adapted for use.
 
 <div class="grid">
-  <figure class="grid-figure">
-    {% assign image = page.image[1] %}
-    {% include block/image-srcset--grid2.html %}
-    {% include block/figcaption--image.html %}
-  </figure>
-  <figure class="grid-figure">
-    {% assign image = page.image[2] %}
-    {% include block/image-srcset--grid2.html %}
-    {% include block/figcaption--image.html %}
-  </figure>
+  {% assign image = page.image[1] %}
+  {% include block/image-srcset--grid2.html class="grid-figure" %}
+
+  {% assign image = page.image[2] %}
+  {% include block/image-srcset--grid2.html class="grid-figure" %}
 </div>
 
 I sought a typeface that could serve equally well in a display or body context. It would have to be a distinctive serif font – traditional but still able to sit comfortably next to modern user interface typefaces (such as Avenir or Roboto). To maintain a higher level of performance for the site, I limited my design to only one regular weight and one style. A single font additionally served as an artificial but useful constraint. This constraint led to creatively addressing emphasized forms: small capitals could mitigate the lack of bold or italic styles and more effectively evoke the type of that era.
@@ -84,9 +79,8 @@ I chose [Cardo](http://scholarsfonts.net/cardofnt.html), an old-style font by Da
 
 The typeface performed quite well, even with only a single weight. Cardo has excellent OpenType support and beautiful small capital styles, making headings and featured text stand out against the striking photos of the prints. I ended up using Cardo for all of the headings on the site, as well as for stylized collection links and for the logo identity. Using small capitals for titles, and ultimately for the logotype ended up being a stylistic success.
 
-<figure class="image screenshot">
-  <img src="{{ page.image[3].src | imgix_url }}" alt="{{ page.image[3].alt }}" />
-</figure>
+{% assign image = page.image[3] %}
+{% include block/image--imgix.html class="image screenshot" %}
 
 In my earliest take on the design, I attempted a logo designed only with CSS, but limited control over letter spacing and relative proportions led to unimpressive initial efforts. It is still difficult to implement small caps with OpenType and CSS properly, since browser support is not as extensive as it could be. [^2] I designed the next takes of the logotype with Adobe Illustrator, because I wanted SVG output and fine control over kerning. The final iteration appears on the site header as well as in transactional email messages and mailing labels.
 
@@ -103,21 +97,15 @@ Visit the [Pine Orchard Prints website](https://pineorchardprints.com) to see th
 For a small shop, memorable and appropriate typography effectively served the business goals and provided a strong identity. Using a straightforward logotype supported the typographic style of the site and evoked the visual appeal of the items in the shop, without relying on symbols or iconography.
 
 <div class="grid--wide">
-  <figure class="grid-figure screenshot">
-    {% assign image = page.image[4] %}
-    {% include block/image-srcset--grid2--png.html %}
-  </figure>
-  <figure class="grid-figure screenshot">
-    {% assign image = page.image[5] %}
-    {% include block/image-srcset--grid2.html %}
-  </figure>
+  {% assign image = page.image[4] %}
+  {% include block/image-srcset--grid2--png.html class="grid-figure screenshot" %}
+
+  {% assign image = page.image[5] %}
+  {% include block/image-srcset--grid2.html class="grid-figure screenshot" %}
 </div>
 
-<figure class="image--wide screenshot">
-  {% assign image = page.image[6] %}
-  {% include block/image-srcset--wide.html %}
-  {% include block/figcaption--image.html %}
-</figure>
+{% assign image = page.image[6] %}
+{% include block/image-srcset.html class="image--wide screenshot" %}
 
 ---
 

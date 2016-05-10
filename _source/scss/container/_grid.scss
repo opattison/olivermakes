@@ -94,6 +94,11 @@ p + .grid--wide {
     flex: 1 1 calc(100% / 3 * 2 - 1em);
     margin-right: 1em;
     width: calc(100% / 3 * 2 - 1em);
+
+    figcaption p {
+      margin: auto;
+      width: 100%;
+    }
   }
 }
 

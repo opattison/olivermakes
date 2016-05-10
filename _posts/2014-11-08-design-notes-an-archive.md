@@ -25,10 +25,7 @@ image:
 Looking back at my files and memories from my life so far, I find there are few things that are constant or well-maintained. I do not own a physical album of photos from when I was young – I wish I did. I do not even have many scans of old photos. I am missing most of my creative output from when I was younger, as well. I think my life would be richer for having a better understanding of where I came from.
 
 {% assign image = page.image[0] %}
-<figure class="right">
-  {% include block/image--imgix.html %}
-  {% include block/figcaption--image.html %}
-</figure>
+{% include block/image--imgix.html class="right" %}
 
 If you never have, you should dig into the [Internet Archive’s Wayback Machine](https://archive.org/web/). You can find the history of sites no longer online, or no longer in their previous form. All of those attempts, versions and missteps are encoded in HTML and publicly hosted until they are discarded in a matter of months or years. The Archive team saves this history. It is cared for by preservationists who realized that if they did not make the effort, this creative output and cultural memory would certainly be lost history in the space of far less than a lifetime (since, by default, not much lasts long on the web).
 

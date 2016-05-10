@@ -29,10 +29,7 @@ Chatting with [Michael Lee](https://michaelsoolee.com/) about my [previous post 
 Without advocating for any other particular services (since I haven’t used enough of them myself to report accurately), there are a variety of [other deployment options](https://jekyllrb.com/docs/deployment-methods/), since Jekyll does not have specific requirements for serving. As always, it depends on your need. But if your needs are minimal, static sites are very cheap to run.
 
 {% assign image = page.image[0] %}
-<figure class="image screenshot">
-  {% include block/image--imgix.html %}
-  {% include block/figcaption--image.html %}
-</figure>
+{% include block/image--imgix.html class="image screenshot" %}
 
 I chose S3 with Route53 and CloudFront for its acceptable cost, high reliability, and flexibility in deployment (like setting up [secure TLS with a fast CloudFront CDN](https://olivermak.es/2016/01/aws-tls-certificate-with-jekyll/)).
 

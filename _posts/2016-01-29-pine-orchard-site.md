@@ -51,10 +51,8 @@ image:
 
 Pine Orchard Prints is a family business: I worked directly with my own family to see it through from initial sketches to final implementation and support after launch. The business started years ago in upstate New York when my dad, [Keith Pattison](https://pineorchardprints.com/pages/about), assembled a collection of 19th century antique prints, selling some of them in a local shop and building an extensive catalog. Early in 2015 we talked about the possibility of selling part of the collection online, as a passion project for both of us. This project asked a lot from me: I was the sole designer, developer, copy editor, information architect, photo editor, and content strategist. Here is how it came together.
 
-<figure class="image screenshot">
-  {% assign image = page.image[1] %}
-  {% include block/image-srcset.html %}
-</figure>
+{% assign image = page.image[1] %}
+{% include block/image-srcset.html class="image screenshot" %}
 
 ## Shopify and Timber
 
@@ -70,18 +68,13 @@ I stripped the theme framework of some elements that the site would not need. A 
 
 <div class="grid--wide">
   {% assign image = page.image[2] %}
-  <figure class="grid-figure--33 screenshot">
-    {% include block/image--imgix.html %}
-    {% include block/figcaption--image.html %}
-  </figure>
+  {% include block/image--imgix.html class="grid-figure--33 screenshot" %}
+
   {% assign image = page.image[3] %}
-  <figure class="grid-figure--33 screenshot">
-    {% include block/image--imgix.html %}
-  </figure>
+  {% include block/image--imgix.html class="grid-figure--33 screenshot" %}
+
   {% assign image = page.image[4] %}
-  <figure class="grid-figure--33 screenshot">
-    {% include block/image--imgix.html %}
-  </figure>
+  {% include block/image--imgix.html class="grid-figure--33 screenshot" %}
 </div>
 
 I’m not sure if I would use a theme framework again for building something like a Shopify site. However, working with Timber – a thoroughly designed and documented design system – taught me quite a bit about the possibilities of the platform. Timber’s minimal defaults, modular structure, and unopinionated patterns left far more room for growth and expansion than building on top of a pre-built theme would. It saved me time so I could focus on the content and design of the site.
@@ -108,10 +101,8 @@ Early on we addressed the information architecture to determine how so many uniq
 
 After discovering the most important features to highlight, along with the information we had readily available about each print, we came up with a loose list of around 20 important tags which grew as the cataloging process continued. We eventually added dozens of supplementary tags, but the few we started with formed the core of the site’s structure: collections based on regions, key artists and publications, and subject matter.
 
-<figure class="image--wide screenshot">
-  {% assign image = page.image[5] %}
-  {% include block/image-srcset--wide.html %}
-</figure>
+{% assign image = page.image[5] %}
+{% include block/image-srcset.html class="image--wide screenshot" %}
 
 ## Modern and antique
 

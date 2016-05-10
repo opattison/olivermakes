@@ -58,15 +58,9 @@ Use responsibly.
 Setting width at `100%` centers the image. Alternatively, setting a unitless width sizes the element in pixels. This image sources an SVG from my website’s icon directory and is wrapped by a hyperlinked block.
 {% endcapture %}
 
-<figure class="code">
-{{ code | markdownify }}
-{% include block/figcaption--text.html %}
-</figure>
+{% include block/code.html %}
 
 ## Sample output
 
-<figure class="image--wide screenshot">
   {% assign image = page.image[1] %}
-  {% include block/image--imgix.html %}
-  {% include block/figcaption--image.html %}
-</figure>
+  {% include block/image--imgix.html class="image--wide screenshot" %}
