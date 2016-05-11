@@ -44,6 +44,7 @@ GEM
       imgix (~> 1.1.0)
     jekyll-sass-converter (1.4.0)
       sass (~> 3.4)
+    jekyll-sitemap (0.10.0)
     jekyll-watch (1.4.0)
       listen (~> 3.0, < 3.1)
     json (1.8.3)
@@ -85,6 +86,7 @@ DEPENDENCIES
   jekyll (~> 3.1)
   jekyll-archives
   jekyll-imgix
+  jekyll-sitemap
   kramdown
   rouge
   s3_website

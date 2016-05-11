@@ -7,6 +7,7 @@ group :jekyll_plugins do
   gem 'rouge'
   gem 'kramdown'
   gem 'jekyll-imgix'
+  gem 'jekyll-sitemap'
 end
 
 gem 's3_website'
