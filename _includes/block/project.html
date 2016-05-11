@@ -3,8 +3,12 @@
   {% assign updated = page.updated | date: '%Y-%m-%d' %}
   {% assign image = page.image[0] %}
   <article class="project">
-    <div class="project-image" style="background-image: {% if image.src contains 'svg' or image.src contains 'png' %}url({{ image.src }}){% else %}url({{ image.src | imgix_url: w: 620, q: 70 }});{% endif %}">
+    <div class="project-image"
+      {% if image %}
+      style="background-image: {% if image.src contains 'svg' or image.src contains 'png' %}url({{ image.src }}){% else %}url({{ image.src | imgix_url: w: 620, q: 70 }});{% endif %}"
+      {% endif %}>
     </div>
+
     <div class="project-meta">
       <p class="p-summary project-summary">{{ page.description }}</p>
       <p class="project-description">This project was originally completed <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ completed }}</time>{% if page.period %} and worked on from {{ page.period }}{% endif %}. {% if page.project.license %} Licensed <a href="{{ page.project.license-url }}">{{ page.project.license }}</a>.{% endif %}</p>

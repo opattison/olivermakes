@@ -98,7 +98,7 @@ For a small shop, memorable and appropriate typography effectively served the bu
 
 <div class="grid--wide">
   {% assign image = page.image[4] %}
-  {% include block/image-srcset--grid2--png.html class="grid-figure screenshot" %}
+  {% include block/image-srcset--grid2.html class="grid-figure screenshot" %}
 
   {% assign image = page.image[5] %}
   {% include block/image-srcset--grid2.html class="grid-figure screenshot" %}
