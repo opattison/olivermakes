@@ -45,6 +45,7 @@ Not interested in the code? **Take a look at [the pattern library](https://olive
 - [Jekyll Archives](https://github.com/jekyll/jekyll-archives)
 - [rouge](https://github.com/jneen/rouge)
 - [jekyll-imgix](https://github.com/imgix/jekyll-imgix)
+- [Jekyll Sitemap Generator](https://github.com/jekyll/jekyll-sitemap)
 - [npm for dependencies and building](https://www.npmjs.com)
 - [uglifyJS](https://github.com/mishoo/UglifyJS2)
 - [node-sass (LibSass)](https://github.com/sass/node-sass)
