@@ -1,5 +1,7 @@
 # <a href="https://olivermak.es/"><img src="https://olivermak.es/icons/favicon32.svg" width="32" height="32"></a> <a href="https://olivermak.es/">olivermak.es</a> an archive
 
+[![Join the chat at https://gitter.im/opattison/olivermakes](https://badges.gitter.im/opattison/olivermakes.svg)](https://gitter.im/opattison/olivermakes?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 **Read about [my process for building this site](https://olivermak.es/2014/12/oliver-pattison/).**
 
 Not interested in the code? **Take a look at [the pattern library](https://olivermak.es/patterns/).**
