@@ -3,7 +3,6 @@ title: 'Website for Jean Flanagan'
 layout: singel
 option:
   - code
-  - custom-css
 category: 'projects'
 tags:
   - 'design'
@@ -19,7 +18,7 @@ description: 'A personal website for a science education and communication speci
 project:
   url: http://jeancflanagan.com
   source: https://github.com/opattison/jeancflanagan
-custom-css: 2014-02-16-jean-flanagan.css
+custom_style: custom-2014-02-16-jean-flanagan.css
 image_index: /images/index/2014-12-05-jean-flanagan-feature.jpg
 image:
   - src: /images/2014-12-05-jean-flanagan-feature.jpg

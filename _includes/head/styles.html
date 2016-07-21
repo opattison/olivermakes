@@ -19,6 +19,6 @@
 {% if page.option contains 'error' %}
   <link rel="stylesheet" href="{{ site.style_url }}/404.css">
 {% endif %}
-{% if page.option contains 'custom-css' %}
-  <link rel="stylesheet" href="{{ site.style_url }}/fragments/{{ page.custom-css }}">
+{% if page.custom_style %}
+  <link rel="stylesheet" href="{{ site.style_url }}/{{ page.custom_style }}">
 {% endif %}
