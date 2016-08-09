@@ -93,7 +93,11 @@
   background-color: $gray00;
 }
 
-.opportunities-action {
+.outreach {
+  display: flex;
+}
+
+.outreach-action {
   @include action;
   @include action-color($violet, $whiter);
 
@@ -105,7 +109,7 @@
   }
 }
 
-.opportunities-action--contact {
+.outreach-action--contact {
   @include action;
   @include action-color($red, $whiter);
 
@@ -123,7 +127,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  margin-top: 2em;
+  margin-top: 1em;
 
   @include min-width(s03) {
     @include bleed-full(2em);
@@ -165,9 +169,14 @@
   &:nth-child(4n) .details-expand {
     @include action-color($gray02, $whiter);
   }
+
+  &:nth-child(2n) .details-expanded {
+    background-color: $gray07;
+  }
 }
 
 .details-expand {
+  cursor: pointer;
   font-weight: $weight-regular;
   padding: 2em 1em;
   text-align: left;
@@ -179,4 +188,24 @@
   color: $black;
   margin: 0;
   padding: 1em;
+}
+
+.elsewhere {
+  display: flex;
+}
+
+.elsewhere-action {
+  @include action;
+  @include action-color($gray06, $black);
+
+  margin-top: 2em;
+  width: 100%;
+
+  @include min-width(m01) {
+    flex: 1 0 33%;
+  }
+}
+
+.elsewhere-action:nth-child(2n) {
+  @include action-color($gray07, $black);
 }

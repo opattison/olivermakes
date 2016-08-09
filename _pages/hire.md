@@ -53,11 +53,15 @@ I am interested in providing design, prototyping, or other assistance for open s
   <div class="opportunities-item--third">
     {{ third | markdownify }}
   </div>
-
-  <a class="opportunities-action" href="/projects/">View my work</a>
-
-  <a class="opportunities-action--contact" href="mailto:oliverpattison@gmail.com">Contact me</a>
 </section>
+
+<section class="outreach">
+  <a class="outreach-action" href="/projects/">View my work</a>
+
+  <a class="outreach-action--contact" href="mailto:oliverpattison@gmail.com">Contact me</a>
+</section>
+
+## Tools I work with
 
 <ul class="details no-bullets">
 
@@ -87,7 +91,7 @@ I am interested in providing design, prototyping, or other assistance for open s
 
 </ul>
 
-## What have I been up to recently?
+## What I’m working on lately
 
 - Presented [a talk at JekyllConf](https://olivermak.es/2016/05/jekyllconf-responsive-images/) on responsive images with Jekyll and imgix
 - Learning [Mapbox GL API](https://www.mapbox.com/mapbox-gl-js/api/) to make interactive maps with JavaScript and WebGL
@@ -95,15 +99,10 @@ I am interested in providing design, prototyping, or other assistance for open s
 - Developing client websites, such as [Acorn Landscape Supply](http://acornlandscapesupply.ca)
 - Attending [Homebrew Website Club](https://indieweb.org/Homebrew_Website_Club) (organized by IndieWebCamp)
 - Attending [CodeNewbie DC community coding group](http://www.meetup.com/CodeNewbie-DC/) sessions to collaborate with people who are new to web development
+- Contributing to online communities such as [Spec’s design and development Slack network](http://spec.fm/) and [Jekyll Talk, the official resource for Jekyll](https://talk.jekyllrb.com/)
 
-### Let’s chat
-
-- [Gitter chat for this site](https://gitter.im/opattison/olivermakes)
-- [Jekyll Talk](https://talk.jekyllrb.com/) community
-
-
-[Twitter](https://twitter.com/olivermakes)
-
-[GitHub](https://github.com/opattison/olivermakes)
-
-[CodePen](http://codepen.io/opattison/)
+<section class="elsewhere">
+  <a class="elsewhere-action" href="{{ site.link.twitter }}">Twitter</a>
+  <a class="elsewhere-action" href="{{ site.link.github }}">GitHub</a>
+  <a class="elsewhere-action" href="{{ site.link.codepen }}">CodePen</a>
+</section>
