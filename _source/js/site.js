@@ -1,5 +1,12 @@
 var Velocity = require('../../node_modules/velocity-animate/velocity.min.js');
 
+/* forEach loop through for querySelectorAll – not an array */
+var forEach = function (array, callback, scope) {
+  for (var i = 0; i < array.length; i++) {
+    callback.call(scope, i, array[i]);
+  }
+};
+
 var Scrolling = (function () {
   var windowPathName = window.location.pathname;
 
@@ -13,13 +20,6 @@ var Scrolling = (function () {
   var reverseFootnote = document.querySelectorAll('.reversefootnote');
   var patternNavLink = document.querySelectorAll('.pattern-nav-link');
   var patternNavLinkSub = document.querySelectorAll('.pattern-nav-link--sub');
-
-/* forEach loop through for querySelectorAll – not an array */
-  var forEach = function (array, callback, scope) {
-    for (var i = 0; i < array.length; i++) {
-      callback.call(scope, i, array[i]);
-    }
-  };
 
 /* use Velocity UI function to scroll to any destination */
   function scroll (destination) {
@@ -112,5 +112,46 @@ var Scrolling = (function () {
       };
     });
   })();
+
+})();
+
+/* for showing and hiding sibling elements
+(similar to details/summary pattern but different markup) */
+var Details = (function () {
+
+  var expand = document.querySelectorAll('.details-expand');
+  var expanded = document.querySelectorAll('.details-expanded')
+
+  /* slide items in/out with Velocity */
+  function toggleHidden(element) {
+    var classList = element.classList;
+    if (classList.contains('jsHidden')) {
+      Velocity(element, "slideDown", { duration: 320 });
+      classList.remove('jsHidden');
+    } else {
+      Velocity(
+        element,
+        "slideUp",
+        { duration: 320 },
+        { easing: 'easeInOutExpo' }
+      );
+      classList.add('jsHidden');
+    }
+  }
+
+  function showDetails() {
+    var getSibling = this.parentNode.querySelector('.details-expanded');
+    toggleHidden(getSibling);
+  }
+
+  /* hide all expanded items by default */
+  forEach(expanded, function (index, element) {
+    element.classList.add('jsHidden');
+  });
+
+  /* assign click event handlers to all items */
+  forEach(expand, function (index, element) {
+    element.addEventListener('click', showDetails, false);
+  });
 
 })();

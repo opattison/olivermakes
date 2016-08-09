@@ -14,21 +14,29 @@ description: '' # TODO
 
 # Available for hire
 
-I am a designer who makes responsive, forward-thinking websites. I bring a multi-disciplinary set of skills to every project that I work on.
+I’m [Oliver Pattison](https://olivermak.es/about/), a designer who makes responsive, forward-thinking websites. I bring a multi-disciplinary set of skills to every project that I work on.
 {:.focus}
 
 {% capture first %}
 ### Full-time role
 
-I am looking for a design role where projects, peers or clients need both design and development expertise. I am also seeking non-profits or businesses who want to enhance their websites and outward-facing projects.
+I am looking for a design role that requires both design and development expertise. I am also seeking non-profits or businesses who want to enhance their websites and other outward-facing projects.
+
+This might look like a “web designer” or “front-end developer” role, though my experience is wider than those terms suggest, and as a generalist I am happy to work outside and in between those boundaries.
 {% endcapture %}
 
 {% capture second %}
-### Part-time or contract
+### Part-time or contract role
+
+I am available to provide design and light development work for small projects (or as a small part of a larger team).
+
+I do not charge an hourly rate, but rather a fair amount based on amount of work and exclusive commitment required within a span of time (typically per week).
 {% endcapture %}
 
 {% capture third %}
 ### Side projects and collaboration
+
+I am interested in providing design, prototyping, or other assistance for open source projects that solve interesting problems, communicate provocative ideas, or promote social justice.
 {% endcapture %}
 
 ## Opportunities I’m interested in
@@ -45,41 +53,39 @@ I am looking for a design role where projects, peers or clients need both design
   <div class="opportunities-item--third">
     {{ third | markdownify }}
   </div>
+
+  <a class="opportunities-action" href="/projects/">View my work</a>
+
+  <a class="opportunities-action--contact" href="mailto:oliverpattison@gmail.com">Contact me</a>
 </section>
 
+<ul class="details no-bullets">
 
-## What makes me unique?
+  <li class="details-item">
+    <button class="details-expand">HTML and CSS</button>
 
-- Passionate about the web as a medium.
-- A self-taught self-starter.
-- An experienced digital professional with a client perspective.
-- A skilled writer, educator, and communicator.
-- Forward-thinking: an early adopter of responsive web design (way back in 2010) and static site generators like Jekyll.
-- A fine balance between design and front-end development skills.
+    <p class="details-expanded">I have a passion for well-written, thoughtful HTML and CSS. Although it is often dismissed as a simple markup language, getting HTML right is challenging, both when dealing with visual design and accessibility and usability.</p>
+  </li>
 
-<section class="skills">
-  <h2>My skills and interests</h2>
+  <li class="details-item">
+    <button class="details-expand">Jekyll</button>
 
-  <div class="skills-item">
-  <h3>HTML and CSS</h3>
-  <p>I have a passion for well-written, thoughtful HTML and CSS. Although it is often dismissed as a simple markup language, getting HTML right is challenging, both when dealing with visual design and accessibility and usability.</p>
-  </div>
+    <p class="details-expanded">Jekyll is my favorite tool for designing and publishing content on the web. Most of the sites that I build these days are static sites (using Jekyll), with minimal but flexible configuration and high performance.</p>
+  </li>
 
-  <div class="skills-item">
-  <h3>Jekyll</h3>
-  <p>Jekyll is my favorite tool for designing and publishing content on the web. Most of the sites that I build these days are static sites (using Jekyll), with minimal but flexible configuration and high performance.</p>
-  </div>
+  <li class="details-item">
+    <button class="details-expand">JavaScript</button>
 
-  <div class="skills-item">
-  <h3>Web publishing systems</h3>
-  <p>I have designed and developed sites with Shopify, Statamic, WordPress, and other content management systems. My focus has been on integrating front-end design with content editing systems, and organizing content structures for editors.</p>
-  </div>
+    <p class="details-expanded">I have been learning JavaScript for the past few years, working on interactive user interfaces and enhancing projects.</p>
+  </li>
 
-  <div class="skills-item">
-  <h3>JavaScript</h3>
-  <p>I have been learning JavaScript for the past few years, working on interactive user interfaces and enhancing projects.</p>
-  </div>
-</section>
+  <li class="details-item">
+    <button class="details-expand">Web publishing systems</button>
+
+    <p class="details-expanded">I have designed and developed sites with Shopify, Statamic, WordPress, and other content management systems. My focus has been on integrating front-end design with content editing systems, and organizing content structures for editors.</p>
+  </li>
+
+</ul>
 
 ## What have I been up to recently?
 
@@ -90,17 +96,14 @@ I am looking for a design role where projects, peers or clients need both design
 - Attending [Homebrew Website Club](https://indieweb.org/Homebrew_Website_Club) (organized by IndieWebCamp)
 - Attending [CodeNewbie DC community coding group](http://www.meetup.com/CodeNewbie-DC/) sessions to collaborate with people who are new to web development
 
-{% capture endnote %}
 ### Let’s chat
 
+- [Gitter chat for this site](https://gitter.im/opattison/olivermakes)
 - [Jekyll Talk](https://talk.jekyllrb.com/) community
-- [Twitter](https://twitter.com/olivermakes)
-- [GitHub](https://github.com/opattison/olivermakes)
-- [CodePen](http://codepen.io/opattison/)
-{% endcapture %}
 
-<aside class="ancillary--endnotes">
 
-{{ endnote | markdownify }}
+[Twitter](https://twitter.com/olivermakes)
 
-</aside>
+[GitHub](https://github.com/opattison/olivermakes)
+
+[CodePen](http://codepen.io/opattison/)

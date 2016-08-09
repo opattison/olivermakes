@@ -76,7 +76,7 @@
 .opportunities-item--first {
   @extend %opportunities-item;
 
-  background-color: $red;
+  background-color: $blue;
 
   flex: 1 0 100%;
 }
@@ -84,28 +84,38 @@
 .opportunities-item--second {
   @extend %opportunities-item;
 
-  background-color: $violet;
+  background-color: $gray02;
 }
 
 .opportunities-item--third {
   @extend %opportunities-item;
 
-  background-color: $gray01;
+  background-color: $gray00;
 }
 
-.contact-action {
+.opportunities-action {
   @include action;
-  background-color: $red;
-  color: $white;
-  margin: 2em auto 0;
+  @include action-color($violet, $whiter);
+
+  margin-top: 2em;
+  width: 100%;
 
   @include min-width(m01) {
-    margin-left: auto;
-    margin-right: 0;
-    width: 50%;
+    flex: 1 0 50%;
   }
 }
 
+.opportunities-action--contact {
+  @include action;
+  @include action-color($red, $whiter);
+
+  width: 100%;
+
+  @include min-width(m01) {
+    flex: 1 0 50%;
+    margin-top: 2em;
+  }
+}
 
 .details {
   @include bleed-full(1em);
@@ -113,7 +123,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  margin-top: 1em;
+  margin-top: 2em;
 
   @include min-width(s03) {
     @include bleed-full(2em);
@@ -133,19 +143,40 @@
 }
 
 .details-item {
-  background-color: $gray06;
-  padding: 1em;
-  margin: 1em 0 0;
+  margin: 0;
+  width: 100%;
 
   @include min-width(m01) {
     flex: 0 0 50%;
   }
 
-  &:nth-child(2n) {
-    background-color: $gray07;
+  .details-expand {
+    @include action-color($gray01, $whiter);
+  }
+
+  &:nth-child(2n) .details-expand {
+    @include action-color($gray00, $whiter);
+  }
+
+  &:nth-child(3n) .details-expand {
+    @include action-color($gray03, $whiter);
+  }
+
+  &:nth-child(4n) .details-expand {
+    @include action-color($gray02, $whiter);
   }
 }
 
 .details-expand {
-  position: relative;
+  font-weight: $weight-regular;
+  padding: 2em 1em;
+  text-align: left;
+  width: 100%;
+}
+
+.details-expanded {
+  background-color: $gray06;
+  color: $black;
+  margin: 0;
+  padding: 1em;
 }

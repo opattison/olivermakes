@@ -88,8 +88,7 @@ ul.inline-list :last-child::after {
 }
 
 .no-bullets li::before {
-  content: '' !important;
-  margin: 0 !important;
+  display: none !important;
 }
 
 // Font overrides
@@ -116,4 +115,10 @@ ul.inline-list :last-child::after {
 
 .weight-medium {
   font-weight: $weight-medium;
+}
+
+// interactive classes (used with JavaSript)
+
+.jsHidden {
+  display: none;
 }
