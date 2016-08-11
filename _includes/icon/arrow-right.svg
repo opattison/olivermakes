@@ -1,0 +1,6 @@
+<svg width="32px" height="32px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="arrow--right">
+  <title>arrow-right</title>
+  <g stroke="none" fill-rule="evenodd" fill="#292F32">
+    <path d="M137.9102,-4.4408921e-16 L234.274189,256 L206.434163,256 L128,47.6322691 L49.565837,256 L21.7258113,256 L116.798858,3.42951082 L132.792896,3.16413562e-15 L137.9102,3.55271368e-15 Z" id="arrow" transform="translate(128.000000, 128.000000) rotate(90.000000) translate(-128.000000, -128.000000) "></path>
+  </g>
+</svg>
