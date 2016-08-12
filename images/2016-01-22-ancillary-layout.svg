@@ -4,7 +4,7 @@
     <title>2016-01-22-ancillary-layout</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
         <g id="ancillary-layout" sketch:type="MSLayerGroup">
             <rect id="container" fill="#F7F8F8" sketch:type="MSShapeGroup" x="0" y="0" width="900" height="600"></rect>
             <rect id="aside" fill="#E9EBED" sketch:type="MSShapeGroup" x="570" y="165" width="288" height="244"></rect>

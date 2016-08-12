@@ -118,8 +118,9 @@ a:focus {
   transition-duration: 160ms;
 }
 
-circle {
-  transition-duration: 320ms;
+circle,
+path {
+  transition-duration: 160ms;
 }
 
 // Lists

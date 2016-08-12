@@ -119,29 +119,57 @@ var Scrolling = (function () {
 (similar to details/summary pattern but different markup) */
 var Details = (function () {
 
-  var expand = document.querySelectorAll('.details-expand');
+  var title = document.querySelectorAll('.details-title');
   var expanded = document.querySelectorAll('.details-expanded')
 
   /* slide items in/out with Velocity */
   function toggleHidden(element) {
     var classList = element.classList;
     if (classList.contains('jsHidden')) {
-      Velocity(element, "slideDown", { duration: 320 });
+      Velocity(
+        element,
+        "slideDown",
+        { duration: 320 }
+      );
       classList.remove('jsHidden');
     } else {
       Velocity(
         element,
         "slideUp",
-        { duration: 320 },
+        { duration: 240 },
         { easing: 'easeInOutExpo' }
       );
       classList.add('jsHidden');
     }
   }
 
+  function rotateArrow(element) {
+    var classList = element.classList;
+    if (classList.contains('jsRotated')) {
+      Velocity(
+        element,
+        { rotateZ: 0 },
+        { duration: 160 },
+        { easing: 'easeInOutExpo' }
+      );
+      classList.remove('jsRotated');
+    } else {
+      classList.add('jsRotated');
+      Velocity(
+        element,
+        { rotateZ: 90 },
+        { duration: 160 },
+        { easing: 'easeInOutExpo' }
+      );
+    }
+  }
+
   function showDetails() {
-    var getSibling = this.parentNode.querySelector('.details-expanded');
-    toggleHidden(getSibling);
+    var titleSibling = this.parentNode.querySelector('.details-expanded');
+    toggleHidden(titleSibling);
+
+    var buttonArrow = this.querySelector('.arrow--right');
+    rotateArrow(buttonArrow);
   }
 
   /* hide all expanded items by default */
@@ -149,9 +177,8 @@ var Details = (function () {
     element.classList.add('jsHidden');
   });
 
-  /* assign click event handlers to all items */
-  forEach(expand, function (index, element) {
+  /* assign click event handlers to all title button items */
+  forEach(title, function (index, element) {
     element.addEventListener('click', showDetails, false);
   });
-
 })();

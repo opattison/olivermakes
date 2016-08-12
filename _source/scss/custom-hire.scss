@@ -154,19 +154,19 @@
     flex: 0 0 50%;
   }
 
-  .details-expand {
+  .details-title {
     @include action-color($gray01, $whiter);
   }
 
-  &:nth-child(2n) .details-expand {
+  &:nth-child(2n) .details-title {
     @include action-color($gray00, $whiter);
   }
 
-  &:nth-child(3n) .details-expand {
+  &:nth-child(3n) .details-title {
     @include action-color($gray03, $whiter);
   }
 
-  &:nth-child(4n) .details-expand {
+  &:nth-child(4n) .details-title {
     @include action-color($gray02, $whiter);
   }
 
@@ -175,12 +175,29 @@
   }
 }
 
-.details-expand {
+.details-title {
   cursor: pointer;
   font-weight: $weight-regular;
   padding: 2em 1em;
+  position: relative;
   text-align: left;
   width: 100%;
+
+  .arrow--right {
+    display: none;
+  }
+
+  &:hover .arrow--right,
+  &:focus .arrow--right {
+    display: block;
+    position: absolute;
+    right: 2em;
+    top: 2.25em;
+
+    path {
+      fill: $gray02;
+    }
+  }
 }
 
 .details-expanded {

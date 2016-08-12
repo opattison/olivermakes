@@ -17,12 +17,13 @@
 
   @include min-width(l05) {
     padding: 4em;
-  }  
+  }
 
   svg {
     display: block;
     height: 8em;
     margin: auto;
+    transition-duration: 320ms;
     width: 8em;
   }
 }

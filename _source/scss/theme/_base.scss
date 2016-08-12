@@ -256,12 +256,8 @@ mark {
   border-color: $back--minus;
 }
 
-%page-pagination_color {
-  @include action-color($accent--inverse, $gray07); // default
-}
-
 .page-pagination--later {
-  @extend %page-pagination_color;
+  @include action-color($accent--inverse, $gray07);
 }
 
 .page-pagination--earlier {

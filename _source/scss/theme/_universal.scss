@@ -16,10 +16,28 @@
 
 .index-nav-action {
   @include action-color($red, $gray07);
+
+  path {
+    fill: $gray07;
+  }
+
+  &:hover path,
+  &:focus path {
+    fill: $red;
+  }
 }
 
 .index-nav-action:nth-child(2) {
   @include action-color($blue, $gray07);
+
+  path {
+    fill: $gray07;
+  }
+
+  &:hover path,
+  &:focus path {
+    fill: $blue;
+  }
 }
 
 %item_color {

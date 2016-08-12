@@ -65,29 +65,23 @@ I am interested in providing design, prototyping, or other assistance for open s
 
 <ul class="details no-bullets">
 
-  <li class="details-item">
-    <button class="details-expand">HTML and CSS</button>
+  {% include block/details-item.html title="HTML and CSS" expanded="I have a passion for well-written, thoughtful HTML and CSS. Although it is often dismissed as a simple markup language, getting HTML right is challenging, both when dealing with visual design and accessibility and usability." %}
 
-    <p class="details-expanded">I have a passion for well-written, thoughtful HTML and CSS. Although it is often dismissed as a simple markup language, getting HTML right is challenging, both when dealing with visual design and accessibility and usability.</p>
-  </li>
+  {% include block/details-item.html title="Jekyll" expanded="Jekyll is my favorite tool for designing and publishing content on the web. Most of the sites that I build these days are static sites (using Jekyll), with minimal but flexible configuration and high performance." %}
 
-  <li class="details-item">
-    <button class="details-expand">Jekyll</button>
+  {% include block/details-item.html title="JavaScript" expanded="I have been learning JavaScript for the past few years, working on interactive user interfaces and enhancing projects." %}
 
-    <p class="details-expanded">Jekyll is my favorite tool for designing and publishing content on the web. Most of the sites that I build these days are static sites (using Jekyll), with minimal but flexible configuration and high performance.</p>
-  </li>
+  {% include block/details-item.html title="Web publishing systems" expanded="I have designed and developed sites with Shopify, Statamic, WordPress, and other content management systems. My focus has been on integrating front-end design with content editing systems, and organizing content structures for editors." %}
 
-  <li class="details-item">
-    <button class="details-expand">JavaScript</button>
+</ul>
 
-    <p class="details-expanded">I have been learning JavaScript for the past few years, working on interactive user interfaces and enhancing projects.</p>
-  </li>
+## Other skills
 
-  <li class="details-item">
-    <button class="details-expand">Web publishing systems</button>
+<ul class="details no-bullets">
 
-    <p class="details-expanded">I have designed and developed sites with Shopify, Statamic, WordPress, and other content management systems. My focus has been on integrating front-end design with content editing systems, and organizing content structures for editors.</p>
-  </li>
+  {% include block/details-item.html title="Writing and editing" expanded="" %}
+
+  {% include block/details-item.html title="Self-taught" expanded="" %}
 
 </ul>
 
@@ -101,8 +95,16 @@ I am interested in providing design, prototyping, or other assistance for open s
 - Attending [CodeNewbie DC community coding group](http://www.meetup.com/CodeNewbie-DC/) sessions to collaborate with people who are new to web development
 - Contributing to online communities such as [Spec’s design and development Slack network](http://spec.fm/) and [Jekyll Talk, the official resource for Jekyll](https://talk.jekyllrb.com/)
 
+## Elsewhere
+
 <section class="elsewhere">
-  <a class="elsewhere-action" href="{{ site.link.twitter }}">Twitter</a>
   <a class="elsewhere-action" href="{{ site.link.github }}">GitHub</a>
   <a class="elsewhere-action" href="{{ site.link.codepen }}">CodePen</a>
+  <a class="elsewhere-action" href="{{ site.link.twitter }}">Twitter</a>
+</section>
+
+<section class="outreach">
+  <a class="outreach-action" href="/projects/">View my work</a>
+
+  <a class="outreach-action--contact" href="mailto:oliverpattison@gmail.com">Contact me</a>
 </section>

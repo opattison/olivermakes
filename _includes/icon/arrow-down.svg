@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
-    <title>arrow-down</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="arrows" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="arrow-down" fill="#292F32">
-
-        </g>
-    </g>
-</svg>
-
-<svg width="32px" height="32px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="arrow--down">
+<svg width="16px" height="16px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="arrow--down">
   <title>arrow-down</title>
-  <g stroke="none" fill-rule="evenodd" fill="#292F32">
-    <path d="M137.9102,-4.4408921e-16 L234.274189,256 L206.434163,256 L128,47.6322691 L49.565837,256 L21.7258113,256 L116.798858,3.42951082 L132.792896,3.16413562e-15 L137.9102,3.55271368e-15 Z" id="arrow" transform="translate(128.000000, 128.000000) rotate(180.000000) translate(-128.000000, -128.000000) "></path>
-  </g>
+  <path d="M69.4415319,1.16573418e-15 L117.762817,128 L101.906562,128 L63.8814085,26.9826031 L25.8562549,128 L10,128 L57.5924318,1.93068601 L66.5964757,-3.08086889e-15 L69.4415319,-3.55271368e-15 Z" transform="translate(63.881409, 64.000000) rotate(180.000000) translate(-63.881409, -64.000000)" fill="#292F32" fill-rule="evenodd"></path>
 </svg>
