@@ -98,9 +98,9 @@ I am interested in providing design, prototyping, or other assistance for open s
 ## Elsewhere
 
 <section class="elsewhere">
-  <a class="elsewhere-action" href="{{ site.link.github }}">GitHub</a>
-  <a class="elsewhere-action" href="{{ site.link.codepen }}">CodePen</a>
-  <a class="elsewhere-action" href="{{ site.link.twitter }}">Twitter</a>
+  <a class="elsewhere-action" href="{{ site.link.github }}">GitHub{% include icon/github.svg %}</a>
+  <a class="elsewhere-action" href="{{ site.link.codepen }}">CodePen{% include icon/codepen.svg %}</a>
+  <a class="elsewhere-action" href="{{ site.link.twitter }}">Twitter{% include icon/twitter.svg %}</a>
 </section>
 
 <section class="outreach">
