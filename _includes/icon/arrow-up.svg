@@ -1,4 +1,4 @@
-<svg width="16px" height="16px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="arrow--up">
+<svg width="16px" height="16px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="arrow arrow--up">
   <title>arrow-up</title>
-  <path d="M69.4415319,8.27116153e-15 L117.762817,128 L101.906562,128 L63.8814085,26.9826031 L25.8562549,128 L10,128 L57.5924318,1.93068601 L66.5964757,4.02455846e-15 L69.4415319,3.55271368e-15 Z" fill="#292F32" fill-rule="evenodd"></path>
+  <path d="M80.4444444,35.5 L128,89 L103.111111,89 L68,49.5 L80.4444444,35.5 Z M47.5555556,35.5 L0,89 L24.8888889,89 L60,49.5 L47.5555556,35.5 Z" fill="#292F32"></path>
 </svg>

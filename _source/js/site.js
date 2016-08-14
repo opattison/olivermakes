@@ -149,7 +149,7 @@ var Details = (function () {
       Velocity(
         element,
         { rotateZ: 0 },
-        { duration: 160 },
+        { duration: 320 },
         { easing: 'easeInOutExpo' }
       );
       classList.remove('jsRotated');
@@ -157,8 +157,8 @@ var Details = (function () {
       classList.add('jsRotated');
       Velocity(
         element,
-        { rotateZ: 90 },
-        { duration: 160 },
+        { rotateZ: -180 },
+        { duration: 320 },
         { easing: 'easeInOutExpo' }
       );
     }
@@ -168,7 +168,7 @@ var Details = (function () {
     var titleSibling = this.parentNode.querySelector('.details-expanded');
     toggleHidden(titleSibling);
 
-    var buttonArrow = this.querySelector('.arrow--right');
+    var buttonArrow = this.querySelector('.arrow--down');
     rotateArrow(buttonArrow);
   }
 

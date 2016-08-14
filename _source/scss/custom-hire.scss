@@ -184,16 +184,16 @@
 
   .icon {
     height: 1em;
-    margin: auto 0;
+    margin: auto .25em auto 0;
     width: 1.5em;
   }
 
-  .arrow--right {
+  .arrow {
     display: none;
   }
 
-  &:hover .arrow--right,
-  &:focus .arrow--right {
+  &:hover .arrow,
+  &:focus .arrow {
     display: block;
     position: absolute;
     right: 2em;

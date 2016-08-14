@@ -8,7 +8,7 @@ updated: 2016-07-27 14:07
 unique_id: 2016-07-18:hire
 permalink: /hire/
 custom_style: custom-hire.css
-description: '' # TODO
+description: 'Why you should hire or work with me, Oliver Pattison, a web designer.'
 
 ---
 
@@ -65,17 +65,17 @@ I am interested in providing design, prototyping, or other assistance for open s
 
 <ul class="details no-bullets">
 
-  {% include block/details-item.html title="HTML and CSS" expanded="I have a passion for well-written, thoughtful HTML and CSS. Although it is often dismissed as a simple markup language, getting HTML right is challenging, both when dealing with visual design and accessibility and usability." %}
+  {% include block/details-item.html title="HTML and CSS" expanded="I have a passion for well-written, thoughtful HTML and CSS. Although it is often dismissed as a simple markup language, getting HTML right is challenging, both when dealing with visual design and accessibility and usability." icon="html5" %}
 
-  {% include block/details-item.html title="Jekyll" expanded="Jekyll is my favorite tool for designing and publishing content on the web. Most of the sites that I build these days are static sites (using Jekyll), with minimal but flexible configuration and high performance." %}
+  {% include block/details-item.html title="Jekyll" expanded="Jekyll is my favorite tool for designing and publishing content on the web. Most of the sites that I build these days are static sites (using Jekyll), with minimal but flexible configuration and high performance." icon="jekyll" %}
 
-  {% include block/details-item.html title="JavaScript" expanded="I have been learning JavaScript for the past few years, working on interactive user interfaces and enhancing projects." %}
+  {% include block/details-item.html title="JavaScript" expanded="I have been learning JavaScript for the past few years, working on interactive user interfaces and enhancing projects." icon="javascript" %}
 
-  {% include block/details-item.html title="Web publishing systems" expanded="I have designed and developed sites with Shopify, Statamic, WordPress, and other content management systems. My focus has been on integrating front-end design with content editing systems, and organizing content structures for editors." %}
+  {% include block/details-item.html title="Web publishing systems" expanded="I have designed and developed sites with Shopify, Statamic, WordPress, and other content management systems. My focus has been on integrating front-end design with content editing systems, and organizing content structures for editors." icon="statamic" %}
 
 </ul>
 
-## Other skills
+## More about me
 
 <ul class="details no-bullets">
 

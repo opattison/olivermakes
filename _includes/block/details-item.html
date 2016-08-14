@@ -1,5 +1,5 @@
 <li class="details-item">
-  <button class="details-title">{{ include.title }}{% include icon/arrow-right.svg %}</button>
+  <button class="details-title">{% if include.icon %}{% include icon/{{ include.icon }}.svg %}{% endif %}{{ include.title }}{% include icon/arrow-down.svg %}</button>
 
   <p class="details-expanded">{{ include.expanded }}</p>
 </li>

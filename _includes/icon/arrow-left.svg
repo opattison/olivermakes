@@ -1,4 +1,4 @@
-<svg width="16px" height="16px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="arrow--left">
+<svg width="16px" height="16px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="arrow arrow--left">
   <title>arrow-left</title>
-  <path d="M69.4415319,8.27116153e-15 L117.762817,128 L101.906562,128 L63.8814085,26.9826031 L25.8562549,128 L10,128 L57.5924318,1.93068601 L66.5964757,4.02455846e-15 L69.4415319,3.55271368e-15 Z" transform="translate(63.881409, 64.000000) rotate(270.000000) translate(-63.881409, -64.000000)" fill="#292F32" fill-rule="evenodd"></path>
+  <path d="M80.4444444,37.25 L128,90.75 L103.111111,90.75 L68,51.25 L80.4444444,37.25 Z M47.5555556,37.25 L-7.10542736e-15,90.75 L24.8888889,90.75 L60,51.25 L47.5555556,37.25 Z" transform="translate(64.000000, 64.000000) rotate(270.000000) translate(-64.000000, -64.000000) " fill="#292F32"></path>
 </svg>
