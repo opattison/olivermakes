@@ -119,14 +119,28 @@
 }
 
 .details-title {
+
+  .icon {
+    transition: transform 240ms ease-in;
+  }
+
+  &.jsActive,
   &:hover,
   &:focus {
+    .icon path {
+      fill: $gray01!important;
+    }
+
     .icon--html5 path {
       fill: #e34f26!important;
     }
 
     .icon--git path {
       fill: #f14e32!important;
+    }
+
+    .icon--javascript path {
+      fill: $gray03!important;
     }
 
     .icon--jekyll path {
@@ -139,6 +153,12 @@
 
     .icon--shopify path {
       fill: #7ab55c!important;
+    }
+  }
+
+  &.jsActive {
+    .icon {
+      transform: scale(1.375);
     }
   }
 }

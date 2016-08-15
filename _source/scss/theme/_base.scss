@@ -242,6 +242,26 @@ mark {
   }
 }
 
+.details-expanded {
+  background-color: $gray07;
+}
+
+.details-title {
+  @include action-color($gray01, $whiter);
+
+  &:hover .arrow,
+  &:focus .arrow {
+    path {
+      fill: $gray03;
+    }
+  }
+
+  &.jsActive {
+    background-color: $whiter!important;
+    color: $gray01!important;
+  }
+}
+
 .details-item {
   &:nth-child(2n) .details-title {
     @include action-color($gray00, $whiter);
@@ -257,25 +277,6 @@ mark {
 
   &:nth-child(2n) .details-expanded {
     background-color: $gray06;
-  }
-}
-
-.details-expanded {
-  background-color: $gray07;
-}
-
-.details-title {
-  @include action-color($gray01, $whiter);
-
-  &:hover .arrow,
-  &:focus .arrow {
-    path {
-      fill: $gray02;
-    }
-  }
-
-  &.jsActive {
-    font-weight: $weight-medium;
   }
 }
 

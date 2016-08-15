@@ -42,6 +42,10 @@
   transition: all 160ms;
   width: 100%;
 
+  &.jsActive {
+    font-weight: $weight-medium;
+  }
+
   .icon {
     height: 1em;
     margin: auto .25em auto 0;
