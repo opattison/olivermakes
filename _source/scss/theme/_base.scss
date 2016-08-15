@@ -177,8 +177,9 @@ mark {
   background-color: $back;
   color: $fore--minus;
 
-  .edgeless & {
-    background-color: $back--minus;
+  .edgeless &,
+  .micro & {
+    background-color: $back--plus;
   }
 }
 
@@ -242,6 +243,81 @@ mark {
   }
 }
 
+.details-expanded {
+  background-color: $gray07;
+}
+
+.details-title {
+  @include action-color($gray01, $whiter);
+}
+
+.details-item {
+  &:nth-child(2n) .details-title {
+    @include action-color($gray00, $whiter);
+  }
+
+  &:nth-child(3n) .details-title {
+    @include action-color($gray03, $whiter);
+  }
+
+  &:nth-child(4n) .details-title {
+    @include action-color($gray02, $whiter);
+  }
+
+  &:nth-child(n) .details-title {
+    .arrow {
+      path {
+        fill: transparent;
+      }
+    }
+
+    &:hover .arrow,
+    &:focus .arrow,
+    .jsActive .arrow {
+      path {
+        fill: $gray03;
+      }
+    }
+  }
+
+  &:nth-child(n) .jsActive { // override active state
+    background-color: $whiter;
+    color: $gray01;
+  }
+
+  &:nth-child(2n) .details-expanded {
+    background-color: $gray06;
+  }
+}
+
+.elsewhere-action {
+  @include action-color($gray05, $black);
+
+  &:nth-child(2n) {
+    @include action-color($gray06, $black);
+  }
+
+  .elsewhere--rows & {
+    @include action-color($gray06, $black);
+
+    &:nth-child(2n) {
+      @include action-color($gray07, $black);
+    }
+  }
+}
+
+.outreach-action {
+  @include action-color($violet, $gray07);
+}
+
+.outreach-action--contact {
+  @include action-color($red, $gray07);
+}
+
+.outreach-action--hire {
+  @include action-color($blue, $gray07);
+}
+
 .project,
 .project--satellite {
   background-color: $back--project;
@@ -256,12 +332,8 @@ mark {
   border-color: $back--minus;
 }
 
-%page-pagination_color {
-  @include action-color($accent--inverse, $gray07); // default
-}
-
 .page-pagination--later {
-  @extend %page-pagination_color;
+  @include action-color($accent--inverse, $gray07);
 }
 
 .page-pagination--earlier {

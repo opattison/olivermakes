@@ -3,5 +3,5 @@
 {% if page.category and page.category != 'index' %}
   <a class="return-action--category return-action--{{ page.category }}" href="/{{ page.category }}/">/{{ page.category }}</a>
 {% endif %}
-  <a class="return-action--top js-backTop" href="#top">back to top ↾</a>
+  <a class="return-action--top js-backTop" href="#top">back to top{% include icon/arrow-up.svg %}</a>
 </nav>

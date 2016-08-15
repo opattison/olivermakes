@@ -109,7 +109,7 @@ p + *,
 a {
   transition-duration: 320ms;
   transition-property: color, background-color, border-bottom;
-  transition-timing-function: cubic-bezier(0,1,1,1);
+  transition-timing-function: cubic-bezier(1, 0, 0, 1); // easeInOutExpo
 }
 
 // Default animation durations
@@ -118,8 +118,11 @@ a:focus {
   transition-duration: 160ms;
 }
 
-circle {
-  transition-duration: 320ms;
+circle,
+path {
+  transition-duration: 240ms;
+  transition-property: fill, stroke;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1); // easeInOutExpo
 }
 
 // Lists

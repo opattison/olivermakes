@@ -1,0 +1,174 @@
+@import 'helpers';
+
+.content h1 {
+  font-size: 2em;
+  font-weight: $weight-light;
+  text-align: center;
+
+  @include min-width(m01) {
+    font-size: 3em;
+  }
+
+  @include min-width(l01) {
+    font-size: 4em;
+  }
+}
+
+.content h2 {
+  font-size: 1.5em;
+  font-weight: $weight-light;
+  text-align: center;
+
+  @include min-width(m01) {
+    font-size: 2em;
+  }
+
+  @include min-width(l01) {
+    font-size: 2.5em;
+  }
+}
+
+// Hire page sections
+.opportunities {
+  @include bleed-full(1em);
+
+  display: flex;
+  flex-flow: row wrap;
+  margin: 1em auto;
+
+  @include min-width(s03) {
+    @include bleed-full(2em);
+  }
+
+  @include min-width(s04) {
+    @include bleed-full(2.5em);
+  }
+
+  @include min-width(l01) {
+    @include bleed-full(4.5em);
+  }
+
+  @include min-width(l03) {
+    @include bleed-full(9em);
+  }
+}
+
+%opportunities-item {
+  color: $gray07;
+  padding: 1em 2em;
+  width: 100%;
+
+  h1,
+  h2,
+  h3 {
+    color: $gray05;
+    font-size: 1.25em;
+    font-style: italic;
+    font-weight: $weight-light;
+    text-align: center;
+
+    @include min-width(l01) {
+      font-size: 1.5em;
+    }
+  }
+
+  @include min-width(m01) {
+    flex: 1 0 50%;
+  }
+}
+
+.opportunities-item--first {
+  @extend %opportunities-item;
+
+  background-color: $blue;
+
+  flex: 1 0 100%;
+
+  h1,
+  h2,
+  h3 {
+    font-size: 1.5em;
+  }
+
+  @include min-width(m01) {
+    h1,
+    h2,
+    h3 {
+      font-size: 2em;
+    }
+  }
+
+  @include min-width(l01) {
+    h1,
+    h2,
+    h3 {
+      font-size: 2.5em;
+    }
+
+    p {
+      max-width: 45rem;
+      margin: 1em auto 0;
+    }
+  }
+}
+
+.opportunities-item--second {
+  @extend %opportunities-item;
+
+  background-color: $gray02;
+}
+
+.opportunities-item--third {
+  @extend %opportunities-item;
+
+  background-color: $gray00;
+}
+
+.details {
+  margin-bottom: 2em;
+}
+
+.details-title {
+
+  .icon {
+    transition: transform 160ms cubic-bezier(1, 0, 0, 1);
+  }
+
+  &.jsActive,
+  &:hover,
+  &:focus {
+    .icon path {
+      fill: $gray01!important;
+    }
+
+    .icon--html5 path {
+      fill: #e34f26!important;
+    }
+
+    .icon--git path {
+      fill: #f14e32!important;
+    }
+
+    .icon--javascript path {
+      fill: $gray03!important;
+    }
+
+    .icon--jekyll path {
+      fill: #cc0000!important;
+    }
+
+    .icon--sass path {
+      fill: #cc6699!important;
+    }
+
+    .icon--shopify path {
+      fill: #7ab55c!important;
+    }
+  }
+
+  &.jsActive {
+    .icon {
+      transform: scale(1.375);
+    }
+  }
+}

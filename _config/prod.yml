@@ -16,6 +16,7 @@ link:
   attribution: http://creativecommons.org/licenses/by-nc/4.0/
   jean: http://jeancflanagan.com
   github: https://github.com/opattison
+  codepen: https://codepen.io/opattison/
   pinboard: https://pinboard.in/u:opattison
   source: http://github.com/opattison/olivermakes
   subscribe:
@@ -45,7 +46,7 @@ highlighter: rouge
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-  footnote_backlink: '&#8638;'
+  footnote_backlink: '⌅'
 
 ## Permalink configuration
 permalink: /:year/:month/:title/

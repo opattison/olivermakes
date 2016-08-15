@@ -1,5 +1,14 @@
 @import 'helpers';
 
+.content {
+  background-color: inherit;
+  padding-top: 1em;
+
+  @include min-width(l01) {
+    padding-top: 2em;
+  }
+}
+
 .content--photo {
   background-color: inherit;
   max-width: none;

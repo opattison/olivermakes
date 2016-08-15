@@ -1,5 +1,12 @@
 var Velocity = require('../../node_modules/velocity-animate/velocity.min.js');
 
+/* forEach loop through for querySelectorAll – not an array */
+var forEach = function (array, callback, scope) {
+  for (var i = 0; i < array.length; i++) {
+    callback.call(scope, i, array[i]);
+  }
+};
+
 var Scrolling = (function () {
   var windowPathName = window.location.pathname;
 
@@ -13,13 +20,6 @@ var Scrolling = (function () {
   var reverseFootnote = document.querySelectorAll('.reversefootnote');
   var patternNavLink = document.querySelectorAll('.pattern-nav-link');
   var patternNavLinkSub = document.querySelectorAll('.pattern-nav-link--sub');
-
-/* forEach loop through for querySelectorAll – not an array */
-  var forEach = function (array, callback, scope) {
-    for (var i = 0; i < array.length; i++) {
-      callback.call(scope, i, array[i]);
-    }
-  };
 
 /* use Velocity UI function to scroll to any destination */
   function scroll (destination) {
@@ -113,4 +113,84 @@ var Scrolling = (function () {
     });
   })();
 
+})();
+
+/* for showing and hiding sibling elements
+(similar to details/summary pattern but different markup) */
+var Details = (function () {
+
+  var title = document.querySelectorAll('.details-title');
+  var expanded = document.querySelectorAll('.details-expanded');
+
+  function toggleActive(element) {
+    var classList = element.classList;
+    if (classList.contains('jsActive')) {
+      classList.remove('jsActive');
+    } else {
+      classList.add('jsActive');
+    }
+  }
+
+  /* slide items in/out with Velocity */
+  function toggleHidden(element) {
+    var classList = element.classList;
+    if (classList.contains('jsHidden')) {
+      Velocity(
+        element,
+        "slideDown",
+        { duration: 240 },
+        { easing: 'easeOutExpo' }
+      );
+      classList.remove('jsHidden');
+    } else {
+      Velocity(
+        element,
+        "slideUp",
+        { duration: 160 },
+        { easing: 'easeInExpo' }
+      );
+      classList.add('jsHidden');
+    }
+  }
+
+  function rotateArrow(element) {
+    var classList = element.classList;
+    if (classList.contains('jsRotated')) {
+      Velocity(
+        element,
+        { rotateZ: 0 },
+        { duration: 160 },
+        { easing: 'easeInExpo' }
+      );
+      classList.remove('jsRotated');
+    } else {
+      classList.add('jsRotated');
+      Velocity(
+        element,
+        { rotateZ: -180 },
+        { duration: 240 },
+        { easing: 'easeInExpo' }
+      );
+    }
+  }
+
+  function showDetails() {
+    toggleActive(this);
+
+    var titleSibling = this.parentNode.querySelector('.details-expanded');
+    toggleHidden(titleSibling);
+
+    var buttonArrow = this.querySelector('.arrow--down');
+    rotateArrow(buttonArrow);
+  }
+
+  /* hide all expanded items by default */
+  forEach(expanded, function (index, element) {
+    element.classList.add('jsHidden');
+  });
+
+  /* assign click event handlers to all title button items */
+  forEach(title, function (index, element) {
+    element.addEventListener('click', showDetails, false);
+  });
 })();

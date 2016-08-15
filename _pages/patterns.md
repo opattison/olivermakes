@@ -4,7 +4,7 @@ layout: pattern
 option:
   - code
 date: 2014-10-31 18:25
-updated: 2016-03-20 22:06
+updated: 2016-08-15 01:08
 unique_id: 2014-10-31:patterns
 permalink: /patterns/
 description: 'A collection of patterns for this website.'

@@ -40,14 +40,27 @@
 @mixin action-color($ground: $black, $figure: $white, $ground--reverse: $figure, $figure--reverse: $ground) {
   background-color: $ground;
   color: $figure;
+
+  path {
+    fill: $figure;
+  }
+
   &:hover,
   &:focus {
     background-color: $ground--reverse;
     color: $figure--reverse;
+
+    path {
+      fill: $figure--reverse;
+    }
   }
   &:active {
     background-color: $whiter;
     color: $green;
+
+    path {
+      fill: $green;
+    }
   }
 }
 
@@ -89,6 +102,11 @@
   margin-right: -$amount;
   max-width: none;
   width: calc(100% + #{2*$amount});
+}
+
+@mixin bleed-full($amount: 1em) {
+  margin-left: -$amount;
+  margin-right: -$amount;
 }
 
 // For randomly assigning shades to layers of the logo
