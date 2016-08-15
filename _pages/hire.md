@@ -71,9 +71,12 @@ I am interested in providing design, prototyping, or other assistance for open s
 
   {% include block/details-item.html title="JavaScript" expanded="I have been learning JavaScript for the past few years, working on interactive user interfaces and enhancing projects." icon="javascript" %}
 
+  {% include block/details-item.html title="Git" expanded="" icon="git" %}
+
+  {% include block/details-item.html title="Sass/SCSS" expanded="" icon="sass" %}
+
   {% include block/details-item.html title="Web publishing systems" expanded="I have designed and developed sites with Shopify, Statamic, WordPress, and other content management systems. My focus has been on integrating front-end design with content editing systems, and organizing content structures for editors." icon="shopify" %}
 
-  {% include block/details-item.html title="Git" expanded="" icon="git" %}
 
 </ul>
 
