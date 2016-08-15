@@ -19,6 +19,7 @@
     "dev:jekyll": "JEKYLL_ENV=production bundle exec jekyll build --config _config/prod.yml,_config/dev.yml",
     "dev:svg": "svgo -q -f _site/icons _site/images",
     "dev:deploy": "s3_website push --config-dir _config",
+    "prod:css": "node-sass _source/scss/ -o resources",
     "prod:js": "browserify _source/js/site.js | uglifyjs --comments -o resources/site.js",
     "prod:jekyll": "JEKYLL_ENV=production bundle exec jekyll build --config _config/prod.yml",
     "prod:svg": "svgo -q -f _site/icons _site/images",
