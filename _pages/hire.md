@@ -4,7 +4,7 @@ layout: micro
 option:
   - hero
 date: 2016-07-18 12:34
-updated: 2016-07-27 14:07
+updated: 2016-08-15 14:54
 unique_id: 2016-07-18:hire
 permalink: /hire/
 custom_style: custom-hire.css
@@ -61,17 +61,17 @@ I am interested in providing design, prototyping, or other assistance for open s
 
 <ul class="details no-bullets">
 
-  {% include block/details-item.html title="HTML and CSS" expanded="I have a passion for well-written, thoughtful HTML and CSS. Although it is often dismissed as a simple markup language, getting HTML right is challenging, both when dealing with visual design and accessibility and usability." icon="html5" %}
+  {% include block/details-item.html title="HTML and CSS" expanded="I have a passion for well-written, thoughtful HTML and CSS. Although it is sometimes dismissed as a simple markup language, getting HTML right is challenging, both when dealing with visual design and with accessibility and usability." icon="html5" %}
 
-  {% include block/details-item.html title="Jekyll" expanded="[Jekyll](http://jekyllrb.com/) is my favorite tool for designing and publishing content on the web. Most of the sites that I build currently are static sites (using Jekyll), with minimal but flexible configuration and high performance." icon="jekyll" %}
+  {% include block/details-item.html title="Jekyll" expanded="[Jekyll](http://jekyllrb.com/) is my favorite tool for designing and publishing content on the web. Most of the sites that I build currently are static sites (using Jekyll) with minimal but flexible configuration and high performance." icon="jekyll" %}
 
   {% include block/details-item.html title="Git" expanded="Version control is essential for designing dynamically, maintaining code, and collaborating quickly and remotely. I use [Git](https://git-scm.com/) as a safety net for all of my work, whether on my own or with a team." icon="git" %}
 
-  {% include block/details-item.html title="JavaScript" expanded="I have been learning JavaScript for the past few years, working on interactive user interfaces and enhancing projects. I believe strongly in [progressive enhancement](https://sixtwothree.org/posts/designing-experience-layers) when designing experience layers." icon="javascript" %}
+  {% include block/details-item.html title="JavaScript" expanded="I have been learning JavaScript for the past few years, developing interactive user interfaces with tools like [Velocity.js](http://velocityjs.org/), [Vue.js](http://vuejs.org/) and [Mapbox](https://www.mapbox.com). I believe strongly in [progressive enhancement](https://sixtwothree.org/posts/designing-experience-layers) when designing experience layers." icon="javascript" %}
 
-  {% include block/details-item.html title="Sass/SCSS" expanded="I use [SCSS](http://sass-lang.com/) to help me write effective CSS. I find it invaluable as a creative tool and a way to organize and author styles in short and composable parts." icon="sass" %}
+  {% include block/details-item.html title="Sass/SCSS" expanded="I use [SCSS](http://sass-lang.com/) to help me write effective CSS. I find it invaluable as a creative tool and as a way to organize and develop styles in short and composable parts." icon="sass" %}
 
-  {% include block/details-item.html title="Web publishing systems" expanded="I have designed and developed sites with Shopify, Statamic, WordPress, and other content management systems. My focus has been on integrating front-end design with content editing systems, and organizing content structures for editors." icon="shopify" %}
+  {% include block/details-item.html title="Web publishing systems" expanded="I have designed and developed sites with Shopify, Statamic, WordPress, and other content management systems. My focus has been on integrating front-end design with content editing systems, and creating clear and usable content structures for editors." icon="shopify" %}
 
 </ul>
 
