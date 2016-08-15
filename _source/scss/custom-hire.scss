@@ -34,7 +34,7 @@
 
   display: flex;
   flex-flow: row wrap;
-  margin: 1em auto 2em;
+  margin: 1em auto;
 
   @include min-width(s03) {
     @include bleed-full(2em);
@@ -62,10 +62,14 @@
   h2,
   h3 {
     color: $gray05;
-    font-size: 1.75em;
+    font-size: 1.25em;
     font-style: italic;
     font-weight: $weight-light;
     text-align: center;
+
+    @include min-width(l01) {
+      font-size: 1.5em;
+    }
   }
 
   @include min-width(m01) {
@@ -79,6 +83,27 @@
   background-color: $blue;
 
   flex: 1 0 100%;
+
+  @include min-width(l01) {
+    h1,
+    h2,
+    h3 {
+      font-size: 2em;
+    }
+  }
+
+  @include min-width(l03) {
+    h1,
+    h2,
+    h3 {
+      font-size: 2.5em;
+    }
+
+    p {
+      max-width: 45rem;
+      margin: 1em auto 0;
+    }
+  }
 }
 
 .opportunities-item--second {
@@ -95,6 +120,7 @@
 
 .outreach {
   display: flex;
+  margin-top: 2em;
 }
 
 .outreach-action {
@@ -214,7 +240,6 @@
 
 .elsewhere {
   display: flex;
-  margin-top: 2em;
 }
 
 .elsewhere-action {

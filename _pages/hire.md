@@ -17,6 +17,12 @@ description: 'Why you should hire or work with me, Oliver Pattison, a web design
 I’m [Oliver Pattison](https://olivermak.es/about/), a designer who makes responsive, forward-thinking websites. I bring a multi-disciplinary set of skills to every project that I work on.
 {:.focus}
 
+<!-- IDEA
+in the second sentence, talk about interest instead of skills
+-->
+
+## Seeking
+
 {% capture first %}
 ### Full-time role
 
@@ -29,8 +35,6 @@ This might look like a “web designer” or “front-end developer” role, tho
 ### Part-time or contract role
 
 I am available to provide design and light development work for small projects (or as a small part of a larger team).
-
-I do not charge an hourly rate, but rather a fair amount based on amount of work and exclusive commitment required within a span of time (typically per week).
 {% endcapture %}
 
 {% capture third %}
@@ -38,8 +42,6 @@ I do not charge an hourly rate, but rather a fair amount based on amount of work
 
 I am interested in providing design, prototyping, or other assistance for open source projects that solve interesting problems, communicate provocative ideas, or promote social justice.
 {% endcapture %}
-
-## Opportunities I’m interested in
 
 <section class="opportunities">
   <div class="opportunities-item--first">
@@ -61,7 +63,13 @@ I am interested in providing design, prototyping, or other assistance for open s
   <a class="outreach-action--contact" href="mailto:oliverpattison@gmail.com">Contact me</a>
 </section>
 
-## Tools I work with
+<section class="elsewhere">
+  <a class="elsewhere-action" href="{{ site.link.github }}">GitHub{% include icon/github.svg %}</a>
+  <a class="elsewhere-action" href="{{ site.link.codepen }}">CodePen{% include icon/codepen.svg %}</a>
+  <a class="elsewhere-action" href="{{ site.link.twitter }}">Twitter{% include icon/twitter.svg %}</a>
+</section>
+
+## What I work with
 
 <ul class="details no-bullets">
 
@@ -71,21 +79,17 @@ I am interested in providing design, prototyping, or other assistance for open s
 
   {% include block/details-item.html title="JavaScript" expanded="I have been learning JavaScript for the past few years, working on interactive user interfaces and enhancing projects." icon="javascript" %}
 
-  {% include block/details-item.html title="Web publishing systems" expanded="I have designed and developed sites with Shopify, Statamic, WordPress, and other content management systems. My focus has been on integrating front-end design with content editing systems, and organizing content structures for editors." icon="statamic" %}
+  {% include block/details-item.html title="Web publishing systems" expanded="I have designed and developed sites with Shopify, Statamic, WordPress, and other content management systems. My focus has been on integrating front-end design with content editing systems, and organizing content structures for editors." icon="shopify" %}
+
+  {% include block/details-item.html title="Git" expanded="" icon="git" %}
 
 </ul>
 
-## More about me
+<!-- IDEA
+write prose about writing editing and passion for web
+-->
 
-<ul class="details no-bullets">
-
-  {% include block/details-item.html title="Writing and editing" expanded="" %}
-
-  {% include block/details-item.html title="Self-taught" expanded="" %}
-
-</ul>
-
-## What I’m working on lately
+## What I’m up to
 
 - Presented [a talk at JekyllConf](https://olivermak.es/2016/05/jekyllconf-responsive-images/) on responsive images with Jekyll and imgix
 - Learning [Mapbox GL API](https://www.mapbox.com/mapbox-gl-js/api/) to make interactive maps with JavaScript and WebGL
@@ -94,14 +98,9 @@ I am interested in providing design, prototyping, or other assistance for open s
 - Attending [Homebrew Website Club](https://indieweb.org/Homebrew_Website_Club) (organized by IndieWebCamp)
 - Attending [CodeNewbie DC community coding group](http://www.meetup.com/CodeNewbie-DC/) sessions to collaborate with people who are new to web development
 - Contributing to online communities such as [Spec’s design and development Slack network](http://spec.fm/) and [Jekyll Talk, the official resource for Jekyll](https://talk.jekyllrb.com/)
-
-## Elsewhere
-
-<section class="elsewhere">
-  <a class="elsewhere-action" href="{{ site.link.github }}">GitHub{% include icon/github.svg %}</a>
-  <a class="elsewhere-action" href="{{ site.link.codepen }}">CodePen{% include icon/codepen.svg %}</a>
-  <a class="elsewhere-action" href="{{ site.link.twitter }}">Twitter{% include icon/twitter.svg %}</a>
-</section>
+<!-- IDEA
+add a joke or note about things that are not about work
+-->
 
 <section class="outreach">
   <a class="outreach-action" href="/projects/">View my work</a>
