@@ -249,7 +249,8 @@
     padding: 1em 2em;
 
     &:hover,
-    &:focus {
+    &:focus
+    &.jsActive {
       background-color: $green;
       cursor: pointer;
     }

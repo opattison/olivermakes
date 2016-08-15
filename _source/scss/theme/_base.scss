@@ -255,11 +255,6 @@ mark {
       fill: $gray03;
     }
   }
-
-  &.jsActive {
-    background-color: $whiter!important;
-    color: $gray01!important;
-  }
 }
 
 .details-item {
@@ -273,6 +268,11 @@ mark {
 
   &:nth-child(4n) .details-title {
     @include action-color($gray02, $whiter);
+  }
+
+  &:nth-child(n) .jsActive { // override active state
+    background-color: $whiter;
+    color: $gray01;
   }
 
   &:nth-child(2n) .details-expanded {
