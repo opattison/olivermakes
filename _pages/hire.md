@@ -14,12 +14,8 @@ description: 'Why you should hire or work with me, Oliver Pattison, a web design
 
 # Available for hire
 
-I’m [Oliver Pattison](https://olivermak.es/about/), a designer who makes responsive, forward-thinking websites. I bring a multi-disciplinary set of skills to every project that I work on.
+I’m [Oliver Pattison](https://olivermak.es/about/), a designer who makes responsive, forward-thinking websites.
 {:.focus}
-
-<!-- IDEA
-in the second sentence, talk about interest instead of skills
--->
 
 ## Seeking
 
@@ -79,11 +75,8 @@ I am interested in providing design, prototyping, or other assistance for open s
 
 </ul>
 
-<!-- IDEA
-write prose about writing editing and passion for web
--->
-
-## What I’m up to
+{% capture endnote %}
+## What I’m up to recently
 
 - Presented [a talk at JekyllConf](https://olivermak.es/2016/05/jekyllconf-responsive-images/) on responsive images with Jekyll and imgix
 - Learning [Mapbox GL API](https://www.mapbox.com/mapbox-gl-js/api/) to make interactive maps with JavaScript and WebGL
@@ -92,8 +85,10 @@ write prose about writing editing and passion for web
 - Attending [Homebrew Website Club](https://indieweb.org/Homebrew_Website_Club) (organized by IndieWebCamp)
 - Attending [CodeNewbie DC community coding group](http://www.meetup.com/CodeNewbie-DC/) sessions to collaborate with people who are new to web development
 - Contributing to online communities such as [Spec’s design and development Slack network](http://spec.fm/) and [Jekyll Talk, the official resource for Jekyll](https://talk.jekyllrb.com/)
-<!-- IDEA
-add a joke or note about things that are not about work
--->
+{% endcapture %}
+
+<aside class="ancillary--endnotes">
+  {{ endnote | markdownify }}
+</aside>
 
 {% include block/outreach.html %}
