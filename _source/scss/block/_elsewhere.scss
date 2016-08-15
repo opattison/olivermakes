@@ -2,6 +2,7 @@
 // grid of approximately three items (flexible)
 .elsewhere {
   display: flex;
+  flex-flow: row wrap;
 }
 
 .elsewhere-action {
@@ -18,7 +19,7 @@
     width: 1.75em;
   }
 
-  @include min-width(m01) {
+  @include min-width(s04) {
     flex: 1 0 33%;
   }
 }
