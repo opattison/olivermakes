@@ -120,7 +120,16 @@ var Scrolling = (function () {
 var Details = (function () {
 
   var title = document.querySelectorAll('.details-title');
-  var expanded = document.querySelectorAll('.details-expanded')
+  var expanded = document.querySelectorAll('.details-expanded');
+
+  function toggleActive(element) {
+    var classList = element.classList;
+    if (classList.contains('jsActive')) {
+      classList.remove('jsActive');
+    } else {
+      classList.add('jsActive');
+    }
+  }
 
   /* slide items in/out with Velocity */
   function toggleHidden(element) {
@@ -165,6 +174,8 @@ var Details = (function () {
   }
 
   function showDetails() {
+    toggleActive(this);
+
     var titleSibling = this.parentNode.querySelector('.details-expanded');
     toggleHidden(titleSibling);
 
