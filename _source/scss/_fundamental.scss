@@ -109,7 +109,7 @@ p + *,
 a {
   transition-duration: 320ms;
   transition-property: color, background-color, border-bottom;
-  transition-timing-function: cubic-bezier(0,1,1,1);
+  transition-timing-function: cubic-bezier(1, 0, 0, 1); // easeInOutExpo
 }
 
 // Default animation durations

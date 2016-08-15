@@ -138,16 +138,16 @@ var Details = (function () {
       Velocity(
         element,
         "slideDown",
-        { duration: 320 },
-        { easing: 'easeInOutExpo' }
+        { duration: 240 },
+        { easing: 'easeOutExpo' }
       );
       classList.remove('jsHidden');
     } else {
       Velocity(
         element,
         "slideUp",
-        { duration: 240 },
-        { easing: 'easeInOutExpo' }
+        { duration: 160 },
+        { easing: 'easeInExpo' }
       );
       classList.add('jsHidden');
     }
@@ -159,8 +159,8 @@ var Details = (function () {
       Velocity(
         element,
         { rotateZ: 0 },
-        { duration: 320 },
-        { easing: 'easeInOutExpo' }
+        { duration: 160 },
+        { easing: 'easeInExpo' }
       );
       classList.remove('jsRotated');
     } else {
@@ -168,8 +168,8 @@ var Details = (function () {
       Velocity(
         element,
         { rotateZ: -180 },
-        { duration: 320 },
-        { easing: 'easeInOutExpo' }
+        { duration: 240 },
+        { easing: 'easeInExpo' }
       );
     }
   }

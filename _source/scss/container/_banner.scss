@@ -50,7 +50,7 @@
   position: absolute;
   text-align: center;
   top: -4em;
-  transition: top 320ms cubic-bezier(0,1,1,1);
+  transition: top 320ms cubic-bezier(1, 0, 0, 1); // easeInOutExpo
   width: 100%;
 
   &:focus {
