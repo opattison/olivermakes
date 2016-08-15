@@ -4,7 +4,7 @@ layout: micro
 option:
   - hero
 date: 2016-07-18 12:34
-updated: 2016-07-27 14:07
+updated: 2016-08-15 14:54
 unique_id: 2016-07-18:hire
 permalink: /hire/
 custom_style: custom-hire.css
