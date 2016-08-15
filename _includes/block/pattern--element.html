@@ -1,8 +1,8 @@
 <section class="pattern pattern--element" id="{{ pattern.title | slugify }}">
   <div class="pattern-display{% if page.option contains 'content-simulation' %} content{% endif %}{% if pattern.option contains 'center' %} pattern-display--center{% endif %}{% if pattern.option contains 'isolate' %} pattern-display--isolate{% endif %}{% if pattern.option contains 'fix-rem' %} pattern-display--fix-rem{% endif %}{% if pattern.option contains 'no-bullets' %} no-bullets{% endif %}">{{ pattern.content | markdownify }}</div>
-  <details class="pattern-meta">
-    <summary><code>{{ pattern.title }}</code></summary>
-    <figure>
+  <div class="pattern-meta">
+    <button class="details-title"><code>{{ pattern.title }}</code>{% include icon/arrow-down.svg %}</button>
+    <figure class="details-expanded">
     {% if pattern.type == 'markdown' %}
       <h5>Markdown</h5>
       <textarea class="pattern-markdown">{{ pattern.content | xml_escape }}</textarea>
@@ -24,5 +24,5 @@
       {% endif %}
       </figcaption>
     </figure>
-  </details>
+  </div>
 </section>

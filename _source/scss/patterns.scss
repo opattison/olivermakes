@@ -243,20 +243,31 @@
     font-size: 1.5em;
   }
 
-  summary {
+  .details-title {
     background-color: $violet;
     color: $whiter;
-    padding: 1em;
-    transition: all 160ms;
+    padding: 1em 2em;
 
     &:hover,
     &:focus {
       background-color: $green;
       cursor: pointer;
     }
+
+    .arrow {
+      display: block;
+      position: absolute;
+      right: 2em;
+      top: 1.25em;
+
+      path {
+        fill: $white;
+      }
+    }
   }
 
-  figure {
+  .details-expanded {
+    background-color: transparent;
     margin-top: 0;
     max-width: 45em;
     padding: 1em;
