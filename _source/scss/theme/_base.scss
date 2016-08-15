@@ -242,6 +242,55 @@ mark {
   }
 }
 
+.details-item {
+  &:nth-child(2n) .details-title {
+    @include action-color($gray00, $whiter);
+  }
+
+  &:nth-child(3n) .details-title {
+    @include action-color($gray03, $whiter);
+  }
+
+  &:nth-child(4n) .details-title {
+    @include action-color($gray02, $whiter);
+  }
+
+  &:nth-child(2n) .details-expanded {
+    background-color: $gray07;
+  }
+}
+
+.details-title {
+  @include action-color($gray01, $whiter);
+
+    &:hover .arrow,
+    &:focus .arrow {
+      path {
+        fill: $gray02;
+      }
+    }
+}
+
+.elsewhere-action {
+  @include action-color($gray05, $black);
+
+  &:nth-child(2n) {
+    @include action-color($gray06, $black);
+  }
+}
+
+.outreach-action {
+  @include action-color($violet, $gray07);
+}
+
+.outreach-action--contact {
+  @include action-color($red, $gray07);
+}
+
+.outreach-action--hire {
+  @include action-color($blue, $gray07);
+}
+
 .project,
 .project--satellite {
   background-color: $back--project;

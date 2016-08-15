@@ -1,0 +1,66 @@
+.details {
+  @include bleed-full(1em);
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin-top: 1em;
+
+  @include min-width(s03) {
+    @include bleed-full(2em);
+  }
+
+  @include min-width(s04) {
+    @include bleed-full(2.5em);
+  }
+
+  @include min-width(l01) {
+    @include bleed-full(4.5em);
+  }
+
+  @include min-width(l03) {
+    @include bleed-full(9em);
+  }
+}
+
+.details-item {
+  margin: 0;
+  width: 100%;
+
+  @include min-width(m01) {
+    flex: 0 0 50%;
+  }
+}
+
+.details-title {
+  cursor: pointer;
+  display: flex;
+  font-weight: $weight-regular;
+  padding: 2em 1em;
+  position: relative;
+  text-align: left;
+  width: 100%;
+
+  .icon {
+    height: 1em;
+    margin: auto .25em auto 0;
+    width: 1.5em;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  &:hover .arrow,
+  &:focus .arrow {
+    display: block;
+    position: absolute;
+    right: 2em;
+    top: 2.25em;
+  }
+}
+
+.details-expanded {
+  margin: 0;
+  padding: 1em;
+}

@@ -1,0 +1,20 @@
+.outreach {
+  display: flex;
+  margin-top: 2em;
+}
+
+%outreach-action {
+  @include action;
+
+  width: 100%;
+
+  @include min-width(m01) {
+    flex: 1 0 50%;
+  }
+}
+
+.outreach-action,
+.outreach-action--contact,
+.outreach-action--hire {
+  @extend %outreach-action;
+}

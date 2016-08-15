@@ -57,17 +57,9 @@ I am interested in providing design, prototyping, or other assistance for open s
   </div>
 </section>
 
-<section class="outreach">
-  <a class="outreach-action" href="/projects/">View my work</a>
+{% include block/outreach.html %}
 
-  <a class="outreach-action--contact" href="mailto:oliverpattison@gmail.com">Contact me</a>
-</section>
-
-<section class="elsewhere">
-  <a class="elsewhere-action" href="{{ site.link.github }}">GitHub{% include icon/github.svg %}</a>
-  <a class="elsewhere-action" href="{{ site.link.codepen }}">CodePen{% include icon/codepen.svg %}</a>
-  <a class="elsewhere-action" href="{{ site.link.twitter }}">Twitter{% include icon/twitter.svg %}</a>
-</section>
+{% include block/elsewhere.html %}
 
 ## What I work with
 
@@ -102,8 +94,4 @@ write prose about writing editing and passion for web
 add a joke or note about things that are not about work
 -->
 
-<section class="outreach">
-  <a class="outreach-action" href="/projects/">View my work</a>
-
-  <a class="outreach-action--contact" href="mailto:oliverpattison@gmail.com">Contact me</a>
-</section>
+{% include block/outreach.html %}

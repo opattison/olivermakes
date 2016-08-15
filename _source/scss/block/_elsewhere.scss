@@ -1,0 +1,24 @@
+// links out to external sites like Twitter and GitHub
+// grid of approximately three items (flexible)
+.elsewhere {
+  display: flex;
+}
+
+.elsewhere-action {
+  @include action;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+
+  svg {
+    height: 1em;
+    margin: auto 0;
+    width: 1.75em;
+  }
+
+  @include min-width(m01) {
+    flex: 1 0 33%;
+  }
+}
