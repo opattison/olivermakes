@@ -33,22 +33,16 @@ I’m available for hire and interested in collaborating on projects.
 
 {% include block/outreach--hire.html %}
 
-{% capture ancillary %}
-# Elsewhere on the web
-
-Nearly every significant thing I read or look at is archived on **[Pinboard]({{ site.link.pinboard }}){:rel="me"}**. It is my external brain and my favorite thing on the web. It is as complete an archive as I can keep of my reading online.
-
-I am **[{{ site.author.twitter }} on Twitter]({{ site.link.twitter }}){:rel="me"}**.
-
-My open source code (including this site) is on **[GitHub]({{ site.link.github }}){:rel="me"}**.
-
-Some of my design experiments are posted on **[CodePen](http://codepen.io/opattison/){:rel="me"}**.
-
-A selection of my mobile photography is on **[VSCO Grid]({{ site.link.vsco }}){:rel="me"}**.
-{% endcapture %}
-
 <aside class="ancillary">
-{{ ancillary | markdownify }}
+<h1>Elsewhere on the web</h1>
+
+  <section class="elsewhere--rows">
+    <a class="elsewhere-action" href="{{ site.link.pinboard }}">Pinboard{% include icon/pinboard.svg %}</a>
+    <a class="elsewhere-action" href="{{ site.link.github }}">GitHub{% include icon/github.svg %}</a>
+    <a class="elsewhere-action" href="{{ site.link.codepen }}">CodePen{% include icon/codepen.svg %}</a>
+    <a class="elsewhere-action" href="{{ site.link.twitter }}">Twitter{% include icon/twitter.svg %}</a>
+  </section>
+
 </aside>
 
 ## About this site

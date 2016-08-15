@@ -296,6 +296,14 @@ mark {
   &:nth-child(2n) {
     @include action-color($gray06, $black);
   }
+
+  .elsewhere--rows & {
+    @include action-color($gray06, $black);
+
+    &:nth-child(2n) {
+      @include action-color($gray07, $black);
+    }
+  }
 }
 
 .outreach-action {

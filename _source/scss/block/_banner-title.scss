@@ -23,7 +23,10 @@
     display: block;
     height: 8em;
     margin: auto;
-    transition-duration: 320ms;
     width: 8em;
+
+    circle {
+      transition-duration: 640ms;
+    }
   }
 }

@@ -120,7 +120,9 @@ a:focus {
 
 circle,
 path {
-  transition-duration: 160ms;
+  transition-duration: 240ms;
+  transition-property: fill, stroke;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1); // easeInOutExpo
 }
 
 // Lists
