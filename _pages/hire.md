@@ -26,7 +26,7 @@ in the second sentence, talk about interest instead of skills
 {% capture first %}
 ### Full-time role
 
-I am looking for a design role that requires both design and development expertise. I am also seeking non-profits or businesses who want to enhance their websites and other outward-facing projects.
+I am looking for a design role that requires both design and development expertise. I can also partner with non-profits or businesses who want to enhance their websites and other outward-facing projects.
 
 This might look like a “web designer” or “front-end developer” role, though my experience is wider than those terms suggest, and as a generalist I am happy to work outside and in between those boundaries.
 {% endcapture %}
