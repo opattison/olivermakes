@@ -46,7 +46,7 @@ highlighter: rouge
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-  footnote_backlink: '&#8638;'
+  footnote_backlink: '⌅'
 
 ## Permalink configuration
 permalink: /:year/:month/:title/
