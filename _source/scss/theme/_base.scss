@@ -256,8 +256,12 @@ mark {
   }
 
   &:nth-child(2n) .details-expanded {
-    background-color: $gray07;
+    background-color: $gray06;
   }
+}
+
+.details-expanded {
+  background-color: $gray07;
 }
 
 .details-title {

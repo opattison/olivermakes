@@ -117,3 +117,28 @@
 
   background-color: $gray00;
 }
+
+.details-title {
+  &:hover,
+  &:focus {
+    .icon--html5 path {
+      fill: #e34f26!important;
+    }
+
+    .icon--git path {
+      fill: #f14e32!important;
+    }
+
+    .icon--jekyll path {
+      fill: #cc0000!important;
+    }
+
+    .icon--sass path {
+      fill: #cc6699!important;
+    }
+
+    .icon--shopify path {
+      fill: #7ab55c!important;
+    }
+  }
+}
