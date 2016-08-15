@@ -201,7 +201,8 @@ mark {
   background-color: $back;
   color: $fore--minus;
 
-  .edgeless & {
+  .edgeless &,
+  .micro & {
     background-color: $back--minus;
   }
 }

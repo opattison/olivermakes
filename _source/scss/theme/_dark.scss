@@ -163,7 +163,8 @@ figcaption {
   background-color: $back;
   color: $fore--minus;
 
-  .edgeless & {
+  .edgeless &,
+  .micro & {
     background-color: $back--minus;
   }
 }
@@ -171,7 +172,8 @@ figcaption {
 .ancillary--thanks {
   background-color: $back;
 
-  .edgeless & {
+  .edgeless &,
+  .micro & {
     background-color: $back--minus;
   }
 }
@@ -179,7 +181,8 @@ figcaption {
 .hero figcaption {
   background-color: $back--minus;
 
-  .edgeless & {
+  .edgeless &,
+  .micro & {
     background-color: $back;
   }
 }
@@ -233,7 +236,8 @@ figcaption {
 .project--satellite {
   background-color: $back--project;
 
-  .edgeless & {
+  .edgeless &,
+  .micro & {
     background-color: $back--minus;
   }
 

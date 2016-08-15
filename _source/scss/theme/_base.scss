@@ -177,8 +177,9 @@ mark {
   background-color: $back;
   color: $fore--minus;
 
-  .edgeless & {
-    background-color: $back--minus;
+  .edgeless &,
+  .micro & {
+    background-color: $back--plus;
   }
 }
 
