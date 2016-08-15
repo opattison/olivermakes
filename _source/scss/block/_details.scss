@@ -39,6 +39,7 @@
   padding: 2em 1em;
   position: relative;
   text-align: left;
+  touch-action: manipulation;
   transition: all 160ms;
   width: 100%;
 
@@ -50,12 +51,6 @@
   }
 
   .arrow {
-    display: none;
-  }
-
-  &:hover .arrow,
-  &:focus .arrow {
-    display: block;
     position: absolute;
     right: 2em;
     top: 2.25em;

@@ -249,13 +249,6 @@ mark {
 
 .details-title {
   @include action-color($gray01, $whiter);
-
-  &:hover .arrow,
-  &:focus .arrow {
-    path {
-      fill: $gray03;
-    }
-  }
 }
 
 .details-item {
@@ -269,6 +262,22 @@ mark {
 
   &:nth-child(4n) .details-title {
     @include action-color($gray02, $whiter);
+  }
+
+  &:nth-child(n) .details-title {
+    .arrow {
+      path {
+        fill: transparent;
+      }
+    }
+
+    &:hover .arrow,
+    &:focus .arrow,
+    .jsActive .arrow {
+      path {
+        fill: $gray03;
+      }
+    }
   }
 
   &:nth-child(n) .jsActive { // override active state

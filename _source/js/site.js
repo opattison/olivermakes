@@ -138,7 +138,8 @@ var Details = (function () {
       Velocity(
         element,
         "slideDown",
-        { duration: 320 }
+        { duration: 320 },
+        { easing: 'easeInOutExpo' }
       );
       classList.remove('jsHidden');
     } else {
