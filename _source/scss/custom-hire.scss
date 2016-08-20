@@ -128,6 +128,12 @@
   margin-bottom: 2em;
 }
 
+.details-item {
+  &::before {
+    display: none !important; // remove bullet style
+  }
+}
+
 .details-title {
 
   .icon {

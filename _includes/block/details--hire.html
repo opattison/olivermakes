@@ -1,0 +1,5 @@
+<ul class="details">
+  {% for detail in page.details %}
+    {% include block/details-item.html title=detail.title expanded=detail.expanded icon=detail.icon %}
+  {% endfor %}
+</ul>
