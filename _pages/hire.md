@@ -9,6 +9,18 @@ unique_id: 2016-07-18:hire
 permalink: /hire/
 custom_style: custom-hire.css
 description: 'Why you should hire or work with me, Oliver Pattison, a web designer.'
+opportunities:
+  - title: Full-time role
+    description: |+
+      I am looking for a design role that requires both design and development expertise. I can also partner with non-profits or businesses who want to enhance their websites and other outward-facing projects.
+
+      This might look like a “web designer” or “front-end developer” role, though my experience is wider than those terms suggest, and as a generalist I am happy to work outside and in between those boundaries.
+  - title: Part-time or contract role
+    description: |+
+      I am available to provide design and light development work for small projects (or as a small part of a larger team).
+  - title: Side projects and collaboration
+    description: |+
+      I am interested in providing design, prototyping, or other assistance for open source projects that solve interesting problems, communicate provocative ideas, or promote social justice.
 details:
   - title: HTML and CSS
     expanded: 'I have a passion for well-written, thoughtful HTML and CSS. Although it is sometimes dismissed as a simple markup language, getting HTML right is challenging, both when dealing with visual design and with accessibility and usability.'
@@ -28,6 +40,14 @@ details:
   - title: Web publishing systems
     expanded: 'I have designed and developed sites with Shopify, Statamic, WordPress, and other content management systems. My focus has been on integrating front-end design with content editing systems, and creating clear and usable content structures for editors.'
     icon: shopify
+recently:
+  - Presented [a talk at JekyllConf](https://olivermak.es/2016/05/jekyllconf-responsive-images/) on responsive images with Jekyll and imgix
+  - Learning [Mapbox GL API](https://www.mapbox.com/mapbox-gl-js/api/) to make interactive maps with JavaScript and WebGL
+  - Learning [Vue.js](http://vuejs.org) to make user interfaces with JavaScript
+  - Developing client websites, such as [Acorn Landscape Supply](http://acornlandscapesupply.ca)
+  - Attending [Homebrew Website Club](https://indieweb.org/Homebrew_Website_Club) (organized by IndieWebCamp)
+  - Attending [CodeNewbie DC community coding group](http://www.meetup.com/CodeNewbie-DC/) sessions to collaborate with people who are new to web development
+  - Contributing to online communities such as [Spec’s design and development Slack network](http://spec.fm/) and [Jekyll Talk, the official resource for Jekyll](https://talk.jekyllrb.com/)
 ---
 
 # Available for hire
@@ -37,38 +57,22 @@ I’m [Oliver Pattison](https://olivermak.es/about/), a designer who makes respo
 
 ## Seeking
 
-{% capture first %}
-### Full-time role
-
-I am looking for a design role that requires both design and development expertise. I can also partner with non-profits or businesses who want to enhance their websites and other outward-facing projects.
-
-This might look like a “web designer” or “front-end developer” role, though my experience is wider than those terms suggest, and as a generalist I am happy to work outside and in between those boundaries.
-{% endcapture %}
-
-{% capture second %}
-### Part-time or contract role
-
-I am available to provide design and light development work for small projects (or as a small part of a larger team).
-{% endcapture %}
-
-{% capture third %}
-### Side projects and collaboration
-
-I am interested in providing design, prototyping, or other assistance for open source projects that solve interesting problems, communicate provocative ideas, or promote social justice.
-{% endcapture %}
+{% assign opportunities = page.opportunities %}
 
 <section class="opportunities">
-  <div class="opportunities-item--first">
-    {{ first | markdownify }}
-  </div>
-
-  <div class="opportunities-item--second">
-    {{ second | markdownify }}
-  </div>
-
-  <div class="opportunities-item--third">
-    {{ third | markdownify }}
-  </div>
+  {% for opportunity in opportunities %}
+    {% if forloop.first %}
+      <div class="opportunities-item--featured">
+        <h3>{{ opportunity.title }}</h3>
+        {{ opportunity.description | markdownify }}
+      </div>
+    {% else %}
+      <div class="opportunities-item">
+        <h3>{{ opportunity.title }}</h3>
+        {{ opportunity.description | markdownify }}
+      </div>
+    {% endif %}
+  {% endfor %}
 </section>
 
 {% include block/outreach.html %}
@@ -79,20 +83,15 @@ I am interested in providing design, prototyping, or other assistance for open s
 
 {% include block/details--hire.html %}
 
-{% capture endnote %}
-## What I’m up to recently
-
-- Presented [a talk at JekyllConf](https://olivermak.es/2016/05/jekyllconf-responsive-images/) on responsive images with Jekyll and imgix
-- Learning [Mapbox GL API](https://www.mapbox.com/mapbox-gl-js/api/) to make interactive maps with JavaScript and WebGL
-- Learning [Vue.js](http://vuejs.org) to make user interfaces with JavaScript
-- Developing client websites, such as [Acorn Landscape Supply](http://acornlandscapesupply.ca)
-- Attending [Homebrew Website Club](https://indieweb.org/Homebrew_Website_Club) (organized by IndieWebCamp)
-- Attending [CodeNewbie DC community coding group](http://www.meetup.com/CodeNewbie-DC/) sessions to collaborate with people who are new to web development
-- Contributing to online communities such as [Spec’s design and development Slack network](http://spec.fm/) and [Jekyll Talk, the official resource for Jekyll](https://talk.jekyllrb.com/)
-{% endcapture %}
-
 <aside class="ancillary--endnotes">
-  {{ endnote | markdownify }}
+  <h2>What I’m up to recently</h2>
+
+  {% assign recently = page.recently %}
+  <ul>
+    {% for item in recently %}
+      <li>{{ item | markdownify | p_escape }}</li>
+    {% endfor %}
+  </ul>
 </aside>
 
 {% include block/outreach.html %}

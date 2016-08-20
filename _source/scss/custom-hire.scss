@@ -77,7 +77,27 @@
   }
 }
 
-.opportunities-item--first {
+.opportunities-item {
+  @extend %opportunities-item;
+
+  &:nth-child(2n) {
+    background-color: $gray02;
+  }
+
+  &:nth-child(3n) {
+    background-color: $gray00;
+  }
+
+  &:nth-child(4n) {
+    background-color: $gray01;
+  }
+
+  &:nth-child(5n) {
+    background-color: $gray03;
+  }
+}
+
+.opportunities-item--featured {
   @extend %opportunities-item;
 
   background-color: $blue;
@@ -110,18 +130,6 @@
       margin: 1em auto 0;
     }
   }
-}
-
-.opportunities-item--second {
-  @extend %opportunities-item;
-
-  background-color: $gray02;
-}
-
-.opportunities-item--third {
-  @extend %opportunities-item;
-
-  background-color: $gray00;
 }
 
 .details {
