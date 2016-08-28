@@ -1,6 +1,7 @@
 var Velocity = require('../../node_modules/velocity-animate/velocity.min.js');
 
-/* forEach loop through for querySelectorAll – not an array */
+/* forEach loop through for querySelectorAll
+we need to convert it to an array first */
 var forEach = function (array, callback, scope) {
   for (var i = 0; i < array.length; i++) {
     callback.call(scope, i, array[i]);
@@ -116,7 +117,7 @@ var Scrolling = (function () {
 })();
 
 /* for showing and hiding sibling elements
-(similar to details/summary pattern but different markup) */
+(similar to details/summary progressive disclosure pattern but different markup) */
 var Details = (function () {
 
   var title = document.querySelectorAll('.details-title');

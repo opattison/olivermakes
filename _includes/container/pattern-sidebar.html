@@ -2,7 +2,7 @@
   {% include container/banner--pattern.html %}
 
   <ul class="pattern-nav">
-  {% assign items = site.patterns-categories %}
+  {% assign items = site.patterns-categories | sort: 'priority', 'last' %}
   {% for item in items %}
     <li class="pattern-nav-li">
     {% include block/pattern-nav-link.html %}

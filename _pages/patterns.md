@@ -19,7 +19,7 @@ This is a collection of all of the patterns on [olivermak.es]({{ site.url }}), o
 {:.content--pattern}
 
 <div class="pattern-index">
-{% assign items = site.patterns-categories %}
+{% assign items = site.patterns-categories | sort: 'priority', 'last' %}
 {% for item in items %}
 {% include block/item--pattern.html %}
 {% endfor %}

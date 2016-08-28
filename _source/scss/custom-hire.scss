@@ -77,7 +77,27 @@
   }
 }
 
-.opportunities-item--first {
+.opportunities-item {
+  @extend %opportunities-item;
+
+  &:nth-child(2n) {
+    background-color: $gray02;
+  }
+
+  &:nth-child(3n) {
+    background-color: $gray00;
+  }
+
+  &:nth-child(4n) {
+    background-color: $gray01;
+  }
+
+  &:nth-child(5n) {
+    background-color: $gray03;
+  }
+}
+
+.opportunities-item--featured {
   @extend %opportunities-item;
 
   background-color: $blue;
@@ -112,26 +132,20 @@
   }
 }
 
-.opportunities-item--second {
-  @extend %opportunities-item;
-
-  background-color: $gray02;
-}
-
-.opportunities-item--third {
-  @extend %opportunities-item;
-
-  background-color: $gray00;
-}
-
 .details {
   margin-bottom: 2em;
+}
+
+.details-item {
+  &::before {
+    display: none !important; // remove bullet style
+  }
 }
 
 .details-title {
 
   .icon {
-    transition: transform 160ms cubic-bezier(1, 0, 0, 1);
+    transition: transform 320ms cubic-bezier(1, 0, 0, 1);
   }
 
   &.jsActive,
