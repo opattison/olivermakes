@@ -69,6 +69,11 @@ defaults:
       layout: micro
       category: photography
       theme: dark
+  - scope:
+      type: patterns-categories
+    values:
+      layout: pattern
+      category: patterns
 
 ## Jekyll Archives configuration
 jekyll-archives:

@@ -1,17 +1,15 @@
 ---
 title: 'Color Patterns'
 title_ui: 'colors'
-layout: pattern
 option:
   - code
-category: patterns
-date: 2014-10-31 18:24
 updated: 2016-03-20 22:07
 description: 'All of the colors and shades used on this site, with code and specification for each.'
 source: https://github.com/opattison/olivermakes
 image:
   - src: /images/2016-03-16-flag.svg
     src_png: /images/2016-03-16-flag.png
+priority: 1
 ---
 
 ## Shades
