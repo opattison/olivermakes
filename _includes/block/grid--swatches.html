@@ -1,0 +1,19 @@
+<ul class="grid--swatches no-bullets">
+{% for swatch in swatches %}
+  <li class="swatch">
+    <figure style="background-color: {% if swatch.hsl %}{{ swatch.hsl }}{% else %}{{ swatch.hex }}{% endif %}">
+      <figcaption>
+        {{ swatch.name }}
+        {% if swatch.hsl %}
+        <br>
+        {{ swatch.hsl }}
+        {% endif %}
+        {% if swatch.hex %}
+        <br>
+        {{ swatch.hex }}
+        {% endif %}
+      </figcaption>
+    </figure>
+  </li>
+{% endfor %}
+</ul>
