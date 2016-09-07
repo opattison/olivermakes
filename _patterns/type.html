@@ -1,6 +1,8 @@
 ---
 title: type
-use: 'Ratio is used everywhere on the site, from headings to body text. Three weights are used: 300 (light), 400 (regular) and 500 (medium). Code samples '
+use: 'Ratio is used everywhere on the site, from headings to body text. Menlo (or a fallback) is used for code samples and other monospace needs.'
+restriction: 'Typically, monospace should be used only for code.'
+spec: 'Three weights of Ratio are used: 300 (light), 400 (regular) and 500 (medium). One 400 (regular) weight and style of Menlo is specified. Because of a difference in scale, monospace is specified to be at three quarters size to make it match the x-height of Ratio.'
 type: html
 category: text
 priority: 0
@@ -33,7 +35,7 @@ $weight-medium: 500;
 
 $monospace: 'Menlo', 'Consolas', 'DejaVu Sans Mono', monospace;
 $weight-regular: 400;
-// default smallest size: .75em
+// default smallest size: .75rem
 ```
 {% endcapture %}
 
