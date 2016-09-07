@@ -207,9 +207,9 @@
   }
 }
 
-.pattern-display--center :first-child {
+.pattern-display--center * {
   display: block;
-  margin: auto;
+  margin: 1em auto;
 }
 
 .pattern-display--isolate {
