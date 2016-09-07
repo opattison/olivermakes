@@ -157,6 +157,15 @@ mark {
 .action {
   @include action-color($link--action, $fore--inverse);
   @include a-borderless;
+
+  .edgeless &,
+  .micro & {
+
+    &:hover,
+    &:focus {
+      background-color: $back--plus;
+    }
+  }
 }
 
 .focus {
