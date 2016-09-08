@@ -207,9 +207,9 @@
   }
 }
 
-.pattern-display--center :first-child {
+.pattern-display--center * {
   display: block;
-  margin: auto;
+  margin: 1em auto;
 }
 
 .pattern-display--isolate {
@@ -249,7 +249,7 @@
     padding: 1em 2em;
 
     &:hover,
-    &:focus
+    &:focus,
     &.jsActive {
       background-color: $green;
       cursor: pointer;

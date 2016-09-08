@@ -14,30 +14,18 @@ priority: 1
 
 ## Shades
 
-<ul class="grid--swatches no-bullets">
 {% assign swatches = site.data.shade %}
-{% for swatch in swatches %}
-{% include block/pattern--swatch.html %}
-{% endfor %}
-</ul>
+{% include block/grid--swatches.html %}
 
 ## Colors
 
-<ul class="grid--swatches no-bullets">
 {% assign swatches = site.data.color %}
-{% for swatch in swatches %}
-{% include block/pattern--swatch.html %}
-{% endfor %}
-</ul>
+{% include block/grid--swatches.html %}
 
 ## Semi-transparent shades and colors
 
-<ul class="grid--swatches no-bullets">
 {% assign swatches = site.data.transparent %}
-{% for swatch in swatches %}
-{% include block/pattern--swatch.html %}
-{% endfor %}
-</ul>
+{% include block/grid--swatches.html %}
 
 ---
 
@@ -46,9 +34,5 @@ priority: 1
 This is used on several pages, reusing all of the colors above but replacing the shades.
 {:.content--pattern}
 
-<ul class="grid--swatches no-bullets">
 {% assign swatches = site.data.theme_paper %}
-{% for swatch in swatches %}
-{% include block/pattern--swatch.html %}
-{% endfor %}
-</ul>
+{% include block/grid--swatches.html %}

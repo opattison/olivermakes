@@ -247,6 +247,7 @@ textarea {
   font-variant: normal;
   font-weight: $weight-regular;
   line-height: 1.5;
+  text-rendering: optimizeSpeed;
   white-space: pre-wrap;
 }
 

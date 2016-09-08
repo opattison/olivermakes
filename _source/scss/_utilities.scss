@@ -98,7 +98,16 @@ ul.inline-list :last-child::after {
 
 .font-monospace {
   font-family: $monospace;
-  font-size: .8125em;
+     -moz-font-feature-settings: normal; // reset
+      -ms-font-feature-settings: normal; // reset
+       -o-font-feature-settings: normal; // reset
+  -webkit-font-feature-settings: normal; // reset
+          font-feature-settings: normal; // reset
+  font-size: .75em;
+  font-variant: normal;
+  font-weight: $weight-regular;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
 }
 
 .font-italic {
