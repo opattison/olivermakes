@@ -19,6 +19,7 @@ image:
 
 Chatting with [Michael Lee](https://michaelsoolee.com/) about my [previous post on what Jekyll is and why I use it]({% post_url 2016-03-16-consider-jekyll %}), I realized more should be said about how affordable static sites can be. From my own experience, here are some cost estimates for hosting a small site (in US dollars):
 
+- [GitLab Pages](https://pages.gitlab.io/): completely **free**, allow Jekyll plugins, SSL on custom domains, and auto-deploy with Gitlab-CI.
 - [GitHub Pages](https://pages.github.com): completely **free** ([fewer Jekyll Ruby plugins allowed](https://pages.github.com/versions/) than a normal Jekyll deployment, but enables automatic deploying).
 - Amazon [S3](https://aws.amazon.com/s3/): starting at **$0.03** to a few dollars per month for higher traffic (rate depends on usage). [^1]
 - S3 with [Route53](https://aws.amazon.com/route53/) for DNS routing: starting at **$0.53** to a few dollars per month.
