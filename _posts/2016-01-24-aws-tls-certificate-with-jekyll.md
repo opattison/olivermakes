@@ -2,7 +2,6 @@
 title: 'Setting up CloudFront and TLS (HTTPS) with Jekyll'
 layout: singel
 option:
-  - code
   - minor
 category: 'projects'
 tags:

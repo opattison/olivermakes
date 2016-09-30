@@ -4,7 +4,6 @@ layout: singel
 option:
   - no-title
   - hero
-  - code
 date: 2014-10-31 18:25
 updated: 2016-08-15 14:54
 unique_id: 2014-10-31:about

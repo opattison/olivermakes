@@ -1,8 +1,6 @@
 ---
 title: 'Website for Jean Flanagan'
 layout: singel
-option:
-  - code
 category: 'projects'
 tags:
   - 'design'

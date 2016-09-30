@@ -2,7 +2,6 @@
 title: 'Text Patterns'
 title_ui: 'text'
 option:
-  - code
   - content-simulation
 updated: 2016-03-20 22:07
 description: 'All of the typography on this site, including sample applications of each of the basic typographic forms on the site.'

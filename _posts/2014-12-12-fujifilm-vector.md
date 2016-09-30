@@ -3,7 +3,6 @@ title: 'Fujifilm X-E2 vector'
 layout: edgeless
 theme: dark
 option:
-  - code
   - minor
 category: 'projects'
 tags:

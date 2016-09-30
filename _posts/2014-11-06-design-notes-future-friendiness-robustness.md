@@ -1,8 +1,6 @@
 ---
 title: 'Designing this site: future-friendliness and&nbsp;robustness'
 layout: singel
-option:
-  - code
 category: 'writing'
 tags:
   - 'design'

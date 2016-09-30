@@ -2,7 +2,6 @@
 title: 'Component Patterns'
 title_ui: 'components'
 option:
-  - code
   - content-simulation
 updated: 2016-03-20 22:07
 description: 'All “block”-level patterns on this site for use on pages, such as images and text blocks.'

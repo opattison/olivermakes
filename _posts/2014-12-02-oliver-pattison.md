@@ -2,7 +2,6 @@
 title: 'This website: olivermak.es'
 layout: singel
 option:
-  - code
   - featured-home
 category: 'projects'
 tags:
