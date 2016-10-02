@@ -1,14 +1,16 @@
 // For 16:9 standard width video iframe embeds
-
 .video {
   margin-top: 1em;
+}
+
+.video-container {
   height: 0;
   padding: 0 0 56.5%;
   position: relative;
   overflow: hidden;
 }
 
-.video iframe {
+.video-container iframe {
   height: 100%;
   left: 0;
   position: absolute;
