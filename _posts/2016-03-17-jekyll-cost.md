@@ -1,6 +1,8 @@
 ---
 title: 'Jekyll’s cost'
 layout: edgeless
+option:
+  - featured-home
 category: 'writing'
 tags:
   - 'jekyll'
