@@ -25,14 +25,14 @@ Not interested in the code? **Take a look at [the pattern library](https://olive
 
 ## Implementation
 
-- Building: [Jekyll](http://jekyllrb.com) and [npm scripting for optimizing SCSS, JS and SVG assets and speeding up my process](https://docs.npmjs.com/cli/run-script)
+- Building: [Jekyll](http://jekyllrb.com) and [npm scripting](https://docs.npmjs.com/cli/run-script) for optimizing SCSS, JS and SVG assets and speeding up my process
 - Archive generation: [Jekyll Archives](https://github.com/jekyll/jekyll-archives) gem
 - Hosting: Amazon [CloudFront](https://aws.amazon.com/cloudfront/), [S3](https://aws.amazon.com/s3/) and [imgix](https://www.imgix.com) for hosting; [AWS ACM](https://aws.amazon.com/certificate-manager/) for TLS (HTTPS) certificate
 - Deploying: [s3_website](https://github.com/laurilehmijoki/s3_website), via [Travis CI](https://travis-ci.org)
 - Version control: GitHub
 - Typography: [Adobe Typekit](https://typekit.com/colophons/hro5wuc) – 300, 400 and 500 weights of [the Ratio typeface](http://cargocollective.com/pstype/Ratio) and system monospace fonts (Menlo or Consolas if available)
 - Layout: custom [`flexbox`](https://www.w3.org/TR/2016/CR-css-flexbox-1-20160301/) CSS
-- Responsive images: [`srcset`](https://responsiveimages.org), processed with [imgix](https://www.imgix.com/)
+- Responsive images: [`srcset`](https://responsiveimages.org), processed and optimized with [imgix](https://www.imgix.com/)
 - Maps: [MapBox](https://www.mapbox.com/)
 - No templates, frameworks or boilerplate
 - A minimum of front-end JavaScript
@@ -41,7 +41,7 @@ Not interested in the code? **Take a look at [the pattern library](https://olive
 
 ### Building
 
-- [Jekyll](http://jekyllrb.com) >3.1
+- [Jekyll](http://jekyllrb.com) >3.2
 - [Jekyll Archives](https://github.com/jekyll/jekyll-archives)
 - [rouge](https://github.com/jneen/rouge)
 - [jekyll-imgix](https://github.com/imgix/jekyll-imgix)
