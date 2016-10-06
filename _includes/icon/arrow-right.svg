@@ -1,4 +1,4 @@
-<svg width="16px" height="16px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="arrow arrow--right">
+<svg width="16px" height="16px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="arrow arrow--right jsArrow">
   <title>arrow-right</title>
   <path d="M80.4444444,37.25 L128,90.75 L103.111111,90.75 L68,51.25 L80.4444444,37.25 Z M47.5555556,37.25 L-7.10542736e-15,90.75 L24.8888889,90.75 L60,51.25 L47.5555556,37.25 Z" transform="translate(64.000000, 64.000000) rotate(90.000000) translate(-64.000000, -64.000000) " fill="#292F32"></path>
 </svg>
