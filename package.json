@@ -3,8 +3,8 @@
   "description": "NPM development setup for olivermak.es",
   "dependencies": {
     "browserify": "^13.0.0",
-    "node-sass": "^3.7.0",
-    "npm-run-all": "^1.5.1",
+    "node-sass": "^3.10.0",
+    "npm-run-all": "^3.1.0",
     "svgo": "^0.6.1",
     "uglify-js": "^2.6",
     "velocity-animate": "^1.2.3",
