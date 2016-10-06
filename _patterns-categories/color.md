@@ -1,8 +1,6 @@
 ---
 title: 'Color Patterns'
 title_ui: 'colors'
-option:
-  - code
 updated: 2016-03-20 22:07
 description: 'All of the colors and shades used on this site, with code and specification for each.'
 source: https://github.com/opattison/olivermakes

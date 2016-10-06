@@ -3,6 +3,7 @@ title: 'Consider Jekyll'
 layout: edgeless
 option:
   - hero
+  - featured-home
 category: 'writing'
 tags:
   - 'jekyll'

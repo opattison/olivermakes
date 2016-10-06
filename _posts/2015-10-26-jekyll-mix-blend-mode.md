@@ -3,7 +3,6 @@ title: 'Old Jekyll home page with modern CSS'
 layout: edgeless
 theme: dark
 option:
-  - code
   - minor
 category: 'projects'
 tags:

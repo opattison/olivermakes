@@ -1,5 +1,7 @@
 <figure class="video">
-  <iframe width="100%" src="{{ video.src }}?controls=2" frameborder="0" allowfullscreen></iframe>
+  <div class="video-container">
+    <iframe width="100%" src="{{ video.src }}?controls=2" frameborder="0" allowfullscreen></iframe>
+  </div>
 
   {% if video.caption %}
   <figcaption>{{ video.caption | markdownify }}</figcaption>

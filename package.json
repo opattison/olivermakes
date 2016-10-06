@@ -13,7 +13,7 @@
   "scripts": {
     "serve:css": "node-sass _source/scss/ -r -w -o resources",
     "serve:js": "watchify _source/js/site.js -o resources/site.js",
-    "serve:jekyll": "JEKYLL_ENV=production bundle exec jekyll serve --config _config/prod.yml,_config/dev.yml",
+    "serve:jekyll": "bundle exec jekyll serve --config _config/prod.yml,_config/dev.yml",
     "dev:css": "node-sass _source/scss/ -o resources",
     "dev:js": "browserify _source/js/site.js -o resources/site.js",
     "dev:jekyll": "JEKYLL_ENV=production bundle exec jekyll build --config _config/prod.yml,_config/dev.yml",

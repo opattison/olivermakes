@@ -1,3 +1,7 @@
 ## Configuration URLs
 domain: dev.olivermak.es
 url: https://dev.olivermak.es
+
+## Imgix configuration
+imgix:
+  source: dev-olivermakes.imgix.net

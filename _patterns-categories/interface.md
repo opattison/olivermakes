@@ -2,7 +2,6 @@
 title: 'Interface Patterns'
 title_ui: 'interface'
 option:
-  - code
   - content-simulation
 updated: 2016-03-20 22:07
 description: 'All patterns that make up the user interface and interactive elements on the site.'

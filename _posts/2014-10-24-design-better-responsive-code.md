@@ -2,7 +2,6 @@
 title: 'How to design a better responsive code&nbsp;block'
 layout: singel
 option:
-  - code
   - hero
 category: 'writing'
 tags:
