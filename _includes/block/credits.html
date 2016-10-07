@@ -1,8 +1,14 @@
 <div class="credits" role="contentinfo">
   <div class="credits-meta">
-    <p>All writing and photography here is by <a class="p-name u-url" rel="author" href="{{ site.url }}">Oliver Pattison</a>, licensed <a rel="license" href="{{ site.link.attribution }}">{{ site.license.short }}</a>. Everything else is <a rel="license" href="/license/">under copyright</a> unless otherwise noted.{% if page.collection == 'photos' %} Map data © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors.{% endif %}</p>
-    <p>View the <strong><a rel="source" href="{{ site.link.source }}">source code</a></strong> or <strong><a href="{{ site.patterns_url }}/">pattern library</a></strong> for this site. If you catch any errors, <a href="{{ site.source_url.issues }}">make an issue</a> of it.</p>
-    <p><a rel="alternate" href="{{ site.link.subscribe.full }}">Subscribe via Atom/RSS</a> for updates. Follow <a rel="me" href="{{ site.link.twitter }}">{{ site.author.twitter }} on Twitter</a>.</p>
-    <p><a href="/hire/">Work with me</a> or <a href="/about/">find out more about me</a>.</p>
+    <p>All writing and photography by <a class="p-name u-url" rel="author" href="{{ site.url }}">Oliver Pattison</a>, licensed <a rel="license" href="{{ site.link.attribution }}">{{ site.license.short }}</a>.{% if page.collection == 'photos' %} Map data © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors.{% endif %} Read more <a rel="license" href="/license/">about copyright and attribution</a> or more <a href="/about/">about me</a>.</p>
+    <p>Improve this site by <a href="{{ site.source_url.issues }}">creating an issue</a> or a pull request.</p>
+    <ul class="credits-links">
+      <li></li> {% comment %}add a blank list item to offset the layout{% endcomment %}
+      <li><a class="credits-link" rel="source" href="{{ site.link.source }}">{% include icon/github.svg %}View source</a></li>
+      <li><a class="credits-link" rel="alternate" href="{{ site.link.subscribe.full }}">{% include icon/rss.svg %}Subscribe via Atom/RSS</a></li>
+      <li><a class="credits-link" href="{{ site.patterns_url }}/">{% include icon/logo-minimal.svg %}Browse the pattern library</a></li>
+      <li><a class="credits-link" rel="me" href="{{ site.link.twitter }}">{% include icon/twitter.svg %}Follow me on Twitter</a></li>
+      <li><a class="credits-link" href="/hire/">{% include icon/git.svg %}Work with me</a>
+    </ul>
   </div>
 </div>
