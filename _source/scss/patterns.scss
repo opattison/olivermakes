@@ -243,41 +243,6 @@
     font-size: 1.5em;
   }
 
-  .details-title {
-    background-color: $violet;
-    color: $whiter;
-    padding: 1em 2em;
-
-    &:hover,
-    &:focus,
-    &.jsActive {
-      background-color: $green;
-      cursor: pointer;
-    }
-
-    code {
-      font-size: 1em;
-    }
-
-    .arrow {
-      display: block;
-      position: absolute;
-      right: 2em;
-      top: 1.25em;
-
-      path {
-        fill: $white;
-      }
-    }
-  }
-
-  .details-expanded {
-    background-color: transparent;
-    margin-top: 0;
-    max-width: 45em;
-    padding: 1em;
-  }
-
   p {
     font-size: .875em;
     margin-top: 1em;
@@ -306,6 +271,49 @@
   figcaption strong {
     font-weight: $weight-medium;
   }
+}
+
+.pattern-title {
+  background-color: $violet;
+  color: $whiter;
+  cursor: pointer;
+  display: flex;
+  font-weight: $weight-regular;
+  padding: 1em 2em;
+  position: relative;
+  text-align: left;
+  touch-action: manipulation;
+  transition: all 160ms;
+  width: 100%;
+
+  &:hover,
+  &:focus,
+  &.jsActive {
+    background-color: $green;
+    cursor: pointer;
+  }
+
+  code {
+    font-size: 1em;
+  }
+
+  .arrow {
+    display: block;
+    position: absolute;
+    right: 2em;
+    top: 1.25em;
+
+    path {
+      fill: $white;
+    }
+  }
+}
+
+.pattern-expanded {
+  background-color: transparent;
+  margin-top: 0;
+  max-width: 45em;
+  padding: 1em;
 }
 
 .pattern-source {

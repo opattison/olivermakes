@@ -358,6 +358,29 @@ mark {
   }
 }
 
+.credits-links {
+
+  a {
+    color: $link--action;
+    @include a-borderless;
+
+    .icon {
+      fill: $link--action;
+    }
+
+    &:hover,
+    &:focus {
+      color: $link--hover;
+
+      .icon {
+        fill: $link--hover;
+      }
+    }
+  }
+
+
+}
+
 .micro .banner {
   background-color: $back--plus;
 }

@@ -1,5 +1,5 @@
 <li class="details-item">
-  <button class="details-title">{% if include.icon %}{% include icon/{{ include.icon }}.svg %}{% endif %}{{ include.title }}{% include icon/arrow-down.svg %}</button>
+  <button class="details-title jsDisclose">{% if include.icon %}{% include icon/{{ include.icon }}.svg %}{% endif %}{{ include.title }}{% include icon/arrow-down.svg %}</button>
 
-  <p class="details-expanded">{{ include.expanded | markdownify | p_escape }}</p>
+  <p class="details-expanded jsExpanded">{{ include.expanded | markdownify | p_escape }}</p>
 </li>

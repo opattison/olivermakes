@@ -120,8 +120,8 @@ var Scrolling = (function () {
 (similar to details/summary progressive disclosure pattern but different markup) */
 var Details = (function () {
 
-  var title = document.querySelectorAll('.details-title');
-  var expanded = document.querySelectorAll('.details-expanded');
+  var title = document.querySelectorAll('.jsDisclose');
+  var expanded = document.querySelectorAll('.jsExpanded');
 
   function toggleActive(element) {
     var classList = element.classList;
@@ -178,11 +178,14 @@ var Details = (function () {
   function showDetails() {
     toggleActive(this);
 
-    var titleSibling = this.parentNode.querySelector('.details-expanded');
+    var titleSibling = this.parentNode.querySelector('.jsExpanded');
     toggleHidden(titleSibling);
 
-    var buttonArrow = this.querySelector('.arrow--down');
-    rotateArrow(buttonArrow);
+    var buttonArrow = this.querySelector('.jsArrow');
+
+    if (buttonArrow) {
+      rotateArrow(buttonArrow);
+    }
   }
 
   /* hide all expanded items by default */

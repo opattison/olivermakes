@@ -41,7 +41,8 @@ details:
     expanded: 'I have designed and developed sites with Shopify, Statamic, WordPress, and other content management systems. My focus has been on integrating front-end design with content editing systems, and creating clear and usable content structures for editors.'
     icon: shopify
 recently:
-  - Presented [a talk at JekyllConf](https://olivermak.es/2016/05/jekyllconf-responsive-images/) on responsive images with Jekyll and imgix
+  - Redesigned [Jean Flanagan’s website](/2016/10/jean-flanagan-2016/)
+  - Presented [a talk at JekyllConf](/2016/05/jekyllconf-responsive-images/) on responsive images with Jekyll and imgix
   - Learning [Mapbox GL API](https://www.mapbox.com/mapbox-gl-js/api/) to make interactive maps with JavaScript and WebGL
   - Learning [Vue.js](http://vuejs.org) to make user interfaces with JavaScript
   - Developing client websites, such as [Acorn Landscape Supply](http://acornlandscapesupply.ca)
@@ -52,7 +53,7 @@ recently:
 
 # Available for hire
 
-I’m [Oliver Pattison](https://olivermak.es/about/), a designer who makes responsive, forward-thinking websites.
+I’m [Oliver Pattison](/about/), a designer who makes responsive, forward-thinking websites.
 {:.focus}
 
 ## Seeking

@@ -24,11 +24,43 @@
   margin: auto;
   max-width: 36em;
 
-  p {
+  p,
+  li {
     font-size: .875em;
   }
 
   p + p {
     margin-top: .75em;
+  }
+}
+
+.credits-links {
+  font-weight: $weight-medium;
+  margin-top: 1em;
+
+  @include min-width(m01) {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  li {
+    margin-top: .25em;
+
+    @include min-width(m01) {
+      flex: 0 0 50%;
+    }
+  }
+}
+
+.credits-link {
+  display: flex;
+  font-size: 1.125em;
+
+  @include min-width(m01) {
+    font-size: 1em; // reset
+  }
+
+  .icon {
+    margin: auto .5em auto 0;
   }
 }
