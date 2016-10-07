@@ -37,12 +37,11 @@ I thought it would be straightforward enough to port to [Jekyll](http://jekyllrb
 
 While working on a project, it can be helpful to both designers, developers and others involved to abstract patterns – both structural (HTML) and presentational (CSS). That is:
 
-<blockquote>
-  … beginning with the atomic units of content and styling them first before even thinking about layout. This ensures that those styles are extremely robust—because they don’t depend on any particular context, they can be safely dropped into any part of a page.</p>
-  <footer>
-    from <cite>Jeremy Keith’s <a href="https://adactio.com/journal/5028">Pattern Primer explanation</a></cite>
-  </footer>
-</blockquote>
+{% capture blockquote %}
+… beginning with the atomic units of content and styling them first before even thinking about layout. This ensures that those styles are extremely robust—because they don’t depend on any particular context, they can be safely dropped into any part of a page.
+{% endcapture %}
+
+{% include block/blockquote.html author="Jeremy Keith" source="Pattern Primer explanation" source_url="https://adactio.com/journal/5028" %}
 
 Pattern Primer ([as well as many other similar tools](http://styleguides.io/tools.html)) can be used as design clarification and communication tools at any stage in a design process. This approach is quite useful near the beginning of a project, to make sure that design patterns can stand on their own as atomic units.
 

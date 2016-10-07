@@ -58,12 +58,11 @@ At its best, a print magazine can be as valuable as a book.
 
 [Issue 4](https://worksthatwork.com/4) was released in November 2014, and I am still in the middle of reading it. My favorite article so far is “From Earth to Mars”, which (in part) tells the story of a group of aspiring amateur space explorers, Copenhagen Suborbitals. A sample:
 
-<blockquote>
-  The rocket itself is an amalgam of reverse engineering and declassified technology from the American and Soviet space programmes, some of it from the 1950s and 60s, some of it essentially the same propulsion mechanisms used by German rocketeers during the Second World War. The liquid helium canisters used to cool the rocket are labelled ‘balloon gas’. It’s far from pretty, but Wilson insists it will work. ‘Our goal is always to find the simplest solution …’
-  <footer>
-    <cite>Pete Guest – <a href="https://worksthatwork.com/4/from-earth-to-mars/share/c12ab909b3d4f77993fdb758a8a4ad5d">“From Earth to Mars”</a>, Issue 4, <i class="publication">Works That Work</i></cite>
-  </footer>
-</blockquote>
+{% capture blockquote %}
+The rocket itself is an amalgam of reverse engineering and declassified technology from the American and Soviet space programmes, some of it from the 1950s and 60s, some of it essentially the same propulsion mechanisms used by German rocketeers during the Second World War. The liquid helium canisters used to cool the rocket are labelled ‘balloon gas’. It’s far from pretty, but Wilson insists it will work. ‘Our goal is always to find the simplest solution …’
+{% endcapture %}
+
+{% include block/blockquote.html author="Pete Guest" date="2014-11-06" source="“From Earth to Mars”, Issue 4, <i class=\"publication\">Works That Work</i>" source_url="https://worksthatwork.com/4/from-earth-to-mars/share/c12ab909b3d4f77993fdb758a8a4ad5d" %}
 
 I also enjoyed the photos in [“Living Underground”](https://worksthatwork.com/4/living-underground), a short story about an otherworldly, half-underground mining town in south Australia. Both the website and the print publication are laid out to give proper space for sweeping landscapes and small objects – the form became a creative influence for my own site.
 
