@@ -8,9 +8,8 @@ priority: 40
 sass: _fundamental.scss
 ---
 
-<blockquote>
-  <p>So HTML is not the best format, but it may just be the longest lasting format, because of its ubiquity, because it’s taken off so much at this point.</p>
-  <footer>
-    <cite>Jeremy Keith – <a href="https://adactio.com/articles/6630/">“Time”</a>, <time datetime="2014-11-06">November 6, 2013</time></cite>
-  </footer>
-</blockquote>
+{% capture blockquote %}
+So HTML is not the best format, but it may just be the longest lasting format, because of its ubiquity, because it’s taken off so much at this point.
+{% endcapture %}
+
+{% include block/blockquote.html author="Jeremy Keith" date="2014-11-06" source="“Time”" source_url="https://adactio.com/articles/6630" %}
