@@ -123,7 +123,7 @@ We chose [Jekyll](http://jekyllrb.com) because it would allow for a high perform
 Publishing *something* on the web is relatively easy, but designing a lasting home for creative output that you won’t be forced to abandon or migrate later takes a significant amount of time and effort. For this project, both design and content were weighed deliberately. Working **content first** informed the design. The layout, typography and other design elements had to suit the content well.
 
 {% capture jean %}
-# What Jean learned from this project
+## What Jean learned from this project
 
 by <cite><a href="https://jeancflanagan.com">Jean Flanagan</a></cite>
 

@@ -76,7 +76,7 @@ We integrated more tightly with our existing Convio non-profit fundraising and s
 Feedback from users of the site was positive, and staff appreciated the easier administration and new design as well. After a refresh of our events management and fundraising systems, it was far easier to get fully subscribed events. “Mobile” device visits went from being about 6% of visitors to 12% (and even higher later on) as device user trends changed, and as our website became more friendly to visitors with different types of screens and contexts. It is fair to say that we would have been turning away a significant portion of our audience without a responsive redesign.
 
 {% capture ancillary %}
-# More on my work for Casey Trees
+## More on my work for Casey Trees
 
 - [The responsive design process]({% post_url 2013-09-26-casey-trees-membership %}) for the later Membership campaign: a closer look at my approach to responsive design and implementation.
 - [Technical documentation and training]({% post_url 2014-10-01-casey-trees-docs %}) for the Casey Trees website.

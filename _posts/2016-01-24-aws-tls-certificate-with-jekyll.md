@@ -228,16 +228,16 @@ These are only *my* notes for configuration – there’s a reason I left out th
 It was completely worth doing and I’d highly recommend it to anyone who is already using AWS to host a static site.
 
 {% capture endnote %}
-# Further reading
+## Further reading
 
-## Why moving to TLS is important
+### Why moving to TLS is important
 
 - [Tim Bray – “Private By Default”](https://www.tbray.org/ongoing/When/201x/2012/12/02/HTTPS)
 - [Eric Mill – “We’re Deprecating HTTP And It’s Going To Be Okay”](https://konklone.com/post/were-deprecating-http-and-its-going-to-be-okay)
 - [David Kravets – “Comcast Wi-Fi serving self-promotional ads via JavaScript injection” in <i>Ars Technica</i>](http://arstechnica.com/tech-policy/2014/09/why-comcasts-javascript-ad-injections-threaten-security-net-neutrality/)
 - [Aaron Gustafson – “More Proof We Don’t Control Our Web Pages”](https://www.aaron-gustafson.com/notebook/more-proof-we-dont-control-our-web-pages/)
 
-## Other accounts on setting up TLS
+### Other accounts on setting up TLS
 
 - [Bryce Fisher-Fleig – “Setting Up SSL on AWS CloudFront and S3” (in 2014 before Amazon offered certificates for free)](https://bryce.fisher-fleig.org/blog/setting-up-ssl-on-aws-cloudfront-and-s3/)
 - [Jeff Barr – “AWS Certificate Manager – Deploy SSL/TLS-Based Apps on AWS”](https://aws.amazon.com/blogs/aws/new-aws-certificate-manager-deploy-ssltls-based-apps-on-aws/)
