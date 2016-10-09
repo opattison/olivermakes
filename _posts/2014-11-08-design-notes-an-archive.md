@@ -9,7 +9,7 @@ tags:
   - 'indieweb'
   - 'photography'
   - 'web'
-updated: 2015-03-02 21:05
+updated: 2016-10-09 00:57
 drafted: 2014-11-08 12:34
 unique_id: 2014-11-08:design-notes-an-archive
 description: 'On my approach to self-archiving.'
@@ -45,8 +45,12 @@ It takes a lot of effort to keep a comprehensive and long-lasting archive of one
 I am building an archive.
 {:.focus}
 
-Git will help me keep track of versions and ensure that I lose as little data as possible while working on projects. Because the data for the site will be kept off-site (in a GitHub repo) that can also be backed up in multiple other ways, this should prove more robust and long-lasting than any software I have ever used.
+Git will help me keep track of versions and ensure that I lose as little data as possible while working on projects. Because the data for the site will be kept off-site (in a [GitHub repo]({{ site.link.source }})) that can also be backed up in multiple other ways, this should prove more robust and long-lasting than any software I have ever used.
 
 I hope that the best way to maintain an archive that I will be happy to browse years later is to take extra effort now to design it as one. Once I have more written and archived, I look forward to the design challenge of organizing that information. Too much of the web right now is structured as “news”, or otherwise oriented toward ephemerality. I want to see more sites that treat themselves as long-lasting things, with information design and content that is built to last – not to be buried and forgotten about.
 
 I plan to share more about archiving-friendly design practices as they take form. **[Read more writing on archiving](/labels/archiving/)** from this site.
+
+---
+
+{% include block/project--satellite.html id="2016-10-08:preserving-jekyll-sites" %}
