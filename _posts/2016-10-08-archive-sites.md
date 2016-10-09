@@ -4,6 +4,7 @@ layout: edgeless
 category: 'projects'
 option:
   - featured-home
+  - featured-writing
   - minor
 tags:
   - 'archiving'

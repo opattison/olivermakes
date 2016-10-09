@@ -4,6 +4,7 @@ layout: edgeless
 option:
   - hero
   - featured-home
+  - featured-writing
 category: 'writing'
 tags:
   - 'jekyll'
