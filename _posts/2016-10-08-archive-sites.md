@@ -25,7 +25,8 @@ project:
 image_index: /images/2016-10-09-perspective-screens.svg
 image:
   - src: /images/2016-10-09-perspective-screens.svg
-    alt: ''
+    src_png: /images/2016-10-09-perspective-screens.png
+    alt: 'abstract depiction of three layered screens in perspective'
 
 ---
 
