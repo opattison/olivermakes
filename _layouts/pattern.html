@@ -9,11 +9,11 @@
     {% include container/pattern-sidebar.html %}
 
     <section class="pattern-main" id="maincontent" role="main">
-    {% unless page.unique_id == '2014-10-31:patterns' %}
-      <h1 class="pattern-main-heading">{{ page.title }}</h1>
-    {% endunless %}
+    {% include container/banner--pattern.html %}
 
-        {{ content }}
+      <h1 class="pattern-main-heading">{{ page.title }}</h1>
+
+      {{ content }}
 
     </section>
 

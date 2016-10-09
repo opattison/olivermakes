@@ -8,6 +8,46 @@ var forEach = function (array, callback, scope) {
   }
 };
 
+function toggleActive(element) {
+  var classList = element.classList;
+  if (classList.contains('jsActive')) {
+    classList.remove('jsActive');
+  } else {
+    classList.add('jsActive');
+  }
+}
+
+function toggleHidden(element) {
+  var classList = element.classList;
+  if (classList.contains('jsHidden')) {
+    classList.remove('jsHidden');
+  } else {
+    classList.add('jsHidden');
+  }
+}
+
+/* slide items in/out with Velocity */
+function animateHidden(element) {
+  var classList = element.classList;
+  if (classList.contains('jsHidden')) {
+    Velocity(
+      element,
+      "slideDown",
+      { duration: 240 },
+      { easing: 'easeOutExpo' }
+    );
+    classList.remove('jsHidden');
+  } else {
+    Velocity(
+      element,
+      "slideUp",
+      { duration: 160 },
+      { easing: 'easeInExpo' }
+    );
+    classList.add('jsHidden');
+  }
+}
+
 var Scrolling = (function () {
   var windowPathName = window.location.pathname;
 
@@ -123,37 +163,6 @@ var Details = (function () {
   var title = document.querySelectorAll('.jsDisclose');
   var expanded = document.querySelectorAll('.jsExpanded');
 
-  function toggleActive(element) {
-    var classList = element.classList;
-    if (classList.contains('jsActive')) {
-      classList.remove('jsActive');
-    } else {
-      classList.add('jsActive');
-    }
-  }
-
-  /* slide items in/out with Velocity */
-  function toggleHidden(element) {
-    var classList = element.classList;
-    if (classList.contains('jsHidden')) {
-      Velocity(
-        element,
-        "slideDown",
-        { duration: 240 },
-        { easing: 'easeOutExpo' }
-      );
-      classList.remove('jsHidden');
-    } else {
-      Velocity(
-        element,
-        "slideUp",
-        { duration: 160 },
-        { easing: 'easeInExpo' }
-      );
-      classList.add('jsHidden');
-    }
-  }
-
   function rotateArrow(element) {
     var classList = element.classList;
     if (classList.contains('jsRotated')) {
@@ -179,7 +188,7 @@ var Details = (function () {
     toggleActive(this);
 
     var titleSibling = this.parentNode.querySelector('.jsExpanded');
-    toggleHidden(titleSibling);
+    animateHidden(titleSibling);
 
     var buttonArrow = this.querySelector('.jsArrow');
 
@@ -197,4 +206,31 @@ var Details = (function () {
   forEach(title, function (index, element) {
     element.addEventListener('click', showDetails, false);
   });
+})();
+
+var Patterns = (function () {
+
+  var patternSidebar = document.querySelector('.pattern-sidebar');
+  var patternMain = document.querySelector('.pattern-main');
+  var patternEnd = document.querySelector('.end');
+  var hideButton = document.querySelector('.jsHidePatterns');
+  var showButton = document.querySelector('.jsShowPatterns');
+
+  function toggleSidebar() {
+    toggleHidden(patternSidebar);
+    toggleHidden(showButton);
+    toggleHidden(hideButton);
+
+    toggleActive(patternMain);
+    toggleActive(patternEnd);
+  }
+
+  // l01 media query (toggle-hide menu on smaller screens by default)
+  if (window.matchMedia('(max-width: 60em)').matches) {
+    toggleSidebar();
+  }
+
+  hideButton.addEventListener('click', toggleSidebar, false);
+  showButton.addEventListener('click', toggleSidebar, false);
+
 })();
