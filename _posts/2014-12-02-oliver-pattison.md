@@ -1,8 +1,6 @@
 ---
 title: 'This website: olivermak.es'
-layout: singel
-option:
-  - featured-home
+layout: edgeless
 category: 'projects'
 tags:
   - 'archiving'
@@ -12,7 +10,7 @@ tags:
   - 'responsive'
   - 'typography'
   - 'web'
-updated: 2016-02-02 02:15
+updated: 2016-10-07 11:51
 drafted: 2016-02-01 17:16
 unique_id: 2014-12-02:oliver-pattison
 period: 2014-10 to present
@@ -44,7 +42,7 @@ Publishing on my own site has given me personal freedom in working towards these
 
 ## Related writing and projects
 
-{% include block/project--satellite.html id="2014-12-19:reading-driven-design" %}
+{% include block/project--satellite.html id="2016-10-08:preserving-jekyll-sites" %}
 
 {% include block/project--satellite.html id="2014-11-06:design-notes-future-friendliness" %}
 
@@ -53,3 +51,5 @@ Publishing on my own site has given me personal freedom in working towards these
 {% include block/project--satellite.html id="2014-11-08:design-notes-an-archive" %}
 
 {% include block/project--satellite.html id="2016-01-24:aws-tls-certificate-with-jekyll" %}
+
+{% include block/project--satellite.html id="2014-12-19:reading-driven-design" %}

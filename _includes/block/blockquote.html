@@ -1,0 +1,8 @@
+<blockquote>
+  {{ blockquote | markdownify }}
+
+  {% if include.author %}<footer>
+    <cite>{{ include.author }}{% if include.source %}{% if include.source_url %} – <a href="{{ include.source_url }}">{{ include.source }}</a>{% else %} – {{ include.source }}{% endif %}{% endif %}{% if include.date %}, <time datetime="{{ include.date | date: '%F' }}">{{ include.date | date: '%B %-d, %Y' }}</time>{% endif %}</cite>
+  </footer>
+  {% endif %}
+</blockquote>

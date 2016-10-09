@@ -73,7 +73,7 @@ The fonts on the site (300, 400 and 500 weights of [the Ratio typeface](http://c
 {% include block/project--satellite--patterns.html %}
 
 {% capture endnote %}
-# License and copyright
+## License and copyright
 
 In short: the code and design are under [copyright (MIT license)](/license/#code) and original photos, images are [{{ site.license.long }} ({{ site.license.short }})]({{ site.link.attribution }}){:rel="license"}.
 {% endcapture %}

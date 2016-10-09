@@ -5,6 +5,7 @@ option:
   - featured-home
 category: 'writing'
 tags:
+  - 'archiving'
   - 'design'
   - 'future'
   - 'html'
@@ -36,19 +37,17 @@ This particular website is small, but I believe the principles that it is based 
 
 Plain-text Markdown alongside HTML seems like a good long-term solution for encoding my content. Some impressively prescient folks have weighed in on the “long-term” nature of HTML:
 
-<blockquote>
-  I’m going to make a bold prediction. Long after you and I are gone, HTML will still be around. Not just in billions of archived pages from our era, but as a living, breathing entity. Too much effort, energy, and investment has gone into developing the web’s tools, protocols, and platforms for it to be abandoned lightly, if indeed at all.
-  <footer>
-    <cite>John Allsop – <a href="http://alistapart.com/article/semanticsinHTML5">“Semantics in HTML 5”</a>, <time datetime="2009-01-06">January 6, 2009</time></cite>
-  </footer>
-</blockquote>
+{% capture blockquote %}
+I’m going to make a bold prediction. Long after you and I are gone, HTML will still be around. Not just in billions of archived pages from our era, but as a living, breathing entity. Too much effort, energy, and investment has gone into developing the web’s tools, protocols, and platforms for it to be abandoned lightly, if indeed at all.
+{% endcapture %}
 
-<blockquote>
-  So HTML is not the best format, but it may just be the longest lasting format, because of its ubiquity, because it’s taken off so much at this point.
-  <footer>
-    <cite>Jeremy Keith – <a href="https://adactio.com/articles/6630/">“Time”</a>, <time datetime="2014-11-06">November 6, 2013</time></cite>
-  </footer>
-</blockquote>
+{% include block/blockquote.html author="John Allsop" date="2009-01-06" source="“Semantics in HTML 5”" source_url="http://alistapart.com/article/semanticsinHTML5" %}
+
+{% capture blockquote %}
+So HTML is not the best format, but it may just be the longest lasting format, because of its ubiquity, because it’s taken off so much at this point.
+{% endcapture %}
+
+{% include block/blockquote.html author="Jeremy Keith" date="2014-11-06" source="“Time”" source_url="https://adactio.com/articles/6630" %}
 
 Keep in mind, these are the same people who, respectively, [laid the groundwork for responsive web design](http://alistapart.com/article/dao) years before it was established and have been promoting [long-term thinking for quite a few years](https://adactio.com/articles/1522) – that is, forward thinkers. Data formats are fragile. But HTML, as data formats go, is robust and future-oriented.
 

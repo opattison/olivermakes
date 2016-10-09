@@ -296,10 +296,6 @@ mark {
 .credits {
   background-color: $back--minus;
   color: $fore;
-
-  a {
-    @include a-underline;
-  }
 }
 
 .banner-title {

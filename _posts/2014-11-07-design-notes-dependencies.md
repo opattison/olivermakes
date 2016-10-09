@@ -42,7 +42,7 @@ Besides the domain, this is one of the few parts of the site that I have to cont
 However, if I had to break free from Adobe Creative Cloud or TypeKit as dependencies, I could [buy Ratio](http://cargocollective.com/pstype/Ratio) and host it myself. The cost is not prohibitive since TypeKit already costs me a comparable amount. I use [Source Code Pro](http://adobe-fonts.github.io/source-code-pro/) for monospace fonts, also hosted by Typekit, but that font is available for free, and therefore does not present any challenges.
 
 {% capture endnote %}
-# Update 2016-04-11
+## Update 2016-04-11
 
 The overall picture has not changed significantly in the past year and a half, but here is what has changed:
 
