@@ -1,24 +1,83 @@
 @import 'helpers';
 
-.pattern-sidebar {
+.pattern-hide,
+.pattern-show {
+  cursor: pointer;
+  padding: .5em 1em;
+  text-align: center;
+  width: 100%;
+
+  .arrow {
+    height: .75em;
+  }
+}
+
+.pattern-hide {
+  @include action-color($gray02, $white);
+
+  height: 2.5em;
+  padding: .5em 1em;
+}
+
+.pattern-show {
+  @include action-color($gray02, $white, $gray00, $whiter);
 
   @include min-width(l01) {
-    height: calc(100vh - 4em);
+    position: fixed;
+    top: 4em;
+    transition: transform 160ms cubic-bezier(1, 0, 0, 1);
+    transform: translateX(-6.5em);
+    width: auto;
+    z-index: 100;
+
+    .arrow {
+      margin-left: 1em;
+      transition: margin 480ms cubic-bezier(1, 0, 0, 1);
+    }
+
+    &:hover,
+    &:focus {
+      transform: translateX(0);
+
+      .arrow {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.pattern-sidebar {
+  transition: transform 160ms cubic-bezier(1, 0, 0, 1);
+
+  @include min-width(l01) {
+    height: calc(100vh - 2.5em);
     position: fixed;
     width: 15em;
     z-index: 2;
+
+    &.jsHidden {
+      display: block;
+      transition: transform 160ms cubic-bezier(1, 0, 0, 1);
+      transform: translateX(-20em);
+    }
   }
 }
 
 .pattern-main {
+
+  transition: padding 160ms cubic-bezier(1, 0, 0, 1);
 
   > h2 {
     text-align: center;
   }
 
   @include min-width(l01) {
-    padding: 4em 0 2em 15em;
+    padding: 0 0 2em 15em;
     width: 100%;
+  }
+
+  &.jsActive {
+    padding: 0 0 2em;
   }
 }
 
@@ -43,12 +102,16 @@
 }
 
 .pattern-nav-li {
-  flex: 1 0 50%;
-  text-align: center;
-  width: 50%;
+  text-align: left;
+  flex: 1 0 100%;
+  width: 100%;
+
+  @include min-width(m01) {
+    flex: 1 0 50%;
+    width: 50%;
+  }
 
   @include min-width(l01) {
-    text-align: left;
     width: 100%;
   }
 }
@@ -77,14 +140,6 @@
       color: $gray07;
       cursor: default;
     }
-  }
-}
-
-.pattern-nav-li--sub {
-  display: none;
-
-  @include min-width(l01) {
-    display: block;
   }
 }
 
@@ -124,9 +179,14 @@
 
 .pattern-container > .end {
   margin-top: 2em;
+  transition: padding 160ms cubic-bezier(1, 0, 0, 1);
 
   @include min-width(l01) {
     padding-left: 15em;
+  }
+
+  &.jsActive {
+    padding-left: 0;
   }
 }
 
@@ -143,17 +203,7 @@
 }
 
 .pattern-main-heading {
-  font-size: 1.5em;
   text-align: center;
-  padding: 1em 0;
-
-  @include min-width(l01) {
-    font-size: 1.125em;
-    padding: 1em;
-    position: absolute;
-    right: 0;
-    top: .25rem;
-  }
 }
 
 .content {

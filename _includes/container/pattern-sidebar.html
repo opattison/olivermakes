@@ -1,6 +1,6 @@
+<button class="pattern-show jsShowPatterns jsHidden">Show menu {% include icon/arrow-right.svg %}</button>
 <section class="pattern-sidebar">
-  {% include container/banner--pattern.html %}
-
+  <button class="pattern-hide jsHidePatterns">{% include icon/arrow-left.svg %}Hide menu</button>
   <ul class="pattern-nav">
   {% assign items = site.patterns-categories | sort: 'priority', 'last' %}
   {% for item in items %}
