@@ -3,6 +3,7 @@ title: 'Designing this site: future-friendliness and&nbsp;robustness'
 layout: singel
 option:
   - featured-home
+  - featured-writing
 category: 'writing'
 tags:
   - 'archiving'

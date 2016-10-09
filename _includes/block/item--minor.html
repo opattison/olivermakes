@@ -1,9 +1,8 @@
 {% assign image = post.image_index %}
 
 <article class="item" {% if image %}style="background-image: {% if image contains 'svg' or image contains 'png' %}url({{ image }}){% else %}url({{ image | imgix_url: w: 480, q: 40 }});{% endif %}"{% endif %}>
-  <div class="item-description">
+  <div class="item-description item--minor-description">
     <h1><a href="{{ post.url }}">{{ post.title | markdownify | p_escape }}</a></h1>
-    <p class="p-summary item-summary">{{ post.description }}</p>
     <p class="item-time">{% if post.category =='projects' %}Completed{% else %}Published{% endif %} <time class="dt-published" pubdate datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y-%m-%d' }}</time> {% if post.period %}(worked on from {{ post.period }}){% endif %}</p>
   </div>
   <a class="item-action" href="{{ post.url }}">{% if post.category == 'projects' %}view this project{% elsif post.category == 'writing' %}read this post{% else %}view this post{% endif %}</a>

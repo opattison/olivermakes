@@ -1,6 +1,6 @@
 ---
 title: 'License'
-layout: singel
+layout: micro
 date: 2014-11-19 17:05
 updated: 2016-02-13 01:02
 
