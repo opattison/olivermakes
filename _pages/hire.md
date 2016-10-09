@@ -12,9 +12,7 @@ description: 'Why you should hire or work with me, Oliver Pattison, a web design
 opportunities:
   - title: Full-time role
     description: |+
-      I am looking for a design role that requires both design and development expertise. I can also partner with non-profits or businesses who want to enhance their websites and other outward-facing projects.
-
-      This might look like a “web designer” or “front-end developer” role, though my experience is wider than those terms suggest, and as a generalist I am happy to work outside and in between those boundaries.
+      I am looking for a design role that requires both design and development expertise. This might be called “web designer” or “front-end developer”, but I am happy to work outside and in between those boundaries.
   - title: Part-time or contract role
     description: |+
       I am available to provide design and light development work for small projects (or as a small part of a larger team).
