@@ -42,7 +42,7 @@ Publishing on my own site has given me personal freedom in working towards these
 
 ## Related writing and projects
 
-{% include block/project--satellite.html id="2016-10-07:preserving-jekyll-sites" %}
+{% include block/project--satellite.html id="2016-10-08:preserving-jekyll-sites" %}
 
 {% include block/project--satellite.html id="2014-11-06:design-notes-future-friendliness" %}
 
