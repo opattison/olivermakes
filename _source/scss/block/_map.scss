@@ -1,0 +1,55 @@
+.map--photo {
+  height: 24em;
+  margin: 2em 0;
+
+  @include min-width(m01) {
+    height: 32em;
+  }
+
+  @include min-width(l01) {
+    height: 45em;
+  }
+
+  &.mapboxgl-map {
+    font-family: $ratio;
+  }
+
+  .mapboxgl-marker {
+    background-image: url('/icons/logo-map.svg');
+    background-size: contain;
+    box-shadow: 0 1px 2px hsla(204, 10%, 21%, .25);
+    display: block;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+  }
+
+  .mapboxgl-popup-content {
+    background-color: $whiter;
+    box-shadow: 0 1px 2px hsla(204, 10%, 21%, .25);
+    color: $gray02;
+    font-size: 1.25em;
+    padding: 1em;
+    border-radius: 0;
+  }
+
+  .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
+    border-top-color: $whiter;
+  }
+
+  .mapboxgl-ctrl-group {
+    border-radius: 0;
+    box-shadow: 0 1px 2px hsla(204, 10%, 21%, .25);
+  }
+
+  .mapboxgl-ctrl-scale {
+    background-color: hsla(204, 10%, 90%, .5);
+    border-color: hsla(204, 10%, 21%, .25);
+  }
+
+  .mapboxgl-ctrl-attrib a:hover,
+  .mapboxgl-ctrl-attrib a:focus {
+    color: $blue;
+  }
+}

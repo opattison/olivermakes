@@ -16,6 +16,11 @@
         {% include block/image--micro.html %}
         {% include block/photo-meta.html %}
         </figure>
+
+        {% if page.longitude and page.latitude %}
+        <div id="map" class="map--photo"></div>
+        {% endif %}
+
       {% endif %}
 
       {{ content }}
