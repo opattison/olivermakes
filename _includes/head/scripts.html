@@ -8,10 +8,11 @@
 <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.25.1/mapbox-gl.css" rel="stylesheet" />
 
 <script>
-// all of this runs conditionally only if page location parameters are set
+// all of this runs conditionally only if page location parameters are set and mapbox is supported
 document.addEventListener('DOMContentLoaded', contentLoaded, false);
 
 function contentLoaded () {
+  if (mapboxgl.supported()) {
   // authorization key set in prod.yml
   mapboxgl.accessToken = '{{ site.mapbox.key }}';
 
@@ -61,7 +62,8 @@ function contentLoaded () {
     .setLngLat(location)
     .setPopup(popup)
     .addTo(map);
-}
 
+  }
+}
 </script>
 {% endif %}
