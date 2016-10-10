@@ -17,36 +17,49 @@ function contentLoaded () {
   mapboxgl.accessToken = '{{ site.mapbox.key }}';
 
   // long and lat pulled from front matter
-  var location = [{{ page.longitude }}, {{ page.latitude }}]
+  var latLong = [{{ page.longitude }}, {{ page.latitude }}];
 
   var map = new mapboxgl.Map({
-    container: 'map',
+    container: 'map--photo-mapbox',
     // style set in prod.yml
     style: '{{ site.mapbox.style }}',
     minZoom: 4,
     // optional zoom value set in front matter
     zoom: {% if page.zoom %}{{ page.zoom }}{% else %}12{% endif %},
-    center: location,
+    center: latLong,
     // attribution control is set in prod.yml
     attributionControl: false,
     scrollZoom: false
   });
 
   // add mapbox controls
-  map.addControl(new mapboxgl.Navigation());
+  map.addControl(new mapboxgl.Navigation({
+    position: 'bottom-left'
+  }));
   map.addControl(new mapboxgl.Scale({
     position: 'bottom-right',
     maxWidth: 200,
     unit: 'metric'
   }));
 
-  // disable scroll-zooming unless the user hovers for more than 2 seconds on the map
-  map.on('mousemove', function (e) {
-    setTimeout(function(){
+  var toggleScrollZoom = document.querySelector('.jsToggleScrollZoom');
+
+  function toggleZooming() {
+    var classList = toggleScrollZoom.classList;
+    if (classList.contains('jsActive')) {
+      classList.remove('jsActive');
+    } else {
+      classList.add('jsActive');
+    }
+
+    if (map.scrollZoom.isEnabled()) {
+      map.scrollZoom.disable();
+    } else {
       map.scrollZoom.enable();
-    },
-    2400);
-  });
+    }
+  };
+
+  toggleScrollZoom.addEventListener('click', toggleZooming, false);
 
   var popupParameters = {
     closeButton: false,
@@ -55,12 +68,12 @@ function contentLoaded () {
 
   // set popup positioning and location from front matter
   var popup = new mapboxgl.Popup(popupParameters)
-    .setLngLat(location)
+    .setLngLat(latLong)
     .setText('{{ page.location }}');
 
   // attach popup to the marker
   var marker = new mapboxgl.Marker()
-    .setLngLat(location)
+    .setLngLat(latLong)
     .setPopup(popup)
     .addTo(map);
 

@@ -23,6 +23,10 @@ select {
   font-family: $ratio;
 }
 
+button {
+  cursor: pointer;
+}
+
 strong,
 b {
   font-weight: $weight-medium;

@@ -2,6 +2,7 @@
   margin: 2em 0 1em;
 
   .mapboxgl-map {
+    font-family: $ratio;
     height: 24em;
 
     @include min-width(m01) {
@@ -9,11 +10,7 @@
     }
 
     @include min-width(l01) {
-      height: 45em;
-    }
-
-    &.mapboxgl-map {
-      font-family: $ratio;
+      height: calc(100vh - 3em);
     }
 
     .mapboxgl-marker {
@@ -49,6 +46,32 @@
       background-color: hsla(204, 10%, 90%, .5);
       border-color: hsla(204, 10%, 21%, .25);
     }
+  }
+}
+
+.map-scrollzoom {
+  display: none; // hide by default
+
+  background: $gray02;
+  color: $gray04;
+  float: left;
+  margin: .5em;
+  padding: .25em .5em;
+  font-size: .75em;
+
+  &:hover,
+  &:focus {
+    background-color: $gray02;
+    color: $whiter;
+  }
+
+  &.jsActive {
+    background-color: $black;
+    color: $lightblue;
+  }
+
+  @include min-width(m01) {
+    display: block;
   }
 }
 
