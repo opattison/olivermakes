@@ -10,7 +10,7 @@ focal: '35mm'
 aperture: 'f/4.0'
 shutter: '1/125'
 iso: 800
-location: 'Kalorama Park, Washington, DC'
+location: 'Kalorama Park, DC'
 latitude: 38.9206
 longitude: -77.0448
 zoom: 16

@@ -10,7 +10,7 @@ focal: '35mm'
 aperture: 'f/5'
 shutter: '1/800'
 iso: 500
-location: 'Mount Pleasant, Washington DC'
+location: 'Mount Pleasant, DC'
 latitude: 38.9298
 longitude: -77.0438
 zoom: 16

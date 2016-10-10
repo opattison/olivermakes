@@ -10,7 +10,7 @@ focal: '35mm'
 aperture: 'f/2.8'
 shutter: '1/40'
 iso: 2000
-location: 'Washington, DC'
+location: 'Adams Morgan, DC'
 latitude: 38.9172
 longitude: -77.0461
 zoom: 15

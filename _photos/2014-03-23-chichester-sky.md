@@ -10,7 +10,7 @@ focal: '4.12mm'
 aperture: 'f/2.2'
 shutter: '1/1300'
 iso: 32
-location: 'Bosham, near Chichester'
+location: 'Bosham, near Chichester, England'
 latitude: 50.828
 longitude: -0.8599
 zoom: 14

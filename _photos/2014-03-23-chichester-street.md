@@ -11,7 +11,7 @@ focal: '4.12mm'
 aperture: 'f/2.2'
 shutter: '1/120'
 iso: 50
-location: 'Central Chichester, UK'
+location: 'Central Chichester, England'
 latitude: 50.8387
 longitude: -0.7782
 zoom: 16
