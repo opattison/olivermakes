@@ -9,7 +9,7 @@
       height: 32em;
     }
 
-    @include min-width(l01) {
+    @include min-width(l02) {
       height: calc(100vh - 3em);
     }
 
