@@ -24,7 +24,10 @@ function contentLoaded () {
     style: '{{ site.mapbox.style }}',
     // optional zoom value set in front matter
     zoom: {% if page.zoom %}{{ page.zoom }}{% else %}12{% endif %},
-    center: location
+    center: location,
+    // attribution control is set in prod.yml
+    attributionControl: false,
+    scrollZoom: false
   });
 
   // add mapbox controls
@@ -36,7 +39,6 @@ function contentLoaded () {
   }));
 
   // disable scroll-zooming unless the user hovers for more than 2 seconds on the map
-  map.scrollZoom.disable();
   map.on('mousemove', function (e) {
     setTimeout(function(){
       map.scrollZoom.enable();

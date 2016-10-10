@@ -18,7 +18,10 @@
         </figure>
 
         {% if page.longitude and page.latitude %}
-        <div id="map" class="map--photo"></div>
+        <figure class="map--photo">
+          <div id="map"></div>
+          <figcaption class="map--photo-caption">{{ site.mapbox.attribution }}</figcaption>
+        </figure>
         {% endif %}
 
       {% endif %}
