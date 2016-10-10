@@ -225,12 +225,15 @@ var Patterns = (function () {
     toggleActive(patternEnd);
   }
 
-  // l01 media query (toggle-hide menu on smaller screens by default)
-  if (window.matchMedia('(max-width: 60em)').matches) {
-    toggleSidebar();
-  }
+  if (patternSidebar) {
 
-  hideButton.addEventListener('click', toggleSidebar, false);
-  showButton.addEventListener('click', toggleSidebar, false);
+    // l01 media query (toggle-hide menu on smaller screens by default)
+    if (window.matchMedia('(max-width: 60em)').matches) {
+      toggleSidebar();
+    }
+
+    hideButton.addEventListener('click', toggleSidebar, false);
+    showButton.addEventListener('click', toggleSidebar, false);
+  }
 
 })();
