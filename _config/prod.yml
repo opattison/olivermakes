@@ -147,7 +147,7 @@ srcset_grid2:
 mapbox:
   key: pk.eyJ1Ijoib3BhdHRpc29uIiwiYSI6Il9DU3p1MEkifQ.3cvRQB5hVIONMpDAflBUNw
   style: mapbox://styles/opattison/ciloojljd001ua7lt44geqa6f
-  attribution: '<p><a href="https://www.mapbox.com/about/maps/">© Mapbox</a> Map data <a href="http://www.openstreetmap.org/copyright">© OpenStreetMap</a> contributors. <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a></p>'
+  attribution: '<p><a href="https://www.mapbox.com/about/maps/">© Mapbox</a>, map data <a href="http://www.openstreetmap.org/copyright">© OpenStreetMap</a> contributors. <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>.</p>'
 
 ## Google site verification
 google_verification: v50CkzaVPDL_gBaZnlGdxJmfnZDYCP74l1JTMgLsyp4
