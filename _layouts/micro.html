@@ -18,11 +18,7 @@
         </figure>
 
         {% if page.longitude and page.latitude %}
-        <figure class="map--photo">
-          <div id="map--photo-mapbox"></div>
-          <button class="map-scrollzoom jsToggleScrollZoom">Toggle scroll zooming</button>
-          <figcaption class="map--photo-caption">{{ site.mapbox.attribution }}</figcaption>
-        </figure>
+        {% include block/map--photo.html %}
         {% endif %}
 
       {% endif %}
