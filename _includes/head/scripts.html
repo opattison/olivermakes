@@ -23,6 +23,7 @@ function contentLoaded () {
     container: 'map',
     // style set in prod.yml
     style: '{{ site.mapbox.style }}',
+    minZoom: 4,
     // optional zoom value set in front matter
     zoom: {% if page.zoom %}{{ page.zoom }}{% else %}12{% endif %},
     center: location,
