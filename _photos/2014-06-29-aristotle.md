@@ -13,7 +13,7 @@ iso: 320
 latitude: 38.9124
 longitude: -76.9556
 zoom: 16
-location: 'Asian Collections, National Arboretum'
+location: 'Asian Collections, National Arboretum, DC'
 quality: 70
 aspect: '3:2'
 unique_id: 2014-06-29:aristotle-photo
