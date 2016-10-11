@@ -2,6 +2,7 @@
 title: Full Site Archive
 layout: archive
 category: index
+unique_id: archive
 description: 'A minimal archive list of all posts on this website, by Oliver Pattison.'
 permalink: /archive/
 

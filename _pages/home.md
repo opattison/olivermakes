@@ -2,6 +2,7 @@
 title: Home
 layout: home
 category: index
+unique_id: home
 permalink: /
 
 ---

@@ -3,7 +3,7 @@ title: 'Patterns'
 layout: pattern
 date: 2014-10-31 18:25
 updated: 2016-08-15 01:08
-unique_id: 2014-10-31:patterns
+unique_id: patterns
 permalink: /patterns/
 description: 'A collection of patterns for this website.'
 image:

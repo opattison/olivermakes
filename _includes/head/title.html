@@ -1,4 +1,4 @@
-{% if page.permalink == '/' or page.permalink == '/hire/' %}
+{% if page.unique_id == 'home' or page.unique_id == 'hire' %}
   <title>{{ site.title }}</title>
 {% elsif page.type == 'category' %}
   <title>{{ page.title | capitalize }} Archive – {{ site.title }}</title>

@@ -1,7 +1,10 @@
 ---
 title: Photography
 layout: category
+option:
+  - mapbox
 category: index
+unique_id: photography
 description: 'A collection of photos of nature and urban environments by Oliver Pattison.'
 permalink: /photography/
 

@@ -5,7 +5,7 @@ option:
   - hero
 date: 2016-07-18 12:34
 updated: 2016-08-15 14:54
-unique_id: 2016-07-18:hire
+unique_id: hire
 permalink: /hire/
 custom_style: custom-hire.css
 description: 'Why you should hire or work with me, Oliver Pattison, a web designer.'

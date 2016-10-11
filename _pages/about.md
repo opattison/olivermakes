@@ -6,7 +6,7 @@ option:
   - hero
 date: 2014-10-31 18:25
 updated: 2016-08-15 14:54
-unique_id: 2014-10-31:about
+unique_id: about
 permalink: /about/
 description: 'A short biography of Oliver Pattison, as well as details about how this website was made.'
 image:

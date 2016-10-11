@@ -2,6 +2,7 @@
 title: Label Archive
 layout: archive
 category: index
+unique_id: labels
 description: 'Links to all of the label archives for the posts on this website, by Oliver Pattison.'
 permalink: /labels/
 
