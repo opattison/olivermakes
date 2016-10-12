@@ -9,14 +9,14 @@ tags:
   - 'jekyll'
   - 'privacy'
   - 'web'
-updated: 2016-01-29 16:13
+updated: 2016-10-12 13:25
 drafted: 2016-01-24 22:00
 unique_id: 2016-01-24:aws-tls-certificate-with-jekyll
 description: 'A step-by-step guide on how I configured and hosted a secure static site using AWS.'
 thanks: |+
   Thanks [Mike Lissner](http://michaeljaylissner.com) for helping me look into and fix issues around domain redirecting.
 
-  Thanks [Jean Flanagan](http://jeancflanagan.com) for edits.
+  Thanks [Jean Flanagan](http://jeancflanagan.com) and [Michael Lee](https://michaelsoolee.com) for edits.
 project:
   source: https://github.com/opattison/olivermakes/pull/228
 image_index: /images/2016-01-25-lock.svg
@@ -134,11 +134,15 @@ s3_website configuration could be an article on its own, so I’ll defer to thei
 
 ### Create a distribution
 
-Go to the [CloudFront configuration](https://console.aws.amazon.com/cloudfront/home) and **Create Distribution** (select a “Web” distribution when prompted). The **Origin Domain Name** should be set to the endpoint from the S3 bucket (looks like `BUCKETNAME.s3-website-us-east-1.amazonaws.com`).
+Go to the [CloudFront configuration](https://console.aws.amazon.com/cloudfront/home) and **Create Distribution** (select a “Web” distribution when prompted). The **Origin Domain Name** should be set to the *endpoint* from the S3 bucket. The endpoint specified here must look like `BUCKETNAME.s3-website-us-east-1.amazonaws.com` and not `BUCKETNAME.s3.amazonaws.com` so avoid use the “Amazon S3 Buckets” autocomplete that AWS provides. Why this URL matters is explained on the [Open Guide to Amazon Web Services](https://github.com/open-guides/og-aws#cloudfront-gotchas-and-limitations)).
 
 ### Configure
 
-Set **Alternate Domain Names (CNAMEs)** to the desired domain. Leave **SSL Certificate** alone – or [skip ahead to the final step](#step-4) to take care of this now. Set **Default Root Object** to `index.html` which makes sure that the root domain `https://example.com/` will redirect to an index page rather than showing a directory of files or an error message. I set **Logging** on and created an S3 bucket for it, but it is not essential for configuration. Set **Distribution State** to “enabled” (default value).
+Set **Alternate Domain Names (CNAMEs)** to the desired domain. This should be a single domain per distribution formatted as `example.com` (without a protocol) and should match the desired URL.
+
+Leave **SSL Certificate** alone – or [skip ahead to the final step](#step-4) to take care of this now. Set **Default Root Object** to `index.html` which makes sure that the root domain `https://example.com/` will redirect to an index page rather than showing a directory of files or an error message. I set **Logging** on and created an S3 bucket for it, but it is not essential for configuration.
+
+Set **Distribution State** to “enabled” (default value). The site will not be live until Route 53 or another service points the desired domain to this Cloudfront bucket being set up.
 
 If using s3_website to handle S3 and CloudFront, [read about invalidations](https://github.com/laurilehmijoki/s3_website#how-to-use-cloudfront-to-deliver-your-blog). CloudFront invalidations cost money after the first 1,000 URLs. [Read about CloudFront caching](http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Expiration.html) (TTL settings) to avoid issues around invalidations.
 
@@ -176,7 +180,7 @@ Before setting up TLS, make sure all URLs on the site are working properly at th
 ## Step 4: TLS certificate on CloudFront
 {:#step-4}
 
-Edit the configuration for the CloudFront distribution set up in [Step 2](#step-2). Select **Custom SSL Certificate (example.com)** and then **Request an ACM certificate**. The request for the TLS certificate is made at no cost through AWS Certificate Manager, another console service. Alternatively, go to the [ACM console](https://console.aws.amazon.com/acm/home) and **Request a certificate**.
+Edit the configuration for the CloudFront distribution set up in [Step 2](#step-2) in the **General** tab. Select **Custom SSL Certificate (example.com)** and then **Request an ACM certificate**. The request for the TLS certificate is made at no cost through AWS Certificate Manager, another console service. Alternatively, go to the [ACM console](https://console.aws.amazon.com/acm/home) and **Request a certificate**.
 
 There are two key steps:
 
@@ -193,7 +197,11 @@ Getting a validation email wasn’t as easy as I had hoped. I had to set up an 
 
 To be on the safe side, choose _both_ `example.com` and `*.example.com` when setting up the certificate. Since only one certificate is allowed per CloudFront distribution, this covers any subdomains needed for the same certificate.
 
-After following the instructions in the email and approval page to validate the certificate, go back to the CloudFront distribution and select the certificate. Set **Viewer Protocol Policy** to “Redirect HTTP to HTTPS”. *Absolutely* set **Custom SSL Client Support** to “Only Clients that Support Server Name Indication (SNI)”. The alternative “All Clients” costs $600 per month because it requires a dedicated IP version of custom SSL support. The downside to [SNI](https://en.wikipedia.org/wiki/Server_Name_Indication) is that older browsers (4-10 years old) may not properly support TLS and therefore will get a worse experience (no HTTPS) or no experience (if HTTPS-only is specified). To support older browsers, HTTPS-only can be turned off since it is not a requirement, but this will mean that `http://example.com` won’t automatically redirect to `https://example.com`.
+After following the instructions in the email and approval page to validate the certificate, go back to the CloudFront distribution and select the certificate.
+
+*Absolutely* set **Custom SSL Client Support** to “Only Clients that Support Server Name Indication (SNI)”. The alternative “All Clients” costs $600 per month because it requires a dedicated IP version of custom SSL support. The downside to [SNI](https://en.wikipedia.org/wiki/Server_Name_Indication) is that older browsers (4-10 years old) may not properly support TLS and therefore will get a worse experience (no HTTPS) or no experience (if HTTPS-only is specified). To support older browsers, HTTPS-only can be turned off since it is not a requirement, but this will mean that `http://example.com` won’t automatically redirect to `https://example.com`.
+
+Go to the **Behaviors** tab, select the only item and edit it. Set **Viewer Protocol Policy** to “Redirect HTTP to HTTPS”. (One can also specify this setting on initial distribution configuration but afterward it is configured in this section.)
 
 {% assign image = page.image[3] %}
 {% include block/image--imgix.html class="image screenshot" %}
@@ -204,20 +212,18 @@ After following the instructions in the email and approval page to validate the 
 {% assign image = page.image[5] %}
 {% include block/image--imgix.html class="image screenshot" %}
 
-{% assign image = page.image[6] %}
-{% include block/image--imgix.html class="image--half screenshot" %}
-
 It’s time for another cup of tea because CloudFront will need a bit longer to process after changes are saved. After this, setup should be complete. Make sure the status of the distribution is marked as “deployed” and check whether the `https://` URLs for the site work properly. Done.
 
----
+{% assign image = page.image[6] %}
+{% include block/image--imgix.html class="image--half screenshot" %}
 
 ### Bonus: set `www` URLs to redirect
 
 If `https://example.com` is desired instead of `https://www.example.com`, Route 53 can be set up to automatically redirect these requests. Route 53 treats `www` just like any other subdomain. It is possible to set up an `ALIAS`-type record in the same hosted zone for the `www` domain and forward it to the same CloudFront distribution (with CNAMES for both domains set), but this has the disadvantage of offering no obvious canonical URL for the site. A URL like `www.example.com` would direct to the same exact resource as `example.com` would – but neither would be preferred because neither is set up as canonical. Both for users and search engines, having only a single URL for each unique resource is definitely preferred.
 
-The process is similar to [Step 1 (S3)](#step-1) through Step 2 (CloudFront) and Step 3 (Route 53) applied to a new bucket and distribution prepended with `www`. However, there are a few adjustments. The S3 bucket should be set to **Redirect all requests to another host name** which should be set at the root domain (`example.com`). That bucket can then be wired to a second CloudFront distribution and routed with Route 53, attached to the same certificate exactly as above. Setting up a parallel distribution that uses the S3 bucket’s built-in redirection service results in a single canonical URL.
+The process is similar to [Step 1 (S3)](#step-1) through Step 2 (CloudFront) and Step 3 (Route 53) applied to a new bucket and distribution prepended with `www`. However, there are a few adjustments. The S3 bucket should be set to **Redirect all requests to another host name** which should be set at the root domain (`example.com`). That bucket can then be connected to a second CloudFront distribution and routed with Route 53, attached to the same TLS certificate exactly as above. Setting up a parallel distribution that uses the S3 bucket’s built-in redirection service results in a single canonical URL regardless of the protocol used.
 
-This process could be mirrored to serve `www` as the canonical URL instead.
+This process could be mirrored to serve `www` as the canonical URL instead. For an example of this inverse behavior, check out how `google.com` redirects to `www.google.com`. Whether once picks `www` or no `www` is mostly a matter of personal preference, but the important thing is consistent behavior and a *single* canonical URL.
 
 ---
 
@@ -225,9 +231,13 @@ This process could be mirrored to serve `www` as the canonical URL instead.
 
 These are only *my* notes for configuration – there’s a reason I left out the word “you” from this account. I hope that this guide is helpful for anyone working on a similar challenge but I have not covered all of the ways that this process could go wrong. I discovered some of these methods through reading accounts of AWS configuration, some from Amazon’s official documentation, and others from trial and error.
 
-It was completely worth doing and I’d highly recommend it to anyone who is already using AWS to host a static site.
+It was completely worth doing and I’d highly recommend it to anyone who is already using AWS to host a static site. Other people have followed this guide and successfully used CloudFront to host a TLS site – let me know how it goes if you try it!
 
 {% capture endnote %}
+## Update (2016-10-12)
+
+CloudFront [now supports HTTP/2](https://aws.amazon.com/about-aws/whats-new/2016/09/amazon-cloudfront-now-supports-http2/)! The new implementation of HTTP has [potentially positive performance implications](https://http2.github.io). This can only be enabled by setting up TLS, and is turned on by default with new CloudFront distributions.
+
 ## Further reading
 
 ### Why moving to TLS is important
