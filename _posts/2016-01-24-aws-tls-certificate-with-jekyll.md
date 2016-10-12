@@ -134,11 +134,11 @@ s3_website configuration could be an article on its own, so I’ll defer to thei
 
 ### Create a distribution
 
-Go to the [CloudFront configuration](https://console.aws.amazon.com/cloudfront/home) and **Create Distribution** (select a “Web” distribution when prompted). The **Origin Domain Name** should be set to the *endpoint* from the S3 bucket. The endpoint specified here must look like `BUCKETNAME.s3-website-us-east-1.amazonaws.com` and not `BUCKETNAME.s3.amazonaws.com` so avoid use the “Amazon S3 Buckets” autocomplete that AWS provides. Why this URL matters is explained on the [Open Guide to Amazon Web Services](https://github.com/open-guides/og-aws#cloudfront-gotchas-and-limitations)).
+Go to the [CloudFront configuration](https://console.aws.amazon.com/cloudfront/home) and **Create Distribution** (select a “Web” distribution when prompted). The **Origin Domain Name** should be set to the *endpoint* from the S3 bucket. The endpoint specified here must look like `BUCKETNAME.s3-website-us-east-1.amazonaws.com` and not `BUCKETNAME.s3.amazonaws.com` so avoid using the “Amazon S3 Buckets” autocomplete that AWS provides. Why this URL matters is explained on the [Open Guide to Amazon Web Services](https://github.com/open-guides/og-aws#cloudfront-gotchas-and-limitations)).
 
 ### Configure
 
-Set **Alternate Domain Names (CNAMEs)** to the desired domain. This should be a single domain per distribution formatted as `example.com` (without a protocol) and should match the desired URL.
+Set **Alternate Domain Names (CNAMEs)** to the desired domain. This should be a single domain per distribution formatted as `example.com` (without a protocol).
 
 Leave **SSL Certificate** alone – or [skip ahead to the final step](#step-4) to take care of this now. Set **Default Root Object** to `index.html` which makes sure that the root domain `https://example.com/` will redirect to an index page rather than showing a directory of files or an error message. I set **Logging** on and created an S3 bucket for it, but it is not essential for configuration.
 
