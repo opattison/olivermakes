@@ -62,13 +62,13 @@ Serving over HTTPS with SSL or TLS used to be difficult to configure, and someti
 
 Amazon Simple Storage Service (S3) is a fast and usually inexpensive way of hosting a static site. S3 typically offers better value for money compared to other budget hosting options, since the initial costs are lower with no fixed payment floor and performance can be surprisingly fast compared to shared hosting. Amazon CloudFront, a content delivery network, enhances S3’s capability by serving files based on their location as determined by network latency. Serving files as close as possible to the user can yield significant gains in performance. A bucket of hosted S3 files can hook right into CloudFront, so an S3 site can be configured to serve with CloudFront instead with only a few minutes of configuration time.
 
-AWS is the so-called “cloud”. What this really means is that Amazon provides a collection of remote, abstracted servers with tools for deploying and hosting website and web services. Together, S3, CloudFront and the AWS Certificate Manager enable hosting a personal static site for potentially only a couple of dollars per month. A TLS certificate can now be had initially for *free* for a CloudFront site.
+AWS is the so-called “cloud”. What this really means is that Amazon provides a collection of remote, abstracted servers with tools for deploying and hosting website and web services. Together, S3, CloudFront and the AWS Certificate Manager enable hosting a personal static site (using HTTP/2) for potentially only a couple of dollars per month. A TLS certificate can now be had initially for *free* for a CloudFront site.
 
 ## Assumptions before starting
 
 - An existing Jekyll site (or something similar that requires only static files to be hosted).
-- A domain for that site like `example.com` or `olivermak.es`.
-- Access to an administrator email account associated with that domain. In my case this meant having an `administrator@` email which I set up with Hover, but other domains may not require this.
+- A domain for that site (like `example.com` or `olivermak.es`).
+- Access to an administrator email account associated with that domain. In my case this meant having an `administrator@` email which I set up with Hover. Whether you can get away with using your personal email depends on whether your domain has [WHOIS privacy](https://help.hover.com/hc/en-us/articles/217282337-Domain-WHOIS-Privacy) turned on.
 - An Amazon AWS account.
 
 Before I get to [the part about configuring a TLS certificate](#step-4), I’ll cover my method for setting up S3 for hosting, CloudFront as a CDN (and a requirement for the certificate) and Route 53 for DNS routing. It’s a bit of a complicated process, but it is worth it. Getting the certificate is free and very brief for those already set up with AWS CloudFront.
@@ -223,7 +223,7 @@ If `https://example.com` is desired instead of `https://www.example.com`, Route 
 
 The process is similar to [Step 1 (S3)](#step-1) through Step 2 (CloudFront) and Step 3 (Route 53) applied to a new bucket and distribution prepended with `www`. However, there are a few adjustments. The S3 bucket should be set to **Redirect all requests to another host name** which should be set at the root domain (`example.com`). That bucket can then be connected to a second CloudFront distribution and routed with Route 53, attached to the same TLS certificate exactly as above. Setting up a parallel distribution that uses the S3 bucket’s built-in redirection service results in a single canonical URL regardless of the protocol used.
 
-This process could be mirrored to serve `www` as the canonical URL instead. For an example of this inverse behavior, check out how `google.com` redirects to `www.google.com`. Whether once picks `www` or no `www` is mostly a matter of personal preference, but the important thing is consistent behavior and a *single* canonical URL.
+This process could be mirrored to serve `www` as the canonical URL instead. For an example of this inverse behavior, check out how `google.com` redirects to `www.google.com`. Whether one picks `www` or no `www` is mostly a matter of personal preference, but the important thing is consistent behavior and a *single* canonical URL.
 
 ---
 
