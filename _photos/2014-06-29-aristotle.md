@@ -10,8 +10,8 @@ focal: '35mm'
 aperture: 'f/4.5'
 shutter: '1/320'
 iso: 320
-latitude: 38.9124
-longitude: -76.9556
+latitude: 38.91242
+longitude: -76.95565
 zoom: 16
 location: 'Asian Collections, National Arboretum, DC'
 quality: 70

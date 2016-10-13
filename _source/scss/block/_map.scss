@@ -1,8 +1,29 @@
+.map--collection {
+  margin: 2em 0 1em;
+  width: 100%;
+
+  .mapboxgl-map {
+    height: 24em;
+
+    @include min-width(m01) {
+      height: 32em;
+    }
+
+    @include min-width(l02) {
+      height: 40em;
+    }
+
+    .mapboxgl-popup-content {
+      padding: 0; // reset for photos
+    }
+  }  
+}
+
+
 .map--photo {
   margin: 2em 0 1em;
 
   .mapboxgl-map {
-    font-family: $ratio;
     height: 24em;
 
     @include min-width(m01) {
@@ -22,29 +43,32 @@
       height: 2em;
       width: 2em;
     }
+  }
+}
 
-    .mapboxgl-popup-content {
-      background-color: $whiter;
-      box-shadow: 0 1px 2px hsla(204, 10%, 21%, .25);
-      color: $gray02;
-      font-size: 1.25em;
-      padding: 1em;
-      border-radius: 0;
-    }
+// override styles
+.mapboxgl-map {
+  .mapboxgl-popup-content {
+    background-color: $whiter;
+    box-shadow: 0 1px 2px hsla(204, 10%, 21%, .25);
+    color: $gray02;
+    font-size: 1.25em;
+    padding: 1em;
+    border-radius: 0;
+  }
 
-    .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
-      border-top-color: $whiter;
-    }
+  .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
+    border-top-color: $whiter;
+  }
 
-    .mapboxgl-ctrl-group {
-      border-radius: 0;
-      box-shadow: 0 1px 2px hsla(204, 10%, 21%, .25);
-    }
+  .mapboxgl-ctrl-group {
+    border-radius: 0;
+    box-shadow: 0 1px 2px hsla(204, 10%, 21%, .25);
+  }
 
-    .mapboxgl-ctrl-scale {
-      background-color: hsla(204, 10%, 90%, .5);
-      border-color: hsla(204, 10%, 21%, .25);
-    }
+  .mapboxgl-ctrl-scale {
+    background-color: hsla(204, 10%, 90%, .5);
+    border-color: hsla(204, 10%, 21%, .25);
   }
 }
 
@@ -83,4 +107,19 @@
     color: $gray06;
     border-bottom-color: $gray04;
   }
+}
+
+.map--collection-caption {
+  color: $gray03;
+  font-size: .875em;
+  text-align: right;
+
+  a {
+    color: $gray03;
+    border-bottom-color: $gray04;
+  }
+}
+
+.popup-image {
+  width: 100px;
 }

@@ -11,8 +11,8 @@ aperture: 'f/2.8'
 shutter: '1/40'
 iso: 2000
 location: 'Adams Morgan, DC'
-latitude: 38.9172
-longitude: -77.0461
+latitude: 38.91715
+longitude: -77.04615
 zoom: 15
 quality: 60
 aspect: '3:2'

@@ -3,82 +3,228 @@
 <link rel="prerender" href="{{ site.url }}">
 <link rel="preconnect" href="{{ site.imgix_url }}">
 
-{% if page.collection == 'photos' and page.longitude and page.latitude %}
-<script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.25.1/mapbox-gl.js"defer></script>
+{% if page.collection == 'photos' or page.option contains 'mapbox' %}
+<script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.25.1/mapbox-gl.js" defer></script>
 <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.25.1/mapbox-gl.css" rel="stylesheet" />
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-supported/v1.2.0/mapbox-gl-supported.js" defer></script>
 
+{% if page.unique_id == 'photography' %}
 <script>
-// all of this runs conditionally only if page location parameters are set and mapbox is supported
+// run conditionally if page is photography index and mapbox is supported
 document.addEventListener('DOMContentLoaded', contentLoaded, false);
 
 function contentLoaded () {
   if (mapboxgl.supported()) {
-  // authorization key set in prod.yml
-  mapboxgl.accessToken = '{{ site.mapbox.key }}';
+    // authorization key set in prod.yml
+    mapboxgl.accessToken = '{{ site.mapbox.key }}';
 
-  // long and lat pulled from front matter
-  var latLong = [{{ page.longitude }}, {{ page.latitude }}];
+    var map = new mapboxgl.Map({
+      container: 'map--collection-mapbox',
+      // style set in prod.yml
+      style: '{{ site.mapbox.style }}',
+      minZoom: 2.5,
+      maxZoom: 18,
+      center: [
+        -77.043343,
+        38.909669
+      ],
+      zoom: 8,
+      // attribution control is set in prod.yml
+      attributionControl: false
+    });
 
-  var map = new mapboxgl.Map({
-    container: 'map--photo-mapbox',
-    // style set in prod.yml
-    style: '{{ site.mapbox.style }}',
-    minZoom: 4,
-    maxZoom: 18,
-    // optional zoom value set in front matter
-    zoom: {% if page.zoom %}{{ page.zoom }}{% else %}14{% endif %},
-    center: latLong,
-    // attribution control is set in prod.yml
-    attributionControl: false,
-    scrollZoom: false
-  });
+    // add mapbox controls and scale
+    map.addControl(new mapboxgl.Navigation({
+      position: 'bottom-left'
+    }));
+    map.addControl(new mapboxgl.Scale({
+      position: 'bottom-right',
+      maxWidth: 200,
+      unit: 'metric'
+    }));
 
-  // add mapbox controls
-  map.addControl(new mapboxgl.Navigation({
-    position: 'bottom-left'
-  }));
-  map.addControl(new mapboxgl.Scale({
-    position: 'bottom-right',
-    maxWidth: 200,
-    unit: 'metric'
-  }));
+    map.on('load', function () {
+      // add clustered points
+      map.addSource(
+        "points",
+        {
+          type: "geojson",
+          data: "/resources/photos.geojson",
+          cluster: true,
+          clusterMaxZoom: 16,
+          clusterRadius: 24
+        }
+      )
 
-  var toggleScrollZoom = document.querySelector('.jsToggleScrollZoom');
+      // single points
+      map.addLayer({
+        "id": "unclustered-points",
+        "type": "circle",
+        "source": "points",
+        "filter": ["!has", "point_count"],
+        "paint": {
+          "circle-color": "hsl(4, 60%, 42%)",
+          "circle-radius": 10
+        }
+      });
 
-  function toggleZooming() {
-    var classList = toggleScrollZoom.classList;
-    if (classList.contains('jsActive')) {
-      classList.remove('jsActive');
-    } else {
-      classList.add('jsActive');
-    }
+      // clustered points
+      map.addLayer({
+        "id": "clustered-points",
+        "type": "circle",
+        "source": "points",
+        "filter": ["has", "point_count"],
+        "paint": {
+          "circle-color": "hsl(4, 60%, 42%)",
+          "circle-radius": 16
+        }
+      });
 
-    if (map.scrollZoom.isEnabled()) {
-      map.scrollZoom.disable();
-    } else {
-      map.scrollZoom.enable();
-    }
-  };
+      // clustered point labels
+      map.addLayer({
+        "id": "cluster-count",
+        "type": "symbol",
+        "source": "points",
+        "layout": {
+          "text-field": "{point_count}",
+          "text-font": [
+            "Source Sans Pro Semibold",
+            "Arial Unicode MS Regular"
+          ],
+          "text-size": 12
+        },
+        "paint": {
+          "text-color": "hsl(180, 7%, 97%)"
+        }
+      });
 
-  toggleScrollZoom.addEventListener('click', toggleZooming, false);
+      map.on('click', function (e) {
+        var features = map.queryRenderedFeatures(e.point, { layers: ['unclustered-points'] });
 
-  var popupParameters = {
-    closeButton: false,
-    offset: [12, -2]
+        if (!features.length) {
+          return;
+        }
+
+        var feature = features[0];
+
+        var popupParameters = {
+          closeButton: false,
+          offset: [0, -5]
+        }
+
+        // Populate the popup and set its coordinates
+        // based on the feature found.
+        var popup = new mapboxgl.Popup(popupParameters)
+          .setLngLat(feature.geometry.coordinates)
+          .setHTML(
+            "<a href=\"" +
+            feature.properties.url +
+            "\">" +
+            "<img class=\"popup-image\" src=\"" +
+            feature.properties.src +
+            "\" " +
+            "alt=\"" +
+            feature.properties.alt +
+            "\"></a>"
+          )
+          .addTo(map);
+      });
+    });
+
+    map.on('click', function (e) {
+      var features = map.queryRenderedFeatures(e.point, { layers: ['clustered-points'] });
+
+      if (!features.length) {
+        return;
+      }
+
+      var feature = features[0];
+
+      // center and close in on position
+      map.flyTo({center: feature.geometry.coordinates, zoom: map.getZoom() + 3 });
+
+    });
+
   }
+}
 
-  // set popup positioning and location from front matter
-  var popup = new mapboxgl.Popup(popupParameters)
-    .setLngLat(latLong)
-    .setText('{{ page.location }}');
+</script>
+{% endif %}
 
-  // attach popup to the marker
-  var marker = new mapboxgl.Marker()
-    .setLngLat(latLong)
-    .setPopup(popup)
-    .addTo(map);
+{% if page.longitude and page.latitude %}
+<script>
+// run conditionally if page location parameters are set and mapbox is supported
+document.addEventListener('DOMContentLoaded', contentLoaded, false);
+
+function contentLoaded () {
+  if (mapboxgl.supported()) {
+    // authorization key set in prod.yml
+    mapboxgl.accessToken = '{{ site.mapbox.key }}';
+
+    // long and lat pulled from front matter
+    var latLong = [{{ page.longitude }}, {{ page.latitude }}];
+
+    var map = new mapboxgl.Map({
+      container: 'map--photo-mapbox',
+      // style set in prod.yml
+      style: '{{ site.mapbox.style }}',
+      minZoom: 4,
+      maxZoom: 18,
+      center: latLong,
+      // optional zoom value set in front matter
+      zoom: {% if page.zoom %}{{ page.zoom }}{% else %}14{% endif %},
+      // attribution control is set in prod.yml
+      attributionControl: false,
+      scrollZoom: false
+    });
+
+    // add mapbox controls and scale
+    map.addControl(new mapboxgl.Navigation({
+      position: 'bottom-left'
+    }));
+    map.addControl(new mapboxgl.Scale({
+      position: 'bottom-right',
+      maxWidth: 200,
+      unit: 'metric'
+    }));
+
+    var toggleScrollZoom = document.querySelector('.jsToggleScrollZoom');
+
+    function toggleZooming() {
+      var classList = toggleScrollZoom.classList;
+      if (classList.contains('jsActive')) {
+        classList.remove('jsActive');
+      } else {
+        classList.add('jsActive');
+      }
+
+      if (map.scrollZoom.isEnabled()) {
+        map.scrollZoom.disable();
+      } else {
+        map.scrollZoom.enable();
+      }
+    };
+
+    toggleScrollZoom.addEventListener('click', toggleZooming, false);
+
+    var popupParameters = {
+      closeButton: false,
+      offset: [12, -2]
+    }
+
+    // set popup positioning and location from front matter
+    var popup = new mapboxgl.Popup(popupParameters)
+      .setLngLat(latLong)
+      .setText('{{ page.location }}');
+
+    // attach popup to the marker
+    var marker = new mapboxgl.Marker()
+      .setLngLat(latLong)
+      .setPopup(popup)
+      .addTo(map);
 
   }
 }
 </script>
+{% endif %}
 {% endif %}

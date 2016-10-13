@@ -1,0 +1,23 @@
+---
+---
+{
+  "type": "FeatureCollection",
+  "features": [
+    {% for photo in site.photos %}
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "{{ photo.title }}",
+        "url": "{{ photo.url }}",
+        "src": "{{ photo.src | imgix_url: w: 100, q: 50 }}",
+        "alt": "{{ photo.alt }}",
+        "iconSize": [60, 60]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [{{ photo.longitude }}, {{ photo.latitude }}]
+      }
+    }{% if forloop.rindex > 1 %},{% endif%}
+    {% endfor %}
+  ]
+}

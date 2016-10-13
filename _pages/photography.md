@@ -13,4 +13,7 @@ permalink: /photography/
 {% for post in site.categories.photography %}
   {% include block/item--photo.html %}
 {% endfor %}
+
+{% include block/map--collection.html %}
+
 {% include block/index-nav.html %}
