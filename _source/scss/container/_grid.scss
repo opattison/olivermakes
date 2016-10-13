@@ -1,24 +1,24 @@
 // Flexing grid container for images and other items
-.grid {
+.grid,
+.grid--wide {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
 
+  figcaption p {
+    text-align: left;
+  }
+}
+
+.grid {
+
   @include min-width(l01) {
     flex-flow: row nowrap;
-  }
-
-  p + {
-    margin-top: 2em;
   }
 }
 
 .grid--wide {
   @include bleed-image(1em);
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  margin-top: 1em;
 
   @include min-width(s03) {
     @include bleed-image(2em);
@@ -35,11 +35,6 @@
     flex-flow: row nowrap;
     max-width: none;
     width: calc(100% + 9em);
-
-    figcaption p {
-      margin-left: calc(50% + 1em);
-      width: calc(50% - 1em);
-    }
   }
 
   @include min-width(l03) {
@@ -79,12 +74,6 @@ p + .grid--wide {
     flex: 1 1 calc(100% / 3 - 1em);
     margin-right: 1em;
     width: calc(100% / 3 - 1em);
-
-    figcaption p {
-      margin-left: 0;
-      text-align: left;
-      width: auto;
-    }
   }
 }
 
@@ -94,11 +83,6 @@ p + .grid--wide {
     flex: 1 1 calc(100% / 3 * 2 - 1em);
     margin-right: 1em;
     width: calc(100% / 3 * 2 - 1em);
-
-    figcaption p {
-      margin: auto;
-      width: 100%;
-    }
   }
 }
 
