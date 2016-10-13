@@ -3,6 +3,7 @@
 .content {
   background-color: inherit;
   padding-top: 1em;
+  padding-bottom: 1em;
 
   @include min-width(l01) {
     padding-top: 2em;

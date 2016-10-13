@@ -1,6 +1,6 @@
 ---
 title: 'About'
-layout: singel
+layout: micro
 option:
   - no-title
   - hero
@@ -33,7 +33,7 @@ I’m available for hire and interested in collaborating on projects.
 {% include block/outreach--hire.html %}
 
 <aside class="ancillary">
-<h1>Elsewhere on the web</h1>
+<h2>Elsewhere on the web</h2>
 
   <section class="elsewhere--rows">
     <a class="elsewhere-action" href="{{ site.link.pinboard }}">Pinboard{% include icon/pinboard.svg %}</a>
