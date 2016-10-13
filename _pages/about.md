@@ -52,7 +52,7 @@ This website is an archive for my work, featuring:
 - **[Projects](/projects/)**, documentation and reflections on professional and open source work
 - **[Photography](/photography/)**, a collection of images documenting details of my environment
 
-**[Subscribe]({{ site.link.subscribe.full }})** to this site’s Atom feed. Or subscribe to filtered feeds for my [writing]({{ site.link.subscribe.writing }}), [photography]({{ site.link.subscribe.photography }}), and [projects]({{ site.link.subscribe.projects }}).
+Subscribe to **[this site’s Atom feed]({{ site.link.subscribe.full }})**. Or subscribe to filtered feeds for my [writing]({{ site.link.subscribe.writing }}), [photography]({{ site.link.subscribe.photography }}), and [projects]({{ site.link.subscribe.projects }}).
 
 ### Design and development
 
