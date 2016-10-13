@@ -27,10 +27,12 @@ I loved [the original home page for Jekyll](http://web.archive.org/web/201205050
 
 Over eight years and three major versions later, [the Jekyll project has matured](http://jekyllrb.com) and dropped the old design. I decided to revive the design with a [CodePen demo](http://codepen.io/opattison/pen/WQzZRG/?editors=1100) with new web standards that didn’t exist back then. The initial implementation relied on a lot of hacks to achieve its uncommon split layout. I used CSS flexbox for layout, `vh` (viewport height) units, a two-tone `linear-gradient` background, and `mix-blend-mode` to create the text contrast. The blend mode bit is the most forward-looking (and least well-supported) part of this demo, but it _is_ usable on production websites with proper care.
 
-## CodePen demo
-
-<p data-height="320" data-theme-id="0" data-slug-hash="WQzZRG" data-default-tab="result" data-user="opattison" class='codepen'>See the Pen <a href='http://codepen.io/opattison/pen/WQzZRG/'>transform your text into a monster</a> by Oliver Pattison (<a href='http://codepen.io/opattison'>@opattison</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<div class="grid--wide">
+  <figure class="grid-figure">
+    <p data-height="400" data-theme-id="0" data-slug-hash="WQzZRG" data-default-tab="result" data-user="opattison" class='codepen'>See the Pen <a href='http://codepen.io/opattison/pen/WQzZRG/'>transform your text into a monster</a> by Oliver Pattison (<a href='http://codepen.io/opattison'>@opattison</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+  </figure>
+</div>
 
 ## HTML and CSS used
 
