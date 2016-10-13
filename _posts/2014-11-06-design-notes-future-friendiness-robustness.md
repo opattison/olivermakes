@@ -23,7 +23,7 @@ image:
   - src: /images/2014-12-12-futurefriendly.svg
     src_png: /images/2014-12-12-futurefriendly.png
     alt: 'future friendly logo'
-    caption: 'The [future friendly](http://futurefriendlyweb.com/) movement is a significant inspiration for my approach, in both philosophy and implementation. [#ffly](https://twitter.com/search?q=%23ffly) astronaut logo is licensed [CC BY](http://creativecommons.org/licenses/by/3.0/), modified slightly by me.'
+    caption: 'The [future friendly](http://futurefriendlyweb.com/) movement is a significant inspiration for my approach, in both philosophy and implementation. Astronaut logo is licensed [CC BY](http://creativecommons.org/licenses/by/3.0/), modified slightly by me.'
     description: 'hero color is gray3 #49535a; index-image color is gray6 #84919a'
     license: CC BY
     license-url: http://creativecommons.org/licenses/by/3.0/
@@ -97,7 +97,7 @@ Another aspect of working with a static site that appeals to me is that I am abl
 The trade-off is supposedly an easier user interface for editing and administration, and more flexibility with dynamic content. However, I find a CMS in the WordPress model more intimidating after a couple of years getting comfortable with tools like Jekyll and Git. I like working in a text editor. I have grown to appreciate the power of the command line. The data that I input into my site is under my control because I manage the input and the output from my own computer, rather than relying on someone else’s server.
 
 {% assign image = page.image[0] %}
-{% include block/image.html class="extralight right svg" %}
+{% include block/image.html class="extralight right" %}
 
 I am willing to admit that I don’t have a handle on working alone with a complex dynamic site suited to my design goals. Fortunately, static sites make up for their deficiencies in dynamism with high performance and robustness. Dealing with [opaque and breakable databases](http://indiewebcamp.com/wiki/index.php?title=database-antipattern), worrying about security holes, and spending time figuring out limitations of a dynamically programmed site takes my time away from writing, photography, and improving the user interface of the site.
 
