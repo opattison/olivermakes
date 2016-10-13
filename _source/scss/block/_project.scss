@@ -108,7 +108,7 @@
   }
 
   @include min-width(l03) {
-    background-position: 50% 25%;
+    border: solid 1px;
     flex: 0 0 50%;
     height: 18em;
     width: 50%;
