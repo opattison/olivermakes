@@ -11,9 +11,9 @@
 {% if page.option contains 'map-collection' %}
 <script>
 // run conditionally if page option is set and mapbox is supported
-document.addEventListener('DOMContentLoaded', contentLoaded, false);
+document.addEventListener('DOMContentLoaded', collectionMapLoaded, false);
 
-function contentLoaded () {
+function collectionMapLoaded () {
   if (mapboxgl.supported()) {
     // authorization key set in prod.yml
     mapboxgl.accessToken = '{{ site.mapbox.key }}';
@@ -168,9 +168,9 @@ function contentLoaded () {
 {% if page.longitude and page.latitude %}
 <script>
 // run conditionally if page location parameters are set and mapbox is supported
-document.addEventListener('DOMContentLoaded', contentLoaded, false);
+document.addEventListener('DOMContentLoaded', photoMapLoaded, false);
 
-function contentLoaded () {
+function photoMapLoaded () {
   if (mapboxgl.supported()) {
     // authorization key set in prod.yml
     mapboxgl.accessToken = '{{ site.mapbox.key }}';
