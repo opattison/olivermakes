@@ -8,9 +8,9 @@
 <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.25.1/mapbox-gl.css" rel="stylesheet" />
 <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-supported/v1.2.0/mapbox-gl-supported.js" defer></script>
 
-{% if page.unique_id == 'photography' %}
+{% if page.option contains 'map-collection' %}
 <script>
-// run conditionally if page is photography index and mapbox is supported
+// run conditionally if page option is set and mapbox is supported
 document.addEventListener('DOMContentLoaded', contentLoaded, false);
 
 function contentLoaded () {
@@ -158,9 +158,7 @@ function contentLoaded () {
 
       // center and close in on position
       map.flyTo({center: feature.geometry.coordinates, zoom: map.getZoom() + 3 });
-
     });
-
   }
 }
 

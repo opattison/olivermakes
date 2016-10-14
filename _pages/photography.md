@@ -2,6 +2,7 @@
 title: Photography
 layout: category
 option:
+  - map-collection
   - mapbox
 category: index
 unique_id: photography

@@ -9,9 +9,9 @@
       "properties": {
         "title": "{{ photo.title }}",
         "url": "{{ photo.url }}",
-        "src": "{{ photo.src | imgix_url: w: 144, h: 96, q: 45, fit: crop }}",
+        "src": "{{ photo.src | imgix_url: fit: 'crop', w: 192, h: 128, q: 45 }}",
         "alt": "{{ photo.alt }}",
-        "iconSize": [72, 48]
+        "iconSize": [96, 64]
       },
       "geometry": {
         "type": "Point",
