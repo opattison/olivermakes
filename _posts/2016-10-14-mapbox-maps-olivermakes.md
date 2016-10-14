@@ -4,6 +4,7 @@ layout: edgeless
 theme: dark
 category: 'projects'
 option:
+  - featured-home
   - mapbox
   - map-collection
   - minor
