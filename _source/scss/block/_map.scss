@@ -21,6 +21,7 @@
 
 .map--photo {
   margin: 2em 0 1em;
+  width: 100%;
 
   .mapboxgl-map {
     height: 24em;
@@ -100,7 +101,10 @@
 .map--photo-caption {
   color: $gray06;
   font-size: .875em;
-  text-align: right;
+
+  p {
+    text-align: right !important;
+  }
 
   a {
     color: $gray06;

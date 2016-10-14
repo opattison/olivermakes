@@ -47,7 +47,7 @@ function collectionMapLoaded () {
     map.on('load', function () {
       // add clustered points
       map.addSource(
-        "points",
+        "photos",
         {
           type: "geojson",
           data: "/resources/photos.geojson",
@@ -61,7 +61,7 @@ function collectionMapLoaded () {
       map.addLayer({
         "id": "unclustered-points",
         "type": "circle",
-        "source": "points",
+        "source": "photos",
         "filter": ["!has", "point_count"],
         "paint": {
           "circle-color": "hsl(4, 60%, 42%)",
@@ -73,7 +73,7 @@ function collectionMapLoaded () {
       map.addLayer({
         "id": "clustered-points",
         "type": "circle",
-        "source": "points",
+        "source": "photos",
         "filter": ["has", "point_count"],
         "paint": {
           "circle-color": "hsl(4, 60%, 42%)",
@@ -85,7 +85,7 @@ function collectionMapLoaded () {
       map.addLayer({
         "id": "cluster-count",
         "type": "symbol",
-        "source": "points",
+        "source": "photos",
         "layout": {
           "text-field": "{point_count}",
           "text-font": [
@@ -204,7 +204,7 @@ function photoMapLoaded () {
 
     map.on('load', function (e) {
       map.addSource(
-        "points",
+        "page-point",
         {
           type: "geojson",
           data: {
@@ -226,9 +226,9 @@ function photoMapLoaded () {
       );
 
       map.addLayer({
-        "id": "points",
+        "id": "page-point",
         "type": "circle",
-        "source": "points",
+        "source": "page-point",
         "paint": {
           "circle-color": "hsl(4, 60%, 42%)",
           "circle-radius": 10
@@ -237,7 +237,7 @@ function photoMapLoaded () {
     });
 
     map.on('click', function (e) {
-      var features = map.queryRenderedFeatures(e.point, { layers: ['points'] });
+      var features = map.queryRenderedFeatures(e.point, { layers: ['page-point'] });
 
       if (!features.length) {
         return;
@@ -257,7 +257,7 @@ function photoMapLoaded () {
     });
 
     map.on('mousemove', function(e) {
-      var features = map.queryRenderedFeatures(e.point, { layers: ['points'] });
+      var features = map.queryRenderedFeatures(e.point, { layers: ['page-point'] });
       // set cursor to pointer
       map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
     });
