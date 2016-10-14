@@ -9,7 +9,7 @@
       "properties": {
         "title": "{{ photo.title }}",
         "url": "{{ photo.url }}",
-        "src": "{{ photo.src | imgix_url: w: 144, h: 96, q: 45 }}",
+        "src": "{{ photo.src | imgix_url: w: 144, h: 96, q: 45, fit: crop }}",
         "alt": "{{ photo.alt }}",
         "iconSize": [72, 48]
       },
