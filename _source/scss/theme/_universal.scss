@@ -31,7 +31,17 @@
   @extend %item_color;
 
   &:nth-child(2n) {
-    background-color: $gray05;
+    background-color: $gray06;
+  }
+
+  h1 a {
+    @include a-underline($trans01, $blue);
+    color: $black;
+
+    &:hover,
+    &:focus {
+      color: $blue;
+    }
   }
 }
 

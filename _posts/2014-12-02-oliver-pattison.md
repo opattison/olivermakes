@@ -40,16 +40,22 @@ Here is a collection of writing and projects that document this website. I first
 
 Publishing on my own site has given me personal freedom in working towards these goals, but these are principles that I attempt to incorporate into all of my creative work on the web.
 
-## Related writing and projects
+## Related projects
+
+{% include block/project--satellite.html id="2016-10-14:mapbox-maps-olivermakes" %}
 
 {% include block/project--satellite.html id="2016-10-08:preserving-jekyll-sites" %}
 
-{% include block/project--satellite.html id="2014-11-06:design-notes-future-friendliness" %}
-
-{% include block/project--satellite.html id="2014-11-08:design-notes-dependencies" %}
-
-{% include block/project--satellite.html id="2014-11-08:design-notes-an-archive" %}
-
 {% include block/project--satellite.html id="2016-01-24:aws-tls-certificate-with-jekyll" %}
 
-{% include block/project--satellite.html id="2014-12-19:reading-driven-design" %}
+## Related writing
+
+{% include block/item--satellite.html id="2016-03-16:consider-jekyll" %}
+
+{% include block/item--satellite.html id="2014-11-06:design-notes-future-friendliness" %}
+
+{% include block/item--satellite.html id="2014-11-08:design-notes-dependencies" %}
+
+{% include block/item--satellite.html id="2014-11-08:design-notes-an-archive" %}
+
+{% include block/item--satellite.html id="2014-12-19:reading-driven-design" %}
