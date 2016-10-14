@@ -1,11 +1,9 @@
 ---
 title: 'Oliver Pattison'
 layout: micro
-option:
-  - hero
 date: 2016-07-18 12:34
 updated: 2016-08-15 14:54
-unique_id: 2016-07-18:hire
+unique_id: hire
 permalink: /hire/
 custom_style: custom-hire.css
 description: 'Why you should hire or work with me, Oliver Pattison, a web designer.'
@@ -39,14 +37,13 @@ details:
     expanded: 'I have designed and developed sites with Shopify, Statamic, WordPress, and other content management systems. My focus has been on integrating front-end design with content editing systems, and creating clear and usable content structures for editors.'
     icon: shopify
 recently:
-  - Redesigned [Jean Flanagan’s website](/2016/10/jean-flanagan-2016/)
-  - Presented [a talk at JekyllConf](/2016/05/jekyllconf-responsive-images/) on responsive images with Jekyll and imgix
-  - Learning [Mapbox GL API](https://www.mapbox.com/mapbox-gl-js/api/) to make interactive maps with JavaScript and WebGL
-  - Learning [Vue.js](http://vuejs.org) to make user interfaces with JavaScript
-  - Developing client websites, such as [Acorn Landscape Supply](http://acornlandscapesupply.ca)
-  - Attending [Homebrew Website Club](https://indieweb.org/Homebrew_Website_Club) (organized by IndieWebCamp)
-  - Attending [CodeNewbie DC community coding group](http://www.meetup.com/CodeNewbie-DC/) sessions to collaborate with people who are new to web development
-  - Contributing to online communities such as [Spec’s design and development Slack network](http://spec.fm/) and [Jekyll Talk, the official resource for Jekyll](https://talk.jekyllrb.com/)
+  - Learning the Mapbox GL API to [make interactive maps with JavaScript and WebGL](/2016/10/mapbox-maps-olivermakes/).
+  - Redesigned [Jean Flanagan’s website](/2016/10/jean-flanagan-2016/).
+  - Presented [a talk at JekyllConf](/2016/05/jekyllconf-responsive-images/) on responsive images with Jekyll and imgix.
+  - Learning [Vue.js](http://vuejs.org) to make user interfaces with JavaScript.
+  - Attending local meetups like [the IndieWebCamp Homebrew Website Club](https://indieweb.org/Homebrew_Website_Club) and [the CodeNewbie DC community coding group](http://www.meetup.com/CodeNewbie-DC/) to collaborate with like-minded people and those who are new to web development.
+  - Developing client websites, such as [Acorn Landscape Supply](http://acornlandscapesupply.ca).
+  - Contributing to online communities such as [Spec’s design and development Slack network](http://spec.fm/) and [Jekyll Talk, the official resource for Jekyll](https://talk.jekyllrb.com/).
 ---
 
 # Available for hire
@@ -92,5 +89,9 @@ I’m [Oliver Pattison](/about/), a designer who makes responsive, forward-think
     {% endfor %}
   </ul>
 </aside>
+
+{% include block/project--satellite.html id="2016-10-14:mapbox-maps-olivermakes" %}
+
+{% include block/project--satellite.html id="2016-10-08:preserving-jekyll-sites" %}
 
 {% include block/outreach.html %}

@@ -197,7 +197,7 @@ mark {
 }
 
 .hero figcaption {
-  background-color: $back--plus;
+  background-color: inherit;
 }
 
 .footnote {
@@ -336,7 +336,8 @@ mark {
   }
 }
 
-.project-image {
+.project-image,
+.project--satellite .project-image {
   background-color: $back--project-image;
   border-color: $back--minus;
 }

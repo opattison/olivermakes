@@ -31,17 +31,26 @@
   figcaption p {
     // _fundamental font-size: .875em
 
-    @include min-width(s03) {
-      font-size: 1em;
-    }
-
-    @include min-width(m02) {
-      font-size: .75em;
-    }
-
     @include min-width(l01) {
       margin-left: 50%;
       width: 50%;
+    }
+  }
+}
+
+
+@supports (object-fit: cover) {
+  .micro,
+  .edgeless {
+    .hero {
+      max-width: none;
+      flex: 1 0 100%;
+
+      img {
+        max-height: 75vh;
+        object-fit: cover;
+        object-position: 50% 0%;
+      }
     }
   }
 }

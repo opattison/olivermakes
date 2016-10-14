@@ -80,7 +80,6 @@ p + .image--wide {
 (min-width: 60em) and (min-aspect-ratio: 16/9) {
   .image--wide,
   .grid--wide {
-    margin: 1em auto 0 !important;
-    max-width: 100% !important;
+    @include bleed-image(4.5em);
   }
 }

@@ -3,6 +3,7 @@
 .content {
   background-color: inherit;
   padding-top: 1em;
+  padding-bottom: 1em;
 
   @include min-width(l01) {
     padding-top: 2em;
@@ -14,17 +15,6 @@
   max-width: none;
   padding: 0;
   flex: 1 1 auto;
-
-  @media (max-width: 60em) and (min-aspect-ratio: 5/3),
-  (min-width: 60em) and (min-aspect-ratio: 16/9) {
-    max-width: 90%;
-    padding-top: 5%;
-  }
-
-  @media (min-aspect-ratio: 2/1) {
-    max-width: 80%;
-    padding-top: 10%;
-  }
 }
 
 .banner {
@@ -65,6 +55,13 @@
 .image--micro {
   display: block;
   margin: auto;
+}
+
+@supports (object-fit: contain) {
+  .image--micro {
+    max-height: calc(100vh - 4em);
+    object-fit: contain;
+  }
 }
 
 .photo-meta {

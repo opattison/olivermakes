@@ -1,6 +1,6 @@
 {% assign pages = site.pages %}
 {% for item in pages %}
-  {% if item.unique_id == '2014-10-31:patterns' %}
+  {% if item.unique_id == 'patterns' %}
     {% assign updated = item.updated | date: '%Y-%m-%d' %}
   <article class="project--satellite">
     <div class="project-image" style="background-image: url({{ item.image[0].src }});">

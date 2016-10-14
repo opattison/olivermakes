@@ -2,7 +2,8 @@
 title: Projects
 layout: category
 category: index
-description: 'An index of projects that Oliver Pattison has designed or contributed to. These projects include documentation and reflections on work and process.'
+unique_id: projects
+description: 'An index of projects that Oliver Pattison has designed or contributed to. These projects include design output, documentation, and reflections on work and process.'
 permalink: /projects/
 
 ---

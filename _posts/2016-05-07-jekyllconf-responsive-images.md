@@ -3,7 +3,6 @@ title: 'JekyllConf: Responsive images with Jekyll'
 layout: edgeless
 option:
   - minor
-  - featured-home
 category: 'projects'
 tags:
   - 'jekyll'

@@ -2,6 +2,7 @@
 title: Writing
 layout: category
 category: index
+unique_id: writing
 description: 'A repository of writing and notes on archiving, technology, and other topics, by Oliver Pattison.'
 permalink: /writing/
 

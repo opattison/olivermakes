@@ -1,0 +1,13 @@
+{% assign posts = site.posts %}
+{% for post in posts %}
+  {% if post.unique_id == include.id %}
+    {% assign completed = post.date | date: '%Y-%m-%d' %}
+    {% assign updated = post.updated | date: '%Y-%m-%d' %}
+  <article class="item--short">
+    <div class="item--short-description">
+      <h1><a href="{{ post.url }}">{{ post.title | markdownify | p_escape }}</a></h1>
+      <p class="item-time">{% if post.category =='projects' %}Completed{% else %}Published{% endif %} <time class="dt-published" pubdate datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y-%m-%d' }}</time></p>
+    </div>
+  </article>
+  {% endif %}
+{% endfor %}

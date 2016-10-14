@@ -1,5 +1,5 @@
 ---
-title: 'Setting up CloudFront and TLS (HTTPS) with Jekyll'
+title: 'Setting up CloudFront and TLS (HTTPS) with&nbsp;Jekyll'
 layout: singel
 option:
   - minor

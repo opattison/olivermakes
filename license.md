@@ -8,7 +8,7 @@ updated: 2016-02-13 01:02
 
 All writing, photography, and other creative work on the site is my original content and is licensed under [{{ site.license.long }} ({{ site.license.short }})]({{ site.link.attribution }}){:rel="license"}. If you are looking at the repository, almost everything in the `_pages`, `_posts`, `icons`, and `images` folders is {{ site.license.short }}.
 
-I designed the site myself, so most of the source was written by me. Exceptions where I derived inspiration or an approach from another source are noted inline. *All design and code* is [under the MIT license](#code), but is openly available for use [on GitHub]({{ site.link.source }}){:rel="source"}.
+I [designed the site]({% post_url 2014-12-02-oliver-pattison %}) myself, so most of the source was written by me. Exceptions where I derived inspiration or an approach from another source are noted inline. *All design and code* is [under the MIT license](#code), but is openly available for use [on GitHub]({{ site.link.source }}){:rel="source"}.
 
 ## Attribution for Creative Commons content
 

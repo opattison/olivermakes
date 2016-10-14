@@ -28,25 +28,26 @@
 }
 
 .project--satellite {
-  padding: 0;
   margin-top: 1em;
 
+  .project-meta {
+    padding: 1em;
+  }
+
   .project-image {
-    height: 10em;
+    border: solid 1px;
   }
 
   @include min-width(s04) {
-    .project-meta {
-      padding: 1em;
-    }
+    @include bleed(1em);
+    padding: 0; // reset
   }
 
-  @include min-width(l01) {
+  @include min-width(m02) {
+    @include bleed(2.5em);
     align-items: flex-start;
     display: flex;
-    margin-right: -4.5em;
-    margin-left: -4.5em;
-    padding: 0;
+    padding: 0; // reset
 
     .project-image,
     .project-meta {
@@ -62,13 +63,22 @@
       display: flex;
       flex: 0 0 50%;
       margin-top: 0;
-      padding: 1em 2em 2em;
+      padding: 1em 2em;
       flex-flow: column nowrap;
     }
 
     .project-nav {
       margin: auto auto 0;
       width: 100%;
+    }
+  }
+
+  @include min-width(l01) {
+    @include bleed(4.5em);
+    padding: 0; // reset
+
+    .project-meta {
+      padding: 1em 2em 2em;
     }
   }
 }
@@ -98,7 +108,7 @@
   }
 
   @include min-width(l03) {
-    background-position: 50% 25%;
+    border: solid 1px;
     flex: 0 0 50%;
     height: 18em;
     width: 50%;

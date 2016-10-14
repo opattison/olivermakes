@@ -1,12 +1,12 @@
 ---
 title: 'About'
-layout: singel
+layout: micro
 option:
   - no-title
   - hero
 date: 2014-10-31 18:25
 updated: 2016-08-15 14:54
-unique_id: 2014-10-31:about
+unique_id: about
 permalink: /about/
 description: 'A short biography of Oliver Pattison, as well as details about how this website was made.'
 image:
@@ -33,7 +33,7 @@ I’m available for hire and interested in collaborating on projects.
 {% include block/outreach--hire.html %}
 
 <aside class="ancillary">
-<h1>Elsewhere on the web</h1>
+<h2>Elsewhere on the web</h2>
 
   <section class="elsewhere--rows">
     <a class="elsewhere-action" href="{{ site.link.pinboard }}">Pinboard{% include icon/pinboard.svg %}</a>
@@ -52,7 +52,7 @@ This website is an archive for my work, featuring:
 - **[Projects](/projects/)**, documentation and reflections on professional and open source work
 - **[Photography](/photography/)**, a collection of images documenting details of my environment
 
-**[Subscribe]({{ site.link.subscribe.full }})** to this site’s Atom feed. Or subscribe to filtered feeds for my [writing]({{ site.link.subscribe.writing }}), [photography]({{ site.link.subscribe.photography }}), and [projects]({{ site.link.subscribe.projects }}).
+Subscribe to **[this site’s Atom feed]({{ site.link.subscribe.full }})**. Or subscribe to filtered feeds for my [writing]({{ site.link.subscribe.writing }}), [photography]({{ site.link.subscribe.photography }}), and [projects]({{ site.link.subscribe.projects }}).
 
 ### Design and development
 
