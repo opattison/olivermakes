@@ -32,7 +32,7 @@ If you never have, you should dig into the [Internet Archive’s Wayback Machine
 It takes a lot of effort to keep a comprehensive and long-lasting archive of one’s own history and output. While I strive to get better at backing things up and creating systems for maintaining old files, it is possible to build a website with the intention to serve the future instead of just the present moment.
 
 <aside class="ancillary">
-  <h1>How to back up a personal&nbsp;archive</h1>
+  <h2>How to back up a personal&nbsp;archive</h2>
   <p>Right now my home backup system works like this:</p>
   <ul>
     <li>Back up my MacBook to a Time Capsule running <a href="http://en.wikipedia.org/wiki/Time_Machine_(OS_X)">Time Machine</a>.</li>

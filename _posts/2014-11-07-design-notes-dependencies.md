@@ -1,5 +1,5 @@
 ---
-title: 'Designing this site: an accounting of dependencies'
+title: 'Designing this site: an accounting of&nbsp;dependencies'
 layout: singel
 category: 'writing'
 tags:
