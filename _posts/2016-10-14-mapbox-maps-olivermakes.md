@@ -83,7 +83,7 @@ It was surprising to be able to work on this project almost entirely from Mapbox
 {% capture endnote %}
 ## Further reading
 
-For a primer on how to generate GeoJSON and make maps with Jekyll, I recommend [Katy Decorah’s “Jekyll and GeoJSON” explainer](http://katydecorah.com/code/jekyll-geojson/).
+For a primer on how to generate GeoJSON and make maps with Jekyll, I recommend [Katy DeCorah’s “Jekyll and GeoJSON” explainer](http://katydecorah.com/code/jekyll-geojson/).
 
 The [Mapbox GL JS examples](https://www.mapbox.com/mapbox-gl-js/examples/), API documentation, and style reference were essential in learning how to implement these maps.
 {% endcapture %}
