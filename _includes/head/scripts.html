@@ -22,13 +22,14 @@ function contentLoaded () {
       container: 'map--collection-mapbox',
       // style set in prod.yml
       style: '{{ site.mapbox.style }}',
-      minZoom: 2.5,
+      minZoom: 2,
       maxZoom: 18,
+      // center near mid-Atlantic US, zoomed out
       center: [
-        -77.043343,
-        38.909669
+        -70,
+        40
       ],
-      zoom: 8,
+      zoom: 2,
       // attribution control is set in prod.yml
       attributionControl: false
     });
@@ -98,6 +99,21 @@ function contentLoaded () {
         }
       });
 
+      // change the cursor style on hover
+      map.on('mousemove', function(e) {
+        var unclustered = map.queryRenderedFeatures(e.point, { layers: ['unclustered-points'] });
+        var clustered = map.queryRenderedFeatures(e.point, { layers: ['clustered-points'] });
+
+        // pointer for unclustered, zoom for clustered, drag hand otherwise
+        if (unclustered.length) {
+          map.getCanvas().style.cursor = 'pointer';
+        } else if (clustered.length) {
+          map.getCanvas().style.cursor = 'zoom-in';
+        } else {
+          map.getCanvas().style.cursor = '';
+        }
+      });
+
       map.on('click', function (e) {
         var features = map.queryRenderedFeatures(e.point, { layers: ['unclustered-points'] });
 
@@ -117,7 +133,7 @@ function contentLoaded () {
         var popup = new mapboxgl.Popup(popupParameters)
           .setLngLat(feature.geometry.coordinates)
           .setHTML(
-            "<a href=\"" +
+            "<a class=\"popup-link\" href=\"" +
             feature.properties.url +
             "\">" +
             "<img class=\"popup-image\" src=\"" +
@@ -188,6 +204,66 @@ function contentLoaded () {
       unit: 'metric'
     }));
 
+    var popup = new mapboxgl.Popup({
+      closeButton: false,
+      offset: [1, -5]
+    });
+
+    map.on('load', function (e) {
+      map.addSource(
+        "points",
+        {
+          type: "geojson",
+          data: {
+            "type": "FeatureCollection",
+            "features": [
+              {
+                "type": "Feature",
+                "properties": {
+                  "location": "{{ page.location }}"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [{{ page.longitude }}, {{ page.latitude }}]
+                }
+              }
+            ]
+          }
+        }
+      );
+
+      map.addLayer({
+        "id": "points",
+        "type": "circle",
+        "source": "points",
+        "paint": {
+          "circle-color": "hsl(4, 60%, 42%)",
+          "circle-radius": 10
+        }
+      });
+    });
+
+    map.on('mousemove', function(e) {
+      var features = map.queryRenderedFeatures(e.point, { layers: ['points'] });
+      // set cursor to pointer
+      map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
+    });
+
+    map.on('click', function (e) {
+      var features = map.queryRenderedFeatures(e.point, { layers: ['points'] });
+
+      if (!features.length) {
+        popup.remove();
+        return;
+      }
+
+      var feature = features[0];
+
+      popup.setLngLat(feature.geometry.coordinates)
+        .setText(feature.properties.location)
+        .addTo(map);
+    });
+
     var toggleScrollZoom = document.querySelector('.jsToggleScrollZoom');
 
     function toggleZooming() {
@@ -206,23 +282,6 @@ function contentLoaded () {
     };
 
     toggleScrollZoom.addEventListener('click', toggleZooming, false);
-
-    var popupParameters = {
-      closeButton: false,
-      offset: [12, -2]
-    }
-
-    // set popup positioning and location from front matter
-    var popup = new mapboxgl.Popup(popupParameters)
-      .setLngLat(latLong)
-      .setText('{{ page.location }}');
-
-    // attach popup to the marker
-    var marker = new mapboxgl.Marker()
-      .setLngLat(latLong)
-      .setPopup(popup)
-      .addTo(map);
-
   }
 }
 </script>

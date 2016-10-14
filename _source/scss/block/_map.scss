@@ -16,9 +16,8 @@
     .mapboxgl-popup-content {
       padding: 0; // reset for photos
     }
-  }  
+  }
 }
-
 
 .map--photo {
   margin: 2em 0 1em;
@@ -120,6 +119,12 @@
   }
 }
 
+.popup-link {
+  display: block; // placeholder for image
+  min-height: 48px;
+  min-width: 72px;
+}
+
 .popup-image {
-  width: 100px;
+  width: 72px;
 }
