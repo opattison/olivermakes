@@ -202,11 +202,6 @@ function contentLoaded () {
       unit: 'metric'
     }));
 
-    var popup = new mapboxgl.Popup({
-      closeButton: false,
-      offset: [0, -5]
-    });
-
     map.on('load', function (e) {
       map.addSource(
         "points",
@@ -241,25 +236,30 @@ function contentLoaded () {
       });
     });
 
-    map.on('mousemove', function(e) {
-      var features = map.queryRenderedFeatures(e.point, { layers: ['points'] });
-      // set cursor to pointer
-      map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
-    });
-
     map.on('click', function (e) {
       var features = map.queryRenderedFeatures(e.point, { layers: ['points'] });
 
       if (!features.length) {
-        popup.remove();
         return;
       }
 
       var feature = features[0];
 
-      popup.setLngLat(feature.geometry.coordinates)
+      var popupParameters = {
+        closeButton: false,
+        offset: [0, -5]
+      }
+
+      var popup = new mapboxgl.Popup(popupParameters)
+        .setLngLat(feature.geometry.coordinates)
         .setText(feature.properties.location)
         .addTo(map);
+    });
+
+    map.on('mousemove', function(e) {
+      var features = map.queryRenderedFeatures(e.point, { layers: ['points'] });
+      // set cursor to pointer
+      map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
     });
 
     var toggleScrollZoom = document.querySelector('.jsToggleScrollZoom');
