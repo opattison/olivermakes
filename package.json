@@ -27,7 +27,7 @@
     "test:jekyll": "npm-run-all dev:css dev:js 'dev:jekyll -- --profile'",
     "start": "npm-run-all --parallel serve:*",
     "dev": "npm-run-all dev:*",
-    "test": "htmlproofer ./_site",
+    "test": "htmlproofer ./_site --url-ignore \"/typekit.com/\"",
     "prod": "npm-run-all prod:*"
   },
   "repository": {
