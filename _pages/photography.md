@@ -8,6 +8,9 @@ category: index
 unique_id: photography
 description: 'A collection of photos of nature and urban environments by Oliver Pattison.'
 permalink: /photography/
+zoom: 2
+latitude: 40
+longitude: -70
 
 ---
 

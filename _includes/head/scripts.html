@@ -23,13 +23,13 @@ function collectionMapLoaded () {
       // style set in prod.yml
       style: '{{ site.mapbox.style }}',
       minZoom: 2,
+      // zoom and long/lat set in page yaml
       maxZoom: 18,
-      // center near mid-Atlantic US, zoomed out
       center: [
-        -70,
-        40
+        {{ page.longitude }},
+        {{ page.latitude }}
       ],
-      zoom: 2,
+      zoom: {{ page.zoom }},
       // attribution control is set in prod.yml
       attributionControl: false
     });

@@ -378,10 +378,19 @@ mark {
       }
     }
   }
-
-
 }
 
 .micro .banner {
   background-color: $back--plus;
+}
+
+
+.map--photo-caption,
+.map--collection-caption {
+  color: $gray03;
+
+  a {
+    color: $gray03;
+    border-bottom-color: $gray04;
+  }
 }

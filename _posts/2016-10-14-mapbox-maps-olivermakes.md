@@ -36,7 +36,7 @@ image:
 location: 'Bosham, near Chichester, England'
 latitude: 50.828
 longitude: -0.8599
-zoom: 14
+zoom: 10
 
 ---
 
@@ -53,7 +53,7 @@ With the goal of learning how the [Mapbox GL JavaScript API](https://www.mapbox.
 <div class="grid--wide">
   <figure class="map--collection">
     <div id="map--collection-mapbox" style="max-height: 32em;"></div>
-    <figcaption class="map--collection-caption" style="color: hsl(204, 10%, 85%);">
+    <figcaption class="map--collection-caption">
       <p style="text-align: right"><em>Zoom in or out to see individual photos or clusters by location.</em></p>
     </figcaption>
   </figure>
