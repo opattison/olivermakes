@@ -99,28 +99,16 @@
 }
 
 .map--photo-caption {
-  color: $gray06;
   font-size: .875em;
 
   p {
     text-align: right !important;
   }
-
-  a {
-    color: $gray06;
-    border-bottom-color: $gray04;
-  }
 }
 
 .map--collection-caption {
-  color: $gray03;
   font-size: .875em;
   text-align: right;
-
-  a {
-    color: $gray03;
-    border-bottom-color: $gray04;
-  }
 }
 
 .popup-link {

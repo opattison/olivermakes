@@ -260,3 +260,13 @@ figcaption {
 .screenshot img {
   outline: solid 1px $accent--trans;
 }
+
+.map--photo-caption,
+.map--collection-caption {
+  color: $gray06;
+
+  a {
+    color: $gray06;
+    border-bottom-color: $gray04;
+  }
+}
