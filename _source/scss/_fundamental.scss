@@ -1,5 +1,5 @@
 html {
-  font-family: $ratio;
+  font-family: 'Seravek', 'Helvetica Neue', sans-serif;
   font-size: 1rem;
   font-weight: $weight-regular;
   line-height: 1.4375;
@@ -15,6 +15,11 @@ html {
   @include min-width(l01) {
     line-height: 1.5;
   }
+}
+
+.wf-cached,
+.wf-active {
+  font-family: $ratio;
 }
 
 button,
