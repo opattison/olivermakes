@@ -146,7 +146,7 @@ srcset_grid2:
 ## Mapbox authentication and configuration
 mapbox:
   key: pk.eyJ1Ijoib3BhdHRpc29uIiwiYSI6Il9DU3p1MEkifQ.3cvRQB5hVIONMpDAflBUNw
-  style: mapbox://styles/opattison/ciloojljd001ua7lt44geqa6f
+  style: mapbox://styles/opattison/ciuoegxtl007i2inykyztlus6
   attribution: '<p><a href="https://www.mapbox.com/about/maps/">© Mapbox</a>, <a href="http://www.openstreetmap.org/copyright">© OpenStreetMap</a> contributors.</p>'
 
 ## Google site verification
