@@ -96,12 +96,12 @@
 
 .map-caption {
   p {
-    margin-top: .25em;
     text-align: left;
   }
 }
 
-.map--collection-caption {
+.map--collection-caption,
+.map--photo-caption {
   p {
     text-align: right;
   }
@@ -110,12 +110,6 @@
 .map-attribution {
   font-size: .75em !important;
   margin-top: 0 !important;
-}
-
-.map--photo-caption {
-  .map-attribution {
-    text-align: right;
-  }
 }
 
 .popup-link {
