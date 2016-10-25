@@ -13,7 +13,7 @@ tags:
   - 'map'
   - 'travel'
   - 'web'
-updated: 2016-10-24 19:16
+updated: 2016-10-25 07:52
 drafted: 2016-10-24 19:16
 unique_id: 2016-10-24:mapbox-outdoorsy
 description: 'A vector map style based on the Mapbox Outdoors style, made with Mapbox Studio.'
@@ -55,7 +55,7 @@ map:
 
 ---
 
-I am designing a better basemap for travelogues and photo sharing. My goal is to make a web map less like a road atlas, but instead a topographical guide: with places and names as reference points rather than featured items. Its tentative name is “outdoorsy”.
+I am designing a better basemap for travelogues and photo sharing. My goal is to make a web map less like a road atlas, but instead more like a topographical guide: with places and names as reference points rather than as featured locations. Its tentative name is “outdoorsy”.
 
 I started out in Mapbox Studio with the [Outdoors](https://www.mapbox.com/blog/outdoors-design/) design, which has extensive topographical features and pleasant treatment of parks, outdoor activities, and points of interest. One specific goal I had was to separate gray urban areas from greener areas using OpenStreetMap data, as Stamen Design did with their [terrain map](http://maps.stamen.com/terrain/#12/37.7706/-122.3782).
 

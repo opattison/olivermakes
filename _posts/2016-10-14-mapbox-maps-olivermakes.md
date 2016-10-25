@@ -27,7 +27,7 @@ project:
   source: https://github.com/opattison/olivermakes
 image_index: /images/2016-10-14-mapbox-collection-clustering-sample.jpg
 image:
-  - src: /images/2016-10-14-mapbox-collection-clustering-sample.jpg
+  - src: /images/2016-10-25-mapbox-collection-clustering-sample.jpg
     alt: 'example of clustering in photo collection map, made with Mapbox'
   - src: /images/2016-10-14-photo-metadata-sample.jpg
     alt: 'example of photo metadata which accompanies individual photos and maps, showing that the camera used is an iPhone and what camera settings were used'
@@ -42,7 +42,7 @@ zoom: 10
 
 With the goal of learning how the [Mapbox GL JavaScript API](https://www.mapbox.com/mapbox-gl-js/api/) works, I designed and developed interactive maps for my website to provide more context for my photography. This involved working with a few features of Mapbox GL and Jekyll:
 
-- Designing a visual style to match my site’s color palette in [Mapbox Studio](https://www.mapbox.com/studio/).
+- [Designing a visual style]({% post_url 2016-10-24-mapbox-outdoorsy %}) to match my site’s color palette in [Mapbox Studio](https://www.mapbox.com/studio/).
 - Fundamental Mapbox GL JS features like configuring and rendering a map, styling markers, and drawing points from GeoJSON data.
 - Controlling map interactivity like scrolling behavior, flying interactions, popups, and cursor styles.
 - [Visualizing map points as clusters](https://www.mapbox.com/mapbox-gl-js/example/cluster/).
@@ -70,7 +70,7 @@ The map visualizes frequency by clustering points at different zoom levels, unco
     <div id="map--photo-mapbox"></div>
     <button class="map-scrollzoom jsToggleScrollZoom">Toggle scroll zooming</button>
     <figcaption class="map--photo-caption">
-      <p>{{ site.mapbox.attribution }}</p>
+      <p class="map-attribution">{{ site.mapbox.attribution }}</p>
     </figcaption>
   </figure>
 </div>
