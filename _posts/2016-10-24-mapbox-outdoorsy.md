@@ -63,7 +63,7 @@ I adopted many of [the colors from my own website](/patterns/color/) and the [ne
 
 I made revised or new styles for just about every feature in the Mapbox [terrain](https://www.mapbox.com/vector-tiles/mapbox-terrain/) and [streets](https://www.mapbox.com/vector-tiles/mapbox-streets-v7/) vector tile sets. See if you can spot how I’ve implemented national park boundaries, land use areas, walking and cycling paths, marsh lands, road and rail systems, and building styles.
 
-<a class="action" href="https://api.mapbox.com/styles/v1/opattison/ciuoegxtl007i2inykyztlus6.html?title=true&access_token=pk.eyJ1Ijoib3BhdHRpc29uIiwiYSI6Il9DU3p1MEkifQ.3cvRQB5hVIONMpDAflBUNw#12/44.394699/-72.660606">View this map full screen</a>
+<a class="action" href="https://api.mapbox.com/styles/v1/opattison/ciuoegxtl007i2inykyztlus6.html?title=true&access_token=pk.eyJ1Ijoib3BhdHRpc29uIiwiYSI6Il9DU3p1MEkifQ.3cvRQB5hVIONMpDAflBUNw#12/44.394699/-72.660606">view this map full screen</a>
 
 ## Samples of work in progress
 
