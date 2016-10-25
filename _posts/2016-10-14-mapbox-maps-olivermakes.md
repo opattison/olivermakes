@@ -52,9 +52,9 @@ With the goal of learning how the [Mapbox GL JavaScript API](https://www.mapbox.
 
 <div class="grid--wide">
   <figure class="map--collection">
-    <div id="map--collection-mapbox" style="max-height: 32em;"></div>
+    <div id="map--collection-mapbox"></div>
     <figcaption class="map--collection-caption">
-      <p style="text-align: right"><em>Zoom in or out to see individual photos or clusters by location.</em></p>
+      <p><em>Zoom in or out to see individual photos or clusters by location.</em></p>
     </figcaption>
   </figure>
 </div>
@@ -67,9 +67,11 @@ The map visualizes frequency by clustering points at different zoom levels, unco
 
 <div class="grid--wide">
   <figure class="map--photo">
-    <div id="map--photo-mapbox" style="max-height: 32em;"></div>
+    <div id="map--photo-mapbox"></div>
     <button class="map-scrollzoom jsToggleScrollZoom">Toggle scroll zooming</button>
-    <figcaption class="map--photo-caption">{{ site.mapbox.attribution }}</figcaption>
+    <figcaption class="map--photo-caption">
+      <p>{{ site.mapbox.attribution }}</p>
+    </figcaption>
   </figure>
 </div>
 

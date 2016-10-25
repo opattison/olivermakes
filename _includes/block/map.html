@@ -1,0 +1,10 @@
+{% for item in page.map %}
+  {% if item.id == include.id %}
+  <figure class="map">
+    <div id="{{ item.id }}"></div>
+    <figcaption class="map-caption">
+      {{ item.caption | markdownify }}
+    </figcaption>
+  </figure>
+  {% endif %}
+{% endfor %}

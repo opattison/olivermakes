@@ -1,9 +1,12 @@
+.map,
+.map--photo,
 .map--collection {
   margin: 2em 0 1em;
   width: 100%;
 
   .mapboxgl-map {
     height: 24em;
+    max-height: calc(100vh - 2em);
 
     @include min-width(m01) {
       height: 32em;
@@ -12,7 +15,12 @@
     @include min-width(l02) {
       height: 40em;
     }
+  }
+}
 
+.map--collection {
+
+  .mapboxgl-map {
     .mapboxgl-popup-content {
       padding: 0; // reset for photos
     }
@@ -20,20 +28,8 @@
 }
 
 .map--photo {
-  margin: 2em 0 1em;
-  width: 100%;
 
   .mapboxgl-map {
-    height: 24em;
-
-    @include min-width(m01) {
-      height: 32em;
-    }
-
-    @include min-width(l02) {
-      height: calc(100vh - 3em);
-    }
-
     .mapboxgl-marker {
       background-image: url('/icons/logo-map.svg');
       border-radius: 50%;
@@ -98,17 +94,28 @@
   }
 }
 
-.map--photo-caption {
-  font-size: .875em;
-
+.map-caption {
   p {
-    text-align: right !important;
+    margin-top: .25em;
+    text-align: left;
   }
 }
 
 .map--collection-caption {
-  font-size: .875em;
-  text-align: right;
+  p {
+    text-align: right;
+  }
+}
+
+.map-attribution {
+  font-size: .75em !important;
+  margin-top: 0 !important;
+}
+
+.map--photo-caption {
+  .map-attribution {
+    text-align: right;
+  }
 }
 
 .popup-link {
