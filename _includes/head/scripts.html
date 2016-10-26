@@ -8,6 +8,49 @@
 <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.25.1/mapbox-gl.css" rel="stylesheet" />
 <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-supported/v1.2.0/mapbox-gl-supported.js" defer></script>
 
+{% if page.option contains 'map' %}
+<script>
+// run conditionally if page option is set and mapbox is supported
+document.addEventListener('DOMContentLoaded', mapLoaded, false);
+
+function mapLoaded () {
+  if (mapboxgl.supported()) {
+    // authorization key set in prod.yml
+    mapboxgl.accessToken = '{{ site.mapbox.key }}';
+
+    {% for item in page.map %}
+
+    var {{ item.id }} = new mapboxgl.Map({
+      container: '{{ item.id }}',
+      // style set in prod.yml
+      style: '{{ item.style }}',
+      minZoom: 2,
+      // zoom and long/lat set in page yaml
+      maxZoom: 18,
+      center: [
+        {{ item.longitude }},
+        {{ item.latitude }}
+      ],
+      zoom: {{ item.zoom }},
+      // attribution control is set in prod.yml
+      attributionControl: false
+    });
+
+    // add mapbox controls and scale
+    {{ item.id }}.addControl(new mapboxgl.Navigation({
+      position: 'bottom-left'
+    }));
+    {{ item.id }}.addControl(new mapboxgl.Scale({
+      position: 'bottom-right',
+      maxWidth: 200,
+      unit: 'metric'
+    }));
+    {% endfor %}
+  }
+}
+</script>
+{% endif %}
+
 {% if page.option contains 'map-collection' %}
 <script>
 // run conditionally if page option is set and mapbox is supported
@@ -165,7 +208,7 @@ function collectionMapLoaded () {
 </script>
 {% endif %}
 
-{% if page.longitude and page.latitude %}
+{% if page.collection == 'photos' or page.unique_id == '2016-10-14:mapbox-maps-olivermakes' and page.longitude and page.latitude %}
 <script>
 // run conditionally if page location parameters are set and mapbox is supported
 document.addEventListener('DOMContentLoaded', photoMapLoaded, false);
@@ -234,32 +277,32 @@ function photoMapLoaded () {
           "circle-radius": 10
         }
       });
-    });
 
-    map.on('click', function (e) {
-      var features = map.queryRenderedFeatures(e.point, { layers: ['page-point'] });
+      map.on('mousemove', function(e) {
+        var features = map.queryRenderedFeatures(e.point, { layers: ['page-point'] });
+        // set cursor to pointer
+        map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
+      });
 
-      if (!features.length) {
-        return;
-      }
+      map.on('click', function (e) {
+        var features = map.queryRenderedFeatures(e.point, { layers: ['page-point'] });
 
-      var feature = features[0];
+        if (!features.length) {
+          return;
+        }
 
-      var popupParameters = {
-        closeButton: false,
-        offset: [0, -5]
-      }
+        var feature = features[0];
 
-      var popup = new mapboxgl.Popup(popupParameters)
-        .setLngLat(feature.geometry.coordinates)
-        .setText(feature.properties.location)
-        .addTo(map);
-    });
+        var popupParameters = {
+          closeButton: false,
+          offset: [0, -5]
+        }
 
-    map.on('mousemove', function(e) {
-      var features = map.queryRenderedFeatures(e.point, { layers: ['page-point'] });
-      // set cursor to pointer
-      map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
+        var popup = new mapboxgl.Popup(popupParameters)
+          .setLngLat(feature.geometry.coordinates)
+          .setText(feature.properties.location)
+          .addTo(map);
+      });
     });
 
     var toggleScrollZoom = document.querySelector('.jsToggleScrollZoom');
