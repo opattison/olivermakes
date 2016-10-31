@@ -63,4 +63,4 @@ Setting width at `100%` centers the image. Alternatively, setting a unitless wid
 ## Sample output
 
   {% assign image = page.image[1] %}
-  {% include block/image--imgix.html class="image--wide screenshot" %}
+  {% include block/image-imgix.html class="image--wide screenshot" %}

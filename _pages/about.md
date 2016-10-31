@@ -10,16 +10,29 @@ unique_id: about
 permalink: /about/
 description: 'A short biography of Oliver Pattison, as well as details about how this website was made.'
 image:
-  - src: /images/2011-11-10-oliver-bench-jeancflanagan-ccbync.jpg
-    alt: 'Oliver Pattison sitting on a bench'
-    caption: 'Photo of me by [Jean Flanagan](http://jeancflanagan.com), [CC BY-NC](http://creativecommons.org/licenses/by-nc/4.0/)'
-    date: 2011-11-10
-    camera: 'Nikon D3000'
-    lens: 'Nikon DX 55-200 mm f/4.0-5.6'
-    focal: '55mm'
-    aperture: 'f/4.0'
-    shutter: '1/40'
+  - src: /images/2016-10-18-oliver-jeancflanagan-ccbync.jpg
+    alt: 'Oliver Pattison standing in a forest with a backdrop of branches and yellow leaves'
+    caption: 'Photo of me by [Jean Flanagan](https://jeancflanagan.com), [CC BY-NC](http://creativecommons.org/licenses/by-nc/4.0/)'
+    date: 2016-10-18
+    camera: 'Fujifilm X-E2'
+    lens: 'Fujinon XF35mmF1.4 R'
+    focal: '35mm'
+    aperture: 'f/2.8'
+    shutter: '1/320'
     iso: 200
+    latitude: 44.6399
+    longitude: -72.8117
+  - src: /images/2016-10-18-oliver-sapphie-jeancflanagan-ccbync.jpg
+    alt: 'Oliver Pattison standing in a forest with Sapphie, the dog'
+    date: 2016-10-18
+    camera: 'Fujifilm X-E2'
+    lens: 'Fujinon XF35mmF1.4 R'
+    focal: '35mm'
+    aperture: 'f/2.8'
+    shutter: '1/210'
+    iso: 200
+    latitude: 44.6399
+    longitude: -72.8117
 
 ---
 
@@ -82,3 +95,6 @@ In short: the code and design are under [copyright (MIT license)](/license/#code
 {{ endnote | markdownify }}
 <a class="action" href="/license/">more on attribution</a>
 </aside>
+
+{% assign image = page.image[1] %}
+{% include block/image-srcset.html class="image--wide" %}

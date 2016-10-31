@@ -48,10 +48,10 @@ We turned the project around in only a few months, with design and content work 
 
 <div class="grid--wide">
   {% assign image = page.image[1] %}
-  {% include block/image--imgix.html class="grid-figure--33 screenshot" %}
+  {% include block/image-imgix.html class="grid-figure--33 screenshot" %}
 
   {% assign image = page.image[2] %}
-  {% include block/image--imgix.html class="grid-figure--66 screenshot" %}
+  {% include block/image-imgix.html class="grid-figure--66 screenshot" %}
 </div>
 
 ## The need for a new website

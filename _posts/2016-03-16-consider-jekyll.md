@@ -66,7 +66,7 @@ With no server-side code, there are fewer vectors for attacking a static site. S
 Jekyll is what you make of it. Its minimal assumptions about what users intend to do with it means it can be used for any sort of website. It is absolutely a viable strategy to start with only HTML and CSS and afterward enhancing with template and metadata features. A site can start as an HTML prototype and be continuously refined and enhanced until it is a working production site. Jekyll’s simplicity is an opportunity.
 
 {% assign image = page.image[1] %}
-{% include block/image--imgix.html class="image--wide" %}
+{% include block/image-imgix.html class="image--wide" %}
 
 Although Jekyll is built around a blog-friendly core, the template and metadata features in Jekyll can be used for content of all types. With so few assumptions about how it should be used, there is room to ignore core features and layer on functionality as needed.
 
