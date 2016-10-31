@@ -66,13 +66,13 @@ I stripped the theme framework of some elements that the site would not need. A 
 
 <div class="grid--wide">
   {% assign image = page.image[2] %}
-  {% include block/image--imgix.html class="grid-figure--33 screenshot" %}
+  {% include block/image-imgix.html class="grid-figure--33 screenshot" %}
 
   {% assign image = page.image[3] %}
-  {% include block/image--imgix.html class="grid-figure--33 screenshot" %}
+  {% include block/image-imgix.html class="grid-figure--33 screenshot" %}
 
   {% assign image = page.image[4] %}
-  {% include block/image--imgix.html class="grid-figure--33 screenshot" %}
+  {% include block/image-imgix.html class="grid-figure--33 screenshot" %}
 </div>
 
 I’m not sure if I would use a theme framework again for building something like a Shopify site. However, working with Timber – a thoroughly designed and documented design system – taught me quite a bit about the possibilities of the platform. Timber’s minimal defaults, modular structure, and unopinionated patterns left far more room for growth and expansion than building on top of a pre-built theme would. It saved me time so I could focus on the content and design of the site.

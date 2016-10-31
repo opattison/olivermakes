@@ -19,13 +19,13 @@ photo:
 ---
 
 {% assign photo = page.photo[0] %}
-{% include block/image--photo.html class="image--wide" %}
+{% include block/image-photo.html class="image--wide" %}
 
 {% assign photo = page.photo[1] %}
-{% include block/image--photo.html class="image--wide" %}
+{% include block/image-photo.html class="image--wide" %}
 
 {% assign photo = page.photo[2] %}
-{% include block/image--photo.html class="image--wide" %}
+{% include block/image-photo.html class="image--wide" %}
 
 ## Photos from a neighborhood in Washington, DC
 

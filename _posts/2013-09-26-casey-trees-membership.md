@@ -73,13 +73,13 @@ One year after the redesign, it was becoming clear that this device detection so
 
 <div class="grid--wide">
   {% assign image = page.image[1] %}
-  {% include block/image--imgix.html class="grid-figure--33 screenshot" %}
+  {% include block/image-imgix.html class="grid-figure--33 screenshot" %}
 
   {% assign image = page.image[2] %}
-  {% include block/image--imgix.html class="grid-figure--33 screenshot" %}
+  {% include block/image-imgix.html class="grid-figure--33 screenshot" %}
 
   {% assign image = page.image[3] %}
-  {% include block/image--imgix.html class="grid-figure--33 screenshot" %}
+  {% include block/image-imgix.html class="grid-figure--33 screenshot" %}
 </div>
 
 Designing this form was fairly challenging because it was not a “clean slate” design: the form had fixed HTML with very few options for configuration, and it relied on two layers of “base” CSS styles from the vendor. To customize it, my only option was to write another layer of CSS on top of the base styles, so I had plenty work to do with overriding specificity and ensuring that what I was writing would be reusable for other donation forms besides the membership-specific form.
@@ -92,10 +92,10 @@ For the main page that would explain the membership program and encourage visito
 
 <div class="grid--wide">
   {% assign image = page.image[4] %}
-  {% include block/image--imgix.html class="grid-figure--66 screenshot" %}
+  {% include block/image-imgix.html class="grid-figure--66 screenshot" %}
 
   {% assign image = page.image[5] %}
-  {% include block/image--imgix.html class="grid-figure--33 screenshot" %}
+  {% include block/image-imgix.html class="grid-figure--33 screenshot" %}
 </div>
 
 ### Buttons and edges

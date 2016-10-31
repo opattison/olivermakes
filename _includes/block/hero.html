@@ -7,7 +7,7 @@
       src="{{ image.src }}"
     {% else %}
       src="{{ image.src | imgix_url: w: 720, q: 50 }}"
-      sizes="{{ site.sizes_wide }}"
+      sizes="100vw"
       srcset="{% for width in site.srcset %}{{ image.src | imgix_url: w: width, q: 60 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
     {% endif %}
       alt="{{ image.alt }}">

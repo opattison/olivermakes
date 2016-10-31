@@ -80,7 +80,7 @@ I chose [Cardo](http://scholarsfonts.net/cardofnt.html), an old-style font by Da
 The typeface performed quite well, even with only a single weight. Cardo has excellent OpenType support and beautiful small capital styles, making headings and featured text stand out against the striking photos of the prints. I ended up using Cardo for all of the headings on the site, as well as for stylized collection links and for the logo identity. Using small capitals for titles, and ultimately for the logotype ended up being a stylistic success.
 
 {% assign image = page.image[3] %}
-{% include block/image--imgix.html class="image screenshot" %}
+{% include block/image-imgix.html class="image screenshot" %}
 
 In my earliest take on the design, I attempted a logo designed only with CSS, but limited control over letter spacing and relative proportions led to unimpressive initial efforts. It is still difficult to implement small caps with OpenType and CSS properly, since browser support is not as extensive as it could be. [^2] I designed the next takes of the logotype with Adobe Illustrator, because I wanted SVG output and fine control over kerning. The final iteration appears on the site header as well as in transactional email messages and mailing labels.
 

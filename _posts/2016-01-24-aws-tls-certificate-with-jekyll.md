@@ -169,7 +169,7 @@ Sign in to the [Route 53 console](https://console.aws.amazon.com/route53/home) a
 Create an `ALIAS` record for the root domain. In the hosted zone select **Create Record Set**. Leave **Name** blank to set the target URL. **Type** should be “A – IPv4 address”. **Alias** should be set to “Yes”. **Alias target** should be set to the CloudFront distribution URL from the distribution created in [step 2](#step-2) (looks like `a12bcdefgh89yz.cloudfront.net.`). Save.
 
 {% assign image = page.image[2] %}
-{% include block/image--imgix.html class="image--half screenshot" %}
+{% include block/image-imgix.html class="image--half screenshot" %}
 
 As with CloudFront configuration, do not expect the changes to kick in immediately. Redirecting the domain to the configured distribution takes a few minutes.
 
@@ -204,18 +204,18 @@ After following the instructions in the email and approval page to validate the 
 Go to the **Behaviors** tab, select the only item and edit it. Set **Viewer Protocol Policy** to “Redirect HTTP to HTTPS”. (One can also specify this setting on initial distribution configuration but afterward it is configured in this section.)
 
 {% assign image = page.image[3] %}
-{% include block/image--imgix.html class="image screenshot" %}
+{% include block/image-imgix.html class="image screenshot" %}
 
 {% assign image = page.image[4] %}
-{% include block/image--imgix.html class="image screenshot" %}
+{% include block/image-imgix.html class="image screenshot" %}
 
 {% assign image = page.image[5] %}
-{% include block/image--imgix.html class="image screenshot" %}
+{% include block/image-imgix.html class="image screenshot" %}
 
 It’s time for another cup of tea because CloudFront will need a bit longer to process after changes are saved. After this, setup should be complete. Make sure the status of the distribution is marked as “deployed” and check whether the `https://` URLs for the site work properly. Done.
 
 {% assign image = page.image[6] %}
-{% include block/image--imgix.html class="image--half screenshot" %}
+{% include block/image-imgix.html class="image--half screenshot" %}
 
 ### Bonus: set `www` URLs to redirect
 

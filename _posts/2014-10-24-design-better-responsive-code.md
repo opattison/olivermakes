@@ -33,12 +33,12 @@ Even if a CMS or site builder has syntax highlighting built in (like [Jekyll](ht
 So how bad is it when code or any other long content breaks a layout? Here is what code might look like without corrected `white-space`:
 
 {% assign image = page.image[1] %}
-{% include block/image--imgix.html class="image screenshot" %}
+{% include block/image-imgix.html class="image screenshot" %}
 
 Here is a sample with default values for `overflow-wrap`:
 
 {% assign image = page.image[2] %}
-{% include block/image--imgix.html class="image screenshot" %}
+{% include block/image-imgix.html class="image screenshot" %}
 
 With neither declaration implemented, nearly every code block on this page runs off the page, breaking the layout on small and large screens alike.
 

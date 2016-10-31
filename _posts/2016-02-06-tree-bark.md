@@ -14,4 +14,4 @@ photo:
 ---
 
 {% assign photo = page.photo[0] %}
-{% include block/image--photo.html class="image--wide" %}
+{% include block/image-photo.html class="image--wide" %}

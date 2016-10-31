@@ -17,12 +17,12 @@ photo:
 ---
 
 {% assign photo = page.photo[0] %}
-{% include block/image--photo.html class="image--wide" %}
+{% include block/image-photo.html class="image--wide" %}
 
 <div class="grid--wide">
   {% assign photo = page.photo[1] %}
-  {% include block/image--photo--grid2.html class="grid-figure" %}
+  {% include block/image-photo--grid2.html class="grid-figure" %}
 
   {% assign photo = page.photo[2] %}
-  {% include block/image--photo--grid2.html class="grid-figure" %}
+  {% include block/image-photo--grid2.html class="grid-figure" %}
 </div>
