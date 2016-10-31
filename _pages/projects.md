@@ -24,7 +24,7 @@ permalink: /projects/
 
 {% assign index = 1 %}
 {% for post in site.categories.projects %}
-{% unless index > 6 %}
+{% unless index > 10 %}
 {% if post.option contains 'minor' %}
 {% include block/item--minor.html %}
 {% assign index = index | plus: 1 %}
