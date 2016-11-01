@@ -3,6 +3,16 @@
   margin-top: 2em;
 }
 
+.outreach--projects {
+  margin: 1em;
+  width: 100%;
+
+  @include min-width(m01) {
+    margin: 1em 0 1em auto;
+    width: 50%;
+  }
+}
+
 %outreach-action {
   @include action;
 
