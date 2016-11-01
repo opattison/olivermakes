@@ -20,6 +20,8 @@ permalink: /projects/
 {% endunless %}
 {% endfor %}
 
+{% include block/outreach--projects.html %}
+
 ## Minor projects
 
 {% assign index = 1 %}
