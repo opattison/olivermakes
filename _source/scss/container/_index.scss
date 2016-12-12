@@ -38,9 +38,17 @@
 .index h2 {
   flex: 0 0 100%;
   margin-top: 1em;
+  text-align: center;
   width: 100%;
 
-  text-align: center;
+  @include min-width(m01) {
+    text-align: left;
+    margin-left: 1em;
+  }
+
+  @include min-width(l02) {
+    margin-left: 0;
+  }
 }
 
 .index hr {

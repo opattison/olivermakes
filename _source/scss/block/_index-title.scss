@@ -7,4 +7,13 @@
   font-weight: $weight-light;
   letter-spacing: -.03125em;
   text-align: center;
+
+  @include min-width(m01) {
+    text-align: right;
+    margin-right: 1em;
+  }
+
+  @include min-width(l02) {
+    margin-right: 0;
+  }
 }
