@@ -12,4 +12,4 @@ image:
 priority: 3
 ---
 
-{% include block/pattern_loop--component.html %}
+{% include meta/pattern_loop--component.html %}

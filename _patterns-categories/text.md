@@ -11,4 +11,4 @@ image:
 priority: 2
 ---
 
-{% include block/pattern_loop--text.html %}
+{% include meta/pattern_loop--text.html %}

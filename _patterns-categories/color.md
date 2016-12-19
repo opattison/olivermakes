@@ -13,17 +13,17 @@ priority: 1
 ## Shades
 
 {% assign swatches = site.data.shade %}
-{% include block/grid--swatches.html %}
+{% include meta/grid--swatches.html %}
 
 ## Colors
 
 {% assign swatches = site.data.color %}
-{% include block/grid--swatches.html %}
+{% include meta/grid--swatches.html %}
 
 ## Semi-transparent shades and colors
 
 {% assign swatches = site.data.transparent %}
-{% include block/grid--swatches.html %}
+{% include meta/grid--swatches.html %}
 
 ---
 
@@ -33,4 +33,4 @@ This is used on several pages, reusing all of the colors above but replacing the
 {:.content--pattern}
 
 {% assign swatches = site.data.theme_paper %}
-{% include block/grid--swatches.html %}
+{% include meta/grid--swatches.html %}
