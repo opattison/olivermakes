@@ -33,7 +33,7 @@ Not interested in the code? **Take a look at [the pattern library](https://olive
 - Typography: [Adobe Typekit](https://typekit.com/colophons/hro5wuc) – 300, 400 and 500 weights of [the Ratio typeface](http://cargocollective.com/pstype/Ratio) and system monospace fonts (Menlo or Consolas if available)
 - Layout: custom [`flexbox`](https://www.w3.org/TR/2016/CR-css-flexbox-1-20160301/) CSS
 - Responsive images: [`srcset`](https://responsiveimages.org), processed and optimized with [imgix](https://www.imgix.com/)
-- Maps: [MapBox](https://www.mapbox.com/)
+- Maps: [Mapbox](https://www.mapbox.com/)
 - No templates, frameworks or boilerplate
 - A minimum of front-end JavaScript
 

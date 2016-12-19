@@ -9,21 +9,17 @@ priority: 0
 sass: _fundamental.scss
 ---
 
+{% assign fonts = site.data.font.sans %}
+{% assign type = 'sans' %}
+{% for font in fonts %}
+{% include meta/pattern--type-sample.html %}
+{% endfor %}
 
-
-<div class="rendered">
-  {% assign fonts = site.data.font.sans %}
-  {% assign type = 'sans' %}
-  {% for font in fonts %}
-  {% include block/pattern--type-sample.html %}
-  {% endfor %}
-
-  {% assign fonts = site.data.font.monospace %}
-  {% assign type = 'monospace' %}
-  {% for font in fonts %}
-  {% include block/pattern--type-sample.html %}
-  {% endfor %}
-</div>
+{% assign fonts = site.data.font.monospace %}
+{% assign type = 'monospace' %}
+{% for font in fonts %}
+{% include meta/pattern--type-sample.html %}
+{% endfor %}
 
 {% capture code %}
 ```scss
