@@ -7,8 +7,12 @@
   list-style: none;
   margin-top: 1em;
 
-  @include min-width(m01) {
-    margin: 1em 0; // reset
+  @include min-width(s03) {
+    @include bleed-full(2em);
+  }
+
+  @include min-width(s04) {
+    @include bleed-full(2.5em);
   }
 
   @include min-width(l01) {
