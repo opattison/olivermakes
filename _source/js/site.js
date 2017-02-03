@@ -1,4 +1,4 @@
-var Velocity = require('../../node_modules/velocity-animate/velocity.min.js');
+var Velocity = require('velocity-animate');
 
 /* forEach loop through for querySelectorAll
 we need to convert it to an array first */
