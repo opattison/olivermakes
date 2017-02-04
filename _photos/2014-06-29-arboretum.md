@@ -1,6 +1,6 @@
 ---
 title: 'Sunlit evergreen plants'
-src: /images/2014-06-29-arboretum-olivermakes-ccbync.jpg
+src: 2014-06-29-arboretum-olivermakes-ccbync.jpg
 alt: 'Sunlit evergreen plants in a garden'
 description: 'Sunlit evergreen plants from a day out at the arboretum.'
 date: 2014-06-29

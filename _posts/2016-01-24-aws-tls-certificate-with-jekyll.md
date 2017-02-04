@@ -19,33 +19,33 @@ thanks: |+
   Thanks [Jean Flanagan](http://jeancflanagan.com) and [Michael Lee](https://michaelsoolee.com) for edits.
 project:
   source: https://github.com/opattison/olivermakes/pull/228
-image_index: /images/2016-01-25-lock.svg
+image_index: 2016-01-25-lock.svg
 image:
-  - src: /images/2016-01-25-lock.svg
-    src_png: /images/2016-01-25-lock.png
+  - src: 2016-01-25-lock.svg
+    src_png: 2016-01-25-lock.png
     alt: 'A stylized lock inspired by the green TLS lock symbol in a web browser.'
     date: 2016-01-25
     description: 'Designed in Sketch'
-  - src: /images/2014-10-08-tea-olivermakes-ccbync.jpg
+  - src: 2014-10-08-tea-olivermakes-ccbync.jpg
     alt: 'A hot cup of English tea.'
     date: 2014-10-08
-  - src: /images/2016-01-25-cloudfront-record-set.png
+  - src: 2016-01-25-cloudfront-record-set.png
     alt: 'Screenshot of a CloudFront record set.'
     date: 2016-01-25
-  - src: /images/2016-01-25-only-sni.png
+  - src: 2016-01-25-only-sni.png
     alt: 'Screenshot of radio select for SNI'
     caption: 'Adjusting Custom SSL Client Support and Default Root Object in CloudFront.'
     date: 2016-01-25
-  - src: /images/2016-01-25-custom-ssl.png
+  - src: 2016-01-25-custom-ssl.png
     alt: 'Screenshot of radio select for Custom SSL Certificate'
     caption: 'Selecting a Custom SSL Certificate. “SSL” is used interchangably with “TLS” in the AWS CloudFront console.'
     date: 2016-01-25
-  - src: /images/2016-01-24-aws-certificate.jpg
+  - src: 2016-01-24-aws-certificate.jpg
     alt: 'Screenshot of a certificate in the AWS console.'
     caption: 'What a properly issued and functioning certificate looks like when after assigning it to a CloudFront distribution.'
     width: 720
     quality: 60
-  - src: /images/2016-01-25-secure-site.png
+  - src: 2016-01-25-secure-site.png
     alt: 'This website shown in Google Chrome as being served with TLS.'
     date: 2016-01-25
 
@@ -169,7 +169,7 @@ Sign in to the [Route 53 console](https://console.aws.amazon.com/route53/home) a
 Create an `ALIAS` record for the root domain. In the hosted zone select **Create Record Set**. Leave **Name** blank to set the target URL. **Type** should be “A – IPv4 address”. **Alias** should be set to “Yes”. **Alias target** should be set to the CloudFront distribution URL from the distribution created in [step 2](#step-2) (looks like `a12bcdefgh89yz.cloudfront.net.`). Save.
 
 {% assign image = page.image[2] %}
-{% include block/image-imgix.html class="image--half screenshot" %}
+{% include block/image.html class="image--half screenshot" %}
 
 As with CloudFront configuration, do not expect the changes to kick in immediately. Redirecting the domain to the configured distribution takes a few minutes.
 
@@ -204,18 +204,18 @@ After following the instructions in the email and approval page to validate the 
 Go to the **Behaviors** tab, select the only item and edit it. Set **Viewer Protocol Policy** to “Redirect HTTP to HTTPS”. (One can also specify this setting on initial distribution configuration but afterward it is configured in this section.)
 
 {% assign image = page.image[3] %}
-{% include block/image-imgix.html class="image screenshot" %}
+{% include block/image.html class="image screenshot" %}
 
 {% assign image = page.image[4] %}
-{% include block/image-imgix.html class="image screenshot" %}
+{% include block/image.html class="image screenshot" %}
 
 {% assign image = page.image[5] %}
-{% include block/image-imgix.html class="image screenshot" %}
+{% include block/image.html class="image screenshot" %}
 
 It’s time for another cup of tea because CloudFront will need a bit longer to process after changes are saved. After this, setup should be complete. Make sure the status of the distribution is marked as “deployed” and check whether the `https://` URLs for the site work properly. Done.
 
 {% assign image = page.image[6] %}
-{% include block/image-imgix.html class="image--half screenshot" %}
+{% include block/image.html class="image--half screenshot" %}
 
 ### Bonus: set `www` URLs to redirect
 

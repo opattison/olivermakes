@@ -25,11 +25,11 @@ description: 'Making interactive maps to enhance photography metadata on this si
 project:
   url: https://olivermak.es/photography/#map--collection-mapbox
   source: https://github.com/opattison/olivermakes
-image_index: /images/2016-10-14-mapbox-collection-clustering-sample.jpg
+image_index: 2016-10-14-mapbox-collection-clustering-sample.jpg
 image:
-  - src: /images/2016-10-25-mapbox-collection-clustering-sample.jpg
+  - src: 2016-10-25-mapbox-collection-clustering-sample.jpg
     alt: 'example of clustering in photo collection map, made with Mapbox'
-  - src: /images/2016-10-14-photo-metadata-sample.jpg
+  - src: 2016-10-14-photo-metadata-sample.jpg
     alt: 'example of photo metadata which accompanies individual photos and maps, showing that the camera used is an iPhone and what camera settings were used'
     caption: 'Location, photographic metadata, and notes accompany every photo on the site, in addition to interactive maps.'
 # add metadata from _photos/2015-03-23-chichester-sky

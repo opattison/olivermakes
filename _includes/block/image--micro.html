@@ -1,3 +1,4 @@
+{% assign src = image.src | prepend: '/' | prepend: site.image_url %}
 {% if image.quality %}
   {% assign quality = image.quality %}
 {% else %}
@@ -5,8 +6,9 @@
 {% endif %}
 
 <img
-  class="image--micro"
-  src="{{ image.src | imgix_url: w: 1080, q: 60 }}"
-  sizes="100vw"
-  srcset="{% for width in site.srcset %}{{ image.src | imgix_url: w: width, q: quality }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+  class="lazyload image--micro"
+  src="{{ src | imgix_url: w: 900, q: 30 }}"
+  data-src="{{ src | imgix_url: w: 900, q: 30 }}"
+  data-sizes="auto"
+  data-srcset="{% for width in site.srcset %}{{ src | imgix_url: w: width, q: quality }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
   alt="{{ image.alt }}">

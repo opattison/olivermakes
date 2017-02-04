@@ -18,12 +18,12 @@ thanks: |+
   Thanks [Jean Flanagan](http://jeancflanagan.com) for editing assistance and giving this a title.
 
   Thanks [Michael Lee](https://michaelsoolee.com/) for technical feedback. [Read his response](https://michaelsoolee.com/consider-jekyll-oliver-pattison) to this essay.
-image_index: /images/2016-03-16-jekyll-test-tube.svg
+image_index: 2016-03-16-jekyll-test-tube.svg
 image:
-  - src: /images/2016-03-16-jekyll-logo-reverse.svg
-    src_png: /images/2016-03-16-jekyll-logo-reverse.png
+  - src: 2016-03-16-jekyll-logo-reverse.svg
+    src_png: 2016-03-16-jekyll-logo-reverse.png
     alt: 'Jekyll logo, script with a test tube'
-  - src: /images/2016-03-16-jekyll-post.png
+  - src: 2016-03-16-jekyll-post.png
     alt: 'A post in the Jekyll site repository being edited.'
     caption: 'What Jekyll looks like in Atom, the text editor. This is a view of a Markdown post from the official Jekyll documentation site.'
 
@@ -66,7 +66,7 @@ With no server-side code, there are fewer vectors for attacking a static site. S
 Jekyll is what you make of it. Its minimal assumptions about what users intend to do with it means it can be used for any sort of website. It is absolutely a viable strategy to start with only HTML and CSS and afterward enhancing with template and metadata features. A site can start as an HTML prototype and be continuously refined and enhanced until it is a working production site. Jekyll’s simplicity is an opportunity.
 
 {% assign image = page.image[1] %}
-{% include block/image-imgix.html class="image--wide" %}
+{% include block/image.html class="image--wide" %}
 
 Although Jekyll is built around a blog-friendly core, the template and metadata features in Jekyll can be used for content of all types. With so few assumptions about how it should be used, there is room to ignore core features and layer on functionality as needed.
 

@@ -17,30 +17,30 @@ project:
   source: https://github.com/opattison/pine-orchard-antique-prints
   license: '© copyright'
   license-url: https://github.com/opattison/pine-orchard-antique-prints#credits
-image_index: /images/index/2016-01-27-pine-orchard-banner.jpg
+image_index: index/2016-01-27-pine-orchard-banner.jpg
 image:
-  - src: /images/2016-02-09-pine-orchard-banner.jpg
+  - src: 2016-02-09-pine-orchard-banner.jpg
     alt: 'Pine Orchard Antique Prints banner logo as a part of the banner on the shop'
     date: 2016-01-27
     caption: 'The typography in context on the [Pine Orchard Prints website](https://pineorchardprints.com).'
-  - src: /images/2016-02-09-pine-orchard-full-desktop.jpg
+  - src: 2016-02-09-pine-orchard-full-desktop.jpg
     alt: 'About page for the Pine Orchard Prints site'
     date: 2016-02-09
     quality: 70
-  - src: /images/2016-02-09-pine-orchard-purchase-1.jpg
+  - src: 2016-02-09-pine-orchard-purchase-1.jpg
     alt: 'Add to cart action on a product page'
     date: 2016-02-09
     quality: 70
     caption: 'Responsive interaction flow from product page to cart.'
-  - src: /images/2016-02-09-pine-orchard-purchase-2.jpg
+  - src: 2016-02-09-pine-orchard-purchase-2.jpg
     alt: 'Item added to cart, indicated after the action is taken'
     date: 2016-02-09
     quality: 70
-  - src: /images/2016-02-09-pine-orchard-purchase-3.jpg
+  - src: 2016-02-09-pine-orchard-purchase-3.jpg
     alt: 'Item within a cart'
     date: 2016-02-09
     quality: 70
-  - src: /images/2016-02-09-pine-orchard-tablet-collections.jpg
+  - src: 2016-02-09-pine-orchard-tablet-collections.jpg
     alt: 'View of collections on a tablet screen, featuring images of a single print and sample items'
     date: 2016-02-09
     quality: 60
@@ -66,13 +66,13 @@ I stripped the theme framework of some elements that the site would not need. A 
 
 <div class="grid--wide">
   {% assign image = page.image[2] %}
-  {% include block/image-imgix.html class="grid-figure--33 screenshot" %}
+  {% include block/image.html class="grid-figure--33 screenshot" %}
 
   {% assign image = page.image[3] %}
-  {% include block/image-imgix.html class="grid-figure--33 screenshot" %}
+  {% include block/image.html class="grid-figure--33 screenshot" %}
 
   {% assign image = page.image[4] %}
-  {% include block/image-imgix.html class="grid-figure--33 screenshot" %}
+  {% include block/image.html class="grid-figure--33 screenshot" %}
 </div>
 
 I’m not sure if I would use a theme framework again for building something like a Shopify site. However, working with Timber – a thoroughly designed and documented design system – taught me quite a bit about the possibilities of the platform. Timber’s minimal defaults, modular structure, and unopinionated patterns left far more room for growth and expansion than building on top of a pre-built theme would. It saved me time so I could focus on the content and design of the site.

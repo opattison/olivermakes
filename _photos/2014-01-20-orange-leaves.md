@@ -1,6 +1,6 @@
 ---
 title: 'Orange leaves'
-src: /images/2014-01-20-orange-leaves-olivermakes-ccbync.jpg
+src: 2014-01-20-orange-leaves-olivermakes-ccbync.jpg
 alt: 'Backlit orange leaves'
 description: 'Orange leaves on a sidewalk, processed with [VSCO Film 04](http://vsco.co/film) (Kodak E200).'
 date: 2014-01-20

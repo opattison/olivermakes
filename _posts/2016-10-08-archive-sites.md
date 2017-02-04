@@ -22,10 +22,10 @@ description: 'An approach to archiving versions of web projects using Jekyll and
 project:
   url: https://2015.olivermak.es
   source: https://github.com/opattison/olivermakes/tree/2015-archive
-image_index: /images/2016-10-09-perspective-screens.svg
+image_index: 2016-10-09-perspective-screens.svg
 image:
-  - src: /images/2016-10-09-perspective-screens.svg
-    src_png: /images/2016-10-09-perspective-screens.png
+  - src: 2016-10-09-perspective-screens.svg
+    src_png: 2016-10-09-perspective-screens.png
     alt: 'abstract depiction of three layered screens in perspective'
 
 ---

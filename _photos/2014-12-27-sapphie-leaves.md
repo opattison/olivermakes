@@ -1,6 +1,6 @@
 ---
 title: 'Fall leaves'
-src: /images/2014-12-27-sapphie-leaves-e200-olivermakes-ccbync.jpg
+src: 2014-12-27-sapphie-leaves-e200-olivermakes-ccbync.jpg
 alt: 'Hundreds of dead fall leaves in the foreground, with the sun shining through woods, and the sillhouette of a dog'
 description: 'Nature walk at Dutch Gap. Processed with [VSCO Film 04](http://vsco.co/film) (Kodak E200)'
 date: 2014-12-27

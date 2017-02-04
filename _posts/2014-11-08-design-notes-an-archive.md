@@ -13,9 +13,9 @@ updated: 2016-10-09 00:57
 drafted: 2014-11-08 12:34
 unique_id: 2014-11-08:design-notes-an-archive
 description: 'On my approach to self-archiving.'
-image_index: /images/index/1988-oliver-young.jpg
+image_index: index/1988-oliver-young.jpg
 image:
-  - src: /images/1988-oliver-young.jpg
+  - src: 1988-oliver-young.jpg
     alt: 'Oliver as a toddler'
     caption: 'A photo taken of me in … 1988? I have no idea! This is an example of why I miss having a complete archive.'
     quality: 50
@@ -25,7 +25,7 @@ image:
 Looking back at my files and memories from my life so far, I find there are few things that are constant or well-maintained. I do not own a physical album of photos from when I was young – I wish I did. I do not even have many scans of old photos. I am missing most of my creative output from when I was younger, as well. I think my life would be richer for having a better understanding of where I came from.
 
 {% assign image = page.image[0] %}
-{% include block/image-imgix.html class="right" %}
+{% include block/image.html class="right" %}
 
 If you never have, you should dig into the [Internet Archive’s Wayback Machine](https://archive.org/web/). You can find the history of sites no longer online, or no longer in their previous form. All of those attempts, versions and missteps are encoded in HTML and publicly hosted until they are discarded in a matter of months or years. The Archive team saves this history. It is cared for by preservationists who realized that if they did not make the effort, this creative output and cultural memory would certainly be lost history in the space of far less than a lifetime (since, by default, not much lasts long on the web).
 

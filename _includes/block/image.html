@@ -1,6 +1,23 @@
+{% assign src = image.src | prepend: '/' | prepend: site.image_url %}
+
+{% if image.quality %}
+  {% assign quality = image.quality %}
+{% endif %}
+{% if image.width %}
+  {% assign width = image.width %}
+{% endif %}
+
 <figure{% if include.class %} class="{{ include.class }}"{% endif %}>
   <img
-    src="{{ image.src }}"
+  {% if quality and width %}
+    src="{{ image.src | imgix_url: w: width, q: quality }}"
+  {% elsif quality %}
+    src="{{ src | imgix_url: q: quality }}"
+  {% elsif width %}
+    src="{{ src | imgix_url: w: width }}"
+  {% else %}
+    src="{{ src }}"
+  {% endif %}
     alt="{{ image.alt }}">
   {% if image.caption %}
   <figcaption>{{ image.caption | markdownify }}</figcaption>

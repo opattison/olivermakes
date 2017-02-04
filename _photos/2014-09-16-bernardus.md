@@ -1,6 +1,6 @@
 ---
 title: 'St. Bernardus'
-src: /images/2014-09-16-bernardus-olivermakes-ccbync.jpg
+src: 2014-09-16-bernardus-olivermakes-ccbync.jpg
 alt: 'A bottle of ale on a glass table.'
 description: 'A bottle of St. Bernardus ale, from a vacation. Processed with [VSCO Film 04](http://vsco.co/film) (Fuji Astia 100F Balance Warm).'
 date: 2014-09-16

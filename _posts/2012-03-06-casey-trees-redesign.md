@@ -15,17 +15,17 @@ period: 2011-11 to 2012-03
 description: 'My work on a redesign for an urban forestry non-profit, in the early days of responsive web design.'
 project:
   url: http://caseytrees.org/
-image_index: /images/index/2015-02-23-ct-logo.svg
+image_index: index/2015-02-23-ct-logo.svg
 image:
-  - src: /images/2015-02-23-ct-logo.svg
-    src_png: /images/2015-02-23-ct-logo.png
+  - src: 2015-02-23-ct-logo.svg
+    src_png: 2015-02-23-ct-logo.png
     background: 'site.shade.white'
     description: 'Logo SVG'
-  - src: /images/2013-01-09-casey-trees-homepage-android.jpg
+  - src: 2013-01-09-casey-trees-homepage-android.jpg
     alt: 'The Casey Trees home page on an Android mobile browser'
     date: 2013-01-09
     description: 'Taken on a Galaxy Nexus using Google Chrome for Android in 2013'
-  - src: /images/2012-04-27-casey-trees-homepage-desktop.jpg
+  - src: 2012-04-27-casey-trees-homepage-desktop.jpg
     alt: 'The Casey Trees home page on a desktop early on after the redesign, with a series of slides and all navigation items visible, including events and the Tree Report Card.'
     date: 2012-04-27
     caption: 'The home page less than two months after the redesign.'
@@ -48,10 +48,10 @@ We turned the project around in only a few months, with design and content work 
 
 <div class="grid--wide">
   {% assign image = page.image[1] %}
-  {% include block/image-imgix.html class="grid-figure--33 screenshot" %}
+  {% include block/image.html class="grid-figure--33 screenshot" %}
 
   {% assign image = page.image[2] %}
-  {% include block/image-imgix.html class="grid-figure--66 screenshot" %}
+  {% include block/image.html class="grid-figure--66 screenshot" %}
 </div>
 
 ## The need for a new website

@@ -19,34 +19,34 @@ project:
   filetype: '.svg'
   license: '© copyright'
   license-url: https://github.com/opattison/pine-orchard-antique-prints#credits
-image_index: /images/2016-01-15-logotype-pine-orchard--green.svg
+image_index: 2016-01-15-logotype-pine-orchard--green.svg
 image:
-  - src: /images/2016-01-15-logotype-pine-orchard--green.svg
-    src_png: /images/2016-01-15-logotype-pine-orchard--green.png
+  - src: 2016-01-15-logotype-pine-orchard--green.svg
+    src_png: 2016-01-15-logotype-pine-orchard--green.png
     alt: 'Pine Orchard Antique Prints logo type'
     date: 2016-01-26
     description: 'background #bdc6c0, foreground text #182905 – background was generated for this context, since the original logo is typically superimposed on an image background.'
-  - src: /images/2016-01-28-costume-of-china.jpg
+  - src: 2016-01-28-costume-of-china.jpg
     alt: 'All caps text for a title page'
     date: 2016-01-28
     caption: '[William Alexander](http://pineorchardprints.com/collections/alexander-costume-of-china), <i>Costume of China</i>, 1814'
     quality: 60
-  - src: /images/2016-01-28-ausable-typography.jpg
+  - src: 2016-01-28-ausable-typography.jpg
     alt: 'Serif text description for a print'
     date: 2016-01-28
     caption: '[William Pate](http://pineorchardprints.com/collections/american-landscape), <i>American Landscape</i>, 1869'
     quality: 70
-  - src: /images/2016-01-27-pine-orchard-close.png
+  - src: 2016-01-27-pine-orchard-close.png
     alt: 'Close view of the letter forms for Pine in the logo.'
     date: 2016-01-27
-  - src: /images/2016-01-28-print-collections.png
+  - src: 2016-01-28-print-collections.png
     alt: 'A list of collections using Cardo with small caps'
     date: 2016-01-28
-  - src: /images/2016-01-28-print-index-title.jpg
+  - src: 2016-01-28-print-index-title.jpg
     alt: 'The title text in Cardo for a print'
     date: 2016-01-28
     quality: 70
-  - src: /images/2016-01-27-pine-orchard-banner.jpg
+  - src: 2016-01-27-pine-orchard-banner.jpg
     alt: 'Pine Orchard Antique Prints banner logo as a part of the banner on the shop'
     date: 2016-01-27
     caption: 'The typography in context on the [Pine Orchard Prints website](http://pineorchardprints.com).'
@@ -65,10 +65,10 @@ I avoided the more eclectic Victorian typographic styles which might be illegibl
 
 <div class="grid">
   {% assign image = page.image[1] %}
-  {% include block/image-srcset--grid2.html class="grid-figure" %}
+  {% include block/image-srcset--small.html class="grid-figure" %}
 
   {% assign image = page.image[2] %}
-  {% include block/image-srcset--grid2.html class="grid-figure" %}
+  {% include block/image-srcset--small.html class="grid-figure" %}
 </div>
 
 I sought a typeface that could serve equally well in a display or body context. It would have to be a distinctive serif font – traditional but still able to sit comfortably next to modern user interface typefaces (such as Avenir or Roboto). To maintain a higher level of performance for the site, I limited my design to only one regular weight and one style. A single font additionally served as an artificial but useful constraint. This constraint led to creatively addressing emphasized forms: small capitals could mitigate the lack of bold or italic styles and more effectively evoke the type of that era.
@@ -80,7 +80,7 @@ I chose [Cardo](http://scholarsfonts.net/cardofnt.html), an old-style font by Da
 The typeface performed quite well, even with only a single weight. Cardo has excellent OpenType support and beautiful small capital styles, making headings and featured text stand out against the striking photos of the prints. I ended up using Cardo for all of the headings on the site, as well as for stylized collection links and for the logo identity. Using small capitals for titles, and ultimately for the logotype ended up being a stylistic success.
 
 {% assign image = page.image[3] %}
-{% include block/image-imgix.html class="image screenshot" %}
+{% include block/image.html class="image screenshot" %}
 
 In my earliest take on the design, I attempted a logo designed only with CSS, but limited control over letter spacing and relative proportions led to unimpressive initial efforts. It is still difficult to implement small caps with OpenType and CSS properly, since browser support is not as extensive as it could be. [^2] I designed the next takes of the logotype with Adobe Illustrator, because I wanted SVG output and fine control over kerning. The final iteration appears on the site header as well as in transactional email messages and mailing labels.
 
@@ -98,10 +98,10 @@ For a small shop, memorable and appropriate typography effectively served the bu
 
 <div class="grid--wide">
   {% assign image = page.image[4] %}
-  {% include block/image-srcset--grid2.html class="grid-figure screenshot" %}
+  {% include block/image-srcset--small.html class="grid-figure screenshot" %}
 
   {% assign image = page.image[5] %}
-  {% include block/image-srcset--grid2.html class="grid-figure screenshot" %}
+  {% include block/image-srcset--small.html class="grid-figure screenshot" %}
 </div>
 
 {% assign image = page.image[6] %}

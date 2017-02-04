@@ -1,6 +1,6 @@
 ---
 title: 'Cooper Hewitt typography'
-src: /images/2015-11-14-cooper-hewitt-olivermakes-ccbync.jpg
+src: 2015-11-14-cooper-hewitt-olivermakes-ccbync.jpg
 alt: 'A metal typographic logo outside the Cooper Hewitt museum'
 description: ''
 date: 2015-11-14

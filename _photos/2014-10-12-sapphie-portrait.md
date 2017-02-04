@@ -1,6 +1,6 @@
 ---
 title: 'Sapphie looks'
-src: /images/2014-10-12-sapphie-portrait-olivermakes-ccbync.jpg
+src: 2014-10-12-sapphie-portrait-olivermakes-ccbync.jpg
 alt: 'A black hound dog looks out into a park.'
 description: 'An early photo of Sapphie right after we adopted her.'
 date: 2014-10-12

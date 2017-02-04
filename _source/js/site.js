@@ -1,3 +1,5 @@
+require('lazysizes');
+
 var Velocity = require('velocity-animate');
 
 /* forEach loop through for querySelectorAll

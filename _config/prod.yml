@@ -135,12 +135,12 @@ srcset:
   - 1260
   - 1440
   - 1800
-srcset_grid2:
-  - 440
-  - 636
+srcset_small:
+  - 320
+  - 480
+  - 640
   - 720
-  - 880
-  - 954
+  - 900
   - 1080
 
 ## Mapbox authentication and configuration

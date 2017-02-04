@@ -1,6 +1,6 @@
 ---
 title: 'Portrait of Sapphie'
-src: /images/2014-12-27-sapphie-portrait-e200-olivermakes-ccbync.jpg
+src: 2014-12-27-sapphie-portrait-e200-olivermakes-ccbync.jpg
 alt: 'A black hound dog, staring away intensely'
 description: 'Processed with [VSCO Film 04](http://vsco.co/film) (Kodak E200)'
 date: 2014-12-27

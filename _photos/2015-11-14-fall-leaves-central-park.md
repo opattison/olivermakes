@@ -1,6 +1,6 @@
 ---
 title: 'Fall leaves'
-src: /images/2015-11-14-fall-leaves-central-park-olivermakes-ccbync.jpg
+src: 2015-11-14-fall-leaves-central-park-olivermakes-ccbync.jpg
 alt: 'Brown and orange fallen leaves on the grassy ground in Central Park'
 description: ''
 date: 2015-11-14

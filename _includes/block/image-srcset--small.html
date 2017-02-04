@@ -8,10 +8,10 @@
 <figure{% if include.class %} class="{{ include.class }}"{% endif %}>
   <img
     class="lazyload"
-    src="{{ src | imgix_url: w: 720, q: 30 }}"
-    data-src="{{ src | imgix_url: w: 720, q: 30 }}"
+    src="{{ src | imgix_url: w: 480, q: 30 }}"
+    data-src="{{ src | imgix_url: w: 480, q: 30 }}"
     data-sizes="auto"
-    data-srcset="{% for width in site.srcset %}{{ src | imgix_url: w: width, q: quality }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+    data-srcset="{% for width in site.srcset_small %}{{ src | imgix_url: w: width, q: quality }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
     alt="{{ image.alt }}">
   {% if image.caption %}
   <figcaption>{{ image.caption | markdownify }}</figcaption>

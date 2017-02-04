@@ -19,10 +19,10 @@ project:
   url: http://patternprimer.olivermak.es
   source: https://github.com/opattison/Pattern-Primer-Jekyll
 image:
-  - src: /images/2014-12-01-pattern-primer-project-feature-screen.png
+  - src: 2014-12-01-pattern-primer-project-feature-screen.png
     alt: 'A screenshot of Pattern Primer Jekyll'
     date: 2014-12-01
-  - src: /images/2014-12-01-pattern-primer-headings.png
+  - src: 2014-12-01-pattern-primer-headings.png
     alt: 'Heading styles in Pattern Primer Jekyll'
     caption: 'Find out how your headings look and what markup is needed for them with a primer.'
     date: 2014-12-01
