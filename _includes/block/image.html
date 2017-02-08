@@ -10,7 +10,7 @@
 <figure{% if include.class %} class="{{ include.class }}"{% endif %}>
   <img
   {% if quality and width %}
-    src="{{ image.src | imgix_url: w: width, q: quality }}"
+    src="{{ src | imgix_url: w: width, q: quality }}"
   {% elsif quality %}
     src="{{ src | imgix_url: q: quality }}"
   {% elsif width %}

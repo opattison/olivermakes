@@ -5,7 +5,6 @@ category: index
 unique_id: time
 description: 'Links to all of the yearly archives for the posts on this website, by Oliver Pattison.'
 years:
-  - 2017
   - 2016
   - 2015
   - 2014
