@@ -17,36 +17,36 @@ project:
   url: https://2016.jeancflanagan.com
   source: https://github.com/jeancflanagan/jeancflanagan/tree/2016-09-archive
 custom_style: custom-2014-02-16-jean-flanagan.css
-image_index: /images/index/2014-12-05-jean-flanagan-feature.jpg
+image_index: index/2014-12-05-jean-flanagan-feature.jpg
 image:
-  - src: /images/2014-12-05-jean-flanagan-feature.jpg
+  - src: 2014-12-05-jean-flanagan-feature.jpg
     alt: 'A screenshot of jeancflanagan.com'
     date: 2014-12-05
-  - src: /images/2013-07-08-jean-flanagan-early-excerpt.png
+  - src: 2013-07-08-jean-flanagan-early-excerpt.png
     alt: 'Two text excerpts from a prototype of Jean’s website'
     caption: 'Content excerpts from the very early stages of the site’s design.'
     date: 2013-07-08
-  - src: /images/2014-12-05-jean-flanagan-excerpt.png
+  - src: 2014-12-05-jean-flanagan-excerpt.png
     alt: 'Two text excerpts from a current version of Jean’s website'
     caption: 'How the same content excerpts turned out in a later design iteration of the site.'
     date: 2014-12-05
-  - src: /images/2014-12-05-jean-flanagan-large-grid.jpg
+  - src: 2014-12-05-jean-flanagan-large-grid.jpg
     alt: 'The grid of posts on the home page on a large desktop screen'
     caption: 'What the grid of posts [on the homepage](https://2016.jeancflanagan.com/) looks like on a large screen. This four-column grid is different from the single-column grid on small-sized screens and the double-column grid on medium-sized screens.'
     date: 2014-12-05
-  - src: /images/2014-12-05-jean-flanagan-photo-page.jpg
+  - src: 2014-12-05-jean-flanagan-photo-page.jpg
     alt: 'A screenshot of the photo layout on a medium-sized browser'
-  - src: /images/2014-12-05-jean-flanagan-article-mobile.jpg
+  - src: 2014-12-05-jean-flanagan-article-mobile.jpg
     alt: 'A screenshot of the writing layout on a phone-sized browser'
     date: 2014-12-05
-  - src: /images/2014-12-05-jean-flanagan-article-desktop.jpg
+  - src: 2014-12-05-jean-flanagan-article-desktop.jpg
     alt: 'A screenshot of the writing layout on a large desktop browser'
     date: 2014-12-05
-  - src: /images/2014-12-05-jean-flanagan-article-float-image.png
+  - src: 2014-12-05-jean-flanagan-article-float-image.png
     alt: 'A screenshot of an image floated right alongside some text in a flexible layout'
     caption: 'The image of Darwin’s finches floats right on larger screens, while it would be layed out in the center on smaller screens. [View this page](https://2016.jeancflanagan.com/2013/communicating-about-evolution-the-danger-of-shortcuts/).'
     date: 2014-12-05
-  - src: /images/2014-02-16-PhyloPic.ef63437d.Michelle-Site.Scyphozoa.svg
+  - src: 2014-02-16-PhyloPic.ef63437d.Michelle-Site.Scyphozoa.svg
     alt: 'Floating jellyfish vector graphic'
     caption: 'A snippet from the [404 page](https://2016.jeancflanagan.com/404.html), using CSS `keyframes` animations to `translate` an SVG image and shift the background color. The vector jellyfish illustration is by [Michelle Site via Phylopic](http://phylopic.org/image/ef63437d-d6f4-4583-9d75-a8c9b19a203d/), licensed [CC BY-NC](http://creativecommons.org/licenses/by-nc/3.0/).'
     license: 'CC BY-NC'
@@ -69,13 +69,13 @@ The first thing we started out with were full-length articles about science, alr
 Designing in a browser meant that HTML prototypes were an early part of the process, right after sketching and rough notes. In the first week of active development, prototype code was being written that would evolve into the finished product.
 
 {% assign image = page.image[1] %}
-{% include block/image-imgix.html class="image screenshot" %}  
+{% include block/image.html class="image screenshot" %}  
 
 {% assign image = page.image[2] %}
-{% include block/image-imgix.html class="image screenshot" %}
+{% include block/image.html class="image screenshot" %}
 
 {% assign image = page.image[3] %}
-{% include block/image-imgix.html class="image--wide screenshot" %}
+{% include block/image.html class="image--wide screenshot" %}
 
 ### Flexible layout for long writing and featured photography
 
@@ -84,22 +84,22 @@ Jean takes [beautiful photos](https://2016.jeancflanagan.com/photos/), which I w
 #### Sample from photo layout
 
 {% assign image = page.image[4] %}
-{% include block/image-imgix.html class="image screenshot" %}
+{% include block/image.html class="image screenshot" %}
 
 #### Samples from writing layout
 
 <div class="grid--wide">
   {% assign image = page.image[5] %}
-  {% include block/image-imgix.html class="grid-figure--33 screenshot" %}
+  {% include block/image.html class="grid-figure--33 screenshot" %}
 
   {% assign image = page.image[6] %}
-  {% include block/image-imgix.html class="grid-figure--66 screenshot" %}
+  {% include block/image.html class="grid-figure--66 screenshot" %}
 </div>
 
 Not every image is meant to be showcased, nor should every image overshadow the writing. For complementary images in writing posts, I crafted alternative styles for right/left floated images for large screens. These optional styles are automated through a [Jekyll figure/image plugin](https://github.com/opattison/jekyll-figure-image-tag) that I wrote. The styles are flexible, reusable, and easy to maintain as well.
 
 {% assign image = page.image[7] %}
-{% include block/image-imgix.html class="image screenshot" %}
+{% include block/image.html class="image screenshot" %}
 
 ### Personality
 

@@ -13,18 +13,18 @@ drafted: 2015-02-18 16:20
 unique_id: 2015-02-19:casey-trees-docs
 period: 2014-06 to 2014-10
 description: 'An archive of organizational knowledge about web design, strategy, and implementation for a non-profit.'
-image_index: /images/index/2015-02-18-casey-trees-docs-style.png
+image_index: index/2015-02-18-casey-trees-docs-style.png
 image:
-  - src: /images/2015-02-18-casey-trees-docs-style.png
+  - src: 2015-02-18-casey-trees-docs-style.png
     alt: 'A screenshot and accompanying HTML code sample that document the design of a component.'
     date: 2015-02-18
     description: 'Feature image'
     aspect: '3:2'
-  - src: /images/2015-02-18-casey-trees-docs-nav.png
+  - src: 2015-02-18-casey-trees-docs-nav.png
     alt: 'The navigation for the documentation including headings for Documentation, Code Samples, and Reference, with listed items under each heading.'
     date: 2015-02-18
     aspect: '2:3'
-  - src: /images/2015-02-18-casey-trees-docs-code.png
+  - src: 2015-02-18-casey-trees-docs-code.png
     alt: 'An HTML code sample that documents the design of a component, with class parameters.'
     caption: 'I used the [Solarized color scheme](http://ethanschoonover.com/solarized) for code highlighting.'
     date: 2015-02-18
@@ -45,10 +45,10 @@ Unfortunately, the documents in the project contain proprietary information, so 
 
 <div class="grid--wide">
   {% assign image = page.image[1] %}
-  {% include block/image-imgix.html class="grid-figure--33 screenshot" %}
+  {% include block/image.html class="grid-figure--33 screenshot" %}
 
   {% assign image = page.image[2] %}
-  {% include block/image-imgix.html class="grid-figure--66 screenshot" %}
+  {% include block/image.html class="grid-figure--66 screenshot" %}
 </div>
 
 ## Implementation

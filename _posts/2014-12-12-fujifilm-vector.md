@@ -17,24 +17,24 @@ project:
   filetype: '.ai'
   license: 'CC BY-NC'
   license-url: 'http://creativecommons.org/licenses/by-nc/4.0/'
-image_index: /images/2016-02-01-xe2-1.1.svg
+image_index: 2016-02-01-xe2-1.1.svg
 image:
-  - src: /images/2016-02-01-xe2-1.1.svg
-    src_png: /images/2014-12-12-xe2-1.1.png
+  - src: 2016-02-01-xe2-1.1.svg
+    src_png: 2014-12-12-xe2-1.1.png
     date: 2016-02-01
     description: 'original graphic cropped for project item. index version is cropped and colored gray07'
-  - src: /images/2014-12-12-xe2-1.1.svg
+  - src: 2014-12-12-xe2-1.1.svg
     alt: 'vector image of Fujifilm X-E2 digital camera'
     caption: 'The basis for the graphics used on the site. I hand-traced an image of the camera in Adobe Illustrator. I could have automated this process, but I preferred to brush up on Illustrator and create a more maintainable result.'
     date: 2014-12-08
     description: 'original graphic. index version is cropped and colored gray7'
-  - src: /images/2014-12-12-fxe2.svg
+  - src: 2014-12-12-fxe2.svg
     alt: 'simplfied vector of Fujifilm X-E2 camera – dark on light'
     caption: 'A simplified version in light&nbsp;…'
-  - src: /images/2014-12-12-fxe2-offwhite.svg
+  - src: 2014-12-12-fxe2-offwhite.svg
     alt: 'simplfied vector of Fujifilm X-E2 camera – light on dark'
     caption: '… and dark themes.'
-  - src: /images/2014-12-12-photo-meta-example.jpg
+  - src: 2014-12-12-photo-meta-example.jpg
     alt: 'an example of the graphics in action a photo metadata excerpt'
     caption: 'What the vector graphic looks like [in context on a photo page](/2014/11/turntable/).'
 

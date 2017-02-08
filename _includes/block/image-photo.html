@@ -1,5 +1,6 @@
 {% include helper/photo-from-collection.liquid %}
 
+{% assign src = image.src | prepend: '/' | prepend: site.image_url %}
 {% if image.quality %}
   {% assign quality = image.quality %}
 {% else %}
@@ -9,13 +10,11 @@
 <figure{% if include.class %} class="{{ include.class }}"{% endif %}>
   <a href="{{ image.url }}">
     <img
-      src="{{ image.src | imgix_url: w: 720, q: 50 }}"
-      {% if include.class contains 'image--wide' %}
-      sizes="{{ site.sizes_wide }}"
-      {% else %}
-      sizes="{{ site.sizes }}"
-      {% endif %}
-      srcset="{% for width in site.srcset %}{{ image.src | imgix_url: w: width, q: quality }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+      class="lazyload"
+      src="{{ src | imgix_url: w: 640, q: 25 }}"
+      data-src="{{ src | imgix_url: w: 640, q: quality }}"
+      data-sizes="auto"
+      data-srcset="{% for width in site.srcset %}{{ src | imgix_url: w: width, q: quality }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
       alt="{{ image.alt }}">
   </a>
   {% if image.caption %}

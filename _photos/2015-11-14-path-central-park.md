@@ -1,6 +1,6 @@
 ---
 title: 'Path through Central Park'
-src: /images/2015-11-14-path-central-park-olivermakes-ccbync.jpg
+src: 2015-11-14-path-central-park-olivermakes-ccbync.jpg
 alt: 'A curving concrete path through green grass in Central Park'
 description: ''
 date: 2015-11-14

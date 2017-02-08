@@ -1,6 +1,6 @@
 ---
 title: 'Museum Mile'
-src: /images/2015-11-14-museum-mile-olivermakes-ccbync.jpg
+src: 2015-11-14-museum-mile-olivermakes-ccbync.jpg
 alt: 'The street alongside Central Park on Museum Mile, near East 90th Street'
 description: 'Jean walking down “Museum Mile” on 5th Avenue alongside Central Park at East 90th Street.'
 date: 2015-11-14

@@ -1,6 +1,6 @@
 ---
 title: 'Aristotle’s Eyes'
-src: /images/2014-06-29-aristotles-eyes-olivermakes-ccbync.jpg
+src: 2014-06-29-aristotles-eyes-olivermakes-ccbync.jpg
 alt: 'A book open to a page with the title “Aristotle’s Eyes”, set in a grassy, shady garden.'
 description: 'Reading a book at the arboretum. Processed with [VSCO Film 04](http://vsco.co/film) (Kodak E100G Vibrant).'
 date: 2014-06-29

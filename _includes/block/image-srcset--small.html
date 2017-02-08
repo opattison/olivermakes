@@ -1,23 +1,17 @@
 {% assign src = image.src | prepend: '/' | prepend: site.image_url %}
-
 {% if image.quality %}
   {% assign quality = image.quality %}
-{% endif %}
-{% if image.width %}
-  {% assign width = image.width %}
+{% else %}
+  {% assign quality = 50 %}
 {% endif %}
 
 <figure{% if include.class %} class="{{ include.class }}"{% endif %}>
   <img
-  {% if quality and width %}
-    src="{{ src | imgix_url: w: width, q: quality }}"
-  {% elsif quality %}
-    src="{{ src | imgix_url: q: quality }}"
-  {% elsif width %}
-    src="{{ src | imgix_url: w: width }}"
-  {% else %}
-    src="{{ src }}"
-  {% endif %}
+    class="lazyload"
+    src="{{ src | imgix_url: w: 320, q: 25 }}"
+    data-src="{{ src | imgix_url: w: 480, q: quality }}"
+    data-sizes="auto"
+    data-srcset="{% for width in site.srcset_small %}{{ src | imgix_url: w: width, q: quality }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
     alt="{{ image.alt }}">
   {% if image.caption %}
   <figcaption>{{ image.caption | markdownify }}</figcaption>

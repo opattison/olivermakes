@@ -1,6 +1,6 @@
 ---
 title: 'Green leaves'
-src: /images/2015-11-14-green-leaves-central-park-olivermakes-ccbync.jpg
+src: 2015-11-14-green-leaves-central-park-olivermakes-ccbync.jpg
 alt: 'Dense, bright green leaves on a tree in Central Park'
 description: ''
 date: 2015-11-14

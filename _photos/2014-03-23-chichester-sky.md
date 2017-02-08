@@ -1,6 +1,6 @@
 ---
 title: 'Chichester sky'
-src: /images/2014-03-23-chichester-sky-olivermakes-ccbync.jpg
+src: 2014-03-23-chichester-sky-olivermakes-ccbync.jpg
 alt: 'An aging brick boathouse and a cloudy sky near sunset'
 description: 'From a trip to the south of England. Processed with [VSCOcam](http://vsco.co/app) a2'
 date: 2014-03-23

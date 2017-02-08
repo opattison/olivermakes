@@ -10,7 +10,7 @@ unique_id: about
 permalink: /about/
 description: 'A short biography of Oliver Pattison, as well as details about how this website was made.'
 image:
-  - src: /images/2016-10-18-oliver-jeancflanagan-ccbync.jpg
+  - src: 2016-10-18-oliver-jeancflanagan-ccbync.jpg
     alt: 'Oliver Pattison standing in a forest with a backdrop of branches and yellow leaves'
     caption: 'Photo of me by [Jean Flanagan](https://jeancflanagan.com), [CC BY-NC](http://creativecommons.org/licenses/by-nc/4.0/)'
     date: 2016-10-18
@@ -22,7 +22,7 @@ image:
     iso: 200
     latitude: 44.6399
     longitude: -72.8117
-  - src: /images/2016-10-18-oliver-sapphie-jeancflanagan-ccbync.jpg
+  - src: 2016-10-18-oliver-sapphie-jeancflanagan-ccbync.jpg
     alt: 'Oliver Pattison standing in a forest with Sapphie, the dog'
     date: 2016-10-18
     camera: 'Fujifilm X-E2'

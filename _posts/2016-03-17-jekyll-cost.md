@@ -13,7 +13,7 @@ drafted: 2016-03-17 15:00
 unique_id: 2016-03-17:jekyll-cost
 description: 'Just how cheap is it to host a static Jekyll site? Costs start at $0.'
 image:
-  - src: /images/2016-03-16-jekyll-aws-cost.png
+  - src: 2016-03-16-jekyll-aws-cost.png
     alt: '$1.58 cost chart for February 2016'
     caption: 'A recent monthly estimate for a few small websites hosted on AWS. This goes up and down a bit depending on use (especially because I also use S3 for backing up files).'
 
@@ -32,7 +32,7 @@ Chatting with [Michael Lee](https://michaelsoolee.com/) about my [previous post 
 Without advocating for any other particular services (since I haven’t used enough of them myself to report accurately), there are a variety of [other deployment options](https://jekyllrb.com/docs/deployment-methods/), since Jekyll does not have specific requirements for serving. As always, it depends on your need. But if your needs are minimal, static sites are very cheap to run.
 
 {% assign image = page.image[0] %}
-{% include block/image-imgix.html class="image screenshot" %}
+{% include block/image.html class="image screenshot" %}
 
 I chose S3 with Route53 and CloudFront for its acceptable cost, high reliability, and flexibility in deployment (like setting up [secure TLS with a fast CloudFront CDN](https://olivermak.es/2016/01/aws-tls-certificate-with-jekyll/)).
 

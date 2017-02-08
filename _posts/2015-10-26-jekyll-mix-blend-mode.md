@@ -15,9 +15,9 @@ unique_id: 2015-10-26:jekyll-mix-blend-mode
 description: 'Tribute to the minimalist 2009-2013 Jekyll site, but using flexbox and blend modes.'
 project:
   source: http://codepen.io/opattison/pen/WQzZRG/
-image_index: /images/index/2016-01-21-jekyll-transform.png
+image_index: index/2016-01-21-jekyll-transform.png
 image:
-  - src: /images/2016-01-21-jekyll-transform.png
+  - src: 2016-01-21-jekyll-transform.png
     alt: 'The old Jekyll home page design, reimplemented. The design features a black/white contrast split with typography that reverses the shade of each side of the background color.'
     date: 2016-01-21
 

@@ -4,8 +4,10 @@
     {% assign completed = post.date | date: '%Y-%m-%d' %}
     {% assign updated = post.updated | date: '%Y-%m-%d' %}
     {% assign image = post.image[0] %}
+    {% assign src = image.src | prepend: '/' | prepend: site.image_url %}
+
   <article class="project--satellite">
-    <div class="project-image" style="background-image: {% if image.src contains 'svg' or image.src contains 'png' %}url({{ image.src }}){% else %}url({{ image.src | imgix_url: w: 620, q: 70 }});{% endif %}">
+    <div class="project-image" style="background-image: {% if image.src contains 'svg' or image.src contains 'png' %}url({{ src }}){% else %}url({{ src | imgix_url: w: 620, q: 70 }});{% endif %}">
     </div>
     <div class="project-meta">
       <h1><a href="{{ post.url }}">{{ post.title | markdownify | p_escape }}</a></h1>
