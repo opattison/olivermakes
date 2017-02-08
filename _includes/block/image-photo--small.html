@@ -11,8 +11,8 @@
   <a href="{{ image.url }}">
     <img
       class="lazyload"
-      src="{{ src | imgix_url: w: 320, q: 25 }}"
-      data-src="{{ src | imgix_url: w: 480, q: 25 }}"
+      src="{{ src | imgix_url: w: 320, q: quality }}"
+      data-src="{{ src | imgix_url: w: 240, q: 25 }}"
       data-sizes="auto"
       data-srcset="{% for width in site.srcset_small %}{{ src | imgix_url: w: width, q: quality }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
       alt="{{ image.alt }}">
