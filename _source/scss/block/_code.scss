@@ -24,3 +24,25 @@
     margin-left: -9em;
   }
 }
+
+.code-heading {
+  font-family: $monospace;
+  font-size: 1rem;
+  padding-bottom: .5em;
+
+  @include min-width(s03) {
+    margin-left: -2em;
+  }
+
+  @include min-width(s04) {
+    margin-left: -2.5em;
+  }
+
+  @include min-width(l01) {
+    margin-left: -4.5em;
+  }
+
+  @include min-width(l03) {
+    margin-left: -9em;
+  }
+}

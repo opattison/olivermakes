@@ -94,6 +94,14 @@ blockquote footer {
   color: $fore;
 }
 
+figcaption {
+  color: $fore--minus;
+}
+
+hr {
+  background-color: $accent--neutral;
+}
+
 p > code,
 li > code,
 samp {
@@ -135,10 +143,6 @@ kbd > kbd {
 .content,
 .page-title {
   background-color: $back--minus;
-}
-
-figcaption {
-  color: $fore--minus;
 }
 
 .action {
@@ -213,6 +217,10 @@ figcaption {
       color: $blue;
     }
   }
+}
+
+.code-heading {
+  color: $fore--minus;
 }
 
 .highlight {

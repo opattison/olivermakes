@@ -240,6 +240,10 @@ mark {
   }
 }
 
+.code-heading {
+  color: $fore--minus;
+}
+
 .highlight {
   background-color: $code-block--back;
   border-color: $code--border;
