@@ -14,9 +14,12 @@ period: 2016-11 to 2017-01
 unique_id: 2017-01-30:fluid-grid
 description: '/…'
 image:
-  - src: /images/2017-01-23-each-row-grid.png
-  - src: /images/2017-01-23-grids-stacked.png
-  - src: /images/2017-01-23-mount-hunger-grid.png
+  - src: 2017-01-23-each-row-grid.png
+    alt: 'A single row of photos in a row aligned in a grid.'
+  - src: 2017-01-23-grids-stacked.png
+    alt: 'Multiple rows of photos aligned in a grid.'
+  - src: 2017-01-23-mount-hunger-grid.png
+    alt: 'An asymmetric grid of photos.'
 ---
 
 <!-- /… via JF: hook people with the use case first -->

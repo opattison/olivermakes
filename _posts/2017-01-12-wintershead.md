@@ -19,23 +19,23 @@ unique_id: 2016-01-12:wintershead
 description: 'A fictional design project to demonstrate fluid responsive typography.'
 project:
   url: https://wintershead.olivermak.es
-image_index: /images/2016-12-15-logo-emboss-baltic.svg
+image_index: 2016-12-15-logo-emboss-baltic.svg
 image:
-  - src: /images/2016-12-15-logo-emboss-baltic.svg
-    src_png: /images/2016-12-15-logo-emboss-baltic.png
+  - src: 2016-12-15-logo-emboss-baltic.svg
+    src_png: 2016-12-15-logo-emboss-baltic.png
     alt: 'Wintershead Brewing Company embossed logo'
-  - src: /images/2016-12-30-wintershead-logotype.png
+  - src: 2016-12-30-wintershead-logotype.png
     alt: 'Wintershead Brewing Company'
     caption: 'The logotype and mark for the site, set in Enzo.'
-  - src: /images/2016-12-30-moel.png
+  - src: 2016-12-30-moel.png
     alt: 'moel logo and illustration'
-  - src: /images/2017-01-03-lonn-path.png
+  - src: 2017-01-03-lonn-path.png
     alt: 'letter forms meet vector paths'
     caption: 'The path of the branch meets the letters of the name for [the beer “lönn”](https://wintershead.olivermak.es/products/lonn/).'
-  - src: /images/2017-01-03-yark-theme.jpg
+  - src: 2017-01-03-yark-theme.jpg
     alt: 'screenshot: monochrome blue tinted photographs on a blue background'
     caption: 'Themes are applied dynamically to each post’s featured photos using [imgix](https://www.imgix.com) image processing. That is: the photo editing takes place automatically on a remote server using the imgix API – not done manually beforehand in a photo editor like Photoshop.'
-  - src: /images/2017-01-03-map.png
+  - src: 2017-01-03-map.png
     alt: 'screenshot of locator map'
     caption: 'Using [Mapbox Studio](https://www.mapbox.com/mapbox-studio/), I designed a custom map style to [simulate a product locator](https://wintershead.olivermak.es/about/#location).'
 ---

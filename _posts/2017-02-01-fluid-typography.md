@@ -14,15 +14,15 @@ drafted: 2016-12-20 12:34
 unique_id: 2017-02-01:fluid-typography
 description: '/…'
 image:
-  - src: /images/2017-02-07-discrete-vs-fluid.svg
+  - src: 2017-02-07-discrete-vs-fluid.svg
     alt: 'discrete stair steps vs. gradual fluid linear line'
-  - src: /images/2017-02-07-wikipedia-type.png
+  - src: 2017-02-07-wikipedia-type.png
     alt: 'A long line length demonstrated on a Wikipedia page.'
     caption: 'More than 200 characters per line on a fluid column of text on Wikipedia.'
-  - src: /images/2017-02-07-jeanandoliver-type.png
+  - src: 2017-02-07-jeanandoliver-type.png
     alt: 'Typographic sample from Jean and Oliver'
     caption: 'Body text underneath a photo grid from [Jean and Oliver](https://jeanandoliver.space/)'
-  - src: /images/2017-02-07-wintershead-type.png
+  - src: 2017-02-07-wintershead-type.png
     alt: 'Typographic sample from Wintershead'
     caption: 'Responsive body text from the [Wintershead](https://wintershead.olivermak.es/) site.'
 ---
