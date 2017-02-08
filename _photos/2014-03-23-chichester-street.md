@@ -1,6 +1,6 @@
 ---
 title: 'Chichester street reflections'
-src: /images/2014-03-23-chichester-street-reflection-olivermakes-ccbync.jpg
+src: 2014-03-23-chichester-street-reflection-olivermakes-ccbync.jpg
 alt: 'Reflections from a puddle where a street meets a sidewalk'
 caption: 'After the rain in Chichester, West Sussex'
 description: 'From a trip to the south of England. Processed with [VSCOcam](http://vsco.co/app) m5.'

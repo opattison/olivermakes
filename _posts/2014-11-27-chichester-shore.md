@@ -21,8 +21,8 @@ photo:
 
 <div class="grid--wide">
   {% assign photo = page.photo[1] %}
-  {% include block/image-photo--grid2.html class="grid-figure" %}
+  {% include block/image-photo--small.html class="grid-figure" %}
 
   {% assign photo = page.photo[2] %}
-  {% include block/image-photo--grid2.html class="grid-figure" %}
+  {% include block/image-photo--small.html class="grid-figure" %}
 </div>

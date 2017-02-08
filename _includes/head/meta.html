@@ -12,7 +12,6 @@
 <meta name="twitter:card" content="summary">
 {% endif %}
 
-
 {% if page.category == 'index' or page.category == 'archive' %}
 <meta property="og:type" content="website">
 {% else %}
@@ -42,19 +41,23 @@
   {% assign image = page.image[0] %}
 {% endif %}
 
+{% assign src = image.src | prepend: site.url | prepend: '/' | prepend: site.image_url %}
+{% assign src_png = image.src_png | prepend: site.url | prepend: '/' | prepend: site.image_url %}
+{% assign icon = 'touchicon192.png' | prepend: site.url | prepend: icon_url | prepend: '/' %}
+
 {% if image %}
   {% if image.src contains 'svg' %}
-    <meta property="og:image" content="{{ site.url }}{{ image.src_png }}">
-    <meta property="og:image:secure_url" content="{{ site.url }}{{ image.src_png }}">
+    <meta property="og:image" content="{{ src_png }}">
+    <meta property="og:image:secure_url" content="{{ src_png }}">
   {% elsif image.src contains 'png' %}
-    <meta property="og:image" content="{{ image.src | imgix_url }}">
-    <meta property="og:image:secure_url" content="{{ image.src | imgix_url }}">
+    <meta property="og:image" content="{{ src | imgix_url }}">
+    <meta property="og:image:secure_url" content="{{ src | imgix_url }}">
   {% else %}
-    <meta property="og:image" content="{{ image.src | imgix_url: w: 1024, q: 50 }}">
-    <meta property="og:image:secure_url" content="{{ image.src | imgix_url: w: 1024, q: 50 }}">
+    <meta property="og:image" content="{{ src | imgix_url: w: 1024, q: 50 }}">
+    <meta property="og:image:secure_url" content="{{ src | imgix_url: w: 1024, q: 50 }}">
   {% endif %}
 {% else %}
-  <meta property="og:image" content="{{ site.url }}{{ site.icon_url }}/touchicon192.png">
+  <meta property="og:image" content="{{ icon }}">
 {% endif %}
 
 {% if page.description %}

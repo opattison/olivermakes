@@ -2,10 +2,12 @@
   {% assign completed = page.date | date: '%Y-%m-%d' %}
   {% assign updated = page.updated | date: '%Y-%m-%d' %}
   {% assign image = page.image[0] %}
+  {% assign src = image.src | prepend: '/' | prepend: site.image_url %}
+
   <article class="project">
     <div class="project-image"
       {% if image %}
-      style="background-image: {% if image.src contains 'svg' or image.src contains 'png' %}url({{ image.src }}){% else %}url({{ image.src | imgix_url: w: 620, q: 70 }});{% endif %}"
+      style="background-image: {% if image.src contains 'svg' or image.src contains 'png' %}url({{ src }}){% else %}url({{ src | imgix_url: w: 620, q: 70 }});{% endif %}"
       {% endif %}>
     </div>
 

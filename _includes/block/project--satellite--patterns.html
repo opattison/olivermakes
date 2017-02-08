@@ -2,8 +2,11 @@
 {% for item in pages %}
   {% if item.unique_id == 'patterns' %}
     {% assign updated = item.updated | date: '%Y-%m-%d' %}
+    {% assign image = item.image[0] %}
+    {% assign src = image.src | prepend: '/' | prepend: site.image_url %}
+
   <article class="project--satellite">
-    <div class="project-image" style="background-image: url({{ item.image[0].src }});">
+    <div class="project-image" style="background-image: url({{ src }});">
     </div>
     <div class="project-meta">
       <h1><a href="{{ item.url }}">Pattern library</a></h1>

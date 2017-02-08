@@ -13,10 +13,10 @@ updated: 2016-04-11 11:08
 drafted: 2014-11-07 12:34
 unique_id: 2014-11-08:design-notes-dependencies
 description: 'What runs this site? What is most essential and what could affect its long-term survivability?'
-image_index: /images/2014-12-12-logo.svg
+image_index: 2014-12-12-logo.svg
 image:
-  - src: /images/2014-12-12-logo.svg
-    src_png: /images/2014-12-12-logo.png
+  - src: 2014-12-12-logo.svg
+    src_png: 2014-12-12-logo.png
     description: 'index-image color is gray6 #84919a and grayblue #bdcfdb'
 
 ---

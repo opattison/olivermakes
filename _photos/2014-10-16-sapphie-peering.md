@@ -1,6 +1,6 @@
 ---
 title: 'Sapphie peers'
-src: /images/2014-10-16-sapphie-peering-bw-olivermakes-ccbync.jpg
+src: 2014-10-16-sapphie-peering-bw-olivermakes-ccbync.jpg
 alt: 'A black dog peers over the edge of a bed with a puzzled demeanor.'
 description: 'An early photo of Sapphie at home.'
 date: 2014-10-16

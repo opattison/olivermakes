@@ -13,9 +13,9 @@ updated: 2014-12-15 11:01
 drafted: 2014-12-14 20:00
 unique_id: 2014-12-14:reaction-works-that-work
 description: 'Notes on an independent publication about design and creativity.'
-image_index: /images/index/2014-12-14-wtw-olivermakes-ccbync.jpg
+image_index: index/2014-12-14-wtw-olivermakes-ccbync.jpg
 image:
-  - src: /images/2014-12-14-wtw-olivermakes-ccbync.jpg
+  - src: 2014-12-14-wtw-olivermakes-ccbync.jpg
     alt: 'Three recent issues of Works that Work laid out on a table'
     date: 2014-12-14
     camera: 'Fujifilm X-E2'
@@ -26,13 +26,13 @@ image:
     iso: 2000
     description: 'Photo of three issues of Works That Work, taken at home.'
     aspect: '3:1'
-  - src: /images/2014-12-15-wtw-N80_7110.jpg
+  - src: 2014-12-15-wtw-N80_7110.jpg
     alt: 'Magazine cover'
     date: 2014-12-15
     license: 'copyright'
     author: 'Works That Work'
     quality: 70
-  - src: /images/2014-12-15-wtw-N80_7152.jpg
+  - src: 2014-12-15-wtw-N80_7152.jpg
     alt: 'Inner page – From Earth to Mars'
     date: 2014-12-15
     license: 'copyright'
@@ -70,9 +70,9 @@ The latest issue has an more finished feel than the previous ones – each one i
 
 <div class="grid--wide">
   {% assign image = page.image[1] %}
-  {% include block/image-srcset--grid2.html class="grid-figure" %}
+  {% include block/image-srcset--small.html class="grid-figure" %}
   {% assign image = page.image[2] %}
-  {% include block/image-srcset--grid2.html class="grid-figure" %}
+  {% include block/image-srcset--small.html class="grid-figure" %}
 </div>
 
 They are also engaging with readers through interesting [social distribution](https://worksthatwork.com/distribution/) experiment. The idea is to encourage readers to become distributors to help the publisher bypass conventional distribution networks, which account for a large part of the cover price of a magazine. The reader helps to distribute the magazine, and gets a discount in the process. None of this adds to the base cover price of the magazine, and more people get local access to the magazine without the overhead of a traditional distribution.

@@ -21,9 +21,9 @@ project:
   url: https://api.mapbox.com/styles/v1/opattison/ciuoegxtl007i2inykyztlus6.html?title=true&access_token=pk.eyJ1Ijoib3BhdHRpc29uIiwiYSI6Il9DU3p1MEkifQ.3cvRQB5hVIONMpDAflBUNw#12/44.394699/-72.660606
   download: /resources/fragments/outdoorsy-ciuoegxtl007i2inykyztlus6.zip
   filetype: '.zip'
-image_index: /images/2016-10-25-map-outdoorsy-catskills.png
+image_index: 2016-10-25-map-outdoorsy-catskills.png
 image:
-  - src: /images/2016-10-25-map-outdoorsy-catskills.png
+  - src: 2016-10-25-map-outdoorsy-catskills.png
     alt: 'terrain map of Catskill Mountains in New York'
 map:
   - id: example1

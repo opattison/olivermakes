@@ -1,6 +1,6 @@
 ---
 title: 'Sapphie up close'
-src: /images/2014-12-15-sapphie-close-e200-olivermakes-ccbync.jpg
+src: 2014-12-15-sapphie-close-e200-olivermakes-ccbync.jpg
 alt: 'Close view of fur and head of a dog, staring off in the distance'
 description: 'Sapphie the dog at Kalorama Park. Processed with [VSCO Film 04](http://vsco.co/film) (Kodak E200)'
 date: 2014-12-15

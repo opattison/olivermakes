@@ -14,12 +14,12 @@ unique_id: 2016-05-07:jekyllconf-responsive-images
 description: 'How to implement responsive images with Jekyll and imgix (video and notes from my lightning talk).'
 project:
   source: https://github.com/opattison/demo-jekyll-imgix
-image_index: /images/2016-03-16-jekyll-test-tube.svg
+image_index: 2016-03-16-jekyll-test-tube.svg
 thanks: |+
   I was happy to be invited to speak at [JekyllConf 2016](http://jekyllconf.com). Thanks [CloudCannon](http://cloudcannon.com) for hosting it.
 image:
-  - src: /images/2016-03-16-jekyll-test-tube.svg
-    src_png: /images/2016-03-16-jekyll-test-tube.png
+  - src: 2016-03-16-jekyll-test-tube.svg
+    src_png: 2016-03-16-jekyll-test-tube.png
     alt: 'The Jekyll test tube logo'
 video:
   - src: https://www.youtube.com/embed/BIf6oNpGl74
@@ -74,7 +74,7 @@ The following examples show a sample Jekyll page or post which pull in site-wide
 ---
 title: 'Example: `srcset` plus imgix'
 image:
-  - src: /images/example-1.jpg
+  - src: example-1.jpg
     alt: 'Leaves and a blue sky.'
     quality: 70
 ---

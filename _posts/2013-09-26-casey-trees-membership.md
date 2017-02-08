@@ -38,23 +38,23 @@ color:
     hex: '#e37c1c'
   - name: border brown
     hex: '#6a5f56'
-image_index: /images/index/2014-12-17-casey-trees-membership-logo.png
+image_index: index/2014-12-17-casey-trees-membership-logo.png
 image:
-  - src: /images/2014-12-17-casey-trees-membership-feature.png
+  - src: 2014-12-17-casey-trees-membership-feature.png
     alt: 'A screenshot of the Casey Trees membership page'
     date: 2014-12-17
-  - src: /images/2013-09-18-donation-form-mobile.png
+  - src: 2013-09-18-donation-form-mobile.png
     alt: 'Screenshot: membership form on an iPhone screen September 2013'
     caption: '<span class="text-before">Before:</span> “Mobile-only” donation form, 2012'
-  - src: /images/2014-10-02-membership-form-responsive.png
+  - src: 2014-10-02-membership-form-responsive.png
     alt: 'Screenshot: responsive membership form on an iPhone screen October 2014'
     caption: '<span class="text-after">After:</span> Responsive donation levels, 2013'
-  - src: /images/2014-10-02-membership-form-responsive-2.png
+  - src: 2014-10-02-membership-form-responsive-2.png
     alt: 'Screenshot: responsive membership inputs on an iPhone screen October 2014'
     caption: '<span class="text-after">After:</span> Responsive donation inputs, 2013'
-  - src: /images/2014-12-17-membership-page-large-screen.png
+  - src: 2014-12-17-membership-page-large-screen.png
     alt: 'Screenshot: membership page on a MacBook Pro December 2014'
-  - src: /images/2014-12-17-membership-page-medium-screen.png
+  - src: 2014-12-17-membership-page-medium-screen.png
     alt: 'Screenshot: membership page on Nexus 7 December 2014'
 
 ---
@@ -73,13 +73,13 @@ One year after the redesign, it was becoming clear that this device detection so
 
 <div class="grid--wide">
   {% assign image = page.image[1] %}
-  {% include block/image-imgix.html class="grid-figure--33 screenshot" %}
+  {% include block/image.html class="grid-figure--33 screenshot" %}
 
   {% assign image = page.image[2] %}
-  {% include block/image-imgix.html class="grid-figure--33 screenshot" %}
+  {% include block/image.html class="grid-figure--33 screenshot" %}
 
   {% assign image = page.image[3] %}
-  {% include block/image-imgix.html class="grid-figure--33 screenshot" %}
+  {% include block/image.html class="grid-figure--33 screenshot" %}
 </div>
 
 Designing this form was fairly challenging because it was not a “clean slate” design: the form had fixed HTML with very few options for configuration, and it relied on two layers of “base” CSS styles from the vendor. To customize it, my only option was to write another layer of CSS on top of the base styles, so I had plenty work to do with overriding specificity and ensuring that what I was writing would be reusable for other donation forms besides the membership-specific form.
@@ -92,10 +92,10 @@ For the main page that would explain the membership program and encourage visito
 
 <div class="grid--wide">
   {% assign image = page.image[4] %}
-  {% include block/image-imgix.html class="grid-figure--66 screenshot" %}
+  {% include block/image.html class="grid-figure--66 screenshot" %}
 
   {% assign image = page.image[5] %}
-  {% include block/image-imgix.html class="grid-figure--33 screenshot" %}
+  {% include block/image.html class="grid-figure--33 screenshot" %}
 </div>
 
 ### Buttons and edges

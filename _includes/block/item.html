@@ -1,6 +1,6 @@
-{% assign image = post.image_index %}
+{% assign src = post.image_index | prepend: '/' | prepend: site.image_url %}
 
-<article class="item" {% if image %}style="background-image: {% if image contains 'svg' or image contains 'png' %}url({{ image }}){% else %}url({{ image | imgix_url: w: 480, q: 40 }});{% endif %}"{% endif %}>
+<article class="item" {% if src %}style="background-image: {% if src contains 'svg' or src contains 'png' %}url({{ src }}){% else %}url({{ src | imgix_url: w: 480, q: 40 }});{% endif %}"{% endif %}>
   <div class="item-description">
     <h1><a href="{{ post.url }}">{{ post.title | markdownify | p_escape }}</a></h1>
     <p class="p-summary item-summary">{{ post.description }}</p>

@@ -12,13 +12,13 @@ updated: 2016-01-26 23:14
 drafted: 2014-12-19 15:59
 unique_id: 2014-12-19:reading-driven-design
 description: 'On methods and reasons for designing with real content rather than <i>lorem ipsum</i>.'
-image_index: /images/2015-02-21-paragraphs.svg
+image_index: 2015-02-21-paragraphs.svg
 image:
-  - src: /images/2015-02-21-paragraphs.svg
-    src_png: /images/2015-02-21-paragraphs.png
+  - src: 2015-02-21-paragraphs.svg
+    src_png: 2015-02-21-paragraphs.png
     alt: ''
     description: 'Vector image of lines on a page – implicitly critical of an ‘ipsum’ approach.'
-  - src: /images/2014-11-02-green-arabia-reading-driven-design.jpg
+  - src: 2014-11-02-green-arabia-reading-driven-design.jpg
     alt: 'A screenshot of an early version of this website'
     caption: 'This is an example of a development version of this website borrowing from the essay [“Green Arabia”](http://idlewords.com/2014/08/green_arabia.htm) by Maciej Cegłowski to test layout and typography.'
     quality: 70

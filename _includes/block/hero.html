@@ -1,14 +1,22 @@
 {% if page.option contains 'hero' %}
   {% assign image = page.image[0] %}
+  {% assign src = image.src | prepend: '/' | prepend: site.image_url %}
+  {% if image.quality %}
+    {% assign quality = image.quality %}
+  {% else %}
+    {% assign quality = 60 %}
+  {% endif %}
 
   <figure class="hero">
     <img
-    {% if image.src contains 'svg' or image.src contains 'png' %}
-      src="{{ image.src }}"
+    {% if image.src contains 'svg' %}
+      src="{{ src }}"
     {% else %}
-      src="{{ image.src | imgix_url: w: 720, q: 50 }}"
-      sizes="100vw"
-      srcset="{% for width in site.srcset %}{{ image.src | imgix_url: w: width, q: 60 }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
+      class="lazyload"
+      src="{{ src | imgix_url: w: 720, q: 25 }}"
+      data-src="{{ src | imgix_url: w: 720, q: quality }}"
+      data-sizes="auto"
+      data-srcset="{% for width in site.srcset %}{{ src | imgix_url: w: width, q: quality }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}"
     {% endif %}
       alt="{{ image.alt }}">
   {% if image.caption %}

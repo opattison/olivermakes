@@ -5,8 +5,8 @@ updated: 2016-03-20 22:07
 description: 'All of the colors and shades used on this site, with code and specification for each.'
 source: https://github.com/opattison/olivermakes
 image:
-  - src: /images/2016-03-16-flag.svg
-    src_png: /images/2016-03-16-flag.png
+  - src: 2016-03-16-flag.svg
+    src_png: 2016-03-16-flag.png
 priority: 1
 ---
 

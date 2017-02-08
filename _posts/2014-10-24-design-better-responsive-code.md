@@ -13,13 +13,13 @@ updated: 2016-03-18 09:13
 drafted: 2014-10-24 16:15
 unique_id: 2014-10-24:better-responsive-code
 description: 'A walkthrough of an approach to styling code blocks for responsive websites and technical documentation.'
-image_index: /images/index/2014-11-26-hero-design-better-css-desat.png
+image_index: index/2014-11-26-hero-design-better-css-desat.png
 image:
-  - src: /images/2014-11-26-hero-design-better-css-desat.png
+  - src: 2014-11-26-hero-design-better-css-desat.png
     alt: 'Example of non-wrapping code'
-  - src: /images/2014-11-27-without-word-wrap.png
+  - src: 2014-11-27-without-word-wrap.png
     alt: 'A sample of layout-breaking code without word-wrap'
-  - src: /images/2014-11-27-without-break-word.png
+  - src: 2014-11-27-without-break-word.png
     alt: 'A sample of layout-breaking code without break-word'
 
 ---
@@ -33,12 +33,12 @@ Even if a CMS or site builder has syntax highlighting built in (like [Jekyll](ht
 So how bad is it when code or any other long content breaks a layout? Here is what code might look like without corrected `white-space`:
 
 {% assign image = page.image[1] %}
-{% include block/image-imgix.html class="image screenshot" %}
+{% include block/image.html class="image screenshot" %}
 
 Here is a sample with default values for `overflow-wrap`:
 
 {% assign image = page.image[2] %}
-{% include block/image-imgix.html class="image screenshot" %}
+{% include block/image.html class="image screenshot" %}
 
 With neither declaration implemented, nearly every code block on this page runs off the page, breaking the layout on small and large screens alike.
 
