@@ -12,8 +12,14 @@ updated: 2017-02-07 20:28
 drafted: 2017-01-10 12:34
 period: 2016-11 to 2017-01
 unique_id: 2017-01-30:fluid-grid
-description: '/…'
+description: 'Flexible asymmetric grids featuring photography, using flexbox.'
+project:
+  url: https://jeanandoliver.space
+image_index: 2017-02-08-photo-grid.svg
 image:
+  - src: 2017-02-08-photo-grid.svg
+    src_png: 2017-02-08-photo-grid.png
+    alt: 'A representation of an asymmetric grid.'
   - src: 2017-01-23-each-row-grid.png
     alt: 'A single row of photos in a row aligned in a grid.'
   - src: 2017-01-23-grids-stacked.png
@@ -51,12 +57,12 @@ The grid system can handle multiple common image aspect ratios with minimal conf
 
 ## Each row is a grid
 
-{% assign image = page.image[0] %}
+{% assign image = page.image[1] %}
 {% include block/image.html class="image" %}
 
 ## Grids are stacked
 
-{% assign image = page.image[1] %}
+{% assign image = page.image[2] %}
 {% include block/image.html class="image" %}
 
 ## Aspect-dependent heights
@@ -191,7 +197,7 @@ Additionally each image is placed in a separate image directory with the same na
 
 A Liquid loop that builds the grid row by row. In the `for` loop, the group determines the row number, and each row is stacked on top of one another other in that order.
 
-{% assign image = page.image[2] %}
+{% assign image = page.image[3] %}
 {% include block/image.html class="image--wide" %}
 
 ## Extending

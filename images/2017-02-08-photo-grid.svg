@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="720px" height="480px" viewBox="0 0 720 480" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>2017-02-08-photo-grid</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2017-02-08-photo-grid" fill="#5C6870">
+            <g id="Group" transform="translate(125.000000, 24.000000)">
+                <rect id="Rectangle" x="0" y="0.149999619" width="150" height="100"></rect>
+                <rect id="Rectangle" x="160" y="0.145675926" width="150" height="100"></rect>
+                <rect id="Rectangle" x="320" y="0.145675926" width="150" height="100"></rect>
+                <rect id="Rectangle" x="0" y="111" width="230" height="153.333333"></rect>
+                <rect id="Rectangle" x="240" y="111" width="230" height="153.333333"></rect>
+                <rect id="Rectangle" x="0" y="274.333333" width="470" height="156.669998"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
