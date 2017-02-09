@@ -194,7 +194,11 @@ blockquote footer {
   text-align: right;
 }
 
-// Figcaptions
+// Figures and captions
+figure {
+  clear: both;
+}
+
 figcaption {
   margin: 0 0 .5em;
   padding: .25em .5em;
