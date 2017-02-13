@@ -39,7 +39,7 @@ Working on a [photo storytelling website](https://jeanandoliver.space), each pag
 {% assign image = page.image[1] %}
 {% include block/image.html class="image--wide" %}
 
-## An outline of the implementation
+### An outline of the implementation
 
 - Images fit together precisely with thin gutters.
 - The size of images is based on each image’s aspect ratio, with height constrained to a maximum and width dependent on height.
