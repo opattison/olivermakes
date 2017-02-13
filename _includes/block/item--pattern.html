@@ -1,8 +1,9 @@
 {% assign image = item.image[0] %}
+{% assign src = image.src | prepend: '/' | prepend: site.image_url %}
 
 <article class="item--pattern item">
   <a href="{{ item.url }}">
-    <div class="item--pattern-description item-description" style="background-image: url({{ image.src }})">
+    <div class="item--pattern-description item-description" style="background-image: url({{ src }})">
     </div>
   </a>
   <a class="item-action" href="{{ item.url }}">view {{ item.title | downcase }}</a>
