@@ -4,6 +4,7 @@ layout: singel
 category: 'writing'
 option:
   - featured-home
+  - featured-writing
   - minor
 tags:
   - 'css'
@@ -14,7 +15,11 @@ updated: 2017-02-07 17:35
 drafted: 2016-12-20 12:34
 unique_id: 2017-02-01:fluid-typography
 description: 'A walkthrough for an implementation of flexible web typography using CSS viewport units.'
+image_index: 2017-02-13-fluid-typography.svg
 image:
+  - src: 2017-02-13-fluid-typography.svg
+    src_png: 2017-02-13-fluid-typography.png
+    alt: 'fluid typography'
   - src: 2017-02-07-discrete-vs-fluid.svg
     alt: 'discrete stair steps vs. gradual fluid linear line'
   - src: 2017-02-07-wikipedia-type.png
@@ -46,7 +51,7 @@ In CSS a common approach specifies sizes of elements using pixels, but we can al
 
 The viewport is the central consideration in responsive design, with breakpoints used as rules for adjustments to layout. If a viewport is wide enough at a certain breakpoint, change the layout to fit the content more appropriately. Or if there is more room for larger type, increase the font size at a wider breakpoint. In conventional responsive web design, images are often sized fluidly, with width of the image element determined by the parent container rather than some fixed value. [^3] Most other elements in a responsive layout tend to be set at fixed widths or capped at maximum widths. Type is typically set at fixed values that make progressive, discrete steps rather than increasing gradually.
 
-{% assign image = page.image[0] %}
+{% assign image = page.image[1] %}
 {% include block/image.html class="image--wide" %}
 
 Using [media query](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) breakpoints is a foundation for responsive web design, but leads to increasing and often undesired complexity. How many breakpoints are ideal for a particular design? What happens in between breakpoints? Breakpoint-based design without fluidity leads to a stepped pattern that either creates awkward middle points or a proliferation of breakpoints past the point of uncomplicated maintenance. The risk is ending up with a design that operates on a list of exclusive exceptions rather than a set of unified principles.
@@ -55,7 +60,7 @@ Using [media query](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queri
 
 As a viewport grows in width, what happens to a block of text whose containing element is set to a percentage value width? Unfortunately, we get an ever-expanding line length (the [typographic measure](#what-is-a-measure)). A classic example of this is the current design of Wikipedia. The font size doesn’t increase but the line length is out of control. This isn’t just about aesthetics: a line length that is too long can be somewhat illegible, since it can be harder to follow the flow of prose text with a longer measure. A fluid layout will fail if it doesn’t increase font size *or* limit line length in correspondence with the viewport width.
 
-{% assign image = page.image[1] %}
+{% assign image = page.image[2] %}
 {% include block/image.html class="image--wide screenshot" %}
 
 One common solution is capping the width of a container (to a width less than the width of the viewport), which results in white space. Many non-fluid responsive designs use fixed `max-width` declarations for containers of text or other content. Another solution is to increase the font size at wider breakpoints. The problem with this method is that setting a font in pixels or preferably relative values like `em` or `rem` has to be reset and overwritten at every breakpoint.
@@ -156,7 +161,7 @@ This site is a [photography and storytelling archive](https://jeanandoliver.spac
 
 The site’s design is based on a slightly asymmetric layout. Images are laid out in masonry-like grid, with images fitting together precisely with thin gutters.
 
-{% assign image = page.image[2] %}
+{% assign image = page.image[3] %}
 {% include block/image.html class="image--wide" %}
 
 ### Wintershead
@@ -165,9 +170,10 @@ For the fictional [Wintershead Brewing Company project](https://wintershead.oliv
 
 After working with fluid type I realized that I could use the method to create a balance between headings and body text to create a fluid scale that would be truly responsive. This method made it possible to design a well-considered responsive layout with only four media query breakpoints.
 
-{% assign image = page.image[3] %}
-{% include block/image.html class="image--wide" %}
+{% include block/project--satellite.html id="2016-01-12:wintershead" %}
 
+{% assign image = page.image[4] %}
+{% include block/image.html class="image--wide" %}
 
 {% capture endnote %}
 ## Recommended reading

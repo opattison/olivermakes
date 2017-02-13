@@ -77,6 +77,10 @@ Recently I have been experimenting with fluid typography as a basis for proporti
 
 Advantages to this method include a more consistent visual design, a guarantee of legible typography at all screen sizes with fewer rules, and a far less complicated implementation. Working this way involves setting up a system of initial constraints and working forward from that point rather than starting with a desired visual result and working backward, which allows for a less bounded and more flexible design process.
 
+### More about the approach to fluid typography
+
+{% include block/project--satellite.html id="2017-02-01:fluid-typography" %}
+
 ## High performance design
 
 On average, websites are [getting more bloated consistently over time](http://idlewords.com/talks/website_obesity.htm). This bloat can be felt directly though slower loading times, since websites are getting larger more quickly than typical internet speeds are increasing. Mobile internet speeds also tend to be lower, and have higher latency and more variable quality (dependent on reception and network load), meaning that the web feels like a slower medium today than it did years ago. Much of this bloat is made up of images, but other common culprits are JavaScript resources, style sheets, and web fonts.
