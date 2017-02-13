@@ -5,13 +5,11 @@ theme: dark
 category: 'projects'
 option:
   - featured-home
-  - map
-  - mapbox
   - minor
 tags:
-  - design
-  - typography
-  - web
+  - 'design'
+  - 'typography'
+  - 'web'
 updated: 2017-01-19 14:35
 drafted: 2017-01-01 12:34
 period: 2016-11 to 2017-01

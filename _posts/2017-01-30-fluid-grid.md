@@ -6,8 +6,11 @@ option:
   - featured-home
   - minor
 tags:
-  - design
-  - web
+  - 'css'
+  - 'design'
+  - 'html'
+  - 'jekyll'
+  - 'web'
 updated: 2017-02-09 17:54
 drafted: 2017-01-10 12:34
 period: 2016-11 to 2017-01

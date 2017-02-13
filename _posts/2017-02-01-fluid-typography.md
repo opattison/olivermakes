@@ -4,15 +4,16 @@ layout: singel
 category: 'writing'
 option:
   - featured-home
-  - map
   - minor
 tags:
-  - design
-  - web
+  - 'css'
+  - 'design'
+  - 'typography'
+  - 'web'
 updated: 2017-02-07 17:35
 drafted: 2016-12-20 12:34
 unique_id: 2017-02-01:fluid-typography
-description: '/…'
+description: 'A walkthrough for an implementation of flexible web typography using CSS viewport units.'
 image:
   - src: 2017-02-07-discrete-vs-fluid.svg
     alt: 'discrete stair steps vs. gradual fluid linear line'
