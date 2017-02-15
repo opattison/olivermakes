@@ -28,7 +28,7 @@
   margin: 0;
   width: 100%;
 
-  @include min-width(m01) {
+  @include min-width(l01) {
     flex: 0 0 50%;
   }
 }
@@ -37,24 +37,30 @@
   cursor: pointer;
   display: flex;
   font-weight: $weight-regular;
-  padding: 2em 1em;
+  justify-content: space-around;
+  padding: 2em;
   position: relative;
-  text-align: left;
   touch-action: manipulation;
   transition: all 160ms;
   width: 100%;
 
+  @include min-width(l01) {
+    justify-content: flex-start;
+    padding: 2em 2em 2em 1em;
+  }
+
   .icon {
-    float: left;
     height: 1em;
-    margin: auto .25em auto 0;
+    margin: auto .25em auto auto;
     width: 1.5em;
+
+    @include min-width(l01) {
+      margin: auto .25em auto 0;
+    }
   }
 
   .arrow {
-    position: absolute;
-    right: 2em;
-    top: 2.25em;
+    margin: auto 0 auto auto;
   }
 }
 

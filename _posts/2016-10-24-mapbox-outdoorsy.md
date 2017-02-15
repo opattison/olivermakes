@@ -4,7 +4,6 @@ layout: edgeless
 theme: dark
 category: 'projects'
 option:
-  - featured-home
   - map
   - mapbox
   - minor
@@ -43,7 +42,7 @@ map:
     latitude: 44.394699
     longitude: -72.660606
     zoom: 8.5
-    style: mapbox://styles/opattison/ciuorfpjx00bb2io2wp2rp90w # Mapbox Outdoors
+    style: mapbox://styles/mapbox/outdoors-v10 # Mapbox Outdoors
     caption: 'The original [Mapbox Outdoors](https://www.mapbox.com/blog/outdoors-design/) style for comparison.'
   - id: example4
     # location set at San Francisco bay

@@ -3,7 +3,6 @@ title: 'Preserving iterative website design'
 layout: edgeless
 category: 'projects'
 option:
-  - featured-home
   - featured-writing
   - minor
 tags:

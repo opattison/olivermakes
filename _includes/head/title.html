@@ -1,5 +1,7 @@
-{% if page.unique_id == 'home' or page.unique_id == 'hire' %}
+{% if page.unique_id == 'home' %}
   <title>{{ site.title }}</title>
+{% elsif page.unique_id == 'hire' %}
+  <title>{{ page.title | strip_html }} {{ site.title }}</title>
 {% elsif page.type == 'category' %}
   <title>{{ page.title | capitalize }} Archive – {{ site.title }}</title>
 {% elsif page.type == 'tag' %}

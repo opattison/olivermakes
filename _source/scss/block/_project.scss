@@ -38,7 +38,7 @@
     border: solid 1px;
   }
 
-  @include min-width(s04) {
+  @include min-width(s03) {
     @include bleed(1em);
     padding: 0; // reset
   }

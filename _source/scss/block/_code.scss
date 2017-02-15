@@ -1,26 +1,52 @@
-.code figcaption {
-  @include min-width(s03) {
-    margin-right: -2em;
-    margin-left: -2em;
-  }
+.code {
+  margin-top: 1em;
 
-  @include min-width(s04) {
-    margin-right: -2.5em;
-    margin-left: -2.5em;
-  }
+  figcaption {
+    @include min-width(s03) {
+      margin-right: -2em;
+      margin-left: -2em;
+    }
 
-  @include min-width(l01) {
-    margin-right: -4.5em;
-    margin-left: -4.5em;
+    @include min-width(s04) {
+      margin-right: -2.5em;
+      margin-left: -2.5em;
+    }
 
-    p {
-      margin-left: calc(50% + 1em);
-      width: calc(50% - 1em);
+    @include min-width(l01) {
+      margin-right: -4.5em;
+      margin-left: -4.5em;
+
+      p {
+        margin-left: calc(50% + 1em);
+        width: calc(50% - 1em);
+      }
+    }
+
+    @include min-width(l03) {
+      margin-right: -9em;
+      margin-left: -9em;
     }
   }
 
-  @include min-width(l03) {
-    margin-right: -9em;
-    margin-left: -9em;
+  .code-heading {
+    font-family: $monospace;
+    font-size: 1rem;
+    padding-bottom: .5em;
+
+    @include min-width(s03) {
+      margin-left: -2em;
+    }
+
+    @include min-width(s04) {
+      margin-left: -2.5em;
+    }
+
+    @include min-width(l01) {
+      margin-left: -4.5em;
+    }
+
+    @include min-width(l03) {
+      margin-left: -9em;
+    }
   }
 }

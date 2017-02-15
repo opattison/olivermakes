@@ -1,7 +1,7 @@
 // Code blocks for page layouts. Markdown style is GitHub Flavored Markdown for fenced code blocks.
 .highlight {
   @include bleed(1em);
-  margin-top: 1em;
+  margin-top: 0;
   padding: 1em;
 
   border-bottom: solid .0625em;
@@ -22,4 +22,8 @@
   @include min-width(l03) {
     @include bleed(9em);
   }
+}
+
+.code-heading + .highlighter-rouge {
+  margin-top: 0;
 }

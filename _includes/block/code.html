@@ -1,4 +1,9 @@
 <figure class="code">
+  {% if include.title %}
+  <h2 class="code-heading">{{ include.title }}</h2>
+  {% endif %}
   {{ code | markdownify }}
   <figcaption>{{ caption | markdownify }}</figcaption>
 </figure>
+
+{% assign caption = '' %}
