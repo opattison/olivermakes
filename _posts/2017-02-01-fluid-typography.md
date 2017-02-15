@@ -25,17 +25,14 @@ image:
   - src: 2017-02-07-wikipedia-type.png
     alt: 'A long line length demonstrated on a Wikipedia page.'
     caption: 'More than 200 characters per line on a fluid column of text on Wikipedia.'
-  - src: 2017-02-07-jeanandoliver-type.png
-    alt: 'Typographic sample from Jean and Oliver'
-    caption: 'Body text underneath a photo grid from [Jean and Oliver](https://jeanandoliver.space/)'
   - src: 2017-02-07-wintershead-type.png
     alt: 'Typographic sample from Wintershead'
     caption: 'Responsive body text from the [Wintershead](https://wintershead.olivermak.es/) site.'
 ---
 
-Responsive web design can be thought of as a collection of techniques, but more crucially, it is a philosophy for approaching design. The philosophy of responsiveness is concerned with looseness, flexibility, and fluidity. A design should fit multiple contexts since on the web we can never know what the context will be. I am often focused on the principle of fluidity, since an element can become *too* fluid. Constraints on fluidity are needed when the approach would otherwise result in formlessness and a lack of boundaries and structure. How do we create a shape and structure for fluidity in a responsive environment?
+Responsive web design is often treated as a collection of techniques, but more fundamentally, it is a philosophy of design. The philosophy of responsiveness is concerned with looseness, flexibility, and fluidity. A design should fit multiple contexts since on the web we can never know what the context will be. But an element can actually become too fluid. Constraints on fluidity are needed when the approach would otherwise result in formlessness and a lack of boundaries and structure. How do we create a shape and structure for fluidity in a responsive environment?
 
-Trent Walton’s [“Fluid Type”](http://trentwalton.com/2012/06/19/fluid-type/) was a massively influential resource for me in the earlier days of responsive web design. [^1] This was 2012, when Ethan Marcotte’s [seminal article (2010)](http://alistapart.com/article/responsive-web-design) and [subsequent seminal book (2011)](https://abookapart.com/products/responsive-web-design) were fresh and few good implementations existed. Most websites were “desktop-only” (not properly fluid or even legible on devices with viewports below around 1000 pixels wide), and a smaller portion had alternative “mobile” variants that were served based on user agent strings. [^2]
+Trent Walton’s [“Fluid Type”](http://trentwalton.com/2012/06/19/fluid-type/) was an inspirational resource for me in the earlier days of responsive web design. [^1] This was 2012, when Ethan Marcotte’s [seminal article (2010)](http://alistapart.com/article/responsive-web-design) and [subsequent book (2011)](https://abookapart.com/products/responsive-web-design) were fresh and few good implementations existed. Most websites were “desktop-only” (not properly fluid or even legible on devices with viewports below around 1000 pixels wide), and a smaller portion had alternative “mobile” variants that were served based on user agent strings. [^2]
 
 After Walton’s “Fluid Type”, the first considerations in all of my future projects would be balanced proportions and legible line lengths at every possible screen size.
 
@@ -155,24 +152,11 @@ Though [Robert Bringhurst prescribed](http://webtypography.net/2.1.2) a range of
 
 ## Examples
 
-### Jean and Oliver
+{% include block/project--satellite.html id="2016-12-14:jeanandoliver" %}
 
-This site is a [photography and storytelling archive](https://jeanandoliver.space) for me and Jean Flanagan. The first iteration of it collects photos from our fall 2016 trip to Vermont. Since this project relies heavily on fluid grids for images, I thought that it would be a good testing ground for fluid responsive type.
-
-The site’s design is based on a slightly asymmetric layout. Images are laid out in masonry-like grid, with images fitting together precisely with thin gutters.
+{% include block/project--satellite.html id="2017-01-12:wintershead" %}
 
 {% assign image = page.image[3] %}
-{% include block/image.html class="image--wide" %}
-
-### Wintershead
-
-For the fictional [Wintershead Brewing Company project](https://wintershead.olivermak.es/), I wanted to experiment with responsive large scale typography, so fluid type was an obvious fit again. The typography is thin and scaled large so it was an interesting challenge to figure out how to make it work without my usual approach of specifying font size shifts only at breakpoints.
-
-After working with fluid type I realized that I could use the method to create a balance between headings and body text to create a fluid scale that would be truly responsive. This method made it possible to design a well-considered responsive layout with only four media query breakpoints.
-
-{% include block/project--satellite.html id="2016-01-12:wintershead" %}
-
-{% assign image = page.image[4] %}
 {% include block/image.html class="image--wide" %}
 
 {% capture endnote %}
@@ -189,4 +173,4 @@ After working with fluid type I realized that I could use the method to create a
 
 [^1]: Mid-2012 was around the time I had finished working on my [first major responsive web design project]({% post_url 2012-03-06-casey-trees-redesign %}), which was originally conceived with the goal of responsive implementation in late 2011. I had been reading about responsive design for over a year at this point, but Trent’s “Fluid Type” was a turning point for me because it solidified the primacy of typography for almost any web design project.
 [^2]: A [user agent](https://en.wikipedia.org/wiki/User_agent) string, provided by a browser during HTTP communication, provides an indication of what browser and operating system the user has. These indicators are notoriously unreliable and inconsistent. [User agent sniffing](https://en.wikipedia.org/wiki/Browser_sniffing) has been implemented to test for features and serve different content. For “mobile” sites, a guess is made about the user agent string (“is this a mobile browser/OS?”), and then a fixed-width small screen layout is served, potentially alongside other exclusive features like touch support and lighter resources (since mobile devices are assumed to have lower connection speeds). Assumptions like these lead to fragile and inconsistently applied solutions, which is part of the reason why responsive design and feature detection have largely replaced mobile-only sites and user agent sniffing.
-[^3]: A fluid value would look like `width: 100%` in CSS instead of `width: 120px`. Historically web designers have been concerned with creating print-like constraints on width of elements by way of fixed values rather than letting content flow naturally into a container. This fixed approach to layout is why it took nearly a couple of decades of web design to “discover” responsive web design as we know it today. We had to suffer through table-based layout (a useful but short-sighted hack) and fixed-width grids which could not grow or shrink, before getting back to the fluid roots of the web which had been there all along.
+[^3]: A fluid value would look like `width: 100%` in CSS (as opposed to a value like `width: 120px`). Historically web designers have been concerned with creating print-like constraints on width of elements by way of fixed values rather than letting content flow naturally into a container. This fixed approach to layout is why it took nearly a couple of decades of web design to “discover” responsive web design as we know it today. We had to suffer through table-based layout (a useful but short-sighted hack) and fixed-width grids which could not grow or shrink, before getting back to the fluid roots of the web which had been there all along.

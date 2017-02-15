@@ -32,37 +32,37 @@ image:
     alt: 'Multiple rows of photos aligned in a grid.'
 ---
 
-Working on a [photo storytelling website](https://jeanandoliver.space), each page of the site required a large number of photos to be juxtaposed, ideally in a grid. I decided to experiment with an asymmetric, responsive grid system that maintains its form at any width. I had seen implementations of this on a variety of websites (Flickr photosets are a notable implementation), but they are often quite heavy solutions, requiring JavaScript and having issues on load and when reflowing. The challenge in this case is creating a responsive grid system that respects the aspect ratio of images, since dealing with fixed ratios in a variable width context is a difficult issue in CSS.
+I designed a custom, asymmetric, responsive grid system for displaying for a [photo storytelling website](https://jeanandoliver.space). I had seen implementations of this sort of grid on a variety of websites (Flickr photosets are a notable implementation), but they are often quite heavy solutions, requiring JavaScript and having issues on load and when reflowing. The challenge in this case is creating a responsive grid system that respects the aspect ratio of images, since dealing with fixed ratios in a variable width context is a difficult issue in CSS.
 
 ## The goal
+
+- Images fit together precisely with thin gutters.
+- The layout is implemented using CSS alone, not relying on JavaScript.
+- The size of images is based on each image’s aspect ratio, with height constrained to a maximum and width dependent on height.
+- Markup is relatively straightforward to write, with grids generated automatically from image metadata.
+- On the smallest screen sizes, the layout is a single column instead of a grid.
 
 {% assign image = page.image[1] %}
 {% include block/image.html class="image--wide" %}
 
-### An outline of the implementation
+## The Implementation
 
-- Images fit together precisely with thin gutters.
-- The size of images is based on each image’s aspect ratio, with height constrained to a maximum and width dependent on height.
-- Markup is relatively straightforward to write, with grids generated automatically from image metadata.
-- The layout is implemented using CSS alone, not relying on JavaScript.
-- On the smallest screen sizes, the layout is a single column instead of a grid.
-
-## Each row is a grid
+### Each row is a grid
 
 {% assign image = page.image[2] %}
 {% include block/image.html class="image" %}
 
-## Grids are stacked
+### Grids are stacked
 
 {% assign image = page.image[3] %}
 {% include block/image.html class="image" %}
 
-## Aspect-dependent heights
+### Aspect-dependent heights
 
 Making a fluid grid like this requires CSS [flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/). Flexbox specifies a container-based layout system which causes elements inside the container to resize flexibly, either filling available space or shrinking to fit the box. Elements inside a flexbox container can be proportionally resized based on the container’s size and also based on the size of the elements inside the container.
 
 {% capture ancillary %}
-## Aspect ratios? Doesn’t flexbox reflow and resize images?
+## Why aspect ratios? Doesn’t flexbox already reflow and resize images?
 
 Reflowing while maintaining a set aspect ratio is something that one might expect flexbox would do automatically, but that’s not how flexbox works. In a flexbox layout, an image element’s height scales up or down dependent on the element’s width. This causes a problem for the desired grid, unless we can design a system of constraints to account for the ratio of an image’s width and height (its aspect ratio).
 {% endcapture %}
@@ -157,7 +157,7 @@ I’m using SCSS here for legibility and convenience – one does not have to.
 
 {% include block/code.html title="grid-image.scss" %}
 
-Why does `flex-grow` work this way? The number is a factor which determines the amount of space the element should take up in the flexbox container. If *each* image in the same flexbox also is set to its own factor, the result is that every image scales not only based on **width**, but based on **width** and **ratio**.
+Why does `flex-grow` work this way? The number is a factor which determines the amount of space the element should take up in the flexbox container. If each image in the same flexbox also is set to its own factor, the result is that every image scales not only based on width, but based on width *and* ratio.
 
 {% capture ancillary %}
 One limitation to this method is needing to specify all of the aspect ratios that are possible. However, the cost in markup and extra styles is not too great for the benefits of having a flexible grid that works so well without JavaScript. It is less “automatic”, however, as the aspect ratios have to be determined ahead of time. This generally works for photography since photos are often already cropped to standard sizes. This would be a case where [imgix](https://www.imgix.com) or another server-side image host could be used to crop images to match the desired aspect ratio if they don’t already match the presentational context.
@@ -167,9 +167,9 @@ One limitation to this method is needing to specify all of the aspect ratios tha
 {{ ancillary | markdownify }}
 </aside>
 
-## Using Jekyll collections
+### Using Jekyll collections
 
-For the photo site [Jean and Oliver](https://jeanandoliver.space), I used [Jekyll collections](https://jekyllrb.com/docs/collections/) to generate the markup and lay out 78 photos in 9 posts (each post being a grid of selected images). This would be a lot of markup to write by hand, which is why Liquid templating in Jekyll is essential. The same principles would apply for any other template system, but the examples here use Liquid and Jekyll collection variables to generate HTML.
+For [our photo site](https://jeanandoliver.space), I used [Jekyll collections](https://jekyllrb.com/docs/collections/) to generate the markup and lay out 78 photos in 9 posts (each post being a grid of selected images). This would be a lot of markup to write by hand, which is why Liquid templating in Jekyll is essential. The same principles would apply for any other template system, but the examples here use Liquid and Jekyll collection variables to generate HTML.
 
 Each photo in the `_photos` directory would be named with the scheme `yyyy-mm-dd-photo-name.md` and include [YAML front matter](https://jekyllrb.com/docs/frontmatter/) for the content’s metadata like this:
 
@@ -227,13 +227,13 @@ Gutters are calcuated as proportional values as well, so they will always make u
 
 As for what’s in the `block/grid-image.html` file that is looped, let’s take a closer look at the needs of a high performance responsive image pattern.
 
-## Extending grids with responsive images
+### Extending grids with responsive images
 
-Since I use [`srcset` responsive images]({% post_url 2016-05-07-jekyllconf-responsive-images %}) for photos to make sure that the right size images are served, a new problem arises. For `srcset` to with `sizes` to work properly, we need to know the approximate size of the image ahead of time, and a variable flexbox grid prevents this. We can’t even guess if an image is supposed to be 50% of the viewport or 100% of the viewport, since its neighbor determines its size. The fluidity built into the design of the grid takes away some control we would otherwise exert over the exact dimensions of a given image.
+Since I use [`srcset` responsive images]({% post_url 2016-05-07-jekyllconf-responsive-images %}) for photos to make sure that the right size images are served, a new problem arises. For `srcset` with `sizes` to work properly, we need to know the approximate size of the image ahead of time, and a variable flexbox grid prevents this. We can’t even guess if an image is supposed to be 50% of the viewport or 100% of the viewport, since its neighbor determines its size. The fluidity built into the design of the grid takes away some control we would otherwise exert over the exact dimensions of a given image.
 
 ### A solution for implementing responsive images: lazysizes
 
-For implementing responsive images with this constraint in mind, I use [lazysizes]https://github.com/aFarkas/lazysizes, a JavaScript tool that can automatically calculate the `sizes` attribute for an image. Instead of creating a complex pattern of media queries that state the likely dimensions of an image (or our best guess), we can use the auto-sizing feature of lazysizes to accurately measure the width of the image element before the image has loaded.
+For implementing responsive images with this constraint in mind, I use [lazysizes](https://github.com/aFarkas/lazysizes), a JavaScript tool that can automatically calculate the `sizes` attribute for an image. Instead of creating a complex pattern of media queries that state the likely dimensions of an image (or our best guess), we can use the auto-sizing feature of lazysizes to accurately measure the width of the image element before the image has loaded.
 
 {% capture code %}
 ```
@@ -258,7 +258,7 @@ Much simpler! And more important than being easier to author, having lazysizes h
 
 ### Putting it all together with imgix and Jekyll
 
-We need to build a file that holds the There is a lot going on here, but the important thing to note is that the variables like the `src` and caption are set by the front matter of the image. This is where we assign the CSS class determining the aspect ratio for every single image. Using the [Jekyll plugin](https://github.com/imgix/jekyll-imgix) for imgix, we can generate all of the desired image sizes using a Liquid loop
+I am building a file that holds the markup for responsive images (mainly an `img` element with `src`, `srcset`, `sizes` and `alt` attributes, contained in a `figure` with an optional `figcaption`). There is a lot going on here, but the important thing to note is that the variables like the `src` and the caption are set by the front matter of the image. This is where we assign the CSS class determining the aspect ratio for every single image. Using the [Jekyll plugin](https://github.com/imgix/jekyll-imgix) for imgix, all of the desired image sizes are generated with a Liquid loop.
 
 {% capture code %}
 ```html
@@ -301,11 +301,11 @@ As in the earlier example, this is written in HTML with [Liquid](https://shopify
 
 ### Fluidity
 
-The aspect ratio of images is be maintained at all widths of the grid. The images in the grid resize in a fluid manner so that the grid maintains the relationship of the images to each other at any size. The grid’s form is static while its contents shift dynamically and harmoniously.
+The aspect ratio of images is maintained at all widths of the grid. The images in the grid resize in a fluid manner so that the grid maintains the relationship of the images to each other at any size. The grid’s form is static while its contents shift dynamically yet harmoniously.
 
 ### Constraints
 
-The relationship between items in the grid is based on constraints that allow for an image of any size to be placed next to another image and automatically resize and reflow.
+The relationship between items in the grid is based on constraints that allow for an image of any size to be placed next to another image, automatically resizing and reflowing based on the size of *both* images.
 
 ### Robustness
 

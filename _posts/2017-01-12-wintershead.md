@@ -13,7 +13,7 @@ tags:
 updated: 2017-01-19 14:35
 drafted: 2017-01-01 12:34
 period: 2016-11 to 2017-01
-unique_id: 2016-01-12:wintershead
+unique_id: 2017-01-12:wintershead
 description: 'A fictional design project to demonstrate fluid responsive typography.'
 project:
   url: https://wintershead.olivermak.es
@@ -77,7 +77,7 @@ Recently I have been experimenting with fluid typography as a basis for proporti
 
 Advantages to this method include a more consistent visual design, a guarantee of legible typography at all screen sizes with fewer rules, and a far less complicated implementation. Working this way involves setting up a system of initial constraints and working forward from that point rather than starting with a desired visual result and working backward, which allows for a less bounded and more flexible design process.
 
-### More about the approach to fluid typography
+### More about the approach to type and layout
 
 {% include block/project--satellite.html id="2017-02-01:fluid-typography" %}
 
@@ -105,3 +105,7 @@ Other factors that contribute to fast loading pages:
 - Serve images and other resources using content delivery networks for lower latency and robust performance. In particular, I use [CloudFront](https://aws.amazon.com/cloudfront/) and [imgix](https://www.imgix.com).
 - Avoid using too many web fonts: only four weights and styles are used for the typography of this site. At 25% to 75%, fonts make up the single largest of any given page’s weight for this site, far outweighing most other resources.
 - Keep requests and page sizes down. A typical page has only 100 KB total weight and 10 HTTP requests.
+
+---
+
+*A version of this article was also published [on the Wintershead site](https://wintershead.olivermak.es/news/2016-10-25-about-this-site/).*
