@@ -1,5 +1,6 @@
 ---
 title: 'Services'
+published: false
 layout: micro
 date: 2016-07-18 12:34
 updated: 2016-08-15 14:54
@@ -13,7 +14,7 @@ details:
     icon: logo-minimal
   - title: Web implementation
     expanded: '[Jekyll](http://jekyllrb.com/) is my favorite tool for designing and publishing content on the web. Most of the sites that I build currently are static sites (using Jekyll) with minimal but flexible configuration and high performance.'
-    icon: logo-minimal
+    icon: html5
   - title: Content and editing
     expanded: 'Version control is essential for designing dynamically, maintaining code, and collaborating quickly and remotely. I use [Git](https://git-scm.com/) as a safety net for all of my work, whether on my own or with a team.'
     icon: logo-minimal
