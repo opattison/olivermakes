@@ -3,6 +3,7 @@
 {% include head.html %}
 
 <body {% if page.option contains 'error' %}id="error" {% endif %}class="edgeless">
+  {% include block/archive-override.html %}
 
   {% include container/banner.html %}
 

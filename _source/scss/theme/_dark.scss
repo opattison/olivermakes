@@ -271,3 +271,22 @@ figcaption {
     border-bottom-color: $gray04;
   }
 }
+
+.archive-override {
+  background-color: $whiter;
+  color: $black;
+
+  strong {
+    color: $red;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $gray06;
+    color: $black;
+
+    strong {
+      color: $blue;
+    }
+  }
+}

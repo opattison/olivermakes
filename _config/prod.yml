@@ -107,8 +107,8 @@ exclude:
   - vendor
 
 ## Configuration URLs
-domain: olivermak.es
-url: https://olivermak.es
+domain: 2016.olivermak.es
+url: https://2016.olivermak.es
 patterns_url: /patterns
 image_url: /images
 icon_url: /icons
