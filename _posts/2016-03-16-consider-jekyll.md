@@ -17,7 +17,7 @@ description: 'A brief introduction to Jekyll and why I use it for my web project
 thanks: |+
   Thanks [Jean Flanagan](http://jeancflanagan.com) for editing assistance and giving this a title.
 
-  Thanks [Michael Lee](https://michaelsoolee.com/) for technical feedback. [Read his response](https://michaelsoolee.com/work/consider-jekyll-oliver-pattison/) to this essay.
+  Thanks [Michael Lee](https://michaelsoolee.com/) for technical feedback. [Read his response](https://michaelsoolee.com/consider-jekyll-oliver-pattison/) to this essay.
 image_index: 2016-03-16-jekyll-test-tube.svg
 image:
   - src: 2016-03-16-jekyll-logo-reverse.svg
