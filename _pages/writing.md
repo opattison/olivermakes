@@ -16,7 +16,7 @@ permalink: /writing/
 
 {% assign index = 1 %}
 {% for post in site.categories.writing %}
-{% unless index > 7 %}
+{% unless index > 6 %}
 {% unless post.option contains 'featured-writing' %}
 {% include block/item.html %}
 {% assign index = index | plus: 1 %}
