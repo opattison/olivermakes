@@ -31,6 +31,10 @@
   @include min-width(l01) {
     flex: 0 0 50%;
   }
+
+  &::before {
+    display: none; // reset
+  }
 }
 
 .details-title {

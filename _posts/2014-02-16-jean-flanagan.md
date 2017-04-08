@@ -153,9 +153,7 @@ by <cite><a href="https://jeancflanagan.com">Jean Flanagan</a></cite>
 **Note:** this website is no longer in development, but a redesigned version of it is, which you can [visit](https://jeancflanagan.com) or [read about]({% post_url 2016-10-02-jean-flanagan-2016 %}).
 {% endcapture %}
 
-<aside class="ancillary--endnotes">
-{{ endnote | markdownify }}
-</aside>
+{% include block/ancillary--endnotes.html %}
 
 
 [^1]: Using lorem ipsum filler text encourages people reviewing the design *not* to read the text, which makes it difficult to judge legibility of body text until too late in the design process. [Nathan Ford wrote some good words](http://artequalswork.com/posts/tweeking.php) on this topic. Nathan Ford suggests reading tweets instead of ipsum, but I prefer a different approach. If I am constrained in my ability to design content-first, [my current practice]({% post_url 2014-12-19-reading-driven-design %}) is to use unread content from my Instapaper queue, so my eyes will focus on trying to read in the working design or prototype.

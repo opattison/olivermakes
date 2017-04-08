@@ -2,12 +2,17 @@
 .focus {
   margin-top: 1em;
 
-  font-size: 1.25em;
+  font-size: 1.5em;
   font-style: italic;
   font-weight: $weight-medium;
-  line-height: 1.25;
+  line-height: 1.2;
 
   @include min-width(l01) {
-    padding: 0 2em;
+    margin-left: -1.5em;
+    width: 75%;
+  }
+
+  @include min-width(l03) {
+    margin-left: -3em;
   }
 }

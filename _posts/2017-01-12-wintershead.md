@@ -5,7 +5,6 @@ theme: dark
 category: 'projects'
 option:
   - featured-home
-  - minor
 tags:
   - 'design'
   - 'typography'
@@ -14,7 +13,7 @@ updated: 2017-01-19 14:35
 drafted: 2017-01-01 12:34
 period: 2016-11 to 2017-01
 unique_id: 2017-01-12:wintershead
-description: 'A fictional design project to demonstrate fluid responsive typography.'
+description: 'A fictional design project demonstrating fluid responsive typography.'
 project:
   url: https://wintershead.olivermak.es
 image_index: 2016-12-15-logo-emboss-baltic.svg

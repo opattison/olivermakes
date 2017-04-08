@@ -2,7 +2,12 @@
 // grid of approximately three items (flexible)
 .elsewhere {
   display: flex;
+  margin-top: 1em;
   flex-flow: row wrap;
+}
+
+.outreach + .elsewhere {
+  margin-top: 0;
 }
 
 .elsewhere-action {
