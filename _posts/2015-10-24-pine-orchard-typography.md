@@ -90,9 +90,7 @@ Read more about [the rest of the work that went into the Pine Orchard Prints pro
 Visit the [Pine Orchard Prints website](https://pineorchardprints.com) to see the typography up close.
 {% endcapture %}
 
-<aside class="ancillary">
-{{ ancillary | markdownify }}
-</aside>
+{% include block/ancillary.html %}
 
 For a small shop, memorable and appropriate typography effectively served the business goals and provided a strong identity. Using a straightforward logotype supported the typographic style of the site and evoked the visual appeal of the items in the shop, without relying on symbols or iconography.
 

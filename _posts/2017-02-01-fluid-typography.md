@@ -142,9 +142,7 @@ By setting a bottom limit with the `calc` method, we now have a perfectly linear
 Typographic measure is the number of characters set on a line of text. On paper, this is a fixed value, since a column of text is only laid out once. But on the web, this value may change depending on the width of the container. A fluid column of text with a font size that does not change will result in a changing typographic measure: the measure increases as the viewport widens. A fixed-width column with a font size that changes also changes the typographic measure: the measure decreases as the viewport widens. If the font size changes in equal proportion to the changes the width of the column, then the measure stays fixed at the same value.
 {% endcapture %}
 
-<aside class="ancillary">
-{{ ancillary | markdownify }}
-</aside>
+{% include block/ancillary.html %}
 
 Only on larger screens is the typographic measure able to stay fixed. On smaller screens we set a minimum font size so that the text will remain legible, even though this results in a shorter measure. This is an acceptable compromise since an appropriate font size contributes to legibility far more than measure does, and a wider range of measure lengths may be appropriate for a design.
 

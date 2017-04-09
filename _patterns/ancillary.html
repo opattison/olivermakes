@@ -6,9 +6,9 @@ type: html
 category: component
 sass: block/_ancillary.scss
 include_markdown: |+
-  # Ancillary content
+  ## Ancillary content
 
-  Using a `capture` tag with Liquid allows placing converted Markdown text into an HTML block. One can `{% capture variable %}` and then `{{ variable | markdownify }}` to convert it into HTML.
+  A Liquid `capture` tag can be used to capture a variable, and then a Liquid filter can process Markdown text into an HTML block. For example, wrap the text in `{% capture ancillary %}` and `{% endcapture %}` and then `{{ ancillary | markdownify }}`.
 ---
 
 <aside class="ancillary">
@@ -16,3 +16,5 @@ include_markdown: |+
 </aside>
 
 Content flows after or around the `<aside>` block. The `.ancillary` block should be used for content that is related to the main body but not necessarily as important – supporting the main story without being directly a part of it. This paragraph represents the layout and style of main body content.
+
+Use with a captured `ancillary` value and insert with `{% raw %}{% include block/ancillary.html %}{% endraw %}`.

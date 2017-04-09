@@ -83,9 +83,7 @@ Feedback from users of the site was positive, and staff appreciated the easier a
 
 {% endcapture %}
 
-<aside class="ancillary">
-{{ ancillary | markdownify }}
-</aside>
+{% include block/ancillary.html %}
 
 ### Long-term gain
 

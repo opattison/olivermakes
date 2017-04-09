@@ -49,9 +49,7 @@ Jekyll sites load fast. With no database calls or server-side scripting, there i
 When I say “[dynamic](https://en.wikipedia.org/wiki/Dynamic_web_page)”, this is shorthand for a server-side program (using a language like PHP or Ruby) run on a web server that generates HTML files to be served on request. WordPress is an example of a CMS that can be installed on a server running PHP. This is opposed to “static” which implies HTML files served directly as HTML. Jekyll generates files that are served [statically](https://en.wikipedia.org/wiki/Static_web_page), directly from a server. Static merely describes how a site is built and served, but does not imply that a site has no dynamic features. A Jekyll site can run JavaScript on the client side (in a browser) to enable “dynamic” user interfaces or implement third party services like commenting systems or interactive maps.
 {% endcapture %}
 
-<aside class="ancillary">
-{{ ancillary | markdownify }}
-</aside>
+{% include block/ancillary.html %}
 
 Quicker response times and no processing power required to generate pages means that limited server resources can be stretched further. A server that would fail under heavy traffic would be able to keep serving static files reliably under the same conditions.
 
