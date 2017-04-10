@@ -254,6 +254,4 @@ CloudFront [now supports HTTP/2](https://aws.amazon.com/about-aws/whats-new/2016
 - [Jeremy Keith – “Switching to https ” (on Apache)](https://adactio.com/articles/7435)
 {% endcapture %}
 
-<aside class="ancillary--endnotes">
-{{ endnote | markdownify }}
-</aside>
+{% include block/ancillary--endnotes.html %}

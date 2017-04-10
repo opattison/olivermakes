@@ -52,6 +52,4 @@ The overall picture has not changed significantly in the past year and a half, b
 - [npm](https://www.npmjs.com/) and [Travis CI](https://travis-ci.org/) are now more significant dependencies for building and deploying the website.
 {% endcapture %}
 
-<aside class="ancillary--endnotes">
-{{ endnote | markdownify }}
-</aside>
+{% include block/ancillary--endnotes.html %}

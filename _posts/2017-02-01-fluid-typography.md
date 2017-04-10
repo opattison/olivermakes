@@ -165,9 +165,7 @@ Though [Robert Bringhurst prescribed](http://webtypography.net/2.1.2) a range of
 - [Flexible type with :root](http://allthingssmitty.com/2016/12/05/flexible-type-using-root/) by Matt Smith
 {% endcapture %}
 
-<aside class="ancillary--endnotes">
-{{ endnote | markdownify }}
-</aside>
+{% include block/ancillary--endnotes.html %}
 
 [^1]: Mid-2012 was around the time I had finished working on my [first major responsive web design project]({% post_url 2012-03-06-casey-trees-redesign %}), which was originally conceived with the goal of responsive implementation in late 2011. I had been reading about responsive design for over a year at this point, but Trent’s “Fluid Type” was a turning point for me because it solidified the primacy of typography for almost any web design project.
 [^2]: A [user agent](https://en.wikipedia.org/wiki/User_agent) string, provided by a browser during HTTP communication, provides an indication of what browser and operating system the user has. These indicators are notoriously unreliable and inconsistent. [User agent sniffing](https://en.wikipedia.org/wiki/Browser_sniffing) has been implemented to test for features and serve different content. For “mobile” sites, a guess is made about the user agent string (“is this a mobile browser/OS?”), and then a fixed-width small screen layout is served, potentially alongside other exclusive features like touch support and lighter resources (since mobile devices are assumed to have lower connection speeds). Assumptions like these lead to fragile and inconsistently applied solutions, which is part of the reason why responsive design and feature detection have largely replaced mobile-only sites and user agent sniffing.

@@ -99,12 +99,10 @@ For most of the projects that I currently work on or plan to work on, static is 
 - [Jekyll: Where content is truly king by Ben Balter](http://ben.balter.com/2013/10/30/content-is-king/)
 - [Jekyll Talk community forum](https://talk.jekyllrb.com)
 - [Jekyll source on GitHub](https://github.com/jekyll/jekyll)
+<a class="action" href="/labels/jekyll/">my writing on Jekyll</a>
 {% endcapture %}
 
-<aside class="ancillary--endnotes">
-{{ endnote | markdownify }}
-<a class="action" href="/labels/jekyll/">my writing on Jekyll</a>
-</aside>
+{% include block/ancillary--endnotes.html %}
 
 [^1]: For some background on why rendering ahead of time is useful, read [Tom MacWright on “Thinking Static”](http://www.macwright.org/2013/01/08/thinking-static.html) which addresses some of the issues of complexity and efficiency in a CMS and the problem that static generation solves. In short: *storage is cheap* and *computation is expensive*.
 [^2]: This site loads so quickly because all resources are served with Amazon [S3](https://aws.amazon.com/s3/), [CloudFront](https://aws.amazon.com/cloudfront/), and [imgix](https://www.imgix.com/). CloudFront is a fast CDN that can serve content with high availability and low latency.

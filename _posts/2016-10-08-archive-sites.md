@@ -72,8 +72,6 @@ For example, I could generate [my website as it existed in November 2015 at 2015
 **[Read more writing on archiving](/labels/archiving/)** from this site.
 {% endcapture %}
 
-<aside class="ancillary--endnotes">
-{{ endnote | markdownify }}
-</aside>
+{% include block/ancillary--endnotes.html %}
 
 [^1]: The [2014-2015 design]({{ page.project.url }}) for this site lives on its own [GitHub branch]({{ page.project.source }}), which is essentially a permanent fork of the project that will be frozen in time. I use GitHub’s branch protection feature to prevent merging or deleting the branch. I also created an archive for [Jean’s site]({% post_url 2016-10-02-jean-flanagan-2016 %}). Compare the [2013-2016 site](https://2016.jeancflanagan.com) to [the current site](https://jeancflanagan.com).

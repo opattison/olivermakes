@@ -321,6 +321,4 @@ The grid system handles multiple common image aspect ratios with minimal configu
 - [“Responsive images with Jekyll”]({% post_url 2016-05-07-jekyllconf-responsive-images %}) by me (a presentation on repsonsive image markup with Jekyll)
 {% endcapture %}
 
-<aside class="ancillary--endnotes">
-{{ endnote | markdownify }}
-</aside>
+{% include block/ancillary--endnotes.html %}
