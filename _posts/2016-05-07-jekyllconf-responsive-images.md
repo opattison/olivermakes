@@ -130,6 +130,4 @@ This section uses the [imgix](https://github.com/imgix/jekyll-imgix) plugin for 
 - [This Jekyll site](https://github.com/opattison/olivermakes/) (which uses responsive images made faster with imgix) – [check out my photography posts](/photography) for examples of `srcset` and imgix in use
 {% endcapture %}
 
-<aside class="ancillary--endnotes">
-{{ endnote | markdownify }}
-</aside>
+{% include block/ancillary--endnotes.html %}

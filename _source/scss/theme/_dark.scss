@@ -81,6 +81,10 @@ blockquote a {
   @include a-underline($link-underline, $link--hover);
 }
 
+ul li::before {
+  color: $accent--neutral;
+}
+
 ol li::before {
   color: $fore--minus;
 }
@@ -91,7 +95,7 @@ blockquote {
 }
 
 blockquote footer {
-  color: $fore;
+  color: $accent;
 }
 
 figcaption {

@@ -191,9 +191,7 @@ There are two key steps:
 Getting a validation email wasn’t as easy as I had hoped. I had to set up an `administrator@` email account with Hover (my domain registrar) and then configure an `MX` record in Route 53 to make sure that I could receive email. Maybe this was peculiar to my domain, but it was easily the biggest hassle in the certificate registration process since I wasn’t expecting to have to do it.
 {% endcapture %}
 
-<aside class="ancillary">
-{{ ancillary | markdownify }}
-</aside>
+{% include block/ancillary.html %}
 
 To be on the safe side, choose _both_ `example.com` and `*.example.com` when setting up the certificate. Since only one certificate is allowed per CloudFront distribution, this covers any subdomains needed for the same certificate.
 
@@ -256,6 +254,4 @@ CloudFront [now supports HTTP/2](https://aws.amazon.com/about-aws/whats-new/2016
 - [Jeremy Keith – “Switching to https ” (on Apache)](https://adactio.com/articles/7435)
 {% endcapture %}
 
-<aside class="ancillary--endnotes">
-{{ endnote | markdownify }}
-</aside>
+{% include block/ancillary--endnotes.html %}

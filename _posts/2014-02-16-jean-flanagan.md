@@ -122,7 +122,7 @@ We chose [Jekyll](http://jekyllrb.com) because it would allow for a high perform
 
 Publishing *something* on the web is relatively easy, but designing a lasting home for creative output that you won’t be forced to abandon or migrate later takes a significant amount of time and effort. For this project, both design and content were weighed deliberately. Working **content first** informed the design. The layout, typography and other design elements had to suit the content well.
 
-{% capture jean %}
+{% capture ancillary %}
 ## What Jean learned from this project
 
 by <cite><a href="https://jeancflanagan.com">Jean Flanagan</a></cite>
@@ -135,9 +135,7 @@ by <cite><a href="https://jeancflanagan.com">Jean Flanagan</a></cite>
 
 {% endcapture %}
 
-<aside class="ancillary">
-{{ jean | markdownify }}
-</aside>
+{% include block/ancillary.html %}
 
 ## What I learned from this project
 
@@ -153,9 +151,7 @@ by <cite><a href="https://jeancflanagan.com">Jean Flanagan</a></cite>
 **Note:** this website is no longer in development, but a redesigned version of it is, which you can [visit](https://jeancflanagan.com) or [read about]({% post_url 2016-10-02-jean-flanagan-2016 %}).
 {% endcapture %}
 
-<aside class="ancillary--endnotes">
-{{ endnote | markdownify }}
-</aside>
+{% include block/ancillary--endnotes.html %}
 
 
 [^1]: Using lorem ipsum filler text encourages people reviewing the design *not* to read the text, which makes it difficult to judge legibility of body text until too late in the design process. [Nathan Ford wrote some good words](http://artequalswork.com/posts/tweeking.php) on this topic. Nathan Ford suggests reading tweets instead of ipsum, but I prefer a different approach. If I am constrained in my ability to design content-first, [my current practice]({% post_url 2014-12-19-reading-driven-design %}) is to use unread content from my Instapaper queue, so my eyes will focus on trying to read in the working design or prototype.

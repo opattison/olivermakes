@@ -3,9 +3,5 @@
   <a class="banner-title logo" href="/" rel="home" title="Menu">
     {% include icon/logo-medium.svg %}
   </a>
-  {% if page.unique_id == 'hire' or page.unique_id == 'services' %}
-    <h1>{{ site.author.name }}</h1>
-  {% else %}
-    <h1>{{ page.title }}</h1>
-  {% endif %}
+  <h1>{{ page.title }}</h1>
 </header>

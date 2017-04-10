@@ -142,9 +142,7 @@ By setting a bottom limit with the `calc` method, we now have a perfectly linear
 Typographic measure is the number of characters set on a line of text. On paper, this is a fixed value, since a column of text is only laid out once. But on the web, this value may change depending on the width of the container. A fluid column of text with a font size that does not change will result in a changing typographic measure: the measure increases as the viewport widens. A fixed-width column with a font size that changes also changes the typographic measure: the measure decreases as the viewport widens. If the font size changes in equal proportion to the changes the width of the column, then the measure stays fixed at the same value.
 {% endcapture %}
 
-<aside class="ancillary">
-{{ ancillary | markdownify }}
-</aside>
+{% include block/ancillary.html %}
 
 Only on larger screens is the typographic measure able to stay fixed. On smaller screens we set a minimum font size so that the text will remain legible, even though this results in a shorter measure. This is an acceptable compromise since an appropriate font size contributes to legibility far more than measure does, and a wider range of measure lengths may be appropriate for a design.
 
@@ -167,9 +165,7 @@ Though [Robert Bringhurst prescribed](http://webtypography.net/2.1.2) a range of
 - [Flexible type with :root](http://allthingssmitty.com/2016/12/05/flexible-type-using-root/) by Matt Smith
 {% endcapture %}
 
-<aside class="ancillary--endnotes">
-{{ endnote | markdownify }}
-</aside>
+{% include block/ancillary--endnotes.html %}
 
 [^1]: Mid-2012 was around the time I had finished working on my [first major responsive web design project]({% post_url 2012-03-06-casey-trees-redesign %}), which was originally conceived with the goal of responsive implementation in late 2011. I had been reading about responsive design for over a year at this point, but Trent’s “Fluid Type” was a turning point for me because it solidified the primacy of typography for almost any web design project.
 [^2]: A [user agent](https://en.wikipedia.org/wiki/User_agent) string, provided by a browser during HTTP communication, provides an indication of what browser and operating system the user has. These indicators are notoriously unreliable and inconsistent. [User agent sniffing](https://en.wikipedia.org/wiki/Browser_sniffing) has been implemented to test for features and serve different content. For “mobile” sites, a guess is made about the user agent string (“is this a mobile browser/OS?”), and then a fixed-width small screen layout is served, potentially alongside other exclusive features like touch support and lighter resources (since mobile devices are assumed to have lower connection speeds). Assumptions like these lead to fragile and inconsistently applied solutions, which is part of the reason why responsive design and feature detection have largely replaced mobile-only sites and user agent sniffing.

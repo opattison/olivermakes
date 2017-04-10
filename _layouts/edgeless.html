@@ -2,7 +2,7 @@
 <html lang="en">
 {% include head.html %}
 
-<body {% if page.option contains 'error' %}id="error" {% endif %}class="edgeless">
+<body class="edgeless">
 
   {% include container/banner.html %}
 
@@ -21,15 +21,11 @@
 
     </div>
 
-    {% unless page.option contains 'error' %}
-      {% include block/page-footer.html %}
-    {% endunless %}
+    {% include block/page-footer.html %}
 
   </article>
 
-{% unless page.option contains 'error' %}
   {% include container/end.html %}
-{% endunless %}
 
 </body>
 </html>

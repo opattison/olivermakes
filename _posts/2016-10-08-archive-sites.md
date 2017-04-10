@@ -55,7 +55,7 @@ One brilliant thing about [Jekyll](http://jekyllrb.com) or other static site gen
 
 If you have a Jekyll project that has 120 Git commits, you have 120 iterations of that website, and presumably each of them would contain the ingredients to successfully build a Jekyll site. By picking out a single commit you can generate the HTML files for that iteration (by installing the software dependencies on your computer and building the Jekyll site, typically done with a single command like `jekyll build`). The content and design as it existed on the day can be checked out with Git, built with Jekyll, and deployed anywhere, whether on the public web or in a backed up folder on a local system.
 
-For example, I could generate [my website as it existed in November 2015 at 2015.olivermak.es](https://2015.olivermak.es). [^1] With some predictable URL design (a subdomain like `yyyy.example.com` for the parent site `example.com` with `yyyy` being the year), I have a plan for generating annual archives. I could create a URL design that allows for archiving more fine-grained than a year, but these particular websites don’t change *that* quickly. I like this approach more than the `v1`, `v2`, `v3` method I’ve seen which makes a lot of sense for archiving software documentation or websites that only receive infrequent and monolithic design changes, but less sense for sites that have slowly and steadily evolving content and design.
+For example, I could generate [my website as it existed in November 2015 at 2015.olivermak.es](https://2015.olivermak.es) or as it existed in [December 2016](https://2016.olivermak.es). [^1] With some predictable URL design (a subdomain like `yyyy.example.com` for the parent site `example.com` with `yyyy` being the year), I have a plan for generating annual archives. I could create a URL design that allows for archiving more fine-grained than a year, but these particular websites don’t change *that* quickly. I like this approach more than the `v1`, `v2`, `v3` method I’ve seen which makes a lot of sense for archiving software documentation or websites that only receive infrequent and monolithic design changes, but less sense for sites that have slowly and steadily evolving content and design.
 
 ## Related project
 
@@ -72,8 +72,6 @@ For example, I could generate [my website as it existed in November 2015 at 2015
 **[Read more writing on archiving](/labels/archiving/)** from this site.
 {% endcapture %}
 
-<aside class="ancillary--endnotes">
-{{ endnote | markdownify }}
-</aside>
+{% include block/ancillary--endnotes.html %}
 
 [^1]: The [2014-2015 design]({{ page.project.url }}) for this site lives on its own [GitHub branch]({{ page.project.source }}), which is essentially a permanent fork of the project that will be frozen in time. I use GitHub’s branch protection feature to prevent merging or deleting the branch. I also created an archive for [Jean’s site]({% post_url 2016-10-02-jean-flanagan-2016 %}). Compare the [2013-2016 site](https://2016.jeancflanagan.com) to [the current site](https://jeancflanagan.com).

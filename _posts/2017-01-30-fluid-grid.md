@@ -67,9 +67,7 @@ Making a fluid grid like this requires CSS [flexbox](https://css-tricks.com/snip
 Reflowing while maintaining a set aspect ratio is something that one might expect flexbox would do automatically, but that’s not how flexbox works. In a flexbox layout, an image element’s height scales up or down dependent on the element’s width. This causes a problem for the desired grid, unless we can design a system of constraints to account for the ratio of an image’s width and height (its aspect ratio).
 {% endcapture %}
 
-<aside class="ancillary">
-{{ ancillary | markdownify }}
-</aside>
+{% include block/ancillary.html %}
 
 I found part of the solution in Kartik Prabhu’s [“Equal height images with flexbox”](https://kartikprabhu.com/articles/equal-height-images-flexbox), which shows a neat trick with the `flex-grow` property. If `flex-grow` is set to the calculated aspect ratio of the image (with a common ratio like 3:2 written as `1.5`), images that have the same `flex-basis` (initial width) will maintain *the same height* while adjusting their width proportionally.
 
@@ -163,9 +161,7 @@ Why does `flex-grow` work this way? The number is a factor which determines the 
 One limitation to this method is needing to specify all of the aspect ratios that are possible. However, the cost in markup and extra styles is not too great for the benefits of having a flexible grid that works so well without JavaScript. It is less “automatic”, however, as the aspect ratios have to be determined ahead of time. This generally works for photography since photos are often already cropped to standard sizes. This would be a case where [imgix](https://www.imgix.com) or another server-side image host could be used to crop images to match the desired aspect ratio if they don’t already match the presentational context.
 {% endcapture %}
 
-<aside class="ancillary">
-{{ ancillary | markdownify }}
-</aside>
+{% include block/ancillary.html %}
 
 ### Using Jekyll collections
 
@@ -325,6 +321,4 @@ The grid system handles multiple common image aspect ratios with minimal configu
 - [“Responsive images with Jekyll”]({% post_url 2016-05-07-jekyllconf-responsive-images %}) by me (a presentation on repsonsive image markup with Jekyll)
 {% endcapture %}
 
-<aside class="ancillary--endnotes">
-{{ endnote | markdownify }}
-</aside>
+{% include block/ancillary--endnotes.html %}

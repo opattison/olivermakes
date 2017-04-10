@@ -29,8 +29,23 @@
   }
 }
 
+.content > h3 {
+  font-size: 1.25em;
+  font-weight: $weight-light;
+  font-style: italic;
+  text-align: center;
+
+  @include min-width(m01) {
+    font-size: 1.5em;
+  }
+
+  @include min-width(l01) {
+    font-size: 2em;
+  }
+}
+
 // Hire page sections
-.opportunities {
+.services {
   @include bleed-full(1em);
 
   display: flex;
@@ -54,7 +69,7 @@
   }
 }
 
-%opportunities-item {
+%services-item {
   color: $gray07;
   padding: 1em 2em;
   width: 100%;
@@ -78,8 +93,8 @@
   }
 }
 
-.opportunities-item {
-  @extend %opportunities-item;
+.services-item {
+  @extend %services-item;
 
   &:nth-child(2n) {
     background-color: $gray02;
@@ -98,8 +113,8 @@
   }
 }
 
-.opportunities-item--featured {
-  @extend %opportunities-item;
+.services-item--featured {
+  @extend %services-item;
 
   background-color: $blue;
 
@@ -185,5 +200,13 @@
     .icon {
       transform: scale(1.375);
     }
+  }
+}
+
+
+.focus {
+  @include min-width(l01) {
+    margin-left: 0; // reset
+    width: auto; //reset
   }
 }

@@ -17,7 +17,7 @@ description: 'A brief introduction to Jekyll and why I use it for my web project
 thanks: |+
   Thanks [Jean Flanagan](http://jeancflanagan.com) for editing assistance and giving this a title.
 
-  Thanks [Michael Lee](https://michaelsoolee.com/) for technical feedback. [Read his response](https://michaelsoolee.com/work/consider-jekyll-oliver-pattison/) to this essay.
+  Thanks [Michael Lee](https://michaelsoolee.com/) for technical feedback. [Read his response](https://michaelsoolee.com/consider-jekyll-oliver-pattison/) to this essay.
 image_index: 2016-03-16-jekyll-test-tube.svg
 image:
   - src: 2016-03-16-jekyll-logo-reverse.svg
@@ -49,9 +49,7 @@ Jekyll sites load fast. With no database calls or server-side scripting, there i
 When I say “[dynamic](https://en.wikipedia.org/wiki/Dynamic_web_page)”, this is shorthand for a server-side program (using a language like PHP or Ruby) run on a web server that generates HTML files to be served on request. WordPress is an example of a CMS that can be installed on a server running PHP. This is opposed to “static” which implies HTML files served directly as HTML. Jekyll generates files that are served [statically](https://en.wikipedia.org/wiki/Static_web_page), directly from a server. Static merely describes how a site is built and served, but does not imply that a site has no dynamic features. A Jekyll site can run JavaScript on the client side (in a browser) to enable “dynamic” user interfaces or implement third party services like commenting systems or interactive maps.
 {% endcapture %}
 
-<aside class="ancillary">
-{{ ancillary | markdownify }}
-</aside>
+{% include block/ancillary.html %}
 
 Quicker response times and no processing power required to generate pages means that limited server resources can be stretched further. A server that would fail under heavy traffic would be able to keep serving static files reliably under the same conditions.
 
@@ -101,12 +99,10 @@ For most of the projects that I currently work on or plan to work on, static is 
 - [Jekyll: Where content is truly king by Ben Balter](http://ben.balter.com/2013/10/30/content-is-king/)
 - [Jekyll Talk community forum](https://talk.jekyllrb.com)
 - [Jekyll source on GitHub](https://github.com/jekyll/jekyll)
+<a class="action" href="/labels/jekyll/">my writing on Jekyll</a>
 {% endcapture %}
 
-<aside class="ancillary--endnotes">
-{{ endnote | markdownify }}
-<a class="action" href="/labels/jekyll/">my writing on Jekyll</a>
-</aside>
+{% include block/ancillary--endnotes.html %}
 
 [^1]: For some background on why rendering ahead of time is useful, read [Tom MacWright on “Thinking Static”](http://www.macwright.org/2013/01/08/thinking-static.html) which addresses some of the issues of complexity and efficiency in a CMS and the problem that static generation solves. In short: *storage is cheap* and *computation is expensive*.
 [^2]: This site loads so quickly because all resources are served with Amazon [S3](https://aws.amazon.com/s3/), [CloudFront](https://aws.amazon.com/cloudfront/), and [imgix](https://www.imgix.com/). CloudFront is a fast CDN that can serve content with high availability and low latency.

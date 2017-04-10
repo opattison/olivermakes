@@ -189,7 +189,8 @@ blockquote {
 }
 
 blockquote footer {
-  font-size: .875em;
+  font-size: .75em;
+  font-weight: $weight-medium;
   margin-top: 1em;
   text-align: right;
 }

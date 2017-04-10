@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="{{ site.style_url }}/micro.css">
   <link rel="stylesheet" href="{{ site.style_url }}/patterns.css">
 {% endif %}
-{% if page.option contains 'error' %}
+{% if page.layout == 'error' %}
   <link rel="stylesheet" href="{{ site.style_url }}/404.css">
 {% endif %}
 {% if page.custom_style %}

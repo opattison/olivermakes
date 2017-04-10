@@ -2,13 +2,32 @@
 title: 'About'
 layout: micro
 option:
-  - no-title
   - hero
 date: 2014-10-31 18:25
 updated: 2016-08-15 14:54
 unique_id: about
 permalink: /about/
+custom_style: custom-hire.css
 description: 'A short biography of Oliver Pattison, as well as details about how this website was made.'
+details:
+  - title: HTML and CSS
+    expanded: 'I have a passion for well-written, thoughtful HTML and CSS. Although it is sometimes dismissed as a simple markup language, getting HTML right is challenging, both when dealing with visual design and with accessibility and usability.'
+    icon: html5
+  - title: Jekyll
+    expanded: '[Jekyll](http://jekyllrb.com/) is my favorite tool for designing and publishing content on the web. Most of the sites that I build currently are static sites (using Jekyll) with minimal but flexible configuration and high performance.'
+    icon: jekyll
+  - title: Git
+    expanded: 'Version control is essential for designing dynamically, maintaining code, and collaborating quickly and remotely. I use [Git](https://git-scm.com/) as a safety net for all of my work, whether on my own or with a team.'
+    icon: git
+  - title: JavaScript
+    expanded: 'I have been learning JavaScript for the past few years, developing interactive user interfaces with tools like [Velocity.js](http://velocityjs.org/), [Vue.js](http://vuejs.org/) and [Mapbox](https://www.mapbox.com). I believe strongly in [progressive enhancement](https://sixtwothree.org/posts/designing-experience-layers) when designing experience layers.'
+    icon: javascript
+  - title: Sass/SCSS
+    expanded: 'I use [SCSS](http://sass-lang.com/) to help me write effective CSS. I find it invaluable as a creative tool and as a way to organize and develop styles in short and composable parts.'
+    icon: sass
+  - title: Web publishing systems
+    expanded: 'I have designed and developed sites with Shopify, Statamic, WordPress, and other content management systems. My focus has been on integrating front-end design with content editing systems, and creating clear and usable content structures for editors.'
+    icon: shopify
 image:
   - src: 2016-10-18-oliver-jeancflanagan-ccbync.jpg
     alt: 'Oliver Pattison standing in a forest with a backdrop of branches and yellow leaves'
@@ -36,26 +55,20 @@ image:
 
 ---
 
-I am <span class="p-name">Oliver Pattison</span>, a designer focused on the future of the web. My main interests are archiving, usable and universal design, typography, and photography. I like to work on [open source projects]({{ site.link.github }}){:rel="me"}, and I am open to collaboration and work opportunities. Have any questions for me? [Send me an email](mailto:{{ site.author.email }}){:.u-email rel="me"}.
-
-I currently live in Washington, DC. I am originally from New York City.
-
-I’m available for hire and interested in collaborating on projects.
+I’m Oliver Pattison, a designer focused on the future of the web.
 {:.focus}
+
+I’m interested in [archiving](/labels/archiving/), [usable and universal design](/labels/design/), [typography](/labels/typography/), and [photography](/photography/). I’m also into music, hiking with [my hound dog](/2014/11/sapphie/), and working for progressive causes.
+
+I’m currently working on independent projects, but I am also interested in the right full-time role – it might be called “web designer” or “web developer” but I am happiest working between those boundaries.
+
+## What I work with
+
+{% include block/details--hire.html %}
 
 {% include block/outreach--hire.html %}
 
-<aside class="ancillary">
-<h2>Elsewhere on the web</h2>
-
-  <section class="elsewhere--rows">
-    <a class="elsewhere-action" href="{{ site.link.pinboard }}">Pinboard{% include icon/pinboard.svg %}</a>
-    <a class="elsewhere-action" href="{{ site.link.github }}">GitHub{% include icon/github.svg %}</a>
-    <a class="elsewhere-action" href="{{ site.link.codepen }}">CodePen{% include icon/codepen.svg %}</a>
-    <a class="elsewhere-action" href="{{ site.link.twitter }}">Twitter{% include icon/twitter.svg %}</a>
-  </section>
-
-</aside>
+---
 
 ## About this site
 
@@ -89,12 +102,18 @@ The fonts on the site (300, 400 and 500 weights of [the Ratio typeface](http://c
 ## License and copyright
 
 In short: the code and design are under [copyright (MIT license)](/license/#code) and original photos, images are [{{ site.license.long }} ({{ site.license.short }})]({{ site.link.attribution }}){:rel="license"}.
+<a class="action" href="/license/">more on attribution</a>
 {% endcapture %}
 
-<aside class="ancillary--endnotes">
-{{ endnote | markdownify }}
-<a class="action" href="/license/">more on attribution</a>
-</aside>
+{% include block/ancillary--endnotes.html %}
+
+---
+
+## Elsewhere on the web
+
+{% include block/elsewhere.html %}
+
+---
 
 {% assign image = page.image[1] %}
 {% include block/image-srcset.html class="image--wide" %}
