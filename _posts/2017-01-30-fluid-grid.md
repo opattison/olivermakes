@@ -32,7 +32,7 @@ image:
     alt: 'Multiple rows of photos aligned in a grid.'
 ---
 
-I designed a custom, asymmetric, responsive grid system for displaying for a [photo storytelling website](https://jeanandoliver.space). I had seen implementations of this sort of grid on a variety of websites (Flickr photosets are a notable implementation), but they are often quite heavy solutions, requiring JavaScript and having issues on load and when reflowing. The challenge in this case is creating a responsive grid system that respects the aspect ratio of images, since dealing with fixed ratios in a variable width context is a difficult issue in CSS.
+I designed a custom, asymmetric, responsive grid system for displaying for [Field Notes, a photo storytelling website](https://jeanandoliver.space). I had seen implementations of this sort of grid on a variety of websites (Flickr photosets are a notable implementation), but they are often quite heavy solutions, requiring JavaScript and having issues on load and when reflowing. The challenge in this case is creating a responsive grid system that respects the aspect ratio of images, since dealing with fixed ratios in a variable width context is a difficult issue in CSS.
 
 ## The goal
 
