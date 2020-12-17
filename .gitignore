@@ -1,5 +1,6 @@
-# OS
+# system
 .DS_Store
+.nova/
 
 # Jekyll/Ruby
 _site/
