@@ -5,13 +5,16 @@
 # Jekyll/Ruby
 _site/
 .bundle/
+vendor/
 .jekyll-metadata
 
 # Node
 node_modules
 npm-debug.log
+package-lock.json
 
 # Build
 .sass-cache/
 resources/*.js
 resources/*.css
+resources/*.map
