@@ -4,7 +4,7 @@
   "dependencies": {
     "browserify": "^13.0.0",
     "lazysizes": "^3.0.0-rc3",
-    "node-sass": "^3.10.0",
+    "sass": "^1.3.0",
     "npm-run-all": "^3.1.0",
     "svgo": "^0.6.1",
     "uglify-js": "^2.6",
@@ -12,15 +12,15 @@
     "watchify": "^3.7.0"
   },
   "scripts": {
-    "serve:css": "node-sass _source/scss/ -r -w -o resources",
+    "serve:css": "sass _source/scss/:resources --watch",
     "serve:js": "watchify _source/js/site.js -o resources/site.js",
     "serve:jekyll": "bundle exec jekyll serve --config _config/prod.yml,_config/dev.yml",
-    "dev:css": "node-sass _source/scss/ -o resources",
+    "dev:css": "sass _source/scss/:resources",
     "dev:js": "browserify _source/js/site.js -o resources/site.js",
     "dev:jekyll": "JEKYLL_ENV=production bundle exec jekyll build --config _config/prod.yml,_config/dev.yml",
     "dev:svg": "svgo -q -f _site/icons _site/images",
     "dev:deploy": "s3_website push --config-dir _config",
-    "prod:css": "node-sass _source/scss/ -o resources",
+    "prod:css": "sass _source/scss/:resources",
     "prod:js": "browserify _source/js/site.js | uglifyjs --comments -o resources/site.js",
     "prod:jekyll": "JEKYLL_ENV=production bundle exec jekyll build --config _config/prod.yml",
     "prod:svg": "svgo -q -f _site/icons _site/images",
