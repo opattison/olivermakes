@@ -6,6 +6,7 @@ group :jekyll_plugins do
   gem 'jekyll-archives'
   gem 'rouge'
   gem 'kramdown'
+  gem 'kramdown-parser-gfm'
   gem 'jekyll-imgix'
   gem 'jekyll-sitemap'
 end
